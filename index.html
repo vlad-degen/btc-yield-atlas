@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Where Bitcoin yield comes from: every vault that borrows dollars against BTC, opened on-chain, with realized yields read from share prices.">
+<title>BTC Yield Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f4f5f8; --surface:#ffffff; --surface-2:#eceef3; --ink:#14171c; --ink-2:#4e5663; --muted:#8a929e; --hair:#e1e4ea; --hair-2:#cfd4dc;
+  --accent:#e0801a; --accent-ink:#9a5410; --link:#1d5db3;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#4a3aa7; --s8:#e34948;
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --critical:#d03b3b;
+  --grid:#e6e8ee; --axis:#c6cbd4;
+  --shadow:0 1px 2px rgba(20,23,28,.06), 0 8px 24px -16px rgba(20,23,28,.18);
+  --radius:10px;
+  --display:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1216; --surface:#171b21; --surface-2:#1f242c; --ink:#eceef2; --ink-2:#b4bac5; --muted:#7e8794; --hair:#262b33; --hair-2:#343a44;
+    --accent:#f3a03a; --accent-ink:#f7b869; --link:#7fb0f0;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+    --grid:#242930; --axis:#3a404a; --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1216; --surface:#171b21; --surface-2:#1f242c; --ink:#eceef2; --ink-2:#b4bac5; --muted:#7e8794; --hair:#262b33; --hair-2:#343a44;
+  --accent:#f3a03a; --accent-ink:#f7b869; --link:#7fb0f0;
+  --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+  --grid:#242930; --axis:#3a404a; --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1;letter-spacing:-.01em}
+h1{font-size:clamp(34px,5.4vw,60px);font-weight:700}
+h2{font-size:clamp(24px,3.2vw,34px);font-weight:700}
+h3{font-size:18px;font-weight:700;font-family:var(--body)}
+p{margin:0 0 12px;max-width:68ch}
+.lede{font-size:18px;color:var(--ink-2);max-width:62ch}
+.eyebrow{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:10px}
+.mono{font-family:var(--mono);font-size:.92em}
+.small{font-size:13px;color:var(--ink-2)}
+.note{font-size:13px;color:var(--muted)}
+.hl{background:linear-gradient(transparent 62%, color-mix(in srgb,var(--accent) 28%, transparent) 62%);padding:0 2px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--hair)}
+.top .wrap{display:flex;align-items:center;gap:18px;height:52px}
+.brand{font-family:var(--display);font-weight:700;font-size:17px;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.brand i{width:10px;height:10px;border-radius:50%;background:var(--accent);display:inline-block}
+nav.sec{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;-webkit-overflow-scrolling:touch}
+nav.sec::-webkit-scrollbar{display:none}
+nav.sec a{white-space:nowrap;padding:8px 10px;border-radius:6px;font-size:13px;color:var(--ink-2)}
+nav.sec a:hover{background:var(--surface-2);text-decoration:none;color:var(--ink)}
+.stamp{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+section{padding-block:48px;border-bottom:1px solid var(--hair)}
+section:last-of-type{border-bottom:0}
+.hero{padding-block:60px 36px}
+.hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
+@media (max-width:820px){.hero .grid{grid-template-columns:1fr}}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}
+@media (max-width:820px){.tiles{grid-template-columns:repeat(2,1fr)}}
+.tile{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.tile .l{font-size:12.5px;color:var(--ink-2)}
+.tile .v{font-size:30px;font-weight:600;line-height:1.1;margin:6px 0 4px}
+.tile .d{font-size:12px;color:var(--muted)}
+.tile.acc .v{color:var(--accent-ink)}
+.panel{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow)}
+.panel + .panel{margin-top:16px}
+.panel h3{margin-bottom:4px}
+.panel .sub{font-size:13px;color:var(--ink-2);margin-bottom:12px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:900px){.cols3{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.cols3{grid-template-columns:1fr}}
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart .tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--hair-2);border-radius:8px;padding:8px 10px;font-size:12.5px;box-shadow:var(--shadow);min-width:150px;z-index:5;display:none}
+.chart .tip .t{color:var(--muted);font-size:11.5px;margin-bottom:4px;font-family:var(--mono)}
+.chart .tip .r{display:flex;justify-content:space-between;gap:14px;align-items:center}
+.chart .tip .r b{font-weight:600;font-variant-numeric:tabular-nums}
+.chart .tip .k{display:inline-block;width:12px;height:2px;border-radius:1px;margin-right:6px;vertical-align:middle}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink-2);margin:8px 0 4px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:3px;border-radius:2px;display:inline-block}
+.legend i.rect{height:10px;width:10px;border-radius:2px}
+.tools{display:flex;gap:8px;justify-content:flex-end;margin-top:6px}
+.btn{font:inherit;font-size:12px;padding:5px 10px;border:1px solid var(--hair-2);background:var(--surface);color:var(--ink-2);border-radius:6px;cursor:pointer}
+.btn:hover{background:var(--surface-2);color:var(--ink)}
+.btn[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.tblwrap{overflow-x:auto;margin-top:8px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;white-space:nowrap}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:hover td{background:color-mix(in srgb,var(--surface-2) 60%, transparent)}
+.chip{display:inline-block;font-size:11px;padding:2px 7px;border-radius:999px;border:1px solid var(--hair-2);color:var(--ink-2);white-space:nowrap}
+.chip.a1{border-color:var(--s1);color:var(--s1)} .chip.a2{border-color:var(--s2);color:var(--s2)} .chip.a3{border-color:var(--s3);color:var(--s3)} .chip.a4{border-color:var(--s4);color:var(--s4)} .chip.a5{border-color:var(--s5);color:var(--s5)} .chip.a6{border-color:var(--s7);color:var(--s7)}
+.st{display:inline-flex;align-items:center;gap:5px;font-size:12px}
+.st i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.st.crit i{background:var(--critical)} .st.ser i{background:var(--serious)} .st.warn i{background:var(--warn)} .st.good i{background:var(--good)}
+.arch{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:900px){.arch{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.arch{grid-template-columns:1fr}}
+.arch .c{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:8px}
+.arch .c .h{display:flex;align-items:center;gap:8px;font-weight:600}
+.arch .c .h i{width:10px;height:10px;border-radius:2px}
+.arch .c .y{font-size:22px;font-weight:600;line-height:1}
+.arch .c .y small{font-size:12px;color:var(--muted);font-weight:400;margin-left:6px}
+.arch .c .r{font-size:12.5px;color:var(--ink-2)}
+.arch .c .bar{height:6px;border-radius:3px;background:var(--surface-2);position:relative;overflow:hidden}
+.arch .c .bar b{position:absolute;top:0;bottom:0;border-radius:3px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 6px}
+.filters input{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--hair-2);border-radius:6px;background:var(--surface);color:var(--ink);min-width:200px}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:820px){.calc{grid-template-columns:1fr}}
+.calc label{display:grid;grid-template-columns:1fr auto;gap:6px;font-size:13px;color:var(--ink-2);margin-bottom:12px}
+.calc label b{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.calc input[type=range]{width:100%;grid-column:1/-1;accent-color:var(--accent)}
+.out{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.out .o{background:var(--surface-2);border-radius:8px;padding:12px 14px}
+.out .o .l{font-size:12px;color:var(--ink-2)}
+.out .o .v{font-size:26px;font-weight:600;line-height:1.1;margin-top:4px}
+.out .o.big{grid-column:1/-1;background:color-mix(in srgb,var(--accent) 14%, var(--surface))}
+.out .o.big .v{font-size:40px;color:var(--accent-ink)}
+.flow svg text{font-family:var(--body)}
+.flow .box{fill:var(--surface);stroke:var(--hair-2)}
+.flow .lbl{fill:var(--ink);font-size:12px;font-weight:600}
+.flow .sm{fill:var(--ink-2);font-size:10.5px}
+.flow .mn{fill:var(--muted);font-size:9.5px;font-family:var(--mono)}
+.flow a .mn{fill:var(--link);text-decoration:underline}
+.flow .f-btc{stroke:var(--s2);fill:none;stroke-width:2.5}
+.flow .f-st{stroke:var(--s1);fill:none;stroke-width:2.5}
+.flow .f-rwa{stroke:var(--s7);fill:none;stroke-width:2.5}
+.flow .f-y{stroke:var(--s3);fill:none;stroke-width:1.5;stroke-dasharray:4 3}
+.flow .cap{fill:var(--ink-2);font-size:10.5px}
+.tl .e{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--hair)}
+.tl .e:last-child{border-bottom:0}
+.tl .d{font-family:var(--mono);font-size:12.5px;color:var(--muted);padding-top:2px}
+.tl .e .t{font-weight:600}
+.tl .e .x{font-size:13px;color:var(--ink-2)}
+.cur{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:900px){.cur{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.cur{grid-template-columns:1fr}}
+.cur .c{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:6px}
+.cur .c .n{font-weight:600;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.cur .c .a{font-size:24px;font-weight:600;line-height:1.05}
+.cur .c .a small{font-size:12px;color:var(--muted);font-weight:400}
+.cur .c ul{margin:4px 0 0;padding-left:16px;font-size:12.5px;color:var(--ink-2)}
+.cur .c li{margin:2px 0}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;font-size:13.5px}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+.callout{border-left:3px solid var(--accent);padding:10px 16px;background:color-mix(in srgb,var(--accent) 8%, var(--surface));border-radius:0 8px 8px 0;margin:14px 0}
+.callout p:last-child{margin:0}
+ol.steps{padding-left:20px;margin:0}
+ol.steps li{margin-bottom:8px}
+/* vault cards */
+.vaults{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+@media (max-width:900px){.vaults{grid-template-columns:1fr}}
+.vc{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+.vc .head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.vc .head h3{font-size:18px}
+.vc .head .sz{text-align:right;white-space:nowrap}
+.vc .head .sz b{display:block;font-size:20px;font-weight:600;line-height:1.05}
+.vc .head .sz small{font-size:11.5px;color:var(--muted)}
+.vc .tagline{font-size:13px;color:var(--ink-2)}
+.vc dl{display:grid;grid-template-columns:118px 1fr;gap:5px 12px;font-size:13px;margin:0}
+.vc dt{color:var(--muted)}.vc dd{margin:0}
+.vc .verdict{border-top:1px solid var(--hair);padding-top:10px;font-size:13px}
+.vc .verdict b{color:var(--accent-ink)}
+.vc .links{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12.5px}
+.vc .links a{white-space:nowrap}
+.vc.wide{grid-column:1/-1}
+.part{padding-block:40px 8px}
+.part .k{display:flex;align-items:center;gap:14px;color:var(--accent-ink);font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.part .k::after{content:"";flex:1;height:1px;background:var(--hair-2)}
+.part h2{margin-top:10px;font-size:clamp(28px,3.6vw,40px)}
+.part p{margin-top:10px}
+.steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+@media (max-width:900px){.steps4{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.steps4{grid-template-columns:1fr}}
+.steps4 .s{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:6px;box-shadow:var(--shadow)}
+.steps4 .s .n{font-family:var(--mono);font-size:11px;color:var(--accent-ink);letter-spacing:.1em}
+.steps4 .s .t{font-weight:600;font-size:15px}
+.steps4 .s .x{font-size:13px;color:var(--ink-2)}
+.steps4 .s .w{font-size:12.5px;color:var(--ink-2);border-top:1px solid var(--hair);padding-top:8px;margin-top:4px}
+.steps4 .s .w b{color:var(--critical);font-weight:600}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:820px){.two{grid-template-columns:1fr}}
+.findings{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+@media (max-width:900px){.findings{grid-template-columns:1fr}}
+.findings .f{background:var(--surface);border:1px solid var(--hair);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.findings .f .big{font-size:34px;font-weight:600;line-height:1;color:var(--accent-ink)}
+.findings .f .big small{font-size:13px;color:var(--muted);font-weight:400;margin-left:6px}
+.findings .f h3{margin:8px 0 6px;font-size:16px}
+.findings .f p{font-size:13.5px;color:var(--ink-2);margin:0}
+.presets{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.vc .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;background:var(--surface-2);border-radius:8px;padding:10px 12px}
+@media (max-width:560px){.vc .strip{grid-template-columns:1fr 1fr}}
+.vc .strip div{font-size:11.5px;color:var(--muted)}
+.vc .strip div b{display:block;font-size:14px;color:var(--ink);font-weight:600;margin-top:2px}
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:820px){.qa{grid-template-columns:1fr}}
+.qa .q{background:var(--surface-2);border-radius:8px;padding:12px 14px;font-size:13.5px}
+.qa .q b{display:block;margin-bottom:4px}
+.totop{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--surface);border-radius:999px;padding:8px 12px;font-size:12px;text-decoration:none;box-shadow:var(--shadow);z-index:15}
+.totop:hover{text-decoration:none;opacity:.9}
+footer{padding-block:32px 48px;color:var(--muted);font-size:12.5px}
+footer a{color:var(--ink-2)}
+.srcs{columns:2;column-gap:32px;font-size:12.5px}
+@media (max-width:700px){.srcs{columns:1}}
+.srcs div{break-inside:avoid;margin-bottom:6px}
+</style>
+</head>
+<body>
+
+
+<header class="top"><div class="wrap">
+  <div class="brand"><i></i>BTC Yield Atlas</div>
+  <nav class="sec" aria-label="Sections">
+    <a href="#p1">I · The trade</a><a href="#p2">II · Borrow markets</a><a href="#p3">III · Kraken</a><a href="#p4">IV · Other vaults</a><a href="#p5">V · What breaks</a><a href="#p6">VI · What to do</a><a href="#appx">Appendix</a>
+  </nav>
+  <div class="stamp">data as of 2026-09-20 · BTC $80,624</div>
+</div></header>
+<a class="totop" href="#top" aria-label="Back to top">Top ↑</a>
+
+<section class="hero" id="top"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="eyebrow">Market study · September 2026</div>
+      <h1>Borrowing dollars against Bitcoin to earn a yield on Bitcoin: the vaults, the numbers, the catch</h1>
+    </div>
+    <p class="lede">A growing family of products takes your BTC, posts it as collateral, borrows stablecoins against it and parks them somewhere that pays. Kraken runs the biggest one. We opened every vault of this kind on the blockchain, read the share prices to see what they really paid, and mapped the borrow markets they all depend on. Every number links to where it came from.</p>
+  </div>
+  <div class="tiles">
+    <div class="tile"><div class="l">Borrowed against Bitcoin on Morpho</div><div class="v">$2.38B</div><div class="d">77 markets, $4.93B of collateral, 48% average LTV. <a href="https://app.morpho.org/ethereum/borrow" target="_blank" rel="noopener">Morpho</a></div></div>
+    <div class="tile"><div class="l">Inside packaged BTC carry vaults</div><div class="v">about $0.6B</div><div class="d">Kraken $521M, Bitget $67M, ether.fi $18M, Tesseract and Hermetica under $10M</div></div>
+    <div class="tile acc"><div class="l">Kraken's realized yield since launch</div><div class="v">1.40%</div><div class="d">annualized share-price growth over 116 days; 0.99% over the last 30 days. Read from the vault's own <a href="https://explorer.inkonchain.com/address/0x4bb6c416a00561ad6657110b76552c42d55ff1d6?tab=logs" target="_blank" rel="noopener">accountant contract</a></div></div>
+    <div class="tile"><div class="l">What lending Bitcoin itself pays</div><div class="v">0.00%</div><div class="d">Aave WBTC, cbBTC, LBTC. The 25 BTC vaults on Morpho hold $23M at 0 to 0.12%. <a href="https://defillama.com/yields?token=WBTC" target="_blank" rel="noopener">DefiLlama</a></div></div>
+  </div>
+  <div class="panel" style="margin-top:20px"><h3>If you only read one box</h3>
+    <ol class="steps" style="font-size:14px;margin-top:6px">
+      <li><b>The trade pays 1 to 2% a year in BTC, not the 2.5 to 5% on the posters.</b> Measured from share prices: Kraken 1.40% since launch and falling month by month, ether.fi Liquid BTC 1.95% over the last year, Lombard's LBTCv 0.98% over the last year.</li>
+      <li><b>Most of that comes from someone else's marketing budget.</b> In Kraken's vault about three quarters of the yield is Ripple and PayPal paying lenders to use RLUSD and PYUSD. On the organic rates alone the loan costs more than the parking pays.</li>
+      <li><b>The plain version of the trade loses money.</b> Borrowing USDC against BTC costs 4.6 to 4.8%; the safe places to put USDC pay 3.5 to 5%. Every vault that earns something is using a subsidized stablecoin, a credit token, or a token reward.</li>
+      <li><b>The market is Coinbase, then everyone else.</b> Of the $2.38B borrowed against BTC on Morpho, $1.43B is Coinbase's loan product on Base and $1.87B is in USDC. The subsidized RLUSD and PYUSD markets that make the vaults work hold $341M and are already 84 to 90% lent out.</li>
+      <li><b>Every figure links to its source.</b> Blue text goes to the block explorer, the lending market, the DefiLlama pool, or the document. Where a number is ours, we say so.</li>
+    </ol>
+    <p class="note" style="margin-top:10px"><b>Words we use.</b> <b>LTV</b> is the loan divided by the collateral. <b>Liquidation threshold</b> is the LTV at which the collateral gets sold. <b>Utilization</b> is how much of a lending pool is lent out; above about 90% the borrow rate jumps. <b>Carry</b> is earning the difference between two rates. <b>Curator</b> is the firm that decides where a vault's money goes. <b>Share price</b> is how much BTC one vault share is worth; its growth is the yield you actually got.</p>
+  </div>
+</div></section>
+
+<div class="wrap part" id="p1"><div class="k">Part I</div><h2>How the trade works, and why it is hard to make it pay</h2><p class="lede">Four steps, each with its own way to fail. Then the arithmetic, which is where most of the trouble is.</p></div>
+
+<section id="carry"><div class="wrap">
+  <div class="steps4">
+    <div class="s"><div class="n">STEP 1</div><div class="t">You deposit BTC</div><div class="x">It is wrapped into a token that works on the chain where the vault lives: kBTC, cbBTC, WBTC, LBTC. You get a share token back, and the share price is your yield.</div><div class="w"><b>What can go wrong:</b> the wrapper's custodian or signers. Sky dropped WBTC as collateral in 2024 over a custody change.</div></div>
+    <div class="s"><div class="n">STEP 2</div><div class="t">The vault borrows dollars</div><div class="x">It posts the wrapped BTC as collateral in a lending market and borrows a stablecoin, usually 60 to 65% of the collateral's value.</div><div class="w"><b>What can go wrong:</b> BTC drops 25% and the position is liquidated; or the market runs out of dollars and the borrow rate jumps.</div></div>
+    <div class="s"><div class="n">STEP 3</div><div class="t">It parks the dollars</div><div class="x">In a lending vault, a T-bill token, a credit token, or a trade. The spread between this rate and the borrow rate, times the LTV, is your yield.</div><div class="w"><b>What can go wrong:</b> the parking asset loses its peg. That is what broke in October 2025, at Stream, and at Resolv.</div></div>
+    <div class="s"><div class="n">STEP 4</div><div class="t">It buys BTC with the profit</div><div class="x">Surplus dollars are swapped back into BTC and added to the vault, so each share is worth slightly more BTC over time.</div><div class="w"><b>What can go wrong:</b> the fee. At 25% of a 1.9% gross yield, the operator keeps a third of what the trade makes.</div></div>
+  </div>
+  <div class="cols" style="margin-top:20px">
+    <div class="panel"><h3>The problem: Bitcoin earns nothing, and the loan is not cheap</h3><div class="sub">What lending BTC pays (left bars) is zero. What the borrowed dollars earn is 3.5 to 5% in the safe places, and more only with rewards. Borrowing USDC against BTC costs 4.6 to 4.8%. <a href="https://defillama.com/yields?attribute=stablecoins" target="_blank" rel="noopener">DefiLlama</a></div><div class="chart" id="c-venues"></div><div class="tools"><button class="btn" data-table="c-venues">Table</button></div></div>
+    <div class="panel"><h3>Try the arithmetic</h3><div class="sub">Presets use live numbers from the vaults on this page. Move the sliders.</div>
+      <div class="presets" id="presets"></div>
+      <div class="calc">
+        <div>
+          <label for="i-ltv">How much is borrowed (LTV) <b id="v-ltv">64%</b><input id="i-ltv" type="range" min="20" max="85" value="64" step="1"></label>
+          <label for="i-lltv">Liquidation threshold <b id="v-lltv">86%</b><input id="i-lltv" type="range" min="60" max="95" value="86" step="1"></label>
+          <label for="i-br">Cost of the dollar loan <b id="v-br">3.25%</b><input id="i-br" type="range" min="0.5" max="9" value="3.25" step="0.05"></label>
+          <label for="i-dy">What the parked dollars earn, total <b id="v-dy">6.20%</b><input id="i-dy" type="range" min="2" max="12" value="6.20" step="0.05"></label>
+          <label for="i-inc">of which incentives <b id="v-inc">2.2%</b><input id="i-inc" type="range" min="0" max="6" value="2.2" step="0.05"></label>
+          <label for="i-fee">Operator's performance fee <b id="v-fee">25%</b><input id="i-fee" type="range" min="0" max="40" value="25" step="1"></label>
+        </div>
+        <div class="out">
+          <div class="o big"><div class="l">What you get, in BTC per year</div><div class="v" id="o-net">1.41%</div></div>
+          <div class="o"><div class="l">Before the fee</div><div class="v" id="o-gross">1.89%</div></div>
+          <div class="o"><div class="l">Spread on the loan</div><div class="v" id="o-spread">2.95%</div></div>
+          <div class="o"><div class="l">If incentives stopped</div><div class="v" id="o-org">0.37%</div></div>
+          <div class="o"><div class="l">BTC drop that liquidates</div><div class="v" id="o-buf">26%</div></div>
+        </div>
+      </div>
+      <p class="note" style="margin-top:10px">Single loan, no re-borrowing: yield = (parking rate minus borrow rate) × LTV × (1 minus fee). Buffer = 1 minus LTV divided by the threshold. The Kraken preset reproduces the 1.40% the vault has actually delivered.</p>
+    </div>
+  </div>
+  <div class="panel flow" style="margin-top:16px"><h3>Who does what</h3><div class="sub">Every product in this category is assembled from the same five layers. The margin sits in layers 1 and 4.</div>
+    <svg viewBox="0 0 520 470" style="max-width:760px" role="img" aria-label="Five layers of collateral carry">
+      <g>
+        <rect class="box" x="10" y="10" width="500" height="64" rx="8"/><text class="lbl" x="24" y="32">1 · Distribution</text><text class="sm" x="24" y="50">Kraken, Coinbase, Bitget, Ledger, Lombard's app, your own wallet</text><text class="cap" x="24" y="66">the brand, the KYC, the app, and the 25% performance fee</text>
+        <rect class="box" x="10" y="94" width="500" height="64" rx="8"/><text class="lbl" x="24" y="116">2 · The BTC wrapper</text><text class="sm" x="24" y="134">kBTC, cbBTC, WBTC, LBTC, FBTC, sBTC, tBTC, or native BTC with a custodian</text><text class="cap" x="24" y="150">risk: whoever holds the keys</text>
+        <rect class="box" x="10" y="178" width="500" height="64" rx="8"/><text class="lbl" x="24" y="200">3 · Vault plumbing</text><text class="sm" x="24" y="218">Veda $1.84B, Concrete $1.23B, Upshift and August $410M, Midas, Aera, IPOR Fusion</text><text class="cap" x="24" y="234">commoditized, takes basis points</text>
+        <rect class="box" x="10" y="262" width="500" height="64" rx="8"/><text class="lbl" x="24" y="284">4 · The curator</text><text class="sm" x="24" y="302">Sentora (Kraken, Lombard), Gauntlet (Bitget), ether.fi, Hyperithm, Tesseract, Re7</text><text class="cap" x="24" y="318">picks the borrow market and the parking spot. This is where the money is made or lost</text>
+        <rect class="box" x="10" y="346" width="500" height="110" rx="8"/><text class="lbl" x="24" y="368">5 · The markets</text>
+        <text class="sm" x="24" y="388">Borrow from: Morpho, Aave, Spark, Tydro (Ink), Zest (Stacks), or a house stablecoin (Mezo, Avalon)</text>
+        <text class="sm" x="24" y="406">Park in: sUSDS, Maple, sUSDe, curated USDC, RLUSD or PYUSD vaults, credit tokens (PRIME, Cap)</text>
+        <text class="cap" x="24" y="428">public infrastructure, no margin</text>
+        <text class="cap" x="24" y="446">today: borrow at 3.1 to 4.8%, park at 3.5 to 6.1% including rewards</text>
+      </g>
+      <path class="f-btc" d="M480 74 v20"/><path class="f-btc" d="M480 158 v20"/><path class="f-btc" d="M480 242 v20"/><path class="f-btc" d="M480 326 v20"/>
+    </svg>
+  </div>
+</div></section>
+
+<div class="wrap part" id="p2"><div class="k">Part II</div><h2>The borrow markets everyone depends on</h2><p class="lede">Whoever packages the vault, the loan is taken in the same few places. This is where the capacity, the price and the concentration of the whole category are decided.</p></div>
+
+<section id="market"><div class="wrap">
+  <div class="cols">
+    <div class="panel"><h3>What gets borrowed against Bitcoin on Morpho, $M</h3><div class="sub">$2.38B in total. USDC is 79% of it and almost all of that is Coinbase. The subsidized RLUSD and PYUSD markets that make the carry vaults work are $341M. <a href="https://api.morpho.org/graphql" target="_blank" rel="noopener">Morpho API</a></div><div class="chart" id="c-loan"></div><div class="tools"><button class="btn" data-table="c-loan">Table</button></div></div>
+    <div class="panel"><h3>The biggest individual markets</h3><div class="sub">Collateral, amount borrowed, LTV and the borrow rate at target utilization</div>
+      <div class="tblwrap"><table id="t-markets"><thead><tr><th>Market</th><th>Chain</th><th class="n">Collateral</th><th class="n">Borrowed</th><th class="n">LTV</th><th class="n">Rate</th></tr></thead><tbody></tbody></table></div>
+    </div>
+  </div>
+  <div class="cols" style="margin-top:16px">
+    <div class="panel"><h3>How fast the rate rises when a pool runs dry</h3><div class="sub">Interest-rate curves. Both kBTC markets sit at their target (90% and 84% lent out). Past 95% the rate more than doubles. <a href="https://app.morpho.org/ethereum/market/0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32" target="_blank" rel="noopener">kBTC/RLUSD on Morpho</a></div><div class="chart" id="c-irm"></div><div class="tools"><button class="btn" data-table="c-irm">Table</button></div></div>
+    <div class="panel"><h3>Coinbase: the biggest borrower of all, and not a yield product</h3>
+      <dl class="kv"><dt>What it is</dt><dd>Coinbase's retail loan. Your BTC becomes cbBTC and is posted to Morpho on Base; you borrow USDC and keep it. <a href="https://morpho.org/stories/coinbase/" target="_blank" rel="noopener">Morpho case study</a></dd><dt>Terms</dt><dd>up to 75% LTV (a 133% collateral ratio), liquidation at 86% with a 4.38% penalty, rate set by Morpho (4.8% today), loans up to $5M. <a href="https://help.coinbase.com/en/coinbase/trading-and-funding/loan/loan-health" target="_blank" rel="noopener">Loan health</a> · <a href="https://help.coinbase.com/en/coinbase/trading-and-funding/loan/collateral" target="_blank" rel="noopener">Collateral</a></dd><dt>Size</dt><dd>$3B+ processed since April 2025, $1.3B active across nine collateral types, 90,000+ users; the cbBTC/USDC market alone holds $3.06B of collateral and $1.43B of debt</dd><dt>Who earns the yield</dt><dd>the USDC lenders, through Morpho vaults curated by Steakhouse: a Core vault and a High Yield vault that took $280M in two months</dd><dt>Why it matters here</dt><dd>Coinbase looked at the same arithmetic and did not build a carry vault. Its own BTC yield fund uses a futures basis trade instead. The 4.8% its borrowers pay is the number that makes the plain carry negative.</dd></dl></div>
+  </div>
+  <div class="cols" style="margin-top:16px">
+    <div class="panel"><h3>The do-it-yourself borrowers</h3><div class="sub">About $76M of the kBTC in Kraken's two markets belongs to other people running the same trade by hand.</div>
+      <dl class="kv"><dt><a href="https://eth.blockscout.com/address/0x28355886A65848488Cf0A3646fca395DB0A762B1" target="_blank" rel="noopener">0x2835…62B1</a></dt><dd>$41.2M kBTC against $26.1M PYUSD (LTV 63%); the same account runs $8.5M cbBTC against EURCV on Morpho and $66M of USDS debt against wstETH on Spark</dd><dt><a href="https://eth.blockscout.com/address/0x8328446602CB4c3b2b4A25BECa6488E947B6f54a" target="_blank" rel="noopener">0x8328…f54a</a></dt><dd>borrows PYUSD against kBTC ($6.2M), weETH ($6.7M) and PRIME itself ($6.4M): the token Kraken parks in is somebody else's collateral</dd><dt>Two more</dt><dd>$8.1M and $6.8M of kBTC at 44 to 62% LTV</dd><dt><a href="https://explorer.inkonchain.com/address/0xacc557354AFDb5132a11Aa8F1972524DA570c044" target="_blank" rel="noopener">Tydro on Ink</a></dt><dd>one account holds 913 kBTC (85% of the market) and has borrowed $45M USDC there, funded since October 2025. It is not the Kraken vault. Only 3.8 kBTC is borrowed on the whole Tydro kBTC market; the wrapper earns 0.01% plus INK rewards</dd></dl>
+      <p class="small" style="margin-top:8px">These accounts share Kraken's rate curve, so they compete with the vault for the same $46M of headroom.</p></div>
+    <div class="panel"><h3>Where the Bitcoin collateral sits, $B</h3><div class="sub">BTC wrappers deposited in lending markets, about $13.6B in total. Morpho is the only one that isolates markets, which is why every carry vault we found uses it, Spark, or a house stablecoin. <a href="https://defillama.com/yields?token=WBTC&token=CBBTC&token=LBTC&token=KBTC&token=TBTC" target="_blank" rel="noopener">DefiLlama</a></div><div class="chart" id="c-mm"></div><div class="tools"><button class="btn" data-table="c-mm">Table</button></div></div>
+  </div>
+  <div class="panel" style="margin-top:16px"><h3>Who issues the wrapped Bitcoin the vaults post as collateral</h3><div class="sub">TVL by issuer, $M, log scale. kBTC grew from $77M to $763M in 14 months; most of that is the Kraken vault. <a href="https://defillama.com/protocol/kraken-bitcoin" target="_blank" rel="noopener">kBTC on DefiLlama</a></div><div class="chart" id="c-wrap"></div><div class="tools"><button class="btn" data-table="c-wrap">Table</button></div></div>
+</div></section>
+
+<div class="wrap part" id="p3"><div class="k">Part III</div><h2>Kraken Bitcoin Vault, opened up on the blockchain</h2><p class="lede">The largest product of its kind, about $521M from 37,589 depositors. Kraken's page says the BTC "is deployed to lending markets where borrowers pay for liquidity". We found the vault contract, followed the money, and read the share price to see what it paid.</p></div>
+
+<section id="kraken"><div class="wrap">
+  <div class="two">
+    <div class="panel"><h3>What Kraken tells you</h3>
+      <dl class="kv"><dt>Product</dt><dd><a href="https://www.kraken.com/bitcoin-vault" target="_blank" rel="noopener">Bitcoin Vault</a>, launched May 27, 2026; about $30M from 4,000 wallets in the first 10 hours. <a href="https://www.coindesk.com/tech/2026/05/26/kraken-unveils-bitcoin-vault-expanding-yield-push-for-btc-holders" target="_blank" rel="noopener">CoinDesk</a> · <a href="https://thecurrencyanalytics.com/bitcoin/kraken-bitcoin-vault-pulls-30-million-from-4000-wallets-in-10-hours-261373" target="_blank" rel="noopener">first-day figures</a></dd><dt>Yield</dt><dd>"up to 2.5%" at launch; 0.88% seven-day average on the page today; 1.8% for the July window per <a href="https://sentora.com/case-studies/kraken-defi-earn-vaults-curated-by-sentora-hit-500m-deposits-milestone-in-under-6-months" target="_blank" rel="noopener">Sentora</a></dd><dt>Fee</dt><dd>25% of rewards, no entry or exit fee. <a href="https://support.kraken.com/articles/bitcoin-vault" target="_blank" rel="noopener">Support article</a></dd><dt>Exit</dt><dd>up to 3 days; "may be delayed if liquidity isn't immediately available"</dd><dt>Who runs it</dt><dd>Sentora manages risk and strategy, Veda administers the vault, Kraken gives access; offered by Payward Wallet, LLC</dd><dt>Where</dt><dd>everywhere Kraken operates except the UK, UAE and Australia; available in the US</dd><dt>If it fails</dt><dd>losses are shared pro rata among vault clients</dd></dl></div>
+    <div class="panel"><h3>What the chain shows</h3>
+      <dl class="kv"><dt>The vault</dt><dd>a Veda BoringVault at <a href="https://eth.blockscout.com/address/0x7dee0120739b7ec048b469939efb178adbbb19b2" target="_blank" rel="noopener" class="mono">0x7dee…19b2</a>; its <span class="mono">name()</span> is "Advanced Strategies BTC", its <span class="mono">symbol()</span> is "sentoraBTC"</dd><dt>Size</dt><dd>6,465 shares on <a href="https://explorer.inkonchain.com/token/0x7dee0120739b7ec048b469939efb178adbbb19b2" target="_blank" rel="noopener">Ink</a>, 37,589 holders, about $521M</dd><dt>The loans</dt><dd>four positions on Morpho, all owned by the vault: $436M of kBTC collateral, $278M borrowed, LTV 63.9%, liquidation at 86%</dd><dt>What it borrows</dt><dd>RLUSD at 3.07% and PYUSD at 3.55%, not USDC. Blended cost 3.25%</dd><dt>Where the dollars go</dt><dd>two thirds into Sentora's own RLUSD and PYUSD lender vaults; one third into Hastra PRIME, a token on Figure's home-equity loans</dd><dt>What it paid</dt><dd>share price 1.0000 on April 20 to 1.00463 today: <b>1.40% annualized since the May 27 launch</b>, 1.31% over 90 days, 0.99% over 30 days, 0.80% over 7 days. <a href="https://explorer.inkonchain.com/address/0x4bb6c416a00561ad6657110b76552c42d55ff1d6?tab=logs" target="_blank" rel="noopener">Accountant events</a></dd><dt>Reconciliation</dt><dd>every dollar of debt is accounted for within $0.1M; about 10% of the shares' value sits on Ink and could not be placed</dd></dl></div>
+  </div>
+  <div class="findings">
+    <div class="f"><div class="big">~75%<small>of the yield</small></div><h3>is a stablecoin subsidy</h3><p>The RLUSD and PYUSD lender vaults pay 6.1% and 5.1%, of which 3.5 and 2.8 points are rewards from Ripple and PayPal. On the organic rate alone the loan costs more than the parking pays: minus 0.45% on RLUSD, minus 1.19% on PYUSD. Without the rewards our model of the vault makes about 0.37% net; with them 1.41%, which is what the share price shows.</p></div>
+    <div class="f"><div class="big">$92.7M<small>in PRIME</small></div><h3>is home-equity credit risk</h3><p>A third of the borrowed dollars were swapped into Hastra PRIME, a token that passes through interest on Figure's HELOC pool. The vault holds 21% of all PRIME on Ethereum, a token with 220 holders and no published redemption terms. <a href="https://app.rwa.xyz/assets/PRIME" target="_blank" rel="noopener">RWA.xyz</a></p></div>
+    <div class="f"><div class="big">$46M<small>of room left</small></div><h3>before the rate curve bites</h3><p>Both borrow markets sit at their target utilization (90% and 84%). Past 95% the borrow rate goes to 8 to 10%, at 100% to 13 to 16%, and the spread is gone. That is about 14% of the vault's size. The two markets are funded by one adapter each, and both adapters draw from the same Sentora vaults the loan is parked in.</p></div>
+  </div>
+  <div class="panel flow" style="margin-top:16px"><h3>The money, contract by contract</h3><div class="sub">Orange is kBTC, blue is RLUSD and PYUSD, purple is PRIME, dotted is profit coming back. Addresses are links to the block explorer.</div>
+    <div style="overflow-x:auto"><svg viewBox="0 0 980 560" style="min-width:760px" role="img" aria-label="Kraken Bitcoin Vault flow of funds">
+      <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="context-stroke"/></marker></defs>
+      <rect class="box" x="20" y="30" width="200" height="70" rx="8"/><text class="lbl" x="34" y="54">37,589 Kraken users</text><text class="sm" x="34" y="72">BTC to kBTC to Ink</text><text class="mn" x="34" y="88">min 0.00006 BTC, fee 25%</text>
+      <rect class="box" x="280" y="30" width="220" height="70" rx="8"/><text class="lbl" x="294" y="54">Vault on Ink</text><text class="sm" x="294" y="72">6,465 shares, 213 kBTC idle</text><a href="https://explorer.inkonchain.com/token/0x7dee0120739b7ec048b469939efb178adbbb19b2" target="_blank" rel="noopener"><text class="mn" x="294" y="88">0x7dee0120…19b2</text></a>
+      <rect class="box" x="560" y="30" width="230" height="70" rx="8"/><text class="lbl" x="574" y="54">Vault on Ethereum</text><text class="sm" x="574" y="72">60 kBTC and 115 WBTC idle</text><a href="https://eth.blockscout.com/address/0x6f80d918aac92f4855e7e77e4aee0c3d6e8153ee" target="_blank" rel="noopener"><text class="mn" x="574" y="88">RolesAuthority 0x6f80…53ee</text></a>
+      <path class="f-btc" marker-end="url(#ar)" d="M220 65 H278"/><path class="f-btc" marker-end="url(#ar)" d="M500 65 H558"/>
+      <path class="f-btc" marker-end="url(#ar)" d="M675 100 V138"/>
+      <rect class="box" x="520" y="140" width="310" height="60" rx="8"/><text class="lbl" x="534" y="162">Four "supervised loan" managers</text><text class="sm" x="534" y="180">type A passes the dollars on as they are; type B swaps them into PRIME</text>
+      <path class="f-btc" marker-end="url(#ar)" d="M600 200 V238"/>
+      <rect class="box" x="380" y="240" width="440" height="96" rx="8"/><text class="lbl" x="394" y="262">Four loans on Morpho (liquidation at 86% LTV)</text>
+      <text class="sm" x="394" y="282">kBTC/RLUSD: $273.9M collateral, $175.8M debt, 3.07%</text>
+      <text class="sm" x="394" y="298">kBTC/PYUSD: $162.0M collateral, $102.5M debt, 3.55%</text>
+      <a href="https://eth.blockscout.com/address/0x0774b5B15B0CEe5E2e14814CCF4d4611fF78CcF5" target="_blank" rel="noopener"><text class="mn" x="394" y="318">0x0774…CcF5 · 0x7fB9…205E · 0xd18D…d986 · 0x1E8f…9489 (Blockscout)</text></a>
+      <path class="f-st" marker-end="url(#ar)" d="M380 300 H300 V370"/>
+      <path class="f-st" marker-end="url(#ar)" d="M820 300 H880 V370"/>
+      <rect class="box" x="120" y="372" width="360" height="86" rx="8"/><text class="lbl" x="134" y="394">Leg A: Sentora's own lender vaults</text>
+      <text class="sm" x="134" y="412">Sentora RLUSD Main: 123.36M shares = $124.9M</text><text class="sm" x="134" y="428">Paypal USD Main: 30.10M shares = $60.8M</text>
+      <a href="https://app.morpho.org/ethereum/vault/0x6dC58a0FdfC8D694e571DC59B9A52EEEa780E6bf/sentora-rlusd-main" target="_blank" rel="noopener"><text class="mn" x="134" y="446">0x6dc5…e6bf · 0xb576…9fb2 · 66.7% of the debt</text></a>
+      <rect class="box" x="640" y="372" width="320" height="86" rx="8"/><text class="lbl" x="654" y="394">Leg B: Hastra PRIME (Figure HELOCs)</text>
+      <text class="sm" x="654" y="412">48.12M + 39.31M PRIME × $1.06 = $92.7M</text><text class="sm" x="654" y="428">21% of all PRIME on Ethereum, 220 holders</text>
+      <a href="https://eth.blockscout.com/token/0x19ebb35279A16207Ec4ba82799CC64715065F7F6" target="_blank" rel="noopener"><text class="mn" x="654" y="446">0x19eb…F7F6 · 33.3% of the debt</text></a>
+      <path class="f-rwa" marker-end="url(#ar)" d="M760 200 H940 V370"/>
+      <path class="f-st" marker-end="url(#ar)" d="M300 372 V336 H378"/>
+      <text class="cap" x="24" y="356">these vaults also fund 100%</text><text class="cap" x="24" y="340">of the kBTC borrow markets</text>
+      <rect class="box" x="120" y="480" width="840" height="56" rx="8"/><text class="lbl" x="134" y="502">Harvesters swap surplus dollars into kBTC and send it back to the vault</text>
+      <text class="sm" x="134" y="520">Debt was repaid on Jun 4 ($10.0M), Jun 24 ($6.0M), Jul 1 ($5.3M), Aug 12 ($6.4M), Sep 4 ($3.5M): always after a drop, never liquidated.</text>
+      <path class="f-y" d="M300 458 V480"/><path class="f-y" d="M800 458 V480"/>
+    </svg></div>
+    <p class="note" style="margin-top:8px">Position contracts: <a href="https://eth.blockscout.com/address/0x0774b5B15B0CEe5E2e14814CCF4d4611fF78CcF5" target="_blank" rel="noopener">RLUSD-1</a>, <a href="https://eth.blockscout.com/address/0x7fB9f8F775e3Ff458ce5D9d146f36e9e4639205E" target="_blank" rel="noopener">RLUSD-2</a>, <a href="https://eth.blockscout.com/address/0xd18DF3c05D2D11BDeDBd9F7501f651e43b9bd986" target="_blank" rel="noopener">PYUSD-1</a>, <a href="https://eth.blockscout.com/address/0x1E8f4752209A50eFE5b6126f5c534dC7018d9489" target="_blank" rel="noopener">PYUSD-2</a>. Parking contracts: <a href="https://eth.blockscout.com/address/0xb03d620e49b6a21ea9d02142831c3f61c2fcbabc" target="_blank" rel="noopener">RLUSD-A</a>, <a href="https://eth.blockscout.com/address/0x3884f27b834de0413e4fe703fe35d1d43b9a124a" target="_blank" rel="noopener">RLUSD-B (PRIME)</a>, <a href="https://eth.blockscout.com/address/0x4dd13fba19ac587d041646d0d941b1aa18d58c2f" target="_blank" rel="noopener">PYUSD-A</a>, <a href="https://eth.blockscout.com/address/0xef8068287f1a0fc19159bdd43e283beee877950b" target="_blank" rel="noopener">PYUSD-B (PRIME)</a>. Market funding: <a href="https://eth.blockscout.com/address/0x3C6EAB22cFc03fc32AD1bf836f2F886A5015DFFF" target="_blank" rel="noopener">RLUSD adapter</a>, <a href="https://eth.blockscout.com/address/0xc2A11ba52aD80124cCC60774c881f93738f334d4" target="_blank" rel="noopener">PYUSD adapter</a>.</p>
+  </div>
+  <div class="cols" style="margin-top:16px">
+    <div class="panel"><h3>Where each dollar of yield comes from</h3><div class="sub">For each leg: what the parked dollars earn (lighter part is rewards) against what the loan costs. Rates from <a href="https://defillama.com/yields?token=RLUSD&token=PYUSD" target="_blank" rel="noopener">DefiLlama</a>; PRIME is our estimate from Figure's published pool rate.</div><div class="chart" id="c-legs"></div><div class="tools"><button class="btn" data-table="c-legs">Table</button></div></div>
+    <div class="panel"><h3>The vault's first month was a 21% drawdown</h3><div class="sub">Collateral in the two markets (top) and the BTC price with debt repayments marked (bottom). BTC fell 21.3% in the 30 days after launch; the vault was never liquidated. Collateral from <a href="https://defillama.com/yields/pool/eef5045a-8980-4eeb-a560-186ba64091d1" target="_blank" rel="noopener">DefiLlama</a>, repayments from Blockscout transfers.</div>
+      <div class="chart" id="c-coll"></div>
+      <div class="chart" id="c-px" style="margin-top:6px"></div>
+      <div class="tools"><button class="btn" data-table="c-coll">Table</button></div>
+      <p class="small" style="margin-top:8px">Repayments came after the drops, not during them. The buffer of 22 to 30 points below the liquidation threshold absorbed the move. The other side of that: the markets it borrows from are 84 to 90% lent out, so a fast repayment means pulling dollars out of the very Sentora vaults the loan is parked in.</p>
+    </div>
+  </div>
+</div></section>
+
+<div class="wrap part" id="p4"><div class="k">Part IV</div><h2>The other vaults, and what they really paid</h2><p class="lede">Same method as Kraken: find the vault contract, read what it holds, follow the dollars, and read the share price. Where we could not see through, the badge says so. Sizes are what the chain shows.</p>
+  <div class="legend" style="margin-top:12px"><span class="st good"><i></i>Verified on-chain: positions and balances read from contracts</span><span class="st warn"><i></i>Partly verified: collateral visible, the borrow side is not</span><span class="st ser"><i></i>From documentation: parameters from the project's docs, not observed on-chain</span></div></div>
+
+<section id="vaults"><div class="wrap">
+  <div class="panel"><h3>Realized, not advertised</h3><div class="sub">Share price of one vault share in BTC, read from each vault's accountant contract. Growth is the yield the depositor actually received before anything else. Kraken starts at its April deployment; the public launch was May 27.</div>
+    <div class="chart" id="c-rate"></div><div class="tools"><button class="btn" data-table="c-rate">Table</button></div>
+    <div class="tblwrap" style="margin-top:10px"><table id="t-realized"><thead><tr><th>Vault</th><th class="n">Share price now</th><th class="n">Last 30 days, annualized</th><th class="n">Last 90 days</th><th class="n">Last year</th><th class="n">Advertised</th></tr></thead><tbody></tbody></table></div>
+    <p class="note" style="margin-top:8px">Accountant contracts: <a href="https://explorer.inkonchain.com/address/0x4bb6c416a00561ad6657110b76552c42d55ff1d6?tab=logs" target="_blank" rel="noopener">Kraken (Ink)</a>, <a href="https://eth.blockscout.com/address/0x28634d0c5edc67cf2450e74dea49b90a4ff93dce?tab=logs" target="_blank" rel="noopener">Lombard LBTCv</a>, <a href="https://eth.blockscout.com/address/0xea23ac6d7d11f6b181d6b98174d334478adae6b0?tab=logs" target="_blank" rel="noopener">ether.fi Liquid BTC</a>. Lombard's own page quotes 2.01% for LBTCv; the contract shows 0.98% over the last year and 0.44% over the last 90 days, before the new credit strategy started paying in mid-September.</p>
+  </div>
+  <div class="panel" style="margin-top:16px"><h3>Monthly yield of the smaller vaults, % APY</h3><div class="sub">DefiLlama's monthly averages. Mezo Earn's line is almost entirely MEZO token rewards; yoBTC has paid nothing since May. <a href="https://defillama.com/yields?token=BTC" target="_blank" rel="noopener">DefiLlama</a></div><div class="chart" id="c-vapy"></div><div class="tools"><button class="btn" data-table="c-vapy">Table</button></div></div>
+  <div class="panel" style="margin-top:16px"><h3>Side by side</h3><div class="sub">The carry vaults at a glance. Click a name to jump to its card.</div>
+    <div class="tblwrap"><table id="v-compare"><thead><tr><th>Vault</th><th>Borrows</th><th>Parks the dollars in</th><th class="n">LTV</th><th class="n">Pays</th><th class="n">Size</th><th>Checked</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="vaults" id="vaults-grid"></div>
+</div></section>
+
+<div class="wrap part" id="p5"><div class="k">Part V</div><h2>What has broken, and what changed under the trade</h2></div>
+
+<section id="inc"><div class="wrap">
+  <div class="cols">
+    <div class="panel"><h3>The dollars earn half what they did a year ago, % APY</h3><div class="sub">Monthly averages of the parking venues. The carry peaked in September 2025; the October deleveraging and lower rates broke it. Only the subsidized vaults stay above 5%. Source: DefiLlama pool histories.</div><div class="chart" id="c-apy"></div><div class="tools"><button class="btn" data-table="c-apy">Table</button></div></div>
+    <div class="panel"><h3>Meanwhile the carry side keeps growing, $M</h3><div class="sub">kBTC 10x in 14 months; Sentora from $20M to $2.66B under curation; Maple from $0.28B to $2.98B. Demand does not follow the rate. Source: DefiLlama.</div><div class="chart" id="c-carry"></div><div class="tools"><button class="btn" data-table="c-carry">Table</button></div></div>
+  </div>
+  <div class="panel tl" id="incidents" style="margin-top:16px"></div>
+  <p class="note" style="margin-top:8px">The risk in this trade is almost never Bitcoin itself. It is the asset the dollars were parked in, the price oracle, the operator's key, and the loops between one curator's vaults and another's.</p>
+</div></section>
+
+<div class="wrap part" id="p6"><div class="k">Part VI</div><h2>What to do with this</h2></div>
+
+<section id="so"><div class="wrap">
+  <h3 style="font-size:20px;margin-bottom:12px">If you are building one</h3>
+  <div class="cols3">
+    <div class="panel"><h3>Attack the cost of the loan</h3><p class="small">The gap between 3.25% (Kraken's blended borrow rate) and 1% (Mezo's MUSD) is worth about 1.4 points of gross yield at 64% LTV. It is the only lever that adds yield without adding risk. Routes: your own stablecoin, a subsidy deal with an issuer, or an institutional credit line at 1 to 2%.</p></div>
+    <div class="panel"><h3>Make the collateral itself pay</h3><p class="small">Hermetica gets 5.6% because its sBTC collateral earns 3.5% on its own before the carry. LBTC with the Bitwise covered call as collateral is the only route to 3 to 4% without incentives. The catch: LBTC borrow markets on Morpho are tiny, about $4M against USDC.</p></div>
+    <div class="panel"><h3>Take the empty middle</h3><p class="small">The market is split between 0.5 to 2% (safe and boring: Kraken, ether.fi) and 5 to 14% (opaque: Acre lost 1.24%, Maple is under an injunction). Publish the position addresses, the allocation by leg, and the share of yield that is incentives. Nobody does it, and it costs nothing.</p></div>
+  </div>
+  <div class="callout"><p><b>What we would not do.</b> Park the borrowed dollars in your own lender vault (the Sentora loop). Park them in an RWA token with fewer than 500 holders and no published redemption terms. Re-borrow against the parked dollars. Charge 25% on a yield below 2%. Park in anything that is not the same currency as the debt, which is exactly what failed in October 2025, at Stream and at Resolv.</p></div>
+  <h3 style="font-size:20px;margin:24px 0 12px">If you are depositing into one</h3>
+  <div class="cols">
+    <div class="panel"><h3>The realistic range</h3><p class="small">Measured from share prices, the vaults in this category have paid <b>1 to 2% a year in BTC</b>, and the biggest one is drifting down toward 1%. Getting to 3 to 4% needs collateral that earns on its own or credit risk that should be disclosed. Anything above 5% in BTC is a basis trade, a loan to an institution, or token emissions.</p><p class="small">Demand barely reacts to the rate. Kraken raised $521M on a product paying under 2%; Lombard Bitcoin Earn took 447 BTC in six months. Demand reacts to the brand, how easy it is to get in, and whether anyone has lost money.</p>
+      <div class="tblwrap" style="margin-top:8px"><table><thead><tr><th>Product</th><th class="n">Advertised</th><th class="n">Delivered</th></tr></thead><tbody>
+        <tr><td>Kraken Bitcoin Vault</td><td class="n">up to 2.5%</td><td class="n">1.40% since launch, 0.99% last 30 days</td></tr>
+        <tr><td>Lombard LBTCv</td><td class="n">2.01%</td><td class="n">0.98% last year, 0.44% last 90 days</td></tr>
+        <tr><td>ether.fi Liquid BTC</td><td class="n">2.00%</td><td class="n">1.95% last year, 1.37% last 30 days</td></tr>
+        <tr><td>Acre acreBTC (Re7)</td><td class="n">about 14%</td><td class="n">minus 1.24%, closed</td></tr>
+        <tr><td>Bitget bgBTC</td><td class="n">up to 3%</td><td class="n">not verifiable on-chain</td></tr>
+        <tr><td>Hermetica hBTC</td><td class="n">up to 8%</td><td class="n">5.6% seven-day average</td></tr>
+        <tr><td>Mezo Earn BTC</td><td class="n">2 to 5%</td><td class="n">3.0%, of which 2.9 points are MEZO tokens</td></tr>
+      </tbody></table></div></div>
+    <div class="panel"><h3>Four questions to ask any BTC vault</h3>
+      <div class="qa">
+        <div class="q"><b>Which stablecoin does it borrow, and at what rate?</b> If the answer is a subsidized one (RLUSD, PYUSD), ask what the yield is without the subsidy.</div>
+        <div class="q"><b>Where exactly do the dollars go?</b> A lender vault, a T-bill token, a credit token, a trade. Each fails differently. "DeFi strategies" is not an answer.</div>
+        <div class="q"><b>What has the share price done?</b> Not the APY on the page. The accountant contract's rate history is public for every Veda vault; ask for the equivalent elsewhere.</div>
+        <div class="q"><b>How long does an exit take when the borrow market is 90% lent out?</b> The stated 3 to 5 days assumes liquidity. Ask what happens without it.</div>
+      </div></div>
+  </div>
+</div></section>
+
+<div class="wrap part" id="appx"><div class="k">Appendix</div><h2>Everything else that pays a Bitcoin holder in Bitcoin, and who runs the carry vaults</h2><p class="lede">For context. The main study is the six parts above.</p></div>
+
+<section id="comp"><div class="wrap">
+  <div class="panel"><h3>Every BTC yield product we found, by source of yield and size</h3><div class="sub">Bitcoin in, Bitcoin out. TVL in $M on a log scale, colored by where the yield comes from. Staking is still the largest source by TVL and it is shrinking: Babylon is down 50% from its peak, LBTC 64%, and Lombard replaced staking with covered calls in August 2026.</div><div class="chart" id="c-tvlbar"></div><div class="tools"><button class="btn" data-table="c-tvlbar">Table</button></div></div>
+  <div class="filters" id="fl">
+    <input id="q" type="search" placeholder="Search: product, curator, mechanism…" aria-label="Search the table">
+  </div>
+  <div class="tblwrap"><table id="t-comp"><thead><tr><th>Product</th><th>Source</th><th>How it works</th><th class="n"><button class="btn" data-sort="yv" style="padding:2px 8px">Yield (BTC) ⇅</button></th><th class="n"><button class="btn" data-sort="tvl" style="padding:2px 8px">TVL, $M ⇅</button></th><th>Who runs it</th><th>Rails and custody</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+  <p class="note" id="cnt" style="margin-top:8px"></p>
+  <div class="panel" style="margin-top:20px"><h3>Who runs the carry vaults</h3><div class="sub">Only the firms with a BTC-collateral strategy in production. The big number is BTC under management as the chain shows it.</div>
+    <div class="tblwrap"><table id="t-curators"><thead><tr><th>Firm</th><th class="n">BTC under management</th><th>What they run</th><th>Track record</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="panel" style="margin-top:16px"><h3>The plumbing (not curators)</h3>
+    <div class="tblwrap"><table><thead><tr><th>Platform</th><th class="n">TVL</th><th>BTC vaults on it</th><th>Model</th></tr></thead><tbody>
+      <tr><td><a href="https://docs.veda.tech/" target="_blank" rel="noopener">Veda (BoringVault)</a></td><td class="n">$1.84B</td><td>Kraken Advanced Strategies BTC, Lombard LBTCv and Bitcoin Earn, ether.fi Liquid BTC</td><td>Whitelisted operations, a sanitizer on every call, an accountant that publishes the share price. Its $855M on Ink is the Kraken program.</td></tr>
+      <tr><td><a href="https://www.gauntlet.xyz/p/aera-vault-infrastructure" target="_blank" rel="noopener">Aera (Gauntlet)</a></td><td class="n">$243M</td><td>gtBTC, "supply BTC plus USDC borrow", the engine behind Bitget bgBTC</td><td>Custom vaults per client</td></tr>
+      <tr><td><a href="https://docs.upshift.finance/" target="_blank" rel="noopener">Upshift and August Digital</a></td><td class="n">$410M</td><td>upLBTC, Upshift BTC, Hyperbeat Ultra uBTC; Kraken Institutional since July 2026</td><td>August sub-accounts; curators Sentora, UltraYield, M1, MEV Capital</td></tr>
+      <tr><td><a href="https://midas.app/docs" target="_blank" rel="noopener">Midas</a></td><td class="n">about $700M</td><td>mHyperBTC (Hyperithm), mRe7BTC (Re7); macreBTC1 (Acre)</td><td>NAV-priced tokens, ring-fenced</td></tr>
+      <tr><td><a href="https://tesseract.fi/vaults/" target="_blank" rel="noopener">IPOR Fusion and Tesseract</a></td><td class="n">small</td><td>TESS wBTC Advanced Strategy; Reservoir WBTC loop</td><td>Plasma Vault, dedicated client vaults</td></tr>
+      <tr><td><a href="https://www.theblock.co/post/409516/flow-traders-pilots-lombards-new-bitcoin-backed-credit-strategy-for-stablecoin-borrowing" target="_blank" rel="noopener">Cap and Symbiotic</a></td><td class="n">$47M (LBTC)</td><td>Bitcoin Onchain Credit Strategy, 580 BTC from LBTCv</td><td>BTC as slashable cover for a market maker's stablecoin loan</td></tr>
+      <tr><td><a href="https://app.morpho.org/" target="_blank" rel="noopener">Morpho Blue</a></td><td class="n">$4.9B BTC collateral</td><td>the kBTC, cbBTC and WBTC markets; 25 BTC-denominated vaults holding $23M at about 0%</td><td>Isolated markets, curated Vault V1 and V2</td></tr>
+    </tbody></table></div></div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><b>Method.</b> On-chain: Ethereum and Ink RPC (eth_call), Blockscout API (verified contract names, token balances, transfers, decoded accountant events), Morpho GraphQL (markets, positions, rate curves), Spark pool data. Market data: DefiLlama (protocols, yields, pool histories, stablecoin supplies), Binance daily candles for the BTC price. All rates are for 2026-09-20 and variable. Not obtained: the monthly history of Morpho borrow rates (rate-limited), the exact Ink share of the Kraken strategy (about 10% unplaced), PRIME redemption terms, the borrow side of Bitget's vault, fees at Bitget and CBYF.</p>
+  <p><b>Re-check log.</b> Second pass (2026-09-20): every on-chain figure was pulled again from the contracts and the Morpho API. Corrections: the Paypal USD Main vault APY is 5.14% (2.36% organic plus 2.79% rewards), not 5.22%; the modelled Kraken net yield is 1.41% with incentives and 0.37% without; ether.fi Liquid BTC also holds 54.8 cbBTC on Spark, which is why its collateral is $16.8M and its net assets about $17.8M; the ether.fi fee is stated as "up to 2%" because the fee sheet lists a range; the Lombard credit thresholds are attributed to an independent analysis rather than to Lombard; a "1.13%" figure for Kraken with no primary source was removed; Coinbase's 4.38% liquidation penalty and 133% minimum collateral ratio were added; the 114.97 WBTC idle in the Kraken vault was double-checked against the real WBTC contract and is genuine. Third pass: added realized yields read from the Veda accountant contracts (Kraken 1.40% since launch, LBTCv 0.98% and Liquid BTC 1.95% over the last year), Morpho BTC borrowing broken down by loan asset (USDC $1.87B, RLUSD $199M, PYUSD $142M), Avalon's actual borrowing ($47.6M USDa against $103.6M FBTC) and Mezo's MUSD supply ($29.7M). The "about 70%" subsidy share was restated as "about three quarters" (0.37% of 1.41% is organic).</p>
+  <div class="srcs" id="srcs"></div>
+</div></footer>
+
+<script>
+const D = {"tvl_months":["2025-01","2025-02","2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09"],"tvl":{"Kraken kBTC":[10.5,8.4,12.3,14.2,15.6,16.3,76.7,70.8,74.4,92.3,168.1,238.3,346.1,270.8,276.1,313.8,303.6,371.6,434.0,614.2,762.9],"Lombard LBTC":[1913.5,1590.9,1652.9,1927.4,1933.3,1696.1,1646.8,1513.6,1422.7,1361.8,1077.2,971.0,941.6,691.2,710.2,757.9,706.2,520.3,585.6,691.2,689.9],"SolvBTC":[1392.3,1258.9,1276.4,1251.8,738.2,1053.5,1172.2,1126.2,1148.9,1091.9,1007.4,977.2,872.0,470.5,479.6,478.4,467.7,386.4,418.1,505.1,517.5],"Bedrock uniBTC":[494.4,393.0,378.2,379.1,462.5,477.1,604.7,503.4,514.7,426.4,454.5,434.3,408.2,319.5,320.6,326.9,345.1,250.0,299.7,345.8,373.3],"Babylon":[5945.4,4711.0,4340.9,4614.8,4960.8,4888.8,5192.3,6162.4,6661.4,6251.3,5046.8,5392.2,4898.8,3275.3,3496.6,3924.0,3767.2,3091.5,2747.1,3043.7,3330.8],"Yield Basis":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.2,150.9,143.6,204.6,213.9,142.7,152.3,160.0,138.2,111.9,133.7,154.5,132.5],"Maple":[279.7,297.0,444.3,735.8,1306.7,1646.3,1986.9,2047.9,2590.7,3198.6,2656.5,2481.3,2535.8,2038.0,2491.2,1848.8,2025.0,2308.1,2248.9,2984.1,2982.8],"ether.fi Liquid":[2026.0,1408.0,1166.6,1198.6,1041.5,968.0,1221.0,1289.2,1181.4,989.4,665.7,645.1,591.8,346.4,430.9,306.3,216.8,163.4,244.5,414.5,434.5],"Lombard Vaults":[126.6,235.3,188.2,137.7,147.5,82.5,83.5,59.1,42.6,68.5,70.5,29.1,36.8,21.4,36.0,61.8,61.9,35.8,26.2,70.8,74.1],"Veda":[2851.4,2530.4,2273.8,2322.9,2561.9,3553.4,3985.5,4196.7,6145.2,3164.9,1936.8,1740.1,1462.5,996.5,1228.0,993.5,1086.0,1036.5,1283.3,1689.8,1844.4],"Function FBTC":[1435.6,1144.3,1233.2,1423.0,1497.3,1510.6,1517.5,1331.5,1403.6,1298.4,1068.4,976.0,922.8,733.1,732.9,839.2,792.4,511.0,549.4,665.9,676.3],"Lorenzo enzoBTC":[131.2,223.9,238.6,552.8,280.9,314.2,203.9,439.4,639.2,637.2,554.4,486.0,505.4,395.4,400.0,458.2,443.3,365.2,460.9,469.6,485.4],"Stacks sBTC":[104.9,255.8,249.2,285.6,521.7,543.2,591.1,541.8,502.3,475.9,398.1,397.2,382.0,298.3,271.1,313.3,218.3,176.2,187.3,190.3,199.5],"tBTC":[498.0,386.0,374.9,442.9,343.0,579.0,673.1,638.9,678.5,645.0,548.6,433.1,500.4,388.2,403.4,415.3,365.1,306.2,317.9,346.0,352.9],"Sentora (curator)":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,19.7,252.1,674.0,591.0,681.4,1356.5,1972.2,1553.9,1572.5,2065.9,2150.4,2434.4,2656.7],"Steakhouse (curator)":[415.1,454.3,576.1,490.7,679.7,744.5,857.0,1258.7,1348.5,1559.5,1342.7,1466.7,1985.2,1601.2,1767.4,1439.0,2198.9,2138.1,2976.4,2994.3,3114.2],"Gauntlet (curator)":[925.1,649.0,653.9,621.2,655.3,937.1,1382.2,1400.8,1367.6,2343.1,1451.3,1187.3,1550.1,1340.0,1178.9,1468.7,1472.9,1412.0,1419.2,1498.5,1628.8],"Bitget bgBTC":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,54.3,45.4,44.1,42.1,0.0,0.0,0.0,0.0,0.0,0.0,87.1,114.4],"Mezo Earn":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,52.7,49.5,52.9,63.7,65.3],"Avalon CeDeFi":[142.5,115.7,111.7,128.3,139.7,148.0,160.6,148.7,153.7,148.6,123.9,121.0,114.8,89.9,90.8,103.1,104.3,81.9,83.3,100.0,103.2],"Solv Basis":[26.3,9.7,19.7,33.6,144.7,201.4,152.3,249.9,325.9,315.0,234.5,232.6,169.8,189.8,159.1,202.2,182.7,147.7,159.8,192.3,198.7],"Upshift":[120.4,111.0,233.2,195.1,268.6,296.2,354.9,339.0,352.7,291.4,422.6,474.9,378.3,315.2,316.4,250.6,293.4,260.0,279.9,380.7,410.5],"Concrete":[0.0,551.4,717.2,812.9,495.1,37.3,7.4,7.1,46.4,948.4,871.8,962.9,926.6,773.2,990.5,1024.2,929.1,771.4,869.5,1153.8,1226.9]},"apy_months":["2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09"],"apy":{"sUSDS":[4.5,4.5,4.73,4.75,4.71,4.47,4.13,4.0,4.0,3.81,3.72,3.64,3.6,3.58,3.52,3.59],"Maple USDC":[null,9.16,9.14,9.13,8.41,6.89,6.39,5.43,4.78,4.41,4.55,4.84,4.83,4.95,4.89,5.0],"sUSDe":[4.89,6.38,7.61,7.08,4.23,5.17,4.41,4.76,3.75,3.49,4.19,3.8,3.86,3.98,4.33,4.78],"Steakhouse USDC (Base)":[null,null,null,null,null,null,5.63,4.97,3.62,3.72,4.16,4.35,4.46,4.39,4.36,4.32],"Sentora RLUSD v2":[null,null,null,null,null,null,null,null,null,5.97,6.25,5.16,5.64,5.91,6.36,6.03],"Sentora PYUSD":[null,null,null,null,null,null,4.85,6.76,4.82,5.0,5.8,5.26,5.01,5.14,5.88,5.77],"Aave USDC":[4.01,3.81,4.3,4.48,3.7,4.19,3.29,3.63,2.44,1.99,4.97,3.57,3.15,3.25,3.37,3.57],"LBTC (Lombard)":[null,null,null,null,null,null,null,0.41,0.4,0.38,0.38,0.35,0.33,0.33,0.29,0.19]},"kbtc_days":["2026-05-15","2026-05-16","2026-05-17","2026-05-18","2026-05-19","2026-05-20","2026-05-21","2026-05-22","2026-05-23","2026-05-24","2026-05-25","2026-05-26","2026-05-27","2026-05-28","2026-05-29","2026-05-30","2026-05-31","2026-06-01","2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-08","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14","2026-06-15","2026-06-16","2026-06-17","2026-06-18","2026-06-19","2026-06-20","2026-06-21","2026-06-22","2026-06-23","2026-06-24","2026-06-25","2026-06-26","2026-06-27","2026-06-28","2026-06-29","2026-06-30","2026-07-01","2026-07-02","2026-07-03","2026-07-04","2026-07-05","2026-07-06","2026-07-07","2026-07-08","2026-07-09","2026-07-10","2026-07-11","2026-07-12","2026-07-13","2026-07-14","2026-07-15","2026-07-16","2026-07-17","2026-07-18","2026-07-19","2026-07-20","2026-07-21","2026-07-22","2026-07-23","2026-07-24","2026-07-25","2026-07-26","2026-07-27","2026-07-28","2026-07-29","2026-07-30","2026-07-31","2026-08-01","2026-08-02","2026-08-03","2026-08-04","2026-08-05","2026-08-06","2026-08-07","2026-08-08","2026-08-09","2026-08-10","2026-08-11","2026-08-12","2026-08-13","2026-08-14","2026-08-15","2026-08-16","2026-08-17","2026-08-18","2026-08-19","2026-08-20","2026-08-21","2026-08-22","2026-08-23","2026-08-24","2026-08-25","2026-08-26","2026-08-27","2026-08-28","2026-08-29","2026-08-30","2026-08-31","2026-09-01","2026-09-02","2026-09-03","2026-09-04","2026-09-05","2026-09-06","2026-09-07","2026-09-08","2026-09-09","2026-09-10","2026-09-11","2026-09-12","2026-09-13","2026-09-14","2026-09-15","2026-09-16","2026-09-17","2026-09-18","2026-09-19","2026-09-20"],"kbtc_rlusd":[0.0,0.0,0.0,0.0,0.0,0.0,0.1,1.4,3.8,5.2,8.4,13.2,13.0,37.2,37.1,38.7,37.3,60.7,58.0,56.1,54.3,62.1,61.2,62.2,89.7,86.7,86.5,96.2,101.6,103.6,105.1,106.4,105.2,103.3,115.4,116.2,117.3,117.4,124.2,122.1,118.9,128.3,131.3,131.6,129.8,132.6,133.2,137.4,139.7,142.7,144.2,144.6,146.7,157.3,153.5,163.3,165.1,166.0,164.6,159.6,171.5,174.8,175.1,175.9,177.3,181.4,185.7,188.1,188.6,186.0,183.3,182.7,185.0,184.5,182.6,184.8,188.1,182.1,179.4,180.8,181.4,183.7,196.9,196.0,197.8,197.8,197.9,202.8,201.5,200.7,201.1,199.0,199.7,198.8,203.6,204.7,219.3,230.4,248.5,244.5,246.5,246.2,246.3,245.5,250.8,242.7,244.4,245.3,246.3,242.3,241.7,254.4,254.7,255.0,255.5,252.5,252.7,250.9,251.3,275.2,275.8,274.1,280.9,270.3,270.5,272.8,290.0,290.4,288.0],"kbtc_pyusd":[0.8,0.8,0.8,0.8,0.8,0.8,1.1,1.1,1.1,1.1,1.1,1.1,1.1,21.1,32.9,37.1,36.3,34.9,45.7,57.4,55.7,56.8,56.1,56.9,66.5,82.9,90.2,91.4,92.9,94.6,96.1,97.2,103.4,103.9,103.7,104.4,105.3,105.5,105.8,103.9,105.5,103.6,103.9,104.1,102.7,114.2,110.4,115.8,117.7,120.2,121.5,121.8,123.6,124.4,121.4,124.6,126.1,126.8,125.7,121.9,128.0,127.6,125.8,126.2,127.2,127.4,127.9,129.6,129.9,132.0,130.1,129.6,131.3,134.9,133.5,133.6,135.6,131.0,131.1,132.2,132.6,134.3,135.0,134.3,135.6,135.6,135.6,138.1,149.9,153.0,153.3,151.7,152.2,152.4,156.1,164.0,183.9,193.0,194.0,190.8,192.4,195.0,194.7,194.1,198.3,191.8,192.8,193.5,194.0,190.7,190.2,207.0,199.5,199.7,200.1,197.7,190.4,189.0,186.5,186.8,187.2,186.0,208.6,200.8,200.9,210.6,223.8,224.0,222.2],"btc_px":[79113,78148,77458,77002,76834,77552,77616,75540,76752,77065,77322,75930,74449,73618,73461,73884,73674,71409,66761,64143,63886,61056,60885,63332,63086,61730,61511,63626,63580,64458,65746,66329,65675,64509,62958,63544,64298,63312,64020,62735,61078,59794,60097,60029,59577,60260,58625,60024,61560,62583,63144,63650,64042,63364,62290,63230,64162,63819,63780,62335,65044,64756,63830,63932,64834,64723,65256,66556,66114,65099,64140,64375,65400,63756,63915,63984,64780,62888,62824,63570,63520,64107,64665,64324,64923,64963,64902,63970,63600,63480,63491,63044,63086,62900,64532,64725,69335,73025,78338,77075,77734,78993,78539,79024,80250,77846,78230,77682,78581,77439,77340,81270,79661,79832,80342,79112,78456,78306,76569,77226,77279,76842,78189,75644,76206,76417,80884,81250,80624],"btc_months":["2025-03","2025-04","2025-05","2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09"],"btc_monthly":[82550,94172,104592,107146,115764,108246,114049,109608,90360,87648,78741,66973,68284,76347,73674,58625,62888,78581,80624],"delever":[["2026-05-27",74449,"BORROW",15.7],["2026-05-28",73618,"BORROW",15.4],["2026-05-29",73461,"BORROW",8.4],["2026-06-01",71409,"BORROW",14.1],["2026-06-02",66761,"BORROW",6.8],["2026-06-03",64143,"BORROW",4.1],["2026-06-04",63886,"REPAY",10.0],["2026-06-08",63086,"BORROW",18.7],["2026-06-10",61511,"BORROW",5.6],["2026-06-11",63626,"BORROW",7.6],["2026-06-16",65675,"BORROW",6.7],["2026-06-22",64020,"BORROW",6.7],["2026-06-24",61078,"REPAY",6.0],["2026-06-25",59794,"BORROW",7.0],["2026-07-01",60024,"REPAY",5.3],["2026-07-07",63364,"BORROW",24.1],["2026-08-05",64665,"BORROW",5.1],["2026-08-12",63480,"REPAY",6.4],["2026-08-24",78993,"BORROW",23.8],["2026-08-24",78993,"REPAY",11.1],["2026-09-04",79661,"REPAY",3.5],["2026-09-11",77226,"BORROW",23.9],["2026-09-11",77226,"REPAY",10.0],["2026-09-14",78189,"BORROW",30.1],["2026-09-14",78189,"REPAY",15.0]],"rate_weeks":["2025-09-01","2025-09-08","2025-09-15","2025-09-22","2025-09-29","2025-10-06","2025-10-13","2025-10-20","2025-10-27","2025-11-03","2025-11-10","2025-11-17","2025-11-24","2025-12-01","2025-12-08","2025-12-15","2025-12-22","2025-12-29","2026-01-05","2026-01-12","2026-01-19","2026-01-26","2026-02-02","2026-02-09","2026-02-16","2026-02-23","2026-03-02","2026-03-09","2026-03-16","2026-03-23","2026-03-30","2026-04-06","2026-04-13","2026-04-20","2026-04-27","2026-05-04","2026-05-11","2026-05-18","2026-05-25","2026-06-01","2026-06-08","2026-06-15","2026-06-22","2026-06-29","2026-07-06","2026-07-13","2026-07-20","2026-07-27","2026-08-03","2026-08-10","2026-08-17","2026-08-24","2026-08-31","2026-09-07","2026-09-14"],"rate_L":[1.01497,1.01516,1.01529,1.01551,1.01574,1.01634,1.01675,1.01727,1.01785,1.01805,1.01859,1.01896,1.01932,1.01974,1.02014,1.02054,1.02104,1.02116,1.02157,1.02202,1.0223,1.0226,1.02279,1.02295,1.02301,1.02307,1.02319,1.02331,1.02345,1.02365,1.02368,1.0237,1.02377,1.02382,null,1.02398,1.02405,1.0241,1.02413,1.02414,1.02415,1.02416,1.02421,1.02422,1.02424,1.02428,null,1.02432,1.02444,1.02448,1.02464,1.02467,1.02471,1.02479,1.02527],"rate_E":[1.01409,1.01425,1.01445,1.01466,1.01493,1.01527,1.01543,1.01553,1.01573,1.0161,1.01676,1.01734,1.01782,1.01848,1.01905,1.01965,1.02026,1.02075,1.02117,1.02159,1.02203,1.02245,1.02285,1.02326,1.02365,1.02405,1.02443,1.02482,1.02521,1.0256,1.02599,1.02638,1.02666,1.02711,1.0275,1.02795,1.02832,1.02872,1.02912,1.02951,1.02985,1.03025,1.0307,1.0311,1.03148,1.03173,1.03207,1.03237,1.03268,1.03293,1.03323,1.03329,1.03358,1.03396,1.03425],"rate_K":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.00001,1.00002,1.00002,1.00002,1.00011,1.00037,1.00059,1.00098,1.00139,1.00176,1.00201,1.00229,1.00256,1.00282,1.00307,1.00336,1.00368,1.00388,1.00406,1.00427,1.00447,1.00463],"realized":{"Kraken":{"30d":0.99,"90d":1.31,"365d":null,"since_launch":1.4,"launch_days":116,"rate_now":1.0046285},"LBTCv":{"30d":0.77,"90d":0.44,"365d":0.98,"rate_now":1.02526705},"LiquidBTC":{"30d":1.37,"90d":1.55,"365d":1.95,"rate_now":1.03424999}},"vapy_months":["2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09"],"vapy":{"LBTCv (Lombard)":[null,null,null,null,1.79,0.69,0.67,0.21,0.35,0.1,0.13,0.4,1.07],"Liquid BTC (ether.fi)":[null,null,null,null,2.3,2.11,2.23,2.37,2.34,2.26,1.97,1.4,2.01],"mHyperBTC (Midas)":[null,null,null,null,null,null,null,null,null,2.43,1.92,2.02,1.48],"Mezo Earn BTC":[null,null,null,null,null,null,null,null,0.6,0.75,1.88,3.56,3.03],"avBTC (Avant)":[null,null,null,null,null,null,null,5.12,4.38,4.8,4.62,3.01,2.65],"yoBTC (YO)":[6.5,3.78,1.99,1.88,1.66,1.47,1.19,1.73,0.0,0.0,0.0,0.0,0.0]},"morpho_agg":{"loan":{"USDC":[4051896564.27668,1874191041.2488956,1429167002.3929822],"RLUSD":[332423703.06481445,198545250.32996914,184521771.3870485],"PYUSD":[228806261.44252464,142078251.21624526,139128101.23894867],"USDT":[221872861.34510773,108541876.84006234,74599018.37437215],"EURCV":[38477853.11727967,21334848.092788927,12557153.363322008],"vbUSDC":[11982723.144474776,6945940.618725991,6842699.857373762],"pathUSD":[8929240.359378198,4685446.432605156,4685446.432605156],"EURC":[10668151.259013131,4890404.785748473,3475308.543271301],"cbBTC":[10340164.634191865,6960779.573161564,3510877.879700445],"USDS":[6001614.570003041,3273964.5787527664,3273964.5787527664],"WETH":[1107953.6578858194,635315.685017209,265166.2525577314],"WBTC":[3471837.3483821694,2319671.407639448,1210590.5978363971],"USD₮0":[2444281.217520924,1164266.8499057551,1018244.4432748323],"USDT0":[1701775.3493623629,826888.1787001446,795003.621484191],"eUSD":[941241.2178981955,472573.7734209588,395476.3413640816],"USDe":[585206.769822036,252175.7611632849,252175.7611632849],"wUSDL":[3288.4330636209756,237899.95176645808,237899.95176645808],"tGBP":[409725.9073359426,210870.60778113658,105850.85328234232],"RPL":[804787.5410930385,159987.38724502234,159987.38724502234],"vbUSDT":[295452.90688235447,100995.39689321241,100995.39689321241],"XSGD":[157437.76280314213,99542.86312926553,99542.86312926553],"AUSD":[175430.14293717893,88732.06184723307,88732.06184723307],"LBTC":[56870.94309280509,51597.31227619088,51597.31227619088],"jEUR":[88598.20541616908,49364.746594395816,49364.746594395816],"USDU":[0,0,0],"VCHF":[50072.542016297084,27182.59783420311,27182.59783420311]},"chain":{"Base":[3052684888.2361794,1434235904.7991862],"Ethereum":[1809723522.305925,903859715.1704303],"Circle":[17541738.765751913,10862470.622123152],"Katana":[12278176.051357131,7046936.015619203],"Tempo?":[8929240.359378198,4685446.432605156],"World":[6286741.87060097,3655838.710225924],"Monad?":[13002848.688146101,7957928.133704069],"Arbitrum":[5511521.50853194,2412859.8090906474],"Hyperliquid":[4689489.249419363,1973156.3870858985],"Polygon":[2120316.2737595597,899788.2793883064],"Optimism":[846634.5451488869,521190.17242906924],"Unichain":[77979.30478109095,33633.766280509706]},"col":{"cbBTC":[3913584476.128985,1807577147.4645412],"kBTC":[510146549.81333673,323649872.6259972],"cirBTC":[17541738.765751913,10862470.622123152],"WBTC":[444390584.9964102,210802779.7317434],"vbWBTC":[11954132.668327503,6943695.2542669745],"mHyperBTC":[10508657.137924388,5986174.690891307],"aHyperBTC":[8004474.610831311,4311597.429994045],"LBTC":[6183094.00601004,3140256.0306533715],"SolvBTC":[2912081.3897656025,1210590.5978363971],"UBTC":[4689489.249419363,1973156.3870858985],"wsBTCD":[0,616869.316661645],"tBTC":[2196062.2906232597,643007.8329826032],"uniBTC":[1281698.3164104805,331031.16992000246],"yvvbWBTC":[300057.7851845883,96219.14347158883]}}};
+const C = getComputedStyle(document.documentElement);
+const col = k => C.getPropertyValue('--'+k).trim();
+const fmtM = v => v==null?'n/a':(v>=1000? '$'+(v/1000).toFixed(v>=10000?0:1)+'B' : v>=100? '$'+Math.round(v)+'M' : v>=10? '$'+v.toFixed(1)+'M' : '$'+v.toFixed(2)+'M');
+const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const mf = m => MON[+m.slice(5,7)-1]+' '+m.slice(2,4);
+const df = d => MON[+d.slice(5,7)-1]+' '+(+d.slice(8,10));
+const A = (h,t) => `<a href="${h}" target="_blank" rel="noopener">${t}</a>`;
+const ARCH = {
+  carry:{n:'Collateral carry',c:'s1',r:'0.8 to 2.5%',lo:0.8,hi:2.5,d:'BTC as collateral, borrow a stablecoin, deploy it. Spread times LTV. Kraken, Bitget, ether.fi Liquid BTC, Hermetica, Mezo.'},
+  basis:{n:'Basis, delta neutral',c:'s2',r:'3 to 9%',lo:3,hi:9,d:'Spot versus futures or perps, funding. Coinbase CBYF, Sygnum, Syntetika, BounceBit, Solv.'},
+  stake:{n:'Staking, L2 security',c:'s3',r:'0.2 to 3.5%',lo:0.2,hi:3.5,d:'Emissions of someone else\'s token for security. Babylon, Core, Stacks, Starknet, Botanix.'},
+  credit:{n:'Institutional credit',c:'s4',r:'1.5 to 5%',lo:1.5,hi:5,d:'A credit spread. Maple, Two Prime, Xapo Byzantine, Cap and Flow Traders.'},
+  opt:{n:'Selling volatility',c:'s5',r:'2 to 8%',lo:2,hi:8,d:'Option premium, capped upside. Lombard with Bitwise, Rysk, Binance Dual, the income ETFs.'},
+  lp:{n:'LP fees, incentives',c:'s7',r:'3 to 14%',lo:3,hi:14,d:'AMM fees and token emissions. Yield Basis, Mezo Earn, Zest boosted, points programs.'}
+};
+const SUPPLY = [['Aave WBTC',0.00,2695],['Aave cbBTC',0.00,1476],['Aave LBTC',0.00,217],['Aave tBTC',0.16,138],['Compound WBTC',0.00,388],['Venus BTCB',0.17,366],['Spark cbBTC',0.00,462],['Fluid WBTC',0.11,25],['Morpho BTC vaults (25)',0.05,23]];
+const VENUES = [['Sentora RLUSD v2',6.11,2.62],['Sentora PYUSD',5.14,2.36],['Sirloin USDC (Base)',5.56,2.87],['Maple USDC',5.07,5.07],['sUSDe',4.67,4.67],['Steakhouse USDC',4.35,4.35],['Spark USDC',3.90,3.90],['sUSDS',3.60,3.60],['Aave USDC',3.62,3.62],['BUIDL',3.75,3.75]];
+const MM = [['Aave v3',5.27],['Morpho Blue',4.93],['SparkLend',0.85],['Venus',0.64],['Compound v3',0.60],['JustLend',0.53],['Tydro (Ink)',0.09],['Aave v4',0.09],['Kamino',0.09],['Others',0.46]];
+const WRAP = [['WBTC',9371],['Binance BTCB',5485],['Kraken kBTC',763],['Lombard LBTC',690],['Function FBTC',676],['SolvBTC',517],['Lorenzo enzoBTC',485],['Bedrock uniBTC',374],['tBTC',353],['Gate GTBTC',279],['Nexus BTC',227],['Stacks sBTC',200],['Lombard BTC.b',172],['Bitget bgBTC',114],['Circle cirBTC',73],['OKX xBTC',66]];
+const MARKETS = [['cbBTC / USDC','Base',3042,1429,4.81,'https://app.morpho.org/base/market/0x9103c3b4e834476c9a62ea009ba2c884ee42e94e6e314a26f04d312434191836'],['cbBTC / USDC','Ethereum',712,306,4.56,'https://app.morpho.org/ethereum/market/0x64d65c9a2d91c36d56fbc42d69e979335320169b3df63bf92789e2c8883fcc64'],['kBTC / RLUSD','Ethereum',288,185,3.07,'https://app.morpho.org/ethereum/market/0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32'],['WBTC / USDC','Ethereum',244,112,4.57,'https://app.morpho.org/ethereum/market/0x3a85e619751152991742810df6ec69ce473daef99e28a64ab2340d7b7ccfee49'],['kBTC / PYUSD','Ethereum',222,139,3.55,'https://app.morpho.org/ethereum/market/0xe51f9aaad25d0e755429cf77076b3c2d37cb1228ed81f8a5482f2102c220eef5'],['WBTC / USDT','Ethereum',153,75,2.94,''],['cbBTC / USDT','Ethereum',62,30,2.98,''],['cbBTC / RLUSD','Ethereum',40,11,4.01,''],['cbBTC / EURCV','Ethereum',21,13,2.00,''],['cirBTC / USDC','Circle',18,11,0.03,'']];
+const LEGS = [{n:'A · RLUSD to Sentora RLUSD Main',debt:124.9,borrow:3.07,org:2.62,inc:3.50},{n:'B · RLUSD to Hastra PRIME',debt:51.0,borrow:3.07,org:7.0,inc:0},{n:'A · PYUSD to Paypal USD Main',debt:60.8,borrow:3.55,org:2.36,inc:2.79},{n:'B · PYUSD to Hastra PRIME',debt:41.7,borrow:3.55,org:7.0,inc:0}];
+const IRM = {x:[0,50,70,80,90,95,100],series:[{name:'kBTC/RLUSD (now 90% util)',color:'s1',values:[0.77,2.05,2.56,2.82,3.07,7.98,12.88]},{name:'kBTC/PYUSD (now 84% util)',color:'s2',values:[0.93,2.48,3.10,3.41,3.72,9.74,15.75]},{name:'cbBTC/USDC Base (now 90% util)',color:'s3',values:[1.20,3.18,3.98,4.39,4.79,12.68,20.57]}]};
+const VAULTS = [
+ {n:'Kraken Bitcoin Vault',cmp:['RLUSD 3.07%, PYUSD 3.55% on Morpho','Sentora RLUSD and PYUSD vaults (67%), Hastra PRIME (33%)','64%','1.40% realized','$521M'],ver:'chain',size:'6,465 BTC',sz2:'about $521M, 37,589 holders',tag:'The flagship. A single-cycle loan against kBTC on Morpho, no recursion, run by Sentora on Veda rails. Full trace in the section above.',
+  rows:[['You deposit','BTC on Kraken, wrapped to kBTC, held in an embedded wallet on Ink'],['It borrows','RLUSD at 3.07% and PYUSD at 3.55% on Morpho, LTV 64%, liquidation at 86%'],['Stables go to','67% into Sentora\'s own RLUSD and PYUSD lender vaults, 33% into Hastra PRIME (Figure HELOCs)'],['Pays','share price: 1.40% annualized since launch, 0.99% over the last 30 days; the page shows 0.88% seven-day; net of a 25% performance fee'],['Exit','3 to 5 days, may be delayed under stress'],['Who runs it','Sentora (risk and strategy), Veda (infrastructure), Kraken (distribution)']],
+  verdict:'The best-executed product in the category and the most subsidy-dependent one. Without the Ripple and PayPal lender rewards the model pays 0.39%. The two borrow markets are at 90% and 84% utilization, so there is about $46M of debt headroom left before the rate curve kills the spread.',
+  links:[['Product page','https://www.kraken.com/bitcoin-vault'],['Support article','https://support.kraken.com/articles/bitcoin-vault'],['Sentora write-up','https://sentora.com/research/articles/inside-the-kraken-bitcoin-vault-yield-controls-and-capital-safeguards'],['Vault on Ethereum','https://eth.blockscout.com/address/0x7dee0120739b7ec048b469939efb178adbbb19b2'],['Vault on Ink','https://explorer.inkonchain.com/token/0x7dee0120739b7ec048b469939efb178adbbb19b2'],['kBTC/RLUSD market','https://app.morpho.org/ethereum/market/0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32']]},
+ {n:'Lombard Bitcoin Earn (BTCe) and LBTCv',cmp:['nothing directly; 580 BTC pledged as cover for Flow Traders on Cap','Flow Traders keeps the dollars; depositors get a premium','n/a','0.98% realized (LBTCv, last year)','$72M'],ver:'chain',size:'874 LBTCv',sz2:'about $72M, 5,199 holders; BTCe wraps 447 of them',tag:'The press release says $1B and 38,500 users. The chain shows a 447-share ERC-4626 wrapper on top of Lombard\'s Veda vault, which holds 874 shares.',
+  rows:[['You deposit','LBTC, BTC.b, WBTC or native BTC, receive BTCe, which is a wrapper on LBTCv'],['It borrows','Nothing directly. 580 BTC (two thirds of the vault) is delegated through Symbiotic as slashable coverage so Flow Traders can borrow stablecoins on Cap. 46 LBTC sits idle. About 250 BTC is in positions we could not see on the vault address.'],['Stables go to','Flow Traders\' own trading. Lombard says depositors earn a fixed annual premium and that Bitcoin Earn targets 3 to 4% net; an independent analysis of the Cap contracts puts the premium at 3% a year on the debt, which at a 60% LTV is about 1.8% gross and 1.5% net'],['Pays','Lombard quotes 2.01% for LBTCv and 3 to 4% net for Bitcoin Earn; the share price shows 0.98% over the last year and 0.44% over the last 90 days, before the credit leg started paying in September'],['Exit','LBTC redemption cycle up to 10 days'],['Who runs it','Sentora (manager), Veda (infrastructure), Cap and Symbiotic (credit leg), Lombard (product)']],
+  verdict:'This is not carry in the Kraken sense. Your BTC is not borrowed against, it insures somebody else\'s stablecoin loan, and because the LBTC is what gets slashed, depositors sit in the first-loss position. The thresholds below come from the independent analysis, not from Lombard: a 24.5% BTC drawdown reaches the 80% line where a 12-hour cure window opens; at 90% the loan can be liquidated. Flow Traders is both a borrower on Cap and an investor in it.',
+  links:[['Lombard yield docs','https://docs.lombard.finance/learn/products/yield'],['The Block on the Flow Traders pilot','https://www.theblock.co/post/409516/flow-traders-pilots-lombards-new-bitcoin-backed-credit-strategy-for-stablecoin-borrowing'],['Independent analysis of the Cap structure','https://paragraph.com/@0xblockbooster/how-lombard-sells-caps-institutional-credit-market-to-btc-holders'],['BTCe contract','https://eth.blockscout.com/token/0x3a4baaBf4DC9910596821615e848f0e6545762F3'],['LBTCv vault','https://eth.blockscout.com/address/0x5401b8620E5FB570064CA9114fd1e135fd77D57c'],['Credit strategy token','https://eth.blockscout.com/token/0xf14F678d9c05798ba61652a950a05D74aD2E0A6C']]},
+ {n:'ether.fi Liquid BTC',cmp:['PYUSD and USDC on Spark','stcUSD (Cap), Sentora PYUSD vault','61%','1.95% realized (last year)','$17.8M'],ver:'chain',size:'about $17.8M net',sz2:'221 BTC of net assets; 133.6 shares on Ethereum, more on Optimism',tag:'The same trade as Kraken, executed on Spark instead of Morpho, with the stablecoins going to Cap and, once again, to a Sentora PYUSD vault.',
+  rows:[['You deposit','eBTC, WBTC, LBTC or cbBTC'],['It borrows','5.93M PYUSD and 4.37M USDC on Spark: $10.3M of debt against $16.8M of collateral (153.1 WBTC and 54.8 cbBTC), LTV 61.3%, liquidation threshold 79%, health factor 1.29'],['Stables go to','$6.1M of stcUSD (staked Cap USD) and 2.06M shares of Sentora\'s Paypal USD Main (about $4.2M); plus 13.3 eBTC held outright'],['Pays','share price: 1.95% over the last year, 1.37% over the last 30 days; DefiLlama shows 1.55%'],['Fees and exit','a platform fee of up to 2% a year on assets (ether.fi lists 0 to 2% by vault), no performance fee; withdrawals can be queued'],['Who runs it','ether.fi strategy team on Veda infrastructure']],
+  verdict:'A platform fee of up to 2% a year on a strategy that makes about 2% a year. The construction is identical to Kraken\'s, so the same question applies: how much of the deployment yield is Cap and PayPal incentives, and what happens to a 61% LTV position when the borrowed PYUSD has to be bought back in a hurry.',
+  links:[['Vault docs','https://etherfi.gitbook.io/etherfi/liquid/liquid-btc-yield-vault'],['Fees (help center)','https://help.ether.fi/en/articles/517109-how-liquid-works'],['Vault contract and holdings','https://eth.blockscout.com/address/0x5f46d540b6eD704C3c8789105F30E075AA900726'],['Spark','https://app.spark.fi/']]},
+ {n:'Bitget bgBTC Onchain Earn',cmp:['USDC on Morpho (Morph), amounts not visible','not disclosed','n/a','up to 3%','$67M'],ver:'partial',size:'835 bgBTC on Morph',sz2:'about $67M; 802 of it inside Morpho',tag:'Same architecture, different chain. Gauntlet runs it through its Aera framework; the subsidy comes from an L2 (Morph) rather than a stablecoin issuer.',
+  rows:[['You deposit','BTC on Bitget, wrapped to bgBTC and moved to Morph with Chainlink CCIP'],['It borrows','USDC on Morpho markets on Morph, per Gauntlet and RedStone. Gauntlet sets LTV, liquidation thresholds and caps; the numbers are not published'],['Stables go to','Not disclosed. Morpho\'s public API does not cover Morph, and the Aera "bgBTC-sVault" we found on the explorer has zero supply, so we could not verify the borrow side'],['Pays','"up to 3%" on BTC; the sister USDC vault advertises 18%, which tells you where the incentives are'],['Exit','not published'],['Who runs it','Gauntlet (Aera), RedStone (oracles), Chainlink (proof of reserve and CCIP), Bitget (distribution)']],
+  verdict:'Structurally a Kraken clone with less transparency. 96% of the bgBTC on Morph sits in the Morpho contract, which confirms it is used as collateral, but nothing on-chain tells you what was borrowed or where it went.',
+  links:[['Partnership announcement','https://ffnews.com/news/bitget-unlocks-institutional-defi-yield-for-125m-users-via-morph-gauntlet-and-morpho-partnership'],['RedStone on the mechanics','https://blog.redstone.finance/2026/07/31/redstone-powers-btc-yield-for-the-bitget-ecosystem-on-morph/'],['Aera BTC strategy','https://www.gauntlet.xyz/p/aera-vault-infrastructure'],['bgBTC on Morph','https://explorer.morphl2.io/token/0x31011317764E097b28d159a8145B92BFA453F606']]},
+ {n:'Hermetica hBTC (Stacks)',cmp:['USDCx on Zest','USDh funding trade, STRC','50%','5.6%','$4M'],ver:'docs',size:'about 50 BTC',sz2:'about $4M',tag:'The only carry vault that publishes its parameters, and the most conservative one. It earns more than Kraken because the collateral itself pays.',
+  rows:[['You deposit','BTC or sBTC on Stacks'],['It borrows','USDCx on Zest at a target LTV of 50% (49 to 51% band). Zest liquidates partially at 70% and fully at 75%, with a 5 to 10% penalty'],['Stables go to','USDh, then staked as sUSDh, which is a BTC funding-rate basis trade (backtest average 10.6%, 2023 was 2.8%). Since April 2026 there is also a STRC leg. Delta is held at 1.000, plus or minus 0.001'],['Pays','5.6% seven-day average, "up to 8%"'],['Fees and exit','10% performance fee, nothing else; 0.5% for an express exit; about 80 minutes to native BTC; 5% of daily rewards go to a reserve'],['Who runs it','Hermetica\'s own keepers; self-custodial']],
+  verdict:'The extra yield comes from two places Kraken does not touch: the sBTC collateral earns about 3.5% from dual stacking, and the borrowed dollars go into a funding trade instead of a lending vault. Both are real risk. It is small because Stacks is small.',
+  links:[['Risk controls','https://docs.hermetica.fi/hbtc/how-it-works/risk-controls.md'],['Fees','https://docs.hermetica.fi/hbtc/fees.md'],['Live dashboard','https://app.hermetica.fi/dashboard'],['USDh history','https://docs.hermetica.fi/usdh/historical-performance']]},
+ {n:'Mezo Earn and Mezo Prime',cmp:['MUSD, its own stablecoin, 1% fixed ($29.7M issued)','borrower\'s choice; MUSD savings','up to 90%','3.0% (MEZO rewards)','$65M Earn'],ver:'docs',size:'$65M in Mezo Earn',sz2:'Mezo TVL $72M; Bullish put in 250 BTC',tag:'Attacks the cost of funding instead of chasing deployment yield. A 1% fixed loan changes the arithmetic of the whole category.',
+  rows:[['You deposit','BTC; institutions get a segregated Enclave at Anchorage Digital Bank, no rehypothecation'],['It borrows','MUSD, Mezo\'s own stablecoin, at 1% fixed for the life of the loan, minimum collateral ratio 110%, 0.1% issuance fee'],['Stables go to','wherever the borrower wants; the BTC vault targets 2 to 5%, the stablecoin vault 5 to 10%; veBTC earns protocol fees'],['Pays','Mezo Earn shows 2.96%, of which 2.93 points are MEZO rewards; MUSD in circulation is $29.7M, so the actual borrowing against BTC is small next to the $65M in Earn'],['Exit','no lockup on the loan side; vault terms vary'],['Who runs it','Mezo; custody by Anchorage for Prime']],
+  verdict:'Replace Kraken\'s 3.25% borrow cost with 1% and the same 64% LTV position goes from 1.1% gross to about 2.7%. It is the only lever in this category that adds yield without adding risk. The open question is what supports a 1% rate once MEZO emissions slow down.',
+  links:[['MUSD architecture','https://mezo.org/docs/users/musd/architecture-and-terminology/'],['Fees','https://mezo.org/docs/users/musd/fees/'],['Mezo Prime launch','https://www.coindesk.com/business/2026/04/29/mezo-unveils-institutional-bitcoin-yield-vaults-as-demand-grows-to-put-idle-btc-to-work'],['Mezo Earn on DefiLlama','https://defillama.com/protocol/mezo-earn']]},
+ {n:'Avalon USDa',cmp:['USDa, 8% fixed: $47.6M borrowed against $103.6M FBTC','sUSDa','46% now','loan product','$104M'],ver:'docs',size:'$103M CeDeFi',sz2:'plus $115M in Superearn',tag:'Vertically integrated: its own stablecoin, its own custody, liquidations executed on centralized exchanges.',
+  rows:[['You deposit','FBTC only, for now; max LTV 60%, liquidation at 90%, recovery target 80%'],['It borrows','USDa at a fixed 8%, unaffected by utilization. On-chain: $47.6M of USDa against $103.6M of FBTC, a 46% LTV. <a href="https://defillama.com/protocol/avalon-cedefi" target="_blank" rel="noopener">DefiLlama</a>'],['Stables go to','sUSDa, which is funded by other borrowers\' 8% and Avalon\'s lending revenue; "up to 25%" is promotional, the long-run target is 15%; 7-day cooldown'],['Pays','not a BTC-denominated yield product; it is a loan product'],['Custody','Cobo, Fireblocks, Coinbase Prime; RedStone oracle'],['Who runs it','Avalon Labs']],
+  verdict:'Borrowing at 8% fixed against 3.5 to 5% organic deployment is negative carry. As a source of liquidity for a BTC holder it works; as a yield engine it only works while sUSDa is subsidized by the spread between borrowers and stakers.',
+  links:[['Risk management','https://docs.avalonfinance.xyz/avalon-btcfi-products/cedefi-cdp-usda/risk-management'],['How to use USDa','https://docs.avalonfinance.xyz/avalon-btcfi-products/cedefi-cdp-usda/how-to-use-usda'],['DefiLlama','https://defillama.com/protocol/avalon-cedefi']]},
+ {n:'Acre acreBTC (winding down)',cmp:['via Re7 strategies on Midas','lending and restaking','n/a','minus 1.24%','closed'],ver:'docs',size:'closed',sz2:'share price 1.0002 to 0.9876',tag:'The one documented loss in the category. Advertised around 14%, delivered minus 1.24%.',
+  rows:[['You deposited','BTC, bridged to tBTC through Threshold\'s 51-of-100 signers'],['It did','routed tBTC into macreBTC1, a Re7 strategy on Midas rails, which fed mRe7BTC and mRe7YIELD (lending and restaking)'],['What happened','markdowns on May 11 and June 11, 2026; deposits paused; points stopped on September 1; redemptions stay open'],['Fees','20% of yield, 0.2% bridge fee on the way out'],['Who ran it','Re7 Labs, Midas, Acre']],
+  verdict:'Keep this one as the reference for what "estimated APY" means in this market. The product with the highest advertised number in the category is the only one that has published a realized loss.',
+  links:[['Acre docs (wind-down notice)','https://docs.acre.fi/llms-full.txt'],['Blockworks on the 14% launch','https://blockworks.com/news/acre-btc-yield-ethereum']]},
+ {n:'Tesseract on IPOR Fusion (TESS wBTC)',cmp:['USDC, PYUSD on Morpho and Aave','sUSDe, srUSD loops','n/a','2 to 4% target','a few $M'],ver:'docs',size:'a few million',sz2:'dedicated client vaults',tag:'Literal, small implementations of the idea, run by a MiCA-authorised manager in Helsinki.',
+  rows:[['You deposit','WBTC into a segregated Plasma Vault instance'],['It borrows','USDC or PYUSD on Morpho and Aave with automatic optimisation of the borrow rate and LTV'],['Stables go to','sUSDe, srUSD and similar loops; the vault names say it: "wBTC Dollar Carry", "wBTC Debt Vault Loop sUSDe PYUSD"'],['Pays','2 to 4% gross target; individual vaults show 1.9 to 3.9% on DefiLlama; Reservoir\'s WBTC loop advertised over 16% plus points in 2025'],['Fees','management plus performance, per mandate'],['Who runs it','Tesseract Investment Oy; Reservoir for its own vault']],
+  verdict:'Useful as a template for how the trade looks when someone regulated runs it for a client, not as a benchmark: total size is in the single millions.',
+  links:[['Tesseract vaults','https://tesseract.fi/vaults/'],['Fusion by IPOR','https://fusion.ipor.io/'],['Reservoir loop announcement','https://x.com/ipor_io/status/1967644257340322091']]},
+ {n:'Upshift, Hyperbeat, Midas: the small ones',cmp:['varies','LP, market-neutral trades','n/a','1.4% (mHyperBTC)','under $30M each'],ver:'partial',size:'under $30M each',sz2:'hbBTC $0.9M, upLBTC small, mHyperBTC $28M',tag:'Curated BTC strategies on marketplaces. Small, and their positions are not visible as tokens on the vault addresses.',
+  rows:[['Hyperbeat Ultra UBTC','UBTC on HyperEVM into LP and market-neutral trades, curated by UltraYield (Edge Capital); points from Felix, Silhouette, Upshift'],['Upshift upLBTC','LBTC into carry, LP and lending on Base (Aerodrome, Fluid, Morpho); curators Sentora, UltraYield, M1 Capital, MEV Capital; Kraken Institutional builds dedicated vaults on the same rails since July 2026'],['Midas mHyperBTC','a NAV-priced token on Hyperithm\'s BTC-denominated market-neutral strategy; 1.36% on DefiLlama; also used as collateral in a Morpho market at a 9.8% borrow rate'],['Midas mRe7BTC','Re7\'s BTC staking plus options premia; under $1M']],
+  verdict:'The marketplace model spreads BTC across many small managers. The vaults are opaque in the same way Bitget is: you see the deposit token, not the trade.',
+  links:[['Hyperbeat UBTC vault','https://docs.hyperbeat.org/hyperbeat-earn/ubtc-vault'],['Upshift vault flow','https://docs.upshift.finance/architecture/vault-flow-and-strategy'],['Kraken Institutional and Upshift','https://www.theblock.co/post/408448/kraken-institutional-taps-upshift-to-build-vaults-that-earn-yield-on-idle-bitcoin-eth-and-stablecoins'],['Midas mHyperBTC','https://www.coingecko.com/en/coins/midas-hyperithm-btc']]}
+];
+const PRODUCTS = [
+ {n:'Kraken Bitcoin Vault',u:'https://www.kraken.com/bitcoin-vault',a:'carry',s:1,how:'kBTC on Morpho (RLUSD, PYUSD, LTV 64%); 67% of the debt into Sentora Vault V2s, 33% into Hastra PRIME; no recursion',y:'0.88 (7d) to 1.8 (30d)',yv:1.3,tvl:521,cur:'Sentora',inf:'Veda, Ink and Ethereum, non-custodial kBTC',note:'25% fee, 3 to 5 day exit, no UK, UAE, AU'},
+ {n:'Lombard Bitcoin Earn (BTCe)',u:'https://docs.lombard.finance/learn/products/yield',a:'credit',s:1,how:'Wrapper on LBTCv; 580 BTC delegated as coverage for Flow Traders\' stablecoin loan on Cap',y:'3 to 5 target',yv:4,tvl:36,cur:'Sentora',inf:'Veda, Cap, Symbiotic',note:'447 BTCe on-chain versus "$1B" in PR'},
+ {n:'Lombard LBTCv DeFi Vault',u:'https://eth.blockscout.com/address/0x5401b8620E5FB570064CA9114fd1e135fd77D57c',a:'carry',s:1,how:'LBTC into DEX liquidity and lending; two thirds in the Cap credit strategy',y:'2.01',yv:2.0,tvl:70,cur:'Lombard, Veda',inf:'Veda',note:'874 shares, 5,199 holders'},
+ {n:'ether.fi Liquid BTC',u:'https://etherfi.gitbook.io/etherfi/liquid/liquid-btc-yield-vault',a:'carry',s:1,how:'WBTC and cbBTC on Spark, borrows PYUSD and USDC at 61% LTV, deploys into stcUSD and Sentora PYUSD vault',y:'1.55 to 2.00',yv:1.8,tvl:17.8,cur:'ether.fi',inf:'Veda, Spark',note:'platform fee up to 2% a year'},
+ {n:'Bitget bgBTC Onchain Earn',u:'https://ffnews.com/news/bitget-unlocks-institutional-defi-yield-for-125m-users-via-morph-gauntlet-and-morpho-partnership',a:'carry',s:1,how:'bgBTC into Aera (Gauntlet): supply BTC, borrow USDC on Morpho on Morph',y:'up to 3',yv:3,tvl:67,cur:'Gauntlet',inf:'Aera, Morpho on Morph, Chainlink, RedStone',note:'borrow side not verifiable on-chain'},
+ {n:'Hermetica hBTC (Stacks)',u:'https://docs.hermetica.fi/hbtc/overview',a:'carry',s:1,how:'sBTC on Zest at 50% LTV, borrows USDCx, into USDh funding trade; delta 1.000',y:'5.6',yv:5.6,tvl:4,cur:'Hermetica',inf:'self-custodial, Stacks',note:'10% fee, 5% reward reserve, STRC leg since April 2026'},
+ {n:'Mezo Earn and Mezo Prime',u:'https://mezo.org/docs/users/musd/architecture-and-terminology/',a:'carry',s:1,how:'BTC in an Anchorage Enclave, MUSD at 1% fixed (MCR 110%), vaults on top',y:'2.96 (2.93 in MEZO)',yv:3,tvl:65,cur:'Mezo',inf:'Anchorage (Prime), Mezo L2',note:'Bullish: 250 BTC plus treasury'},
+ {n:'Avalon USDa and Superearn',u:'https://docs.avalonfinance.xyz/avalon-btcfi-products/cedefi-cdp-usda/risk-management',a:'carry',s:1,how:'FBTC (LTV 60%, liquidation 90%) into USDa at 8% fixed, sUSDa on top; liquidation on centralized exchanges',y:'n/a (debt costs 8%)',yv:null,tvl:218,cur:'Avalon',inf:'Cobo, Fireblocks, Coinbase Prime',note:'sUSDa 7-day cooldown'},
+ {n:'Acre acreBTC',u:'https://docs.acre.fi/llms-full.txt',a:'carry',s:1,how:'BTC to tBTC to macreBTC1 (Re7 via Midas) to mRe7BTC and mRe7YIELD',y:'minus 1.24 realized',yv:-1.24,tvl:0.3,cur:'Re7 Labs',inf:'Midas, tBTC',note:'closed after markdowns in May and June 2026'},
+ {n:'Tesseract TESS wBTC (IPOR Fusion)',u:'https://tesseract.fi/vaults/',a:'carry',s:1,how:'WBTC into lending and leveraged carry, borrows and deploys stablecoins',y:'1.9 to 3.9',yv:3,tvl:5,cur:'Tesseract (MiCA CASP)',inf:'IPOR Plasma Vault',note:'dedicated client vaults'},
+ {n:'Midas mHyperBTC',u:'https://www.coingecko.com/en/coins/midas-hyperithm-btc',a:'carry',s:1,how:'NAV token on a BTC-denominated market-neutral strategy',y:'1.36',yv:1.36,tvl:28,cur:'Hyperithm',inf:'Midas',note:'also collateral in a Morpho market at 9.8%'},
+ {n:'Hyperbeat Ultra UBTC',u:'https://docs.hyperbeat.org/hyperbeat-earn/ubtc-vault',a:'carry',s:1,how:'UBTC into LP and market-neutral trades on HyperEVM',y:'variable',yv:null,tvl:0.9,cur:'UltraYield (Edge Capital)',inf:'Upshift, Hyperliquid',note:''},
+ {n:'Upshift upLBTC and Upshift BTC',u:'https://docs.upshift.finance/architecture/vault-flow-and-strategy',a:'carry',s:1,how:'LBTC into carry, LP and lending on Base',y:'variable',yv:null,tvl:1,cur:'Sentora, UltraYield, M1, MEV Capital',inf:'August sub-accounts',note:'Kraken Institutional dedicated vaults since July 2026'},
+ {n:'Zest Stacks Vaults and sBTC lending',u:'https://www.zestprotocol.com/',a:'carry',s:1,how:'sBTC lending plus dual stacking; Bitcoin Collateral Vaults keep BTC on L1 (BitVM); STX incentives of 0.5 BTC a month',y:'4.13 average',yv:4.13,tvl:68,cur:'Zest',inf:'Stacks, self-custodial',note:'1,500+ liquidations, no bad debt'},
+ {n:'Morpho BTC vaults (Gauntlet, Yearn, Re7, MEV, Steakhouse)',u:'https://app.morpho.org/ethereum/earn',a:'carry',s:0,how:'Supply BTC into BTC borrow markets',y:'0.00 to 0.12',yv:0.05,tvl:23,cur:'Gauntlet, Yearn, Re7, MEV Capital, Steakhouse',inf:'Morpho',note:'25 vaults; the largest is Vault Bridge WBTC at $14.8M'},
+ {n:'Concrete ctWBTC and Bitcoin Bera Vault',u:'https://defillama.com/protocol/concrete',a:'lp',s:0,how:'WBTC and LBTC into Dolomite, Kodiak and PoL on Berachain',y:'0 base plus PoL',yv:0,tvl:38,cur:'Concrete',inf:'Concrete',note:''},
+ {n:'Yield Basis ybBTC',u:'https://yieldbasis.com/',a:'lp',s:0,how:'2x leveraged LP in BTC/crvUSD on Curve with the impermanent loss removed; HybridVault since April 2026',y:'3.6 to 7.2 (rewards)',yv:5,tvl:132,cur:'Protocol (Egorov)',inf:'Curve, crvUSD',note:'38.12 BTC of LP income in 2025'},
+ {n:'Solv BTC+ and Solv Strategies',u:'https://docs.solv.finance/key-products/btc+',a:'basis',s:0,how:'Meta-vault: staking, basis, credit, funding, RWA (BUIDL, Hamilton Lane SCOPE)',y:'5 to 8 target',yv:6,tvl:69,cur:'Solv',inf:'CEX, DeFi, RWA',note:'TVL accounting disputed in January 2025'},
+ {n:'Solv Basis Trading',u:'https://defillama.com/protocol/solv-basis-trading',a:'basis',s:0,how:'Basis on centralized exchanges behind SolvBTC',y:'n/a',yv:null,tvl:488,cur:'Solv',inf:'BSC, Ethereum, BOB',note:''},
+ {n:'BounceBit CeDeFi',u:'https://www.bouncebit.io/',a:'basis',s:0,how:'Basis plus put selling through CEFFU plus collateral yield',y:'up to 24 gross',yv:8,tvl:289,cur:'BounceBit',inf:'CEFFU',note:''},
+ {n:'Coinbase Bitcoin Yield Fund',u:'https://www.coinbase.com/blog/coinbase-asset-management-launches-the-coinbase-bitcoin-yield-fund',a:'basis',s:0,how:'Cash-and-carry, spot versus perps and CME; no lending, no call selling',y:'4 to 8 target',yv:6,tvl:null,cur:'Coinbase Asset Management',inf:'Coinbase Custody, token on Base',note:'$1B capacity, monthly, non-US'},
+ {n:'Sygnum and Starboard BTC Alpha',u:'https://www.coindesk.com/business/2026/01/29/sygnum-bank-and-starboard-raise-over-750-btc-for-market-neutral-bitcoin-yield-fund',a:'basis',s:0,how:'Market-neutral fund',y:'8.9 net (Q1)',yv:8.9,tvl:65,cur:'Starboard Digital',inf:'Sygnum (FINMA)',note:'750+ BTC'},
+ {n:'Syntetika hBTC',u:'https://syntetika.io/',a:'basis',s:0,how:'"BTC Basis+", a regulated fund with attested NAV and proof of reserves',y:'11.6 (2025: 20.2)',yv:11.6,tvl:14,cur:'Hilbert Group',inf:'independent custody, Base',note:''},
+ {n:'Laser Digital BDYF (Nomura)',u:'https://www.theblock.co/post/386668/nomuras-laser-digital-tokenized-bitcoin-fund',a:'basis',s:0,how:'Long BTC plus market-neutral arbitrage, lending and options',y:'about 5',yv:5,tvl:null,cur:'Laser Digital',inf:'KAIO, Cayman',note:'$250k minimum'},
+ {n:'Maple BTC Yield',u:'https://maple.finance/insights/btc-yield-now-live',a:'credit',s:0,how:'BTC at Copper or BitGo as collateral for USDC, buys CORE plus a hedge, dual-stakes on Core',y:'5.13',yv:5.13,tvl:180,cur:'Maple',inf:'Copper, BitGo, CTLV',note:'0.40% plus 20% above 5%, 90-day lock, Core Foundation injunction'},
+ {n:'Core lstBTC',u:'https://docs.coredao.org/docs/Learn/liquid-staking/lstBTC/overview',a:'stake',s:0,how:'Dual staking on Core through Maple, BitGo, Copper, Hex Trust; paid in BTC',y:'5 plus target',yv:5,tvl:null,cur:'Maple, Core Foundation',inf:'Hex Trust, BitGo, Copper',note:''},
+ {n:'Two Prime Axiom WBTC (Pareto)',u:'https://www.coindesk.com/markets/2026/09/15/two-prime-makes-onchain-finance-push-with-usd10-million-backed-bitcoin-yield-vault',a:'credit',s:0,how:'Loans to public companies and rated institutions',y:'1.5 to 2',yv:1.75,tvl:12,cur:'Two Prime',inf:'Pareto, ICE, Copper',note:'$12M first loss, 5 WBTC minimum, non-US'},
+ {n:'Xapo Byzantine BTC Credit Fund',u:'https://www.xapobank.com/en/blog/btc-credit-fund',a:'credit',s:0,how:'Structured credit to institutions, no leverage',y:'3.5 to 5 net',yv:4.25,tvl:100,cur:'Hilbert, Xapo Bank',inf:'Xapo (Gibraltar)',note:'accredited'},
+ {n:'Lombard Bitcoin Onchain Credit (Cap, Flow Traders)',u:'https://www.theblock.co/post/409516/flow-traders-pilots-lombards-new-bitcoin-backed-credit-strategy-for-stablecoin-borrowing',a:'credit',s:0,how:'LBTC from Bitcoin Earn delegated on Symbiotic as slashable coverage; Flow Traders borrows on Cap and pays a 3% premium',y:'about 1.5 net',yv:1.5,tvl:47,cur:'Sentora, Lombard',inf:'Cap, Symbiotic, CCIP',note:'launched July 23, 2026; depositors are first loss'},
+ {n:'Babylon',u:'https://babylonlabs.io/',a:'stake',s:0,how:'Native BTC secures PoS networks, rewards in BABY',y:'0.24 to 0.4',yv:0.3,tvl:3331,cur:'Protocol',inf:'self-custodial, timelock',note:'peak $6.66B in September 2025'},
+ {n:'Lombard LBTC (core yield, Bitwise)',u:'https://www.lombard.finance/blog/LBTC-Moves-to-Institutional-Yield-Managed-by-Bitwise/',a:'opt',s:0,how:'OTC covered calls (FalconX, Kraken Institutional, Anchorage), 50 to 60% active, no leverage',y:'2.5 net target',yv:2.5,tvl:690,cur:'Bitwise',inf:'Anchorage Digital Bank, Kraken Institutional',note:'20% fee with high-water mark, redemption up to 10 days'},
+ {n:'Bedrock uniBTC',u:'https://defillama.com/protocol/bedrock-unibtc',a:'stake',s:0,how:'Babylon LRT plus Symbiotic',y:'0.42',yv:0.42,tvl:373,cur:'Bedrock',inf:'18 chains',note:'$2M exploit in September 2024'},
+ {n:'Lorenzo stBTC, enzoBTC, OTFs',u:'https://docs.lorenzo-protocol.xyz/',a:'stake',s:0,how:'Babylon LST plus tokenized funds',y:'n/a',yv:null,tvl:485,cur:'Lorenzo',inf:'n/a',note:''},
+ {n:'Function FBTC',u:'https://defillama.com/protocol/function-fbtc',a:'stake',s:0,how:'Wrapper with staking integrations',y:'n/a',yv:null,tvl:676,cur:'Function',inf:'Antalpha, Mantle',note:''},
+ {n:'Stacks Dual Stacking and sBTC',u:'https://www.stacks.co/',a:'stake',s:0,how:'sBTC plus STX earn PoX rewards',y:'0.36, or 3.56 boosted',yv:1,tvl:200,cur:'Protocol',inf:'Stacks',note:''},
+ {n:'Starknet BTC Staking',u:'https://defillama.com/protocol/starknet-btc-staking',a:'stake',s:0,how:'WBTC, LBTC, tBTC, SolvBTC secure Starknet for STRK',y:'3.8 in STRK',yv:3.8,tvl:47,cur:'Protocol',inf:'Starknet',note:'emissions'},
+ {n:'Botanix stBTC',u:'https://docs.botanixlabs.com/bitcoin-yield',a:'stake',s:0,how:'50% of network gas fees in BTC go to stakers',y:'34 headline, 5 to 6 expected',yv:5.5,tvl:null,cur:'Botanix (16 operators)',inf:'Spiderchain',note:''},
+ {n:'Gate GTBTC',u:'https://defillama.com/protocol/gtbtc',a:'stake',s:0,how:'Exchange BTC LST with internal earn',y:'n/a',yv:null,tvl:279,cur:'Gate',inf:'CEX',note:''},
+ {n:'B² Buzz Farming',u:'https://defillama.com/protocol/buzz-farming',a:'lp',s:0,how:'Farming with Babylon, Lombard and Bedrock on BSquared',y:'n/a',yv:null,tvl:259,cur:'B²',inf:'BSquared',note:''},
+ {n:'Accountable YieldApp cbBTC',u:'https://defillama.com/protocol/accountable',a:'credit',s:0,how:'Unsecured lending with verified borrower data',y:'5.4 to 14',yv:9,tvl:47,cur:'Accountable',inf:'Monad, Citrea',note:'credit risk'},
+ {n:'Symbiotic BTC vaults (uniBTC, LBTC)',u:'https://defillama.com/protocol/symbiotic',a:'stake',s:0,how:'Restaking of BTC LSTs for networks and Cap',y:'0.4 to 1.4 (rewards)',yv:0.9,tvl:135,cur:'Symbiotic',inf:'Ethereum',note:''},
+ {n:'Rysk V12 (HyperEVM)',u:'https://app.rysk.finance/premium/',a:'opt',s:0,how:'On-chain covered calls and cash-secured puts (Opyn)',y:'n/a',yv:null,tvl:57,cur:'Rysk, Hyperion DeFi',inf:'Hyperliquid',note:'$240M plus notional'},
+ {n:'Zeus zBTC and APOLLO (Solana)',u:'https://zeusnetwork.xyz/zbtc',a:'lp',s:0,how:'zBTC with 16 plus yield sources; btcSOL pays out in zBTC',y:'n/a',yv:null,tvl:3.8,cur:'Zeus',inf:'Solana, MPC',note:'acquired by Astarter in April 2026'},
+ {n:'Amboss Magma and Rails (Lightning)',u:'https://amboss.tech/blog/introducing-rails',a:'credit',s:0,how:'Channel leases and routing fees in native BTC',y:'1 to 4',yv:2.6,tvl:300,cur:'Amboss',inf:'Lightning',note:'no counterparty; close to break-even after hosting'},
+ {n:'Nexo BTC Earn',u:'https://nexo.com/eea/earn-crypto/bitcoin',a:'credit',s:0,how:'Omnibus CeFi lending',y:'6.5',yv:6.5,tvl:null,cur:'Nexo',inf:'CeFi',note:'depends on holding NEXO'},
+ {n:'Xapo Bank BTC Savings',u:'https://www.xapobank.com/en/banking/earn',a:'credit',s:0,how:'Bank deposit in BTC',y:'0.25',yv:0.25,tvl:null,cur:'Xapo',inf:'GFSC, UK',note:'USD savings pay 3.35% in BTC'},
+ {n:'Grayscale BTCC and NEOS BTCI (ETFs)',u:'https://etfs.grayscale.com/btcc',a:'opt',s:0,how:'Covered calls on BTC ETPs, paid in USD',y:'47.6 and 33 distribution',yv:null,tvl:1300,cur:'Grayscale, NEOS',inf:'NYSE',note:'BTCC: 100% return of capital'}
+];
+const CURATORS = [
+ {n:'Sentora',u:'https://sentora.com/',sub:'ex-IntoTheBlock plus Trident, $25M Series A',btc:'about $560M',tot:'$2.66B',items:['Kraken Advanced Strategies BTC, $521M, closed loop with its own RLUSD and PYUSD Vault V2s plus PRIME','Lombard Bitcoin Earn, 447 BTCe; the Bitcoin Onchain Credit leg with Cap and Flow Traders','Upshift LBTC vaults, Deel pathUSD, Kraken xStocks vaults','Zero liquidations in three years, 80,000 plus Kraken depositors'],flag:'good',ft:'No losses'},
+ {n:'Bitwise',u:'https://morpho.org/blog/bitwise-joins-the-morpho-network-as-a-curator',sub:'ETF issuer turned curator, January 2026',btc:'about $400M active',tot:'LBTC $690M',items:['LBTC covered calls: 50 to 60% of the backing, OTC with FalconX, Kraken and Anchorage','Manager Gordon Grant: 4.5 years, one negative month','20% fee with a high-water mark; $10M pilot from August 17, full allocation in September 2026','A Morpho USDC vault targeting up to 6%'],flag:'good',ft:'New to DeFi'},
+ {n:'Gauntlet',u:'https://www.gauntlet.xyz/',sub:'Aera, 40 plus vaults',btc:'about $70M',tot:'$1.63B',items:['Bitget bgBTC ("up to 3%") through Aera: supply BTC, borrow USDC','Gauntlet WBTC, cbBTC and LBTC Core vaults on Morpho: $3M at 0.06 to 0.12%','Resolv (March 2026): $6.2M of bad debt on Morpho, 96% of it in Gauntlet vaults','Compound contract until September 2026; Aave engagement ended in 2023'],flag:'ser',ft:'Resolv bad debt'},
+ {n:'Steakhouse Financial',u:'https://www.steakhouse.financial/',sub:'founded 2020; Sky, Lido, Ethena, Coinbase',btc:'lender side only',tot:'$3.11B',items:['Coinbase Loans: the USDC vaults (Prime, plus High Yield at $280M) lending into the $1.43B cbBTC/USDC market','Steakhouse WBTC on Morpho is trivial','Largest Morpho curator, 51 vaults on six chains'],flag:'good',ft:'No BTC strategies'},
+ {n:'Re7 Labs',u:'https://defillama.com/protocol/re7-labs',sub:'risk arm of Re7 Capital, London',btc:'under $5M',tot:'$89M',items:['Acre acreBTC: minus 1.24%, closed (macreBTC1 and mRe7BTC on Midas)','mRe7BTC $0.75M; Re7 WBTC on Morpho $0.1M; Re7 xBTC on Vesu (Starknet) about $4M','Stream and xUSD (November 2025): $27.4M of bad debt on Euler and Morpho'],flag:'crit',ft:'Losses'},
+ {n:'UltraYield (Edge Capital)',u:'https://docs.hyperbeat.org/hyperbeat-earn/ubtc-vault',sub:'market neutral since 2020',btc:'about $1M',tot:'n/a',items:['Hyperbeat Ultra UBTC (hbBTC)','Upshift LBTC and BTC strategies','Midas mEDGE (stablecoins)'],flag:'warn',ft:'Small BTC book'},
+ {n:'Hyperithm',u:'https://www.coingecko.com/en/coins/midas-hyperithm-btc',sub:'Tokyo and Seoul',btc:'$28M',tot:'$229M',items:['Midas mHyperBTC, a BTC-denominated market-neutral token','Hyperbeat USDT0 vaults; cross-protocol strategies on Euler'],flag:'good',ft:''},
+ {n:'MEV Capital',u:'https://defillama.com/protocol/mev-capital',sub:'aggressive strategies',btc:'under $1M',tot:'$11M, down 78% in 30 days',items:['MEV Capital WBTC and cbBTC on Morpho are trivial','An LBTC vault on Upshift was announced','Stream and xUSD exposure in November 2025'],flag:'crit',ft:'Outflows'},
+ {n:'Coinbase Asset Management',u:'https://www.coinbase.com/blog/coinbase-asset-management-launches-the-coinbase-bitcoin-yield-fund',sub:'CBYF and USCBYF',btc:'up to $1B capacity',tot:'n/a',items:['Cash-and-carry, 4 to 8% net; seeded by Aspen Digital (Abu Dhabi)','Monthly subscriptions and redemptions, five business days notice; a tokenized class on Base via Apex'],flag:'good',ft:'Fund'},
+ {n:'Maple',u:'https://maple.finance/insights/btc-yield-now-live',sub:'AUM $4.82B, August 2026',btc:'$180M',tot:'$2.98B TVL',items:['BTC Yield 5.13%: Copper and BitGo custody plus Core dual staking; 90-day lock','lstBTC with Hex Trust, BitGo and Copper','Core Foundation injunction, Cayman Islands, November 20, 2025'],flag:'ser',ft:'Legal risk'},
+ {n:'Hilbert, Starboard, XBTO, Laser Digital',u:'https://syntetika.io/',sub:'regulated funds',btc:'about $250M',tot:'n/a',items:['Hilbert: Syntetika hBTC (plus 20.2% in 2025), Xapo Byzantine 3.5 to 5%','Starboard with Sygnum: 8.9% net, 750 plus BTC','XBTO "Diamond Hands" about 5% for Arab Bank Switzerland; Laser BDYF about 5%'],flag:'good',ft:'TradFi wrappers'},
+ {n:'Two Prime, Solv, Zest, Mezo, Avalon, Hermetica',u:'https://www.zestprotocol.com/',sub:'in-house managers',btc:'about $700M',tot:'n/a',items:['Two Prime: 3,000 plus BTC lent with no defaults, $12M first loss','Solv: the BTC+ meta-vault; Zest: 1,500 plus liquidations without bad debt','Mezo: MUSD at 1% fixed; Avalon: USDa at 8% fixed; Hermetica: 50% LTV, delta 1.0'],flag:'good',ft:'Vertically integrated'}
+];
+const INC = [
+ {d:'Aug 2024',t:'WBTC custody moves toward BiT Global (Justin Sun)',x:'Sky (Maker) cut the WBTC debt ceiling to zero and voted 88% to offboard it. Wrapper risk is political, not technical.',s:'warn',l:'reputational',u:'https://www.coindesk.com/business/2024/08/15/bitgo-reiterates-autonomy-from-justin-sun-tron-as-makerdao-decides-to-dump-wbtc'},
+ {d:'Sep 2024',t:'Bedrock uniBTC minted 1:1 against ETH',x:'A former employee exploited a pricing bug. Wrappers with yield logic are extra attack surface.',s:'ser',l:'$2M',u:'https://thedefiant.io/news/hacks/bedrock-vulnerability-allows-hacker-to-drain-usd2m-from-unibtc-liquidity-pools'},
+ {d:'Jan 2025',t:'Solv accused of counting the same BTC several times',x:'Nubit\'s co-founder alleged pre-signed transactions inflated TVL; Solv called it baseless. BTC LST TVL can be double counted.',s:'warn',l:'reputational',u:'https://beincrypto.com/solv-protocol-dismisses-tvl-inflation/'},
+ {d:'Oct 10 to 14, 2025',t:'The $19 to 20B deleveraging',x:'BTC fell 16.9% in three hours ($123k to $102k), USDe printed $0.65 on Binance, Aave processed $180M of liquidations. The risk was in the deployment asset, not in BTC.',s:'crit',l:'largest ever',u:'https://www.fticonsulting.com/insights/articles/crypto-crash-october-2025-leverage-met-liquidity'},
+ {d:'Nov 4, 2025',t:'Stream Finance xUSD',x:'A $93M loss at an external manager, 7.6x hidden leverage; xUSD to $0.26, deUSD to $0.015, $285M of connected debt, oracles hardcoded at $1.00, Re7 lost $27.4M. Redeposit loops between curators are exactly the shape of the Sentora and PRIME structure.',s:'crit',l:'$285M plus',u:'https://pharos.watch/learn/case-studies/stream-elixir-contagion-2025/'},
+ {d:'Nov 20, 2025',t:'Core Foundation versus Maple',x:'A Cayman Islands injunction over lstBTC and syrupBTC. Partner risk inside a yield product.',s:'ser',l:'legal',u:'https://www.coindesk.com/policy/2025/11/20/core-foundation-wins-injunction-against-maple-finance-on-alleged-confidentiality-breach'},
+ {d:'Mar 22, 2026',t:'Resolv USR: one AWS key minted 80M USR',x:'USR to $0.025; Fluid took $10M plus of bad debt and $300M of outflows in a day; Morpho $6.2M of bad debt, 96% in Gauntlet vaults; Euler, Venus and Lista paused markets.',s:'crit',l:'$25M plus contagion',u:'https://www.halborn.com/blog/post/explained-the-resolv-hack-march-2026'},
+ {d:'Apr 1 and Apr 19, 2026',t:'Drift $285M, KelpDAO $292M',x:'Social engineering, durable nonces, a fake collateral asset. Operational and key risk outranks smart-contract risk. H1 2026: $970M to $1.3B stolen.',s:'crit',l:'$577M',u:'https://www.chainalysis.com/blog/lessons-from-the-drift-hack/'},
+ {d:'May to Jun 2026',t:'Acre acreBTC closes with a loss',x:'Share price 1.0002 to 0.9876 (minus 1.24%), markdowns on May 11 and June 11. "14% estimated" was not what was delivered.',s:'ser',l:'minus 1.24% NAV',u:'https://docs.acre.fi/llms-full.txt'},
+ {d:'Jul 6, 2026',t:'Summer.fi Lazy Summer',x:'A $65M flash loan manipulated ERC-4626 share accounting; $6M taken out of $22M TVL. Share accounting in aggregators is a critical point.',s:'ser',l:'$6M',u:'https://www.coindesk.com/web3/2026/07/06/defi-protocol-summer-fi-halts-lazy-summer-vaults-after-usd6-million-exploit'}
+];
+const SRC = [['Kraken Bitcoin Vault','https://www.kraken.com/bitcoin-vault'],['Kraken support article','https://support.kraken.com/articles/bitcoin-vault'],['Sentora: inside the Kraken Bitcoin Vault','https://sentora.com/research/articles/inside-the-kraken-bitcoin-vault-yield-controls-and-capital-safeguards'],['Sentora: Kraken DeFi Earn at $600M','https://sentora.com/case-studies/kraken-defi-earn-vaults-curated-by-sentora-hit-500m-deposits-milestone-in-under-6-months'],['Morpho: Coinbase','https://morpho.org/stories/coinbase/'],['Morpho: Sentora','https://morpho.org/stories/sentora'],['The Block: Flow Traders and Lombard','https://www.theblock.co/post/409516/flow-traders-pilots-lombards-new-bitcoin-backed-credit-strategy-for-stablecoin-borrowing'],['Analysis of the Cap credit structure','https://paragraph.com/@0xblockbooster/how-lombard-sells-caps-institutional-credit-market-to-btc-holders'],['Lombard: LBTC moves to Bitwise','https://www.lombard.finance/blog/LBTC-Moves-to-Institutional-Yield-Managed-by-Bitwise/'],['Lombard yield docs','https://docs.lombard.finance/learn/products/yield'],['ether.fi Liquid BTC docs','https://etherfi.gitbook.io/etherfi/liquid/liquid-btc-yield-vault'],['RedStone: Bitget BTC yield on Morph','https://blog.redstone.finance/2026/07/31/redstone-powers-btc-yield-for-the-bitget-ecosystem-on-morph/'],['Maple BTC Yield','https://maple.finance/insights/btc-yield-now-live'],['CoinDesk: Core versus Maple','https://www.coindesk.com/policy/2025/11/20/core-foundation-wins-injunction-against-maple-finance-on-alleged-confidentiality-breach'],['Hermetica risk controls','https://docs.hermetica.fi/hbtc/how-it-works/risk-controls.md'],['Mezo MUSD docs','https://mezo.org/docs/users/musd/architecture-and-terminology/'],['Avalon risk management','https://docs.avalonfinance.xyz/avalon-btcfi-products/cedefi-cdp-usda/risk-management'],['Acre docs','https://docs.acre.fi/llms-full.txt'],['Tesseract vaults','https://tesseract.fi/vaults/'],['Coinbase Bitcoin Yield Fund','https://www.coinbase.com/blog/coinbase-asset-management-launches-the-coinbase-bitcoin-yield-fund'],['Coinbase loan health','https://help.coinbase.com/en/coinbase/trading-and-funding/loan/loan-health'],['PRIME on RWA.xyz','https://app.rwa.xyz/assets/PRIME'],['Halborn: the Resolv hack','https://www.halborn.com/blog/post/explained-the-resolv-hack-march-2026'],['Pharos: Stream contagion','https://pharos.watch/learn/case-studies/stream-elixir-contagion-2025/'],['FTI: October 2025','https://www.fticonsulting.com/insights/articles/crypto-crash-october-2025-leverage-met-liquidity'],['Morpho API','https://api.morpho.org/graphql'],['DefiLlama','https://defillama.com'],['Blockscout (Ethereum)','https://eth.blockscout.com'],['Ink explorer','https://explorer.inkonchain.com'],['Morph explorer','https://explorer.morphl2.io']];
+
+const REG = {};
+function svgEl(t,a){const e=document.createElementNS('http://www.w3.org/2000/svg',t);for(const k in a)e.setAttribute(k,a[k]);return e;}
+function ticks(min,max,n){const span=max-min||1;const raw=span/n;const p=Math.pow(10,Math.floor(Math.log10(raw)));const m=raw/p;const step=(m<1.5?1:m<3.5?2:m<7.5?5:10)*p;const t=[];for(let v=Math.ceil(min/step)*step;v<=max+1e-9;v+=step)t.push(+v.toFixed(6));return t;}
+function makeTip(host){let t=host.querySelector('.tip');if(!t){t=document.createElement('div');t.className='tip';host.appendChild(t);}return t;}
+function lineChart(id,cfg){
+  const host=document.getElementById(id);host.innerHTML='';
+  const W=640,H=cfg.h||280,m={t:16,r:cfg.endLabels?86:20,b:34,l:48};
+  const xs=cfg.x,ser=cfg.series;const n=xs.length;
+  let vals=ser.flatMap(s=>s.values.filter(v=>v!=null));let ymin=cfg.ymin!=null?cfg.ymin:Math.min(0,...vals),ymax=Math.max(...vals);
+  if(cfg.ymin==null&&Math.min(...vals)>0&&Math.min(...vals)>ymax*0.5)ymin=Math.min(...vals)*0.9;
+  const tk=ticks(ymin,ymax,4);ymin=Math.min(ymin,tk[0]);ymax=Math.max(ymax,tk[tk.length-1]);
+  const X=i=>m.l+(n===1?0:i*(W-m.l-m.r)/(n-1)),Y=v=>m.t+(H-m.t-m.b)*(1-(v-ymin)/(ymax-ymin));
+  const svg=svgEl('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':cfg.label||''});
+  tk.forEach(v=>{svg.appendChild(svgEl('line',{x1:m.l,x2:W-m.r,y1:Y(v),y2:Y(v),stroke:col('grid'),'stroke-width':1}));const t=svgEl('text',{x:m.l-8,y:Y(v)+4,'text-anchor':'end','font-size':11,fill:col('muted'),'font-family':'IBM Plex Mono, monospace'});t.textContent=cfg.yfmt?cfg.yfmt(v):v;svg.appendChild(t);});
+  const xstep=Math.max(1,Math.round(n/(cfg.xticks||6)));
+  xs.forEach((x,i)=>{if(i%xstep===0||i===n-1){const t=svgEl('text',{x:X(i),y:H-m.b+18,'text-anchor':i===n-1?'end':i===0?'start':'middle','font-size':11,fill:col('muted'),'font-family':'IBM Plex Mono, monospace'});t.textContent=cfg.xfmt?cfg.xfmt(x):x;svg.appendChild(t);}});
+  svg.appendChild(svgEl('line',{x1:m.l,x2:W-m.r,y1:Y(ymin),y2:Y(ymin),stroke:col('axis'),'stroke-width':1}));
+  ser.forEach(s=>{const c=col(s.color);let d='',started=false;s.values.forEach((v,i)=>{if(v==null){started=false;return;}d+=(started?'L':'M')+X(i).toFixed(1)+' '+Y(v).toFixed(1);started=true;});
+    if(cfg.area){svg.appendChild(svgEl('path',{d:d+`L${X(n-1)} ${Y(ymin)}L${X(0)} ${Y(ymin)}Z`,fill:c,opacity:.10}));}
+    svg.appendChild(svgEl('path',{d,fill:'none',stroke:c,'stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round'}));
+    const li=s.values.map((v,i)=>v!=null?i:null).filter(i=>i!=null).pop();
+    if(li!=null){svg.appendChild(svgEl('circle',{cx:X(li),cy:Y(s.values[li]),r:4,fill:c,stroke:col('surface'),'stroke-width':2}));
+      if(cfg.endLabels&&ser.length<=4){const t=svgEl('text',{x:X(li)+8,y:Y(s.values[li])+4,'font-size':11,fill:col('ink-2')});t.textContent=(cfg.yfmt?cfg.yfmt(s.values[li]):s.values[li]);svg.appendChild(t);}}
+  });
+  (cfg.markers||[]).forEach(mk=>{const i=mk.i;if(i<0||i>=n)return;const v=ser[0].values[i];if(v==null)return;svg.appendChild(svgEl('path',{d:`M${X(i)} ${Y(v)-10} l-5 -8 h10 z`,fill:col('ink')}));});
+  const cross=svgEl('line',{x1:0,x2:0,y1:m.t,y2:H-m.b,stroke:col('axis'),'stroke-width':1,visibility:'hidden'});svg.appendChild(cross);
+  const hit=svgEl('rect',{x:m.l,y:m.t,width:W-m.l-m.r,height:H-m.t-m.b,fill:'transparent'});svg.appendChild(hit);
+  host.appendChild(svg);const tip=makeTip(host);
+  const show=(i,px)=>{cross.setAttribute('x1',X(i));cross.setAttribute('x2',X(i));cross.setAttribute('visibility','visible');tip.innerHTML='';const h=document.createElement('div');h.className='t';h.textContent=cfg.xfmt?cfg.xfmt(xs[i]):xs[i];tip.appendChild(h);
+    ser.forEach(s=>{const r=document.createElement('div');r.className='r';const l=document.createElement('span');const k=document.createElement('i');k.className='k';k.style.background=col(s.color);l.appendChild(k);l.appendChild(document.createTextNode(s.name));const b=document.createElement('b');b.textContent=s.values[i]==null?'n/a':(cfg.yfmt?cfg.yfmt(s.values[i]):s.values[i]);r.appendChild(l);r.appendChild(b);tip.appendChild(r);});
+    if(cfg.extra){const e=cfg.extra(i);if(e){const r=document.createElement('div');r.className='r';r.style.marginTop='4px';r.style.color='var(--muted)';r.textContent=e;tip.appendChild(r);}}
+    tip.style.display='block';const bw=host.clientWidth;const left=px/W*bw;tip.style.left=(left>bw*0.6?left-tip.offsetWidth-12:left+12)+'px';tip.style.top='8px';};
+  const move=e=>{const r=svg.getBoundingClientRect();const px=(e.clientX-r.left)/r.width*W;let i=Math.round((px-m.l)/((W-m.l-m.r)/(n-1)));i=Math.max(0,Math.min(n-1,i));show(i,px);};
+  hit.addEventListener('pointermove',move);hit.addEventListener('pointerleave',()=>{tip.style.display='none';cross.setAttribute('visibility','hidden');});
+  hit.setAttribute('tabindex','0');hit.addEventListener('focus',()=>show(n-1,X(n-1)));hit.addEventListener('blur',()=>{tip.style.display='none';cross.setAttribute('visibility','hidden');});
+  if(ser.length>1){const lg=document.createElement('div');lg.className='legend';ser.forEach(s=>{const sp=document.createElement('span');const i=document.createElement('i');i.style.background=col(s.color);sp.appendChild(i);sp.appendChild(document.createTextNode(s.name));lg.appendChild(sp);});host.appendChild(lg);}
+  REG[id]={head:['',...ser.map(s=>s.name)],rows:xs.map((x,i)=>[cfg.xfmt?cfg.xfmt(x):x,...ser.map(s=>s.values[i]==null?'n/a':(cfg.yfmt?cfg.yfmt(s.values[i]):s.values[i]))])};
+}
+function barH(id,cfg){
+  const host=document.getElementById(id);host.innerHTML='';
+  const items=cfg.items;const rowH=cfg.rowH||26,W=640,lw=cfg.lw||150,m={t:6,r:70,b:cfg.axis?24:6},H=m.t+items.length*rowH+m.b;
+  const vals=items.map(i=>i.value);const log=cfg.log;const lo=log?Math.log10(Math.min(...vals.filter(v=>v>0))/2):0;const hi=log?Math.log10(Math.max(...vals)):Math.max(...vals);
+  const X=v=>lw+(W-lw-m.r)*((log?(v>0?Math.log10(v):lo):v)-lo)/(hi-lo);
+  const svg=svgEl('svg',{viewBox:`0 0 ${W} ${H}`,role:'img','aria-label':cfg.label||''});
+  if(cfg.axis){(log?[1,10,100,1000,10000].filter(v=>Math.log10(v)>=lo&&Math.log10(v)<=hi):ticks(0,hi,4)).forEach(v=>{svg.appendChild(svgEl('line',{x1:X(v),x2:X(v),y1:m.t,y2:H-m.b,stroke:col('grid')}));const t=svgEl('text',{x:X(v),y:H-6,'text-anchor':'middle','font-size':10.5,fill:col('muted'),'font-family':'IBM Plex Mono, monospace'});t.textContent=cfg.tfmt?cfg.tfmt(v):v;svg.appendChild(t);});}
+  const tip=makeTip(host);
+  items.forEach((it,i)=>{const y=m.t+i*rowH;const bh=Math.min(20,rowH-6);const x1=X(log?Math.pow(10,lo):0),x2=X(it.value);const w=Math.max(0,x2-x1);
+    const t=svgEl('text',{x:lw-10,y:y+bh/2+7,'text-anchor':'end','font-size':11.5,fill:col('ink')});t.textContent=it.label;svg.appendChild(t);
+    const r=svgEl('path',{d:`M${x1} ${y+3} h${Math.max(0,w-4)} a4 4 0 0 1 4 4 v${bh-8} a4 4 0 0 1 -4 4 h${-Math.max(0,w-4)} z`,fill:col(it.color||'s1'),opacity:it.alpha||1});svg.appendChild(r);
+    if(it.sub!=null){const sw=Math.max(0,X(it.sub)-x1);svg.appendChild(svgEl('rect',{x:x1,y:y+3,width:Math.max(0,sw-2),height:bh,fill:col(it.color||'s1')}));}
+    const vt=svgEl('text',{x:x2+8,y:y+bh/2+6,'font-size':11.5,fill:col('ink-2'),'font-family':'IBM Plex Mono, monospace'});vt.textContent=cfg.vfmt?cfg.vfmt(it.value,it):it.value;svg.appendChild(vt);
+    const hit=svgEl('rect',{x:0,y:y,width:W,height:rowH,fill:'transparent',tabindex:0});svg.appendChild(hit);
+    const show=()=>{tip.innerHTML='';const h=document.createElement('div');h.className='t';h.textContent=it.label;tip.appendChild(h);const rr=document.createElement('div');rr.className='r';const b=document.createElement('b');b.textContent=cfg.vfmt?cfg.vfmt(it.value,it):it.value;const s=document.createElement('span');s.textContent=cfg.tipname||'';rr.appendChild(s);rr.appendChild(b);tip.appendChild(rr);if(it.tip){const e=document.createElement('div');e.className='r';e.style.color='var(--muted)';e.textContent=it.tip;tip.appendChild(e);}tip.style.display='block';tip.style.left=Math.min(host.clientWidth-170,lw/W*host.clientWidth)+'px';tip.style.top=(y/H*host.clientHeight+22)+'px';r.setAttribute('opacity',0.8);};
+    const hide=()=>{tip.style.display='none';r.setAttribute('opacity',it.alpha||1);};
+    hit.addEventListener('pointerenter',show);hit.addEventListener('pointerleave',hide);hit.addEventListener('focus',show);hit.addEventListener('blur',hide);
+  });
+  host.appendChild(svg);
+  REG[id]={head:[cfg.lbl||'',cfg.vlabel||'Value',...(cfg.extraCols||[])],rows:items.map(it=>[it.label,cfg.vfmt?cfg.vfmt(it.value,it):it.value,...(it.extra||[])])};
+}
+function tableToggle(){document.querySelectorAll('[data-table]').forEach(b=>{b.addEventListener('click',()=>{const id=b.dataset.table;const host=document.getElementById(id);let t=host.parentElement.querySelector('.tv');if(t){t.remove();b.setAttribute('aria-pressed','false');return;}const d=REG[id];if(!d)return;t=document.createElement('div');t.className='tblwrap tv';const tb=document.createElement('table');const th=document.createElement('tr');d.head.forEach(h=>{const c=document.createElement('th');c.textContent=h;th.appendChild(c);});tb.appendChild(th);d.rows.forEach(r=>{const tr=document.createElement('tr');r.forEach((v,i)=>{const c=document.createElement('td');if(i>0)c.className='n';c.textContent=v;tr.appendChild(c);});tb.appendChild(tr);});t.appendChild(tb);host.parentElement.appendChild(t);b.setAttribute('aria-pressed','true');});});}
+function legend(id,html){const lg=document.createElement('div');lg.className='legend';lg.innerHTML=html;document.getElementById(id).appendChild(lg);}
+
+function render(){
+  if(document.getElementById('c-supply'))barH('c-supply',{items:SUPPLY.map(s=>({label:s[0],value:s[1],color:'s2',tip:'TVL '+fmtM(s[2]),extra:[fmtM(s[2])]})),vfmt:v=>v.toFixed(2)+'%',lbl:'Market',vlabel:'Supply APY',extraCols:['TVL'],axis:true,tfmt:v=>v+'%',tipname:'supply APY'});
+  barH('c-venues',{items:VENUES.map(s=>({label:s[0],value:s[1],sub:s[2],color:'s1',alpha:.45,tip:'organic '+s[2].toFixed(2)+'% plus rewards '+(s[1]-s[2]).toFixed(2)+'%',extra:[s[2].toFixed(2)+'%']})),vfmt:v=>v.toFixed(2)+'%',lbl:'Venue',vlabel:'Total APY',extraCols:['Organic'],axis:true,tfmt:v=>v+'%',tipname:'total APY'});
+  legend('c-venues','<span><i class="rect" style="background:var(--s1)"></i>organic rate</span><span><i class="rect" style="background:var(--s1);opacity:.45"></i>incentives and rewards</span>');
+  barH('c-mm',{items:MM.map(s=>({label:s[0],value:s[1],color:'s2'})),vfmt:v=>'$'+v.toFixed(2)+'B',lbl:'Protocol',vlabel:'BTC, $B',axis:true,tfmt:v=>'$'+v+'B',tipname:'BTC deposited'});
+  barH('c-wrap',{items:WRAP.map(s=>({label:s[0],value:s[1],color:'s2'})),vfmt:v=>fmtM(v),lbl:'Wrapper',vlabel:'TVL',log:true,axis:true,tfmt:v=>fmtM(v),rowH:22,tipname:'TVL'});
+  const tb=document.querySelector('#t-markets tbody');MARKETS.forEach(r=>{const tr=document.createElement('tr');[r[0],r[1],fmtM(r[2]),fmtM(r[3]),(r[3]/r[2]*100).toFixed(0)+'%',r[4].toFixed(2)+'%'].forEach((v,i)=>{const td=document.createElement('td');if(i>=2)td.className='n';if(i===0&&r[5]){const a=document.createElement('a');a.href=r[5];a.target='_blank';a.rel='noopener';a.textContent=v;td.appendChild(a);}else td.textContent=v;tr.appendChild(td);});tb.appendChild(tr);});
+  const ar=document.getElementById('arch');if(ar){ar.innerHTML='';Object.entries(ARCH).forEach(([k,a])=>{const c=document.createElement('div');c.className='c';c.innerHTML=`<div class="h"><i style="background:var(--${a.c})"></i>${a.n}</div><div class="y">${a.r}<small>in BTC, per year</small></div><div class="bar"><b style="left:${a.lo/14*100}%;width:${(a.hi-a.lo)/14*100}%;background:var(--${a.c})"></b></div><div class="r">${a.d}</div>`;ar.appendChild(c);});}
+  barH('c-legs',{items:LEGS.flatMap(l=>[{label:l.n+' · deployment',value:l.org+l.inc,sub:l.org,color:'s1',alpha:.45,tip:`debt $${l.debt}M, organic ${l.org}% plus incentives ${l.inc}%`,extra:['$'+l.debt+'M']},{label:'   borrow rate, spread '+((l.org+l.inc-l.borrow)>=0?'+':'')+(l.org+l.inc-l.borrow).toFixed(2)+'%',value:l.borrow,color:'s2',tip:`organic spread ${(l.org-l.borrow).toFixed(2)}%`,extra:['']}]),vfmt:v=>v.toFixed(2)+'%',lbl:'Leg',vlabel:'%',extraCols:['Debt'],axis:true,tfmt:v=>v+'%',lw:250,rowH:22});
+  legend('c-legs','<span><i class="rect" style="background:var(--s1)"></i>organic</span><span><i class="rect" style="background:var(--s1);opacity:.45"></i>Ripple and PayPal rewards</span><span><i class="rect" style="background:var(--s2)"></i>borrow rate</span>');
+  lineChart('c-irm',{x:IRM.x,series:IRM.series,yfmt:v=>v.toFixed(1)+'%',xfmt:v=>v+'% util',endLabels:false,ymin:0,h:260,label:'Borrow rate curves'});legend('c-irm','<span>Today: kBTC/RLUSD at 90%, kBTC/PYUSD at 84%, cbBTC/USDC at 90%. Above 95% the rate more than doubles.</span>');
+  lineChart('c-coll',{x:D.kbtc_days,series:[{name:'kBTC/RLUSD collateral',color:'s2',values:D.kbtc_rlusd},{name:'kBTC/PYUSD collateral',color:'s1',values:D.kbtc_pyusd}],yfmt:v=>'$'+v.toFixed(0)+'M',xfmt:df,area:true,endLabels:true,ymin:0,h:220,xticks:8,label:'kBTC collateral'});
+  const rep=D.delever.filter(e=>e[2]==='REPAY');const mk=rep.map(e=>({i:D.kbtc_days.indexOf(e[0])})).filter(m=>m.i>=0);
+  lineChart('c-px',{x:D.kbtc_days,series:[{name:'BTC, $ (Binance daily close)',color:'s3',values:D.btc_px}],yfmt:v=>'$'+(v/1000).toFixed(0)+'k',xfmt:df,endLabels:true,h:200,xticks:8,markers:mk,extra:i=>{const ev=D.delever.filter(e=>e[0]===D.kbtc_days[i]);return ev.length?ev.map(e=>e[2]+' $'+e[3]+'M').join(', '):'';},label:'BTC price and repayments'});
+  legend('c-px','<span>▲ marks a debt repayment in the RLUSD-1 or PYUSD-1 position</span>');
+  const tv=PRODUCTS.filter(p=>p.tvl&&p.tvl>=3).sort((a,b)=>b.tvl-a.tvl).slice(0,30);
+  barH('c-tvlbar',{items:tv.map(p=>({label:(p.s?'★ ':'')+p.n.replace(/ \(.*?\)/,'').slice(0,34),value:p.tvl,color:ARCH[p.a].c,tip:ARCH[p.a].n+', '+p.cur,extra:[ARCH[p.a].n,p.cur]})),vfmt:v=>fmtM(v),lbl:'Product',vlabel:'TVL',extraCols:['Source','Curator'],log:true,axis:true,tfmt:v=>fmtM(v),rowH:22,lw:230,tipname:'TVL'});
+  legend('c-tvlbar',Object.values(ARCH).map(a=>`<span><i class="rect" style="background:var(--${a.c})"></i>${a.n}</span>`).join(''));
+  // vault cards
+  const vt=document.querySelector('#v-compare tbody');vt.innerHTML='';VAULTS.forEach((v,i)=>{const VB={chain:['good','on-chain'],partial:['warn','partly'],docs:['ser','docs only']}[v.ver||'docs'];const tr=document.createElement('tr');tr.innerHTML=`<td><a href="#vault-${i}"><b>${v.n}</b></a></td><td>${v.cmp[0]}</td><td>${v.cmp[1]}</td><td class="n">${v.cmp[2]}</td><td class="n">${v.cmp[3]}</td><td class="n">${v.cmp[4]}</td><td><span class="st ${VB[0]}"><i></i>${VB[1]}</span></td>`;vt.appendChild(tr);});
+  const vg=document.getElementById('vaults-grid');vg.innerHTML='';VAULTS.forEach((v,i)=>{const d=document.createElement('div');d.id='vault-'+i;d.className='vc'+(i===0?' wide':'');const VB={chain:['good','Verified on-chain'],partial:['warn','Partly verified'],docs:['ser','From documentation']}[v.ver||'docs'];d.innerHTML=`<div class="head"><h3>${v.n}</h3><div class="sz"><b>${v.size}</b><small>${v.sz2}</small></div></div><div class="tagline"><span class="st ${VB[0]}"><i></i>${VB[1]}</span> · ${v.tag}</div><div class="strip"><div>Borrows<b>${v.cmp[0].split(',')[0]}</b></div><div>LTV<b>${v.cmp[2]}</b></div><div>Pays<b>${v.cmp[3]}</b></div><div>Size<b>${v.cmp[4]}</b></div></div><dl>${v.rows.map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('')}</dl><div class="verdict"><b>Our read.</b> ${v.verdict}</div><div class="links">${v.links.map(l=>A(l[1],l[0])).join('')}</div>`;vg.appendChild(d);});
+  // table + filters
+  const fl=document.getElementById('fl');fl.querySelectorAll('.btn').forEach(b=>b.remove());let cur='all';const chips=[['all','All'],...Object.entries(ARCH).map(([k,a])=>[k,a.n])];chips.forEach(([k,n])=>{const b=document.createElement('button');b.className='btn';b.textContent=n;b.dataset.k=k;b.setAttribute('aria-pressed',k==='all');b.addEventListener('click',()=>{cur=k;fl.querySelectorAll('.btn').forEach(x=>x.setAttribute('aria-pressed',x.dataset.k===k));drawComp();});fl.appendChild(b);});
+  const q=document.getElementById('q');q.oninput=drawComp;let sortKey='default',sortDir=-1;document.querySelectorAll('[data-sort]').forEach(b=>{b.onclick=()=>{if(sortKey===b.dataset.sort)sortDir*=-1;else{sortKey=b.dataset.sort;sortDir=-1;}document.querySelectorAll('[data-sort]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.sort===sortKey));drawComp();};});
+  function drawComp(){const tb=document.querySelector('#t-comp tbody');tb.innerHTML='';const qq=q.value.trim().toLowerCase();let n=0;PRODUCTS.filter(p=>(cur==='all'||p.a===cur)&&(!qq||(p.n+' '+p.how+' '+p.cur+' '+p.inf+' '+p.note).toLowerCase().includes(qq))).sort((a,b)=>sortKey==='default'?((b.s-a.s)||((b.tvl||0)-(a.tvl||0))):((( (b[sortKey]==null?-1e9:b[sortKey]) - (a[sortKey]==null?-1e9:a[sortKey]) ))*(sortDir===-1?1:-1))).forEach(p=>{n++;const tr=document.createElement('tr');const cells=[(p.s?'★ ':'')+p.n,'',p.how,p.y,p.tvl==null?'n/a':fmtM(p.tvl),p.cur,p.inf,p.note];cells.forEach((v,i)=>{const td=document.createElement('td');if(i===3||i===4)td.className='n';if(i===1){const ch=document.createElement('span');ch.className='chip a'+({carry:1,basis:2,stake:3,credit:4,opt:5,lp:6}[p.a]);ch.textContent=ARCH[p.a].n;td.appendChild(ch);}else if(i===0){const a=document.createElement('a');a.href=p.u;a.target='_blank';a.rel='noopener';const b=document.createElement('b');b.textContent=v;a.appendChild(b);td.appendChild(a);}else td.textContent=v;tr.appendChild(td);});tb.appendChild(tr);});document.getElementById('cnt').textContent=`${n} products shown. A star marks the vaults from Part IV. TVL is DefiLlama or on-chain on 2026-09-20, in $M. Lombard Bitcoin Earn and LBTCv overlap (BTCe wraps LBTCv).`;}
+  drawComp();
+  const ct=document.querySelector('#t-curators tbody');if(ct){ct.innerHTML='';CURATORS.filter(c=>['Sentora','Gauntlet','Re7 Labs','UltraYield (Edge Capital)','Hyperithm','Two Prime, Solv, Zest, Mezo, Avalon, Hermetica'].includes(c.n)).forEach(c=>{const tr=document.createElement('tr');tr.innerHTML=`<td>${A(c.u,c.n)}<div class="note">${c.sub}</div></td><td class="n">${c.btc}<div class="note">${c.tot} total</div></td><td>${c.items.slice(0,2).join('. ')}</td><td>${c.ft?`<span class="st ${c.flag}"><i></i>${c.ft}</span>`:''} ${c.items.slice(2).join('. ')}</td>`;ct.appendChild(tr);});}
+  const T=D.tvl,M=D.tvl_months;
+  if(document.getElementById('c-stake'))lineChart('c-stake',{x:M,series:[{name:'Babylon',color:'s3',values:T['Babylon']},{name:'Lombard LBTC',color:'s1',values:T['Lombard LBTC']},{name:'SolvBTC',color:'s2',values:T['SolvBTC']},{name:'Function FBTC',color:'s4',values:T['Function FBTC']}],yfmt:v=>fmtM(v),xfmt:mf,endLabels:true,ymin:0,h:280,xticks:7,label:'Staking TVL'});
+  // new: borrowing by loan asset
+  const LA=Object.entries(D.morpho_agg.loan).sort((a,b)=>b[1][1]-a[1][1]).slice(0,7);barH('c-loan',{items:LA.map(([k,v])=>({label:k,value:Math.round(v[1]/1e6),color:(k==='RLUSD'||k==='PYUSD')?'s1':'s2',tip:'collateral '+fmtM(v[0]/1e6),extra:[fmtM(v[0]/1e6)]})),vfmt:v=>fmtM(v),lbl:'Loan asset',vlabel:'Borrowed',extraCols:['Collateral'],axis:true,tfmt:v=>fmtM(v),tipname:'borrowed'});legend('c-loan','<span><i class="rect" style="background:var(--s2)"></i>plain markets</span><span><i class="rect" style="background:var(--s1)"></i>issuer-subsidized (RLUSD, PYUSD)</span>');
+  // new: share price chart + realized table
+  lineChart('c-rate',{x:D.rate_weeks,series:[{name:'Kraken sentoraBTC',color:'s2',values:D.rate_K},{name:'ether.fi Liquid BTC',color:'s1',values:D.rate_E},{name:'Lombard LBTCv',color:'s3',values:D.rate_L}],yfmt:v=>v.toFixed(3),xfmt:df,endLabels:true,ymin:0.995,h:280,xticks:8,label:'Share price in BTC'});
+  const R=D.realized;const rt=document.querySelector('#t-realized tbody');if(rt){rt.innerHTML='';[['Kraken Bitcoin Vault',R.Kraken,'up to 2.5%'],['ether.fi Liquid BTC',R.LiquidBTC,'2.00%'],['Lombard LBTCv',R.LBTCv,'2.01%']].forEach(([n,r,adv])=>{const tr=document.createElement('tr');tr.innerHTML=`<td><b>${n}</b></td><td class="n">${r.rate_now.toFixed(5)}</td><td class="n">${r['30d']==null?'n/a':r['30d'].toFixed(2)+'%'}</td><td class="n">${r['90d']==null?'n/a':r['90d'].toFixed(2)+'%'}</td><td class="n">${r['365d']==null?('since launch '+r.since_launch.toFixed(2)+'% ('+r.launch_days+' days)'):r['365d'].toFixed(2)+'%'}</td><td class="n">${adv}</td>`;rt.appendChild(tr);});}
+  const VA=D.vapy;lineChart('c-vapy',{x:D.vapy_months,series:Object.keys(VA).map((k,i)=>({name:k,color:['s1','s2','s3','s4','s5','s7'][i],values:VA[k]})),yfmt:v=>v.toFixed(1)+'%',xfmt:mf,endLabels:false,ymin:0,h:280,xticks:8,label:'Monthly APY of BTC vaults'});
+  lineChart('c-carry',{x:M,series:[{name:'Sentora (curator)',color:'s1',values:T['Sentora (curator)']},{name:'Maple',color:'s4',values:T['Maple']},{name:'Kraken kBTC',color:'s2',values:T['Kraken kBTC']},{name:'Steakhouse (curator)',color:'s3',values:T['Steakhouse (curator)']}],yfmt:v=>fmtM(v),xfmt:mf,endLabels:true,ymin:0,h:280,xticks:7,label:'Carry TVL'});
+  const Ap=D.apy;lineChart('c-apy',{x:D.apy_months,series:[{name:'Maple USDC',color:'s1',values:Ap['Maple USDC']},{name:'sUSDe',color:'s2',values:Ap['sUSDe']},{name:'sUSDS',color:'s3',values:Ap['sUSDS']},{name:'Aave USDC',color:'s4',values:Ap['Aave USDC']},{name:'Sentora RLUSD v2',color:'s5',values:Ap['Sentora RLUSD v2']},{name:'Sentora PYUSD',color:'s7',values:Ap['Sentora PYUSD']}],yfmt:v=>v.toFixed(1)+'%',xfmt:mf,endLabels:false,ymin:0,h:300,xticks:8,label:'Deployment APY'});
+  const inc=document.getElementById('incidents');inc.innerHTML='';INC.forEach(e=>{const d=document.createElement('div');d.className='e';d.innerHTML=`<div class="d">${e.d}</div><div><div class="t"><span class="st ${e.s}"><i></i></span>${A(e.u,e.t)} <span class="chip">${e.l}</span></div><div class="x">${e.x}</div></div>`;inc.appendChild(d);});
+  const sr=document.getElementById('srcs');sr.innerHTML='';SRC.forEach(s=>{const d=document.createElement('div');d.innerHTML=A(s[1],s[0]);sr.appendChild(d);});
+  tableToggle();
+}
+function calc(){const g=id=>parseFloat(document.getElementById(id).value);const ltv=g('i-ltv')/100,lltv=g('i-lltv')/100,br=g('i-br'),dy=g('i-dy'),inc=Math.min(g('i-inc'),dy),fee=g('i-fee')/100;
+  document.getElementById('v-ltv').textContent=Math.round(ltv*100)+'%';document.getElementById('v-lltv').textContent=Math.round(lltv*100)+'%';document.getElementById('v-br').textContent=br.toFixed(2)+'%';document.getElementById('v-dy').textContent=dy.toFixed(2)+'%';document.getElementById('v-inc').textContent=inc.toFixed(2)+'%';document.getElementById('v-fee').textContent=Math.round(fee*100)+'%';
+  const spread=dy-br,gross=spread*ltv,net=gross*(1-fee),org=(dy-inc-br)*ltv*(1-fee),buf=(1-ltv/lltv)*100;
+  const f=v=>(v<0?'minus ':'')+Math.abs(v).toFixed(2)+'%';document.getElementById('o-net').textContent=f(net);document.getElementById('o-gross').textContent=f(gross);document.getElementById('o-spread').textContent=f(spread);document.getElementById('o-org').textContent=f(org);document.getElementById('o-buf').textContent=Math.max(0,buf).toFixed(0)+'%';
+  document.getElementById('o-net').style.color=net<0?'var(--critical)':'';}
+['i-ltv','i-lltv','i-br','i-dy','i-inc','i-fee'].forEach(id=>document.getElementById(id).addEventListener('input',()=>document.querySelectorAll('#presets .btn').forEach(x=>x.setAttribute('aria-pressed','false'))));
+['i-ltv','i-lltv','i-br','i-dy','i-inc','i-fee'].forEach(id=>document.getElementById(id).addEventListener('input',calc));
+const PRESETS=[['Kraken today',[64,86,3.25,6.20,2.2,25]],['Same, no incentives',[64,86,3.25,4.00,0,25]],['Plain USDC market',[64,86,4.80,4.35,0,25]],['Mezo-style 1% loan',[64,110,1.00,6.20,2.2,25]],['Hermetica-style',[50,75,4.00,10.0,0,10]]];const pr=document.getElementById('presets');PRESETS.forEach(([n,v],i)=>{const b=document.createElement('button');b.className='btn';b.textContent=n;b.setAttribute('aria-pressed',i===0);b.onclick=()=>{['i-ltv','i-lltv','i-br','i-dy','i-inc','i-fee'].forEach((id,j)=>document.getElementById(id).value=v[j]);pr.querySelectorAll('.btn').forEach(x=>x.setAttribute('aria-pressed',x===b));calc();};pr.appendChild(b);});
+render();calc();
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>render());
+new MutationObserver(()=>render()).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+</script>
+
+</body>
+</html>
