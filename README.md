@@ -2,7 +2,7 @@
 
 A market study of products that pay a Bitcoin holder in Bitcoin, with a focus on the vaults that post BTC as collateral, borrow stablecoins against it and park the dollars somewhere that pays.
 
-**Live site:** https://vlad-3d.github.io/btc-yield-atlas/
+**Live site:** https://vlad-degen.github.io/btc-yield-atlas/
 
 ## What is in here
 
