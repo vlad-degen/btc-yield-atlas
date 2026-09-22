@@ -1,0 +1,36 @@
+chain,bucket_btc_eq,holders,btc_eq,share,contracts,eoas,note
+ethereum,<0.01,63,0.0497,0.0002,5,58,
+ethereum,0.01-0.1,12,0.336,0.0012,0,12,
+ethereum,0.1-1,5,2.4184,0.0083,0,5,
+ethereum,1-10,5,9.1083,0.0312,0,5,
+ethereum,10-100,5,279.558,0.9591,2,3,
+ethereum,>100,0,0,0.0,0,0,
+ethereum,TOTAL,90,291.4705,1.0,7,83,
+monad,<0.01,6,0.0002,0.0,0,6,
+monad,0.01-0.1,0,0,0.0,0,0,
+monad,0.1-1,0,0,0.0,0,0,
+monad,1-10,0,0,0.0,0,0,
+monad,10-100,1,58.5611,1.0,1,0,
+monad,>100,0,0,0.0,0,0,
+monad,TOTAL,7,58.5613,1.0,1,6,
+rootstock,<0.01,16,0.0113,0.0028,3,13,
+rootstock,0.01-0.1,1,0.0389,0.0095,0,1,
+rootstock,0.1-1,1,0.1096,0.0268,0,1,
+rootstock,1-10,2,3.9242,0.9609,1,1,
+rootstock,10-100,0,0,0.0,0,0,
+rootstock,>100,0,0,0.0,0,0,
+rootstock,TOTAL,20,4.0841,1.0,4,16,
+all,<0.01,85,0.0612,0.0002,8,77,
+all,0.01-0.1,13,0.375,0.0011,0,13,
+all,0.1-1,6,2.528,0.0071,0,6,
+all,1-10,7,13.0326,0.0368,1,6,
+all,10-100,6,338.1191,0.9548,3,3,
+all,>100,0,0,0.0,0,0,
+all,TOTAL,117,354.1159,1.0,12,105,
+all,top1_addresses,1,75.7678,0.214,,,"address level, contracts counted as holders"
+all,top10_addresses,10,347.7063,0.9819,,,"address level, contracts counted as holders"
+all,top100_addresses,100,354.1159,1.0,,,"address level, contracts counted as holders"
+all,top1_lookthrough,1,111.4319,0.3147,,,Morpho collateral attributed to borrowers; Pendle SY kept as one holder: 0xcc63cc49 111.4
+all,top4_lookthrough,4,290.6995,0.8209,,,Morpho collateral attributed to borrowers; Pendle SY kept as one holder: 0xcc63cc49 111.4; 0xd3384738 75.8; 0xd6f4c413 52.9; 0x763f13d4 50.6
+all,top10_lookthrough,10,347.529,0.9814,,,Morpho collateral attributed to borrowers; Pendle SY kept as one holder: 0xcc63cc49 111.4; 0xd3384738 75.8; 0xd6f4c413 52.9; 0x763f13d4 50.6; 0x95fc228a 37.1; 0x6108c803 10.2; 0x06fc0199 3.3; 0xd07d5693 2.7; 0x2ca27e26 1.8; 0x569eefa8 1.7
+all,in_defi_contracts,,168.8686,0.4769,,,Morpho collateral (ETH 70.21 + Monad 57.07 mHyperBTC) + Pendle SY 36.13 + Rootstock pools/aToken

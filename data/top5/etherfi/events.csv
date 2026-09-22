@@ -1,0 +1,56 @@
+date,event,type,source
+2024-11-14,"BoringVault 0x5f46...0726, AccountantWithRateProviders 0xea23...e6b0 and RolesAuthority 0x49f9...8c8d deployed in one tx; platform fee set to 2% in constructor; rate providers WBTC(base) / cbBTC / LBTC / FBTC pegged",launch,"tx 0xd20924a23c49d95b99252252a4c475a21f97f39b9034f38e793ca1a9d93000d7 (block 21189184)"
+2024-12-18,"First deposits (0.001 share test, WBTC and eBTC)",launch,Enter events block 21432675
+2024-12-20,"First strategy txs: Aave v3 WBTC supply + USDC borrow; Pendle SY-USD0++ and MEV Capital Usual Boosted USDC (USUALUSDC+) test positions -> stablecoin carry existed from day 1",strategy,"Aave Supply/Borrow events blocks 21433159-21440676"
+2024-12-24,Platform fee 2% -> 0%,fees,PlatformFeeUpdated block 21470624
+2025-01-06,"Platform fee 0% -> 2%; RolesAuthority ownership moved from deployer EOA 0xf855...909e to Liquid Safe 0xcea8...ec96 (4-of-6)",governance,"PlatformFeeUpdated 21566771; OwnershipTransferred 21566839"
+2025-01-07,"First large deposit: 100 shares (0xfb50...185d)",flows,Enter block 21575855
+2025-01-09,First accountant exchange-rate update (1.00000005),yield,ExchangeRateUpdated
+2025-01-15,Deposit into MEV Capital Pendle WBTC (pWBTC) MetaMorpho vault,strategy,Deposit events 0x2f1a...4775
+2025-01-17,"Morpho WBTC/USDT: 70 WBTC collateral, 4.2M USDT borrowed; PT-LBTC-27MAR2025/WBTC loop (38.9 PT collateral, 30 WBTC debt); PT-liquidBeraBTC and PT-LBTC bought on Pendle",strategy,Morpho Blue SupplyCollateral/Borrow; PendleRouterV4 events
+2025-01-21,"120,100 ETHFI received from Safe 0xd022...c90b (21 Jan-5 Feb) and sold (~$187k at DefiLlama prices); share-price steps +0.38% (22 Jan), +0.24% (28 Jan), +0.23% (6 Feb)",incentives,"ETHFI Transfer logs; ExchangeRateUpdated"
+2025-02-03,Pendle PT-cornLBTC and PT-corn-eBTC positions (Corn points),strategy,Pendle events 21764406-21814295
+2025-02-12,"MEV Capital Resolv USR vault (MC-USR) + Morpho eBTC/USR borrow (0.31M USR)",strategy,Morpho/MetaMorpho events
+2025-02-18,"Whale deposits 97.2 and 140.5 shares; Morpho WBTC/USDC 5.65M + eBTC/USDC 9.9M borrowed (19 Feb) -> USUALUSDC+ 16.8M",flows/strategy,Enter + Morpho events
+2025-02-28,First MORPHO reward claim (6,658 MORPHO) from Morpho URD,incentives,URD Claimed events
+2025-03-06,Convex/f(x) USDC-fxUSD LP position opened via Convex fx user vault 0x7ba4...1310,strategy,AddUserVault event 21984606
+2025-03-12,LayerZeroTellerWithRateLimiting 0x8ea0...0353 deployed (cross-chain shares),infrastructure,creation tx 0xfc96851c... block 22033474
+2025-03-18,Scroll (LZ eid 30214) added as peer chain - liquidBTC shares for ether.fi Cash on Scroll,distribution,PeerSet/ChainAdded block 22070119
+2025-03-15,"Share price starts drifting down (daily -0.001% to -0.015%); negative carry until mid-July 2025",yield,ExchangeRateUpdated series
+2025-04-09,"Stablecoin book unwound: Morpho WBTC/USDC and eBTC/USDC debts repaid, USUALUSDC+ and MC-USR exited",deleverage,Morpho Repay/WithdrawCollateral blocks 22226157-22230105
+2025-04-10,Platform fee 2% -> 1%; payout address -> Safe 0x68ec...8cfa,fees,PlatformFeeUpdated block 22236350
+2025-04-24,"100 eBTC bridged to Berachain via eBTC LayerZero teller (24-28 Apr), returned 16 May; 39 BTC into Turtle TAC BTC vault (tacBTC); MEV Capital WBTC/cbBTC vaults",strategy/points,MessageSent (dstEid 30362); tacBTC Enter
+2025-05-13,ether.fi Cash TopUp bridging of liquidBTC starts (TopUpFactory 0xf4e1...d8cf EtherFiLiquidTokenBridged events),distribution,logs 22477489+
+2025-05-20,Platform fee 1% -> 0%; performance fee set 0; WBTC deposits briefly disabled/re-enabled,fees,PlatformFeeUpdated/PerformanceFeeUpdated block 22521702
+2025-06-02,"150 BTC bridged to Corn via LayerZero OFT: 90 BTCN (WBTC wrapped by Bitcorn swap facility) + 60 LBTC (2-3 Jun); returned 4-20 Nov 2025 (no BTC gain; points only)",strategy/points,OFTSent/OFTReceived eid 30331
+2025-07-16,"Whale deposit 345.1 + 34.5 shares (0xd1ed...1d0e); NAV peak 848.7 BTC / TVL peak $98.2M at 31 Jul",flows,Enter blocks 22931664/22973758
+2025-08-04,"'Summer Mint' campaign (to 30 Sep): 500k ETHFI pool for new Liquid USD/ETH/BTC deposits via ether.fi Vault and Cash card spend",incentives,ether.fi docs (llms-full) Summer Mint
+2025-08-06,LBTC rate provider switched from pegged 1:1 to variable (0x9491...314c),accounting,RateProviderUpdated block 23081540
+2025-08-08,"ITB (IntoTheBlock) position manager #1: 150 eBTC -> Aave v3 -> RLUSD borrow -> Euler eRLUSD-1 (+Merkl RLUSD); closed Nov 2025",strategy,SLPM 0x7aaf...3726 / LoanManagerV3 0xcb67...2877
+2025-08-11,Whale exit 380.6 shares via AtomicSolverV3,flows,Exit block 23114973
+2025-08-27,First FeesClaimed (2.668 WBTC) to payout Safe,fees,FeesClaimed block 23233574
+2025-10-28,"'Triple Dip' campaign (to 30 Nov): 400k ETHFI (100k for new Liquid deposits via ether.fi Vault)",incentives,ether.fi docs (llms-full) Triple Dip
+2025-11-07,"ITB #3: LBTC on Spark -> PYUSD borrow -> Euler ePYUSD-6 (+Merkl PYUSD); first Spark exposure (via ITB contract); closed Mar-Apr 2026",strategy,SLPM 0x11fd...d2; LoanManager 0x2afb...8656
+2025-11-17,Platform fee 0% -> 0.5% (and 0.5% -> 1% on 28 Nov),fees,PlatformFeeUpdated 23815996/23900257
+2025-12-07,"ITB #2: eBTC on Aave -> RLUSD -> Euler eRLUSD-7 (+Merkl RLUSD); closed Mar 2026",strategy,SLPM 0xfbca...f436
+2025-12-12,New BoringOnChainQueue 0x77A2...1Edf + BoringSolver roles granted (migration off legacy AtomicQueue),infrastructure,UserRoleUpdated block 23999312
+2026-01-16,"Vault-direct Aave USDT 5.0M borrow vs aEthWBTC/aEtheBTC -> wstUSR 3.5M + Cap stcUSD (first stcUSD deposit 17 Jan)",strategy,Aave/stcUSD events blocks 24249925-24257474
+2026-01-28,Strategist Safe 0x607d...7306 (2-of-5) granted role 55 = updatePlatformFee/updatePerformanceFee,governance,UserRoleUpdated block 24331785
+2026-02-17,"wstUSR/stUSR fully exited (before Resolv incident of March 2026)",strategy,Unwrap/Withdraw block 24479256
+2026-04-01,Whale exit 237.7 shares (~244 BTC) via BoringSolver,flows,Exit block 24787656
+2026-04-05,"Optimism added as peer chain; Scroll shares migrated to Optimism in April (Scroll supply 47.4 -> 0.2)",distribution,PeerSet block 24810399; Scroll totalSupply
+2026-04-18,"Kelp rsETH LayerZero exploit: all Liquid vaults paused (teller paused 22:10 UTC), LZ messaging stopped; unpaused 20 Apr; bridging restored 24 Apr; deleveraging of borrow positions",incident,ether.fi incident page; Paused/ChainStopMessages/Unpaused blocks 24909653-24947175
+2026-05-02,"Full deleverage completed: last Aave USDT/USDC debt repaid (ITB and direct positions closed)",deleverage,Aave Repay block 25010422
+2026-05-12,"Morpho LBTC/PYUSD (LLTV 86%): 173.5 LBTC collateral, 7.0M PYUSD borrow -> Sentora Paypal USD Main + stcUSD",strategy,Morpho events block 25081025
+2026-05-16,Morpho dust bad-debt realization on legacy PT-LBTC/WBTC position (0.00076 WBTC) - not a real liquidation,risk,Morpho Liquidate block 25105718
+2026-06-08,Sentora PRIME Main (senPYUSDPRIMEv2) deposit,strategy,VaultV2 Deposit block 25275929
+2026-06-15,"Roles re-organisation: Pauser contract 0xe71f...af6c (role 5), additional pause-only EOAs/Safes (roles 14/16/20)",governance,UserRoleUpdated block 25325188
+2026-06-24,Vault starts claiming Merkl PYUSD incentives directly (Sentora/Morpho PYUSD campaigns),incentives,Merkl Distributor Claimed
+2026-07-13,Platform fee 1% -> 0.5%,fees,PlatformFeeUpdated block 25526505
+2026-07-21,"1.75M USDC bridged via CCTP to Optimism and deposited in ether.fi liquidRWA (sibling Liquid vault) until 24 Aug; 1.761M USDC returned 27 Aug",strategy/related-party,CCTP DepositForBurn block 25582875; OP transfers
+2026-08-24,Platform fee 0.5% -> 0% (fact sheet still says 1%),fees,PlatformFeeUpdated block 25828234
+2026-08-25,"Migration Morpho -> Spark: LBTC collateral withdrawn from Morpho, supplied to Spark; PYUSD debt moved to Spark; cbBTC supplied",strategy,Spark Supply/Borrow blocks 25834430-25835166
+2026-09-10,LBTC swapped to WBTC through eBTC vault and supplied to Spark (60.09 WBTC),strategy/related-party,block 25950315
+2026-09-11,"Legacy Veda AtomicQueue exploit (~$40k user loss across Liquid tokens); liquidBTC transfer hook denies operator 0xd458...ea07",incident,ether.fi incident page; DenyOperator block 25953733
+2026-09-17,LBTC deposits disabled on teller,product,AssetDataUpdated block 25993643
+2026-09-18,"Final structure: LBTC fully swapped to WBTC/cbBTC via eBTC; 4.37M USDC borrowed on Spark -> cUSD -> stcUSD; 3.7M PYUSD redeemed from Sentora to repay PYUSD debt",strategy,tx 0x3244347c29... block 26007624

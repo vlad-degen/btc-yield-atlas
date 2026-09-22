@@ -1,0 +1,18 @@
+asset,chain,address,label,amount,share
+Aera vault units gtOVBG,Morph,0x9eb53a82d9f390dbe94b6b8b15ca32b523195ca4,Bitget omnibus EOA (inference: gas + 0.1 bgBTC from Bitget hot wallet 0x1AB4...; all bgBTC arrives via CCIP from Ethereum; Bitget API reports 801.41 BTC in this vault),798.7179280708266,100.0000%
+Aera vault units gtOVBG,Morph,0xdfcc6adf45b12abeaa7b44d02524bf70f4e1df56,EIP-7702 wallet / EOA (dust),1.2617980236509e-05,0.0000%
+Aera vault units gtOVBG,Morph,0xbe4cf1214007b44550a10686128187de857c31dc,EIP-7702 wallet / EOA (dust),1e-05,0.0000%
+gtusdc (USD value),Morph,0x85a1d961f1d1bbd9b4a6d96106c5bf9ae91f0510,Aera vault bgBTC Earn (0x85a1...),42999723.54,82.1430%
+gtusdc summary,Morph,(all non-vault holders),1386 holders; median $32.92; >$100k: 14; >$10k: 122; <$100: 830,9347683.34,17.8570%
+bgBTC,Morph,0xad10d07901dc3195c3cb5e78e061f4ea8d9b4905,Morpho Blue (vault collateral),801.70559089,96.0105%
+bgBTC,Morph,0x4df7557734b382eb542bea6c74786d398df4cc19,Native CreditVault (LP = Bitget omnibus),22.39999536,2.6826%
+bgBTC,Morph,0x26209d9f0dc3ac0129c3fb1badabfeb9ee728c66,EOA (unlabelled),9.73672339,1.1660%
+bgBTC,Morph,0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23,Bitget hot wallet (labelled on Ethereum),1.16381512,0.1394%
+bgBTC,Morph,0x45bf9e15e1e1d02c1514596b1eaf67d2a1a62ee9,,0.003076,0.0004%
+bgBTC,Morph,0x9eb53a82d9f390dbe94b6b8b15ca32b523195ca4,Bitget omnibus EOA,0.00265001,0.0003%
+bgBTC,Ethereum,0xa1f0caf824d5bbf103b33172a711e58c6cab2a04,CCIP LockReleaseTokenPool (backs Morph supply),835.0189991,70.5253%
+bgBTC,Ethereum,0x1ab4973a48dc892cd9971ece8e01dcc7688f8f23,Bitget hot wallet (Blockscout/Etherscan label),348.47305542,29.4318%
+bgBTC,Ethereum,0xffa8db7b38579e6a2d14f9b347a9ace4d044cd54,Bitget 35 (exchange label),0.4771462,0.0403%
+bgBTC,Ethereum,0x8f9afb348d2c96dcd83670bd017221ebfe3a2078,,0.01301501,0.0011%
+BGBTC (Bitget books),off-chain,Bitget disclosure,"supply 1,184 BGBTC; 801.41 in Gauntlet vault (67.68%), 382.59 idle; reserves 1,420.01 BTC (119.93%); no user count disclosed",1184,100.0000%
+gtusdc (USD value),Morph,(aggregate),"24 EIP-7702 wallets delegated to 0x490Aac77 (inference: Bitget Wallet smart accounts), individual rows omitted",6009386.98,

@@ -1,0 +1,8 @@
+view,type,holders,holders_pct,shares_or_btc,balance_pct
+snapshot 2026-09-20 12:00 (BTC-eq),EIP-7702 -> ZeroDev Kernel (Kraken/Privy embedded wallet),37556,99.957,6456.9579,99.996
+snapshot 2026-09-20 12:00 (BTC-eq),plain EOA,15,0.04,0.2645,0.004
+snapshot 2026-09-20 12:00 (BTC-eq),EIP-7702 -> other (AmbireAccount7702),1,0.003,0.0,0.0
+Blockscout 2026-09-21 ~22:00 (shares),EIP-7702 -> ZeroDev Kernel (Kraken/Privy embedded wallet),37646,99.958,6500.8093,99.996
+Blockscout 2026-09-21 ~22:00 (shares),plain EOA,15,0.04,0.2633,0.004
+Blockscout 2026-09-21 ~22:00 (shares),EIP-7702 -> other (AmbireAccount7702),1,0.003,0.0,0.0
+# classification: Blockscout proxy_type=eip7702 + delegate implementation (EIP-7702 code prefix 0xef0100); 431 addresses that held at the snapshot but exited before the Blockscout pull were classified by eth_getCode on Ink at the snapshot block (classify_unknown.py)

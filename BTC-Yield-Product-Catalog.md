@@ -1,7 +1,7 @@
 # Каталог BTC-yield продуктов и волтов
 ### Полный реестр: похожие продукты, BTC-волты, CeFi/банки/фонды/ETF, стейкинг, опционы, кредиторы
 
-**Дата снимка:** 20 сентября 2026 · BTC $80 681
+**Дата снимка:** 20 сентября 2026 · BTC $81 178 (закрытие Binance) · **ревизия 21.09.2026** — строки со звёздочкой ★ и отмеченные «(испр.)» перепроверены ончейн и по первоисточникам; подробности в [BTC-Carry-Vaults-Dossiers.md](BTC-Carry-Vaults-Dossiers.md) и [AUDIT.md](AUDIT.md)
 **Дополняет:** [BTC-Yield-Market-Research.md](BTC-Yield-Market-Research.md) (аналитика, юнит-экономика, выводы)
 **Источники размеров:** DefiLlama (protocols/yields), Morpho API, публичная отчётность. Доходности — на дату, переменные, если не сказано «fixed».
 **Обозначения:** ★ = прямой аналог вашего архетипа (BTC-залог → заём стейбла → размещение → доходность в BTC); ◐ = частично (залог BTC / кэрри как один из компонентов); TVL — в USD; «BTC-ном.» = доходность выплачивается в BTC.
@@ -12,22 +12,23 @@
 
 | # | Продукт | Стек / механика | Доходность (BTC-ном.) | Размер | Доступ · кастоди | Комментарий |
 |---|---|---|---|---|---|---|
-| A1 | ★ **Kraken Bitcoin Vault** | Kraken → kBTC → Ink → Veda BoringVault → **Sentora** → Morpho (kBTC/RLUSD 3.07%, kBTC/PYUSD 3.55%) + Aave/Euler/Curve. LTV 63.5%, LLTV 86%, без рекурсии | **0.88%** (лендинг) / 1.4% / 1.8% (30d) | kBTC $762M; Morpho kBTC $510M залог / $324M долг; BTC-волт $320M+ | Розница, мин. 0.00006 BTC; non-custodial kBTC; вывод 3–5 дн.; нет UK/UAE/AU | 25% perf fee. $0 ликвидаций у Sentora за 3+ года |
-| A2 | ★ **Kraken «Advanced Strategies BTC»** (DeFi Earn) | Тот же стек Sentora/Veda; «simple lending, leveraged looping, LP» на Ethereum + Ink | 1.8% net 30d | $320M+ (июль 2026) | Розница | Часть $611M / 80k депозиторов по 4 волтам |
-| A3 | ★ **Bitget bgBTC Onchain Earn** | Bitget → bgBTC → Morpho на Morph, куратор **Gauntlet** | **3%** | bgBTC $114M | Розница, 125M юзеров биржи | USDC-волт там же — до 18% (стимулы Morph) |
-| A4 | ★ **Hermetica hBTC** (Stacks) | BTC → sBTC → залог на Zest (3.5% dual stacking) → заём USDCx → USDh (synthetic $) → стейк под funding → обратно в sBTC | **5.60%** 7d avg; таргет до 8% | ~50 BTC / $3.8M | Self-custodial; редемпция в native BTC | Апр-2026: добавлен доход от STRC (Strategy) |
-| A5 | ★ **Mezo Prime / Mezo Earn** | Native BTC в изолированном Enclave (Anchorage) → заём MUSD под **1% fixed** до 90% LTV → волты | BTC-волт 2–5%; Mezo Earn BTC 2.96% (2.93 rewards) | Mezo TVL $72.4M; Mezo Earn $65M; lifetime $487M | Институты (Prime) + розница; без rehypothecation | Bullish — ранний участник. Дешёвый долг = главный рычаг |
-| A6 | ★ **Avalon Labs (USDa / sUSDa / Superearn)** | BTC + BTC-LST залог в CeDeFi CDP → USDa (fixed rate) → sUSDa доходность; Superearn — доходные волты | н/д (USDa fixed borrow) | Avalon CeDeFi $103M + Superearn $115M | Розница; CeDeFi-кастоди | Заявлено $2B кредитных линий; «крупнейший BTC-CDP» |
-| A7 | ★ **Acre acreBTC** (Threshold, куратор **Re7**/Midas) | BTC → tBTC → macreBTC1 (Re7) → mRe7BTC/mRe7YIELD | заявлялось ~14%; **реализовано −1.24%** (share 1.0002 → 0.9876) | закрыт: депозиты остановлены, редемпции открыты | 51/100 multisig; вывод до 72 ч | markdowns 11.05 и 11.06.2026; см. Deep Dive §4.5 |
-| A8 | ★ **ether.fi Liquid BTC / eBTC** | Veda-волт: rate-арбитраж между BTC-активами на Aave/Morpho + стейбл-доходности + points (Babylon/Lombard/Veda) | LIQUIDBTC 1.55%; eBTC stake 0.15% | ether.fi Liquid $433M всего; LIQUIDBTC пул $11M; eBTC $22M | Розница; Veda | Принимает eBTC/WBTC/LBTC/cbBTC |
-| A9 | ★ **Lombard Bitcoin Earn (Lombard Vaults)** | Мульти-стратегия поверх LBTC: лендинг, LP, structured, cross-chain (Curve/Uniswap) | **>2%** | $161M заявлено; DefiLlama $74M | Розница | LBTCv (Veda) $72M отдельно |
-| A10 | ★ **Hyperbeat Ultra UBTC** (HyperEVM) | Автоматизированный волт UBTC + Morphobeat lending + points (Felix, Silhouette, Upshift) | переменная + points | HBBTC (Upshift) $0.86M; UBTC-рынки Morpho ~$4.4M | Розница | Экосистема Hyperliquid |
-| A11 | ★ **Midas mHyperBTC** (оператор Hyperithm) | LYT: BTC-ном. market-neutral стратегии onchain; NAV-price token | Pendle PT 2.28% implied | Morpho mHyperBTC $5.8M залог; Pendle $5.2M | Permissionless ERC-20 | Есть рынок mHyperBTC/USDC @9.84% borrow |
-| A12 | ★ **Midas mRe7BTC** (оператор Re7) | Native BTC staking + options premia + тактический DeFi | н/д | малый; торги на CG остановлены | Ethereum, Starknet | Ring-fenced структура |
-| A13 | ★ **Midas mBTC** | Токен, трекающий BTC lending rates | ~1.36% (DefiLlama midas-rwa BTC) | $23–29M | Permissionless | «4% в BTC» — исторический таргет |
-| A14 | ★ **BIMA USBD + Bracket** | BTC-backed стейбл USBD → real-yield волты (Bracket) | н/д | BIMA CDP $10M | Розница | Binance Labs-backed |
-| A15 | ★ **Upshift BTC-стратегии** | Кураторские волты: Lombard LBTC (ETH/Base), Upshift BTC, Hyperbeat uBTC | переменная | Upshift $410M всего | Розница | Пример loop: sUSDe→Aave→sUSDe ×3–4 |
-| A16 | ◐ **Zest Bitcoin Collateral Vaults** (Stacks → Bitcoin L1) | BTC остаётся на L1 (BitVM), заём стейблов на destination chain; sBTC-лендинг с dual stacking | sBTC 4.13% avg (Q1); до 12.5% boosted | 800+ BTC; Zest V2 $69M | Self-custodial | **1 500+ ликвидаций без bad debt** |
+| A1 | ★ **Kraken Bitcoin Vault** («Advanced Strategies BTC», sentoraBTC) | Kraken → kBTC (1 EOA Kraken) → Ink → Veda BoringVault → **Sentora** → Morpho kBTC/RLUSD и kBTC/PYUSD (5 395 kBTC, долг $278M, LTV 64%) + Aave и Morpho WBTC/USDT (437 WBTC, 20M USDT) + LP Uniswap WBTC/kBTC. 68% kBTC-долга → Sentora Vault V2 (кредиторы тех же рынков), 32% → Hastra PRIME. Без рекурсии на BTC | **1.40%** с запуска, **1.03%** за 30 дней (реклама до 2.5%; лендинг 0.97%) | ~6 575 BTC ≈ $565M (21.09); долг $298M | Розница, мин. 0.00006 BTC; кошелёк на Ink; вывод 3 дня; нет UK/UAE/AU; США — да | 25% валового (ончейн 2500 → 3333 bps 24.08). ~83% дохода — субсидии Merkl. Лимиты займа заполнены (испр.) |
+| A2 | ★ **Kraken DeFi Earn — Advanced Strategies USDC и др.** | Три USDC-волта на тех же рельсах Veda и Sentora; BTC-волт «Advanced Strategies BTC» = A1 (не отдельный продукт) | — | $611M по 4 волтам (июль 2026, Sentora) | Розница (48 штатов США, Канада, ЕЭЗ) | Запуск 26.01.2026; вначале Balanced и Boosted курировал Chaos Labs (испр.) |
+| A3 | ★ **Bitget bgBTC Onchain Earn** | Bitget → bgBTC → Morph → Gauntlet Aera → Morpho bgBTC/USDC (LLTV 77%): 801.7 bgBTC → $43M USDC (LTV 62–67%) → Gauntlet USDC Prime (82% шэров) → **обратно в тот же рынок** | до 3% (реализованная не проверена) | ~$65M в волте; резервы bgBTC $121.8M | Розница | Петля, как у Kraken; комиссии и вывод не раскрыты (испр.) |
+| A4 | ★ **Hermetica hBTC** (Stacks) | BTC → sBTC → Zest (цель LTV 50%) → заём **USDh** → sUSDh. **Стратегия свёрнута 18.06.2026**, депозиты выключены с 24.08; USDh теперь обеспечен STRCx | было 5.60% (7d, апрель–май); сейчас **~1%** | 46.9 BTC / $4.0M; 2 адреса держат 86% | Hermetica Labs (Панама); выход 72 ч + ~80 мин | Perf 10% по документации, ончейн 0 (испр.) |
+| A5 | ★ **Mezo Prime / Mezo Earn** | BTC (Enclave у Anchorage → triparty-минт) → MUSD под **1% фикс** (MCR 110%) → волты. Свой L1 (21 PoA-валидатор) | veBTC 2.77% (APR голосования в MUSD, не MEZO) | Earn $69.7M (92% — Bullish); MUSD 30.4M (49% бутстрап, 48% Bullish, 3% розница) | Институты + розница | Safe 5-of-9 без таймлока; лок Bullish на 500 BTC до 08.10.2026 (испр.) |
+| A6 | ◐ **Avalon Labs** (USDa / sUSDa / Superearn) | FBTC → lfBTC (обёртка Avalon) → **USDT**-долг $47.6M (LTV ~43%, статичная позиция); USDa 7–8% фикс; Superearn → горячий кошелёк Binance | не наблюдается | CeDeFi $110M; Superearn $115M; USDa $146M | TBT Global Ltd (BVI) | **DefiLlama обнулил TVL USDa 23.07.2026** («USDa is dead»); не «крупнейший BTC-CDP» (испр.) |
+| A7 | ★ **Acre acreBTC** (Thesis-спинофф; Re7 на Midas) | BTC → tBTC → macreBTC1 → mRe7BTC / заём → mRe7YIELD | заявлялось ~14%; **реализовано −1.24%** | закрыт; остаток 3.63 tBTC | Hectare Tech Ltd (BVI); вывод 14 дней (Midas) + до 72 ч (мост) | Уценки 11.05 и 11.06.2026; комиссия за выход 0.25% до 15.05 (испр.) |
+| A8 | ★ **ether.fi Liquid BTC** | Veda-волт, стратегия Nonce: WBTC + cbBTC на Spark → PYUSD + USDC (LTV 57–62%) → Cap stcUSD + Sentora Paypal USD Main | **1.96%** за год; 1.37% за 30 дней | ~232 BTC ≈ $18–20M (ether.fi Liquid всего $433M) | Розница (не US/CA/UK) | 1% платформы, 0% за успех (испр.) |
+| A9 | ◐ **Lombard Bitcoin Earn (BTCe) и LBTCv** | BTCe — обёртка над LBTCv (Veda, менеджер Sentora). 582 LBTC — слэшируемое покрытие займа Flow Traders на Cap (Symbiotic) — **first-loss, не кэрри** | LBTCv **0.98%** за год; BTCe ~1.5% на кредитной ноге | LBTCv 874 (~$72M); BTCe 445 (~$38M); «$1B / 38.5k» — кумулятивно | Розница | Вывод до 14 дней; комиссии BTCe не раскрыты (испр.) |
+| A10 | ★ **Hyperbeat Ultra UBTC (hbBTC)** | UBTC (Unit, MPC 2-of-3) → August/Upshift → UltraYield (Edge Capital) | ~2.1% в год за 508 дней; **0% с июля** | $0.77M (пик $21.8M); UBTC-рынки Morpho $5.05M | **Только вывод**, скрыт | 15% + 1.5%; очки без Felix (испр.) |
+| A11 | ★ **Midas mHyperBTC** (Hyperithm) | NAV-токен: BTC-деноминированные рыночно-нейтральные стратегии | ~2.8% в год с 10.2025; 30 дней — 1.90% | $30.4M; залог в Morpho (USDC под 9.8%) | KYC, эмитент Midas Software GmbH | Требования субординированы; Hyperithm — акционер Midas (испр.) |
+| A12 | ★ **Midas mRe7BTC** (Re7) | BTC-деноминированные рыночно-нейтральные стратегии | **−0.59%** с запуска | $0.8M | Ethereum, Starknet (Vesu) | **Не ring-fenced** (эмитент Midas Software GmbH; требования субординированы) (испр.) |
+| A13 | ◐ **Midas mBTC** | NAV-токен | NAV без изменений с 10.2025 | $28k | — | Фактически спит; колонка «mBTC» в старой истории APY была mHyperBTC (испр.) |
+| A14 | ◐ **BIMA** (USBD) / **Bracket** | USBD → пивот в collar-займы (FalconX, 50% LTV, волты Accountable) | — | BIMA CDP $10.8M; USBD $7.5M; Bracket $0.5M | — | Seed BIMA — лид Portal Ventures; «Binance Labs» — это про Bracket (испр.) |
+| A15 | ◐ **Upshift BTC / upLBTC** | upLBTC (куратор Tulipa Capital), Upshift BTC (August + MEV Capital) | upLBTC −0.5% в год на масштабе; Upshift BTC ~3% в год | **Upshift BTC закрыт; upLBTC скрыт** ($11k) | — | Пример петли sUSDe в документации не найден (испр.) |
+| A15a | ◐ **Tesseract TESS wBTC** (IPOR Fusion) | WBTC → USDC на Morpho/Aave (LTV ~59%) → **рекурсивные** петли sUSDe/PYUSD, wsrUSD | таргет 2–4% gross; сейчас кэрри отрицательный (3.34% против 4.96%) | $0.04–2M на волт; ~$13.9M во всех 58 волтах | Институты; Tesseract Investment Oy (MiCA CASP) | Все роли — один EOA (EIP-7702); 1% + 30% HWM. «wBTC Dollar Carry» — это BTCD Labs, не Tesseract |
+| A16 | ◐ **Zest** (Stacks) + Bitcoin Collateral Vaults | Площадка займа под sBTC (v2: партиционированный риск, частичные ликвидации); BCV — фаза 1 на предподписанных транзакциях с guardian council, BitVM — в фазе 2 (статус в mainnet не найден) | sBTC supply сейчас 0.1–1.2%; 4.13% — среднее Q1; 12.5% — стимулирующая кампания | Zest v2 $73M (занято $15M) + v1 $2.7M | Self-custodial | «1 500+ ликвидаций без bad debt» — самоотчёт; все 59 предложений DAO прошли как `urgent` в обход таймлока (испр.) |
 | A17 | ◐ **Concrete BTC vaults** | Инфраструктура волтов; ctWBTC Berachain/Ethereum | ~0% base + PoL | $38M BTC-пулы; Concrete $1.23B | Розница | |
 | A18 | ◐ **Lagoon evcbBTC** | Кураторский cbBTC-волт (Euler) | 7.93% | $1.2M | Розница | Lagoon $151M всего |
 | A19 | ◐ **Fusion by IPOR WBTC** | Автоматизированный WBTC-волт | 3.93% | $4.6M | Розница | |
@@ -43,7 +44,7 @@
 | A29 | ◐ **Solv BTC+** | Мульти-стратегия: DeFi + CEX + оффчейн | таргет 5–8% | (внутри Solv) | Розница | |
 | A30 | ◐ **Badger DAO** | Legacy BTC-агрегатор | н/д | $13M | | Исторический лидер 2021 |
 | A31 | ◐ **Proxy Finance (PRXY)** | «Bitcoin Yield Strategies», (3,3)-механика | н/д | $21M | | Высокий риск токеномики |
-| A32 | ◐ **Two Prime «C Vault» / Axiom** | Кредитование институтов (см. E) | 1.5–2% | $12M first-loss | non-US, мин. 5 WBTC | Не кэрри, но конкурент за депозит |
+| A32 | ◐ **Two Prime Axiom WBTC** (Pareto) | Кредит институтам; **заёмщик — сама Two Prime** | 1.5–2% таргет; 1.61% (эпоха 1) | first-loss 150 WBTC (=«$10–12M») | Мин. 5 WBTC; KYC Keyring; ICE Digital Trust + Copper | «Только не-US» и «через Morpho» не подтверждены (испр.) |
 
 ---
 
@@ -62,17 +63,17 @@
 | Morpho Ethereum | cbBTC / USDT | $62M | $30M | 2.98% | 86% |
 | Morpho Ethereum | cbBTC / RLUSD | $40M | $11M | 4.01% | 86% |
 | Morpho Ethereum | cbBTC / EURCV | $21M | $13M | 2.00% | 86% |
-| Morpho Circle chain | cirBTC / USDC | $18M | $11M | 0.03% | 86% |
+| Morpho Arc (Circle) | cirBTC / USDC | $18M | $11M | 0.03% | 86% |
 | Morpho Katana | vbWBTC / vbUSDC | $12M | $7M | 2.66% | 86% |
 | Morpho Hyperliquid | UBTC / USD₮0 | $2.2M | $1.0M | 7.26% | 77% |
 | Morpho Hyperliquid | UBTC / USDe | $0.6M | $0.25M | 8.31% | 77% |
-| **Aave v3** (все сети) | WBTC/cbBTC/LBTC/tBTC/FBTC/BTC.b/BTCB | **$5.27B** | н/д (общий пул) | USDC ~3.6–4% | 70–80% |
+| **Aave v3** (все сети) | WBTC/cbBTC/LBTC/tBTC/FBTC/BTC.b/BTCB | **$5.32B** | н/д (общий пул) | USDC ~3.6–4% | 70–80% |
 | **SparkLend** | cbBTC $462M · LBTC $221M · WBTC $171M | $855M | н/д | — | |
 | **Compound v3** | WBTC/cbBTC | $605M | н/д | — | |
 | **Venus (BSC)** | BTCB $366M · SolvBTC $206M · xSolvBTC $63M | $635M | н/д | — | |
 | **JustLend (Tron)** | BTC | $532M | н/д | — | |
 | **Fluid** | WBTC | $62M | н/д | — | smart collateral |
-| **Tydro (Ink, Aave-based)** | kBTC | $92M | н/д | — | Kraken L2 |
+| **Tydro (Ink, white-label Aave V3; управляет Ink Foundation)** | kBTC (LTV 85%, LT 87%, занимать можно только USDC) | $93M | ~$67M всего по Tydro | USDC 6.3% | 87% | 85% kBTC — один сторонний EOA; **волта Kraken там нет**; оракул BTC/USD (испр.) |
 | **Kamino (Solana)** | cbBTC $58M · xBTC $17M · zBTC | $86M | н/д | — | |
 | **Jupiter Lend (Solana)** | cbBTC | $10M | | | |
 | **NAVI (Sui)** | enzoBTC $35M · mBTC $24M · LBTC | $68M | | | |
@@ -94,18 +95,18 @@
 
 | Протокол | Стейбл | Механика | Размер | Заметка |
 |---|---|---|---|---|
-| **Mezo** | MUSD | 1% APR fixed, до 90% LTV | Mezo Borrow $2.9M (ончейн) + Prime | см. A5 |
-| **Avalon** | USDa | fixed rate, CeDeFi | $103M+ | см. A6 |
-| **Sovryn Zero** (Rootstock) | ZUSD/DLLR | 0% interest, one-time fee | $20M | Старейший BTC-CDP |
+| **Mezo** | MUSD | 1% фикс, MCR 110% (≈90.9% LTV), выпуск 0.1% | **MUSD 30.4M**: 49% бутстрап, 48% Enclaves (Bullish), 3% розница (0.92M); «$2.9M» — залог розничных троувов (испр.) | см. A5 |
+| **Avalon** | USDa | 7–8% фикс, CeDeFi, ликвидация на CEX | USDa $145.6M; TVL CDP по DefiLlama ≈ 0 с 23.07.2026 | см. A6 (испр.) |
+| **Sovryn Zero** (Rootstock) | ZUSD/DLLR | 0% ставка, разовая комиссия | TVL $21.4M, но ZUSD всего $1.96M (30 троувов) | Старейший BTC-CDP, активность низкая (испр.) |
 | **Money on Chain** (Rootstock) | DoC | Dual-token | $22M | |
-| **BIMA** | USBD | | $10M | |
+| **BIMA** | USBD | Пивот в collar-займы | $10.8M TVL; USBD $7.5M | (испр.) |
 | **Threshold thUSD** | thUSD | tBTC/ETH залог | $2.2M | |
-| **Yala** | YU | BTC → cross-chain стейбл | $2.3M | |
+| **Yala** | YU | BTC → кроссчейн-стейбл | $2.5M | **Взлом $7.64M (14.09.2025), устойчивый депег с 11.2025**, пивот (испр.) |
 | **BTCFi CDP** (Bifrost) | | native BTC → стейбл | $7.4M | |
-| **Hermetica USDh** | USDh | synthetic $ (funding) на Stacks | $2.0M | Используется в hBTC |
-| **Felix** (Hyperliquid) | feUSD | CDP | $35M | |
+| **Hermetica USDh** | USDh | было: синтетический доллар (funding); сейчас обеспечен STRCx (префы Strategy) | $2.0M | Используется в hBTC (испр.) |
+| **Felix** (Hyperliquid) | feUSD | CDP | CDP $35.7M + Vaults $47.5M; feUSD $9.8M; BTC ~5.5% залога | (испр.) |
 | **Lista CDP** (BSC) | lisUSD | BTCB залог | $1.9M BTCB | |
-| **Bitsmiley / Satoshi Protocol** | bitUSD / satUSD | BTC L2 CDP | малые | |
+| **Bitsmiley / Satoshi Protocol → River** | bitUSD / satUSD | BTC-CDP | River Omni-CDP $107M; satUSD $154.5M (больше USDa) | Satoshi переименован в River; $12M от TRON DAO (01.2026) (испр.) |
 | **VETRO** | VUSD / vetBTC | yield-bearing collateral | $0.6M | |
 | **Saturn** | USDat / sUSDat | **не** BTC-CDP: USDat backed T-bills, sUSDat = STRC-доходность 11%+ | $141M | см. раздел H |
 
@@ -115,16 +116,16 @@
 |---|---|---|---|---|
 | Maple USDC | 5.07% | 4.96% | $2.85B | Обеспеч. институц. кредит |
 | Sky sUSDS | 3.60% | 3.57% | $4.40B | RWA/T-bills |
-| Ethena sUSDe | 4.67% | 4.67% | $1.33B | Базис (депег-риск!) |
-| Ondo USDY | 3.58% | 3.56% | $1.18B | T-bills |
-| BlackRock BUIDL | 3.75% | 3.57% | $993M | T-bills |
+| Ethena sUSDe | 4.67% | 4.71% | $1.33B | Базис (депег-риск!) |
+| Ondo USDY (Ethereum) | 3.58% | 3.56% | $1.18B | T-bills |
+| BlackRock BUIDL (класс Solana) | 3.75% | 3.57% | $993M | T-bills |
 | Maple USDT | 4.72% | 4.63% | $688M | |
 | Sentora RLUSD v2 (Morpho) | 6.11% (2.62+3.50 rw) | 6.16% | $369M | Стимулы Ripple |
-| Sentora PYUSD Main (Morpho) | 5.22% (2.44+2.78 rw) | 5.72% | $436M | Стимулы PayPal |
+| Sentora Paypal USD Main (Morpho) | 5.07% (2.26 + 2.82 наград) | 5.68% | $431M | Стимулы Merkl от Safe Sentora (спонсор не раскрыт) (испр.) |
 | Sirloin USDC (Base) | 5.56% | 5.67% | $426M | |
 | Steakhouse USDC (Base) | 4.35% | 4.32% | $428M | |
 | Gauntlet USDC Prime (Base) | 4.35% | 4.32% | $420M | |
-| Spark USDC | 3.90% | 3.88% | $273M | |
+| Spark USDC (Morpho SPARKUSDC, Base) | 3.90% | 3.88% | $273M | |
 | Jupiter Lend USDC (Solana) | 4.91% | 4.86% | $470M | |
 | USD.AI sUSDAI | 6.94% | 7.19% | $494M | GPU-кредит |
 | Re reUSD | 6.82% | 6.55% | $265M | Перестрахование |
@@ -139,7 +140,7 @@
 
 | Пул | Проект | APY | TVL |
 |---|---|---|---|
-| **Yield Basis** YB-cbBTC / YB-WBTC / YB-tBTC | 2x-lev LP без IL | **7.24% / 4.79% / 3.60%** (100% rewards) | $21M / $30M / $14M; протокол $132M |
+| **Yield Basis** YB-cbBTC / YB-WBTC / YB-tBTC | 2x LP без IL | **7.24% / 4.79% / 3.60%** — только застейканные (эмиссия YB); незастейканные — комиссии 0–0.8% | $21M / $30M / $14M; протокол $134M (пик $247M, 15.01.2026) | (испр.) |
 | WBTC-WETH | Uniswap v3 ETH / Arb | 1.4–10% | $45M / $37M |
 | WBTC-USDT | Uniswap v3 | 4.2–10.3% | $29M + $26M |
 | WBTC-USDC | Uniswap v3 | 2.4% | $21M |
@@ -163,12 +164,12 @@
 | # | Продукт | Механика | Доходность | Размер | Заметка |
 |---|---|---|---|---|---|
 | C1 | **Babylon** | Native BTC на L1 → security для PoS-сетей; награды в BABY | **0.24–0.4%** | **$3.32B** (пик $6.66B сен-2025) | Self-custodial, timelock. Доминирует BTCFi по TVL, но доходность околонулевая |
-| C2 | **Lombard LBTC** | Babylon LST; с 2026 — **covered-call стратегия под управлением Bitwise** | база 0.38%; таргет **2.5% net** | **$690M** (пик $1.65B) + BTC.b $172M | 8% fee на yield. Доступ через **Ledger Wallet** (Figment) |
+| C2 | **Lombard LBTC** | С 13.08.2026 — **covered call Bitwise** (50–60% обеспечения активно, пассивная часть ничего не зарабатывает) | таргет **2.5% net** | **$690–738M** (пик $2.107B, 12.05.2025; −58% в BTC, −65% в USD) + BTC.b $172M | **20% прибыли стратегии с HWM** (8% — эпоха Babylon). Доступ через Ledger (Figment). Вывод до 10 дней (испр.) |
 | C3 | **Solv xSolvBTC / SolvBTC.CORE / BTC+** | LST-агрегатор: Babylon + Core + basis + RWA | xSolvBTC **~4%**; BTC+ 5–8% таргет | SolvBTC $517M; LSTs $78M; Basis $199M | 12 сетей; Venus xSolvBTC $63M |
 | C4 | **Bedrock uniBTC** | Babylon LRT + Symbiotic | Symbiotic uniBTC 0.42%; Pendle YT ист. 22% | **$374M** (18 сетей) | |
 | C5 | **Lorenzo stBTC / enzoBTC / OTF** | stBTC = Babylon LST; enzoBTC = wrapper; OTF = токенизированные фонды | н/д | enzoBTC $485M; stBTC $0.03M | Пивот в asset management (sUSD1+ $80M) |
 | C6 | **PumpBTC** | Babylon LRT | н/д | $28M | |
-| C7 | **Core lstBTC** (Maple + BitGo/Copper/Hex Trust) | Dual staking Core: BTC в кастодиане + CORE → награды CORE, выплата в BTC | **5%+** таргет (90d lock); lstBTC ниже | (внутри Maple $2.98B) | Институты; BTC не покидает кастодиана |
+| C7 | **Core lstBTC** (Maple + BitGo/Copper/Hex Trust) | Dual staking Core: BTC в кастодиане + CORE → награды CORE, выплата в BTC | 5%+ таргет (лок 90 дней); lstBTC ниже | (внутри Maple; размер BTC-продукта сейчас не найден) | Спор Core и Maple урегулирован 22.05.2026 (испр.) |
 | C8 | **b14g** (Core/Babylon Genesis) | Модульный dual-staking слой | 0.12% | $189–260M | |
 | C9 | **Stacks Dual Stacking / sBTC** | sBTC + STX → PoX-награды | база 0.36%; boosted 3.56%; «~3%» таргет | sBTC $199M | Self-custodial на L1 (Stacks BTC Staking — не запущен полностью) |
 | C10 | **Starknet BTC Staking** | WBTC/LBTC/tBTC/SolvBTC → security → STRK | **3.80%** (в STRK) | $47M | Эмиссионный |
@@ -205,13 +206,13 @@
 
 | # | Продукт | Механика | Доходность (BTC-ном.) | Размер | Доступ · кастоди |
 |---|---|---|---|---|---|
-| D1 | **Coinbase Bitcoin Yield Fund (CBYF)** | Cash-and-carry спот vs перпы/CME; без лендинга и call-selling | **4–8%** таргет net | ёмкость $1B; AUM не раскрыт | Non-US институты; Coinbase Custody; токенизированный класс на Base (Apex) |
-| D2 | **Coinbase US Bitcoin Yield (USCBYF)** | То же | 4–8% | н/д | US accredited; в 2026 — в пенсионных счетах |
-| D3 | **Sygnum × Starboard «BTC Alpha Fund»** | Market-neutral | **8.9%** annualized net (Q1) | 750+ BTC / $65M | Институты; Sygnum (FINMA) |
-| D4 | **Syntetika hBTC** (Hilbert Group, Base) | «BTC Basis+»: регулируемый фонд, NAV-аттестация, PoR | **11.61%**; 2025: **+20.18% net** | $14.2M | cbBTC → hBTC; независимая кастоди |
+| D1 | **Coinbase Bitcoin Yield Fund (CBYF)** | Cash-and-carry (спот против деривативов; CME в первоисточниках не назван) | **4–8%** таргет net | ёмкость $1B; AUM, комиссии и результат не раскрыты | Не-US; запуск 01.05.2025; seed Aspen Digital; ежемесячно, уведомление 5 дней; токен-класс на Base (Apex, 19.03.2026) (испр.) |
+| D2 | **Coinbase US Bitcoin Yield (USCBYF)** | **Кредит (BTC private credit) + базис** | 4–8% | н/д | US accredited; IRA через iTrustCapital (заявлено) (испр.) |
+| D3 | **Starboard Sygnum BTC Alpha Fund** | Направленный BTC + рыночно-нейтральный оверлей (перпы, фьючерсы, опционы) | **8.9%** net за **Q4 2025** (первый полный квартал); таргет 8–10% | 750+ BTC | Кайманы; мин. $100k; ежемесячно; кастоди CopperClearloop и Sygnum; аудитор KPMG (испр.) |
+| D4 | **Syntetika hBTC** (Hilbert Capital, Base) | «BTC Basis+»: базис + кривая + короткие опционы + доходный стейбл-залог; NAV Consulting, PoR | **10.25%** (PPS искажён притоками); 2025: **+20.18% net** | $16.1M | cbBTC → hBTC; куратор Tulipa; выход 1–3 недели; комиссии 1.5% + 15% + 10%. Не путать с Hermetica hBTC (испр.) |
 | D5 | **Laser Digital (Nomura) Bitcoin Diversified Yield Fund** | Long BTC + market-neutral арбитраж + лендинг + опционы; токенизирован через KAIO | **~5%** таргет | н/д | Cayman; $250k мин.; accredited |
-| D6 | **BounceBit CeDeFi** | Basis + продажа путов через CEFFU + collateral yield | пример: 4.7% basis + 15% puts + 4.25% = 24% брутто | **$289M** AUM | Розница; CEFFU |
-| D7 | **Solv Basis Trading** | Basis на CEX | н/д | $199M (BTCB $238M / WBTC $201M / BOB $46M пулы) | |
+| D6 | **BounceBit CeDeFi** | Базис + продажа путов через CEFFU | пример: 24% брутто (маркетинг) | **$289M — не подтверждено** (DefiLlama: BounceBit Prime $11.4M) | Розница; CEFFU (испр.) |
+| D7 | **Solv Basis Trading** | Базис на CEX | н/д | **$201M** (протокол; $488M — сумма пулов) | (испр.) |
 | D8 | **BitFi Basis** | Basis | н/д | $227M | |
 | D9 | **Bitway Earn** (BSC) | Basis | н/д | $84M | |
 | D10 | **Liminal Basis xBTC** (Hyperliquid) | Basis на HL | 9.74% | $1.2M | |
@@ -229,9 +230,9 @@
 
 | # | Продукт | Механика | Доходность | Размер | Условия |
 |---|---|---|---|---|---|
-| E1 | **Maple BTC Yield** | BTC в Copper/BitGo → залог → USDC → CORE + хедж → dual staking Core | **5.13%** native BTC | (Maple $2.98B всего) | 0.40% mgmt + 20% perf > 5%; CTLV на L1; без rehypothecation |
-| E2 | **Two Prime Axiom WBTC Vault** (Pareto) | Лендинг публичным компаниям и рейтингованным институтам | **1.5–2%** таргет | $12M first-loss; Pareto $227M кредитов | Мин. 5 WBTC (~$400k); non-US; ICE кастоди, Copper |
-| E3 | **Xapo Byzantine BTC Credit Fund** (с Hilbert) | Структурный кредит институтам, без левериджа | **3.5–5%** net | $100M на первом этапе | Accredited; Xapo Bank (Gibraltar) |
+| E1 | **Maple BTC Yield** | BTC у Copper/BitGo (CLTV) → залог → USDC → CORE + путы → dual staking Core | **5.13%** (2025) | 1 500+ BTC / $180M в 2025; текущий размер не найден (страница 404) | 0.40% + 20% выше 5%; лок 90 дней; **спор с Core урегулирован 22.05.2026** (испр.) |
+| E2 | **Two Prime Axiom WBTC Vault** (Pareto) | Займы институтам; **заёмщик на Pareto — сама Two Prime** | 1.5–2% таргет; 1.61% факт | first-loss 150 WBTC; Pareto $247M кредитов | Мин. 5 WBTC (~$400k); KYC Keyring; ICE Digital Trust + Copper; SEC RIA (испр.) |
+| E3 | **Xapo Byzantine BTC Credit Fund** (менеджер Hilbert Capital) | Короткие займы BTC институтам первого уровня, без плеча и DeFi | **3.5–5%** таргет; **2.94%** текущая | $100M в первой фазе; seed 3 000 BTC | ~$120k или 2 BTC; Кайманы; ежемесячно, уведомление 30 дней (испр.) |
 | E4 | **Ledn BTC Growth Account** | Фондирование overcollateralized BTC-кредитной книги | **7–9%** заявлено | (розничный BTC-lending ~$3B рынок) | PoR, open-book; ставки для BTC де-факто ниже стейблов |
 | E5 | **Nexo BTC Earn** | Omnibus, ставка зависит от холда NEXO | **6.5%** | $2.04B loan book | Контрагентский риск |
 | E6 | **YouHodler** | Flexible Yield Account | **7%** | н/д | LTV до 90% на займах |
@@ -282,9 +283,9 @@
 
 | Тикер | Эмитент | Механика | Дистрибуция | AUM / TER |
 |---|---|---|---|---|
-| **BTCI** | NEOS Bitcoin High Income | Опционный overlay на BTC ETP | **33% trailing** | **$1.3B** |
+| **BTCI** | NEOS Bitcoin High Income | Опционный overlay на BTC ETP | **36.51% trailing** (SEC yield 1.35%) | **$1.33B** |
 | **XBCI** | NEOS Boosted Bitcoin High Income | Levered overlay | — | новый (2026) |
-| **BTCC** → «Bitcoin High Income» (с 17.09.2026) | Grayscale | Covered call на GBTC | 47.6% distr.; **100% ROC** по 19a-1; SEC yield 2.03% | |
+| **BTCC** → «Bitcoin High Income» (с 17.09.2026) | Grayscale | Covered call на GBTC | 40.12% distr.; **100% ROC** по последнему 19a-1; SEC yield 2.14% | AUM **$16.8M**; TER 0.66% |
 | **BPI** | Grayscale Bitcoin Premium Income | Covered call на GBTC/BTC mini | 18.9% | TER 0.66% |
 | **YBTC** | Roundhill | Первый US covered-call BTC ETF; недельные | — | TER 0.96% |
 | **YBIT** | YieldMax | Call spreads на IBIT | — | $41.85M; TER 1.02% |
@@ -305,7 +306,7 @@
 
 | Платформа | BTC APY | Условия | Заметка |
 |---|---|---|---|
-| **Kraken Auto Earn** | **0.02%** | weekly | Отдельно: Bitcoin Vault 0.88–1.8% (A1), BTC Staking via Babylon |
+| **Kraken Auto Earn** | **0.02%** | weekly | Отдельно: Bitcoin Vault — реализовано 1.03% за 30 дней, 1.40% с запуска (A1) |
 | **Krak** (Kraken app) | 0.1% | weekly | |
 | **Coinbase** | — | | Не платит на BTC; loans через Morpho (см. I) |
 | **Binance Simple Earn** | 0.9–2.7% (ист. конец 2024); текущая — на дашборде | flexible/locked 30–120d | Промо на стейблах до 8–20%; Dual Investment 15%+ |
@@ -335,7 +336,7 @@
 
 | Платформа | BTC-продукт | Ставка | Заметка |
 |---|---|---|---|
-| **Xapo Bank** (Гибралтар, UK passport) | BTC Savings | **0.25%** | USD Savings 3.35% выплачивается в BTC; Byzantine BTC Credit Fund 3.5–5% |
+| **Xapo Bank** (Гибралтар, GFSC) | BTC Savings | **0.25%** (до 2 BTC) | USD Savings 3.35% выплачивается в BTC; Byzantine BTC Credit Fund — таргет 3.5–5%, текущая 2.94% (испр.) |
 | **Nexo** | BTC Earn | 6.5% | зависит от NEXO-холда |
 | **Ledn** | BTC Growth | 7–9% заявлено | |
 | **YouHodler** | Flexible Yield | 7% | |
@@ -366,7 +367,7 @@
 | **Strategy STRC («Stretch»)** | Perpetual preferred, дивиденд semi-monthly, ставка пересматривается ежемесячно | **12%** (11.5–13% eff.) | Digital Credit outstanding **$13.5B** (STRF/STRK/STRC/STRD) |
 | **Strategy STRF / STRK / STRD** | Senior → junior preferred | 10% / 8% conv. / 10% | |
 | **Saturn sUSDat** | USDat (T-bills) → sUSDat держит STRC через кастодиан | **11%+** | $141M; 3–7d exit queue |
-| **Strategy «BTC Yield» KPI** | Не продукт: прирост BTC на акцию | 13.3% YTD (май-2026) | 843 738 BTC |
+| **Strategy «BTC Yield» KPI** | Не продукт: прирост BTC на акцию | 13.3% YTD (май 2026) — **не перепроверено** | 843 738 BTC — **не перепроверено** |
 | **Hermetica hBTC (STRC-leg)** | Часть дохода hBTC — из STRC | | см. A4 |
 
 **Почему это важно:** STRC/Saturn — прямой конкурент за «доходность, обеспеченную биткоином» в глазах TradFi-аллокатора: 11–12% в USD против 1–5% в BTC.
@@ -377,7 +378,7 @@
 
 | Платформа | Объём | Ставка заёмщику | LTV | Заметка |
 |---|---|---|---|---|
-| **Coinbase Loans (Morpho/Base)** | >$1.2B originated; >$800M активных; $3.04B cbBTC залога | 4.81% | до 86% LLTV; лимит $5M | Кураторы Steakhouse/Gauntlet |
+| **Coinbase Loans (Morpho/Base)** | **$3B+ выдано; $1.3–1.4B активно; 90K+ пользователей**; $3.07B cbBTC-залога на Base | ~4.8% («от 5.1%» на сайте) | до 75% LTV, ликвидация 86%; лимит $5M | Запуск 16.01.2025; $1B — ~01.10.2025; ~97% долга рынка — смарт-кошельки Coinbase; кредиторы — Gauntlet, Steakhouse Prime, Spark (испр.) |
 | **Morpho прочие BTC-рынки** | $2.38B занято всего | 2–5% | 77–86% | |
 | **Aave v3** | $5.27B BTC заведено | 3.6–4% USDC | 70–80% | |
 | **Tether** | $14.6B secured loans | н/д | | |
@@ -386,7 +387,7 @@
 | **Ledn** | (рынок ~$3B) | 9–12% | 50% | |
 | **Strike** | | 9.5% | | |
 | **Arch / SALT / Figure / Unchained** | | 7.25–14.45% | 40–75% | |
-| **Mezo MUSD** | $487M lifetime | **1% fixed** | 90% | |
+| **Mezo MUSD** | MUSD 30.4M (органики ~$0.9M) | **1% фикс** | ≈90.9% | 92% Earn — Bullish (испр.) |
 | **Sygnum MultiSYG** | H1 2026 | bank-grade | | |
 | **Templar** ($30M) | Native BTC → USDT на ETH/NEAR, MPC, без KYC | | | $100M lending commitments |
 | **Surge Credit** | Native BTC Taproot vault → USDC на Base | | | $1.3M |
@@ -403,14 +404,14 @@
 | Метрика | Значение |
 |---|---|
 | Всего продуктов в каталоге | **~230** позиций (A–I) |
-| Прямых аналогов архетипа (★) | **15**, из них с TVL > $50M — 4 (Kraken, Bitget, Mezo, Avalon) |
-| BTC в обёртках on-chain | $20.3B (46 эмитентов) |
-| BTC в денежных рынках | $13.55B |
+| Прямых аналогов архетипа (★) | **10 строк, 9 уникальных BTC-продуктов** (A2 — USDC-волты Kraken; BTC-волт — это A1). Avalon, Lombard BTCe, BIMA, Upshift понижены до ◐. На масштабе работает **1** (Kraken, ~$565M); > $50M — ещё Bitget (~$65M). Закрыты или заморожены: Acre, Hermetica, Hyperbeat, Upshift BTC |
+| BTC в обёртках on-chain | **~$28.7B** с cbBTC ($8.0B); без cbBTC — $20.7B |
+| BTC в денежных рынках | **$13.86B** |
 | Занято под BTC-залог (Morpho) | $2.38B из $4.93B |
-| Стейкинг/рестейкинг BTC | ~$5.5B (Babylon $3.32B + LST/LRT) — **сжимается** |
+| Стейкинг/рестейкинг BTC | ~$5.5B gross (net ~$4.3–4.4B: BTC внутри Babylon посчитан дважды) — **сжимается** |
 | Basis-протоколы | $7.58B (43) |
 | BTC income ETF (US) | BTCI $1.3B — крупнейший; сегмент synthetic income $225B+ всего |
 | Digital Credit (Strategy) | $13.5B |
-| CeFi loan books | $73.6B (Tether 59.9%) |
+| Кредитование под крипту | $73.6B всего (Galaxy, Q3 2025); CeFi — $24.4B (Tether 59.9% от CeFi) |
 | Медианная BTC-ном. доходность «безопасных» продуктов | **~1–2.5%** |
 | Диапазон «5%+» | только базис (D), институц. кредит (E1/E3–E6), эмиссия (C10/C11/C17) и опционы (F) |

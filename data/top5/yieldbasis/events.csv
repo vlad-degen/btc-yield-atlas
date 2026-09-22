@@ -1,0 +1,113 @@
+date,event,type,source,btc_tvl_d_minus1,btc_tvl_d_plus7
+2024-12-27,"Basis Yield AG (Swiss AG, Zug) registered",corporate,docs.yieldbasis.com/pdf/mica-whitepaper.pdf,,
+2025-02-18,"Private token round $5M at $50M valuation (DefiLlama raises); whitepaper: $6M total from SevenX, Delphi Ventures, AntAlpha, Amber, Aquarius, Bitscale, Mirana, Chorus One, Karatage, NoLimitsHoldings +20 angels",funding,api.llama.fi/protocol/yield-basis; MiCA whitepaper,,
+2025-09-11,"Public sale (Legion x Kraken) subscription 11-12 Sep: 25M YB (2.5%) at $0.20, $5M, $200M FDV; USDC; Kraken listing at TGE",token sale,MiCA whitepaper Part E,,
+2025-09-15,YB token and Factory deployed,token,docs.yieldbasis.com/user/governance/yb-token; Blockscout,,
+2025-09-16,YB DAO #0 executed: Test the DAO in prod,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),,
+2025-09-22,YB DAO #1 executed: Pass control over Curve grant to Curve DAO,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),,27.6
+2025-09-24,"YB DAO #2 executed: Use new AMM, LT and Gauge implementations in Yield Basis",YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),,27.6
+2025-09-24,YB DAO #3 created (not executed): Create first Yield Basis markerts [start 2025-09-24],YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),,27.6
+2025-09-24,YB DAO #4 executed: Create first Yield Basis markerts,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),,27.6
+2025-09-24,YB DAO #5 executed: Create first Yield Basis markerts,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),,27.6
+2025-09-24,YB DAO #6 executed: Create first Yield Basis markerts,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),,27.6
+2025-09-24,Curve DAO vote 1206 executed (96.94% yes): Create a credit line of up to 60m crvUSD for Yield Basis [https://gov.curve.finance/t/create-a-crvusd-credit-line-to-yield-basis/10774],Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,,27.6
+2025-09-24,crvUSD debt ceiling for YB Factory set to 60M crvUSD (block 23432188),credit line (onchain),archive eth_call crvUSD ControllerFactory.debt_ceiling(0x370a…00c0),,27.6
+2025-09-24,Market v1-WBTC LT deployed (0x6095a220c5567360d459462a25b1ad5aead45204),market launch,Blockscout creation tx 0xd5ab71f83661f768e835b066ee83fbe296d49e0a5a73ca6126ba43a4eb39076e,,27.6
+2025-09-24,Market v1-cbBTC LT deployed (0xd6a1147666f6e4d7161caf436d9923d44d901112),market launch,Blockscout creation tx 0xd3db73f6b06858425d3852a59ed1065148add2ba2836732a43caad9de99abea5,,27.6
+2025-09-24,Market v1-tBTC LT deployed (0x2b513ebe7070cff91cf699a0bfe5075020c732ff),market launch,Blockscout creation tx 0x988909f3bdca5018320226100d409e07654d1d80900247be26ae56f0bad3ab31,,27.6
+2025-09-24,"Launch: 3 markets with $1M cap each (2M crvUSD); UI overloaded, pools filled within a minute",market launch,news.curve.finance/yieldbasis-on-curve-whats-happened-so-far,,27.6
+2025-09-26,YB DAO #7 executed: Change borrow rate to 7% APR,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),27.7,252.5
+2025-10-02,YB DAO #8 executed: Allocate the whole 60M crvUSD to three pools,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),27.6,252.2
+2025-10-02,Curve DAO vote 1213 executed (100.00% yes): [yb-pools] Update donation protection parameters: sandwich protection should not work as ape tax,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,27.6,252.2
+2025-10-10,"YB DAO #9 executed: Add gauges for WBTC, cbBTC and tBTC pools to GaugeController",YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),252.2,1391.3
+2025-10-10,"BTC crash (daily close 121.7k->110.8k); v1 book PPS -2% to -5% on the day, redemption value held ~1.00; recovered within ~4 days",stress,api.yieldbasis.com market snapshots,252.2,1391.3
+2025-10-14,YB DAO #10 executed: Allocate the whole 300M crvUSD to three pools,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),266.2,1355.0
+2025-10-14,Curve DAO vote 1222 executed (100.00% yes): Increase credit line to Yield Basis up to 300m crvUSD [https://gov.curve.finance/t/increase-crvusd-caps-for-yb-pools-to-300m-crvusd/10867],Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,266.2,1355.0
+2025-10-14,crvUSD debt ceiling for YB Factory set to 300M crvUSD (block 23575503),credit line (onchain),archive eth_call crvUSD ControllerFactory.debt_ceiling(0x370a…00c0),266.2,1355.0
+2025-10-15,YB DAO #11 executed: Send tokens for Curve governance airdrop to veCRV voters,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1349.1,1376.3
+2025-10-15,YB TGE / emissions start 10:00 UTC; YB first price $0.677 (DefiLlama); 5M YB airdrop to veCRV voters,token,news.curve.finance; coins.llama.fi,1349.1,1376.3
+2025-10-17,YB DAO #12 created (not executed): Incentivize crvUSD/pyUSD pool with 200k YB for stability of crvUSD [start 2025-10-17],YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1376.4,1352.1
+2025-10-17,YB DAO #13 executed: Incentivize crvUSD/pyUSD pool with 200k YB for stability of crvUSD,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1376.4,1352.1
+2025-10-22,Curve DAO vote 1230 executed (100.00% yes): Add a gauge for the following pool: YB/crvUSD on Mainnet,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1355.0,1341.9
+2025-10-27,Curve DAO vote 1238 executed (100.00% yes): Set YB emissions recipient to 0x0997f89c451124EadF00f87DE77924D77A38419a,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1351.3,1396.3
+2025-10-28,YB DAO #14 executed: Incentivize crvUSD/pyUSD pool with 200k YB for stability of crvUSD,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1347.2,1455.8
+2025-10-28,"Curve DAO vote 1241 executed (99.87% yes): In advance of utilizing YB for boosting crvUSD liquidity and new crvUSD allocations for Yield Basis, increase PegKeeper capacity by factor of 3, reaching 324M c",Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1347.2,1455.8
+2025-11-12,YB DAO #15 executed: Stage 1 of liquidity migration,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1404.9,1546.5
+2025-11-12,YB DAO #16 executed: Stage 2 of liquidity migration - create yb-WBTC market,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1404.9,1546.5
+2025-11-12,YB DAO #17 executed: Stage 2 of liquidity migration - create yb-cbBTC market,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1404.9,1546.5
+2025-11-12,YB DAO #18 executed: Stage 2 of liquidity migration - create yb-tBTC market,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1404.9,1546.5
+2025-11-12,YB DAO #19 executed: Stage 3 of liquidity migration,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1404.9,1546.5
+2025-11-12,Market v2-WBTC LT deployed (0xfbf3c16676055776ab9b286492d8f13e30e2e763),market launch,Blockscout creation tx 0xe45c4e96ae14cb9494044fba7d6420941108e5e3e427411b72449358e3f49d2b,1404.9,1546.5
+2025-11-12,Market v2-cbBTC LT deployed (0xac0cfa7742069a8af0c63e14ffd0fe6b3e1bf8d2),market launch,Blockscout creation tx 0xac2351345d67da17a1b3f60eeabad2bbfe4b3d8064d5ef778a5eb9600c6d4e19,1404.9,1546.5
+2025-11-12,Market v2-tBTC LT deployed (0xac0a340c1644321d0bbc6404946d828c1ebfac92),market launch,Blockscout creation tx 0xa0a55864692c6257370b4b927fdd320cfb1c1c39924efed9660fec8ca6b28d98,1404.9,1546.5
+2025-11-16,YB DAO #20 executed: Kill gauges for obsolete markets,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1513.8,1580.0
+2025-11-21,"Curve DAO vote 1266 NOT executed/failed (1.70% yes): Set YB vote incentive weights to 55 pct Votium, 45 pct Votemarket",Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1556.6,1600.2
+2025-11-28,"Curve DAO vote 1267 executed (99.64% yes): Set YB weights to 55pct Votium, 45pct Votemarket - FIX",Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1600.2,1621.3
+2025-12-01,"YB DAO #21 executed: Convert fees from old pools to WBTC, cbBTC and tBTC. Send 6.02448982 WBTC, 20.24",YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1601.0,1624.3
+2025-12-03,YB DAO #22 executed: Turn fee distribution ON,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1611.9,1652.8
+2025-12-03,Curve DAO vote 1270 executed (100.00% yes): Add a gauge for the following stableswap NG pool: sdYB/YB on mainnet,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1611.9,1652.8
+2025-12-04,Fee switch live: first veYB epoch ($409k); 17.55 BTC accrued fees distributed over 4 weeks,fee switch,api.yieldbasis.com fee epochs; PR Newswire 302633982,1608.9,1662.1
+2025-12-12,YB DAO #23 executed: Bump cap of cbBTC pool from $50M to $100M,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1662.1,2412.2
+2025-12-12,Curve DAO vote 1279 executed (99.89% yes): Increase credit line to Yield Basis from current 300M to 1B crvUSD [https://gov.curve.finance/t/increase-credit-line-for-yield-basis-to-1b-crvusd/10945],Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1662.1,2412.2
+2025-12-12,crvUSD debt ceiling for YB Factory set to 1000M crvUSD (block 23996893),credit line (onchain),archive eth_call crvUSD ControllerFactory.debt_ceiling(0x370a…00c0),1662.1,2412.2
+2025-12-24,Curve DAO vote 1291 executed (99.80% yes): Add a gauge for the following stableswap-NG pool: YB/yYB,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,2312.7,2320.4
+2026-01-06,"Curve DAO vote 1299 executed (99.86% yes): [twocrypto] Update implementations for donations-enabled pools (yb, fx, etc) - leaving less value to arbitrage traders at rebalances [https://gov.curve.finance/",Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,2312.6,2287.1
+2026-01-07,YB DAO #24 executed: Create a pool with WETH,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2312.9,2282.7
+2026-01-07,Market v1-WETH LT deployed (0x931d40dd07b25b91932b481b63631ea86d236e09),market launch,Blockscout creation tx 0xee068ad7e6f81203151f05537d598b1f5e2c573d1feaa41de286fdf84427d59b,2312.9,2282.7
+2026-01-08,YB DAO #26 executed: Add yb-WETH to FeeDistributor,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2304.0,2282.1
+2026-01-08,YB DAO #25 executed: Add gauge for WETH pool to GaugeController,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2304.0,2282.1
+2026-01-15,DefiLlama protocol TVL peak $247.3M,TVL,api.llama.fi/protocol/yield-basis,2282.7,2276.4
+2026-01-27,YB DAO #27 executed: Change parameters for WETH pool,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2332.3,2339.7
+2026-01-31,Curve DAO vote 1322 executed (100.00% yes): Tweak dynamic fee of WETH/crvUSD pool used by Yield Basis [https://forum.yieldbasis.com/t/tweak-weth-pool-parameters/25],Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,2304.3,2338.7
+2026-02-05,"BTC crash to $62.7k; Cryptoswap price_scale stuck ~88.8k; TRD -19.5% (v2-WBTC), -18.5% (cbBTC), -16.9% (tBTC); TRD < -1% for 76-77 consecutive days (Jan 30-Apr 16)",stress,api.yieldbasis.com snapshots; archive price_scale,2332.8,2351.3
+2026-02-12,Curve DAO vote 1350 NOT executed/failed (100.00% yes): Add rewards tokens CRV and YB to all PegKeeper pools.,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,2350.0,2346.8
+2026-02-15,"YB DAO #28 executed: Reduce stablecoin allocation for all BTC markets for safety of crvUSD, before HybridVaults",YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2352.1,2345.9
+2026-02-16,YB DAO #29 executed: Raise BTC market fees to 5% (price_scale unchanged),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2351.0,2343.5
+2026-03-04,YB DAO #30 executed: Lower BTC market fees from 5% to 3% (price_scale changed),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2353.3,2279.2
+2026-03-04,YB DAO #31 executed: Lower BTC market fees from 3% to 2% (price_scale changed),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2353.3,2279.2
+2026-03-04,YB DAO #32 executed: Lower BTC market fees from 2% to original (price_scale changed),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2353.3,2279.2
+2026-03-05,Curve DAO vote 1353 executed (100.00% yes): Add rewards tokens CRV and YB to all PegKeeper pools.,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,2286.5,2280.1
+2026-03-16,YB DAO #34 created (not executed): Restore BTC market fees to original (price_scale changed) [start 2026-03-16],YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2282.6,2273.8
+2026-03-17,YB DAO #33 executed: Raise BTC market fees to 3% (price_scale unchanged),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2283.0,2274.2
+2026-03-26,"HybridVault audits (MixBytes, ChainSecurity)",security,docs.yieldbasis.com/user/reference/audits,2274.2,2264.6
+2026-04-07,YB DAO #35 executed: Deploy HybridVault infrastructure and migrate Factory ownership,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2273.8,2235.7
+2026-04-11,"YB DAO #36 executed: Set AMM fee to 0.91% for markets 3, 4, 5",YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),2236.4,2211.5
+2026-05-19,"Docs: bug bounty still ""in preparation""",security,docs.yieldbasis.com/user/reference/audits,1708.4,1601.4
+2026-05-25,YB DAO #37 executed: YB v3: install new AMM + LT implementations and migrator,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1708.8,1578.0
+2026-05-25,YB DAO #38 executed: YB v3: add YB-WBTC market,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1708.8,1578.0
+2026-05-25,YB DAO #39 executed: YB v3: add YB-cbBTC market,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1708.8,1578.0
+2026-05-25,YB DAO #40 executed: YB v3: add YB-tBTC market,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1708.8,1578.0
+2026-05-25,YB DAO #41 executed: YB v3: add YB-WETH market,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1708.8,1578.0
+2026-05-25,YB DAO #42 executed: YB v3: switch HybridVault to the new markets,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1708.8,1578.0
+2026-05-25,YB DAO #43 executed: YB v3: register the 4 new market gauges on GaugeController,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1708.8,1578.0
+2026-05-25,YB DAO #44 executed: YB v3: swap LTMigrator (limit=1 fallback fix),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1708.8,1578.0
+2026-05-25,Market v3-WBTC LT deployed (0x651d4b8168488fa163d85304662e8278d4c55baa),market launch,Blockscout creation tx 0x6094d43cf18b133ac066533012ae99fc61efda322b5b4b8bfcd2f3354c36c197,1708.8,1578.0
+2026-05-25,Market v3-cbBTC LT deployed (0x722fc3640ba007c3e9867ccdb0dca59f2e2f29f9),market launch,Blockscout creation tx 0xde5ca4bd4f289e806409c32ea5d7a86e9b0894478e1e0c4e3796148db16f0c66,1708.8,1578.0
+2026-05-25,Market v3-tBTC LT deployed (0x771f7290428d830ecd41e980745c327e507823ec),market launch,Blockscout creation tx 0xcbf38d93e224d34f9dd510a069c93ae139089f6e2fe69e48a71aebd3b24d799b,1708.8,1578.0
+2026-05-25,Market v3-WETH LT deployed (0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea),market launch,Blockscout creation tx 0x3b5b1080802684c1f632a4a599d01bfcd6c613da13b3b32ad00e06929b140b9c,1708.8,1578.0
+2026-05-27,YB DAO #45 executed: Turn fee distribution ON for YB v3 markets (7-10),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1601.4,1571.1
+2026-05-27,YB DAO #46 created (not executed): Disable old WETH market (id=6) by zeroing stablecoin allocation [start 2026-05-27],YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1601.4,1571.1
+2026-06-03,YB DAO #47 executed: Replace HybridFactoryOwner to unblock HybridVault withdrawals,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1572.2,1574.2
+2026-06-03,Curve DAO vote 1416 executed (100.00% yes): [Ethereum - LlamalendV1 Housekeeping 1/2] Set loan_discount to 50% and swap monetary policy to a singleton FlatLinearMonPol (10%->100%/1yr ramp) on 22 v1 Llamal,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1572.2,1574.2
+2026-06-04,YB DAO #48 executed: YB v3: redeploy LTMigrator against the current Factory owner,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1571.1,1574.0
+2026-06-06,"BTC -21% in June (73.5k Jun 1 -> 59.5k Jun 29); v3 TRD up to -4.7% (tBTC), closed by ~Jul 6",stress,api.yieldbasis.com snapshots,1568.6,1573.6
+2026-06-09,YB DAO #49 executed: HybridVaults: lower stablecoin_fraction from 55% to 45%,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1573.5,1560.4
+2026-06-16,Curve DAO vote 1434 executed (100.00% yes): [twocrypto] Fix apetax params for legacy YB pools,Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1564.0,1555.2
+2026-07-06,YB DAO #50 executed: Increase crvUSD allocation for the WETH pool (market 10) by ~$5M,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1538.0,1532.1
+2026-07-20,YB DAO #51 executed: Enable net-pressure Merkl incentives,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1562.9,1560.7
+2026-07-24,YB DAO #52 executed: Increase WBTC market cap by $10M,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1559.0,1564.6
+2026-07-24,"YB DAO #53 executed: Launch Merkl PID dynamic crvUSD incentives (start now, up to 1 year)",YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1559.0,1564.6
+2026-07-24,"ChainSecurity audit #10 (AMM+LT hardening, YBLendingOracle)",security,docs.yieldbasis.com/user/reference/audits,1559.0,1564.6
+2026-08-10,"Curve DAO vote 1476 NOT executed/failed (11.72% yes): YieldBasis WBTC/crvUSD: set new pool fees and reserved profit fraction, attach the proposed price_scale driver policy through the factory-admin proxy.",Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1551.0,1589.5
+2026-08-17,YB DAO #54 executed: WBTC market: rate to 2 x 1.32% and AMM fee to 1.82% (after Curve vote 1486),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1588.7,1615.2
+2026-08-17,"Curve DAO vote 1486 executed (100.00% yes): YieldBasis WBTC/crvUSD: set new pool fees and reserved profit fraction, attach the proposed price_scale driver policy through the factory-admin proxy.",Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1588.7,1615.2
+2026-08-29,YB DAO #55 executed: cbBTC and tBTC markets: rate to 2 x 1.32% and AMM fee to 1.82% (after Curve vote 1491),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1617.8,1622.6
+2026-08-29,"Curve DAO vote 1491 executed (99.96% yes): YieldBasis yb-cbBTC (0x862CB4E988FB66E72f128d1183829f8c05B6c6A0), yb-tBTC (0x4F52C3a81E33521e5a9A47FD9D3BE475D2279c2e): set new pool fees (mid_fee=128000000, ou",Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1617.8,1622.6
+2026-09-01,YB DAO #56 executed: Increase WBTC and cbBTC market caps to $50M,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1614.5,1407.3
+2026-09-07,"Curve DAO vote 1494 executed (100.00% yes): Update the wBTC, cbBTC and tBTC YieldBasis pools with a lower,
+flat 130 bp fee surface. Install new policies with the same dual-EMA shape but
+retuned parameters",Curve governance,prices.curve.finance/v1/dao/proposals; gov.curve.finance,1623.3,1350.2
+2026-09-07,v3-cbBTC outflow: TVL 643 -> 326 BTC in 3 days (Sep 7-9),flows,api.yieldbasis.com snapshots,1623.3,1350.2
+2026-09-08,YB DAO #57 executed: BTC markets: donation APY to 1.80% and releverage fee to 120 bps (after Curve vote 1494),YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1434.1,1349.8
+2026-09-10,YB DAO #58 executed: YB v3: replace the LTMigrator and re-pin market caps,YB governance,api.yieldbasis.com/v1/governance/proposals (onchain Aragon DAO 0x42F2…95Fa),1302.2,1324.2
+2026-09-21,"BTC $86.6k vs WBTC/tBTC pool price_scale ~$69.6k (+24% lag): TRD -6.0% (WBTC), -5.8% (tBTC); 100-share exit haircut -8%/-11%",stress,"eth_call preview_withdraw / price_scale at block 26,029,7xx",1328.5,1328.7

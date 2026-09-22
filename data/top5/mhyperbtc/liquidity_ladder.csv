@@ -1,0 +1,11 @@
+tier,source,chain,amount_usd,amount_btc,time_to_cash,constraint,data_source
+1 same-block,"Flash-loan deleverage: withdraw cbBTC collateral, swap to USDT/USDS, repay (Morpho/Spark)",Ethereum,10758784,,seconds (atomic),"Converts BTC to USD: repays debt but cuts BTC exposure unless re-hedged; needs DEX depth for ~134 BTC; manager-initiated, Midas co-sign",RPC positions
+1 same-block,Pendle Ecosystem USDC (Morpho V2) withdraw,Ethereum,992760,,seconds,vault liquidity $10.24M,Morpho API
+1 same-block,Strategy wallet balances (ETH),Ethereum,310783,,seconds,composition not disclosed,Midas transparency API
+2 minutes-hours,StableEarn (gtusdtb) withdraw on Stable + USDT0 OFT bridge to Ethereum,Stable -> Ethereum,5811455,,minutes (withdraw) + LayerZero delivery,vault idle $10.9M then $5.1M in two 09-22 reads (strategy share $5.81M); bridge risk; pausable by Midas whitelist policy,Morpho API; USDT0 adapter 0x6C96…1dee flows
+3 hours-days,Hyperithm USDC Apex (Monad) withdraw + CCTP to Ethereum,Monad -> Ethereum,3988156,,depends on borrower repayments,"API liquidity $0: allocated to PT-USDat/USDC, aHYPER/USDC and aHyperBTC/USDC (89-91% util); strategy is ~10% of the $39M vault",Morpho API
+3 hours-days,cex_1 balance,CEX,413683,,hours (withdrawal),exchange name withheld,Midas transparency API
+BTC side,Euler Hyperithm Earn cbBTC (69.42 cbBTC),Monad,,69.4233,partly same-block,only ~14.4 cbBTC cash (ecbBTC-4 cash 4.95 + ecbBTC-6 9.41); rest lent to aHyperBTC loopers at 94% util,RPC
+BTC side,Hyperithm cbBTC Apex (35.05 cbBTC),Monad,,35.0545,hours-days,API liquidity $0; markets mHyperBTC/cbBTC 92% and aHyperBTC/cbBTC 93% utilised,Morpho API
+memo,Debt to repay,Ethereum,-10758784,,,Morpho USDT $5.80M + Spark USDS $4.96M; liquidation ~ $53.3k-53.6k BTC (-33% from $80.3k),RPC
+memo,Holder redemptions: instant capacity / daily limit,Ethereum,,1.74,instant,"instant fee 0.3%, holdback up to 50%; redemption vault instantDailyLimit 15 mHyperBTC; standard: 1 business day, gate 15%/day; biggest exit (147.3) paid in ~11 h",Final Terms 17-Jul-2026; RPC vault params; product page

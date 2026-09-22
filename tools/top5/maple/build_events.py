@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+"""Write events.csv (date, event, type, source)."""
+import csv
+J1 = 'https://judicial.ky/n0c-storage/judgments-repository/2025_cigc_fsd_105__core_foundation_v_maple_international_operations_spc.pdf'
+J2 = 'https://judicial.ky/n0c-storage/judgments-repository2/FSD0268202512022025COREFOUNDATIONMAPLE.pdf'
+CS = 'https://x.com/Coredao_Org/status/1991171121534636264'
+MS = 'https://x.com/maplefinance/status/1991886803092091268'
+ST = 'https://maple.finance/insights/core-foundation-and-maple-international-operations-spc-reach-full-and-final-settlement'
+GR = 'Core BitcoinAgent 0x...1013 paramChange("grades") logs via rpc.coredao.org (scripts/core_logs.py, rlp_grades.py)'
+OC = 'On-chain: Core rpc.coredao.org events + scan.coredao.org API (scripts/)'
+BT = 'On-chain: Bitcoin via mempool.space (scripts/btc_outspends.py, btc_hub_trace.py)'
+E = [
+('2024-11-19', 'Core activates dual-staking tiers (gradeActive=1); first table 2024-11-20: Satoshi tier 8,000 CORE/BTC at 1000%', 'core_protocol', GR),
+('2025-02-06', 'First Core BTC stake + 400k CORE delegation by the Maple-attributed address cluster (0xfd818e35...)', 'onchain', OC),
+('2025-02-17', 'CoinDesk: Core joins Maple, BitGo, Copper, Hex Trust; Maple existing product has 90-day lock, 5%+ target; lstBTC (liquid) planned with lower yield', 'partnership', 'https://www.coindesk.com/business/2025/02/17/bitcoin-staking-platform-core-joins-crypto-lender-maple-and-custodians-bitgo-copper-hex-trust'),
+('2025-02-20', 'lstBTC announced (Consensus Hong Kong) - Core Foundation with Maple (yield manager), BitGo, Copper, Hex Trust (custodians)', 'partnership', 'https://www.globenewswire.com/news-release/2025/02/20/3029997/0/en/Maple-Finance-BitGo-Copper-and-Hex-Trust-Launch-lstBTC-on-Core-Unlocking-Institutional-Bitcoin-Yield.html'),
+('2025-02-27', 'Master Trading Agreement Maple SPC <-> Core Foundation (CORE put options; Core as put writer). Same day Core doubles Satoshi tier 8,000->16,000 CORE/BTC', 'contract/core_protocol', J2 + ' ; ' + GR),
+('2025-03-27', 'Maple creates off-chain pool record "BTC Yield" (Maple Direct; Institutional Custody; Target APY 4-6%; bimonthly maturity; 2-week notice)', 'product', 'Maple GraphQL poolMeta(id 67e542004191822941f9e703)'),
+('2025-04-03', 'Core raises Satoshi tier to 24,000 CORE/BTC; 04-08 multiplier 400%', 'core_protocol', GR),
+('2025-04-30', 'Maple: April record month, 5.6% net APY, 1,600+ BTC staked to Core', 'disclosure', 'https://x.com/maplefinance/status/1917628219223859367'),
+('2025-05-02', 'Core blog: >1,600 BTC deposits, 5.6% APY since launch; monthly transparency reports, wallet-level attestations', 'disclosure', 'https://coredao.org/blog/maple-core-bitcoin-yield-product'),
+('2025-05-14', 'On-chain peak of attributed BTC staked on Core: 1,757.85 BTC (~24% of Core BTC staking)', 'onchain', OC),
+('2025-05-21', 'Maple "One Maple": lstBTC "launching later this year" for permissionless access to BTC Yield', 'product', 'https://maple.finance/insights/one-maple'),
+('2025-05-28', 'Commercial Agreement Maple <-> Core Foundation signed (24-month exclusivity per Core)', 'contract', J2 + ' ; ' + CS),
+('2025-06-13', 'Satoshi tier 29,000 CORE/BTC (multiplier changes 250%->600%->450%->325% in June)', 'core_protocol', GR),
+('2025-06-23', 'OAK Research: $140M AUM, 5.1-5.6% APY, 0.40% + 20% over 5%, hedge = protective puts at entry', 'disclosure', 'https://oakresearch.io/en/analyses/fundamentals/maple-bitcoin-yield-presentation-comparison-outlook'),
+('2025-06-30', 'Maple Q2 2025 update: BTC Yield 5.2% net APY, >$180M AUM', 'disclosure', 'https://maple.finance/insights/q2-2025-maple-market-update'),
+('2025-07-07', 'bitcoin.com: 5.13% APY in BTC; >1,500 BTC through H1; $140M AUM; YE target $1.5B', 'disclosure', 'https://news.bitcoin.com/maple-finance-delivers-5-13-native-bitcoin-yield-with-institutional-grade-security/'),
+('2025-07-10', 'Attributed CORE leg raised to 50.5M CORE (= 1,485 BTC x 34,000); Core sets Satoshi tier 34,000 CORE/BTC on 07-15', 'onchain/core_protocol', OC + ' ; ' + GR),
+('2025-07-01', 'Approx. "mid-2025": Core alleges Maple began developing syrupBTC using Core confidential info', 'legal_allegation', CS),
+('2025-09-01', 'September 2025: arbitration commenced by Core Foundation (exact day not public)', 'legal', ST),
+('2025-09-26', 'Ex parte injunction (Grand Court of Cayman, Asif J): bars syrupBTC and any dealing in CORE incl. staking/unstaking; Maple held ~US$27M of Core assets', 'legal', J1),
+('2025-09-30', 'CORE put options fall due; Core stops honouring puts ("we honored every put expiry for months ... until Maple\'s alleged material breaches")', 'hedge', J2 + ' ; ' + CS),
+('2025-10-10', 'Hearing: Maple application to exercise puts / sell CORE refused. Record: Maple holds >40M CORE bought for >US$20M; 584 BTC due 15-Oct; Core posted US$5M cash collateral; loans auto-roll unless demanded', 'legal', J2),
+('2025-10-15', 'CLTV maturity of 584.047 BTC; only 120.99 BTC withdrawn, 463.06 BTC left unstaked', 'onchain', BT),
+('2025-10-30', 'Judgment [2025] CIGC (FSD) 105 finalised and published', 'legal', J1),
+('2025-11-11', 'Core doubles Satoshi tier to 68,000 CORE/BTC', 'core_protocol', GR),
+('2025-11-19', 'Core Foundation public statement (impairment, >$150m BTC, puts); Maple reply; last CLTV maturity (756.98 BTC); all 1,333.78 BTC swept to hub wallet', 'legal/onchain', CS + ' ; https://x.com/maplefinance/status/1991214703725735961 ; ' + BT),
+('2025-11-20', 'Press coverage (CoinDesk, The Block, DL News, Protos); Maple website BTC yield section removed', 'press', 'https://www.coindesk.com/policy/2025/11/20/core-foundation-wins-injunction-against-maple-finance-on-alleged-confidentiality-breach ; https://protos.com/from-sweet-to-sour-core-slaps-maple-with-injunction-over-syrupbtc/'),
+('2025-11-21', 'Maple statement: program in segregated portfolio; hedge = options backed by Core cash collateral; will return 85% of BTC principal, retain 15% pending litigation', 'disclosure', MS),
+('2025-11-21', '200.09 BTC (15.0% of 1,333.78) moved to separate wallet (bc1pdcj7... -> bc1pyed82...)', 'onchain', BT),
+('2025-12-22', '1,133.69 BTC (85.0%) paid to 66 addresses between 2025-11-19 and 2025-12-22 (tail to 2026-08-10); each payout preceded by 0.0001 BTC test', 'onchain', BT),
+('2025-12-02', 'Judgment of 10 Oct 2025 (variation refused) finalised and filed', 'legal', J2),
+('2026-01-23', 'Maple 2025 data review published - no mention of BTC Yield', 'disclosure', 'https://maple.finance/insights/2025-data-review'),
+('2026-03-29', 'Attributed wallets unstake 10M CORE and move it on; CORE falls ~49% that day (Core DAO: large sell orders + Colend liquidation cascade). 25.9M CORE unstaked 03-29..04-02', 'onchain/market', OC + ' ; https://coinpedia.org/news/why-core-token-crashed-50-in-24-hours/'),
+('2026-05-12', 'Last 9.83M CORE unstaked (total ~50.7M unstaked 03-29..05-12); 1.01M CORE of accrued rewards claimed; 17.38M CORE then sent in 1-1.75M chunks 05-21..06-03', 'onchain', OC),
+('2026-05-22', 'Full and final settlement (mutual release; arbitration + FSD 268 of 2025 discontinued; terms confidential); Maple "will proceed with the launch of ... syrupBTC"', 'legal', ST),
+('2026-06-05', '200.0 BTC holdback transferred in one transfer (after 0.0001 test) via bc1q9tfmg8... to bc1q5zly2... (owner not public)', 'onchain', BT),
+('2026-08-10', 'Hub wallet bc1pm9v0y2... emptied (final 2.69 BTC)', 'onchain', BT),
+('2026-09-02', 'Maple new allocation strategies (direct lending, ABS, basis trade) - no BTC yield product', 'disclosure', 'https://maple.finance/insights/allocation-strategies'),
+('2026-09-17', 'Maple Memo September 2026 (AUM $4.8B) - no mention of BTC Yield or syrupBTC', 'disclosure', 'https://maple.finance/insights/maple-memo-september-2026'),
+('2026-09-21', 'Status check: BTC Yield pool state "Hidden" in Maple API; product page 404; no syrupBTC token/pool found; 0 BTC staked on Core by attributed addresses; Core lstBTC system token supply 0', 'status', 'api.maple.finance/v2/graphql; eth.blockscout.com search; rpc.coredao.org'),
+]
+E.sort(key=lambda r: r[0])
+with open('../events.csv', 'w', newline='') as f:
+    w = csv.writer(f); w.writerow(['date', 'event', 'type', 'source']); w.writerows(E)
+print(len(E))

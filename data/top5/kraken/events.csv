@@ -1,0 +1,79 @@
+date,event,type,source
+2025-12-23,First Merkl PYUSD campaign on Paypal USD Main (creator Sentora Safe 0x4307...1609),incentive,api.merkl.xyz v4 campaigns opp 18030207387280065324
+2026-01-26,"Kraken DeFi Earn launches with Veda (US 48 states, Canada, EEA); Chaos Labs + Sentora curators",launch,https://www.theblock.co/post/386908 ; BTC-Carry-Vaults-Dossiers.md
+2026-02-26,Vault BoringVault 0x7dee...19b2 deployed on Ink (creation tx 0x163f314b...),launch,Ink RPC / explorer.inkonchain.com
+2026-03-05,"First Merkl RLUSD campaign on Sentora RLUSD Main (creator Sentora Safe 0xCc6d...E000); 66,094 RLUSD",incentive,api.merkl.xyz v4 campaigns opp 2433802672589613459
+2026-03-09,Veda: Kraken DeFi Earn at $100M,milestone,dossier-kraken.md (Veda post)
+2026-03-19,Coinbase Bitcoin Yield Fund goes onchain on Base (non-US) [secondary],competitor,https://www.coindesk.com/business/2026/03/19/coinbase-s-bitcoin-yield-fund-goes-onchain-with-apex-s-tokenization-push
+2026-03-24,"Beholder Deposit Match: 10% up to $200 USDT on deposits into Earn vaults from Beholder wallet (to 04-07, hold to 05-05; excl UK/CA/AU)",promo,https://www.kraken.com/legal/beholder-deposit-match-march
+2026-04-09,"First vault deposit on Ink (block 42,269,479)",launch,Ink RPC / explorer.inkonchain.com share Transfer logs
+2026-04-13,Ink Points Season 1 on Kraken Pro (accrual from 04-06); vault deposits not listed as a points activity,incentive,https://support.kraken.com/articles/ink-points
+2026-04-17,"Morpho kBTC/RLUSD and kBTC/PYUSD markets created (LLTV 86%, oracle Chainlink BTC/USD)",product,onchain-kraken/SUMMARY-FROM-AGENT.md
+2026-04-18,Kelp DAO $292M exploit; Aave bad-debt exposure; 2 days before vault on-chain start [secondary],negative,https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains
+2026-04-20,First accountant exchange-rate update (1.00000268),launch,Ink RPC / explorer.inkonchain.com accountant ExchangeRateUpdated
+2026-05-07,"Veda on X: Kraken vaults $225M, 43,000 active depositors, $1.5M net yield [snippet]",milestone,https://x.com/veda_labs/status/2052463477046784309
+2026-05-08,"First borrow by a vault position manager (PYUSD-1 test 52.9k PYUSD, repaid same hour); Sentora PRIME Main PRIME cap 20M",product,Ethereum archive eth_call/eth_getLogs Morpho events; Vault V2 IncreaseAbsoluteCap
+2026-05-14,Kraken announces kBTC bridging move from LayerZero to Chainlink CCIP (vault still used LayerZero on 17 Sep),other,https://www.coindesk.com/business/2026/05/14/kraken-to-replace-layerzero-with-chainlink-to-bridge-assets-across-blockchains
+2026-05-18,"Sentora V2 caps for kBTC markets set to 30M RLUSD / 30M PYUSD; pre-launch deposits start (week of 18 May: 102 BTC, 2,001 new depositors)",cap,Ethereum archive eth_call/eth_getLogs V2 IncreaseAbsoluteCap; Ink RPC / explorer.inkonchain.com
+2026-05-26,"Sentora RLUSD Main performance fee set to 10% (block 25,180,343)",fee,Ethereum archive eth_call/eth_getLogs V2 SetPerformanceFee
+2026-05-27,"Public launch: 12:00-22:00 UTC +382 BTC (~$29M at $75.8k) from ~1,940 newly depositing wallets (2,699 cumulative); day-end TVL $47.3M",launch,Ink RPC / explorer.inkonchain.com share Transfer logs (hourly)
+2026-05-27,"Kraken blog: Bitcoin Vault live in Kraken app, Pro, web and Krak; ""up to 2.5%""; 5-day withdrawal at launch",launch,https://blog.kraken.com/product/bitcoin-vault/introducing-bitcoin-vault
+2026-05-27,"Veda/Cointelegraph: ""$30M in 10 hours from 4,000 wallets""",milestone,https://cointelegraph.com/news/kraken-rolls-out-bitcoin-vault-for-holders-to-earn-yield
+2026-05-27,"Veda blog: BTC vault live in 100+ countries; BTC purchase built into deposit flow; DeFi Earn $245M, $2.2M net yield",launch,https://veda.tech/blog/veda-kraken-bringing-bitcoin-earn-to-100-countries
+2026-05-27,"Krak app ""BTC Vaults"" launch (US ex NY/ME, EEA, Canada); USDC vaults $180M+ / 38,000 users [secondary]",launch,https://tradeinformer.com/broker-news/kraken-launches-btc-vaults-bitcoin-yield-2026
+2026-05-27,"The Block: USDC vaults ~ $250M with ""zero-incentive growth"" [secondary]",other,https://www.theblock.co/post/402751/kraken-expands-earn-suite-bitcoin-vault-paying-yield-btc-holdings
+2026-05-27,Press links launch week to Stake DAO exploit and OpenZeppelin co-founder's DeFi-safety warning [secondary],negative,https://www.cryptotimes.io/2026/05/27/kraken-launches-btc-yield-product-the-same-week-exploits-and-security-warnings-mount/
+2026-05-28,"Sentora article on the vault (5-day standard withdrawal, $0 liquidations, same-block delever claim)",other,https://sentora.com/research/articles/inside-the-kraken-bitcoin-vault-yield-controls-and-capital-safeguards
+2026-05-29,"Sentora on X: DeFi Earn > $300M, BTC vault > $70M [secondary]",milestone,https://blockonomi.com/kraken-bitcoin-vault-hits-70m-as-defi-earn-platform-crosses-300m-in-total-deposits/
+2026-06-01,"Kraken on X: ""Over $100M"" in the Bitcoin Vault [snippet]",milestone,https://x.com/krakenfx/status/2061337504926613615
+2026-06-02,"kBTC caps raised to 50M (RLUSD, PYUSD); first PRIME purchases by B legs (30 May-2 Jun)",cap,Ethereum archive eth_call/eth_getLogs
+2026-06-02,"Veda vault stack opened to Privy's 2,000+ developer teams; DeFi Earn $250M+ [secondary]",other,https://www.theblock.co/news/ecosystems/2026-06-02-veda-brings-the-vault-stack-behind-kraken-defi-earn-to-privys-2000-plus-developer-teams-403277
+2026-06-04,First delever: repays $10.8M across 4 positions (3-4 Jun) ~46-48h after LTV breached target; peak LTV 79.3% (HF 1.085) at BTC -14% vs 7d high,risk,Ethereum archive eth_call/eth_getLogs Morpho Repay events + Chainlink BTC/USD rounds
+2026-06-08,"kBTC caps raised to 80M (RLUSD, PYUSD)",cap,Ethereum archive eth_call/eth_getLogs
+2026-06-09,FIFA names Kraken official World Cup supporter; activations from 06-10,promo,https://inside.fifa.com/tournament-organisation/commercial/media-releases/kraken-official-crypto-exchange-supporter-world-cup-2026
+2026-06-10,"Veda blog: Kraken Earn > $400M, 65,000 users, $3.4M yield; BTC vault > $100M, 12,000+ users within days",milestone,https://www.veda.tech/blog/veda-vaults-kraken-defi-earn-400-million
+2026-06-12,First performance-fee claim 0.331 kBTC (biweekly thereafter),fee,Ink RPC / explorer.inkonchain.com accountant FeesClaimed
+2026-06-16,"Veda on X: BTC vault > $220M in < 3 weeks, largest Kraken vault; 4 vaults > $450M [snippet]",milestone,https://x.com/veda_labs/status/2066853305532485689
+2026-06-18,kBTC/RLUSD cap raised to 100M,cap,Ethereum archive eth_call/eth_getLogs
+2026-06-19,EEA EUR 1M Deposit Sweepstakes (to 07-31): entries per EUR deposited; vault allocations do not count,promo,https://www.kraken.com/legal/deposit-sweepstakes-terms
+2026-06-24,"Delever: repays $6.0M (RLUSD-1, PYUSD-1) ~40h after LTV breached target, LTV 74.9%",risk,Ethereum archive eth_call/eth_getLogs
+2026-06-24,kBTC/PYUSD cap raised to 100M,cap,Ethereum archive eth_call/eth_getLogs
+2026-06-24,Ink infrastructure moved to Optimism (OP Enterprise),other,BTC-Carry-Vaults-Dossiers.md 4.1.1
+2026-06-24,Kraken on X (approx date): vaults pass $500M [secondary],milestone,https://cryptoadventure.com/kraken-vaults-pass-500m-in-deposits-as-defi-yield-demand-grows/
+2026-06-30,MetaMask Money Account launches on Veda (up to 4%),competitor,https://veda.tech/blog/veda-metamask-money-account-defi-yield-wallet
+2026-07-01,"BTC intraday low $57,783 (Chainlink); RLUSD-1 repays $5.3M",risk,Chainlink BTC/USD AnswerUpdated; Ethereum archive eth_call/eth_getLogs
+2026-07-01,Robinhood Earn launches (~7% on USDG) [secondary],competitor,https://www.coindesk.com/business/2026/07/01/robinhood-rolls-out-public-blockchain-as-it-expands-deeper-into-crypto
+2026-07-03,Aave v3 WBTC -> USDT leg starts (USDT -> PYUSD -> Sentora PRIME Main),product,Ethereum archive eth_call/eth_getLogs aWBTC / variableDebtUSDT balances
+2026-07-07,kBTC/RLUSD cap raised to 125M,cap,Ethereum archive eth_call/eth_getLogs
+2026-07-13,kBTC caps raised to 145M (RLUSD) / 120M (PYUSD),cap,Ethereum archive eth_call/eth_getLogs
+2026-07-15,Kraken Institutional + Upshift custom vaults for custodied BTC/ETH/stables [secondary],product,https://www.theblock.co/post/408448/kraken-institutional-taps-upshift-to-build-vaults-that-earn-yield-on-idle-bitcoin-eth-and-stablecoins
+2026-07-20,Sentora RLUSD Main / Paypal USD Main force-deallocate penalty set to 1 bp,governance,Ethereum archive eth_call/eth_getLogs V2 SetForceDeallocatePenalty
+2026-07-27,kBTC/RLUSD cap raised to 160M,cap,Ethereum archive eth_call/eth_getLogs
+2026-07-31,"Sentora case study (as of July): BTC vault $320M+, 1.8% 30d net; 4 vaults $611M, 80,000+ depositors",milestone,https://sentora.com/case-studies/kraken-defi-earn-vaults-curated-by-sentora-hit-500m-deposits-milestone-in-under-6-months
+2026-07-31,Bitget BGBTC upgraded to daily BTC rewards [secondary],competitor,https://en.cryptonomist.ch/2026/07/31/bitget-bitcoin-yield-upgrade/
+2026-08-07,"Veda CEO: Kraken vaults $600M, 80,000+ users; BTC vault the ""real inflection point"" [secondary]",milestone,https://cryptobriefing.com/veda-kraken-partnership-600m-deposits/
+2026-08-10,Sentora meets SEC Crypto Task Force on curator liability,governance,BTC-Carry-Vaults-Dossiers.md
+2026-08-12,"kBTC/PYUSD borrow rate >6% for 8.7h (peak 9.6%, external - no vault borrow); PYUSD-1 repays $6.4M and withdraws 142 kBTC at 16:57",rate,Ethereum archive eth_call/eth_getLogs AccrueInterest + Repay events
+2026-08-14,Payward Q2 2026 results: BTC vault ~ $400M deposits; to anchor vaults-as-a-service for Payward Services partners,milestone,https://www.payward.com/press-release/q2-2026-financial-highlights
+2026-08-17,INK token launch still unscheduled; no snapshot date [secondary],incentive,https://eco.com/support/en/articles/15210565-kraken-ink-points-explained-2026-how-to-earn-and-redeem
+2026-08-19,kBTC/PYUSD cap raised to 135M,cap,Ethereum archive eth_call/eth_getLogs
+2026-08-21,PYUSD-1 borrows $9.8M at 07:44 -> kBTC/PYUSD >6% for 6.6h (peak 11.8%); repays the same $9.8M and withdraws 180 kBTC at 14:19 (self-inflicted spike),rate,Ethereum archive eth_call/eth_getLogs
+2026-08-24,"Accountant performance fee 2500 -> 3333 bps (12:32 UTC, no announcement found); kBTC/RLUSD cap 175M (15:49); RLUSD-1 borrows $16.0M+$7.8M (20:05-20:08) -> 13.75% for ~1h; repays $11.1M at 21:09",fee,Ink RPC / explorer.inkonchain.com PerformanceFeeUpdated; Ethereum archive eth_call/eth_getLogs
+2026-08-24,"First week of net outflow (-59 BTC, week of 24 Aug); realized net APY 0.94% (worst week)",negative,Ink RPC / explorer.inkonchain.com
+2026-08-26,PYUSD Merkl campaigns start on Sentora Huma PST Main,incentive,api.merkl.xyz
+2026-09-02,kBTC/RLUSD cap raised to 190M,cap,Ethereum archive eth_call/eth_getLogs
+2026-09-02,Kraken support article: withdrawal wait 3 days (was 5 at launch),product,https://support.kraken.com/articles/bitcoin-vault
+2026-09-02,Payward IPO pushed to Q2 2027 at the earliest [secondary],other,https://cryptobriefing.com/payward-delays-ipo-2027/
+2026-09-03,Sentora Euler vaults handed to Euler; Sentora-funded Euler RLUSD/PYUSD incentive programmes end,incentive,https://medium.com/sentora/transition-of-sentoras-euler-vaults-2a57b06563fe
+2026-09-04,"Kraken deposits paused on 20+ networks, 23 funding services degraded (to 09-08); BTC not reported affected [secondary]",negative,https://cryptobriefing.com/kraken-withdrawals-stuck-funding-issues-23-services/
+2026-09-10,Veda blog on xStocks vaults with Sentora,product,https://veda.tech/blog/veda-powers-krakens-push-into-xstocks-yield-with-sentora
+2026-09-11,kBTC/RLUSD cap 205M (22:31); RLUSD-1 borrows $8.8M (22:20) + $15.1M (22:36) -> 7.7%; repays $10.0M (22:41),cap,Ethereum archive eth_call/eth_getLogs
+2026-09-14,"PYUSD-1 borrows $14.3M (14:09) -> 12.9%, repays $15.0M (14:13); cap 150M at 19:56 and same-minute $15.8M borrow -> 13.6%",cap,Ethereum archive eth_call/eth_getLogs
+2026-09-14,"Kraken xStocks vaults (Veda + Sentora, Kamino on Solana via CCIP; not in US)",product,https://support.kraken.com/articles/xstocks-vaults
+2026-09-14,Kraken: DeFi Earn > $800M deposits; xStocks vaults launch [secondary],milestone,https://cointelegraph.com/news/kraken-brings-defi-yield-to-tokenized-stocks-and-etfs
+2026-09-17,"kBTC/PYUSD borrow rate >6% for ~45h (17-19 Sep, peak 6.9%) with cap full and no vault borrow/repay: only multi-day negative carry incl. rewards (A-PYUSD, B-PYUSD)",rate,Ethereum archive eth_call/eth_getLogs
+2026-09-19,kBTC/PYUSD cap raised to 165M; Morpho WBTC/USDT leg starts (USDT -> Sentora Huma PST Main),cap,Ethereum archive eth_call/eth_getLogs
+2026-09-20,"Snapshot 12:00 UTC: both kBTC markets at 99.9% of V2 caps; debt $298.3M; TVL 6,492.5 BTC ($521M)",other,Ethereum archive eth_call/eth_getLogs / Ink RPC / explorer.inkonchain.com
+2026-09-20,"Sentora sets force-deallocate penalty 0 -> 1% on Huma PST Main (20:41) and Sentora PRIME Main (20:54), no timelock",governance,Ethereum archive eth_call/eth_getLogs V2 Submit/Accept + SetForceDeallocatePenalty
+2026-09-21,"RLUSD-1 borrows 20.54M RLUSD without new collateral (13:52) -> kBTC/RLUSD util 99.98%, borrow 12.93% for 1h53m; cap raised to 220M (15:39); repay 6.5M (19:10)",rate,Ethereum archive eth_call/eth_getLogs
+2026-09-21,"kraken.com shows 0.97% APY, 3-day withdrawal; Veda Kraken page $800M+ deposits, 120,000+ lifetime users",other,https://www.kraken.com/bitcoin-vault ; https://veda.tech/solutions/veda-x-kraken

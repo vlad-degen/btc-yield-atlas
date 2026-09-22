@@ -1,0 +1,13 @@
+month,realized_apy,borrow_cost,notes,nav_start,nav_end,days,realized_return,avg_supply,nav_gain_btc,nav_gain_usd,avg_usd_debt_onchain,borrow_interest_usd,stable_loop_interest_usd,usd_vault_income_usd,btc_vault_income_usd,incentives_usd,incentives_share_of_gain
+2025-10,0.0,,oracle initialised 10-15 at 1.0; no supply until 11-24,1.0,1.0,17.0,0.0,0.0,0.0,0,0,0,0,0,0,0,
+2025-11,0.00545,,first 25 mHyperBTC minted 11-24 (one holder); first NAV step 11-26,1.0,1.00044715,30.0,0.000447,5.0,0.011,976,0,0,0,0,0,0,
+2025-12,0.04863,0.01639,Monad WBTC/AUSD + Katana vbWBTC loans; Steakhouse AUSD / Hyperithm USDC vaults; 3BTC LP on Monad (WMON),1.00044715,1.00449024,31.0,0.004041,120.23,0.465,41325,2291281,3190,0,972,0,8027,0.194
+2026-01,0.04472,0.01114,Katana is main BTC-collateral venue (borrow APR <1%); stUSDS loops start; big mints (0xD338 150.5 on 01-22),1.00449024,1.00822951,31.0,0.003723,320.76,1.205,107466,9696745,9172,439,14644,0,37349,0.348
+2026-02,0.04615,0.02241,BTC -35% (Jan 15 -> Feb 5); on-chain debt cut $19.9M -> $11.3M (02-02..02-06); no liquidation,1.00822951,1.01172471,28.0,0.003467,524.73,1.819,128887,11040634,18984,2579,22995,0,30043,0.233
+2026-03,0.03424,0.01091,Monad launch 03-19; 250-300 BTC parked in Hyperithm cbBTC Apex (Monad) earning ~0-1% + WMON; incentives 61% of NAV gain,1.01172471,1.01462175,31.0,0.002863,555.86,1.61,112557,11817081,10952,10762,24672,1170,68889,0.612
+2026-04,0.04742,0.02233,Apr 18-20 pause; Katana unwound 04-21; 0xD338 redeems 147.3 on 04-28 (paid in ~11 h); WMON incentives 67% of gain,1.01462175,1.01849267,30.0,0.003815,553.77,2.15,159503,8421658,15456,7156,18225,14067,107444,0.674
+2026-05,0.02597,0.0466,Monad WBTC->cbBTC BTC loops (debt in cbBTC) unwound 05-13; incentives ~66% of gain,1.01849267,1.0207129,31.0,0.00218,374.76,0.836,66087,1569324,6212,0,4349,17589,43403,0.657
+2026-06,0.02314,0.088,book mostly on Binance (PoR: liabilities $29.7-36.3M vs assets $52.7-56.7M); NAV -0.025% on 06-02; BTC -19% in June,1.0207129,1.02263387,30.0,0.001882,358.78,0.689,42584,760126,5498,0,3524,2401,5980,0.14
+2026-07,0.00669,0.11489,CEX leverage removed by 07-06; NAV -0.059% on 07-13; small Aave USDC loan at ~11-14% (negative carry),1.02263387,1.02321338,31.0,0.000567,356.13,0.203,13581,374860,3658,0,2187,1454,2849,0.21
+2026-08,0.02286,0.0491,"re-levered on-chain from 08-19 (Aave, Morpho RLUSD, Monad cbBTC/USDC); RLUSD $5.0M parked at an unidentified venue (cex_2)",1.02321338,1.02517989,31.0,0.001922,349.27,0.687,47089,5426758,22628,0,17200,2261,7730,0.164
+2026-09,0.01544,0.03755,"to 09-21: migrated to Morpho cbBTC/USDT + Spark USDS; dollars to Hyperithm USDC Apex (Monad), StableEarn (Stable), Pendle USDC",1.02517989,1.02606813,20.6,0.000866,346.54,0.308,25175,12317226,26146,0,27857,3162,6880,0.273

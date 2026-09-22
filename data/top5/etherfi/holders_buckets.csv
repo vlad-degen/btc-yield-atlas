@@ -1,0 +1,50 @@
+section,chain,label,holders,btc_eq,share_pct_or_value
+meta,all,"snapshot 2026-09-20 14:00 UTC; BTC-eq = shares x 1.03424999; BTC $81,236; OP source: RPC balanceOf over all 1,363 addresses seen in OP Transfer logs + Blockscout list; Ethereum: full replay of share Transfer logs",,,
+bucket_btc_eq,ethereum,<0.01,189,0.2545,0.18
+bucket_btc_eq,ethereum,0.01-0.1,107,3.7629,2.72
+bucket_btc_eq,ethereum,0.1-1,78,22.9526,16.61
+bucket_btc_eq,ethereum,1-10,24,71.8335,51.98
+bucket_btc_eq,ethereum,10-100,3,39.3814,28.5
+bucket_btc_eq,ethereum,>100,0,0,0.0
+concentration,ethereum,top1_share,1,15.8322,11.46
+concentration,ethereum,top10_share,10,82.065,59.39
+concentration,ethereum,top100_share,100,133.6606,96.73
+concentration,ethereum,HHI (0-10000),401,138.1848,460.0
+address_type,ethereum,EOA,331,118.2554,85.58
+address_type,ethereum,EOA (EIP-7702 smart wallet),47,19.5475,14.15
+address_type,ethereum,Safe multisig,4,0.3036,0.22
+address_type,ethereum,contract,18,0.0675,0.05
+address_type,ethereum,Veda BoringOnChainQueue,1,0.0108,0.01
+total,ethereum,all holders,401,138.1848,100.0
+bucket_btc_eq,optimism,<0.01,111,0.0986,0.11
+bucket_btc_eq,optimism,0.01-0.1,13,0.3046,0.33
+bucket_btc_eq,optimism,0.1-1,6,1.4663,1.57
+bucket_btc_eq,optimism,1-10,1,1.5575,1.67
+bucket_btc_eq,optimism,10-100,1,89.9495,96.33
+bucket_btc_eq,optimism,>100,0,0,0.0
+concentration,optimism,top1_share,1,89.9495,96.33
+concentration,optimism,top10_share,10,93.109,99.71
+concentration,optimism,top100_share,100,93.3765,100.0
+concentration,optimism,HHI (0-10000),132,93.3765,9283.0
+address_type,optimism,Aave v4 Hub (OP),1,89.9495,96.33
+address_type,optimism,Veda BoringOnChainQueue,1,1.5575,1.67
+address_type,optimism,ether.fi Cash account (EtherFiSafe / Safe-type contract),87,1.1964,1.28
+address_type,optimism,ether.fi Cash TopUpDest,2,0.4298,0.46
+address_type,optimism,EOA,32,0.2204,0.24
+address_type,optimism,EOA (EIP-7702 smart wallet),6,0.0227,0.02
+address_type,optimism,contract,1,0.0002,0.0
+address_type,optimism,Safe multisig (GnosisSafeL2),1,0.0,0.0
+address_type,optimism,Aave v4 HubInstance (other),1,0.0,0.0
+total,optimism,all holders,132,93.3765,100.0
+bucket_btc_eq,combined,<0.01,296,0.353,0.15
+bucket_btc_eq,combined,0.01-0.1,119,4.0567,1.75
+bucket_btc_eq,combined,0.1-1,84,24.4189,10.55
+bucket_btc_eq,combined,1-10,25,73.4018,31.7
+bucket_btc_eq,combined,10-100,4,129.3309,55.85
+bucket_btc_eq,combined,>100,0,0,0.0
+concentration,combined,top1_share,1,89.9495,38.84
+concentration,combined,top10_share,10,168.6833,72.85
+concentration,combined,top100_share,100,225.7718,97.5
+concentration,combined,HHI (0-10000),528,231.5613,1673.0
+retail_vs_whale,ethereum,holders >=10 BTC-eq (whales),3,39.3814,28.5
+retail_vs_whale,ethereum,holders <1 BTC-eq (retail),374,26.9699,19.52

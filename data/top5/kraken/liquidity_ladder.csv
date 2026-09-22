@@ -1,0 +1,12 @@
+tier,usd_m,pct_of_debt,cum_pct,source
+"T1a same block, static",63.28,21.2,21.2,Sentora RLUSD Main: idle 29.44M + force-deallocatable market liquidity 33.84M (kBTC/RLUSD 20.57M) -> RLUSD-1
+"T1a same block, static",60.82,20.4,41.6,Paypal USD Main: idle 21.74M + force-deallocatable 53.28M (kBTC/PYUSD 25.84M) -> PYUSD-1
+"T1a same block, static (needs PYUSD->USDT swap)",17.69,5.9,47.5,Sentora PRIME Main: idle 3.73M + PRIME/PYUSD liquidity 20.03M -> Aave USDT debt
+"T1a same block, static (needs PYUSD->USDT swap)",2.24,0.8,48.3,Sentora Huma PST Main: PST/PYUSD liquidity 4.50M -> Morpho WBTC/USDT debt
+"T1b same block / minutes, with repay-recycle",61.55,20.6,68.9,Repaying kBTC/RLUSD and kBTC/PYUSD debt re-creates the same liquidity in those markets; V2 force-deallocates it (1 bp) and pays the vault again (flash loan or a few executor txs + Sentora allocator)
+T2 within 1 day,0.0,0.0,68.9,"PRIME sold on DEX (Uniswap v3 PRIME/USDC 0.01% pool, TVL ~$9.0M on DefiLlama 21.09) or posted to Morpho PRIME/PYUSD (liquidity 20.03M, competes with Sentora PRIME Main exits) - capacity only, not committed"
+T3 1-7 days,92.7,31.1,100.0,"PRIME -> wYLDS (instant) -> USDC via Hastra operator, 1-2 business days; on-chain payout wallet held ~$85k vs $92.7M needed"
+T4 longer / uncertain,0.0,0.0,100.0,Residual (A-leg shortfall if V2 liquidity is taken by other depositors first; PRIME redemptions beyond Hastra/Figure capacity)
+# snapshot 2026-09-20 12:00 UTC (ETH block 26018583). Total vault debt $298.30M = kBTC legs $278.35M + Aave USDT $17.70M + Morpho WBTC/USDT $2.24M.
+# Vault claims: senRLUSDv2 $124.85M, senPYUSDmain $60.82M, PRIME $92.70M (NAV 1.0603), Sentora PRIME Main $17.69M, Huma PST Main $2.24M.
+# Sentora RLUSD Main / Paypal USD Main have no liquidity adapter (withdrawals served from idle only); forceDeallocate is permissionless with a 1 bp penalty (read on-chain). Assumes no competing withdrawals by other V2 depositors.
