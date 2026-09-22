@@ -13,14 +13,14 @@ A market study of products that pay a Bitcoin holder in Bitcoin. It maps the who
   - the closed cases (Maple, Hermetica, Acre);
   - conclusions: mechanics, a numeric risk policy, partners, how to grow TVL, a one-page target product, scenarios and the cost of incentives.
 - `index.html`: the site, in English, published at the link above. It is a single file with no build step and all data inline, and it is the source of truth for the page. Sections:
+  - the answer and a five-minute reading route;
   - market map (radial chart, category history, carry waves);
-  - how carry works;
-  - top-5 tabs;
-  - the wider field;
+  - how carry works (with a calculator);
+  - the five biggest: a comparison table and a tab per product;
+  - the wider field: every product that borrows against BTC;
   - risks;
-  - who runs it;
-  - playbook;
-  - data.
+  - playbook (including who runs these products);
+  - data and method.
 - `site/index.html`: the same page in the claude.ai artifact format. It is generated, so do not edit it by hand. Regenerate it after every edit of `index.html`:
 
   ```

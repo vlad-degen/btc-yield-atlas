@@ -292,10 +292,7 @@ table.vs td:last-child{color:var(--ink)}
 @media (max-width:900px){.findings.f4{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.findings.f4{grid-template-columns:1fr}}
 .h4{font-size:15px;margin:0 0 4px}
-.tabs{display:flex;flex-wrap:wrap;gap:4px;margin:28px 0 0;border-bottom:1px solid var(--hair-2)}
-.tabs button{font:inherit;font-size:14px;font-weight:600;background:none;border:0;border-bottom:3px solid transparent;padding:10px 12px;color:var(--ink-2);cursor:pointer;margin-bottom:-1px}
-.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
-.tabs button:hover{color:var(--ink)}
+
 .tabs button:focus-visible{outline:2px solid var(--link);outline-offset:2px}
 .tabpanel{padding-top:18px}
 .tabpanel[hidden]{display:none}
@@ -318,23 +315,67 @@ table.cmp tr.riskrow td{background:transparent}
 .dot.m{border-color:var(--warn);background:linear-gradient(90deg,var(--warn) 50%,transparent 50%)}
 .dot.l{border-color:var(--good);background:transparent}
 .pending{border:1px dashed var(--hair-2);border-radius:var(--radius);padding:18px;color:var(--ink-2);font-size:14px}
-@media (max-width:640px){.tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}.tabs button{white-space:nowrap;padding:10px 10px}}
+
 @media (max-width:1180px){.top .stamp{display:none}}
 .cols>.panel,.cols3>.panel{margin-top:0}
 .bl-h{font-size:18px;font-family:var(--body);font-weight:600;margin:0 0 4px}
+
+/* ---- v5 polish ---- */
+:root{--radius:12px}
+section:nth-of-type(even){background:color-mix(in srgb,var(--surface-2) 42%,var(--bg))}
+.hero{background:radial-gradient(900px 380px at 88% -8%,color-mix(in srgb,var(--accent) 17%,transparent),transparent 70%),radial-gradient(700px 300px at -5% 110%,color-mix(in srgb,var(--s1) 9%,transparent),transparent 70%),var(--bg)}
+.hero .eyebrow{display:inline-block;padding:5px 11px;border-radius:999px;border:1px solid var(--hair-2);background:var(--surface);color:var(--ink-2)}
+.answers .tile{border-top:3px solid var(--hair-2);transition:box-shadow .15s}
+.answers .tile.acc{border-top-color:var(--accent);background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
+.shead .k{display:inline-block;padding:4px 10px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,transparent);font-weight:600}
+.shead h2{margin-top:12px}
+.bottomline{border-left:4px solid var(--accent)}
+.bottomline ol.steps{list-style:none;counter-reset:bl;padding-left:0}
+.bottomline ol.steps>li{counter-increment:bl;position:relative;padding-left:38px;margin-bottom:12px}
+.bottomline ol.steps>li::before{content:counter(bl);position:absolute;left:0;top:1px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font:600 12px/24px var(--mono);text-align:center}
+.route{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+.route .rt{grid-column:1/-1;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.route a{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:center;padding:12px 14px;border:1px solid var(--hair);border-radius:var(--radius);background:var(--surface);color:var(--ink);box-shadow:var(--shadow);transition:border-color .15s,transform .15s}
+.route a:hover{text-decoration:none;border-color:var(--accent);transform:translateY(-1px)}
+.route a b{grid-row:1/3;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font:600 13px var(--mono);color:var(--accent-ink);background:color-mix(in srgb,var(--accent) 14%,transparent)}
+.route a span{font-weight:600;font-size:14px}
+.route a small{font-size:12px;color:var(--ink-2);line-height:1.35}
+@media (max-width:820px){.route{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.route{grid-template-columns:1fr}}
+nav.sec a[aria-current="true"]{background:var(--surface-2);color:var(--ink);font-weight:600}
+.tabs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:28px 0 0}
+.tabs button{font:inherit;display:flex;flex-direction:column;align-items:flex-start;gap:3px;text-align:left;padding:11px 13px;border:1px solid var(--hair);border-radius:var(--radius);background:var(--surface);color:var(--ink-2);cursor:pointer;box-shadow:var(--shadow);transition:border-color .15s,background .15s}
+.tabs button .nm{display:flex;align-items:center;gap:7px;font-size:14px;font-weight:600;color:var(--ink)}
+.tabs button .nm i{width:10px;height:10px;border-radius:50%;background:var(--pc,var(--accent));flex:none}
+.tabs button small{font-size:11.5px;color:var(--muted);font-family:var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.tabs button:hover{border-color:var(--hair-2)}
+.tabs button[aria-selected="true"]{border-color:var(--pc,var(--accent));background:color-mix(in srgb,var(--pc,var(--accent)) 8%,var(--surface));box-shadow:inset 0 0 0 1px var(--pc,var(--accent)),var(--shadow)}
+.tabs button:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+@media (max-width:900px){.tabs{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.tabs{display:flex;overflow-x:auto;scrollbar-width:thin;padding-bottom:4px}.tabs button{flex:0 0 150px}}
+.tabpanel .facts>div{border-top:3px solid var(--pc,var(--hair-2))}
+.tabpanel .facts>div:first-child b{color:var(--ink)}
+.pdot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:0}
+table.cmp thead th{color:var(--ink);font-size:11.5px}
+.vc{transition:box-shadow .15s}
+.vc:hover{box-shadow:0 1px 2px rgba(20,23,28,.06),0 14px 34px -18px rgba(20,23,28,.28)}
+details.more>summary{font-size:15.5px}
+details.more[open]>summary{border-bottom:1px solid var(--hair)}
+details.more .body>details.more{margin-top:12px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:13px}
 </style>
 
 <header class="top"><div class="wrap">
   <div class="brand"><i></i>BTC Yield Atlas</div>
   <nav class="sec" aria-label="Sections">
-    <a href="#top">Answer</a><a href="#map">Market map</a><a href="#how">How carry works</a><a href="#top5">Top 5</a><a href="#market">Wider field</a><a href="#risks">Risks</a><a href="#who">Who runs it</a><a href="#do">Playbook</a><a href="#data">Data</a>
+    <a href="#top">Answer</a><a href="#map">Market map</a><a href="#how">How carry works</a><a href="#top5">Top 5</a><a href="#market">Wider field</a><a href="#risks">Risks</a><a href="#do">Playbook</a><a href="#data">Data</a>
   </nav>
   <div class="stamp">snapshot 20 Sep 2026 · BTC $81,178</div>
 </div></header>
 <a class="totop" href="#top" aria-label="Back to top">Top ↑</a>
 
 <section class="hero" id="top"><div class="wrap">
-  <div class="eyebrow">Internal research · September 2026</div>
+  <div class="eyebrow">Research for the team · September 2026</div>
   <h1>Earning yield on Bitcoin: where the money is, and what borrowing against it really pays</h1>
   <p class="lede">We counted every product that pays a yield on BTC, followed each category for two years, and took apart the five largest products that borrow dollars against Bitcoin to earn it. This is the short version for the team. Details sit in the tabs and fold-outs; the sources are listed under Data and in the repository.</p>
   <div class="tiles answers">
@@ -350,6 +391,8 @@ table.cmp tr.riskrow td{background:transparent}
       <li><b>The leaders cut corners we can avoid cheaply.</b> Wrappers on a single key, 1-hour timelocks, two days to cut the loan after a fall, and no split between rewards and real yield. See the <a href="#do">Playbook</a>.</li>
     </ol>
   </div>
+
+  <nav class="route" aria-label="Reading route"><div class="rt">Read it in five minutes</div><a href="#map"><b>1</b><span>The market</span><small>How big it is, which strategies, two years of history</small></a><a href="#top5"><b>2</b><span>The five biggest</span><small>One table, then a tab per product</small></a><a href="#do"><b>3</b><span>The playbook</span><small>What to build, the risk rules, partners, growth</small></a><a href="#data"><b>4</b><span>Check our work</span><small>Method, data and every source</small></a></nav>
 </div></section>
 
 <section id="map"><div class="wrap">
@@ -464,14 +507,14 @@ table.cmp tr.riskrow td{background:transparent}
 <section id="top5"><div class="wrap">
   <div class="shead"><div class="k">3 · The five biggest</div><h2>The five largest carry products, taken apart</h2><p class="lede">Products with outside depositors that post BTC as collateral, borrow dollars and put them to work. Ranked by the BTC their depositors own on 20 September 2026. People doing the same trade in their own wallets are not included.</p></div>
   <div class="panel"><h3>Side by side</h3><div class="sub">Everything read from the blockchain unless marked "est." Scroll sideways on a phone.</div>
-    <div class="tblwrap"><table class="cmp" id="t-top5"><thead><tr><th></th><th>1 · Kraken Bitcoin Vault</th><th>2 · Yield Basis</th><th>3 · Bitget bgBTC Earn</th><th>4 · Midas mHyperBTC</th><th>5 · ether.fi Liquid BTC</th></tr></thead><tbody></tbody></table></div>
+    <div class="tblwrap"><table class="cmp" id="t-top5"><thead><tr><th></th><th><i class="pdot" style="background:var(--s2)"></i>1 · Kraken Bitcoin Vault</th><th><i class="pdot" style="background:var(--s1)"></i>2 · Yield Basis</th><th><i class="pdot" style="background:var(--s3)"></i>3 · Bitget bgBTC Earn</th><th><i class="pdot" style="background:var(--s7)"></i>4 · Midas mHyperBTC</th><th><i class="pdot" style="background:var(--s5)"></i>5 · ether.fi Liquid BTC</th></tr></thead><tbody></tbody></table></div>
     <p class="note" style="margin-top:8px">Risk marks: <span class="dot h"></span> high, <span class="dot m"></span> medium, <span class="dot l"></span> low. Maple BTC Yield, the leader in 2025, closed in November 2025 and is under <a href="#tp-closed" data-open="closed">Closed</a>.</p>
   </div>
   <div class="tabs" role="tablist" aria-label="Products" id="top5-tabs">
-    <button role="tab" data-tab="kraken" aria-selected="true">Kraken</button><button role="tab" data-tab="yb" aria-selected="false">Yield Basis</button><button role="tab" data-tab="bitget" aria-selected="false">Bitget</button><button role="tab" data-tab="mhyper" aria-selected="false">mHyperBTC</button><button role="tab" data-tab="etherfi" aria-selected="false">ether.fi</button><button role="tab" data-tab="closed" aria-selected="false">Closed: Maple and others</button>
+    <button role="tab" data-tab="kraken" aria-selected="true" style="--pc:var(--s2)"><span class="nm"><i></i>Kraken</span><small>6,493 BTC · 1.41%</small></button><button role="tab" data-tab="yb" aria-selected="false" style="--pc:var(--s1)"><span class="nm"><i></i>Yield Basis</span><small>1,326 BTC · −3…0.6%</small></button><button role="tab" data-tab="bitget" aria-selected="false" style="--pc:var(--s3)"><span class="nm"><i></i>Bitget</span><small>802 BTC · 2.34%</small></button><button role="tab" data-tab="mhyper" aria-selected="false" style="--pc:var(--s7)"><span class="nm"><i></i>mHyperBTC</span><small>354 BTC · ~3.2%</small></button><button role="tab" data-tab="etherfi" aria-selected="false" style="--pc:var(--s5)"><span class="nm"><i></i>ether.fi</span><small>232 BTC · 1.84%</small></button><button role="tab" data-tab="closed" aria-selected="false" style="--pc:var(--muted)"><span class="nm"><i></i>Closed</span><small>Maple and two more</small></button>
   </div>
 
-  <div class="tabpanel" id="tp-kraken" role="tabpanel"><span id="kraken"></span>
+  <div class="tabpanel" id="tp-kraken" role="tabpanel" style="--pc:var(--s2)"><span id="kraken"></span>
     <div class="facts"><div>Depositors own<b>6,493 BTC</b><small>$527M</small></div><div>Public since<b>27 May 2026</b><small>on Ink, by Veda and Sentora</small></div><div>Paid<b>1.41%</b><small>since launch; 1.03% in Sep</small></div><div>Without rewards<b>~0.1–0.6%</b><small>est.</small></div><div>Depositors<b>37,572</b><small>Kraken app wallets</small></div><div>Loan to value<b>64%</b><small>liquidation at 86%</small></div></div>
     <div class="cols">
       <div class="panel"><h3>How it works</h3><ol class="steps">
@@ -507,7 +550,7 @@ table.cmp tr.riskrow td{background:transparent}
       <div class="panel good"><h3>Worth copying</h3><ul class="small"><li>Distribution inside an exchange app: one tap, built-in wallets, gas paid, BTC purchase inside the deposit</li><li>A BTC share price that moves in small, bounded steps with a high-water-mark fee</li><li>Several borrow markets and a clear order for paying the loan back</li><li>Separating subsidized, liquid parking from credit that is slow to exit</li></ul></div>
       <div class="panel bad"><h3>Not worth copying</h3><ul class="small"><li>82% of the carry from rewards while saying it is not a subsidy</li><li>Borrowing from one curator's capped vault; the vault itself caused 5 of the 7 rate spikes above 6% (peaks up to 13.75%)</li><li>Running at the target loan-to-value and taking about 2 days to reduce it after a fall</li><li>31% of the debt in a token only an operator can turn back into cash</li><li>Quiet fee and penalty changes; the wrapper on a single key</li></ul></div>
     </div>
-    <h3 class="h3sec">The Kraken deep dive</h3>
+    <details class="more" id="kraken-detail"><summary>Kraken in detail: the marketing against the chain, where each dollar of yield comes from, who holds the keys, the flow of funds, the June fall</summary><div class="body">
 
   <div class="panel"><h3>What Kraken says, and what the chain shows</h3>
     <div class="tblwrap"><table class="vs"><thead><tr><th>Kraken or its partners say</th><th>The chain shows</th></tr></thead><tbody>
@@ -585,9 +628,10 @@ table.cmp tr.riskrow td{background:transparent}
     <p class="note" style="margin-top:8px">There is no re-borrowing against BTC here, but borrowing more against the same collateral and parking it in the vault that lends to that same market is a funding loop. It earns rewards and raises the loan-to-value without new collateral.</p>
   </div></details>
 
+    </div></details>
   </div>
 
-  <div class="tabpanel" id="tp-yb" role="tabpanel" hidden>
+  <div class="tabpanel" id="tp-yb" role="tabpanel" style="--pc:var(--s1)" hidden>
     <div class="facts"><div>Depositors own<b>1,326 BTC</b><small>$108M, WBTC, cbBTC, tBTC</small></div><div>Live since<b>24 Sep 2025</b><small>third version since May 2026</small></div><div>Paid, unstaked<b>−3% to +0.6%</b><small>current version, 118 days</small></div><div>Paid, staked<b>4–6% in YB</b><small>token down 87%</small></div><div>Depositors<b>744</b><small>current version (2,436 in all); 22 hold 64%</small></div><div>Loan to value<b>50%</b><small>fixed 2x, no liquidations</small></div></div>
     <div class="cols">
       <div class="panel"><h3>How it works</h3><ol class="steps">
@@ -625,7 +669,7 @@ table.cmp tr.riskrow td{background:transparent}
     </div>
   </div>
 
-  <div class="tabpanel" id="tp-bitget" role="tabpanel" hidden>
+  <div class="tabpanel" id="tp-bitget" role="tabpanel" style="--pc:var(--s3)" hidden>
     <div class="facts"><div>In the vault<b>801.6 bgBTC</b><small>$65M</small></div><div>Launched<b>31 Jul 2026</b><small>on the Morph network</small></div><div>Paid by the vault<b>2.34%</b><small>Bitget pays users 1.70%</small></div><div>Without rewards<b>negative</b><small>−0.55 to −1.57 points</small></div><div>Depositors<b>1</b><small>a Bitget omnibus wallet</small></div><div>Loan to value<b>62%</b><small>liquidation at 77%</small></div></div>
     <div class="cols">
       <div class="panel"><h3>How it works</h3><ol class="steps">
@@ -666,7 +710,7 @@ table.cmp tr.riskrow td{background:transparent}
     </div>
   </div>
 
-  <div class="tabpanel" id="tp-mhyper" role="tabpanel" hidden>
+  <div class="tabpanel" id="tp-mhyper" role="tabpanel" style="--pc:var(--s7)" hidden>
     <div class="facts"><div>Holders own<b>354.1 BTC</b><small>$28.7M; peak 583.5 BTC</small></div><div>First mint<b>24 Nov 2025</b><small>Midas certificate, run by Hyperithm</small></div><div>Paid<b>~3.2%</b><small>a year since launch; 1.65% last 90 days</small></div><div>From rewards<b>~43%</b><small>of the gain; dollar loan ≈ $0 (est.)</small></div><div>Holders<b>4 own 82%</b><small>117 addresses</small></div><div>Loan to value<b>52–58%</b><small>liquidation at −33%</small></div></div>
     <div class="cols">
       <div class="panel"><h3>How it works</h3><ol class="steps">
@@ -705,7 +749,7 @@ table.cmp tr.riskrow td{background:transparent}
 
   </div>
 
-  <div class="tabpanel" id="tp-etherfi" role="tabpanel" hidden>
+  <div class="tabpanel" id="tp-etherfi" role="tabpanel" style="--pc:var(--s5)" hidden>
     <div class="facts"><div>Depositors own<b>231.6 BTC</b><small>$18.8M; peak 849 BTC</small></div><div>Live since<b>Dec 2024</b><small>Veda vault on Ethereum and Optimism</small></div><div>Paid<b>1.84%</b><small>a year since launch; 1.96% last year</small></div><div>From rewards<b>~50%</b><small>of gross; organic carry ≈ 0 (est.)</small></div><div>Depositors<b>401 + Cash</b><small>39% sits as collateral in ether.fi Borrow</small></div><div>Loan to value<b>61.6%</b><small>liquidation at −22%</small></div></div>
     <div class="cols">
       <div class="panel"><h3>How it works today</h3><ol class="steps">
@@ -744,7 +788,7 @@ table.cmp tr.riskrow td{background:transparent}
 
   </div>
 
-  <div class="tabpanel" id="tp-closed" role="tabpanel" hidden>
+  <div class="tabpanel" id="tp-closed" role="tabpanel" style="--pc:var(--muted)" hidden>
     <div class="vaults">
       <div class="vc"><div class="head"><h3>Maple BTC Yield</h3><div class="sz"><b>0 BTC</b><small>peak 1,758 BTC, May 2025</small></div></div>
         <div class="tagline"><span class="badge crit"><i></i>Wound down Nov 2025</span> Institutions lent BTC to a Cayman fund; it borrowed dollars to buy Core tokens for boosted staking, hedged with puts written by Core itself.</div>
@@ -766,15 +810,22 @@ table.cmp tr.riskrow td{background:transparent}
   <div class="shead"><div class="k">4 · The wider field</div><h2>Every product that borrows against BTC, or says it does</h2><p class="lede">The top five plus the small, frozen and closed ones, with what each really paid. Click a name to open its tab or card.</p></div>
   <div class="panel"><div class="tblwrap"><table id="t-land"><thead><tr><th>Product</th><th>Status</th><th>What it does</th><th class="n">Real yield (BTC)</th><th class="n">Size</th><th>Biggest risk</th></tr></thead><tbody></tbody></table></div>
     <p class="note" style="margin-top:8px">Real yield is growth of the share price after fees, or the protocol's own number where there is no share price. Sizes are on-chain or DefiLlama, 20 September 2026.</p></div>
+  <details class="more"><summary>What the vaults actually paid: share prices since launch</summary><div class="body">
   <div class="panel" style="margin-top:16px"><h3>What they actually paid</h3><div class="sub">Price of one vault share in BTC, read from each vault's accounting contract. A flat line means no yield. Kraken starts with its first deposits in April (the vault was deployed in February); the public launch was 27 May.</div>
     <div class="chart" id="c-rate"></div><div class="tools"><button class="btn" data-table="c-rate">Table</button></div>
     <div class="tblwrap" style="margin-top:10px"><table id="t-realized"><thead><tr><th>Vault</th><th class="n">Last 30 days, a year</th><th class="n">Last 90 days</th><th class="n">Last year</th><th class="n">Advertised</th></tr></thead><tbody></tbody></table></div>
   </div>
+  </div></details>
+  <details class="more"><summary>Other ways to earn on Bitcoin, and what they really pay</summary><div class="body">
   <div class="panel" style="margin-top:16px"><h3>Other ways to earn on Bitcoin, and what they really pay</h3><div class="sub">For comparison. Anything above 5% in BTC comes from a basis trade, a loan to an institution, or token emissions.</div><div class="arch" id="arch"></div></div>
+  </div></details>
+  <details class="more"><summary>Coinbase: the other side of the trade</summary><div class="body">
   <div class="panel" style="margin-top:16px"><h3>Coinbase: the other side of the trade</h3><div class="sub">Coinbase does not sell BTC yield. It sells loans against BTC, and the yield goes to the USDC lenders.</div>
     <dl class="kv"><dt>What it is</dt><dd>Your BTC becomes cbBTC and is posted to Morpho on Base; you borrow USDC and keep it. <a href="https://morpho.org/stories/coinbase/" target="_blank" rel="noopener">Morpho case study</a></dd><dt>Size</dt><dd>$3B+ lent since January 2025, $1.3 to 1.4B outstanding, 90,000+ users. About 97% of the $1.43B borrowed in its main market sits in Coinbase wallets</dd><dt>Terms</dt><dd>Up to 75% LTV, liquidation at 86% with a 4.38% penalty, about 4.8% interest, loans up to $5M. <a href="https://help.coinbase.com/en/coinbase/trading-and-funding/loan/collateral" target="_blank" rel="noopener">Help center</a></dd><dt>Why it matters</dt><dd>These borrowers pay the 4.8% that makes the plain carry trade lose money. Coinbase's own bitcoin yield fund is a futures basis trade, not carry.</dd></dl></div>
-  <h3 class="h3sec">Product cards</h3>
+  </div></details>
+  <details class="more" id="cards"><summary>Product cards: every product above in detail</summary><div class="body">
   <div class="vaults" id="vaults-grid"></div>
+  </div></details>
 </div></section>
 
 <section id="risks"><div class="wrap">
@@ -783,38 +834,8 @@ table.cmp tr.riskrow td{background:transparent}
   <details class="more"><summary>Every incident we logged, 2024 to 2026</summary><div class="body"><div class="tl" id="incidents"></div></div></details>
 </div></section>
 
-<section id="who"><div class="wrap">
-  <div class="shead"><div class="k">6 · Who runs it</div><h2>The companies and people behind the vaults</h2><p class="lede">Every product is assembled from the same five layers: a distributor, a BTC wrapper, vault software, a curator who decides where the money goes, and the markets it uses. The distributor and the curator keep the margin.</p></div>
-  <div class="panel"><h3>Curators and managers</h3><div class="sub">Firms with a BTC strategy in production. "BTC managed" is what the blockchain shows.</div>
-    <div class="tblwrap"><table id="t-curators"><thead><tr><th>Firm</th><th>What they run</th><th>Track record</th><th class="n">BTC managed</th></tr></thead><tbody></tbody></table></div></div>
-  <details class="more"><summary>The five layers, and the software and markets underneath</summary><div class="body">
-    <div class="cols"><div class="flow"><svg viewBox="0 0 520 470" style="max-width:760px" role="img" aria-label="Five layers of collateral carry">
-      <g>
-        <rect class="box" x="10" y="10" width="500" height="64" rx="8"/><text class="lbl" x="24" y="32">1 · Distribution</text><text class="sm" x="24" y="50">Kraken, Coinbase, Bitget, Ledger, Lombard's app, your own wallet</text><text class="cap" x="24" y="66">the brand, the KYC, the app, and the 25% performance fee</text>
-        <rect class="box" x="10" y="94" width="500" height="64" rx="8"/><text class="lbl" x="24" y="116">2 · The BTC wrapper</text><text class="sm" x="24" y="134">kBTC, cbBTC, WBTC, LBTC, FBTC, sBTC, tBTC, or native BTC with a custodian</text><text class="cap" x="24" y="150">risk: whoever holds the keys</text>
-        <rect class="box" x="10" y="178" width="500" height="64" rx="8"/><text class="lbl" x="24" y="200">3 · Vault plumbing</text><text class="sm" x="24" y="218">Veda $1.87B, Midas $715M, Upshift and August $432M, Aera, IPOR Fusion</text><text class="cap" x="24" y="234">commoditized, takes basis points</text>
-        <rect class="box" x="10" y="262" width="500" height="64" rx="8"/><text class="lbl" x="24" y="284">4 · The curator</text><text class="sm" x="24" y="302">Sentora (Kraken, Lombard), Gauntlet (Bitget), ether.fi, Hyperithm, Tesseract, Re7</text><text class="cap" x="24" y="318">picks the borrow market and the parking spot. This is where the money is made or lost</text>
-        <rect class="box" x="10" y="346" width="500" height="110" rx="8"/><text class="lbl" x="24" y="368">5 · The markets</text>
-        <text class="sm" x="24" y="388">Borrow from: Morpho, Aave, Spark, Tydro (Ink), Zest (Stacks), or a house stablecoin (Mezo, Avalon)</text>
-        <text class="sm" x="24" y="406">Park in: sUSDS, Maple, sUSDe, curated USDC, RLUSD or PYUSD vaults, credit tokens (PRIME, Cap)</text>
-        <text class="cap" x="24" y="428">public infrastructure, no margin</text>
-        <text class="cap" x="24" y="446">today: borrow at about 3 to 4.8%, park at 3.5 to 6.1% including rewards</text>
-      </g>
-      <path class="f-btc" d="M480 74 v20"/><path class="f-btc" d="M480 158 v20"/><path class="f-btc" d="M480 242 v20"/><path class="f-btc" d="M480 326 v20"/>
-    </svg></div>
-    <div class="tblwrap"><table><thead><tr><th>Platform</th><th class="n">Size</th><th>Used by</th><th>How it works</th></tr></thead><tbody>
-      <tr><td><a href="https://docs.veda.tech/" target="_blank" rel="noopener">Veda</a></td><td class="n">$1.87B</td><td>Kraken, Lombard, ether.fi</td><td>Vault contracts that only allow listed actions and publish a share price. Audited by 0xMacro, Spearbit, Sigma Prime, Certora; $1M bug bounty</td></tr>
-      <tr><td><a href="https://morpho.org/" target="_blank" rel="noopener">Morpho</a></td><td class="n">$4.9B BTC collateral</td><td>Kraken, Bitget, Coinbase, Tesseract</td><td>Lending markets that nobody can change after creation. Curators run the lender vaults on top</td></tr>
-      <tr><td><a href="https://www.gauntlet.xyz/p/aera-vault-infrastructure" target="_blank" rel="noopener">Aera (Gauntlet)</a></td><td class="n">$243M</td><td>Bitget</td><td>Custom vaults per client</td></tr>
-      <tr><td><a href="https://midas.app/" target="_blank" rel="noopener">Midas</a></td><td class="n">$715M</td><td>Hyperithm, Re7, Acre</td><td>Fund tokens issued by a Berlin company; holders' claims rank below other creditors</td></tr>
-      <tr><td><a href="https://docs.upshift.finance/" target="_blank" rel="noopener">Upshift, August</a></td><td class="n">$432M</td><td>Hyperbeat; Kraken Institutional</td><td>Marketplace of curated vaults; its first BTC vaults closed or froze, but two small carry vaults are live (Upshift Sentora BTC, 47 BTC; Upshift Gamma BTC, 41 BTC)</td></tr>
-      <tr><td><a href="https://app.ipor.io/fusion" target="_blank" rel="noopener">IPOR Fusion</a></td><td class="n">small</td><td>Tesseract, BTCD Labs</td><td>Dedicated client vaults</td></tr>
-    </tbody></table></div></div>
-  </div></details>
-</div></section>
-
 <section id="do"><div class="wrap">
-  <div class="shead"><div class="k">7 · Playbook</div><h2>If we build one: what to build, how to run it, how to grow it</h2><p class="lede">What the five products and the three closed ones teach, turned into a design, a risk policy with numbers, a partner list and a growth plan.</p></div>
+  <div class="shead"><div class="k">6 · Playbook</div><h2>If we build one: what to build, how to run it, how to grow it</h2><p class="lede">What the five products and the three closed ones teach, turned into a design, a risk policy with numbers, a partner list and a growth plan.</p></div>
   <div class="panel bottomline"><h3>The short version</h3><ol class="steps">
     <li><b>Carry pays about 0.1 to 0.6% on its own.</b> Borrowing dollars against BTC costs about 3 to 4.8%; safe places to park them pay 3.5–5%. Everything above 1% comes from cheaper funding, collateral that earns by itself, or credit risk. Say which.</li>
     <li><b>The risk is speed and liquidity, not the BTC price.</b> How fast you cut the loan after a fall, how much debt you can repay in the same block, and how long a bridge or operator takes.</li>
@@ -839,7 +860,7 @@ table.cmp tr.riskrow td{background:transparent}
   <div class="cols" style="margin-top:16px">
     <div class="panel"><h3>What it would pay, % a year in BTC</h3><div class="sub">55% loan-to-value, 90% of deposits posted, 15% fee. Parking 6.0% total of which 3.5% without rewards. Same formula as the calculator above.</div>
       <div class="tblwrap"><table><thead><tr><th>Case</th><th class="n">Loan</th><th class="n">With rewards</th><th class="n">Without</th></tr></thead><tbody>
-        <tr><td>Like Kraken today</td><td class="n">3.0%</td><td class="n"><b>1.26%</b></td><td class="n">0.21%</td></tr>
+        <tr><td>Kraken-level rates (stylized)</td><td class="n">3.0%</td><td class="n"><b>1.26%</b></td><td class="n">0.21%</td></tr>
         <tr><td>Direct issuer deal, cheaper loan</td><td class="n">1.0%</td><td class="n"><b>2.10%</b></td><td class="n">1.05%</td></tr>
         <tr><td>Expensive loan (spikes, someone else's cap)</td><td class="n">5.0%</td><td class="n">0.42%</td><td class="n"><b>−0.63%</b></td></tr>
         <tr><td>No issuer programmes at all (park at 4.5%)</td><td class="n">4.0%</td><td class="n">0.21%</td><td class="n">0.21%</td></tr>
@@ -865,7 +886,7 @@ table.cmp tr.riskrow td{background:transparent}
     <div class="tblwrap"><table><thead><tr><th>Role</th><th>First choice</th><th>Also</th><th>Watch out for</th></tr></thead><tbody>
       <tr><td><b>Vault software</b></td><td>Veda (Kraken, ether.fi, Lombard)</td><td>Gauntlet Aera v3 (Bitget)</td><td>Ask for a ≥72 h admin timelock; Kraken's is 1 hour</td></tr>
       <tr><td><b>Dollar side</b></td><td>Morpho Blue and Vault V2</td><td>Aave v3, Spark</td><td>Do not borrow from a vault run by a curator who is also your strategist</td></tr>
-      <tr><td><b>Strategy and risk</b></td><td>Gauntlet: strongest risk brand; joint 2-of-2 control with the distributor</td><td>Steakhouse (largest Morpho curator and main lender to Coinbase's cbBTC market; conservative); Sentora (the only one that has run carry at $500M)</td><td>Gauntlet's pay is undisclosed and it runs Bitget's loop; Sentora lends to itself on 1-of-1 multisigs; avoid Re7 after Acre</td></tr>
+      <tr><td><b>Strategy and risk</b></td><td>Gauntlet: strongest risk brand; joint 2-of-2 control with the distributor</td><td>Steakhouse (a conservative curator of large Morpho dollar vaults); Sentora (the only one that has run carry at $500M)</td><td>Gauntlet's pay is undisclosed and it runs Bitget's loop; Sentora lends to itself on 1-of-1 multisigs; avoid Re7 after Acre</td></tr>
       <tr><td><b>BTC wrapper</b></td><td>cbBTC (Coinbase)</td><td>WBTC (BitGo); LBTC if the collateral should earn</td><td>kBTC and bgBTC while a single key controls them</td></tr>
       <tr><td><b>Custody for institutions</b></td><td>Anchorage, BitGo, Copper</td><td>Time-locked native BTC, as Maple did</td><td>Partners who can freeze your hedge</td></tr>
       <tr><td><b>Oracle</b></td><td>Chainlink with proof of reserve</td><td>RedStone, Pyth</td><td>A price that ignores the wrapper</td></tr>
@@ -906,6 +927,35 @@ table.cmp tr.riskrow td{background:transparent}
     </ol></div>
   </div>
 
+  <details class="more" id="who"><summary>Who runs these products: curators and managers, with track records</summary><div class="body">
+    <p class="small">Every product is assembled from the same five layers: a distributor, a BTC wrapper, vault software, a curator who decides where the money goes, and the markets it uses. The distributor and the curator keep the margin.</p>
+  <div class="panel" style="margin-top:12px"><h3>Curators and managers</h3><div class="sub">Firms with a BTC strategy in production. "BTC managed" is what the blockchain shows.</div>
+    <div class="tblwrap"><table id="t-curators"><thead><tr><th>Firm</th><th>What they run</th><th>Track record</th><th class="n">BTC managed</th></tr></thead><tbody></tbody></table></div></div>
+  </div></details>
+  <details class="more"><summary>The five layers, and the software and markets underneath</summary><div class="body">
+    <div class="cols"><div class="flow"><svg viewBox="0 0 520 470" style="max-width:760px" role="img" aria-label="Five layers of collateral carry">
+      <g>
+        <rect class="box" x="10" y="10" width="500" height="64" rx="8"/><text class="lbl" x="24" y="32">1 · Distribution</text><text class="sm" x="24" y="50">Kraken, Coinbase, Bitget, Ledger, Lombard's app, your own wallet</text><text class="cap" x="24" y="66">the brand, the KYC, the app, and the 25% performance fee</text>
+        <rect class="box" x="10" y="94" width="500" height="64" rx="8"/><text class="lbl" x="24" y="116">2 · The BTC wrapper</text><text class="sm" x="24" y="134">kBTC, cbBTC, WBTC, LBTC, FBTC, sBTC, tBTC, or native BTC with a custodian</text><text class="cap" x="24" y="150">risk: whoever holds the keys</text>
+        <rect class="box" x="10" y="178" width="500" height="64" rx="8"/><text class="lbl" x="24" y="200">3 · Vault plumbing</text><text class="sm" x="24" y="218">Veda $1.87B, Midas $715M, Upshift and August $432M, Aera, IPOR Fusion</text><text class="cap" x="24" y="234">commoditized, takes basis points</text>
+        <rect class="box" x="10" y="262" width="500" height="64" rx="8"/><text class="lbl" x="24" y="284">4 · The curator</text><text class="sm" x="24" y="302">Sentora (Kraken, Lombard), Gauntlet (Bitget), ether.fi, Hyperithm, Tesseract, Re7</text><text class="cap" x="24" y="318">picks the borrow market and the parking spot. This is where the money is made or lost</text>
+        <rect class="box" x="10" y="346" width="500" height="110" rx="8"/><text class="lbl" x="24" y="368">5 · The markets</text>
+        <text class="sm" x="24" y="388">Borrow from: Morpho, Aave, Spark, Tydro (Ink), Zest (Stacks), or a house stablecoin (Mezo, Avalon)</text>
+        <text class="sm" x="24" y="406">Park in: sUSDS, Maple, sUSDe, curated USDC, RLUSD or PYUSD vaults, credit tokens (PRIME, Cap)</text>
+        <text class="cap" x="24" y="428">public infrastructure, no margin</text>
+        <text class="cap" x="24" y="446">today: borrow at about 3 to 4.8%, park at 3.5 to 6.1% including rewards</text>
+      </g>
+      <path class="f-btc" d="M480 74 v20"/><path class="f-btc" d="M480 158 v20"/><path class="f-btc" d="M480 242 v20"/><path class="f-btc" d="M480 326 v20"/>
+    </svg></div>
+    <div class="tblwrap"><table><thead><tr><th>Platform</th><th class="n">Size</th><th>Used by</th><th>How it works</th></tr></thead><tbody>
+      <tr><td><a href="https://docs.veda.tech/" target="_blank" rel="noopener">Veda</a></td><td class="n">$1.87B</td><td>Kraken, Lombard, ether.fi</td><td>Vault contracts that only allow listed actions and publish a share price. Audited by 0xMacro, Spearbit, Sigma Prime, Certora; $1M bug bounty</td></tr>
+      <tr><td><a href="https://morpho.org/" target="_blank" rel="noopener">Morpho</a></td><td class="n">$4.9B BTC collateral</td><td>Kraken, Bitget, Coinbase, Tesseract</td><td>Lending markets that nobody can change after creation. Curators run the lender vaults on top</td></tr>
+      <tr><td><a href="https://www.gauntlet.xyz/p/aera-vault-infrastructure" target="_blank" rel="noopener">Aera (Gauntlet)</a></td><td class="n">$243M</td><td>Bitget</td><td>Custom vaults per client</td></tr>
+      <tr><td><a href="https://midas.app/" target="_blank" rel="noopener">Midas</a></td><td class="n">$715M</td><td>Hyperithm, Re7, Acre</td><td>Fund tokens issued by a Berlin company; holders' claims rank below other creditors</td></tr>
+      <tr><td><a href="https://docs.upshift.finance/" target="_blank" rel="noopener">Upshift, August</a></td><td class="n">$432M</td><td>Hyperbeat; Kraken Institutional</td><td>Marketplace of curated vaults; its first BTC vaults closed or froze, but two small carry vaults are live (Upshift Sentora BTC, 47 BTC; Upshift Gamma BTC, 41 BTC)</td></tr>
+      <tr><td><a href="https://app.ipor.io/fusion" target="_blank" rel="noopener">IPOR Fusion</a></td><td class="n">small</td><td>Tesseract, BTCD Labs</td><td>Dedicated client vaults</td></tr>
+    </tbody></table></div></div>
+  </div></details>
   <details class="more"><summary>Three ways past 1%, and what we would not copy</summary><div class="body">
     <div class="cols3">
       <div class="panel"><div class="opt">Option A</div><h3>Cheaper funding, disclosed</h3><p class="small">Borrowing at 1% instead of 3% roughly doubles the yield. The routes are a direct issuer programme with a published size and end date, or a protocol credit line like Curve's for Yield Basis. The catch: someone pays, and the product must still work without it.</p></div>
@@ -925,7 +975,7 @@ table.cmp tr.riskrow td{background:transparent}
 </div></section>
 
 <section id="data"><div class="wrap">
-  <div class="shead"><div class="k">8 · Data and method</div><h2>The numbers behind the page</h2><p class="lede">For checking our work. Everything is as of 20 September 2026 unless it says otherwise.</p></div>
+  <div class="shead"><div class="k">7 · Data and method</div><h2>The numbers behind the page</h2><p class="lede">For checking our work. Everything is as of 20 September 2026 unless it says otherwise.</p></div>
   <details class="more"><summary>Borrow markets: where the loans are taken</summary><div class="body">
     <div class="cols">
       <div class="panel"><h3>What is borrowed against Bitcoin on Morpho</h3><div class="sub">$2.38B in total, 79% of it USDC and almost all of that Coinbase. The subsidized RLUSD and PYUSD markets behind the vaults are $341M. <a href="https://app.morpho.org/ethereum/borrow" target="_blank" rel="noopener">Morpho</a></div><div class="chart" id="c-loan"></div><div class="tools"><button class="btn" data-table="c-loan">Table</button></div></div>
@@ -963,7 +1013,7 @@ table.cmp tr.riskrow td{background:transparent}
 </div></section>
 
 <footer><div class="wrap">
-  <p>BTC Yield Atlas · internal research · snapshot 20 September 2026, re-checked 21–22 September. Written reports, dossiers and the audit are in the <a href="https://github.com/vlad-degen/btc-yield-atlas" target="_blank" rel="noopener">repository</a>.</p>
+  <p>BTC Yield Atlas · research for the team · snapshot 20 September 2026, re-checked 21–22 September. Written reports, dossiers and the audit are in the <a href="https://github.com/vlad-degen/btc-yield-atlas" target="_blank" rel="noopener">repository</a>.</p>
 </div></footer>
 
 <script>
@@ -1118,7 +1168,7 @@ const REG = {};
 const VSTAT=[['good','Live'],['good','Live'],['good','Live'],['good','Live'],['ser','Wound down'],['good','Live'],['ser','Stalled'],['crit','Closed'],['warn','Live, small'],['ser','Mostly closed']];
 const LAND=[
  {n:'Kraken Bitcoin Vault',v:0,h:'#tp-kraken',st:['good','Live'],what:'Borrows RLUSD and PYUSD against your BTC, then parks the dollars in the curator\'s own lender vaults and a home-loan token',y:'1.41% since launch; 1.03% in September',sz:'$527M',rl:'crit',risk:'82% of the carry is a subsidy; the BTC token sits on one key; the curator is on both sides of the loan'},
- {n:'Yield Basis',v:0,h:'#tp-yb',st:['good','Live'],what:'Your BTC plus an equal crvUSD loan from Curve in a 2x pool, so the pool loss is cancelled in theory',y:'−3% to +0.6% unstaked this version; stakers paid in a token down 87%',sz:'$108M',rl:'ser',risk:'Book value hides what an exit pays: up to 19.5% less in February, 6% less now'},
+ {n:'Yield Basis',v:0,h:'#tp-yb',st:['good','Live'],what:'Your BTC plus an equal crvUSD loan from Curve in a 2x pool, so the pool loss is cancelled in theory',y:'−3% to +0.6% unstaked this version; stakers paid in a token down 87%',sz:'$108M',rl:'ser',risk:'Book value hides what an exit pays: up to 21% less in February, 6% less now'},
  {n:'Lombard LBTCv and Bitcoin Earn',v:1,st:['good','Live'],what:'Your BTC insures a market maker\'s stablecoin loan and earns a premium for it',y:'0.98% over the last year',sz:'$72M',rl:'ser',risk:'You take the first loss: a BTC fall of about 25% opens a 12-hour cure window, and at 90% loan-to-value the cover can be slashed even if nobody defaults'},
  {n:'Mezo Earn and Mezo Prime',v:5,st:['good','Live'],what:'Lends its own stablecoin at 1% fixed against BTC; BTC holders who lock and vote earn fees',y:'2.8% (voting rewards)',sz:'$70M',rl:'crit',risk:'Half its stablecoin is the protocol\'s own loan; one client holds 92%; upgrades need no delay'},
  {n:'Bitget bgBTC Onchain Earn',v:3,h:'#tp-bitget',st:['good','Live'],what:'One Bitget wallet borrows USDC against bgBTC and lends it back to the same market',y:'2.34% since launch (users get 1.70%)',sz:'$65M',rl:'crit',risk:'A closed loop paid for by Bitget itself; one depositor; one key over the token, bridge and vault'},
@@ -1364,9 +1414,9 @@ function initV4(){
     t.addEventListener('click',()=>open(t.dataset.tab));
     t.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const j=(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;open(tabs[j].dataset.tab,true);}});});
   document.querySelectorAll('[data-open]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();open(a.dataset.open);document.getElementById('top5-tabs').scrollIntoView({behavior:'smooth'});}));
-  const fromHash=()=>{const h=location.hash.slice(1);if(!h)return;const el=document.getElementById(h);if(!el)return;const p=el.closest('.tabpanel');if(p){open(p.id.slice(3));requestAnimationFrame(()=>el.scrollIntoView());}};
+  const fromHash=()=>{const h=location.hash.slice(1);if(!h)return;const el=document.getElementById(h);if(!el)return;const p=el.closest('.tabpanel');if(p)open(p.id.slice(3));let d=el.tagName==='DETAILS'?el:el.closest('details');while(d){d.open=true;d=d.parentElement.closest('details');}if(p||el.closest('details')||el.tagName==='DETAILS')requestAnimationFrame(()=>el.scrollIntoView());};
   window.addEventListener('hashchange',fromHash);fromHash();
-  document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.getAttribute('href')!==location.hash)return;const el=document.getElementById(a.getAttribute('href').slice(1));if(el&&el.closest('.tabpanel')){e.preventDefault();fromHash();}});
+  document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||a.getAttribute('href')!==location.hash)return;const el=document.getElementById(a.getAttribute('href').slice(1));if(el&&(el.closest('.tabpanel')||el.closest('details'))){e.preventDefault();fromHash();}});
 }
 
 Object.assign(TOPX,{
@@ -1379,7 +1429,7 @@ Object.assign(TOPX,{
  'EF:r4':'m|WBTC, cbBTC; exits paid in eBTC','EF:r5':'h|No timelock; EOA posts the price','EF:r6':'m|ether.fi and Sentora','EF:r7':'m|Fact sheet says a 1% fee, on-chain 0%'
 });
 Object.assign(TOPX,{
- 'MH:size':'354.1 BTC ($30.7M); peak 583.5 BTC','MH:since':'24 Nov 2025','MH:loan':'cbBTC → USDT on Morpho and USDS on Spark; $10.8M',
+ 'MH:size':'354.1 BTC ($28.7M); peak 583.5 BTC','MH:since':'24 Nov 2025','MH:loan':'cbBTC → USDT on Morpho and USDS on Spark; $10.8M',
  'MH:where':'Morpho dollar vaults on Monad, Stable and Ethereum; earlier Binance and Gate.io books','MH:ltv':'52–58%, liquidation at −33%',
  'MH:paid':'~3.2% a year since launch; 1.65% last 90 days','MH:inc':'~43% of the gain matched rewards; the dollar loan netted ≈ $0',
  'MH:who':'Hyperithm (strategy), Midas (issuer, price, co-signs)','MH:dep':'117 addresses; 4 own 82%; 37% of supply is Morpho collateral',
@@ -1389,6 +1439,8 @@ Object.assign(TOPX,{
 });
 
 render();renderV4();initV4();tableToggle();calc();
+(function(){const nav=document.querySelector('nav.sec');if(!nav||!('IntersectionObserver' in window))return;const links=[...nav.querySelectorAll('a')];const byId=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));const io=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)return;const a=byId.get(e.target.id);if(!a)return;links.forEach(x=>x.removeAttribute('aria-current'));a.setAttribute('aria-current','true');if(nav.scrollWidth>nav.clientWidth)nav.scrollTo({left:a.offsetLeft-nav.clientWidth/2+a.offsetWidth/2,behavior:'smooth'});});},{rootMargin:'-40% 0px -55% 0px'});document.querySelectorAll('section[id]').forEach(x=>io.observe(x));})();
+
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{render();renderV4();});
 new MutationObserver(()=>{render();renderV4();}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
 </script>
