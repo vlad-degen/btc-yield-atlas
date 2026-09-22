@@ -2,6 +2,8 @@
 
 *Английский оригинал: [en/03-bitget.md](en/03-bitget.md).*
 
+*Скрипты: [`tools/top5/bitget/`](../../tools/top5/bitget/), данные: [`data/top5/bitget/`](../../data/top5/bitget/). Упоминания `scripts/` и `raw/` ниже относятся к рабочей папке; сырые выгрузки `raw/` не публикуются.*
+
 Состояние на 2026-09-21 ~22:30 UTC (блок Morph 27,158,820). Все ончейн-цифры получены прямым чтением из архивного RPC Morph (`rpc-quicknode.morphl2.io`, `rpc.morphl2.io`, `morph.drpc.org`), Morph Blockscout (`explorer-api.morphl2.io`), RPC и Blockscout Ethereum, mempool.space и фида Chainlink PoR. Скрипты — в `scripts/`, сырые выгрузки — в `raw/`. Веб-источники — в `raw/web/`, индекс — в `raw/web/_sources_index.tsv`.
 
 Пометки в этом отчёте:

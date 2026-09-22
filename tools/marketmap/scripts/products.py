@@ -19,7 +19,7 @@ def add(**k):
 
 # ---------------- C1: BTC collateral + USD loan -> strategy -----------------
 add(id='kraken-vault', product='Kraken Bitcoin Vault (Advanced Strategies BTC)', slug='kraken-bitcoin-vault', cat='C1', sub='Curated carry vault (Veda/Sentora)',
-    src='fixed', btc=6492.7, hist='pending', source='on-chain (parallel agent; Ink BoringVault) 2026-09-20; DefiLlama slug shows 0 (ignored)',
+    src='fixed', btc=6492.7, hist='pending', source='on-chain (Ink BoringVault) 2026-09-20; DefiLlama slug shows 0 (ignored)',
     just='kBTC collateral on Morpho/Aave -> RLUSD/PYUSD/USDT debt -> Sentora V2 + Hastra PRIME: dollar loan against BTC.')
 add(id='yield-basis', product='Yield Basis', slug='yield-basis', cat='C1', sub='Leveraged BTC/crvUSD LP (hybrid)',
     src='fixed', btc=1326.2, hist='pending', source='on-chain depositor equity (LT pricePerShare x supply, all BTC markets v1-v3) 2026-09-20 12:00; history = month-end book value (yieldbasis/tvl_monthly.csv). DefiLlama BTC-token TVL counts the gross LP (incl. borrowed crvUSD side) and is not used',
@@ -29,7 +29,7 @@ add(id='maple-btc-yield', product='Maple BTC Yield', slug='maple', cat='C1', sub
     source='on-chain reconstruction (Core CLTV stakes of the Maple cluster + Bitcoin hub payouts); history = max(staked on 1st of next month, mid-month) to smooth maturity rolls; 0 from 2025-11',
     just='BTC at Copper/BitGo as collateral -> USDC -> CORE + hedge -> Core dual staking: dollar loan against BTC. Size unmeasured (blank).')
 add(id='bitget-bgbtc-earn', product='Bitget bgBTC Onchain Earn', slug='aera-v3', cat='C1', sub='Curated carry vault (Gauntlet Aera, Morpho on Morph)',
-    src='fixed', btc=801.7, hist='pending', source='on-chain (parallel agent): 801.7 bgBTC in Morpho on Morph; = DefiLlama aera-v3 BGBTC 801.6 units',
+    src='fixed', btc=801.7, hist='pending', source='on-chain: 801.7 bgBTC in Morpho on Morph; = DefiLlama aera-v3 BGBTC 801.6 units',
     just='bgBTC -> USDC loan on Morpho (Morph) -> Gauntlet USDC Prime: dollar loan against BTC.')
 add(id='etherfi-liquid-btc', product='ether.fi Liquid BTC', slug='ether.fi-liquid', cat={'2024-09': 'C1', '2025-06': 'C6', '2025-08': 'C1'}, sub='Curated carry vault (Veda, Nonce)',
     src='fixed', btc=231.56, hist='pending', flag='C6 in 2025-06..07: no stablecoin debt, points-only book (Corn, Berachain)',

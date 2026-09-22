@@ -87,7 +87,7 @@ Snapshot 2026-09-20; history 2024-09 to 2026-09 (month-end). Produced 2026-09-21
 | 2026-09 | 9,278 (10.1%) | 56,549 (61.8%) | 6,563 (7.2%) | 7,992 (8.7%) | 1,656 (1.8%) | 9,447 (10.3%) | 91,486 | $7.43B |
 
 - **Leading category:** C2 (staking & restaking) leads the net in every month from 2024-09 to 2026-09, so the leader never changed (gross gives the same answer). Its net share went from 52% (2024-10) to a peak of 78% and 62% now; the drop in 2026-08 is LBTC moving to C4.
-- **Second place:** C6 in every month. Third place: C1, C3. C4 appears only from 2026-08 (LBTC reclassified); C1 peaked at 10.1% of the net (before the pending Kraken/Bitget/ether.fi histories are merged; with them C1 would be ~10% in 2026-09).
+- **Second place:** C6 in every month. Third place: C1, C3. C4 appears only from 2026-08 (LBTC reclassified); C1 reached 10.1% of the net in 2026-08 and 2026-09, with the on-chain histories of Kraken, Yield Basis, Bitget, mHyperBTC, ether.fi and Maple merged.
 - 2024-09 is incomplete for C2: DefiLlama lists Babylon only from 2024-10-22.
 
 "Net flow" is the change in BTC units, so it also contains DefiLlama listing/delisting effects: Babylon listed 2024-10-22 (+~23k BTC in 2024-10), GTBTC listed 2025-11 (+~3k), Mezo Earn 2026-05, Vishwa 2025-09; DeSyn delisted 2025-11-28 (-~10k BTC in C6); Solv Basis re-scoped 2024-12 (-~7k BTC in C3). Read the category flows with these in mind.
@@ -120,8 +120,8 @@ Same from 2024-10 (first month with Babylon on DefiLlama):
 
 - Category sums = total and product rows sum to category totals, every month: pass. Net <= gross every month: pass.
 - 2026-09 history row vs current snapshot, like for like (products with a history): $8.18B vs $7.44B (gross) - equal.
-- Current rows without history (not in the monthly files): Kraken Bitcoin Vault (Advanced Strategies BTC) 6,493 BTC; Yield Basis 1,326 BTC; Bitget bgBTC Onchain Earn 802 BTC; Midas mHyperBTC (Hyperithm) 354 BTC; ether.fi Liquid BTC 232 BTC; Maple BTC Yield 0 BTC; Core BTC staking (Satoshi Plus) 2,210 BTC; Starboard Sygnum BTC Alpha Fund 750 BTC; Hilbert Xapo Byzantine BTC Credit Fund 1,232 BTC; Two Prime Axiom WBTC Vault (Pareto) 150 BTC. Total 13,548 BTC. Current gross = 2026-09 history gross + these rows.
-- **Merging the pending C1 histories:** put `inputs/c1_histories.csv` (columns month, product_id, tvl_btc; ids `kraken-vault`, `bitget-bgbtc-earn`, `etherfi-liquid-btc`) and re-run `10_build.py` and `11_write_reports.py`; the rows enter history, category totals, shares and flows. DefiLlama proxies are in `c1_pending_proxy_history.csv` (Veda Ink kBTC for Kraken from 2026-05; aera-v3 bgBTC for Bitget from 2026-08; ether.fi-liquid BTC for ether.fi, which before 2025-05 covers more than the Liquid BTC vault).
+- Current rows without history (not in the monthly files): Core BTC staking (Satoshi Plus) 2,210 BTC; Starboard Sygnum BTC Alpha Fund 750 BTC; Hilbert Xapo Byzantine BTC Credit Fund 1,232 BTC; Two Prime Axiom WBTC Vault (Pareto) 150 BTC. Total 13,548 BTC. Current gross = 2026-09 history gross + these rows.
+- **On-chain C1 histories:** `inputs/c1_histories.csv` (columns month, product_id, tvl_btc) is merged by `10_build.py`; the rows enter history, category totals, shares and flows. DefiLlama proxies for comparison are in `c1_pending_proxy_history.csv`.
 
 ## DefiLlama methodology jumps and data breaks (review before charting)
 
@@ -137,7 +137,7 @@ Same from 2024-10 (first month with Babylon on DefiLlama):
 ## Gaps and unverifiable items
 
 - Coinbase CBYF AUM not disclosed (blank). Maple BTC Yield history is an on-chain attribution (medium-high confidence).
-- Kraken Bitcoin Vault, Bitget bgBTC Earn, ether.fi Liquid BTC: current values from parallel on-chain work; monthly histories pending (not in the history files yet).
+- Kraken Bitcoin Vault, Yield Basis, Bitget bgBTC Earn, Midas mHyperBTC, ether.fi Liquid BTC and Maple BTC Yield: current values and month-end histories from the on-chain deep dives (`inputs/c1_histories.csv`, merged).
 - Core BTC staking: current value only (Core staking API, read 2026-09-21: 2,210.3 BTC, 1,814 stakers); no history endpoint found. Possible overlap with b14g and Maple.
 - Stacks Dual Stacking: no public enrollment figure found; sBTC is excluded as a wrapper and Dual Stacking is not in the totals.
 - Midas pools (mHyperBTC, mRe7BTC) and Tesseract pools: DefiLlama yields history starts mid-2026; earlier months are missing. Tesseract pools stopped updating 2026-09-16 (value carried to 09-20).
@@ -150,7 +150,7 @@ Same from 2024-10 (first month with Babylon on DefiLlama):
 ## Re-run
 
 ```
-cd scratchpad/v3/marketmap
+cd tools/marketmap
 python3 scripts/01_candidates.py            # candidate slugs from raw/protocols.json
 python3 scripts/02_fetch_protocols.py        # DefiLlama /protocol/{slug} (cached in raw/proto; delete to refresh)
 python3 scripts/02b_fetch_parallel.py raw/extra_small_slugs.json   # small/dead protocols for the history screen

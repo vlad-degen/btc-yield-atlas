@@ -1,5 +1,7 @@
 # Maple "BTC Yield" (with Core Foundation): deep dive
 
+*Scripts: [`tools/top5/maple/`](../../../tools/top5/maple/), data: [`data/top5/maple/`](../../../data/top5/maple/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
+
 Research date: 2026-09-21. Scope: Maple's institutional BTC Yield product, which used Core dual staking with a USDC loan, CORE purchases and CORE puts; the related lstBTC; syrupBTC; and the Core Foundation v Maple dispute.
 
 **How to read this report**
@@ -411,7 +413,7 @@ For comparison, Maple's ARR was $15M in Q2 2025. Legal costs of the dispute (bot
 - **Settlement (Maple, 2026-05-22).** https://maple.finance/insights/core-foundation-and-maple-international-operations-spc-reach-full-and-final-settlement
 - **Maple statement (2025-11-21, X article).** https://x.com/maplefinance/status/1991886803092091268. Also https://x.com/maplefinance/status/1991214703725735961 and https://x.com/maplefinance/status/1917628219223859367 (read via api.fxtwitter.com).
 - **Core Foundation statement (2025-11-19).** https://x.com/Coredao_Org/status/1991171121534636264. Rich Rines: https://x.com/richrines/status/1991195611446518267
-- **Maple GraphQL.** https://api.maple.finance/v2/graphql: `poolMeta(id:"67e542004191822941f9e703")`, `poolsMeta`, `syrupTokens`, `assets`.
+- **Maple GraphQL.** `https://api.maple.finance/v2/graphql`: `poolMeta(id:"67e542004191822941f9e703")`, `poolsMeta`, `syrupTokens`, `assets`.
 - **Maple site.**
   - https://maple.finance/insights/q2-2025-maple-market-update
   - https://maple.finance/insights/one-maple
@@ -422,10 +424,10 @@ For comparison, Maple's ARR was $15M in Q2 2025. Legal costs of the dispute (bot
 - **Core.**
   - Blog: https://coredao.org/blog/maple-core-bitcoin-yield-product
   - Docs: dual staking, tier adjustment, CORE staking.
-  - Staking API: https://stake.coredao.org/api/staking/* (candidate list, btc_lst_apr, market price).
-  - RPC: https://rpc.coredao.org (BitcoinStake 0x…1014, BitcoinAgent 0x…1013, CoreAgent 0x…1011, StakeHub 0x…1010, lstBTC 0x…010001).
-  - Explorer API: https://scan.coredao.org/api/chain/address_transaction
-- **Bitcoin.** https://mempool.space/api (staking transactions, outspends, hub `bc1pm9v0y2gjh4hjm6wp7vsaqwzf96ugsrtzs9ujcawdm880fveuzrcs3c0pc4`, holdback path `bc1pdcj7…` → `bc1pyed82…` → `bc1q9tfmg8…` → `bc1q5zly2ljxhtm3gycyum93czupz9k04gcse6emg6`).
+  - Staking API: `https://stake.coredao.org/api/staking/*` (candidate list, btc_lst_apr, market price).
+  - RPC: `https://rpc.coredao.org` (BitcoinStake 0x…1014, BitcoinAgent 0x…1013, CoreAgent 0x…1011, StakeHub 0x…1010, lstBTC 0x…010001).
+  - Explorer API: `https://scan.coredao.org/api/chain/address_transaction`
+- **Bitcoin.** `https://mempool.space/api` (staking transactions, outspends, hub `bc1pm9v0y2gjh4hjm6wp7vsaqwzf96ugsrtzs9ujcawdm880fveuzrcs3c0pc4`, holdback path `bc1pdcj7…` → `bc1pyed82…` → `bc1q9tfmg8…` → `bc1q5zly2ljxhtm3gycyum93czupz9k04gcse6emg6`).
 - **Market data.** Bybit spot klines (CORE, BTC). CoinGecko simple price (CORE $0.0222, market cap $33.3M on 2026-09-21). DefiLlama (`maple` TVL; CORE chain TVL).
 - **Secondary.**
   - CoinDesk 2025-02-17 and 2025-11-20

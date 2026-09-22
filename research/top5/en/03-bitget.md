@@ -1,5 +1,7 @@
 # Bitget bgBTC Onchain Earn: deep dive (Morph × Gauntlet Aera × Morpho × RedStone × Chainlink)
 
+*Scripts: [`tools/top5/bitget/`](../../../tools/top5/bitget/), data: [`data/top5/bitget/`](../../../data/top5/bitget/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
+
 State as of 2026-09-21 ~22:30 UTC (Morph block 27,158,820). All on-chain numbers come from direct reads of the Morph archive RPC (`rpc-quicknode.morphl2.io`, `rpc.morphl2.io`, `morph.drpc.org`), Morph Blockscout (`explorer-api.morphl2.io`), Ethereum RPC and Blockscout, mempool.space, and the Chainlink PoR feed. Scripts are in `scripts/` and raw pulls in `raw/`. Web sources are in `raw/web/`, indexed in `raw/web/_sources_index.tsv`.
 
 Labels used in this report:

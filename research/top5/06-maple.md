@@ -1,4 +1,6 @@
 # Maple «BTC Yield» (совместно с Core Foundation): углублённый разбор
+
+*Скрипты: [`tools/top5/maple/`](../../tools/top5/maple/), данные: [`data/top5/maple/`](../../data/top5/maple/). Упоминания `scripts/` и `raw/` ниже относятся к рабочей папке; сырые выгрузки `raw/` не публикуются.*
 *Английский оригинал: [en/06-maple.md](en/06-maple.md).*
 
 Дата исследования: 2026-09-21. Охват: институциональный продукт Maple BTC Yield, который использовал двойной стейкинг (dual staking) в Core с займом в USDC, покупкой CORE и пут-опционами на CORE; связанный с ним lstBTC; syrupBTC; а также спор Core Foundation против Maple.
@@ -412,7 +414,7 @@ BTC кредитора ──займ (MLA, автопролонгация)─�
 - **Мировое соглашение (Maple, 2026-05-22).** https://maple.finance/insights/core-foundation-and-maple-international-operations-spc-reach-full-and-final-settlement
 - **Заявление Maple (2025-11-21, статья в X).** https://x.com/maplefinance/status/1991886803092091268. Также https://x.com/maplefinance/status/1991214703725735961 и https://x.com/maplefinance/status/1917628219223859367 (прочитано через api.fxtwitter.com).
 - **Заявление Core Foundation (2025-11-19).** https://x.com/Coredao_Org/status/1991171121534636264. Rich Rines: https://x.com/richrines/status/1991195611446518267
-- **Maple GraphQL.** https://api.maple.finance/v2/graphql: `poolMeta(id:"67e542004191822941f9e703")`, `poolsMeta`, `syrupTokens`, `assets`.
+- **Maple GraphQL.** `https://api.maple.finance/v2/graphql`: `poolMeta(id:"67e542004191822941f9e703")`, `poolsMeta`, `syrupTokens`, `assets`.
 - **Сайт Maple.**
   - https://maple.finance/insights/q2-2025-maple-market-update
   - https://maple.finance/insights/one-maple
@@ -423,10 +425,10 @@ BTC кредитора ──займ (MLA, автопролонгация)─�
 - **Core.**
   - Блог: https://coredao.org/blog/maple-core-bitcoin-yield-product
   - Документация: двойной стейкинг, корректировка уровней, стейкинг CORE.
-  - API стейкинга: https://stake.coredao.org/api/staking/* (список кандидатов, btc_lst_apr, рыночная цена).
-  - RPC: https://rpc.coredao.org (BitcoinStake 0x…1014, BitcoinAgent 0x…1013, CoreAgent 0x…1011, StakeHub 0x…1010, lstBTC 0x…010001).
-  - API эксплорера: https://scan.coredao.org/api/chain/address_transaction
-- **Bitcoin.** https://mempool.space/api (транзакции стейкинга, outspends, хаб `bc1pm9v0y2gjh4hjm6wp7vsaqwzf96ugsrtzs9ujcawdm880fveuzrcs3c0pc4`, путь удержанных средств `bc1pdcj7…` → `bc1pyed82…` → `bc1q9tfmg8…` → `bc1q5zly2ljxhtm3gycyum93czupz9k04gcse6emg6`).
+  - API стейкинга: `https://stake.coredao.org/api/staking/*` (список кандидатов, btc_lst_apr, рыночная цена).
+  - RPC: `https://rpc.coredao.org` (BitcoinStake 0x…1014, BitcoinAgent 0x…1013, CoreAgent 0x…1011, StakeHub 0x…1010, lstBTC 0x…010001).
+  - API эксплорера: `https://scan.coredao.org/api/chain/address_transaction`
+- **Bitcoin.** `https://mempool.space/api` (транзакции стейкинга, outspends, хаб `bc1pm9v0y2gjh4hjm6wp7vsaqwzf96ugsrtzs9ujcawdm880fveuzrcs3c0pc4`, путь удержанных средств `bc1pdcj7…` → `bc1pyed82…` → `bc1q9tfmg8…` → `bc1q5zly2ljxhtm3gycyum93czupz9k04gcse6emg6`).
 - **Рыночные данные.** Спотовые свечи Bybit (CORE, BTC). CoinGecko simple price (CORE $0.0222, рыночная капитализация $33.3M на 2026-09-21). DefiLlama (TVL `maple`; TVL сети CORE).
 - **Вторичные.**
   - CoinDesk 2025-02-17 и 2025-11-20

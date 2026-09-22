@@ -1,5 +1,7 @@
 # Yield Basis (YB): deep dive, as a "BTC collateral + dollar loan deployed into a strategy" product
 
+*Scripts: [`tools/top5/yieldbasis/`](../../../tools/top5/yieldbasis/), data: [`data/top5/yieldbasis/`](../../../data/top5/yieldbasis/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
+
 Snapshot: 2026-09-20 (daily bucket, block ≈26,028,6xx). A few live reads are from 2026-09-21 (block ≈26,029,7xx) and are labelled as such. Research date: 2026-09-21.
 Scope: every YB market on Ethereum: v1 (legacy), v2 (deprecated) and v3 (current), for WBTC, cbBTC and tBTC. WETH is shown only for context.
 

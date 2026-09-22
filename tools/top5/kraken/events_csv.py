@@ -10,7 +10,7 @@ add('2025-12-23', 'First Merkl PYUSD campaign on Paypal USD Main (creator Sentor
 add('2026-02-26', 'Vault BoringVault 0x7dee...19b2 deployed on Ink (creation tx 0x163f314b...)', 'launch', INK)
 add('2026-03-05', 'First Merkl RLUSD campaign on Sentora RLUSD Main (creator Sentora Safe 0xCc6d...E000); 66,094 RLUSD', 'incentive', 'api.merkl.xyz v4 campaigns opp 2433802672589613459')
 add('2026-04-09', 'First vault deposit on Ink (block 42,269,479)', 'launch', INK + ' share Transfer logs')
-add('2026-04-17', 'Morpho kBTC/RLUSD and kBTC/PYUSD markets created (LLTV 86%, oracle Chainlink BTC/USD)', 'product', 'onchain-kraken/SUMMARY-FROM-AGENT.md')
+add('2026-04-17', 'Morpho kBTC/RLUSD and kBTC/PYUSD markets created (LLTV 86%, oracle Chainlink BTC/USD)', 'product', 'Morpho CreateMarket events: https://app.morpho.org/ethereum/market/0x15bb2a6af0c909eed19fb1f2ceeead34ecbdcba626de752c6b09389ee14eec32 (kBTC/RLUSD) and 0xe51f9aaad25d0e755429cf77076b3c2d37cb1228ed81f8a5482f2102c220eef5 (kBTC/PYUSD)')
 add('2026-04-20', 'First accountant exchange-rate update (1.00000268)', 'launch', INK + ' accountant ExchangeRateUpdated')
 add('2026-05-08', 'First borrow by a vault position manager (PYUSD-1 test 52.9k PYUSD, repaid same hour); Sentora PRIME Main PRIME cap 20M', 'product', ETH + ' Morpho events; Vault V2 IncreaseAbsoluteCap')
 add('2026-05-18', 'Sentora V2 caps for kBTC markets set to 30M RLUSD / 30M PYUSD; pre-launch deposits start (week of 18 May: 102 BTC, 2,001 new depositors)', 'cap', ETH + ' V2 IncreaseAbsoluteCap; ' + INK)

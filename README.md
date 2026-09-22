@@ -12,7 +12,7 @@ A market study of products that pay a Bitcoin holder in Bitcoin. It maps the who
   - the top-5 carry products, with a comparison matrix and a full breakdown of each;
   - the closed cases (Maple, Hermetica, Acre);
   - conclusions: mechanics, a numeric risk policy, partners, how to grow TVL, a one-page target product, scenarios and the cost of incentives.
-- `index.html`: the site, in English. It is a single file with no build step and all data inline, and it is the source of truth for the page. Sections:
+- `index.html`: the site, in English, published at the link above. It is a single file with no build step and all data inline, and it is the source of truth for the page. Sections:
   - market map (radial chart, category history, carry waves);
   - how carry works;
   - top-5 tabs;
@@ -21,6 +21,11 @@ A market study of products that pay a Bitcoin holder in Bitcoin. It maps the who
   - who runs it;
   - playbook;
   - data.
+- `site/index.html`: the same page in the claude.ai artifact format. It is generated, so do not edit it by hand. Regenerate it after every edit of `index.html`:
+
+  ```
+  python3 tools/build_site.py
+  ```
 
 ## Deep dives and data
 
@@ -36,14 +41,14 @@ A market study of products that pay a Bitcoin holder in Bitcoin. It maps the who
   - `market_map_current.csv`: one row per product with category, BTC and USD, source and double-count notes;
   - `market_map_history_monthly.csv` and `category_history_monthly.csv`: month-end history, 2024-09 to 2026-09;
   - `category_flows_monthly.csv`: USD change split into flows and price;
-  - `c1_histories.csv`: on-chain month-end histories of the carry products;
+  - `c1_histories.csv`: on-chain month-end histories of the carry products; `c1_pending_proxy_history.csv`: DefiLlama proxies for the same products, for comparison;
   - `marketmap_notes.md` and `marketmap_overlap.md`: method, classification decisions and double counting;
-  - `top5/<product>/`: TVL, yield, depositor buckets, liquidity ladder and dated events per product.
+  - `top5/<product>/`: TVL, yield, depositor buckets, liquidity ladder and dated events per product (Maple: size, yield and events only); `top5/selection/`: the borrower scan behind the top-5 choice.
 - `tools/`:
-  - `marketmap/`: the market-map pipeline. Run `10_build.py`, then `11_write_reports.py`. It needs the raw API pulls, which are not in the repository because they are 2 GB; the fetch scripts `01`–`08` recreate them.
+  - `marketmap/`: the market-map pipeline. See `tools/marketmap/README.md` for the run order. The raw API pulls (about 2 GB) are not in the repository; the fetch scripts recreate them.
   - `top5/<product>/`: the scripts behind each deep dive, for reference. They expect a local `raw/` folder.
   - `monitor_carry.py`: a weekly snapshot of borrow markets and share prices, written to `data/monitor.csv`.
-  - `site_data.py`: rebuilds the chart data object that is embedded in `index.html`.
+  - `site_data.py`: rebuilds the chart data object embedded in `index.html` (`const V3 = {...}`) from `data/`. It writes `tools/v3data.json`, which you paste over that object.
   - `build_site.py`: regenerates `site/index.html`.
 
 ## Earlier documents (Russian)
@@ -52,13 +57,8 @@ A market study of products that pay a Bitcoin holder in Bitcoin. It maps the who
 - `BTC-Yield-Market-Research.md`: the market report. Taxonomy, unit economics, competitors and regulation.
 - `BTC-Yield-Deep-Dive.md`: the first on-chain trace of the Kraken vault.
 - `BTC-Yield-Product-Catalog.md`: a registry of about 230 BTC yield products.
-- `AUDIT.md`: the audit of the first version. What was wrong, what it was corrected to, and what is still unverified.
+- `AUDIT.md`: the audit of the earlier versions: what was wrong, what it was corrected to, what is still unverified, and the corrections from the on-chain deep dives (section F).
 - `RESEARCH-PLAN.md`: the plan for this version.
-- `site/index.html`: the same page in the claude.ai artifact format. It is generated, so do not edit it by hand. Regenerate it after every edit:
-
-  ```
-  python3 tools/build_site.py
-  ```
 
 ## Method
 
@@ -73,7 +73,7 @@ A market study of products that pay a Bitcoin holder in Bitcoin. It maps the who
 Every product is counted once, net of staking tokens held inside other products. Wrappers and plain loan collateral are excluded.
 
 **On-chain:**
-- Ethereum, Ink, Base, Morph, HyperEVM, Stacks, Core and Bitcoin, including archive calls at the snapshot block;
+- Ethereum, Ink, Base, Optimism, Morph, Monad, HyperEVM, Stacks, Core and Bitcoin, including archive calls at the snapshot block;
 - Blockscout;
 - Morpho GraphQL;
 - Merkl;

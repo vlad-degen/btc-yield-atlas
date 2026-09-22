@@ -1,5 +1,7 @@
 # Midas mHyperBTC (Hyperithm): deep dive
 
+*Scripts: [`tools/top5/mhyperbtc/`](../../../tools/top5/mhyperbtc/), data: [`data/top5/mhyperbtc/`](../../../data/top5/mhyperbtc/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
+
 **Dates.** Snapshot 2026-09-20 12:00 UTC (Ethereum block 26,018,582); written 2026-09-22.
 
 **Prices.** BTC was $80,276 at the snapshot (Chainlink BTC/USD at that block) and $86,488 on 09-22. Midas' own USD figures ($30.67M NAV) use the 09-21 price of about $86.6k.
@@ -414,6 +416,6 @@ Other fees: 0.22% on WBTC mints (paid to the strategy wallet). Fees are taken in
 - Transfers and flows: `sma1_*_transfers/logs`, `*_flow_summary.txt`, `counterparty_profiles.txt`
 - Holders: `holders_*.json`
 - Incentives: `incentives_monthly.json`
-- Documents and the sub-agent's notes: `docs/`
+- Documents and notes: `raw/docs/` (not in the repository)
 
 **Scripts** (`scripts/`, Python 3; RPC helpers use `/usr/bin/python3` for keccak): `rpc.py`, `oracle_history.py`, `fetch_por.py`, `morpho_*.py`, `aave_daily.py`, `aave_rates_daily.py`, `build_balance_sheet.py`, `borrow_cost.py`, `vault_income.py`, `incentives.py`, `yield_monthly.py`, `build_tvl_monthly.py`, `holders_buckets.py`, `holder_history.py`, `admin_events.py`, `build_outputs.py`, `build_events.py`.

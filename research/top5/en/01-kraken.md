@@ -1,5 +1,7 @@
 # Kraken Bitcoin Vault — deep dive v3 (yield history, risk, depositors, growth, economics)
 
+*Scripts: [`tools/top5/kraken/`](../../../tools/top5/kraken/), data: [`data/top5/kraken/`](../../../data/top5/kraken/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
+
 Veda BoringVault "Advanced Strategies BTC" (`sentoraBTC`, `0x7dee…19b2`, Ink), strategy by Sentora.
 
 **Date:** 21 Sep 2026. **Snapshot:** 20 Sep 2026 12:00 UTC (Ethereum block 26,018,583; Ink block 56,407,189). A second "live" read was taken on 21 Sep at 22:33 UTC (Ethereum block 26,028,885).
@@ -8,7 +10,7 @@ Veda BoringVault "Advanced Strategies BTC" (`sentoraBTC`, `0x7dee…19b2`, Ink),
 
 **Labels.** Figures marked **(est.)** are my own model estimates. Everything else is read from a chain or an API. Addresses that are not publicly labelled are called "unlabelled".
 
-**Reuse.** A–D reuse the verified work in `BTC-Carry-Vaults-Dossiers.md` §4.1, `BTC-Yield-Deep-Dive.md` §1 and `scratchpad/onchain-kraken/`. Sections E–K are new.
+**Reuse.** A–D reuse the verified work in `BTC-Carry-Vaults-Dossiers.md` §4.1, `BTC-Yield-Deep-Dive.md` §1. Sections E–K are new.
 
 **Files.** In this folder:
 - `yield_weekly.csv`
@@ -625,7 +627,7 @@ In BTC terms: +6,478.6 BTC of net flows and +20.65 BTC of yield.
    - The biggest weeks (+1,233 and +1,356 BTC) coincided with launch publicity and a BTC drawdown, not with peak yield. The peak yield came two weeks later (2.16% in the week of 8 Jun).
    - Deposits kept arriving at 170–470 BTC a week while yield fell from about 2% to about 1%.
 2. **The product itself.** A one-tap Allocate button inside the Kraken apps, embedded wallets with gas sponsored, and BTC purchasable inside the deposit flow. That is why 99.96% of holders are Kraken embedded wallets. The median ticket is 0.0037 BTC.
-3. **No vault-specific promotions were found.** No boosted APY, referral or bonus-BTC campaign was found. The exchange-wide campaigns found are listed in `events.csv`: Beholder deposit match (March–April), the EEA sweepstakes (vault excluded), the FIFA sponsorship, and Ink Points (vault deposits are not a points activity; there is no INK token yet). The subagent searched primary and secondary sources; blog.kraken.com blocks automated access, so post-launch Kraken blog posts were not checked.
+3. **No vault-specific promotions were found.** No boosted APY, referral or bonus-BTC campaign was found. The exchange-wide campaigns found are listed in `events.csv`: Beholder deposit match (March–April), the EEA sweepstakes (vault excluded), the FIFA sponsorship, and Ink Points (vault deposits are not a points activity; there is no INK token yet). We searched primary and secondary sources; blog.kraken.com blocks automated access, so post-launch Kraken blog posts were not checked.
 4. **Capacity was rationed.** Stable-leg capacity grew only through 10 RLUSD and 7 PYUSD cap raises. Debt/NAV stayed at 0.55–0.65, so borrowing capacity was not the limit on deposits. The cost was rate spikes, not rejected deposits.
 5. **Signs of fatigue.**
    - New depositors per week fell from 8,935 to about 1,300.

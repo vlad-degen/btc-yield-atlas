@@ -1,5 +1,7 @@
 # ether.fi Liquid BTC (liquidBTC): deep dive
 
+*Scripts: [`tools/top5/etherfi/`](../../../tools/top5/etherfi/), data: [`data/top5/etherfi/`](../../../data/top5/etherfi/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
+
 Snapshot: 2026-09-20 14:00 UTC (Ethereum block 26,019,182; Optimism block 157,157,012). Written 2026-09-22.
 
 Everything below comes from archive `eth_call`/`eth_getLogs` against Ethereum, Optimism and Scroll, from Blockscout, DefiLlama and the ether.fi docs (`llms-full`). Scripts and raw dumps are in `scripts/` and `raw/`.

@@ -1,2 +1,11 @@
 .claude/
 .DS_Store
+__pycache__/
+*.pyc
+.env
+raw/
+tools/**/raw/
+tools/v3data.json
+tools/marketmap/*.csv
+tools/marketmap/notes.md
+tools/marketmap/overlap.md

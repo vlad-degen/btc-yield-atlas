@@ -1,4 +1,6 @@
 # Midas mHyperBTC (Hyperithm): глубокий разбор
+
+*Скрипты: [`tools/top5/mhyperbtc/`](../../tools/top5/mhyperbtc/), данные: [`data/top5/mhyperbtc/`](../../data/top5/mhyperbtc/). Упоминания `scripts/` и `raw/` ниже относятся к рабочей папке; сырые выгрузки `raw/` не публикуются.*
 *Английский оригинал: [en/04-mhyperbtc.md](en/04-mhyperbtc.md).*
 
 **Даты.** Снимок на 2026-09-20 12:00 UTC (блок Ethereum 26,018,582); текст написан 2026-09-22.
@@ -415,6 +417,6 @@
 - Переводы и потоки: `sma1_*_transfers/logs`, `*_flow_summary.txt`, `counterparty_profiles.txt`
 - Держатели: `holders_*.json`
 - Инсентивы: `incentives_monthly.json`
-- Документы и заметки субагента: `docs/`
+- Документы и заметки: `raw/docs/` (не в репозитории)
 
 **Скрипты** (`scripts/`, Python 3; RPC-хелперы используют `/usr/bin/python3` для keccak): `rpc.py`, `oracle_history.py`, `fetch_por.py`, `morpho_*.py`, `aave_daily.py`, `aave_rates_daily.py`, `build_balance_sheet.py`, `borrow_cost.py`, `vault_income.py`, `incentives.py`, `yield_monthly.py`, `build_tvl_monthly.py`, `holders_buckets.py`, `holder_history.py`, `admin_events.py`, `build_outputs.py`, `build_events.py`.

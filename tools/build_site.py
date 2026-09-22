@@ -13,6 +13,8 @@ DROP = (
     "<head>",
     '<meta name="viewport"',
     '<meta name="description"',
+    '<meta property="og:',
+    '<link rel="icon"',
     "</head>",
     "<body>",
     "</body>",

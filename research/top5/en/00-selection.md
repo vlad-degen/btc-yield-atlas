@@ -1,5 +1,7 @@
 # Top 5 live BTC-collateral dollar-carry products (snapshot 2026-09-20 12:00 UTC)
 
+*Scripts: [`tools/top5/selection/`](../../../tools/top5/selection/), data: [`data/top5/selection/`](../../../data/top5/selection/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
+
 **Definition used.** A live product with outside depositors: a vault, fund or protocol. It takes BTC (or a BTC wrapper) from depositors, posts it as collateral, borrows dollars against it, and puts those dollars into a strategy that earns yield for the BTC depositors.
 
 **Out of scope:**
@@ -191,5 +193,5 @@ We kept every position with at least $2M of debt. The full list is in `scan_borr
 
 - `carry_products_scan.csv`: one row per product checked.
 - `scan_borrowers_all.csv`: every ≥$2M borrower found.
-- `raw/`: API and RPC dumps, including the output of the Maple and product-mechanics sub-agents.
+- `raw/` (not in the repository): API and RPC dumps, including the Maple and product-mechanics pulls.
 - `scripts/`: the scripts that produced them, in Python 3; the Yield Basis scripts need `/usr/bin/python3` for keccak.

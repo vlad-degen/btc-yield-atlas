@@ -313,7 +313,7 @@ for t in [
 ]:
     N_.append(f'- {t}')
 N_.append('\n## Re-run\n')
-N_.append('```\ncd scratchpad/v3/marketmap\npython3 scripts/01_candidates.py            # candidate slugs from raw/protocols.json\n'
+N_.append('```\ncd tools/marketmap\npython3 scripts/01_candidates.py            # candidate slugs from raw/protocols.json\n'
           'python3 scripts/02_fetch_protocols.py        # DefiLlama /protocol/{slug} (cached in raw/proto; delete to refresh)\n'
           'python3 scripts/02b_fetch_parallel.py raw/extra_small_slugs.json   # small/dead protocols for the history screen\n'
           'python3 scripts/03_fetch_btc_price.py        # Binance daily closes\n'

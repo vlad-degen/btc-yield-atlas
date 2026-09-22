@@ -1,4 +1,6 @@
 # ether.fi Liquid BTC (liquidBTC): глубокий разбор
+
+*Скрипты: [`tools/top5/etherfi/`](../../tools/top5/etherfi/), данные: [`data/top5/etherfi/`](../../data/top5/etherfi/). Упоминания `scripts/` и `raw/` ниже относятся к рабочей папке; сырые выгрузки `raw/` не публикуются.*
 *Английский оригинал: [en/05-etherfi.md](en/05-etherfi.md).*
 
 Снимок: 2026-09-20 14:00 UTC (блок Ethereum 26,019,182; блок Optimism 157,157,012). Написано 2026-09-22.
