@@ -15,6 +15,8 @@ DROP = (
     '<meta name="description"',
     '<meta property="og:',
     '<link rel="icon"',
+    '<meta name="twitter:',
+    '<meta name="theme-color"',
     "</head>",
     "<body>",
     "</body>",
