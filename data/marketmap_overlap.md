@@ -2,6 +2,8 @@
 
 BTC price for conversion: $81,178 (Binance BTCUSDT close 2026-09-20). "Gross" = every product row in C1-C6; "net" = each BTC counted once, at the outermost product the holder owns (the rule in plan 0.3: count where the BTC earns, at the top level).
 
+> **Update 2026-09-23.** The tables below are from 2026-09-21. After the DefiLlama cross-check (see `marketmap_notes.md`, "Update 2026-09-23") the net is 97,964 BTC ($7.95B) and the gross 107,278 BTC ($8.71B), with pools over $1M and Wildcat added (+2,139 BTC). Without the lending products listed in `lending_products.csv` the net is 94,811 BTC. The added rows count only BTC not counted elsewhere (LST sides of pairs, LP staked through Convex, Stake DAO, Beefy or Troves, and the Kraken vault's own Uniswap position are left out), so they add no new overlap. The Babylon section is unchanged.
+
 ## 1. Totals
 
 | Measure | USD | BTC |
@@ -62,7 +64,7 @@ Overlap table (current):
 | PumpBTC | 342 | 0 | no active stake today |
 | Lorenzo stBTC | 0 | 0 | no active stake today |
 | B2 Buzz Farming | 3,222 | 0 | no active stake today |
-| **Total removed from Babylon** | | **3,681** | Babylon net = 37,606 BTC |
+| **Total removed from Babylon** | | **3,681** | Babylon net = 37,648 BTC (41,329 less 3,681) |
 
 - Kraken (FPs "Kraken" + "Kraken02") is 32,932 BTC, 80% of Babylon. It is custodial exchange staking; it stays in the Babylon row. Whether any of it is the kBTC reserve behind the Kraken Bitcoin Vault (6,492.7 BTC) cannot be checked from public data; no overlap is assumed.
 - Lombard: only 42 BTC remain on an active Lombard FP. A further 2,500 BTC sit on the *inactive* "Lombard x P2P.org" FP; this stake is outside Babylon's active TVL and outside DefiLlama's Babylon number, so it is not double counted.

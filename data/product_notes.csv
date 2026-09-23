@@ -1,0 +1,113 @@
+product,how,yield_btc,run_by,url
+Kraken Bitcoin Vault (Advanced Strategies BTC),"kBTC on Morpho (RLUSD, PYUSD, LTV 64%); 67% of the kBTC debt into Sentora Vault V2s, 33% into Hastra PRIME; WBTC legs on Aave and Morpho; no recursion on BTC",1.03 (September) to 1.41 (since launch),Sentora,https://www.kraken.com/bitcoin-vault
+Lombard Vaults (LBTCv / BTCe),"LBTC in a DeFi vault (LBTCv); since July 2026 its credit leg (Bitcoin Earn, BTCe) posts LBTC as slashable cover for Flow Traders' stablecoin loan on Cap",0.98 realized over a year (LBTCv); about 1.5 net on the credit leg,"Sentora, Lombard",https://eth.blockscout.com/address/0x5401b8620E5FB570064CA9114fd1e135fd77D57c
+ether.fi Liquid BTC,"WBTC and cbBTC on Spark, borrows PYUSD and USDC at about 60% LTV, deploys into stcUSD and Sentora PYUSD vault",1.96 realized (1y),Nonce,https://etherfi.gitbook.io/etherfi/products/liquid/live-vaults/liquid-btc-vault
+Bitget bgBTC Onchain Earn,"bgBTC into Aera (Gauntlet): $43M USDC borrowed on Morpho on Morph, parked in Gauntlet USDC (gtusdc), which lends back to the same market",2.34 realized (users get 1.70),Gauntlet,https://blog.redstone.finance/2026/07/31/redstone-powers-btc-yield-for-the-bitget-ecosystem-on-morph/
+Hermetica hBTC,"Was: sBTC on Zest at 50% LTV, borrowing USDh into sUSDh. Unwound 18 June 2026; idle sBTC since",about 1 now (4.9 in May),Hermetica,https://docs.hermetica.fi/hbtc/overview
+Mezo Earn (veBTC),"BTC in an Anchorage Enclave, MUSD at 1% fixed (MCR 110%); veBTC earns voting fees",2.77 (voting APR in MUSD),Mezo,https://mezo.org/docs/users/borrow/architecture-and-terminology/
+Acre acreBTC,"BTC to tBTC to macreBTC1 (Re7 via Midas) to mRe7BTC, and a borrow leg into mRe7YIELD",minus 1.24 realized,Re7 Labs,https://docs.acre.fi/start-here-acrebtc-vault-transition/what-happened-the-vault-strategy
+Tesseract TESS wBTC debt-loop vaults (IPOR Fusion),"WBTC to USDC on Morpho, into a recursive sUSDe/PYUSD loop",negative carry now (2 to 4 target),Tesseract (MiCA CASP),https://tesseract.fi/vaults/
+Midas mHyperBTC (Hyperithm),"NAV token; its wallet posts cbBTC on Morpho and Spark and borrows USDT and USDS into Morpho dollar vaults, plus exchange and lending sleeves",about 3.2 since the first mint (Nov 2025); 1.65 over the last 90 days,Hyperithm,https://www.coingecko.com/en/coins/midas-hyperithm-btc
+Upshift (BTC vaults),"Curated BTC vaults on a marketplace: two small carry vaults are live (Sentora BTC, Gamma BTC); Hyperbeat Ultra UBTC is withdrawal-only; upLBTC is hidden and Upshift BTC closed","mixed: 0 (Hyperbeat since July), −0.5 (upLBTC at scale)","Sentora, Gamma, UltraYield (Edge Capital), Tulipa, August",https://api.upshift.finance/v1/tokenized_vaults
+Zest v2 (sBTC supply),sBTC lending plus dual stacking; STX incentives of 0.5 BTC a month to December 2026,0.1 to 1.2 now (4.13 Q1 average),Zest,https://www.zestprotocol.com/
+Concrete (BTC vaults),WBTC vaults with points and Berachain rewards; the $38M Berachain vaults on DefiLlama are not counted (not in Concrete's protocol TVL),0 base plus PoL,Concrete,https://defillama.com/protocol/concrete
+Yield Basis,"Your BTC plus an equal crvUSD loan from Curve's credit line in a 2x BTC/crvUSD Curve pool; the loss against the market price is hidden in book value, not removed","about −9 to +2 a year unstaked (−3 to +0.6 over 118 days); stakers paid 4 to 6 in YB, down 87%",Protocol (Egorov),https://yieldbasis.com/
+Solv Strategies,"Meta-vault: staking, basis, credit, funding, RWA (BUIDL, Hamilton Lane SCOPE)",5 to 8 target,Solv,https://docs.solv.finance/key-products/btc+
+Solv Basis Trading (SolvBTC.TRADING),Basis on centralized exchanges behind SolvBTC,,Solv,https://defillama.com/protocol/solv-basis-trading
+Starboard Sygnum BTC Alpha Fund,Directional BTC plus a market-neutral overlay,8.9 net (Q4 2025),Starboard Digital,https://www.sygnum.com/asset-management/btc-alpha-fund/
+Syntetika hBTC (Hilbert BTC Basis+),"Basis, curve arbitrage and short options in a regulated fund with attested NAV",10.25 (2025: 20.2),Hilbert Capital,https://syntetika.io/faq
+Two Prime Axiom WBTC Vault (Pareto),Two Prime borrows the WBTC and re-lends to public companies and rated institutions,1.61 (first epoch),Two Prime,https://twoprime.com/resources/insights/two-prime-onchain-wbtc-yield-vault
+Hilbert Xapo Byzantine BTC Credit Fund,"Short-term BTC loans to tier-one institutions, no leverage",2.94 now (3.5 to 5 target),Hilbert Capital,https://www.hilbert.group/en/hilbert-xapo-byzantine-btc-credit-fund/
+"Babylon (BTC staking) - other stakers (Kraken, Binance, OKX, Figment, direct)",Native BTC time-locked on Bitcoin to secure proof-of-stake networks; rewards in BABY. About 80% of this row is Kraken's custodial staking,0.24 to 0.4,Protocol,https://babylonlabs.io/
+Lombard LBTC - direct / other holders,"OTC covered calls (FalconX, Kraken Institutional, Anchorage), 50 to 60% active, no leverage; strikes 1.5 to 2 SD, 6 to 8 weeks",2.5 net target,Bitwise,https://www.lombard.finance/blog/LBTC-Moves-to-Institutional-Yield-Managed-by-Bitwise/
+Bedrock uniBTC - direct / other holders,Babylon LRT plus Symbiotic,0.42,Bedrock,https://defillama.com/protocol/bedrock-unibtc
+Lorenzo stBTC,Babylon LST plus tokenized funds,,Lorenzo,https://lorenzo-protocol.gitbook.io/docs
+Starknet BTC Staking,"WBTC, LBTC, tBTC, SolvBTC secure Starknet for STRK",3.8 in STRK,Protocol,https://defillama.com/protocol/starknet-btc-staking
+Gate GTBTC,"Gate's BTC staking token for its exchange users; almost all of it (3,455 of 3,468 BTC) is staked in Babylon",,Gate,https://defillama.com/protocol/gtbtc
+B2 Buzz Farming,"Farming with Babylon, Lombard and Bedrock on BSquared",,B²,https://defillama.com/protocol/buzz-farming
+Accountable YieldApp (cbBTC/wcBTC),Unsecured lending with verified borrower data,5.4 to 14,Accountable,https://defillama.com/protocol/accountable
+Symbiotic (BTC vaults) - direct / other holders,Restaking of BTC LSTs for networks and Cap,0.4 to 1.4 (rewards),Symbiotic,https://defillama.com/protocol/symbiotic
+Rysk V12 (BTC part),On-chain covered calls and cash-secured puts (Opyn),,"Rysk, Hyperion DeFi",https://app.rysk.finance/premium/
+"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)","WBTC.b as liquidity for BTC perps on Arbitrum: LPs earn trading, borrowing and funding fees and take the other side of traders","6.9 now, 5.2 over 30 days",GMX,https://defillama.com/yields/pool/ffb4e407-6507-4615-b776-a0d99cfc1bbb
+Across WBTC pool (bridge liquidity),Single-sided WBTC that relayers draw on to fill bridge transfers,"0.6 plus 0.8 in ACX now, 1.3 over 30 days",Across,https://defillama.com/yields/pool/07d1a9bf-eafe-4a25-8dcc-c687a1d2478a
+Multipli xWBTC,"WBTC routed to institutional delta-neutral strategies (Multipli names Nomura, Fasanara and Edge Capital)",1.28,Multipli,https://defillama.com/yields/pool/884fbcac-b615-438e-952b-430da7f191f2
+BTCD Labs / TAU BTC dollar-carry vaults (IPOR Fusion),"WBTC collateral -> stablecoin debt -> yield (""wBTC Dollar Carry"", ""TAU InfiniFi BTC Carry"").",,,
+b14g,Native BTC timelocked for Core/Babylon dual staking; rewards in partner tokens.,,,
+CIAN Yield Layer (BTC vaults),Locked FBTC / pumpBTC vaults deploying into BTC staking/restaking yield.,,,
+Core BTC staking (Satoshi Plus),Non-custodial timelocked BTC delegated to Core validators; rewards in CORE.,,,
+exSat Staking BTC,BTC staked to exSat (XSAT rewards); XBTC-style receipt.,,,
+SolvBTC LSTs (SolvBTC.BBN etc.) - direct / other holders,SolvBTC staked via Babylon/Core LST wrappers.,,,
+Vishwa,DefiLlama Anchor BTC; native BTC on Bitcoin; yield source not disclosed.,,,
+ObeliskBTC,"""Bitcoin asset management through restaking"" (DefiLlama description).",,,
+Mellow restaking (uniBTC),uniBTC restaking vault.,,,
+PumpBTC - direct / other holders,Babylon liquid restaking token.,,,
+Fragmetric (zBTC),fragBTC restaking.,,,
+Solv Others (M-BTC),Solv LST backing on Merlin (small).,,,
+Swell swBTC,BTC liquid restaking token.,,,
+EigenLayer / EigenCloud (BTC part),tBTC/WBTC/LBTC restaked.,,,
+Pell Network,Omnichain BTC restaking.,,,
+SatLayer,BTC restaking for Bitcoin Validated Services.,,,
+BitFi bfBTC (EVM chains),bfBTC supply on BSC/Ethereum/Base/Pharos; BitFi CeDeFi strategies (basis).,,,
+BitFi bfBTC (AILayer),bfBTC on AILayer; same BitFi CeDeFi product.,,,
+DeSyn Basis Trading (BTC),"Basis trading fund, WBTC part.",,,
+Hope (BTC basis collateral),DefiLlama Basis Trading; BTC collateral.,,,
+Midas mRe7BTC (Re7),BTC-denominated market-neutral strategies (Re7).,,,
+Manta CeDeFi (BTC),CeDeFi delta-neutral.,,,
+Liminal Basis (BTC),Delta-neutral basis on Hyperliquid.,,,
+D2 Finance (UBTC),Options/derivatives yield vault.,,,
+Ribbon (WBTC theta vault),WBTC covered-call theta vault.,,,
+Hegic (WBTC pool),Peer-to-pool option writing with WBTC.,,,
+Wildcat (BTC),"Lending: BTC lent to market makers (Wintermute and others), uncollateralized.",,,
+Solv RWA (SolvBTC),SolvBTC allocated to RWA/credit strategies.,,,
+Native Credit Pool (BTC part),BTC lent to Native PMM market makers.,,,
+"Veda (other BTC vaults, excl. Kraken)",Veda BoringVault BTC balances outside the Kraken vault.,,,
+Uniswap v3 BTC-pair pools (over $1M),BTC-pair DEX pools over $1M (in scope since the 2026-09-23 cross-check); trading fees in BTC.,,,
+Uniswap v4 BTC-pair pools (over $1M),BTC-pair DEX pools over $1M (in scope since the 2026-09-23 cross-check); trading fees in BTC.,,,
+Proxy (PRXY BTC strategies),"WBTC in ""Bitcoin Yield Strategies"" with PRXY emissions.",,,
+Fluid DEX BTC pools (over $1M),"BTC-pair DEX pools over $1M; Fluid pools double as smart collateral, so part of this BTC also backs loans.",,,
+Lagoon (BTC vaults),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Convex (BTC LPs),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Ember (BTC vaults),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",BTC-pair DEX pools over $1M; the LP staked through Convex or Stake DAO is already counted in those rows.,,,
+Mellow Core (BTC vaults),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Beefy (BTC vaults),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Yearn (BTC vaults),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Badger DAO (BTC vaults),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Volo vault (xBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+YO Protocol (yoBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Avant avBTC,"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Stake DAO (BTC LPs),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+t3tris (WBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Bancor v3 WBTC pool,Single-sided WBTC pool over $1M; pays almost nothing since Bancor v3 wound down.,,,
+Chainflip AMM (native BTC),Native BTC liquidity for cross-chain swaps; was excluded with all DEX LPs until 2026-09-23.,,,
+Yield Yak (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+"Orca BTC pools (Solana, over $1M)",BTC-pair DEX pools over $1M on Solana.,,,
+"Ekubo BTC pools (Starknet, over $1M)",BTC-pair DEX pools over $1M on Starknet; the LP held by Troves is counted in the Troves row.,,,
+Belt (BTCB),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+IPOR Fusion (other BTC vaults),IPOR Fusion BTC vaults other than the Tesseract/BTCD carry vaults.,,,
+UltraYield vaults (cbBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Tranchess (BTCB),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Troves (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Katana pre-launch (WBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Hydration Omnipool tBTC (Polkadot),"Single-sided tBTC in the Hydration Omnipool, over $1M; HDX rewards on top.",,,
+Aerodrome Slipstream cbBTC/LBTC (Base),BTC-pair DEX pool over $1M; AERO emissions on top of fees.,,,
+YieldFi (yBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Autofarm (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Harvest (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Moonwell vaults (cbBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Radpie (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Superform (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+OmniYield (WBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+DeltaPrime (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Extra Finance (cbBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Kine (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Reaper (WBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+BeraPaw Kodiak WBTC/WETH (Berachain),Kodiak WBTC/WETH LP staked in BeraPaw for PoL rewards; only the BTC half is counted.,,,
+Aura (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Rujira strategies (BTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Vesper (WBTC),"BTC deposits in aggregator/strategy vaults (LP fees, emissions, lending).",,,
+Corn Kernels pre-deposit,BTC/LST pre-deposits for Corn airdrop points.,,,
+Umami (BTC),GM BTC vault.,,,
+Trevee / Rings earn (BTC),eBTC/LBTC vaults on Sonic.,,,
+Zircuit staking (BTC),BTC staked for Zircuit points.,,,
+Echo strategies (aBTC),aBTC strategies on Aptos.,,,

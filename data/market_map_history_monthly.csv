@@ -53,6 +53,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-09,Swell swBTC,C2,35024382,553.067,1
 2024-09,Stream Finance (BTC),C3,7223756,114.07,1
 2024-09,Thetanuts (BTC),C4,3005000,47.452,1
+2024-09,Uniswap v3 BTC-pair pools (over $1M),C6,9670182,152.701,1
+2024-09,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,21978082,347.054,1
+2024-09,Bancor v3 WBTC pool,C6,13062360,206.267,1
+2024-09,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,18703748,295.349,1
+2024-09,Across WBTC pool (bridge liquidity),C6,33322133,526.187,1
 2024-10,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,993477422,14133.575,0
 2024-10,"Babylon (BTC staking) - other stakers (Kraken, Binance, OKX, Figment, direct)",C2,687138413,9775.484,1
 2024-10,Lombard LBTC - held inside other listed products,C2,325969275,4637.359,0
@@ -120,6 +125,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-10,Swell swBTC,C2,36118056,513.829,1
 2024-10,Stream Finance (BTC),C3,7976062,113.47,1
 2024-10,Thetanuts (BTC),C4,3287365,46.767,1
+2024-10,Uniswap v3 BTC-pair pools (over $1M),C6,34754733,494.434,1
+2024-10,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,24993830,355.571,1
+2024-10,Bancor v3 WBTC pool,C6,11616419,165.259,1
+2024-10,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,31562073,449.014,1
+2024-10,Across WBTC pool (bridge liquidity),C6,23741633,337.757,1
 2024-11,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,1433131736,14865.28,0
 2024-11,"Babylon (BTC staking) - other stakers (Kraken, Binance, OKX, Figment, direct)",C2,865116933,8973.498,1
 2024-11,Lombard LBTC - held inside other listed products,C2,594268448,6164.1,0
@@ -192,7 +202,12 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-11,Stream Finance (BTC),C3,10087807,104.637,1
 2024-11,Aster asBTC,C3,5378032,55.784,1
 2024-11,Thetanuts (BTC),C4,4445084,46.107,1
-2024-11,Wildcat (BTC),C5,1,0.0,1
+2024-11,Uniswap v3 BTC-pair pools (over $1M),C6,54608338,566.43,1
+2024-11,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,34218615,354.935,1
+2024-11,"Orca BTC pools (Solana, over $1M)",C6,851997,8.837,1
+2024-11,Bancor v3 WBTC pool,C6,14312106,148.454,1
+2024-11,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,69755603,723.546,1
+2024-11,Across WBTC pool (bridge liquidity),C6,30441066,315.753,1
 2024-12,ether.fi Liquid BTC,C1,94,0.001,1
 2024-12,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,2912265004,31121.922,0
 2024-12,"Babylon (BTC staking) - other stakers (Kraken, Binance, OKX, Figment, direct)",C2,2402637561,25675.788,1
@@ -272,8 +287,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-12,Stream Finance (BTC),C3,9667280,103.309,1
 2024-12,Aster asBTC,C3,7637154,81.614,1
 2024-12,Thetanuts (BTC),C4,4319877,46.164,1
-2024-12,Wildcat (BTC),C5,1,0.0,1
 2024-12,YieldNest ynBTCk,C2,18868,0.202,0
+2024-12,Uniswap v3 BTC-pair pools (over $1M),C6,75294104,804.63,1
+2024-12,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,24404963,260.804,1
+2024-12,"Orca BTC pools (Solana, over $1M)",C6,1048097,11.2,1
+2024-12,Bancor v3 WBTC pool,C6,17299722,184.873,1
+2024-12,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,53832537,575.281,1
+2024-12,Across WBTC pool (bridge liquidity),C6,29741581,317.833,1
 2025-01,ether.fi Liquid BTC,C1,21937032,214.167,1
 2025-01,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,3206521957,31304.654,0
 2025-01,"Babylon (BTC staking) - other stakers (Kraken, Binance, OKX, Figment, direct)",C2,2598967654,25373.219,1
@@ -360,9 +380,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-01,Stream Finance (BTC),C3,10628686,103.766,1
 2025-01,Aster asBTC,C3,14823614,144.72,1
 2025-01,Thetanuts (BTC),C4,4758773,46.459,1
-2025-01,Wildcat (BTC),C5,1,0.0,1
 2025-01,YieldNest ynBTCk,C2,469033,4.579,0
 2025-01,Royco v1 IAM (incl. Boyco pre-deposits),C6,138916546,1356.215,0
+2025-01,Uniswap v3 BTC-pair pools (over $1M),C6,65560096,640.051,1
+2025-01,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,16856848,164.57,1
+2025-01,"Orca BTC pools (Solana, over $1M)",C6,1638707,15.998,1
+2025-01,Bancor v3 WBTC pool,C6,17297243,168.87,1
+2025-01,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,54179987,528.949,1
+2025-01,Across WBTC pool (bridge liquidity),C6,33973298,331.675,1
 2025-02,Maple BTC Yield,C1,13129068,155.65,1
 2025-02,ether.fi Liquid BTC,C1,51328204,608.515,1
 2025-02,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,2644569803,31352.361,0
@@ -457,6 +482,12 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-02,Thetanuts (BTC),C4,3939278,46.702,1
 2025-02,YieldNest ynBTCk,C2,315388,3.739,0
 2025-02,Royco v1 IAM (incl. Boyco pre-deposits),C6,1282749893,15207.478,0
+2025-02,Uniswap v3 BTC-pair pools (over $1M),C6,54227595,642.888,1
+2025-02,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,7548518,89.49,1
+2025-02,"Orca BTC pools (Solana, over $1M)",C6,1205640,14.293,1
+2025-02,Bancor v3 WBTC pool,C6,15337177,181.828,1
+2025-02,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,39371037,466.758,1
+2025-02,Across WBTC pool (bridge liquidity),C6,25475446,302.021,1
 2025-03,Maple BTC Yield,C1,39288026,475.93,1
 2025-03,ether.fi Liquid BTC,C1,51572706,624.745,1
 2025-03,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,2486915041,30126.163,0
@@ -552,9 +583,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-03,Stream Finance (BTC),C3,4674993,56.632,1
 2025-03,Aster asBTC,C3,14902754,180.53,1
 2025-03,Thetanuts (BTC),C4,2924319,35.425,1
-2025-03,Wildcat (BTC),C5,80,0.001,1
 2025-03,YieldNest ynBTCk,C2,84287071,1021.043,0
 2025-03,Royco v1 IAM (incl. Boyco pre-deposits),C6,1256061764,15215.768,0
+2025-03,Uniswap v3 BTC-pair pools (over $1M),C6,64866982,785.79,1
+2025-03,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,7655009,92.732,1
+2025-03,"Orca BTC pools (Solana, over $1M)",C6,1290583,15.634,1
+2025-03,Bancor v3 WBTC pool,C6,9540381,115.571,1
+2025-03,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,37255363,451.307,1
+2025-03,Across WBTC pool (bridge liquidity),C6,26103390,316.213,1
 2025-04,Maple BTC Yield,C1,147861341,1570.12,1
 2025-04,ether.fi Liquid BTC,C1,60104996,638.247,1
 2025-04,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,3172511316,33688.478,0
@@ -655,9 +691,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-04,Stream Finance (BTC),C3,5989015,63.597,1
 2025-04,Aster asBTC,C3,13834073,146.902,1
 2025-04,Thetanuts (BTC),C4,3329276,35.353,1
-2025-04,Wildcat (BTC),C5,3587,0.038,1
 2025-04,YieldNest ynBTCk,C2,91201771,968.46,0
 2025-04,Royco v1 IAM (incl. Boyco pre-deposits),C6,1429203274,15176.52,0
+2025-04,Uniswap v3 BTC-pair pools (over $1M),C6,74735553,793.607,1
+2025-04,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,8072637,85.722,1
+2025-04,"Orca BTC pools (Solana, over $1M)",C6,1290583,13.705,1
+2025-04,Bancor v3 WBTC pool,C6,9540381,101.308,1
+2025-04,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,36893342,391.766,1
+2025-04,Across WBTC pool (bridge liquidity),C6,31304773,332.421,1
 2025-05,Maple BTC Yield,C1,171880020,1643.34,1
 2025-05,ether.fi Liquid BTC,C1,51068031,488.26,1
 2025-05,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,2946260953,28169.117,0
@@ -766,8 +807,15 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-05,Stream Finance (BTC),C3,7308914,69.88,1
 2025-05,Aster asBTC,C3,12510207,119.61,1
 2025-05,Thetanuts (BTC),C4,3696163,35.339,1
-2025-05,Wildcat (BTC),C5,62403,0.597,1
 2025-05,YieldNest ynBTCk,C2,101250431,968.052,0
+2025-05,Uniswap v3 BTC-pair pools (over $1M),C6,87475338,836.349,1
+2025-05,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,10080299,96.377,1
+2025-05,"Orca BTC pools (Solana, over $1M)",C6,1290583,12.339,1
+2025-05,Bancor v3 WBTC pool,C6,12476253,119.285,1
+2025-05,BeraPaw Kodiak WBTC/WETH (Berachain),C6,8253124,78.908,1
+2025-05,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,39878612,381.278,1
+2025-05,Across WBTC pool (bridge liquidity),C6,34601687,330.826,1
+2025-05,Multipli xWBTC,C3,2608371,24.939,1
 2025-06,Maple BTC Yield,C1,164277014,1533.2,1
 2025-06,ether.fi Liquid BTC,C6,59380912,554.203,1
 2025-06,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,2639670471,24636.087,0
@@ -875,8 +923,16 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-06,Stream Finance (BTC),C3,7875426,73.501,1
 2025-06,Aster asBTC,C3,6011083,56.102,1
 2025-06,Thetanuts (BTC),C4,3802321,35.487,1
-2025-06,Wildcat (BTC),C5,8552,0.08,1
 2025-06,YieldNest ynBTCk,C2,103475034,965.734,0
+2025-06,Uniswap v3 BTC-pair pools (over $1M),C6,91242327,851.566,1
+2025-06,Fluid DEX BTC pools (over $1M),C6,59755793,557.702,1
+2025-06,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,10760258,100.426,1
+2025-06,"Orca BTC pools (Solana, over $1M)",C6,1290583,12.045,1
+2025-06,Bancor v3 WBTC pool,C6,12270678,114.522,1
+2025-06,BeraPaw Kodiak WBTC/WETH (Berachain),C6,5156440,48.125,1
+2025-06,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,55773930,520.539,1
+2025-06,Across WBTC pool (bridge liquidity),C6,31507156,294.057,1
+2025-06,Multipli xWBTC,C3,4550086,42.466,1
 2025-07,Maple BTC Yield,C1,171861038,1484.58,1
 2025-07,ether.fi Liquid BTC,C6,98247238,848.685,1
 2025-07,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,2744588754,23708.466,0
@@ -985,8 +1041,19 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-07,Stream Finance (BTC),C3,9541193,82.419,1
 2025-07,Aster asBTC,C3,4386331,37.89,1
 2025-07,Thetanuts (BTC),C4,630469,5.446,1
-2025-07,Wildcat (BTC),C5,27093,0.234,1
 2025-07,YieldNest ynBTCk,C2,31928,0.276,0
+2025-07,Uniswap v3 BTC-pair pools (over $1M),C6,102067356,881.684,1
+2025-07,Fluid DEX BTC pools (over $1M),C6,95237530,822.686,1
+2025-07,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,11158756,96.392,1
+2025-07,Aerodrome Slipstream cbBTC/LBTC (Base),C6,4303618,37.176,1
+2025-07,"Orca BTC pools (Solana, over $1M)",C6,1290583,11.148,1
+2025-07,Bancor v3 WBTC pool,C6,13786565,119.092,1
+2025-07,Chainflip AMM (native BTC),C6,3977551,34.359,1
+2025-07,Hydration Omnipool tBTC (Polkadot),C6,11821918,102.121,1
+2025-07,BeraPaw Kodiak WBTC/WETH (Berachain),C6,4920604,42.505,1
+2025-07,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,63588011,549.29,1
+2025-07,Across WBTC pool (bridge liquidity),C6,32681086,282.308,1
+2025-07,Multipli xWBTC,C3,4917856,42.482,1
 2025-08,Maple BTC Yield,C1,160777221,1485.29,1
 2025-08,ether.fi Liquid BTC,C1,48962747,452.327,1
 2025-08,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,2160755772,19961.465,0
@@ -1096,9 +1163,20 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-08,Stream Finance (BTC),C3,10089025,93.204,1
 2025-08,Aster asBTC,C3,1321907,12.212,1
 2025-08,Thetanuts (BTC),C4,595048,5.497,1
-2025-08,Wildcat (BTC),C5,22057,0.204,1
 2025-08,YieldNest ynBTCk,C2,13193,0.122,0
 2025-08,Royco v1 IAM (incl. Boyco pre-deposits),C6,4110,0.038,0
+2025-08,Uniswap v3 BTC-pair pools (over $1M),C6,78837500,728.316,1
+2025-08,Fluid DEX BTC pools (over $1M),C6,81034042,748.608,1
+2025-08,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,10266828,94.847,1
+2025-08,Aerodrome Slipstream cbBTC/LBTC (Base),C6,3286790,30.364,1
+2025-08,"Orca BTC pools (Solana, over $1M)",C6,1290583,11.923,1
+2025-08,Bancor v3 WBTC pool,C6,13786565,127.363,1
+2025-08,Chainflip AMM (native BTC),C6,3885439,35.894,1
+2025-08,Hydration Omnipool tBTC (Polkadot),C6,13629590,125.913,1
+2025-08,BeraPaw Kodiak WBTC/WETH (Berachain),C6,4011408,37.058,1
+2025-08,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,63808237,589.472,1
+2025-08,Across WBTC pool (bridge liquidity),C6,28917841,267.148,1
+2025-08,Multipli xWBTC,C3,4202362,38.822,1
 2025-09,Yield Basis,C1,3148549,27.607,1
 2025-09,Maple BTC Yield,C1,152943037,1341.03,1
 2025-09,ether.fi Liquid BTC,C1,54125569,474.582,1
@@ -1213,9 +1291,20 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-09,Stream Finance (BTC),C3,16009268,140.372,1
 2025-09,Aster asBTC,C3,1237326,10.849,1
 2025-09,Thetanuts (BTC),C4,631456,5.537,1
-2025-09,Wildcat (BTC),C5,53728,0.471,1
 2025-09,YieldNest ynBTCk,C2,10889,0.095,0
 2025-09,Royco v1 IAM (incl. Boyco pre-deposits),C6,4339,0.038,0
+2025-09,Uniswap v3 BTC-pair pools (over $1M),C6,85630650,750.824,1
+2025-09,Fluid DEX BTC pools (over $1M),C6,81726380,716.59,1
+2025-09,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,11344711,99.472,1
+2025-09,Aerodrome Slipstream cbBTC/LBTC (Base),C6,3396842,29.784,1
+2025-09,"Orca BTC pools (Solana, over $1M)",C6,1290583,11.316,1
+2025-09,Bancor v3 WBTC pool,C6,13786565,120.883,1
+2025-09,Chainflip AMM (native BTC),C6,4386994,38.466,1
+2025-09,Hydration Omnipool tBTC (Polkadot),C6,15478422,135.717,1
+2025-09,BeraPaw Kodiak WBTC/WETH (Berachain),C6,4370665,38.323,1
+2025-09,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,57688654,505.824,1
+2025-09,Across WBTC pool (bridge liquidity),C6,24442177,214.313,1
+2025-09,Multipli xWBTC,C3,4442097,38.949,1
 2025-10,Yield Basis,C1,150137545,1369.768,1
 2025-10,Maple BTC Yield,C1,146987630,1341.03,1
 2025-10,ether.fi Liquid BTC,C1,43661145,398.339,1
@@ -1332,9 +1421,19 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-10,Stream Finance (BTC),C3,15524999,141.641,1
 2025-10,Aster asBTC,C3,209915,1.915,1
 2025-10,Thetanuts (BTC),C4,588445,5.369,1
-2025-10,Wildcat (BTC),C5,576127,5.256,1
 2025-10,YieldNest ynBTCk,C2,10308,0.094,0
 2025-10,Royco v1 IAM (incl. Boyco pre-deposits),C6,4147,0.038,0
+2025-10,Uniswap v3 BTC-pair pools (over $1M),C6,87983005,802.706,1
+2025-10,Fluid DEX BTC pools (over $1M),C6,87648542,799.654,1
+2025-10,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,17489199,159.561,1
+2025-10,Aerodrome Slipstream cbBTC/LBTC (Base),C6,3219335,29.371,1
+2025-10,"Orca BTC pools (Solana, over $1M)",C6,1290583,11.775,1
+2025-10,Bancor v3 WBTC pool,C6,13786565,125.781,1
+2025-10,Chainflip AMM (native BTC),C6,5779891,52.732,1
+2025-10,Hydration Omnipool tBTC (Polkadot),C6,18183837,165.899,1
+2025-10,BeraPaw Kodiak WBTC/WETH (Berachain),C6,4194906,38.272,1
+2025-10,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,54678793,498.858,1
+2025-10,Across WBTC pool (bridge liquidity),C6,22012397,200.828,1
 2025-11,Yield Basis,C1,144669161,1601.031,1
 2025-11,ether.fi Liquid BTC,C1,33712412,373.09,1
 2025-11,BTCD Labs / TAU BTC dollar-carry vaults (IPOR Fusion),C1,173891,1.924,1
@@ -1446,9 +1545,19 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-11,StakeStone STONEBTC,C2,901,0.01,1
 2025-11,ShardingDAO (BTC),C2,5341877,59.118,1
 2025-11,Aster asBTC,C3,190163,2.105,1
-2025-11,Wildcat (BTC),C5,38909,0.431,1
 2025-11,YieldNest ynBTCk,C2,8492,0.094,0
 2025-11,Royco v1 IAM (incl. Boyco pre-deposits),C6,3379,0.037,0
+2025-11,Uniswap v3 BTC-pair pools (over $1M),C6,73954588,818.444,1
+2025-11,Fluid DEX BTC pools (over $1M),C6,64974165,719.059,1
+2025-11,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,13403206,148.331,1
+2025-11,Aerodrome Slipstream cbBTC/LBTC (Base),C6,2463046,27.258,1
+2025-11,"Orca BTC pools (Solana, over $1M)",C6,1336820,14.794,1
+2025-11,Bancor v3 WBTC pool,C6,10856795,120.15,1
+2025-11,Chainflip AMM (native BTC),C6,4986825,55.188,1
+2025-11,Hydration Omnipool tBTC (Polkadot),C6,11477635,127.021,1
+2025-11,BeraPaw Kodiak WBTC/WETH (Berachain),C6,3177038,35.16,1
+2025-11,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,46155137,510.792,1
+2025-11,Across WBTC pool (bridge liquidity),C6,17753118,196.471,1
 2025-12,Yield Basis,C1,203382260,2320.438,1
 2025-12,ether.fi Liquid BTC,C1,33991557,387.818,1
 2025-12,BTCD Labs / TAU BTC dollar-carry vaults (IPOR Fusion),C1,176515,2.014,1
@@ -1562,9 +1671,21 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-12,ShardingDAO (BTC),C2,5251354,59.914,1
 2025-12,Aster asBTC,C3,101180,1.154,1
 2025-12,Thetanuts (BTC),C4,478279,5.457,1
-2025-12,Wildcat (BTC),C5,232546,2.653,1
 2025-12,YieldNest ynBTCk,C2,8218,0.094,0
 2025-12,Royco v1 IAM (incl. Boyco pre-deposits),C6,3312,0.038,0
+2025-12,Uniswap v3 BTC-pair pools (over $1M),C6,70393202,803.133,1
+2025-12,Uniswap v4 BTC-pair pools (over $1M),C6,18810496,214.614,1
+2025-12,Fluid DEX BTC pools (over $1M),C6,58953565,672.616,1
+2025-12,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,14003547,159.77,1
+2025-12,Aerodrome Slipstream cbBTC/LBTC (Base),C6,2367152,27.007,1
+2025-12,"Orca BTC pools (Solana, over $1M)",C6,1092056,12.46,1
+2025-12,Bancor v3 WBTC pool,C6,10856795,123.868,1
+2025-12,Chainflip AMM (native BTC),C6,4925845,56.2,1
+2025-12,Hydration Omnipool tBTC (Polkadot),C6,7160440,81.695,1
+2025-12,BeraPaw Kodiak WBTC/WETH (Berachain),C6,2677652,30.55,1
+2025-12,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,41715369,475.941,1
+2025-12,Across WBTC pool (bridge liquidity),C6,17452388,199.119,1
+2025-12,Multipli xWBTC,C3,7413407,84.581,1
 2026-01,Yield Basis,C1,182522477,2318.008,1
 2026-01,ether.fi Liquid BTC,C1,33212834,421.798,1
 2026-01,BTCD Labs / TAU BTC dollar-carry vaults (IPOR Fusion),C1,606184,7.698,1
@@ -1679,9 +1800,21 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-01,ShardingDAO (BTC),C2,4738804,60.182,1
 2026-01,Aster asBTC,C3,168239,2.137,1
 2026-01,Thetanuts (BTC),C4,528,0.007,1
-2026-01,Wildcat (BTC),C5,80702,1.025,1
 2026-01,YieldNest ynBTCk,C2,7430,0.094,0
 2026-01,Royco v1 IAM (incl. Boyco pre-deposits),C6,2971,0.038,0
+2026-01,Uniswap v3 BTC-pair pools (over $1M),C6,62527962,794.096,1
+2026-01,Uniswap v4 BTC-pair pools (over $1M),C6,16634351,211.254,1
+2026-01,Fluid DEX BTC pools (over $1M),C6,40316605,512.015,1
+2026-01,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,11344194,144.07,1
+2026-01,Aerodrome Slipstream cbBTC/LBTC (Base),C6,2091022,26.556,1
+2026-01,"Orca BTC pools (Solana, over $1M)",C6,2344844,29.779,1
+2026-01,Bancor v3 WBTC pool,C6,10856795,137.88,1
+2026-01,Chainflip AMM (native BTC),C6,3733748,47.418,1
+2026-01,Hydration Omnipool tBTC (Polkadot),C6,3336726,42.376,1
+2026-01,BeraPaw Kodiak WBTC/WETH (Berachain),C6,1997806,25.372,1
+2026-01,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,35059106,445.245,1
+2026-01,Across WBTC pool (bridge liquidity),C6,20030294,254.382,1
+2026-01,Multipli xWBTC,C3,6761091,85.865,1
 2026-02,Yield Basis,C1,156548455,2337.477,1
 2026-02,ether.fi Liquid BTC,C1,29892979,446.342,1
 2026-02,BTCD Labs / TAU BTC dollar-carry vaults (IPOR Fusion),C1,494732,7.387,1
@@ -1798,9 +1931,21 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-02,StakeStone STONEBTC,C2,668,0.01,1
 2026-02,ShardingDAO (BTC),C2,3981268,59.446,1
 2026-02,Aster asBTC,C3,64301,0.96,1
-2026-02,Wildcat (BTC),C5,33638,0.502,1
 2026-02,YieldNest ynBTCk,C2,5946,0.089,0
 2026-02,Royco v1 IAM (incl. Boyco pre-deposits),C6,2532,0.038,0
+2026-02,Uniswap v3 BTC-pair pools (over $1M),C6,66255430,989.282,1
+2026-02,Uniswap v4 BTC-pair pools (over $1M),C6,30597841,456.867,1
+2026-02,Fluid DEX BTC pools (over $1M),C6,40847364,609.906,1
+2026-02,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,9620304,143.644,1
+2026-02,Aerodrome Slipstream cbBTC/LBTC (Base),C6,1817272,27.134,1
+2026-02,"Orca BTC pools (Solana, over $1M)",C6,2538415,37.902,1
+2026-02,Bancor v3 WBTC pool,C6,10856795,162.106,1
+2026-02,Chainflip AMM (native BTC),C6,3401973,50.796,1
+2026-02,Hydration Omnipool tBTC (Polkadot),C6,2708275,40.438,1
+2026-02,BeraPaw Kodiak WBTC/WETH (Berachain),C6,1604190,23.953,1
+2026-02,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,12830958,191.583,1
+2026-02,Across WBTC pool (bridge liquidity),C6,17621225,263.108,1
+2026-02,Multipli xWBTC,C3,4218566,62.989,1
 2026-03,Yield Basis,C1,155060056,2270.795,1
 2026-03,ether.fi Liquid BTC,C1,32071786,469.679,1
 2026-03,BTCD Labs / TAU BTC dollar-carry vaults (IPOR Fusion),C1,124322,1.821,1
@@ -1918,9 +2063,21 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-03,ShardingDAO (BTC),C2,4082109,59.781,1
 2026-03,Aster asBTC,C3,50713,0.743,1
 2026-03,Thetanuts (BTC),C4,459,0.007,1
-2026-03,Wildcat (BTC),C5,31970,0.468,1
 2026-03,YieldNest ynBTCk,C2,5981,0.088,0
 2026-03,Royco v1 IAM (incl. Boyco pre-deposits),C6,2578,0.038,0
+2026-03,Uniswap v3 BTC-pair pools (over $1M),C6,61222395,896.578,1
+2026-03,Uniswap v4 BTC-pair pools (over $1M),C6,33842040,495.604,1
+2026-03,Fluid DEX BTC pools (over $1M),C6,24031208,351.928,1
+2026-03,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,15580889,228.176,1
+2026-03,Aerodrome Slipstream cbBTC/LBTC (Base),C6,1857553,27.203,1
+2026-03,"Orca BTC pools (Solana, over $1M)",C6,2762456,40.455,1
+2026-03,Bancor v3 WBTC pool,C6,7721385,113.077,1
+2026-03,Chainflip AMM (native BTC),C6,3312558,48.511,1
+2026-03,Hydration Omnipool tBTC (Polkadot),C6,2481107,36.335,1
+2026-03,BeraPaw Kodiak WBTC/WETH (Berachain),C6,1567988,22.963,1
+2026-03,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,7466190,109.339,1
+2026-03,Across WBTC pool (bridge liquidity),C6,17189345,251.731,1
+2026-03,Multipli xWBTC,C3,4236990,62.049,1
 2026-04,Kraken Bitcoin Vault (Advanced Strategies BTC),C1,216824,2.84,1
 2026-04,Yield Basis,C1,137181807,1796.83,1
 2026-04,ether.fi Liquid BTC,C1,16382523,214.581,1
@@ -2035,9 +2192,21 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-04,StakeStone STONEBTC,C2,767,0.01,1
 2026-04,ShardingDAO (BTC),C2,4575524,59.931,1
 2026-04,Aster asBTC,C3,27216,0.356,1
-2026-04,Wildcat (BTC),C5,98334,1.288,1
 2026-04,YieldNest ynBTCk,C2,6731,0.088,0
 2026-04,Royco v1 IAM (incl. Boyco pre-deposits),C6,2894,0.038,0
+2026-04,Uniswap v3 BTC-pair pools (over $1M),C6,56142824,735.368,1
+2026-04,Uniswap v4 BTC-pair pools (over $1M),C6,42767778,560.179,1
+2026-04,Fluid DEX BTC pools (over $1M),C6,22691936,297.223,1
+2026-04,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,18128464,237.45,1
+2026-04,Aerodrome Slipstream cbBTC/LBTC (Base),C6,2116058,27.716,1
+2026-04,"Orca BTC pools (Solana, over $1M)",C6,3161864,41.415,1
+2026-04,Bancor v3 WBTC pool,C6,7721385,101.136,1
+2026-04,Chainflip AMM (native BTC),C6,3910144,51.216,1
+2026-04,Hydration Omnipool tBTC (Polkadot),C6,2855353,37.4,1
+2026-04,BeraPaw Kodiak WBTC/WETH (Berachain),C6,1717049,22.49,1
+2026-04,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,7595874,99.492,1
+2026-04,Across WBTC pool (bridge liquidity),C6,9993659,130.899,1
+2026-04,Multipli xWBTC,C3,4268282,55.907,1
 2026-05,Kraken Bitcoin Vault (Advanced Strategies BTC),C1,98613171,1338.5,1
 2026-05,Yield Basis,C1,116463297,1580.784,1
 2026-05,ether.fi Liquid BTC,C1,15616613,211.968,1
@@ -2158,9 +2327,22 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-05,StakeStone STONEBTC,C2,736,0.01,1
 2026-05,ShardingDAO (BTC),C2,4415818,59.937,1
 2026-05,Aster asBTC,C3,25682,0.349,1
-2026-05,Wildcat (BTC),C5,29102,0.395,1
 2026-05,YieldNest ynBTCk,C2,6430,0.087,0
 2026-05,Royco v1 IAM (incl. Boyco pre-deposits),C6,2793,0.038,0
+2026-05,Uniswap v3 BTC-pair pools (over $1M),C6,55941411,759.306,1
+2026-05,Uniswap v4 BTC-pair pools (over $1M),C6,27541278,373.824,1
+2026-05,Fluid DEX BTC pools (over $1M),C6,26356411,357.742,1
+2026-05,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,13756428,186.719,1
+2026-05,"Ekubo BTC pools (Starknet, over $1M)",C6,3185556,43.238,1
+2026-05,Aerodrome Slipstream cbBTC/LBTC (Base),C6,2060415,27.967,1
+2026-05,"Orca BTC pools (Solana, over $1M)",C6,3069955,41.669,1
+2026-05,Bancor v3 WBTC pool,C6,7721385,104.804,1
+2026-05,Chainflip AMM (native BTC),C6,3919943,53.206,1
+2026-05,Hydration Omnipool tBTC (Polkadot),C6,2866747,38.911,1
+2026-05,BeraPaw Kodiak WBTC/WETH (Berachain),C6,1508250,20.472,1
+2026-05,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,7192152,97.621,1
+2026-05,Across WBTC pool (bridge liquidity),C6,10709892,145.368,1
+2026-05,Multipli xWBTC,C3,4118367,55.9,1
 2026-06,Kraken Bitcoin Vault (Advanced Strategies BTC),C1,255720985,4362.0,1
 2026-06,Yield Basis,C1,89802210,1531.815,1
 2026-06,ether.fi Liquid BTC,C1,11237536,191.686,1
@@ -2284,9 +2466,22 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-06,StakeStone STONEBTC,C2,583,0.01,1
 2026-06,ShardingDAO (BTC),C2,3494483,59.608,1
 2026-06,Aster asBTC,C3,17359,0.296,1
-2026-06,Wildcat (BTC),C5,3295616,56.215,1
 2026-06,YieldNest ynBTCk,C2,3835,0.065,0
 2026-06,Royco v1 IAM (incl. Boyco pre-deposits),C6,2256,0.038,0
+2026-06,Uniswap v3 BTC-pair pools (over $1M),C6,42908731,731.922,1
+2026-06,Uniswap v4 BTC-pair pools (over $1M),C6,18734832,319.572,1
+2026-06,Fluid DEX BTC pools (over $1M),C6,18758306,319.973,1
+2026-06,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,9462177,161.403,1
+2026-06,"Ekubo BTC pools (Starknet, over $1M)",C6,2921176,49.828,1
+2026-06,Aerodrome Slipstream cbBTC/LBTC (Base),C6,1621344,27.656,1
+2026-06,"Orca BTC pools (Solana, over $1M)",C6,3220476,54.934,1
+2026-06,Bancor v3 WBTC pool,C6,7721385,131.709,1
+2026-06,Chainflip AMM (native BTC),C6,3066218,52.302,1
+2026-06,Hydration Omnipool tBTC (Polkadot),C6,1980308,33.779,1
+2026-06,BeraPaw Kodiak WBTC/WETH (Berachain),C6,403762,6.887,1
+2026-06,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,5892729,100.516,1
+2026-06,Across WBTC pool (bridge liquidity),C6,8167541,139.319,1
+2026-06,Multipli xWBTC,C3,3283329,56.006,1
 2026-07,Kraken Bitcoin Vault (Advanced Strategies BTC),C1,347920907,5532.4,1
 2026-07,Yield Basis,C1,98391924,1564.561,1
 2026-07,Bitget bgBTC Onchain Earn,C1,31450229,500.1,1
@@ -2410,9 +2605,22 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-07,Swell swBTC,C2,369729,5.879,1
 2026-07,StakeStone STONEBTC,C2,631,0.01,1
 2026-07,Aster asBTC,C3,18624,0.296,1
-2026-07,Wildcat (BTC),C5,157178,2.499,1
 2026-07,YieldNest ynBTCk,C2,4119,0.065,0
 2026-07,Royco v1 IAM (incl. Boyco pre-deposits),C6,2389,0.038,0
+2026-07,Uniswap v3 BTC-pair pools (over $1M),C6,32461039,516.173,1
+2026-07,Uniswap v4 BTC-pair pools (over $1M),C6,18994283,302.034,1
+2026-07,Fluid DEX BTC pools (over $1M),C6,20535378,326.539,1
+2026-07,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,9507179,151.177,1
+2026-07,"Ekubo BTC pools (Starknet, over $1M)",C6,3423842,54.444,1
+2026-07,Aerodrome Slipstream cbBTC/LBTC (Base),C6,1705372,27.118,1
+2026-07,"Orca BTC pools (Solana, over $1M)",C6,3466553,55.123,1
+2026-07,Bancor v3 WBTC pool,C6,6023267,95.778,1
+2026-07,Chainflip AMM (native BTC),C6,3387406,53.864,1
+2026-07,Hydration Omnipool tBTC (Polkadot),C6,1732115,27.543,1
+2026-07,BeraPaw Kodiak WBTC/WETH (Berachain),C6,452400,7.194,1
+2026-07,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,7957787,126.539,1
+2026-07,Across WBTC pool (bridge liquidity),C6,7930709,126.109,1
+2026-07,Multipli xWBTC,C3,3548182,56.421,1
 2026-08,Kraken Bitcoin Vault (Advanced Strategies BTC),C1,466717856,5939.3,1
 2026-08,Yield Basis,C1,126868000,1614.481,1
 2026-08,Bitget bgBTC Onchain Earn,C1,62967188,801.3,1
@@ -2535,9 +2743,22 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-08,Swell swBTC,C2,458619,5.836,1
 2026-08,StakeStone STONEBTC,C2,784,0.01,1
 2026-08,Aster asBTC,C3,22046,0.281,1
-2026-08,Wildcat (BTC),C5,50252,0.639,1
 2026-08,YieldNest ynBTCk,C2,5002,0.064,0
 2026-08,Royco v1 IAM (incl. Boyco pre-deposits),C6,2981,0.038,0
+2026-08,Uniswap v3 BTC-pair pools (over $1M),C6,43654829,555.537,1
+2026-08,Uniswap v4 BTC-pair pools (over $1M),C6,33682064,428.627,1
+2026-08,Fluid DEX BTC pools (over $1M),C6,21635728,275.329,1
+2026-08,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,12163335,154.787,1
+2026-08,"Ekubo BTC pools (Starknet, over $1M)",C6,4262790,54.247,1
+2026-08,Aerodrome Slipstream cbBTC/LBTC (Base),C6,2118038,26.953,1
+2026-08,"Orca BTC pools (Solana, over $1M)",C6,4279718,54.462,1
+2026-08,Bancor v3 WBTC pool,C6,5246335,66.763,1
+2026-08,Chainflip AMM (native BTC),C6,5522469,70.277,1
+2026-08,Hydration Omnipool tBTC (Polkadot),C6,2051589,26.108,1
+2026-08,BeraPaw Kodiak WBTC/WETH (Berachain),C6,572666,7.288,1
+2026-08,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,10149032,129.153,1
+2026-08,Across WBTC pool (bridge liquidity),C6,8933950,113.691,1
+2026-08,Multipli xWBTC,C3,4247169,54.048,1
 2026-09,Kraken Bitcoin Vault (Advanced Strategies BTC),C1,527064401,6492.7,1
 2026-09,Yield Basis,C1,107658264,1326.2,1
 2026-09,Bitget bgBTC Onchain Earn,C1,65080403,801.7,1
@@ -2661,6 +2882,19 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-09,Swell swBTC,C2,474154,5.841,1
 2026-09,StakeStone STONEBTC,C2,805,0.01,1
 2026-09,Aster asBTC,C3,22214,0.274,1
-2026-09,Wildcat (BTC),C5,41360,0.509,1
 2026-09,YieldNest ynBTCk,C2,5167,0.064,0
 2026-09,Royco v1 IAM (incl. Boyco pre-deposits),C6,3085,0.038,0
+2026-09,Uniswap v3 BTC-pair pools (over $1M),C6,42951149,529.098,1
+2026-09,Uniswap v4 BTC-pair pools (over $1M),C6,35553102,437.965,1
+2026-09,Fluid DEX BTC pools (over $1M),C6,20431264,251.685,1
+2026-09,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,13465326,165.874,1
+2026-09,"Ekubo BTC pools (Starknet, over $1M)",C6,4181108,51.505,1
+2026-09,Aerodrome Slipstream cbBTC/LBTC (Base),C6,2175563,26.8,1
+2026-09,"Orca BTC pools (Solana, over $1M)",C6,4335450,53.407,1
+2026-09,Bancor v3 WBTC pool,C6,5342660,65.814,1
+2026-09,Chainflip AMM (native BTC),C6,5282455,65.072,1
+2026-09,Hydration Omnipool tBTC (Polkadot),C6,2416141,29.763,1
+2026-09,BeraPaw Kodiak WBTC/WETH (Berachain),C6,556061,6.85,1
+2026-09,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,10666083,131.391,1
+2026-09,Across WBTC pool (bridge liquidity),C6,9355901,115.252,1
+2026-09,Multipli xWBTC,C3,3836299,47.258,1

@@ -39,7 +39,7 @@ Veda BoringVault "Advanced Strategies BTC" (`sentoraBTC`, `0x7dee…19b2`, Ink),
    - **Deployment yields stayed flat.**
      - Sentora RLUSD Main: about 6.0–6.4% in total.
      - PRIME: about 6–7%.
-2. **Rewards are about 82% of the carry since launch (est.).** They are about 90% at today's rates.
+2. **Rewards are about 82% of the carry since launch (est.).** They are about 90% at September's average rates and 83% at 20 September's rates.
    - **The debt-weighted model reproduces realized net yield within 0.02–0.24 pp every month.** Model vs realized:
 
      | Month | Model | Realized |
@@ -82,7 +82,7 @@ Veda BoringVault "Advanced Strategies BTC" (`sentoraBTC`, `0x7dee…19b2`, Ink),
 
    The static tier alone covers the repayments needed to get back to target health factor even after a gradual −40% move. It does **not** prevent liquidations after an instant gap. The estimated worst-case liquidation bonus is $3.6M, $11.3M and $13.1M at −20%, −30% and −40% (est.).
 8. **Depositors are 100% Kraken app distribution.**
-   - **Wallet type:** 99.957% of holders (99.996% of BTC) are EIP-7702 accounts delegated to one ZeroDev Kernel implementation (`0xd6CEDDe8…`). These are the Privy embedded wallets. There are 15 plain EOAs (0.26 BTC) and **no Safes or DeFi contracts at all**.
+   - **Wallet type:** 99.957% of holders (99.996% of BTC) are EIP-7702 accounts delegated to one ZeroDev Kernel implementation (`0xd6CEDDe8…`). These are the Privy embedded wallets. There are 15 plain EOAs (0.26 BTC), one other EIP-7702 smart account (AmbireAccount7702, dust) and **no Safes or DeFi contracts at all**.
    - **Size split:** 88.4% of holders hold under 0.1 BTC but own only 6.0% of the BTC. 85 wallets holding 10 BTC or more own 52.7%.
    - **Concentration:**
      - Top 1 wallet: 5.5% (352 BTC). It is a Kraken embedded wallet.

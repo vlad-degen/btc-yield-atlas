@@ -324,7 +324,7 @@ In plain terms:
 | Net book gain to unstaked LPs (sum of monthly) | ≈ $2.5M (*estimate*; the +$2.1M booked in Feb-26 was largely reversed in Mar–Apr) |
 
 - The organic share of LP income was 70–80% only in the volatile months (Nov-25, Feb-26).
-- It has been **0–42% since Mar-2026**, and 0% in Mar, Apr, May, Aug and Sep.
+- It has been **0–42% since Mar-2026**, and 0% in Mar, Apr, May and Sep (3% in Aug).
 - Current staked yield: DefiLlama (09-21) shows staked apyReward of 4.61% (WBTC), 6.99% (cbBTC), 3.49% (tBTC). Unstaked apyBase: 2.52% / 0.00% / 0.04%.
 
 ## F. Risk management
@@ -388,7 +388,7 @@ Method: Blockscout holder lists for the LT and the gauge. Balances were re-read 
 | **v3 BTC combined** | **744** | **1,073.4** | 253 | 170 | 187 | 112 | 20 | 2 | 11.2% | 49.8% | 89.2% | 386 | 73.4% |
 | **All BTC (v1+v2+v3)** | **2,436** | **1,313.6** | 1,814 | 260 | 217 | 121 | 21 | 3 | 9.1% | 52.6% | 89.0% | 372 | 75.5% |
 
-- **Concentration.** By value, **64%** of v3 sits in 22 addresses holding more than 10 BTC (68% across all BTC markets, 24 addresses). Addresses holding under 0.1 BTC are 85% of the count but 0.8% of the value. The two largest v3 addresses each hold about 119.96 BTC-equivalent (0x63e3…d8e7 across WBTC and cbBTC; 0xa79a…6dd4c in tBTC).
+- **Concentration.** By value, **64%** of v3 sits in 22 addresses holding more than 10 BTC (68% across all BTC markets, 24 addresses). Across all BTC markets (v1 to v3), addresses holding under 0.1 BTC are 85% of the count but 0.8% of the value; in v3 alone they are 57% of the count and 0.6% of the value. The two largest v3 addresses each hold about 119.96 BTC-equivalent (0x63e3…d8e7 across WBTC and cbBTC; 0xa79a…6dd4c in tBTC).
 - **Holder types** (v3, by value):
   - EOAs: ≈91% (WBTC 421 BTC, cbBTC 320, tBTC 241).
   - Smart accounts and EIP-7702 wallets: 150 positions, ≈47 BTC.

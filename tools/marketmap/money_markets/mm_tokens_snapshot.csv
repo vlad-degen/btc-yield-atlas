@@ -1,0 +1,577 @@
+segment,protocol,slug,chain,token,class,counted_at_map_product,btc_in_tvl,btc_borrowed,usd_in_tvl
+money_market,Morpho Blue,morpho-blue,Base,CBBTC,plain,,37887.3374,8.9402,3077563778
+money_market,Aave V3,aave-v3,Ethereum,WBTC,plain,,33547.339,772.549,2727437403
+money_market,Aave V3,aave-v3,Ethereum,CBBTC,plain,,18358.2653,136.4092,1492950391
+money_market,Morpho Blue,morpho-blue,Ethereum,CBBTC,plain,,10612.7946,0.006,862070401
+money_market,JustLend V1,justlend-v1,Tron,BTC,plain,,6560.9036,18.8017,531926462
+money_market,Compound V3,compound-v3,Ethereum,WBTC,plain,,6346.4086,2.8565,515339966
+money_market,Morpho Blue,morpho-blue,Ethereum,KBTC,plain,,6334.9862,0,514147664
+money_market,Venus Core Pool,venus-core-pool,Binance,BTCB,plain,,4625.2111,1339.6135,374630921
+money_market,SparkLend,sparklend,Ethereum,CBBTC,plain,,5749.0377,165.249,466843598
+money_market,Morpho Blue,morpho-blue,Ethereum,WBTC,plain,,5592.463,21.6772,454118207
+money_market,Lista Lending,lista-lending,Binance,BTCB,plain,,3074.8101,0,249177313
+money_market,Aave V3,aave-v3,Arbitrum,WBTC,plain,,2807.9378,190.5933,228094249
+money_market,Aave V3,aave-v3,Base,CBBTC,plain,,2775.7376,90.8826,225856889
+money_market,SparkLend,sparklend,Ethereum,LBTC,yb,Lombard LBTC,2740.8398,0,223017706
+money_market,Aave V3,aave-v3,Ethereum,LBTC,yb,Lombard LBTC,2686.9928,0.017,218823193
+money_market,Venus Core Pool,venus-core-pool,Binance,SOLVBTC,plain,,2567.5396,1.8622,208264897
+money_market,SparkLend,sparklend,Ethereum,WBTC,plain,,2126.3735,4.1748,172631525
+money_market,Aave V3,aave-v3,Ethereum,TBTC,plain,,1713.2558,2.5898,139200688
+money_market,Aave V3,aave-v3,Avalanche,BTC.B,plain,,1165.6709,67.5548,94701117
+money_market,Tydro,tydro,Ink,KBTC,plain,,1073.7179,3.8072,87297290
+money_market,Aave V3,aave-v3,Binance,BTCB,plain,,984.427,15.49,79714956
+money_market,TownSquare Lending,townsquare-lending,Monad,ENZOBTC,plain,,951.6574,0.0,0
+money_market,Aave V3,aave-v3,Polygon,WBTC,plain,,830.6639,30.6698,67467504
+money_market,Morpho Blue,morpho-blue,Morph,BGBTC,plain,,801.5776,0,65046400
+money_market,Venus Core Pool,venus-core-pool,Binance,SOLVBTC.BBN,yb,SolvBTC LSTs,792.2812,0,63871936
+money_market,Aave V4,aave-v4,Ethereum,WBTC,plain,,745.6139,2.414,60545213
+money_market,Kamino Lend,kamino-lend,Solana,CBBTC,plain,,725.2707,21.4282,58913266
+money_market,Zest V2,zest-v2,Stacks,SBTC,plain,,597.9265,73.3816,48921414
+money_market,Compound V3,compound-v3,Ethereum,CBBTC,plain,,604.7401,0,49122645
+money_market,Fluid Lending,fluid-lending,Ethereum,WBTC,plain,,393.8801,149.9513,31983781
+money_market,Accountable,accountable,Monad,CBBTC,plain,,0.1814,505.7182,14759
+money_market,NAVI Lending,navi-lending,Sui,ENZOBTC,plain,,435.0,0,35349684
+money_market,Compound V3,compound-v3,Arbitrum,WBTC,plain,,404.5073,0,32855438
+money_market,Aave V4,aave-v4,Ethereum,CBBTC,plain,,318.9948,0.6283,25911742
+money_market,NAVI Lending,navi-lending,Sui,MBTC,plain,,299.9901,0,22983426
+money_market,Aave V2,aave-v2,Ethereum,WBTC,plain,,291.2868,1.5913,23681951
+money_market,Compound V2,compound-v2,Ethereum,WBTC,plain,,290.018,0.7724,23578795
+money_market,Takara Lend,takara-lend,Sei,ENZOBTC,plain,,269.7747,0.0,21899768
+money_market,Fluid Lending,fluid-lending,Ethereum,CBBTC,plain,,215.1472,23.0326,17476270
+money_market,Takara Lend,takara-lend,Sei,UBTC,plain,,229.8256,0.0,18656784
+money_market,Benqi Lending,benqi-lending,Avalanche,BTC.B,plain,,57.2003,170.6063,4647049
+money_market,Kamino Lend,kamino-lend,Solana,XBTC,plain,,216.4901,4.4828,17592783
+money_market,Morpho Blue,morpho-blue,Arc,CIRBTC,plain,,203.5549,0,16538283
+money_market,Aave V3,aave-v3,Optimism,WBTC,plain,,182.3475,10.551,14825064
+money_market,Jupiter Lend,jupiter-lend,Solana,CBBTC,plain,,172.0455,7.3704,13991269
+money_market,Aave V3,aave-v3,Ethereum,FBTC,plain,,173.6265,1.0008,14105713
+money_market,HyperLend Pooled,hyperlend-pooled,Hyperliquid L1,UBTC,plain,,137.6291,28.7403,11184348
+money_market,Morpho Blue,morpho-blue,Katana,VBWBTC,plain,,148.6363,0.0024,12072810
+money_market,Morpho Blue,morpho-blue,Tempo,CBBTC,plain,,146.0586,0,11843302
+money_market,NAVI Lending,navi-lending,Sui,XBTC,plain,,35.1105,106.8919,2852284
+money_market,Wildcat Protocol,wildcat-protocol,Ethereum,CBBTC,plain,,0.4794,123.9833,38945
+money_market,Alpaca Finance 2.0,alpaca-finance-2.0,Binance,BTCB,plain,,120.2524,0.0101,9745044
+money_market,Kamino Lend,kamino-lend,Solana,FBTC,plain,,114.1015,0,9261600
+money_market,Euler V2,euler-v2,Monad,AHYPERBTC,yb,Accountable (Hyperithm vault share),106.8928,0,8834873
+money_market,Aave V3,aave-v3,Mantle,FBTC,plain,,101.5101,0,8246860
+money_market,Morpho Blue,morpho-blue,Citrea,WCBTC,plain,,100.0241,0,8125492
+money_market,AlphaFi Lending,alphafi-lending,Sui,XBTC,plain,,4.2837,95.6466,348112
+money_market,Morpho Blue,morpho-blue,Monad,AHYPERBTC,yb,Accountable (Hyperithm vault share),97.852,0,8082908
+money_market,Compound V3,compound-v3,Base,CBBTC,plain,,97.2513,0,7899663
+money_market,Aave V3,aave-v3,X Layer,XBTC,plain,,89.3932,5.4911,7262236
+money_market,Tectonic,tectonic,Cronos,WBTC,plain,,93.0353,0,7560630
+money_market,Suilend,suilend,Sui,WBTC,plain,,77.5131,12.2702,6292014
+money_market,Euler V2,euler-v2,Monad,CBBTC,plain,,14.0823,75.3431,1145848
+money_market,JustLend V1,justlend-v1,Tron,WBTC,plain,,89.3591,0.0172,7240124
+money_market,Compound V3,compound-v3,Ethereum,TBTC,plain,,88.3551,0,7178426
+money_market,Aave V4,aave-v4,Avalanche,BTC.B,plain,,86.7306,0.0043,7048275
+money_market,Fluid Lending,fluid-lending,Arbitrum,WBTC,plain,,83.1376,2.4842,6752719
+money_market,Morpho Blue,morpho-blue,Monad,CBBTC,plain,,5.9759,77.7092,485417
+money_market,Aave V3,aave-v3,Ethereum,EBTC,yb,ether.fi eBTC,82.5335,0,6717729
+money_market,Accountable,accountable,Citrea,WCBTC,plain,,0.001,81.437,81
+money_market,TermMax,termmax,BSquared,BTC,plain,,0,80.9376,0
+money_market,Morpho Blue,morpho-blue,World Chain,WBTC,plain,,78.721,0,6394020
+money_market,Tydro,tydro,Ink,SOLVBTC,plain,,76.4975,0,6201892
+money_market,Moonwell Lending,moonwell-lending,Base,CBBTC,plain,,17.8924,58.1454,1453390
+money_market,Vires Finance,vires-finance,Waves,BTC,plain,,72.8885,0.0483,5924267
+money_market,AlphaFi Lending,alphafi-lending,Sui,WBTC,plain,,70.3893,1.1176,5715843
+money_market,MetalX Lending,metalx-lending,Proton,BTC,plain,,56.7607,14.596,4610973
+money_market,Morpho Blue,morpho-blue,Ethereum,MHYPERBTC,yb,Midas mHyperBTC,70.2129,0,5850675
+money_market,Morpho Blue,morpho-blue,Arbitrum,WBTC,plain,,68.6066,0,5572459
+money_market,Aave V2,aave-v2,Avalanche,WBTC.E,plain,,67.9831,0.1415,5521671
+money_market,Morpho Blue,morpho-blue,Ethereum,LBTC,yb,Lombard LBTC,64.6571,0.6394,5266384
+money_market,Fluid Lending,fluid-lending,Base,CBBTC,plain,,64.9112,0.161,5272696
+money_market,Curve LlamaLend,curve-llamalend,Ethereum,WBTC,plain,,64.7144,0,5261352
+money_market,Aave V2,aave-v2,Polygon,WBTC,plain,,60.781,1.239,4936705
+money_market,Dolomite,dolomite,Arbitrum,WBTC,plain,,21.9103,39.6493,1779625
+money_market,NAVI Lending,navi-lending,Sui,WBTC,plain,,38.3782,21.8871,3115358
+money_market,Morpho Blue,morpho-blue,Hyperliquid L1,UBTC,plain,,58.9562,0,4791037
+money_market,Suilend,suilend,Sui,XBTC,plain,,45.242,12.0512,3675338
+money_market,Morpho Blue,morpho-blue,Monad,MHYPERBTC,yb,Midas mHyperBTC,57.0733,0,4748346
+money_market,Compound V3,compound-v3,Optimism,WBTC,plain,,56.616,0,4597320
+money_market,Native Credit Pool,native-credit-pool,Ethereum,WBTC,plain,,5.2443,50.8728,425851
+money_market,Takara Lend,takara-lend,Sei,M-BTC,plain,,44.9813,0.0,3651495
+money_market,Moonwell Lending,moonwell-lending,Base,LBTC,yb,Lombard LBTC,43.1175,0.2201,3511958
+money_market,Compound V3,compound-v3,Polygon,WBTC,plain,,42.506,0,3452497
+money_market,Aave V3,aave-v3,Avalanche,WBTC.E,plain,,39.1742,1.8501,3181773
+money_market,Morpho Blue,morpho-blue,Sei,WBTC,plain,,40.4786,0.0,3163406
+money_market,Suilend,suilend,Sui,LBTC,yb,Lombard LBTC,40.0797,0,3261224
+money_market,Jupiter Lend,jupiter-lend,Solana,LBTC,yb,Lombard LBTC,36.807,0,2997485
+money_market,Morpho Blue,morpho-blue,Ethereum,SOLVBTC,plain,,36.2015,0,2937639
+money_market,NAVI Lending,navi-lending,Sui,LBTC,yb,Lombard LBTC,34.4437,1.2106,2802626
+money_market,Jupiter Lend,jupiter-lend,Solana,XBTC,plain,,34.7473,0.2177,2822841
+money_market,Morpho Midnight,morpho-midnight,Base,CBBTC,plain,,34.6767,0.0,2815880
+money_market,Fraxlend,fraxlend,Ethereum,WBTC,plain,,33.7861,0,2746849
+money_market,Curvance,curvance,Monad,WBTC,plain,,0.1441,32.4655,11697
+money_market,Save,save,Solana,CBBTC,plain,,28.7888,3.7687,2341194
+money_market,Wildcat Protocol,wildcat-protocol,Ethereum,WBTC,plain,,0.0297,31.3096,2415
+money_market,Hydration Lending,hydration-lending,HydraDX,TBTC,plain,,29.9428,1.0004,2433423
+money_market,LayerBank,layerbank,RSK,WRBTC,plain,,24.6731,5.8986,2004485
+money_market,Jupiter Lend,jupiter-lend,Solana,WBTC,plain,,30.4858,0,2475751
+money_market,AlphaFi Lending,alphafi-lending,Sui,TBTC,plain,,27.7477,1.4892,2254365
+money_market,Benqi Lending,benqi-lending,Avalanche,WBTC.E,plain,,28.5348,0.2175,2317629
+money_market,Morpho Blue,morpho-blue,Polygon,WBTC,plain,,27.361,0,2222363
+money_market,Morpho Blue,morpho-blue,Ethereum,TBTC,plain,,27.2882,0,2217030
+money_market,Fluid Lending,fluid-lending,Ethereum,EBTC,yb,ether.fi eBTC,27.068,0,2203435
+money_market,Native Credit Pool,native-credit-pool,Morph,BGBTC,plain,,22.528,2.4752,1828104
+money_market,Aave V3,aave-v3,Arbitrum,TBTC,plain,,22.6552,0,1840717
+money_market,Project 0,project-0,Solana,WBTC,plain,,19.8999,2.4436,1616068
+money_market,Aave V3,aave-v3,Base,LBTC,yb,Lombard LBTC,21.3783,0,1741005
+money_market,SparkLend,sparklend,Ethereum,TBTC,plain,,20.8516,0.0001,1692854
+money_market,Dolomite,dolomite,Arbitrum,WBTC-USDC-GMX-V2,plain,,20.8467,0,1692296
+money_market,Silo V2,silo-v2,Avalanche,SAVBTC,yb,Avant avBTC,20.3531,0,1771047
+money_market,marginfi Lending,marginfi-lending,Solana,WBTC,plain,,17.4683,2.4436,1418601
+money_market,Flying Tulip Lend,flying-tulip-lend,Ethereum,WBTC,plain,,0,19.752,0
+money_market,Fluid Lending,fluid-lending,Polygon,WBTC,plain,,17.2482,0.0002,1400961
+money_market,Compound V3,compound-v3,Base,TBTC,plain,,16.4323,0,1335041
+money_market,Morpho Blue,morpho-blue,Base,UNIBTC,yb,Bedrock uniBTC,16.002,0,1292470
+money_market,Native Credit Pool,native-credit-pool,Ethereum,CBBTC,plain,,15.673,0,1273104
+money_market,BEND,bend,Berachain,WBTC,plain,,15.3868,0,1249435
+money_market,Gearbox,gearbox,Ethereum,WBTC,plain,,12.5624,2.4738,1021336
+money_market,Aave V3,aave-v3,Ethereum,BTC.B,plain,,14.8088,0,1203094
+money_market,EtherFi Borrowing Market,etherfi-borrowing-market,Optimism,EBTC,yb,ether.fi eBTC,14.7122,0,1190942
+money_market,Folks Finance xChain,folks-finance-xchain,Avalanche,SOLVBTC,plain,,14.2167,0.0495,1152597
+money_market,Scallop Lend,scallop-lend,Sui,WBTC,plain,,12.2522,0.5797,995631
+money_market,Current,current,Sui,XBTC,plain,,4.8488,7.9027,394030
+money_market,Current,current,Sui,WBTC,plain,,6.8278,5.8736,554871
+money_market,Aave V4,aave-v4,Arc,CIRBTC,plain,,12.6783,0.0077,1030078
+money_market,Hatom Lending,hatom-lending,Elrond,WBTC,plain,,10.1768,2.3813,817410
+money_market,Kamino Lend,kamino-lend,Solana,WBTC,plain,,12.2912,0.171,998630
+money_market,Morpho Blue,morpho-blue,Base,LBTC,yb,Lombard LBTC,12.406,0.0001,1010476
+money_market,Capyfi,capyfi,Ethereum,WBTC,plain,,10.5792,1.2236,858879
+money_market,Kinza Finance,kinza-finance,Binance,BTCB,plain,,10.4137,0.35,843909
+money_market,Aave V3,aave-v3,Linea,WBTC,plain,,10.0947,0.5835,820115
+money_market,Morpho Blue,morpho-blue,Optimism,WBTC,plain,,10.5183,0,854105
+money_market,Kava Lend,kava-lend,Kava,BTCB,plain,,10.1184,0.1859,822974
+money_market,Project 0,project-0,Solana,CBBTC,plain,,9.2341,0.4386,750949
+money_market,Fluid Lending,fluid-lending,Ethereum,LBTC,yb,Lombard LBTC,9.4417,0,769037
+money_market,marginfi Lending,marginfi-lending,Solana,CBBTC,plain,,8.7956,0.4386,715283
+money_market,Euler V2,euler-v2,Base,CBBTC,plain,,8.9336,0.2182,726908
+money_market,Rhea Lend,rhea-lend,Near,WBTC,plain,,4.9928,4.0904,405919
+money_market,Loopscale,loopscale,Solana,ZBTC,plain,,5.0344,3.3911,407495
+money_market,Dolomite,dolomite,Berachain,WBTC,plain,,7.9716,0.0869,647305
+money_market,Euler V2,euler-v2,Ethereum,WBTC,plain,,6.648,1.2913,540492
+money_market,Avalon Finance,avalon-finance,Merlin,WBTC,plain,,0.0006,7.1184,53
+money_market,Dolomite,dolomite,Ethereum,WBTC,plain,,6.4027,0.6676,519913
+money_market,Aave V3,aave-v3,Monad,CBBTC,plain,,6.6496,0,541068
+money_market,Aave V3,aave-v3,Base,TBTC,plain,,5.1403,0.7392,417648
+money_market,Venus Core Pool,venus-core-pool,Arbitrum,WBTC,plain,,5.4801,0.259,445011
+money_market,Hydration Lending,hydration-lending,HydraDX,WBTC,plain,,5.4797,0.126,445036
+money_market,Venus Flux,venus-flux,Binance,BTCB,plain,,5.3509,0.134,433626
+money_market,Euler V2,euler-v2,Avalanche,BTC.B,plain,,0.2657,5.2094,21587
+money_market,Rhea Lend,rhea-lend,Near,NBTC,plain,,3.6096,1.0793,293692
+money_market,Echelon Market,echelon-market,Aptos,XBTC,plain,,4.4606,0,362482
+money_market,Compound V3,compound-v3,Arbitrum,TBTC,plain,,4.3835,0,356142
+money_market,Moonwell Lending,moonwell-lending,Ethereum,CBBTC,plain,,1.8181,2.3053,147687
+money_market,Venus Core Pool,venus-core-pool,Ethereum,WBTC,plain,,3.9214,0.0017,318366
+money_market,Morpho Blue,morpho-blue,Monad,WBTC,plain,,3.5437,0,287758
+money_market,Loopscale,loopscale,Solana,CBBTC,plain,,3.4571,0,280821
+money_market,Loopscale,loopscale,Solana,WFRAGBTC,yb,Fragmetric,2.965,0,244121
+money_market,Avalon Finance,avalon-finance,Merlin,SOLVBTC,plain,,0.6407,1.8514,51991
+money_market,Euler V2,euler-v2,Hyperliquid L1,UBTC,plain,,2.377,0.0921,193169
+money_market,Avalon Finance,avalon-finance,Binance,SOLVBTC.BBN,yb,SolvBTC LSTs,2.2705,0.125,183840
+money_market,Kava Lend,kava-lend,Kava,WBTC,plain,,2.2772,0,184945
+money_market,Venus Core Pool,venus-core-pool,Arbitrum,WBTC-USDC-GMX-V2,plain,,2.1142,0,171627
+money_market,Echelon Market,echelon-market,Aptos,WBTC,plain,,1.995,0,161813
+money_market,Fluid Lending,fluid-lending,Ethereum,TBTC,plain,,1.9414,0,157731
+money_market,Compound V3,compound-v3,Linea,WBTC,plain,,1.7896,0,145432
+money_market,YeiLend,yeilend,Sei,WBTC,plain,,0.8609,0.9121,69821
+money_market,YeiLend,yeilend,Sei,SOLVBTC,plain,,0.7288,0.8919,59138
+money_market,Folks Finance xChain,folks-finance-xchain,Avalanche,BTC.B,plain,,1.4435,0.1365,117276
+money_market,AlphaFi Lending,alphafi-lending,Sui,EBTC,yb,ether.fi eBTC,1.5416,0.0008,130274
+money_market,Venus Core Pool,venus-core-pool,zkSync Era,WBTC,plain,,1.3692,0.1411,111157
+money_market,Fraxlend,fraxlend,Arbitrum,WBTC,plain,,1.4824,0,120414
+money_market,Scallop Lend,scallop-lend,Sui,XBTC,plain,,1.4654,0.0,119086
+money_market,HypurrFi Pooled,hypurrfi-pooled,Hyperliquid L1,UBTC,plain,,0.7946,0.661,64577
+money_market,Curve LlamaLend,curve-llamalend,Arbitrum,WBTC,plain,,1.4482,0,117639
+money_market,Kamino Lend,kamino-lend,Solana,LBTC,yb,Lombard LBTC,1.4087,0,114744
+money_market,Native Credit Pool,native-credit-pool,Base,CBBTC,plain,,1.3999,0,113714
+money_market,Euler V2,euler-v2,Base,LBTC,yb,Lombard LBTC,1.3672,0.0028,111342
+money_market,Loopscale,loopscale,Solana,XBTC,plain,,1.3238,0,107580
+money_market,Kamino Lend,kamino-lend,Solana,ZBTC,plain,,1.1562,0,93585
+money_market,Avalon Finance,avalon-finance,Binance,SOLVBTC,plain,,0.3265,0.7488,26497
+money_market,Euler V2,euler-v2,Ethereum,CBBTC,plain,,0.5585,0.5168,45415
+money_market,YeiLend,yeilend,Sei,XSOLVBTC,yb,SolvBTC LSTs,0.5041,0.5157,40820
+money_market,ZeroLend Lending,zerolend-lending,zkSync Era,M-BTC,plain,,1.0168,0,77897
+money_market,TermFinance Lend,termfinance-lend,Ethereum,CBBTC,plain,,1.0,0,81323
+money_market,Morpho Blue,morpho-blue,Unichain,WBTC,plain,,0.9708,0,78855
+money_market,Avalon Finance,avalon-finance,Bitlayer,WBTC,plain,,0.4583,0.3952,37214
+money_market,Morpho Blue,morpho-blue,TAC,CBBTC,plain,,0.7942,0,64430
+money_market,Avalon Finance,avalon-finance,Bitlayer,STBTC,yb,Lorenzo stBTC (issuer row ~0 today),0.703,0.0832,57082
+money_market,Lista Lending,lista-lending,Binance,SOLVBTC,plain,,0.7555,0,61307
+money_market,Silo V2,silo-v2,Avalanche,BTC.B,plain,,0.5382,0.1833,43736
+money_market,Curve LlamaLend,curve-llamalend,Ethereum,TBTC,plain,,0.7005,0,56916
+money_market,INIT Capital,init-capital,Mantle,FBTC,plain,,0.6914,0,56173
+money_market,ZeroLend Lending,zerolend-lending,zkSync Era,WBTC,plain,,0.6402,0,51999
+money_market,marginfi Lending,marginfi-lending,Solana,ZBTC,plain,,0.615,0,49779
+money_market,Project 0,project-0,Solana,ZBTC,plain,,0.615,0,49779
+money_market,Capyfi,capyfi,LaChain Network,WBTC,plain,,0.0285,0.5382,2315
+money_market,Aave V3,aave-v3,MegaETH,BTC.B,plain,,0.5131,0,41686
+money_market,NAVI Lending,navi-lending,Sui,STBTC,yb,Lorenzo stBTC (issuer row ~0 today),0.4898,0.0154,39284
+money_market,Moonwell Lending,moonwell-lending,Base,TBTC,plain,,0.3619,0.0519,29403
+money_market,Compound V3,compound-v3,Mantle,FBTC,plain,,0.4132,0,33578
+money_market,Gearbox,gearbox,Hemi,HEMIBTC,plain,,0.3953,0,32115
+money_market,Euler V2,euler-v2,Arbitrum,WBTC,plain,,0.2683,0.1244,21793
+money_market,Mendi Finance,mendi-finance,Linea,WBTC,plain,,0.1229,0.2655,9984
+money_market,Dolomite,dolomite,Ethereum,CBBTC,plain,,0.3481,0.0345,28278
+money_market,Morpho Blue,morpho-blue,Katana,LBTC,yb,Lombard LBTC,0.3417,0,27801
+money_market,Venus Core Pool,venus-core-pool,Base,CBBTC,plain,,0.3329,0.0017,27032
+money_market,AlphaFi Lending,alphafi-lending,Sui,LBTC,yb,Lombard LBTC,0.2889,0.0369,23530
+money_market,Avalon Finance,avalon-finance,Arbitrum,XSOLVBTC,yb,SolvBTC LSTs,0.2585,0.0382,20933
+money_market,Sumer.money,sumer.money,Goat,WBTC,plain,,0.0648,0.2083,5253
+money_market,Silo V2,silo-v2,Sonic,LBTC,yb,Lombard LBTC,0.267,0,21744
+money_market,Avalon Finance,avalon-finance,Base,XSOLVBTC,yb,SolvBTC LSTs,0.2267,0.029,18359
+money_market,Euler V2,euler-v2,BOB,WBTC,plain,,0.2509,0.0001,20377
+money_market,Euler V2,euler-v2,BOB,LBTC,yb,Lombard LBTC,0.0745,0.1598,6066
+money_market,Dolomite,dolomite,Berachain,LBTC,yb,Lombard LBTC,0.2066,0.0161,16827
+money_market,Euler V2,euler-v2,Binance,BTCB,plain,,0.0023,0.2099,188
+money_market,Avalon Finance,avalon-finance,Binance,BTCB,plain,,0.0662,0.1437,5362
+money_market,LayerBank,layerbank,Move,WBTC,plain,,0.2014,0,16370
+money_market,Avalon Finance,avalon-finance,Merlin,XSOLVBTC,yb,SolvBTC LSTs,0.1083,0.0891,8770
+money_market,Venus Core Pool,venus-core-pool,Ethereum,LBTC,yb,Lombard LBTC,0.1853,0,15082
+money_market,Avalon Finance,avalon-finance,BOB,WBTC,plain,,0.1565,0.0268,12715
+money_market,Avalon Finance,avalon-finance,Arbitrum,SOLVBTC,plain,,0.1388,0.0435,11263
+money_market,Fluid Lending,fluid-lending,Base,LBTC,yb,Lombard LBTC,0.178,0,14497
+money_market,Project 0,project-0,Solana,XBTC,plain,,0.1747,0.0002,14189
+money_market,marginfi Lending,marginfi-lending,Solana,XBTC,plain,,0.1744,0.0002,14170
+money_market,Folks Finance xChain,folks-finance-xchain,Base,CBBTC,plain,,0.1386,0.0278,11276
+money_market,Folks Finance xChain,folks-finance-xchain,Monad,WBTC,plain,,0.1549,0.0001,12593
+money_market,Avalon Finance,avalon-finance,Merlin,M-BTC,plain,,0.1545,0,11836
+money_market,Venus Isolated Pools,venus-isolated-pools,Binance,BTCB,plain,,0.148,0,11992
+money_market,INIT Capital,init-capital,Mantle,WBTC,plain,,0.1476,0,12000
+money_market,Flying Tulip Lend,flying-tulip-lend,Sonic,WBTC,plain,,0.1309,0.0021,10624
+money_market,Loopscale,loopscale,Solana,WBTC,plain,,0.0389,0.0815,3165
+money_market,Echelon Market,echelon-market,Aptos,ABTC,plain,,0.1093,0.0003,8514
+money_market,Accountable,accountable,Ethereum,TBTC,plain,,0.0031,0.1042,255
+money_market,Avalon Finance,avalon-finance,Binance,SOLVBTC.TRADING,yb,Solv Basis Trading,0.0932,0.0103,7560
+money_market,Avalon Finance,avalon-finance,Sonic,SOLVBTC,plain,,0.1032,0.0,8379
+money_market,Silo V2,silo-v2,Sonic,WBTC,plain,,0.0943,0,7653
+money_market,LayerBank,layerbank,Hemi,ENZOBTC,plain,,0,0.0936,0
+money_market,Native Credit Pool,native-credit-pool,Arbitrum,WBTC,plain,,0.083,0,6745
+money_market,Kamino Lend,kamino-lend,Solana,TBTC,plain,,0.0295,0.0496,2396
+money_market,Avalon Finance,avalon-finance,Arbitrum,WBTC,plain,,0.0555,0.0197,4506
+money_market,Capyfi,capyfi,Base,CBBTC,plain,,0.0725,0,5887
+money_market,Aave V4,aave-v4,Ethereum,LBTC,yb,Lombard LBTC,0.0662,0,5393
+money_market,Folks Finance xChain,folks-finance-xchain,Ethereum,WBTC,plain,,0.0367,0.0222,2987
+money_market,Sumer.money,sumer.money,Arbitrum,WBTC,plain,,0.0195,0.0183,1582
+money_market,Avalon Finance,avalon-finance,Ethereum,XSOLVBTC,yb,SolvBTC LSTs,0.0353,0.0,2856
+money_market,Kinza Finance,kinza-finance,Binance,SOLVBTC,plain,,0.0336,0,2726
+money_market,Euler V2,euler-v2,Unichain,WBTC,plain,,0.0044,0.0279,357
+money_market,Folks Finance xChain,folks-finance-xchain,Sei,WBTC,plain,,0.0322,0,2618
+money_market,Sumer.money,sumer.money,CORE,BTCB,plain,,0.0297,0.0002,2411
+money_market,Save,save,Solana,TBTC,plain,,0.0271,0,2199
+money_market,Echelon Market,echelon-market,Move,SOLVBTC,plain,,0.027,0,2188
+money_market,Kinza Finance,kinza-finance,Binance,SOLVBTC.BBN,yb,SolvBTC LSTs,0.0257,0,2083
+money_market,Folks Finance xChain,folks-finance-xchain,Polygon,WBTC,plain,,0.0249,0.0,2020
+money_market,Echelon Market,echelon-market,Move,LBTC,yb,Lombard LBTC,0.0217,0,1764
+money_market,Benqi Lending,benqi-lending,Avalanche,SOLVBTC,plain,,0.0203,0.0,1649
+money_market,Dolomite,dolomite,Mantle,FBTC,plain,,0.0183,0.0,1484
+money_market,Kinza Finance,kinza-finance,Ethereum,WBTC,plain,,0.0134,0.0048,1086
+money_market,Project 0,project-0,Solana,TBTC,plain,,0.0159,0.0018,1289
+money_market,Sumer.money,sumer.money,Berachain,WBTC,plain,,0.012,0.0054,972
+money_market,Avalon Finance,avalon-finance,Binance,LBTC,yb,Lombard LBTC,0.0164,0,1337
+money_market,Folks Finance xChain,folks-finance-xchain,Binance,BTCB,plain,,0.0163,0.0,1317
+money_market,marginfi Lending,marginfi-lending,Solana,TBTC,plain,,0.0141,0.0018,1147
+money_market,Euler V2,euler-v2,Base,YOBTC,yb,YO Protocol yoBTC,0.0154,0,1268
+money_market,Avalon Finance,avalon-finance,Klaytn,BTCB,plain,,0.0148,0.0001,1202
+money_market,Dolomite,dolomite,Mantle,WBTC,plain,,0.0118,0.0003,956
+money_market,Avalon Finance,avalon-finance,Base,CBBTC,plain,,0.0063,0.0049,509
+money_market,Avalon Finance,avalon-finance,Goat,BTCB,plain,,0.011,0.0,894
+money_market,ZeroLend Lending,zerolend-lending,X Layer,WBTC,plain,,0.0107,0,866
+money_market,Avalon Finance,avalon-finance,ZetaChain,BTC.BTC,plain,,0.0017,0.0087,135
+money_market,Save,save,Solana,ZBTC,plain,,0.0103,0,836
+money_market,Sumer.money,sumer.money,CORE,WBTC,plain,,0.0101,0,821
+money_market,Echelon Market,echelon-market,Move,WBTC,plain,,0.0055,0.0045,450
+money_market,Avalon Finance,avalon-finance,BOB,TBTC,plain,,0.0072,0.0019,582
+money_market,NAVI Lending,navi-lending,Sui,YBTC.B,plain,,0.0078,0,635
+money_market,Euler V2,euler-v2,Ethereum,LBTC,yb,Lombard LBTC,0.0076,0.0,618
+money_market,ZeroLend Lending,zerolend-lending,Manta,WBTC,plain,,0.0072,0,587
+money_market,Sumer.money,sumer.money,Bitlayer,BTC,plain,,0.0018,0.0054,148
+money_market,Folks Finance xChain,folks-finance-xchain,Arbitrum,WBTC,plain,,0.0063,0.0006,513
+money_market,Sumer.money,sumer.money,Arbitrum,SOLVBTC,plain,,0.0068,0.0001,552
+money_market,Avalon Finance,avalon-finance,Base,SOLVBTC,plain,,0.0041,0.0024,330
+money_market,Dolomite,dolomite,Berachain,UNIBTC,yb,Bedrock uniBTC,0.0062,0,500
+money_market,Vires Finance,vires-finance,Waves,WBTC,plain,,0.0061,0.0,495
+money_market,Silo V2,silo-v2,Sonic,XSOLVBTC,yb,SolvBTC LSTs,0.006,0,482
+money_market,Silo V2,silo-v2,Sonic,SCBTC,yb,Trevee / Rings scBTC,0.0059,0,478
+money_market,Compound V3,compound-v3,Unichain,WBTC,plain,,0.0059,0,478
+money_market,Avalon Finance,avalon-finance,Ethereum,FBTC,plain,,0.0059,0.0,478
+money_market,LayerBank,layerbank,Hemi,WBTC,plain,,0.0058,0,474
+money_market,Dolomite,dolomite,Berachain,EBTC,yb,ether.fi eBTC,0.0054,0.0002,441
+money_market,Folks Finance xChain,folks-finance-xchain,Arbitrum,TBTC,plain,,0.0054,0.0,438
+money_market,LayerBank,layerbank,BOB,TBTC,plain,,0.0053,0,435
+money_market,Capyfi,capyfi,World Chain,WBTC,plain,,0.0049,0.0,401
+money_market,Save,save,Solana,BTC,plain,,0.0049,0.0,398
+money_market,Aave V2,aave-v2,Ethereum,WBTC/WETH UNI-V2,plain,,0.0045,0,366
+money_market,Avalon Finance,avalon-finance,Sonic,XSOLVBTC,yb,SolvBTC LSTs,0.0045,0,363
+money_market,LayerBank,layerbank,BSquared,BTC,plain,,0.0045,0,363
+money_market,Avalon Finance,avalon-finance,Ethereum,WBTC,plain,,0.0041,0.0002,333
+money_market,LayerBank,layerbank,Bitlayer,BTC,plain,,0.0042,0,341
+money_market,Moonwell Lending,moonwell-lending,Optimism,WBTC,plain,,0.0032,0.0005,257
+money_market,LayerBank,layerbank,Hemi,HEMIBTC,plain,,0.001,0.0026,81
+money_market,Sumer.money,sumer.money,Binance,SOLVBTC,plain,,0.0002,0.0033,15
+money_market,Morpho Blue,morpho-blue,Ethereum,HEMIBTC,plain,,0.0034,0,278
+money_market,Avalon Finance,avalon-finance,Ethereum,SOLVBTC,plain,,0.0029,0.0002,239
+money_market,Venus Core Pool,venus-core-pool,Unichain,WBTC,plain,,0.0031,0.0,255
+money_market,Euler V2,euler-v2,Ethereum,EBTC,yb,ether.fi eBTC,0.0028,0,229
+money_market,Morpho Midnight,morpho-midnight,Ethereum,CBBTC,plain,,0.0028,0,226
+money_market,Gearbox,gearbox,Ethereum,TBTC,plain,,0.0024,0,193
+money_market,Morpho Blue,morpho-blue,Soneium,WBTC,plain,,0.0022,0,180
+money_market,LayerBank,layerbank,Move,STBTC,yb,Lorenzo stBTC (issuer row ~0 today),0.0021,0,167
+money_market,Avalon Finance,avalon-finance,CORE,WBTC,plain,,0.002,0.0,164
+money_market,Avalon Finance,avalon-finance,BSquared,UBTC,plain,,0.002,0.0001,162
+money_market,LayerBank,layerbank,RSK,SOLVBTC,plain,,0.002,0,162
+money_market,LayerBank,layerbank,RSK,XSOLVBTC,yb,SolvBTC LSTs,0.002,0,161
+money_market,Morpho Blue,morpho-blue,Ethereum,EBTC,yb,ether.fi eBTC,0.0019,0,158
+money_market,Dolomite,dolomite,Arbitrum,UNIBTC,yb,Bedrock uniBTC,0.0019,0,153
+money_market,LayerBank,layerbank,RSK,MHYPERBTC,yb,Midas mHyperBTC,0.0019,0,156
+money_market,Silo V2,silo-v2,Sonic,SOLVBTC,plain,,0.0018,0,146
+money_market,Avalon Finance,avalon-finance,Mode,MBTC,plain,,0.0018,0,135
+money_market,Dolomite,dolomite,Berachain,XSOLVBTC,yb,SolvBTC LSTs,0.0017,0,140
+money_market,LayerBank,layerbank,BOB,WBTC,plain,,0.0017,0,141
+money_market,Euler V2,euler-v2,Ethereum,MBTC,plain,,0.0017,0,143
+money_market,Avalon Finance,avalon-finance,Binance,UNIBTC,yb,Bedrock uniBTC,0.0016,0,128
+money_market,Venus Core Pool,venus-core-pool,Ethereum,TBTC,plain,,0.0015,0,123
+money_market,Morpho Blue,morpho-blue,Monad,TRIBTC,plain,,0.0014,0,114
+money_market,LayerBank,layerbank,RSK,RBTC,plain,,0.0012,0,98
+money_market,Morpho Blue,morpho-blue,Lisk,M-BTC,plain,,0.0012,0,91
+money_market,Avalon Finance,avalon-finance,Merlin,UNIBTC,yb,Bedrock uniBTC,0.0011,0,92
+money_market,Avalon Finance,avalon-finance,Taiko,XSOLVBTC,yb,SolvBTC LSTs,0.0011,0,92
+money_market,Fluid Lending,fluid-lending,Base,YOBTC,yb,YO Protocol yoBTC,0.0011,0,94
+money_market,Dolomite,dolomite,Arbitrum,TBTC,plain,,0.0006,0.0005,52
+money_market,Avalon Finance,avalon-finance,CORE,OBTC,plain,,0.001,0,85
+money_market,Morpho Blue,morpho-blue,Ethereum,XSOLVBTC,yb,SolvBTC LSTs,0.001,0,85
+money_market,Avalon Finance,avalon-finance,Sei,XSOLVBTC,yb,SolvBTC LSTs,0.001,0,84
+money_market,Avalon Finance,avalon-finance,Ethereum,PUMPBTC,yb,PumpBTC,0.001,0,78
+money_market,Avalon Finance,avalon-finance,Mode,SOLVBTC,plain,,0.001,0,81
+money_market,Avalon Finance,avalon-finance,Mode,UNIBTC,yb,Bedrock uniBTC,0.001,0,81
+money_market,Avalon Finance,avalon-finance,Sei,SOLVBTC,plain,,0.001,0,81
+money_market,Avalon Finance,avalon-finance,IoTeX,UNIBTC,yb,Bedrock uniBTC,0.001,0,81
+money_market,Morpho Blue,morpho-blue,Katana,BTCK,plain,,0.0009,0,71
+money_market,Sumer.money,sumer.money,Goat,BTCB,plain,,0.0008,0.0,63
+money_market,LayerBank,layerbank,Linea,WBTC,plain,,0.0007,0,60
+money_market,Current,current,Sui,LBTC,yb,Lombard LBTC,0.0007,0,57
+money_market,Morpho Blue,morpho-blue,RISE,WBTC.E,plain,,0.0007,0,53
+money_market,Euler V2,euler-v2,Monad,WBTC,plain,,0.0006,0.0,53
+money_market,Fluid Lending,fluid-lending,Arbitrum,CBBTC,plain,,0.0006,0,49
+money_market,LayerBank,layerbank,Linea,M-BTC,plain,,0.0006,0,44
+money_market,Venus Core Pool,venus-core-pool,Ethereum,EBTC,yb,ether.fi eBTC,0.0006,0,45
+money_market,ZeroLend Lending,zerolend-lending,Hemi,HEMIBTC,plain,,0.0005,0,43
+money_market,Avalon Finance,avalon-finance,CORE,BTC,plain,,0.0005,0,37
+money_market,Euler V2,euler-v2,Berachain,WBTC,plain,,0.0004,0.0,36
+money_market,Euler V2,euler-v2,Avalanche,WBTC.E,plain,,0.0004,0,36
+money_market,Morpho Blue,morpho-blue,Ethereum,MBTC,plain,,0.0004,0,36
+money_market,LayerBank,layerbank,BSquared,UBTC,plain,,0.0004,0,33
+money_market,Venus Core Pool,venus-core-pool,Optimism,WBTC,plain,,0.0004,0.0,31
+money_market,LayerBank,layerbank,zkLink,M-BTC,plain,,0.0003,0,25
+money_market,TermMax,termmax,Ethereum,WBTC,plain,,0.0003,0,26
+money_market,LayerBank,layerbank,Binance,BFBTC,yb,BitFi bfBTC,0.0003,0,24
+money_market,Euler V2,euler-v2,TAC,LBTC,yb,Lombard LBTC,0.0003,0.0,23
+money_market,Morpho Blue,morpho-blue,Soneium,SOLVBTC,plain,,0.0003,0,23
+money_market,Dolomite,dolomite,Berachain,SOLVBTC,plain,,0.0003,0,22
+money_market,ZeroLend Lending,zerolend-lending,Hemi,WBTC,plain,,0.0003,0,20
+money_market,Morpho Midnight,morpho-midnight,Ethereum,WBTC,plain,,0.0002,0,20
+money_market,Morpho Blue,morpho-blue,Celo,BTC,plain,,0.0002,0,14
+money_market,ZeroLend Lending,zerolend-lending,Hemi,M-BTC,plain,,0.0002,0,15
+money_market,Dolomite,dolomite,Berachain,SBTC,plain,,0.0002,0,14
+money_market,Euler V2,euler-v2,Ethereum,TBTC,plain,,0.0002,0,14
+money_market,Kava Lend,kava-lend,Kava,M-BTC,plain,,0.0002,0,13
+money_market,Sumer.money,sumer.money,Hemi,HEMIBTC,plain,,0.0002,0.0,14
+money_market,Avalon Finance,avalon-finance,Taiko,M-BTC,plain,,0.0001,0,11
+money_market,Morpho Blue,morpho-blue,Celo,WBTC,plain,,0.0001,0.0,11
+money_market,Morpho Blue,morpho-blue,Monad,LBTC,yb,Lombard LBTC,0.0001,0,10
+money_market,Morpho Blue,morpho-blue,Stable,BTC.B,plain,,0.0001,0,10
+money_market,Morpho Blue,morpho-blue,Ethereum,UNIBTC,yb,Bedrock uniBTC,0.0001,0,9
+money_market,LayerBank,layerbank,Morph,WBTC,plain,,0.0001,0,9
+money_market,Silo V2,silo-v2,Arbitrum,WBTC,plain,,0.0001,0,9
+money_market,Euler V2,euler-v2,TAC,CBBTC,plain,,0.0,0.0001,1
+money_market,Euler V2,euler-v2,BOB,SOLVBTC,plain,,0.0001,0,8
+money_market,Kinza Finance,kinza-finance,Ethereum,EBTC,yb,ether.fi eBTC,0.0001,0,8
+money_market,Kinza Finance,kinza-finance,Ethereum,CBBTC,plain,,0.0001,0,8
+money_market,Sumer.money,sumer.money,Binance,BTCB,plain,,0.0001,0,7
+money_market,Sumer.money,sumer.money,Binance,SOLVBTC.BBN,yb,SolvBTC LSTs,0.0001,0.0,7
+money_market,Sumer.money,sumer.money,Binance,SOLVBTC.TRADING,yb,Solv Basis Trading,0.0001,0,7
+money_market,TermMax,termmax,Ethereum,CBBTC,plain,,0.0001,0,8
+money_market,Euler V2,euler-v2,BOB,XSOLVBTC,yb,SolvBTC LSTs,0.0001,0,6
+money_market,Morpho Blue,morpho-blue,Hemi,HEMIBTC,plain,,0.0001,0.0,6
+money_market,Euler V2,euler-v2,Ethereum,SOLVBTC,plain,,0.0001,0,5
+money_market,LayerBank,layerbank,Mode,MBTC,plain,,0.0,0,3
+money_market,Sumer.money,sumer.money,Ethereum,TBTC,plain,,0.0,0,3
+money_market,TermMax,termmax,Arbitrum,WBTC,plain,,0.0,0,3
+money_market,Kinza Finance,kinza-finance,Mantle,FBTC,plain,,0.0,0.0,3
+money_market,Morpho Blue,morpho-blue,Lisk,WBTC,plain,,0.0,0,3
+money_market,Curve LlamaLend,curve-llamalend,Optimism,WBTC,plain,,0.0,0,2
+money_market,LayerBank,layerbank,Hemi,M-BTC,plain,,0.0,0,2
+money_market,LayerBank,layerbank,Binance,BTCB,plain,,0.0,0,1
+money_market,Morpho Blue,morpho-blue,Ink,KBTC,plain,,0.0,0,2
+money_market,Morpho Blue,morpho-blue,Stable,LBTC,yb,Lombard LBTC,0.0,0,1
+money_market,Morpho Blue,morpho-blue,Arbitrum,WBTC-USDC-GMX-V2,plain,,0.0,0,1
+money_market,Euler V2,euler-v2,Berachain,LBTC,yb,Lombard LBTC,0.0,0.0,0
+money_market,LayerBank,layerbank,zkLink,WBTC,plain,,0.0,0,0
+money_market,LayerBank,layerbank,Move,SOLVBTC,plain,,0.0,0,1
+money_market,LayerBank,layerbank,Move,LBTC,yb,Lombard LBTC,0.0,0,1
+money_market,LayerBank,layerbank,Hemi,STBTC,yb,Lorenzo stBTC (issuer row ~0 today),0.0,0,1
+money_market,Morpho Blue,morpho-blue,Hemi,WBTC,plain,,0.0,0,0
+money_market,Morpho Blue,morpho-blue,TAC,LBTC,yb,Lombard LBTC,0.0,0,1
+money_market,Morpho Blue,morpho-blue,Ethereum,BGBTC,plain,,0.0,0,1
+money_market,Native Credit Pool,native-credit-pool,Binance,BTCB,plain,,0.0,0,1
+money_market,Sumer.money,sumer.money,Ethereum,SOLVBTC,plain,,0.0,0,1
+money_market,Sumer.money,sumer.money,Hemi,WBTC,plain,,0.0,0.0,1
+cdp,f(x) Protocol,fx-protocol,Ethereum,WBTC,plain,,1287.6015,0,104555593
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Binance,BFBTC,yb,BitFi bfBTC,655.0002,0,53209152
+cdp,crvUSD / LlamaLend,crvusd,Ethereum,WBTC,plain,,611.9429,0,49690876
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Base,UNIBTC,yb,Bedrock uniBTC,341.3682,0,27572115
+cdp,Sky (Maker),sky-lending,Ethereum,WBTC,plain,,339.0266,0,27563252
+cdp,Money on Chain,moneyonchain,RSK,RBTC,plain,,271.7509,0,22075772
+cdp,Sovryn Zero,sovryn-zero,RSK,RBTC,plain,,249.6204,0,20277995
+cdp,River Omni-CDP (satUSD),river-omni-cdp,BSquared,UBTC,plain,,247.397,0,20097372
+cdp,Frankencoin,frankencoin,Ethereum,CBBTC,plain,,216.7909,0,17609785
+cdp,crvUSD / LlamaLend,crvusd,Ethereum,CBBTC,plain,,188.9605,0,15349135
+cdp,Frankencoin,frankencoin,Ethereum,WBTC,plain,,143.4869,0,11651395
+cdp,crvUSD / LlamaLend,crvusd,Ethereum,TBTC,plain,,128.9577,0,10477182
+cdp,BIMA CDP,bima-cdp,Bitcoin,BTC,plain,,125.7714,0,10217080
+cdp,Kava Mint,kava-mint,Kava,BTCB,plain,,62.3657,0,5068989
+cdp,Bucket,bucket-cdp,Sui,WBTC,plain,,57.6053,0,4678128
+cdp,BTCFi CDP,btcfi-cdp,Bitcoin,BTC,plain,,46.7548,0,3798145
+cdp,BTCFi CDP,btcfi-cdp,Bifrost Network,BTC.B,plain,,44.259,0,3592495
+cdp,Mezo Borrow,mezo-borrow,Mezo,BTC,plain,,36.3585,0,2952159
+cdp,Hylo,hylo-protocol,Solana,CBBTC,plain,,34.4176,0,2798945
+cdp,Yala,yala,Bitcoin,BTC,plain,,28.9753,0,2356376
+cdp,Threshold thUSD,threshold-thusd,Ethereum,TBTC,plain,,26.7641,0,2174565
+cdp,Lista CDP,lista-cdp,Binance,BTCB,plain,,25.688,0,2080667
+cdp,Felix CDP,felix-cdp,Hyperliquid L1,FEUBTC,plain,,23.1195,0,1874856
+cdp,Abracadabra,abracadabra-spell,Ethereum,WBTC,plain,,18.6929,0,1517900
+cdp,Inverse FiRM,inverse-finance-firm,Ethereum,WBTC,plain,,6.5204,0,529472
+cdp,Bucket v2,bucket-protocol-v2,Sui,WBTC,plain,,5.6549,0,459416
+cdp,Angle,angle,Ethereum,WBTC,plain,,2.9497,0,239816
+cdp,Angle,angle,Arbitrum,WBTC,plain,,2.7473,0,223172
+cdp,Inverse FiRM,inverse-finance-firm,Ethereum,CBBTC,plain,,2.5464,0,206843
+cdp,Abracadabra,abracadabra-spell,Arbitrum,WBTC-USDC-GMX-V2,plain,,2.3745,0,192761
+cdp,BTCFi CDP,btcfi-cdp,Base,CBBTC,plain,,1.2461,0,101221
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Ethereum,WBTC,plain,,0.7949,0,64551
+cdp,Sky (Maker),sky-lending,Ethereum,RENBTC,plain,,0.3147,0,25550
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Hemi,HEMIBTC,plain,,0.289,0,23490
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Bitlayer,STBTC,yb,Lorenzo stBTC (issuer row ~0 today),0.2732,0,22187
+cdp,River Omni-CDP (satUSD),river-omni-cdp,BOB,XSOLVBTC,yb,SolvBTC LSTs,0.1296,0,10490
+cdp,bitSmiley,bitsmiley,Bitlayer,WBTC,plain,,0.1286,0,10456
+cdp,Lista CDP,lista-cdp,Binance,SOLVBTC,plain,,0.0941,0,7636
+cdp,Beraborrow,beraborrow,Berachain,UNIBTC,yb,Bedrock uniBTC,0.0754,0,6072
+cdp,BTCFi CDP,btcfi-cdp,Bifrost Network,WBTC,plain,,0.0722,0,5863
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Binance,BTCB,plain,,0.0563,0,4560
+cdp,Angle,angle,Polygon,WBTC,plain,,0.0539,0,4378
+cdp,Beraborrow,beraborrow,Berachain,WBTC,plain,,0.0437,0,3538
+cdp,Beraborrow,beraborrow,Berachain,XSOLVBTC,yb,SolvBTC LSTs,0.0398,0,3218
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Bitlayer,WBTC,plain,,0.0373,0,3031
+cdp,River Omni-CDP (satUSD),river-omni-cdp,BOB,SOLVBTC,plain,,0.0308,0,2501
+cdp,Nerite,nerite,Arbitrum,TBTC,plain,,0.0264,0,2142
+cdp,River Omni-CDP (satUSD),river-omni-cdp,BOB,TBTC,plain,,0.0224,0,1821
+cdp,BIMA CDP,bima-cdp,Ethereum,WBTC,plain,,0.0202,0,1643
+cdp,Bucket,bucket-cdp,Sui,LBTC,yb,Lombard LBTC,0.0175,0,1424
+cdp,BIMA CDP,bima-cdp,Hemi,HEMIBTC,plain,,0.0173,0,1406
+cdp,Beraborrow,beraborrow,Berachain,SOLVBTC,plain,,0.0157,0,1271
+cdp,River Omni-CDP (satUSD),river-omni-cdp,BOB,WBTC,plain,,0.0109,0,882
+cdp,Bucket,bucket-cdp,Sui,TBTC,plain,,0.0049,0,399
+cdp,River Omni-CDP (satUSD),river-omni-cdp,BSquared,BTC,plain,,0.0033,0,271
+cdp,f(x) Protocol,fx-protocol,Ethereum,UNIBTC,yb,Bedrock uniBTC,0.0013,0,107
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Binance,WBTC,plain,,0.0011,0,92
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Hemi,ENZOBTC,plain,,0.001,0,81
+cdp,River Omni-CDP (satUSD),river-omni-cdp,X Layer,WBTC,plain,,0.001,0,81
+cdp,River Omni-CDP (satUSD),river-omni-cdp,X Layer,XBTC,plain,,0.001,0,81
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Sonic,WBTC,plain,,0.001,0,80
+cdp,River Omni-CDP (satUSD),river-omni-cdp,BOB,FBTC,plain,,0.0007,0,55
+cdp,Bitzap yUSD,bitzap-yusd,Bitlayer,WBTC,plain,,0.0006,0,49
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Arbitrum,WBTC,plain,,0.0004,0,32
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Hemi,WBTC,plain,,0.0002,0,18
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Base,WBTC,plain,,0.0002,0,15
+cdp,BTCFi CDP,btcfi-cdp,CORE,WBTC,plain,,0.0002,0,13
+cdp,Beraborrow,beraborrow,Berachain,SBTC,plain,,0.0001,0,6
+cdp,BTCFi CDP,btcfi-cdp,CORE,BTCB,plain,,0.0001,0,5
+cdp,Abracadabra,abracadabra-spell,Arbitrum,WBTC,plain,,0.0001,0,4
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Ethereum,ENZOBTC,plain,,0.0001,0,4
+cdp,River Omni-CDP (satUSD),river-omni-cdp,Ethereum,UNIBTC,yb,Bedrock uniBTC,0.0001,0,4
+cdp,crvUSD / LlamaLend,crvusd,Ethereum,LBTC,yb,Lombard LBTC,0.0,0,3
+venue,Templar,templar-protocol,Ethereum,WBTC,plain,,126.145,0,10255733
+venue,Templar,templar-protocol,Bitcoin,BTC,plain,,75.0,0,6099264
+venue,Echo Lending,echo-lending,Aptos,ABTC,plain,,72.8498,0.0006,5672764
+venue,Vesu,vesu,Starknet,WBTC,plain,,59.6527,5.4136,4845222
+venue,Chainflip Lending,chainflip-lending,Chainflip,BTC,plain,,53.1241,6.3224,4306787
+venue,Granite,granite,Stacks,SBTC,plain,,38.8006,0,3148295
+venue,Vesu,vesu,Starknet,SOLVBTC,plain,,23.1825,1.1784,1881190
+venue,Zest v1,zest-v1,Stacks,SBTC,plain,,17.8714,0.0043,1452067
+venue,Liquidium,liquidium,ICP,BTC,plain,,15.5937,0.8019,1266761
+venue,Surge Credit,surge-credit,Bitcoin,BTC,plain,,15.8796,0,1289229
+venue,Templar,templar-protocol,Ethereum,HEMIBTC,plain,,0.0007,0,54
+curator,Hyperithm (curated cbBTC vaults),hyperithm,Monad,CBBTC,plain,,654.3051,0,53239658
+curator,Gauntlet,gauntlet,Ethereum,WBTC,plain,,215.8196,0,17546387
+curator,9Summits,9summits,Ethereum,CBBTC,plain,,125.0826,0,10160378
+curator,Tulipa Capital,tulipa-capital,Ethereum,CBBTC,plain,,125.0826,0,10160378
+curator,Hyperithm (curated cbBTC vaults),hyperithm,Monad,AHYPERBTC,yb,Accountable (Hyperithm vault share),106.8928,0,8834873
+curator,Yearn curating,yearn-curating,Ethereum,WBTC,plain,,81.1927,0,6591700
+curator,Telos Consilium,telos-consilium,Ethereum,WBTC,plain,,71.0944,0,5772998
+curator,Sentora (WBTC vault),sentora-curator,Ethereum,WBTC,plain,,47.2034,0,3833002
+curator,UltraYield curator,ultrayield-curator,Ethereum,CBBTC,plain,,43.9833,0,3571608
+curator,Anthias,anthias-labs,Base,CBBTC,plain,,13.8529,0,1127185
+curator,Block Analitica,block-analitica,Base,CBBTC,plain,,13.8529,0,1124906
+curator,DAMM,damm-capital,Ethereum,WBTC,plain,,11.3038,0,919015
+curator,UltraYield curator,ultrayield-curator,Hyperliquid L1,UBTC,plain,,10.6698,0,866805
+curator,Gami Labs,gami-labs,Ethereum,WBTC,plain,,9.6223,0,782303
+curator,Odyssey,odyssey-digital-am,Ethereum,CBBTC,plain,,8.6181,0,700852
+curator,Gami Labs,gami-labs,Robinhood Chain,WBTC,plain,,7.347,0,596877
+curator,Gauntlet,gauntlet,Base,CBBTC,plain,,7.0627,0,574682
+curator,K3 Capital,k3-capital,Ethereum,WBTC,plain,,6.889,0,560081
+curator,Clearstar,clearstar,Base,CBBTC,plain,,5.5451,0,451197
+curator,AlphaGrowth,alphagrowth,Base,CBBTC,plain,,3.6064,0,293444
+curator,Steakhouse,steakhouse-financial,Ethereum,CBBTC,plain,,3.1383,0,254924
+curator,Clearstar,clearstar,Hyperliquid L1,UBTC,plain,,2.4691,0,200655
+curator,MEV Capital,mev-capital,Sui,WBTC,plain,,1.5801,0,128381
+curator,AlphaGrowth,alphagrowth,Base,LBTC,yb,Lombard LBTC,1.3694,0,111522
+curator,Re7 Labs,re7-labs,Ethereum,WBTC,plain,,1.2087,0,98272
+curator,Tau Labs,tau-labs,Ethereum,WBTC,plain,,1.0771,0,87565
+curator,Gauntlet,gauntlet,Ethereum,LBTC,yb,Lombard LBTC,1.049,0,85431
+curator,K3 Capital,k3-capital,Ethereum,CBBTC,plain,,0.6883,0,55978
+curator,Hyperithm (curated cbBTC vaults),hyperithm,Ethereum,CBBTC,plain,,0.6676,0,54290
+curator,Re7 Labs,re7-labs,World Chain,WBTC,plain,,0.4282,0,34777
+curator,K3 Capital,k3-capital,Arbitrum,WBTC,plain,,0.3926,0,31895
+curator,Gami Labs,gami-labs,Ethereum,HEMIBTC,plain,,0.3465,0,28152
+curator,Tulipa Capital,tulipa-capital,Ethereum,WBTC,plain,,0.2635,0,21395
+curator,Re7 Labs,re7-labs,Binance,BTCB,plain,,0.209,0,16925
+curator,Tulipa Capital,tulipa-capital,Avalanche,BTC.B,plain,,0.2024,0,16449
+curator,MEV Capital,mev-capital,Ethereum,WBTC,plain,,0.1948,0,15821
+curator,Tulipa Capital,tulipa-capital,BOB,LBTC,yb,Lombard LBTC,0.1671,0,13611
+curator,K3 Capital,k3-capital,Ethereum,LBTC,yb,Lombard LBTC,0.1321,0,10756
+curator,MEV Capital,mev-capital,Ethereum,LBTC,yb,Lombard LBTC,0.1321,0,10758
+curator,Tulipa Capital,tulipa-capital,BOB,WBTC,plain,,0.0983,0,7982
+curator,Re7 Labs,re7-labs,BOB,WBTC,plain,,0.0617,0,5008
+curator,Gauntlet,gauntlet,Ethereum,CBBTC,plain,,0.0584,0,4750
+curator,AlphaGrowth,alphagrowth,Unichain,WBTC,plain,,0.0323,0,2629
+curator,Gauntlet,gauntlet,Base,LBTC,yb,Lombard LBTC,0.0203,0,1654
+curator,AlphaGrowth,alphagrowth,Base,YOBTC,yb,YO Protocol yoBTC,0.0154,0,1268
+curator,Re7 Labs,re7-labs,Ethereum,TBTC,plain,,0.015,0,1221
+curator,MEV Capital,mev-capital,Ethereum,CBBTC,plain,,0.0132,0,1071
+curator,Clearstar,clearstar,Hemi,HEMIBTC,plain,,0.01,0,808
+curator,Re7 Labs,re7-labs,Starknet,WBTC,plain,,0.0089,0,725
+curator,Gauntlet,gauntlet,Katana,VBWBTC,plain,,0.0048,0,393
+curator,Apostro,apostro,Ethereum,CBBTC,plain,,0.0024,0,195
+curator,Yearn curating,yearn-curating,Katana,VBWBTC,plain,,0.0024,0,194
+curator,Apostro,apostro,Ethereum,MBTC,plain,,0.0017,0,143
+curator,Steakhouse,steakhouse-financial,Monad,CBBTC,plain,,0.0013,0,105
+curator,Steakhouse,steakhouse-financial,Ethereum,WBTC,plain,,0.0011,0,90
+curator,Gauntlet,gauntlet,Ethereum,XSOLVBTC,yb,SolvBTC LSTs,0.001,0,85
+curator,Tulipa Capital,tulipa-capital,Binance,BTCB,plain,,0.0009,0,73
+curator,K3 Capital,k3-capital,Monad,WBTC,plain,,0.0006,0,53
+curator,Apostro,apostro,Base,LBTC,yb,Lombard LBTC,0.0006,0,51
+curator,Re7 Labs,re7-labs,Ethereum,CBBTC,plain,,0.0006,0,50
+curator,Apostro,apostro,Ethereum,EBTC,yb,ether.fi eBTC,0.0006,0,45
+curator,Apostro,apostro,Ethereum,WBTC,plain,,0.0005,0,42
+curator,Gauntlet,gauntlet,Ethereum,TBTC,plain,,0.0003,0,25
+curator,UltraYield curator,ultrayield-curator,TAC,LBTC,yb,Lombard LBTC,0.0003,0,23
+curator,Re7 Labs,re7-labs,Avalanche,BTC.B,plain,,0.0002,0,20
+curator,Apostro,apostro,Ethereum,LBTC,yb,Lombard LBTC,0.0001,0,12
+curator,Re7 Labs,re7-labs,BOB,SOLVBTC,plain,,0.0001,0,8
+curator,UltraYield curator,ultrayield-curator,TAC,CBBTC,plain,,0.0001,0,8
+curator,Re7 Labs,re7-labs,BOB,XSOLVBTC,yb,SolvBTC LSTs,0.0001,0,6
+curator,Tulipa Capital,tulipa-capital,Berachain,WBTC,plain,,0.0001,0,6
+curator,Apostro,apostro,Base,CBBTC,plain,,0.0001,0,5
+curator,Gauntlet,gauntlet,Katana,BTCK,plain,,0.0,0,3
+curator,Tau Labs,tau-labs,Ethereum,CBBTC,plain,,0.0,0,1
+curator,Tulipa Capital,tulipa-capital,Berachain,LBTC,yb,Lombard LBTC,0.0,0,1
