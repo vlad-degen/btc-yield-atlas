@@ -15,12 +15,12 @@ A market study of products that pay a Bitcoin holder in Bitcoin. It maps the who
 - `index.html`: the site, in English, published at the link above. It is a single file with no build step and all data inline, and it is the source of truth for the page. Sections:
   - the answer: four numbers and three conclusions;
   - market: the radial chart, then two years of history by category, then who is in each category: one tab per category with every product, what it does, what it pays and who runs it (farming and pools split into points farming, strategy vaults and liquidity pools; money markets into lending markets and vaults that only lend; products that emptied since 2024 listed under each). Every category has a switch (in the top menu and above the charts) that takes it out of every market number, in any mix; money markets and CDP collateral earn about 0% and are off by default. The whole choice is kept in the browser and in the link (`?carry=off`, `?staking=off`, `?basis=off`, `?options=off`, `?credit=off`, `?farming=off`, `?mm=on`, `?cdp=on`);
-  - carry math: a worked example on Kraken's vault, parking rates against the loan, the borrow markets and their rate curves, and a calculator in Aave v4 terms (collateral factor, health factor, hub rate plus risk premium, what a liquidation to the target health factor sells);
+  - carry math: a worked example on Kraken's vault, parking rates against the loan, the borrow markets and their rate curves, and a calculator in Aave v4 terms (LTV, collateral factor, loan rate, parking yield and the share of it that is third-party rewards; health factor and what a liquidation to the target health factor sells);
   - the five biggest: carry waves, a comparison table and one sequential block per product: a numbered flow-of-funds diagram with links to the contracts and markets, who is in the chain and what each can change, who pays the yield, charts and events;
   - other carry: every product that borrows against BTC, live, small and closed (checked for missing ones on 24 September);
   - risks: one table;
   - playbook: what the top five imply for a product on Babylon vaults and Aave v4: what it would pay, who pays for rewards, rules and partners;
-  - data: method, products listed but not counted (sizes re-checked on 24 September), the DefiLlama check and sources.
+  - data: method, products listed but not counted (sizes re-checked on 24 September), the DefiLlama check, the 24 September re-check of the snapshot against the same sources, and sources.
 - `site/index.html`: the same page in the claude.ai artifact format. It is generated, so do not edit it by hand. Regenerate it after every edit of `index.html`:
 
   ```
