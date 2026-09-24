@@ -39,7 +39,7 @@ This rebuilt balance matches the accountant's NAV (share supply on every chain �
    - None of this is visible from the vault address's token balances alone.
 4. **Realized yield is thin and mostly came from incentives (est.).**
    - Realized net APY: 1.96% over the last year and **~1.84%/yr since launch** (+3.42% cumulative).
-   - The vault earned depositors **≈10.0 BTC net** (≈$0.84M), and the platform took **4.53 BTC ($0.44M) in claimed fees**.
+   - The vault earned depositors **≈10.0 BTC net** (≈$0.84M), and the platform took **4.53 BTC ($0.42M) in claimed fees**.
    - **Identified incentives were ≈$0.63M, about 50% of gross yield**:
      - $187k of ETHFI sent into the vault in Jan–Feb 2025;
      - $355k of Merkl RLUSD/PYUSD;

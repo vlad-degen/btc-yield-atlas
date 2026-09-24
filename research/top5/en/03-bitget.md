@@ -219,7 +219,7 @@ Labels used in this report:
 - **gtusdc holders.**
   - 1,387 holders. The vault holds 82.14%.
   - The other 1,386 are EIP-7702 wallets delegated to unverified implementation `0x490Aac77…`, likely Bitget Wallet smart accounts (inf.). They hold $9.35M together.
-  - Median $32.7. 14 hold more than $100k, 122 more than $10k, and 830 less than $100. The top 10 non-vault holders have 50.2% of the external USDC.
+  - Median $32.92. 14 hold more than $100k, 122 more than $10k, and 830 less than $100. The top 10 non-vault holders have 50.2% of the external USDC.
   - 1,258 unique addresses have claimed rewards. The largest campaign had 736 claimers.
 - **bgBTC holders.**
   - Morph: 28 holders. Morpho 801.71, Native 22.40, EOA `0x2620…` 9.74, Bitget hot wallet 1.16, the rest dust.

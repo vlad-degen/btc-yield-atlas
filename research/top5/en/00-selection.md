@@ -12,7 +12,7 @@
 **Ranking metric.** BTC deposits (the depositors' claim, in BTC). Collateral posted is shown next to it; the order is the same under either metric.
 
 **Timing and prices.**
-- All position figures are read on-chain at Ethereum block 26,018,582, which is 2026-09-20 12:00 UTC. For other chains we used the block at the same timestamp, unless the row says otherwise.
+- All position figures are read on-chain at Ethereum block 26,018,582, the last block before 2026-09-20 12:00 UTC (11:59:59; the Kraken deep dive and the site cite 26,018,583, the first block after, 12:00:11). For other chains we used the block at the same timestamp, unless the row says otherwise.
 - BTC was about $80.5k at the snapshot. USD values are converted at that price and are estimates.
 
 ## Ranked result
@@ -130,7 +130,7 @@ Token: `0xC8495EAFf71D3A563b906295fCF2f685b1783085`.
 - Collateral: spWBTC 153.08 and spcbBTC 54.80.
 - Debt: vdPYUSD 5.927M and vdUSDC 4.372M.
 
-**Vault size.** About 232 BTC, taken from the earlier verified read: 133.6 shares on Ethereum plus 90.9 on Optimism.
+**Vault size.** About 232 BTC, taken from the earlier verified read: 133.6 shares on Ethereum plus 90.28 on Optimism.
 
 **Where the dollars go:** Cap stcUSD (~$6.1M) and Sentora Paypal USD Main (~$4.15M).
 

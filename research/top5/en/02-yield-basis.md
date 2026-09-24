@@ -2,7 +2,7 @@
 
 *Scripts: [`tools/top5/yieldbasis/`](../../../tools/top5/yieldbasis/), data: [`data/top5/yieldbasis/`](../../../data/top5/yieldbasis/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
 
-Snapshot: 2026-09-20 (daily bucket, block ≈26,028,6xx). A few live reads are from 2026-09-21 (block ≈26,029,7xx) and are labelled as such. Research date: 2026-09-21.
+Snapshot: 2026-09-20 (daily bucket; on-chain reads at block 26,018,582, 11:59:59 UTC). A few live reads are from 2026-09-21 (block ≈26,029,7xx) and are labelled as such. Research date: 2026-09-21.
 Scope: every YB market on Ethereum: v1 (legacy), v2 (deprecated) and v3 (current), for WBTC, cbBTC and tBTC. WETH is shown only for context.
 
 ## 0. Ten things to know first
@@ -31,7 +31,7 @@ Scope: every YB market on Ethereum: v1 (legacy), v2 (deprecated) and v3 (current
    - After the Feb-2026 stress, cap raises stopped attracting deposits. The Jul-24 and Sep-1 raises were followed by outflows.
    - BTC TVL peaked at **2,412 BTC (2025-12-19)**. It is now **1,328.5 BTC** (−45% in BTC terms).
 7. **There are no liquidations, but crvUSD depends on it.**
-   - On 2026-02-05 the BTC markets owed $229M crvUSD while the LPs held only $78M crvUSD. A full unwind would have needed **$153M of net crvUSD buying**.
+   - On 2026-02-05 the BTC markets owed $229M crvUSD while the LPs held only $78M crvUSD. A full unwind would have needed **$151M of net crvUSD buying**.
    - The DAO responded by cutting allocations to 2/3 and raising the LEVAMM fee to 5%.
 8. **Curve dependency is total.** Curve controls:
    - the credit line (it can pull back the idle 670M at any time);
@@ -340,7 +340,7 @@ In plain terms:
 | Episode | BTC | What happened |
 |---|---|---|
 | **2025-10-10/11** | 121.7k → 110.8k close (−14.5% intraday) | v1 book PPS fell 2–5% in a day, but redeemable held at about 1.00–1.01 (TRD positive). Recovered within about 4 days. Net crvUSD pressure was negative (pools crvUSD-rich). The 300M allocation went live 3 days later |
-| **2026-01-29 → 02-05** | 89k → 62.7k | `price_scale` stuck at about 88.8k. TRD −19.5% / −18.5% / −16.9% on Feb-5 and −21% on Feb-24. Pools became about 83% BTC: debt $229M against $78M crvUSD in the LPs, so **+$153M net crvUSD buy pressure** if unwound. DAO responses: #28 cut allocations to 2/3 ("for safety of crvUSD"); #29 set the LEVAMM fee to 5% while `price_scale` was unchanged; #30–33 stepped it down to 3%, 2% and back once the scale moved. TRD < −1% until Apr-16. The loss surfaced as a book PPS decline in Mar–Apr and a −3.4% staked watermark gap |
+| **2026-01-29 → 02-05** | 89k → 62.7k | `price_scale` stuck at about 88.8k. TRD −19.5% / −18.5% / −16.9% on Feb-5 and −21% on Feb-24. Pools became about 83% BTC: debt $229M against $78M crvUSD in the LPs, so **+$151M net crvUSD buy pressure** if unwound. DAO responses: #28 cut allocations to 2/3 ("for safety of crvUSD"); #29 set the LEVAMM fee to 5% while `price_scale` was unchanged; #30–33 stepped it down to 3%, 2% and back once the scale moved. TRD < −1% until Apr-16. The loss surfaced as a book PPS decline in Mar–Apr and a −3.4% staked watermark gap |
 | **2026-06 (−21%)** | 73.5k (Jun-1) → 59.5k (Jun-29) | v3 TRD reached −4.7% (tBTC, Jun-6) and closed by about Jul-6. Net crvUSD pressure about +$33M. HybridVault withdrawals were reverting until the fix in DAO #47 (Jun-3) |
 | **2026-08/09 rally** | 63k → 86.6k | WBTC and tBTC pools did not re-peg: `price_scale` $69.6k against BTC $86.2k (+24%). TRD −3.5% for a month, **−6% on 09-21**. The pools hold about 69% crvUSD. Curve votes 1486, 1491 and 1494 installed `price_scale` "driver policies", but the lag persists for WBTC and tBTC. cbBTC re-pegged in early September |
 

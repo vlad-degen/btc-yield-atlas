@@ -2,7 +2,7 @@
 
 *Scripts: [`tools/top5/mhyperbtc/`](../../../tools/top5/mhyperbtc/), data: [`data/top5/mhyperbtc/`](../../../data/top5/mhyperbtc/). Mentions of `scripts/` and `raw/` below refer to the working folder; the `raw/` dumps are not published.*
 
-**Dates.** Snapshot 2026-09-20 12:00 UTC (Ethereum block 26,018,582); written 2026-09-22.
+**Dates.** Snapshot 2026-09-20 12:00 UTC (Ethereum block 26,018,582, 11:59:59 UTC); written 2026-09-22.
 
 **Prices.** BTC was $80,276 at the snapshot (Chainlink BTC/USD at that block) and $86,488 on 09-22. Midas' own USD figures ($30.67M NAV) use the 09-21 price of about $86.6k.
 
@@ -28,7 +28,7 @@
   - Of the 9.98 BTC NAV gain paid to holders ($745k), **about 43% ($319k) matches reward tokens the wallet received**, mostly WMON on Monad. In Mar–May that share was 61–67%. (Estimate.)
   - The rest came from sleeves that are only partly visible on-chain: CEX basis/funding trades, BTC lending and LP.
 - **Realised yield** is 2.61% since the NAV started moving, about **3.2% a year** from the first mint.
-  - It has fallen from about 4.5–4.9% annualised (Dec–Feb) to 0.7–2.6% (Jun–Sep). The last 90 days run at 1.65% a year.
+  - It has fallen from about 4.5–4.9% annualised (Dec–Feb) to 0.7–2.3% (Jun–Sep). The last 90 days run at 1.65% a year.
   - No month has been negative. Two weekly prints were slightly negative: −0.025% on 2026-06-02 and −0.059% on 2026-07-13.
 - **Where the risk sits:**
   - Holders have a qualified-subordinated claim on Midas Software GmbH. There is no custodian or security agent.
@@ -251,7 +251,7 @@ Detail is in `yield_monthly.csv`. NAV is net of fees.
   - On-chain debt was about $20M on about 397 BTC. LTV reached about 65% on 02-02 (daily data; intraday higher).
   - Hyperithm repaid on Ethereum, Monad and Katana on 02-02 to 02-05, cutting debt to $11.3M by 02-06.
   - NAV kept rising (+0.35% in February).
-- **June 2026 (BTC −19%, low $59.5k on 06-29):**
+- **June 2026 (BTC −19%, lowest close $58.6k on 06-30, intraday $57.8k on 07-01):**
   - About 95% of equity was on Binance with $29.7–36.3M of liabilities.
   - It was fully deleveraged by 07-06.
   - NAV printed −0.025% and then −0.059%. July was the weakest month.

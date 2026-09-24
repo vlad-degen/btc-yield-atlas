@@ -1,6 +1,8 @@
 # Аудит проекта BTC Yield Atlas: ошибки, несоответствия, исправления
 
 **Дата проверки:** 21.09.2026. Проверено: [BTC-Yield-Market-Research.md](BTC-Yield-Market-Research.md) (MR), [BTC-Yield-Deep-Dive.md](BTC-Yield-Deep-Dive.md) (DD), [BTC-Yield-Product-Catalog.md](BTC-Yield-Product-Catalog.md) (CAT), [index.html](index.html) (сайт). Методы проверки:
+
+> **Обновление 24.09.2026.** Повторный аудит карты и сайта: двойные счёты и обёртки убраны (−2 766 BTC), все строки из DefiLlama сверены с его точкой на 20.09, крупнейшие заёмщики прослежены, ссылки проверены — итоги в [data/marketmap_notes.md](data/marketmap_notes.md), раздел «Update 2026-09-24».
 - перечитывание блокчейна на снимке 20.09.2026 12:00 UTC (Ethereum, Ink, Base, Morph, HyperEVM, Stacks, Mezo);
 - Morpho, Merkl, Upshift и DefiLlama API;
 - первичные источники: документация, юридические страницы, SEC/EDGAR, пресс-релизы.
