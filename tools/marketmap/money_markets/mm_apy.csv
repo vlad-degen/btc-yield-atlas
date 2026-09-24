@@ -1,0 +1,85 @@
+project,chain,symbol,pool_meta,btc_0923,tvl_usd_0923,btc_can_be_lent,supply_apy_base_pct,supply_apy_reward_pct,supply_apy_total_pct,supply_apy_mean30d_pct,btc_utilization,btc_borrow_apy_pct,dollar_loan_apy_pct,note
+morpho-blue,Base,CBBTC,,38265.1,3266390488,no,0,0,0,0,,,5.06345,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+aave-v3,Ethereum,WBTC,,33889.6,2892889042,yes,0.00336,0,0.00336,0.00481,0.0212,0.31639,,
+aave-v3,Ethereum,CBBTC,,18181.1,1551974646,yes,0.00107,0,0.00107,0.00093,0.0075,0.28737,,
+morpho-blue,Ethereum,CBBTC,,8404.9,717457621,no,0,0,0,0,,,4.99779,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+justlend-v1,Tron,BTC,,6571.3,560938021,yes,0.00537,0,0.00537,0.00353,0.0029,2.08579,,
+sparklend,Ethereum,CBBTC,,5950.8,507974652,yes,0.00102,0,0.00102,0.00041,0.0319,0.03989,,
+compound-v3,Ethereum,WBTC,USDC-pool,4843.3,413430831,no,0,0,0,0,,,,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+venus-core-pool,BSC,BTCB,,4540.1,387550322,yes,0.1697,0,0.1697,0.1824,0.2254,1.0802,,
+morpho-blue,Ethereum,KBTC,,3589.2,306385099,no,0,0,0,0,,,3.53129,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+morpho-blue,Ethereum,WBTC,,3039.1,259425147,no,0,0,0,0,,,5.00655,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+aave-v3,Arbitrum,WBTC,,2871.4,245106289,yes,0.02092,0,0.02092,0.02965,0.0543,0.77129,,
+aave-v3,Base,CBBTC,,2803.8,239334656,yes,0.00881,0,0.00881,0.01166,0.0276,0.63812,,
+morpho-blue,Ethereum,KBTC,,2766.5,236153680,no,0,0,0,0,,,3.63261,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+sparklend,Ethereum,LBTC,,2732.8,233275913,yes,0,0,0,0,,,,
+aave-v3,Ethereum,LBTC,,2706.1,231000556,yes,0,0,0,0,0.0,6e-05,,
+venus-core-pool,BSC,SOLVBTC,,2574.5,219765934,yes,0,0,0,0,0.0007,0.0065,,
+sparklend,Ethereum,WBTC,,2040.2,174153520,yes,1e-05,0,1e-05,1e-05,,,,
+morpho-blue,Ethereum,WBTC,,1937.1,165358164,no,0,0,0,0,,,4.46362,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+aave-v3,Ethereum,TBTC,,1710.9,146049984,yes,0.0002,0,0.0002,0.00019,0.0015,0.25758,,
+compound-v3,Ethereum,WBTC,USDT-pool,1417.7,121021647,no,0,0,0,0,,,,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+aave-v3,Avalanche,BTC.B,,1147.7,97966690,yes,0.00747,0,0.00747,0.00782,0.0547,0.27327,,
+tydro,Ink,KBTC,,1081.3,92303324,yes,0.00841,0,0.00841,0.02693,0.0021,8.01865,,
+aave-v3,BSC,BTCB,,999.0,85276575,yes,0.00737,0,0.00737,0.01503,0.0131,0.7036,,
+townsquare-lending,Monad,ENZOBTC,,954.3,81462841,yes,0.00329,0,0.00329,0.00329,,,,
+aave-v3,Polygon,WBTC,,829.6,70814110,yes,0.01212,0,0.01212,0.01359,0.0357,0.67858,,
+venus-core-pool,BSC,XSOLVBTC,,792.3,67633742,yes,0,0,0,0,0.0,0,,
+kamino-lend,Solana,CBBTC,SOL/BTC Market,713.1,60872424,yes,0.00359,0,0.00359,0.00396,0.0225,0.19974,,
+zest-v2,Stacks,SBTC,,668.7,57079492,yes,0.12,0,0.12,0.02471,,,,
+crvusd,Ethereum,WBTC,,632.7,54008808,no,0,0,0,0,,,3.61696,CDP collateral: BTC earns nothing; dollar_loan_apy = stability fee / borrow rate
+morpho-blue,Ethereum,CBBTC,,573.6,48963956,no,0,0,0,0,,,4.36352,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+accountable,Monad,CBBTC,Earn ACC Points,502.4,42883780,yes,4.7,0.33883,5.03883,6.72726,,,,uncollateralized credit vault
+morpho-blue,Ethereum,CBBTC,,500.1,42688153,no,0,0,0,0,,,4.01348,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+navi-lending,Sui,ENZOBTC,,437.0,37306585,yes,0,0,0,0,0.0,0,,
+aave-v4,Ethereum,WBTC,Core,423.7,36171660,yes,0.00403,0,0.00403,0.00134,,,,
+compound-v3,Ethereum,CBBTC,USDC-pool,351.1,29967985,no,0,0,0,0,,,,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+fluid-lending,Ethereum,WBTC,,312.7,26689876,yes,0.1,0,0.1,0.12579,0.284,6.69,,
+aave-v4,Ethereum,WBTC,Prime,312.2,26651162,yes,0,0,0,0,,,,
+navi-lending,Sui,MBTC,,301.4,25727829,yes,0,0,0,0,0.0,0,,
+compound-v2,Ethereum,WBTC,,277.9,23725958,yes,0,0,0,0,,,,
+takara-lend,Sei,ENZOBTC,,271.1,23138366,yes,0,0,0,0,0.0,0,,
+morpho-blue,Ethereum,CBBTC,,265.0,22618255,no,0,0,0,0,,,1.90699,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+sky-lending,Ethereum,WBTC,WBTC-A,262.6,22415276,no,0,0,0,0,,,14.5,CDP collateral: BTC earns nothing; dollar_loan_apy = stability fee / borrow rate
+dolomite,Berachain,STBTC,,247.5,21127209,yes,0,0,0,0,0.0,0,,
+compound-v3,Ethereum,CBBTC,USDT-pool,246.2,21019267,no,0,0,0,0,,,,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+takara-lend,Sei,UBTC,,230.9,19711960,yes,0,0,0,0,0.0004,0.00316,,
+crvusd,Ethereum,CBBTC,,217.3,18550430,no,0,0,0,0,,,3.61696,CDP collateral: BTC earns nothing; dollar_loan_apy = stability fee / borrow rate
+compound-v3,Arbitrum,WBTC,USDC-pool,209.7,17899028,no,0,0,0,0,,,,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+current,Sui,SVBTC,MainMarket,195.4,16681701,yes,0,0,0,0,0.0,0,,
+compound-v3,Arbitrum,WBTC,USDT-pool,190.1,16223097,no,0,0,0,0,,,,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+fluid-lending,Ethereum,WBTC,,187.5,16007659,yes,0.1,0,0.1,0.12579,0.4421,5.77,,
+aave-v3,OP Mainnet,WBTC,,184.6,15759818,yes,0.02118,0,0.02118,0.02201,0.0548,0.77377,,
+morpho-blue,Ethereum,VBGTWBTC,,184.2,15726700,yes,0,0,0,0,,,,
+kamino-lend,Solana,XBTC,SOL/BTC Market,168.7,14397801,yes,0.00251,0,0.00251,0.00203,0.0186,0.16843,,
+aave-v4,Ethereum,CBBTC,Core,164.9,14076816,yes,0.00387,0,0.00387,0.00068,,,,
+aave-v3,Ethereum,FBTC,,164.0,13998801,yes,0.00158,0,0.00158,0.00158,0.0057,0.55093,,
+frankencoin,Ethereum,CBBTC,PositionV2,150.7,12865134,no,0,0,0,0,,,1.4,CDP collateral: BTC earns nothing; dollar_loan_apy = stability fee / borrow rate
+aave-v4,Ethereum,CBBTC,Prime,145.1,12389419,yes,0,0,0,0,,,,
+morpho-blue,Katana,VBWBTC,,145.0,12377910,no,0,0.47582,0.47582,0.36654,,,2.7721,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+crvusd,Ethereum,TBTC,,133.9,11428102,no,0,0,0,0,,,3.61696,CDP collateral: BTC earns nothing; dollar_loan_apy = stability fee / borrow rate
+hyperlend-pooled,Hyperliquid L1,UBTC,,125.4,10707111,yes,0.16358,0,0.16358,0.13055,0.1892,1.08094,,
+kamino-lend,Solana,FBTC,SOL/BTC Market,122.7,10470882,yes,0,0,0,0,0.0,0.0188,,
+morpho-blue,Ethereum,WBTC,,117.6,10038691,no,0,0,0,0,,,2.01994,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+aave-v3,Mantle,FBTC,,109.2,9323440,yes,0,0,0,0,0.0,0,,
+morpho-blue,Ethereum,WBTC,,96.3,8217563,no,0,0,0,0,,,4.36382,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+morpho-blue,Base,CBBTC,,92.8,7919452,no,0,0,0,0,,,3.25171,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+morpho-blue,Monad,HYPERCBBTCA,,92.5,7894549,yes,2.6848,0,2.6848,2.24394,,,,
+aave-v4,Avalanche,BTC.B,Core,91.3,7794186,yes,0,0,0,0.00986,,,,
+compound-v3,Base,CBBTC,USDC-pool,90.2,7697097,no,0,0,0,0,,,,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+aave-v3,Xlayer,XBTC,,89.7,7655848,yes,0.00758,0,0.00758,0.00696,0.0495,0.17018,,
+justlend-v1,Tron,WBTC,,89.5,7641155,yes,0,0,0,0,0.0002,0.00096,,
+tectonic,Cronos,WBTC,,88.3,7534099,yes,0.00074,0,0.00074,0.00076,0.0036,0.25435,,
+accountable,Citrea,WCBTC,,80.4,6860950,yes,0.00223,0,0.00223,0.56343,,,,uncollateralized credit vault
+aave-v3,Ethereum,EBTC,,80.2,6845226,yes,0,0,0,0,0.0,0,,
+tydro,Ink,SOLVBTC,,76.7,6547723,yes,0,0,0,0,0.0,0,,
+fluid-lending,Ethereum,CBBTC,,72.5,6186995,yes,0.01,0,0.01,0.02968,0.4753,5.77,,
+sky-lending,Ethereum,WBTC,WBTC-C,72.2,6163221,no,0,0,0,0,,,14.25,CDP collateral: BTC earns nothing; dollar_loan_apy = stability fee / borrow rate
+morpho-blue,Ethereum,MHYPERBTC,,72.1,6155153,no,0,0,0,0,,,9.81918,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+morpho-blue,Ethereum,CBBTC,,71.5,6101040,no,0,0,0,0,,,3.17711,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+benqi-lending,Avalanche,BTC.B,,66.6,5682178,yes,1.22359,0,1.22359,1.32837,0.7204,2.27656,,
+jupiter-lend,Solana,CBBTC,cbBTC/USDC,64.6,5513450,yes,0,0,0,0,0.5581,5.68532,,
+kava-mint,Kava,WBTC,,62.6,5342358,no,0,0,0,0,,,2.5,CDP collateral: BTC earns nothing; dollar_loan_apy = stability fee / borrow rate
+morpho-blue,Monad,AHYPERBTC,,62.5,5337126,no,0,0,0,0,,,1.12737,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+morpho-blue,Ethereum,CBBTC,,61.4,5243223,no,0,0,0,0,,,2.02016,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it
+morpho-blue,Monad,MHYPERBTC,,58.9,5024832,no,0,0,0,0,,,4.31309,collateral pool: BTC is not lent; dollar_loan_apy = rate paid on the loan taken against it

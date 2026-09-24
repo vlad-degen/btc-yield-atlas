@@ -1,0 +1,17 @@
+product,category_code,in_snapshot,reason
+Hilbert Xapo Byzantine BTC Credit Fund,C5,yes,BTC loans to institutions (credit fund).
+Accountable YieldApp (cbBTC/wcBTC),C5,yes,"cbBTC lent to verified borrowers, uncollateralized (the largest vault lends to Hyperithm)."
+Two Prime Axiom WBTC Vault (Pareto),C5,yes,WBTC lent to institutions through Two Prime.
+Solv RWA (SolvBTC),C5,yes,SolvBTC allocated to RWA credit.
+Native Credit Pool (BTC part),C5,yes,BTC lent to Native PMM market makers.
+Zest v2 (sBTC supply),C6,yes,sBTC supplied to a lending market (Zest).
+Yearn (BTC vaults),C6,yes,"WBTC yVaults lend on money markets (Morpho, Aave and others)."
+Harvest (BTC),C6,yes,"Vaults lend on Morpho, Dolomite and Arcadia (Autopilot)."
+Superform (BTC),C6,yes,SuperVaults allocate to lending vaults.
+Vesper (WBTC),C6,yes,Pools lend WBTC on money markets.
+Moonwell vaults (cbBTC),C6,yes,Morpho lending vaults.
+DeltaPrime (BTC),C6,yes,Deposit pools lend BTC to leveraged borrowers.
+Extra Finance (cbBTC),C6,yes,Lending pool for leveraged farmers.
+Radpie (BTC),C6,yes,"BTC supplied to Radiant, a money market."
+Wildcat (BTC),C5,yes,"BTC lent to market makers (Wintermute and others), uncollateralized."
+Seamless vaults (cbBTC),C6,history only,Morpho lending vaults (Seamless).

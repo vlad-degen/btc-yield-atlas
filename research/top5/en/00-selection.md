@@ -137,10 +137,10 @@ Token: `0xC8495EAFf71D3A563b906295fCF2f685b1783085`.
 ## Maple BTC Yield: wound down, 0 BTC
 
 - **Core staking is gone.** An address cluster we inferred to be Maple's Core stakers (unlabeled; for example `0x74bb2c9f…cd52`) began staking on 2025-02-06. It peaked at about 1,480–1,570 BTC (estimate), made its last stake on 2025-10-01, and all its timelocks ended on 2025-11-19. It has 0 BTC staked today.
-- **The BTC was swept and paid out.** On 2025-11-19 the unlocked outputs were swept to `bc1pm9v0…c3c0pc4`. That wallet paid 1,333.78 BTC to 67 addresses by 2026-08-10, in 85% amounts, which matches Maple's statement that it would return 85% of principal first. Its balance is now 0.
+- **The BTC was swept and paid out.** On 2025-11-19 the unlocked outputs were swept to `bc1pm9v0…c3c0pc4`. That wallet paid 1,133.69 BTC to 66 addresses in 85% amounts, which matches Maple's statement that it would return 85% of principal first, and moved the remaining 200.09 BTC on 2026-06-05 to an undisclosed owner (see `06-maple.md`). Its balance is now 0.
 - **Nothing replaced it.** The Maple site and API list no BTC pool and there is no syrupBTC. Core's docs deprecated lstBTC on 2025-12-23. Total BTC staked on Core is only 2,210 BTC.
 - **The settlement did not change this.** It was announced 2026-05-22 and says syrupBTC "will proceed", but gives no date.
-- **Last known size:** 1,500+ BTC (07.2025).
+- **Peak size:** 1,757.85 BTC on 2025-05-14 (`data/top5/maple/size_history.csv`); 1,500+ BTC in July 2025. The 1,480–1,570 BTC above is the inferred Core-staking cluster, not the product's size.
 - **Confidence.** That the product is wound down: high. That these addresses are Maple's: medium-high.
 - **Raw data:** `raw/maple/`.
 
@@ -181,6 +181,10 @@ We kept every position with at least $2M of debt. The full list is in `scan_borr
 - **Aave v4, Ethereum:** all spokes seen in `Borrow` events over the last ~12 months, 3,549 (spoke, user) pairs. 27 positions have ≥$2M debt; only 2 have BTC collateral (150 WBTC + 13 cbBTC and 10.6 cbBTC, against USDG/frxUSD), and both are EOAs.
 
 **Scan caveat: product wallets can look like EOAs.** Some products run from MPC or operator EOAs, such as mHyperBTC's `0x933a…` and Upshift Gamma's operator. The four largest EOA borrowers were checked for links to a product and none was found: `0xbCd16D36…` with $172.9M against ~4,680 cbBTC, `0x56eC…`, `0x2835…` and `0x5130…`.
+
+**Re-check, 24 September.** All 27 EOA or unlabelled borrowers with over $20M of debt in `scan_borrowers_all.csv` were traced through their funding and outflows (Blockscout token transfers, Etherscan funding labels). None is a pooled product. `0x7CD0…` (Aave, $191M) and `0xbCd1…` (Morpho, $173M) are one unidentified institutional book of about 9,900 cbBTC against $364M of USDC: funded from Coinbase hot wallets, the borrowed dollars swept nightly to its own hub and redeemed through Circle and Paxos. `0xABdb…` (Aave, $178M) and `0x56eC…` are one client on Paxos rails. `0xb99a…` (Spark, $134M) is Abraxas Capital's Heka funds; `0x2835…` (Spark, $112M) a Binance-funded whale cluster; `0xD485…` and `0xF506…` Galaxy Digital desks. The only borderline case is `0xB561…`: Nexo's operational wallet with 1,031 cbBTC against $40M of USDS on Spark, the on-chain leg of its CeFi earn program, which would rank near Bitget if CeFi programs were counted.
+
+**Venues beyond the original scan, 24 September.** Tydro on Ink: the largest position (913 kBTC against $45.1M of USDC, 85% of the pool) is a Kraken-linked book, not a product: the kBTC arrives from Kraken's Ink hot wallet and the borrowed dollars are swept back to a Kraken hot wallet; the next positions are single wallets. Aave v3 on Avalanche and Polygon, Frankencoin, Curve's crvUSD BTC markets, Takara on Sei and Zest on Stacks: single-owner positions only. Vesu on Starknet has one carry vault with outside depositors, Noon's WBTC vault (37.7 WBTC since 28 January 2026, share price 1.1235), added to the map as C1. Not completed: Venus, Aave and Lista on BNB (Lista alone carries about $116M of stablecoin debt against BTCB; the 22 active borrowers found so far are EOAs, the largest $10.6M), JustLend on Tron ($550M of BTC, no holder data), Morpho on Pharos and Citrea, Dolomite, NAVI and Suilend on Sui, Kamino's other markets and Jupiter Lend.
 
 **Not scanned:**
 - Venus on BNB, about $682M of BTC collateral including SolvBTC.

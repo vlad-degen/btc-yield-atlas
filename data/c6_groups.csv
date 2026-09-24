@@ -1,0 +1,86 @@
+product,group,btc_tokens,label
+B2 Buzz Farming,points,BTC on B² Network,
+Mezo Earn (veBTC),points,"BTC on Mezo, locked as veBTC",Mezo Earn (veBTC)
+Proxy (PRXY BTC strategies),points,WBTC,
+Katana pre-launch (WBTC),points,WBTC,
+Corn Kernels pre-deposit,points,"WBTC, uniBTC, eBTC, LBTC",
+Zircuit staking (BTC),points,"WBTC, pumpBTC",
+Hemi staking,points,,
+Pencils Protocol (SolvBTC),points,,
+Turtle Club (BTC campaigns),points,,
+Swell Earn (BTC vaults),points,,
+Hourglass (eBTC/LBTCv),points,,
+Terminal pre-deposits (BTC),points,,
+Mitosis (BTC),points,,
+StakeStone Berachain vault (BTC),points,,
+Bucket farm (BTC),points,,
+ether.fi Liquid BTC,points,,
+"Veda (other BTC vaults, excl. Kraken)",vaults,WBTC,"Veda, other BTC vaults"
+Solv Strategies,vaults,SolvBTC,
+Lagoon (BTC vaults),vaults,"cbBTC, WBTC",
+Ember (BTC vaults),vaults,cbBTC,
+Mellow Core (BTC vaults),vaults,"tBTC, cbBTC, rBTC",
+Volo vault (xBTC),vaults,xBTC on Sui,
+YO Protocol (yoBTC),vaults,cbBTC,
+Upshift (BTC vaults),vaults,"WBTC, cbBTC, UBTC",
+Avant avBTC,vaults,avBTC,
+t3tris (WBTC),vaults,WBTC,
+Yield Yak (BTC),vaults,"WBTC, BTC.b",
+Belt (BTCB),vaults,BTCB,
+IPOR Fusion (other BTC vaults),vaults,"WBTC, cbBTC",
+UltraYield vaults (cbBTC),vaults,cbBTC,
+Tranchess (BTCB),vaults,BTCB,
+Concrete (BTC vaults),vaults,WBTC,
+YieldFi (yBTC),vaults,yBTC,
+Autofarm (BTC),vaults,"beltBTC, BTCB, WBTC",
+OmniYield (WBTC),vaults,WBTC,
+Reaper (WBTC),vaults,WBTC,
+Echo strategies (aBTC),vaults,aBTC,
+Trevee / Rings earn (BTC),vaults,LBTC,
+DeSyn Liquid Strategy (BTC),vaults,,
+DeSyn Safe (BTC),vaults,,
+CIAN curated BTC vaults,vaults,,
+Lombard Vaults (LBTCv / BTCe) - direct / other holders,vaults,,
+Lombard Vaults (LBTCv / BTCe),vaults,,
+Amber Finance (BTC),vaults,,
+Aera v2 (BTC),vaults,,
+Factor leverage vault (BTC),vaults,,
+Omega (BTC),vaults,,
+Sommelier (BTC),vaults,,
+Flamincome (WBTC),vaults,,
+CoinWind (BTC),vaults,,
+Canopy (BTC),vaults,,
+Capy (BTC),vaults,,
+Goldilocks (BTC),vaults,,
+Uniswap v3 BTC-pair pools (over $1M),pools,"WBTC/kBTC, WBTC/cbBTC, WBTC/SolvBTC, tBTC/WBTC, uniBTC/WBTC, WBTC/FBTC, WBTC/stBTC","Uniswap v3, 9 pools"
+Uniswap v4 BTC-pair pools (over $1M),pools,"WBTC/cbBTC, BTC.b/cbBTC, tBTC/cbBTC, LBTC/cbBTC","Uniswap v4, 5 pools"
+Fluid DEX BTC pools (over $1M),pools,"WBTC/cbBTC, eBTC/cbBTC, WBTC/LBTC","Fluid DEX, 3 pools"
+"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",pools,"tBTC/WBTC, cbBTC/WBTC/LBTC, pumpBTC/WBTC","Curve, 4 pools"
+Convex (BTC LPs),pools,"Curve LPs: USDT/WBTC/WETH, renBTC/WBTC, hemiBTC/cbBTC/WBTC, crvUSD/tBTC/wstETH",Convex (staked Curve LP)
+Stake DAO (BTC LPs),pools,"Curve LPs: hemiBTC/cbBTC/WBTC, cbBTC/WBTC, tBTC/WBTC",Stake DAO (staked Curve LP)
+Beefy (BTC vaults),pools,"Curve, Uniswap and Aerodrome LPs; WBTC, cbBTC",
+Badger DAO (BTC vaults),pools,"Curve renBTC LPs, SushiSwap WBTC/WETH",
+"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",pools,WBTC.b,"GMX v2, BTC-only pool"
+Across WBTC pool (bridge liquidity),pools,WBTC,"Across, bridge pool"
+Bancor v3 WBTC pool,pools,WBTC,Bancor v3
+Chainflip AMM (native BTC),pools,native BTC,Chainflip AMM
+"Orca BTC pools (Solana, over $1M)",pools,"cbBTC/FBTC, cbBTC/WBTC","Orca (Solana), 2 pools"
+"Ekubo BTC pools (Starknet, over $1M)",pools,"WBTC/strkBTC, SolvBTC/strkBTC","Ekubo (Starknet), 2 pools"
+Troves (BTC),pools,Ekubo WBTC/strkBTC LPs,Troves (Ekubo LP)
+Hydration Omnipool tBTC (Polkadot),pools,tBTC,Hydration Omnipool (Polkadot)
+Aerodrome Slipstream cbBTC/LBTC (Base),pools,cbBTC/LBTC,Aerodrome Slipstream (Base)
+BeraPaw Kodiak WBTC/WETH (Berachain),pools,WBTC/WETH,BeraPaw on Kodiak (Berachain)
+Kine (BTC),pools,"WBTC, BTCB",
+Aura (BTC),pools,WBTC in Balancer pools,
+Rujira strategies (BTC),pools,native BTC on THORChain,
+Umami (BTC),pools,WBTC in a GMX GM vault,
+Zest v2 (sBTC supply),lending,sBTC,Zest v2 (sBTC lending)
+Yearn (BTC vaults),lending,"WBTC, vbWBTC",
+Harvest (BTC),lending,"WBTC, cbBTC",
+Moonwell vaults (cbBTC),lending,cbBTC,
+Radpie (BTC),lending,"WBTC, BTCB",
+Superform (BTC),lending,"WBTC, cbBTC",
+DeltaPrime (BTC),lending,"BTC.b, WBTC",
+Extra Finance (cbBTC),lending,cbBTC,
+Vesper (WBTC),lending,WBTC,
+Seamless vaults (cbBTC),lending,,

@@ -415,7 +415,7 @@ Yield added only **≈10 BTC over 21 months**; flows and price drove everything 
 
 **Timeline:**
 - 2024-11 vault deployed during the eBTC/Lombard/Babylon points boom. The eBTC "Golden Bull" campaign offered >$2M ETHFI plus 4× Lux.
-- 2025-01 → 02 ETHFI top-ups inside the vault (9.6% and 8.6% monthly APY).
+- 2025-01 → 02 ETHFI top-ups inside the vault (9.6% and 8.6% APY in those two months, annualized).
 - 2025-03 Scroll/Cash distribution.
 - 2025-04 → 06 points farming (Berachain, TAC, Corn).
 - 2025-08 → 09 "Summer Mint".

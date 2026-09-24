@@ -255,7 +255,7 @@ Labels used in this report:
 - **Morph incentives.** None identified on-chain for this product; all traced incentive USDC came from Bitget.
 - **Gauntlet curator framework.** Brand and marketing effect; no measurable TVL step.
 - **CCIP adoption.** Enabling only. The bridging bursts were controlled by the owner EOA lifting rate limits.
-- **What moved TVL.** (1) Bitget's decisions to allocate BGBTC (30–31 Jul and 14–17 Aug). (2) BTC price: +34% from $64.7k to $86.6k explains all USD growth since 21 Aug. (3) For the USDC side, the incentive APR.
+- **What moved TVL.** (1) Bitget's decisions to allocate BGBTC (30–31 Jul and 14–17 Aug). (2) BTC price: +18% from $73.3k on 21 Aug to $86.6k on 21 Sep explains all USD growth since 21 Aug (+34% since the 31 Jul launch at $64.7k). (3) For the USDC side, the incentive APR.
 
 ## J. Economics
 
