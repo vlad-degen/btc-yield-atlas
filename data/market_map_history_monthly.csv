@@ -11,9 +11,9 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-09,EigenLayer / EigenCloud (BTC part),C2,154763,2.444,1
 2024-09,Pell Network,C2,71603456,1130.683,1
 2024-09,Solv Basis Trading (SolvBTC.TRADING),C3,172057734,2716.947,1
-2024-09,BitFi bfBTC (AILayer),C3,193256190,3051.69,1
+2024-09,BitFi bfBTC (AILayer),C3,193256190,3051.69,0
 2024-09,Manta CeDeFi (BTC),C3,34497620,544.749,1
-2024-09,Hope (BTC basis collateral),C3,1295827,20.462,1
+2024-09,Hope (BTC basis collateral),C3,1295827,20.462,0
 2024-09,DeSyn Basis Trading (BTC),C3,154146890,2434.119,1
 2024-09,Hegic (WBTC pool),C4,1979626,31.26,1
 2024-09,Ribbon (WBTC theta vault),C4,1947267,30.749,1
@@ -21,15 +21,15 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-09,Native Credit Pool (BTC part),C5,209064,3.301,1
 2024-09,B2 Buzz Farming,C6,27299008,431.076,1
 2024-09,AILayer farm (AINN),C6,137822643,2176.344,0
-2024-09,Proxy (PRXY BTC strategies),C6,16816912,265.554,1
-2024-09,Convex (BTC LPs),C6,29935657,472.711,1
+2024-09,Proxy (PRXY BTC strategies),C6,16816912,265.554,0
+2024-09,Convex (BTC LPs),C6,25819362,407.711,1
 2024-09,Yearn (BTC vaults),C6,4901782,77.404,1
-2024-09,Badger DAO (BTC vaults),C6,15841151,250.146,1
+2024-09,Badger DAO (BTC vaults),C6,11978166,189.146,1
 2024-09,Yield Yak (BTC),C6,4588185,72.452,1
 2024-09,Superform (BTC),C6,556076,8.781,1
 2024-09,Harvest (BTC),C6,2007176,31.695,1
 2024-09,Autofarm (BTC),C6,1460085,23.056,1
-2024-09,Belt (BTCB),C6,2472608,39.045,1
+2024-09,Belt (BTCB),C6,1236304,19.523,1
 2024-09,Tranchess (BTCB),C6,16749034,264.482,1
 2024-09,Radpie (BTC),C6,750442,11.85,1
 2024-09,Aura (BTC),C6,982266,15.511,1
@@ -79,9 +79,9 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-10,CIAN Yield Layer (BTC vaults),C2,1122,0.016,1
 2024-10,ObeliskBTC,C2,87253408,1241.299,1
 2024-10,Solv Basis Trading (SolvBTC.TRADING),C3,313240151,4456.27,1
-2024-10,BitFi bfBTC (AILayer),C3,152054574,2163.184,1
+2024-10,BitFi bfBTC (AILayer),C3,152054574,2163.184,0
 2024-10,Manta CeDeFi (BTC),C3,38086620,541.834,1
-2024-10,Hope (BTC basis collateral),C3,1430357,20.349,1
+2024-10,Hope (BTC basis collateral),C3,1430357,20.349,0
 2024-10,DeSyn Basis Trading (BTC),C3,385996852,5491.333,1
 2024-10,Hegic (WBTC pool),C4,2189654,31.151,1
 2024-10,Ribbon (WBTC theta vault),C4,2142230,30.476,1
@@ -90,17 +90,17 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-10,Native Credit Pool (BTC part),C5,203845,2.9,1
 2024-10,B2 Buzz Farming,C6,78702668,1119.653,1
 2024-10,AILayer farm (AINN),C6,122725520,1745.938,0
-2024-10,"Veda (other BTC vaults, excl. Kraken)",C6,442760149,6298.869,1
-2024-10,Proxy (PRXY BTC strategies),C6,18514365,263.392,1
-2024-10,Convex (BTC LPs),C6,30062386,427.679,1
+2024-10,"Veda (other BTC vaults, excl. Kraken)",C6,220161035,3132.092,1
+2024-10,Proxy (PRXY BTC strategies),C6,18514365,263.392,0
+2024-10,Convex (BTC LPs),C6,25493410,362.679,1
 2024-10,Yearn (BTC vaults),C6,5346663,76.064,1
-2024-10,Badger DAO (BTC vaults),C6,16327194,232.277,1
+2024-10,Badger DAO (BTC vaults),C6,12039387,171.277,1
 2024-10,Stake DAO (BTC LPs),C6,68929,0.981,1
 2024-10,Yield Yak (BTC),C6,5210313,74.124,1
 2024-10,Superform (BTC),C6,662053,9.419,1
 2024-10,Harvest (BTC),C6,1979087,28.155,1
 2024-10,Autofarm (BTC),C6,1578659,22.459,1
-2024-10,Belt (BTCB),C6,2658052,37.814,1
+2024-10,Belt (BTCB),C6,1329026,18.907,1
 2024-10,Tranchess (BTCB),C6,14366974,204.39,1
 2024-10,Radpie (BTC),C6,790354,11.244,1
 2024-10,Aura (BTC),C6,765060,10.884,1
@@ -153,9 +153,9 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-11,CIAN Yield Layer (BTC vaults),C2,73156388,758.821,1
 2024-11,ObeliskBTC,C2,317701194,3295.382,1
 2024-11,Solv Basis Trading (SolvBTC.TRADING),C3,711711410,7382.287,1
-2024-11,BitFi bfBTC (AILayer),C3,208452636,2162.193,1
+2024-11,BitFi bfBTC (AILayer),C3,208452636,2162.193,0
 2024-11,Manta CeDeFi (BTC),C3,52104417,540.457,1
-2024-11,Hope (BTC basis collateral),C3,1962969,20.361,1
+2024-11,Hope (BTC basis collateral),C3,1962969,20.361,0
 2024-11,DeSyn Basis Trading (BTC),C3,10,0.0,1
 2024-11,Hegic (WBTC pool),C4,3000607,31.124,1
 2024-11,Ribbon (WBTC theta vault),C4,2844890,29.509,1
@@ -164,11 +164,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-11,Native Credit Pool (BTC part),C5,69714,0.723,1
 2024-11,B2 Buzz Farming,C6,178522606,1851.741,1
 2024-11,AILayer farm (AINN),C6,139832345,1450.423,0
-2024-11,"Veda (other BTC vaults, excl. Kraken)",C6,752364895,7803.968,1
-2024-11,Proxy (PRXY BTC strategies),C6,25364964,263.1,1
-2024-11,Convex (BTC LPs),C6,43384272,450.007,1
+2024-11,"Veda (other BTC vaults, excl. Kraken)",C6,580952447,6025.978,1
+2024-11,Proxy (PRXY BTC strategies),C6,25364964,263.1,0
+2024-11,Convex (BTC LPs),C6,37117752,385.007,1
 2024-11,Yearn (BTC vaults),C6,6024450,62.489,1
-2024-11,Badger DAO (BTC vaults),C6,21925403,227.423,1
+2024-11,Badger DAO (BTC vaults),C6,16044513,166.423,1
 2024-11,Stake DAO (BTC LPs),C6,42732,0.443,1
 2024-11,Yield Yak (BTC),C6,7508318,77.881,1
 2024-11,Superform (BTC),C6,636945,6.607,1
@@ -207,7 +207,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-11,"Orca BTC pools (Solana, over $1M)",C6,851997,8.837,1
 2024-11,Bancor v3 WBTC pool,C6,14312106,148.454,1
 2024-11,"GMX v2 BTC-only pool (GM BTC/USD, WBTC.b)",C6,69755603,723.546,1
-2024-11,Across WBTC pool (bridge liquidity),C6,30441066,315.753,1
+2024-11,Across WBTC pool (bridge liquidity),C6,30441066,315.752,1
 2024-12,ether.fi Liquid BTC,C1,94,0.001,1
 2024-12,Babylon (BTC staking) - stake attributed to listed LSTs/products,C2,2912265004,31121.922,0
 2024-12,"Babylon (BTC staking) - other stakers (Kraken, Binance, OKX, Figment, direct)",C2,2402637561,25675.788,1
@@ -234,9 +234,9 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-12,CIAN Yield Layer (BTC vaults),C2,146268171,1563.095,1
 2024-12,ObeliskBTC,C2,308705736,3298.984,1
 2024-12,Solv Basis Trading (SolvBTC.TRADING),C3,2906756,31.063,1
-2024-12,BitFi bfBTC (AILayer),C3,202368117,2162.607,1
+2024-12,BitFi bfBTC (AILayer),C3,202368117,2162.607,0
 2024-12,Manta CeDeFi (BTC),C3,25029013,267.473,1
-2024-12,Hope (BTC basis collateral),C3,1897015,20.272,1
+2024-12,Hope (BTC basis collateral),C3,1897015,20.272,0
 2024-12,DeSyn Basis Trading (BTC),C3,136,0.001,1
 2024-12,Hegic (WBTC pool),C4,2902402,31.017,1
 2024-12,Ribbon (WBTC theta vault),C4,2666219,28.493,1
@@ -245,18 +245,18 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-12,Native Credit Pool (BTC part),C5,1949634,20.835,1
 2024-12,B2 Buzz Farming,C6,201807915,2156.62,1
 2024-12,AILayer farm (AINN),C6,125749428,1343.821,0
-2024-12,"Veda (other BTC vaults, excl. Kraken)",C6,812875622,8686.796,1
+2024-12,"Veda (other BTC vaults, excl. Kraken)",C6,575138402,6146.217,1
 2024-12,Upshift (BTC vaults),C6,57837762,618.083,1
-2024-12,Proxy (PRXY BTC strategies),C6,24537061,262.215,1
-2024-12,Convex (BTC LPs),C6,43741529,467.444,1
+2024-12,Proxy (PRXY BTC strategies),C6,24537061,262.215,0
+2024-12,Convex (BTC LPs),C6,37659090,402.444,1
 2024-12,Yearn (BTC vaults),C6,5695173,60.861,1
-2024-12,Badger DAO (BTC vaults),C6,17499960,187.013,1
+2024-12,Badger DAO (BTC vaults),C6,11791814,126.013,1
 2024-12,Stake DAO (BTC LPs),C6,239279,2.557,1
 2024-12,Yield Yak (BTC),C6,7859636,83.992,1
 2024-12,Superform (BTC),C6,335024,3.58,1
 2024-12,Harvest (BTC),C6,5418626,57.906,1
 2024-12,Autofarm (BTC),C6,1604580,17.147,1
-2024-12,Belt (BTCB),C6,4308202,46.04,1
+2024-12,Belt (BTCB),C6,2154101,23.020,1
 2024-12,Tranchess (BTCB),C6,15223366,162.685,1
 2024-12,Radpie (BTC),C6,1012521,10.82,1
 2024-12,Aura (BTC),C6,591307,6.319,1
@@ -288,7 +288,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2024-12,Aster asBTC,C3,7637154,81.614,1
 2024-12,Thetanuts (BTC),C4,4319877,46.164,1
 2024-12,YieldNest ynBTCk,C2,18868,0.202,0
-2024-12,Uniswap v3 BTC-pair pools (over $1M),C6,75294104,804.63,1
+2024-12,Uniswap v3 BTC-pair pools (over $1M),C6,75294104,804.631,1
 2024-12,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,24404963,260.804,1
 2024-12,"Orca BTC pools (Solana, over $1M)",C6,1048097,11.2,1
 2024-12,Bancor v3 WBTC pool,C6,17299722,184.873,1
@@ -321,9 +321,9 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-01,CIAN Yield Layer (BTC vaults),C2,457805951,4469.471,1
 2025-01,ObeliskBTC,C2,322430423,3147.826,1
 2025-01,Solv Basis Trading (SolvBTC.TRADING),C3,8518430,83.164,1
-2025-01,BitFi bfBTC (AILayer),C3,221506341,2162.524,1
+2025-01,BitFi bfBTC (AILayer),C3,221506341,2162.524,0
 2025-01,Manta CeDeFi (BTC),C3,2258913,22.053,1
-2025-01,Hope (BTC basis collateral),C3,2082023,20.326,1
+2025-01,Hope (BTC basis collateral),C3,2082023,20.326,0
 2025-01,DeSyn Basis Trading (BTC),C3,662572,6.469,1
 2025-01,Hegic (WBTC pool),C4,3180597,31.052,1
 2025-01,Ribbon (WBTC theta vault),C4,2900155,28.314,1
@@ -333,19 +333,19 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-01,Native Credit Pool (BTC part),C5,2106292,20.563,1
 2025-01,B2 Buzz Farming,C6,262034499,2558.192,1
 2025-01,AILayer farm (AINN),C6,135071878,1318.681,0
-2025-01,"Veda (other BTC vaults, excl. Kraken)",C6,864569317,8440.623,1
+2025-01,"Veda (other BTC vaults, excl. Kraken)",C6,559380335,5461.122,1
 2025-01,Upshift (BTC vaults),C6,64132902,626.117,1
-2025-01,Proxy (PRXY BTC strategies),C6,26891427,262.536,1
-2025-01,Convex (BTC LPs),C6,50363797,491.692,1
+2025-01,Proxy (PRXY BTC strategies),C6,26891427,262.536,0
+2025-01,Convex (BTC LPs),C6,43705875,426.692,1
 2025-01,Yearn (BTC vaults),C6,7709038,75.262,1
-2025-01,Badger DAO (BTC vaults),C6,16443249,160.532,1
+2025-01,Badger DAO (BTC vaults),C6,10195036,99.532,1
 2025-01,Stake DAO (BTC LPs),C6,58528,0.571,1
 2025-01,Yield Yak (BTC),C6,9102895,88.87,1
 2025-01,Superform (BTC),C6,545403,5.325,1
 2025-01,Harvest (BTC),C6,2609600,25.477,1
 2025-01,Autofarm (BTC),C6,1719866,16.791,1
 2025-01,OmniYield (WBTC),C6,12786,0.125,1
-2025-01,Belt (BTCB),C6,4703716,45.921,1
+2025-01,Belt (BTCB),C6,2351858,22.960,1
 2025-01,Tranchess (BTCB),C6,15765107,153.912,1
 2025-01,Radpie (BTC),C6,1095808,10.698,1
 2025-01,Aura (BTC),C6,1018010,9.939,1
@@ -418,9 +418,9 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-02,Solv Basis Trading (SolvBTC.TRADING),C3,8861881,105.061,1
 2025-02,BitFi bfBTC (EVM chains) - held inside other listed products,C3,182505241,2163.668,0
 2025-02,BitFi bfBTC (EVM chains) - direct / other holders,C3,7892148,93.564,1
-2025-02,BitFi bfBTC (AILayer),C3,182505288,2163.668,1
+2025-02,BitFi bfBTC (AILayer),C3,182505288,2163.668,0
 2025-02,Manta CeDeFi (BTC),C3,1858662,22.035,1
-2025-02,Hope (BTC basis collateral),C3,1717661,20.364,1
+2025-02,Hope (BTC basis collateral),C3,1717661,20.364,0
 2025-02,DeSyn Basis Trading (BTC),C3,2209439,26.194,1
 2025-02,Hegic (WBTC pool),C4,2622552,31.091,1
 2025-02,Ribbon (WBTC theta vault),C4,2386618,28.294,1
@@ -431,19 +431,19 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-02,B2 Buzz Farming,C6,216392794,2565.417,1
 2025-02,AILayer farm (AINN),C6,111470436,1321.524,0
 2025-02,Concrete (BTC vaults),C6,306690623,3635.932,1
-2025-02,"Veda (other BTC vaults, excl. Kraken)",C6,894813917,10608.353,1
+2025-02,"Veda (other BTC vaults, excl. Kraken)",C6,513388137,6086.408,1
 2025-02,Upshift (BTC vaults),C6,53246481,631.257,1
-2025-02,Proxy (PRXY BTC strategies),C6,22002042,260.842,1
-2025-02,Convex (BTC LPs),C6,36327904,430.681,1
+2025-02,Proxy (PRXY BTC strategies),C6,22002042,260.842,0
+2025-02,Convex (BTC LPs),C6,30845160,365.681,1
 2025-02,Yearn (BTC vaults),C6,6354766,75.338,1
-2025-02,Badger DAO (BTC vaults),C6,12895386,152.88,1
+2025-02,Badger DAO (BTC vaults),C6,7750053,91.880,1
 2025-02,Stake DAO (BTC LPs),C6,166429,1.973,1
 2025-02,Yield Yak (BTC),C6,6982013,82.774,1
 2025-02,Superform (BTC),C6,404774,4.799,1
 2025-02,Harvest (BTC),C6,2179968,25.844,1
 2025-02,Autofarm (BTC),C6,1365197,16.185,1
 2025-02,OmniYield (WBTC),C6,10551,0.125,1
-2025-02,Belt (BTCB),C6,3881817,46.02,1
+2025-02,Belt (BTCB),C6,1940908,23.010,1
 2025-02,Tranchess (BTCB),C6,36045642,427.335,1
 2025-02,Radpie (BTC),C6,932573,11.056,1
 2025-02,Aura (BTC),C6,769681,9.125,1
@@ -518,10 +518,10 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-03,Solv Basis Trading (SolvBTC.TRADING),C3,7440625,90.135,1
 2025-03,BitFi bfBTC (EVM chains) - held inside other listed products,C3,178579434,2163.288,0
 2025-03,BitFi bfBTC (EVM chains) - direct / other holders,C3,40227234,487.307,1
-2025-03,BitFi bfBTC (AILayer),C3,178579443,2163.288,1
+2025-03,BitFi bfBTC (AILayer),C3,178579443,2163.288,0
 2025-03,Midas mBTC,C3,113371,1.373,1
 2025-03,Manta CeDeFi (BTC),C3,1817443,22.016,1
-2025-03,Hope (BTC basis collateral),C3,1677617,20.322,1
+2025-03,Hope (BTC basis collateral),C3,1677617,20.322,0
 2025-03,DeSyn Basis Trading (BTC),C3,51635352,625.504,1
 2025-03,Hegic (WBTC pool),C4,803716,9.736,1
 2025-03,Ribbon (WBTC theta vault),C4,2334690,28.282,1
@@ -532,19 +532,19 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-03,B2 Buzz Farming,C6,211098721,2557.222,1
 2025-03,AILayer farm (AINN),C6,84577097,1024.556,0
 2025-03,Concrete (BTC vaults),C6,431783552,5230.569,1
-2025-03,"Veda (other BTC vaults, excl. Kraken)",C6,895713271,10850.553,1
+2025-03,"Veda (other BTC vaults, excl. Kraken)",C6,540254822,6544.576,1
 2025-03,Upshift (BTC vaults),C6,62229954,753.846,1
-2025-03,Proxy (PRXY BTC strategies),C6,21502840,260.483,1
-2025-03,Convex (BTC LPs),C6,25032040,303.235,1
+2025-03,Proxy (PRXY BTC strategies),C6,21502840,260.483,0
+2025-03,Convex (BTC LPs),C6,19666292,238.235,1
 2025-03,Yearn (BTC vaults),C6,6290911,76.207,1
-2025-03,Badger DAO (BTC vaults),C6,11637516,140.975,1
+2025-03,Badger DAO (BTC vaults),C6,6601953,79.975,1
 2025-03,Stake DAO (BTC LPs),C6,187365,2.27,1
 2025-03,Yield Yak (BTC),C6,6502147,78.766,1
 2025-03,Superform (BTC),C6,504352,6.11,1
 2025-03,Harvest (BTC),C6,2467939,29.896,1
 2025-03,Autofarm (BTC),C6,1190254,14.419,1
 2025-03,OmniYield (WBTC),C6,42314,0.513,1
-2025-03,Belt (BTCB),C6,3796295,45.988,1
+2025-03,Belt (BTCB),C6,1898148,22.994,1
 2025-03,Tranchess (BTCB),C6,21610124,261.782,1
 2025-03,Radpie (BTC),C6,916654,11.104,1
 2025-03,Aura (BTC),C6,735309,8.907,1
@@ -621,10 +621,10 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-04,Solv Basis Trading (SolvBTC.TRADING),C3,7740012,82.19,1
 2025-04,BitFi bfBTC (EVM chains) - held inside other listed products,C3,250365664,2658.6,0
 2025-04,BitFi bfBTC (EVM chains) - direct / other holders,C3,73767367,783.326,1
-2025-04,BitFi bfBTC (AILayer),C3,203702688,2163.092,1
+2025-04,BitFi bfBTC (AILayer),C3,203702688,2163.092,0
 2025-04,Midas mBTC,C3,1396920,14.834,1
 2025-04,Manta CeDeFi (BTC),C3,2086828,22.16,1
-2025-04,Hope (BTC basis collateral),C3,1915807,20.344,1
+2025-04,Hope (BTC basis collateral),C3,1915807,20.344,0
 2025-04,DeSyn Basis Trading (BTC),C3,78158889,829.959,1
 2025-04,Hegic (WBTC pool),C4,919796,9.767,1
 2025-04,Ribbon (WBTC theta vault),C4,2661231,28.259,1
@@ -635,13 +635,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-04,B2 Buzz Farming,C6,290071363,3080.229,1
 2025-04,AILayer farm (AINN),C6,96098006,1020.452,0
 2025-04,Concrete (BTC vaults),C6,518270204,5503.443,1
-2025-04,"Veda (other BTC vaults, excl. Kraken)",C6,953656961,10126.757,1
+2025-04,"Veda (other BTC vaults, excl. Kraken)",C6,614539257,6525.711,1
 2025-04,Upshift (BTC vaults),C6,24058426,255.473,1
 2025-04,Hyperbeat Earn (hbBTC),C6,1041568,11.06,0
-2025-04,Proxy (PRXY BTC strategies),C6,24563556,260.837,1
-2025-04,Convex (BTC LPs),C6,27110720,287.885,1
+2025-04,Proxy (PRXY BTC strategies),C6,24563556,260.837,0
+2025-04,Convex (BTC LPs),C6,20989537,222.885,1
 2025-04,Yearn (BTC vaults),C6,6916857,73.449,1
-2025-04,Badger DAO (BTC vaults),C6,12633052,134.149,1
+2025-04,Badger DAO (BTC vaults),C6,6888573,73.149,1
 2025-04,Stake DAO (BTC LPs),C6,228258,2.424,1
 2025-04,Yield Yak (BTC),C6,7290919,77.421,1
 2025-04,YO Protocol (yoBTC),C6,2641994,28.055,1
@@ -649,7 +649,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-04,Harvest (BTC),C6,2698623,28.656,1
 2025-04,Autofarm (BTC),C6,1329055,14.113,1
 2025-04,OmniYield (WBTC),C6,67912,0.721,1
-2025-04,Belt (BTCB),C6,4343160,46.119,1
+2025-04,Belt (BTCB),C6,2171580,23.059,1
 2025-04,Tranchess (BTCB),C6,27928466,296.569,1
 2025-04,Radpie (BTC),C6,1032347,10.962,1
 2025-04,Aura (BTC),C6,724419,7.693,1
@@ -731,11 +731,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-05,Solv Basis Trading (SolvBTC.TRADING),C3,100452842,960.427,1
 2025-05,BitFi bfBTC (EVM chains) - held inside other listed products,C3,210125500,2009.004,0
 2025-05,BitFi bfBTC (EVM chains) - direct / other holders,C3,97527360,932.456,1
-2025-05,BitFi bfBTC (AILayer),C3,106575720,1018.967,1
+2025-05,BitFi bfBTC (AILayer),C3,106575720,1018.967,0
 2025-05,Midas mBTC,C3,2267138,21.676,1
 2025-05,Liminal Basis (BTC),C3,312121,2.984,1
 2025-05,Manta CeDeFi (BTC),C3,24212767,231.498,1
-2025-05,Hope (BTC basis collateral),C3,2128636,20.352,1
+2025-05,Hope (BTC basis collateral),C3,2128636,20.352,0
 2025-05,DeSyn Basis Trading (BTC),C3,86676610,828.713,1
 2025-05,Hegic (WBTC pool),C4,1019508,9.747,1
 2025-05,Ribbon (WBTC theta vault),C4,2905285,27.777,1
@@ -747,13 +747,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-05,AILayer farm (AINN),C6,107691209,1029.633,0
 2025-05,Solv Strategies,C6,365095127,3490.664,1
 2025-05,Concrete (BTC vaults),C6,272140729,2601.93,1
-2025-05,"Veda (other BTC vaults, excl. Kraken)",C6,782810062,7484.425,1
+2025-05,"Veda (other BTC vaults, excl. Kraken)",C6,643401536,6151.544,1
 2025-05,Upshift (BTC vaults),C6,18603683,177.869,1
 2025-05,Hyperbeat Earn (hbBTC),C6,16275137,155.606,0
-2025-05,Proxy (PRXY BTC strategies),C6,27309260,261.103,1
-2025-05,Convex (BTC LPs),C6,32051854,306.447,1
+2025-05,Proxy (PRXY BTC strategies),C6,27309260,261.103,0
+2025-05,Convex (BTC LPs),C6,25253385,241.447,1
 2025-05,Yearn (BTC vaults),C6,7623281,72.886,1
-2025-05,Badger DAO (BTC vaults),C6,15428124,147.508,1
+2025-05,Badger DAO (BTC vaults),C6,9048026,86.508,1
 2025-05,Stake DAO (BTC LPs),C6,13882,0.133,1
 2025-05,Yield Yak (BTC),C6,10554725,100.913,1
 2025-05,YO Protocol (yoBTC),C6,6269593,59.943,1
@@ -761,7 +761,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-05,Harvest (BTC),C6,4490005,42.929,1
 2025-05,Autofarm (BTC),C6,1489567,14.242,1
 2025-05,OmniYield (WBTC),C6,100171,0.958,1
-2025-05,Belt (BTCB),C6,4822236,46.105,1
+2025-05,Belt (BTCB),C6,2411118,23.052,1
 2025-05,Tranchess (BTCB),C6,38231002,365.526,1
 2025-05,Radpie (BTC),C6,1134292,10.845,1
 2025-05,Aura (BTC),C6,806214,7.708,1
@@ -848,11 +848,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-06,Solv Basis Trading (SolvBTC.TRADING),C3,111446294,1040.13,1
 2025-06,BitFi bfBTC (EVM chains) - held inside other listed products,C3,215222340,2008.674,0
 2025-06,BitFi bfBTC (EVM chains) - direct / other holders,C3,101719475,949.349,1
-2025-06,BitFi bfBTC (AILayer),C3,109430700,1021.318,1
+2025-06,BitFi bfBTC (AILayer),C3,109430700,1021.318,0
 2025-06,Midas mBTC,C3,2354092,21.971,1
 2025-06,Liminal Basis (BTC),C3,1570757,14.66,1
 2025-06,Manta CeDeFi (BTC),C3,24619257,229.772,1
-2025-06,Hope (BTC basis collateral),C3,2183872,20.382,1
+2025-06,Hope (BTC basis collateral),C3,2183872,20.382,0
 2025-06,DeSyn Basis Trading (BTC),C3,89061148,831.209,1
 2025-06,Hegic (WBTC pool),C4,1046411,9.766,1
 2025-06,Ribbon (WBTC theta vault),C4,2928429,27.331,1
@@ -863,13 +863,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-06,AILayer farm (AINN),C6,110012635,1026.75,0
 2025-06,Solv Strategies,C6,424899691,3965.596,1
 2025-06,Concrete (BTC vaults),C6,25209303,235.279,1
-2025-06,"Veda (other BTC vaults, excl. Kraken)",C6,786887631,7344.035,1
+2025-06,"Veda (other BTC vaults, excl. Kraken)",C6,682014889,6365.256,1
 2025-06,Upshift (BTC vaults),C6,18739855,174.899,1
 2025-06,Hyperbeat Earn (hbBTC),C6,14813939,138.259,0
-2025-06,Proxy (PRXY BTC strategies),C6,28044173,261.737,1
-2025-06,Convex (BTC LPs),C6,32893012,306.991,1
+2025-06,Proxy (PRXY BTC strategies),C6,28044173,261.737,0
+2025-06,Convex (BTC LPs),C6,25928489,241.991,1
 2025-06,Yearn (BTC vaults),C6,7807074,72.864,1
-2025-06,Badger DAO (BTC vaults),C6,15379290,143.535,1
+2025-06,Badger DAO (BTC vaults),C6,8843346,82.535,1
 2025-06,Stake DAO (BTC LPs),C6,12913,0.121,1
 2025-06,Yield Yak (BTC),C6,8997922,83.978,1
 2025-06,YO Protocol (yoBTC),C6,9877169,92.184,1
@@ -877,7 +877,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-06,Harvest (BTC),C6,5230881,48.82,1
 2025-06,Autofarm (BTC),C6,1502738,14.025,1
 2025-06,OmniYield (WBTC),C6,232216,2.167,1
-2025-06,Belt (BTCB),C6,4940837,46.113,1
+2025-06,Belt (BTCB),C6,2470418,23.056,1
 2025-06,Tranchess (BTCB),C6,36243864,338.265,1
 2025-06,Radpie (BTC),C6,1164381,10.867,1
 2025-06,Aura (BTC),C6,856246,7.991,1
@@ -964,11 +964,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-07,Solv Basis Trading (SolvBTC.TRADING),C3,149923627,1295.079,1
 2025-07,BitFi bfBTC (EVM chains) - held inside other listed products,C3,231998730,2004.065,0
 2025-07,BitFi bfBTC (EVM chains) - direct / other holders,C3,109233910,943.591,1
-2025-07,BitFi bfBTC (AILayer),C3,117773125,1017.355,1
+2025-07,BitFi bfBTC (AILayer),C3,117773125,1017.355,0
 2025-07,Midas mBTC,C3,3035634,26.223,1
 2025-07,Liminal Basis (BTC),C3,8184406,70.699,1
 2025-07,Manta CeDeFi (BTC),C3,26448883,228.472,1
-2025-07,Hope (BTC basis collateral),C3,2355355,20.346,1
+2025-07,Hope (BTC basis collateral),C3,2355355,20.346,0
 2025-07,DeSyn Basis Trading (BTC),C3,70425430,608.353,1
 2025-07,Rysk V12 (BTC part),C4,700052,6.047,1
 2025-07,Hegic (WBTC pool),C4,1128293,9.746,1
@@ -980,13 +980,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-07,AILayer farm (AINN),C6,117875249,1018.237,0
 2025-07,Solv Strategies,C6,403652913,3486.858,1
 2025-07,Concrete (BTC vaults),C6,2161336,18.67,1
-2025-07,"Veda (other BTC vaults, excl. Kraken)",C6,719536597,6215.543,1
+2025-07,"Veda (other BTC vaults, excl. Kraken)",C6,648645107,5603.164,1
 2025-07,Upshift (BTC vaults),C6,20502965,177.11,1
 2025-07,Hyperbeat Earn (hbBTC),C6,19463933,168.134,0
-2025-07,Proxy (PRXY BTC strategies),C6,30176029,260.668,1
-2025-07,Convex (BTC LPs),C6,41675669,360.005,1
+2025-07,Proxy (PRXY BTC strategies),C6,30176029,260.668,0
+2025-07,Convex (BTC LPs),C6,34151000,295.005,1
 2025-07,Yearn (BTC vaults),C6,28407814,245.394,1
-2025-07,Badger DAO (BTC vaults),C6,18525172,160.025,1
+2025-07,Badger DAO (BTC vaults),C6,11463554,99.025,1
 2025-07,Stake DAO (BTC LPs),C6,4654948,40.211,1
 2025-07,Yield Yak (BTC),C6,9208399,79.545,1
 2025-07,YO Protocol (yoBTC),C6,12170500,105.132,1
@@ -994,7 +994,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-07,Harvest (BTC),C6,9052124,78.195,1
 2025-07,Autofarm (BTC),C6,1678676,14.501,1
 2025-07,OmniYield (WBTC),C6,362372,3.13,1
-2025-07,Belt (BTCB),C6,5352637,46.237,1
+2025-07,Belt (BTCB),C6,2676318,23.119,1
 2025-07,Tranchess (BTCB),C6,36511284,315.394,1
 2025-07,Radpie (BTC),C6,1249233,10.791,1
 2025-07,Aura (BTC),C6,1032908,8.923,1
@@ -1085,11 +1085,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-08,Solv Basis Trading (SolvBTC.TRADING),C3,250223437,2311.611,1
 2025-08,BitFi bfBTC (EVM chains) - held inside other listed products,C3,127865579,1181.246,0
 2025-08,BitFi bfBTC (EVM chains) - direct / other holders,C3,192332888,1776.807,1
-2025-08,BitFi bfBTC (AILayer),C3,110166615,1017.74,1
+2025-08,BitFi bfBTC (AILayer),C3,110166615,1017.74,0
 2025-08,Midas mBTC,C3,2304007,21.285,1
 2025-08,Liminal Basis (BTC),C3,10800154,99.774,1
 2025-08,Manta CeDeFi (BTC),C3,24604393,227.3,1
-2025-08,Hope (BTC basis collateral),C3,2196155,20.288,1
+2025-08,Hope (BTC basis collateral),C3,2196155,20.288,0
 2025-08,DeSyn Basis Trading (BTC),C3,66010856,609.821,1
 2025-08,Rysk V12 (BTC part),C4,399833,3.694,1
 2025-08,Hegic (WBTC pool),C4,1057758,9.772,1
@@ -1101,13 +1101,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-08,AILayer farm (AINN),C6,109907940,1015.35,0
 2025-08,Solv Strategies,C6,340699581,3147.446,1
 2025-08,Concrete (BTC vaults),C6,1970051,18.2,1
-2025-08,"Veda (other BTC vaults, excl. Kraken)",C6,521211407,4815.048,1
+2025-08,"Veda (other BTC vaults, excl. Kraken)",C6,462052175,4268.524,1
 2025-08,Upshift (BTC vaults),C6,17584294,162.447,1
 2025-08,Hyperbeat Earn (hbBTC),C6,17153189,158.464,0
-2025-08,Proxy (PRXY BTC strategies),C6,28295210,261.396,1
-2025-08,Convex (BTC LPs),C6,39843424,368.081,1
+2025-08,Proxy (PRXY BTC strategies),C6,28295210,261.396,0
+2025-08,Convex (BTC LPs),C6,32807411,303.081,1
 2025-08,Yearn (BTC vaults),C6,38513339,355.793,1
-2025-08,Badger DAO (BTC vaults),C6,19026797,175.773,1
+2025-08,Badger DAO (BTC vaults),C6,12423766,114.773,1
 2025-08,Stake DAO (BTC LPs),C6,5588840,51.631,1
 2025-08,Yield Yak (BTC),C6,9551150,88.235,1
 2025-08,YO Protocol (yoBTC),C6,10721209,99.045,1
@@ -1115,7 +1115,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-08,Harvest (BTC),C6,5860638,54.142,1
 2025-08,Autofarm (BTC),C6,1665943,15.39,1
 2025-08,OmniYield (WBTC),C6,353692,3.267,1
-2025-08,Belt (BTCB),C6,4988307,46.083,1
+2025-08,Belt (BTCB),C6,2494154,23.041,1
 2025-08,Tranchess (BTCB),C6,34911561,322.52,1
 2025-08,Radpie (BTC),C6,1182510,10.924,1
 2025-08,Aura (BTC),C6,999549,9.234,1
@@ -1211,11 +1211,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-09,Solv Basis Trading (SolvBTC.TRADING),C3,323993414,2840.828,1
 2025-09,BitFi bfBTC (EVM chains) - held inside other listed products,C3,79289584,695.224,0
 2025-09,BitFi bfBTC (EVM chains) - direct / other holders,C3,317179936,2781.086,1
-2025-09,BitFi bfBTC (AILayer),C3,116225555,1019.085,1
+2025-09,BitFi bfBTC (AILayer),C3,116225555,1019.085,0
 2025-09,Midas mBTC,C3,1479692,12.974,1
 2025-09,Liminal Basis (BTC),C3,4324597,37.919,1
 2025-09,Manta CeDeFi (BTC),C3,25166494,220.664,1
-2025-09,Hope (BTC basis collateral),C3,2324666,20.383,1
+2025-09,Hope (BTC basis collateral),C3,2324666,20.383,0
 2025-09,DeSyn Basis Trading (BTC),C3,55941977,490.509,1
 2025-09,Rysk V12 (BTC part),C4,444499,3.897,1
 2025-09,Hegic (WBTC pool),C4,1116662,9.791,1
@@ -1227,13 +1227,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-09,AILayer farm (AINN),C6,116185238,1018.732,0
 2025-09,Solv Strategies,C6,309397587,2712.85,1
 2025-09,Concrete (BTC vaults),C6,22484444,197.147,1
-2025-09,"Veda (other BTC vaults, excl. Kraken)",C6,347411252,3046.16,1
+2025-09,"Veda (other BTC vaults, excl. Kraken)",C6,313225203,2746.411,1
 2025-09,Upshift (BTC vaults),C6,16186947,141.93,1
 2025-09,Hyperbeat Earn (hbBTC),C6,16879701,148.004,0
-2025-09,Proxy (PRXY BTC strategies),C6,29756510,260.91,1
-2025-09,Convex (BTC LPs),C6,37960389,332.843,1
+2025-09,Proxy (PRXY BTC strategies),C6,29756510,260.91,0
+2025-09,Convex (BTC LPs),C6,30547208,267.843,1
 2025-09,Yearn (BTC vaults),C6,46406310,406.898,1
-2025-09,Badger DAO (BTC vaults),C6,18667709,163.682,1
+2025-09,Badger DAO (BTC vaults),C6,11710742,102.682,1
 2025-09,Stake DAO (BTC LPs),C6,7432585,65.17,1
 2025-09,Yield Yak (BTC),C6,11533166,101.125,1
 2025-09,YO Protocol (yoBTC),C6,13235411,116.05,1
@@ -1241,7 +1241,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-09,Harvest (BTC),C6,7032474,61.662,1
 2025-09,Autofarm (BTC),C6,1677483,14.708,1
 2025-09,OmniYield (WBTC),C6,493981,4.331,1
-2025-09,Belt (BTCB),C6,5246512,46.002,1
+2025-09,Belt (BTCB),C6,2623256,23.001,1
 2025-09,Tranchess (BTCB),C6,29049922,254.715,1
 2025-09,Radpie (BTC),C6,1240146,10.874,1
 2025-09,Aura (BTC),C6,984272,8.63,1
@@ -1339,12 +1339,12 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-10,Solv Basis Trading (SolvBTC.TRADING),C3,316727550,2889.639,1
 2025-10,BitFi bfBTC (EVM chains) - held inside other listed products,C3,76179735,695.02,0
 2025-10,BitFi bfBTC (EVM chains) - direct / other holders,C3,302601874,2760.764,1
-2025-10,BitFi bfBTC (AILayer),C3,111429011,1016.614,1
+2025-10,BitFi bfBTC (AILayer),C3,111429011,1016.614,0
 2025-10,Midas mRe7BTC (Re7),C3,1863896,17.005,1
 2025-10,Midas mBTC,C3,528448,4.821,1
 2025-10,Liminal Basis (BTC),C3,11246159,102.603,1
 2025-10,Manta CeDeFi (BTC),C3,13156763,120.035,1
-2025-10,Hope (BTC basis collateral),C3,2230655,20.351,1
+2025-10,Hope (BTC basis collateral),C3,2230655,20.351,0
 2025-10,DeSyn Basis Trading (BTC),C3,14310509,130.561,1
 2025-10,Rysk V12 (BTC part),C4,1062192,9.691,1
 2025-10,Hegic (WBTC pool),C4,1070540,9.767,1
@@ -1356,13 +1356,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-10,AILayer farm (AINN),C6,111251362,1014.993,0
 2025-10,Solv Strategies,C6,355023557,3239.029,1
 2025-10,Concrete (BTC vaults),C6,22290774,203.368,1
-2025-10,"Veda (other BTC vaults, excl. Kraken)",C6,279394910,2549.037,1
+2025-10,"Veda (other BTC vaults, excl. Kraken)",C6,226433957,2065.852,1
 2025-10,Upshift (BTC vaults),C6,14369792,131.102,1
 2025-10,Hyperbeat Earn (hbBTC),C6,20652391,188.42,0
-2025-10,Proxy (PRXY BTC strategies),C6,28619898,261.111,1
-2025-10,Convex (BTC LPs),C6,31522558,287.594,1
+2025-10,Proxy (PRXY BTC strategies),C6,28619898,261.111,0
+2025-10,Convex (BTC LPs),C6,24398048,222.594,1
 2025-10,Yearn (BTC vaults),C6,37446495,341.64,1
-2025-10,Badger DAO (BTC vaults),C6,17772029,162.142,1
+2025-10,Badger DAO (BTC vaults),C6,11085953,101.142,1
 2025-10,Stake DAO (BTC LPs),C6,5993906,54.685,1
 2025-10,Yield Yak (BTC),C6,11233702,102.49,1
 2025-10,YO Protocol (yoBTC),C6,12086797,110.273,1
@@ -1370,7 +1370,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-10,Harvest (BTC),C6,3984372,36.351,1
 2025-10,Autofarm (BTC),C6,1607252,14.664,1
 2025-10,OmniYield (WBTC),C6,494612,4.513,1
-2025-10,Belt (BTCB),C6,5037829,45.962,1
+2025-10,Belt (BTCB),C6,2518914,22.981,1
 2025-10,Tranchess (BTCB),C6,24460722,223.165,1
 2025-10,Radpie (BTC),C6,1202734,10.973,1
 2025-10,Aura (BTC),C6,974487,8.891,1
@@ -1424,7 +1424,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-10,YieldNest ynBTCk,C2,10308,0.094,0
 2025-10,Royco v1 IAM (incl. Boyco pre-deposits),C6,4147,0.038,0
 2025-10,Uniswap v3 BTC-pair pools (over $1M),C6,87983005,802.706,1
-2025-10,Fluid DEX BTC pools (over $1M),C6,87648542,799.654,1
+2025-10,Fluid DEX BTC pools (over $1M),C6,87648542,799.655,1
 2025-10,"Curve BTC pools (over $1M, LP not staked via Convex or Stake DAO)",C6,17489199,159.561,1
 2025-10,Aerodrome Slipstream cbBTC/LBTC (Base),C6,3219335,29.371,1
 2025-10,"Orca BTC pools (Solana, over $1M)",C6,1290583,11.775,1
@@ -1467,11 +1467,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-11,Vishwa,C2,26743795,295.969,1
 2025-11,Solv Basis Trading (SolvBTC.TRADING),C3,231953940,2566.998,1
 2025-11,BitFi bfBTC (EVM chains),C3,306723483,3394.461,1
-2025-11,BitFi bfBTC (AILayer),C3,90597498,1002.628,1
+2025-11,BitFi bfBTC (AILayer),C3,90597498,1002.628,0
 2025-11,Midas mHyperBTC (Hyperithm),C1,2259994,25.011,1
 2025-11,Liminal Basis (BTC),C3,6978617,77.231,1
 2025-11,Manta CeDeFi (BTC),C3,10210052,112.993,1
-2025-11,Hope (BTC basis collateral),C3,1811278,20.045,1
+2025-11,Hope (BTC basis collateral),C3,1811278,20.045,0
 2025-11,DeSyn Basis Trading (BTC),C3,11630861,128.717,1
 2025-11,Rysk V12 (BTC part),C4,2162236,23.929,1
 2025-11,Hegic (WBTC pool),C4,869424,9.622,1
@@ -1483,13 +1483,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-11,AILayer farm (AINN),C6,90565665,1002.276,0
 2025-11,Solv Strategies,C6,250801623,2775.582,1
 2025-11,Concrete (BTC vaults),C6,18104463,200.359,1
-2025-11,"Veda (other BTC vaults, excl. Kraken)",C6,217752799,2409.836,1
+2025-11,"Veda (other BTC vaults, excl. Kraken)",C6,155745503,1723.611,1
 2025-11,Upshift (BTC vaults),C6,32051299,354.707,1
 2025-11,Hyperbeat Earn (hbBTC),C6,9223438,102.074,0
-2025-11,Proxy (PRXY BTC strategies),C6,23611506,261.305,1
-2025-11,Convex (BTC LPs),C6,26867977,297.344,1
+2025-11,Proxy (PRXY BTC strategies),C6,23611506,261.305,0
+2025-11,Convex (BTC LPs),C6,20994583,232.344,1
 2025-11,Yearn (BTC vaults),C6,24506656,271.211,1
-2025-11,Badger DAO (BTC vaults),C6,14000827,154.945,1
+2025-11,Badger DAO (BTC vaults),C6,8488868,93.945,1
 2025-11,Stake DAO (BTC LPs),C6,7772297,86.015,1
 2025-11,Yield Yak (BTC),C6,5807484,64.271,1
 2025-11,YO Protocol (yoBTC),C6,11196942,123.915,1
@@ -1497,7 +1497,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-11,Harvest (BTC),C6,1198993,13.269,1
 2025-11,Autofarm (BTC),C6,1314598,14.548,1
 2025-11,OmniYield (WBTC),C6,532924,5.898,1
-2025-11,Belt (BTCB),C6,4027896,44.576,1
+2025-11,Belt (BTCB),C6,2013948,22.288,1
 2025-11,Tranchess (BTCB),C6,19619950,217.131,1
 2025-11,Radpie (BTC),C6,1017450,11.26,1
 2025-11,Aura (BTC),C6,536306,5.935,1
@@ -1592,11 +1592,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-12,Vishwa,C2,26315817,300.244,1
 2025-12,Solv Basis Trading (SolvBTC.TRADING),C3,230214076,2626.569,1
 2025-12,BitFi bfBTC (EVM chains),C3,306811032,3500.482,1
-2025-12,BitFi bfBTC (AILayer),C3,89226444,1018.006,1
+2025-12,BitFi bfBTC (AILayer),C3,89226444,1018.006,0
 2025-12,Midas mHyperBTC (Hyperithm),C1,17821425,203.329,1
 2025-12,Liminal Basis (BTC),C3,5317789,60.672,1
 2025-12,Manta CeDeFi (BTC),C3,10046006,114.617,1
-2025-12,Hope (BTC basis collateral),C3,1783960,20.354,1
+2025-12,Hope (BTC basis collateral),C3,1783960,20.354,0
 2025-12,DeSyn Basis Trading (BTC),C3,11395290,130.012,1
 2025-12,Rysk V12 (BTC part),C4,3911350,44.626,1
 2025-12,Hegic (WBTC pool),C4,854691,9.751,1
@@ -1608,14 +1608,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-12,AILayer farm (AINN),C6,89218610,1017.917,0
 2025-12,Solv Strategies,C6,189636559,2163.61,1
 2025-12,Concrete (BTC vaults),C6,19491836,222.387,1
-2025-12,"Veda (other BTC vaults, excl. Kraken)",C6,183126996,2089.341,1
+2025-12,"Veda (other BTC vaults, excl. Kraken)",C6,158532733,1808.739,1
 2025-12,Upshift (BTC vaults),C6,17557691,200.32,1
 2025-12,Hyperbeat Earn (hbBTC),C6,6806824,77.661,0
-2025-12,Proxy (PRXY BTC strategies),C6,22805959,260.199,1
-2025-12,Convex (BTC LPs),C6,26342781,300.551,1
+2025-12,Proxy (PRXY BTC strategies),C6,22805959,260.199,0
+2025-12,Convex (BTC LPs),C6,20645642,235.551,1
 2025-12,Beefy (BTC vaults),C6,15050524,171.715,1
 2025-12,Yearn (BTC vaults),C6,21434822,244.555,1
-2025-12,Badger DAO (BTC vaults),C6,13485213,153.856,1
+2025-12,Badger DAO (BTC vaults),C6,8138668,92.856,1
 2025-12,Stake DAO (BTC LPs),C6,11807065,134.71,1
 2025-12,Yield Yak (BTC),C6,5724300,65.31,1
 2025-12,YO Protocol (yoBTC),C6,10525465,120.088,1
@@ -1623,7 +1623,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2025-12,Harvest (BTC),C6,1492422,17.027,1
 2025-12,Autofarm (BTC),C6,1273616,14.531,1
 2025-12,OmniYield (WBTC),C6,527536,6.019,1
-2025-12,Belt (BTCB),C6,4031241,45.993,1
+2025-12,Belt (BTCB),C6,2015621,22.997,1
 2025-12,Tranchess (BTCB),C6,4865743,55.514,1
 2025-12,Radpie (BTC),C6,995453,11.357,1
 2025-12,Aura (BTC),C6,549804,6.273,1
@@ -1721,11 +1721,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-01,Vishwa,C2,23317422,296.128,1
 2026-01,Solv Basis Trading (SolvBTC.TRADING),C3,163120122,2071.601,1
 2026-01,BitFi bfBTC (EVM chains),C3,276086961,3506.263,1
-2026-01,BitFi bfBTC (AILayer),C3,80450276,1021.706,1
+2026-01,BitFi bfBTC (AILayer),C3,80450276,1021.706,0
 2026-01,Midas mHyperBTC (Hyperithm),C1,40560402,515.111,1
 2026-01,Liminal Basis (BTC),C3,4010539,50.933,1
 2026-01,Manta CeDeFi (BTC),C3,9080257,115.318,1
-2026-01,Hope (BTC basis collateral),C3,1600484,20.326,1
+2026-01,Hope (BTC basis collateral),C3,1600484,20.326,0
 2026-01,DeSyn Basis Trading (BTC),C3,10981082,139.458,1
 2026-01,Rysk V12 (BTC part),C4,2208314,28.045,1
 2026-01,Hegic (WBTC pool),C4,771270,9.795,1
@@ -1737,14 +1737,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-01,AILayer farm (AINN),C6,81930487,1040.505,0
 2026-01,Solv Strategies,C6,98736935,1253.944,1
 2026-01,Concrete (BTC vaults),C6,41241029,523.755,1
-2026-01,"Veda (other BTC vaults, excl. Kraken)",C6,165685548,2104.182,1
+2026-01,"Veda (other BTC vaults, excl. Kraken)",C6,126333280,1604.414,1
 2026-01,Upshift (BTC vaults),C6,12285178,156.02,1
 2026-01,Hyperbeat Earn (hbBTC),C6,5808044,73.761,0
-2026-01,Proxy (PRXY BTC strategies),C6,20495714,260.292,1
-2026-01,Convex (BTC LPs),C6,19061053,242.073,1
+2026-01,Proxy (PRXY BTC strategies),C6,20495714,260.292,0
+2026-01,Convex (BTC LPs),C6,13942893,177.073,1
 2026-01,Beefy (BTC vaults),C6,12523760,159.05,1
 2026-01,Yearn (BTC vaults),C6,18459123,234.428,1
-2026-01,Badger DAO (BTC vaults),C6,5774604,73.337,1
+2026-01,Badger DAO (BTC vaults),C6,971424,12.337,1
 2026-01,Stake DAO (BTC LPs),C6,10378149,131.801,1
 2026-01,Yield Yak (BTC),C6,4771231,60.594,1
 2026-01,YO Protocol (yoBTC),C6,8257873,104.874,1
@@ -1752,7 +1752,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-01,Harvest (BTC),C6,1353931,17.195,1
 2026-01,Autofarm (BTC),C6,1146898,14.565,1
 2026-01,OmniYield (WBTC),C6,498678,6.333,1
-2026-01,Belt (BTCB),C6,3631190,46.116,1
+2026-01,Belt (BTCB),C6,1815595,23.058,1
 2026-01,Tranchess (BTCB),C6,4202640,53.373,1
 2026-01,Radpie (BTC),C6,911668,11.578,1
 2026-01,Aura (BTC),C6,471760,5.991,1
@@ -1850,11 +1850,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-02,Vishwa,C2,50245545,750.233,1
 2026-02,Solv Basis Trading (SolvBTC.TRADING),C3,179769411,2684.197,1
 2026-02,BitFi bfBTC (EVM chains),C3,233546972,3487.167,1
-2026-02,BitFi bfBTC (AILayer),C3,67983144,1015.079,1
+2026-02,BitFi bfBTC (AILayer),C3,67983144,1015.079,0
 2026-02,Midas mHyperBTC (Hyperithm),C1,36657479,547.345,1
 2026-02,Liminal Basis (BTC),C3,2818909,42.09,1
 2026-02,Manta CeDeFi (BTC),C3,7560374,112.886,1
-2026-02,Hope (BTC basis collateral),C3,1357081,20.263,1
+2026-02,Hope (BTC basis collateral),C3,1357081,20.263,0
 2026-02,DeSyn Basis Trading (BTC),C3,9341526,139.481,1
 2026-02,Rysk V12 (BTC part),C4,2766469,41.307,1
 2026-02,Hegic (WBTC pool),C4,647977,9.675,1
@@ -1868,14 +1868,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-02,Zest v2 (sBTC supply),C6,35827411,534.951,1
 2026-02,Solv Strategies,C6,54172399,808.866,1
 2026-02,Concrete (BTC vaults),C6,34576183,516.268,1
-2026-02,"Veda (other BTC vaults, excl. Kraken)",C6,126976407,1895.927,1
+2026-02,"Veda (other BTC vaults, excl. Kraken)",C6,104667481,1562.825,1
 2026-02,Upshift (BTC vaults),C6,12695776,189.565,1
 2026-02,Hyperbeat Earn (hbBTC),C6,4743482,70.827,0
-2026-02,Proxy (PRXY BTC strategies),C6,17383242,259.555,1
-2026-02,Convex (BTC LPs),C6,15626923,233.331,1
+2026-02,Proxy (PRXY BTC strategies),C6,17383242,259.555,0
+2026-02,Convex (BTC LPs),C6,11273665,168.331,1
 2026-02,Beefy (BTC vaults),C6,13813404,206.253,1
 2026-02,Yearn (BTC vaults),C6,13426797,200.48,1
-2026-02,Badger DAO (BTC vaults),C6,4775286,71.301,1
+2026-02,Badger DAO (BTC vaults),C6,689895,10.301,1
 2026-02,Stake DAO (BTC LPs),C6,15124999,225.836,1
 2026-02,Yield Yak (BTC),C6,4120537,61.525,1
 2026-02,YO Protocol (yoBTC),C6,7406770,110.593,1
@@ -1883,7 +1883,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-02,Harvest (BTC),C6,1051290,15.697,1
 2026-02,Autofarm (BTC),C6,971024,14.499,1
 2026-02,OmniYield (WBTC),C6,428031,6.391,1
-2026-02,Belt (BTCB),C6,3083799,46.045,1
+2026-02,Belt (BTCB),C6,1541900,23.023,1
 2026-02,Tranchess (BTCB),C6,3421829,51.092,1
 2026-02,Radpie (BTC),C6,796902,11.899,1
 2026-02,Aura (BTC),C6,392734,5.864,1
@@ -1980,11 +1980,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-03,Vishwa,C2,63274329,926.628,1
 2026-03,Solv Basis Trading (SolvBTC.TRADING),C3,153710753,2251.035,1
 2026-03,BitFi bfBTC (EVM chains),C3,237905730,3484.038,1
-2026-03,BitFi bfBTC (AILayer),C3,69489027,1017.64,1
+2026-03,BitFi bfBTC (AILayer),C3,69489027,1017.64,0
 2026-03,Midas mHyperBTC (Hyperithm),C1,39294850,575.458,1
 2026-03,Liminal Basis (BTC),C3,2322409,34.011,1
 2026-03,Manta CeDeFi (BTC),C3,7702995,112.807,1
-2026-03,Hope (BTC basis collateral),C3,1385820,20.295,1
+2026-03,Hope (BTC basis collateral),C3,1385820,20.295,0
 2026-03,DeSyn Basis Trading (BTC),C3,9532434,139.599,1
 2026-03,Rysk V12 (BTC part),C4,4728491,69.247,1
 2026-03,Hegic (WBTC pool),C4,664389,9.73,1
@@ -1999,14 +1999,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-03,Zest v2 (sBTC supply),C6,45711578,669.429,1
 2026-03,Solv Strategies,C6,58406005,855.334,1
 2026-03,Concrete (BTC vaults),C6,33914246,496.661,1
-2026-03,"Veda (other BTC vaults, excl. Kraken)",C6,132058288,1933.943,1
+2026-03,"Veda (other BTC vaults, excl. Kraken)",C6,91142297,1334.744,1
 2026-03,Upshift (BTC vaults),C6,8969912,131.361,1
 2026-03,Hyperbeat Earn (hbBTC),C6,4397738,64.403,0
-2026-03,Proxy (PRXY BTC strategies),C6,17706157,259.3,1
-2026-03,Convex (BTC LPs),C6,21218119,310.731,1
+2026-03,Proxy (PRXY BTC strategies),C6,17706157,259.3,0
+2026-03,Convex (BTC LPs),C6,16779625,245.731,1
 2026-03,Beefy (BTC vaults),C6,13825081,202.463,1
 2026-03,Yearn (BTC vaults),C6,10506379,153.862,1
-2026-03,Badger DAO (BTC vaults),C6,5001180,73.24,1
+2026-03,Badger DAO (BTC vaults),C6,835806,12.240,1
 2026-03,Stake DAO (BTC LPs),C6,13872792,203.162,1
 2026-03,Yield Yak (BTC),C6,4361426,63.871,1
 2026-03,YO Protocol (yoBTC),C6,8343923,122.194,1
@@ -2014,7 +2014,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-03,Harvest (BTC),C6,765886,11.216,1
 2026-03,Autofarm (BTC),C6,986475,14.447,1
 2026-03,OmniYield (WBTC),C6,436754,6.396,1
-2026-03,Belt (BTCB),C6,3127554,45.802,1
+2026-03,Belt (BTCB),C6,1563777,22.901,1
 2026-03,Tranchess (BTCB),C6,3478011,50.934,1
 2026-03,Radpie (BTC),C6,813426,11.912,1
 2026-03,Aura (BTC),C6,458493,6.714,1
@@ -2113,11 +2113,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-04,Vishwa,C2,70963345,929.49,1
 2026-04,Solv Basis Trading (SolvBTC.TRADING),C3,190174866,2490.942,1
 2026-04,BitFi bfBTC (EVM chains),C3,267538353,3504.262,1
-2026-04,BitFi bfBTC (AILayer),C3,77888547,1020.197,1
+2026-04,BitFi bfBTC (AILayer),C3,77888547,1020.197,0
 2026-04,Midas mHyperBTC (Hyperithm),C1,29905868,391.712,1
 2026-04,Liminal Basis (BTC),C3,2013444,26.372,1
 2026-04,Manta CeDeFi (BTC),C3,616986,8.081,1
-2026-04,Hope (BTC basis collateral),C3,1552116,20.33,1
+2026-04,Hope (BTC basis collateral),C3,1552116,20.33,0
 2026-04,DeSyn Basis Trading (BTC),C3,10702461,140.183,1
 2026-04,Rysk V12 (BTC part),C4,4342295,56.876,1
 2026-04,Hegic (WBTC pool),C4,744695,9.754,1
@@ -2132,14 +2132,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-04,Zest v2 (sBTC supply),C6,61298294,802.895,1
 2026-04,Solv Strategies,C6,65155049,853.412,1
 2026-04,Concrete (BTC vaults),C6,38027202,498.087,1
-2026-04,"Veda (other BTC vaults, excl. Kraken)",C6,162459804,2127.925,1
+2026-04,"Veda (other BTC vaults, excl. Kraken)",C6,100373693,1314.711,1
 2026-04,Upshift (BTC vaults),C6,9132359,119.617,1
 2026-04,Hyperbeat Earn (hbBTC),C6,4331258,56.732,0
-2026-04,Proxy (PRXY BTC strategies),C6,19856438,260.083,1
-2026-04,Convex (BTC LPs),C6,21171530,277.308,1
+2026-04,Proxy (PRXY BTC strategies),C6,19856438,260.083,0
+2026-04,Convex (BTC LPs),C6,16208999,212.308,1
 2026-04,Beefy (BTC vaults),C6,14323115,187.607,1
 2026-04,Yearn (BTC vaults),C6,10072839,131.936,1
-2026-04,Badger DAO (BTC vaults),C6,6117646,80.13,1
+2026-04,Badger DAO (BTC vaults),C6,1460509,19.130,1
 2026-04,Stake DAO (BTC LPs),C6,10427073,136.576,1
 2026-04,Yield Yak (BTC),C6,4764538,62.407,1
 2026-04,YO Protocol (yoBTC),C6,9222455,120.797,1
@@ -2147,7 +2147,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-04,Harvest (BTC),C6,911782,11.943,1
 2026-04,Autofarm (BTC),C6,1088184,14.253,1
 2026-04,OmniYield (WBTC),C6,459918,6.024,1
-2026-04,Belt (BTCB),C6,3519470,46.099,1
+2026-04,Belt (BTCB),C6,1759735,23.049,1
 2026-04,Tranchess (BTCB),C6,3724392,48.783,1
 2026-04,Radpie (BTC),C6,893273,11.7,1
 2026-04,Aura (BTC),C6,509196,6.67,1
@@ -2246,11 +2246,11 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-05,Vishwa,C2,68371815,928.027,1
 2026-05,Solv Basis Trading (SolvBTC.TRADING),C3,182081195,2471.431,1
 2026-05,BitFi bfBTC (EVM chains),C3,257934801,3501.01,1
-2026-05,BitFi bfBTC (AILayer),C3,75021731,1018.288,1
+2026-05,BitFi bfBTC (AILayer),C3,75021731,1018.288,0
 2026-05,Midas mHyperBTC (Hyperithm),C1,27407683,372.011,1
 2026-05,Liminal Basis (BTC),C3,220103,2.988,1
 2026-05,Manta CeDeFi (BTC),C3,594454,8.069,1
-2026-05,Hope (BTC basis collateral),C3,1500922,20.372,1
+2026-05,Hope (BTC basis collateral),C3,1500922,20.372,0
 2026-05,DeSyn Basis Trading (BTC),C3,10313791,139.992,1
 2026-05,Rysk V12 (BTC part),C4,4248696,57.669,1
 2026-05,Hegic (WBTC pool),C4,718702,9.755,1
@@ -2266,21 +2266,21 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-05,Zest v2 (sBTC supply),C6,61313686,832.225,1
 2026-05,Solv Strategies,C6,63778080,865.675,1
 2026-05,Concrete (BTC vaults),C6,36666952,497.689,1
-2026-05,"Veda (other BTC vaults, excl. Kraken)",C6,153946457,2089.552,1
+2026-05,"Veda (other BTC vaults, excl. Kraken)",C6,89471572,1214.419,1
 2026-05,Upshift (BTC vaults),C6,7269484,98.67,1
 2026-05,Hyperbeat Earn (hbBTC),C6,1275598,17.314,0
-2026-05,Proxy (PRXY BTC strategies),C6,19163277,260.108,1
-2026-05,Convex (BTC LPs),C6,16791913,227.921,1
+2026-05,Proxy (PRXY BTC strategies),C6,19163277,260.108,0
+2026-05,Convex (BTC LPs),C6,12003086,162.921,1
 2026-05,Beefy (BTC vaults),C6,13211926,179.329,1
 2026-05,Yearn (BTC vaults),C6,9555224,129.695,1
-2026-05,Badger DAO (BTC vaults),C6,5805738,78.803,1
+2026-05,Badger DAO (BTC vaults),C6,1311620,17.803,1
 2026-05,Stake DAO (BTC LPs),C6,4705346,63.867,1
 2026-05,Yield Yak (BTC),C6,4609856,62.571,1
 2026-05,YO Protocol (yoBTC),C6,7775129,105.534,1
 2026-05,Superform (BTC),C6,3129172,42.473,1
 2026-05,Harvest (BTC),C6,1038852,14.101,1
 2026-05,Autofarm (BTC),C6,1058867,14.372,1
-2026-05,Belt (BTCB),C6,3402782,46.187,1
+2026-05,Belt (BTCB),C6,1701391,23.093,1
 2026-05,Tranchess (BTCB),C6,3558600,48.302,1
 2026-05,Radpie (BTC),C6,869384,11.8,1
 2026-05,Aura (BTC),C6,434383,5.896,1
@@ -2382,13 +2382,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-06,Vishwa,C2,53313159,909.397,1
 2026-06,Solv Basis Trading (SolvBTC.TRADING),C3,144806076,2470.052,1
 2026-06,BitFi bfBTC (EVM chains),C3,204586217,3489.761,1
-2026-06,BitFi bfBTC (AILayer),C3,59574548,1016.202,1
+2026-06,BitFi bfBTC (AILayer),C3,59574548,1016.202,0
 2026-06,Midas mHyperBTC (Hyperithm),C1,21532915,367.301,1
 2026-06,Midas mRe7BTC (Re7),C3,733592,12.513,1
 2026-06,Midas mBTC,C3,19813,0.338,1
 2026-06,Liminal Basis (BTC),C3,147901,2.523,1
 2026-06,Manta CeDeFi (BTC),C3,472331,8.057,1
-2026-06,Hope (BTC basis collateral),C3,1180490,20.136,1
+2026-06,Hope (BTC basis collateral),C3,1180490,20.136,0
 2026-06,DeSyn Basis Trading (BTC),C3,1287469,21.961,1
 2026-06,Rysk V12 (BTC part),C4,2897111,49.418,1
 2026-06,Hegic (WBTC pool),C4,568749,9.702,1
@@ -2404,14 +2404,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-06,Zest v2 (sBTC supply),C6,45463966,775.509,1
 2026-06,Solv Strategies,C6,50605899,863.218,1
 2026-06,Concrete (BTC vaults),C6,28859876,492.282,1
-2026-06,"Veda (other BTC vaults, excl. Kraken)",C6,84541912,1442.087,1
+2026-06,"Veda (other BTC vaults, excl. Kraken)",C6,37474430,639.226,1
 2026-06,Upshift (BTC vaults),C6,6037817,102.991,1
 2026-06,Hyperbeat Earn (hbBTC),C6,811490,13.842,0
-2026-06,Proxy (PRXY BTC strategies),C6,15247693,260.09,1
-2026-06,Convex (BTC LPs),C6,10804354,184.297,1
+2026-06,Proxy (PRXY BTC strategies),C6,15247693,260.09,0
+2026-06,Convex (BTC LPs),C6,6993749,119.297,1
 2026-06,Beefy (BTC vaults),C6,10383302,177.115,1
 2026-06,Yearn (BTC vaults),C6,7557138,128.907,1
-2026-06,Badger DAO (BTC vaults),C6,4565947,77.884,1
+2026-06,Badger DAO (BTC vaults),C6,989824,16.884,1
 2026-06,Stake DAO (BTC LPs),C6,2075805,35.408,1
 2026-06,Yield Yak (BTC),C6,3689519,62.935,1
 2026-06,YO Protocol (yoBTC),C6,7788264,132.85,1
@@ -2419,7 +2419,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-06,Harvest (BTC),C6,812769,13.864,1
 2026-06,Autofarm (BTC),C6,842692,14.374,1
 2026-06,OmniYield (WBTC),C6,546025,9.314,1
-2026-06,Belt (BTCB),C6,2697308,46.01,1
+2026-06,Belt (BTCB),C6,1348654,23.005,1
 2026-06,Tranchess (BTCB),C6,2829467,48.264,1
 2026-06,Radpie (BTC),C6,719439,12.272,1
 2026-06,Aura (BTC),C6,338558,5.775,1
@@ -2521,13 +2521,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-07,Vishwa,C2,54305175,863.524,1
 2026-07,Solv Basis Trading (SolvBTC.TRADING),C3,155452447,2471.898,1
 2026-07,BitFi bfBTC (EVM chains),C3,188078310,2990.692,1
-2026-07,BitFi bfBTC (AILayer),C3,64033219,1018.212,1
+2026-07,BitFi bfBTC (AILayer),C3,64033219,1018.212,0
 2026-07,Midas mHyperBTC (Hyperithm),C1,22711392,361.141,1
 2026-07,Midas mRe7BTC (Re7),C3,803666,12.779,1
 2026-07,Midas mBTC,C3,20907,0.332,1
 2026-07,Liminal Basis (BTC),C3,166733,2.651,1
 2026-07,Manta CeDeFi (BTC),C3,503185,8.001,1
-2026-07,Hope (BTC basis collateral),C3,1279038,20.338,1
+2026-07,Hope (BTC basis collateral),C3,1279038,20.338,0
 2026-07,DeSyn Basis Trading (BTC),C3,1398811,22.243,1
 2026-07,Rysk V12 (BTC part),C4,3527574,56.093,1
 2026-07,Hegic (WBTC pool),C4,614842,9.777,1
@@ -2543,14 +2543,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-07,Zest v2 (sBTC supply),C6,48624532,773.194,1
 2026-07,Solv Strategies,C6,54432048,865.541,1
 2026-07,Concrete (BTC vaults),C6,30352964,482.652,1
-2026-07,"Veda (other BTC vaults, excl. Kraken)",C6,89670574,1425.88,1
+2026-07,"Veda (other BTC vaults, excl. Kraken)",C6,52911978,841.370,1
 2026-07,Upshift (BTC vaults),C6,6829952,108.605,1
 2026-07,Hyperbeat Earn (hbBTC),C6,817992,13.007,0
-2026-07,Proxy (PRXY BTC strategies),C6,16440822,261.431,1
-2026-07,Convex (BTC LPs),C6,12296825,195.536,1
+2026-07,Proxy (PRXY BTC strategies),C6,16440822,261.431,0
+2026-07,Convex (BTC LPs),C6,8209119,130.536,1
 2026-07,Beefy (BTC vaults),C6,10823627,172.11,1
 2026-07,Yearn (BTC vaults),C6,7911774,125.808,1
-2026-07,Badger DAO (BTC vaults),C6,7218334,114.781,1
+2026-07,Badger DAO (BTC vaults),C6,3382173,53.781,1
 2026-07,Stake DAO (BTC LPs),C6,2578856,41.007,1
 2026-07,Yield Yak (BTC),C6,3995607,63.535,1
 2026-07,YO Protocol (yoBTC),C6,7536093,119.834,1
@@ -2559,7 +2559,7 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-07,Autofarm (BTC),C6,905316,14.396,1
 2026-07,t3tris (WBTC),C6,5256768,83.59,1
 2026-07,OmniYield (WBTC),C6,605607,9.63,1
-2026-07,Belt (BTCB),C6,2897857,46.08,1
+2026-07,Belt (BTCB),C6,1448928,23.040,1
 2026-07,Tranchess (BTCB),C6,2974684,47.301,1
 2026-07,Radpie (BTC),C6,769739,12.24,1
 2026-07,Aura (BTC),C6,379948,6.042,1
@@ -2660,14 +2660,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-08,Vishwa,C2,67888779,863.931,1
 2026-08,Solv Basis Trading (SolvBTC.TRADING),C3,193930280,2467.894,1
 2026-08,BitFi bfBTC (EVM chains),C3,235145374,2992.384,1
-2026-08,BitFi bfBTC (AILayer),C3,79975790,1017.746,1
+2026-08,BitFi bfBTC (AILayer),C3,79975790,1017.746,0
 2026-08,Syntetika hBTC (Hilbert BTC Basis+),C3,12821620,163.164,1
 2026-08,Midas mHyperBTC (Hyperithm),C1,27967395,355.904,1
 2026-08,Midas mRe7BTC (Re7),C3,760706,9.68,1
 2026-08,Midas mBTC,C3,25807,0.328,1
 2026-08,Liminal Basis (BTC),C3,134004,1.705,1
 2026-08,Manta CeDeFi (BTC),C3,629048,8.005,1
-2026-08,Hope (BTC basis collateral),C3,1598969,20.348,1
+2026-08,Hope (BTC basis collateral),C3,1598969,20.348,0
 2026-08,Rysk V12 (BTC part),C4,5486877,69.824,1
 2026-08,Hegic (WBTC pool),C4,766973,9.76,1
 2026-08,Ribbon (WBTC theta vault),C4,1779163,22.641,1
@@ -2682,14 +2682,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-08,Zest v2 (sBTC supply),C6,57617156,733.217,1
 2026-08,Solv Strategies,C6,67885374,863.887,1
 2026-08,Concrete (BTC vaults),C6,2309994,29.396,1
-2026-08,"Veda (other BTC vaults, excl. Kraken)",C6,105488063,1342.407,1
+2026-08,"Veda (other BTC vaults, excl. Kraken)",C6,17042787,216.881,1
 2026-08,Upshift (BTC vaults),C6,8205905,104.426,1
 2026-08,Hyperbeat Earn (hbBTC),C6,929791,11.832,0
-2026-08,Proxy (PRXY BTC strategies),C6,20534572,261.316,1
-2026-08,Convex (BTC LPs),C6,15343567,195.257,1
+2026-08,Proxy (PRXY BTC strategies),C6,20534572,261.316,0
+2026-08,Convex (BTC LPs),C6,10235776,130.257,1
 2026-08,Beefy (BTC vaults),C6,12290571,156.406,1
 2026-08,Yearn (BTC vaults),C6,9648961,122.79,1
-2026-08,Badger DAO (BTC vaults),C6,9067919,115.395,1
+2026-08,Badger DAO (BTC vaults),C6,4274444,54.395,1
 2026-08,Stake DAO (BTC LPs),C6,5098781,64.885,1
 2026-08,Yield Yak (BTC),C6,4867956,61.948,1
 2026-08,YO Protocol (yoBTC),C6,8577258,109.151,1
@@ -2698,13 +2698,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-08,Autofarm (BTC),C6,1117557,14.222,1
 2026-08,t3tris (WBTC),C6,6573815,83.656,1
 2026-08,OmniYield (WBTC),C6,762019,9.697,1
-2026-08,Belt (BTCB),C6,3613412,45.983,1
+2026-08,Belt (BTCB),C6,1806706,22.991,1
 2026-08,Tranchess (BTCB),C6,3449479,43.897,1
 2026-08,Radpie (BTC),C6,929895,11.834,1
 2026-08,Aura (BTC),C6,503254,6.404,1
 2026-08,Lagoon (BTC vaults),C6,16609954,211.373,1
 2026-08,Mellow Core (BTC vaults),C6,12893009,164.072,1
-2026-08,Ember (BTC vaults),C6,13176266,167.677,1
+2026-08,Ember (BTC vaults),C6,354637,4.513,1
 2026-08,Avant avBTC,C6,8461944,107.684,1
 2026-08,Moonwell vaults (cbBTC),C6,673158,8.566,1
 2026-08,UltraYield vaults (cbBTC),C6,3174747,40.401,1
@@ -2799,14 +2799,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-09,Vishwa,C2,70220793,865.022,1
 2026-09,Solv Basis Trading (SolvBTC.TRADING),C3,200685805,2472.17,1
 2026-09,BitFi bfBTC (EVM chains),C3,229337990,2825.125,1
-2026-09,BitFi bfBTC (AILayer),C3,82564735,1017.083,1
+2026-09,BitFi bfBTC (AILayer),C3,82564735,1017.083,0
 2026-09,Syntetika hBTC (Hilbert BTC Basis+),C3,15143828,186.551,1
 2026-09,Midas mHyperBTC (Hyperithm),C1,28746753,354.12,1
 2026-09,Midas mRe7BTC (Re7),C3,758947,9.349,1
 2026-09,Midas mBTC,C3,26623,0.328,1
 2026-09,Liminal Basis (BTC),C3,117907,1.452,1
 2026-09,Manta CeDeFi (BTC),C3,650657,8.015,1
-2026-09,Hope (BTC basis collateral),C3,1651130,20.34,1
+2026-09,Hope (BTC basis collateral),C3,1651130,20.34,0
 2026-09,DeSyn Basis Trading (BTC),C3,1803217,22.213,1
 2026-09,Rysk V12 (BTC part),C4,6900332,85.002,1
 2026-09,Hegic (WBTC pool),C4,792952,9.768,1
@@ -2822,14 +2822,14 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-09,Zest v2 (sBTC supply),C6,54925386,676.604,1
 2026-09,Solv Strategies,C6,70136942,863.99,1
 2026-09,Concrete (BTC vaults),C6,2397212,29.53,1
-2026-09,"Veda (other BTC vaults, excl. Kraken)",C6,109546051,1349.455,1
+2026-09,"Veda (other BTC vaults, excl. Kraken)",C6,14859145,183.044,1
 2026-09,Upshift (BTC vaults),C6,8300705,102.253,1
 2026-09,Hyperbeat Earn (hbBTC),C6,867093,10.681,0
-2026-09,Proxy (PRXY BTC strategies),C6,21211046,261.291,1
-2026-09,Convex (BTC LPs),C6,16753088,206.375,1
+2026-09,Proxy (PRXY BTC strategies),C6,21211046,261.291,0
+2026-09,Convex (BTC LPs),C6,11476525,141.375,1
 2026-09,Beefy (BTC vaults),C6,12327964,151.863,1
 2026-09,Yearn (BTC vaults),C6,9966404,122.772,1
-2026-09,Badger DAO (BTC vaults),C6,9195466,113.275,1
+2026-09,Badger DAO (BTC vaults),C6,4243593,52.275,1
 2026-09,Stake DAO (BTC LPs),C6,7359792,90.662,1
 2026-09,Yield Yak (BTC),C6,5092432,62.732,1
 2026-09,YO Protocol (yoBTC),C6,8830930,108.785,1
@@ -2838,13 +2838,13 @@ month,product,category_code,tvl_usd,tvl_btc,include_net
 2026-09,Autofarm (BTC),C6,1160131,14.291,1
 2026-09,t3tris (WBTC),C6,6804602,83.823,1
 2026-09,OmniYield (WBTC),C6,801759,9.877,1
-2026-09,Belt (BTCB),C6,3732503,45.979,1
+2026-09,Belt (BTCB),C6,1866252,22.989,1
 2026-09,Tranchess (BTCB),C6,3559624,43.85,1
 2026-09,Radpie (BTC),C6,957736,11.798,1
 2026-09,Aura (BTC),C6,529131,6.518,1
 2026-09,Lagoon (BTC vaults),C6,17862085,220.036,1
 2026-09,Mellow Core (BTC vaults),C6,13292360,163.743,1
-2026-09,Ember (BTC vaults),C6,15421744,189.974,1
+2026-09,Ember (BTC vaults),C6,277873,3.423,1
 2026-09,Avant avBTC,C6,8274646,101.932,1
 2026-09,Moonwell vaults (cbBTC),C6,1125288,13.862,1
 2026-09,UltraYield vaults (cbBTC),C6,3576039,44.052,1

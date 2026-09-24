@@ -110,7 +110,7 @@ Veda BoringVault "Advanced Strategies BTC" (`sentoraBTC`, `0x7dee…19b2`, Ink),
     - **Issuer-linked Merkl incentives** run at $31.1M/yr across those four V2 vaults. About $6.6M/yr of that lands on the Kraken vault's positions, **1.26% of vault NAV per year**. That is more than the entire net yield paid to depositors (about $5.3M/yr).
 12. **New governance findings.**
     - **Penalty change on 20 Sep:** at 20:41–20:54 UTC Sentora raised the `forceDeallocatePenalty` on Sentora PRIME Main and Huma PST Main from 0 to 1%, with no timelock.
-    - **Morpho WBTC/USDT leg:** between the snapshot and 21 Sep it went from 31% to 71% LTV ($2.24M → $5.19M debt) in a market at 95.7% utilization.
+    - **Morpho WBTC/USDT leg:** between the snapshot and 21 Sep it went from 31% to 67% LTV ($2.24M → $5.19M debt, at the 21 Sep price of $86.6k) in a market at 95.7% utilization.
 
 ---
 
@@ -454,7 +454,7 @@ RLUSD Main and PYUSD Main have **no liquidity adapter**, so ordinary withdrawals
 | −30% | 56,193 | **90.2 / 97.8 / 100.1** / 80.3 | **0.859** | RLUSD-1, RLUSD-2, PYUSD-1, Aave | $68.1M | $40.6M vs $63.3M | $22.5M vs $60.8M | $11.3M |
 | −40% | 48,166 | **105.3 / 114.1 / 116.8 / 93.7** | **0.737** | all four kBTC legs + Aave | $100.7M | $59.9M vs $63.3M | $33.9M vs $60.8M | $13.1M |
 
-The Morpho WBTC/USDT leg (31% LTV at the snapshot) survives every shock. At its 21 Sep level of about 67–71% it would fail at −20%.
+The Morpho WBTC/USDT leg (31% LTV at the snapshot) survives every shock. At its 21 Sep level of about 67% it would fail at −20%.
 
 **Answer.** For a gradual decline, static tier 1 alone covers the repayments needed to restore target health factor even at −40%, with a thin RLUSD margin ($59.9M needed vs $63.3M available). For an instant gap it does not help:
 - at −20%, PYUSD-1 and the Aave leg are liquidatable before any transaction;
