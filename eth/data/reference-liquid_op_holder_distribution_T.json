@@ -1,0 +1,6097 @@
+{
+  "product": "liquid_op",
+  "block": 157693411,
+  "snapshot": "2026-10-02T23:59:59Z",
+  "chain": "Optimism",
+  "all_intervals_success": true,
+  "transfer_events": 69241,
+  "positive_holder_count": 1511,
+  "negative_balances": {},
+  "reconstructed_supply_raw": 34533284066347021082812,
+  "getter_totalSupply_raw": 34533284066347021082812,
+  "supply_matches": true,
+  "balances": [
+    {
+      "address": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+      "sharesRaw": "32864458974134548732952"
+    },
+    {
+      "address": "0xfc24ee3538fc81e95fa6f60da327adb6d28f6659",
+      "sharesRaw": "460293083311361932403"
+    },
+    {
+      "address": "0x13c0d14308700c8dfedd00015099294bf7934acf",
+      "sharesRaw": "172033300528293162952"
+    },
+    {
+      "address": "0xe3018d1c669c0451570fc0c0ef4b7a23e4869258",
+      "sharesRaw": "140520000000000000000"
+    },
+    {
+      "address": "0x1c307d17993d820e539159ef65285d760c5b8d50",
+      "sharesRaw": "108718765500000000000"
+    },
+    {
+      "address": "0x5538b06e96a754d3395feb9dca91e271e46565ee",
+      "sharesRaw": "105500117223289137274"
+    },
+    {
+      "address": "0x5b1d8fc8b7cf2bacc4be74c3189cc132273e2ae4",
+      "sharesRaw": "92129558299899806864"
+    },
+    {
+      "address": "0x8807eb571352dfb2fbdd7e1a706b0b655a5fc43a",
+      "sharesRaw": "73388097377863733030"
+    },
+    {
+      "address": "0x833e2dbab15a63b8a7a14c23db683b97c9fe6ec5",
+      "sharesRaw": "69000000000000000000"
+    },
+    {
+      "address": "0x0d2df071207e18ca8638b4f04e98c53155ec2ce0",
+      "sharesRaw": "51524368406786188835"
+    },
+    {
+      "address": "0x833cef3c70beca21dfdd2378b1974142ebf4d483",
+      "sharesRaw": "34824546580918596190"
+    },
+    {
+      "address": "0x1e4fcfcca6f0bc189151575c2d87d11723be6f81",
+      "sharesRaw": "18518541524516939852"
+    },
+    {
+      "address": "0x3ce3d1804a894730589aaf5ed275553470779664",
+      "sharesRaw": "18112019958574848321"
+    },
+    {
+      "address": "0x3a6a724595184dda4be69db1ce726f2ac3d66b87",
+      "sharesRaw": "18039511651247845577"
+    },
+    {
+      "address": "0x1f6e47d4b17d661850e6d7db47e51f7a078daf9b",
+      "sharesRaw": "15670015937025925054"
+    },
+    {
+      "address": "0x7d9d0b2b0ac68475a4b0a0a47db6be90732d2bd4",
+      "sharesRaw": "13029281148284742350"
+    },
+    {
+      "address": "0xb59b287c398e22b820ba5d49da2d1fbd883bbc68",
+      "sharesRaw": "12237459665261174637"
+    },
+    {
+      "address": "0x04dc6b215e58219fcc3fb8540b1265885340c977",
+      "sharesRaw": "11409098948335964269"
+    },
+    {
+      "address": "0x5ab4d4c18c4b0c43785e0b57c819533b985c239a",
+      "sharesRaw": "11399979454661243859"
+    },
+    {
+      "address": "0x40a57e4a39064c359eb946b2b474440047031bb4",
+      "sharesRaw": "10696645211699341757"
+    },
+    {
+      "address": "0x30dec10565ad740dd1c9deded9261748d50d72a6",
+      "sharesRaw": "10161826948073469408"
+    },
+    {
+      "address": "0xb9de32ddc1cbfe155369ec7c5ea427b4877e0959",
+      "sharesRaw": "7939782434252975241"
+    },
+    {
+      "address": "0xefd1406436030801f5aa20935c8318f623bbe3c2",
+      "sharesRaw": "7599970309368775315"
+    },
+    {
+      "address": "0x4ecf024b92f36c27f487dcb88cf109a6704ed643",
+      "sharesRaw": "7255673495392884451"
+    },
+    {
+      "address": "0xba7e41371581e20ca99dbb66a9b8c1eef5618101",
+      "sharesRaw": "6366403101811019366"
+    },
+    {
+      "address": "0x4b261554529ab79fc9f4e0dc99e7e4b093d47ab0",
+      "sharesRaw": "6326004778556808070"
+    },
+    {
+      "address": "0x5efac91e9173e1e6adaebbd596dda05dacac9bd7",
+      "sharesRaw": "6205218875873342560"
+    },
+    {
+      "address": "0xf6fe5677dcdb38d2aeddc991fd92ae76349075da",
+      "sharesRaw": "6117558582442588073"
+    },
+    {
+      "address": "0x24d05955288f2aac99e618f07eb0dfe83f37da4d",
+      "sharesRaw": "5842802138628220653"
+    },
+    {
+      "address": "0xbc53dc6949b45e0507c0e745e56737511029882e",
+      "sharesRaw": "5638364797277518039"
+    },
+    {
+      "address": "0x84cd21c533c7fcca99e8cd492052674e5d52d94d",
+      "sharesRaw": "5446045854891856456"
+    },
+    {
+      "address": "0xb332c6d11de6cab503a7f1ccbf1edb62b69ff29d",
+      "sharesRaw": "5311395389320680634"
+    },
+    {
+      "address": "0xc2c07e0a7bf8d40d55c9974a98a547b6b6309ebf",
+      "sharesRaw": "5091011899521164033"
+    },
+    {
+      "address": "0x1d08f7dfd5b26bb7903f06125fa0da911d0be60c",
+      "sharesRaw": "4636726150244599407"
+    },
+    {
+      "address": "0x63408750eb097decccac872bee4c6958e8d00023",
+      "sharesRaw": "4486233291951199568"
+    },
+    {
+      "address": "0x7c7c751bb2c8b00e8601eb74d3f5a210e7105877",
+      "sharesRaw": "4372809202064742684"
+    },
+    {
+      "address": "0x3c825b61ae769f7956686f4ebc9b50057920cc09",
+      "sharesRaw": "3903139772479990439"
+    },
+    {
+      "address": "0x47a7330ab92c4beed6917dc75e6676419c83b9c0",
+      "sharesRaw": "3831309446462016436"
+    },
+    {
+      "address": "0xa5b47c7e9501d42ad212f3ee3162d278d0b338dc",
+      "sharesRaw": "3808848907466593666"
+    },
+    {
+      "address": "0xac290d634b799a2c7abd78a8f77637e7f3913a46",
+      "sharesRaw": "3641935023056467219"
+    },
+    {
+      "address": "0x6b7b70fda1dad04974bfe6706fc0b59ffab9b67b",
+      "sharesRaw": "3426335265731059133"
+    },
+    {
+      "address": "0x2bf02539e57851674f800e094d2c42132971f3c8",
+      "sharesRaw": "3246050373635320169"
+    },
+    {
+      "address": "0xaabdeffc810ae3f7c9849847305dd12ef524964e",
+      "sharesRaw": "3045526334361298792"
+    },
+    {
+      "address": "0x0ff8ef9e2f1df13ae2e363630c33c61803ee23bc",
+      "sharesRaw": "3023735094259478487"
+    },
+    {
+      "address": "0xafe170ab667548d0500ede4f8b01d7638cd16d3d",
+      "sharesRaw": "3007023519611345995"
+    },
+    {
+      "address": "0xd881282c0a19d2d0e9680d5c41575c08288f55e8",
+      "sharesRaw": "2962424963577781742"
+    },
+    {
+      "address": "0xc7820504f32fd11fee966cbcb97bf16fc2b343cf",
+      "sharesRaw": "2902446390927507965"
+    },
+    {
+      "address": "0x22b0e5ef65a3ded3aea67336286ecb1c84580bdf",
+      "sharesRaw": "2656469457426428853"
+    },
+    {
+      "address": "0xe08cd6c817c7abfd731f5954da0c3b8a1a8c23d3",
+      "sharesRaw": "2495736864387499669"
+    },
+    {
+      "address": "0x5695480aab2f02ed2ad58698333d74bc3afd40ba",
+      "sharesRaw": "2425989265318448561"
+    },
+    {
+      "address": "0xbfb02da2cbcea8fb3599a730f86ac6f3bd8d493c",
+      "sharesRaw": "2315545343559011411"
+    },
+    {
+      "address": "0x27dbef7bbeb059a295c55b235c3c505e84154ef5",
+      "sharesRaw": "2141613820895014172"
+    },
+    {
+      "address": "0x0f7b03003eef01b08dc99562fd43ce7d9c8c8411",
+      "sharesRaw": "2104049526260984104"
+    },
+    {
+      "address": "0x9aa253ebd72aede240343fca42fa09188c3b78e5",
+      "sharesRaw": "2036274792426166789"
+    },
+    {
+      "address": "0x3a4e0bf4c1ea9b7b5859dafb98b292091285d5aa",
+      "sharesRaw": "1932543906268934620"
+    },
+    {
+      "address": "0x8fd3bd69cffdd661c03f1b697ae77b099db0b70a",
+      "sharesRaw": "1898196752196901570"
+    },
+    {
+      "address": "0x29801c6e75c5ffd2c1def235d05757430b8675fe",
+      "sharesRaw": "1786487732985812311"
+    },
+    {
+      "address": "0x38169872df1fc7c97e83a8ae8a85c8d1eca60617",
+      "sharesRaw": "1626190225067471883"
+    },
+    {
+      "address": "0xf67acf1887679d2c1631784149249e8ad6d7e1a1",
+      "sharesRaw": "1413096593752501685"
+    },
+    {
+      "address": "0xdd2f51ffbf931d6c574813a5cddf19ac9b0de8b8",
+      "sharesRaw": "1404634803770375704"
+    },
+    {
+      "address": "0x59e0033b58a1668a9db527c580c05ec64f310114",
+      "sharesRaw": "1317215705563244801"
+    },
+    {
+      "address": "0x684d51deb1d0f691338fd349b4c87b15ec2c8de5",
+      "sharesRaw": "1286772667661665578"
+    },
+    {
+      "address": "0xe6a8e77027e2c8f05e2e3da8d872e252673f6304",
+      "sharesRaw": "1262786264282374597"
+    },
+    {
+      "address": "0x2d87689141cd0eb4dd8f05e468c4b4baed8d177f",
+      "sharesRaw": "1165218618845894377"
+    },
+    {
+      "address": "0x68dc74befdd0a8504f80acd6d4ad67686a8f3c54",
+      "sharesRaw": "1153876936448945112"
+    },
+    {
+      "address": "0x56c972c7063004396f112342f93d6a696c6ead38",
+      "sharesRaw": "1100754738247516853"
+    },
+    {
+      "address": "0xe239f93249e8dda6827270bcd114150a76174922",
+      "sharesRaw": "1018171267891452674"
+    },
+    {
+      "address": "0x56b418ef88e8b2e7d68e5b163c3cd85108ca55fd",
+      "sharesRaw": "1018138447902528797"
+    },
+    {
+      "address": "0x39adaaecf563b61b450638d530bf111c6eb42e40",
+      "sharesRaw": "1013865000000000000"
+    },
+    {
+      "address": "0x0a16de75b9bb55d5b09b43d41d030b77a4ecf4de",
+      "sharesRaw": "1004789248554868511"
+    },
+    {
+      "address": "0x3f8f602b361b16adddc3cd724d98aa4c2222876e",
+      "sharesRaw": "933043246921182550"
+    },
+    {
+      "address": "0x88a799589b9bd623d575d34744edb6de3c4f91b5",
+      "sharesRaw": "932870007261701339"
+    },
+    {
+      "address": "0xdb62a58dd2ab2c21105c6890882fa68a625efde0",
+      "sharesRaw": "924704278011402940"
+    },
+    {
+      "address": "0xd53839e97db72287d083a4e8fd816b77f9bd6414",
+      "sharesRaw": "920919581661641764"
+    },
+    {
+      "address": "0xbdf83343080cbb9e4108cf77d95a669fffa0a632",
+      "sharesRaw": "920693677726126216"
+    },
+    {
+      "address": "0x82ccc704c2847905fd7833d885ff9e4e4e06b658",
+      "sharesRaw": "920374116721146345"
+    },
+    {
+      "address": "0x334d3bf30e049dce75901e3a1d1a05b6c261a833",
+      "sharesRaw": "916198305481014204"
+    },
+    {
+      "address": "0x1e44054448acb7c1a35ded0af55ffe7894ef27bc",
+      "sharesRaw": "915795783015848854"
+    },
+    {
+      "address": "0x43cf24ef34e58927ec284990daaa947a2fd45afe",
+      "sharesRaw": "911720720300782495"
+    },
+    {
+      "address": "0xb96088a720f7f9bc84f7e63a0ad2761403d3c031",
+      "sharesRaw": "864024391763021326"
+    },
+    {
+      "address": "0x06afb44b3bb686fee5faa1bd2a69ddf15466d4d9",
+      "sharesRaw": "845409395887795036"
+    },
+    {
+      "address": "0x6731d904e3d9a599c668bce0df6877be092992ef",
+      "sharesRaw": "833946594928331286"
+    },
+    {
+      "address": "0xa62e06778dd4caa28875c8d6079008e004f5f214",
+      "sharesRaw": "823385756411695174"
+    },
+    {
+      "address": "0x3c405e2daa195592c947cc1d25ec525459a7b7e3",
+      "sharesRaw": "763479627471946876"
+    },
+    {
+      "address": "0xc1cfafb1221eeb19dd3e0ffe8c9c5be6d558dd14",
+      "sharesRaw": "741815036355917096"
+    },
+    {
+      "address": "0x0b3b3181ee01a26876286cbd4d7962f3ceffbfc6",
+      "sharesRaw": "699192520869655902"
+    },
+    {
+      "address": "0xe91ef6ff17b34eeb6a7c1732e2b88907d49e808f",
+      "sharesRaw": "697062237579333754"
+    },
+    {
+      "address": "0x0d84a3fba7185f4b56938ebac8d2be99b9b46be8",
+      "sharesRaw": "675809526920493689"
+    },
+    {
+      "address": "0xdb0c058cbf83021e9b5fdda4909341f0b59cb2d8",
+      "sharesRaw": "662529271586674896"
+    },
+    {
+      "address": "0x03aab8fa10576b107764e0b578c7e2e59a4caee1",
+      "sharesRaw": "644997989890689350"
+    },
+    {
+      "address": "0x9e486713898afb5a80370c8d9282d6f23f8baef3",
+      "sharesRaw": "643344366460661324"
+    },
+    {
+      "address": "0x1635af7f2cc13dc07677ead7861077793f4aab07",
+      "sharesRaw": "632260999999999898"
+    },
+    {
+      "address": "0xbae0f7044ecbf95df8c0341c948f58c3c5f5bffd",
+      "sharesRaw": "606554845683508210"
+    },
+    {
+      "address": "0xc609aace7993cf5664a28167d266ed05289ec7d2",
+      "sharesRaw": "604470052235472274"
+    },
+    {
+      "address": "0x74354ac37b115913ac0fa4df19b287b6de98cd45",
+      "sharesRaw": "551436937817770855"
+    },
+    {
+      "address": "0x160143d5c86f6f5605661b7754f4601d26e7e75f",
+      "sharesRaw": "544108783736762904"
+    },
+    {
+      "address": "0xaa1691d0dee2541041ddc786621517b9d8db4b6f",
+      "sharesRaw": "541684385864671830"
+    },
+    {
+      "address": "0x6dc72725f080cca567fe9f8e36fffd2354cb7f00",
+      "sharesRaw": "529617107241634850"
+    },
+    {
+      "address": "0x45e1fc3a51c78724c7867d6cd7cdb44470feb195",
+      "sharesRaw": "514838147722369749"
+    },
+    {
+      "address": "0x6a985b155483efed602080407d75df8137d928d5",
+      "sharesRaw": "506149426328557786"
+    },
+    {
+      "address": "0xf9a8969a1e76f46a3f305a075920dd31436fe95a",
+      "sharesRaw": "502127484120905624"
+    },
+    {
+      "address": "0x5ad3d9552addfef54737554f2aa96e87a1d83743",
+      "sharesRaw": "495136083821625484"
+    },
+    {
+      "address": "0x914ceca8e957fcd1fc57246c8094a24642bc3e40",
+      "sharesRaw": "467863852024065865"
+    },
+    {
+      "address": "0x9d35a603a6b9bd7f05003eedd59b1dff51923f40",
+      "sharesRaw": "466674163476110036"
+    },
+    {
+      "address": "0xdef855b0da3267d16ffc15747e06d66a14a2fe22",
+      "sharesRaw": "460880135878702926"
+    },
+    {
+      "address": "0xed7808af76321ce5aeef83cc74515c59968a7996",
+      "sharesRaw": "453229956051795593"
+    },
+    {
+      "address": "0x6e21c08eabd98e68cf0e883e2a0ae9d4ccc675f6",
+      "sharesRaw": "428798264078680020"
+    },
+    {
+      "address": "0x1a5de071ff341e7a2bb041c19f1947fe2cb28a94",
+      "sharesRaw": "418916515867613948"
+    },
+    {
+      "address": "0x98989e8cb4c0a46103c4ca5a9d1892e9b41ecf3c",
+      "sharesRaw": "417105497944701659"
+    },
+    {
+      "address": "0x25d6ab85c9818e27decb95db2589139e8166eaab",
+      "sharesRaw": "414743909275067418"
+    },
+    {
+      "address": "0xa3fae34ca40c49feffbf0c40393c8f85f28988be",
+      "sharesRaw": "409606525643487912"
+    },
+    {
+      "address": "0xf5732b27d1ec83956f9d5c6fe0920c534780a03b",
+      "sharesRaw": "377420759377443060"
+    },
+    {
+      "address": "0x1d277a6607b21cae456bea5bf02b03414d6787f1",
+      "sharesRaw": "373205899689177281"
+    },
+    {
+      "address": "0xc643f2ec73d6464b2e8f0ebf78fccb4f47b9b003",
+      "sharesRaw": "369100383326099573"
+    },
+    {
+      "address": "0xbea45a0521cb0a43774c287da440449b0cd2fc40",
+      "sharesRaw": "362810881710434222"
+    },
+    {
+      "address": "0xcf88863f86af1106ed194293d293806e24d25807",
+      "sharesRaw": "353064796640385535"
+    },
+    {
+      "address": "0x2a52748c95073442234c40301a2fb861efdbf3e2",
+      "sharesRaw": "352042376765039429"
+    },
+    {
+      "address": "0x855e196307581ed8441e62d7c87cbe5bdd035ed3",
+      "sharesRaw": "351660393179728464"
+    },
+    {
+      "address": "0x1d5a7da603cf87d8ccd796bc2336b32e3c262f2a",
+      "sharesRaw": "348911286345030736"
+    },
+    {
+      "address": "0xc57e761685db0dbea41ece263af5c8c698b0584e",
+      "sharesRaw": "323582812937800114"
+    },
+    {
+      "address": "0x7e17b9d61e4ddc76c34bc0af34067aa4cdb7d79e",
+      "sharesRaw": "322521596942781101"
+    },
+    {
+      "address": "0x7d2cb8f06a79dae95a2e72fe74f9e74be25da01f",
+      "sharesRaw": "320176400452780172"
+    },
+    {
+      "address": "0x05c81bcb88771e4366872d69fa22d4e192db654a",
+      "sharesRaw": "318268407359174430"
+    },
+    {
+      "address": "0x1c5cefc8d85c55ec3c3b7b12c15063feaad06fd8",
+      "sharesRaw": "317682013883728479"
+    },
+    {
+      "address": "0x084f53536a08f46fd1dc3533e4fdb53d57e28827",
+      "sharesRaw": "310030334488550326"
+    },
+    {
+      "address": "0xbc7d2f2cb9d644397c81a5b1f97e37a773877f09",
+      "sharesRaw": "301880067955274633"
+    },
+    {
+      "address": "0xcf961907ee5100f56b42c86568a21c5bc6d75b92",
+      "sharesRaw": "299698826760390588"
+    },
+    {
+      "address": "0x4632a5e0b6e7df82f315a437ae550d9c6a2c270a",
+      "sharesRaw": "291434446201521413"
+    },
+    {
+      "address": "0x6cb2da02fd97941472749cba9fb7a3fc016df7a9",
+      "sharesRaw": "289453349947346914"
+    },
+    {
+      "address": "0xcfb5f46f0b61c70c481f824c24497d6298cb6b1f",
+      "sharesRaw": "287679864919772537"
+    },
+    {
+      "address": "0x41f009de6b40b306ce04e8982ed36b85bdaba536",
+      "sharesRaw": "285158260062584719"
+    },
+    {
+      "address": "0x4cb036a60866589d66ad07687ed682fbcf849e2f",
+      "sharesRaw": "275044766404925937"
+    },
+    {
+      "address": "0x7dcc89cf9b5df7c60c3da3dbef50da72efbab424",
+      "sharesRaw": "264688549948697264"
+    },
+    {
+      "address": "0xc207a89afd9b4c8d5fdd0c8c7ca8ea6c051d67b9",
+      "sharesRaw": "261272057437552644"
+    },
+    {
+      "address": "0xb02ab3b6277c06d3c2dfce42752fdbc1e4638c18",
+      "sharesRaw": "256249884701449328"
+    },
+    {
+      "address": "0x71537fdb910c98105cfc883b417bb30fc910ed7c",
+      "sharesRaw": "255134103383655964"
+    },
+    {
+      "address": "0x0c3d5209032e1377042c4e425c12d0a4d2913032",
+      "sharesRaw": "254764704024132266"
+    },
+    {
+      "address": "0xc3aeae69fc66bc60094ad07a3bd965eca4b9de5e",
+      "sharesRaw": "247706908090906149"
+    },
+    {
+      "address": "0x68aa1ef3dea26be11f021f22cd5872263c242950",
+      "sharesRaw": "239724219545999185"
+    },
+    {
+      "address": "0x9ee595501893dd86095d1ce722ec69a8f4ebe109",
+      "sharesRaw": "232108537593171115"
+    },
+    {
+      "address": "0x65cea9a93d0f69f5c7cf4fcc392ed98ba325efe9",
+      "sharesRaw": "226506690631665216"
+    },
+    {
+      "address": "0xa24d0f2c7b5511455409476990ac0910dd25545f",
+      "sharesRaw": "221889401006110379"
+    },
+    {
+      "address": "0x18cedcf7935ec284684fc9a7e6d7ab31d6097ea9",
+      "sharesRaw": "216026079845469777"
+    },
+    {
+      "address": "0xd985d8f9121f83f2c4d5e35f5c18f6be1ce6e2c6",
+      "sharesRaw": "213910341082496395"
+    },
+    {
+      "address": "0x7c4b1e3bcc2dacb94a14586df4c797bbffdedd3a",
+      "sharesRaw": "212758747447792758"
+    },
+    {
+      "address": "0x89b5743ff2ffa3133fd47d49761ab1a63a030175",
+      "sharesRaw": "210987297330852980"
+    },
+    {
+      "address": "0xcfc2811b505ec0937903aeb92400a75fbb1debf5",
+      "sharesRaw": "210188953046438322"
+    },
+    {
+      "address": "0xbd31988a3cc9359c96b8157109591572fbffb496",
+      "sharesRaw": "209784769169734914"
+    },
+    {
+      "address": "0xd4e0dd9eb74729ff35057fc164d1a7e7fde0db2a",
+      "sharesRaw": "209051561674227536"
+    },
+    {
+      "address": "0x4929fba1ab100e211136219025179292523984e8",
+      "sharesRaw": "202513192489129417"
+    },
+    {
+      "address": "0xdd61c5291ded7e5004fe9c9877968601bfb76bff",
+      "sharesRaw": "200183841728123802"
+    },
+    {
+      "address": "0xaa119a48cb6290147e3a84564996c29dd6225f0c",
+      "sharesRaw": "200100000000000000"
+    },
+    {
+      "address": "0xd27e7860fee71b5fb5b046bc88be43301d52e915",
+      "sharesRaw": "198826037420577964"
+    },
+    {
+      "address": "0x37e6ca375ae675e889984ee35ac5e0f5b5fb6eb1",
+      "sharesRaw": "195927807936777282"
+    },
+    {
+      "address": "0x95450ccd46969a1b96b0ea789b1966323c15264e",
+      "sharesRaw": "191778375120985231"
+    },
+    {
+      "address": "0xc3dd2cda4d3b29f11d52694f6a3005b597165883",
+      "sharesRaw": "190853764878674479"
+    },
+    {
+      "address": "0x03027f28f608179a0001f67727baf76fbde414f4",
+      "sharesRaw": "189009551075669443"
+    },
+    {
+      "address": "0xb4f81b424b8598df0e9008aa62fcc4fe90b684ca",
+      "sharesRaw": "187072646680281960"
+    },
+    {
+      "address": "0x7ce9fc3fa613d16a241335809ae82708f3e87001",
+      "sharesRaw": "184546067811517251"
+    },
+    {
+      "address": "0x310e93317a29235af875a7a3f939c15801677234",
+      "sharesRaw": "182858064559086165"
+    },
+    {
+      "address": "0x57e61a64d21afe3837028b5783bd7332436e2c7b",
+      "sharesRaw": "182093234796198093"
+    },
+    {
+      "address": "0x1151c997acb214b31a148b24a0b10fb80da9f7a8",
+      "sharesRaw": "182093234796198093"
+    },
+    {
+      "address": "0x110cdfce1997402fa0e6f693cc36918e2e2f3bb6",
+      "sharesRaw": "179729375911577263"
+    },
+    {
+      "address": "0x41c410a32d0973cc5b4c3ea8d7b30873bb6826ae",
+      "sharesRaw": "178218490232039400"
+    },
+    {
+      "address": "0x1ee93c0d52564da4209e3a203e9c1de706657996",
+      "sharesRaw": "175560869446494196"
+    },
+    {
+      "address": "0xfb8abd434c838ddcc74b555df8ba15be6f2a7248",
+      "sharesRaw": "174942045747721253"
+    },
+    {
+      "address": "0x33875ad548a5270944fc25e779ca946bbab055cb",
+      "sharesRaw": "172894170162427376"
+    },
+    {
+      "address": "0x92723a03c8dec01fc9b7028ddf7af193b6932225",
+      "sharesRaw": "167793297736423539"
+    },
+    {
+      "address": "0x884a819f2acfe1537d5d2e8b1c8105d77ece964b",
+      "sharesRaw": "166874805333949577"
+    },
+    {
+      "address": "0x61555684c145856bd7345873a107982ac4716768",
+      "sharesRaw": "164416379130275682"
+    },
+    {
+      "address": "0x0472c7d531377cd8b7ed0c81bbb3b91a1e8d2233",
+      "sharesRaw": "163627251324252416"
+    },
+    {
+      "address": "0x3c2fe6af5973a23cf1072942a9b2fd2cc9cdf221",
+      "sharesRaw": "155082040518067076"
+    },
+    {
+      "address": "0x03eec58852dafd3205754f80e6fc878deb2e4521",
+      "sharesRaw": "144049215434211675"
+    },
+    {
+      "address": "0x1f1d3c9566a10b0c713e701972b73661c6c54bc7",
+      "sharesRaw": "140086453600648842"
+    },
+    {
+      "address": "0x258cc1691061015a4091402519d275802404ddf7",
+      "sharesRaw": "139073710006599701"
+    },
+    {
+      "address": "0x2989c3821f626c11b80a1a30fa6fba3bc5033828",
+      "sharesRaw": "137614948939392305"
+    },
+    {
+      "address": "0x75071ff1dc3e3fd6f7e6bbfd3fd4b58151e35f58",
+      "sharesRaw": "135694144039196928"
+    },
+    {
+      "address": "0xa9e61e79fb894c05ccb2790b26a9e3f91f530dcf",
+      "sharesRaw": "133547916292631317"
+    },
+    {
+      "address": "0x1c4de00ad87154fdc90bb60eede33830e0fbef62",
+      "sharesRaw": "132536051376074349"
+    },
+    {
+      "address": "0x8819a569bf0e7e5162a0dd7c15794e757a4e57c0",
+      "sharesRaw": "131485124987639443"
+    },
+    {
+      "address": "0x99298bd4d527a4bcf58c3aca1ffd519f3cf94d3b",
+      "sharesRaw": "131482681536166898"
+    },
+    {
+      "address": "0xebefe377fe66b4e130824700d1cf5ce68809566b",
+      "sharesRaw": "130510000000000000"
+    },
+    {
+      "address": "0x05998bb854a125a5f43f911ca8fa21f70924ed44",
+      "sharesRaw": "129897804822671226"
+    },
+    {
+      "address": "0xacb90ec8c37988bfb2d7ab2d4babf0992993b5e0",
+      "sharesRaw": "129751382284767510"
+    },
+    {
+      "address": "0xfa2f8c6fe92c61952a47aaff012be1e30b7a5324",
+      "sharesRaw": "129492274263463419"
+    },
+    {
+      "address": "0x1e6775f6cf7b49413fb4de2dfcad120c93c509df",
+      "sharesRaw": "126923430820990662"
+    },
+    {
+      "address": "0x8f3dc3f6da62b860da2421afb32fa4c31ec2819a",
+      "sharesRaw": "124954361843922506"
+    },
+    {
+      "address": "0x4d66d3ad2971f5e648e8336a644cbf7888d8b4e7",
+      "sharesRaw": "123249170624831050"
+    },
+    {
+      "address": "0xcd46aa1fc5e93f688de70b2e473c2781cfb301ad",
+      "sharesRaw": "122442974785280616"
+    },
+    {
+      "address": "0xf31028d149db1023ff27ad3f3e9d33ce504ebc19",
+      "sharesRaw": "120374017009588297"
+    },
+    {
+      "address": "0x24132679a095d7b3960cdc19d78b4ec4a2ba2429",
+      "sharesRaw": "119242456619618066"
+    },
+    {
+      "address": "0xa747de33031b881fddf77a114d471cb2ae8ca0e4",
+      "sharesRaw": "118260054682843170"
+    },
+    {
+      "address": "0xd61be22baf904a873ccf79c2edafacec9dc6364f",
+      "sharesRaw": "110991443146162425"
+    },
+    {
+      "address": "0xbbdfe8f8418355677034c263578c60510860aed3",
+      "sharesRaw": "108501608515457978"
+    },
+    {
+      "address": "0x6d3e7d68c785334f6b5225220abaadbc65109a40",
+      "sharesRaw": "108271507593000462"
+    },
+    {
+      "address": "0xb7e9088227dfc5e53f279bc6fc32c94528d32bba",
+      "sharesRaw": "108248413405635514"
+    },
+    {
+      "address": "0x76fb35a56def898cf86af3903f60dc8db721925e",
+      "sharesRaw": "106217440630133524"
+    },
+    {
+      "address": "0xcc4e93f2207e240e45ff035ac1310012d05337eb",
+      "sharesRaw": "103340763529512251"
+    },
+    {
+      "address": "0x3e0e9abfb564ef88dff6d3611d31763eeed29e77",
+      "sharesRaw": "103063347391503631"
+    },
+    {
+      "address": "0x872e8800eed238377965682eb753363ca4590bdc",
+      "sharesRaw": "102870403007605641"
+    },
+    {
+      "address": "0xdea6eacab6d30c30cb328cb54f653741cb3feab0",
+      "sharesRaw": "102400733622860955"
+    },
+    {
+      "address": "0x56024cdd8c4e3ed353ae4a8cfe110a910810576e",
+      "sharesRaw": "101164970217044433"
+    },
+    {
+      "address": "0x53fbce97a39dac4cac6c10e7f6256ce28d614123",
+      "sharesRaw": "100372162473324164"
+    },
+    {
+      "address": "0x90d025a3b40ffb6043e89c3462372adc99647a21",
+      "sharesRaw": "100000000000000000"
+    },
+    {
+      "address": "0xc66c5e82cca367bf64240bcd428d57d988efa021",
+      "sharesRaw": "100000000000000000"
+    },
+    {
+      "address": "0xaf67ba88bc47c03d3cb46eb9ee408782d77d5094",
+      "sharesRaw": "98519358252051047"
+    },
+    {
+      "address": "0x5ee3954d4cfa4a2b880f4069efe131a644abd038",
+      "sharesRaw": "98463752636399566"
+    },
+    {
+      "address": "0x10708d14fd8cc8e43cc51f6b91f2049b48d71994",
+      "sharesRaw": "98081999999999980"
+    },
+    {
+      "address": "0x13ac380a91d914f87975e702807c361663d82fc9",
+      "sharesRaw": "96597197232792618"
+    },
+    {
+      "address": "0x6049d33548175b6207cc5bdd988e550a0e94c58c",
+      "sharesRaw": "95606355020796375"
+    },
+    {
+      "address": "0xe738758bf241f5915c559793e8e458a140108b3b",
+      "sharesRaw": "95250601926215487"
+    },
+    {
+      "address": "0xe6f031f1e96b242415b02448019edd4f1ed4978c",
+      "sharesRaw": "95198972472556942"
+    },
+    {
+      "address": "0x678b44faf170b7f307ffb04f292dbbacf63e5c94",
+      "sharesRaw": "95161770577256906"
+    },
+    {
+      "address": "0x16ff6476cc63515a68956a7d0e1e185dec1c0b56",
+      "sharesRaw": "95115295628607621"
+    },
+    {
+      "address": "0x8275f959d608a2d38a920f187e0085924b1f6884",
+      "sharesRaw": "95063721068079398"
+    },
+    {
+      "address": "0x1aa01a0ef056aef03997e9e1cb8a70b0fa4570d8",
+      "sharesRaw": "94216615674952047"
+    },
+    {
+      "address": "0xfca9adbbf62fae0e0a5e12890f61c56808be4519",
+      "sharesRaw": "93597879447808120"
+    },
+    {
+      "address": "0xe63e03d472770b4dbe8522a8c928695db58e889c",
+      "sharesRaw": "92421081643750201"
+    },
+    {
+      "address": "0x861aacab0ad79d3f3e228fa369674029a850a195",
+      "sharesRaw": "92201348425226556"
+    },
+    {
+      "address": "0x74433466a7c75d8e8b6b2a54f47aa7b78b8140e8",
+      "sharesRaw": "92019777593387014"
+    },
+    {
+      "address": "0x31185abfda1088328cfc5101096ba5151036a38a",
+      "sharesRaw": "91679361192896927"
+    },
+    {
+      "address": "0xdbe7b55a2766aceb6461dcb150a39bf5b28ef031",
+      "sharesRaw": "90846663707552295"
+    },
+    {
+      "address": "0xff569e030472287279773c16e9981bfcc9bd5df1",
+      "sharesRaw": "87078747454838577"
+    },
+    {
+      "address": "0xf49d32053cbcd130c9a763fd5a34bb5d68964363",
+      "sharesRaw": "84468280446698322"
+    },
+    {
+      "address": "0xc365dfbe22bdb7393149e60fe18574f083afce28",
+      "sharesRaw": "80895518759167907"
+    },
+    {
+      "address": "0xfddd62428f93d15ed07587a6b7cccf8b16cf2378",
+      "sharesRaw": "79574831167375377"
+    },
+    {
+      "address": "0x97e11b87bb9c25ca4a155e74d0ab952355471dbb",
+      "sharesRaw": "77919356750412888"
+    },
+    {
+      "address": "0x341f202691de5fb50d809a60af10d6663fd5d408",
+      "sharesRaw": "76422132058413997"
+    },
+    {
+      "address": "0x55b7b4a10ebd9b13630e22d6b69ad0ab1dec8f23",
+      "sharesRaw": "75672078699238357"
+    },
+    {
+      "address": "0xe0f68b1558ee05c00ae4e1cf905cf17ebc16126d",
+      "sharesRaw": "75069065200838309"
+    },
+    {
+      "address": "0xd1faebffc482cb0cc5092b5c59d97a475e010f7f",
+      "sharesRaw": "73503938079837431"
+    },
+    {
+      "address": "0x90930f01daea52f852baba9bf5d9de0c3d6ab4a6",
+      "sharesRaw": "72440321067719145"
+    },
+    {
+      "address": "0xe4329a51c81135097cfa122491f820c67ceb4707",
+      "sharesRaw": "72325126789058739"
+    },
+    {
+      "address": "0x41b2a9771621cde1fe5dc377a2b7471b8a32158c",
+      "sharesRaw": "70971923267119104"
+    },
+    {
+      "address": "0x6b42d8dcafcadce342cf417ccb652acdab307f2b",
+      "sharesRaw": "70894328399653816"
+    },
+    {
+      "address": "0x03f571c093e39b955f20ed6a007c021981a6237f",
+      "sharesRaw": "70168032395827168"
+    },
+    {
+      "address": "0xbd0542ffcebe24fc030aa3e4b8294eabeab5a827",
+      "sharesRaw": "70133651504489702"
+    },
+    {
+      "address": "0x9b2513dcfe13a37474c28f69fc2416fcc99c07e8",
+      "sharesRaw": "69574043597693817"
+    },
+    {
+      "address": "0xa8e815f5494b675e1af513b8d26f79506bf8c8e4",
+      "sharesRaw": "69572163218128932"
+    },
+    {
+      "address": "0x91b7335c7fcc215b44f4fc5e6c728c52c963e2ab",
+      "sharesRaw": "69301106364318830"
+    },
+    {
+      "address": "0xd40b829ba49a54505aeb6440dc3d91d4d59ddec7",
+      "sharesRaw": "69268966447106711"
+    },
+    {
+      "address": "0x18faadf031466609a6f436c20151c1b03bbecf1d",
+      "sharesRaw": "66987686277164941"
+    },
+    {
+      "address": "0xe19f93a240e9909bd7dc723e2ed6934cf28aef7a",
+      "sharesRaw": "64559272562742769"
+    },
+    {
+      "address": "0x741e3db3896443b988649e0c56143a035365ad3a",
+      "sharesRaw": "63388121253224583"
+    },
+    {
+      "address": "0x428a243bb6c320d4afc7517b7066533be4c2ce4a",
+      "sharesRaw": "62989734841665268"
+    },
+    {
+      "address": "0x9c97387aea876588190aabe356406c022b5eb770",
+      "sharesRaw": "62745036244643206"
+    },
+    {
+      "address": "0xd3cdf1a73b2ab788260688372f99a6e0639f993a",
+      "sharesRaw": "62514000000000000"
+    },
+    {
+      "address": "0x57a3b59cbcbce450d9a222570730e040a622fed7",
+      "sharesRaw": "61112901746155857"
+    },
+    {
+      "address": "0xead2f3680444d6dddff98ece26ee8e967bb7cfec",
+      "sharesRaw": "60447701554554397"
+    },
+    {
+      "address": "0x14adedc052b4ccc6a8b734fde50d10f076867e8b",
+      "sharesRaw": "60410137501394955"
+    },
+    {
+      "address": "0x4fa875cbab7db6cbe213aedc9af6f74ed4b33451",
+      "sharesRaw": "59012256421765709"
+    },
+    {
+      "address": "0x425717054d420a89251cc1998f430a19e0653328",
+      "sharesRaw": "58752140164566862"
+    },
+    {
+      "address": "0x230fa3d780c60b34aade72791bb836e6ca4fcf59",
+      "sharesRaw": "58656136891816494"
+    },
+    {
+      "address": "0x10b7642614cc4dcdba2306ae709c2c7d33ffc32c",
+      "sharesRaw": "58503129085175027"
+    },
+    {
+      "address": "0xa7ac57f930687704f2641977546e697427f7d739",
+      "sharesRaw": "57986966267654754"
+    },
+    {
+      "address": "0x1fdb302f1affb29ca83f971189b7518e8dfc4ffc",
+      "sharesRaw": "57882628724149209"
+    },
+    {
+      "address": "0xa26fed6148976f3faf4f29ba3f50b442193566b1",
+      "sharesRaw": "57227889734157458"
+    },
+    {
+      "address": "0xce5dcce5202197ef849a2635511e0f44a6974c11",
+      "sharesRaw": "56845335504682076"
+    },
+    {
+      "address": "0x9600266d378b51191353857281ed39b04286c091",
+      "sharesRaw": "56810157069527743"
+    },
+    {
+      "address": "0xf11c908b60cfec04433ab6b8dd58ad370d0b8ac6",
+      "sharesRaw": "55982594815270953"
+    },
+    {
+      "address": "0x541296d72d741d419e3ccd97b639a840aae33f99",
+      "sharesRaw": "55518064750041482"
+    },
+    {
+      "address": "0xcffba18e37e5a7191255605f598d3e61b777abcc",
+      "sharesRaw": "54994617063505133"
+    },
+    {
+      "address": "0xd356069d465c0fc05e02fb6984c8ccf6d7a62793",
+      "sharesRaw": "54279360582466847"
+    },
+    {
+      "address": "0x0d3a69bcbfde2c2600eb2a3daca89847b1dc4d53",
+      "sharesRaw": "54231548678159776"
+    },
+    {
+      "address": "0x098a4f8b530f37422fdd70e8fb2071f8061bd9b3",
+      "sharesRaw": "54114325469153024"
+    },
+    {
+      "address": "0x2d8194e109853542f9e26b3dfeead116a8a9dd09",
+      "sharesRaw": "52954876973826591"
+    },
+    {
+      "address": "0x3f99755bd6c01e7e6693fe9c2215ac40cc8e277d",
+      "sharesRaw": "51981698289107655"
+    },
+    {
+      "address": "0x596a0bf42ce2ce30d745377d5cd6fede6aba5ee4",
+      "sharesRaw": "51674997196122796"
+    },
+    {
+      "address": "0xdc3953d222299f5374b0a37d19c93b3aa1a1fb02",
+      "sharesRaw": "51479314306967010"
+    },
+    {
+      "address": "0x58e89325c2d4b5ed4313e232a69e870e2f2f9eec",
+      "sharesRaw": "50611730970390598"
+    },
+    {
+      "address": "0xf1bf2b7ac098569444ef52e7984f78d0f1e99cd7",
+      "sharesRaw": "50548877204571938"
+    },
+    {
+      "address": "0x279a13e342879aaf248b1cd751de14d90b327613",
+      "sharesRaw": "50163451747257735"
+    },
+    {
+      "address": "0xe6af616919e26549876f427028658a3c68fd31fd",
+      "sharesRaw": "49158206509235681"
+    },
+    {
+      "address": "0xec1dd36a4a3f5e31488b0d631b6f831ac2493588",
+      "sharesRaw": "48403918805064897"
+    },
+    {
+      "address": "0x18a745ec64ad7e6612881c01289cb097abcfb54c",
+      "sharesRaw": "47893545174089753"
+    },
+    {
+      "address": "0x76b21bdc9f107b2550739dc8386dcc770a5c7540",
+      "sharesRaw": "47384216794786928"
+    },
+    {
+      "address": "0x1d370ec4b8ca25783c3793bb9e53b5fb9985ff85",
+      "sharesRaw": "47317801707944674"
+    },
+    {
+      "address": "0x21db3ac512e30d29358ea6452991742817e4f2c5",
+      "sharesRaw": "46722409099804082"
+    },
+    {
+      "address": "0xfa1a69d0f299d84fd7ade12728bb43576c8aa4ca",
+      "sharesRaw": "46570773666454145"
+    },
+    {
+      "address": "0x4d6e073bb73d730f117d6407a17b0006f4bc9d93",
+      "sharesRaw": "46223516879601497"
+    },
+    {
+      "address": "0xda40ce3998e4699cc776fe946ff1bb48eb5a752e",
+      "sharesRaw": "46154427613432433"
+    },
+    {
+      "address": "0x269eb33815a2c24a3161251b751bda75cdd1a481",
+      "sharesRaw": "46046711745259509"
+    },
+    {
+      "address": "0x12af3e0193370edd7c28c1770f74983542026e93",
+      "sharesRaw": "45837009767627207"
+    },
+    {
+      "address": "0x869031811364688697473fb7bd156fd070a4f234",
+      "sharesRaw": "45323461895292962"
+    },
+    {
+      "address": "0xdeef23a002c919b215ab698be04e569eb8ef7342",
+      "sharesRaw": "44850925770360834"
+    },
+    {
+      "address": "0xdcd16c2b77c423da8a4d66849ee509630e648fff",
+      "sharesRaw": "44479210501644077"
+    },
+    {
+      "address": "0xb006e819221303453d07f76114a928a17619d104",
+      "sharesRaw": "44211245126288920"
+    },
+    {
+      "address": "0xcef19b66368d728a7e10b60d18c069e3893c1fef",
+      "sharesRaw": "44171964281322031"
+    },
+    {
+      "address": "0xe1c6dc20c61751b92e2593e78008b85bf9b4efd2",
+      "sharesRaw": "43851338639484821"
+    },
+    {
+      "address": "0x156fa860549ece0e277dae917086b7d946c52fd0",
+      "sharesRaw": "43794742285500146"
+    },
+    {
+      "address": "0x406d7d4051a226841ce49864e85df054ae1a359b",
+      "sharesRaw": "42804829704968949"
+    },
+    {
+      "address": "0x9f589ecfff94ea6339fcd614f3c76c74d90d0588",
+      "sharesRaw": "42581485304835643"
+    },
+    {
+      "address": "0xdc59b34a3d2cfe551ba6e0d5436e804a3791d14a",
+      "sharesRaw": "42411602534689411"
+    },
+    {
+      "address": "0x28b1ffac7cf27e0c85ff4699115a8ee249b8fa6f",
+      "sharesRaw": "42302987005666112"
+    },
+    {
+      "address": "0xd712b7438e1eab070c3008d1df06d02bdd3fa812",
+      "sharesRaw": "41680851470622007"
+    },
+    {
+      "address": "0x687b3f4b78348f02c824b40614c4d6a8bec65b3a",
+      "sharesRaw": "41505276739487946"
+    },
+    {
+      "address": "0x88b956bf20e415bba0089f51b21e8dfb8c1302fb",
+      "sharesRaw": "41470181383912719"
+    },
+    {
+      "address": "0x591e8130a1da460db3619a102f05cc60f370849d",
+      "sharesRaw": "41318511088713686"
+    },
+    {
+      "address": "0xdb4868cbc4e7d3d82525b4fdbceede1bf3b0e7dc",
+      "sharesRaw": "40764272794911250"
+    },
+    {
+      "address": "0x2a3f449da3cb688c62817f4867e2237baab74187",
+      "sharesRaw": "40586658015417724"
+    },
+    {
+      "address": "0x444c9da25c27ae8c693b1ef0fff13b63622b8cf8",
+      "sharesRaw": "40246890409513816"
+    },
+    {
+      "address": "0xf33492254862e977d2c184e51939e3159dbb4b35",
+      "sharesRaw": "40148058745791991"
+    },
+    {
+      "address": "0x2bdf6cfac1e4f02eef6544af83cc50a97b37e627",
+      "sharesRaw": "40144125664163706"
+    },
+    {
+      "address": "0x946c45d0fb24fb743398f3955ba3eeafbe078e55",
+      "sharesRaw": "39794140255901342"
+    },
+    {
+      "address": "0x5850d44efe946e3b27a2cf041137f5c8dd61bef7",
+      "sharesRaw": "38704235382280034"
+    },
+    {
+      "address": "0xd306b84faa19f08746e9aa62af9f29e9a3ce2740",
+      "sharesRaw": "38261905818528106"
+    },
+    {
+      "address": "0x90a1d71d8a4a6442474a10a5f69b2ecf9353183f",
+      "sharesRaw": "38066752469489698"
+    },
+    {
+      "address": "0x8f278b9570c44696edd8fd592f525c698580b119",
+      "sharesRaw": "37953712357197684"
+    },
+    {
+      "address": "0x8479ee11975ce473dc9dfd817e96896a3132fcfb",
+      "sharesRaw": "37792568287784962"
+    },
+    {
+      "address": "0x7933c8578349db021c6de8939644a724f7ac500b",
+      "sharesRaw": "37695344521359830"
+    },
+    {
+      "address": "0x4b1347d3a1e5b3dc692854b9ac30c2f1c9baccf7",
+      "sharesRaw": "37648078919101422"
+    },
+    {
+      "address": "0xb1657fcd24687591f99b503cd94d47b76e50b1f3",
+      "sharesRaw": "37566295902071201"
+    },
+    {
+      "address": "0xa941228d778b1f39da065f81c3e6e2bcb38d4caa",
+      "sharesRaw": "37476897380690397"
+    },
+    {
+      "address": "0xb6851f02514c3519f26c81fad6351af87a33a26f",
+      "sharesRaw": "37184706328435507"
+    },
+    {
+      "address": "0xe661977027b3f5415aa60cef81fcaf69e23db8fd",
+      "sharesRaw": "37168178718116152"
+    },
+    {
+      "address": "0x999052139efa8703bbe4a3d22d7f5086b651e6a2",
+      "sharesRaw": "36973957454020636"
+    },
+    {
+      "address": "0x2b8e20c7f1b4aad62f6b6c77cab4e5f7f59072c2",
+      "sharesRaw": "36937560537298840"
+    },
+    {
+      "address": "0x297b74787053c5b9899edade0d83961717cb6497",
+      "sharesRaw": "36301504817437163"
+    },
+    {
+      "address": "0xf2dffc01147d4746b0f2830a0f8830bbfe4faeb4",
+      "sharesRaw": "36007171427950954"
+    },
+    {
+      "address": "0xb12b70c0710fa8621f4c1148c9b48066727821a1",
+      "sharesRaw": "35924089348024975"
+    },
+    {
+      "address": "0xe96ba6e7120a11a4ab43ee46702e59de1dcd7feb",
+      "sharesRaw": "35857552862503749"
+    },
+    {
+      "address": "0x02365d716173e1fd6a0bf17796b23f6a16294e93",
+      "sharesRaw": "35436584709689505"
+    },
+    {
+      "address": "0x1f0bf308e0e50bf5f3043fcc033b2b19d3e05f4a",
+      "sharesRaw": "35423794843396340"
+    },
+    {
+      "address": "0x5f2962bd8535922a412877cb6614c00464111376",
+      "sharesRaw": "35324046916472197"
+    },
+    {
+      "address": "0x7060a56337505acabb252ec94403e6da12521350",
+      "sharesRaw": "34579507258444679"
+    },
+    {
+      "address": "0x0af6bd06a139a518aad47cd644788b24c84f0f60",
+      "sharesRaw": "34460397205900301"
+    },
+    {
+      "address": "0xb74286c0715a09e2ac2df2749714cebe6a4f01ab",
+      "sharesRaw": "34216535249885889"
+    },
+    {
+      "address": "0x3f4a2f835994cec7101795b8d3c590504a06d5ab",
+      "sharesRaw": "33711808626181644"
+    },
+    {
+      "address": "0xe3a92f367c362a31cc8543a0de2be73156bccd85",
+      "sharesRaw": "33511861203344066"
+    },
+    {
+      "address": "0xf53d975116b8c0ad3bae94de113aaf4ad661acc8",
+      "sharesRaw": "32990225461640717"
+    },
+    {
+      "address": "0x726d720e8fb22658cff9b7eb05620f12f9adf8ba",
+      "sharesRaw": "32090918163595265"
+    },
+    {
+      "address": "0x64ac64c032e2b1904cab03ae5e0c6cc81cb193dd",
+      "sharesRaw": "31940644148808906"
+    },
+    {
+      "address": "0x1e5f89f8adef6f1fd22ad7364098ccab6088c89d",
+      "sharesRaw": "31850929060837150"
+    },
+    {
+      "address": "0x2388d6294ebb8144cd30aa639e87ba55d95fb6bb",
+      "sharesRaw": "31538064192457276"
+    },
+    {
+      "address": "0x94bdf51203836c6ecf40530badc982dee5986e4b",
+      "sharesRaw": "31516712871144006"
+    },
+    {
+      "address": "0x3bde943d0ca36a63b8f1f64d486ee6c5abb45265",
+      "sharesRaw": "31343157412808633"
+    },
+    {
+      "address": "0x8906a9d0fd310586b2e6bbbd6b54fbdc9582e307",
+      "sharesRaw": "31033662202415452"
+    },
+    {
+      "address": "0x0b53ac50099f5d73474e820758c2f90b29ab3c09",
+      "sharesRaw": "31023089640048787"
+    },
+    {
+      "address": "0x4f2866608eac4fcff780f7ac1e51178065562510",
+      "sharesRaw": "30861080261377103"
+    },
+    {
+      "address": "0x878ece0af5919839df59a88e861216beb98b97e8",
+      "sharesRaw": "30767891120187256"
+    },
+    {
+      "address": "0xdabdb66daa38c3d864473eaa3a2df1d096ff59df",
+      "sharesRaw": "30681988632959793"
+    },
+    {
+      "address": "0x15f82a92d7c250c4dfb77222feba124e3725a689",
+      "sharesRaw": "30432788664446318"
+    },
+    {
+      "address": "0x0ca08cee8db06fed9d4ef5ebd98daee13aa9d314",
+      "sharesRaw": "30211499707050636"
+    },
+    {
+      "address": "0x908d183cfb24c777ca2b7b35aa8605b6cb4c2cdd",
+      "sharesRaw": "29848586652614775"
+    },
+    {
+      "address": "0x91ee5145145394bb9fd660d7d30d4464cc718da6",
+      "sharesRaw": "29508928969734709"
+    },
+    {
+      "address": "0x1e82fa6b2c5ce27127596e3b839d0260572f4a43",
+      "sharesRaw": "29459795774942658"
+    },
+    {
+      "address": "0xd4540b2f982c315c50fdd8ca4d9439dd0033dd34",
+      "sharesRaw": "28851838147238781"
+    },
+    {
+      "address": "0x5bb0f657a75724e0187d4c628b4b337aeec8f668",
+      "sharesRaw": "28644308620563882"
+    },
+    {
+      "address": "0xe139f0cafd3d0bc50ab0ca52369cfa811e846b13",
+      "sharesRaw": "28406845686657019"
+    },
+    {
+      "address": "0x4c069fb97e45c03262e74ad8588c4551ffec95c2",
+      "sharesRaw": "28306262689291298"
+    },
+    {
+      "address": "0x97c1717c766adf58039a2a7f114eb07653543e8d",
+      "sharesRaw": "28297982755611263"
+    },
+    {
+      "address": "0xd29d31d3b2742ba6f1596da1bf7a1bae86cdd052",
+      "sharesRaw": "28270089129845338"
+    },
+    {
+      "address": "0xa806e8680339960cc5a56399aabf2d21df538dc5",
+      "sharesRaw": "28262308202053952"
+    },
+    {
+      "address": "0xfc0ecfd548c5e5fc543ff6cd3855984ef534eb67",
+      "sharesRaw": "28259909842737582"
+    },
+    {
+      "address": "0x584dfb5056da059811913c94da85880355f36b86",
+      "sharesRaw": "28259261351855621"
+    },
+    {
+      "address": "0x28c3a47952677904a2c9706c64e14630d06baffb",
+      "sharesRaw": "28186822898066642"
+    },
+    {
+      "address": "0x81152cc9cb57a14f723f8c0f88b2af1f459626a4",
+      "sharesRaw": "28176454264364578"
+    },
+    {
+      "address": "0x6eb0840f9a207366617892e2e51e950e03cbfdc3",
+      "sharesRaw": "28173714395615767"
+    },
+    {
+      "address": "0x843f0100e754a4567c00c8e5094952799ebeb915",
+      "sharesRaw": "28037503299736621"
+    },
+    {
+      "address": "0xe6f71f9a7aa3e9ab5f02c5d603cb31cc937c231f",
+      "sharesRaw": "27655149961982827"
+    },
+    {
+      "address": "0xe79d3785dce3030d04c72263ce89d435845a8fe8",
+      "sharesRaw": "27634896405800375"
+    },
+    {
+      "address": "0xe4a3bfdfabef1fc6036d7666fbe59cd837df5f53",
+      "sharesRaw": "27377251758355568"
+    },
+    {
+      "address": "0x0704662f8bddd35199e315efbe8514d76e499d25",
+      "sharesRaw": "27326759887557101"
+    },
+    {
+      "address": "0xbc09ed96bafcb1aa2d51664078fc0454f5090605",
+      "sharesRaw": "27320431445935640"
+    },
+    {
+      "address": "0x4e06c5832d1612224cdabe814ca420f9bf31238e",
+      "sharesRaw": "26616426184123280"
+    },
+    {
+      "address": "0xc57b761c40232235833d26f6622b591396138ff0",
+      "sharesRaw": "26247373480791285"
+    },
+    {
+      "address": "0xbb147552f0a43812fe50344b4d3c0054e02e7ec5",
+      "sharesRaw": "26244345851086990"
+    },
+    {
+      "address": "0x35045e56ea9e3b0dbfa6e3dbdcc721f475427db1",
+      "sharesRaw": "26199679397599218"
+    },
+    {
+      "address": "0x1a0299a9cacd1036a9ca77359e080d1b0c58fd9a",
+      "sharesRaw": "26184253316636297"
+    },
+    {
+      "address": "0x232b323036d83b3043997830ac893fedf41749e1",
+      "sharesRaw": "25973857227187785"
+    },
+    {
+      "address": "0xcbda9c6f74936ad2b5f669ec5b9bf08dd2611967",
+      "sharesRaw": "25965497740197950"
+    },
+    {
+      "address": "0xdc767bd5a2df4c1b2ecd2bc282b5239b196f161a",
+      "sharesRaw": "25012265382704314"
+    },
+    {
+      "address": "0x4a3c01884fb3af41197059518482068dedeae868",
+      "sharesRaw": "24939461461464913"
+    },
+    {
+      "address": "0x3cae41b0a8f2a9816f257accbb9900fc1447a036",
+      "sharesRaw": "24896032275743030"
+    },
+    {
+      "address": "0x4ed82d6ba566fa8939787ed7880cef75e426c6c5",
+      "sharesRaw": "24803245060512547"
+    },
+    {
+      "address": "0xb92ab9af94177d211c95a00c52752af32fb4a287",
+      "sharesRaw": "24337557256782263"
+    },
+    {
+      "address": "0x72eaecd3a3198ffee476b9478288cf04283657a9",
+      "sharesRaw": "24297797904204346"
+    },
+    {
+      "address": "0xcd156ece70a8477ed4fd2a24e430c6a73eac7b5b",
+      "sharesRaw": "24091519059140600"
+    },
+    {
+      "address": "0x336994a5ecf30a4792e8dac8c8fd851dc93a2033",
+      "sharesRaw": "24052767065114480"
+    },
+    {
+      "address": "0x537f7e75059ce640c94d9e11fdb5bb0a099c95fd",
+      "sharesRaw": "23427043006500723"
+    },
+    {
+      "address": "0x7e73c5d69416a126bc8f9114dbb01760215fc5ed",
+      "sharesRaw": "23062673598703246"
+    },
+    {
+      "address": "0xaa082e2cc63aef6c5a73639c39d5d3bcce1a5c13",
+      "sharesRaw": "22967342507786034"
+    },
+    {
+      "address": "0x8d29c597d5d16a6bb0c4ff752db7029e5522cd71",
+      "sharesRaw": "22944762667862673"
+    },
+    {
+      "address": "0xc7e58449348a38265b23fe5d9a9dc16da1eaf0ee",
+      "sharesRaw": "22784557731712083"
+    },
+    {
+      "address": "0xfb9b30631799cb0b394e502776d63d82d6e3e590",
+      "sharesRaw": "22640846446081977"
+    },
+    {
+      "address": "0xfadf23a548d9decaa366d1871fd09df0fc35bf8e",
+      "sharesRaw": "22567626458445241"
+    },
+    {
+      "address": "0x8ee77fafb8140ff70414234516c4384384d5dcb2",
+      "sharesRaw": "21895095068773539"
+    },
+    {
+      "address": "0xb5a4a265268f79336b3a61f418b76a1e6ceeef53",
+      "sharesRaw": "21892373579723462"
+    },
+    {
+      "address": "0x45ea807c9586abe1907681a5d32e2c9698d74040",
+      "sharesRaw": "21878370625328394"
+    },
+    {
+      "address": "0x6363789c0f98d4094dfd40fb94687a77578c58c0",
+      "sharesRaw": "21807976901164996"
+    },
+    {
+      "address": "0xd3ff966125881b75050426dec9d678b99460211f",
+      "sharesRaw": "21714246580307130"
+    },
+    {
+      "address": "0xaca7db61f42ad8281006d74f4c16043bae864d9a",
+      "sharesRaw": "21227671611418650"
+    },
+    {
+      "address": "0xe11f382f2e6349470c294198080b873b7ea217f6",
+      "sharesRaw": "21136344586878722"
+    },
+    {
+      "address": "0x8f827fb77b41d5d26c1ff8d395c124d48f8e4f1c",
+      "sharesRaw": "21041170507460066"
+    },
+    {
+      "address": "0x99dae2026c9a6d60fff3be75f5c29ad958e773f3",
+      "sharesRaw": "21023519514516985"
+    },
+    {
+      "address": "0x3f5882e71b237f03320d021e9907be357b279e6f",
+      "sharesRaw": "20989000000000005"
+    },
+    {
+      "address": "0x443a19018aad2d44fa3ddbde729333a6c0870b5b",
+      "sharesRaw": "20941526052894995"
+    },
+    {
+      "address": "0x928bb96d21c989ab2153850a9659f0fc72158a49",
+      "sharesRaw": "20868114543746390"
+    },
+    {
+      "address": "0x2d1405243add8abd644253fdfad8e601b6813436",
+      "sharesRaw": "20778263059108839"
+    },
+    {
+      "address": "0xaab89f1fba4c40fb2f04e89b0577037f48db8907",
+      "sharesRaw": "20754575791365319"
+    },
+    {
+      "address": "0xc4a0a2c4eed0fe68c143740e279e1614a4ccfa3b",
+      "sharesRaw": "20488391707691933"
+    },
+    {
+      "address": "0x275358b7e50b18414af40cfc8de49e5673e27b73",
+      "sharesRaw": "20296102445302788"
+    },
+    {
+      "address": "0x901c15a84ba48e621e262603cfda8a1134a03641",
+      "sharesRaw": "20221835023623711"
+    },
+    {
+      "address": "0x0782b7329ec33fe0f1142454412b916f39d3f095",
+      "sharesRaw": "19720734248820988"
+    },
+    {
+      "address": "0x0223393be1f8d4eeba416df6c8d5a97ffe491e8c",
+      "sharesRaw": "19650839555662801"
+    },
+    {
+      "address": "0x29d4fc64fd3ce85ba5e55856f1dbfb9b80b9970e",
+      "sharesRaw": "19473621605628256"
+    },
+    {
+      "address": "0x89fd7f8916076e771c4b0b51300c04d7c67a6a85",
+      "sharesRaw": "19460000000000000"
+    },
+    {
+      "address": "0xc33df58a791d298997f96dbdaf34aeba8cada734",
+      "sharesRaw": "19397449629846624"
+    },
+    {
+      "address": "0xf10d7c411828fbaa230ebb836c19251d6e0d010e",
+      "sharesRaw": "19329810808035441"
+    },
+    {
+      "address": "0xc1a36c9ee77eeb9e1c27b7ae7f84caea29f311c4",
+      "sharesRaw": "19262464534393756"
+    },
+    {
+      "address": "0x580b84452f96aa2a82d241b74ce11b766fe28510",
+      "sharesRaw": "19133920751360942"
+    },
+    {
+      "address": "0xcf532c83bef2a3f6d0e87c7852cd9dc6585bd546",
+      "sharesRaw": "18841538801369301"
+    },
+    {
+      "address": "0x8200b8626cb16c05720c4bca42573e4d0b21d6f4",
+      "sharesRaw": "18794340639792625"
+    },
+    {
+      "address": "0xc119da60a648693b1dc122337ef220f1811c3e5e",
+      "sharesRaw": "18782476263743845"
+    },
+    {
+      "address": "0x921d8a83a8f46f84c1801507ae3d3d8cef6aaf96",
+      "sharesRaw": "18735160099854352"
+    },
+    {
+      "address": "0x24c60c1e25207bbc4b35db9ca0bafc9e6e0faef8",
+      "sharesRaw": "18725326369057724"
+    },
+    {
+      "address": "0x883ee391d4758b479fff0a868c364738f3a99742",
+      "sharesRaw": "18465127746948356"
+    },
+    {
+      "address": "0xd104aa8ddb1d53caf3c21e073504d9dec0107e1d",
+      "sharesRaw": "18447269742222818"
+    },
+    {
+      "address": "0x3903b6d13d13447f1f126c7558e781816f76bb46",
+      "sharesRaw": "18028006256280314"
+    },
+    {
+      "address": "0x68fd74d0c0f201255c0ae11a4c6888410fce1a15",
+      "sharesRaw": "17959444318926498"
+    },
+    {
+      "address": "0xeb3706e6998dcbbeb008262f2c481ea25232934a",
+      "sharesRaw": "17685138900246609"
+    },
+    {
+      "address": "0xd663733ba3b61d6120b6fce04897e2fff18d0d01",
+      "sharesRaw": "17675151451686846"
+    },
+    {
+      "address": "0x11dea28413a6583831892bd3e6497424c211343b",
+      "sharesRaw": "17612905823266526"
+    },
+    {
+      "address": "0x6ddb549361bcdd95c9e1ecbd9f64bbd769394df7",
+      "sharesRaw": "17577596607750029"
+    },
+    {
+      "address": "0xd7ee1d6a8f9c7de469dbe7391a659dcc585be4d8",
+      "sharesRaw": "17505522535945986"
+    },
+    {
+      "address": "0xa0adde53c906f9f16f6d9b3a7d2fd978bbf906ca",
+      "sharesRaw": "17371964493705225"
+    },
+    {
+      "address": "0x81f18eeb9199a0d75aa091cf09ea24c09566e5a1",
+      "sharesRaw": "17274282733406532"
+    },
+    {
+      "address": "0xa8dd820614f39c61cb83f8d32fe5bc171ecaacac",
+      "sharesRaw": "17248870193185455"
+    },
+    {
+      "address": "0x76a729b517626f6ecc60b3415ffb66456bb38b8d",
+      "sharesRaw": "17237183125423643"
+    },
+    {
+      "address": "0x49a5da7ed1e719c0e70b79915ff7f8c215886a7c",
+      "sharesRaw": "17128762753477180"
+    },
+    {
+      "address": "0xd3f78f032adf5f546ed084c303fceb0024cf4c0c",
+      "sharesRaw": "16898123428306912"
+    },
+    {
+      "address": "0x0ed2013648ff3c4f2f3cbac7be800084207c50b9",
+      "sharesRaw": "16870055325586930"
+    },
+    {
+      "address": "0xac764043f9517c6683763274830d42a4dfe8800f",
+      "sharesRaw": "16786073053644549"
+    },
+    {
+      "address": "0xae162518d0e5cec0b0fa2672bf0bc6bd5cf2fd2c",
+      "sharesRaw": "16738567561413955"
+    },
+    {
+      "address": "0x721ed5c657305f40489c8fdbd7f6c03f212ee509",
+      "sharesRaw": "16732449336239208"
+    },
+    {
+      "address": "0xd2a551a4cf6380cf67aeaf700cf0e76d3003e81d",
+      "sharesRaw": "16631297118211050"
+    },
+    {
+      "address": "0xc59162af3c60d8aa24da8b7c6f85e82f528859af",
+      "sharesRaw": "16566862670374664"
+    },
+    {
+      "address": "0x8b11cca332ace421ba825ce878227129f3823373",
+      "sharesRaw": "16562714478350405"
+    },
+    {
+      "address": "0x6227a7a63b9187c9c2efe7aec8e69b2148824e72",
+      "sharesRaw": "16154425266275438"
+    },
+    {
+      "address": "0x673b87f322aa3f8af787c1b1ecab2668bc2bec58",
+      "sharesRaw": "15834063046594409"
+    },
+    {
+      "address": "0xed81aa485f640c66eb96cd88af9164c7bfdb9b9a",
+      "sharesRaw": "15675756980403470"
+    },
+    {
+      "address": "0x91565b48addb55a1539c327e842f288cc763e0b9",
+      "sharesRaw": "15445447264165216"
+    },
+    {
+      "address": "0x9c47334baa9a6de4641c2eb5824fd96c25d4680b",
+      "sharesRaw": "15374415081678661"
+    },
+    {
+      "address": "0xca18eb5c78b4e9d2014c9bc86863cf66f0be9e7f",
+      "sharesRaw": "15290108251621073"
+    },
+    {
+      "address": "0xe039b463627317a6c9c4e3d68b208c2709ef5737",
+      "sharesRaw": "15240632007535018"
+    },
+    {
+      "address": "0x4f7387c7a7fce91e0e5ceee73f1bd669872fbabe",
+      "sharesRaw": "15201667139461874"
+    },
+    {
+      "address": "0x571be243f65aae3676fea4dae4e55852ffb3249f",
+      "sharesRaw": "15103187970817541"
+    },
+    {
+      "address": "0xdf9335e800f32d871cfd44cac9772eb27fb0adba",
+      "sharesRaw": "14730239214257151"
+    },
+    {
+      "address": "0x217e4f81c3350af5c729023a362062c5640976d4",
+      "sharesRaw": "14558540624460145"
+    },
+    {
+      "address": "0xe55699a8a22a2e3fbe9b8b69d2a293bfe783266f",
+      "sharesRaw": "14422595691117687"
+    },
+    {
+      "address": "0x0b0a4183677777be24d504a973db3e230dc5ae5d",
+      "sharesRaw": "14412630096343458"
+    },
+    {
+      "address": "0x957780ba331ed8b6a8a354c40ad73a910f508c85",
+      "sharesRaw": "14324847800559258"
+    },
+    {
+      "address": "0x869a2266fbc409790d2870085af1af19fe4d34eb",
+      "sharesRaw": "14141782859465457"
+    },
+    {
+      "address": "0x366df053f7405e1f957851f6c3ffe7e4eee3d22f",
+      "sharesRaw": "13979950640099692"
+    },
+    {
+      "address": "0x4d88b35fdb70ad61a8b014ec0f72b1311fce09c7",
+      "sharesRaw": "13968904824682056"
+    },
+    {
+      "address": "0x1d8cbc53e128b98a9abfaece820362388bd641df",
+      "sharesRaw": "13939830835893843"
+    },
+    {
+      "address": "0x65039a29fd5a3490673212a7771505daf8a0f4dc",
+      "sharesRaw": "13844252060203849"
+    },
+    {
+      "address": "0x1c8812112d751712a23b3bb7bebdb19cf3cc60ed",
+      "sharesRaw": "13819125113116614"
+    },
+    {
+      "address": "0x9a13f98cb987694c9f086b1f5eb990eea8264ec3",
+      "sharesRaw": "13734613813487068"
+    },
+    {
+      "address": "0xfaf9fe29aa01f65f52445a877195d78cb07da599",
+      "sharesRaw": "13599999999999998"
+    },
+    {
+      "address": "0x7f8cbe444c62ec54c3b27bb94bd90406d2a00a78",
+      "sharesRaw": "13486241353712358"
+    },
+    {
+      "address": "0xe874b42c1004603028000949303c99330234e2ac",
+      "sharesRaw": "13370473134402697"
+    },
+    {
+      "address": "0x56e49ce32fdaf99d908f6cc054e64d0ab6d6410d",
+      "sharesRaw": "13370217991164020"
+    },
+    {
+      "address": "0x0aa9385b61b4d3312555260cfe28aa66f9bac85a",
+      "sharesRaw": "13285012950581270"
+    },
+    {
+      "address": "0x9a5b9d1c0adce6898433bcdd6e621c7f9244a580",
+      "sharesRaw": "13169686118294405"
+    },
+    {
+      "address": "0xfdf98de15f3ac09817615a3849e45ccc20fd4867",
+      "sharesRaw": "13167964460575585"
+    },
+    {
+      "address": "0x62624fdf37055ccd6e1c37fb498faaf2e02d5796",
+      "sharesRaw": "13067276020587661"
+    },
+    {
+      "address": "0x7c445c23dbefe7822de13fdf50cea50a234f7b10",
+      "sharesRaw": "13039409591471770"
+    },
+    {
+      "address": "0xad789eb3042dde224cbbcacf0b57399de0807502",
+      "sharesRaw": "13035493360056672"
+    },
+    {
+      "address": "0xa44dab4d3fb0462c25d0201de4f01bf46bbfb8ad",
+      "sharesRaw": "12974402303270942"
+    },
+    {
+      "address": "0xfade7c15dd5ad33022318509e27ce94e760a7878",
+      "sharesRaw": "12921847137692676"
+    },
+    {
+      "address": "0xca1212e341ec7fa79ea387357ab949f3b23d3c29",
+      "sharesRaw": "12905696503229875"
+    },
+    {
+      "address": "0x329dc2d3e53c424977e2769b7aa43568df704396",
+      "sharesRaw": "12780570238043652"
+    },
+    {
+      "address": "0x57adfae4810f56b752d9266c8941669ec774bfbf",
+      "sharesRaw": "12772382912710447"
+    },
+    {
+      "address": "0x31ce91626cac2d0e95962e08106e0df923792e69",
+      "sharesRaw": "12647263544746716"
+    },
+    {
+      "address": "0x97c85efcdfd59bc6122c3f863e05e307329c4875",
+      "sharesRaw": "12605884637164569"
+    },
+    {
+      "address": "0x60445fdfbd1accc5fff7c1d6fc3f316392be5790",
+      "sharesRaw": "12472534771750490"
+    },
+    {
+      "address": "0x59a88eba7d19bf7168905754beccbe95109eef0a",
+      "sharesRaw": "12350767682619285"
+    },
+    {
+      "address": "0x5a69db598fd2ea533bfe95fba6cbebf1a842f3a2",
+      "sharesRaw": "12332448815522238"
+    },
+    {
+      "address": "0x0c8c7f75a9a7c81571ca871fa3d441626a2efbe1",
+      "sharesRaw": "12284323239388439"
+    },
+    {
+      "address": "0x5b78031ed47c5a7f8a47fb0381ca98013731bcc4",
+      "sharesRaw": "12057388190861308"
+    },
+    {
+      "address": "0xc8ce1752bfb0fe1841049fee7bb5e1200b0c4292",
+      "sharesRaw": "12044222655455116"
+    },
+    {
+      "address": "0x53a8cb2ef54a7399c81fd3c8f0f09ce15843d64e",
+      "sharesRaw": "12040620182115297"
+    },
+    {
+      "address": "0xe44ace470d8332143c5c96266dac5952c2d4dd3d",
+      "sharesRaw": "11951112930477079"
+    },
+    {
+      "address": "0x709215912193e7e9d0b3224bfa5d1616c8abb8e5",
+      "sharesRaw": "11865744523152597"
+    },
+    {
+      "address": "0xc44d5daa4e313a47ca2b7d82468cd63117051399",
+      "sharesRaw": "11793654973958227"
+    },
+    {
+      "address": "0x20923a059272ceeecab41708e022f91adf29fae4",
+      "sharesRaw": "11740477593455044"
+    },
+    {
+      "address": "0x29c4cf5b3db3db71f2a417ff10202e49cafa18fb",
+      "sharesRaw": "11663282414060905"
+    },
+    {
+      "address": "0x477a9d064bfaecbd9df040cb5e172509a8d57311",
+      "sharesRaw": "11656903562271920"
+    },
+    {
+      "address": "0x81c8c2422dd87fcf49eaa50da1fdb1650e8300f1",
+      "sharesRaw": "11571208616308564"
+    },
+    {
+      "address": "0xdb8345450b0e4d28514a1c18ee1110c417b5b0a2",
+      "sharesRaw": "11473541314978709"
+    },
+    {
+      "address": "0x5bcfad8a2a1c5d24f291d1ca30d2def6b9f43f0b",
+      "sharesRaw": "11456558597687479"
+    },
+    {
+      "address": "0xc54f953ec6ef5415a99da86c81aac87629eb924b",
+      "sharesRaw": "11440364661606115"
+    },
+    {
+      "address": "0xbfa4d941c79ff808455c94f0431c5fdd5a59c74a",
+      "sharesRaw": "11387199629702994"
+    },
+    {
+      "address": "0x165bdbc97e42d87fec4c3cf23af1c9fdd57fbd37",
+      "sharesRaw": "11287905354901765"
+    },
+    {
+      "address": "0x6de565198d41af8be7245c3e78b395fdf0f0fc39",
+      "sharesRaw": "11270459823703719"
+    },
+    {
+      "address": "0x3903d1b11cac3aee628f71facf1a283ae2bb846a",
+      "sharesRaw": "11184171687298126"
+    },
+    {
+      "address": "0x32db3e60a66fc8c4783e17366323bd3f21a3c966",
+      "sharesRaw": "11168804746583942"
+    },
+    {
+      "address": "0xbf65de1a86a902fb0162d50064c5fcff13f7fbf1",
+      "sharesRaw": "11121972213087807"
+    },
+    {
+      "address": "0x01bbc020a26eb12c02ff80a51da3316b90a707fe",
+      "sharesRaw": "11077920660862365"
+    },
+    {
+      "address": "0x4ddd97dd644494ad5ffb5623bcbaa1e2ebcc2ed3",
+      "sharesRaw": "10901115952322583"
+    },
+    {
+      "address": "0x8f7388a3f4ef2e52abab3288de277c187b88dd93",
+      "sharesRaw": "10775065001392766"
+    },
+    {
+      "address": "0x6d41443df2bde139cf954bad2c307845a4303646",
+      "sharesRaw": "10765865458436786"
+    },
+    {
+      "address": "0x7f896893d98047388df24266fc845343763b7a68",
+      "sharesRaw": "10730705529297138"
+    },
+    {
+      "address": "0x8c9c004537cb663c3ef0384609ea2fe6b761e632",
+      "sharesRaw": "10660087569252936"
+    },
+    {
+      "address": "0x63e52b80edc89d9d406f66a5630a23dd731d5672",
+      "sharesRaw": "10551261728766809"
+    },
+    {
+      "address": "0xe7019c0f40b639a5da4a76a41383c10a72e5e0ac",
+      "sharesRaw": "10545688474946737"
+    },
+    {
+      "address": "0xd244d357cecfc6ac654042490a9e4d196a72af49",
+      "sharesRaw": "10387012167575823"
+    },
+    {
+      "address": "0x4fba15a549447d63e60ac328664a48671da15949",
+      "sharesRaw": "10372827171957706"
+    },
+    {
+      "address": "0x62f2b4ed520ef2ccd538d915f152db4e654a3baf",
+      "sharesRaw": "10372628784667807"
+    },
+    {
+      "address": "0x969429ab3b756ade7bdf86586e6905523ad4aa85",
+      "sharesRaw": "10311711644391998"
+    },
+    {
+      "address": "0x5b82e65bac758ddc4cbe158b0d9b9cef3e39ebe2",
+      "sharesRaw": "10301035006773277"
+    },
+    {
+      "address": "0x9497070f522d6f4dbb10b0cec0b17111aac0d822",
+      "sharesRaw": "10193518473797576"
+    },
+    {
+      "address": "0x1ae783cbdf8cb4dd7c73bd6777ca8990a1fb63a3",
+      "sharesRaw": "10132455991598242"
+    },
+    {
+      "address": "0x48dc0d27c0005f93ef898de6fe1a31d3ebf78713",
+      "sharesRaw": "10009801870627507"
+    },
+    {
+      "address": "0x75bb03e2e93f600319359a302ac86380b722f27f",
+      "sharesRaw": "10000000000000000"
+    },
+    {
+      "address": "0x5f6f1fa6f30cfb1b9b61e80c503ecbf940f29a50",
+      "sharesRaw": "10000000000000000"
+    },
+    {
+      "address": "0x46467b35493b83c28daf515d4dd784b8657444dc",
+      "sharesRaw": "10000000000000000"
+    },
+    {
+      "address": "0xebf085caa0580f471b8f2d445ff2695dab7219e2",
+      "sharesRaw": "10000000000000000"
+    },
+    {
+      "address": "0x7901c6a1298c41c1131b363532cbe70f8c511540",
+      "sharesRaw": "10000000000000000"
+    },
+    {
+      "address": "0x8b353c7add6c2da13b23fa91992ee2c8a1aead4e",
+      "sharesRaw": "10000000000000000"
+    },
+    {
+      "address": "0xa78ba70711892a5d7931e93a113e7d20a36b84d4",
+      "sharesRaw": "10000000000000000"
+    },
+    {
+      "address": "0x433916b81e722eda355caccdac435150f12500e8",
+      "sharesRaw": "9915663832351609"
+    },
+    {
+      "address": "0x6cee81d80e4ae5a3b958a6e535faf57f2cdcff8c",
+      "sharesRaw": "9907918908407410"
+    },
+    {
+      "address": "0x4ba5bd6761261be6ec73128c72c5d6929269b574",
+      "sharesRaw": "9876062873577287"
+    },
+    {
+      "address": "0x5a61c40abcd0a1460fb7ba33dbac946ee0bc5a12",
+      "sharesRaw": "9808428469184640"
+    },
+    {
+      "address": "0xe02165934f1dbbf396a09c77d480f5f1c9c5758e",
+      "sharesRaw": "9723020006000913"
+    },
+    {
+      "address": "0x2322ba43eff1542b6a7baed35e66099ea0d12bd1",
+      "sharesRaw": "9720671466304697"
+    },
+    {
+      "address": "0xa0b5e16ac9565f596b7bc87ccf1e9171c304e9a9",
+      "sharesRaw": "9496949084169596"
+    },
+    {
+      "address": "0x3552e589e4d91213cd3d08205ed1738850162577",
+      "sharesRaw": "9409367111221020"
+    },
+    {
+      "address": "0x105e42215129762f0e4b188d510224e03b38e451",
+      "sharesRaw": "9409367111221020"
+    },
+    {
+      "address": "0xee750223d20b18a89b8fdfc8154d434551e5b923",
+      "sharesRaw": "9395607632688880"
+    },
+    {
+      "address": "0x2f6ddc78fa5a149be893bc594c0b3214248a9479",
+      "sharesRaw": "9395607632688880"
+    },
+    {
+      "address": "0x939368fab434932a3c04f44023e420c29d23bd71",
+      "sharesRaw": "9388659402074133"
+    },
+    {
+      "address": "0x963c044de28f67a61855605da4713e70e1ffdbd7",
+      "sharesRaw": "9386954140428764"
+    },
+    {
+      "address": "0x1b26012f86af229f1994a5610ce86ea042b2a461",
+      "sharesRaw": "9375495065035778"
+    },
+    {
+      "address": "0xfb62dc389077b7c0ae9ca68160692c06802bb96c",
+      "sharesRaw": "9370190607894828"
+    },
+    {
+      "address": "0xd9245ad419934e9278c083c059988814091dcf52",
+      "sharesRaw": "9357277040481317"
+    },
+    {
+      "address": "0xf5d4443c72018bb967b743a6abb25e6b10854c90",
+      "sharesRaw": "9357277040481317"
+    },
+    {
+      "address": "0x1e10132f8d064e8d7f4257317f84a5560cbae5dc",
+      "sharesRaw": "9318552444279567"
+    },
+    {
+      "address": "0x7a246f1a1febd1ede076a6533484eeb00b9b16e3",
+      "sharesRaw": "9317072581674997"
+    },
+    {
+      "address": "0xc7938afc1639a746afb0f88b04cbc7d4191cf8ea",
+      "sharesRaw": "9284822763519406"
+    },
+    {
+      "address": "0xf345c28782a0ca14c86cbec28528ee9d2c52e2a5",
+      "sharesRaw": "9258638719761226"
+    },
+    {
+      "address": "0x0978fac57ec2181c8f9f248d02da6d1bb3ea9a50",
+      "sharesRaw": "9235938447422786"
+    },
+    {
+      "address": "0x6f5871ec8817a9fd52cde6c49c0ea966b7557367",
+      "sharesRaw": "9217656433544661"
+    },
+    {
+      "address": "0x9f3e556f689959c85cb98bca0876933c1325e0fb",
+      "sharesRaw": "9202869929084119"
+    },
+    {
+      "address": "0xa9fd6c5845538ab51e067c81b3cbe9173e011953",
+      "sharesRaw": "9200347952802259"
+    },
+    {
+      "address": "0x091fea1adcdd8403d39e75338c944f0abc6e92a3",
+      "sharesRaw": "9188351394705369"
+    },
+    {
+      "address": "0x06fe42cf3c63412f1955758ce2798709476a38fd",
+      "sharesRaw": "9178679671314207"
+    },
+    {
+      "address": "0x83d74479416539b176f02408068f275b78e7a900",
+      "sharesRaw": "9178267494501171"
+    },
+    {
+      "address": "0xfb01541df953532227192b68b45d59e81bee1aab",
+      "sharesRaw": "9087574841182739"
+    },
+    {
+      "address": "0xddbe05d76c95091d1ed479f524f906130147fb5c",
+      "sharesRaw": "9071970569397629"
+    },
+    {
+      "address": "0x3b2f90598bfc0d7b9339d310ba555813780c120d",
+      "sharesRaw": "9053383427634436"
+    },
+    {
+      "address": "0x0aca2414b66f11076850abb28c28552490a9833c",
+      "sharesRaw": "9039282412231172"
+    },
+    {
+      "address": "0xbb8b718343129d40ed701a47cd0b6f42d686196e",
+      "sharesRaw": "9032404422058328"
+    },
+    {
+      "address": "0x44c638fd09a916df26a7f1cc46e03bb78f184179",
+      "sharesRaw": "9012267514843341"
+    },
+    {
+      "address": "0x49996b393eda837542cca0d14d2cddd77600967b",
+      "sharesRaw": "8995544409876504"
+    },
+    {
+      "address": "0xa5cf4353a4bda90ba19c206113ae9c76968cfc80",
+      "sharesRaw": "8936857360463512"
+    },
+    {
+      "address": "0xc1d136763f70e272e64822b3f4570eef067bd0b8",
+      "sharesRaw": "8904734151936327"
+    },
+    {
+      "address": "0x810249e186be6a0fbc301c1e7b428046a151704c",
+      "sharesRaw": "8880000000000002"
+    },
+    {
+      "address": "0x2e19911e910e14c0b91c2ec4559939d9cf8a8e53",
+      "sharesRaw": "8875355476461058"
+    },
+    {
+      "address": "0x9cb2378b9fe5db98ee0271ebdc36152f99798aec",
+      "sharesRaw": "8860964426241473"
+    },
+    {
+      "address": "0x14395fbe955968a8eb1cfc2b806b216d6f96adca",
+      "sharesRaw": "8831553959058885"
+    },
+    {
+      "address": "0xfc348f4043e87353460c329848dbfc1b7a511a96",
+      "sharesRaw": "8765626971768442"
+    },
+    {
+      "address": "0x6e90b991dde912df5db73a57987091d7653b9edb",
+      "sharesRaw": "8521143659785013"
+    },
+    {
+      "address": "0x3fb8256f57ebae62663e59363e021ce63f30815d",
+      "sharesRaw": "8458617242494381"
+    },
+    {
+      "address": "0x2f8f8c5290a4b600e21e5410e1a7d59d7ba1876b",
+      "sharesRaw": "8328411583255506"
+    },
+    {
+      "address": "0xafef332d2719eb64709e95bf419db6ce82878ce0",
+      "sharesRaw": "8303321884960221"
+    },
+    {
+      "address": "0xb30b1528af5dbdeaead93d7ca7a95c49da734f93",
+      "sharesRaw": "8302851208707182"
+    },
+    {
+      "address": "0x99e4dcb2a6a9cd8467caf0698075c2919fc76dca",
+      "sharesRaw": "8246461611705234"
+    },
+    {
+      "address": "0xa76c141b245a714f2ac41146cae2a5192f6d7382",
+      "sharesRaw": "8227844941346983"
+    },
+    {
+      "address": "0xf410df3b6b37b9abfe32de5f92b0a321b1cb8af8",
+      "sharesRaw": "8173590436170404"
+    },
+    {
+      "address": "0x439a639c017cff3b79d36ae48c4646af9af3a0f2",
+      "sharesRaw": "8146848697084820"
+    },
+    {
+      "address": "0xb63cc044ae68b8c2c24b0e1524acaecfc3857004",
+      "sharesRaw": "8090343857034090"
+    },
+    {
+      "address": "0x424830dd8d1281af323bf6dc9b7230fef0a5f605",
+      "sharesRaw": "8080242820092405"
+    },
+    {
+      "address": "0xf92076da1411e40e982fcef6b2b93e8b7f9c9af8",
+      "sharesRaw": "8009990243029709"
+    },
+    {
+      "address": "0x6b2cf31ee082b33308d222f52898837d853ee65e",
+      "sharesRaw": "7971849593847459"
+    },
+    {
+      "address": "0xcbfdde1de434a43b1bb5066b5b1ae63b6e4b91f7",
+      "sharesRaw": "7946634933949314"
+    },
+    {
+      "address": "0x928b9e592c6753b5c3c632985fbaae899c1f860b",
+      "sharesRaw": "7943643795752379"
+    },
+    {
+      "address": "0x14d4624835d0d0298bf0deeeae9f5ed3d2282e43",
+      "sharesRaw": "7921425615793892"
+    },
+    {
+      "address": "0xd7fb6f8b13142fe3b091d086dae48b8dc7ce759f",
+      "sharesRaw": "7851419865361282"
+    },
+    {
+      "address": "0x2e30adcb3e6860e0fbf8b8eb5fd2736e1f080aa8",
+      "sharesRaw": "7828484667638789"
+    },
+    {
+      "address": "0xed56c0eeb97e7a709172a07b62d9c43479c3b938",
+      "sharesRaw": "7666897884239565"
+    },
+    {
+      "address": "0xc01ea21684befc28e8c3a13b1eb9fe98e7d45313",
+      "sharesRaw": "7646511538946597"
+    },
+    {
+      "address": "0x84f34d7eda2173d1e274e7a175f70e84ff3014b0",
+      "sharesRaw": "7645657747760829"
+    },
+    {
+      "address": "0x7dea68daaff4f27f8e7e7819029835f2b0ef5d83",
+      "sharesRaw": "7620002357210192"
+    },
+    {
+      "address": "0x28ca0b977aae068c54257670017b63d17f9d6fac",
+      "sharesRaw": "7614045645674951"
+    },
+    {
+      "address": "0xa11166fc4dab6ec45844aa2e61e52968e4b536b6",
+      "sharesRaw": "7608963755424321"
+    },
+    {
+      "address": "0x39ccf320145501ff6baed073404a8dcd94245ec3",
+      "sharesRaw": "7580792603898976"
+    },
+    {
+      "address": "0xf4120719d66f79358c5df7a420f08704d476a6a6",
+      "sharesRaw": "7519926899921231"
+    },
+    {
+      "address": "0xfc8bdc79c08226acbff397a6fa0b54ea9b8f062b",
+      "sharesRaw": "7451620204043791"
+    },
+    {
+      "address": "0x0ecb40e902b0924f25038c0aadb88651b7f03656",
+      "sharesRaw": "7398120231183404"
+    },
+    {
+      "address": "0x14e53df07890c989310bebae3b63353e674403de",
+      "sharesRaw": "7299569668670841"
+    },
+    {
+      "address": "0x96aa9945b68150965af9b6bb8dfbb63ddfb1f363",
+      "sharesRaw": "7296904720715867"
+    },
+    {
+      "address": "0x716137a79552741ca3f65d897980fca9dc3a109d",
+      "sharesRaw": "7190052216428694"
+    },
+    {
+      "address": "0x27e09d219357ab111848f401f9ce4309015375a0",
+      "sharesRaw": "7172635630392784"
+    },
+    {
+      "address": "0x64987676278579bb15540a6bfffda4058a53d17c",
+      "sharesRaw": "7155093861802598"
+    },
+    {
+      "address": "0x319019284fd20c87355c1f261ba11db3c9c48f0f",
+      "sharesRaw": "7121271605390552"
+    },
+    {
+      "address": "0xbb93d5b9962616d4ebcfebdbdee37a974a93b062",
+      "sharesRaw": "7105051408374820"
+    },
+    {
+      "address": "0x18d86e8fcc124ce356242f15dac8908022b7acd4",
+      "sharesRaw": "7057250724016161"
+    },
+    {
+      "address": "0xafeebf9244fa850c9f8a36ea50827a1fbc2006ca",
+      "sharesRaw": "6872621172084088"
+    },
+    {
+      "address": "0xa3858580814253d8dd51c85293252570a3abfa4d",
+      "sharesRaw": "6809839521322284"
+    },
+    {
+      "address": "0x27ed1a1e8618660df4bc18685263f6a57849caf1",
+      "sharesRaw": "6809478117669700"
+    },
+    {
+      "address": "0x227a17a1eac3c1fa434b983a37799dc34038debc",
+      "sharesRaw": "6784871842981444"
+    },
+    {
+      "address": "0x6e21d3a26e9c1400cd270b51c76b657799c06fb8",
+      "sharesRaw": "6743488010962334"
+    },
+    {
+      "address": "0x47ceeff36cdfd34ec7491f83cc00ebac53bfb050",
+      "sharesRaw": "6730647257720996"
+    },
+    {
+      "address": "0xc8e430c9082295b8272c0ab34cd060389928773c",
+      "sharesRaw": "6695028557312267"
+    },
+    {
+      "address": "0x8e5bb7ec781cddced10277e109d8552da3a40ffd",
+      "sharesRaw": "6659529132632911"
+    },
+    {
+      "address": "0x9727887cd3e86ec36af6b9e4e9492212dd059166",
+      "sharesRaw": "6654733100122868"
+    },
+    {
+      "address": "0xe3d0ca6b32c6bc648d97a7569568acdfe5768b43",
+      "sharesRaw": "6595184517100429"
+    },
+    {
+      "address": "0xa9faa7c2d7c7bc0638c2c1cb6707598fa12d658a",
+      "sharesRaw": "6582715312895446"
+    },
+    {
+      "address": "0x133f46016e77ae8b8d7c35bd766e2d1b2e9726f7",
+      "sharesRaw": "6555108277326907"
+    },
+    {
+      "address": "0x5d65f4752ef7fe69723fa08d84e1c43ac76e3c73",
+      "sharesRaw": "6538931715726972"
+    },
+    {
+      "address": "0x6898bf6b608d73de57dfc3fbde17c136550cdb3d",
+      "sharesRaw": "6475980460505585"
+    },
+    {
+      "address": "0xe90190ab1b82545595e5fcce09c5ff891eddc143",
+      "sharesRaw": "6458131963680953"
+    },
+    {
+      "address": "0xf4aeb3a69c7acc160ccd431adaf228dfa87f69ec",
+      "sharesRaw": "6393351912527444"
+    },
+    {
+      "address": "0xb67dfd74e7053aef14489e9bd765ef169058f516",
+      "sharesRaw": "6349937410265863"
+    },
+    {
+      "address": "0xcd4538626aa1a8f81f65eacbfb36caa0894a8a9a",
+      "sharesRaw": "6286906193293312"
+    },
+    {
+      "address": "0xb9231820e94862c62baa89d687c44e68be8afb54",
+      "sharesRaw": "6281039057907855"
+    },
+    {
+      "address": "0xecf585d2e2254f076da8394f66d18a6aeaf2bc38",
+      "sharesRaw": "6205224566711746"
+    },
+    {
+      "address": "0x22c8cccf7503b445ea3f68dfcc8a2342d8ccc09f",
+      "sharesRaw": "6171821151078840"
+    },
+    {
+      "address": "0x18a96f3845db721d92ed2d6ebb172df66eb4b935",
+      "sharesRaw": "6158014092252052"
+    },
+    {
+      "address": "0xa22c22c8d79a8d547797ab2e9426c7db44a32d27",
+      "sharesRaw": "6142709706028413"
+    },
+    {
+      "address": "0x1aa75bc4721e7068c87a49458ccb4529b8b2c853",
+      "sharesRaw": "6141165760737810"
+    },
+    {
+      "address": "0x37ca82925f86795b3fe275f9a2b391a4161437bf",
+      "sharesRaw": "6108402694072125"
+    },
+    {
+      "address": "0x84d449bf3816a19d8e67d10edb86f9e4677e6636",
+      "sharesRaw": "6027464191484302"
+    },
+    {
+      "address": "0xf71b03b5342b20c2a8faa6304b051200d0cca7ea",
+      "sharesRaw": "5991606596545008"
+    },
+    {
+      "address": "0x559c90bdb13f9c59fcbfa28287279ff97a5ac323",
+      "sharesRaw": "5921166255964795"
+    },
+    {
+      "address": "0x48d66afb7abffa4ca9da9700293ff269a2d976d5",
+      "sharesRaw": "5877639944813782"
+    },
+    {
+      "address": "0xa0405468079bdbdd47be9f5582427068bc022bdb",
+      "sharesRaw": "5844478121336376"
+    },
+    {
+      "address": "0x3ef688141326708150a2b578c117b45dc6effdd5",
+      "sharesRaw": "5698538494819714"
+    },
+    {
+      "address": "0x7a752690d8040620201633f2f721c2400c825943",
+      "sharesRaw": "5655032221979649"
+    },
+    {
+      "address": "0x3a1aadd33323713aee925c675e26e5f9c59e8f14",
+      "sharesRaw": "5624018865053200"
+    },
+    {
+      "address": "0x883402659e6befed2516d97dc9f80e40b1dd4cb9",
+      "sharesRaw": "5568566202124895"
+    },
+    {
+      "address": "0x6e688ef9ce501cbba9db0a54bb4eed71488f8421",
+      "sharesRaw": "5564344775017992"
+    },
+    {
+      "address": "0x9e1895e6dd18ef3d3f9a8ae4bf159e25802bcc01",
+      "sharesRaw": "5538056350147792"
+    },
+    {
+      "address": "0x8ad9cbd99a0cf46856680c08d8829c6927028843",
+      "sharesRaw": "5513000000000000"
+    },
+    {
+      "address": "0x2fbe62226bd9b0dfcd348a90dc2a5c96aa18e459",
+      "sharesRaw": "5505455538210026"
+    },
+    {
+      "address": "0x96ee3f271ed01460ed01b0e7f06c154f287feb6a",
+      "sharesRaw": "5462883059514023"
+    },
+    {
+      "address": "0x5ba0eb7bc909540ebf51a6d1d683243df6112314",
+      "sharesRaw": "5459969780134755"
+    },
+    {
+      "address": "0x1a93206b4f22adb9ef57bfdcc875bbca61cde468",
+      "sharesRaw": "5447151165331501"
+    },
+    {
+      "address": "0x9813ee2bad97967a3a5ff16a096a8aea56d48f1e",
+      "sharesRaw": "5419993915295226"
+    },
+    {
+      "address": "0x3feb42464f0942dce177eca707ec0b3a93265658",
+      "sharesRaw": "5386282117885160"
+    },
+    {
+      "address": "0xa71ce2e6563ad4acc806891b4aca40cd4402dc53",
+      "sharesRaw": "5375653408576276"
+    },
+    {
+      "address": "0x5ff6c8cabda800db2f2194f03865cd6224809262",
+      "sharesRaw": "5268024092542348"
+    },
+    {
+      "address": "0x0bda79404feec05c0dde6b4fd783dad47cc84e43",
+      "sharesRaw": "5216836834439072"
+    },
+    {
+      "address": "0x722c028383aa3a2d198a67738f82c25461c8b3df",
+      "sharesRaw": "5210714031194328"
+    },
+    {
+      "address": "0xce65d4f9f7c8d3545df296f071e8966dbefbd180",
+      "sharesRaw": "5198323798554020"
+    },
+    {
+      "address": "0x056aac9057f672456ca5c5030623deac9e845d14",
+      "sharesRaw": "5158755840725291"
+    },
+    {
+      "address": "0xf73a265f17a5db2c712eaef3d53dd5b6b6c90143",
+      "sharesRaw": "5131035800071989"
+    },
+    {
+      "address": "0x45c5cd9e4d327ef2f2abafc30e2587c55a510e13",
+      "sharesRaw": "5114878303732014"
+    },
+    {
+      "address": "0x3ee1f54a8a06da7d147d4fe7d00ecb6001911995",
+      "sharesRaw": "5104154659506415"
+    },
+    {
+      "address": "0x9bd97dc6db87d31580f089b91cb0dc2519495a2e",
+      "sharesRaw": "5090751295661263"
+    },
+    {
+      "address": "0x563bc40c787f9fe08caf6436eacca7a582dccd5b",
+      "sharesRaw": "5086364531233673"
+    },
+    {
+      "address": "0x2ac7f83f5fcfef65c10c3ce15014e373206f7f1f",
+      "sharesRaw": "5058393576372514"
+    },
+    {
+      "address": "0xc71f1e219d541a4bb45d149aa8f201e973033b4e",
+      "sharesRaw": "5000000000000000"
+    },
+    {
+      "address": "0xc3b866e651af865f8b638648c874484ee9dc71d1",
+      "sharesRaw": "4998755099205755"
+    },
+    {
+      "address": "0xb52820f2358fb6357fb8e4029f897f2033c57704",
+      "sharesRaw": "4935286702194682"
+    },
+    {
+      "address": "0xba58af36488393684480ec62ce0623c62ce3644c",
+      "sharesRaw": "4890888503638797"
+    },
+    {
+      "address": "0x965a1bb4b46573703877f1735037296d5d4bb119",
+      "sharesRaw": "4872473616725146"
+    },
+    {
+      "address": "0x4da01f078dfe7050a90d0be54f794eae2c8a77d8",
+      "sharesRaw": "4855145307579001"
+    },
+    {
+      "address": "0x066f28472d75912e65c889b74c1e87c877e4d4ed",
+      "sharesRaw": "4797155660912650"
+    },
+    {
+      "address": "0x7b69343b01634958ef260f58d31db1af71c498a9",
+      "sharesRaw": "4733126505314936"
+    },
+    {
+      "address": "0xe6960997d5ae4de2de32ff3c2156c6fcb60eb807",
+      "sharesRaw": "4717072723215788"
+    },
+    {
+      "address": "0x9a552f30baf62a1702d2aeccfdccdfe4581b1464",
+      "sharesRaw": "4715303868559602"
+    },
+    {
+      "address": "0x7dc9cb2be325eca99f5985315d5e663585a5fee2",
+      "sharesRaw": "4715303868559602"
+    },
+    {
+      "address": "0xe74960174b881ff55af5c3c2dbc99fa170aa2e10",
+      "sharesRaw": "4703426783628180"
+    },
+    {
+      "address": "0x80e3cb2724c559e976f9a5e7821f1a770611115a",
+      "sharesRaw": "4700000000000000"
+    },
+    {
+      "address": "0x21fc95d3851c8d004e923aad16bebd489307da3a",
+      "sharesRaw": "4674060595639581"
+    },
+    {
+      "address": "0x9faac57397a2ff7328fda8a82b2ecb67177a4b5a",
+      "sharesRaw": "4663560573995662"
+    },
+    {
+      "address": "0xdb8f1d03896750d7b497e7dcda62cd899955ac2d",
+      "sharesRaw": "4624522448371923"
+    },
+    {
+      "address": "0x12ac8ff0e92494604d85df44f9ff33b22697ca2e",
+      "sharesRaw": "4621479034614328"
+    },
+    {
+      "address": "0xe4a59868a73a6a8fe1f414472ac4287c4c2bd0cc",
+      "sharesRaw": "4595249190642982"
+    },
+    {
+      "address": "0xe50fc1bb746fc82164e2eff037c325523c960963",
+      "sharesRaw": "4585589874210316"
+    },
+    {
+      "address": "0x67b69aff96d4580109c8c76d0f627932e4e27d47",
+      "sharesRaw": "4525370515028946"
+    },
+    {
+      "address": "0xdcb14f132ec8b26d5b812ba6b1532e9f6d016b88",
+      "sharesRaw": "4520718990525744"
+    },
+    {
+      "address": "0xc753e206ae460afde4c5c45a8e421ce93fa01499",
+      "sharesRaw": "4520215551481856"
+    },
+    {
+      "address": "0xb7479b444e035fa1fbb98e65a331da5cb9825fb0",
+      "sharesRaw": "4508969102075963"
+    },
+    {
+      "address": "0x6f5eb8958734e636517e34e7a4eec35ac4555c92",
+      "sharesRaw": "4501856959427420"
+    },
+    {
+      "address": "0x3fbfc09729c3df17dfc5bb94dd1054c3b95087da",
+      "sharesRaw": "4465013723957932"
+    },
+    {
+      "address": "0x95405966f014e9f2f9e0c9037cfbfbfc773a3517",
+      "sharesRaw": "4438479993378653"
+    },
+    {
+      "address": "0xe0602f6a01ff656bb713d8ce4c4985dea80d5770",
+      "sharesRaw": "4437399434729576"
+    },
+    {
+      "address": "0x8a3ee5cfe44d8bb4e3a7ee0fa51268770fc7e929",
+      "sharesRaw": "4421878351618624"
+    },
+    {
+      "address": "0x5f0567fbb47c87634f4b619f180525c696efa004",
+      "sharesRaw": "4381339807738416"
+    },
+    {
+      "address": "0x54cb7411ad321d1bf342caadef38585266b35418",
+      "sharesRaw": "4341322180098584"
+    },
+    {
+      "address": "0x2dd2f9d065d7de38d1d31b097eb3dbd480e06d81",
+      "sharesRaw": "4318894331389038"
+    },
+    {
+      "address": "0x21c8f9e2791f10236391a446d0a3b540c8299f3a",
+      "sharesRaw": "4296269370296403"
+    },
+    {
+      "address": "0x5380c68d74ad664c3c6f229e8c62b56f12899cb5",
+      "sharesRaw": "4295912799774922"
+    },
+    {
+      "address": "0x046a1a033d35bd88b789cef799beafc39dec55ef",
+      "sharesRaw": "4242534857839637"
+    },
+    {
+      "address": "0x6fabfa93e75d419cf519e65d408ca9736ae8782d",
+      "sharesRaw": "4215615619890823"
+    },
+    {
+      "address": "0x1d07c48d8613564419376fe4708b16f1c42ceaef",
+      "sharesRaw": "4203460016111305"
+    },
+    {
+      "address": "0xdbafae6f74b851f833bda0b2fc34018514b02ef2",
+      "sharesRaw": "4175999751819883"
+    },
+    {
+      "address": "0xc7b4865df0917af0c70069ccff3658d513eda53d",
+      "sharesRaw": "4172524671792363"
+    },
+    {
+      "address": "0x62164c24438d401a6c29c51337838c8e5fde549a",
+      "sharesRaw": "4148168189362386"
+    },
+    {
+      "address": "0xd117093f6eed89c23f2a0b1e4d4890a0883e96b2",
+      "sharesRaw": "4146944803283230"
+    },
+    {
+      "address": "0x9e88f8b7667730812425f8a8735a21acb8798541",
+      "sharesRaw": "4138584418320962"
+    },
+    {
+      "address": "0x52f3a8717432df82d6ff1c491260948e8cbff10a",
+      "sharesRaw": "4132567629748711"
+    },
+    {
+      "address": "0x05c1a0b0e7d9e56418f0f11d35710a668c2855c7",
+      "sharesRaw": "4112836073641659"
+    },
+    {
+      "address": "0x7b11fb342c07291a51c102359c7501b7bfce5dbf",
+      "sharesRaw": "4053116012360579"
+    },
+    {
+      "address": "0x3f8c943717522fd745681938931843e11938998a",
+      "sharesRaw": "4034515013714262"
+    },
+    {
+      "address": "0xa148d8865a4e0faef937efce26c00f8ff4aa163f",
+      "sharesRaw": "3995901625557976"
+    },
+    {
+      "address": "0xd706d1fc1e8b26772794989f6a8895a1a2081bfb",
+      "sharesRaw": "3944078654763715"
+    },
+    {
+      "address": "0x691093cb3aa1060a441a6e9dbc3744c8b6456ae6",
+      "sharesRaw": "3901299313695673"
+    },
+    {
+      "address": "0x2a60327794759c9fc2e97e64a2112f378247ef39",
+      "sharesRaw": "3896719096499225"
+    },
+    {
+      "address": "0xe8ae6fa3d080afd53037691bf667cc211a6aa726",
+      "sharesRaw": "3884047933806597"
+    },
+    {
+      "address": "0x6b52dc1e418a89a8d52d84063a57478be4722f24",
+      "sharesRaw": "3846785259692037"
+    },
+    {
+      "address": "0xf266f584281e30cabe2aaf1bad84f273359df806",
+      "sharesRaw": "3822955813875389"
+    },
+    {
+      "address": "0x6cce942d0a96baf9dac04d570eb61503e49448f5",
+      "sharesRaw": "3822257727273387"
+    },
+    {
+      "address": "0x20938fce6ff79b14f1f46f1ae21790c211be3343",
+      "sharesRaw": "3821143983866856"
+    },
+    {
+      "address": "0x457fc208a2dd11fcfab24c115d9ebae3ab05c6a7",
+      "sharesRaw": "3791958902034456"
+    },
+    {
+      "address": "0x4a9c0d65acf36b4713dcd459fa95d7825d2badac",
+      "sharesRaw": "3661793393750108"
+    },
+    {
+      "address": "0x8082e7da86b97ef516044962966c92279d01b448",
+      "sharesRaw": "3635660068176070"
+    },
+    {
+      "address": "0x0a7276cf6dcf151ca40718986e6611f3922a9ce1",
+      "sharesRaw": "3496522171147366"
+    },
+    {
+      "address": "0x237de9387d9ff5eede27bae1088710f30c8db31c",
+      "sharesRaw": "3465758558378346"
+    },
+    {
+      "address": "0xb1e1f6849bce9b4dc9951c1b202c51ff2e6a94dd",
+      "sharesRaw": "3444531667969753"
+    },
+    {
+      "address": "0x4368ef941e2be0c7a7fcc67503a85f0f9d52c2e3",
+      "sharesRaw": "3429817709749628"
+    },
+    {
+      "address": "0x7383303ab4ec9a13189cc7bb125bcfad4bd8f622",
+      "sharesRaw": "3400819486840769"
+    },
+    {
+      "address": "0x0519dbabceeb89a65e07527809c5dc60cf516966",
+      "sharesRaw": "3382432132644902"
+    },
+    {
+      "address": "0xf344c32467ea786ac1da2fc47646758bace7ae26",
+      "sharesRaw": "3379017729380664"
+    },
+    {
+      "address": "0x3c89d4b8503c17af2ac6138e4289244716ca4b40",
+      "sharesRaw": "3377031586522313"
+    },
+    {
+      "address": "0xedfdc4f7e962385508404e1e506d367e1c1ac6b6",
+      "sharesRaw": "3375744954148301"
+    },
+    {
+      "address": "0x96f673d493b907bd622f2e6dd66e76647064b3df",
+      "sharesRaw": "3374480718719067"
+    },
+    {
+      "address": "0x4f8e047bc958a69e36c005a5921c4c57ba6ab5d3",
+      "sharesRaw": "3359628521921494"
+    },
+    {
+      "address": "0x0a7cbc6269475f6a65ec72ba6303c61a31aeaf21",
+      "sharesRaw": "3342904089355896"
+    },
+    {
+      "address": "0xc40362a1d1536463695d405d10e0f5d70d27e938",
+      "sharesRaw": "3332010133519501"
+    },
+    {
+      "address": "0x0eb4e06d3eef6fd69e364abd8a95b37d4fce2b61",
+      "sharesRaw": "3286599676276964"
+    },
+    {
+      "address": "0xb2e5f1ef9d0275410b94573462570a26bcd24ceb",
+      "sharesRaw": "3283518092196850"
+    },
+    {
+      "address": "0x6a3ca2df0c3f731133b1af5cf867ea60f8590a1c",
+      "sharesRaw": "3207890323094802"
+    },
+    {
+      "address": "0x5ca97351210c221c890f0983497b1b96f8a5c410",
+      "sharesRaw": "3192464735908126"
+    },
+    {
+      "address": "0xf7af3c39f9129a8aa9172467010e0696b7a1d8cf",
+      "sharesRaw": "3188442390749711"
+    },
+    {
+      "address": "0xf5ec0359ba71302bf9d3795535dfeea452c8fcab",
+      "sharesRaw": "3185295141327894"
+    },
+    {
+      "address": "0x970c9f5ecf6feb5499ea77e4d740112b7876d4a9",
+      "sharesRaw": "3170175756194304"
+    },
+    {
+      "address": "0xb3af1a1d6e40902eaa60c69f95278215b243b705",
+      "sharesRaw": "3157707006389026"
+    },
+    {
+      "address": "0xf90216b68d71163a29c49df3aadaf0dd96774c17",
+      "sharesRaw": "3140258350395942"
+    },
+    {
+      "address": "0x9122f463130ad99212cd797b45eb02c85ed91f9d",
+      "sharesRaw": "3139828732914261"
+    },
+    {
+      "address": "0xa315ade917349e76e2c7cac4b1b846afd1c7738a",
+      "sharesRaw": "3132891962388835"
+    },
+    {
+      "address": "0x4aad5b7e0865b36acc006258cf98214ff09d235c",
+      "sharesRaw": "3065097045070834"
+    },
+    {
+      "address": "0x1a6a7179a52e650d8220a96a5029cc16a5f371b8",
+      "sharesRaw": "3047109772382215"
+    },
+    {
+      "address": "0xdba4befa700b22ffebb5aef016d96a8ee83b582f",
+      "sharesRaw": "3000000000000000"
+    },
+    {
+      "address": "0x47d8b8c64e443e4b94d07b47e78f5273d5da8072",
+      "sharesRaw": "2987538769679738"
+    },
+    {
+      "address": "0x3c50a0a12c441333a2846e6588f81c624bd7f71c",
+      "sharesRaw": "2982475096842558"
+    },
+    {
+      "address": "0xa37fd2c7854c99daac1c5139455fc77a9cca30f2",
+      "sharesRaw": "2978719799778271"
+    },
+    {
+      "address": "0x0191104b7183fd11240b04211493049808697bec",
+      "sharesRaw": "2978268080753225"
+    },
+    {
+      "address": "0x2939ea3c80bab0f4f8d5368ba50008dc32a18f26",
+      "sharesRaw": "2973334078877894"
+    },
+    {
+      "address": "0x08ac8863aa2f1295c94eac7a8c276b67e484e6b1",
+      "sharesRaw": "2948013148775646"
+    },
+    {
+      "address": "0x68db59b246f0b3f346611daf9847c844012bef86",
+      "sharesRaw": "2941291774269888"
+    },
+    {
+      "address": "0x0ca291c868a68ee9999cbf19f9865ddbc135f5d5",
+      "sharesRaw": "2936134643916909"
+    },
+    {
+      "address": "0xf5eabc6bd4ec0883950a2bad0d3de06bdfdcb9cb",
+      "sharesRaw": "2923427598372834"
+    },
+    {
+      "address": "0x0fa444b4e7599d41bfd34ecc117a5595183a7c9e",
+      "sharesRaw": "2909724967408351"
+    },
+    {
+      "address": "0x62598949486aa22a4c232a622d93e3e35e12c998",
+      "sharesRaw": "2906885720462407"
+    },
+    {
+      "address": "0xfd8c3e6c73cca78085d9da07032481ec62ad9a9c",
+      "sharesRaw": "2903572660819641"
+    },
+    {
+      "address": "0x62223cbecd4652d8301b38bc5eb247f81bf44045",
+      "sharesRaw": "2873628634185432"
+    },
+    {
+      "address": "0x09c42a9771dbd07ef69a0499db3fc75944324fe5",
+      "sharesRaw": "2868496393802661"
+    },
+    {
+      "address": "0x659a1b3ee89b1b23cf27043b1eb58674640f540c",
+      "sharesRaw": "2851745799588907"
+    },
+    {
+      "address": "0x8d75933a612f41838ce8d060ed214832f057d03f",
+      "sharesRaw": "2821579195687661"
+    },
+    {
+      "address": "0x59136b26b08eed3257756c5022bc7f819bde74b4",
+      "sharesRaw": "2798681725507681"
+    },
+    {
+      "address": "0x30a97ea74da8f0455fa7de76f638e5c2b344735d",
+      "sharesRaw": "2790645150934516"
+    },
+    {
+      "address": "0x790095cdc922630dfbd2ab7fe66760afb594109e",
+      "sharesRaw": "2787600241388354"
+    },
+    {
+      "address": "0xf9b18d5934eb57e340ad43a9d332ed0fb84d14a2",
+      "sharesRaw": "2781713756723297"
+    },
+    {
+      "address": "0x1e37e2ed60161bd77c00770365689ce38dd96dfc",
+      "sharesRaw": "2777035324801735"
+    },
+    {
+      "address": "0xd792428ef2c1d7da150d5a912a9c1d51f7aed46a",
+      "sharesRaw": "2774984395465381"
+    },
+    {
+      "address": "0xab9147da2223b198e4967dd25c18f1ee248990cc",
+      "sharesRaw": "2773225491915301"
+    },
+    {
+      "address": "0x7efeb1615f9622872b348a7d364885ccf53e7b35",
+      "sharesRaw": "2747481312939950"
+    },
+    {
+      "address": "0x735aca3a093f5563a8e1429032e56e4c873da85d",
+      "sharesRaw": "2737175645587867"
+    },
+    {
+      "address": "0xd53a11f7b303ab32865f56c0174134f74ce4d1bb",
+      "sharesRaw": "2736484317437105"
+    },
+    {
+      "address": "0x90337185df095e89dad39d3c3e294de077b48c4f",
+      "sharesRaw": "2728444082736865"
+    },
+    {
+      "address": "0xdbd97397f440ddaeaf11c84be4056dcce95f307f",
+      "sharesRaw": "2709125538261912"
+    },
+    {
+      "address": "0x8f2bef9fb71c024d3b9d98580462cad1811f0cd3",
+      "sharesRaw": "2707060779338703"
+    },
+    {
+      "address": "0xd4ee82ea5e19a7552cc05764687dd03c36919a06",
+      "sharesRaw": "2667970766492674"
+    },
+    {
+      "address": "0x44281ead692795ff325884da5db7e8f8f27a7a77",
+      "sharesRaw": "2667106347005746"
+    },
+    {
+      "address": "0xad66ac0fe8b0057ef2be2de687093c05267a83bc",
+      "sharesRaw": "2658066398052872"
+    },
+    {
+      "address": "0x0cfa03407cbe35a1be24d26d475754662491a3c2",
+      "sharesRaw": "2558205463793742"
+    },
+    {
+      "address": "0x1fedad597dbfbda714253652669daf1a186fce8e",
+      "sharesRaw": "2535345775648982"
+    },
+    {
+      "address": "0xaee0e5f6296e44733db08cfdadc1c88cd29d866e",
+      "sharesRaw": "2534383299896677"
+    },
+    {
+      "address": "0xba2b67e73602a72254ce839ebdd782d58f20045b",
+      "sharesRaw": "2499977531438789"
+    },
+    {
+      "address": "0x4aea9b8d31f4f930da7e50d204a94dab992ec3e5",
+      "sharesRaw": "2474148390379832"
+    },
+    {
+      "address": "0xbfa632c6d2dead90e799d0e0fa3fb356a30365b2",
+      "sharesRaw": "2463243926569386"
+    },
+    {
+      "address": "0x716ac1136e1acdd657f6099d9ae240665d27f9d4",
+      "sharesRaw": "2442857984499109"
+    },
+    {
+      "address": "0x4b43c52c8e2703b456021d1d5bbd5be1e539cf44",
+      "sharesRaw": "2435288280440239"
+    },
+    {
+      "address": "0xb7241881e1ec6f4ee0de875cd645d78ecacbac96",
+      "sharesRaw": "2430828150215725"
+    },
+    {
+      "address": "0xeb2409b563fa16c4e9bdbfda540fd3e65d918195",
+      "sharesRaw": "2418601224172790"
+    },
+    {
+      "address": "0xedb3b7841845bd7f1f8439f92bccd2fd8b879d1a",
+      "sharesRaw": "2411067709392979"
+    },
+    {
+      "address": "0xa580cad926e32f8a3e8b262aa2c149e84e91694a",
+      "sharesRaw": "2400880424586814"
+    },
+    {
+      "address": "0xede3f1b51c3926ef76576ea9b8faf039443c9095",
+      "sharesRaw": "2350998319710158"
+    },
+    {
+      "address": "0x4bbcf7ddb2c0e8e7af24e994bae96fe1338a1c30",
+      "sharesRaw": "2349999999999999"
+    },
+    {
+      "address": "0xf49ca142d0347b4f55b30dbfcc7a12eb201d78df",
+      "sharesRaw": "2348901908172220"
+    },
+    {
+      "address": "0x4126eb75d509aeff19d99ea71177a4c6312d21d0",
+      "sharesRaw": "2348273118310581"
+    },
+    {
+      "address": "0x4b83a6ac861b27a3f1b34b1bc290aa507d1a7281",
+      "sharesRaw": "2324932307281076"
+    },
+    {
+      "address": "0x39a9b8fbac7e504b6cd93e1e7bdd8e15d6390393",
+      "sharesRaw": "2318808217213438"
+    },
+    {
+      "address": "0x4157dc812ed8b082a71ab3f2d659701df09caad6",
+      "sharesRaw": "2305872490619929"
+    },
+    {
+      "address": "0x0266f3c844d9915bf31dcee63395f119fd6becc6",
+      "sharesRaw": "2304414108386165"
+    },
+    {
+      "address": "0x9e6b0d5704581ce5c2cfb12b49d10782290789ae",
+      "sharesRaw": "2292911517773944"
+    },
+    {
+      "address": "0x070c21bb896198e331c674d47a18257197524ec1",
+      "sharesRaw": "2278512805377423"
+    },
+    {
+      "address": "0x6d43ad5fd158ad139fc567c291b1168efe09d491",
+      "sharesRaw": "2268060031687243"
+    },
+    {
+      "address": "0x03641abda8bf0d9196ce44ebed9f85ccce3c5e1f",
+      "sharesRaw": "2265179292171951"
+    },
+    {
+      "address": "0x7fc0a05e4f5c064bce4886ada790bf9ed9cad6fc",
+      "sharesRaw": "2260494527688785"
+    },
+    {
+      "address": "0xe228f81bb80e1a8573284e2389a53d66a554ee9f",
+      "sharesRaw": "2258248106693044"
+    },
+    {
+      "address": "0x6e6a3cebe737f2fa99ca5fa484439e5549c6c3a7",
+      "sharesRaw": "2247143603908717"
+    },
+    {
+      "address": "0x52084d301bb3a8a9a1c43a2ff71ca0675c1cb0c8",
+      "sharesRaw": "2215675899896680"
+    },
+    {
+      "address": "0xad542c22c0e84fd19518565cc550fc7f93318c24",
+      "sharesRaw": "2186637813996193"
+    },
+    {
+      "address": "0xcd94cc4bcb04a0efbb732d9a4a0d9e8c846fbd9b",
+      "sharesRaw": "2156939274455540"
+    },
+    {
+      "address": "0xe5ced15f05752eb95b6d6eb71b4a3b24fbdaf435",
+      "sharesRaw": "2151405041351660"
+    },
+    {
+      "address": "0xa2a7cb51d955cbca6069b8e9ff43edea33bf174a",
+      "sharesRaw": "2145941920818716"
+    },
+    {
+      "address": "0x78e44b4c2be3cacc1e4b6a1c9474b8f06356e1ac",
+      "sharesRaw": "2129072519238623"
+    },
+    {
+      "address": "0x006d9f269695ad9eb8f727f042ee380684332916",
+      "sharesRaw": "2115835243413408"
+    },
+    {
+      "address": "0x08f601ccb413f65319f1a525734e1bd29c22ccbf",
+      "sharesRaw": "2099474261208280"
+    },
+    {
+      "address": "0x7ba9dd0be9272bdb9e4abcd724f385aae0369978",
+      "sharesRaw": "2088049176581871"
+    },
+    {
+      "address": "0x239d249768e14bcd55d97cc3fa3e2060ea4889ca",
+      "sharesRaw": "2073526842807070"
+    },
+    {
+      "address": "0x3b50c652bc8611608b198152f64b6dfdba86d846",
+      "sharesRaw": "2064696619252323"
+    },
+    {
+      "address": "0x8ae2a856363883ba89c27b052a8c96cc4e8b3f75",
+      "sharesRaw": "2056032120296985"
+    },
+    {
+      "address": "0xe85b935d78e59557a75c6c82d2535c2c11404cda",
+      "sharesRaw": "2050714431217968"
+    },
+    {
+      "address": "0xc7a2000bbb4db038391535d75cea2f66dae04603",
+      "sharesRaw": "2033374250731633"
+    },
+    {
+      "address": "0xb82c27687bcfa59440324e55ad5f42311a73b8e5",
+      "sharesRaw": "2031345291359190"
+    },
+    {
+      "address": "0x66882ce10014d9cc27687bfa19569e1da8df2c19",
+      "sharesRaw": "2023817610636451"
+    },
+    {
+      "address": "0x1fd4fc869ab450cb750a66bf7ba33c86bfa4cfc1",
+      "sharesRaw": "2015478873572470"
+    },
+    {
+      "address": "0x9d7f48963279591732eac299e50eb0cba7b11f93",
+      "sharesRaw": "2005180110197930"
+    },
+    {
+      "address": "0x535e9f20e7f40dd7a34d79bd4531c52dbceb52c6",
+      "sharesRaw": "2000946470351645"
+    },
+    {
+      "address": "0x58cc1e4b6bc268f7e6e6384fe07e7175eca58fd2",
+      "sharesRaw": "2000000000000000"
+    },
+    {
+      "address": "0x687742156956500180b57d5b64eeeb16e27f18ac",
+      "sharesRaw": "1967357819719102"
+    },
+    {
+      "address": "0x1a10610ecad855a46bdf2476721742a5ab54fe0d",
+      "sharesRaw": "1955967140925229"
+    },
+    {
+      "address": "0xf5104d37b665bac924f91048497d37a4d87ecbc5",
+      "sharesRaw": "1949114972651478"
+    },
+    {
+      "address": "0x818a5a6a6e51c6ca5ff36d5f1abb36e9fefc2f54",
+      "sharesRaw": "1942609341069902"
+    },
+    {
+      "address": "0xb23a9edf3d197deadbdb557703db94ab859d3d09",
+      "sharesRaw": "1937930823855296"
+    },
+    {
+      "address": "0x112f67fb4d123e41f9902a75faabf88ac81f7954",
+      "sharesRaw": "1933104956352305"
+    },
+    {
+      "address": "0xad649b28712d1b0a03fa349e76d39994409f9f69",
+      "sharesRaw": "1913886803708847"
+    },
+    {
+      "address": "0xee35ffd016f1334796fb1962227a050d786d4a11",
+      "sharesRaw": "1892612895572007"
+    },
+    {
+      "address": "0x2918889a58f14f67cdbdec58d93ea4c805412bee",
+      "sharesRaw": "1887581284010533"
+    },
+    {
+      "address": "0x0b5bd36f35b7fdb5f82a8867771aef0062b55a4d",
+      "sharesRaw": "1854265162945472"
+    },
+    {
+      "address": "0x94d486b1e2f8b994fda49c272749f54a9b67eaff",
+      "sharesRaw": "1841102500162185"
+    },
+    {
+      "address": "0x63663f7bbfe177cd33e291d334f61eea8cb6f339",
+      "sharesRaw": "1840470376364936"
+    },
+    {
+      "address": "0xc46982d01e229d5bfc14da794d2b93fc84dfb25b",
+      "sharesRaw": "1829791014312678"
+    },
+    {
+      "address": "0x3f62a5d1fff55135625d3c05fce04b467d827702",
+      "sharesRaw": "1828707010018587"
+    },
+    {
+      "address": "0xfdfc6d027f77854934d4f18246deb67633af7703",
+      "sharesRaw": "1822692487594679"
+    },
+    {
+      "address": "0x56e271a93374cbf6fb73809e74ea593853b800d3",
+      "sharesRaw": "1822628245446927"
+    },
+    {
+      "address": "0xf97dc069ac25d91dde9f101cc27b347466224c96",
+      "sharesRaw": "1818898249143712"
+    },
+    {
+      "address": "0x2732938d16a18f9e85e62900c3b3430284e46a2e",
+      "sharesRaw": "1810306030407432"
+    },
+    {
+      "address": "0xa2b951cd04f86a228de3935a59f2038fd34f61ff",
+      "sharesRaw": "1808403325015612"
+    },
+    {
+      "address": "0xe9f6a357cce910b9c16e9d1163b9fe7b44c648bb",
+      "sharesRaw": "1807692718441111"
+    },
+    {
+      "address": "0xa388790ad86b88f9000c5fbde895ec008d9b002c",
+      "sharesRaw": "1800000000000000"
+    },
+    {
+      "address": "0x8d8594d6e72b1745139ca1a65a3d2adf9cf66b40",
+      "sharesRaw": "1778741720133661"
+    },
+    {
+      "address": "0xb88371720e53f9bde698b0100d0645fda020b48a",
+      "sharesRaw": "1751344656296507"
+    },
+    {
+      "address": "0x2d8da5d074e9e4697f0d56642f56d54dabb2a11f",
+      "sharesRaw": "1744719273983178"
+    },
+    {
+      "address": "0xd420447db32926eac4f60617ca627ad3557e9cdc",
+      "sharesRaw": "1742819973223310"
+    },
+    {
+      "address": "0xe18c95b8f1a6c1811f55f965d0c2763f2e481200",
+      "sharesRaw": "1726985403989039"
+    },
+    {
+      "address": "0xfaa63e475e409523086797521de4e80b731c9bc4",
+      "sharesRaw": "1725532560864525"
+    },
+    {
+      "address": "0x77aebaa99c3b1af698467ab5366cf6f491adbecd",
+      "sharesRaw": "1723259383820856"
+    },
+    {
+      "address": "0x4531fe7a6e2e4989b5a6e8553e59e5e4bfdfcf3a",
+      "sharesRaw": "1713587548879658"
+    },
+    {
+      "address": "0x2cf761263899386ffd762b4bbef96d9635635409",
+      "sharesRaw": "1710045532248454"
+    },
+    {
+      "address": "0x2bcd4d5f65882d69c0f3f3d69598c82143f614aa",
+      "sharesRaw": "1698710509764563"
+    },
+    {
+      "address": "0xac859c6508a56aadd0ad87262a612772b0b505d8",
+      "sharesRaw": "1697180609410076"
+    },
+    {
+      "address": "0x40f2c93c68f59198d26f12f1363c7e10c2629068",
+      "sharesRaw": "1672082877045001"
+    },
+    {
+      "address": "0xe3700f30c89d9a10cd623e0f1a067fd71010b9ff",
+      "sharesRaw": "1671031142180244"
+    },
+    {
+      "address": "0x470d8e38d410707d5c2b806f18d1d19992ab0948",
+      "sharesRaw": "1656931932133359"
+    },
+    {
+      "address": "0xe5dc483a763ce623e1516c86d4dacce9a80a5a70",
+      "sharesRaw": "1626719260870687"
+    },
+    {
+      "address": "0x6863c4b1d2420d7f47911723578923b92e2af35f",
+      "sharesRaw": "1619818581510973"
+    },
+    {
+      "address": "0xcb660e59a086ca2268e9ea630870d1e33e76c532",
+      "sharesRaw": "1609228761254101"
+    },
+    {
+      "address": "0xfce38354b7850cc1a6bbdaf189e2b97daeb17292",
+      "sharesRaw": "1600000000000000"
+    },
+    {
+      "address": "0x67c304de51aa4b6108da3e15d9ba92d34e7e8b17",
+      "sharesRaw": "1596343631457736"
+    },
+    {
+      "address": "0x56e703987c5969a86b565e976ea098ac87d0bb04",
+      "sharesRaw": "1591326847810862"
+    },
+    {
+      "address": "0x4bb505160f8dd17aa765ee02355b47a3350e14f1",
+      "sharesRaw": "1584734201788285"
+    },
+    {
+      "address": "0xf13c441b9ee0159a894bfbdaa6349c32ef014ffb",
+      "sharesRaw": "1561111654358662"
+    },
+    {
+      "address": "0x2a23e77088ab1ba14825bee45231263e0c877ab1",
+      "sharesRaw": "1553738225036763"
+    },
+    {
+      "address": "0x441547b2bc68c9441abd2454999a4712015f4eb0",
+      "sharesRaw": "1534409350014793"
+    },
+    {
+      "address": "0x97f7642a3b70cc13c2f7cba131b5b88ab297f7ef",
+      "sharesRaw": "1534361122373532"
+    },
+    {
+      "address": "0xdd74e695d91fd4d6092c58dc30c8f5ce8771c982",
+      "sharesRaw": "1519919354038318"
+    },
+    {
+      "address": "0xdaf738e8f8ccca51b5acb4ae4383d6c4a3e84ea1",
+      "sharesRaw": "1509364768532019"
+    },
+    {
+      "address": "0xb7b705308254effa0e98ea9796f4dacd099acf28",
+      "sharesRaw": "1493342422649638"
+    },
+    {
+      "address": "0x8c4f29d13837ad0c658dd64d38a2b957186eec16",
+      "sharesRaw": "1475363952134768"
+    },
+    {
+      "address": "0xa054dc2c4bfa18b69f78087e982fd6df5002d7fe",
+      "sharesRaw": "1437183179415533"
+    },
+    {
+      "address": "0xe8cc2cb3bddd5a1fcf299db45953da7174ecfd32",
+      "sharesRaw": "1435128663905323"
+    },
+    {
+      "address": "0x62c798dc5e3ca74108886fa0c313c3cda50c395c",
+      "sharesRaw": "1432115785565839"
+    },
+    {
+      "address": "0x0393ce5c090a35bdb8b384a2ec197c1348c4770a",
+      "sharesRaw": "1426954468223542"
+    },
+    {
+      "address": "0x4942c3271c4b96a15746fd0bdb758b6019f634f7",
+      "sharesRaw": "1423891190818019"
+    },
+    {
+      "address": "0xeb05ee170b34bf975c1d13d381f652820a021e51",
+      "sharesRaw": "1416360948490538"
+    },
+    {
+      "address": "0x4836b3c3cebb04204b18cf478f833e291bf4ee99",
+      "sharesRaw": "1406280996873493"
+    },
+    {
+      "address": "0x420de13b8b6ec37986a420e7a3b696697e83a54b",
+      "sharesRaw": "1400000000000000"
+    },
+    {
+      "address": "0x102cb0a65ba3dcf7fcf29137281ee49e891bf961",
+      "sharesRaw": "1399340862753840"
+    },
+    {
+      "address": "0x3c195c8c9740d2a0b74bdbedf11227ea3f5d6111",
+      "sharesRaw": "1398852723692470"
+    },
+    {
+      "address": "0xc34cb91673cf1a9ab0169d8016dafefae8e7c78c",
+      "sharesRaw": "1394271062417470"
+    },
+    {
+      "address": "0x152771b0aa90e7f7b1ee1c9b305a820bfe189e3c",
+      "sharesRaw": "1377117871171572"
+    },
+    {
+      "address": "0x3855d73c5c61cd58e501d7ccc15fb3ca626cd99a",
+      "sharesRaw": "1362052945979009"
+    },
+    {
+      "address": "0xe27dc183dea0aec7798d38383ab6adbbf051e822",
+      "sharesRaw": "1359302227772597"
+    },
+    {
+      "address": "0xbc67bd102b22a03edf7f3eee4679b88e9cce5a3f",
+      "sharesRaw": "1357569329843088"
+    },
+    {
+      "address": "0xe0926d17db6bf5d4b6854fe96bbcc199091c96f8",
+      "sharesRaw": "1332649164192327"
+    },
+    {
+      "address": "0x0cc1a1958fc33475c03267fc7481e13ab6b5fdb1",
+      "sharesRaw": "1317623723008008"
+    },
+    {
+      "address": "0xb96f3e40b32db6079b3893ccee41033c67aebe64",
+      "sharesRaw": "1307557604055174"
+    },
+    {
+      "address": "0x33a86ef92115086b4787a4ede09164217ae70865",
+      "sharesRaw": "1294902704542377"
+    },
+    {
+      "address": "0x4eea4f591332fce60545d2254d50d29685ab5d40",
+      "sharesRaw": "1291000000000000"
+    },
+    {
+      "address": "0x921d649cd2c5f9407d3e78a85ad5ff83255b1960",
+      "sharesRaw": "1288398864729509"
+    },
+    {
+      "address": "0x2c15f52e6e88bb2d16810da880a0fa56346463ad",
+      "sharesRaw": "1279989942920938"
+    },
+    {
+      "address": "0x268b4b39b3ca46fda24062b7aa240fbbe5f35c8a",
+      "sharesRaw": "1264541454164338"
+    },
+    {
+      "address": "0x441859a912f54e3b54a0be99b61d8dc97b6e8835",
+      "sharesRaw": "1237478163720963"
+    },
+    {
+      "address": "0xc3ff2f1e5e0778bac1e1c823cbd917e901c9f097",
+      "sharesRaw": "1229088405689281"
+    },
+    {
+      "address": "0x99328f4e9b4778224fdcbf3e7cdd16d0e7148a83",
+      "sharesRaw": "1213155882349666"
+    },
+    {
+      "address": "0xea7132df6d8d1cb7c4673661b40bd305f6f0f996",
+      "sharesRaw": "1171116496284158"
+    },
+    {
+      "address": "0xf8133fd434f14859e6378f584f59764d19f40f95",
+      "sharesRaw": "1160632513114227"
+    },
+    {
+      "address": "0x71b428dd20f1bdb1a1efc135608f8668f379fcb7",
+      "sharesRaw": "1154710211022710"
+    },
+    {
+      "address": "0x8c6122ed2cf3a6de6d5ed3b9e886c79c727a720f",
+      "sharesRaw": "1152042474135069"
+    },
+    {
+      "address": "0xa42cb1653f8580e99c0b1f8654f6a86132665e44",
+      "sharesRaw": "1150359341725647"
+    },
+    {
+      "address": "0xbaadb7c07373ae92ab6af8d28b329c53e67ea9bf",
+      "sharesRaw": "1146173465594908"
+    },
+    {
+      "address": "0x2cb62ac0a3305942e2c704f16550683376b4f1fd",
+      "sharesRaw": "1142365050733341"
+    },
+    {
+      "address": "0x3940fea17eba4973765b73b4d3901d094b5881cf",
+      "sharesRaw": "1140959040476485"
+    },
+    {
+      "address": "0x93ea991766bdd9bfe6426dcc58b2f9bb16747f0a",
+      "sharesRaw": "1134069542077316"
+    },
+    {
+      "address": "0xaea4f4ac58c8432b56d5d6fdbb429d7b01be1181",
+      "sharesRaw": "1131485523921462"
+    },
+    {
+      "address": "0x07c50682695f784616d6ff4061968fb3e91cd0da",
+      "sharesRaw": "1113996465438928"
+    },
+    {
+      "address": "0x5f71f1207237585cc7158f2316e03cf2bde27424",
+      "sharesRaw": "1106792496337685"
+    },
+    {
+      "address": "0xa75abca43fb4802714f72241ad940ddf80f92b46",
+      "sharesRaw": "1100919589652020"
+    },
+    {
+      "address": "0x1562e63af9584a9c14d7b3f141d2792bd99acb2f",
+      "sharesRaw": "1092553967338009"
+    },
+    {
+      "address": "0x218fd7620b318446be919e17c6cb2721bc2d37f9",
+      "sharesRaw": "1081528594951869"
+    },
+    {
+      "address": "0x3e57cc91596a4c34baf0aac6c5e678665b25c8a6",
+      "sharesRaw": "1063413651351844"
+    },
+    {
+      "address": "0x24a7928dccf4f2b7cac6349e648f94ba03c7175e",
+      "sharesRaw": "1054524257733357"
+    },
+    {
+      "address": "0x6607d8826031ba2064f1526e031ae96514ae1969",
+      "sharesRaw": "1052307355020316"
+    },
+    {
+      "address": "0xc9aeab9bb09fdc9783914b95447d646b9e49589b",
+      "sharesRaw": "1049663924732418"
+    },
+    {
+      "address": "0x66de182acbb1e63913e378a8a03fd39b73e67ea0",
+      "sharesRaw": "1040433067885133"
+    },
+    {
+      "address": "0xa53c9244c41fe6bbf540faf3a896074f33885d25",
+      "sharesRaw": "1038421538137984"
+    },
+    {
+      "address": "0x79aaaddb977ec23d5960c8fbcc2a7deb99b3f2dd",
+      "sharesRaw": "1032518276092734"
+    },
+    {
+      "address": "0xcd77dcf5d68134f33bd3934b9222925faf090e6a",
+      "sharesRaw": "1030089660928554"
+    },
+    {
+      "address": "0x42359380acaabe5707d73d4254f3407f440ade71",
+      "sharesRaw": "1024116745406475"
+    },
+    {
+      "address": "0x8be80796fdc3eb4e08637c74df4fc39f6af7f813",
+      "sharesRaw": "1022064233755296"
+    },
+    {
+      "address": "0x06940ef8b1706d9e5cb3ece917ad98acc0a80aa3",
+      "sharesRaw": "1013419865857674"
+    },
+    {
+      "address": "0x40a0f024278dd63e9cb2839f2aaa4af111d94c36",
+      "sharesRaw": "1011363378798007"
+    },
+    {
+      "address": "0xbd1868296f8a572974a70da375935602493d9e99",
+      "sharesRaw": "1006800805855634"
+    },
+    {
+      "address": "0xea1db08e0a8fe72d2a3342eefaf3013d9bbb4c08",
+      "sharesRaw": "1000000000000000"
+    },
+    {
+      "address": "0x2a1d54e7fa0ff1c87cc23ea99d30f021b95faebe",
+      "sharesRaw": "1000000000000000"
+    },
+    {
+      "address": "0x72cb2141c0d7ff3dbef3adb30cfec4446aa76987",
+      "sharesRaw": "1000000000000000"
+    },
+    {
+      "address": "0x9515c970cb587e3cd05609097ff63f73a5a87219",
+      "sharesRaw": "993184585048532"
+    },
+    {
+      "address": "0xba85857c65393bfd36583ee01286608fc01ac006",
+      "sharesRaw": "991012151065077"
+    },
+    {
+      "address": "0x1d7df914faf0e769b4cfbdc409584b02a77cf426",
+      "sharesRaw": "989370651211975"
+    },
+    {
+      "address": "0x6f8c503887790c6f5738d99827894517713ec97e",
+      "sharesRaw": "986336796991730"
+    },
+    {
+      "address": "0x8cd840715928374df7cffc921da28357a826c3a5",
+      "sharesRaw": "985902668306813"
+    },
+    {
+      "address": "0x86bad1464534dad25119d1d6658ddc72f70a6e82",
+      "sharesRaw": "984440571682838"
+    },
+    {
+      "address": "0x86b3f1456525ab154360ae5bb2969248fc1a0936",
+      "sharesRaw": "967874841211850"
+    },
+    {
+      "address": "0xa22e186374e4a32c38067581834e1e1d8bd887c7",
+      "sharesRaw": "948387990090428"
+    },
+    {
+      "address": "0x18ebf26d767a2f3a78f2717341234889bf4a1757",
+      "sharesRaw": "944110568661867"
+    },
+    {
+      "address": "0x5417495bfbfd65f1490ee697473d1e8cb05206fb",
+      "sharesRaw": "942336304328177"
+    },
+    {
+      "address": "0x1d7f41adbfa0158e1bf5b2bc3d9e06ab968c75b8",
+      "sharesRaw": "942166156749520"
+    },
+    {
+      "address": "0xbbbb26f2fe958938f7b44aa013e0d6ff7c6d6544",
+      "sharesRaw": "941328577050884"
+    },
+    {
+      "address": "0xa9a637262efecd9aa6357a62076d801ee3b254e1",
+      "sharesRaw": "939990862490153"
+    },
+    {
+      "address": "0xe96b62b7a2089c741aadd0112b5058a259280452",
+      "sharesRaw": "939773280868567"
+    },
+    {
+      "address": "0x6af78a9c7200d9f29b7cb39b4b484aa84750dbc8",
+      "sharesRaw": "938695414042876"
+    },
+    {
+      "address": "0xce04f061609e684c03ef64aff60c0d273cabafa9",
+      "sharesRaw": "936857427462753"
+    },
+    {
+      "address": "0xbf08aa329216f514dd49782523b538f61b738571",
+      "sharesRaw": "928239003160486"
+    },
+    {
+      "address": "0x465b4a56fad6638b41e11676128352228491cfe3",
+      "sharesRaw": "923758961725302"
+    },
+    {
+      "address": "0x696f04d03af46407c6af3e67c65bdab9379b8457",
+      "sharesRaw": "922893269143938"
+    },
+    {
+      "address": "0x8e29ee5bbf8acbd93456659d93fc5482f71f6219",
+      "sharesRaw": "921738598501399"
+    },
+    {
+      "address": "0xe246b3725da5943d013ed97890de546bffb09f4a",
+      "sharesRaw": "921530767150904"
+    },
+    {
+      "address": "0xd68ba71030ab79d7d4dfcb753e15bcf08515aa3e",
+      "sharesRaw": "920177424073041"
+    },
+    {
+      "address": "0xf1fdb7a92a785c7896f1ecf866326884f18ef893",
+      "sharesRaw": "918047624212475"
+    },
+    {
+      "address": "0xb58654169c37fb4ead82900e1a8b44f4d152587d",
+      "sharesRaw": "917777934322873"
+    },
+    {
+      "address": "0x7030d0953ca1b45433586825cac51c2703bbfc11",
+      "sharesRaw": "912945874689422"
+    },
+    {
+      "address": "0x0ed12c81e273694305b4484ccb32c2015c1a928b",
+      "sharesRaw": "911461970210117"
+    },
+    {
+      "address": "0x9155c8f100d33b8651f294c51c8515c0d4ff8a66",
+      "sharesRaw": "909164476397676"
+    },
+    {
+      "address": "0xb13033a64d4105e30baa993963ae1a6da2b42f34",
+      "sharesRaw": "906494256739698"
+    },
+    {
+      "address": "0xc196be8f8174e3d91dd86f95d6af4e6085d8335d",
+      "sharesRaw": "903244514255885"
+    },
+    {
+      "address": "0xa8116a444d918915d85e19b7ac6e3d4881c730d1",
+      "sharesRaw": "903226156259526"
+    },
+    {
+      "address": "0x0ca0ed440565cf752fdca9fba342a578f8949e73",
+      "sharesRaw": "884356420159472"
+    },
+    {
+      "address": "0x03ded6a478b364c08252f5bd2b57198d57af67c4",
+      "sharesRaw": "878811642735489"
+    },
+    {
+      "address": "0x444abce98b3ee85ddf6dc477e26186d04e53f6cf",
+      "sharesRaw": "876738781427232"
+    },
+    {
+      "address": "0x9f465cf75b7948395416a19165b723c13f112e8a",
+      "sharesRaw": "873290437842565"
+    },
+    {
+      "address": "0x3a68ead5eb1d03fb30095047f010e7ab240ad92e",
+      "sharesRaw": "873121946616393"
+    },
+    {
+      "address": "0xf1369e1227bfb22a110d632f4c9c5c1cffff6b56",
+      "sharesRaw": "869864308328929"
+    },
+    {
+      "address": "0xd0fd782beccb0af054c09db4aa31b04dfda50b0f",
+      "sharesRaw": "868572755628489"
+    },
+    {
+      "address": "0x2b94925034622876c01ddde537146f2e985a5538",
+      "sharesRaw": "864494250775843"
+    },
+    {
+      "address": "0x75bb410a49ba257ce474dc83e788f9a7127beb2f",
+      "sharesRaw": "863903176113218"
+    },
+    {
+      "address": "0xbf0b892234140c89ec6373d0754646881a1f1d97",
+      "sharesRaw": "857242048319653"
+    },
+    {
+      "address": "0x104c1fcb3faff175accac97a395a85c8603c6e90",
+      "sharesRaw": "852168746908098"
+    },
+    {
+      "address": "0x816d8d03eac6b16a42c44660e339ab14fdc88e3c",
+      "sharesRaw": "847887471739897"
+    },
+    {
+      "address": "0x6bdd2ebea20243c6d4403c5b72966ab71d633e35",
+      "sharesRaw": "842728496198719"
+    },
+    {
+      "address": "0xf8cbff2675be9b60311a5248cf69d692e13d7bf3",
+      "sharesRaw": "841019446401674"
+    },
+    {
+      "address": "0x6e7c2740fe500a2e74c4828274767a1aa248ce88",
+      "sharesRaw": "838573228212092"
+    },
+    {
+      "address": "0xa9aed357763f62ffb50a35669b8542d60756f0d4",
+      "sharesRaw": "837979058540088"
+    },
+    {
+      "address": "0xd336db323996cb0cb4618741253295f6ba3d89e1",
+      "sharesRaw": "832418898778939"
+    },
+    {
+      "address": "0xaa1a24bcc4a83370b38d9ac8e4448531601529aa",
+      "sharesRaw": "829755759251944"
+    },
+    {
+      "address": "0x0aae12cf2c355b94e72543d5379a4b27a674767c",
+      "sharesRaw": "822790286382490"
+    },
+    {
+      "address": "0xf1a22d215decc2288012fe5d5f9f07e37b534fff",
+      "sharesRaw": "813653539535375"
+    },
+    {
+      "address": "0xc620db89a78e1cf691e6b33855240e4b3c7dfd8a",
+      "sharesRaw": "807995419890546"
+    },
+    {
+      "address": "0x550b7b8ef28f55ce54edb0236d02ecc8e946f750",
+      "sharesRaw": "807906670493454"
+    },
+    {
+      "address": "0x5c8bdd2ce3fc917c6fa5e7b15b0c79fffa9e8e04",
+      "sharesRaw": "803593163978100"
+    },
+    {
+      "address": "0x9374f48a5441856eaaea1c6c722c8c6b8755ba70",
+      "sharesRaw": "795475515722140"
+    },
+    {
+      "address": "0xeeb0d8641e883bc04f6d5ac94b948dba13dc4463",
+      "sharesRaw": "792479516805399"
+    },
+    {
+      "address": "0x320e8bd5c80729adf051898e12da63821074d5a7",
+      "sharesRaw": "790491338968913"
+    },
+    {
+      "address": "0x476d96ab96103ee295f3f7118aa2e93db23f92c1",
+      "sharesRaw": "771589438562880"
+    },
+    {
+      "address": "0x86cea4d404f3abe48efdfff1250e486cc95da0cc",
+      "sharesRaw": "769601434195499"
+    },
+    {
+      "address": "0xeb10043c5aff664413073f4a0fe2ee7304cf01ec",
+      "sharesRaw": "750653655706254"
+    },
+    {
+      "address": "0xdd6f6706ae9244ad9cfd7ebae2aa3664c8f44534",
+      "sharesRaw": "746835731587681"
+    },
+    {
+      "address": "0x9ba698ad6adcf495fc3f29880e45fa76042cf37e",
+      "sharesRaw": "745717969030865"
+    },
+    {
+      "address": "0x8f8340a28da4d46919b2dc86cd2f2f8678be9be8",
+      "sharesRaw": "736777398991978"
+    },
+    {
+      "address": "0x4eec11cc986b0956488f0f949a7e5b17093f6f0f",
+      "sharesRaw": "732661780061286"
+    },
+    {
+      "address": "0xdf07296d50c9641058d64bfe88c40e3d3bce98d3",
+      "sharesRaw": "729429072580251"
+    },
+    {
+      "address": "0x0fcc0d1a9ab681d924661d70f9025fb0398bf50f",
+      "sharesRaw": "726623302491499"
+    },
+    {
+      "address": "0x8b193932f8ebcc4bd7d4009b224974b3a3a98144",
+      "sharesRaw": "722786472168587"
+    },
+    {
+      "address": "0xd302f87d0c0d7b4d761d7589fd85b77a8bf77cf1",
+      "sharesRaw": "721865669645544"
+    },
+    {
+      "address": "0x0048c7bc6496f157253b7498867841fe2bb1da93",
+      "sharesRaw": "714406194785993"
+    },
+    {
+      "address": "0x1c4ecd2ceb0a5887eeaaffe6a05715ba08d99607",
+      "sharesRaw": "704384953919571"
+    },
+    {
+      "address": "0x4b0ac721db1a4acfd0c8155224e7c805f7a3ef43",
+      "sharesRaw": "703852316642206"
+    },
+    {
+      "address": "0xfeda27ff09f542ded153bb5ac5ae99e7b0ec6ad4",
+      "sharesRaw": "700000000000000"
+    },
+    {
+      "address": "0xb8433f42d63158c1a757ca2a071414ab0e154a9b",
+      "sharesRaw": "698923418058660"
+    },
+    {
+      "address": "0x40ab54c4f390d275d1e4e05d7e1129653a049ca9",
+      "sharesRaw": "691376291668480"
+    },
+    {
+      "address": "0x1cd8623311f9c63c27cc9aa4d64962b2d2a226fc",
+      "sharesRaw": "690311492152938"
+    },
+    {
+      "address": "0x8a7552e4912968b0d4e5347afaeb5132b0b1ccee",
+      "sharesRaw": "684725410782294"
+    },
+    {
+      "address": "0xd2e8870c5f28c863e7ebbc3a9cf7749d384bc2c6",
+      "sharesRaw": "678569557367399"
+    },
+    {
+      "address": "0x4e02815c7077eda5754349fc7af5d925f20ba794",
+      "sharesRaw": "656348458033027"
+    },
+    {
+      "address": "0x9a648bec94cf007855c6eeef53e6dca2eedd9b86",
+      "sharesRaw": "651099744621670"
+    },
+    {
+      "address": "0x4d8e529fd078a10b19fb8cba15deaf68087f4c9a",
+      "sharesRaw": "649795443592874"
+    },
+    {
+      "address": "0x7cab013db05646da64b830978ee223e82fc5ede2",
+      "sharesRaw": "647818134459738"
+    },
+    {
+      "address": "0xedab0b533f406b4ad9debf570de5fdba4909ab57",
+      "sharesRaw": "643927469293778"
+    },
+    {
+      "address": "0x7816b1b95fe88b24b57cbb9414022dffedbe2643",
+      "sharesRaw": "642861293371762"
+    },
+    {
+      "address": "0x746f5585faf9f69abc6999d7f720da6cfbb20a79",
+      "sharesRaw": "631414677283578"
+    },
+    {
+      "address": "0x3bef7e79cb0678dac7035356bdac5793f018b3b9",
+      "sharesRaw": "630053466976044"
+    },
+    {
+      "address": "0x507dcc31e657ed87bdf0131bcd0957e08b008627",
+      "sharesRaw": "626893281253132"
+    },
+    {
+      "address": "0x5c55104271c87290672888f189ddbe6ecb2c3d51",
+      "sharesRaw": "619691321175756"
+    },
+    {
+      "address": "0x81d9ead2210d1fe2eb61a4a0be68c602474e9bd9",
+      "sharesRaw": "611693493994547"
+    },
+    {
+      "address": "0xdfcab684f6eb0b2c91a2737c5830249db0cabc6b",
+      "sharesRaw": "605836273333547"
+    },
+    {
+      "address": "0xa93592804adde95943f93ae31550df9f7d6934ef",
+      "sharesRaw": "605256507409980"
+    },
+    {
+      "address": "0x46d1318757f258cafb4f593b73b18489044ea798",
+      "sharesRaw": "602268564813769"
+    },
+    {
+      "address": "0x92add92a6f0cdfc15b68043006d2c7e21a7441d1",
+      "sharesRaw": "600060183127314"
+    },
+    {
+      "address": "0x5bc2fa6c7a5c2406efc55515e96717d3160e7eda",
+      "sharesRaw": "598149763314561"
+    },
+    {
+      "address": "0x16d49d6004e5bf8a4b75cde5c3bd42e6b56be6c2",
+      "sharesRaw": "586889113948730"
+    },
+    {
+      "address": "0x3297c1d2b61353684c29488381409cc78ed782b6",
+      "sharesRaw": "586068539956504"
+    },
+    {
+      "address": "0x237f044828553d899597a7e4ed5885c3eaa9d18f",
+      "sharesRaw": "582563695147183"
+    },
+    {
+      "address": "0xf57d8fb23400eb357b77060612f2cfd1851ad92f",
+      "sharesRaw": "566125253785825"
+    },
+    {
+      "address": "0x3b970d83e552734ede5d1983eda0893ab7e0ebc7",
+      "sharesRaw": "565522954875704"
+    },
+    {
+      "address": "0xfbe088235bf8e6835c3827524554591d91e38f0d",
+      "sharesRaw": "565029080909220"
+    },
+    {
+      "address": "0x7433efd926de2bf63acde9c2e9167dab1303eba9",
+      "sharesRaw": "562003052041166"
+    },
+    {
+      "address": "0xd857e052fe9deeffe827d800b1b0db7cc74bdb88",
+      "sharesRaw": "559879627185112"
+    },
+    {
+      "address": "0xcf0725d00779320313548d35b17dfe3bf7f8da63",
+      "sharesRaw": "558414440510688"
+    },
+    {
+      "address": "0xa55e09a6db4ed4621a1e9a4db8037da3ed556d61",
+      "sharesRaw": "554178269766515"
+    },
+    {
+      "address": "0x85762b6ae682bbc36016081463f4cae900242146",
+      "sharesRaw": "550192622561353"
+    },
+    {
+      "address": "0x0514417e4df79579fbd6be3ad92de0f75adc98ef",
+      "sharesRaw": "547967264664250"
+    },
+    {
+      "address": "0xb40cfb75f434a7c5d63e291ddf80d3093e1f20eb",
+      "sharesRaw": "541768565342212"
+    },
+    {
+      "address": "0xe3831b82992c5d53e2b67c26d04a75e02e1c253d",
+      "sharesRaw": "537672666830504"
+    },
+    {
+      "address": "0xfa1cfd5ad56334c0866137f3e529cd3f61f7c8a9",
+      "sharesRaw": "536450518505352"
+    },
+    {
+      "address": "0x3a23ea253b258879bf986f0abf9db383db695524",
+      "sharesRaw": "528287134608680"
+    },
+    {
+      "address": "0x392954a18a691db10f4ca7969adfb1271044ccb8",
+      "sharesRaw": "526328182355400"
+    },
+    {
+      "address": "0xced5be29c98d569db91229ecc637d53a69b95748",
+      "sharesRaw": "521485273177822"
+    },
+    {
+      "address": "0xd9122ddb2e8e53ca0f67b28ac323be8d3434c62f",
+      "sharesRaw": "518142317037655"
+    },
+    {
+      "address": "0x54fdb1c0d5025b0e5c3d8296c0c03b9d8ce41da5",
+      "sharesRaw": "515859823839951"
+    },
+    {
+      "address": "0x3b7f523ded54ad349b58f95fb256dc56689f3f03",
+      "sharesRaw": "510195356894356"
+    },
+    {
+      "address": "0x9db50af918a7711649713b3298205861846c23b0",
+      "sharesRaw": "508993366960342"
+    },
+    {
+      "address": "0xa1165e2f42e02b14c9bee25a6f697fcd719ed3d0",
+      "sharesRaw": "501114232703734"
+    },
+    {
+      "address": "0xef1db662174714835d1948f254c684c2ae963c63",
+      "sharesRaw": "500000000000000"
+    },
+    {
+      "address": "0x8b7f485e8ca86847aed8ddd7c0886ea1fb0a924c",
+      "sharesRaw": "500000000000000"
+    },
+    {
+      "address": "0xb4f70066d6d981c22354bf01322c375c13444d7b",
+      "sharesRaw": "500000000000000"
+    },
+    {
+      "address": "0x728977697ed238dc5c7d1c6f16dbc34213995b76",
+      "sharesRaw": "499921056842076"
+    },
+    {
+      "address": "0xf65851211d5b3f47f3d95366146f84283be50edf",
+      "sharesRaw": "498114901267590"
+    },
+    {
+      "address": "0x96b0261339f29163b7407e0ee364057cc8fe3c2d",
+      "sharesRaw": "493697134519065"
+    },
+    {
+      "address": "0x217fd60083415ac8eedda85d7a29af1cf6b9387d",
+      "sharesRaw": "478546085610230"
+    },
+    {
+      "address": "0x1128471a469733f62e2696d7567a97beec91f4fb",
+      "sharesRaw": "471038470034232"
+    },
+    {
+      "address": "0x24c49a79c3f0af0190a3d1f57bb57868885c9d33",
+      "sharesRaw": "469402914658210"
+    },
+    {
+      "address": "0x863702ae2ccd22f9a2a13de21c769a196cd63404",
+      "sharesRaw": "464890970233803"
+    },
+    {
+      "address": "0x5994dc623ca38e583dda0dd2d93e452af399d9c0",
+      "sharesRaw": "456005077201577"
+    },
+    {
+      "address": "0x1b9e9405fc33d865e892c164f0afe4608c108594",
+      "sharesRaw": "455053008919797"
+    },
+    {
+      "address": "0x46391be4816ab77dc69948732dc5331c4a9eae56",
+      "sharesRaw": "454318689896167"
+    },
+    {
+      "address": "0x317b0e55412540a4bbe48ef1ac82490c5f4c0478",
+      "sharesRaw": "447000000000000"
+    },
+    {
+      "address": "0x6262061ab9fe2f6498ba2dd64f8c3146bd409821",
+      "sharesRaw": "435019864276645"
+    },
+    {
+      "address": "0x017e4cb31cf38ef85d424e69c600d3fa30ecf149",
+      "sharesRaw": "434523164700343"
+    },
+    {
+      "address": "0x4fd15442ee54614d4e6215e76a3b0b385d093bd6",
+      "sharesRaw": "431013831634319"
+    },
+    {
+      "address": "0x423f9e3595d09df9aef5197da8f90736842165f5",
+      "sharesRaw": "430140567351211"
+    },
+    {
+      "address": "0x781b657e686a951cd76d5de4f915d7e6ff6fbf52",
+      "sharesRaw": "426606341712116"
+    },
+    {
+      "address": "0x169971937657ec71027ddb64597309400357c37a",
+      "sharesRaw": "424692321472816"
+    },
+    {
+      "address": "0xc2bc74542b5443c94b1f5b6442195b03225df73d",
+      "sharesRaw": "421949104786420"
+    },
+    {
+      "address": "0x6041bff305e948b0f60b1fb0d544eb7cac996e4c",
+      "sharesRaw": "410426468519549"
+    },
+    {
+      "address": "0xe4e15fe7e05891ccfdf32e62a678eb425876e673",
+      "sharesRaw": "406154103850194"
+    },
+    {
+      "address": "0xedc0d1175276b9348f60a9af973673580cba02f5",
+      "sharesRaw": "398681904321917"
+    },
+    {
+      "address": "0x864953c5289b3fc334c96b2a858b2fea1d8883cb",
+      "sharesRaw": "398163164887570"
+    },
+    {
+      "address": "0x153e140115c2751ef8b16c73db824ba2d5dd3b44",
+      "sharesRaw": "394115381207940"
+    },
+    {
+      "address": "0x68bbc52de0f5f2e2d7529999e53c4653af5368a6",
+      "sharesRaw": "387600958840288"
+    },
+    {
+      "address": "0xe50f3996b4b5bd9a9c237b1513c0a2b7014b2499",
+      "sharesRaw": "386981734206608"
+    },
+    {
+      "address": "0xab45b8ea34e4662ac93a4cefe3a60cb93073e377",
+      "sharesRaw": "376749087948130"
+    },
+    {
+      "address": "0x17796f9a6825c9903142c9f0f8684d8b891ee142",
+      "sharesRaw": "374085613393574"
+    },
+    {
+      "address": "0xca4dc8b5ae8db89e17024cced9c9bea6657872d1",
+      "sharesRaw": "370700325390317"
+    },
+    {
+      "address": "0xad4c4f092362df5eb77e9b05e0261734839e0294",
+      "sharesRaw": "369203036608883"
+    },
+    {
+      "address": "0xf18276fbea0404385831196a4a049d431e1d09c8",
+      "sharesRaw": "368875221833448"
+    },
+    {
+      "address": "0x8fae0cc5d2aced09ed0029010e0c42575b5dcb53",
+      "sharesRaw": "368067932056499"
+    },
+    {
+      "address": "0x225411ee531c648f5beb544b188bec38f8584c8f",
+      "sharesRaw": "366736340630544"
+    },
+    {
+      "address": "0x233edd868266b21bed4c4db762d508e96b07a796",
+      "sharesRaw": "362266548186906"
+    },
+    {
+      "address": "0xc884a429440f5ecef25e408a4c936109ddac71e0",
+      "sharesRaw": "358911661009764"
+    },
+    {
+      "address": "0xc29e0c7982ba73013ae67a2cfb82167bf795a55b",
+      "sharesRaw": "350375005700960"
+    },
+    {
+      "address": "0x64853bb9a99c8c8fa05a5b491e54382ecc63c11c",
+      "sharesRaw": "349500608175641"
+    },
+    {
+      "address": "0x1fe11c5fa9ec9dd6779f5a02a0759fee3f6b0dfa",
+      "sharesRaw": "344090658901754"
+    },
+    {
+      "address": "0x8c0024e90794a6e8c6f6ddc2eaddd536c967a0af",
+      "sharesRaw": "334757249875445"
+    },
+    {
+      "address": "0x3bbacc203dcb4e488a4eaa7ae6c8cf7cfe6dc049",
+      "sharesRaw": "334745965086432"
+    },
+    {
+      "address": "0x5d25fad448901e404fb214b0fcd4da8a48fb64e1",
+      "sharesRaw": "333988139564369"
+    },
+    {
+      "address": "0x99fbfdfbe35fadf94bf60c4103c7c3ddfa1a03cc",
+      "sharesRaw": "330549291005589"
+    },
+    {
+      "address": "0x514ff02d28043908f007fb98ea2f667a5bf36f14",
+      "sharesRaw": "326714972985440"
+    },
+    {
+      "address": "0xa1097695691d40212c55f934f9363a690021aa46",
+      "sharesRaw": "312781608364828"
+    },
+    {
+      "address": "0x2299364c0a4753531048e2512d05bb98bab7b988",
+      "sharesRaw": "309353295387646"
+    },
+    {
+      "address": "0xb9a89f1c4e6e93be2c1c3e02510ae01965912517",
+      "sharesRaw": "304213409703107"
+    },
+    {
+      "address": "0x1078c8b00cade703ae40764eb39f22c4fdd26ae2",
+      "sharesRaw": "300843771006321"
+    },
+    {
+      "address": "0x6b795b95a6ff7c8a431e420c97bb4c2aabecdb50",
+      "sharesRaw": "300054219886597"
+    },
+    {
+      "address": "0xc213b44acfcb7bd0c09ef06d0cba677185ac3239",
+      "sharesRaw": "292310296702167"
+    },
+    {
+      "address": "0x8def65534a39e3162de49538ac157da183078000",
+      "sharesRaw": "285256951176337"
+    },
+    {
+      "address": "0xa9e508369819ac6c1c09ac4673f8419a66ef76e0",
+      "sharesRaw": "279830499868263"
+    },
+    {
+      "address": "0xd9300657365a3dc401ba0036cee7b28105535b06",
+      "sharesRaw": "278440287273769"
+    },
+    {
+      "address": "0xf48baae92a7bec34c2064be53218f077ebf74717",
+      "sharesRaw": "274680401900553"
+    },
+    {
+      "address": "0x1ee6411093064ed93556055cbe48d6c1a807c7c1",
+      "sharesRaw": "271963779113346"
+    },
+    {
+      "address": "0x7d837374ec51e2f816bd5e1a191e5799efbd62d2",
+      "sharesRaw": "270320232836758"
+    },
+    {
+      "address": "0x1de09e28d0b1048d9f3d4061f9c37fac632fcb2b",
+      "sharesRaw": "270183252803501"
+    },
+    {
+      "address": "0xf72caa261c71724e8feb0a49851bb678c49bb8f5",
+      "sharesRaw": "269617948348623"
+    },
+    {
+      "address": "0x555acd3c2b980a10918e00b9d8e7e1b7c72ca0c7",
+      "sharesRaw": "268203585112416"
+    },
+    {
+      "address": "0xa0fe3bc3880f1005c3c177328f3a1d99f33ce3d2",
+      "sharesRaw": "267803514936347"
+    },
+    {
+      "address": "0xc60723306fb865f2ef196a8bcdbcde78c5307445",
+      "sharesRaw": "265466923439180"
+    },
+    {
+      "address": "0xee3adcc653ebf441956e9ff1b50eb113d745d2fc",
+      "sharesRaw": "263462279114188"
+    },
+    {
+      "address": "0x37c2bddb37b1b6e384d7da2ef5187f05cc060d62",
+      "sharesRaw": "262954667692413"
+    },
+    {
+      "address": "0x5d5d29c5ee3599708f7c726d0bf6bd78acdd864f",
+      "sharesRaw": "261974543795316"
+    },
+    {
+      "address": "0xcaa41ad413eca9c321eff45499dac2e356ebc20f",
+      "sharesRaw": "261312196481457"
+    },
+    {
+      "address": "0x0e599485813418a85f8db898c0fcd4b00173566a",
+      "sharesRaw": "256433591469930"
+    },
+    {
+      "address": "0xf57cfabae99c923eb6be52ca140ae9b2b189d76e",
+      "sharesRaw": "254256579414949"
+    },
+    {
+      "address": "0xb0657062817245bc925c502678aa67ef9252e3c9",
+      "sharesRaw": "253046663036337"
+    },
+    {
+      "address": "0xf7a558a79b6d807198809f94707350a164bdc561",
+      "sharesRaw": "252509532632729"
+    },
+    {
+      "address": "0xc44bf4f1ebfc7055fc2d3e8aa2ff4496864d9fea",
+      "sharesRaw": "251365817480302"
+    },
+    {
+      "address": "0x7a42857e53458f22b507e550fced82577cb8b850",
+      "sharesRaw": "248460056631060"
+    },
+    {
+      "address": "0x313799a3be7d0b6a5073603f3ea07c5f6fd3f0df",
+      "sharesRaw": "247672363369220"
+    },
+    {
+      "address": "0xf2cf5c137cbb05a7a150fee5a6267071c6fbd448",
+      "sharesRaw": "246180194147687"
+    },
+    {
+      "address": "0x58cb918501eff7b6f05d0c756eff63e6a5928ac8",
+      "sharesRaw": "245900952259597"
+    },
+    {
+      "address": "0xa917519508efc00419e91d0d3794d706d23d33d7",
+      "sharesRaw": "245189661132288"
+    },
+    {
+      "address": "0xd626bae9c18bc3edc25b7bc555512093d21f2481",
+      "sharesRaw": "242125779753903"
+    },
+    {
+      "address": "0x3839e1638f13d53b80fdef07cdc2214767bea328",
+      "sharesRaw": "240639923445367"
+    },
+    {
+      "address": "0x89dcb4bcdf9d7a4105f3e9074fc55dcd9a7dc09a",
+      "sharesRaw": "237439322162403"
+    },
+    {
+      "address": "0x6ba33c0e8a1063c79e3229ffae33db6c88f40510",
+      "sharesRaw": "236758494420867"
+    },
+    {
+      "address": "0x3b091b556778252b15a36de9b799523b24ca822b",
+      "sharesRaw": "234579267408204"
+    },
+    {
+      "address": "0xea02d2a1835210f49039a75e705d9e80496bfb41",
+      "sharesRaw": "233763334795132"
+    },
+    {
+      "address": "0xdd7042827bfd402f871b30b7147f1097ee76c871",
+      "sharesRaw": "232254356790538"
+    },
+    {
+      "address": "0xee41ff5e59d704740294770c57140104715d0c56",
+      "sharesRaw": "229170498837672"
+    },
+    {
+      "address": "0x095b744482b0ea93ec312aa8a29440736b78fc5d",
+      "sharesRaw": "228800675264384"
+    },
+    {
+      "address": "0x4525a57b384820368dbc8419ea75e64fbc3a6bd3",
+      "sharesRaw": "225991828952814"
+    },
+    {
+      "address": "0x274258acc78572402ff26712765609fd37c4269b",
+      "sharesRaw": "223814090066756"
+    },
+    {
+      "address": "0xaa15ebdc049861f287f8739c0db895d20a1821e8",
+      "sharesRaw": "223223834609267"
+    },
+    {
+      "address": "0x8868bcae3661c00a30f8e60c313d7b42963d5f1c",
+      "sharesRaw": "220744362977506"
+    },
+    {
+      "address": "0xbe20af8b43e3bc9ac5e712da3793e6bea2827c01",
+      "sharesRaw": "219396931281515"
+    },
+    {
+      "address": "0x3df2a4bfa42121c62913cb9ad829b1d146fbd3be",
+      "sharesRaw": "217662475187537"
+    },
+    {
+      "address": "0xa3cce2719bfaa0951a6f3b553bc2f9a66a986ca5",
+      "sharesRaw": "217000000000000"
+    },
+    {
+      "address": "0xfc05614eaca0c9bab37ecf68226eedcfd9890e28",
+      "sharesRaw": "213200163542046"
+    },
+    {
+      "address": "0x8964ca2711a5abfcccd51afbc6e7af2060a83047",
+      "sharesRaw": "207348318452516"
+    },
+    {
+      "address": "0x24b9befc5fcb4bae6be43f829f63a5a2c44d3942",
+      "sharesRaw": "206441341330198"
+    },
+    {
+      "address": "0x6d90a8248be5c1952bbaedfca3a7a2e6ba4af8f8",
+      "sharesRaw": "204002196616757"
+    },
+    {
+      "address": "0xcf040ffd61add42ae016d857ffb12e4d887b9f55",
+      "sharesRaw": "203614994673081"
+    },
+    {
+      "address": "0xb6d8e47b17674aac17d42002edb4699211e5c21b",
+      "sharesRaw": "200517738847651"
+    },
+    {
+      "address": "0x2e9f05a051a9247ccb4438966009517fe561a64d",
+      "sharesRaw": "200000000000000"
+    },
+    {
+      "address": "0xead15b94452bbe4ad22ca34aea6e3d976006b6ff",
+      "sharesRaw": "199906673550531"
+    },
+    {
+      "address": "0x66f4a199ad0591428b58c82fe424c6bdea0101b6",
+      "sharesRaw": "195482959774624"
+    },
+    {
+      "address": "0x694225f0857a3071dfe03177475b288168b96ba8",
+      "sharesRaw": "194465422765137"
+    },
+    {
+      "address": "0x3825bed1a76e2bf7111e2bb622b6ebad79377686",
+      "sharesRaw": "187912152653777"
+    },
+    {
+      "address": "0x8f672054a722e51638a9a5aa48601ff5576c5b9f",
+      "sharesRaw": "183286908035295"
+    },
+    {
+      "address": "0x61eccdac5e55d38437bc23e5db52cc4d029afcdd",
+      "sharesRaw": "182196027754440"
+    },
+    {
+      "address": "0xa53ed0fe2566051513987ede29c64c5a9bbc4013",
+      "sharesRaw": "182130192755167"
+    },
+    {
+      "address": "0x9fa72b92f058222622e8082c8c95234578fd7806",
+      "sharesRaw": "182087719199384"
+    },
+    {
+      "address": "0x1c4f61dcf3fc7c623d2c10e924f9c772e9a57b3d",
+      "sharesRaw": "180881541314757"
+    },
+    {
+      "address": "0x302a0ae2b179651a0ea5a896510410a66ddc7811",
+      "sharesRaw": "178316684501178"
+    },
+    {
+      "address": "0xc56376d7e84a3e7a0ca1220f20e5f1d6b27178b6",
+      "sharesRaw": "177213802487883"
+    },
+    {
+      "address": "0x03082e447fa5c8e8d5898db63a7505ec931211ee",
+      "sharesRaw": "176508857954070"
+    },
+    {
+      "address": "0xa2dd3e635a3f901cf704fe699d77a75da96e8a4a",
+      "sharesRaw": "172449090494639"
+    },
+    {
+      "address": "0x9e538cd197e6f74a76dfce31f83455a0b99d2d95",
+      "sharesRaw": "167332709806635"
+    },
+    {
+      "address": "0x64b23988322b105f87b6e3b4ef026386eaf2fc77",
+      "sharesRaw": "166626028834760"
+    },
+    {
+      "address": "0xd1705815be658660a357c25af345bf2777754340",
+      "sharesRaw": "165149824115490"
+    },
+    {
+      "address": "0x975d266f6443c4ae42481fb4977fc3879fb0207f",
+      "sharesRaw": "162620951283735"
+    },
+    {
+      "address": "0xf10901df52657f406faad9549ae1b432113e7455",
+      "sharesRaw": "159517660996439"
+    },
+    {
+      "address": "0x42af2efdee2c2cb6ca0a57c98f49834c9d458782",
+      "sharesRaw": "159122978600046"
+    },
+    {
+      "address": "0xb4298774eb2a35f1462dd583c997a4ec173db5c8",
+      "sharesRaw": "152819671221519"
+    },
+    {
+      "address": "0x12118c626e1ea1bc4af03dc1d9eb0f1a0afe3be0",
+      "sharesRaw": "146459235773801"
+    },
+    {
+      "address": "0xbffc7c7b409128af86e1f61809acc30576fe808a",
+      "sharesRaw": "140378348751019"
+    },
+    {
+      "address": "0x74c1eb6d880f7e219082c00175d69ff539f05439",
+      "sharesRaw": "135402294062966"
+    },
+    {
+      "address": "0x7552564a7b2cabfae688ccc30ce80f5e3430e1bb",
+      "sharesRaw": "133677111767576"
+    },
+    {
+      "address": "0x49c9807e926132459f207d8ce97a5363543a2c79",
+      "sharesRaw": "132654182773931"
+    },
+    {
+      "address": "0x3e0faad6237f680e93688d84fec3e97e18b40fe7",
+      "sharesRaw": "132232711755630"
+    },
+    {
+      "address": "0x87846002cb88ce68eb4d0c9f2291abe45d72314d",
+      "sharesRaw": "130889077450199"
+    },
+    {
+      "address": "0xfa230b687d8d26c3ca66ff684630d02c18fd9160",
+      "sharesRaw": "128470920714591"
+    },
+    {
+      "address": "0x2e3e8c9e1d61f1986362ce65dddb1711a5da87b1",
+      "sharesRaw": "127601293668704"
+    },
+    {
+      "address": "0x79ff36c61b79344be4a292c0dd927e42241f7c02",
+      "sharesRaw": "124030752963816"
+    },
+    {
+      "address": "0xf8831c0942a167f90039449203d3a9961e93955e",
+      "sharesRaw": "122501477859677"
+    },
+    {
+      "address": "0xe8bf75fd1c0c462a5f0c6efc6b10d8a1b2c98e7c",
+      "sharesRaw": "122495277660345"
+    },
+    {
+      "address": "0xd941874fe445591f593f9e07cae0df2aabab7be8",
+      "sharesRaw": "118247874593953"
+    },
+    {
+      "address": "0x7cea4f4b77a26d67ed9a347b6f453bf6cb4c485b",
+      "sharesRaw": "118114366363987"
+    },
+    {
+      "address": "0xd0c35fec089d7edd6e3075c70b111848f7ae4ab1",
+      "sharesRaw": "116354757389357"
+    },
+    {
+      "address": "0xad18f5e9b8ea2ad612420684cac038dcffabec29",
+      "sharesRaw": "114909101158861"
+    },
+    {
+      "address": "0xc2ba3634d7140a4dd5fa2a4bb251779408d5e9af",
+      "sharesRaw": "112712422349125"
+    },
+    {
+      "address": "0x1f8fb6f0038d4a4f1832d7553e3c3a07ae132997",
+      "sharesRaw": "112566032958831"
+    },
+    {
+      "address": "0x25d2942ad223cd72178b3e98b471b3a3b956398d",
+      "sharesRaw": "111759329780362"
+    },
+    {
+      "address": "0x7d829d50aaf400b8b29b3b311f4ad70ad819dc6e",
+      "sharesRaw": "109428055803643"
+    },
+    {
+      "address": "0xe1e4fb2b7bd755a47ab7211f1a04d49c6851615d",
+      "sharesRaw": "109296019272192"
+    },
+    {
+      "address": "0x4cb4d9f3b7dc0269b69a5c00eadf2e6b187a17d0",
+      "sharesRaw": "107800828771308"
+    },
+    {
+      "address": "0x6dc8380edefe6010fdfa57c253c3fad956cef0a6",
+      "sharesRaw": "106739318005785"
+    },
+    {
+      "address": "0xffd99c7c17874ebb92e52d81a6e29f5e17e5c3d9",
+      "sharesRaw": "106554197643408"
+    },
+    {
+      "address": "0x141795527fbcf9f4e1b55508a7e50ed9a72df2d8",
+      "sharesRaw": "104137143020067"
+    },
+    {
+      "address": "0xc702248f04bd88c5229bf7d10b9901e3660393d7",
+      "sharesRaw": "102731852600927"
+    },
+    {
+      "address": "0x0bb83443f4ce0b116778edea5eca1c453880f2c4",
+      "sharesRaw": "102692035948548"
+    },
+    {
+      "address": "0x0f44074b08063a79dd42ff7339c189b7876f8c6c",
+      "sharesRaw": "102277281045274"
+    },
+    {
+      "address": "0x86fbaeb3d6b5247f420590d303a6ffc9cd523790",
+      "sharesRaw": "100894166451759"
+    },
+    {
+      "address": "0x9bf6e70aec232388d6cc18678e74d6311330dd0e",
+      "sharesRaw": "100232678270206"
+    },
+    {
+      "address": "0x2cd3b60755a4f45b96c85dbaa91bfab010df5547",
+      "sharesRaw": "100000000000000"
+    },
+    {
+      "address": "0x538fb175e328102c73c737967abb8ac3f81caa35",
+      "sharesRaw": "100000000000000"
+    },
+    {
+      "address": "0x9f440dfc25d23a1ed86bdfcd53d8b3eeb663553d",
+      "sharesRaw": "100000000000000"
+    },
+    {
+      "address": "0xca33ef497935c7afb4a90bdfe5ac05ce9c02e481",
+      "sharesRaw": "100000000000000"
+    },
+    {
+      "address": "0xb0cf8f85f4482d4465519f985b2c649eb933f542",
+      "sharesRaw": "99722707324117"
+    },
+    {
+      "address": "0x97eed99fcc78e81005bc8b02dc4ea60a53f6f13e",
+      "sharesRaw": "99420703804827"
+    },
+    {
+      "address": "0xa2ffab8990b6561ced8aa7cf26fb6913fedf8f09",
+      "sharesRaw": "95711088002910"
+    },
+    {
+      "address": "0xf1b3076de6a1a457977bf85dc6a5283ff5e33fbe",
+      "sharesRaw": "94788909485323"
+    },
+    {
+      "address": "0x87042430068676914bdd408f71d137b32785045f",
+      "sharesRaw": "94246348685976"
+    },
+    {
+      "address": "0xb55226366ebec5b2dfa123bd12e3cbd6f7ca7ab0",
+      "sharesRaw": "94135519098754"
+    },
+    {
+      "address": "0x0b83073fa07dd58a77099defa9e6a6d0f4dc50f4",
+      "sharesRaw": "94132857705088"
+    },
+    {
+      "address": "0xdbddccf1a2d0ac67dcb1b5be4ba32a967790849e",
+      "sharesRaw": "93984636027715"
+    },
+    {
+      "address": "0x3dac2002c0c1315c9cc1f6e138decd4eabc1b4ef",
+      "sharesRaw": "93956076326888"
+    },
+    {
+      "address": "0x68692bb9e05d68e3c4ced6e87cbd02855a6c354f",
+      "sharesRaw": "93886594020741"
+    },
+    {
+      "address": "0x4c850f0e065da42b02ae502d4678e10d5cde2837",
+      "sharesRaw": "92784790442871"
+    },
+    {
+      "address": "0x8fd2303b4c95559017989dbf7da55441d340c894",
+      "sharesRaw": "91681588801641"
+    },
+    {
+      "address": "0x89e1f789ef11882da8f295b9231bd8600af57861",
+      "sharesRaw": "90042439369969"
+    },
+    {
+      "address": "0xc7f2af0f2fb43e6de554705a7f5356318bd48646",
+      "sharesRaw": "88251009645674"
+    },
+    {
+      "address": "0xd1124c08305b2d254003a66f654a056c39ab7fc7",
+      "sharesRaw": "88182784256613"
+    },
+    {
+      "address": "0x5cf429c4c1b24d9a06f34a6e4b48d8841c5bb893",
+      "sharesRaw": "87967988976200"
+    },
+    {
+      "address": "0x9bfe8500ed9dda173a24cf8daacde9c71a59bde0",
+      "sharesRaw": "84797316468648"
+    },
+    {
+      "address": "0x76fdcd8a1dc06b0506163925a6f2092f60a6685a",
+      "sharesRaw": "82639548705421"
+    },
+    {
+      "address": "0x324d840a393eed71b4409949020f61fdc4544d8c",
+      "sharesRaw": "82242555145184"
+    },
+    {
+      "address": "0xe0302d2e6b5d36cf21fd3987f2675c1ad1e4861a",
+      "sharesRaw": "77772046166682"
+    },
+    {
+      "address": "0x2828692f792f3523c8d691fbec2613c593be3fc6",
+      "sharesRaw": "75077009155702"
+    },
+    {
+      "address": "0x41f2979e36350dcb1d595bf873ae6c122a541109",
+      "sharesRaw": "74473916054913"
+    },
+    {
+      "address": "0xefa69ccef64c57a0b6cbf5ce18d4bdab0621b0b5",
+      "sharesRaw": "71911857270906"
+    },
+    {
+      "address": "0x9f591af309f0055518add6fcd95a582ebe9356d3",
+      "sharesRaw": "71473991043163"
+    },
+    {
+      "address": "0xa96f244da2206b34f90aca69ca6b7296daad1bb2",
+      "sharesRaw": "69802940669181"
+    },
+    {
+      "address": "0xcd379cab2b00370199b3450ef47c877f0478a065",
+      "sharesRaw": "68809450927576"
+    },
+    {
+      "address": "0xf4c36472c2ccb1fdd7cf97c98c00edcfb449b253",
+      "sharesRaw": "68441712211850"
+    },
+    {
+      "address": "0x32aa20cc0252e3db36df25e2f7fd31d0c6c83622",
+      "sharesRaw": "68386249797220"
+    },
+    {
+      "address": "0xa361657af66c168d333fab89396487917c9632ed",
+      "sharesRaw": "67424965569637"
+    },
+    {
+      "address": "0xab4bb6ba9ad4998839695e9b7449cbe919cb12ed",
+      "sharesRaw": "66414015796460"
+    },
+    {
+      "address": "0x96b36790ce9c4859a7eaf494ee687b737ebafb79",
+      "sharesRaw": "63759649601050"
+    },
+    {
+      "address": "0x44b278e678339ab38819e73b5b8cb45ab9e370e0",
+      "sharesRaw": "63357644733897"
+    },
+    {
+      "address": "0xbad0f3aa4e85a74f59e3e48397e5f35f34d01c26",
+      "sharesRaw": "61730220689499"
+    },
+    {
+      "address": "0x3a486b677d8e339062827bb798455f4cadbe7a15",
+      "sharesRaw": "59697273735904"
+    },
+    {
+      "address": "0xf6ae1e16be591896f3826fcc54d3bbedcf87de56",
+      "sharesRaw": "57362467444748"
+    },
+    {
+      "address": "0xfe35fa3938d3c438cf445fabb173b434ea8859e2",
+      "sharesRaw": "56892059722970"
+    },
+    {
+      "address": "0xb4a0bee4078c1f145b03bc1865e12bdbedaaa8c5",
+      "sharesRaw": "55244088810364"
+    },
+    {
+      "address": "0xa1da4a691d7f4f1632ce9d3e470b9abc8aff49aa",
+      "sharesRaw": "52258505616935"
+    },
+    {
+      "address": "0xb1640714801d847343c0adc18a058308d3f1eef6",
+      "sharesRaw": "47261198687289"
+    },
+    {
+      "address": "0x01061ded840599f67f30d1c3b6deec77a534bbd1",
+      "sharesRaw": "47092224057255"
+    },
+    {
+      "address": "0xfb4e16425860b8ad5c3a0ef091af2389c804849b",
+      "sharesRaw": "46941722321107"
+    },
+    {
+      "address": "0x97c743b1ff7b88057a485680845b0444e3ad5f2d",
+      "sharesRaw": "45477994335681"
+    },
+    {
+      "address": "0x5cfaf6f37703c832f1cd2b0a121b64d6f6d352da",
+      "sharesRaw": "43794966771618"
+    },
+    {
+      "address": "0xbb10610ffad5a5abf9ba01faab6b943d88ff2e5f",
+      "sharesRaw": "43644145462593"
+    },
+    {
+      "address": "0x8960666bcad53e7b8d89d366d0a9b770ec52a98a",
+      "sharesRaw": "42260715160210"
+    },
+    {
+      "address": "0xc4ec5a8cdf32a9fe612d2aaaa6ea857d44ac932c",
+      "sharesRaw": "42200654714300"
+    },
+    {
+      "address": "0x7b6354d084d6fe855afc8122a5b3f63eacda11fa",
+      "sharesRaw": "41272732293135"
+    },
+    {
+      "address": "0x309aaebaa8597bccf1049abbaa531fd449dbf309",
+      "sharesRaw": "41083360265826"
+    },
+    {
+      "address": "0xdfaab50f214844fa2fc36bff11a43ec17d569cb4",
+      "sharesRaw": "40359220064944"
+    },
+    {
+      "address": "0x848e4231e884fb58c960c0dd5dfd83977dc1c022",
+      "sharesRaw": "39402328395589"
+    },
+    {
+      "address": "0x01ebe3c85aba41a439892f80fc3b159158a2dcae",
+      "sharesRaw": "38052765490573"
+    },
+    {
+      "address": "0xe95d28d6d4776e67e567ca7bb7aecff4312f3825",
+      "sharesRaw": "36752740914398"
+    },
+    {
+      "address": "0x51a73557981c36327d8c1466e9615d04a61d0abb",
+      "sharesRaw": "35769441405796"
+    },
+    {
+      "address": "0x89d502bbbef295d8620effe2529241780a87ad10",
+      "sharesRaw": "34990199647756"
+    },
+    {
+      "address": "0x2fb5a7cb8a4b88d6845b8d55f5bea9a0b5ac349c",
+      "sharesRaw": "34791784730691"
+    },
+    {
+      "address": "0x732cef19fdaa4d7326270846c4c03132ac16a6ac",
+      "sharesRaw": "32661780061286"
+    },
+    {
+      "address": "0xc4e2229d9180366ce1ad51cd9026480d5ca3af05",
+      "sharesRaw": "30014955365972"
+    },
+    {
+      "address": "0x740a38244579f1f7df84077febcdcc2f0f7113eb",
+      "sharesRaw": "28263738597253"
+    },
+    {
+      "address": "0x07b58e9098a7950d77f5fe447c60fac209bde534",
+      "sharesRaw": "23724552264516"
+    },
+    {
+      "address": "0xb0e32f063806aeed067ae362a88aa6eea1febe67",
+      "sharesRaw": "23691099155623"
+    },
+    {
+      "address": "0x233add05501351740842e3df881370635aa9520c",
+      "sharesRaw": "22688695532691"
+    },
+    {
+      "address": "0x933734a85705cda85e1f3107269f59f159abd982",
+      "sharesRaw": "22474688386467"
+    },
+    {
+      "address": "0x51c5ec4bad646bc4ecfbb2e0c1381e5fd5de1a37",
+      "sharesRaw": "21527743240198"
+    },
+    {
+      "address": "0x3a5114b45e38d9baf9f43e8ec717058836ea9353",
+      "sharesRaw": "20983878220351"
+    },
+    {
+      "address": "0x4addac9acf8004792863f3b86bc6a9653491bdf7",
+      "sharesRaw": "20785010332053"
+    },
+    {
+      "address": "0x58df378e06c20ba4c1a9775739bb221a42a21e1d",
+      "sharesRaw": "18818734222442"
+    },
+    {
+      "address": "0xff3fa44dbe1c1513bbe324ab150f1e9b42f92c63",
+      "sharesRaw": "17178125956807"
+    },
+    {
+      "address": "0x0f7a63d9a60eb3e838565ed4c7c6f47817d53260",
+      "sharesRaw": "15795108189100"
+    },
+    {
+      "address": "0xf8f03f3b5f6d2661e7e0089473203d83de52a022",
+      "sharesRaw": "14899813742153"
+    },
+    {
+      "address": "0x7b71cc5c08923213f953d620884e0e596fb09d6c",
+      "sharesRaw": "14643648257745"
+    },
+    {
+      "address": "0x828e4ad95be690f1f1fd3e7397cc5992600bffdf",
+      "sharesRaw": "13752238320246"
+    },
+    {
+      "address": "0xbb56bcaf4f259f6a90017f95261f8ecac733a9ed",
+      "sharesRaw": "13633577191683"
+    },
+    {
+      "address": "0xa5620193c4e6c0e30857996f07f9ac96919967f4",
+      "sharesRaw": "12835422432229"
+    },
+    {
+      "address": "0xcd6b980029e6e6e0733ac8ec3e02be9410d09799",
+      "sharesRaw": "11531228555042"
+    },
+    {
+      "address": "0xebb3c3fd0c4c9d91789d6bb84be4d4a103c7c123",
+      "sharesRaw": "9460036878964"
+    },
+    {
+      "address": "0xfb03b1d9cad25484cff6543c7854d8e09956daa4",
+      "sharesRaw": "9406853567256"
+    },
+    {
+      "address": "0xe5554c11decb08b10fa8188db2f77b106a114f97",
+      "sharesRaw": "8752337620389"
+    },
+    {
+      "address": "0xf2b16f48eabf2064586ede99c14869a2bf584166",
+      "sharesRaw": "8311066088550"
+    },
+    {
+      "address": "0x2eb4d7d5e26543df9342053b6733060f5cfd0970",
+      "sharesRaw": "7067852563140"
+    },
+    {
+      "address": "0x067990df84c727c8443e9092d439e29237622ca7",
+      "sharesRaw": "6723152883451"
+    },
+    {
+      "address": "0xe8c0008b40b81dfaed71836b6467e78ec5edbd64",
+      "sharesRaw": "5915663639631"
+    },
+    {
+      "address": "0xbe4704215c40fa25296b9cac4ef87ea800159840",
+      "sharesRaw": "5615969810885"
+    },
+    {
+      "address": "0x12d545ee3fc45a25e9f3ecf8ac71edd8379e37f0",
+      "sharesRaw": "5195276252336"
+    },
+    {
+      "address": "0xbea8108b5a8707edfe1507c3a06e2735d40ef7c2",
+      "sharesRaw": "4600960193462"
+    },
+    {
+      "address": "0x0e81e999884a66ce597817d6127d1a45a191a4f1",
+      "sharesRaw": "2866911198372"
+    },
+    {
+      "address": "0x8f727bfa00af160c5834e3b3e38f892160efcee1",
+      "sharesRaw": "2734680825170"
+    },
+    {
+      "address": "0x79660c5ab211d70196a54aadc69946d1616267b4",
+      "sharesRaw": "2491360059283"
+    },
+    {
+      "address": "0x7ae36159f9c2abeb9ba86eee6e24d26632dd91a7",
+      "sharesRaw": "2490958410874"
+    },
+    {
+      "address": "0x64b03395539483dc7cc3d17280a7e86f8e081ee6",
+      "sharesRaw": "2292469260672"
+    },
+    {
+      "address": "0xfcd3ed46f0aa1b6d6df1c9dc0e87bb2891486f0b",
+      "sharesRaw": "1008453423728"
+    },
+    {
+      "address": "0x8414df183b4b8bafe312b33ef37a1226d8afacfd",
+      "sharesRaw": "1000000000000"
+    },
+    {
+      "address": "0xab41e7a948a26970242e0162b7fb68d541380e42",
+      "sharesRaw": "1000000000000"
+    },
+    {
+      "address": "0x02ed6c0002122b7ffe7d9830bc538fa608b270c4",
+      "sharesRaw": "995263371150"
+    },
+    {
+      "address": "0x989e88a63942cc30f19afabb17545d4c8b5910d3",
+      "sharesRaw": "994160753268"
+    },
+    {
+      "address": "0x76b274b696d2a10e93b9ef3b7680c0dec2273494",
+      "sharesRaw": "992511906545"
+    },
+    {
+      "address": "0x28d97f8c6d3752603fcb3656bc07f44822302023",
+      "sharesRaw": "988897349037"
+    },
+    {
+      "address": "0x29c9ba47df365c155c37748940fceea2c0225b46",
+      "sharesRaw": "986458472439"
+    },
+    {
+      "address": "0x608e07b8a302d28a7e8ffd74b4e79871b3df8852",
+      "sharesRaw": "981700672340"
+    },
+    {
+      "address": "0x31db38f74ba603792afabe30b094680cba64cea8",
+      "sharesRaw": "968988823203"
+    },
+    {
+      "address": "0xbc628443638e8a16e3e27a7866506263f00f771c",
+      "sharesRaw": "968634520500"
+    },
+    {
+      "address": "0x6dd4e41a381ab33bcd2c126eacfb2f3dfaef5342",
+      "sharesRaw": "962808245677"
+    },
+    {
+      "address": "0x0fdd347b953153c82e4ca6dff9a77741a7e5d65a",
+      "sharesRaw": "961470780329"
+    },
+    {
+      "address": "0xf224e02cc79dd7185cf06e9994bd70f7b963c3c9",
+      "sharesRaw": "955064186285"
+    },
+    {
+      "address": "0x76012e8c2daa3d2e7ae587323b206f4dcad2dfcb",
+      "sharesRaw": "953658977416"
+    },
+    {
+      "address": "0x9b0cf32cf8b02ded9be7af77fa3f423bbf53ea00",
+      "sharesRaw": "946700126681"
+    },
+    {
+      "address": "0xec5c34d8e953353e62731a30a448a120b336a049",
+      "sharesRaw": "941152676996"
+    },
+    {
+      "address": "0xc916f5885dc6574475310858ee92ce75c9ef2034",
+      "sharesRaw": "938350080486"
+    },
+    {
+      "address": "0x471b2450c2b1fd29065af1e6c6a5cb2ffc77b73e",
+      "sharesRaw": "934825177512"
+    },
+    {
+      "address": "0x50f9bce0193d9e96e64b03b5c1b5ffbcc9d51745",
+      "sharesRaw": "931882048750"
+    },
+    {
+      "address": "0x0793df549d24fb4adcd2b2ac54a729fde96fbc85",
+      "sharesRaw": "927134288964"
+    },
+    {
+      "address": "0xe2663fa4e4712666e7cf2cf18ecbc40e5eef92ab",
+      "sharesRaw": "922930203908"
+    },
+    {
+      "address": "0x58c43090339ad430dc1a155fe7599c36aaf0a8cf",
+      "sharesRaw": "913048698853"
+    },
+    {
+      "address": "0xe1c8e082da0c44b7b69b0065c7e9918be9b40265",
+      "sharesRaw": "908481278011"
+    },
+    {
+      "address": "0x232c53b3ac792082fe6d08ac23efe31f13317c71",
+      "sharesRaw": "892777489892"
+    },
+    {
+      "address": "0x4074e3767e2ad20cd6989bd476cc10a589fa53ad",
+      "sharesRaw": "885293040803"
+    },
+    {
+      "address": "0x90c10b8406139df201bd2c8762fab42a18af1a1b",
+      "sharesRaw": "883536140448"
+    },
+    {
+      "address": "0x5d606fc3f2766b90dcd91a8c97ed36874937a336",
+      "sharesRaw": "881016455206"
+    },
+    {
+      "address": "0x975f775bb8ad761abeb7cad97becd8507c2134cf",
+      "sharesRaw": "879217510386"
+    },
+    {
+      "address": "0x31c7a0bfdedefcd6a189360149a712a7402ec4a9",
+      "sharesRaw": "878077138420"
+    },
+    {
+      "address": "0x421311c9ec12dbe634a3fc54da7c26f10c2b76de",
+      "sharesRaw": "872636552608"
+    },
+    {
+      "address": "0x5afb8cc993fb57a228f4cec92d3d5240f4755b16",
+      "sharesRaw": "854883227829"
+    },
+    {
+      "address": "0xe0a796108e38d1cfa1c1f8c8fdc64eb0bc6b32d4",
+      "sharesRaw": "851760909880"
+    },
+    {
+      "address": "0xd480ab41fea9820dc255a5995010afc218223e93",
+      "sharesRaw": "847631505761"
+    },
+    {
+      "address": "0x1f20eadb7c52dcd9e7e662c539764ec96ad38ace",
+      "sharesRaw": "846097292433"
+    },
+    {
+      "address": "0xf02b3853e986b65cbd9b9695810e7fb6089fbb96",
+      "sharesRaw": "840325369994"
+    },
+    {
+      "address": "0xe1f5c30cb3725c55368d5cd27b485d82d975dfd1",
+      "sharesRaw": "829000036201"
+    },
+    {
+      "address": "0x378a2e2cb352d12e0b0b82cca76698ef162f6c80",
+      "sharesRaw": "827852745633"
+    },
+    {
+      "address": "0x5404b75f440db4fe0fde436883076a3ae92efcb2",
+      "sharesRaw": "824044071275"
+    },
+    {
+      "address": "0x0332921a8a4df198ae43771926208b3772bf5b7c",
+      "sharesRaw": "817292502390"
+    },
+    {
+      "address": "0xac448dad5b95465e7470c8eca730e934fe193304",
+      "sharesRaw": "810031096863"
+    },
+    {
+      "address": "0x4a493e62d507c77fcec1d8726e9bf9602a616305",
+      "sharesRaw": "809176735963"
+    },
+    {
+      "address": "0x2e5229655643822fdb2d7dbe5167481595758a18",
+      "sharesRaw": "809092976117"
+    },
+    {
+      "address": "0xdbbe91b4a0dea41f09ef85905c6a86e9336b59d0",
+      "sharesRaw": "800554064356"
+    },
+    {
+      "address": "0x11df0695f0d21c14ad84467c504ceee536f09326",
+      "sharesRaw": "794501219439"
+    },
+    {
+      "address": "0xf63304f6c0b9cc149cd234cd85aa2ad86c362bf0",
+      "sharesRaw": "793872424283"
+    },
+    {
+      "address": "0x00fcb5417f2396947e1c3dd515bb03397fc86e45",
+      "sharesRaw": "792751444049"
+    },
+    {
+      "address": "0x4cc2ddc1472af0e35d30875b3851ca467563666f",
+      "sharesRaw": "792104151949"
+    },
+    {
+      "address": "0xae0b73a5ffcf22dacd0b69a4be732b7959429785",
+      "sharesRaw": "785603686939"
+    },
+    {
+      "address": "0x1ff4615d47434e1cbc2a5216231e12e4fdb668e3",
+      "sharesRaw": "779309908766"
+    },
+    {
+      "address": "0x624993174a003a9253d9fbf21bada1a35bd518ac",
+      "sharesRaw": "775766129119"
+    },
+    {
+      "address": "0xe3b46c26d9b1b3d37f19f6de4455eddafb2501f5",
+      "sharesRaw": "774960620495"
+    },
+    {
+      "address": "0xd6a6dafa5faa4cc48299e7cc96c120616040ab9c",
+      "sharesRaw": "766013572273"
+    },
+    {
+      "address": "0x0ec22369af9107599384640c5a2c0becabe079e9",
+      "sharesRaw": "765478550531"
+    },
+    {
+      "address": "0xadf5a66d69648f325104300f263d0ef75cb9a76a",
+      "sharesRaw": "763983636070"
+    },
+    {
+      "address": "0x2095b2630aa145e8ef41fa636c6a08271c0f268f",
+      "sharesRaw": "759305616663"
+    },
+    {
+      "address": "0x98201940db0ec0a7fe63d1ae22bf6d7dda8064fe",
+      "sharesRaw": "753667120658"
+    },
+    {
+      "address": "0x83a0fac41e970c2af3dbb225a8fc52be847c53a3",
+      "sharesRaw": "747031703609"
+    },
+    {
+      "address": "0x4119c9f77861a1fb28be9d2bab3da30f6c93ee14",
+      "sharesRaw": "744265699771"
+    },
+    {
+      "address": "0x3c611cbec5f9ac5b1156f3c94af8df09022b631c",
+      "sharesRaw": "724646893931"
+    },
+    {
+      "address": "0x020e2c1cd2f4cb33953fe45290714ed0ea169727",
+      "sharesRaw": "721648737330"
+    },
+    {
+      "address": "0xebc47b88973fdee8b86d7e4b04e071cd8a28cffa",
+      "sharesRaw": "704973868202"
+    },
+    {
+      "address": "0x4f3bd42b9dfd7902b3a34981bcf22a1e35b314c9",
+      "sharesRaw": "702579455248"
+    },
+    {
+      "address": "0x2df22fdfa452e478929d6ebc2d2e1e6042603a2d",
+      "sharesRaw": "699996142712"
+    },
+    {
+      "address": "0x95298a15a3460afd7e687260a66f5f4242cb5299",
+      "sharesRaw": "699827919645"
+    },
+    {
+      "address": "0xbef428e07abb89d9f8fbd17d1afae442a6d1d7e4",
+      "sharesRaw": "694708317436"
+    },
+    {
+      "address": "0xb340cc6406579f90c6f794af6f7d2ec7d292abf3",
+      "sharesRaw": "693016201303"
+    },
+    {
+      "address": "0xaad259f056dd0028d25451b882754704322c3bb5",
+      "sharesRaw": "683244931286"
+    },
+    {
+      "address": "0x988036e6e56d011ecace06fc5c5f653cd432e8d4",
+      "sharesRaw": "676473869345"
+    },
+    {
+      "address": "0x677cb688408a7387c61867cc5a430ec1ca854ed3",
+      "sharesRaw": "674497548898"
+    },
+    {
+      "address": "0xebfe090762d5db7039d0e220d960f1bb9cb8bacc",
+      "sharesRaw": "672836161243"
+    },
+    {
+      "address": "0x509c401705af6cf92af92db9c197eee252dbfe81",
+      "sharesRaw": "671214132610"
+    },
+    {
+      "address": "0xdfef6f896368c8dec94726f6b2f03dac5541ecda",
+      "sharesRaw": "663062829922"
+    },
+    {
+      "address": "0x9642fb42415f7a592285d891158869b40eb85e3b",
+      "sharesRaw": "661020986770"
+    },
+    {
+      "address": "0x344c5f4be88d7bd7a456164a1f57256d71860bd8",
+      "sharesRaw": "657424575366"
+    },
+    {
+      "address": "0xc2c9bdcffaf82b014118aba696ba866eff2b4804",
+      "sharesRaw": "653340472124"
+    },
+    {
+      "address": "0xf946d4cf436074bcd125e772ca1fcf28826039e5",
+      "sharesRaw": "653279510812"
+    },
+    {
+      "address": "0xc543d42a7d3c97b000eebd82b9b4f2d346d40078",
+      "sharesRaw": "652897975975"
+    },
+    {
+      "address": "0xf3416056a0be61a2fe2a1c478d84109639ca8e42",
+      "sharesRaw": "651066393170"
+    },
+    {
+      "address": "0x9bc14636fe7dc23e1e61f263b2c721418ee60fa0",
+      "sharesRaw": "645711749221"
+    },
+    {
+      "address": "0xe89bbd02db33de362e1a6165920efe25a7e63cac",
+      "sharesRaw": "643787758585"
+    },
+    {
+      "address": "0x44a541e712896c11aab263194ab9059dfeaa792a",
+      "sharesRaw": "641422807666"
+    },
+    {
+      "address": "0xfbbcf64e3554388bc06ce2e802eafe4743de1e5a",
+      "sharesRaw": "638909813956"
+    },
+    {
+      "address": "0xa4ec95ca38d4e683e0bbc3db6ddaa2c2e04c0587",
+      "sharesRaw": "631118980445"
+    },
+    {
+      "address": "0x0d91bf97c3a12aa08831645c33ca3bb2fd3c160d",
+      "sharesRaw": "621306736347"
+    },
+    {
+      "address": "0x6ae09c165a8cc085e5ff51b637268d0713306231",
+      "sharesRaw": "616085837979"
+    },
+    {
+      "address": "0x6a9167caa61a704179fbdb21c166b33f9319db92",
+      "sharesRaw": "613641025716"
+    },
+    {
+      "address": "0x0b35ab3ff897fd2a0f3edf675b61bbbc74324919",
+      "sharesRaw": "609814595859"
+    },
+    {
+      "address": "0x0c4cb0654350f881795a6a03c0092d6dd9da6813",
+      "sharesRaw": "608996126495"
+    },
+    {
+      "address": "0xb42b069dcb6496f152d58314d5e82d0a70911142",
+      "sharesRaw": "607085517407"
+    },
+    {
+      "address": "0xd3d3c15258b5f05fc8eed414cb4bcb3e5997ec3b",
+      "sharesRaw": "603901394262"
+    },
+    {
+      "address": "0xf62228ff344348cebaa5060ca2090701086918ff",
+      "sharesRaw": "602098678563"
+    },
+    {
+      "address": "0x2289904f9aa4cf2af222c40af1b8e1f2cae4ef63",
+      "sharesRaw": "601839170218"
+    },
+    {
+      "address": "0xe1759695de0101a9f5fa720059e53394fc34b843",
+      "sharesRaw": "598917893841"
+    },
+    {
+      "address": "0xe289716c24b1cfe78011dcdd1f01c7840817c501",
+      "sharesRaw": "588491583961"
+    },
+    {
+      "address": "0x70efeabf4410841ddec492180511464ebe091832",
+      "sharesRaw": "586327387731"
+    },
+    {
+      "address": "0xbb92e05e64f066a05212484f3549e8a8ace79bc8",
+      "sharesRaw": "581007288025"
+    },
+    {
+      "address": "0x22bf5f5724c6cf581cc2ec37cffede2c06b16316",
+      "sharesRaw": "569334217919"
+    },
+    {
+      "address": "0x9426b34d6c59a8c10c4ead63849a952d54fdc7c9",
+      "sharesRaw": "563660733817"
+    },
+    {
+      "address": "0x609760e85753a51ef5311ceebef0838a40b2ff42",
+      "sharesRaw": "560557913759"
+    },
+    {
+      "address": "0x972af1769d0aaad3300f87972066eb83c8e65141",
+      "sharesRaw": "559469207122"
+    },
+    {
+      "address": "0xe07504e908a6477cb05be9d8ff90c3599510643e",
+      "sharesRaw": "551528045013"
+    },
+    {
+      "address": "0xb51c74bc06059bb1d3dd596c03b529caffa4a04f",
+      "sharesRaw": "548876107728"
+    },
+    {
+      "address": "0x5158cc803619290104f6af5517e2d96ced0cd978",
+      "sharesRaw": "543690656968"
+    },
+    {
+      "address": "0x32a1b22b7929aa38a8665f94469ca306d37b73a7",
+      "sharesRaw": "540282817181"
+    },
+    {
+      "address": "0xdb255316aa9f2e27be456e2f591a436184ce208f",
+      "sharesRaw": "535333976843"
+    },
+    {
+      "address": "0xcb343ce5b83eaf4bbd022baf02ce11fc4a71467f",
+      "sharesRaw": "526011865668"
+    },
+    {
+      "address": "0x9ccaf13e37be8a3db370f1ccd77610e1f9f513d1",
+      "sharesRaw": "523432685590"
+    },
+    {
+      "address": "0xb62fe72cbfd066eb0934456bee3623ffa0213347",
+      "sharesRaw": "521719250761"
+    },
+    {
+      "address": "0x5316c8abf185bbe689cdd47d099a02ef79517a16",
+      "sharesRaw": "510762734177"
+    },
+    {
+      "address": "0xd9132c9a2d6848bec5dbfc55b1d7b01cd4428572",
+      "sharesRaw": "508646866131"
+    },
+    {
+      "address": "0x23e72ae4bf5705168fee36dcb0116dd6691f8291",
+      "sharesRaw": "507261537928"
+    },
+    {
+      "address": "0x50dac155766ea8e36f71d5f600862bf64054491c",
+      "sharesRaw": "505778543990"
+    },
+    {
+      "address": "0x4faf4abb3521edd74c39dd3f86277cdefe073449",
+      "sharesRaw": "503662713572"
+    },
+    {
+      "address": "0x16bd6f3eb91dd36f0378500e6e97e622728f93ac",
+      "sharesRaw": "498333557172"
+    },
+    {
+      "address": "0x5bbd7cf1f88f0e635695153bbdc9c2e8ee5a045f",
+      "sharesRaw": "489370887775"
+    },
+    {
+      "address": "0x3cf4261a915ab3e069e700d8ce82d1f62b33d022",
+      "sharesRaw": "479821796352"
+    },
+    {
+      "address": "0x4356dcd24af04d9298536d4b2432b81ae5a666be",
+      "sharesRaw": "468352517875"
+    },
+    {
+      "address": "0xbffb6763f996f2b771b4a9d04a9a9a21209b6698",
+      "sharesRaw": "462165952220"
+    },
+    {
+      "address": "0xd827837827e8a0737fff58207f84771dbe9cf207",
+      "sharesRaw": "457251916450"
+    },
+    {
+      "address": "0x921666aa4500b849a3d3b609f89b47c5e3ac763f",
+      "sharesRaw": "456986412902"
+    },
+    {
+      "address": "0x15032a29b892b6b2c322726d7ce6575a4a3323a5",
+      "sharesRaw": "453727881450"
+    },
+    {
+      "address": "0x816202c7e3d9a61d9d0123de245d0214e57be87e",
+      "sharesRaw": "452434015696"
+    },
+    {
+      "address": "0xf1b7b6b8bf9052e6f56eee142a7f87d997e5ef5e",
+      "sharesRaw": "451136295639"
+    },
+    {
+      "address": "0x76a357099176bb36746aa4fdef81d2ebfde5d846",
+      "sharesRaw": "450185987569"
+    },
+    {
+      "address": "0x8cf6d3eb74da9e339a38f193e3fb267000ee9cdf",
+      "sharesRaw": "445941416348"
+    },
+    {
+      "address": "0x73f2dab370f3bd0b2525b87740d346818dbac32f",
+      "sharesRaw": "437526321134"
+    },
+    {
+      "address": "0xe1a7ef9fcbbd2bb21a18259ff3443650dbb231b9",
+      "sharesRaw": "433798971107"
+    },
+    {
+      "address": "0xceed31db9cf9a01235ea9c736b981db8bd2047dd",
+      "sharesRaw": "427157985454"
+    },
+    {
+      "address": "0xecc42ae4a83f9cad5f19c5f5debb180b1e068c3f",
+      "sharesRaw": "422097611810"
+    },
+    {
+      "address": "0x22c97c0204b2a4f37b1767c3f5d752a42a33465f",
+      "sharesRaw": "420917647993"
+    },
+    {
+      "address": "0x5b527b608f1d2c14e6c02ffd9ec22b802a254d8f",
+      "sharesRaw": "419366152431"
+    },
+    {
+      "address": "0xcf45fb18d213a60e1cbca8eb17398935b0849960",
+      "sharesRaw": "397200071027"
+    },
+    {
+      "address": "0xe3b8c48ac334aabc29a461493c7b20853fc951c7",
+      "sharesRaw": "392877667761"
+    },
+    {
+      "address": "0x2f6ba8b2be9702003d3b1ecb60b6d739f255a562",
+      "sharesRaw": "392010327167"
+    },
+    {
+      "address": "0x161bc092e1f212935edd238b855574c52c2ecb7d",
+      "sharesRaw": "391909336432"
+    },
+    {
+      "address": "0x2ed697727e95379b4d020c982d30d765963388eb",
+      "sharesRaw": "387927865018"
+    },
+    {
+      "address": "0x8bf37b15b55df18f9ffac89838ad4bfb8e096c48",
+      "sharesRaw": "385317026544"
+    },
+    {
+      "address": "0x297ecadfae97937176b971cf7b6c838a1d6a82e5",
+      "sharesRaw": "370626800804"
+    },
+    {
+      "address": "0x3720de214a009846c96332b9727f1485917bad94",
+      "sharesRaw": "368562710138"
+    },
+    {
+      "address": "0x83ea29d25527b4842df0424491b92cbf13500126",
+      "sharesRaw": "356626575185"
+    },
+    {
+      "address": "0x720f03fe8e32f5ad7276f77f1d319de02da1fdad",
+      "sharesRaw": "356348382307"
+    },
+    {
+      "address": "0x25a3c468601b96e1c8f9aa163fbce20db14b9818",
+      "sharesRaw": "351394705369"
+    },
+    {
+      "address": "0x8dd57031b2711290c401154383b6bc68d8d4d9c5",
+      "sharesRaw": "340122350068"
+    },
+    {
+      "address": "0x96a3fc42d6de0b7a5e8eac3c95f35c3227ff5aaf",
+      "sharesRaw": "338114534760"
+    },
+    {
+      "address": "0xe163eea166c3ef3f430ae04ad80b94398fd19585",
+      "sharesRaw": "338093441596"
+    },
+    {
+      "address": "0x9fdebc090a7cf70b76390ad4e897e152e3e24a36",
+      "sharesRaw": "336471880001"
+    },
+    {
+      "address": "0x724da106ab544a5d2d18936aed3649a54862571d",
+      "sharesRaw": "330555501392"
+    },
+    {
+      "address": "0x22e0c4aab8b400078f9523d613769181a221c26a",
+      "sharesRaw": "325396987886"
+    },
+    {
+      "address": "0x65c5392b7b605d62e1a92466edcfad83cfb806b5",
+      "sharesRaw": "322246991269"
+    },
+    {
+      "address": "0x238294463eeec4eed4f71da896960f56ab1913fd",
+      "sharesRaw": "320382813516"
+    },
+    {
+      "address": "0x5568edaca71b718a3f7661ffadaef0c3e725de24",
+      "sharesRaw": "319855084397"
+    },
+    {
+      "address": "0x23bc2c156baa91d607cb66a8116d3cf7291342a0",
+      "sharesRaw": "318155371762"
+    },
+    {
+      "address": "0x84b722f300e716227298d7bfc787dfde22cecea1",
+      "sharesRaw": "312833831999"
+    },
+    {
+      "address": "0x90a7da46c09359b9bc18a589a0b8f43063d4e623",
+      "sharesRaw": "307382454028"
+    },
+    {
+      "address": "0xf8133174a00a60ed8fa293dc74c7cb6e2aeb396e",
+      "sharesRaw": "298766524681"
+    },
+    {
+      "address": "0x6ed2aa5854b7b754b8765264c6a561c8931e7385",
+      "sharesRaw": "296119652343"
+    },
+    {
+      "address": "0xf9d7ee93397839e934021c3522616076ea9ccb36",
+      "sharesRaw": "294222950210"
+    },
+    {
+      "address": "0xdd59f73627cbbf54b8ca7ce38020198a042a6439",
+      "sharesRaw": "291038858647"
+    },
+    {
+      "address": "0xf3ca7fae7838d1ef108dfbe4b205ffa2c6b92e96",
+      "sharesRaw": "287999861588"
+    },
+    {
+      "address": "0x82c723d76d991f6fd80e856d265102a7c83ac055",
+      "sharesRaw": "283082251663"
+    },
+    {
+      "address": "0xeeda160cabf329278fcb510aa321fb94d64fe542",
+      "sharesRaw": "282616829881"
+    },
+    {
+      "address": "0x7d745a984de33ab8029b510e4eeefb309b012dce",
+      "sharesRaw": "279098457872"
+    },
+    {
+      "address": "0xbe3149ca7cea548039a8693a034a978eb83889dd",
+      "sharesRaw": "272526977114"
+    },
+    {
+      "address": "0x23d15c4d03457396a002f0e7ade7fb827e3467e1",
+      "sharesRaw": "266079545895"
+    },
+    {
+      "address": "0x2332f8299eb64b000da7fa6441a6d4e42b8e06e2",
+      "sharesRaw": "255316985215"
+    },
+    {
+      "address": "0x6a203d4dd4397d4b62cd2265c1b047b511e5ae19",
+      "sharesRaw": "253005644414"
+    },
+    {
+      "address": "0xf08fd0c01c225aeaaa8d0c3b7c745dbfa83d640b",
+      "sharesRaw": "248308740872"
+    },
+    {
+      "address": "0x9a2bdafd9ceb6ab88f36f36754f68d05e05e1c2b",
+      "sharesRaw": "244599539512"
+    },
+    {
+      "address": "0xf7c92f675d52b2263cdbecdaf9bb5986c9c1c9d9",
+      "sharesRaw": "238480445949"
+    },
+    {
+      "address": "0xee07bfe1e90d07e818ec34e4034eec6587cceda6",
+      "sharesRaw": "231648077806"
+    },
+    {
+      "address": "0x70ecfb443a06cc70a0a024f1bc704eff3a0af0a0",
+      "sharesRaw": "229218340563"
+    },
+    {
+      "address": "0x808a662dc98d0a09b1d7349ea2e0f79df9561573",
+      "sharesRaw": "228528150892"
+    },
+    {
+      "address": "0x6e763e4c57b8cf34c12c252695e7eaa289e34f28",
+      "sharesRaw": "227185286407"
+    },
+    {
+      "address": "0x4dc017d6fa6c0279a7742c651baca20c2f98d215",
+      "sharesRaw": "214267990061"
+    },
+    {
+      "address": "0xbf339055208c038bfc149288cb204e756199b64a",
+      "sharesRaw": "213286825538"
+    },
+    {
+      "address": "0x212213ed8fe8a1e42d0655ffff59e4eb0f0757eb",
+      "sharesRaw": "211111583063"
+    },
+    {
+      "address": "0x33d4d95385f319890d30cc2aeed69407ebc89d06",
+      "sharesRaw": "199971423207"
+    },
+    {
+      "address": "0xc43e8a18f4ca816059a8a2a30b7eac4ea7898d7f",
+      "sharesRaw": "180716100241"
+    },
+    {
+      "address": "0x056080f40ec8846a7c2d58e820c2a318085d429d",
+      "sharesRaw": "175071834465"
+    },
+    {
+      "address": "0x54fdc532dcfbe3b0882b667aa681bdff379498ff",
+      "sharesRaw": "174768493973"
+    },
+    {
+      "address": "0xa1b0ea910468fa4ffe0d3426dc3c29a49c33e347",
+      "sharesRaw": "161709109713"
+    },
+    {
+      "address": "0x3523ff20e0ec6055f51c38a5408e6db15570794b",
+      "sharesRaw": "157209360063"
+    },
+    {
+      "address": "0xb2a6004dc16f75497fe36b62ba0e142486236058",
+      "sharesRaw": "148935913157"
+    },
+    {
+      "address": "0x2e2c3813934afd0e7fec54adc8c14e4f647e4f2c",
+      "sharesRaw": "143722109429"
+    },
+    {
+      "address": "0x30fafa06c57e4c93ec567955f702df3837d29f98",
+      "sharesRaw": "142819881704"
+    },
+    {
+      "address": "0xaf8bc66f5d26a1981d87bdf647deb5154a4c7e54",
+      "sharesRaw": "140231768500"
+    },
+    {
+      "address": "0x9f2a28bc647349dddb901f3672f85fd73f74e710",
+      "sharesRaw": "138577588211"
+    },
+    {
+      "address": "0xf14d0ca3bbade9b129f08143a2b049c20312e1ac",
+      "sharesRaw": "134831209920"
+    },
+    {
+      "address": "0x0ae50fdbbdc3e297426bfed0d212d109a2093833",
+      "sharesRaw": "134620291604"
+    },
+    {
+      "address": "0xefe148d14f60dcc808319f0f842959a2a1827469",
+      "sharesRaw": "131603952670"
+    },
+    {
+      "address": "0x7a6e03b4cf2d0f81fda4ebaae4463762ada5ebc8",
+      "sharesRaw": "131129262153"
+    },
+    {
+      "address": "0xba821cd7178928d9ee83586542dabba589dbb554",
+      "sharesRaw": "129604113877"
+    },
+    {
+      "address": "0x256d56c3c88b4bfa1ec065bcd526308dc5b8e11b",
+      "sharesRaw": "128611079757"
+    },
+    {
+      "address": "0x55c6b097dd40415ee0315a749037a8fdc007c10e",
+      "sharesRaw": "120922377162"
+    },
+    {
+      "address": "0xcc20dd1ac4682d46fa6e7beb2595cb335f72919d",
+      "sharesRaw": "118574439633"
+    },
+    {
+      "address": "0xb84046f5cee7acbe9c12a8103b0dbde1521942e7",
+      "sharesRaw": "117706432043"
+    },
+    {
+      "address": "0xe90b9de7fbe3cb75160ca079d841aaae69bdfd58",
+      "sharesRaw": "114298983670"
+    },
+    {
+      "address": "0xf2e8cb42ab5d19ef583a989863d8915c1a541f1f",
+      "sharesRaw": "110980788085"
+    },
+    {
+      "address": "0xcc802f843bfb39e31d03aa97b1e5543d99cdc7a9",
+      "sharesRaw": "110178035974"
+    },
+    {
+      "address": "0x6d7445ce66f9478dd8167c91d7bcf409566cab59",
+      "sharesRaw": "105772664798"
+    },
+    {
+      "address": "0xeb522776aca309fa534ccceae5de24f12f7b8f5b",
+      "sharesRaw": "104217801132"
+    },
+    {
+      "address": "0xc4d79566dd5c9161dc6b3f916c358a4c91c875ad",
+      "sharesRaw": "102506860510"
+    },
+    {
+      "address": "0x58ee5c23cb24fccde0258718eb0bf1bea797a16c",
+      "sharesRaw": "100727877874"
+    },
+    {
+      "address": "0x49f6d712653369368bc1a04647fa8fcec9bdd27f",
+      "sharesRaw": "97412439537"
+    },
+    {
+      "address": "0x847469532471918677f248f94e9a4d237c814d45",
+      "sharesRaw": "97103228410"
+    },
+    {
+      "address": "0x8d8c2a5389ccf44149eb38cf85ca8982030f5b8c",
+      "sharesRaw": "95918138774"
+    },
+    {
+      "address": "0x0859159270f67ce1632287583c032295651a7110",
+      "sharesRaw": "79886068919"
+    },
+    {
+      "address": "0x4abc1bea9d321eae9071a66452e54ec2d6f56c78",
+      "sharesRaw": "79828059238"
+    },
+    {
+      "address": "0x6aedd420139b7648b07c8d24cdf8b392466c7708",
+      "sharesRaw": "73537395060"
+    },
+    {
+      "address": "0x1f335b37e7cf6630cc31470be7814fb6b5678955",
+      "sharesRaw": "73336946384"
+    },
+    {
+      "address": "0x349dc161a08440569439500844278c7dadc76fad",
+      "sharesRaw": "47451351860"
+    },
+    {
+      "address": "0xfcb268e6e1a4661c897aac903d8101f606351ba9",
+      "sharesRaw": "44072740838"
+    },
+    {
+      "address": "0xcb299a48f60273ac68f150b805c422a02c5de026",
+      "sharesRaw": "41606600713"
+    },
+    {
+      "address": "0x70cff3e37eb1b07efe9012ecdcccb9861a86101d",
+      "sharesRaw": "38969021779"
+    },
+    {
+      "address": "0x301b74bf6314d39a5d07fc595f14f0d0a0776aa0",
+      "sharesRaw": "35341124424"
+    },
+    {
+      "address": "0xe39493f067bdbba4fed426273fbc57e5a2dcfbf2",
+      "sharesRaw": "29222042752"
+    },
+    {
+      "address": "0xec878e90bf0b093a58342aea2c07fc68b8c1dd2d",
+      "sharesRaw": "25333029802"
+    },
+    {
+      "address": "0xd5e3f74e71371534871d08087ec46ba4f6ab08cc",
+      "sharesRaw": "23888911417"
+    },
+    {
+      "address": "0xc6b9f6fa529c110e6d218d525b32f10296053d05",
+      "sharesRaw": "22644071667"
+    },
+    {
+      "address": "0xdf39a048bbb0ce282a42a96ce9a082b690b85989",
+      "sharesRaw": "20597214856"
+    },
+    {
+      "address": "0x70f681077459a6afd19a98d4df37bca60cc1e230",
+      "sharesRaw": "8897914572"
+    },
+    {
+      "address": "0x937f430b8942c65015d426a765e7b4fcdda42b3c",
+      "sharesRaw": "6326732612"
+    },
+    {
+      "address": "0xc3203b97721efbdd5fab5efb677d35482fdbb60c",
+      "sharesRaw": "6002291215"
+    },
+    {
+      "address": "0x71751a288349e58bb51eb422ce101a8b4a7f2f70",
+      "sharesRaw": "4945046549"
+    },
+    {
+      "address": "0x1c6e46a130649b7c78e3f1aaf6a25c07cee36503",
+      "sharesRaw": "3617929494"
+    },
+    {
+      "address": "0xcea6211afd84a7aee6b4ce8eb45594f55b7de916",
+      "sharesRaw": "1381714"
+    },
+    {
+      "address": "0x7e97cafdd8772706dbc3c83d36322f7bfc0f63c7",
+      "sharesRaw": "192042"
+    },
+    {
+      "address": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+      "sharesRaw": "1"
+    }
+  ],
+  "sources": [
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_123081511_124081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_124081511_125081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_125081511_126081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_126081511_127081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_127081511_128081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_128081511_129081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_129081511_130081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_130081511_131081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_131081511_132081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_132081511_133081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_133081511_134081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_134081511_135081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_135081511_136081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_136081511_137081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_137081511_138081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_138081511_139081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_139081511_140081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_140081511_141081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_141081511_142081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_142081511_143081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_143081511_144081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_144081511_145081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_145081511_146081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_146081511_147081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_147081511_148081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_148081511_149081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_149081511_150081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_150081511_151081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_151081511_152081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_152081511_153081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_153081511_154081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_154081511_155081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_155081511_156081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_156081511_157081510.json",
+    "raw/eth/2026-10-04/strict-products/liquid_op_transfers_157081511_157693411.json"
+  ],
+  "getter_source": "data/eth/benchmark_history_optimism_rpc.json"
+}

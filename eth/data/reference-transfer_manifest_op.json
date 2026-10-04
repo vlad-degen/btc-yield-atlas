@@ -1,0 +1,842 @@
+[
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7561327",
+          "toBlock": "0x7655566"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:39.200824+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_123081511_124081510.json",
+    "sha256": "61dde61e73ed792903cc7d5070f76e25eff6410642c47dac51a52d7d430e56c4",
+    "status": "success",
+    "logs": 1
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7655567",
+          "toBlock": "0x77497a6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:40.197476+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_124081511_125081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x77497a7",
+          "toBlock": "0x783d9e6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:41.131489+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_125081511_126081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x783d9e7",
+          "toBlock": "0x7931c26"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:42.084777+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_126081511_127081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7931c27",
+          "toBlock": "0x7a25e66"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:43.014552+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_127081511_128081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7a25e67",
+          "toBlock": "0x7b1a0a6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:43.956369+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_128081511_129081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7b1a0a7",
+          "toBlock": "0x7c0e2e6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:44.882568+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_129081511_130081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7c0e2e7",
+          "toBlock": "0x7d02526"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:45.815585+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_130081511_131081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7d02527",
+          "toBlock": "0x7df6766"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:46.738693+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_131081511_132081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7df6767",
+          "toBlock": "0x7eea9a6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:47.657300+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_132081511_133081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7eea9a7",
+          "toBlock": "0x7fdebe6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:48.595398+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_133081511_134081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x7fdebe7",
+          "toBlock": "0x80d2e26"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:49.524605+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_134081511_135081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x80d2e27",
+          "toBlock": "0x81c7066"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:50.460223+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_135081511_136081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x81c7067",
+          "toBlock": "0x82bb2a6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:51.379641+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_136081511_137081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x82bb2a7",
+          "toBlock": "0x83af4e6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:52.307832+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_137081511_138081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x83af4e7",
+          "toBlock": "0x84a3726"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:53.249107+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_138081511_139081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x84a3727",
+          "toBlock": "0x8597966"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:54.182270+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_139081511_140081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8597967",
+          "toBlock": "0x868bba6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:55.116855+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_140081511_141081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x868bba7",
+          "toBlock": "0x877fde6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:56.055956+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_141081511_142081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x877fde7",
+          "toBlock": "0x8874026"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:56.984123+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_142081511_143081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8874027",
+          "toBlock": "0x8968266"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:57.918208+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_143081511_144081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8968267",
+          "toBlock": "0x8a5c4a6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:58.854601+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_144081511_145081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8a5c4a7",
+          "toBlock": "0x8b506e6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:39:59.788756+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_145081511_146081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8b506e7",
+          "toBlock": "0x8c44926"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:00.705995+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_146081511_147081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8c44927",
+          "toBlock": "0x8d38b66"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:01.659129+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_147081511_148081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8d38b67",
+          "toBlock": "0x8e2cda6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:02.585285+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_148081511_149081510.json",
+    "sha256": "5458704bd0a3e61af2904b30e4be8a36081bcda2b4712d4008404c6cc4d74db1",
+    "status": "success",
+    "logs": 0
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8e2cda7",
+          "toBlock": "0x8f20fe6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:03.512460+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_149081511_150081510.json",
+    "sha256": "4f56130359174d9907c88f4efd6e7b45076269686c7384d9b98d73ec9430eaec",
+    "status": "success",
+    "logs": 7160
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x8f20fe7",
+          "toBlock": "0x9015226"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:05.006862+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_150081511_151081510.json",
+    "sha256": "45beb698e9403e85651c84c99d3a0c3d6a172a3420ba8274e6659e28e045c493",
+    "status": "success",
+    "logs": 9343
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x9015227",
+          "toBlock": "0x9109466"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:06.953606+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_151081511_152081510.json",
+    "sha256": "22d5069b9f8ad1369c2d24c4dfb90772cf5328db5e76822899573f8c63a99ac7",
+    "status": "success",
+    "logs": 8631
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x9109467",
+          "toBlock": "0x91fd6a6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:08.574252+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_152081511_153081510.json",
+    "sha256": "c7e3761040b628a1db9e79d188304d4c1c66e13ec02f8921299f71a9ed180003",
+    "status": "success",
+    "logs": 9284
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x91fd6a7",
+          "toBlock": "0x92f18e6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:10.228094+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_153081511_154081510.json",
+    "sha256": "84b769a9d193012444fb608749f74323222663de33c21e38445811f676429e8d",
+    "status": "success",
+    "logs": 3225
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x92f18e7",
+          "toBlock": "0x93e5b26"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:11.492742+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_154081511_155081510.json",
+    "sha256": "9c3da781e2f6b28b86fba4924dede3fb1b7e560b80243e44049226a87af29a93",
+    "status": "success",
+    "logs": 2492
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x93e5b27",
+          "toBlock": "0x94d9d66"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:12.769717+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_155081511_156081510.json",
+    "sha256": "b4045769eab5c5373510eefaa4659caf71f48b38ef3361ad099766f6a75d7ae8",
+    "status": "success",
+    "logs": 16645
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x94d9d67",
+          "toBlock": "0x95cdfa6"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:14.882700+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_156081511_157081510.json",
+    "sha256": "3f918a919fae4cf4a4e4173dd42c7dd4be60565e36558ba77a48e3ca4b3009e9",
+    "status": "success",
+    "logs": 8290
+  },
+  {
+    "product": "liquid_op",
+    "url": "https://gateway.tenderly.co/public/optimism",
+    "request": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          ],
+          "fromBlock": "0x95cdfa7",
+          "toBlock": "0x96635e3"
+        }
+      ]
+    },
+    "observed_at": "2026-10-04T12:40:16.461637+00:00",
+    "path": "raw/eth/2026-10-04/strict-products/liquid_op_transfers_157081511_157693411.json",
+    "sha256": "3f72cae49a2e688d7e2eb0330849633064e9c3410e6d5d26f10c00d5d3d5b95e",
+    "status": "success",
+    "logs": 4170
+  }
+]

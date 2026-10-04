@@ -1,0 +1,53 @@
+{
+  "target_timestamp": 1790985599,
+  "block": 26108081,
+  "labels": [
+    {
+      "address": "0xa024063b630d554078bbf985718b22f3c6870ee0",
+      "signature": "hook()"
+    },
+    {
+      "address": "0xa024063b630d554078bbf985718b22f3c6870ee0",
+      "signature": "authority()"
+    },
+    {
+      "address": "0xa024063b630d554078bbf985718b22f3c6870ee0",
+      "signature": "totalSupply()"
+    },
+    {
+      "address": "0xa024063b630d554078bbf985718b22f3c6870ee0",
+      "signature": "owner()"
+    },
+    {
+      "address": "0xa024063b630d554078bbf985718b22f3c6870ee0",
+      "signature": "balanceOf(address)"
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x0000000000000000000000000698ba360468a8c3f62d6c57b01b874016c2b854"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x00000000000000000000000072db2b1666a37b298131c214e5aee8096807563d"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x0000000000000000000000000000000000000000000001b653fa6d2adbfcd3f2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": "0x0000000000000000000000000000000000000000000001b653fa6d2adbfcd3f2"
+    }
+  ]
+}
