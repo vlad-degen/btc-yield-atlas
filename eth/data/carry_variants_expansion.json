@@ -1,0 +1,2452 @@
+{
+  "schema_version": 1,
+  "snapshot": {
+    "timestamp": 1790985599,
+    "date": "2026-10-02T23:59:59Z",
+    "ethereum_block": 26108081,
+    "financial_snapshot_refreshed": false
+  },
+  "discovery_date": "2026-10-04",
+  "coverage_boundary": "A bounded atlas of actual routes, issuer-disclosed designs, unresolved manager products and one historical precedent. Not a complete ETH carry market census. Product NAV is not carry allocation; no global category capital total is inferred.",
+  "rate_units": "Fractions, not percentages. Configured APY, borrow APR and frozen borrow APY are separately labelled.",
+  "products": [
+    {
+      "id": "tau-infinifi",
+      "name": "TAU InfiniFi ETH Carry",
+      "address": "0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b",
+      "chain": "ethereum",
+      "navT": {
+        "native": 66.02997446368484,
+        "symbol": "wstETH",
+        "eth": 82.23385424749354,
+        "usd": 219395.84777722746,
+        "date": "2026-10-02T23:59:59Z",
+        "scope": "Product book NAV, not carry allocation or independent backing.",
+        "price_convention": "ETH nearest disclosed quote at T+1 second: 2667.9504418816 USD"
+      },
+      "materiality": {
+        "current_5m_gate": false,
+        "sampled_peak_usd": 853559.5615896865,
+        "sampled_peak_month": "2026-01",
+        "sampled_peak_20m_gate": false,
+        "peak_boundary": "Maximum of measured completed-month endpoints, not the maximum intramonth or all-time capital.",
+        "include_reason": "Distinct nested funding mechanic, despite small current capital."
+      },
+      "whole_strategy_realized_pnl": null,
+      "category_capital_USD": null,
+      "sources": [
+        "https://app.ipor.io/fusion/ethereum/0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b",
+        "https://etherscan.io/address/0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b#code"
+      ],
+      "positionsT": [
+        {
+          "product_id": "tau-infinifi",
+          "protocol": "Morpho Blue",
+          "chain": "ethereum",
+          "account": "0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b",
+          "market_id": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+          "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "loan_symbol": "USDC",
+          "collateral_asset": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "collateral_symbol": "wstETH",
+          "collateral_units": 66.03360665283516,
+          "collateral_units_raw": "66033606652835158120",
+          "collateral_value_loan_units": 218693.74475711936,
+          "accrued_debt_loan_units": 0.022125,
+          "stored_borrow_shares_raw": "18938207724",
+          "borrow_apr": 0.048817412766144,
+          "borrow_apy_frozen": 0.0500286114163563,
+          "lltv": 0.86,
+          "ltv": 1.0116887442104007e-07,
+          "health_factor": 8500638.21428803,
+          "debt_dust": true,
+          "funding_link": "Position observed at the same vault; no historical cash-flow match reconstructed here.",
+          "rate_basis": "borrowRateView at T, average over the pending accrual interval. Frozen annual rate, not a forecast.",
+          "valuation_basis": "Contract collateral oracle in loan units. USD stablecoin parity is an accounting assumption, not a spot-price guarantee.",
+          "sourceURL": "https://app.morpho.org/ethereum/market/0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc"
+        },
+        {
+          "product_id": "tau-infinifi",
+          "protocol": "Morpho Blue",
+          "chain": "ethereum",
+          "account": "0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b",
+          "market_id": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
+          "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "loan_symbol": "USDC",
+          "collateral_asset": "0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+          "collateral_symbol": "siUSD",
+          "collateral_units": 64.098348123254,
+          "collateral_units_raw": "64098348123253996793",
+          "collateral_value_loan_units": 70.02210849619026,
+          "accrued_debt_loan_units": 7e-06,
+          "stored_borrow_shares_raw": "6112391",
+          "borrow_apr": 0.062055490745808,
+          "borrow_apy_frozen": 0.06402138643017315,
+          "lltv": 0.915,
+          "ltv": 9.996842640608079e-08,
+          "health_factor": 9152889.896287726,
+          "debt_dust": true,
+          "funding_link": "Position observed at the same vault; no historical cash-flow match reconstructed here.",
+          "rate_basis": "borrowRateView at T, average over the pending accrual interval. Frozen annual rate, not a forecast.",
+          "valuation_basis": "Contract collateral oracle in loan units. USD stablecoin parity is an accounting assumption, not a spot-price guarantee.",
+          "sourceURL": "https://app.morpho.org/ethereum/market/0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99"
+        }
+      ],
+      "collateral": "wstETH",
+      "debt": "USDC",
+      "destination": "InfiniFi siUSD",
+      "terms": {
+        "fees": {
+          "management_nav_annual_rate": 0.008,
+          "performance_rate": 0.1,
+          "withdraw_request_rate": 0.0,
+          "withdraw_rate": 0.0,
+          "basis": "Exact T configured rates. Current share-claim values already reflect recognized vault accounting; do not deduct these again from measured PPS returns."
+        },
+        "control": {
+          "authority": "0xa42e358459a8dd8f798df3ee2fc4d4988c7d90ac",
+          "basis": "The PlasmaVault authority restricts governance and execution. Active role holders and delays are not reconstructed in this expansion."
+        },
+        "exit": {
+          "withdraw_manager": "0x93fb96a980861f0566942e5036b9c88504a6806c",
+          "request_window_seconds": 86400,
+          "instant_withdrawal_fuse_count": 0,
+          "meaning": "Requests expire after the configured window. A release after the request is also required for a request-backed withdrawal. The window is not a fixed wait or a guaranteed payout deadline. No instant market-unwind fuses are configured; idle unallocated liquidity is a separate path.",
+          "guaranteed_wait_seconds": null
+        }
+      },
+      "unresolved": [
+        "Lifetime funding cash flows, source-paid rewards, organic income and actual realized P&L are not reconstructed.",
+        "No current allocation or rate is applied to earlier months."
+      ],
+      "status": "Funded vault; dollar borrowing is dust at T",
+      "classification": "Observed historical E4; T borrowing is dust",
+      "routeEvidence": {
+        "status": "Two exact T collateral and debt positions verified; material active carry not established at T.",
+        "summary": "wstETH and siUSD remain in Morpho, while USDC debt is less than one dollar across both examined markets.",
+        "tracked_USDC_debt": 0.022132,
+        "borrow_rate_main": 0.048817412766144,
+        "flow": [
+          "wstETH collateral in Morpho",
+          "USDC loan",
+          "iUSD and siUSD destination",
+          "siUSD can collateralize a second USDC loan"
+        ],
+        "activity_boundary": "Permitted routes and a carry name do not prove current use at scale.",
+        "historical_active_confirmed": true,
+        "historical_checkpoint_month": "2026-01",
+        "historical_stored_debt_USDC": 3037531.402269
+      },
+      "historical_checkpoints": [
+        {
+          "product_id": "tau-infinifi",
+          "month": "2026-01",
+          "block": 24358292,
+          "timestamp": 1769903999,
+          "book_usd": 853559.5615896865,
+          "scope": "Two selected historical checkpoints in markets authorized at T. Earlier alternate markets and transaction-level cash provenance are not fully reconstructed.",
+          "loans": [
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "wstETH",
+              "collateral_units": 284.9957231317636,
+              "collateral_units_raw": "284995723131763605542",
+              "stored_debt_loan_units": 505581.226013,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc"
+            },
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "siUSD",
+              "collateral_units": 2885323.356785735,
+              "collateral_units_raw": "2885323356785735170134513",
+              "stored_debt_loan_units": 2531950.176256,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99"
+            }
+          ]
+        },
+        {
+          "product_id": "tau-infinifi",
+          "month": "2026-09",
+          "block": 26093737,
+          "timestamp": 1790812799,
+          "book_usd": 221173.17097723114,
+          "scope": "Two selected historical checkpoints in markets authorized at T. Earlier alternate markets and transaction-level cash provenance are not fully reconstructed.",
+          "loans": [
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "wstETH",
+              "collateral_units": 66.03360665283516,
+              "collateral_units_raw": "66033606652835158120",
+              "stored_debt_loan_units": 0.022119,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc"
+            },
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "siUSD",
+              "collateral_units": 64.098348123254,
+              "collateral_units_raw": "64098348123253996793",
+              "stored_debt_loan_units": 7e-06,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reservoir-eth",
+      "name": "Reservoir ETH Yield",
+      "address": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+      "chain": "ethereum",
+      "navT": {
+        "native": 23.594839906973554,
+        "symbol": "WETH",
+        "eth": 23.594839906973554,
+        "usd": 62949.863555935706,
+        "date": "2026-10-02T23:59:59Z",
+        "scope": "Product book NAV, not carry allocation or independent backing.",
+        "price_convention": "ETH nearest disclosed quote at T+1 second: 2667.9504418816 USD"
+      },
+      "materiality": {
+        "current_5m_gate": false,
+        "sampled_peak_usd": 15910980.189162552,
+        "sampled_peak_month": "2025-10",
+        "sampled_peak_20m_gate": false,
+        "peak_boundary": "Maximum of measured completed-month endpoints, not the maximum intramonth or all-time capital.",
+        "include_reason": "Observed historical inner financing above $90m; small current product book. Historical financing is gross debt, not investor capital.",
+        "historical_sleeve_1m_gate": true
+      },
+      "whole_strategy_realized_pnl": null,
+      "category_capital_USD": null,
+      "sources": [
+        "https://app.ipor.io/fusion/ethereum/0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e/vault-info",
+        "https://etherscan.io/address/0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e#code"
+      ],
+      "positionsT": [
+        {
+          "protocol": "Aave V3",
+          "chain": "ethereum",
+          "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+          "pool": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "collateral_symbol": "WETH",
+          "collateral_units": 21.220601082563633,
+          "collateral_value_baseUSD": 56582.67676102,
+          "account_debt_baseUSD": 36787.45895242,
+          "USDC_variable_debt_units": 36789.609673,
+          "borrow_apr": 0.1393440125511332,
+          "borrow_apy_frozen": 0.14951948112095015,
+          "health_factor": 1.2766204312287022,
+          "liquidation_threshold": 0.83,
+          "ltv": 0.6501540941195452,
+          "sourceURL": "https://etherscan.io/address/0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+          "valuation_basis": "Aave account base currency and debt-token units differ slightly because reserve/token interest is evaluated separately."
+        },
+        {
+          "product_id": "reservoir-eth",
+          "protocol": "Morpho Blue",
+          "chain": "ethereum",
+          "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+          "market_id": "0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac",
+          "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "loan_symbol": "USDC",
+          "collateral_asset": "0x738d1115b90efa71ae468f1287fc864775e23a31",
+          "collateral_symbol": "srUSD",
+          "collateral_units": 0.008997790314300293,
+          "collateral_units_raw": "8997790314300292",
+          "collateral_value_loan_units": 0.010468290187576074,
+          "accrued_debt_loan_units": 2e-06,
+          "stored_borrow_shares_raw": "927727",
+          "borrow_apr": 0.0008358113170079999,
+          "borrow_apy_frozen": 0.0008361607046207459,
+          "lltv": 0.915,
+          "ltv": 0.00019105316762938328,
+          "health_factor": 4789.242760816054,
+          "debt_dust": true,
+          "funding_link": "Position observed at the same vault; no historical cash-flow match reconstructed here.",
+          "rate_basis": "borrowRateView at T, average over the pending accrual interval. Frozen annual rate, not a forecast.",
+          "valuation_basis": "Contract collateral oracle in loan units. USD stablecoin parity is an accounting assumption, not a spot-price guarantee.",
+          "sourceURL": "https://app.morpho.org/ethereum/market/0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac"
+        },
+        {
+          "product_id": "reservoir-eth",
+          "protocol": "Morpho Blue",
+          "chain": "ethereum",
+          "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+          "market_id": "0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9",
+          "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "loan_symbol": "USDC",
+          "collateral_asset": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+          "collateral_symbol": "wsrUSD",
+          "collateral_units": 0.038106891883847804,
+          "collateral_units_raw": "38106891883847806",
+          "collateral_value_loan_units": 0.04195226139239824,
+          "accrued_debt_loan_units": 0.019948,
+          "stored_borrow_shares_raw": "18668677844",
+          "borrow_apr": 0.067342333689648,
+          "borrow_apy_frozen": 0.06966159670474574,
+          "lltv": 0.915,
+          "ltv": 0.47549284205248077,
+          "health_factor": 1.92431918859256,
+          "debt_dust": true,
+          "funding_link": "Position observed at the same vault; no historical cash-flow match reconstructed here.",
+          "rate_basis": "borrowRateView at T, average over the pending accrual interval. Frozen annual rate, not a forecast.",
+          "valuation_basis": "Contract collateral oracle in loan units. USD stablecoin parity is an accounting assumption, not a spot-price guarantee.",
+          "sourceURL": "https://app.morpho.org/ethereum/market/0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9"
+        },
+        {
+          "product_id": "reservoir-eth",
+          "protocol": "Morpho Blue",
+          "chain": "ethereum",
+          "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+          "market_id": "0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb",
+          "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "loan_symbol": "USDC",
+          "collateral_asset": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+          "collateral_symbol": "wsrUSD",
+          "collateral_units": 41588.673511767076,
+          "collateral_units_raw": "41588673511767072855268",
+          "collateral_value_loan_units": 45785.38988293337,
+          "accrued_debt_loan_units": 11021.111781,
+          "stored_borrow_shares_raw": "10665489571355581",
+          "borrow_apr": 0.055378366370208,
+          "borrow_apy_frozen": 0.05694044975014925,
+          "lltv": 0.945,
+          "ltv": 0.24071241523069675,
+          "health_factor": 3.9258465297451313,
+          "debt_dust": false,
+          "funding_link": "Position observed at the same vault; no historical cash-flow match reconstructed here.",
+          "rate_basis": "borrowRateView at T, average over the pending accrual interval. Frozen annual rate, not a forecast.",
+          "valuation_basis": "Contract collateral oracle in loan units. USD stablecoin parity is an accounting assumption, not a spot-price guarantee.",
+          "sourceURL": "https://app.morpho.org/ethereum/market/0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb"
+        },
+        {
+          "product_id": "reservoir-eth",
+          "protocol": "Morpho Blue",
+          "chain": "ethereum",
+          "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+          "market_id": "0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac",
+          "loan_asset": "0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+          "loan_symbol": "rUSD",
+          "collateral_asset": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+          "collateral_symbol": "wsrUSD",
+          "collateral_units": 0.0,
+          "collateral_units_raw": "0",
+          "collateral_value_loan_units": 0.0,
+          "accrued_debt_loan_units": 0.0,
+          "stored_borrow_shares_raw": "0",
+          "borrow_apr": 0.039641479598592,
+          "borrow_apy_frozen": 0.04043768917912562,
+          "lltv": 0.98,
+          "ltv": null,
+          "health_factor": null,
+          "debt_dust": true,
+          "funding_link": "Position observed at the same vault; no historical cash-flow match reconstructed here.",
+          "rate_basis": "borrowRateView at T, average over the pending accrual interval. Frozen annual rate, not a forecast.",
+          "valuation_basis": "Contract collateral oracle in loan units. USD stablecoin parity is an accounting assumption, not a spot-price guarantee.",
+          "sourceURL": "https://app.morpho.org/ethereum/market/0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac"
+        }
+      ],
+      "collateral": "WETH plus wsrUSD in separate inner loan markets",
+      "debt": "USDC",
+      "destination": "Reservoir wsrUSD",
+      "terms": {
+        "fees": {
+          "management_nav_annual_rate": 0.01,
+          "performance_rate": 0.1,
+          "withdraw_request_rate": 0.0,
+          "withdraw_rate": 0.0,
+          "basis": "Exact T configured rates. Current share-claim values already reflect recognized vault accounting; do not deduct these again from measured PPS returns."
+        },
+        "control": {
+          "authority": "0x538d3c8fefe86aa642392e3630753697183a56fd",
+          "basis": "The PlasmaVault authority restricts governance and execution. Active role holders and delays are not reconstructed in this expansion."
+        },
+        "exit": {
+          "withdraw_manager": "0xa444660255b63b2bc4ff07f4b762298a2d0fb40d",
+          "request_window_seconds": 691200,
+          "instant_withdrawal_fuse_count": 0,
+          "meaning": "Requests expire after the configured window. A release after the request is also required for a request-backed withdrawal. The window is not a fixed wait or a guaranteed payout deadline. No instant market-unwind fuses are configured; idle unallocated liquidity is a separate path.",
+          "guaranteed_wait_seconds": null
+        }
+      },
+      "unresolved": [
+        "Lifetime funding cash flows, source-paid rewards, organic income and actual realized P&L are not reconstructed.",
+        "No current allocation or rate is applied to earlier months."
+      ],
+      "status": "Active nested USDC borrowing observed at T",
+      "classification": "E4 observed route",
+      "routeEvidence": {
+        "status": "Both outer ETH and inner dollar collateral loans observed at T. No transaction-level historical principal match reconstructed.",
+        "summary": "WETH collateral funds USDC through Aave. Separately, wsrUSD collateral borrows more USDC on Morpho.",
+        "flow": [
+          "WETH deposited in Aave",
+          "USDC variable loan",
+          "Reservoir rUSD savings exposure represented by wsrUSD",
+          "wsrUSD collateral in Morpho",
+          "Additional USDC borrowing"
+        ],
+        "outer_USDC_debt": 36789.609673,
+        "inner_USDC_debt": 11021.111781,
+        "USDC_wallet_balance": 1977.0002,
+        "capacity_boundaries": [
+          "The configured wsrUSD cap is not remaining allocation capacity.",
+          "Borrow liquidity, collateral thresholds and dollar-share exit liquidity constrain different layers."
+        ],
+        "historical_stored_inner_debt_USDC": 90262051.666555,
+        "historical_outer_account_debt_baseUSD": 10347894.69117967
+      },
+      "economics": {
+        "destination_configured_apy": 0.05999951163247563,
+        "outer_loan_apr": 0.1393440125511332,
+        "inner_loan_apr": 0.055378366370208,
+        "outer_loan_frozen_apy": 0.14951948112095015,
+        "inner_loan_frozen_apy": 0.05694044975014925,
+        "destination_minus_outer_loan_apy": -0.08951996948847452,
+        "destination_minus_inner_loan_apy": 0.0030590618823263804,
+        "scope": "Conditional same-rate comparison, not realized profit or whole-vault APY. It excludes rewards, fees, ETH collateral income, swaps and imperfect funding linkage.",
+        "formula": "Incremental equity income = destination capital/equity \u00d7 destination yield - each debt/equity \u00d7 its borrowing cost - costs. Each collateral layer has its own liquidation test."
+      },
+      "historical_checkpoints": [
+        {
+          "product_id": "reservoir-eth",
+          "month": "2025-10",
+          "block": 23700766,
+          "timestamp": 1761955199,
+          "book_usd": 15910980.189162552,
+          "scope": "Two selected historical checkpoints in markets authorized at T. Earlier alternate markets and transaction-level cash provenance are not fully reconstructed.",
+          "loans": [
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "srUSD",
+              "collateral_units": 91017918.6011386,
+              "collateral_units_raw": "91017918601138605345332396",
+              "stored_debt_loan_units": 90262051.666555,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac"
+            },
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "wsrUSD",
+              "collateral_units": 0.0,
+              "collateral_units_raw": "0",
+              "stored_debt_loan_units": 0.0,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9"
+            },
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "wsrUSD",
+              "collateral_units": 0.0,
+              "collateral_units_raw": "0",
+              "stored_debt_loan_units": 0.0,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb"
+            },
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac",
+              "loan_symbol": "rUSD",
+              "collateral_symbol": "wsrUSD",
+              "collateral_units": 0.0,
+              "collateral_units_raw": "0",
+              "stored_debt_loan_units": 0.0,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac"
+            }
+          ],
+          "aave_account": {
+            "collateral_baseUSD": 15751024.1760701,
+            "debt_baseUSD": 10347894.69117967,
+            "health_factor": 1.2633825967789982,
+            "ltv": 0.6569664661489639,
+            "basis": "Aave account base-currency claim; loan-asset mix and accrued reserve-token debt not independently closed at this checkpoint."
+          }
+        },
+        {
+          "product_id": "reservoir-eth",
+          "month": "2026-09",
+          "block": 26093737,
+          "timestamp": 1790812799,
+          "book_usd": 161920.6943431375,
+          "scope": "Two selected historical checkpoints in markets authorized at T. Earlier alternate markets and transaction-level cash provenance are not fully reconstructed.",
+          "loans": [
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "srUSD",
+              "collateral_units": 0.008997790314300293,
+              "collateral_units_raw": "8997790314300292",
+              "stored_debt_loan_units": 2e-06,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac"
+            },
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "wsrUSD",
+              "collateral_units": 0.038106891883847804,
+              "collateral_units_raw": "38106891883847806",
+              "stored_debt_loan_units": 0.018667,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9"
+            },
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb",
+              "loan_symbol": "USDC",
+              "collateral_symbol": "wsrUSD",
+              "collateral_units": 137323.6830477241,
+              "collateral_units_raw": "137323683047724093454344",
+              "stored_debt_loan_units": 113354.235874,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb"
+            },
+            {
+              "protocol": "Morpho Blue",
+              "market_id": "0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac",
+              "loan_symbol": "rUSD",
+              "collateral_symbol": "wsrUSD",
+              "collateral_units": 0.0,
+              "collateral_units_raw": "0",
+              "stored_debt_loan_units": 0.0,
+              "borrow_apr": null,
+              "basis": "Stored market debt/share conversion before pending accrual. This is outstanding financing, not new cash borrowed or historical profit.",
+              "sourceURL": "https://app.morpho.org/ethereum/market/0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac"
+            }
+          ],
+          "aave_account": {
+            "collateral_baseUSD": 61408.21630771,
+            "debt_baseUSD": 39693.71452613,
+            "health_factor": 1.2840526552849318,
+            "ltv": 0.6463909377733599,
+            "basis": "Aave account base-currency claim; loan-asset mix and accrued reserve-token debt not independently closed at this checkpoint."
+          }
+        }
+      ]
+    },
+    {
+      "id": "concrete-wsteth",
+      "name": "Concrete wstETH Plus",
+      "address": "0xd57588c73715b65e0ead36ae06c15644169501b7",
+      "chain": "ethereum",
+      "navT": {
+        "native": 36439.68640672683,
+        "symbol": "wstETH",
+        "eth": 45382.05391012535,
+        "usd": 121077070.78301352,
+        "date": "2026-10-02T23:59:59Z",
+        "scope": "Product book NAV, not carry allocation or independent backing.",
+        "price_convention": "ETH nearest disclosed quote at T+1 second: 2667.9504418816 USD"
+      },
+      "materiality": {
+        "current_5m_gate": true,
+        "sampled_peak_usd": 122051582.75104201,
+        "sampled_peak_month": "2026-09",
+        "sampled_peak_20m_gate": true,
+        "peak_boundary": "Maximum of measured completed-month endpoints, not the maximum intramonth or all-time capital.",
+        "include_reason": "Material current book NAV; product-specific carry remains unresolved."
+      },
+      "whole_strategy_realized_pnl": null,
+      "category_capital_USD": null,
+      "sources": [
+        "https://app.concrete.xyz/earn",
+        "https://etherscan.io/address/0xd57588c73715b65e0ead36ae06c15644169501b7#code"
+      ],
+      "positionsT": [],
+      "status": "Material funded product; carry route unresolved",
+      "classification": "E4 candidate, not confirmed",
+      "collateral": "wstETH input token; product-specific pledged collateral unresolved",
+      "debt": "Shared execution Safe dollar debt is not attributable to this product",
+      "destination": "Single MultisigStrategy accounting allocation",
+      "routeEvidence": {
+        "status": "Product allocation and strategy implementation identified; actual loan and investment rights unallocated.",
+        "strategy": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+        "strategy_enabled": true,
+        "allocated_wstETH": 36439.68640672683,
+        "allocation_fraction_of_book": 0.9999999999999999,
+        "meaning": "The product routes essentially its full accounting allocation through one multisig strategy. This does not prove the shared Safe holds that exact amount of transferable wstETH or that all its debt funds this product."
+      },
+      "terms": {
+        "fees": {
+          "raw_fee_config": [
+            0,
+            0,
+            1772040539,
+            0,
+            0
+          ],
+          "scope": "Raw exact T tuple preserved. Zero configured fields do not rule out manager or external counterparty charges."
+        },
+        "control": {
+          "owner": "0x8f5f1d40243b259ceb7ab44ba421ff191bcd3381",
+          "accounting": "MultisigStrategy exposes manager-updated allocated value, accounting validity, a cooldown and permitted accounting-change thresholds.",
+          "execution_multisig": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+          "strategy_implementation_T": "0x1cef0d42eecc0f12747a5db2b42b5d81c04d3a32",
+          "vault_implementation_T": "0x438d1eb241f866a91ebd0cc148fda9ac9b09093e",
+          "accounting_validity_seconds": 2628000000,
+          "update_cooldown_seconds": 3600,
+          "max_accounting_change_basis_points": 100,
+          "last_accounting_update_timestamp": 1770649439,
+          "last_accounting_update_date": "2026-02-09T15:03:59Z",
+          "accounting_age_days_at_T": 235.37222222222223,
+          "interpretation": "Accounting validity is a configured acceptance period, not proof of fresh valuation. The 2,628,000,000-second period is about 83.3 years. maxWithdraw reports an accounting allowance, not demonstrated payout cash."
+        },
+        "exit": {
+          "queue_active": true,
+          "paused": false,
+          "scope": "A queue flag is not proof of currently executable liquid withdrawals."
+        }
+      },
+      "unresolved": [
+        "Product-specific dollar principal and destinations are unknown.",
+        "Shared-wallet debt and external arbitrage payouts cannot be allocated by book NAV weights.",
+        "A signed accounting allocation is not independent custody or investment-rights proof."
+      ],
+      "historical_checkpoints": []
+    },
+    {
+      "id": "mre7eth",
+      "name": "Midas Re7 Ethereum",
+      "address": "0xe7ba07519dfa06e60059563f484d6090dedf21b3",
+      "chain": "optimism",
+      "status": "Funded ETH-denominated manager product; E4 route not established",
+      "classification": "Unclassified manager strategy",
+      "collateral": null,
+      "debt": null,
+      "destination": "Manager-run market-neutral strategy; portfolio loans and wallets not established",
+      "navT": {
+        "token_supply": 4791.120229835018,
+        "nav_per_token_ETH": 1.01089019,
+        "eth": 4843.296439450765,
+        "usd": 12921674.87579625,
+        "date": "2026-10-02T23:59:59Z",
+        "oracle_updated_at": "2026-09-24T17:12:39Z",
+        "oracle_age_days_at_T": 8.28287037037037,
+        "scope": "T token supply multiplied by the published stale issuer NAV mark. Not fresh portfolio valuation or independently verified backing.",
+        "price_convention": "ETH nearest disclosed quote at T+1 second: 2667.9504418816 USD",
+        "oracle_decimals_basis": "decimals() read at the exact T block; published oracle mark also agrees with the redemption data-feed conversion.",
+        "oracle_decimals": 8
+      },
+      "positionsT": [],
+      "routeEvidence": {
+        "status": "Token, issuance, redemption and published NAV oracle contracts identified; ETH collateral dollar loan not proved.",
+        "contracts": {
+          "token": "0xe7ba07519dfa06e60059563f484d6090dedf21b3",
+          "oracle": "0xcffe26979e96b9e0454cc83aa03fc973c9eb0e5e",
+          "issuance": "0xc562f73add198ce47e9af5b0752de3d7c991225d",
+          "redemption": "0x2c8aee33a6b1ebdd047903b5fde01d71b8854e6d"
+        },
+        "reported_strategy": "Market Neutral Crypto",
+        "external_NAV_mark": true
+      },
+      "terms": {
+        "fees": {
+          "issuance_instant_fee_raw": 0,
+          "redemption_instant_fee_raw": 50,
+          "scope": "Exact T configured instant fees, using the verified ONE_HUNDRED_PERCENT = 10,000 denominator. Token-specific fees, exemptions, slippage and external legal manager costs remain separate.",
+          "fee_denominator": 10000,
+          "issuance_instant_fee_rate": 0.0,
+          "redemption_instant_fee_rate": 0.005
+        },
+        "control": {
+          "tokens_receiver": "0x67ba9b7ed92fe260b0d21fff5ef492b0118f4944",
+          "scope": "Issuance and redemption transfer tokens through receiver-controlled settlement. A token does not show the underlying portfolio positions."
+        },
+        "exit": {
+          "redemption_contract": "0x2c8aee33a6b1ebdd047903b5fde01d71b8854e6d",
+          "scope": "Instant fee configuration does not establish available payout inventory. Manager settlement, eligibility and token-specific limits apply; complete T exit execution not tested."
+        }
+      },
+      "materiality": {
+        "current_5m_gate": true,
+        "sampled_peak_20m_gate": null,
+        "include_reason": "Material published book for mRe7ETH, or requested distinct manager case for mHyperETH.",
+        "post_T_catalogue_native": 4843.2964,
+        "post_T_catalogue_usd": 13085975,
+        "discovery_date": "2026-10-04",
+        "unknown_max_fields_excluded_from_historical_peak": true
+      },
+      "whole_strategy_realized_pnl": null,
+      "category_capital_USD": null,
+      "unresolved": [
+        "ETH denomination does not establish that the product retains an unhedged ETH exposure.",
+        "Market neutrality does not establish an ETH collateral dollar funding route.",
+        "The issuer NAV was stale at T; no fresh portfolio mark is substituted.",
+        "Manager wallets, underlying lending, basis, derivatives and cash payments are unresolved."
+      ],
+      "sources": [
+        "https://docs.midas.app/resources/smart-contracts-registry",
+        "https://api-prod.midas.app/api/marketplace/products",
+        "https://optimism.blockscout.com/address/0xe7ba07519dfa06e60059563f484d6090dedf21b3"
+      ],
+      "historical_checkpoints": []
+    },
+    {
+      "id": "mhypereth",
+      "name": "Midas Hyperithm ETH",
+      "address": "0x5a42864b14c0c8241ef5ab62dae975b163a2e0c1",
+      "chain": "ethereum",
+      "status": "Funded ETH-denominated manager product; E4 route not established",
+      "classification": "Unclassified manager strategy",
+      "collateral": null,
+      "debt": null,
+      "destination": "Manager-run market-neutral strategy; portfolio loans and wallets not established",
+      "navT": {
+        "token_supply": 12.70944286466036,
+        "nav_per_token_ETH": 1.01896629,
+        "eth": 12.95049384376994,
+        "usd": 34551.275773070956,
+        "date": "2026-10-02T23:59:59Z",
+        "oracle_updated_at": "2026-07-27T09:47:23Z",
+        "oracle_age_days_at_T": 67.59208333333333,
+        "scope": "T token supply multiplied by the published stale issuer NAV mark. Not fresh portfolio valuation or independently verified backing.",
+        "price_convention": "ETH nearest disclosed quote at T+1 second: 2667.9504418816 USD",
+        "oracle_decimals_basis": "decimals() read at the exact T block; published oracle mark also agrees with the redemption data-feed conversion.",
+        "oracle_decimals": 8
+      },
+      "positionsT": [],
+      "routeEvidence": {
+        "status": "Token, issuance, redemption and published NAV oracle contracts identified; ETH collateral dollar loan not proved.",
+        "contracts": {
+          "token": "0x5a42864b14c0c8241ef5ab62dae975b163a2e0c1",
+          "oracle": "0x5c81ee2c3ee8aaac2eef68ecb512472d9e08a0fd",
+          "issuance": "0x57b3be350c777892611cedc93bcf8c099a9ecdab",
+          "redemption": "0x15f724b35a75f0c28f352b952ea9d1b24e348c57"
+        },
+        "reported_strategy": "Market Neutral Crypto",
+        "external_NAV_mark": true
+      },
+      "terms": {
+        "fees": {
+          "issuance_instant_fee_raw": 0,
+          "redemption_instant_fee_raw": 0,
+          "scope": "Exact T configured instant fees, using the verified ONE_HUNDRED_PERCENT = 10,000 denominator. Token-specific fees, exemptions, slippage and external legal manager costs remain separate.",
+          "fee_denominator": 10000,
+          "issuance_instant_fee_rate": 0.0,
+          "redemption_instant_fee_rate": 0.0
+        },
+        "control": {
+          "tokens_receiver": "0x91064c84bd85c0532a9371815001c439230ea958",
+          "scope": "Issuance and redemption transfer tokens through receiver-controlled settlement. A token does not show the underlying portfolio positions."
+        },
+        "exit": {
+          "redemption_contract": "0x15f724b35a75f0c28f352b952ea9d1b24e348c57",
+          "scope": "Instant fee configuration does not establish available payout inventory. Manager settlement, eligibility and token-specific limits apply; complete T exit execution not tested."
+        }
+      },
+      "materiality": {
+        "current_5m_gate": false,
+        "sampled_peak_20m_gate": null,
+        "include_reason": "Material published book for mRe7ETH, or requested distinct manager case for mHyperETH.",
+        "post_T_catalogue_native": 12.9505,
+        "post_T_catalogue_usd": 34991,
+        "discovery_date": "2026-10-04",
+        "unknown_max_fields_excluded_from_historical_peak": true
+      },
+      "whole_strategy_realized_pnl": null,
+      "category_capital_USD": null,
+      "unresolved": [
+        "ETH denomination does not establish that the product retains an unhedged ETH exposure.",
+        "Market neutrality does not establish an ETH collateral dollar funding route.",
+        "The issuer NAV was stale at T; no fresh portfolio mark is substituted.",
+        "Manager wallets, underlying lending, basis, derivatives and cash payments are unresolved."
+      ],
+      "sources": [
+        "https://docs.midas.app/resources/smart-contracts-registry",
+        "https://api-prod.midas.app/api/marketplace/products",
+        "https://eth.blockscout.com/address/0x5a42864b14c0c8241ef5ab62dae975b163a2e0c1"
+      ],
+      "historical_checkpoints": []
+    }
+  ],
+  "variants": [
+    {
+      "id": "credit-carry",
+      "name": "ETH-funded dollar credit",
+      "mechanic": "ETH collateral supports a dollar loan. The dollars buy a lending or credit claim.",
+      "moneyFlow": [
+        "ETH-family collateral",
+        "Stablecoin loan",
+        "Credit or savings claim",
+        "Income compared with the dollar loan cost"
+      ],
+      "payers": [
+        "Destination borrowers or credit assets",
+        "Separate reward sponsor when cash incentives are actually paid"
+      ],
+      "actualExamples": [
+        "ether.fi Liquid ETH: senRLUSDv2, senPYUSDPRIMEv2 and cUSD legs"
+      ],
+      "evidenceStatus": "Observed T routes; selected historical claim and loan ledgers reconstructed",
+      "collateral": "weETH and other ETH-family collateral",
+      "debt": "RLUSD, PYUSD and USDC",
+      "destination": "Dollar credit shares",
+      "risks": [
+        "Borrow rate repricing",
+        "Credit losses or stale marks",
+        "ETH collateral liquidation",
+        "Destination redemption liquidity"
+      ],
+      "fees": "Destination and manager charges have different bases. Net PPS must not be charged twice.",
+      "exit": "Loan repayment and destination redemption must both be fundable.",
+      "capacity": "Observed capital is not remaining deposit or borrowing capacity.",
+      "sources": [
+        "data/eth/carry_attribution_closure.json",
+        "data/eth/backing_exit_closure.json"
+      ]
+    },
+    {
+      "id": "nested-savings",
+      "name": "Savings shares used as a second collateral layer",
+      "mechanic": "The first ETH-backed loan enters a yielding dollar asset. The dollar share is pledged for a second loan, which adds a separate funding and liquidation layer.",
+      "moneyFlow": [
+        "WETH or wstETH",
+        "Outer USDC loan",
+        "wsrUSD or siUSD",
+        "Inner USDC loan"
+      ],
+      "payers": [
+        "Savings portfolio income",
+        "Rewards only when payment evidence exists"
+      ],
+      "actualExamples": [
+        "Reservoir ETH Yield",
+        "TAU InfiniFi ETH Carry"
+      ],
+      "evidenceStatus": "Both historically funded; Reservoir active at T, TAU dollar debt is dust at T",
+      "collateral": "WETH or wstETH outside; dollar savings shares inside",
+      "debt": "USDC in two separately liquidatable layers",
+      "destination": "Reservoir srUSD/wsrUSD or InfiniFi siUSD",
+      "risks": [
+        "Two loan-rate exposures",
+        "Stable-share depeg or mark lag",
+        "Nested liquidations",
+        "Manager cannot treat collateral buffers as one pool"
+      ],
+      "fees": "Reservoir 1% NAV management and 10% performance; TAU 0.8% and 10% at T.",
+      "exit": "Requests expire in 8 days or 1 day; a release after the request is also required. These are not promised payout times.",
+      "capacity": "Small current capital; selected historical loan checkpoints prove nested financing at those dates, not a continuous allocation history.",
+      "sources": [
+        "data/eth/carry_variants_expansion_positions_T.json",
+        "data/eth/carry_variants_expansion_final_calls.json",
+        "data/eth/carry_variants_expansion_verification_extension.json"
+      ]
+    },
+    {
+      "id": "senior-tranche",
+      "name": "Borrowed dollars invested in a senior tranche",
+      "mechanic": "A senior claim shifts first losses to a junior layer, within the protection and redemption rules of the actual tranche.",
+      "moneyFlow": [
+        "wstETH",
+        "USDC loan",
+        "Senior dollar receipt",
+        "Nested investment portfolio"
+      ],
+      "payers": [
+        "Underlying investment borrowers",
+        "Junior capital absorbs losses only within contractual coverage"
+      ],
+      "actualExamples": [
+        "Royco ETH: srRoyUSDC"
+      ],
+      "evidenceStatus": "Actual nested route and controller identified; lifetime leg P&L not reconstructed",
+      "collateral": "wstETH",
+      "debt": "USDC",
+      "destination": "srRoyUSDC senior claim",
+      "risks": [
+        "Junior protection can be exhausted",
+        "Nested manager and withdrawal controls",
+        "USDC borrowing reprices"
+      ],
+      "fees": "Outer and nested fees must be separated.",
+      "exit": "Outer exit depends on dollar claim conversion and debt repayment.",
+      "capacity": "Protection and exit rights depend on actual tranche terms, not token names.",
+      "sources": [
+        "data/eth/product_chapters.json",
+        "data/eth/backing_exit_closure.json"
+      ]
+    },
+    {
+      "id": "minted-stable-lp",
+      "name": "CDP-minted dollars invested in a stable pool",
+      "mechanic": "A collateralized debt position creates the stablecoin used in the investment. The funding charge and redemption mechanics differ from a lender-funded loan.",
+      "moneyFlow": [
+        "rETH and wstETH collateral",
+        "BOLD mint",
+        "Curve BOLD/USDC pool",
+        "Pool income and debt-service payments"
+      ],
+      "payers": [
+        "Swap traders pay pool fees",
+        "Reward sponsors pay disclosed incentives"
+      ],
+      "actualExamples": [
+        "Liquity ETH Carry, same contract later called Sentinel ETH Carry"
+      ],
+      "evidenceStatus": "Actual collateral, minted debt and Curve route observed; alias separately dated",
+      "collateral": "rETH and wstETH",
+      "debt": "BOLD created through Liquity V2",
+      "destination": "BOLD/USDC liquidity position",
+      "risks": [
+        "BOLD or USDC depeg",
+        "Debt rate and redemption selection",
+        "LP losses and exit slippage",
+        "ETH collateral liquidation"
+      ],
+      "fees": "Borrower-set CDP interest and pool/manager charges are distinct.",
+      "exit": "LP withdrawal, conversion and CDP repayment can have different liquidity.",
+      "capacity": "Mint limits, debt redemption and LP depth need separate capacity checks.",
+      "sources": [
+        "data/eth/product_chapters.json",
+        "https://app.ipor.io/fusion/ethereum/0xb9e806e8f2d94c015ffefa90cd24ecce18f1663c"
+      ]
+    },
+    {
+      "id": "own-credit",
+      "name": "Dollar carry that partly lends back to its own credit",
+      "mechanic": "A destination lender share can include credit to accounts controlled by the same product. Gross lender income is partly matched by that product group's borrowing cost.",
+      "moneyFlow": [
+        "Product loan",
+        "Destination lending share",
+        "Loan to a controlled account",
+        "Interest returns through the share claim"
+      ],
+      "payers": [
+        "External borrowers for the external fraction",
+        "Controlled product accounts for the recycled fraction"
+      ],
+      "actualExamples": [
+        "Liquid ETH: PRIME-linked PYUSD overlap and RLUSD lending shares"
+      ],
+      "evidenceStatus": "T overlap and funding are measured; full net historical own-interest attribution remains bounded",
+      "collateral": "ETH-family or PRIME collateral",
+      "debt": "RLUSD and PYUSD",
+      "destination": "Morpho lending vault shares",
+      "risks": [
+        "Gross income can overstate external economic inflow",
+        "Concentrated borrower exposure",
+        "Cross-account liquidity mismatch"
+      ],
+      "fees": "Consolidated fees and both sides of recycled credit belong in net economics.",
+      "exit": "Controlled accounts remain separately liquidatable.",
+      "capacity": "T overlap is a snapshot; it is not a historical allocation weight.",
+      "sources": [
+        "data/eth/carry_attribution_closure.json",
+        "data/eth/carry_attribution_recycling.json"
+      ]
+    },
+    {
+      "id": "cross-chain-credit",
+      "name": "Dollar carry through cross-chain credit",
+      "mechanic": "A dollar claim can route funding to a different chain through a nested lending or credit structure. ETH collateral and destination liquidity need not live on the same chain.",
+      "moneyFlow": [
+        "Ethereum ETH collateral",
+        "Dollar loan",
+        "Nested PRIME or credit claim",
+        "Underlying cross-chain borrower"
+      ],
+      "payers": [
+        "Underlying credit borrowers",
+        "Separately evidenced sponsors"
+      ],
+      "actualExamples": [
+        "Liquid ETH: PRIME exposure and nested Monad credit"
+      ],
+      "evidenceStatus": "Nested chain exposure identified; bridges and allocations are not a global additive capital measure",
+      "collateral": "ETH-family collateral on Ethereum",
+      "debt": "PYUSD and other observed dollar legs",
+      "destination": "Nested PRIME claim",
+      "risks": [
+        "Bridge or settlement dependency",
+        "Cross-chain liquidity delay",
+        "Nested credit and controller risk"
+      ],
+      "fees": "Wrapper PPS and outer fee schedules have different accounting.",
+      "exit": "A local receipt token can depend on remote borrower repayments.",
+      "capacity": "Nested exposures cannot be added to their parent product NAV.",
+      "sources": [
+        "data/eth/backing_exit_closure.json",
+        "data/eth/product_chapters.json"
+      ]
+    },
+    {
+      "id": "fixed-maturity",
+      "name": "Dollar investment with a fixed maturity",
+      "mechanic": "A principal token can lock a dollar redemption claim until maturity, while its market price changes before maturity. Variable borrowing remains a separate liability.",
+      "moneyFlow": [
+        "ETH collateral",
+        "Dollar borrowing",
+        "Dated maturity investment",
+        "Maturity redemption or market sale"
+      ],
+      "payers": [
+        "Underlying asset issuer or borrowers"
+      ],
+      "actualExamples": [
+        "Rocksolid rETH: $2m Spectra allocation in the dated 17-24 August manager report"
+      ],
+      "evidenceStatus": "A Spectra allocation is disclosed; specific principal token, maturity and T holding are not established. Do not present it as a verified PT carry sleeve.",
+      "collateral": "rETH in the manager-disclosed Aave carry design",
+      "debt": "USDC in that dated design",
+      "destination": "Spectra allocation, instrument type unresolved",
+      "risks": [
+        "Maturity mismatch with variable debt",
+        "Early exit discount",
+        "Issuer credit or stablecoin depeg"
+      ],
+      "fees": "Advertised fixed redemption yield excludes external debt and execution costs.",
+      "exit": "Holding to maturity and selling early have different economics.",
+      "capacity": "No instrument-specific live capacity or T allocation verified.",
+      "sources": [
+        "data/eth/carry_category_sources.json",
+        "https://app.rocksolid.network/vaults/0x936facdf10c8c36294e7b9d28345255539d81bc7"
+      ]
+    },
+    {
+      "id": "external-arbitrage",
+      "name": "Dollar-neutral external arbitrage",
+      "mechanic": "A manager can use funded dollars in arbitrage or derivatives. An accounting claim does not itself prove which collateral loan financed the trade or what cash profit was paid.",
+      "moneyFlow": [
+        "ETH-family input",
+        "Manager execution account",
+        "Dollar-neutral trades or derivatives",
+        "Manager accounting and payout"
+      ],
+      "payers": [
+        "Trading counterparties or market basis",
+        "Other yield sources require their own evidence"
+      ],
+      "actualExamples": [
+        "Concrete Delta weETH: issuer-disclosed dollar-neutral arbitrage",
+        "Concrete wstETH Plus: material shared multisig allocation, product route unresolved"
+      ],
+      "evidenceStatus": "Issuer design and shared account footprint; product-level carry and realized payouts are not fully closed",
+      "collateral": "Product-specific pledged ETH unresolved for wstETH Plus",
+      "debt": "Shared Safe stablecoin debt cannot be allocated by NAV",
+      "destination": "External arbitrage rights and payments unresolved",
+      "risks": [
+        "Counterparty and custody rights",
+        "Off-chain or manager marks",
+        "Liquidity and hedge failure",
+        "Shared-wallet allocation error"
+      ],
+      "fees": "Public vault fee fields do not capture all external charges.",
+      "exit": "A queue needs actual payout assets and enforceable investment rights.",
+      "capacity": "Book allocation is not transferable cash or remaining strategy capacity.",
+      "sources": [
+        "data/eth/concrete_lookthrough_T.json",
+        "data/eth/concrete_self_holdings_T.json",
+        "data/eth/carry_variants_expansion_final_calls.json"
+      ]
+    },
+    {
+      "id": "historical-maker",
+      "name": "Historical Maker-funded stablecoin carry",
+      "mechanic": "The original Yearn yETH vault used ETH collateral to mint DAI and deploy it as working capital. The cited forum does not identify that existing destination. Later proposed strategies must not be treated as deployed.",
+      "moneyFlow": [
+        "ETH",
+        "Maker DAI debt",
+        "Dollar working-capital deployment",
+        "Investment income less debt costs"
+      ],
+      "payers": [
+        "Working-capital counterparties, not established in the cited forum"
+      ],
+      "actualExamples": [
+        "Yearn yETH v1, September 2020"
+      ],
+      "evidenceStatus": "Historical actual mechanic documented in the official governance forum; closed to new deposits in the cited period. Not a T opportunity.",
+      "collateral": "ETH",
+      "debt": "Maker-minted DAI",
+      "destination": "DAI working-capital destination, instrument not identified by the cited source",
+      "risks": [
+        "ETH liquidation",
+        "Stablecoin and pool exposures",
+        "Historical operational limits"
+      ],
+      "fees": "Historical terms are not current terms.",
+      "exit": "Historical closed product; no T withdrawal claim reconstructed.",
+      "capacity": "Not counted as current market capital.",
+      "sources": [
+        "https://gov.yearn.fi/t/yeth-vault-strategy-w-uni-mining/5930"
+      ]
+    }
+  ],
+  "destinations": [
+    {
+      "id": "wsrusd",
+      "name": "Reservoir wsrUSD",
+      "address": "0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+      "chain": "ethereum",
+      "asset": "rUSD",
+      "share_claim_rUSD": 1.100910089101025,
+      "configured_annual_growth_factor": 1.0599995116324756,
+      "configured_apy": 0.05999951163247563,
+      "configured_apr": 0.05826890592430785,
+      "capacity_rUSD": 300000000.0,
+      "rate_basis": "Verified Savingcoin.apy() returns a RAY growth factor, despite its comment saying APY. Subtract 1 from the returned factor. This is the configured accrual schedule, not independently verified backing income or a guaranteed exit yield.",
+      "sourceURL": "https://etherscan.io/address/0xd3fd63209fa2d55b07a0f6db36c2f43900be3094#code"
+    },
+    {
+      "id": "siusd",
+      "name": "InfiniFi siUSD",
+      "address": "0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+      "chain": "ethereum",
+      "asset": "iUSD",
+      "share_claim_iUSD": 1.092416740310706,
+      "configured_apy": null,
+      "paused": false,
+      "rate_basis": "A claim conversion at T is measured; historical cash rewards and forward organic yield are not reconstructed.",
+      "sourceURL": "https://etherscan.io/address/0xdbdc1ef57537e34680b898e1febd3d68c7389bcb#code"
+    }
+  ],
+  "findings": [
+    {
+      "id": "design-vs-use",
+      "title": "A carry label does not prove active borrowing",
+      "text": "TAU had funded wstETH collateral but less than one dollar of tracked USDC debt at T. Its approved nested route belongs in the mechanism map; its full book should not be labelled an active dollar carry allocation.",
+      "products": [
+        "tau-infinifi"
+      ]
+    },
+    {
+      "id": "two-funding-layers",
+      "title": "Nested savings carry has two independent financing tests",
+      "text": "Reservoir combines an Aave WETH/USDC loan with a Morpho wsrUSD/USDC loan. The outer loan has a different rate, collateral buffer and exit dependency from the inner loan. A single leverage multiple hides that difference.",
+      "products": [
+        "reservoir-eth"
+      ]
+    },
+    {
+      "id": "schedule-not-income",
+      "title": "A savings accrual schedule is not proof of underlying profit",
+      "text": "At T, wsrUSD reports a configured annual growth factor close to 1.06. This is about 6% after subtracting the initial principal. It is not a verified cash-profit attribution or a guaranteed stablecoin exit value.",
+      "products": [
+        "reservoir-eth"
+      ]
+    },
+    {
+      "id": "dated-nav",
+      "title": "A published ETH mark can be stale even when supply is current",
+      "text": "The Midas token supplies can be read at T, but their issuer NAV oracle timestamps predate T. Show mark age beside capital, and keep both products outside confirmed E4 until actual ETH collateral and dollar debt are established.",
+      "products": [
+        "mre7eth",
+        "mhypereth"
+      ]
+    },
+    {
+      "id": "allocation-vs-rights",
+      "title": "A material book allocation is not proof of product-specific financing",
+      "text": "Concrete wstETH Plus routes essentially its full book through one MultisigStrategy. The shared execution Safe and its debt still cannot establish how much dollar funding or arbitrage income belongs to this product.",
+      "products": [
+        "concrete-wsteth"
+      ]
+    },
+    {
+      "id": "investment-evidence",
+      "title": "Protocol names do not identify the investment instrument",
+      "text": "The Rocksolid report discloses a $2m Spectra allocation. Without the actual instrument, maturity and T position, it should not become a fixed-rate PT return claim.",
+      "products": []
+    }
+  ],
+  "economics_boundary": {
+    "formula": "Incremental annual equity return = sum(destination capital / equity \u00d7 destination yield) - sum(debt / equity \u00d7 borrowing cost) - fees and execution costs. Add only separately evidenced ETH collateral income.",
+    "assumptions": "Frozen rates, constant ETH/USD and stablecoin parity for a scenario. No backward application of T weights.",
+    "actual_realized_pnl": null
+  },
+  "unresolved_universe": [
+    {
+      "name": "Yearn, Gearbox, Contango, Upshift and Lagoon manager families",
+      "status": "Generic venue integrations or permitted strategies do not establish a qualifying product route."
+    },
+    {
+      "name": "KernelDAO hgETH",
+      "address": "0xc824a08db624942c5e5f330d56530cd1598859fd",
+      "status": "Material manager product and dated curator report found; actual ETH collateral dollar debt not proved in this bounded pass.",
+      "sourceURL": "https://curation.yearn.fi/report/kerneldao-hgeth/"
+    }
+  ],
+  "sources": [
+    {
+      "path": "data/eth/carry_variants_expansion_state_T.json",
+      "sha256": "eb64db5e37686b320d8970ac85268d9a0476dcb2f4fe8ff83ae6299328148679"
+    },
+    {
+      "path": "data/eth/carry_variants_expansion_positions_T.json",
+      "sha256": "2cb757c9cd9bd48ed7ec382080f2a4633c696fce446b401b3ca926b094528959"
+    },
+    {
+      "path": "data/eth/carry_variants_expansion_supplement.json",
+      "sha256": "a4438a27434392ab85f2983bca6e5d482c35b11c5f6387494cd09affe365d543"
+    },
+    {
+      "path": "data/eth/carry_variants_expansion_final_calls.json",
+      "sha256": "1f700330e05f916a619bb2353d2e0b4d6e935887f5b277e25487abff7a6edfc3"
+    },
+    {
+      "path": "data/eth/carry_variants_expansion_catalogues.json",
+      "sha256": "4c433990c881c913669c6c16d703a6012abca53e7ef0b7aa73281467cca377c5"
+    },
+    {
+      "path": "data/eth/carry_variants_expansion_verification_extension.json",
+      "sha256": "cf2ed7514ee85b52990bbb9e929e9f5f3dd6555fc55a0e31d5c3df251df4d703"
+    },
+    {
+      "path": "data/eth/carry_category_candidates.json",
+      "sha256": "bf275a641a40f442ebf96d7589a2598490fe75eefac8e86f037221d25cdc4429"
+    },
+    {
+      "path": "data/eth/carry_category_sources.json",
+      "sha256": "afbf93d35d140b6a16b04083e8544f95dfc2d2bddd7c7aa9ede583a0daf88c9b"
+    },
+    {
+      "path": "data/eth/snapshot_manifest.json",
+      "sha256": "eda51a62b0e00fc764fda82a2327bf01ab9294b0ce72e6efe19513e74812aaaf"
+    }
+  ],
+  "raw_manifest": "raw/eth/carry-variants-expansion-2026-10-04/requests.jsonl",
+  "raw_captures": [
+    {
+      "key": "midas_re7",
+      "url": "https://midas.app/mRe7ETH",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_re7-ec726a52af686406.txt",
+      "sha256": "ec726a52af6864069ff5bfc9bee6c081c2cb43addb185a16bf5280f5100b736a",
+      "retrieved_at": "2026-10-04T19:59:19.859941+00:00"
+    },
+    {
+      "key": "fusion_home",
+      "url": "https://app.ipor.io/fusion",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/fusion_home-68cc606c88e8f000.txt",
+      "sha256": "68cc606c88e8f0005e4b64fc2335cf50b9ffe4af63d6cedb7506f58c1fcf8b25",
+      "retrieved_at": "2026-10-04T19:59:19.859738+00:00"
+    },
+    {
+      "key": "midas_hyper",
+      "url": "https://midas.app/mHyperETH",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_hyper-25730162a9823112.txt",
+      "sha256": "25730162a98231124963475826ba9ed6c8aa6d0dad0048db5521b6bc99390ded",
+      "retrieved_at": "2026-10-04T19:59:19.859874+00:00"
+    },
+    {
+      "key": "fusion_reservoir",
+      "url": "https://app.ipor.io/fusion/ethereum/0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e/vault-info",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/fusion_reservoir-68cc606c88e8f000.txt",
+      "sha256": "68cc606c88e8f0005e4b64fc2335cf50b9ffe4af63d6cedb7506f58c1fcf8b25",
+      "retrieved_at": "2026-10-04T19:59:19.859904+00:00"
+    },
+    {
+      "key": "fusion_tau",
+      "url": "https://app.ipor.io/fusion/ethereum/0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b/vault-info",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/fusion_tau-68cc606c88e8f000.txt",
+      "sha256": "68cc606c88e8f0005e4b64fc2335cf50b9ffe4af63d6cedb7506f58c1fcf8b25",
+      "retrieved_at": "2026-10-04T19:59:19.859426+00:00"
+    },
+    {
+      "key": "midas_transparency",
+      "url": "https://midas.app/transparency",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_transparency-1e3553fc398f4526.txt",
+      "sha256": "1e3553fc398f45260b3719db8d49c29382d64f8ae65c74d11461a7c3bb55b384",
+      "retrieved_at": "2026-10-04T19:59:19.995654+00:00"
+    },
+    {
+      "key": "midas_docs",
+      "url": "https://docs.midas.app/",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_docs-bedf36332bd02c1c.txt",
+      "sha256": "bedf36332bd02c1c7f918c3ff6b09c82080818bbdfa35d44900e02217db9c77b",
+      "retrieved_at": "2026-10-04T19:59:19.998127+00:00"
+    },
+    {
+      "key": "reservoir-eth_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/reservoir-eth_source-cc426dacf049803e.json",
+      "sha256": "cc426dacf049803eb8dca34eeeb71c5f3644702aea0ca141d41339915d4b788c",
+      "retrieved_at": "2026-10-04T19:59:20.069162+00:00"
+    },
+    {
+      "key": "concrete_catalogue",
+      "url": "https://app.concrete.xyz/earn",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/concrete_catalogue-04c37663ae72047a.txt",
+      "sha256": "04c37663ae72047abe05db9fb82d02a4df28c090337674655e6fe59f6f653bd1",
+      "retrieved_at": "2026-10-04T19:59:20.010771+00:00"
+    },
+    {
+      "key": "tau-infinifi_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/tau-infinifi_source-6971eb5e17bdc598.json",
+      "sha256": "6971eb5e17bdc598eb52b14b06cf8655c0a32f6c885efc71ffe1da0a04380231",
+      "retrieved_at": "2026-10-04T19:59:20.047914+00:00"
+    },
+    {
+      "key": "concrete-wsteth_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xd57588c73715b65e0ead36ae06c15644169501b7",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/concrete-wsteth_source-fc3bce9491286e8e.json",
+      "sha256": "fc3bce9491286e8e3ed1be6ee4da25233271527febe872819eda51db15e3cb74",
+      "retrieved_at": "2026-10-04T19:59:20.425292+00:00"
+    },
+    {
+      "key": "fusion_docs",
+      "url": "https://docs.ipor.io/fusion",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/fusion_docs-b3522bdf376f05ad.txt",
+      "sha256": "b3522bdf376f05ad31cf274ac9946b67742111cfc0b113e8850919ef3709db08",
+      "retrieved_at": "2026-10-04T19:59:20.033338+00:00"
+    },
+    {
+      "key": "mre7eth_source",
+      "url": "https://optimism.blockscout.com/api/v2/smart-contracts/0xe7ba07519dfa06e60059563f484d6090dedf21b3",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mre7eth_source-ce8d5801048daa53.json",
+      "sha256": "ce8d5801048daa537dd52cd8c731a31ee30eca454430a0fad2c4a94e262bb3b8",
+      "retrieved_at": "2026-10-04T19:59:20.497487+00:00"
+    },
+    {
+      "key": "concrete-wsteth_source_implementation_0x438d1eb241F866A91EbD0cc148FDa9ac9b09093E",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x438d1eb241F866A91EbD0cc148FDa9ac9b09093E",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/concrete-wsteth_source_implementation_0x438d1eb241F866A91EbD0cc148FDa9ac9b09093E-0fcd65d06d627284.json",
+      "sha256": "0fcd65d06d627284833f2e8912137f08b01d4d9c73dc070bfd97f098150b8fab",
+      "retrieved_at": "2026-10-04T20:00:04.049718+00:00"
+    },
+    {
+      "key": "midas_re7_javascript",
+      "url": "https://midas.app/assets/main-CBmivzwh.js",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_re7_javascript-a3562a59d92697ed.txt",
+      "sha256": "a3562a59d92697ed0f6b651705f5783c761d3243cdab5e4315b2e71b45467b39",
+      "retrieved_at": "2026-10-04T20:00:04.049320+00:00"
+    },
+    {
+      "key": "fusion_home_javascript",
+      "url": "https://app.ipor.io/assets/index-B3m88PqV.js",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/fusion_home_javascript-7589a940411c8c6d.txt",
+      "sha256": "7589a940411c8c6d0fe6a630c6d26a1681208c4574775b64e6b703d7264fc87c",
+      "retrieved_at": "2026-10-04T20:00:04.049639+00:00"
+    },
+    {
+      "key": "mre7eth_source_implementation_0x6F12177579E0BFd70EaB08900a3e119D8C9fa30A",
+      "url": "https://optimism.blockscout.com/api/v2/smart-contracts/0x6F12177579E0BFd70EaB08900a3e119D8C9fa30A",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mre7eth_source_implementation_0x6F12177579E0BFd70EaB08900a3e119D8C9fa30A-da12a5fef9853c3c.json",
+      "sha256": "da12a5fef9853c3c85f7afbff4a0c12b5adfd72af51a1517f98954c6ad942878",
+      "retrieved_at": "2026-10-04T20:00:04.049754+00:00"
+    },
+    {
+      "key": "midas_tvl",
+      "url": "https://api-prod.midas.app/api/data/tvl",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_tvl-7714733f6d97af50.json",
+      "sha256": "7714733f6d97af509d1fabc3de1a11a70c0908b6fb1468eab2f41bf984d9b5a9",
+      "retrieved_at": "2026-10-04T20:01:40.253699+00:00"
+    },
+    {
+      "key": "fusion_official_catalogue",
+      "url": "https://api.ipor.io/dapp/plasma-vaults-list",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/fusion_official_catalogue-bf65cee1cd107f8a.txt",
+      "sha256": "bf65cee1cd107f8ad1f3e5a3358047474463d3f9d889e4b3923034264e60fc0b",
+      "retrieved_at": "2026-10-04T20:01:40.253555+00:00"
+    },
+    {
+      "key": "midas_marketplace",
+      "url": "https://api-prod.midas.app/api/marketplace/products",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_marketplace-608814878dd3804d.json",
+      "sha256": "608814878dd3804d607cd3e5f36662311106d81f5a83c83527d3dd415abf0bae",
+      "retrieved_at": "2026-10-04T20:01:40.253239+00:00"
+    },
+    {
+      "key": "initial_state_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/initial_state_T_provider0_batch0-25c5c53acb48da3c.json",
+      "sha256": "25c5c53acb48da3c5cb3f4921eb419aa5d670bfafc7ebbe3ae9a09e4ef38dbb9",
+      "retrieved_at": "2026-10-04T20:09:13.669533+00:00"
+    },
+    {
+      "key": "initial_state_T_provider0_batch1",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/initial_state_T_provider0_batch1-3ff8774c3dfb70f6.json",
+      "sha256": "3ff8774c3dfb70f63139988042ba2f12a3bbf5f5bf754d75e24d935392d72e9c",
+      "retrieved_at": "2026-10-04T20:09:13.829686+00:00"
+    },
+    {
+      "key": "initial_state_T_provider0_batch2",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/initial_state_T_provider0_batch2-587931fcfa0d0e78.json",
+      "sha256": "587931fcfa0d0e78fd0e8add54693749bada8c24105d06416d907e33dce9814b",
+      "retrieved_at": "2026-10-04T20:09:13.989500+00:00"
+    },
+    {
+      "key": "morpho_positions_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/morpho_positions_T_provider0_batch0-c308d6354139966c.json",
+      "sha256": "c308d6354139966c5196bfed99b36f52f61c5a0413dde365e3e8b59195b4a866",
+      "retrieved_at": "2026-10-04T20:10:07.071622+00:00"
+    },
+    {
+      "key": "morpho_positions_oracles_rates_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/morpho_positions_oracles_rates_T_provider0_batch0-7e9abf5a901964e3.json",
+      "sha256": "7e9abf5a901964e33e11e20fcbd461d6eb3c319668d04f8563c33ecbde9140c9",
+      "retrieved_at": "2026-10-04T20:10:07.249405+00:00"
+    },
+    {
+      "key": "underlying_tokens_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/underlying_tokens_T_provider0_batch0-00effb66da017c0d.json",
+      "sha256": "00effb66da017c0d0bf9ce0cf6451b12bf94774e56c6a0d302832da0ee4013f3",
+      "retrieved_at": "2026-10-04T20:10:07.418392+00:00"
+    },
+    {
+      "key": "underlying_tokens_T_provider0_batch1",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/underlying_tokens_T_provider0_batch1-339436dd4d5c11bc.json",
+      "sha256": "339436dd4d5c11bc1616fbd0be25e692abfc444cd54a9e2b578e8cd8b9d105ff",
+      "retrieved_at": "2026-10-04T20:10:07.568440+00:00"
+    },
+    {
+      "key": "token_source_0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/token_source_0x09d4214c03d01f49544c0448dbe3a27f768f2b34-b9a52a75593df517.json",
+      "sha256": "b9a52a75593df517aa228d48c80456369edf38f5eb7ba61d74a4923f679b64fe",
+      "retrieved_at": "2026-10-04T20:10:07.718208+00:00"
+    },
+    {
+      "key": "token_source_0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/token_source_0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0-5bb4c16383185a86.json",
+      "sha256": "5bb4c16383185a867ff10e72beecf0102aa7f3bc22447009e2560db806fbb95f",
+      "retrieved_at": "2026-10-04T20:10:07.719379+00:00"
+    },
+    {
+      "key": "token_source_0x738d1115b90efa71ae468f1287fc864775e23a31",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x738d1115b90efa71ae468f1287fc864775e23a31",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/token_source_0x738d1115b90efa71ae468f1287fc864775e23a31-e3a0f00bb3297627.json",
+      "sha256": "e3a0f00bb3297627e65c09226fb9f79841c658f00b1e880ea4b4af121d4cf631",
+      "retrieved_at": "2026-10-04T20:10:07.719169+00:00"
+    },
+    {
+      "key": "token_source_0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/token_source_0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48-b579453931168eb5.json",
+      "sha256": "b579453931168eb5727c51fcbd8c0b43894f1fbd9dd672bbabd80b2e7a99269a",
+      "retrieved_at": "2026-10-04T20:10:07.719114+00:00"
+    },
+    {
+      "key": "token_source_0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/token_source_0xd3fd63209fa2d55b07a0f6db36c2f43900be3094-60dba91bf6760511.json",
+      "sha256": "60dba91bf676051106fdf4f01a1eec443d86b6cbf698e6600b03d5c727f16075",
+      "retrieved_at": "2026-10-04T20:10:07.718911+00:00"
+    },
+    {
+      "key": "token_source_0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/token_source_0xdbdc1ef57537e34680b898e1febd3d68c7389bcb-128039e67909321b.json",
+      "sha256": "128039e67909321bade73389581f8667dbdc96449975394237f6daf128f56289",
+      "retrieved_at": "2026-10-04T20:10:07.903416+00:00"
+    },
+    {
+      "key": "fusion_base_tau-infinifi",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x2de7320004f837925ba31326ff66210be90171ab",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/fusion_base_tau-infinifi-5d7556ce6725467d.json",
+      "sha256": "5d7556ce6725467d9b527ff3727bbbe509c680c501cfaea66fb6b931d3b62789",
+      "retrieved_at": "2026-10-04T20:10:07.946755+00:00"
+    },
+    {
+      "key": "fusion_base_reservoir-eth",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x9781413baff29db7bebdc52c475c780591c7b37b",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/fusion_base_reservoir-eth-9b8c4e224f539884.json",
+      "sha256": "9b8c4e224f5398847c38f63e07da64591e20bcce901fca6473015fb92a56257b",
+      "retrieved_at": "2026-10-04T20:10:07.980002+00:00"
+    },
+    {
+      "key": "supplement_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/supplement_T_provider0_batch0-e80dd566304a5344.json",
+      "sha256": "e80dd566304a5344f461696aee13e7c7ed00dd1b11b615cae56124d1570d3fd7",
+      "retrieved_at": "2026-10-04T20:12:46.006062+00:00"
+    },
+    {
+      "key": "supplement_T_provider0_batch1",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/supplement_T_provider0_batch1-94a6cf4d3cf583c8.json",
+      "sha256": "94a6cf4d3cf583c8c24ee1669ba4335662f0929f9811885f873920e3775920e1",
+      "retrieved_at": "2026-10-04T20:12:46.205764+00:00"
+    },
+    {
+      "key": "supplement_T_provider0_batch2",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/supplement_T_provider0_batch2-778983f96ad460a4.json",
+      "sha256": "778983f96ad460a482b5a5a6b82773d99e8c26f5b21d5fc7fef5a0fca2fd14ae",
+      "retrieved_at": "2026-10-04T20:12:46.401595+00:00"
+    },
+    {
+      "key": "supplement_T_provider0_batch3",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/supplement_T_provider0_batch3-691051e8cb37468f.json",
+      "sha256": "691051e8cb37468fce807ce368d382f8c2ea99d54d6746769068fa2b3a617579",
+      "retrieved_at": "2026-10-04T20:12:46.549573+00:00"
+    },
+    {
+      "key": "supplement_T_provider0_batch4",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/supplement_T_provider0_batch4-ae8996e14c045e8e.json",
+      "sha256": "ae8996e14c045e8ea1e52b82615329563b5a14a09f673f564e9bc3099bd353d2",
+      "retrieved_at": "2026-10-04T20:12:46.730515+00:00"
+    },
+    {
+      "key": "midas_configuration",
+      "url": "https://midas.app/assets/src-CYJgf4Il.js",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_configuration-98654085b748ca73.txt",
+      "sha256": "98654085b748ca7361cbe4640f472b6839a1c126241de2ef6b3a522ec802aaf7",
+      "retrieved_at": "2026-10-04T20:12:49.878763+00:00"
+    },
+    {
+      "key": "reservoir_docs",
+      "url": "https://docs.reservoir.xyz/",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/reservoir_docs-a4fac29ee67ac69f.txt",
+      "sha256": "a4fac29ee67ac69ffce466f84022bf611c0ded7158266e1e73dfe7bc163f3dfe",
+      "retrieved_at": "2026-10-04T20:12:49.879446+00:00"
+    },
+    {
+      "key": "infinifi_docs",
+      "url": "https://docs.infinifi.xyz/",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/infinifi_docs-f90e7dd5829aec62.txt",
+      "sha256": "f90e7dd5829aec6254df52c978fe20b2638ba986298c17494dbe8fac91e05dd3",
+      "retrieved_at": "2026-10-04T20:12:50.097716+00:00"
+    },
+    {
+      "key": "midas_product_legal",
+      "url": "https://docs.midas.app/resources/legal-product-documentation",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_product_legal-16ac0b2fb9070824.txt",
+      "sha256": "16ac0b2fb907082418e424682b1ba0f6f4c08c717f1d2d6c8bd2475ed8f3a9b9",
+      "retrieved_at": "2026-10-04T20:12:49.879773+00:00"
+    },
+    {
+      "key": "midas_repo_tree",
+      "url": "https://api.github.com/repos/midas-apps/contracts/git/trees/main?recursive=1",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_repo_tree-050f3a96fd8b3b83.json",
+      "sha256": "050f3a96fd8b3b83858c631a4f249ec4de6fb7546246d55113267c060723c45c",
+      "retrieved_at": "2026-10-04T20:12:49.879392+00:00"
+    },
+    {
+      "key": "midas_registry",
+      "url": "https://docs.midas.app/resources/smart-contracts-registry",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_registry-f98c1df0bcd60561.txt",
+      "sha256": "f98c1df0bcd60561e412beb491d925cdca52af6ebd0e77567fa2a458ad98a22c",
+      "retrieved_at": "2026-10-04T20:12:49.878263+00:00"
+    },
+    {
+      "key": "concrete_strategy_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/concrete_strategy_source-6860b9edc22e2886.json",
+      "sha256": "6860b9edc22e2886458d55311265681049c16598da671b8f2029c425f677cd37",
+      "retrieved_at": "2026-10-04T20:12:50.596509+00:00"
+    },
+    {
+      "key": "mhyper_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x5a42864b14c0c8241ef5ab62dae975b163a2e0c1",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mhyper_source-cd08e52ba21df1a3.json",
+      "sha256": "cd08e52ba21df1a3ab731be0962c7731f13f625cb2eebeb15ab1c73e69f4184d",
+      "retrieved_at": "2026-10-04T20:12:50.714250+00:00"
+    },
+    {
+      "key": "hgeth_primary_report",
+      "url": "https://curation.yearn.fi/report/kerneldao-hgeth/",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/hgeth_primary_report-cd261661dacb27dc.txt",
+      "sha256": "cd261661dacb27dcc76ed8a13ec0266b765571689e7162dd08a9cdd6d64a851e",
+      "retrieved_at": "2026-10-04T20:12:50.596585+00:00"
+    },
+    {
+      "key": "yearn_yeth_actual",
+      "url": "https://gov.yearn.fi/t/yeth-vault-strategy-w-uni-mining/5930",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/yearn_yeth_actual-cc585ff04e6846c4.txt",
+      "sha256": "cc585ff04e6846c44f9ac71002c6b9d6027a9609a1402b99e0d577e0c030bb56",
+      "retrieved_at": "2026-10-04T20:12:50.470337+00:00"
+    },
+    {
+      "key": "closure_probes_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/closure_probes_T_provider0_batch0-bfe87b1761c3ff62.json",
+      "sha256": "bfe87b1761c3ff62d32bd85b112d1641cc74bd9ec006a4011cb4dd0bb564343c",
+      "retrieved_at": "2026-10-04T20:15:56.890265+00:00"
+    },
+    {
+      "key": "withdraw_terms_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/withdraw_terms_T_provider0_batch0-c1526a79c178ed4f.json",
+      "sha256": "c1526a79c178ed4fe04cd5122e4b27ad3f79e444056a6d1c71f4efc14e62ef5c",
+      "retrieved_at": "2026-10-04T20:15:57.138742+00:00"
+    },
+    {
+      "key": "mre7eth_oracle_source",
+      "url": "https://optimism.blockscout.com/api/v2/smart-contracts/0xcffe26979e96b9e0454cc83aa03fc973c9eb0e5e",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mre7eth_oracle_source-c9e16e215da144eb.json",
+      "sha256": "c9e16e215da144ebb842001f149d7165adebe37ee6eef4a9cf2b69d04665b785",
+      "retrieved_at": "2026-10-04T20:15:57.668658+00:00"
+    },
+    {
+      "key": "mre7eth_issuance_source",
+      "url": "https://optimism.blockscout.com/api/v2/smart-contracts/0xc562f73add198ce47e9af5b0752de3d7c991225d",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mre7eth_issuance_source-9d1587683ea67297.json",
+      "sha256": "9d1587683ea6729763a1cf4829945558ea0382a1f92dedc8b91698ad7809306a",
+      "retrieved_at": "2026-10-04T20:16:02.372529+00:00"
+    },
+    {
+      "key": "mre7eth_redemption_source",
+      "url": "https://optimism.blockscout.com/api/v2/smart-contracts/0x2c8aee33a6b1ebdd047903b5fde01d71b8854e6d",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mre7eth_redemption_source-3b78a1bc921d50ff.json",
+      "sha256": "3b78a1bc921d50ffb675aa902c5c5381c6ac1ca4957efc07db15179cbae98510",
+      "retrieved_at": "2026-10-04T20:16:07.406467+00:00"
+    },
+    {
+      "key": "midas_mhypereth_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_mhypereth_T_provider0_batch0-2bd4af95d4229bdf.json",
+      "sha256": "2bd4af95d4229bdf2e2cb9d051c6222ef83320d1b82c1f7a08b0bb3814cc05d1",
+      "retrieved_at": "2026-10-04T20:16:10.418493+00:00"
+    },
+    {
+      "key": "mhypereth_oracle_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x5c81ee2c3ee8aaac2eef68ecb512472d9e08a0fd",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mhypereth_oracle_source-0f4a19ec4a57c0cb.json",
+      "sha256": "0f4a19ec4a57c0cbbff9e27365164ad92534d59eb7ba4583d3d821bdf5a7dff0",
+      "retrieved_at": "2026-10-04T20:16:10.571048+00:00"
+    },
+    {
+      "key": "mhypereth_issuance_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x57b3be350c777892611cedc93bcf8c099a9ecdab",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mhypereth_issuance_source-d73a0d947db3178f.json",
+      "sha256": "d73a0d947db3178fa2b52090db5386f10ba7d34974a058b89df10f3f1ffdb5a0",
+      "retrieved_at": "2026-10-04T20:16:10.789284+00:00"
+    },
+    {
+      "key": "mhypereth_redemption_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x15f724b35a75f0c28f352b952ea9d1b24e348c57",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mhypereth_redemption_source-1ede9be7333065fd.json",
+      "sha256": "1ede9be7333065fda151aff556fb1872ba6a173a2b1ee08f221e44c45b6641b4",
+      "retrieved_at": "2026-10-04T20:16:11.140143+00:00"
+    },
+    {
+      "key": "concrete_multisig_implementation",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x1cef0d42eecc0f12747a5db2b42b5d81c04d3a32",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/concrete_multisig_implementation-8e1666088ca55dc4.json",
+      "sha256": "8e1666088ca55dc43f972683915984ef635ea7c51c7dbddf77cd0fed0dcd8172",
+      "retrieved_at": "2026-10-04T20:16:11.449954+00:00"
+    },
+    {
+      "key": "midas_mre7eth_T_provider1_batch0",
+      "url": "https://mainnet.optimism.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_mre7eth_T_provider1_batch0-a28bfbbb7282da65.json",
+      "sha256": "a28bfbbb7282da65318c9989279237771f04efbb8c0f5128c9f19344b69d928e",
+      "retrieved_at": "2026-10-04T20:17:03.063018+00:00"
+    },
+    {
+      "key": "midas_mre7eth_T_provider1_batch1",
+      "url": "https://mainnet.optimism.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_mre7eth_T_provider1_batch1-d92f942c29139187.json",
+      "sha256": "d92f942c29139187169c5bff8974d3b034a016bc826452e53a9b38536f3823e2",
+      "retrieved_at": "2026-10-04T20:17:03.169867+00:00"
+    },
+    {
+      "key": "midas_mre7eth_T_provider1_batch2",
+      "url": "https://mainnet.optimism.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_mre7eth_T_provider1_batch2-e154f76c12f8c551.json",
+      "sha256": "e154f76c12f8c551d56ea9cd7597de9f866241d9dbd13816184fd17dcbdf86ef",
+      "retrieved_at": "2026-10-04T20:17:03.274429+00:00"
+    },
+    {
+      "key": "midas_mre7eth_T_provider1_batch3",
+      "url": "https://mainnet.optimism.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_mre7eth_T_provider1_batch3-6b2aea69724da0ef.json",
+      "sha256": "6b2aea69724da0ef6c1a6ec8ecda90ba49af03c8df14e2cf8c7cf2fcf8c1f144",
+      "retrieved_at": "2026-10-04T20:17:03.366785+00:00"
+    },
+    {
+      "key": "midas_mre7eth_T_provider1_batch4",
+      "url": "https://mainnet.optimism.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_mre7eth_T_provider1_batch4-32a47f42d7223592.json",
+      "sha256": "32a47f42d722359266b134460088ba5b94417e1c5df42df3c796c9dc33f0dbd9",
+      "retrieved_at": "2026-10-04T20:17:03.454153+00:00"
+    },
+    {
+      "key": "midas_mre7eth_issuance_mTokenDataFeed()_T_provider1_batch0",
+      "url": "https://mainnet.optimism.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_mre7eth_issuance_mTokenDataFeed()_T_provider1_batch0-b3c36e6d1445edbd.json",
+      "sha256": "b3c36e6d1445edbd63d2afa2c30f051ac8fe00e9a15195d9b6d28fb9095a560b",
+      "retrieved_at": "2026-10-04T20:17:03.634018+00:00"
+    },
+    {
+      "key": "midas_mhypereth_T_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/midas_mhypereth_T_provider1_batch0-9d85ee603838f365.json",
+      "sha256": "9d85ee603838f3659feaec5c3368a718a2f35d77279e491b4da63c9718344db1",
+      "retrieved_at": "2026-10-04T20:17:03.894127+00:00"
+    },
+    {
+      "key": "verification_extension_T_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/verification_extension_T_provider0_batch0-088728ceac28bfe3.json",
+      "sha256": "088728ceac28bfe371b4762306bbd08fd04c00d8ff7085d059cf081a7e6369d8",
+      "retrieved_at": "2026-10-04T20:25:39.547464+00:00"
+    },
+    {
+      "key": "verification_extension_T_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/verification_extension_T_provider1_batch0-d22705076d0c2860.json",
+      "sha256": "d22705076d0c2860c176e1dbae78ec15f2433127182e1d202b577183462f2f70",
+      "retrieved_at": "2026-10-04T20:25:39.699089+00:00"
+    },
+    {
+      "key": "mre7_oracle_decimals_T_provider1_batch0",
+      "url": "https://mainnet.optimism.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mre7_oracle_decimals_T_provider1_batch0-ec3a7b84dd5c8880.json",
+      "sha256": "ec3a7b84dd5c88805eea42e0d5f4fc2905723ce1d7118ba87dc500493a7dafc1",
+      "retrieved_at": "2026-10-04T20:25:40.140233+00:00"
+    },
+    {
+      "key": "history_tau-infinifi_2026-01_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_tau-infinifi_2026-01_provider0_batch0-287836a7f72b578a.json",
+      "sha256": "287836a7f72b578a6710a94dbc568e38a6f4bb5f09d2019c136ba68850b6f57d",
+      "retrieved_at": "2026-10-04T20:25:40.252641+00:00"
+    },
+    {
+      "key": "history_tau-infinifi_2026-09_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_tau-infinifi_2026-09_provider0_batch0-e10b7814e5b2e932.json",
+      "sha256": "e10b7814e5b2e9321766f3133d843de5dd0d316eb4f0fe17bc82dd3e8613763c",
+      "retrieved_at": "2026-10-04T20:25:40.395839+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2025-10_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2025-10_provider0_batch0-d542104b20ef21a1.json",
+      "sha256": "d542104b20ef21a1641c0561f989655c4d6b80754bab64e089b4b17b5b3f52a5",
+      "retrieved_at": "2026-10-04T20:25:40.538277+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2025-10_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2025-10_provider1_batch0-444be75b9242e6ba.json",
+      "sha256": "444be75b9242e6ba3ef48da88f932f3158eb02cf45ea701226674a71889bacf6",
+      "retrieved_at": "2026-10-04T20:25:40.673785+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2026-09_provider0_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2026-09_provider0_batch0-5a92bbc1c94427ce.json",
+      "sha256": "5a92bbc1c94427ce7b749e12c90f2e9f7065eb2d2e43c1589a334a481ed5a76d",
+      "retrieved_at": "2026-10-04T20:25:40.989052+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2026-09_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2026-09_provider1_batch0-81e95887c51a63e3.json",
+      "sha256": "81e95887c51a63e37cd531111f477e81da9762059eb9705d20c0ab1c19fffe57",
+      "retrieved_at": "2026-10-04T20:25:41.141082+00:00"
+    },
+    {
+      "key": "mre7eth_redemption_implementation",
+      "url": "https://optimism.blockscout.com/api/v2/smart-contracts/0x33477a2C7C4AbF34f93A4e61C31fD59D4a6f79DE",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mre7eth_redemption_implementation-f915b8195123ccfc.json",
+      "sha256": "f915b8195123ccfc6a19214a39717ef9b4f7ed822bbd0169dbe99fc2a8fe1b7b",
+      "retrieved_at": "2026-10-04T20:25:41.470939+00:00"
+    },
+    {
+      "key": "mhypereth_redemption_implementation",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x517D001E9FFaF08CC6A1f65505C7be4CEf71c18b",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mhypereth_redemption_implementation-5ecc3b062e2b4b83.json",
+      "sha256": "5ecc3b062e2b4b83f4b4f34228f55be74003d1a30749283fcca4a2b9ff5f33be",
+      "retrieved_at": "2026-10-04T20:25:42.175663+00:00"
+    },
+    {
+      "key": "verification_extension_T_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/verification_extension_T_provider1_batch0-98fe4b538687f7f1.json",
+      "sha256": "98fe4b538687f7f122a250819526ef069c1008beb05cce26121c9bf74761b823",
+      "retrieved_at": "2026-10-04T20:27:23.558197+00:00"
+    },
+    {
+      "key": "verification_extension_T_provider1_batch1",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/verification_extension_T_provider1_batch1-0ea603f3750dcf26.json",
+      "sha256": "0ea603f3750dcf26ee58fc60645b3688c6e2c580633eeed9c983418e3a256107",
+      "retrieved_at": "2026-10-04T20:27:23.707137+00:00"
+    },
+    {
+      "key": "verification_extension_T_provider1_batch2",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/verification_extension_T_provider1_batch2-64a3309a31c901f2.json",
+      "sha256": "64a3309a31c901f2da5da4c938dba4a4e2a5d1f51474716e1945e206c1dc93d3",
+      "retrieved_at": "2026-10-04T20:27:23.852160+00:00"
+    },
+    {
+      "key": "history_tau-infinifi_2026-01_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_tau-infinifi_2026-01_provider1_batch0-287836a7f72b578a.json",
+      "sha256": "287836a7f72b578a6710a94dbc568e38a6f4bb5f09d2019c136ba68850b6f57d",
+      "retrieved_at": "2026-10-04T20:27:24.192825+00:00"
+    },
+    {
+      "key": "history_tau-infinifi_2026-09_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_tau-infinifi_2026-09_provider1_batch0-e10b7814e5b2e932.json",
+      "sha256": "e10b7814e5b2e9321766f3133d843de5dd0d316eb4f0fe17bc82dd3e8613763c",
+      "retrieved_at": "2026-10-04T20:27:24.424152+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2025-10_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2025-10_provider1_batch0-be835f3d6b08b825.json",
+      "sha256": "be835f3d6b08b82587d0a043abdaf9a1b29ddfa55cd89f5bc7fad5d9e2c11be8",
+      "retrieved_at": "2026-10-04T20:27:24.648666+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2025-10_provider1_batch1",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2025-10_provider1_batch1-ced333e53b4c041a.json",
+      "sha256": "ced333e53b4c041aa246c60a6a5a9fa0fb4b52052822f330fcc61f31a4bdf49d",
+      "retrieved_at": "2026-10-04T20:27:24.797516+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2025-10_provider1_batch2",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2025-10_provider1_batch2-804812f03570188f.json",
+      "sha256": "804812f03570188f578c24d700ed1871fbf8039198bd69d6895aa8576b024891",
+      "retrieved_at": "2026-10-04T20:27:24.941917+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2025-10_provider2_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2025-10_provider2_batch0-cb28e100edeedf36.json",
+      "sha256": "cb28e100edeedf36a7eedfe4f4deed077b06ce3394df073085f5b8b3bbf317c6",
+      "retrieved_at": "2026-10-04T20:27:25.099459+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2025-10_provider2_batch1",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2025-10_provider2_batch1-e3d6983f723e14fa.json",
+      "sha256": "e3d6983f723e14fa0b7d6987be66bb3316ed2be40088c2b73d1c75ecfda7e4c6",
+      "retrieved_at": "2026-10-04T20:27:25.257942+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2025-10_provider2_batch2",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2025-10_provider2_batch2-804812f03570188f.json",
+      "sha256": "804812f03570188f578c24d700ed1871fbf8039198bd69d6895aa8576b024891",
+      "retrieved_at": "2026-10-04T20:27:25.405249+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2026-09_provider1_batch0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2026-09_provider1_batch0-12694fc5e095ef44.json",
+      "sha256": "12694fc5e095ef44afa21513de7aad94a119199af58a350cedf1d16bdbebda5e",
+      "retrieved_at": "2026-10-04T20:27:25.639780+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2026-09_provider1_batch1",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2026-09_provider1_batch1-0aec7a0fc84345a2.json",
+      "sha256": "0aec7a0fc84345a225f5fe9270ee13afaa72060f889e4377b5ecdd0259719ae9",
+      "retrieved_at": "2026-10-04T20:27:25.789352+00:00"
+    },
+    {
+      "key": "history_reservoir-eth_2026-09_provider1_batch2",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/history_reservoir-eth_2026-09_provider1_batch2-7fff7a896eff0147.json",
+      "sha256": "7fff7a896eff0147146287b447df4e5c8fed2e5e9022df22090f3f59a360c8d2",
+      "retrieved_at": "2026-10-04T20:27:25.938509+00:00"
+    },
+    {
+      "key": "verification_extension_T_provider1_batch2",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/verification_extension_T_provider1_batch2-ddbe3473ef8d9f13.json",
+      "sha256": "ddbe3473ef8d9f13d96e20fc67df3b047d03bd03afe03995f1e700e954ecd625",
+      "retrieved_at": "2026-10-04T20:32:45.105087+00:00"
+    },
+    {
+      "key": "mre7_oracle_decimals_T_provider1_batch0",
+      "url": "https://mainnet.optimism.io",
+      "path": "raw/eth/carry-variants-expansion-2026-10-04/mre7_oracle_decimals_T_provider1_batch0-e46c39a1a634359b.json",
+      "sha256": "e46c39a1a634359b2b639637ac6d7b6148533b5383d350017e4ef505b04f7e73",
+      "retrieved_at": "2026-10-04T20:32:45.369752+00:00"
+    }
+  ],
+  "verification": {
+    "checks": [
+      {
+        "name": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc debt nonnegative",
+        "passed": true
+      },
+      {
+        "name": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc raw collateral integer preserved",
+        "passed": true
+      },
+      {
+        "name": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99 debt nonnegative",
+        "passed": true
+      },
+      {
+        "name": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99 raw collateral integer preserved",
+        "passed": true
+      },
+      {
+        "name": "0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac debt nonnegative",
+        "passed": true
+      },
+      {
+        "name": "0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac raw collateral integer preserved",
+        "passed": true
+      },
+      {
+        "name": "0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9 debt nonnegative",
+        "passed": true
+      },
+      {
+        "name": "0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9 raw collateral integer preserved",
+        "passed": true
+      },
+      {
+        "name": "0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb debt nonnegative",
+        "passed": true
+      },
+      {
+        "name": "0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb raw collateral integer preserved",
+        "passed": true
+      },
+      {
+        "name": "0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac debt nonnegative",
+        "passed": true
+      },
+      {
+        "name": "0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac raw collateral integer preserved",
+        "passed": true
+      },
+      {
+        "name": "TAU aggregate tracked debt under one USD",
+        "passed": true
+      },
+      {
+        "name": "mre7eth positive published-mark ETH",
+        "passed": true
+      },
+      {
+        "name": "mhypereth positive published-mark ETH",
+        "passed": true
+      },
+      {
+        "name": "TAU January nested borrowing materially funded",
+        "passed": true
+      },
+      {
+        "name": "Reservoir historical nested dollar borrowing material",
+        "passed": true
+      },
+      {
+        "name": "Concrete T strategy implementation matches verified source",
+        "passed": true
+      },
+      {
+        "name": "mre7eth primary oracle decimals 8",
+        "passed": true
+      },
+      {
+        "name": "mre7eth exact T fee denominator 10000",
+        "passed": true
+      },
+      {
+        "name": "mhypereth primary oracle decimals 8",
+        "passed": true
+      },
+      {
+        "name": "mhypereth exact T fee denominator 10000",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/carry_attribution_closure.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/backing_exit_closure.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/carry_variants_expansion_positions_T.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/carry_variants_expansion_final_calls.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/carry_variants_expansion_verification_extension.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/product_chapters.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/backing_exit_closure.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/product_chapters.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/carry_attribution_closure.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/carry_attribution_recycling.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/backing_exit_closure.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/product_chapters.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/carry_category_sources.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/concrete_lookthrough_T.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/concrete_self_holdings_T.json",
+        "passed": true
+      },
+      {
+        "name": "variant source exists data/eth/carry_variants_expansion_final_calls.json",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_re7",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 fusion_home",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_hyper",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 fusion_reservoir",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 fusion_tau",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_transparency",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_docs",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 reservoir-eth_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 concrete_catalogue",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 tau-infinifi_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 concrete-wsteth_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 fusion_docs",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mre7eth_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 concrete-wsteth_source_implementation_0x438d1eb241F866A91EbD0cc148FDa9ac9b09093E",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_re7_javascript",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 fusion_home_javascript",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mre7eth_source_implementation_0x6F12177579E0BFd70EaB08900a3e119D8C9fa30A",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_tvl",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 fusion_official_catalogue",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_marketplace",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 initial_state_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 initial_state_T_provider0_batch1",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 initial_state_T_provider0_batch2",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 morpho_positions_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 morpho_positions_oracles_rates_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 underlying_tokens_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 underlying_tokens_T_provider0_batch1",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 token_source_0x09d4214c03d01f49544c0448dbe3a27f768f2b34",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 token_source_0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 token_source_0x738d1115b90efa71ae468f1287fc864775e23a31",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 token_source_0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 token_source_0xd3fd63209fa2d55b07a0f6db36c2f43900be3094",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 token_source_0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 fusion_base_tau-infinifi",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 fusion_base_reservoir-eth",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 supplement_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 supplement_T_provider0_batch1",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 supplement_T_provider0_batch2",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 supplement_T_provider0_batch3",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 supplement_T_provider0_batch4",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_configuration",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 reservoir_docs",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 infinifi_docs",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_product_legal",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_repo_tree",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_registry",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 concrete_strategy_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mhyper_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 hgeth_primary_report",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 yearn_yeth_actual",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 closure_probes_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 withdraw_terms_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mre7eth_oracle_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mre7eth_issuance_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mre7eth_redemption_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_mhypereth_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mhypereth_oracle_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mhypereth_issuance_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mhypereth_redemption_source",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 concrete_multisig_implementation",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_mre7eth_T_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_mre7eth_T_provider1_batch1",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_mre7eth_T_provider1_batch2",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_mre7eth_T_provider1_batch3",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_mre7eth_T_provider1_batch4",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_mre7eth_issuance_mTokenDataFeed()_T_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 midas_mhypereth_T_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 verification_extension_T_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 verification_extension_T_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mre7_oracle_decimals_T_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_tau-infinifi_2026-01_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_tau-infinifi_2026-09_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2025-10_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2025-10_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2026-09_provider0_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2026-09_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mre7eth_redemption_implementation",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mhypereth_redemption_implementation",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 verification_extension_T_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 verification_extension_T_provider1_batch1",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 verification_extension_T_provider1_batch2",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_tau-infinifi_2026-01_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_tau-infinifi_2026-09_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2025-10_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2025-10_provider1_batch1",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2025-10_provider1_batch2",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2025-10_provider2_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2025-10_provider2_batch1",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2025-10_provider2_batch2",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2026-09_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2026-09_provider1_batch1",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 history_reservoir-eth_2026-09_provider1_batch2",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 verification_extension_T_provider1_batch2",
+        "passed": true
+      },
+      {
+        "name": "raw SHA256 mre7_oracle_decimals_T_provider1_batch0",
+        "passed": true
+      },
+      {
+        "name": "tau-infinifi complete state boundary",
+        "passed": true
+      },
+      {
+        "name": "reservoir-eth complete state boundary",
+        "passed": true
+      },
+      {
+        "name": "concrete-wsteth complete state boundary",
+        "passed": true
+      },
+      {
+        "name": "mre7eth complete state boundary",
+        "passed": true
+      },
+      {
+        "name": "mhypereth complete state boundary",
+        "passed": true
+      }
+    ],
+    "passed": 137,
+    "failed": 0
+  }
+}

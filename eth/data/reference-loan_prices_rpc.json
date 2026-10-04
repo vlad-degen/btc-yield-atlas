@@ -1,0 +1,281 @@
+{
+  "url": "https://eth-mainnet.public.blastapi.io",
+  "block": 26108081,
+  "observed_at": "2026-10-04T12:42:41.035197+00:00",
+  "requests": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xe7aa2ba9e086a379d3beb224098bc634a46e314e",
+          "data": "0x0fdb11cf"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xe7aa2ba9e086a379d3beb224098bc634a46e314e",
+          "data": "0x0490be83"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "data": "0xbf92857c0000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "data": "0xbf92857c0000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xcd9f5907f92818bc06c9ad70217f089e190d2a32",
+          "data": "0x70a082310000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "data": "0x70a082310000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "data": "0x70a082310000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xeb02c301000000000000000000000000000000007afcd55b2d718db3d0111116e15702ee"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xeb02c301000000000000000000000000000000001bb431a5d6b3c5d1df16ba6db39a760b"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xeb02c30100000000000000000000000000000000d2e73d9aa700f375c8c08e865b4d750e"
+        },
+        "0x18e60b1"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "product": "liquity",
+      "address": "0xe7aa2ba9e086a379d3beb224098bc634a46e314e",
+      "signature": "fetchPrice()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000000000b4146219d61bb60c380000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "product": "liquity",
+      "address": "0xe7aa2ba9e086a379d3beb224098bc634a46e314e",
+      "signature": "lastGoodPrice()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000000000b407f60e3e8f05a7e9"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "signature": "getUserAccountData(address)",
+      "argument": "0000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "signature": "getUserAccountData(address)",
+      "argument": "0000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0xcd9f5907f92818bc06c9ad70217f089e190d2a32",
+      "signature": "balanceOf(address)",
+      "argument": "0000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x000000000000000000000000000000000000000000000000000000146ff67d12"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "signature": "balanceOf(address)",
+      "argument": "0000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "signature": "balanceOf(address)",
+      "argument": "0000000000000000000000003d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x000000000000000000000000000000000000000000000000017b3887fd5c3c3a"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "getPosition(uint256)",
+      "argument": "000000000000000000000000000000007afcd55b2d718db3d0111116e15702ee",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x000000000000000000000000000000000000000000000000000000006ab453230000000000000000000000000000000000000000000000050bb04d8b9737322a0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "getPosition(uint256)",
+      "argument": "000000000000000000000000000000001bb431a5d6b3c5d1df16ba6db39a760b",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "result": "0x000000000000000000000000000000000000000000000000000000006ab453230000000000000000000000000000000000000000000000017670bf96e8818d2f0000000000000000000000000000000000000000000000000000000000000001"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "getPosition(uint256)",
+      "argument": "00000000000000000000000000000000d2e73d9aa700f375c8c08e865b4d750e",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "result": "0x000000000000000000000000000000000000000000000000000000006ab4532300000000000000000000000000000000000000000000000175a4b7871e4425c20000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "roycoPositions": [
+    {
+      "positionId": "163478601671182982890720206633991340782",
+      "value_wstETH": 93.07597876079882,
+      "isDebt": false,
+      "isStale": true
+    },
+    {
+      "positionId": "36824776297893515328125497271945688587",
+      "value_wstETH": 26.981276022443446,
+      "isDebt": true,
+      "isStale": true
+    },
+    {
+      "positionId": "280338549168961874788548616634684503310",
+      "value_wstETH": 26.923846263283917,
+      "isDebt": false,
+      "isStale": true
+    }
+  ],
+  "roycoBaseTokens": [
+    {
+      "token": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "value_wstETH": 0.10674117289575942
+    },
+    {
+      "token": "0x00000000efe302beaa2b3e6e1b18d08d69a9012a",
+      "value_wstETH": 0.0
+    },
+    {
+      "token": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "value_wstETH": 0.055764926188024165
+    },
+    {
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "value_wstETH": 0.0
+    },
+    {
+      "token": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+      "value_wstETH": 0.0
+    }
+  ]
+}

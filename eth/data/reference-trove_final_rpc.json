@@ -1,0 +1,635 @@
+{
+  "url": "https://eth-mainnet.public.blastapi.io",
+  "observed_at": "2026-10-04T12:40:33.240736+00:00",
+  "block": 26108081,
+  "troveId": "10851767869639799745630534548176706472384436299647911680437434736210555500720",
+  "requests": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xa2895d6a3bf110561dfe4b71ca539d84e1928b22",
+          "data": "0xaad3f40417fde209476c98d24130b7aeb255ce752bced0de896f10ad8ea519bad6dcf8b0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xa2895d6a3bf110561dfe4b71ca539d84e1928b22",
+          "data": "0xe47bfaf117fde209476c98d24130b7aeb255ce752bced0de896f10ad8ea519bad6dcf8b0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xa2895d6a3bf110561dfe4b71ca539d84e1928b22",
+          "data": "0x5ef3b8bf17fde209476c98d24130b7aeb255ce752bced0de896f10ad8ea519bad6dcf8b0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54",
+          "data": "0x741bef1a"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54",
+          "data": "0x794e5724"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54",
+          "data": "0x5733d58f"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54",
+          "data": "0x31b8c946"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xda68cf8b"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x27f99dfe"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xbf7e214f"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 11,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x35269315"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 12,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x4bcf391d"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 13,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xd98964f1"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 14,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x1c364fd1"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 15,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x740c0c44"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 16,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x9117844f"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 17,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xfc23975e"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 18,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x8fb36037"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 19,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x64093da5"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 20,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xcc24fde9"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 21,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x2e607801"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 22,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0xc79630e0"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 23,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x884b3793"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 24,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x96dd6531"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 25,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x7b103999"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 26,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x2bbca157"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 27,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+          "data": "0x098ce9f0"
+        },
+        "0x18e60b1"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "product": "liquity",
+      "address": "0xa2895d6a3bf110561dfe4b71ca539d84e1928b22",
+      "signature": "getLatestTroveData(uint256)",
+      "argument": "17fde209476c98d24130b7aeb255ce752bced0de896f10ad8ea519bad6dcf8b0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000000595ce29e08536dae7bdd90000000000000000000000000000000000000000000000f894592b6e507888400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c585c93fb739f74520000000000000000000000000000000000000000000595c1d183f13b67484987000000000000000000000000000000000000000000000000005a981d69c5c001000000000000000000000000000001f9f7b3027acf7c33d63ed21bc5925089870000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ab68b67"
+      }
+    },
+    {
+      "product": "liquity",
+      "address": "0xa2895d6a3bf110561dfe4b71ca539d84e1928b22",
+      "signature": "getTroveStatus(uint256)",
+      "argument": "17fde209476c98d24130b7aeb255ce752bced0de896f10ad8ea519bad6dcf8b0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+      }
+    },
+    {
+      "product": "liquity",
+      "address": "0xa2895d6a3bf110561dfe4b71ca539d84e1928b22",
+      "signature": "getTroveAnnualInterestRate(uint256)",
+      "argument": "17fde209476c98d24130b7aeb255ce752bced0de896f10ad8ea519bad6dcf8b0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x000000000000000000000000000000000000000000000000005a981d69c5c001"
+      }
+    },
+    {
+      "product": "liquity",
+      "address": "0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54",
+      "signature": "priceFeed()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x000000000000000000000000e7aa2ba9e086a379d3beb224098bc634a46e314e"
+      }
+    },
+    {
+      "product": "liquity",
+      "address": "0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54",
+      "signature": "MCR()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x00000000000000000000000000000000000000000000000010a741a462780000"
+      }
+    },
+    {
+      "product": "liquity",
+      "address": "0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54",
+      "signature": "CCR()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x00000000000000000000000000000000000000000000000016345785d8a00000"
+      }
+    },
+    {
+      "product": "liquity",
+      "address": "0x8d733f7ea7c23cbea7c613b6ebd845d46d3aac54",
+      "signature": "collToken()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "accountingToken()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "allowedInstrRoot()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "result": "0x08b6afaf7f1e86254f0a59f5f46995494586b1091fe60c75f44b6b771a7f8a8a"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "authority()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "result": "0x0000000000000000000000000fcefa3f1047f35521a49cd8b06fabd588665d7f"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "cooldownDuration()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "result": "0x000000000000000000000000000000000000000000000000000000000000003c"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "getBaseTokensLength()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 12,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000005"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "getDetailedAum()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 13,
+        "result": "0x0000000000000000000000000000000000000000000000050d259beb72b2f85e000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000002c000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001a00000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000007afcd55b2d718db3d0111116e15702ee0000000000000000000000000000000000000000000000050bb04d8b9737322a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000001bb431a5d6b3c5d1df16ba6db39a760b0000000000000000000000000000000000000000000000017670bf96e8818d2f00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000d2e73d9aa700f375c8c08e865b4d750e00000000000000000000000000000000000000000000000175a4b7871e4425c200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000500000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000001c0000000000000000000000000000000000000000000000000000000000000022000000000000000000000000000000000000000000000000000000000000000400000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0000000000000000000000000000000000000000000000000017b3887fd5c3c3a000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000efe302beaa2b3e6e1b18d08d69a9012a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e800000000000000000000000000000000000000000000000000c61de7a85cf1670000000000000000000000000000000000000000000000000000000000000040000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000dc035d45d973e3ec169d2276ddab16f1e407384f0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "getNetAum()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "error": {
+          "code": 3,
+          "message": "execution reverted",
+          "data": "0x2b20152a000000000000000000000000000000007afcd55b2d718db3d0111116e15702ee"
+        }
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "getPositionsLength()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 15,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000003"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "hubMachineEndpoint()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 16,
+        "result": "0x0000000000000000000000000fdf9f1920e160ea8ae267bde13e725def81e5ee"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "isAccountingFresh()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 17,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "isConsumingScheduledOp()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 18,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "maxPositionDecreaseLossBps()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 19,
+        "result": "0x00000000000000000000000000000000000000000000000000000000000001f4"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "maxPositionIncreaseLossBps()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 20,
+        "result": "0x000000000000000000000000000000000000000000000000000000000000012c"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "maxSwapLossBps()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 21,
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000c8"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "pendingAllowedInstrRoot()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 22,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "pendingTimelockExpiry()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 23,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "positionStaleThreshold()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 24,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000002a30"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "registry()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 25,
+        "result": "0x0000000000000000000000000faeeceab0bcb63be2fe984ea8c77778989d53ea"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "timelockDuration()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 26,
+        "result": "0x000000000000000000000000000000000000000000000000000000000002a300"
+      }
+    },
+    {
+      "product": "royco",
+      "address": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "signature": "weirollVm()",
+      "argument": "",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 27,
+        "result": "0x000000000000000000000000fd162a672928bf40e5a81f0d11501d2849841fa6"
+      }
+    }
+  ]
+}

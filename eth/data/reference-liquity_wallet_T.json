@@ -1,0 +1,125 @@
+{
+  "url": "https://eth-mainnet.public.blastapi.io",
+  "block": 26108081,
+  "snapshot": "2026-10-02T23:59:59Z",
+  "observed_at": "2026-10-04T12:58:01.792639+00:00",
+  "requests": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "data": "0x70a08231000000000000000000000000b9e806e8f2d94c015ffefa90cd24ecce18f1663c"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "data": "0x70a08231000000000000000000000000b9e806e8f2d94c015ffefa90cd24ecce18f1663c"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae78736cd615f374d3085123a210448e74fc6393",
+          "data": "0x70a08231000000000000000000000000b9e806e8f2d94c015ffefa90cd24ecce18f1663c"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x6440f144b7e50d6a8439336510312d2f54beb01d",
+          "data": "0x70a08231000000000000000000000000b9e806e8f2d94c015ffefa90cd24ecce18f1663c"
+        },
+        "0x18e60b1"
+      ]
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+          "data": "0x70a08231000000000000000000000000b9e806e8f2d94c015ffefa90cd24ecce18f1663c"
+        },
+        "0x18e60b1"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "symbol": "WETH",
+      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "decimals": 18,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000000000104cc062279d8f5ed7"
+      },
+      "balance": 300.6784334440505
+    },
+    {
+      "symbol": "wstETH",
+      "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "decimals": 18,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "balance": 0.0
+    },
+    {
+      "symbol": "rETH",
+      "address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "decimals": 18,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "balance": 0.0
+    },
+    {
+      "symbol": "ebUSD",
+      "address": "0x6440f144b7e50d6a8439336510312d2f54beb01d",
+      "decimals": 18,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x0000000000000000000000000000000000000000000000001a7a6342967efacc"
+      },
+      "balance": 1.907946529788722
+    },
+    {
+      "symbol": "USDC",
+      "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "decimals": 6,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "balance": 0.0
+    }
+  ]
+}

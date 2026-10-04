@@ -1,0 +1,292 @@
+{
+  "financialTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "steth_1727740799_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x13e6766"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1727740799,
+      "block": 20866918,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000000000001061b07bb9f9bdde"
+      }
+    },
+    {
+      "label": "steth_1735689599_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x1487582"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1735689599,
+      "block": 21525890,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000000000001081547ef28ea20e"
+      }
+    },
+    {
+      "label": "steth_1743465599_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x1524ade"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1743465599,
+      "block": 22170334,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x00000000000000000000000000000000000000000000000010a1495658d531be"
+      }
+    },
+    {
+      "label": "steth_1751327999_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x15c3741"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1751327999,
+      "block": 22820673,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x00000000000000000000000000000000000000000000000010bfd5f1b911e107"
+      }
+    },
+    {
+      "label": "steth_1759276799_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x16643cb"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1759276799,
+      "block": 23479243,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x00000000000000000000000000000000000000000000000010dceffa8e67b9b0"
+      }
+    },
+    {
+      "label": "steth_1767225599_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x1704974"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1767225599,
+      "block": 24136052,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x00000000000000000000000000000000000000000000000010f9e37acf45e2bb"
+      }
+    },
+    {
+      "label": "steth_1775001599_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x17a20e2"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1775001599,
+      "block": 24781026,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x00000000000000000000000000000000000000000000000011147493c2244e01"
+      }
+    },
+    {
+      "label": "steth_1782863999_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x1841752"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1782863999,
+      "block": 25433938,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x000000000000000000000000000000000000000000000000112f4c4d370baecb"
+      }
+    },
+    {
+      "label": "steth_1788393599_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x18b18bb"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1788393599,
+      "block": 25893051,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "result": "0x000000000000000000000000000000000000000000000000114063c8f35d3000"
+      }
+    },
+    {
+      "label": "steth_1789775999_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x18cd91b"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1789775999,
+      "block": 26007835,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "result": "0x0000000000000000000000000000000000000000000000001144bf5658954ce9"
+      }
+    },
+    {
+      "label": "steth_1790380799_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x18d9cb0"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1790380799,
+      "block": 26057904,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000000000001146a6fda287dfdd"
+      }
+    },
+    {
+      "label": "steth_1790812799_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x18e28a9"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1790812799,
+      "block": 26093737,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x000000000000000000000000000000000000000000000000114804c90062efa9"
+      }
+    },
+    {
+      "label": "steth_1790985599_getPooledEthByShares(uint256)",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "getPooledEthByShares(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+          "data": "0x7a28fb880000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "productKey": "steth_benchmark",
+      "timestamp": 1790985599,
+      "block": 26108081,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x00000000000000000000000000000000000000000000000011488e69066f1de8"
+      }
+    }
+  ]
+}

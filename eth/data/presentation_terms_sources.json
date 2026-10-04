@@ -1,0 +1,509 @@
+{
+  "schema_version": 1,
+  "title": "Managed ETH product terms and controls: presentation review",
+  "observed_at_utc": "2026-10-04T10:30:11Z",
+  "snapshot_reference": "2026-10-02T23:59:59Z",
+  "status": "Publisher disclosures reviewed; deployed controls and legal rights remain explicitly scoped",
+  "financial_snapshot_changed": false,
+  "method": "Opened official publisher pages directly. Fresh disclosures are a separate presentation layer and do not change frozen T quantities. Quotations limited to at most 25 words per publisher site. No transaction, wallet connection, simulation or account access.",
+  "sources": [
+    {
+      "id": "TS01",
+      "product": "etherfi-liquid-eth",
+      "title": "Typical Liquid withdrawal timelines",
+      "url": "https://help.ether.fi/en/articles/269720-typical-liquid-withdrawal-timelines",
+      "publisher": "ether.fi",
+      "evidence_type": "current_support_disclosure",
+      "quote": "estimated processing time, not a guaranteed deadline",
+      "facts": [
+        "The current support estimate for Liquid ETH is up to 3 days.",
+        "Timing depends on available liquidity, queue demand, strategy operations and settlement.",
+        "A completed historical withdrawal does not guarantee the timing of the next request."
+      ],
+      "scope": "Observed support policy, not the withdrawal queue's deployed state at snapshot T.",
+      "unresolved": [
+        "No successful withdrawal was executed or simulated in this review.",
+        "No independent percentile distribution of completed withdrawal times was reconstructed."
+      ]
+    },
+    {
+      "id": "TS02",
+      "product": "etherfi-liquid-eth",
+      "title": "How to Withdraw From Liquid",
+      "url": "https://help.ether.fi/en/articles/284654-how-to-withdraw-from-liquid",
+      "publisher": "ether.fi",
+      "evidence_type": "current_support_disclosure",
+      "published_date": "2026-04-01",
+      "quote": null,
+      "facts": [
+        "The user selects Earn, selects the vault, enters an amount and submits a withdrawal transaction.",
+        "The guide says processed proceeds arrive automatically without a manual claim.",
+        "The Liquid ETH example asks the user to choose a requested output asset such as wETH or weETH."
+      ],
+      "scope": "Front-end workflow. This does not prove the same assets are enabled in every underlying queue contract.",
+      "unresolved": [
+        "The older guide uses deadline language that is stronger than the newer explicit estimate.",
+        "The exact wETH route differs from the weETH-only checked queue at T and needs a route-level simulation."
+      ]
+    },
+    {
+      "id": "TS03",
+      "product": "etherfi-liquid-eth",
+      "title": "How Liquid works",
+      "url": "https://help.ether.fi/en/articles/517109-how-liquid-works",
+      "publisher": "ether.fi",
+      "evidence_type": "current_support_disclosure",
+      "published_date": "2026-08-11",
+      "quote": null,
+      "facts": [
+        "Liquid automates allocation, rebalancing and compounding.",
+        "A strategy can touch several protocols, so protocol exposure percentages may exceed 100%.",
+        "The support guide says Liquid is unavailable in the United States, Canada and the United Kingdom.",
+        "Vault-specific platform fees are disclosed in the vault fact sheet; a generic product fee range is not an ETH vault rate."
+      ],
+      "scope": "General Liquid UI policy. Do not replace the 35 bp rate verified at T with the generic fee range.",
+      "unresolved": [
+        "The product-specific contemporary fact sheet was not separately captured in this review.",
+        "Jurisdiction policy and enforceable user-specific eligibility are distinct."
+      ]
+    },
+    {
+      "id": "TS04",
+      "product": "etherfi-liquid-eth",
+      "title": "Terms of Use",
+      "url": "https://www.ether.fi/legal/terms-of-use",
+      "publisher": "ether.fi",
+      "evidence_type": "current_legal_text",
+      "quote": null,
+      "facts": [
+        "Section 4 says Liquid assets are placed into Veda vaults and allocated to other DeFi protocols.",
+        "The terms incorporate Veda's separate terms for Liquid vault services.",
+        "The provider reserves the ability to alter its price plan and fees.",
+        "The terms disclaim fiduciary obligations and allow interface/service access to be suspended or ended.",
+        "Points are described as a limited licence, with no contractual currency equivalent or redemption entitlement."
+      ],
+      "scope": "Summary of publisher terms, not a legal opinion or a finding that every disclaimer is enforceable.",
+      "unresolved": [
+        "Veda's incorporated terms were not separately reviewed.",
+        "The legal terms do not identify the actual holders of Liquid ETH on-chain permissions.",
+        "No promise of redemption by a fixed date was established."
+      ]
+    },
+    {
+      "id": "TS05",
+      "product": "etherfi-liquid-eth",
+      "title": "Veda Core Components",
+      "url": "https://docs.veda.tech/architecture-and-flow-of-funds/core-components",
+      "publisher": "Veda",
+      "evidence_type": "current_architecture_disclosure",
+      "quote": "Users can cancel unfulfilled requests at any time to reclaim their shares.",
+      "facts": [
+        "The BoringVault holds assets and executes calls; modules enforce the surrounding rules.",
+        "The Teller uses the Accountant rate for minting and redemption, with deployment-specific share locks.",
+        "The Accountant receives off-chain rate updates with frequency and deviation bounds; bounds can pause updates.",
+        "The Manager verifies permitted targets, functions and parameters against per-strategist Merkle trees.",
+        "The BoringQueue transfers requested shares to the queue, waits for maturity and lets solvers exchange underlying assets for those shares.",
+        "Queue maturity, solver deadline and discount range are configurable by asset."
+      ],
+      "scope": "Framework description. Cancellation and module controls need confirmation against the exact deployed Liquid ETH variants before being promised to users.",
+      "unresolved": [
+        "This fresh document review alone does not map every authorised actor, Merkle-root updater, pause key, fee setter or bypass path. Use the separate fixed-block capability reconstruction for those facts.",
+        "The 24-hour authority-owner timelock verified at T must not be treated as a universal delay on every fee, rate or pause action."
+      ]
+    },
+    {
+      "id": "TS06",
+      "product": "fluid-lite",
+      "title": "Getting Started With Fluid Lite",
+      "url": "https://lite.guides.instadapp.io/getting-started/getting-started-with-fluid-lite",
+      "publisher": "Fluid / Instadapp",
+      "evidence_type": "current_user_guide",
+      "quote": null,
+      "facts": [
+        "Users select the deposited vault, choose Withdraw, enter the ETH/stETH amount and confirm in their wallet.",
+        "The user guide presents the return as a transfer to the wallet after confirmation.",
+        "The guide discloses a 0.05% exit fee directed to the DAO."
+      ],
+      "scope": "Published user workflow. Instant language must be qualified by pause and liquidity conditions documented separately.",
+      "unresolved": [
+        "No large exit was simulated, including the unwind routes needed to deliver native ETH.",
+        "The guide does not establish a management/performance fee of zero.",
+        "Current displayed fee policy is not the full historical fee ledger."
+      ]
+    },
+    {
+      "id": "TS07",
+      "product": "fluid-lite",
+      "title": "Risks",
+      "url": "https://lite.guides.instadapp.io/information/risks",
+      "publisher": "Fluid / Instadapp",
+      "evidence_type": "current_risk_disclosure",
+      "quote": "Rebalancers do not have the ability to withdraw funds from the vault.",
+      "facts": [
+        "DAO governance sets parameters and leverage ranges and can approve or remove protocols.",
+        "Governance appoints permissioned rebalancers, who can leverage and refinance within configured limits.",
+        "The team multisig can reduce a protocol ratio, pause withdrawals temporarily and pause rebalancing.",
+        "The page identifies the team multisig as 0xa8c31E39e40E6765BEdBd83D92D6AA0B33f1CCC5 and says it cannot withdraw or move vault funds.",
+        "Automation may refinance or sell collateral to repay debt; deleveraging can crystallise slippage losses.",
+        "The page asks users to accept parameter, setting and code changes."
+      ],
+      "scope": "Publisher description of governance and emergency roles, not a complete deployed access-control proof.",
+      "unresolved": [
+        "Safe threshold, owners, timelock and function-selector permissions were not independently mapped here.",
+        "Permission to alter modules or fees was not established from this page.",
+        "Underlying-protocol governance adds separate controls."
+      ]
+    },
+    {
+      "id": "TS08",
+      "product": "treehouse-teth",
+      "title": "Redemption Process",
+      "url": "https://docs.treehouse.finance/protocol/tasset/architecture/redemption-process",
+      "publisher": "Treehouse",
+      "evidence_type": "current_user_and_architecture_disclosure",
+      "quote": null,
+      "facts": [
+        "The fetched current page defines the Curve redemption band as 0 to 50 wstETH.",
+        "Within the band, the dApp can route redemption through a tETH/wstETH Curve swap.",
+        "Above the band, normal redemption burns tETH and leads to a wstETH claim after approximately 7 days.",
+        "The estimated front-end payout is adjusted by the lower tETH/wstETH rate and a minimum/maximum underlying conversion ratio across initiation and finalisation.",
+        "Normal redemption charges 5 bp to cover interest during the wait.",
+        "Unwinding can include LST redemption to native ETH and loan repayment before wstETH becomes claimable.",
+        "The redemption band is a governance-controlled parameter.",
+        "Fastlane is capacity limited and the fetched current page discloses a 0.5% fee in the redeemed asset."
+      ],
+      "scope": "Current policy and formula disclosure. Search-index versions showing a 200 wstETH band or 2% Fastlane are stale relative to the opened page.",
+      "unresolved": [
+        "No fixed-block getter for the band, fee and delay was independently checked here.",
+        "The page's numerical worked example mixes a 200 tETH narrative with 50 in the formula and inconsistent subtraction; use the symbolic formula only.",
+        "A Curve sale also requires a market quote and slippage, separate from queued redemption fees."
+      ]
+    },
+    {
+      "id": "TS09",
+      "product": "treehouse-teth",
+      "title": "Fees",
+      "url": "https://docs.treehouse.finance/protocol/tasset/architecture/fees",
+      "publisher": "Treehouse",
+      "evidence_type": "current_fee_disclosure",
+      "quote": "Only applied when MEY is positive.",
+      "facts": [
+        "The performance policy is 20% of positive Market Effective Yield.",
+        "The fee is collected in the base pool token before a profit/loss rebase.",
+        "The fetched current Fastlane policy is 0.5% in the underlying LST.",
+        "The documentation says Pendle YT-tETH and LP-tETH redemptions are automatically routed through Fastlane."
+      ],
+      "scope": "Policy disclosure. MEY is not automatically equivalent to all staking income; integration-specific actual routes still need verification.",
+      "unresolved": [
+        "Historical fee changes and deployed route-specific rates remain open."
+      ]
+    },
+    {
+      "id": "TS10",
+      "product": "treehouse-teth",
+      "title": "Timelock",
+      "url": "https://docs.treehouse.finance/protocol/tasset/security/timelock",
+      "publisher": "Treehouse",
+      "evidence_type": "current_governance_disclosure",
+      "quote": null,
+      "facts": [
+        "The documentation describes a five-day timelock for critical governance actions, including vault logic upgrades and fee changes.",
+        "It says upcoming changes are visible on-chain before execution."
+      ],
+      "scope": "General governance description. It is not independent confirmation of the implementation, actor set or every emergency exception.",
+      "unresolved": [
+        "The exact timelock contract, proposer/executor/canceller members, proxy admin and pause rights remain unmapped.",
+        "A five-day notice window is shorter than the approximately seven-day normal exit estimate; notice does not establish a completed exit before change. This comparison is an analytical inference."
+      ]
+    },
+    {
+      "id": "TS11",
+      "product": "treehouse-teth",
+      "title": "Safety Mechanisms",
+      "url": "https://docs.treehouse.finance/protocol/tasset/architecture/safety-mechanisms",
+      "publisher": "Treehouse",
+      "evidence_type": "current_risk_control_disclosure",
+      "quote": null,
+      "facts": [
+        "Protocol-owned peg support can use insurance-fund ETH to purchase and burn tETH.",
+        "The page describes assistance for some daily rebalancing shortfalls.",
+        "Risk-event compensation is described as potential, with coverage decisions initially made by the protocol and future governance."
+      ],
+      "scope": "Disclosed support mechanisms; they are not a blanket insurance promise.",
+      "unresolved": [
+        "Fund size, actual deployed coverage limits and enforceable claimant rights were not independently verified."
+      ]
+    },
+    {
+      "id": "TS12",
+      "product": "cian-rseth",
+      "title": "Core Concepts & Yield Layer Page Overview",
+      "url": "https://docs.cian.app/yieldlayer/for-users-quick-start/core-concepts-and-yield-layer-page-overview",
+      "publisher": "CIAN",
+      "evidence_type": "current_user_guide",
+      "quote": null,
+      "facts": [
+        "The guide links recursive restaking to the Ethereum rsETH vault 0xd87a19fF681AE98BF10d2220D1AE3Fbd374ADE4e.",
+        "The general withdrawal flow is a signed request that transfers the corresponding receipt token; receipt of withdrawn assets is estimated at about 5 days.",
+        "An Airdrop tag may include projected point estimates; borrowing costs are charged in real time and principal may temporarily decline."
+      ],
+      "scope": "Generic Yield Layer workflow with a linked rsETH identity. It is not a guaranteed five-day settlement for this deployed vault under all conditions.",
+      "unresolved": [
+        "The exact withdrawal output asset, redemption-operator execution conditions and completion distribution remain open.",
+        "rsETH-to-ETH recovery is a separate underlying step."
+      ]
+    },
+    {
+      "id": "TS13",
+      "product": "cian-rseth",
+      "title": "Fees",
+      "url": "https://docs.cian.app/yieldlayer/for-users-quick-start/fees",
+      "publisher": "CIAN",
+      "evidence_type": "current_fee_disclosure",
+      "quote": null,
+      "facts": [
+        "The policy is an 8% performance fee on profits.",
+        "Displayed Net APY already accounts for the performance fee.",
+        "The performance fee is continuous; the 0.02% exit fee applies once to NAV and is retained in the vault."
+      ],
+      "scope": "General Yield Layer policy, not a deployment-specific current or historical getter.",
+      "unresolved": [
+        "The fee example does not provide a complete fee-accrual algorithm or time series.",
+        "Actual contract overrides need checking rather than repeating the policy as an on-chain fact."
+      ]
+    },
+    {
+      "id": "TS14",
+      "product": "cian-rseth",
+      "title": "CIAN Yield Layer Tech Docs",
+      "url": "https://docs.cian.app/yieldlayer/for-builders-developer-documentation/cian-yield-layer-tech-docs",
+      "publisher": "CIAN",
+      "evidence_type": "current_api_schema_disclosure",
+      "quote": "The TVL in USD after leverage.",
+      "facts": [
+        "tvl_usd is documented as TVL after leverage; net_tvl_usd as user-deposited TVL.",
+        "APY fields distinguish receipt-price income, estimated point income and ecosystem income; CIAN points are excluded from the documented APY breakdown.",
+        "fee_info.exit is an initial policy fee; fee_info.exit_override is the actual exit fee applied by the contract.",
+        "Deposit capacity and minimum deposit/withdrawal limits are described as front-end limits.",
+        "The documented withdrawal ABI is requestRedeem(uint256 _shares).",
+        "Pending and confirmed withdrawal API endpoints are separate."
+      ],
+      "scope": "Schema semantics. Sample payloads are examples, not fresh observations of the rsETH vault.",
+      "unresolved": [
+        "No sample financial values were imported into the frozen T edition.",
+        "Current rsETH-specific fee_override, pending requests and payout records were not queried in this review."
+      ]
+    },
+    {
+      "id": "TS15",
+      "product": "cian-rseth",
+      "title": "Yield Layer Value Proposition",
+      "url": "https://docs.cian.app/yieldlayer/for-users-quick-start/yield-layer-value-proposition",
+      "publisher": "CIAN",
+      "evidence_type": "current_architecture_disclosure",
+      "quote": null,
+      "facts": [
+        "The disclosed multisig role sets allocation ratios and transfers funds between the vault and strategies.",
+        "The RedeemOperator records and processes withdrawal requests in batches.",
+        "The architecture includes time-locked allocation parameters.",
+        "The documentation's example totalAssets calculation can revert when the published price is older than its configured validity period."
+      ],
+      "scope": "General architecture; the linked example is the stETH vault and must not be treated as the exact rsETH deployment's complete control map.",
+      "unresolved": [
+        "The linked GitHub technical document returned 404 in this review.",
+        "rsETH pause, upgrade, fee-setting actors, signature threshold and timelock delay remain unverified."
+      ]
+    },
+    {
+      "id": "TS16",
+      "product": "concrete-eth",
+      "title": "Terms of Use",
+      "url": "https://concrete.xyz/terms",
+      "publisher": "Concrete",
+      "evidence_type": "current_legal_text",
+      "published_date": "2026-09-29",
+      "quote": "The Withdrawal Period may vary from Vault to Vault.",
+      "facts": [
+        "For application, vault and strategy services, the named contracting entity is Concrete Network Services Ltd, a British Virgin Islands company.",
+        "Product-specific vault terms are incorporated into the general terms.",
+        "Vaults may impose lockups, unbonding, cooldowns or gates, with asset values continuing to fluctuate during restrictions.",
+        "Concrete may deprecate a vault and provide a designated claim window, after which holdings may migrate, rewards may be forfeited and transfer costs may arise.",
+        "Pricing is described as subject to change and additional transaction or strategy fees may apply."
+      ],
+      "scope": "Summary of publisher terms, not legal advice. Permissioned product-specific agreements may add or control economic redemption rights.",
+      "unresolved": [
+        "The definitive ctDeltaWeETH and ctwstETH Plus agreements, fee schedules and beneficial ownership records were not available.",
+        "General terms do not establish current upgrade, pause or fee-setting addresses for either deployed vault."
+      ]
+    },
+    {
+      "id": "TS17",
+      "product": "concrete-eth",
+      "title": "Disclaimers",
+      "url": "https://concrete.xyz/disclaimers",
+      "publisher": "Concrete",
+      "evidence_type": "current_legal_disclosure",
+      "quote": null,
+      "facts": [
+        "Products may require eligibility review and definitive agreements.",
+        "The page says executed agreements or product-specific disclosures control when they conflict with website information.",
+        "Aggregate platform processing metrics may be cumulative historical activity and are not independently audited or verified.",
+        "Target yields are not guaranteed."
+      ],
+      "scope": "Publisher caveats that support distinguishing managed AUM, processed volume and verified external capital.",
+      "unresolved": [
+        "These caveats do not independently prove or disprove the physical backing of the two ETH vaults."
+      ]
+    },
+    {
+      "id": "TS18",
+      "product": "concrete-eth",
+      "title": "Earn catalogue",
+      "url": "https://app.concrete.xyz/earn",
+      "publisher": "Concrete",
+      "evidence_type": "current_catalogue_observation",
+      "quote": null,
+      "facts": [
+        "The WeETH Vault is labelled permissioned, with private APY and Concrete as curator.",
+        "The catalogue defines its total volume as deposits plus transfers plus withdrawals.",
+        "The list distinguishes live products from completed campaigns."
+      ],
+      "scope": "Observed 4 October 2026. Current dollar amounts are deliberately not imported into T metrics.",
+      "unresolved": [
+        "The fetched catalogue did not expose the permissioned weETH product's full fee and redemption agreement.",
+        "Public catalogue visibility does not establish public deposit availability."
+      ]
+    },
+    {
+      "id": "TS19",
+      "product": "concrete-eth",
+      "title": "Concrete Upgradable Multisig and Queue Changes security assessment",
+      "url": "https://docs.concrete.xyz/assets/files/Upgradable-Multisig-and-Queue-Changes-140d08a81b2b4164f47d38a3227ebae9.pdf/",
+      "publisher": "Halborn report hosted by Concrete",
+      "evidence_type": "primary_security_assessment",
+      "assessment_period": "2025-09-17/2025-09-29",
+      "quote": null,
+      "facts": [
+        "The reviewed code includes configurable whitelist controls, strategy allocation, fees and multisignature custody.",
+        "The maxRedeem finding says a queue-mode maximum share redemption is not a promise of immediate liquidity and delivered assets are reduced by withdrawal fees.",
+        "The disclosed code can return zero redeemable shares when paused, withdrawals are paused or the user is not whitelisted."
+      ],
+      "scope": "Only the reviewed commit and contracts in the audit. The dossier's two products execute ConcreteInitMintableAsyncVaultImpl / ConcreteAsyncVaultImpl; equivalence to the audited ConcreteMultiStrategyVault was not established.",
+      "unresolved": [
+        "Do not label the described audit findings as active bugs in either ETH product without code matching.",
+        "The audit cannot substitute for product-specific executed withdrawal rights."
+      ]
+    },
+    {
+      "id": "TS20",
+      "product": "options-example",
+      "title": "Ribbon Theta vaults architecture",
+      "url": "https://docs.ribbon.finance/theta-vault/ribbon-v2",
+      "publisher": "Ribbon Finance",
+      "evidence_type": "historical_primary_architecture",
+      "quote": null,
+      "facts": [
+        "The documented ETH call vault locks ETH as option collateral, auctions call options and receives ETH premiums from buyers.",
+        "An in-the-money settlement returns less ETH collateral, while an out-of-the-money settlement releases the collateral.",
+        "Standard exits use initiateWithdraw and completeWithdraw after weekly rollover; instant exits only cover unused pending deposits.",
+        "The owner can set fees, fee recipient and deposit cap and controls lifecycle actions; the admin can upgrade the implementation; both roles are documented as multisigs."
+      ],
+      "scope": "A documented historical example of ETH volatility selling, not a verified active product or quantified market segment at T.",
+      "unresolved": [
+        "Current activity, current configuration and complete T capital/history were not verified.",
+        "Do not count option notional as ETH principal."
+      ]
+    },
+    {
+      "id": "TS21",
+      "product": "options-example",
+      "title": "DOV Trading and options",
+      "url": "https://docs.ribbon.finance/faq/dov-trading-and-options",
+      "publisher": "Ribbon Finance",
+      "evidence_type": "historical_primary_fee_and_method_disclosure",
+      "quote": "in the money weeks are excluded",
+      "facts": [
+        "The documented fee schedule is 2% annual management and 10% performance in profitable weeks; the FAQ says fees are included in displayed performance.",
+        "The projected APY uses an average of four annualised weekly observations but excludes in-the-money weeks.",
+        "Call settlements use the collateral asset and the FAQ says the strategy is not delta neutral.",
+        "A vault share is not a fixed 1:1 claim on ETH."
+      ],
+      "scope": "Historical documentation, not a fresh active product quote. The APY definition is useful evidence of why premium yield must not be equated with total return.",
+      "unresolved": [
+        "Current deployment fees and operational availability remain unverified."
+      ]
+    },
+    {
+      "id": "TS22",
+      "product": "options-example",
+      "title": "How to withdraw",
+      "url": "https://docs.ribbon.finance/theta-vault/user-guides/how-to-withdraw",
+      "publisher": "Ribbon Finance",
+      "evidence_type": "historical_primary_user_guide",
+      "quote": null,
+      "facts": [
+        "A queued withdrawal remains exposed to that week's gains or losses.",
+        "The guide says queued requests cannot be cancelled.",
+        "LST vault withdrawals deliver their LST collateral rather than native ETH.",
+        "Completion time depends on settlement dispute periods and option auctions; deprecated vaults may require operator action."
+      ],
+      "scope": "Historical Ribbon workflow; not a promise about present operational availability.",
+      "unresolved": [
+        "No withdrawal or live vault interaction was performed."
+      ]
+    }
+  ],
+  "inferences": [
+    {
+      "id": "TI01",
+      "products": [
+        "treehouse-teth"
+      ],
+      "claim": "The advertised five-day governance notice is shorter than the estimated seven-day normal redemption path, so notice alone does not guarantee an exit completes before a change.",
+      "source_ids": [
+        "TS08",
+        "TS10"
+      ],
+      "type": "analytical_inference"
+    },
+    {
+      "id": "TI02",
+      "products": [
+        "fluid-lite"
+      ],
+      "claim": "The guide's instant withdrawal language should be read together with documented pause rights and deleveraging losses, rather than as an unconditional liquidity guarantee.",
+      "source_ids": [
+        "TS06",
+        "TS07"
+      ],
+      "type": "analytical_inference"
+    },
+    {
+      "id": "TI03",
+      "products": [
+        "options-example"
+      ],
+      "claim": "Option premiums pay the holder for transferring upside and volatility risk. A premiums-based projected APY that excludes loss-settlement weeks cannot stand in for matched-window realized ETH wealth.",
+      "source_ids": [
+        "TS20",
+        "TS21",
+        "TS22"
+      ],
+      "type": "analytical_inference"
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://docs.concrete.xyz/fees",
+      "result": "Opened official link returned no extractable text."
+    },
+    {
+      "url": "https://github.com/cian-ai/steth-yield-layer/blob/main/docs/Yield%20Layer%20Tech%20Documentation.md",
+      "result": "404 when opened from the official CIAN documentation."
+    },
+    {
+      "url": "https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code",
+      "result": "403; no fresh explorer code verification inferred."
+    }
+  ]
+}
