@@ -1,0 +1,388 @@
+{
+  "financialTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "yb_weth_1727740799_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x13e6766"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1727740799,
+      "block": 20866918,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x"
+      }
+    },
+    {
+      "label": "yb_weth_1735689599_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x1487582"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1735689599,
+      "block": 21525890,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x"
+      }
+    },
+    {
+      "label": "yb_weth_1743465599_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x1524ade"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1743465599,
+      "block": 22170334,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x"
+      }
+    },
+    {
+      "label": "yb_weth_1751327999_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x15c3741"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1751327999,
+      "block": 22820673,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x"
+      }
+    },
+    {
+      "label": "yb_weth_1759276799_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x16643cb"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1759276799,
+      "block": 23479243,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x"
+      }
+    },
+    {
+      "label": "yb_weth_1767225599_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x1704974"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1767225599,
+      "block": 24136052,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x"
+      }
+    },
+    {
+      "label": "yb_weth_1775001599_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x17a20e2"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1775001599,
+      "block": 24781026,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x"
+      }
+    },
+    {
+      "label": "yb_weth_1782863999_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x1841752"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1782863999,
+      "block": 25433938,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x00000000000000000000000000000000000000000000011027584d594cda981c00000000000000000000000000000000000000000000006c9efbc5e23da3a785"
+      }
+    },
+    {
+      "label": "yb_weth_1788393599_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x18b18bb"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1788393599,
+      "block": 25893051,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "result": "0x0000000000000000000000000000000000000000000002a05248455806dffc7c0000000000000000000000000000000000000000000001935397049153f63ff4"
+      }
+    },
+    {
+      "label": "yb_weth_1789775999_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x18cd91b"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1789775999,
+      "block": 26007835,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "result": "0x00000000000000000000000000000000000000000000023eaea7cc92de071bd6000000000000000000000000000000000000000000000146e1b690395922f25a"
+      }
+    },
+    {
+      "label": "yb_weth_1790380799_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x18d9cb0"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1790380799,
+      "block": 26057904,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x00000000000000000000000000000000000000000000023c0bbed0817ba26d75000000000000000000000000000000000000000000000144a7a6524a193ebcc9"
+      }
+    },
+    {
+      "label": "yb_weth_1790812799_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x18e28a9"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1790812799,
+      "block": 26093737,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x00000000000000000000000000000000000000000000023c0a0208adc948cfeb0000000000000000000000000000000000000000000001455fe0396a8191da88"
+      }
+    },
+    {
+      "label": "yb_weth_1790985599_updated_balances()",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "updated_balances()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xa6003118",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "productKey": "yb_weth",
+      "timestamp": 1790985599,
+      "block": 26108081,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x000000000000000000000000000000000000000000000231e2e1be3d9226302e00000000000000000000000000000000000000000000013c9f0702a4c931c207"
+      }
+    },
+    {
+      "label": "meth_staking_native",
+      "method": "eth_getBalance",
+      "params": [
+        "0xe3cbd06d7dadb3f4e6557bab7edd924cd1489e8f",
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x428232c4d53eaf7082b"
+      }
+    },
+    {
+      "label": "meth_unstake_manager_native",
+      "method": "eth_getBalance",
+      "params": [
+        "0x38fdf7b489316e03ed8754ad339cb5c4483fdcf9",
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x41c3b61ee962103f51"
+      }
+    },
+    {
+      "label": "meth_buffer_native",
+      "method": "eth_getBalance",
+      "params": [
+        "0x006fad88c35d973a87e451cf8d000c7e83dad409",
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x0"
+      }
+    },
+    {
+      "label": "yb_preview_1pct_raw_supply",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "preview_withdraw(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xf51dd4850000000000000000000000000000000000000000000000059e6dc705bc576c00",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x000000000000000000000000000000000000000000000005a6ed216bb04711dd"
+      }
+    },
+    {
+      "label": "yb_preview_10pct_raw_supply",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "preview_withdraw(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xf51dd4850000000000000000000000000000000000000000000000383049c6395b6a3804",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x000000000000000000000000000000000000000000000038852d847884aa9e3f"
+      }
+    },
+    {
+      "label": "yb_preview_30pct_raw_supply",
+      "address": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+      "signature": "preview_withdraw(uint256)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+          "data": "0xf51dd4850000000000000000000000000000000000000000000000a890dd52ac123ea80d",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "result": "0x0000000000000000000000000000000000000000000000a98eba352a7716ac94"
+      }
+    }
+  ]
+}

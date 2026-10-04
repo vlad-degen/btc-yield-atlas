@@ -1,0 +1,268 @@
+{
+  "financialTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "yearn_weth_withdraw_1pctNAV",
+      "address": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+      "signature": "withdraw(uint256,address,address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+          "data": "0xb460af94000000000000000000000000000000000000000000000003f48d3ade14bb0c590000000000000000000000008aacc947c2f4e24d2be4cba4498f004079f35d870000000000000000000000008aacc947c2f4e24d2be4cba4498f004079f35d87",
+          "gas": "0x1c9c380",
+          "from": "0x8aacc947c2f4e24d2be4cba4498f004079f35d87"
+        },
+        "0x18e60b1"
+      ],
+      "requestedPctNAV": 1,
+      "requestedWETH": 72.96203786360422,
+      "caller": "0x8aacc947c2f4e24d2be4cba4498f004079f35d87",
+      "denominator": "whole vault book totalAssets at T; frozen holder balance separately checked",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x000000000000000000000000000000000000000000000003bfab94a2e0f465e3"
+      }
+    },
+    {
+      "label": "yearn_weth_withdraw_10pctNAV",
+      "address": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+      "signature": "withdraw(uint256,address,address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+          "data": "0xb460af940000000000000000000000000000000000000000000000278d844caccf4e7b820000000000000000000000008aacc947c2f4e24d2be4cba4498f004079f35d870000000000000000000000008aacc947c2f4e24d2be4cba4498f004079f35d87",
+          "gas": "0x1c9c380",
+          "from": "0x8aacc947c2f4e24d2be4cba4498f004079f35d87"
+        },
+        "0x18e60b1"
+      ],
+      "requestedPctNAV": 10,
+      "requestedWETH": 729.6203786360422,
+      "caller": "0x8aacc947c2f4e24d2be4cba4498f004079f35d87",
+      "denominator": "whole vault book totalAssets at T; frozen holder balance separately checked",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000000000257cb3ce5cc98bfae2"
+      }
+    },
+    {
+      "label": "yearn_weth_withdraw_30pctNAV",
+      "address": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+      "signature": "withdraw(uint256,address,address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+          "data": "0xb460af94000000000000000000000000000000000000000000000076a88ce6066deb72880000000000000000000000008aacc947c2f4e24d2be4cba4498f004079f35d870000000000000000000000008aacc947c2f4e24d2be4cba4498f004079f35d87",
+          "gas": "0x1c9c380",
+          "from": "0x8aacc947c2f4e24d2be4cba4498f004079f35d87"
+        },
+        "0x18e60b1"
+      ],
+      "requestedPctNAV": 30,
+      "requestedWETH": 2188.861135908127,
+      "caller": "0x8aacc947c2f4e24d2be4cba4498f004079f35d87",
+      "denominator": "whole vault book totalAssets at T; frozen holder balance separately checked",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x000000000000000000000000000000000000000000000070761b6b165ca3f0a7"
+      }
+    },
+    {
+      "label": "autoeth_withdraw_1pctNAV",
+      "address": "0x0a2b94f6871c1d7a32fe58e1ab5e6dea2f114e56",
+      "signature": "withdraw(uint256,address,address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x0a2b94f6871c1d7a32fe58e1ab5e6dea2f114e56",
+          "data": "0xb460af94000000000000000000000000000000000000000000000004345a0f8eac93823600000000000000000000000060882d6f70857606cdd37729ccce882015d1755e00000000000000000000000060882d6f70857606cdd37729ccce882015d1755e",
+          "gas": "0x1c9c380",
+          "from": "0x60882d6f70857606cdd37729ccce882015d1755e"
+        },
+        "0x18e60b1"
+      ],
+      "requestedPctNAV": 1,
+      "requestedWETH": 77.55932103816954,
+      "caller": "0x60882d6f70857606cdd37729ccce882015d1755e",
+      "denominator": "whole vault book totalAssets at T; frozen holder balance separately checked",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x000000000000000000000000000000000000000000000004082aaafce14f02c0"
+      }
+    },
+    {
+      "label": "autoeth_withdraw_10pctNAV",
+      "address": "0x0a2b94f6871c1d7a32fe58e1ab5e6dea2f114e56",
+      "signature": "withdraw(uint256,address,address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x0a2b94f6871c1d7a32fe58e1ab5e6dea2f114e56",
+          "data": "0xb460af9400000000000000000000000000000000000000000000002a0b849b92bdc3162100000000000000000000000060882d6f70857606cdd37729ccce882015d1755e00000000000000000000000060882d6f70857606cdd37729ccce882015d1755e",
+          "gas": "0x1c9c380",
+          "from": "0x60882d6f70857606cdd37729ccce882015d1755e"
+        },
+        "0x18e60b1"
+      ],
+      "requestedPctNAV": 10,
+      "requestedWETH": 775.5932103816955,
+      "caller": "0x60882d6f70857606cdd37729ccce882015d1755e",
+      "denominator": "whole vault book totalAssets at T; frozen holder balance separately checked",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x0000000000000000000000000000000000000000000000285b38c6d20a639b19"
+      }
+    },
+    {
+      "label": "autoeth_withdraw_30pctNAV",
+      "address": "0x0a2b94f6871c1d7a32fe58e1ab5e6dea2f114e56",
+      "signature": "withdraw(uint256,address,address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x0a2b94f6871c1d7a32fe58e1ab5e6dea2f114e56",
+          "data": "0xb460af9400000000000000000000000000000000000000000000007e228dd2b83949426300000000000000000000000060882d6f70857606cdd37729ccce882015d1755e00000000000000000000000060882d6f70857606cdd37729ccce882015d1755e",
+          "gas": "0x1c9c380",
+          "from": "0x60882d6f70857606cdd37729ccce882015d1755e"
+        },
+        "0x18e60b1"
+      ],
+      "requestedPctNAV": 30,
+      "requestedWETH": 2326.779631145086,
+      "caller": "0x60882d6f70857606cdd37729ccce882015d1755e",
+      "denominator": "whole vault book totalAssets at T; frozen holder balance separately checked",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "error": {
+          "code": 3,
+          "message": "execution reverted",
+          "data": "0xa51ad78a00000000000000000000000000000000000000000000002dd7eb327444df1f06"
+        }
+      }
+    },
+    {
+      "label": "yearn_accountant_getVaultConfig(address)",
+      "address": "0x5a74cb32d36f2f517db6f7b0a0591e09b22cde69",
+      "signature": "getVaultConfig(address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x5a74cb32d36f2f517db6f7b0a0591e09b22cde69",
+          "data": "0xde1eb9a3000000000000000000000000c56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e8000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027100000000000000000000000000000000000000000000000000000000000004e2000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "label": "yearn_accountant_feeManager()",
+      "address": "0x5a74cb32d36f2f517db6f7b0a0591e09b22cde69",
+      "signature": "feeManager()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x5a74cb32d36f2f517db6f7b0a0591e09b22cde69",
+          "data": "0xd0fb0203",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x00000000000000000000000016388463d60ffe0661cf7f1f31a7d658ac790ff7"
+      }
+    },
+    {
+      "label": "yearn_accountant_feeRecipient()",
+      "address": "0x5a74cb32d36f2f517db6f7b0a0591e09b22cde69",
+      "signature": "feeRecipient()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x5a74cb32d36f2f517db6f7b0a0591e09b22cde69",
+          "data": "0x46904840",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "result": "0x000000000000000000000000590dd9399bb53f1085097399c3265c7137c1c4cf"
+      }
+    },
+    {
+      "label": "yearn_strategy_0x470e0e048f85cfd72eef325895e02c8d297e7435",
+      "address": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+      "signature": "strategies(address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+          "data": "0x39ebf823000000000000000000000000470e0e048f85cfd72eef325895e02c8d297e7435",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "result": "0x0000000000000000000000000000000000000000000000000000000069e0f933000000000000000000000000000000000000000000000000000000006abb5e8f0000000000000000000000000000000000000000000000965528be6fc651f2f900000000000000000000000000000000000000000000021e19e0c9bab2400000"
+      }
+    },
+    {
+      "label": "yearn_strategy_0xe89371eaaac6d46d4c3ed23453241987916224fc",
+      "address": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+      "signature": "strategies(address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+          "data": "0x39ebf823000000000000000000000000e89371eaaac6d46d4c3ed23453241987916224fc",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x000000000000000000000000000000000000000000000000000000006a13216f000000000000000000000000000000000000000000000000000000006ab4992b00000000000000000000000000000000000000000000000d681300fc69f6a83700000000000000000000000000000000000000000000032d26d12e980b600000"
+      }
+    },
+    {
+      "label": "yearn_strategy_0xfca3f21d60d5bc8b4c5c35f169bb5b6402510151",
+      "address": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+      "signature": "strategies(address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc56413869c6cdf96496f2b1ef801fedbdfa7ddb0",
+          "data": "0x39ebf823000000000000000000000000fca3f21d60d5bc8b4c5c35f169bb5b6402510151",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x000000000000000000000000000000000000000000000000000000006a3ea433000000000000000000000000000000000000000000000000000000006ab6072b0000000000000000000000000000000000000000000000af7f6d89db5f0103b500000000000000000000000000000000000000000000032d26d12e980b600000"
+      }
+    }
+  ]
+}

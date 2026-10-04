@@ -1,0 +1,54 @@
+[
+  {
+    "account": "main_aave",
+    "collateral": 1182315320.225627,
+    "debt": 1093583118.4709332,
+    "account_equity": 88732201.75469375,
+    "HF": 1.027082016211829,
+    "oracle_markdown_to_HF_1": 0.026367919780851845,
+    "collateral_leverage": 13.324534913426568,
+    "borrow_plus_100bp_isolated_equity_return_change_pp": -12.324534913426568,
+    "borrow_plus_100bp_vault_return_change_pp": -2.3135625606823784,
+    "market_discount_1pct_equity_change_percent": -13.324534913426568,
+    "note": "Isolated account sensitivity; no rate response, rebalancing, lending-income offsets or execution costs. Oracle markdown is not automatically DEX depeg or ETH/USD shock."
+  },
+  {
+    "account": "main_spark",
+    "collateral": 92243395.5848696,
+    "debt": 82793741.87611917,
+    "account_equity": 9449653.708750427,
+    "HF": 1.0361454374448649,
+    "oracle_markdown_to_HF_1": 0.03488452116722107,
+    "collateral_leverage": 9.76156359036223,
+    "borrow_plus_100bp_isolated_equity_return_change_pp": -8.76156359036223,
+    "borrow_plus_100bp_vault_return_change_pp": -0.17515678344707494,
+    "market_discount_1pct_equity_change_percent": -9.76156359036223,
+    "note": "Isolated account sensitivity; no rate response, rebalancing, lending-income offsets or execution costs. Oracle markdown is not automatically DEX depeg or ETH/USD shock."
+  },
+  {
+    "account": "drone_aave",
+    "collateral": 133115759.34703016,
+    "debt": 76588521.61157292,
+    "account_equity": 56527237.73545724,
+    "HF": 1.3904512743791173,
+    "oracle_markdown_to_HF_1": 0.2808090305454729,
+    "collateral_leverage": 2.3548958816986745,
+    "borrow_plus_100bp_isolated_equity_return_change_pp": -1.3548958816986745,
+    "borrow_plus_100bp_vault_return_change_pp": -0.16202914363409499,
+    "market_discount_1pct_equity_change_percent": -2.3548958816986745,
+    "note": "Isolated account sensitivity; no rate response, rebalancing, lending-income offsets or execution costs. Oracle markdown is not automatically DEX depeg or ETH/USD shock."
+  },
+  {
+    "account": "drone_spark",
+    "collateral": 8048315.74266595,
+    "debt": 3611570.542696,
+    "account_equity": 4436745.19996995,
+    "HF": 1.8719239023343826,
+    "oracle_markdown_to_HF_1": 0.46579024993860585,
+    "collateral_leverage": 1.8140135121395886,
+    "borrow_plus_100bp_isolated_equity_return_change_pp": -0.8140135121395885,
+    "borrow_plus_100bp_vault_return_change_pp": -0.007640566365479143,
+    "market_discount_1pct_equity_change_percent": -1.8140135121395886,
+    "note": "Isolated account sensitivity; no rate response, rebalancing, lending-income offsets or execution costs. Oracle markdown is not automatically DEX depeg or ETH/USD shock."
+  }
+]

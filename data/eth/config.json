@@ -1,0 +1,17 @@
+{
+  "snapshot_id": "2026-10-02",
+  "target_utc": "2026-10-02T23:59:59Z",
+  "history_start": "2024-10-01",
+  "history_end": "2026-09-30",
+  "mandatory_chains": ["Ethereum", "Base", "Arbitrum", "Optimism"],
+  "product_detail_min_usd": 5000000,
+  "historical_peak_min_usd": 20000000,
+  "carry_loop_min_usd": 1000000,
+  "borrower_scan_min_usd": 1000000,
+  "borrower_identify_min_usd": 5000000,
+  "additional_chain_min_usd": 25000000,
+  "additional_chain_share_threshold": 0.01,
+  "unknown_value": null,
+  "pilot_nav_residual_target": 0.01,
+  "point_value_in_realized_yield": 0
+}

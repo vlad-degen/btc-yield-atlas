@@ -1,0 +1,141 @@
+{
+  "captured_at": "2026-10-04T17:28:16.985896+00:00",
+  "scope": "Final colleague-readiness review of editorial corrections, article consistency, five product tabs, carry scenario and responsive presentation. The prior broader 29-check presentation pass is retained separately with its original build hash. Financial limitations remain open.",
+  "results": [
+    {
+      "check": "headline_rate_scope",
+      "passed": true,
+      "details": "Hero says separately dated reported base destination quote; no claim of audited organic cash income."
+    },
+    {
+      "check": "matrix_book_return_label",
+      "passed": true,
+      "details": "Comparison says ETH book share return and excludes separate rewards, private distributions and withdrawal execution."
+    },
+    {
+      "check": "calculator_human_copy",
+      "passed": true,
+      "details": "Preset explanation uses readable assumptions; raw field names are absent."
+    },
+    {
+      "check": "funding_comparison_scope",
+      "passed": true,
+      "details": "Base quote is explicitly not audited cash income; mixed rate dates do not establish an executable matched trade."
+    },
+    {
+      "check": "desktop_layout",
+      "passed": true,
+      "details": "1440px: no page-level horizontal overflow on main page, market table, briefing or Concrete dossier."
+    },
+    {
+      "check": "product_concrete",
+      "passed": true,
+      "details": "Active tab, linked money flow, seven product sections, corrected Ethereum income funding labels and no desktop page overflow."
+    },
+    {
+      "check": "product_liquid",
+      "passed": true,
+      "details": "Active tab, linked money flow, seven product sections, corrected Ethereum income funding labels and no desktop page overflow."
+    },
+    {
+      "check": "product_rocksolid",
+      "passed": true,
+      "details": "Active tab, linked money flow, seven product sections, corrected Ethereum income funding labels and no desktop page overflow."
+    },
+    {
+      "check": "product_liquity",
+      "passed": true,
+      "details": "Active tab, linked money flow, seven product sections, corrected Ethereum income funding labels and no desktop page overflow."
+    },
+    {
+      "check": "product_royco",
+      "passed": true,
+      "details": "Active tab, linked money flow, seven product sections, corrected Ethereum income funding labels and no desktop page overflow."
+    },
+    {
+      "check": "corrected_protocol_article",
+      "passed": true,
+      "details": "85 protocol rows; Reserve Protocol $12.204M; four missing adapters remain Not measured."
+    },
+    {
+      "check": "briefing_facts",
+      "passed": true,
+      "details": "Whole-book excess return has no inferred historical strategy attribution; five presentation Q&A rows exist."
+    },
+    {
+      "check": "article_navigation",
+      "passed": true,
+      "details": "Market, Carry math, Top 5 and Data point to the current main chapters."
+    },
+    {
+      "check": "concrete_holder_scope",
+      "passed": true,
+      "details": "Dossier confirms one positive T holder and keeps beneficial ownership/backing unresolved; old confirmation gap removed."
+    },
+    {
+      "check": "worked_loan_ledger_copy",
+      "passed": true,
+      "details": "Reported-base-minus-borrow spread label; 22 borrowing-market rows and 11 funding/destination rows."
+    },
+    {
+      "check": "reward_free_preset",
+      "passed": true,
+      "details": "No-reward preset displays 1.09% total ETH income and -1.30% dollar spread; default restored."
+    },
+    {
+      "check": "royco_configured_delay",
+      "passed": true,
+      "details": "Displayed two-day setting is configured; implementation-at-T binding and effective caller delay remain unverified."
+    },
+    {
+      "check": "monthly_market_bars",
+      "passed": true,
+      "details": "120 observed category bar segments and 24 focusable month positions; basis has no invented segment."
+    },
+    {
+      "check": "mobile_market_390",
+      "passed": true,
+      "details": "390px: no page overflow; 420-unit chart viewBox and all 120 segments retained."
+    },
+    {
+      "check": "mobile_briefing_390",
+      "passed": true,
+      "details": "390px: no page overflow; four current chapter links and five Q&A rows retained."
+    },
+    {
+      "check": "narrow_briefing_319",
+      "passed": true,
+      "details": "319px: no page overflow."
+    },
+    {
+      "check": "narrow_main_319",
+      "passed": true,
+      "details": "319px: no page overflow; corrected hero note visible; viewport override reset afterward."
+    },
+    {
+      "check": "runtime_console",
+      "passed": true,
+      "details": "No console errors after final main-page and article checks."
+    }
+  ],
+  "all_recorded_checks_passed": true,
+  "recorded_check_count": 23,
+  "viewports": [
+    1440,
+    390,
+    319
+  ],
+  "site_sha256": "4be18b72718f38d4653b869f62a74235af26d993c28401b939779f0a95171937",
+  "datasets": {
+    "research_market_chapter": "d0f050c12bc1ba33f44fec4ef8521b2bf3b5071076025f5c103e19557134cafa",
+    "research_borrowers": "524efa4e0a6ae3c9ab07a84d6f79c9cbca87c472585d2687ff46f5048198f34c",
+    "carry_economics_chapter": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
+    "product_chapters": "dfd39537c022e0624cb82e509b6f5ced69ef5531066eab9974ebcdd029f0b772",
+    "carry_borrow_rate_history": "60ab984de707d9ff3bbb0d0f8502a3cc405aed8cbba35a933ee0d9c0cf97ddff"
+  },
+  "previous_browser_suite": {
+    "path": "presentation-browser-checks.json",
+    "check_count": 29,
+    "site_sha256": "d82d31fd0386d476a6e3dbf9ac733ea1164a62a0bd63447ffab29f9d3c12d993"
+  }
+}

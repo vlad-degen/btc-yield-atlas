@@ -1,0 +1,1286 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "global quantities remain unmeasured",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "earning status and global coverage not inferred",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "frozen T and block unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original canonical hash reverified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical addresses and asset claims not duplicated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical custody sums from exact raw wei",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one separately excluded finalized queue",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "queue native balance matches locked claim funds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "WETH has a single physical root",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "assigned WETH plus unassigned supply reconciles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scope ceiling contains custody floor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Lido book exact component reconciliation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CL oracle not promoted to actual T physical root",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no validator count times 32 estimate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate edges add no roots",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Kelp node claim is inside Eigen custody",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Kelp remainder retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "LP cash history complete for bounded census",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "month summaries contain exactly 28 distinct pools",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "historical blocks and timestamps remain before snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "daily adapter panel not mechanically netted",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/snapshot_manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/weth_lending_markets_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/etherfi_uniswap_positions.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_issuer_calls_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_locator_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_custody_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_reserve_identity_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_lending_edges_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_lp_discovery_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_lp_cash_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_curve_cash_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_lp_history_rpc.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_restaking_edges_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_kelp_nesting_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/market_netting_final_checks_T.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash data/eth/research_market_chapter.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source hash raw/eth/2026-10-02/beacon_header_T-d792521a8e67ce74.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/beaconchain_ethstore_docs-8e7b9bf2e178d334.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/migalabs_balance_docs-f5567c54c8be656c.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/issuer_and_weth_T_provider0-2e171e530ecdfa22.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/lido_pool_docs-79ccdfcc883dfcc4.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/lido_accounting_docs-c3c47897b4247164.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/lido_locator_docs-a2a5b30eaacb39fa.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/ethereum_beacon_api_spec-4b48f78c2ce3f233.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/eip_max_effective-26002bb9ac7ce7cc.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/lido_locator_T_provider0-79d7a55e3aadb32c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/root_custody_T_provider0-c953b038d000b96b.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/receipt_reserve_identity_T_provider0-ffb417ea6d8a8ef0.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/receipt_reserve_balances_T_0_provider0-be9656e9e380c924.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/canonical_v3_pool_discovery_T_provider0-d67fc7b453fce3c1.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/primary_lp_cash_T_0_provider0-3103fcdbfaead5c3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/primary_lp_cash_T_24_provider0-a33f35442be92075.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/primary_lp_cash_T_48_provider0-e91c00b8fc78cfe6.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/uniswap_factory_source-a9b78256f8a0ea95.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/curve_main_pools_directory-cc86fd1135796b18.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/beaconchain_openapi-8974511fe859c8ef.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/uniswap_factory_docs-e8ed4af44383bc99.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/curve_main_root_cash_T_provider0-90d2355d3ea6d958.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_48_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_24_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_0_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_120_provider0-7a29fe193912b28c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_96_provider0-3492e61b48652b76.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_72_provider0-002732c935448c8c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_192_provider0-5e556ef7cf5b7fd0.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_168_provider0-2ee433e4d6a719ec.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_144_provider0-72f84040be62f69e.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_216_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_264_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_240_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_288_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_312_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_336_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_360_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_408_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_384_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_432_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_480_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_456_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_504_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_528_provider0-638e18399b3390b7.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_552_provider0-fd4f74ad44e7b5c6.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_576_provider0-27ada575a8a1cd5f.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_600_provider0-91bf09d9dba9ceac.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_624_provider0-9102c136e9d02f4a.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_648_provider0-ca73c51b183a8d2d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_672_provider0-1995c56e8d554312.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_696_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_720_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_744_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_768_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_792_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_816_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_840_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_864_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_888_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_912_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_936_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_960_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_984_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1008_provider0-da9647b5b316de33.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1032_provider0-6cabefc11b9a0191.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1056_provider0-be8df4da73223f9d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1080_provider0-34bd1ab7fe5018d2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1128_provider0-6cd48c59d32af9b4.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1104_provider0-55892a19a437d82b.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1176_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1152_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1200_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1248_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1224_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1272_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1320_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1296_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1344_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1392_provider0-db41aea64736f56e.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1368_provider0-4c5a4e89aae9394c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_history_1392_provider1-e204a1d43fb75371.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_0_provider0-c95175cc023c1240.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_6_provider0-9a7ce24faf00f23a.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_12_provider0-ff741fc2968a918b.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_18_provider0-badb012b07178b1a.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_24_provider0-42eae1077229c350.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_30_provider0-9b8a9bd1c9f907c6.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_36_provider0-7243f0f3038d6538.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_42_provider0-59feffaa8f55cc7c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_48_provider0-164520b77261b3c9.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_54_provider0-fbf79557417e9bd9.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_60_provider0-a17370c8af8a21db.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_66_provider0-4cc4585741db0762.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_72_provider0-a4f74b396e7e689d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_78_provider0-0738b65172ecfe8a.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_84_provider0-6a9ae12b2b77a7b4.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_90_provider0-7f1fb506c8abe8a7.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_96_provider0-73b39c15a592ed9f.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_102_provider0-3584d91d4125e840.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_108_provider0-fd9907db5f66e07e.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_114_provider0-28ad95c1271c9949.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_120_provider0-bd07ea5cd0efca65.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_126_provider0-46a3dbacbfc27a0d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_132_provider0-5e0d0be11e2a8225.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_138_provider0-07c7f7859eb740ca.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_144_provider0-9779786910807415.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_150_provider0-b1adfef9d89f2cd5.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_156_provider0-a99c6d64472e5607.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_162_provider0-eb0632d4e4a84cd8.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_168_provider0-62244a30f89b1b65.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_174_provider0-9ef360dae42417dd.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_180_provider0-1b5698065245c5b1.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_186_provider0-fb0aab6a5f669f56.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_192_provider0-541f2c1a2e3a9958.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_198_provider0-a474b4e75e3df1a8.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_204_provider0-dd0c2dc6b4b2df86.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_210_provider0-992d2dc506cb13a3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_216_provider0-2e6d576a3c585cdb.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_222_provider0-e70dec5bdabd981d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_228_provider0-67fc03c12f27fb82.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_234_provider0-d5a048458a7e989f.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_240_provider0-72c322087815bb40.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_246_provider0-222d26ac60a7a453.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_252_provider0-cece3a1165817d7f.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_258_provider0-6115290a0f3a62eb.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_264_provider0-fd563bd83d8b8bf9.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_270_provider0-f9bb6f4053082928.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_276_provider0-cbd5a7caedc562c5.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_282_provider0-d954efdf11cf6735.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_288_provider0-6b6c9fab9eacb730.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_294_provider0-117c5de93f767c72.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_300_provider0-f9561293f92153bc.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_306_provider0-b15d6afceca9192b.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_312_provider0-1264232a9ae5e46d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_318_provider0-9f6a8df57212c6a1.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_324_provider0-531dc6ff01130254.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_330_provider0-87a8ed70b46cf3ca.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_336_provider0-765ffb88d4ffd69e.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_342_provider0-32824b7ebe0138f4.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_342_provider1-ac838951a6693dd0.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_348_provider0-0522ed3d81c7a563.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_348_provider1-feea062835872017.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_354_provider0-1919824b8283a693.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_354_provider1-2e979b185f9c49d9.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_360_provider0-dde4e5b210753a7e.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_360_provider1-86949dfad73370dd.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_366_provider0-a7c2829b96df168c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_366_provider1-f6a2bf671841ea12.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_372_provider0-1305de18f3416fdd.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_378_provider0-478873572f4062f5.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_384_provider0-4388f6505d40b86f.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_390_provider0-bc2ba8f26cb12716.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_390_provider1-1d0235bec9720365.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_396_provider0-0628886c25557fc2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_402_provider0-368bb6207834f61d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_402_provider1-15c10da9ba3cbcb2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_408_provider0-02aa4abd842dffa5.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_414_provider0-a5047665144e8185.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_420_provider0-08b9890088cbde54.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_426_provider0-6d5e827923ae7db1.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_432_provider0-514f472fa7ad3329.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_438_provider0-c33a728b82f6b6b2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_444_provider0-31b791d4531a85b3.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_450_provider0-4fa1d48016ae6396.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_456_provider0-84512e7e10cf6c33.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_462_provider0-e0f9d6e2c430867a.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_468_provider0-8c45c992f00504ab.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_474_provider0-3fbc6226da5ec0da.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_480_provider0-9391ad3228bb1663.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_486_provider0-85cde7e04ae6de3b.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_492_provider0-32585ff754918e4b.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_492_provider1-dcbba3179fa152c8.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_498_provider0-a1b1921b1f4ebe49.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_498_provider1-c2d3db397bf17bf6.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_504_provider0-58a6b845a3e20af2.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_510_provider0-5d9a727c5fec9b0c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_516_provider0-61a4050df8ef234c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_522_provider0-dad6503495f2a72d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_528_provider0-0dbce20db6776fa9.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_534_provider0-79dc48d8af073cc9.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_540_provider0-ee32372147693a92.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_546_provider0-a11fa83105cebfc6.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_546_provider1-aefcefbe3972090e.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_552_provider0-1047bc95ce5b7ebf.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_552_provider1-637bdc2c5ded6419.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_558_provider0-a9d145fb26daefa6.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_564_provider0-ce2b3e77c77bc374.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_564_provider1-d98281c4aedf87c5.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_570_provider0-21531d264bbcc7da.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_576_provider0-08ab630cb0d51787.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_576_provider1-b527eaa96dd0078b.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_582_provider0-ee97c1a9d29cdf07.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_582_provider1-0448d95b9da8ccdc.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_588_provider0-a35ff036933d730f.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_588_provider1-35dcc4b9b24f5407.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/eigenlayer_adapter_source-8f4cb392e364b20e.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/symbiotic_adapter_source-51c235adfe67ee30.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/kelp_adapter_source-546449709c675682.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/eigenlayer_official_readme-797eaa636cee803b.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/lido_wsteth_docs-acaea93f137e4dce.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/lido_withdrawal_queue_docs-cde7564b0947a9a0.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_0_provider0-e09136a9f240303c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_2_provider0-b08adce1944dc14a.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_4_provider0-a1429a34e9811562.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_6_provider0-6168cdfd1e21c49c.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/bounded_lp_cash_repair_8_provider0-ef8d9e4046124a62.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/restaking_duplicate_edges_T_provider0-e5d07b7fab53e08a.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/eigen_steth_underlying_T_provider0-837faaef35555dcd.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/kelp_eigen_nesting_T_provider0-9d9e0a9bd9651c8f.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/kelp_eigen_underlying_T_provider0-1d4d7ea6fe56fdf7.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/eigenlayer_strategy_manager_source-beef79b8c1906747.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/market_netting_final_checks_T_provider0-eee5f5766ab39682.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/market_netting_final_checks_T_provider1-a4d14aa7aa13dd38.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/market_netting_final_checks_T_provider2-32d543bada479b00.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/market_netting_final_checks_T_provider0-0000725190a20fdc.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw hash raw/eth/research-closure-2026-10-04/market/market_netting_final_checks_T_provider0-8d543378f2fcfc9d.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no long dashes in article",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BTC original unchanged",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Validates calculations, provenance and declared boundaries in the bounded closure. Passing does not establish a complete global market, a consensus balance or earning status."
+}

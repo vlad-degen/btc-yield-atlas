@@ -1,0 +1,252 @@
+{
+  "captured_at": "2026-10-04T17:04:39.290Z",
+  "results": [
+    {
+      "check": "market_monthly_columns",
+      "passed": true,
+      "details": "120 observed category segments across 24 months; basis has no invented segment."
+    },
+    {
+      "check": "capital_axis_nice_ticks",
+      "passed": true,
+      "details": "0, 5, 10, 15, 20, 25 million ETH."
+    },
+    {
+      "check": "keyboard_month_inspection",
+      "passed": true,
+      "details": "ArrowRight moved October focus to November; dated breakdown appeared."
+    },
+    {
+      "check": "share_axis",
+      "passed": true,
+      "details": "0% to 100% in 20 percentage-point intervals."
+    },
+    {
+      "check": "constant_cohort_scope_and_download",
+      "passed": true,
+      "details": "47 selected protocols; market-series-constant-63.csv."
+    },
+    {
+      "check": "desktop_layout",
+      "passed": true,
+      "details": "1440px, no page overflow; six product tabs displayed in grid."
+    },
+    {
+      "check": "chart_source_table",
+      "passed": true,
+      "details": "First and last totals 22,315,191 and 21,170,031 ETH, matching the ledger."
+    },
+    {
+      "check": "category_share_and_page_size",
+      "passed": true,
+      "details": "8 initial rows; category-relative shares, including optional lending."
+    },
+    {
+      "check": "global_search_scope",
+      "passed": true,
+      "details": "Search switches the share denominator to the selected market."
+    },
+    {
+      "check": "two_balance_sheet_mechanics",
+      "passed": true,
+      "details": "Paired ETH-loop and dollar-carry explanations precede the actual loan."
+    },
+    {
+      "check": "funding_shared_axis_and_rewards",
+      "passed": true,
+      "details": "11 financing and destination rows, numeric common axis, base and lighter reward segments."
+    },
+    {
+      "check": "income_contribution_label",
+      "passed": true,
+      "details": "Worked income 2.75% with rewards, 1.09% without; incremental reward-free carry is -0.84 pp."
+    },
+    {
+      "check": "rocksolid_in_capital_overview",
+      "passed": true,
+      "details": "Five smaller product panels, including Rocksolid; separate scales, no additive subtotal."
+    },
+    {
+      "check": "product_concrete",
+      "passed": true,
+      "details": {
+        "bars": 10,
+        "expected": 10,
+        "flow": true,
+        "id": "concrete",
+        "overflow": 0,
+        "parts": 7,
+        "story": true,
+        "valuesMatch": true
+      }
+    },
+    {
+      "check": "product_liquid",
+      "passed": true,
+      "details": {
+        "bars": 24,
+        "expected": 24,
+        "flow": true,
+        "id": "liquid",
+        "overflow": 0,
+        "parts": 7,
+        "story": true,
+        "valuesMatch": true
+      }
+    },
+    {
+      "check": "product_rocksolid",
+      "passed": true,
+      "details": {
+        "bars": 14,
+        "expected": 14,
+        "flow": true,
+        "id": "rocksolid",
+        "overflow": 0,
+        "parts": 7,
+        "story": true,
+        "valuesMatch": true
+      }
+    },
+    {
+      "check": "product_liquity",
+      "passed": true,
+      "details": {
+        "bars": 7,
+        "expected": 7,
+        "flow": true,
+        "id": "liquity",
+        "overflow": 0,
+        "parts": 7,
+        "story": true,
+        "valuesMatch": true
+      }
+    },
+    {
+      "check": "product_royco",
+      "passed": true,
+      "details": {
+        "bars": 7,
+        "expected": 7,
+        "flow": true,
+        "id": "royco",
+        "overflow": 0,
+        "parts": 7,
+        "story": true,
+        "valuesMatch": true
+      }
+    },
+    {
+      "check": "comparison_matrix",
+      "passed": true,
+      "details": "Nine investor questions across five products; all product columns fit the desktop panel."
+    },
+    {
+      "check": "product_keyboard_navigation",
+      "passed": true,
+      "details": "ArrowRight moves both active tab and focus from Concrete to Liquid."
+    },
+    {
+      "check": "closed_examples_scope",
+      "passed": true,
+      "details": "Two deprecated ETH-debt loop precedents; no invented E4 closure or loss outcome."
+    },
+    {
+      "check": "counting_persistence_and_reset",
+      "passed": true,
+      "details": "Lending selection gives 27.90M, persists on reload; Reset restores 21.16M and Escape closes the menu."
+    },
+    {
+      "check": "unmeasured_basis_stays_unknown",
+      "passed": true,
+      "details": "Basis-only view says Not measured and shows no invented capital chart."
+    },
+    {
+      "check": "dark_theme",
+      "passed": true,
+      "details": "Dark palette applied, with no page overflow; restored light mode."
+    },
+    {
+      "check": "mobile_390_layout",
+      "passed": true,
+      "details": [
+        {
+          "flow": "grid",
+          "id": "concrete",
+          "overflow": 0,
+          "svg": "none",
+          "tabColumns": "174px 174px",
+          "width": 390
+        },
+        {
+          "flow": "grid",
+          "id": "liquid",
+          "overflow": 0,
+          "svg": "none",
+          "tabColumns": "174px 174px",
+          "width": 390
+        },
+        {
+          "flow": "grid",
+          "id": "rocksolid",
+          "overflow": 0,
+          "svg": "none",
+          "tabColumns": "174px 174px",
+          "width": 390
+        },
+        {
+          "flow": "grid",
+          "id": "liquity",
+          "overflow": 0,
+          "svg": "none",
+          "tabColumns": "174px 174px",
+          "width": 390
+        },
+        {
+          "flow": "grid",
+          "id": "royco",
+          "overflow": 0,
+          "svg": "none",
+          "tabColumns": "174px 174px",
+          "width": 390
+        }
+      ]
+    },
+    {
+      "check": "mobile_319_layout_and_header",
+      "passed": true,
+      "details": "No horizontal page overflow; menu and snapshot occupy separate rows; 420-unit capital and rate-curve SVGs."
+    },
+    {
+      "check": "chart_breakpoint_updates_without_reload",
+      "passed": true,
+      "details": "319px to 1440px changes both capital and rate curves from 420 to 720 viewBox without reloading; state and numerical findings retained."
+    },
+    {
+      "check": "human_product_dates",
+      "passed": true,
+      "details": "Deployment and observation metadata use readable English dates; original timestamps remain in evidence."
+    },
+    {
+      "check": "final_runtime",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "scope": "BTC presentation revision: rendered exhibits, financial value consistency, controls, keyboard inspection and responsive layouts. Financial and source checks are recorded separately.",
+  "all_recorded_checks_passed": true,
+  "recorded_check_count": 29,
+  "viewports": [
+    1440,
+    390,
+    319
+  ],
+  "site_sha256": "d82d31fd0386d476a6e3dbf9ac733ea1164a62a0bd63447ffab29f9d3c12d993",
+  "datasets": {
+    "research_market_chapter": "d0f050c12bc1ba33f44fec4ef8521b2bf3b5071076025f5c103e19557134cafa",
+    "research_borrowers": "524efa4e0a6ae3c9ab07a84d6f79c9cbca87c472585d2687ff46f5048198f34c",
+    "carry_economics_chapter": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
+    "product_chapters": "5e36589e10e7f3c1332c4900889a51472b9738f7afc91559cfbb33f38a647907",
+    "carry_borrow_rate_history": "60ab984de707d9ff3bbb0d0f8502a3cc405aed8cbba35a933ee0d9c0cf97ddff"
+  }
+}

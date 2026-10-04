@@ -1,0 +1,214 @@
+{
+  "target_timestamp": 1790985599,
+  "block": 26108081,
+  "labels": [
+    {
+      "address": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+      "signature": "underlyingToken()",
+      "name": "Eigen stETH strategy token identity"
+    },
+    {
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "strategyIsWhitelistedForDeposit(address)",
+      "name": "Eigen stETH strategy permission"
+    },
+    {
+      "address": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+      "signature": "totalShares()",
+      "name": "Eigen stETH strategy total shares"
+    },
+    {
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "balanceOf(address)",
+      "name": "Eigen stETH custody"
+    },
+    {
+      "address": "0x036676389e48133b63a802f8635ad39e752d375d",
+      "signature": "lrtConfig()",
+      "name": "Kelp configuration identity"
+    },
+    {
+      "address": "0x036676389e48133b63a802f8635ad39e752d375d",
+      "signature": "getTotalAssetDeposits(address)",
+      "name": "Kelp stETH accounting claim"
+    },
+    {
+      "address": "0x036676389e48133b63a802f8635ad39e752d375d",
+      "signature": "getNodeDelegatorQueue()",
+      "name": "Kelp node delegators"
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x000000000000000000000000ae7ab96520de3a18e5e111b5eaab095312d7fe84"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x000000000000000000000000000000000000000000002cd1b6f4a57bd3765850"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x000000000000000000000000000000000000000000003177b82bc19bf505c56f"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": "0x000000000000000000000000947cb49334e6571ccbfef1f1f1178d8469d65ec7"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": "0x000000000000000000000000000000000000000000002dfea1c9019b49091bc1"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000007000000000000000000000000fc561966ceaaa09f4d6cba4add54778c2bf1cb85000000000000000000000000395884d1974a839702bcfcba176ac7871c78894600000000000000000000000079f17234746344e0365d40be50d8d43db9082c320000000000000000000000004c798c4653b1257d5149910523d7a6eed5712f83000000000000000000000000ee5470e1519972c3ea95249d60ebd064af2d53d3000000000000000000000000049ea11d337f185b1aa910d98e8fbd991f0fba7b000000000000000000000000545d69b99759e7b670df243b882700121d6d3ab9"
+    }
+  ],
+  "source": {
+    "key": "restaking_duplicate_edges_T_provider0",
+    "url": "https://eth-mainnet.public.blastapi.io",
+    "method": "POST",
+    "request": [
+      {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0x2495a599"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+            "data": "0x663c1de400000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0x3a98ef39"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+            "data": "0x70a0823100000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x036676389e48133b63a802f8635ad39e752d375d",
+            "data": "0xf1650a46"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x036676389e48133b63a802f8635ad39e752d375d",
+            "data": "0x52c4889f000000000000000000000000ae7ab96520de3a18e5e111b5eaab095312d7fe84"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x036676389e48133b63a802f8635ad39e752d375d",
+            "data": "0xce895a2f"
+          },
+          "0x18e60b1"
+        ]
+      }
+    ],
+    "captured_at_utc": "2026-10-04T17:56:48.585528+00:00",
+    "http_status": 200,
+    "content_type": "application/json",
+    "sha256": "e5d07b7fab53e08aa0d41a51ddb80a8ab95158926e2f83f90dc8139d2295aa4f",
+    "bytes": 1234,
+    "path": "raw/eth/research-closure-2026-10-04/market/restaking_duplicate_edges_T_provider0-e5d07b7fab53e08a.json",
+    "error": null,
+    "financial_target_timestamp": 1790985599,
+    "is_financial_observation_at_T": false
+  },
+  "strategy_underlying": {
+    "shares": "211652678101630153283664",
+    "response": {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x000000000000000000000000000000000000000000003177b82bc19bf505c507"
+    },
+    "source": {
+      "key": "eigen_steth_underlying_T_provider0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "method": "POST",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+              "data": "0xf3e73875000000000000000000000000000000000000000000002cd1b6f4a57bd3765850"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "captured_at_utc": "2026-10-04T17:56:48.722618+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "sha256": "837faaef35555dcd413147f94eb4be1b92eba9b094d7a0b577344f4bf895302b",
+      "bytes": 104,
+      "path": "raw/eth/research-closure-2026-10-04/market/eigen_steth_underlying_T_provider0-837faaef35555dcd.json",
+      "error": null,
+      "financial_target_timestamp": 1790985599,
+      "is_financial_observation_at_T": false
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "account": "aave",
+    "target_timestamp": 1790985599,
+    "collateral_leverage": 13.324534913426568,
+    "staking_plus_supply_APR_proxy": 0.02327551762232785,
+    "current_variable_borrow_APR": 0.02073812403943969,
+    "modeled_annual_equity_return_before_fees_rewards_costs": 0.05454771342373754,
+    "borrow_APR_zero_return_break_even": 0.025164069018857316,
+    "borrow_increase_bp_to_zero_return": 44.25944979417625,
+    "borrow_increase_bp_to_erase_loop_uplift": 25.373935828881603,
+    "debt_WETH_units": 410134.2042496306,
+    "reserve_WETH_cash_units": 269693.45150210493,
+    "reserve_cash_over_main_debt": 0.657573664199815,
+    "isolated_borrow_shocks": {
+      "25": 0.02373637614017112,
+      "50": -0.0070749611433953,
+      "100": -0.06869763571052814,
+      "300": -0.3151883339790595
+    },
+    "note": "Staking proxy is trailing-30d log return annualized; borrow/supply APR is instantaneous T. Hybrid frozen-rate illustration, no forecast, no rewards, manager fees or execution; cash does not establish flash-loan eligibility."
+  },
+  {
+    "account": "spark",
+    "target_timestamp": 1790985599,
+    "collateral_leverage": 9.76156359036223,
+    "staking_plus_supply_APR_proxy": 0.022477045353558923,
+    "current_variable_borrow_APR": 0.019070493241483126,
+    "modeled_annual_equity_return_before_fees_rewards_costs": 0.0523237683073938,
+    "borrow_APR_zero_return_break_even": 0.025042460204657398,
+    "borrow_increase_bp_to_zero_return": 59.71966963174272,
+    "borrow_increase_bp_to_erase_loop_uplift": 34.065521120757964,
+    "debt_WETH_units": 31042.015909819333,
+    "reserve_WETH_cash_units": 116147.8396184757,
+    "reserve_cash_over_main_debt": 3.7416332739438922,
+    "isolated_borrow_shocks": {
+      "25": 0.03041985933148822,
+      "50": 0.008515950355582641,
+      "100": -0.035291867596228516,
+      "300": -0.21052313940347314
+    },
+    "note": "Staking proxy is trailing-30d log return annualized; borrow/supply APR is instantaneous T. Hybrid frozen-rate illustration, no forecast, no rewards, manager fees or execution; cash does not establish flash-loan eligibility."
+  }
+]

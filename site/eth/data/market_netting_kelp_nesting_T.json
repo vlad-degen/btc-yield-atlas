@@ -1,0 +1,534 @@
+{
+  "target_timestamp": 1790985599,
+  "block": 26108081,
+  "nodes": [
+    "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+    "0x395884d1974a839702bcfcba176ac7871c788946",
+    "0x79f17234746344e0365d40be50d8d43db9082c32",
+    "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+    "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+    "0x049ea11d337f185b1aa910d98e8fbd991f0fba7b",
+    "0x545d69b99759e7b670df243b882700121d6d3ab9"
+  ],
+  "labels": [
+    {
+      "node": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerDepositShares(address,address)",
+      "kind": "eigen_deposit_shares"
+    },
+    {
+      "node": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerStrategyShares(address,address)",
+      "kind": "legacy_eigen_shares"
+    },
+    {
+      "node": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "balanceOf(address)",
+      "kind": "direct_stETH"
+    },
+    {
+      "node": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerDepositShares(address,address)",
+      "kind": "eigen_deposit_shares"
+    },
+    {
+      "node": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerStrategyShares(address,address)",
+      "kind": "legacy_eigen_shares"
+    },
+    {
+      "node": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "balanceOf(address)",
+      "kind": "direct_stETH"
+    },
+    {
+      "node": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerDepositShares(address,address)",
+      "kind": "eigen_deposit_shares"
+    },
+    {
+      "node": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerStrategyShares(address,address)",
+      "kind": "legacy_eigen_shares"
+    },
+    {
+      "node": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "balanceOf(address)",
+      "kind": "direct_stETH"
+    },
+    {
+      "node": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerDepositShares(address,address)",
+      "kind": "eigen_deposit_shares"
+    },
+    {
+      "node": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerStrategyShares(address,address)",
+      "kind": "legacy_eigen_shares"
+    },
+    {
+      "node": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "balanceOf(address)",
+      "kind": "direct_stETH"
+    },
+    {
+      "node": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerDepositShares(address,address)",
+      "kind": "eigen_deposit_shares"
+    },
+    {
+      "node": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerStrategyShares(address,address)",
+      "kind": "legacy_eigen_shares"
+    },
+    {
+      "node": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "balanceOf(address)",
+      "kind": "direct_stETH"
+    },
+    {
+      "node": "0x049ea11d337f185b1aa910d98e8fbd991f0fba7b",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerDepositShares(address,address)",
+      "kind": "eigen_deposit_shares"
+    },
+    {
+      "node": "0x049ea11d337f185b1aa910d98e8fbd991f0fba7b",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerStrategyShares(address,address)",
+      "kind": "legacy_eigen_shares"
+    },
+    {
+      "node": "0x049ea11d337f185b1aa910d98e8fbd991f0fba7b",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "balanceOf(address)",
+      "kind": "direct_stETH"
+    },
+    {
+      "node": "0x545d69b99759e7b670df243b882700121d6d3ab9",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerDepositShares(address,address)",
+      "kind": "eigen_deposit_shares"
+    },
+    {
+      "node": "0x545d69b99759e7b670df243b882700121d6d3ab9",
+      "address": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+      "signature": "stakerStrategyShares(address,address)",
+      "kind": "legacy_eigen_shares"
+    },
+    {
+      "node": "0x545d69b99759e7b670df243b882700121d6d3ab9",
+      "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84",
+      "signature": "balanceOf(address)",
+      "kind": "direct_stETH"
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": 2,
+      "jsonrpc": "2.0",
+      "error": {
+        "message": "Batch of more than 3 requests are not allowed on free plan, to use this feature register paid account at drpc.org",
+        "code": 31
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x00000000000000000000000000000000000000000000000000d76999a69fbe94"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x0000000000000000000000000000000000000000000000e89e2789abf788c89e"
+    },
+    {
+      "id": 5,
+      "jsonrpc": "2.0",
+      "error": {
+        "message": "Batch of more than 3 requests are not allowed on free plan, to use this feature register paid account at drpc.org",
+        "code": 31
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000004"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x000000000000000000000000000000000000000000002012c39fd7e724c0f7f4"
+    },
+    {
+      "id": 8,
+      "jsonrpc": "2.0",
+      "error": {
+        "message": "Batch of more than 3 requests are not allowed on free plan, to use this feature register paid account at drpc.org",
+        "code": 31
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000004"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": "0x00000000000000000000000000000000000000000000018a526e7a27a58ba291"
+    },
+    {
+      "id": 11,
+      "jsonrpc": "2.0",
+      "error": {
+        "message": "Batch of more than 3 requests are not allowed on free plan, to use this feature register paid account at drpc.org",
+        "code": 31
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 12,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 13,
+      "result": "0x0000000000000000000000000000000000000000000003ae33bc7ffe81d8f69d"
+    },
+    {
+      "id": 14,
+      "jsonrpc": "2.0",
+      "error": {
+        "message": "Batch of more than 3 requests are not allowed on free plan, to use this feature register paid account at drpc.org",
+        "code": 31
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 15,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 16,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": 17,
+      "jsonrpc": "2.0",
+      "error": {
+        "message": "Batch of more than 3 requests are not allowed on free plan, to use this feature register paid account at drpc.org",
+        "code": 31
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 18,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 19,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": 20,
+      "jsonrpc": "2.0",
+      "error": {
+        "message": "Batch of more than 3 requests are not allowed on free plan, to use this feature register paid account at drpc.org",
+        "code": 31
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 21,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000001d"
+    }
+  ],
+  "source": {
+    "key": "kelp_eigen_nesting_T_provider2",
+    "url": "https://eth.drpc.org",
+    "method": "POST",
+    "request": [
+      {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+            "data": "0x7a7e0d92000000000000000000000000fc561966ceaaa09f4d6cba4add54778c2bf1cb8500000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+            "data": "0x7a7e0d92000000000000000000000000395884d1974a839702bcfcba176ac7871c78894600000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+            "data": "0x7a7e0d9200000000000000000000000079f17234746344e0365d40be50d8d43db9082c3200000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 11,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+            "data": "0x7a7e0d920000000000000000000000004c798c4653b1257d5149910523d7a6eed5712f8300000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 14,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+            "data": "0x7a7e0d92000000000000000000000000ee5470e1519972c3ea95249d60ebd064af2d53d300000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 17,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+            "data": "0x7a7e0d92000000000000000000000000049ea11d337f185b1aa910d98e8fbd991f0fba7b00000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 20,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x858646372cc42e1a627fce94aa7a7033e7cf075a",
+            "data": "0x7a7e0d92000000000000000000000000545d69b99759e7b670df243b882700121d6d3ab900000000000000000000000093c4b944d05dfe6df7645a86cd2206016c51564d"
+          },
+          "0x18e60b1"
+        ]
+      }
+    ],
+    "captured_at_utc": "2026-10-04T17:59:03.374820+00:00",
+    "http_status": 500,
+    "content_type": "application/json",
+    "sha256": "69a52e6262196b7d744b4f604b5f40f7b48134865101105d0cc09abbd302af1e",
+    "bytes": 1202,
+    "path": "raw/eth/research-closure-2026-10-04/market/kelp_eigen_nesting_T_provider2-69a52e6262196b7d.json",
+    "error": "HTTP Error 500: Internal Server Error",
+    "financial_target_timestamp": 1790985599,
+    "is_financial_observation_at_T": false
+  },
+  "converted_node_shares": [
+    {
+      "node": "0xfc561966ceaaa09f4d6cba4add54778c2bf1cb85",
+      "shares": "0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "node": "0x395884d1974a839702bcfcba176ac7871c788946",
+      "shares": "4291040853854385653918",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x000000000000000000000000000000000000000000000100be714574faa66169"
+      }
+    },
+    {
+      "node": "0x79f17234746344e0365d40be50d8d43db9082c32",
+      "shares": "151461865067901865752564",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x000000000000000000000000000000000000000000002366597f108a800f6ce0"
+      }
+    },
+    {
+      "node": "0x4c798c4653b1257d5149910523d7a6eed5712f83",
+      "shares": "7273956984310811304593",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x0000000000000000000000000000000000000000000001b3382a34d0979888bf"
+      }
+    },
+    {
+      "node": "0xee5470e1519972c3ea95249d60ebd064af2d53d3",
+      "shares": "17380560912757030450845",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x00000000000000000000000000000000000000000000040fec5beb73a8fafe8b"
+      }
+    },
+    {
+      "node": "0x049ea11d337f185b1aa910d98e8fbd991f0fba7b",
+      "shares": "0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "node": "0x545d69b99759e7b670df243b882700121d6d3ab9",
+      "shares": "0",
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "conversion_source": {
+    "key": "kelp_eigen_underlying_T_provider0",
+    "url": "https://eth-mainnet.public.blastapi.io",
+    "method": "POST",
+    "request": [
+      {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0xf3e738750000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0xf3e738750000000000000000000000000000000000000000000000e89e2789abf788c89e"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0xf3e73875000000000000000000000000000000000000000000002012c39fd7e724c0f7f4"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0xf3e7387500000000000000000000000000000000000000000000018a526e7a27a58ba291"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0xf3e738750000000000000000000000000000000000000000000003ae33bc7ffe81d8f69d"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0xf3e738750000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "0x18e60b1"
+        ]
+      },
+      {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "method": "eth_call",
+        "params": [
+          {
+            "to": "0x93c4b944d05dfe6df7645a86cd2206016c51564d",
+            "data": "0xf3e738750000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "0x18e60b1"
+        ]
+      }
+    ],
+    "captured_at_utc": "2026-10-04T17:59:03.526640+00:00",
+    "http_status": 200,
+    "content_type": "application/json",
+    "sha256": "1d4d7ea6fe56fdf77769a596abaf37155a5b628a0ecc23d7127610a7b08e07e8",
+    "bytes": 722,
+    "path": "raw/eth/research-closure-2026-10-04/market/kelp_eigen_underlying_T_provider0-1d4d7ea6fe56fdf7.json",
+    "error": null,
+    "financial_target_timestamp": 1790985599,
+    "is_financial_observation_at_T": false
+  }
+}

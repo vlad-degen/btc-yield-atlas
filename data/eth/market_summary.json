@@ -1,0 +1,1350 @@
+{
+  "all_protocols": 8476,
+  "all_yield_pools": 16992,
+  "matched_pool_candidates": 5688,
+  "symbol_only_candidates": 206,
+  "candidate_protocols": 87,
+  "candidate_chains": 57,
+  "deep_candidate_chains": [
+    "Ethereum",
+    "Base",
+    "Tron",
+    "BNB Chain",
+    "Arbitrum",
+    "Linea",
+    "Monad",
+    "Optimism",
+    "Polygon",
+    "Gnosis"
+  ],
+  "reported_full_pool_tvl_usd": 70939330631.0,
+  "not_net_market_capital": true,
+  "snapshot_UTC": "2026-10-02T23:59:59+00:00",
+  "unique_underlying_ETH": null,
+  "verified_external_depositor_equity_ETH": null,
+  "net_totals_status": "Not calculated: issuer overlap, leverage, bridge custody, internal shares and incomplete native consensus state remain open. Full mixed-pool screening sum is not a bound on unique ETH capital.",
+  "protocol_sources_with_token_history": 82,
+  "monthly_rows": 2088,
+  "material_pools": 259,
+  "top_dated_nonadditive_protocol_observations": [
+    {
+      "protocol": "lido",
+      "name": "Lido",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 26677057788.86242,
+      "eth_family_positive_usd": 26677057788.86242,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 26677057788.86242
+      },
+      "tokens_units": {
+        "WETH": 9865133.47501
+      },
+      "source_url": "https://api.llama.fi/protocol/lido",
+      "source_sha256": "2f33d38b9f47e245b0b2acbb6f81e9764d3d6f198f896f56ccdb2aa74398fe9f",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "binance-staked-eth",
+      "name": "Binance staked ETH",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 10081459145.92437,
+      "eth_family_positive_usd": 10081459145.92437,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 10081459145.92437
+      },
+      "tokens_units": {
+        "WETH": 3728369.69815
+      },
+      "source_url": "https://api.llama.fi/protocol/binance-staked-eth",
+      "source_sha256": "dfa26f0f8bac60ba52ff329a87a1107f1c5bca6a88f3925d898723091fd18c84",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "aave-v3",
+      "name": "Aave V3",
+      "category_current_hint": "Lending",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 9835181741.10725,
+      "eth_family_positive_usd": 9835181741.10725,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 897342635.43547,
+        "WRSETH": 35153877.49201,
+        "WSTETH": 2947578606.74338,
+        "WEETH": 4275533374.41534,
+        "EZETH": 1520781.49133,
+        "CBETH": 162191611.64906,
+        "RETH": 115212073.96737,
+        "RSETH": 1002253115.43062,
+        "ETH": 1505339.42568,
+        "OSETH": 345506777.25163,
+        "ETHX": 193416.21949,
+        "TETH": 51190131.58587
+      },
+      "tokens_units": {
+        "WETH": 331869.46343,
+        "WRSETH": 12428.00976,
+        "WSTETH": 875884.9667,
+        "WEETH": 1432778.98004,
+        "EZETH": 519.36261,
+        "CBETH": 52623.05565,
+        "RETH": 36477.47524,
+        "RSETH": 344238.32456,
+        "ETH": 558.28763,
+        "OSETH": 119000.84867,
+        "ETHX": 65.33475,
+        "TETH": 15132.97621
+      },
+      "source_url": "https://api.llama.fi/protocol/aave-v3",
+      "source_sha256": "b43618d63df41e47625136239bff17cd638619c9ffbffac13b1c9de1f9b5e06f",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "eigencloud",
+      "name": "EigenCloud",
+      "category_current_hint": "Restaking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 7075345067.10396,
+      "eth_family_positive_usd": 7075345067.10396,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "CBETH": 3289948.43381,
+        "STETH": 630837490.91995,
+        "RETH": 12181090.4184,
+        "ETHX": 144755389.87998,
+        "ANKRETH": 1539631.69732,
+        "OETH": 4374725.99054,
+        "OSETH": 4420597.82675,
+        "SWETH": 18500675.30883,
+        "WBETH": 864344.4503,
+        "SFRXETH": 8742612.47143,
+        "METH": 3041645.7384,
+        "WETH": 6242763342.88174,
+        "TETH": 33554.25885,
+        "WSTETH": 16.82766
+      },
+      "tokens_units": {
+        "CBETH": 1067.42351,
+        "STETH": 233602.38985,
+        "RETH": 3856.67412,
+        "ETHX": 48897.43338,
+        "ANKRETH": 462.51614,
+        "OETH": 1618.6883,
+        "OSETH": 1522.56027,
+        "SWETH": 6067.91263,
+        "WBETH": 289.31954,
+        "SFRXETH": 2777.57874,
+        "METH": 1022.53312,
+        "WETH": 2308563.93977,
+        "TETH": 9.91941,
+        "WSTETH": 0.005
+      },
+      "source_url": "https://api.llama.fi/protocol/eigencloud",
+      "source_sha256": "797b9d935ef19c974831a23f6a9b8582cb15b69a0554ce9f40ae19e6fb35dc9e",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "ether.fi-stake",
+      "name": "ether.fi Stake",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 5188346728.61038,
+      "eth_family_positive_usd": 5188346728.61038,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "RETH": 46844.24886,
+        "WSTETH": 96103.54529,
+        "SFRXETH": 54314.13248,
+        "WETH": 5188149466.68375
+      },
+      "tokens_units": {
+        "RETH": 14.80505,
+        "WSTETH": 28.53313,
+        "SFRXETH": 17.23289,
+        "WETH": 1919142.13397
+      },
+      "source_url": "https://api.llama.fi/protocol/ether.fi-stake",
+      "source_sha256": "295e00c64f68fad38c814d43e5eacb6dc1a68a5d17742da64e2d4a23feabd938",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": true
+    },
+    {
+      "protocol": "sparklend",
+      "name": "SparkLend",
+      "category_current_hint": "Lending",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 4160790531.6249104,
+      "eth_family_positive_usd": 4160790531.6249104,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 287081443.5688,
+        "WSTETH": 3747219360.25509,
+        "RETH": 11973090.35839,
+        "WEETH": 114502549.35998,
+        "EZETH": 5698.49292,
+        "RSETH": 8389.58973
+      },
+      "tokens_units": {
+        "WETH": 106162.26938,
+        "WSTETH": 1113410.58696,
+        "RETH": 3790.8189,
+        "WEETH": 38370.67288,
+        "EZETH": 1.94609,
+        "RSETH": 2.88153
+      },
+      "source_url": "https://api.llama.fi/protocol/sparklend",
+      "source_sha256": "cdb446ea08ff44b9b09c6af50e0aa7c2066d946703de5bda021485997eab2eab",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "sky-lending",
+      "name": "Sky Lending",
+      "category_current_hint": "CDP",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 1639333479.86968,
+      "eth_family_positive_usd": 1639333479.86968,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 1540619155.74949,
+        "WSTETH": 98417710.30843,
+        "RETH": 296613.81176
+      },
+      "tokens_units": {
+        "WETH": 569718.50966,
+        "WSTETH": 29242.83505,
+        "RETH": 93.91136
+      },
+      "source_url": "https://api.llama.fi/protocol/sky-lending",
+      "source_sha256": "0f67ef2cec59c6bb71c5f243fefbf34b1b5fdfcdd508924b17ce8412b4bc7145",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "morpho-blue",
+      "name": "Morpho Blue",
+      "category_current_hint": "Lending",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 1421868644.71817,
+      "eth_family_positive_usd": 1421868644.71817,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "ETH": 4.68754,
+        "WSTETH": 747664565.30293,
+        "WEETH": 310429467.06878,
+        "WETH": 272826403.58422,
+        "RSETH": 1827.02233,
+        "EZETH": 94541.02775,
+        "RETH": 10715667.63535,
+        "CMETH": 63512.7936,
+        "OSETH": 5634.77873,
+        "ETH+": 3303.62402,
+        "PUFETH": 18680.12569,
+        "RSWETH": 1018521.64327,
+        "WOETH": 0.00479,
+        "STONE": 16566.36802,
+        "OETH": 23715079.35854,
+        "TETH": 3.13822,
+        "AETHWBTC": 2.64994,
+        "CBETH": 55293318.89261,
+        "WRSETH": 1545.01184
+      },
+      "tokens_units": {
+        "ETH": 0.00174,
+        "WSTETH": 222164.53578,
+        "WEETH": 104025.92034,
+        "WETH": 100897.33025,
+        "RSETH": 0.6275,
+        "EZETH": 32.28673,
+        "RETH": 3392.70432,
+        "CMETH": 21.47547,
+        "OSETH": 1.94075,
+        "ETH+": 1.11363,
+        "PUFETH": 6.39674,
+        "RSWETH": 348.42518,
+        "WOETH": 0,
+        "STONE": 5.77989,
+        "OETH": 8774.79449,
+        "TETH": 0.00093,
+        "AETHWBTC": 3e-05,
+        "CBETH": 17939.91297,
+        "WRSETH": 0.54621
+      },
+      "source_url": "https://api.llama.fi/protocol/morpho-blue",
+      "source_sha256": "6ed693a4ebb427769be109cf6fb3c551fa0ce250603642dfe475a6592c2047fa",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "rocket-pool",
+      "name": "Rocket Pool",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 1409233145.33776,
+      "eth_family_positive_usd": 1409233145.33776,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 1409233145.33776
+      },
+      "tokens_units": {
+        "WETH": 521287.73914
+      },
+      "source_url": "https://api.llama.fi/protocol/rocket-pool",
+      "source_sha256": "a8e5380b9d1076b4ea02d28c56a7644375799eebe01ec8e63db24ffec54e6381",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "justlend-v1",
+      "name": "JustLend V1",
+      "category_current_hint": "Lending",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 1309833259.467,
+      "eth_family_positive_usd": 1309833259.467,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "ETH": 1309833259.467
+      },
+      "tokens_units": {
+        "ETH": 484594.54968
+      },
+      "source_url": "https://api.llama.fi/protocol/justlend-v1",
+      "source_sha256": "1612c50d04eb8f17db278cd93e363a6480acaedd24f88504cd168ee96371c11b",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "kelp",
+      "name": "Kelp",
+      "category_current_hint": "Liquid Restaking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 1130443456.46133,
+      "eth_family_positive_usd": 1130443456.46133,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "STETH": 593023521.93259,
+        "ETHX": 148686338.34243,
+        "ETH": 388733596.18631
+      },
+      "tokens_units": {
+        "STETH": 219352.76661,
+        "ETHX": 50225.28232,
+        "ETH": 143686.20865
+      },
+      "source_url": "https://api.llama.fi/protocol/kelp",
+      "source_sha256": "5236453543fd88de568bb7dbc0b82df6c868cfd5ff53f4a16e6663e2fc8346c3",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "stakewise-v3",
+      "name": "StakeWise V3",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 1016916601.08768,
+      "eth_family_positive_usd": 1016916601.08768,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 1016916601.08768
+      },
+      "tokens_units": {
+        "WETH": 376054.13918
+      },
+      "source_url": "https://api.llama.fi/protocol/stakewise-v3",
+      "source_sha256": "d12c8de7633ff4c2a6c798fea30266222402db2de5c9710e908949d71493b620",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "concrete",
+      "name": "Concrete",
+      "category_current_hint": "Onchain Capital Allocator",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 953047317.5741999,
+      "eth_family_positive_usd": 953047317.5741999,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 538.02824,
+        "STONE": 36.48718,
+        "WEETH": 830094113.10453,
+        "EZETH": 68.86338,
+        "WSTETH": 122952561.09087
+      },
+      "tokens_units": {
+        "WETH": 0.19913,
+        "STONE": 0.01273,
+        "WEETH": 278170.83421,
+        "EZETH": 0.02352,
+        "WSTETH": 36532.87047
+      },
+      "source_url": "https://api.llama.fi/protocol/concrete",
+      "source_sha256": "c8b1742ee36108dfdee9609e49a1242515d5da0d1deaeade814f7b0014b4d693",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "compound-v3",
+      "name": "Compound V3",
+      "category_current_hint": "Lending",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 724582028.33551,
+      "eth_family_positive_usd": 724582028.33551,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 329351447.29412,
+        "WSTETH": 368374235.9038,
+        "WEETH": 18095394.09744,
+        "EZETH": 1243256.63539,
+        "RSETH": 158376.05819,
+        "ETH": 96945.29662,
+        "METH": 431089.69706,
+        "WRSETH": 48971.22731,
+        "CBETH": 1928849.1626,
+        "RETH": 253917.97195,
+        "OSETH": 2940.40828,
+        "RSWETH": 1435.56066,
+        "ETHX": 740.37483,
+        "TETH": 4404385.66183,
+        "PUFETH": 177407.76464,
+        "WOETH": 12635.22079
+      },
+      "tokens_units": {
+        "WETH": 121799.27365,
+        "WSTETH": 109464.1604,
+        "WEETH": 6064.12536,
+        "EZETH": 424.34893,
+        "RSETH": 54.39655,
+        "ETH": 35.95426,
+        "METH": 144.92269,
+        "WRSETH": 17.31288,
+        "CBETH": 625.81496,
+        "RETH": 80.39337,
+        "OSETH": 1.01275,
+        "RSWETH": 0.49109,
+        "ETHX": 0.25009,
+        "TETH": 1302.03735,
+        "PUFETH": 60.75069,
+        "WOETH": 4
+      },
+      "source_url": "https://api.llama.fi/protocol/compound-v3",
+      "source_sha256": "f00b556863b02076b3973ae94257d03ea0b6cf2d219daa003173f2d7add1bba0",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "meth-protocol",
+      "name": "mETH Protocol",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 637235844.43803,
+      "eth_family_positive_usd": 637235844.43803,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 637235844.43803
+      },
+      "tokens_units": {
+        "WETH": 235513.28973
+      },
+      "source_url": "https://api.llama.fi/protocol/meth-protocol",
+      "source_sha256": "3db64b1e4a645cde3020365782210db05306cf5d1964320bd9a90de9aa39546f",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "coinbase-wrapped-staked-eth",
+      "name": "Coinbase Wrapped Staked ETH",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 516967955.6051,
+      "eth_family_positive_usd": 516967955.6051,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 516967955.6051
+      },
+      "tokens_units": {
+        "WETH": 191173.92648
+      },
+      "source_url": "https://api.llama.fi/protocol/coinbase-wrapped-staked-eth",
+      "source_sha256": "529e9e4570c472f0f37946dbdc2c156b844ac8c5687ee51f8e8f628c5247fdac",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "ether.fi-liquid",
+      "name": "ether.fi Liquid",
+      "category_current_hint": "Onchain Capital Allocator",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 402664597.86715996,
+      "eth_family_positive_usd": 402664597.86715996,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 22149906.12161,
+        "EETH": 380514691.74555
+      },
+      "tokens_units": {
+        "WETH": 8191,
+        "EETH": 140688.81103
+      },
+      "source_url": "https://api.llama.fi/protocol/ether.fi-liquid",
+      "source_sha256": "0c583e72131a2d1ada52a6759a978843aeb8d2ba37ca4830e39c3074cee64813",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": true
+    },
+    {
+      "protocol": "curve-dex",
+      "name": "Curve DEX",
+      "category_current_hint": "Dexs",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 269230222.51746,
+      "eth_family_positive_usd": 269230222.51746,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 112519569.29711,
+        "WRSETH": 5.6916,
+        "WSTETH": 3911342.7944,
+        "PUFETH": 4200230.72317,
+        "ETH": 1290162.43668,
+        "WEETH": 10502990.27803,
+        "EZETH": 144514.01681,
+        "RSETH": 2064.35589,
+        "RETH": 7593576.50034,
+        "CBETH": 1059815.78804,
+        "FRXETH": 13967100.75425,
+        "SFRXETH": 1825100.77981,
+        "ANKRETH": 79840.1634,
+        "STETH": 92288708.0698,
+        "WBETH": 8769.46602,
+        "SETH2": 333.93302,
+        "OETH": 667398.15166,
+        "ETHX": 402733.05519,
+        "SWETH": 251.11828,
+        "ETH+": 9833891.55744,
+        "EETH": 9.01084,
+        "WOETH": 13.66782,
+        "METH": 7.98072,
+        "OSETH": 8102567.3325,
+        "UNIETH": 243749.78535,
+        "RSWETH": 33783.3719,
+        "WEETHS": 240.35978,
+        "TETH": 551452.07761
+      },
+      "tokens_units": {
+        "WETH": 41610.05538,
+        "WRSETH": 0.00201,
+        "WSTETH": 1162.31907,
+        "PUFETH": 1438.30755,
+        "ETH": 477.03692,
+        "WEETH": 3519.63169,
+        "EZETH": 49.35303,
+        "RSETH": 0.70903,
+        "RETH": 2404.62975,
+        "CBETH": 343.85715,
+        "FRXETH": 5180.65775,
+        "SFRXETH": 579.84511,
+        "ANKRETH": 23.98454,
+        "STETH": 34174.98654,
+        "WBETH": 2.93538,
+        "SETH2": 0.12424,
+        "OETH": 246.94337,
+        "ETHX": 136.04062,
+        "SWETH": 0.08236,
+        "ETH+": 3314.93722,
+        "EETH": 0.00333,
+        "WOETH": 0.00433,
+        "METH": 0.00268,
+        "OSETH": 2790.71918,
+        "UNIETH": 79.20606,
+        "RSWETH": 11.55692,
+        "WEETHS": 0.08385,
+        "TETH": 163.02187
+      },
+      "source_url": "https://api.llama.fi/protocol/curve-dex",
+      "source_sha256": "07cde7ca2fc0b7b01fecaa16cd22446d76a67e6997a4d99ef0287861ebd32af8",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "aave-v4",
+      "name": "Aave V4",
+      "category_current_hint": "Lending",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 240384881.09420002,
+      "eth_family_positive_usd": 240384881.09420002,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 32387943.5356,
+        "WSTETH": 58072791.15875,
+        "WEETH": 146386563.63249,
+        "RSETH": 3537582.76736
+      },
+      "tokens_units": {
+        "WETH": 11967.93789,
+        "WSTETH": 17246.4457,
+        "WEETH": 48989.62267,
+        "RSETH": 1212.1128
+      },
+      "source_url": "https://api.llama.fi/protocol/aave-v4",
+      "source_sha256": "b1ace9c013c69f1e3402500e504f523471c71c0116bc4e4a7ae5430c5092d614",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "stader",
+      "name": "Stader",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 233251429.06518,
+      "eth_family_positive_usd": 233251429.06518,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 233251429.06518
+      },
+      "tokens_units": {
+        "WETH": 86281.7558
+      },
+      "source_url": "https://api.llama.fi/protocol/stader",
+      "source_sha256": "0bb44ee857b02b76a015e7a10d13a3ba0a98f4d56d560dddcfa330bcf7d49f87",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "fluid-lending",
+      "name": "Fluid Lending",
+      "category_current_hint": "Lending",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 231542318.57446998,
+      "eth_family_positive_usd": 231542318.57446998,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 29662207.50526,
+        "WEETH": 21614726.08001,
+        "ETH": 6412494.96639,
+        "WSTETH": 150188790.75261,
+        "RSETH": 5457595.09076,
+        "EZETH": 507023.07919,
+        "WEETHS": 2000774.16849,
+        "METH": 100.83956,
+        "OSETH": 15598624.25179,
+        "CBETH": 99981.84041
+      },
+      "tokens_units": {
+        "WETH": 10969.31453,
+        "WEETH": 7243.39278,
+        "ETH": 2371.01682,
+        "WSTETH": 44635.54091,
+        "RSETH": 1874.48995,
+        "EZETH": 173.15363,
+        "WEETHS": 697.9431,
+        "METH": 0.0339,
+        "OSETH": 5372.54157,
+        "CBETH": 32.4391
+      },
+      "source_url": "https://api.llama.fi/protocol/fluid-lending",
+      "source_sha256": "5e2f77de301950b154b2b01332e20d4e7318f7938b44dcf695498bdcb7ef0b9b",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "fluid-lite",
+      "name": "Fluid Lite",
+      "category_current_hint": "Yield Aggregator",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 208925836.85868,
+      "eth_family_positive_usd": 208925836.85868,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "STETH": 208925836.85868
+      },
+      "tokens_units": {
+        "STETH": 77366.31937
+      },
+      "source_url": "https://api.llama.fi/protocol/fluid-lite",
+      "source_sha256": "a1a686d7d99a9358673c74a0c4bb7d8507e695f141c7114d89d4b24bf79eabf4",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "liquity-v1",
+      "name": "Liquity V1",
+      "category_current_hint": "CDP",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 195871239.22519,
+      "eth_family_positive_usd": 195871239.22519,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WETH": 195871239.22519
+      },
+      "tokens_units": {
+        "WETH": 72391.21954
+      },
+      "source_url": "https://api.llama.fi/protocol/liquity-v1",
+      "source_sha256": "468871a3e990bd94f2d3cf075c079622734dbc1e56331a42fc703bbaf033a05f",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "symbiotic",
+      "name": "Symbiotic",
+      "category_current_hint": "Collateral Markets",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 165706054.08499,
+      "eth_family_positive_usd": 165706054.08499,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "WEETHS": 13.82853,
+        "WSTETH": 98333895.21271,
+        "SWETH": 543675.09714,
+        "CBETH": 3041272.42744,
+        "WBETH": 751676.75622,
+        "RETH": 25760808.20491,
+        "WETH": 5546.77766,
+        "METH": 386780.32686,
+        "SFRXETH": 5073596.42104,
+        "OSETH": 8867700.58001,
+        "STETH": 0.01423,
+        "WEETH": 22596999.89566,
+        "ETHX": 344088.54258
+      },
+      "tokens_units": {
+        "WEETHS": 0.00481,
+        "WSTETH": 29203.18019,
+        "SWETH": 178.05635,
+        "CBETH": 985.66851,
+        "WBETH": 251.10211,
+        "RETH": 8137.43526,
+        "WETH": 2.05001,
+        "METH": 130.15841,
+        "SFRXETH": 1610.28274,
+        "OSETH": 3046.24862,
+        "STETH": 1e-05,
+        "WEETH": 7562.29582,
+        "ETHX": 116.23088
+      },
+      "source_url": "https://api.llama.fi/protocol/symbiotic",
+      "source_sha256": "178ddcc2d83b8832bc16208eb471868868cdd8b3faaaafe30f38f27de416d3cb",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    },
+    {
+      "protocol": "frax-ether",
+      "name": "Frax Ether",
+      "category_current_hint": "Liquid Staking",
+      "period": "snapshot",
+      "target_timestamp": 1790985599,
+      "source_timestamp": 1790899200,
+      "source_age_seconds": 86399,
+      "eth_family_reported_usd": 137014850.34053,
+      "eth_family_positive_usd": 137014850.34053,
+      "eth_family_negative_usd": 0,
+      "tokens_usd": {
+        "EZETH": 141981.51982,
+        "WETH": 128761484.37519,
+        "STETH": 8111384.44552
+      },
+      "tokens_units": {
+        "EZETH": 48.48816,
+        "WETH": 47615.79181,
+        "STETH": 3003.68767
+      },
+      "source_url": "https://api.llama.fi/protocol/frax-ether",
+      "source_sha256": "fc08b9cf8d44539e37227a2094d1321356b54052ff4959979d47158e9ff7d024",
+      "status": "dated_aggregator_observation_not_net_market",
+      "misrepresented_tokens": null
+    }
+  ],
+  "chain_screen": [
+    {
+      "chain": "Ethereum",
+      "pools": 2472,
+      "reported_full_pool_tvl_usd": 66462260410.0,
+      "protocols": 105,
+      "above_5m_pools": 184,
+      "screen_share": 0.9368887444922753,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Base",
+      "pools": 2121,
+      "reported_full_pool_tvl_usd": 1319010466.0,
+      "protocols": 47,
+      "above_5m_pools": 32,
+      "screen_share": 0.018593500308890728,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Tron",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 1288655187.0,
+      "protocols": 1,
+      "above_5m_pools": 1,
+      "screen_share": 0.01816559552419665,
+      "deep_candidate": true
+    },
+    {
+      "chain": "BNB Chain",
+      "pools": 46,
+      "reported_full_pool_tvl_usd": 637576075.0,
+      "protocols": 15,
+      "above_5m_pools": 5,
+      "screen_share": 0.008987624626970805,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Arbitrum",
+      "pools": 433,
+      "reported_full_pool_tvl_usd": 568131440.0,
+      "protocols": 37,
+      "above_5m_pools": 17,
+      "screen_share": 0.00800869468243517,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Linea",
+      "pools": 32,
+      "reported_full_pool_tvl_usd": 208052556.0,
+      "protocols": 7,
+      "above_5m_pools": 1,
+      "screen_share": 0.0029328237826518546,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Monad",
+      "pools": 20,
+      "reported_full_pool_tvl_usd": 127920212.0,
+      "protocols": 10,
+      "above_5m_pools": 5,
+      "screen_share": 0.0018032339868752547,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Optimism",
+      "pools": 185,
+      "reported_full_pool_tvl_usd": 96490030.0,
+      "protocols": 24,
+      "above_5m_pools": 4,
+      "screen_share": 0.001360176775587371,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Polygon",
+      "pools": 132,
+      "reported_full_pool_tvl_usd": 62127276.0,
+      "protocols": 15,
+      "above_5m_pools": 2,
+      "screen_share": 0.0008757804090817119,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Gnosis",
+      "pools": 9,
+      "reported_full_pool_tvl_usd": 39789549.0,
+      "protocols": 5,
+      "above_5m_pools": 1,
+      "screen_share": 0.0005608954672404569,
+      "deep_candidate": true
+    },
+    {
+      "chain": "Katana",
+      "pools": 9,
+      "reported_full_pool_tvl_usd": 21413035.0,
+      "protocols": 3,
+      "above_5m_pools": 3,
+      "screen_share": 0.00030184997249808627,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Avalanche",
+      "pools": 23,
+      "reported_full_pool_tvl_usd": 20040101.0,
+      "protocols": 15,
+      "above_5m_pools": 1,
+      "screen_share": 0.0002824963362600804,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Ink",
+      "pools": 9,
+      "reported_full_pool_tvl_usd": 17989233.0,
+      "protocols": 2,
+      "above_5m_pools": 1,
+      "screen_share": 0.000253586167785728,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Cronos",
+      "pools": 8,
+      "reported_full_pool_tvl_usd": 14706816.0,
+      "protocols": 3,
+      "above_5m_pools": 1,
+      "screen_share": 0.00020731540415146267,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Starknet",
+      "pools": 27,
+      "reported_full_pool_tvl_usd": 11011951.0,
+      "protocols": 3,
+      "above_5m_pools": 0,
+      "screen_share": 0.0001552305456232745,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Solana",
+      "pools": 13,
+      "reported_full_pool_tvl_usd": 5931182.0,
+      "protocols": 5,
+      "above_5m_pools": 0,
+      "screen_share": 8.360921857089125e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Fraxtal",
+      "pools": 12,
+      "reported_full_pool_tvl_usd": 5794149.0,
+      "protocols": 6,
+      "above_5m_pools": 0,
+      "screen_share": 8.167752568936698e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Mantle",
+      "pools": 5,
+      "reported_full_pool_tvl_usd": 5615182.0,
+      "protocols": 4,
+      "above_5m_pools": 1,
+      "screen_share": 7.915470797445338e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Polkadot",
+      "pools": 2,
+      "reported_full_pool_tvl_usd": 4858215.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 6.848408290276415e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Fantom",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 3142124.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 4.4293115991524644e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Unichain",
+      "pools": 7,
+      "reported_full_pool_tvl_usd": 2841009.0,
+      "protocols": 2,
+      "above_5m_pools": 0,
+      "screen_share": 4.004843257935251e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Berachain",
+      "pools": 7,
+      "reported_full_pool_tvl_usd": 2415138.0,
+      "protocols": 4,
+      "above_5m_pools": 0,
+      "screen_share": 3.404511966094872e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Celo",
+      "pools": 4,
+      "reported_full_pool_tvl_usd": 2066140.0,
+      "protocols": 2,
+      "above_5m_pools": 0,
+      "screen_share": 2.912545102444357e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Flare",
+      "pools": 9,
+      "reported_full_pool_tvl_usd": 1707879.0,
+      "protocols": 3,
+      "above_5m_pools": 0,
+      "screen_share": 2.40752060219422e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Rootstock",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 1047364.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 1.4764221633947997e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Native Core",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 996563.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 1.4048102669360525e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Robinhood Chain",
+      "pools": 17,
+      "reported_full_pool_tvl_usd": 960197.0,
+      "protocols": 5,
+      "above_5m_pools": 0,
+      "screen_share": 1.353546744040464e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Sui",
+      "pools": 4,
+      "reported_full_pool_tvl_usd": 739950.0,
+      "protocols": 3,
+      "above_5m_pools": 0,
+      "screen_share": 1.0430744037450037e-05,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Osmosis",
+      "pools": 8,
+      "reported_full_pool_tvl_usd": 682688.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 9.623547247028435e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Sonic",
+      "pools": 15,
+      "reported_full_pool_tvl_usd": 662501.0,
+      "protocols": 6,
+      "above_5m_pools": 0,
+      "screen_share": 9.338980141299665e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "MegaETH",
+      "pools": 3,
+      "reported_full_pool_tvl_usd": 639982.0,
+      "protocols": 2,
+      "above_5m_pools": 0,
+      "screen_share": 9.021539875093384e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Scroll",
+      "pools": 3,
+      "reported_full_pool_tvl_usd": 600607.0,
+      "protocols": 3,
+      "above_5m_pools": 0,
+      "screen_share": 8.466488119603695e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "ZKsync Era",
+      "pools": 8,
+      "reported_full_pool_tvl_usd": 595026.0,
+      "protocols": 4,
+      "above_5m_pools": 0,
+      "screen_share": 8.387815259987494e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Plasma",
+      "pools": 4,
+      "reported_full_pool_tvl_usd": 580060.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 8.17684625496759e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Bifrost Network",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 506600.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 7.141313506820986e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "MultiversX",
+      "pools": 3,
+      "reported_full_pool_tvl_usd": 438158.0,
+      "protocols": 3,
+      "above_5m_pools": 0,
+      "screen_share": 6.1765172592216136e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Defichain",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 200399.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 2.8249350285302382e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Flow",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 179562.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 2.5312051636632253e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Bob",
+      "pools": 3,
+      "reported_full_pool_tvl_usd": 159718.0,
+      "protocols": 2,
+      "above_5m_pools": 0,
+      "screen_share": 2.2514731754489425e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Heco",
+      "pools": 5,
+      "reported_full_pool_tvl_usd": 147123.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 2.0739270964548438e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Metis",
+      "pools": 4,
+      "reported_full_pool_tvl_usd": 111253.0,
+      "protocols": 3,
+      "above_5m_pools": 0,
+      "screen_share": 1.5682837575490628e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Hemi",
+      "pools": 2,
+      "reported_full_pool_tvl_usd": 95862.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 1.351323717708001e-06,
+      "deep_candidate": false
+    },
+    {
+      "chain": "HyperEVM",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 63321.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 8.926078021425417e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Shape",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 53042.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 7.477093387856272e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Move",
+      "pools": 3,
+      "reported_full_pool_tvl_usd": 52503.0,
+      "protocols": 3,
+      "above_5m_pools": 0,
+      "screen_share": 7.401112969771461e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Abstract",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 50421.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 7.107622746297295e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Thorchain",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 36391.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 5.129876427688956e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Manta",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 29098.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 4.1018148523781495e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Neo",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 29091.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 4.1008280937017235e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Opbnb",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 24993.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 3.523151371416836e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Taiko",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 21920.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 3.089964312465772e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Moonbeam",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 20890.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 2.9447698215059297e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Soneium",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 20345.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 2.867943610269897e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Mode",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 12709.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 1.7915308598142106e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Cronos zkEVM",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 12221.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 1.72273968351479e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Neutron",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 10332.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 1.4564558064049433e-07,
+      "deep_candidate": false
+    },
+    {
+      "chain": "Algorand",
+      "pools": 1,
+      "reported_full_pool_tvl_usd": 4386.0,
+      "protocols": 1,
+      "above_5m_pools": 0,
+      "screen_share": 6.182747935435619e-08,
+      "deep_candidate": false
+    }
+  ]
+}

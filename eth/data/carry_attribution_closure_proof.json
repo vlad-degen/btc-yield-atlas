@@ -1,0 +1,565 @@
+{
+  "snapshot_timestamp": 1790985599,
+  "records": [
+    {
+      "key": "opening_code_0xf0bb20865277abd641a307ece5ee04e79073416c",
+      "method": "eth_getCode",
+      "params": [
+        "0xf0bb20865277abd641a307ece5ee04e79073416c",
+        "0x121eac0"
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x"
+      }
+    },
+    {
+      "key": "opening_code_0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3",
+      "method": "eth_getCode",
+      "params": [
+        "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3",
+        "0x121eac0"
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x"
+      }
+    },
+    {
+      "key": "opening_code_0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+      "method": "eth_getCode",
+      "params": [
+        "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+        "0x121eac0"
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x"
+      }
+    },
+    {
+      "key": "opening_code_0x528353aea55dbbbf18be26d5726afe6585898dc5",
+      "method": "eth_getCode",
+      "params": [
+        "0x528353aea55dbbbf18be26d5726afe6585898dc5",
+        "0x121eac0"
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x"
+      }
+    },
+    {
+      "key": "prime_underlying_symbol()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
+          "data": "0x95d89b41"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000577594c4453000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "key": "prime_underlying_decimals()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
+          "data": "0x313ce567"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000006"
+      }
+    },
+    {
+      "key": "historical_rlusd_adapter_source",
+      "method": "GET",
+      "params": [
+        "https://eth.blockscout.com/api/v2/smart-contracts/0x5705f2c343dfc4600c77cbcf6b7a7b5eb579ba01"
+      ],
+      "response": {
+        "file_path": "lib/vault-v2/src/adapters/MorphoVaultV1Adapter.sol",
+        "creation_status": "success",
+        "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity 0.8.28;\n\nimport {IVaultV2} from \"../interfaces/IVaultV2.sol\";\nimport {IERC4626} from \"../interfaces/IERC4626.sol\";\nimport {IERC20} from \"../interfaces/IERC20.sol\";\nimport {IMorphoVaultV1Adapter} from \"./interfaces/IMorphoVaultV1Adapter.sol\";\nimport {SafeERC20Lib} from \"../libraries/SafeERC20Lib.sol\";\n\n/// @dev Designed, developed and audited for Morpho Vaults v1 (v1.0 and v1.1) (also known as MetaMorpho). Integration\n/// with other vaults must be carefully assessed from a security standpoint.\n/// @dev This adapter must be used with Morpho Vaults v1 that are protected against inflation attacks with an initial\n/// deposit. See https://docs.openzeppelin.com/contracts/5.x/erc4626#inflation-attack.\n/// @dev Must not be used with a Morpho Vault v1 which has a market with an Irm that can re-enter the parent vault or\n/// the adapter.\n/// @dev Morpho Vaults v1.1 do not realize bad debt, so Morpho Vaults v2 supplying in them will not realize the\n/// corresponding bad debt.\n/// @dev Losses that correspond to rounding errors are realizable.\n/// @dev Shares of the Morpho Vault v1 cannot be skimmed (unlike any other token).\n/// @dev If expectedSupplyAssets reverts for a market of the morphoVaultV1, realAssets will revert and the vault will\n/// not be able to accrueInterest.\n/// @dev Shouldn't be used alongside another adapter that re-uses the id (abi.encode(\"this\", address(this)).\ncontract MorphoVaultV1Adapter is IMorphoVaultV1Adapter {\n    /* IMMUTABLES */\n\n    address public immutable factory;\n    address public immutable parentVault;\n    address public immutable morphoVaultV1;\n    bytes32 public immutable adapterId;\n\n    /* STORAGE */\n\n    address public skimRecipient;\n\n    /* FUNCTIONS */\n\n    constructor(address _parentVault, address _morphoVaultV1) {\n        factory = msg.sender;\n        parentVault = _parentVault;\n        morphoVaultV1 = _morphoVaultV1;\n        adapterId = keccak256(abi.encode(\"this\", address(this)));\n        address asset = IVaultV2(_parentVault).asset();\n        require(asset == IERC4626(_morphoVaultV1).asset(), AssetMismatch());\n        SafeERC20Lib.safeApprove(asset, _parentVault, type(uint256).max);\n        SafeERC20Lib.safeApprove(asset, _morphoVaultV1, type(uint256).max);\n    }\n\n    function setSkimRecipient(address newSkimRecipient) external {\n        require(msg.sender == IVaultV2(parentVault).owner(), NotAuthorized());\n        skimRecipient = newSkimRecipient;\n        emit SetSkimRecipient(newSkimRecipient);\n    }\n\n    /// @dev Skims the adapter's balance of `token` and sends it to `skimRecipient`.\n    /// @dev This is useful to handle rewards that the adapter has earned.\n    function skim(address token) external {\n        require(msg.sender == skimRecipient, NotAuthorized());\n        require(token != morphoVaultV1, CannotSkimMorphoVaultV1Shares());\n        uint256 balance = IERC20(token).balanceOf(address(this));\n        SafeERC20Lib.safeTransfer(token, skimRecipient, balance);\n        emit Skim(token, balance);\n    }\n\n    /// @dev Does not log anything because the ids (logged in the parent vault) are enough.\n    /// @dev Returns the ids of the allocation and the change in allocation.\n    function allocate(bytes memory data, uint256 assets, bytes4, address) external returns (bytes32[] memory, int256) {\n        require(data.length == 0, InvalidData());\n        require(msg.sender == parentVault, NotAuthorized());\n\n        if (assets > 0) IERC4626(morphoVaultV1).deposit(assets, address(this));\n        uint256 oldAllocation = allocation();\n        uint256 newAllocation = IERC4626(morphoVaultV1).previewRedeem(IERC4626(morphoVaultV1).balanceOf(address(this)));\n\n        // Safe casts because Market v1 bounds the total supply of the underlying token, and allocation is less than the\n        // max total assets of the vault.\n        return (ids(), int256(newAllocation) - int256(oldAllocation));\n    }\n\n    /// @dev Does not log anything because the ids (logged in the parent vault) are enough.\n    /// @dev Returns the ids of the deallocation and the change in allocation.\n    function deallocate(bytes memory data, uint256 assets, bytes4, address)\n        external\n        returns (bytes32[] memory, int256)\n    {\n        require(data.length == 0, InvalidData());\n        require(msg.sender == parentVault, NotAuthorized());\n\n        if (assets > 0) IERC4626(morphoVaultV1).withdraw(assets, address(this), address(this));\n        uint256 oldAllocation = allocation();\n        uint256 newAllocation = IERC4626(morphoVaultV1).previewRedeem(IERC4626(morphoVaultV1).balanceOf(address(this)));\n\n        // Safe casts because Market v1 bounds the total supply of the underlying token, and allocation is less than the\n        // max total assets of the vault.\n        return (ids(), int256(newAllocation) - int256(oldAllocation));\n    }\n\n    /// @dev Returns adapter's ids.\n    function ids() public view returns (bytes32[] memory) {\n        bytes32[] memory ids_ = new bytes32[](1);\n        ids_[0] = adapterId;\n        return ids_;\n    }\n\n    function allocation() public view returns (uint256) {\n        return IVaultV2(parentVault).allocation(adapterId);\n    }\n\n    function realAssets() external view returns (uint256) {\n        return allocation() != 0\n            ? IERC4626(morphoVaultV1).previewRedeem(IERC4626(morphoVaultV1).balanceOf(address(this)))\n            : 0;\n    }\n}\n",
+        "deployed_bytecode": "0x6080806040526004361015610012575f80fd5b5f3560e01c9081630fe3653614610c1c575080631eadd77814610b265780632b30997b14610998578063388af5b5146109485780634e45f1ff146106c157806356c075731461054f5780635fb86b01146104f757806388a17bde146104b7578063bc25cf77146101d1578063c45a015514610163578063e4baaddf146100f55763e7657e15146100a0575f80fd5b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f1576100ed6100d9610f99565b604051918291602083526020830190610e2b565b0390f35b5f80fd5b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157602060405173ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000071cb2f8038b2c5d65ddc740b2f3268890cd2a89c168152f35b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157602060405173ffffffffffffffffffffffffffffffffffffffff7f000000000000000000000000d1b8e2dee25c2b89dcd2f98448a7ce87d6f63394168152f35b346100f15760207ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157610208610d30565b73ffffffffffffffffffffffffffffffffffffffff5f541680330361048f5773ffffffffffffffffffffffffffffffffffffffff82169173ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000071cb2f8038b2c5d65ddc740b2f3268890cd2a89c16831461046757604051917f70a08231000000000000000000000000000000000000000000000000000000008352306004840152602083602481875afa92831561045c575f93610428575b50813b15610400575f9182918260405160208101927fa9059cbb000000000000000000000000000000000000000000000000000000008452602482015286604482015260448152610312606482610c88565b51925af13d156103f8573d9061032782610cf6565b916103356040519384610c88565b82523d5f602084013e5b156103d05780519081159182156103ad575b5050156103855760207f5e99aaf6d3588fb2497fde044168e8c046704a3223559cfe107f8f94b42cefdd91604051908152a2005b7f2f0470fc000000000000000000000000000000000000000000000000000000005f5260045ffd5b81925090602091810103126100f1576020015180151581036100f1578380610351565b7face2a47e000000000000000000000000000000000000000000000000000000005f5260045ffd5b60609061033f565b7ff046a714000000000000000000000000000000000000000000000000000000005f5260045ffd5b9092506020813d602011610454575b8161044460209383610c88565b810103126100f1575191846102c0565b3d9150610437565b6040513d5f823e3d90fd5b7fd60904b7000000000000000000000000000000000000000000000000000000005f5260045ffd5b7fea8e4eb5000000000000000000000000000000000000000000000000000000005f5260045ffd5b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f15760206104ef610ece565b604051908152f35b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f15760206040517f831cd4ae492e752cc07e1abd949833e224baba31a598d5f2e341372e9895c70f8152f35b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157610585610ece565b156106b95773ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000071cb2f8038b2c5d65ddc740b2f3268890cd2a89c166040517f70a08231000000000000000000000000000000000000000000000000000000008152306004820152602081602481855afa801561045c575f90610686575b602091506024604051809481937f4cdad50600000000000000000000000000000000000000000000000000000000835260048301525afa801561045c575f90610653575b60209150604051908152f35b506020813d60201161067e575b8161066d60209383610c88565b810103126100f15760209051610647565b3d9150610660565b506020813d6020116106b1575b816106a060209383610c88565b810103126100f15760209051610603565b3d9150610693565b60205f6104ef565b346100f1576106cf36610d53565b505090516109205773ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000006dc58a0fdfc8d694e571dc59b9a52eeea780e6bf16330361048f578061086e575b50610723610ece565b73ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000071cb2f8038b2c5d65ddc740b2f3268890cd2a89c16906040517f70a08231000000000000000000000000000000000000000000000000000000008152306004820152602081602481865afa801561045c575f9061083b575b602091506024604051809581937f4cdad50600000000000000000000000000000000000000000000000000000000835260048301525afa91821561045c575f92610805575b506107f5906107ef610f99565b92610e89565b906100ed60405192839283610e5e565b9091506020813d602011610833575b8161082160209383610c88565b810103126100f15751906107f56107e2565b3d9150610814565b506020813d602011610866575b8161085560209383610c88565b810103126100f1576020905161079d565b3d9150610848565b604051907fb460af9400000000000000000000000000000000000000000000000000000000825260048201523060248201523060448201526020816064815f73ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000071cb2f8038b2c5d65ddc740b2f3268890cd2a89c165af1801561045c571561071a576109129060203d602011610919575b61090a8183610c88565b810190610e7a565b508061071a565b503d610900565b7f5cb045db000000000000000000000000000000000000000000000000000000005f5260045ffd5b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157602073ffffffffffffffffffffffffffffffffffffffff5f5416604051908152f35b346100f15760207ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f1576109cf610d30565b6040517f8da5cb5b00000000000000000000000000000000000000000000000000000000815260208160048173ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000006dc58a0fdfc8d694e571dc59b9a52eeea780e6bf165afa801561045c575f90610ac3575b73ffffffffffffffffffffffffffffffffffffffff915016330361048f5773ffffffffffffffffffffffffffffffffffffffff16807fffffffffffffffffffffffff00000000000000000000000000000000000000005f5416175f557f2e7908865670e21b9779422cadf5f1cba271a62bb95c71eaaf615c0a1c48ebee5f80a2005b506020813d602011610b1e575b81610add60209383610c88565b810103126100f1575173ffffffffffffffffffffffffffffffffffffffff811681036100f15773ffffffffffffffffffffffffffffffffffffffff90610a41565b3d9150610ad0565b346100f157610b3436610d53565b505090516109205773ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000006dc58a0fdfc8d694e571dc59b9a52eeea780e6bf16330361048f5780610b875750610723610ece565b604051907f6e553f6500000000000000000000000000000000000000000000000000000000825260048201523060248201526020816044815f73ffffffffffffffffffffffffffffffffffffffff7f00000000000000000000000071cb2f8038b2c5d65ddc740b2f3268890cd2a89c165af1801561045c571561071a576109129060203d6020116109195761090a8183610c88565b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f15760209073ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000006dc58a0fdfc8d694e571dc59b9a52eeea780e6bf168152f35b90601f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0910116810190811067ffffffffffffffff821117610cc957604052565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b67ffffffffffffffff8111610cc957601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe01660200190565b6004359073ffffffffffffffffffffffffffffffffffffffff821682036100f157565b60807ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc8201126100f15760043567ffffffffffffffff81116100f157816023820112156100f157806004013590610da982610cf6565b92610db76040519485610c88565b828452602483830101116100f157815f92602460209301838601378301015290602435906044357fffffffff00000000000000000000000000000000000000000000000000000000811681036100f1579060643573ffffffffffffffffffffffffffffffffffffffff811681036100f15790565b90602080835192838152019201905f5b818110610e485750505090565b8251845260209384019390920191600101610e3b565b929190610e75602091604086526040860190610e2b565b930152565b908160209103126100f1575190565b81810392915f138015828513169184121617610ea157565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52601160045260245ffd5b6040517fc69507dd0000000000000000000000000000000000000000000000000000000081527f831cd4ae492e752cc07e1abd949833e224baba31a598d5f2e341372e9895c70f600482015260208160248173ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000006dc58a0fdfc8d694e571dc59b9a52eeea780e6bf165afa90811561045c575f91610f6a575090565b90506020813d602011610f91575b81610f8560209383610c88565b810103126100f1575190565b3d9150610f78565b604051610fa7604082610c88565b60018152602080820190368237815115610fe1577f831cd4ae492e752cc07e1abd949833e224baba31a598d5f2e341372e9895c70f905290565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52603260045260245ffdfea164736f6c634300081c000a",
+        "optimization_enabled": true,
+        "verified_twin_address_hash": null,
+        "is_verified": true,
+        "compiler_settings": {
+          "evmVersion": "cancun",
+          "libraries": {},
+          "metadata": {
+            "appendCBOR": true,
+            "bytecodeHash": "none",
+            "useLiteralContent": false
+          },
+          "optimizer": {
+            "enabled": true,
+            "runs": 100000
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "*"
+              ],
+              "*": [
+                "*"
+              ]
+            }
+          },
+          "remappings": [
+            "solmate/=lib/bundler3/lib/permit2/lib/solmate/",
+            "@openzeppelin/contracts/=lib/metamorpho-1.1/lib/openzeppelin-contracts/contracts/",
+            "bundler3/=lib/bundler3/",
+            "ds-test/=lib/metamorpho-1.1/lib/forge-std/lib/ds-test/src/",
+            "erc4626-tests/=lib/metamorpho-1.1/lib/erc4626-tests/",
+            "forge-gas-snapshot/=lib/bundler3/lib/permit2/lib/forge-gas-snapshot/src/",
+            "forge-std/=lib/forge-std/src/",
+            "halmos-cheatcodes/=lib/morpho-blue/lib/halmos-cheatcodes/src/",
+            "metamorpho-1.1/=lib/metamorpho-1.1/",
+            "metamorpho-v1.1/=lib/vault-v2/lib/metamorpho-v1.1/",
+            "metamorpho/=lib/vault-v2/lib/metamorpho/",
+            "morpho-blue-irm/=lib/morpho-blue-irm/src/",
+            "morpho-blue-oracles/=lib/morpho-blue-oracles/src/",
+            "morpho-blue/=lib/morpho-blue/",
+            "murky/=lib/universal-rewards-distributor/lib/murky/src/",
+            "openzeppelin-contracts/=lib/metamorpho-1.1/lib/openzeppelin-contracts/",
+            "openzeppelin/=lib/universal-rewards-distributor/lib/openzeppelin-contracts/contracts/",
+            "permit2/=lib/bundler3/lib/permit2/",
+            "pre-liquidation/=lib/pre-liquidation/src/",
+            "public-allocator/=lib/public-allocator/src/",
+            "safe-smart-account/=lib/safe-smart-account/",
+            "universal-rewards-distributor/=lib/universal-rewards-distributor/src/",
+            "vault-v2-adapter-registries/=lib/vault-v2-adapter-registries/src/",
+            "vault-v2/=lib/vault-v2/"
+          ],
+          "viaIR": true
+        },
+        "optimization_runs": 100000,
+        "sourcify_repo_url": null,
+        "decoded_constructor_args": [
+          [
+            "0x6dC58a0FdfC8D694e571DC59B9A52EEEa780E6bf",
+            {
+              "internalType": "address",
+              "name": "_parentVault",
+              "type": "address"
+            }
+          ],
+          [
+            "0x71cb2F8038B2C5D65ddc740B2F3268890CD2A89C",
+            {
+              "internalType": "address",
+              "name": "_morphoVaultV1",
+              "type": "address"
+            }
+          ]
+        ],
+        "compiler_version": "v0.8.28+commit.7893614a",
+        "is_verified_via_verifier_alliance": false,
+        "verified_at": "2026-03-18T12:09:03.204393Z",
+        "implementations": [],
+        "proxy_type": null,
+        "external_libraries": [],
+        "creation_bytecode": "0x61010080604052346101c85760408161137180380380916100208285610219565b8339810103126101c85761003f602061003883610250565b9201610250565b336080528160a0528060c05260405160208101906040825260046060820152637468697360e01b60808201523060408201526080815261008060a082610219565b51902060e0526040516338d52e0f60e01b81526020816004816001600160a01b0387165afa9081156101d4575f916101df575b506040516338d52e0f60e01b81526020816004816001600160a01b0387165afa9081156101d4575f91610196575b506001600160a01b0390811690821603610187576101026101079382610264565b610264565b60405161101b90816103568239608051816101ad015260a0518181816106ee01528181610a1201528181610b5301528181610c640152610f37015260c05181818161013f01528181610256015281816105a10152818161073a015281816108c40152610bd7015260e05181818161052c01528181610ef60152610fbd0152f35b6341e0808560e11b5f5260045ffd5b90506020813d6020116101cc575b816101b160209383610219565b810103126101c8576101c290610250565b5f6100e1565b5f80fd5b3d91506101a4565b6040513d5f823e3d90fd5b90506020813d602011610211575b816101fa60209383610219565b810103126101c85761020b90610250565b5f6100b3565b3d91506101ed565b601f909101601f19168101906001600160401b0382119082101761023c57604052565b634e487b7160e01b5f52604160045260245ffd5b51906001600160a01b03821682036101c857565b90813b15610346575f91829182604051602081019263095ea7b360e01b845260018060a01b0316602482015281196044820152604481526102a6606482610219565b51925af13d1561033e573d906001600160401b03821161023c57604051916102d8601f8201601f191660200184610219565b82523d5f602084013e5b1561032f57805190811591821561030c575b5050156102fd57565b631f55ddd960e21b5f5260045ffd5b81925090602091810103126101c8576020015180151581036101c8575f806102f4565b637cceae2560e01b5f5260045ffd5b6060906102e2565b633c11a9c560e21b5f5260045ffdfe6080806040526004361015610012575f80fd5b5f3560e01c9081630fe3653614610c1c575080631eadd77814610b265780632b30997b14610998578063388af5b5146109485780634e45f1ff146106c157806356c075731461054f5780635fb86b01146104f757806388a17bde146104b7578063bc25cf77146101d1578063c45a015514610163578063e4baaddf146100f55763e7657e15146100a0575f80fd5b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f1576100ed6100d9610f99565b604051918291602083526020830190610e2b565b0390f35b5f80fd5b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157602060405173ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000000000000000000000000000000000000000000000168152f35b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157602060405173ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000000000000000000000000000000000000000000000168152f35b346100f15760207ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157610208610d30565b73ffffffffffffffffffffffffffffffffffffffff5f541680330361048f5773ffffffffffffffffffffffffffffffffffffffff82169173ffffffffffffffffffffffffffffffffffffffff7f000000000000000000000000000000000000000000000000000000000000000016831461046757604051917f70a08231000000000000000000000000000000000000000000000000000000008352306004840152602083602481875afa92831561045c575f93610428575b50813b15610400575f9182918260405160208101927fa9059cbb000000000000000000000000000000000000000000000000000000008452602482015286604482015260448152610312606482610c88565b51925af13d156103f8573d9061032782610cf6565b916103356040519384610c88565b82523d5f602084013e5b156103d05780519081159182156103ad575b5050156103855760207f5e99aaf6d3588fb2497fde044168e8c046704a3223559cfe107f8f94b42cefdd91604051908152a2005b7f2f0470fc000000000000000000000000000000000000000000000000000000005f5260045ffd5b81925090602091810103126100f1576020015180151581036100f1578380610351565b7face2a47e000000000000000000000000000000000000000000000000000000005f5260045ffd5b60609061033f565b7ff046a714000000000000000000000000000000000000000000000000000000005f5260045ffd5b9092506020813d602011610454575b8161044460209383610c88565b810103126100f1575191846102c0565b3d9150610437565b6040513d5f823e3d90fd5b7fd60904b7000000000000000000000000000000000000000000000000000000005f5260045ffd5b7fea8e4eb5000000000000000000000000000000000000000000000000000000005f5260045ffd5b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f15760206104ef610ece565b604051908152f35b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f15760206040517f00000000000000000000000000000000000000000000000000000000000000008152f35b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157610585610ece565b156106b95773ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000000000000000000000000000000000000000000000166040517f70a08231000000000000000000000000000000000000000000000000000000008152306004820152602081602481855afa801561045c575f90610686575b602091506024604051809481937f4cdad50600000000000000000000000000000000000000000000000000000000835260048301525afa801561045c575f90610653575b60209150604051908152f35b506020813d60201161067e575b8161066d60209383610c88565b810103126100f15760209051610647565b3d9150610660565b506020813d6020116106b1575b816106a060209383610c88565b810103126100f15760209051610603565b3d9150610693565b60205f6104ef565b346100f1576106cf36610d53565b505090516109205773ffffffffffffffffffffffffffffffffffffffff7f000000000000000000000000000000000000000000000000000000000000000016330361048f578061086e575b50610723610ece565b73ffffffffffffffffffffffffffffffffffffffff7f000000000000000000000000000000000000000000000000000000000000000016906040517f70a08231000000000000000000000000000000000000000000000000000000008152306004820152602081602481865afa801561045c575f9061083b575b602091506024604051809581937f4cdad50600000000000000000000000000000000000000000000000000000000835260048301525afa91821561045c575f92610805575b506107f5906107ef610f99565b92610e89565b906100ed60405192839283610e5e565b9091506020813d602011610833575b8161082160209383610c88565b810103126100f15751906107f56107e2565b3d9150610814565b506020813d602011610866575b8161085560209383610c88565b810103126100f1576020905161079d565b3d9150610848565b604051907fb460af9400000000000000000000000000000000000000000000000000000000825260048201523060248201523060448201526020816064815f73ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000000000000000000000000000000000000000000000165af1801561045c571561071a576109129060203d602011610919575b61090a8183610c88565b810190610e7a565b508061071a565b503d610900565b7f5cb045db000000000000000000000000000000000000000000000000000000005f5260045ffd5b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f157602073ffffffffffffffffffffffffffffffffffffffff5f5416604051908152f35b346100f15760207ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f1576109cf610d30565b6040517f8da5cb5b00000000000000000000000000000000000000000000000000000000815260208160048173ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000000000000000000000000000000000000000000000165afa801561045c575f90610ac3575b73ffffffffffffffffffffffffffffffffffffffff915016330361048f5773ffffffffffffffffffffffffffffffffffffffff16807fffffffffffffffffffffffff00000000000000000000000000000000000000005f5416175f557f2e7908865670e21b9779422cadf5f1cba271a62bb95c71eaaf615c0a1c48ebee5f80a2005b506020813d602011610b1e575b81610add60209383610c88565b810103126100f1575173ffffffffffffffffffffffffffffffffffffffff811681036100f15773ffffffffffffffffffffffffffffffffffffffff90610a41565b3d9150610ad0565b346100f157610b3436610d53565b505090516109205773ffffffffffffffffffffffffffffffffffffffff7f000000000000000000000000000000000000000000000000000000000000000016330361048f5780610b875750610723610ece565b604051907f6e553f6500000000000000000000000000000000000000000000000000000000825260048201523060248201526020816044815f73ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000000000000000000000000000000000000000000000165af1801561045c571561071a576109129060203d6020116109195761090a8183610c88565b346100f1575f7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc3601126100f15760209073ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000000000000000000000000000000000000000000000168152f35b90601f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0910116810190811067ffffffffffffffff821117610cc957604052565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52604160045260245ffd5b67ffffffffffffffff8111610cc957601f017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe01660200190565b6004359073ffffffffffffffffffffffffffffffffffffffff821682036100f157565b60807ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffc8201126100f15760043567ffffffffffffffff81116100f157816023820112156100f157806004013590610da982610cf6565b92610db76040519485610c88565b828452602483830101116100f157815f92602460209301838601378301015290602435906044357fffffffff00000000000000000000000000000000000000000000000000000000811681036100f1579060643573ffffffffffffffffffffffffffffffffffffffff811681036100f15790565b90602080835192838152019201905f5b818110610e485750505090565b8251845260209384019390920191600101610e3b565b929190610e75602091604086526040860190610e2b565b930152565b908160209103126100f1575190565b81810392915f138015828513169184121617610ea157565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52601160045260245ffd5b6040517fc69507dd0000000000000000000000000000000000000000000000000000000081527f0000000000000000000000000000000000000000000000000000000000000000600482015260208160248173ffffffffffffffffffffffffffffffffffffffff7f0000000000000000000000000000000000000000000000000000000000000000165afa90811561045c575f91610f6a575090565b90506020813d602011610f91575b81610f8560209383610c88565b810103126100f1575190565b3d9150610f78565b604051610fa7604082610c88565b60018152602080820190368237815115610fe1577f0000000000000000000000000000000000000000000000000000000000000000905290565b7f4e487b71000000000000000000000000000000000000000000000000000000005f52603260045260245ffdfea164736f6c634300081c000a0000000000000000000000006dc58a0fdfc8d694e571dc59b9a52eeea780e6bf00000000000000000000000071cb2f8038b2c5d65ddc740b2f3268890cd2a89c",
+        "name": "MorphoVaultV1Adapter",
+        "is_blueprint": false,
+        "license_type": "none",
+        "is_fully_verified": false,
+        "is_verified_via_eth_bytecode_db": true,
+        "language": "solidity",
+        "evm_version": "cancun",
+        "can_be_visualized_via_sol2uml": true,
+        "is_verified_via_sourcify": false,
+        "additional_sources": [
+          {
+            "file_path": "lib/vault-v2/src/adapters/interfaces/IMorphoVaultV1Adapter.sol",
+            "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity >= 0.5.0;\n\nimport {IAdapter} from \"../../interfaces/IAdapter.sol\";\n\ninterface IMorphoVaultV1Adapter is IAdapter {\n    /* EVENTS */\n\n    event SetSkimRecipient(address indexed newSkimRecipient);\n    event Skim(address indexed token, uint256 assets);\n\n    /* ERRORS */\n\n    error AssetMismatch();\n    error CannotSkimMorphoVaultV1Shares();\n    error InvalidData();\n    error NotAuthorized();\n\n    /* FUNCTIONS */\n\n    function factory() external view returns (address);\n    function parentVault() external view returns (address);\n    function morphoVaultV1() external view returns (address);\n    function adapterId() external view returns (bytes32);\n    function skimRecipient() external view returns (address);\n    function allocation() external view returns (uint256);\n    function ids() external view returns (bytes32[] memory);\n    function setSkimRecipient(address newSkimRecipient) external;\n    function skim(address token) external;\n}\n"
+          },
+          {
+            "file_path": "lib/vault-v2/src/interfaces/IAdapter.sol",
+            "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity >=0.5.0;\n\n/// @dev See VaultV2 NatSpec comments for more details on adapter's spec.\ninterface IAdapter {\n    /// @dev Returns the market' ids and the change in assets on this market.\n    function allocate(bytes memory data, uint256 assets, bytes4 selector, address sender)\n        external\n        returns (bytes32[] memory ids, int256 change);\n\n    /// @dev Returns the market' ids and the change in assets on this market.\n    function deallocate(bytes memory data, uint256 assets, bytes4 selector, address sender)\n        external\n        returns (bytes32[] memory ids, int256 change);\n\n    /// @dev Returns the current value of the investments of the adapter (in underlying asset).\n    function realAssets() external view returns (uint256 assets);\n}\n"
+          },
+          {
+            "file_path": "lib/vault-v2/src/interfaces/IERC20.sol",
+            "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity >=0.5.0;\n\ninterface IERC20 {\n    function decimals() external view returns (uint8);\n    function name() external view returns (string memory);\n    function symbol() external view returns (string memory);\n    function totalSupply() external view returns (uint256);\n    function balanceOf(address account) external view returns (uint256);\n    function transfer(address to, uint256 shares) external returns (bool success);\n    function transferFrom(address from, address to, uint256 shares) external returns (bool success);\n    function approve(address spender, uint256 shares) external returns (bool success);\n    function allowance(address owner, address spender) external view returns (uint256);\n}\n"
+          },
+          {
+            "file_path": "lib/vault-v2/src/interfaces/IERC2612.sol",
+            "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity >=0.5.0;\n\ninterface IERC2612 {\n    function permit(address owner, address spender, uint256 shares, uint256 deadline, uint8 v, bytes32 r, bytes32 s)\n        external;\n    function nonces(address owner) external view returns (uint256);\n    function DOMAIN_SEPARATOR() external view returns (bytes32);\n}\n"
+          },
+          {
+            "file_path": "lib/vault-v2/src/interfaces/IERC4626.sol",
+            "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity >=0.5.0;\n\nimport {IERC20} from \"./IERC20.sol\";\n\ninterface IERC4626 is IERC20 {\n    function asset() external view returns (address);\n    function totalAssets() external view returns (uint256);\n    function convertToAssets(uint256 shares) external view returns (uint256 assets);\n    function convertToShares(uint256 assets) external view returns (uint256 shares);\n    function deposit(uint256 assets, address onBehalf) external returns (uint256 shares);\n    function mint(uint256 shares, address onBehalf) external returns (uint256 assets);\n    function withdraw(uint256 assets, address onBehalf, address receiver) external returns (uint256 shares);\n    function redeem(uint256 shares, address onBehalf, address receiver) external returns (uint256 assets);\n    function previewDeposit(uint256 assets) external view returns (uint256 shares);\n    function previewMint(uint256 shares) external view returns (uint256 assets);\n    function previewWithdraw(uint256 assets) external view returns (uint256 shares);\n    function previewRedeem(uint256 shares) external view returns (uint256 assets);\n    function maxDeposit(address onBehalf) external view returns (uint256 assets);\n    function maxMint(address onBehalf) external view returns (uint256 shares);\n    function maxWithdraw(address onBehalf) external view returns (uint256 assets);\n    function maxRedeem(address onBehalf) external view returns (uint256 shares);\n}\n"
+          },
+          {
+            "file_path": "lib/vault-v2/src/interfaces/IVaultV2.sol",
+            "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity >=0.5.0;\n\nimport {IERC20} from \"./IERC20.sol\";\nimport {IERC4626} from \"./IERC4626.sol\";\nimport {IERC2612} from \"./IERC2612.sol\";\n\nstruct Caps {\n    uint256 allocation;\n    uint128 absoluteCap;\n    uint128 relativeCap;\n}\n\ninterface IVaultV2 is IERC4626, IERC2612 {\n    // State variables\n    function virtualShares() external view returns (uint256);\n    function owner() external view returns (address);\n    function curator() external view returns (address);\n    function receiveSharesGate() external view returns (address);\n    function sendSharesGate() external view returns (address);\n    function receiveAssetsGate() external view returns (address);\n    function sendAssetsGate() external view returns (address);\n    function adapterRegistry() external view returns (address);\n    function isSentinel(address account) external view returns (bool);\n    function isAllocator(address account) external view returns (bool);\n    function firstTotalAssets() external view returns (uint256);\n    function _totalAssets() external view returns (uint128);\n    function lastUpdate() external view returns (uint64);\n    function maxRate() external view returns (uint64);\n    function adapters(uint256 index) external view returns (address);\n    function adaptersLength() external view returns (uint256);\n    function isAdapter(address account) external view returns (bool);\n    function allocation(bytes32 id) external view returns (uint256);\n    function absoluteCap(bytes32 id) external view returns (uint256);\n    function relativeCap(bytes32 id) external view returns (uint256);\n    function forceDeallocatePenalty(address adapter) external view returns (uint256);\n    function liquidityAdapter() external view returns (address);\n    function liquidityData() external view returns (bytes memory);\n    function timelock(bytes4 selector) external view returns (uint256);\n    function executableAt(bytes memory data) external view returns (uint256);\n    function pendingCount(bytes4 selector) external view returns (uint256);\n    function performanceFee() external view returns (uint96);\n    function performanceFeeRecipient() external view returns (address);\n    function managementFee() external view returns (uint96);\n    function managementFeeRecipient() external view returns (address);\n\n    // Gating\n    function canSendShares(address account) external view returns (bool);\n    function canReceiveShares(address account) external view returns (bool);\n    function canSendAssets(address account) external view returns (bool);\n    function canReceiveAssets(address account) external view returns (bool);\n\n    // Multicall\n    function multicall(bytes[] memory data) external;\n\n    // Owner functions\n    function setOwner(address newOwner) external;\n    function setCurator(address newCurator) external;\n    function setIsSentinel(address account, bool isSentinel) external;\n    function setName(string memory newName) external;\n    function setSymbol(string memory newSymbol) external;\n\n    // Timelocks for curator functions\n    function submit(bytes memory data) external;\n    function revoke(bytes memory data) external;\n\n    // Curator functions\n    function setIsAllocator(address account, bool newIsAllocator) external;\n    function setReceiveSharesGate(address newReceiveSharesGate) external;\n    function setSendSharesGate(address newSendSharesGate) external;\n    function setReceiveAssetsGate(address newReceiveAssetsGate) external;\n    function setSendAssetsGate(address newSendAssetsGate) external;\n    function setAdapterRegistry(address newAdapterRegistry) external;\n    function addAdapter(address account) external;\n    function removeAdapter(address account) external;\n    function increaseTimelock(bytes4 selector, uint256 newDuration) external;\n    function decreaseTimelock(bytes4 selector, uint256 newDuration) external;\n    function setPerformanceFee(uint256 newPerformanceFee) external;\n    function setManagementFee(uint256 newManagementFee) external;\n    function setPerformanceFeeRecipient(address newPerformanceFeeRecipient) external;\n    function setManagementFeeRecipient(address newManagementFeeRecipient) external;\n    function increaseAbsoluteCap(bytes memory idData, uint256 newAbsoluteCap) external;\n    function decreaseAbsoluteCap(bytes memory idData, uint256 newAbsoluteCap) external;\n    function increaseRelativeCap(bytes memory idData, uint256 newRelativeCap) external;\n    function decreaseRelativeCap(bytes memory idData, uint256 newRelativeCap) external;\n    function setMaxRate(uint256 newMaxRate) external;\n    function setForceDeallocatePenalty(address adapter, uint256 newForceDeallocatePenalty) external;\n\n    // Allocator functions\n    function allocate(address adapter, bytes memory data, uint256 assets) external;\n    function deallocate(address adapter, bytes memory data, uint256 assets) external;\n    function setLiquidityAdapterAndData(address newLiquidityAdapter, bytes memory newLiquidityData) external;\n\n    // Exchange rate\n    function accrueInterest() external;\n    function accrueInterestView()\n        external\n        view\n        returns (uint256 newTotalAssets, uint256 performanceFeeShares, uint256 managementFeeShares);\n\n    // Force deallocate\n    function forceDeallocate(address adapter, bytes memory data, uint256 assets, address onBehalf)\n        external\n        returns (uint256 penaltyShares);\n}\n"
+          },
+          {
+            "file_path": "lib/vault-v2/src/libraries/ErrorsLib.sol",
+            "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity ^0.8.0;\n\nlibrary ErrorsLib {\n    error AbsoluteCapExceeded();\n    error AbsoluteCapNotDecreasing();\n    error AbsoluteCapNotIncreasing();\n    error ApproveReturnedFalse();\n    error ApproveReverted();\n    error CannotReceiveShares();\n    error CannotReceiveAssets();\n    error CannotSendShares();\n    error CannotSendAssets();\n    error CapExceeded();\n    error CastOverflow();\n    error DataAlreadyPending();\n    error DataNotTimelocked();\n    error FeeInvariantBroken();\n    error FeeTooHigh();\n    error InvalidSigner();\n    error MaxRateTooHigh();\n    error NoCode();\n    error NotAdapter();\n    error NotInAdapterRegistry();\n    error PenaltyTooHigh();\n    error PermitDeadlineExpired();\n    error RelativeCapAboveOne();\n    error RelativeCapExceeded();\n    error RelativeCapNotDecreasing();\n    error RelativeCapNotIncreasing();\n    error AutomaticallyTimelocked();\n    error TimelockNotDecreasing();\n    error TimelockNotExpired();\n    error TimelockNotIncreasing();\n    error TransferFromReturnedFalse();\n    error TransferFromReverted();\n    error TransferReturnedFalse();\n    error TransferReverted();\n    error Unauthorized();\n    error ZeroAbsoluteCap();\n    error ZeroAddress();\n    error ZeroAllocation();\n}\n"
+          },
+          {
+            "file_path": "lib/vault-v2/src/libraries/SafeERC20Lib.sol",
+            "source_code": "// SPDX-License-Identifier: GPL-2.0-or-later\n// Copyright (c) 2025 Morpho Association\npragma solidity ^0.8.0;\n\nimport {IERC20} from \"../interfaces/IERC20.sol\";\nimport {ErrorsLib} from \"./ErrorsLib.sol\";\n\nlibrary SafeERC20Lib {\n    function safeTransfer(address token, address to, uint256 value) internal {\n        require(token.code.length > 0, ErrorsLib.NoCode());\n\n        (bool success, bytes memory returndata) = token.call(abi.encodeCall(IERC20.transfer, (to, value)));\n        require(success, ErrorsLib.TransferReverted());\n        require(returndata.length == 0 || abi.decode(returndata, (bool)), ErrorsLib.TransferReturnedFalse());\n    }\n\n    function safeTransferFrom(address token, address from, address to, uint256 value) internal {\n        require(token.code.length > 0, ErrorsLib.NoCode());\n\n        (bool success, bytes memory returndata) = token.call(abi.encodeCall(IERC20.transferFrom, (from, to, value)));\n        require(success, ErrorsLib.TransferFromReverted());\n        require(returndata.length == 0 || abi.decode(returndata, (bool)), ErrorsLib.TransferFromReturnedFalse());\n    }\n\n    function safeApprove(address token, address spender, uint256 value) internal {\n        require(token.code.length > 0, ErrorsLib.NoCode());\n\n        (bool success, bytes memory returndata) = token.call(abi.encodeCall(IERC20.approve, (spender, value)));\n        require(success, ErrorsLib.ApproveReverted());\n        require(returndata.length == 0 || abi.decode(returndata, (bool)), ErrorsLib.ApproveReturnedFalse());\n    }\n}\n"
+          }
+        ],
+        "certified": false,
+        "conflicting_implementations": null,
+        "abi": [
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "_parentVault",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "_morphoVaultV1",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "inputs": [],
+            "name": "ApproveReturnedFalse",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "ApproveReverted",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "AssetMismatch",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "CannotSkimMorphoVaultV1Shares",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "InvalidData",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "NoCode",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "NotAuthorized",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "TransferReturnedFalse",
+            "type": "error"
+          },
+          {
+            "inputs": [],
+            "name": "TransferReverted",
+            "type": "error"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newSkimRecipient",
+                "type": "address"
+              }
+            ],
+            "name": "SetSkimRecipient",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "assets",
+                "type": "uint256"
+              }
+            ],
+            "name": "Skim",
+            "type": "event"
+          },
+          {
+            "inputs": [],
+            "name": "adapterId",
+            "outputs": [
+              {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              },
+              {
+                "internalType": "uint256",
+                "name": "assets",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes4",
+                "name": "",
+                "type": "bytes4"
+              },
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "name": "allocate",
+            "outputs": [
+              {
+                "internalType": "bytes32[]",
+                "name": "",
+                "type": "bytes32[]"
+              },
+              {
+                "internalType": "int256",
+                "name": "",
+                "type": "int256"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "allocation",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              },
+              {
+                "internalType": "uint256",
+                "name": "assets",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bytes4",
+                "name": "",
+                "type": "bytes4"
+              },
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "name": "deallocate",
+            "outputs": [
+              {
+                "internalType": "bytes32[]",
+                "name": "",
+                "type": "bytes32[]"
+              },
+              {
+                "internalType": "int256",
+                "name": "",
+                "type": "int256"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "factory",
+            "outputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "ids",
+            "outputs": [
+              {
+                "internalType": "bytes32[]",
+                "name": "",
+                "type": "bytes32[]"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "morphoVaultV1",
+            "outputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "parentVault",
+            "outputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "realAssets",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "newSkimRecipient",
+                "type": "address"
+              }
+            ],
+            "name": "setSkimRecipient",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "token",
+                "type": "address"
+              }
+            ],
+            "name": "skim",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "skimRecipient",
+            "outputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ],
+        "is_changed_bytecode": false,
+        "is_partially_verified": true,
+        "constructor_args": "0000000000000000000000006dc58a0fdfc8d694e571dc59b9a52eeea780e6bf00000000000000000000000071cb2f8038b2c5d65ddc740b2f3268890cd2a89c"
+      }
+    },
+    {
+      "key": "rlusd-v2_ending_adapter_position",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "data": "0x93c52062ea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd40000000000000000000000003c6eab22cfc03fc32ad1bf836f2f886a5015dfff"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000052fe12dcba65a3058fb62f6c55900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "key": "pyusd-prime-v2_ending_adapter_position",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+          "data": "0x93c5206241c41d0c9aadbf4751f5ee215ed5a16954a4b34e1b70fca5393d4b08858fa3fa00000000000000000000000093d6393e66b56449b7926b9abfeb37606732de89"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000b1a9d302b805d619200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ]
+}

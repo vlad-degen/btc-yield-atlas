@@ -1,0 +1,171 @@
+{
+  "financial_snapshot_timestamp": 1790985599,
+  "labels": [
+    {
+      "market_id": "0x17f7ae1b52670010976b3fe41324cbb2b1eb7dd8f492e51764b2828371b86b84",
+      "asset": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+      "signature": "name()",
+      "block": 26108081,
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f662878292055534420536176696e670000000000000000000000000000000000"
+      }
+    },
+    {
+      "market_id": "0x17f7ae1b52670010976b3fe41324cbb2b1eb7dd8f492e51764b2828371b86b84",
+      "asset": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+      "signature": "symbol()",
+      "block": 26108081,
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000066678534156450000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "market_id": "0x17f7ae1b52670010976b3fe41324cbb2b1eb7dd8f492e51764b2828371b86b84",
+      "asset": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+      "signature": "decimals()",
+      "block": 26108081,
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000012"
+      }
+    },
+    {
+      "market_id": "0xb4977179610abfecfc8b76255a002c16b33f46d077beb86e5911e1fe9ee6e512",
+      "asset": "0x22ae3d9a738471f405169af055d31c687087d4c7",
+      "signature": "name()",
+      "block": 26108081,
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000014506179466920537472617465677920546f6b656e000000000000000000000000"
+      }
+    },
+    {
+      "market_id": "0xb4977179610abfecfc8b76255a002c16b33f46d077beb86e5911e1fe9ee6e512",
+      "asset": "0x22ae3d9a738471f405169af055d31c687087d4c7",
+      "signature": "symbol()",
+      "block": 26108081,
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000035053540000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "market_id": "0xb4977179610abfecfc8b76255a002c16b33f46d077beb86e5911e1fe9ee6e512",
+      "asset": "0x22ae3d9a738471f405169af055d31c687087d4c7",
+      "signature": "decimals()",
+      "block": 26108081,
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000006"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "key": "destination_credit_metadata_0_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+              "data": "0x06fdde03"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+              "data": "0x95d89b41"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+              "data": "0x313ce567"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T21:08:37.553195+00:00",
+      "http_status": 200,
+      "sha256": "a2f07b9145714bf35ddc2b96130d0582fe1b52aa08a4d612d363c14fcdb31696",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/destination_credit_metadata_0_provider0-a2f07b9145714bf3.json",
+      "bytes": 566,
+      "error": null
+    },
+    {
+      "key": "destination_credit_metadata_3_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x22ae3d9a738471f405169af055d31c687087d4c7",
+              "data": "0x06fdde03"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x22ae3d9a738471f405169af055d31c687087d4c7",
+              "data": "0x95d89b41"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x22ae3d9a738471f405169af055d31c687087d4c7",
+              "data": "0x313ce567"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T21:08:37.998156+00:00",
+      "http_status": 200,
+      "sha256": "e973332aae685a052afa7cd25acef9cb87929de1eafabb0b74aaa8212c18db91",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/destination_credit_metadata_3_provider0-e973332aae685a05.json",
+      "bytes": 566,
+      "error": null
+    }
+  ]
+}

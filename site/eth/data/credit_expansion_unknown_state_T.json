@@ -1,0 +1,233 @@
+{
+  "financial_target_timestamp": 1790985599,
+  "block": 26108081,
+  "labels": [
+    {
+      "chain": "Ethereum",
+      "address": "0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "sampled_debt_USD": 40585183.72978029,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "code"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "sampled_debt_USD": 40585183.72978029,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "native_balance"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0xa122687285dc5012141055a801045f069112e7c6",
+      "sampled_debt_USD": 23532601.33556571,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "code"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0xa122687285dc5012141055a801045f069112e7c6",
+      "sampled_debt_USD": 23532601.33556571,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "native_balance"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+      "sampled_debt_USD": 17877267.999650374,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "code"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+      "sampled_debt_USD": 17877267.999650374,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "native_balance"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "sampled_debt_USD": 15571395.90537369,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "code"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "sampled_debt_USD": 15571395.90537369,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "native_balance"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "sampled_debt_USD": 11337832.741214985,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "code"
+    },
+    {
+      "chain": "Ethereum",
+      "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "sampled_debt_USD": 11337832.741214985,
+      "use_of_borrowed_funds": "unverified in this screen",
+      "kind": "native_balance"
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x1355f44031682fde"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x5ec47ab15de1b848"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": "0x"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": "0x11f32ecc43516ca5"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "result": "0x27cc0128ef413d03"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "result": "0x"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": "0x455b9c20c3aa34d"
+    }
+  ],
+  "sources": [
+    {
+      "key": "top_unknowns_state_T_provider0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_getCode",
+          "params": [
+            "0x462a336dcac6eaf544106266914caa5a18b831d0",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_getBalance",
+          "params": [
+            "0x462a336dcac6eaf544106266914caa5a18b831d0",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_getCode",
+          "params": [
+            "0xa122687285dc5012141055a801045f069112e7c6",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 4,
+          "method": "eth_getBalance",
+          "params": [
+            "0xa122687285dc5012141055a801045f069112e7c6",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 5,
+          "method": "eth_getCode",
+          "params": [
+            "0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 6,
+          "method": "eth_getBalance",
+          "params": [
+            "0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 7,
+          "method": "eth_getCode",
+          "params": [
+            "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 8,
+          "method": "eth_getBalance",
+          "params": [
+            "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 9,
+          "method": "eth_getCode",
+          "params": [
+            "0x4f87de7d21aef48090958f7342e1f69dff790545",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 10,
+          "method": "eth_getBalance",
+          "params": [
+            "0x4f87de7d21aef48090958f7342e1f69dff790545",
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T19:58:44.566643+00:00",
+      "http_status": 200,
+      "sha256": "4f280f16e2fe2af7467bd22bb9c548a0fdc9b3c99c40ebd033a724232c8670cb",
+      "path": "raw/eth/credit-expansion-2026-10-04/top_unknowns_state_T_provider0-4f280f16e2fe2af7.json",
+      "bytes": 471,
+      "error": null
+    }
+  ]
+}

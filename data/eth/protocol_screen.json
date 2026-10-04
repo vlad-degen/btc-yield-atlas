@@ -1,0 +1,1381 @@
+[
+  {
+    "slug": "lido",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 26369151366.0,
+    "name": "Lido",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "binance-staked-eth",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 10001665326.0,
+    "name": "Binance staked ETH",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "aave-v3",
+    "pools": 35,
+    "reported_full_pool_tvl_usd": 8698855486.0,
+    "name": "Aave V3",
+    "category": "Lending"
+  },
+  {
+    "slug": "ether.fi-stake",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 6203976200.0,
+    "name": "ether.fi Stake",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "sparklend",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 4067187878.0,
+    "name": "SparkLend",
+    "category": "Lending"
+  },
+  {
+    "slug": "sky-lending",
+    "pools": 5,
+    "reported_full_pool_tvl_usd": 1625956810.0,
+    "name": "Sky Lending",
+    "category": "CDP"
+  },
+  {
+    "slug": "rocket-pool",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 1396896481.0,
+    "name": "Rocket Pool",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "morpho-blue",
+    "pools": 80,
+    "reported_full_pool_tvl_usd": 1382081182.0,
+    "name": "Morpho Blue",
+    "category": "Lending"
+  },
+  {
+    "slug": "justlend-v1",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 1288655187.0,
+    "name": "JustLend V1",
+    "category": "Lending"
+  },
+  {
+    "slug": "kelp",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 1118555260.0,
+    "name": "Kelp",
+    "category": "Liquid Restaking"
+  },
+  {
+    "slug": "uniswap-v3",
+    "pools": 1030,
+    "reported_full_pool_tvl_usd": 1012621186.0,
+    "name": "Uniswap V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "compound-v3",
+    "pools": 51,
+    "reported_full_pool_tvl_usd": 679195663.0,
+    "name": "Compound V3",
+    "category": "Lending"
+  },
+  {
+    "slug": "meth-protocol",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 631619929.0,
+    "name": "mETH Protocol",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "uniswap-v2",
+    "pools": 1640,
+    "reported_full_pool_tvl_usd": 623535623.0,
+    "name": "Uniswap V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "stakewise-v3",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 532063187.0,
+    "name": "StakeWise V3",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "coinbase-wrapped-staked-eth",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 506214014.0,
+    "name": "Coinbase Wrapped Staked ETH",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "uniswap-v4",
+    "pools": 972,
+    "reported_full_pool_tvl_usd": 460107201.0,
+    "name": "Uniswap V4",
+    "category": "Dexs"
+  },
+  {
+    "slug": "curve-dex",
+    "pools": 113,
+    "reported_full_pool_tvl_usd": 423592288.0,
+    "name": "Curve DEX",
+    "category": "Dexs"
+  },
+  {
+    "slug": "fluid-lending",
+    "pools": 63,
+    "reported_full_pool_tvl_usd": 377277777.0,
+    "name": "Fluid Lending",
+    "category": "Lending"
+  },
+  {
+    "slug": "ether.fi-liquid",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 368689982.0,
+    "name": "ether.fi Liquid",
+    "category": "Onchain Capital Allocator"
+  },
+  {
+    "slug": "aave-v4",
+    "pools": 7,
+    "reported_full_pool_tvl_usd": 226227357.0,
+    "name": "Aave V4",
+    "category": "Lending"
+  },
+  {
+    "slug": "stader",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 210345097.0,
+    "name": "Stader",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "fluid-lite",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 207561261.0,
+    "name": "Fluid Lite",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "liquity-v1",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 193934975.0,
+    "name": "Liquity V1",
+    "category": "CDP"
+  },
+  {
+    "slug": "convex-finance",
+    "pools": 51,
+    "reported_full_pool_tvl_usd": 186506352.0,
+    "name": "Convex Finance",
+    "category": "Yield"
+  },
+  {
+    "slug": "fluid-dex",
+    "pools": 17,
+    "reported_full_pool_tvl_usd": 152492255.0,
+    "name": "Fluid DEX",
+    "category": "Dexs"
+  },
+  {
+    "slug": "renzo",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 118333709.0,
+    "name": "Renzo",
+    "category": "Liquid Restaking"
+  },
+  {
+    "slug": "liquity-v2",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 106309859.0,
+    "name": "Liquity V2",
+    "category": "CDP"
+  },
+  {
+    "slug": "aerodrome-slipstream",
+    "pools": 118,
+    "reported_full_pool_tvl_usd": 106301719.0,
+    "name": "Aerodrome Slipstream",
+    "category": "Dexs"
+  },
+  {
+    "slug": "frax-ether",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 100408907.0,
+    "name": "Frax Ether",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "euler-v2",
+    "pools": 30,
+    "reported_full_pool_tvl_usd": 91523412.0,
+    "name": "Euler V2",
+    "category": "Lending"
+  },
+  {
+    "slug": "gmx-v2-perps",
+    "pools": 61,
+    "reported_full_pool_tvl_usd": 84307058.0,
+    "name": "GMX V2 Perps",
+    "category": "Derivatives"
+  },
+  {
+    "slug": "crvusd",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 78468915.0,
+    "name": "crvUSD",
+    "category": "CDP"
+  },
+  {
+    "slug": "pancakeswap-amm",
+    "pools": 32,
+    "reported_full_pool_tvl_usd": 70858303.0,
+    "name": "PancakeSwap AMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "treehouse-protocol",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 66293453.0,
+    "name": "Treehouse Protocol",
+    "category": "DOR"
+  },
+  {
+    "slug": "spark-savings",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 63123926.0,
+    "name": "Spark Savings",
+    "category": "Yield"
+  },
+  {
+    "slug": "aerodrome-v1",
+    "pools": 81,
+    "reported_full_pool_tvl_usd": 60901792.0,
+    "name": "Aerodrome V1",
+    "category": "Dexs"
+  },
+  {
+    "slug": "origin-ether",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 60518744.0,
+    "name": "Origin Ether",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "dolomite",
+    "pools": 12,
+    "reported_full_pool_tvl_usd": 59392685.0,
+    "name": "Dolomite",
+    "category": "Lending"
+  },
+  {
+    "slug": "compound-v2",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 58061959.0,
+    "name": "Compound V2",
+    "category": "Lending"
+  },
+  {
+    "slug": "fusion-by-ipor",
+    "pools": 13,
+    "reported_full_pool_tvl_usd": 49744371.0,
+    "name": "Fusion by IPOR",
+    "category": "Onchain Capital Allocator"
+  },
+  {
+    "slug": "venus-core-pool",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 48698266.0,
+    "name": "Venus Core Pool",
+    "category": "Lending"
+  },
+  {
+    "slug": "beefy",
+    "pools": 158,
+    "reported_full_pool_tvl_usd": 39357958.0,
+    "name": "Beefy",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "swell-liquid-staking",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 36913343.0,
+    "name": "Swell Liquid Staking",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "swell-liquid-restaking",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 34653783.0,
+    "name": "Swell Liquid Restaking",
+    "category": "Liquid Restaking"
+  },
+  {
+    "slug": "sushiswap",
+    "pools": 174,
+    "reported_full_pool_tvl_usd": 34388460.0,
+    "name": "SushiSwap",
+    "category": "Dexs"
+  },
+  {
+    "slug": "alchemix-v3",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 32532903.0,
+    "name": "Alchemix V3",
+    "category": "Synthetics"
+  },
+  {
+    "slug": "yearn-finance",
+    "pools": 11,
+    "reported_full_pool_tvl_usd": 31448713.0,
+    "name": "Yearn Finance",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "puffer-stake",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 31053789.0,
+    "name": "Puffer Stake",
+    "category": "Liquid Restaking"
+  },
+  {
+    "slug": "sushiswap-v3",
+    "pools": 33,
+    "reported_full_pool_tvl_usd": 28029539.0,
+    "name": "SushiSwap V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "yield-basis",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 27579738.0,
+    "name": "Yield Basis",
+    "category": "Leveraged Farming"
+  },
+  {
+    "slug": "bedrock-unieth",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 27524463.0,
+    "name": "Bedrock uniETH",
+    "category": "Liquid Restaking"
+  },
+  {
+    "slug": "stake-dao-yield",
+    "pools": 28,
+    "reported_full_pool_tvl_usd": 26982513.0,
+    "name": "Stake DAO Yield",
+    "category": "Yield"
+  },
+  {
+    "slug": "vesper",
+    "pools": 7,
+    "reported_full_pool_tvl_usd": 23411869.0,
+    "name": "Vesper",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "ankr",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 22475125.0,
+    "name": "Ankr",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "autofinance",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 21014703.0,
+    "name": "AUTOfinance",
+    "category": "Yield"
+  },
+  {
+    "slug": "concrete",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 20471998.0,
+    "name": "Concrete",
+    "category": "Onchain Capital Allocator"
+  },
+  {
+    "slug": "symbiotic",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 17876197.0,
+    "name": "Symbiotic",
+    "category": "Collateral Markets"
+  },
+  {
+    "slug": "balancer-v2",
+    "pools": 65,
+    "reported_full_pool_tvl_usd": 16939922.0,
+    "name": "Balancer V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "bancor-v3",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 14960830.0,
+    "name": "Bancor V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "harvest-finance",
+    "pools": 14,
+    "reported_full_pool_tvl_usd": 14196212.0,
+    "name": "Harvest Finance",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "origin-arm",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 14187706.0,
+    "name": "Origin ARM",
+    "category": "Yield"
+  },
+  {
+    "slug": "tydro",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 14092630.0,
+    "name": "Tydro",
+    "category": "Lending"
+  },
+  {
+    "slug": "yo-protocol",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 13300149.0,
+    "name": "YO Protocol",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "balancer-v3",
+    "pools": 79,
+    "reported_full_pool_tvl_usd": 13170410.0,
+    "name": "Balancer V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "midas-rwa",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 13035020.0,
+    "name": "Midas RWA",
+    "category": "RWA"
+  },
+  {
+    "slug": "pendle-v2",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 11635120.0,
+    "name": "Pendle V2",
+    "category": "Yield"
+  },
+  {
+    "slug": "reserve-protocol",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 11025111.0,
+    "name": "Reserve Protocol",
+    "category": "Indexes"
+  },
+  {
+    "slug": "vvs-standard",
+    "pools": 6,
+    "reported_full_pool_tvl_usd": 10770750.0,
+    "name": "VVS Standard",
+    "category": "Dexs"
+  },
+  {
+    "slug": "exactly",
+    "pools": 22,
+    "reported_full_pool_tvl_usd": 9272021.0,
+    "name": "Exactly",
+    "category": "Lending"
+  },
+  {
+    "slug": "velodrome-v3",
+    "pools": 21,
+    "reported_full_pool_tvl_usd": 8764541.0,
+    "name": "Velodrome V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "frankencoin",
+    "pools": 9,
+    "reported_full_pool_tvl_usd": 8665157.0,
+    "name": "Frankencoin",
+    "category": "CDP"
+  },
+  {
+    "slug": "ekubo",
+    "pools": 27,
+    "reported_full_pool_tvl_usd": 8232119.0,
+    "name": "Ekubo",
+    "category": "Dexs"
+  },
+  {
+    "slug": "velodrome-v2",
+    "pools": 30,
+    "reported_full_pool_tvl_usd": 6991436.0,
+    "name": "Velodrome V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "cian-yield-layer",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 6929863.0,
+    "name": "CIAN Yield Layer",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "lista-lending",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 6914584.0,
+    "name": "Lista Lending",
+    "category": "Lending"
+  },
+  {
+    "slug": "camelot-v2",
+    "pools": 38,
+    "reported_full_pool_tvl_usd": 6594463.0,
+    "name": "Camelot V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "across",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 6118632.0,
+    "name": "Across",
+    "category": "Cross Chain Bridge"
+  },
+  {
+    "slug": "quickswap-dex",
+    "pools": 41,
+    "reported_full_pool_tvl_usd": 5930487.0,
+    "name": "Quickswap Dex",
+    "category": "Dexs"
+  },
+  {
+    "slug": "native-credit-pool",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 5573880.0,
+    "name": "Native Credit Pool",
+    "category": "Lending"
+  },
+  {
+    "slug": "fluxion-network",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 5157910.0,
+    "name": "Fluxion Network",
+    "category": "Dexs"
+  },
+  {
+    "slug": "hydration-dex",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 4858215.0,
+    "name": "Hydration DEX",
+    "category": "Dexs"
+  },
+  {
+    "slug": "gearbox",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 4387774.0,
+    "name": "Gearbox",
+    "category": "Lending"
+  },
+  {
+    "slug": "extra-finance-leverage-farming",
+    "pools": 11,
+    "reported_full_pool_tvl_usd": 3936436.0,
+    "name": "Extra Finance Leverage Farming",
+    "category": "Leveraged Farming"
+  },
+  {
+    "slug": "moonwell-lending",
+    "pools": 10,
+    "reported_full_pool_tvl_usd": 3921974.0,
+    "name": "Moonwell Lending",
+    "category": "Lending"
+  },
+  {
+    "slug": "tectonic",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 3819460.0,
+    "name": "Tectonic",
+    "category": "Lending"
+  },
+  {
+    "slug": "camelot-v3",
+    "pools": 28,
+    "reported_full_pool_tvl_usd": 3806054.0,
+    "name": "Camelot V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "pharaoh-v3",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 3657312.0,
+    "name": "Pharaoh V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "vesu",
+    "pools": 7,
+    "reported_full_pool_tvl_usd": 3339015.0,
+    "name": "Vesu",
+    "category": "Lending"
+  },
+  {
+    "slug": "pancakeswap-amm-v3",
+    "pools": 20,
+    "reported_full_pool_tvl_usd": 2774059.0,
+    "name": "PancakeSwap AMM V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "kamino-lend",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 2553531.0,
+    "name": "Kamino Lend",
+    "category": "Lending"
+  },
+  {
+    "slug": "alien-base-v3",
+    "pools": 29,
+    "reported_full_pool_tvl_usd": 2274214.0,
+    "name": "Alien Base V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "gamma",
+    "pools": 30,
+    "reported_full_pool_tvl_usd": 2016147.0,
+    "name": "Gamma",
+    "category": "Liquidity Manager"
+  },
+  {
+    "slug": "sentora-curator",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 1815310.0,
+    "name": "Sentora Curator",
+    "category": "Risk Curators"
+  },
+  {
+    "slug": "inverse-finance-firm",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 1795858.0,
+    "name": "Inverse Finance FiRM",
+    "category": "CDP"
+  },
+  {
+    "slug": "bifrost-liquid-staking",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 1634531.0,
+    "name": "Bifrost Liquid Staking",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "curve-llamalend",
+    "pools": 9,
+    "reported_full_pool_tvl_usd": 1598861.0,
+    "name": "Curve LlamaLend",
+    "category": "Lending"
+  },
+  {
+    "slug": "fraxlend",
+    "pools": 8,
+    "reported_full_pool_tvl_usd": 1533037.0,
+    "name": "Fraxlend",
+    "category": "Lending"
+  },
+  {
+    "slug": "berapaw",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 1457021.0,
+    "name": "BeraPaw",
+    "category": "Liquid Staking"
+  },
+  {
+    "slug": "steer-protocol",
+    "pools": 5,
+    "reported_full_pool_tvl_usd": 1426534.0,
+    "name": "Steer Protocol",
+    "category": "Liquidity Manager"
+  },
+  {
+    "slug": "symbiosis",
+    "pools": 20,
+    "reported_full_pool_tvl_usd": 1334595.0,
+    "name": "Symbiosis",
+    "category": "Cross Chain Bridge"
+  },
+  {
+    "slug": "raydium-amm",
+    "pools": 8,
+    "reported_full_pool_tvl_usd": 1247470.0,
+    "name": "Raydium AMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "benqi-lending",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 1239571.0,
+    "name": "Benqi Lending",
+    "category": "Lending"
+  },
+  {
+    "slug": "woofi-earn",
+    "pools": 7,
+    "reported_full_pool_tvl_usd": 1081566.0,
+    "name": "WOOFi Earn",
+    "category": "Yield"
+  },
+  {
+    "slug": "troves",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 1060113.0,
+    "name": "Troves",
+    "category": "Yield"
+  },
+  {
+    "slug": "sovryn-dex",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 1047364.0,
+    "name": "Sovryn Dex",
+    "category": "Dexs"
+  },
+  {
+    "slug": "folks-finance-xchain",
+    "pools": 7,
+    "reported_full_pool_tvl_usd": 1003973.0,
+    "name": "Folks Finance xChain",
+    "category": "Lending"
+  },
+  {
+    "slug": "native-core-clob",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 996563.0,
+    "name": "Native Core CLOB",
+    "category": "Dexs"
+  },
+  {
+    "slug": "frax",
+    "pools": 6,
+    "reported_full_pool_tvl_usd": 986483.0,
+    "name": "Frax",
+    "category": "Algo-Stables"
+  },
+  {
+    "slug": "kyberswap-fairflow",
+    "pools": 10,
+    "reported_full_pool_tvl_usd": 962230.0,
+    "name": "KyberSwap FairFlow",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "lista-cdp",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 913895.0,
+    "name": "Lista CDP",
+    "category": "CDP"
+  },
+  {
+    "slug": "project-0",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 809417.0,
+    "name": "Project 0",
+    "category": "Lending"
+  },
+  {
+    "slug": "gmx-solana",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 789687.0,
+    "name": "GMX Solana",
+    "category": "Derivatives"
+  },
+  {
+    "slug": "sparkdex-v3.1",
+    "pools": 5,
+    "reported_full_pool_tvl_usd": 739793.0,
+    "name": "SparkDEX V3.1",
+    "category": "Dexs"
+  },
+  {
+    "slug": "lagoon",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 724566.0,
+    "name": "Lagoon",
+    "category": "Onchain Capital Allocator"
+  },
+  {
+    "slug": "osmosis-dex",
+    "pools": 8,
+    "reported_full_pool_tvl_usd": 682688.0,
+    "name": "Osmosis DEX",
+    "category": "Dexs"
+  },
+  {
+    "slug": "clipper",
+    "pools": 5,
+    "reported_full_pool_tvl_usd": 677586.0,
+    "name": "Clipper",
+    "category": "Dexs"
+  },
+  {
+    "slug": "gains-network",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 651839.0,
+    "name": "Gains Network",
+    "category": "Derivatives"
+  },
+  {
+    "slug": "etherex-cl",
+    "pools": 8,
+    "reported_full_pool_tvl_usd": 588630.0,
+    "name": "Etherex CL",
+    "category": "Dexs"
+  },
+  {
+    "slug": "alandale-v3",
+    "pools": 12,
+    "reported_full_pool_tvl_usd": 568379.0,
+    "name": "Alandale V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "kinetic",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 546433.0,
+    "name": "Kinetic",
+    "category": "Lending"
+  },
+  {
+    "slug": "save",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 531077.0,
+    "name": "Save",
+    "category": "Lending"
+  },
+  {
+    "slug": "zkswap-v2",
+    "pools": 5,
+    "reported_full_pool_tvl_usd": 515323.0,
+    "name": "zkSwap V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "bifi",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 506600.0,
+    "name": "BiFi",
+    "category": "Lending"
+  },
+  {
+    "slug": "cetus-clmm",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 500116.0,
+    "name": "Cetus CLMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "extra-finance-xlend",
+    "pools": 6,
+    "reported_full_pool_tvl_usd": 458184.0,
+    "name": "Extra Finance Xlend",
+    "category": "Lending"
+  },
+  {
+    "slug": "sparkdex-v4",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 421653.0,
+    "name": "SparkDEX V4",
+    "category": "Dexs"
+  },
+  {
+    "slug": "solidly-v3",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 420938.0,
+    "name": "Solidly V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "supernova-cl",
+    "pools": 5,
+    "reported_full_pool_tvl_usd": 385449.0,
+    "name": "Supernova CL",
+    "category": "Dexs"
+  },
+  {
+    "slug": "gammaswap-open-interest",
+    "pools": 9,
+    "reported_full_pool_tvl_usd": 381689.0,
+    "name": "GammaSwap Open Interest",
+    "category": "Options"
+  },
+  {
+    "slug": "deltaprime",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 350415.0,
+    "name": "DeltaPrime",
+    "category": "Leveraged Farming"
+  },
+  {
+    "slug": "hatom-lending",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 338343.0,
+    "name": "Hatom Lending",
+    "category": "Lending"
+  },
+  {
+    "slug": "kinza-finance",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 336235.0,
+    "name": "Kinza Finance",
+    "category": "Lending"
+  },
+  {
+    "slug": "pangolin-v2",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 327817.0,
+    "name": "Pangolin V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "lazy-summer-protocol",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 318494.0,
+    "name": "Lazy Summer Protocol",
+    "category": "Yield Aggregator"
+  },
+  {
+    "slug": "motoswap-farm",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 293520.0,
+    "name": "Motoswap Farm",
+    "category": "Farm"
+  },
+  {
+    "slug": "neverland",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 291235.0,
+    "name": "Neverland",
+    "category": "Lending"
+  },
+  {
+    "slug": "joe-v2.1",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 260766.0,
+    "name": "Joe V2.1",
+    "category": "Dexs"
+  },
+  {
+    "slug": "peapods-finance",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 256378.0,
+    "name": "Peapods Finance",
+    "category": "Yield"
+  },
+  {
+    "slug": "spectra-metavaults",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 233173.0,
+    "name": "Spectra MetaVaults",
+    "category": "Onchain Capital Allocator"
+  },
+  {
+    "slug": "navi-lending",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 226579.0,
+    "name": "NAVI Lending",
+    "category": "Lending"
+  },
+  {
+    "slug": "mdex",
+    "pools": 8,
+    "reported_full_pool_tvl_usd": 224968.0,
+    "name": "MDEX",
+    "category": "Dexs"
+  },
+  {
+    "slug": "shadow-exchange-clmm",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 224875.0,
+    "name": "Shadow Exchange CLMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "lynex-v2",
+    "pools": 7,
+    "reported_full_pool_tvl_usd": 218946.0,
+    "name": "Lynex V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "defichain-dex",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 200399.0,
+    "name": "DefiChain DEX",
+    "category": "Dexs"
+  },
+  {
+    "slug": "curvance",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 185317.0,
+    "name": "Curvance",
+    "category": "Lending"
+  },
+  {
+    "slug": "maverick-v2",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 182146.0,
+    "name": "Maverick V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "more-markets",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 179562.0,
+    "name": "MORE Markets",
+    "category": "Lending"
+  },
+  {
+    "slug": "bracket-vaults",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 169443.0,
+    "name": "Bracket Vaults",
+    "category": "Onchain Capital Allocator"
+  },
+  {
+    "slug": "beets-dex",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 168613.0,
+    "name": "Beets DEX",
+    "category": "Dexs"
+  },
+  {
+    "slug": "concentrator",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 160946.0,
+    "name": "Concentrator",
+    "category": "Yield"
+  },
+  {
+    "slug": "metropolis-dlmm-vaults",
+    "pools": 4,
+    "reported_full_pool_tvl_usd": 159963.0,
+    "name": "Metropolis DLMM Vaults",
+    "category": "Liquidity Manager"
+  },
+  {
+    "slug": "ipor-derivatives",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 152656.0,
+    "name": "IPOR Derivatives",
+    "category": "Derivatives"
+  },
+  {
+    "slug": "abracadabra-spell",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 145901.0,
+    "name": "Abracadabra Spell",
+    "category": "CDP"
+  },
+  {
+    "slug": "segment-finance",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 144114.0,
+    "name": "Segment Finance",
+    "category": "Lending"
+  },
+  {
+    "slug": "origami-finance",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 142874.0,
+    "name": "Origami Finance",
+    "category": "Leveraged Farming"
+  },
+  {
+    "slug": "smardex-amm",
+    "pools": 5,
+    "reported_full_pool_tvl_usd": 122192.0,
+    "name": "SMARDEX AMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "3jane-options",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 118928.0,
+    "name": "3Jane Options",
+    "category": "Options Vault"
+  },
+  {
+    "slug": "vvs-flawless",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 116606.0,
+    "name": "VVS Flawless",
+    "category": "Dexs"
+  },
+  {
+    "slug": "bmx-classic-perps",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 116540.0,
+    "name": "BMX Classic Perps",
+    "category": "Derivatives"
+  },
+  {
+    "slug": "rubicon",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 94056.0,
+    "name": "Rubicon",
+    "category": "Dexs"
+  },
+  {
+    "slug": "xexchange",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 86939.0,
+    "name": "xExchange",
+    "category": "Dexs"
+  },
+  {
+    "slug": "blackhole-clmm",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 72663.0,
+    "name": "Blackhole CLMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "blackhole-amm",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 72346.0,
+    "name": "Blackhole AMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "pareto-credit",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 61273.0,
+    "name": "Pareto Credit",
+    "category": "Uncollateralized Lending"
+  },
+  {
+    "slug": "scale",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 54421.0,
+    "name": "Scale",
+    "category": "Dexs"
+  },
+  {
+    "slug": "shapeswap-v3",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 53042.0,
+    "name": "ShapeSwap V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "termmax",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 50076.0,
+    "name": "TermMax",
+    "category": "Lending"
+  },
+  {
+    "slug": "arcadia-v2",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 49959.0,
+    "name": "Arcadia V2",
+    "category": "Liquidity Manager"
+  },
+  {
+    "slug": "snowbl-capital",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 48546.0,
+    "name": "Snowbl Capital",
+    "category": "Onchain Capital Allocator"
+  },
+  {
+    "slug": "bex",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 45778.0,
+    "name": "BEX",
+    "category": "Dexs"
+  },
+  {
+    "slug": "ammalgam-dlex",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 44375.0,
+    "name": "Ammalgam DLEX",
+    "category": "Lending"
+  },
+  {
+    "slug": "sir",
+    "pools": 2,
+    "reported_full_pool_tvl_usd": 40538.0,
+    "name": "SIR",
+    "category": "Derivatives"
+  },
+  {
+    "slug": "rujira-money-market",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 36391.0,
+    "name": "Rujira Money Market",
+    "category": "Lending"
+  },
+  {
+    "slug": "metropolis-dlmm",
+    "pools": 3,
+    "reported_full_pool_tvl_usd": 36268.0,
+    "name": "Metropolis DLMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "supernova-amm",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 36217.0,
+    "name": "Supernova AMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "yuzu-finance",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 33632.0,
+    "name": "Yuzu Finance",
+    "category": "Dexs"
+  },
+  {
+    "slug": "flamingo-finance",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 29091.0,
+    "name": "Flamingo Finance",
+    "category": "Dexs"
+  },
+  {
+    "slug": "alandale-v2",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 28491.0,
+    "name": "Alandale V2",
+    "category": "Dexs"
+  },
+  {
+    "slug": "degenprime",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 23894.0,
+    "name": "DegenPrime",
+    "category": "Leveraged Farming"
+  },
+  {
+    "slug": "uwu-lend",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 21257.0,
+    "name": "UwU Lend",
+    "category": "Lending"
+  },
+  {
+    "slug": "hercules-v3",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 21109.0,
+    "name": "Hercules V3",
+    "category": "Dexs"
+  },
+  {
+    "slug": "meridian-amm",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 16582.0,
+    "name": "Meridian AMM",
+    "category": "Dexs"
+  },
+  {
+    "slug": "chainflip-lending",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 16520.0,
+    "name": "Chainflip Lending",
+    "category": "Lending"
+  },
+  {
+    "slug": "wombat-exchange",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 16303.0,
+    "name": "Wombat Exchange",
+    "category": "Dexs"
+  },
+  {
+    "slug": "venus-flux",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 15600.0,
+    "name": "Venus Flux",
+    "category": "Lending"
+  },
+  {
+    "slug": "springx",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 14468.0,
+    "name": "SpringX",
+    "category": "Yield"
+  },
+  {
+    "slug": "scallop-lend",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 13255.0,
+    "name": "Scallop Lend",
+    "category": "Lending"
+  },
+  {
+    "slug": "ashswap",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 12876.0,
+    "name": "Ashswap",
+    "category": "Dexs"
+  },
+  {
+    "slug": "amply-finance",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 12221.0,
+    "name": "Amply Finance",
+    "category": "Lending"
+  },
+  {
+    "slug": "fwb",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 10916.0,
+    "name": "FWB",
+    "category": "Yield"
+  },
+  {
+    "slug": "goose-finance",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 10916.0,
+    "name": "Goose Finance",
+    "category": "Farm"
+  },
+  {
+    "slug": "astroport",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 10332.0,
+    "name": "Astroport",
+    "category": "Dexs"
+  },
+  {
+    "slug": "folks-finance-lending",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 4386.0,
+    "name": "Folks Finance Lending",
+    "category": "Lending"
+  },
+  {
+    "slug": "layerbank",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 2289.0,
+    "name": "LayerBank",
+    "category": "Lending"
+  },
+  {
+    "slug": "tender-finance",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 0.0,
+    "name": "Tender Finance",
+    "category": "Lending"
+  },
+  {
+    "slug": "fira",
+    "pools": 1,
+    "reported_full_pool_tvl_usd": 0.0,
+    "name": "Fira",
+    "category": "Lending"
+  }
+]

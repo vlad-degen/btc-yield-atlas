@@ -1,0 +1,1930 @@
+{
+  "target_timestamp": 1790985599,
+  "block": 26108081,
+  "discovered_pools": [
+    {
+      "kind": "pool_discovery",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xe0554a476a092703abdb3ef35c80e0d76d32939f"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x11b815efb8f581194ae79006d24e0d814b7697f6"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc5af84701f98fa483ece78af83f11b6c38aca71d"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xd8dec118e1215f02e10db846dcbbfe27d477ac19"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x60594a405d53811d3bc4766596efd80fd545a270"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xa80964c5bbd1a0e95777094420555fead1a26c1e"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xd340b57aacdd10f96fc1cf10e15921936f41e29c"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc12af0c4aa39d3061c56cd3cb19f5e62deeaebde"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x202a6012894ae5c288ea824cbc8a9bfb26a49b93"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x6f5c74e2170cfd6f5b7829f4742dc54cec42ea07"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x553e9c493678d8606d6a5ba284643db2110df823"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xa4e0faa58465a2d369aa21b3e42d43374c6f9613"
+    },
+    {
+      "kind": "pool_discovery",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xf0e02cf61b31260fd5ae527d58be16312bda59b1"
+    }
+  ],
+  "labels": [
+    {
+      "kind": "token0",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "USDC",
+      "counterasset_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc5af84701f98fa483ece78af83f11b6c38aca71d",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc5af84701f98fa483ece78af83f11b6c38aca71d",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "USDT",
+      "counterasset_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc5af84701f98fa483ece78af83f11b6c38aca71d",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xd8dec118e1215f02e10db846dcbbfe27d477ac19",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xd8dec118e1215f02e10db846dcbbfe27d477ac19",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xd8dec118e1215f02e10db846dcbbfe27d477ac19",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x60594a405d53811d3bc4766596efd80fd545a270",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x60594a405d53811d3bc4766596efd80fd545a270",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x60594a405d53811d3bc4766596efd80fd545a270",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xa80964c5bbd1a0e95777094420555fead1a26c1e",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xa80964c5bbd1a0e95777094420555fead1a26c1e",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "DAI",
+      "counterasset_address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "fee": 10000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xa80964c5bbd1a0e95777094420555fead1a26c1e",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xd340b57aacdd10f96fc1cf10e15921936f41e29c",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xd340b57aacdd10f96fc1cf10e15921936f41e29c",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xd340b57aacdd10f96fc1cf10e15921936f41e29c",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc12af0c4aa39d3061c56cd3cb19f5e62deeaebde",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc12af0c4aa39d3061c56cd3cb19f5e62deeaebde",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "wstETH",
+      "counterasset_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xc12af0c4aa39d3061c56cd3cb19f5e62deeaebde",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x202a6012894ae5c288ea824cbc8a9bfb26a49b93",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x202a6012894ae5c288ea824cbc8a9bfb26a49b93",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x202a6012894ae5c288ea824cbc8a9bfb26a49b93",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x6f5c74e2170cfd6f5b7829f4742dc54cec42ea07",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x6f5c74e2170cfd6f5b7829f4742dc54cec42ea07",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "weETH",
+      "counterasset_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x6f5c74e2170cfd6f5b7829f4742dc54cec42ea07",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x553e9c493678d8606d6a5ba284643db2110df823",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x553e9c493678d8606d6a5ba284643db2110df823",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 100,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0x553e9c493678d8606d6a5ba284643db2110df823",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xa4e0faa58465a2d369aa21b3e42d43374c6f9613",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xa4e0faa58465a2d369aa21b3e42d43374c6f9613",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 500,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xa4e0faa58465a2d369aa21b3e42d43374c6f9613",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "token0",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xf0e02cf61b31260fd5ae527d58be16312bda59b1",
+      "signature": "token0()"
+    },
+    {
+      "kind": "token1",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xf0e02cf61b31260fd5ae527d58be16312bda59b1",
+      "signature": "token1()"
+    },
+    {
+      "kind": "WETH_cash",
+      "counterasset": "rETH",
+      "counterasset_address": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "fee": 3000,
+      "factory": "0x1f98431c8ad98523631ae4a59f267346ea31f984",
+      "address": "0xf0e02cf61b31260fd5ae527d58be16312bda59b1",
+      "signature": "balanceOf(address)"
+    },
+    {
+      "kind": "native_ETH_cash",
+      "address": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+      "name": "Curve stETH original pool"
+    },
+    {
+      "kind": "curve_coin",
+      "address": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+      "coin_index": 0
+    },
+    {
+      "kind": "curve_coin",
+      "address": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+      "coin_index": 1
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x00000000000000000000000000000000000000000000004605832492cdc382c1"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": "0x0000000000000000000000000000000000000000000001e87d25f80c8c640d9b"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "result": "0x0000000000000000000000000000000000000000000001d24c3e94fcfcb37058"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": "0x000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 11,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 12,
+      "result": "0x000000000000000000000000000000000000000000000009226f540ac63a7366"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 13,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 14,
+      "result": "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 15,
+      "result": "0x000000000000000000000000000000000000000000000037148b646aa11e0c69"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 16,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 17,
+      "result": "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 18,
+      "result": "0x000000000000000000000000000000000000000000000058dbc081af09c49686"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 19,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 20,
+      "result": "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 21,
+      "result": "0x0000000000000000000000000000000000000000000004c2ec5cd04dde177d1d"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 22,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 23,
+      "result": "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 24,
+      "result": "0x000000000000000000000000000000000000000000000005a8b1caef28579989"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x000000000000000000000000000000000000000000000000000353fbd50d823d"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": "0x00000000000000000000000000000000000000000000000b1d03900f157d9f53"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "result": "0x0000000000000000000000000000000000000000000000203c9b29bc045cdbfe"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 11,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 12,
+      "result": "0x0000000000000000000000000000000000000000000000000ecd1f1713672326"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 13,
+      "result": "0x0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 14,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 15,
+      "result": "0x00000000000000000000000000000000000000000000004fad958ffec120ece0"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 16,
+      "result": "0x0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 17,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 18,
+      "result": "0x000000000000000000000000000000000000000000000000164ee6e513284acf"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 19,
+      "result": "0x0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 20,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 21,
+      "result": "0x0000000000000000000000000000000000000000000000000012d0439a16aa87"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 22,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 23,
+      "result": "0x000000000000000000000000cd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 24,
+      "result": "0x0000000000000000000000000000000000000000000000546514b7e4a0b621cf"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x000000000000000000000000cd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x000000000000000000000000000000000000000000000110db5c3fded58903d6"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": "0x000000000000000000000000cd5fe23c85820f7b72d0926fc9b05b43e359b7ee"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": "0x000000000000000000000000000000000000000000000000000cae26415d0259"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x000000000000000000000000ae78736cd615f374d3085123a210448e74fc6393"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "result": "0x00000000000000000000000000000000000000000000000619b097a92a8eff37"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": "0x000000000000000000000000ae78736cd615f374d3085123a210448e74fc6393"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 11,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 12,
+      "result": "0x000000000000000000000000000000000000000000000000862e21b68f46cdf6"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 13,
+      "result": "0x000000000000000000000000ae78736cd615f374d3085123a210448e74fc6393"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 14,
+      "result": "0x000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 15,
+      "result": "0x000000000000000000000000000000000000000000000000634d84318011c495"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 16,
+      "result": "0x366f425036073c5f7fa"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 17,
+      "result": "0x000000000000000000000000eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 18,
+      "result": "0x000000000000000000000000ae7ab96520de3a18e5e111b5eaab095312d7fe84"
+    }
+  ],
+  "sources": [
+    {
+      "key": "primary_lp_cash_T_0_provider0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "method": "POST",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000e0554a476a092703abdb3ef35c80e0d76d32939f"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 4,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 5,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 6,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a0823100000000000000000000000088e6a0c2ddd26feeb64f039a2c41296fcb3f5640"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 7,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 8,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8ad599c3a0ff1de082011efddc58f1908eb6e6d8",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 9,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a082310000000000000000000000008ad599c3a0ff1de082011efddc58f1908eb6e6d8"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 10,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 11,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x7bea39867e4169dbe237d55c8242a8f2fcdcc387",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 12,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a082310000000000000000000000007bea39867e4169dbe237d55c8242a8f2fcdcc387"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 13,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 14,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc7bbec68d12a0d1830360f8ec58fa599ba1b0e9b",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 15,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000c7bbec68d12a0d1830360f8ec58fa599ba1b0e9b"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 16,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 17,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x11b815efb8f581194ae79006d24e0d814b7697f6",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 18,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a0823100000000000000000000000011b815efb8f581194ae79006d24e0d814b7697f6"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 19,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 20,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x4e68ccd3e89f51c3074ca5072bbac773960dfa36",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 21,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a082310000000000000000000000004e68ccd3e89f51c3074ca5072bbac773960dfa36"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 22,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc5af84701f98fa483ece78af83f11b6c38aca71d",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 23,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc5af84701f98fa483ece78af83f11b6c38aca71d",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 24,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000c5af84701f98fa483ece78af83f11b6c38aca71d"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "captured_at_utc": "2026-10-04T17:48:05.342702+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "sha256": "3103fcdbfaead5c3ff3207bdded00de26f64ab17a3f53e3379fd902bc3fc5395",
+      "bytes": 2488,
+      "path": "raw/eth/research-closure-2026-10-04/market/primary_lp_cash_T_0_provider0-3103fcdbfaead5c3.json",
+      "error": null,
+      "financial_target_timestamp": 1790985599,
+      "is_financial_observation_at_T": false
+    },
+    {
+      "key": "primary_lp_cash_T_24_provider0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "method": "POST",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xd8dec118e1215f02e10db846dcbbfe27d477ac19",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xd8dec118e1215f02e10db846dcbbfe27d477ac19",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000d8dec118e1215f02e10db846dcbbfe27d477ac19"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 4,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x60594a405d53811d3bc4766596efd80fd545a270",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 5,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x60594a405d53811d3bc4766596efd80fd545a270",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 6,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a0823100000000000000000000000060594a405d53811d3bc4766596efd80fd545a270"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 7,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 8,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc2e9f25be6257c210d7adf0d4cd6e3e881ba25f8",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 9,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000c2e9f25be6257c210d7adf0d4cd6e3e881ba25f8"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 10,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xa80964c5bbd1a0e95777094420555fead1a26c1e",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 11,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xa80964c5bbd1a0e95777094420555fead1a26c1e",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 12,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000a80964c5bbd1a0e95777094420555fead1a26c1e"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 13,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 14,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 15,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000109830a1aaad605bbf02a9dfa7b0b92ec2fb7daa"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 16,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xd340b57aacdd10f96fc1cf10e15921936f41e29c",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 17,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xd340b57aacdd10f96fc1cf10e15921936f41e29c",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 18,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000d340b57aacdd10f96fc1cf10e15921936f41e29c"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 19,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc12af0c4aa39d3061c56cd3cb19f5e62deeaebde",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 20,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc12af0c4aa39d3061c56cd3cb19f5e62deeaebde",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 21,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000c12af0c4aa39d3061c56cd3cb19f5e62deeaebde"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 22,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x202a6012894ae5c288ea824cbc8a9bfb26a49b93",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 23,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x202a6012894ae5c288ea824cbc8a9bfb26a49b93",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 24,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000202a6012894ae5c288ea824cbc8a9bfb26a49b93"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "captured_at_utc": "2026-10-04T17:48:05.574610+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "sha256": "a33f35442be920751a91d650759a74e4d6820229f164c64ea4836177bd055020",
+      "bytes": 2488,
+      "path": "raw/eth/research-closure-2026-10-04/market/primary_lp_cash_T_24_provider0-a33f35442be92075.json",
+      "error": null,
+      "financial_target_timestamp": 1790985599,
+      "is_financial_observation_at_T": false
+    },
+    {
+      "key": "primary_lp_cash_T_48_provider0",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "method": "POST",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x7a415b19932c0105c82fdb6b720bb01b0cc2cae3",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a082310000000000000000000000007a415b19932c0105c82fdb6b720bb01b0cc2cae3"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 4,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x6f5c74e2170cfd6f5b7829f4742dc54cec42ea07",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 5,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x6f5c74e2170cfd6f5b7829f4742dc54cec42ea07",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 6,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a082310000000000000000000000006f5c74e2170cfd6f5b7829f4742dc54cec42ea07"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 7,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x553e9c493678d8606d6a5ba284643db2110df823",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 8,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x553e9c493678d8606d6a5ba284643db2110df823",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 9,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000553e9c493678d8606d6a5ba284643db2110df823"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 10,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xa4e0faa58465a2d369aa21b3e42d43374c6f9613",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 11,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xa4e0faa58465a2d369aa21b3e42d43374c6f9613",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 12,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000a4e0faa58465a2d369aa21b3e42d43374c6f9613"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 13,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xf0e02cf61b31260fd5ae527d58be16312bda59b1",
+              "data": "0x0dfe1681"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 14,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xf0e02cf61b31260fd5ae527d58be16312bda59b1",
+              "data": "0xd21220a7"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 15,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+              "data": "0x70a08231000000000000000000000000f0e02cf61b31260fd5ae527d58be16312bda59b1"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 16,
+          "method": "eth_getBalance",
+          "params": [
+            "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 17,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+              "data": "0xc66106570000000000000000000000000000000000000000000000000000000000000000"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 18,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xdc24316b9ae028f1497c275eb9192a3ea0f67022",
+              "data": "0xc66106570000000000000000000000000000000000000000000000000000000000000001"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "captured_at_utc": "2026-10-04T17:48:05.733052+00:00",
+      "http_status": 200,
+      "content_type": "application/json",
+      "sha256": "e91c00b8fc78cfe6642db7748f894bb346c05a5091f93fe907f54722d846059b",
+      "bytes": 1819,
+      "path": "raw/eth/research-closure-2026-10-04/market/primary_lp_cash_T_48_provider0-e91c00b8fc78cfe6.json",
+      "error": null,
+      "financial_target_timestamp": 1790985599,
+      "is_financial_observation_at_T": false
+    }
+  ],
+  "scope": "Six specified WETH pairs at all four canonical V3 fee tiers, plus one named Curve pool. Not all LP venues or pools."
+}

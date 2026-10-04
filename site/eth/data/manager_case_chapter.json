@@ -1,0 +1,132 @@
+{
+  "snapshot_timestamp": 1790985599,
+  "block": 26108081,
+  "name": "Kernel Gain hgETH",
+  "address": "0xc824a08db624942c5e5f330d56530cd1598859fd",
+  "asset": "0xa1290d69c65a6fe4df752f95823fae25cb99e5a7",
+  "capitalETH": 5068.279632509083,
+  "capitalUSD": 13521918.88513212,
+  "bookRsETH": 4687.5244882017405,
+  "physicalRsETH": 7.359391105064803,
+  "loanBookRsETH": 4670.949018699466,
+  "reservedAdapterETH": 9.96467592857344,
+  "reservedAdapterRsETH": 9.216078397209214,
+  "collectableFeesRsETH": 0.0,
+  "reconciliationResidualRsETH": 0.0,
+  "loanRegistryCount": 173,
+  "history": [
+    {
+      "date": "2026-04",
+      "timestamp": 1777593599,
+      "block": 24996367,
+      "bookRsETH": 15294.537361371335,
+      "shares": 14752.13677661521,
+      "rsETHPerShare": 1.0367675946182877,
+      "ETHPerShare": 1.1089373620680725,
+      "bookETH": 16359.195641927072,
+      "rsETHtoETH": 1.069610361882844,
+      "ETHBookChangePct": 0.0
+    },
+    {
+      "date": "2026-06",
+      "timestamp": 1782863999,
+      "block": 25433938,
+      "bookRsETH": 9708.001991074629,
+      "shares": 9763.384187497577,
+      "rsETHPerShare": 0.9943275614930869,
+      "ETHPerShare": 1.068798081248959,
+      "bookETH": 10435.086286093836,
+      "rsETHtoETH": 1.0748953590746764,
+      "ETHBookChangePct": -3.619616598024722
+    },
+    {
+      "date": "2026-09",
+      "timestamp": 1790812799,
+      "block": 26093737,
+      "bookRsETH": 4687.044405841112,
+      "shares": 4693.451445305642,
+      "rsETHPerShare": 0.9986348981044775,
+      "ETHPerShare": 1.079663150304485,
+      "bookETH": 5067.346573239827,
+      "rsETHtoETH": 1.0811390152234899,
+      "ETHBookChangePct": -2.6398435804339426
+    },
+    {
+      "date": "snapshot_T",
+      "timestamp": 1790985599,
+      "block": 26108081,
+      "bookRsETH": 4687.5244882017405,
+      "shares": 4693.451445305642,
+      "rsETHPerShare": 0.9987371858060171,
+      "ETHPerShare": 1.0798619505435263,
+      "bookETH": 5068.279632509083,
+      "rsETHtoETH": 1.0812273397751166,
+      "ETHBookChangePct": -2.621916486817888
+    }
+  ],
+  "fees": {
+    "managementPercentRaw": 0,
+    "withdrawalFeeRaw": 0,
+    "scope": "Both measured fee getters are zero at T. Mutable administration and other loan-level charges remain separate."
+  },
+  "control": {
+    "owner": "0x66bee721697bf17d9eea28c51c828a43ba597b0b",
+    "threshold": 3,
+    "signers": [
+      "0xf5a37feee552895b4b7843c66e8a3f1036767873",
+      "0xcfd77d87e633749d09f1a09ba333cc739e6fcb2b",
+      "0x3485fa418874f04485047c384eef53377a81bd0e",
+      "0x1e15e35d436960cb95094142e73aaba9656393c3",
+      "0x7aad74b7f0d60d5867b59dbd377a71783425af47"
+    ],
+    "settlementAccount": "0x66bee721697bf17d9eea28c51c828a43ba597b0b",
+    "loansOperator": "0x416e26e331fc0b77386e9ddb5ed9ade73f1241f4",
+    "implementation": "0x4ffe25598489c7259dc9686a2cba0507177bcf7f",
+    "runtimeMatchesVerifiedSource": true
+  },
+  "exit": {
+    "depositsPaused": false,
+    "withdrawalsPaused": false,
+    "queriedCaller": "0x66bee721697bf17d9eea28c51c828a43ba597b0b",
+    "callerMaxWithdrawRsETH": 0.0,
+    "callerMaxRedeemShares": 0.0,
+    "maxWithdrawalAmountRaw": 100000000000000000000000,
+    "lagDurationSeconds": 0,
+    "scope": "Owner-specific getters, cash balances and configured delays do not prove a holder payout or portfolio-wide exit capacity."
+  },
+  "carryUseVerified": false,
+  "wholeInvestorProfit": null,
+  "sources": [
+    {
+      "path": "data/eth/manager_case_capture.json",
+      "sha256": "50dced06d436bb65f766832058222847e5a8f058e697b279f26303e505937634"
+    },
+    {
+      "key": "hg_implementation_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x4ffe25598489c7259dc9686a2cba0507177bcf7f",
+      "captured_at": "2026-10-04T21:01:25.246150+00:00",
+      "target_timestamp": 1790985599,
+      "method": "GET",
+      "status": 200,
+      "source_date": "Sun, 04 Oct 2026 21:01:25 GMT",
+      "path": "raw/eth/manager-case-2026-10-04/hg_implementation_source-bbecbf100d5be2d6.json",
+      "sha256": "bbecbf100d5be2d613dfce7b16fcd47f3da5b47027c001f04ea91fa01aabdd2e",
+      "bytes": 264580,
+      "completed_at": "2026-10-04T21:01:25.622498+00:00"
+    },
+    {
+      "path": "data/eth/strategy_universe_deep.json",
+      "sha256": "3f31107993ce3cf59a83f9a513eebc3e1a82fed23899898fb7d2724a82fddb3b"
+    }
+  ],
+  "sourceURLs": [
+    "https://etherscan.io/address/0xc824a08db624942c5e5f330d56530cd1598859fd",
+    "https://eth.blockscout.com/api/v2/smart-contracts/0x4ffe25598489c7259dc9686a2cba0507177bcf7f"
+  ],
+  "limits": [
+    "The active-loan accounting amount is measured, but 173 registry entries include historical loans and are not 173 active positions.",
+    "Individual borrower identity, collateral, rate history, repayments and underlying portfolio allocation remain unclassified in this case.",
+    "rsETH and hgETH marks are accounting conversions, not sale prices or paid withdrawal proceeds.",
+    "A loan-originating rsETH wrapper is not automatically ETH-collateral dollar carry."
+  ]
+}

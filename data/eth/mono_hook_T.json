@@ -1,0 +1,19 @@
+{
+  "hook": "0x0698ba360468a8c3f62d6c57b01b874016c2b854",
+  "signatures": [
+    "accountant()",
+    "vault()"
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x0000000000000000000000005ce04a3d8d5297a24bf752d0172064941d8d853b"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x000000000000000000000000a024063b630d554078bbf985718b22f3c6870ee0"
+    }
+  ]
+}

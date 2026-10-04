@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "financial_snapshot_timestamp": 1790985599,
+  "review_date": "2026-10-04",
+  "inputs": [
+    {
+      "path": "data/eth/funding_atlas_chapter.json",
+      "sha256": "6f9407ec0164945417bbbcb27df4cdf4f11988a5474af5c136fd212f44c36caa"
+    },
+    {
+      "path": "data/eth/strategy_universe_expansion.json",
+      "sha256": "fa4b72f23dd14274f9bc3f536b9e4af6e28d49c0ece5cd95c46343e4225e8142"
+    },
+    {
+      "path": "data/eth/carry_variants_expansion.json",
+      "sha256": "fa097029daf954ac3b7d39c1ecfb96148aa7a9b4a0f67a68902f023eeedbed70"
+    },
+    {
+      "path": "data/eth/credit_expansion.json",
+      "sha256": "8dc06d4043f398f19baa0f56281747b566d43eaf83468fe0f1b9f19269c8a9dc"
+    },
+    {
+      "path": "data/eth/credit_expansion_deep.json",
+      "sha256": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0"
+    },
+    {
+      "path": "data/eth/strategy_universe_deep.json",
+      "sha256": "3f31107993ce3cf59a83f9a513eebc3e1a82fed23899898fb7d2724a82fddb3b"
+    },
+    {
+      "path": "data/eth/funding_borrower_deep_chapter.json",
+      "sha256": "aa59e43c4d4b0245e42c871127f66099117ed0d1af84be5d912d4fc624530ce7"
+    },
+    {
+      "path": "data/eth/manager_case_chapter.json",
+      "sha256": "516cdd3f8233a44337232e23c2f1f7a4df80e4d22b2137b4e9561479d6a43d04"
+    }
+  ],
+  "coverage": [
+    {
+      "family": "Staking and restaking",
+      "evidence": "24-month adapter balances, issuer conversions, validator/restaking payer and dependency maps; selected additional issuer contracts at T.",
+      "remaining": "Full native consensus state, issuer consolidation, every AVS payment and liquid exit depth."
+    },
+    {
+      "family": "ETH lending and debt loops",
+      "evidence": "Fixed-block reserve economics, major product account leverage, matched share-return benchmarks, StakeWise Boost mechanism and additional automated vaults.",
+      "remaining": "Complete borrower population and realized spread for every major automated account."
+    },
+    {
+      "family": "ETH collateral to dollar carry",
+      "evidence": "60 Aave/Spark dollar reserves on 12 chains, 131 additional credit rows, five deep carry books, five extra product cases and historical loan layers.",
+      "remaining": "Account-level allocation across all venues, Concrete private/shared custody, confidential ownership and complete product-specific external cash flows."
+    },
+    {
+      "family": "Fixed maturity and yield trading",
+      "evidence": "Official Ethereum Pendle registry: 494 markets, 117 ETH-tagged, 4 active/unexpired at dated discovery; accounting units and overlap checked.",
+      "remaining": "Cross-chain historical pool consolidation, expired instruments, all early-exit execution costs, and exact Spectra sleeve identity."
+    },
+    {
+      "family": "Liquidity provision",
+      "evidence": "Broad chain/pool discovery, bounded ETH-side history, ETH/ETH and ETH/USD mechanics, GMX trader-P&L payer, YieldBasis and automated LP receipt overlap.",
+      "remaining": "Full token-side LP capital, 24-month direct protocol reconciliation and total investor returns after inventory changes."
+    },
+    {
+      "family": "Options and structured products",
+      "evidence": "Historical Ribbon capacity, current Thetanuts contracts, call/put mechanics, premium payer, settlement currency and capped upside.",
+      "remaining": "Materiality at T for every active options vault, completed premium/expiry ledgers and payout histories."
+    },
+    {
+      "family": "Basis and market-neutral managers",
+      "evidence": "Ethena ETH hedge mechanism, mixed USD revenue, margin/custody dependencies, Midas token supply, issuer marks, contracts and stale-price ages at T.",
+      "remaining": "ETH-only hedge/notional and yield attribution, off-chain manager inventory, complete fees and realized payouts."
+    },
+    {
+      "family": "Rewards, recovery and custody wrappers",
+      "evidence": "Paid incentives separated from points; paused Yearn yETH/Resolv cases separated from active products; exchange/fund wrappers mapped to existing validator backing.",
+      "remaining": "Complete paid reward histories, recovery outcomes, private custody balances and all institutional wrappers."
+    }
+  ],
+  "complete_global_market_census": false,
+  "global_unique_ETH": null,
+  "global_carry_capital_USD": null,
+  "meaningful_mechanisms_catalogued": true,
+  "materiality_rule": {
+    "product_current_USD": 5000000,
+    "historical_sampled_product_USD": 20000000,
+    "distinct_sleeve_USD": 1000000,
+    "priority_unknown_borrower_USD": 5000000,
+    "exception": "Distinct mechanics, closures, losses and unresolved contract-only products are retained and labelled."
+  },
+  "financial_denominators": [
+    "Layered ETH-related adapter exposure",
+    "Product book NAV",
+    "Account assets less liabilities",
+    "Gross debt",
+    "Nominal stablecoin debt units",
+    "Discovered pool TVL",
+    "Share-value return",
+    "Source-paid rewards",
+    "Realized withdrawal cash flows"
+  ]
+}

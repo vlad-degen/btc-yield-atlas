@@ -1,0 +1,195 @@
+{
+  "target_timestamp": 1790985599,
+  "block": 26108081,
+  "resolver": "0xa5c3e16523eeeddcc34706b0e6be88b4c6ea95cc",
+  "data": {
+    "userPosition_": {
+      "nftId": 4241,
+      "owner": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+      "isLiquidated": false,
+      "isSupplyPosition": false,
+      "tick": -830,
+      "tickId": 1,
+      "beforeSupply": 1731620726093716324352,
+      "beforeBorrow": 502366385039637436413,
+      "beforeDustBorrow": 14354094767744031,
+      "supply": 1731620726093716324352,
+      "borrow": 502366385039637436413,
+      "dustBorrow": 14354094767744031
+    },
+    "vaultData_": {
+      "vault": "0xb4a15526d427f4d20b0dadaf3bab4177c85a699a",
+      "isSmartCol": true,
+      "isSmartDebt": false,
+      "constantVariables": {
+        "liquidity": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+        "factory": "0x324c5dc1fc42c7a4d43d92df1eba58a54d13bf2d",
+        "operateImplementation": "0x1c0290e66755d78b103c916b39848ac279ab0788",
+        "adminImplementation": "0x148807cfe7c285003a923411c6037eb3fe0e7f1c",
+        "secondaryImplementation": "0xf38478d055020bbc173734dc62d88b749eb99b59",
+        "deployer": "0x4ec7b668baf70d4a4b0fc7941a7708a07b6d45be",
+        "supply": "0x86f874212335af27c41cdb855c2255543d1499ce",
+        "borrow": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+        "supplyToken": {
+          "token0": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+          "token1": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+        },
+        "borrowToken": {
+          "token0": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+          "token1": "0x0000000000000000000000000000000000000000"
+        },
+        "vaultId": 74,
+        "vaultType": 20000,
+        "supplyExchangePriceSlot": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "borrowExchangePriceSlot": "0xc24eaceff5753c99066a839532d708a8661af7a9b01d44d0cd915c53969eb725",
+        "userSupplySlot": "0xd3a9b8ccfe19cefd0230bc357129830fb1ef0bb763271426675a878baa153c7d",
+        "userBorrowSlot": "0x232715aba16c89f5db593ea535bc6120f9198a84d0cc3550c017264541b89c1c"
+      },
+      "configs": {
+        "supplyRateMagnifier": 1,
+        "borrowRateMagnifier": 10000,
+        "collateralFactor": 9400,
+        "liquidationThreshold": 9600,
+        "liquidationMaxLimit": 9700,
+        "withdrawalGap": 500,
+        "liquidationPenalty": 200,
+        "borrowFee": 0,
+        "oracle": "0xb07175600bf990ab397ce57048bb5b7498d306b8",
+        "oraclePriceOperate": 1713749178192282682368530579,
+        "oraclePriceLiquidate": 1713749178192282682368530579,
+        "rebalancer": "0x264786ef916af64a1db19f513f24a3681734ce92",
+        "lastUpdateTimestamp": 1732203683
+      },
+      "exchangePricesAndRates": {
+        "lastStoredLiquiditySupplyExchangePrice": 1000000000000,
+        "lastStoredLiquidityBorrowExchangePrice": 1063286532519,
+        "lastStoredVaultSupplyExchangePrice": 1000000000000,
+        "lastStoredVaultBorrowExchangePrice": 1000001655970,
+        "liquiditySupplyExchangePrice": 1000000000000,
+        "liquidityBorrowExchangePrice": 1070338905535,
+        "vaultSupplyExchangePrice": 1000000000000,
+        "vaultBorrowExchangePrice": 1006634284597,
+        "supplyRateLiquidity": 0,
+        "borrowRateLiquidity": 13,
+        "supplyRateVault": 0,
+        "borrowRateVault": 13,
+        "rewardsOrFeeRateSupply": 0,
+        "rewardsOrFeeRateBorrow": 0
+      },
+      "totalSupplyAndBorrow": {
+        "totalSupplyVault": 2632406974522034946048,
+        "totalBorrowVault": 1902764216948527312300,
+        "totalSupplyLiquidityOrDex": 2632406974522034946048,
+        "totalBorrowLiquidityOrDex": 1902763921732662413065,
+        "absorbedSupply": 0,
+        "absorbedBorrow": 0
+      },
+      "limitsAndAvailability": {
+        "withdrawLimit": 1711064533439322714932,
+        "withdrawableUntilLimit": 789721302634518127203,
+        "withdrawable": 789721302634518127203,
+        "borrowLimit": 2093040313905928654371,
+        "borrowableUntilLimit": 190276201896874068039,
+        "borrowable": 190276201896874068039,
+        "borrowLimitUtilization": 56835510523284874209187,
+        "minimumBorrowing": 10067
+      },
+      "vaultState": {
+        "totalPositions": 272,
+        "topTick": 313,
+        "currentBranch": 1,
+        "totalBranch": 1,
+        "totalBorrow": 1890223933422144028672,
+        "totalSupply": 2632406974522034946048,
+        "currentBranchState": {
+          "status": 0,
+          "minimaTick": -57896044618658097711785492504343953926634992332820282019728792003956564819968,
+          "debtFactor": 0,
+          "partials": 0,
+          "debtLiquidity": 0,
+          "baseBranchId": 0,
+          "baseBranchMinima": -57896044618658097711785492504343953926634992332820282019728792003956564819968
+        }
+      },
+      "liquidityUserSupplyData": {
+        "modeWithInterest": false,
+        "supply": 2632406974522034946048,
+        "withdrawalLimit": 1711064533439322714932,
+        "lastUpdateTimestamp": 1790749727,
+        "expandPercent": 3500,
+        "expandDuration": 21600,
+        "baseWithdrawalLimit": 2298925480186052870144,
+        "withdrawableUntilLimit": 921342441082712231116,
+        "withdrawable": 921342441082712231116,
+        "decayEndTimestamp": 0,
+        "decayAmount": 0
+      },
+      "liquidityUserBorrowData": {
+        "modeWithInterest": true,
+        "borrow": 1902763921732662413065,
+        "borrowLimit": 2093040313905928654371,
+        "lastUpdateTimestamp": 1790749727,
+        "expandPercent": 1000,
+        "expandDuration": 10800,
+        "baseBorrowLimit": 1157507703441321253488,
+        "maxBorrowLimit": 23140281934895155805337,
+        "borrowableUntilLimit": 190276392173266241306,
+        "borrowable": 190276392173266241306,
+        "borrowLimitUtilization": 56835510523284874209187
+      }
+    },
+    "getDexCollateralReserves": {
+      "reserves_": {
+        "token0RealReserves": 1686863398849399000000,
+        "token1RealReserves": 3760188930919592000000,
+        "token0ImaginaryReserves": 6780679407477584618000000,
+        "token1ImaginaryReserves": 7488461715063363019000000
+      }
+    },
+    "getTotalSupplySharesRaw": {
+      "0": 3402823669209384634633746074317682114562632439312298768489248
+    },
+    "getDexState": {
+      "state_": {
+        "lastToLastStoredPrice": 980677374522,
+        "lastStoredPrice": 980866745402,
+        "centerPrice": 981353972026,
+        "lastUpdateTimestamp": 1790947691,
+        "lastPricesTimeDiff": 60,
+        "oracleCheckPoint": 7,
+        "oracleMapping": 0,
+        "totalSupplyShares": 2632439312298768489248,
+        "totalBorrowShares": 0,
+        "isSwapAndArbitragePaused": false,
+        "shifts": {
+          "isRangeChangeActive": false,
+          "isThresholdChangeActive": false,
+          "isCenterPriceShiftActive": false,
+          "rangeShift": {
+            "oldUpper": 0,
+            "oldLower": 0,
+            "duration": 0,
+            "startTimestamp": 0,
+            "oldTime": 0
+          },
+          "thresholdShift": {
+            "oldUpper": 0,
+            "oldLower": 0,
+            "duration": 0,
+            "startTimestamp": 0,
+            "oldTime": 0
+          },
+          "centerPriceShift": {
+            "shiftPercentage": 0,
+            "duration": 0,
+            "startTimestamp": 0
+          }
+        },
+        "token0PerSupplyShare": 640798589721846766,
+        "token1PerSupplyShare": 1428404792981160911,
+        "token0PerBorrowShare": 0,
+        "token1PerBorrowShare": 0
+      }
+    }
+  }
+}

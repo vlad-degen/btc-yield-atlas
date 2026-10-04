@@ -1,0 +1,50 @@
+{
+  "observed_at": "2026-10-03T15:51:36.992428+00:00",
+  "source": "https://app.ethena.fi/dashboards/backing-assets",
+  "collection_method": "public UI read, backing treegrid expanded per venue; no wallet",
+  "ui_updated_label": "3 Oct 26 11:00; displayed timezone unspecified",
+  "not_snapshot_T": true,
+  "crypto_basis_usd_display": 928890000,
+  "crypto_basis_percent_display": 19.1,
+  "category_usd_display": {
+    "DeFi Lending": 1700000000,
+    "Institutional Lending": 621430000,
+    "Liquid Stables": 1340000000,
+    "RWA": 283550000
+  },
+  "ETH_legs": [
+    {
+      "exchange": "Binance",
+      "custodian": "Ceffu",
+      "asset": "ETH",
+      "usd_display": 202120000,
+      "apy_percent_display": 6.0
+    },
+    {
+      "exchange": "Bybit",
+      "custodian": "Copper",
+      "asset": "ETH",
+      "usd_display": 81620000,
+      "apy_percent_display": 4.8
+    },
+    {
+      "exchange": "OKX",
+      "custodian": "Copper",
+      "asset": "ETH",
+      "usd_display": 90700000,
+      "apy_percent_display": 4.4
+    }
+  ],
+  "other_basis_venues_without_ETH_rows": [
+    "Deribit",
+    "Coinbase Derivatives Exchanges"
+  ],
+  "ETH_leg_total_usd_display": 374440000,
+  "sUSDe_apy_header_percent": 4.8,
+  "source_of_funds_verified": false,
+  "rounded_UI_values": true,
+  "not_independent_custody_attestation": true,
+  "reserve_fund_usd_display": 62090000,
+  "backing_ratio_display_percent": 101.75,
+  "header_supply_conflict": "Global menu showed $5.4B while transparency table showed 4.89B USDe supply; do not use menu as exact T total."
+}

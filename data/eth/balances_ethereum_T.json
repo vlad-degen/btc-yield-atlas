@@ -1,0 +1,878 @@
+{
+  "chain": "ethereum",
+  "block": 26108081,
+  "labels": [
+    {
+      "symbol": "STCUSD",
+      "address": "0x88887bE419578051FF9F4eb6C858A951921D8888",
+      "decimals": "18"
+    },
+    {
+      "symbol": "ETHFI",
+      "address": "0xFe0c30065B384F05761f15d0CC899D4F9F9Cc0eB",
+      "decimals": "18"
+    },
+    {
+      "symbol": "WEETH",
+      "address": "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee",
+      "decimals": "18"
+    },
+    {
+      "symbol": "ETH+",
+      "address": "0xE72B141DF173b999AE7c1aDcbF60Cc9833Ce56a8",
+      "decimals": "18"
+    },
+    {
+      "symbol": "EETH",
+      "address": "0x35fA164735182de50811E8e2E824cFb9B6118ac2",
+      "decimals": "18"
+    },
+    {
+      "symbol": "RETH",
+      "address": "0xae78736Cd615f374D3085123A210448E74Fc6393",
+      "decimals": "18"
+    },
+    {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "decimals": "18"
+    },
+    {
+      "symbol": "CBETH",
+      "address": "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704",
+      "decimals": "18"
+    },
+    {
+      "symbol": "RLUSD",
+      "address": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+      "decimals": "18"
+    },
+    {
+      "symbol": "CUSD",
+      "address": "0xcCcc62962d17b8914c62D74FfB843d73B2a3cccC",
+      "decimals": "18"
+    },
+    {
+      "symbol": "AWETH",
+      "address": "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SWELL",
+      "address": "0x0a6E7Ba5042B38349e437ec6Db6214AEC7B35676",
+      "decimals": "18"
+    },
+    {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "decimals": "6"
+    },
+    {
+      "symbol": "PYUSD",
+      "address": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+      "decimals": "6"
+    },
+    {
+      "symbol": "PENDLE",
+      "address": "0x808507121B80c02388fAd14726482e061B8da827",
+      "decimals": "18"
+    },
+    {
+      "symbol": "CAKE",
+      "address": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898",
+      "decimals": "18"
+    },
+    {
+      "symbol": "LIQUIDETH",
+      "address": "0xf0bb20865277aBd641a307eCe5Ee04E79073416C",
+      "decimals": "18"
+    },
+    {
+      "symbol": "MNT",
+      "address": "0x3c3a81e81dc49A522A592e7622A7E711c06bf354",
+      "decimals": "18"
+    },
+    {
+      "symbol": "AURA",
+      "address": "0xC0c293ce456fF0ED870ADd98a0828Dd4d2903DBF",
+      "decimals": "18"
+    },
+    {
+      "symbol": "KERNEL",
+      "address": "0x3f80B1c54Ae920Be41a77f8B902259D48cf24cCf",
+      "decimals": "18"
+    },
+    {
+      "symbol": "WEETHS",
+      "address": "0x917ceE801a67f933F2e6b33fC0cD1ED2d5909D88",
+      "decimals": "18"
+    },
+    {
+      "symbol": "BAL",
+      "address": "0xba100000625a3754423978a60c9317c58a424e3D",
+      "decimals": "18"
+    },
+    {
+      "symbol": "USDT",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "decimals": "6"
+    },
+    {
+      "symbol": "SOLI",
+      "address": "0x0EAdDCBe240d7Eeb1bA21f1EED48E58293969c6e",
+      "decimals": "18"
+    },
+    {
+      "symbol": "USDE",
+      "address": "0x4c9EDD5852cd905f086C759E8383e09bff1E68B3",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SUSDE",
+      "address": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497",
+      "decimals": "18"
+    },
+    {
+      "symbol": "ZIK",
+      "address": "0xD4419C2d3DAA986Dc30444Fa333a846be44Fd1eb",
+      "decimals": "18"
+    },
+    {
+      "symbol": "EIGEN",
+      "address": "0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83",
+      "decimals": "18"
+    },
+    {
+      "symbol": "HEX",
+      "address": "0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39",
+      "decimals": "8"
+    },
+    {
+      "symbol": "ETHX",
+      "address": "0xA35b1B31Ce002FBF2058D22F30f95D405200A15b",
+      "decimals": "18"
+    },
+    {
+      "symbol": "WSTUSR",
+      "address": "0x1202F5C7b4B9E47a1A484E8B270be34dbbC75055",
+      "decimals": "18"
+    },
+    {
+      "symbol": "STETH",
+      "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+      "decimals": "18"
+    },
+    {
+      "symbol": "EUL",
+      "address": "0xd9Fcd98c322942075A5C3860693e9f4f03AAE07b",
+      "decimals": "18"
+    },
+    {
+      "symbol": "senRLUSDv2",
+      "address": "0x6dC58a0FdfC8D694e571DC59B9A52EEEa780E6bf",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SPARK",
+      "address": "0xE92eC83D8Ea27f802393F084004491E463209acB",
+      "decimals": "18"
+    },
+    {
+      "symbol": "senPYUSDPRIMEv2",
+      "address": "0xC21b08C16458202593D4D9B26b9984Ee67b38BbD",
+      "decimals": "18"
+    },
+    {
+      "symbol": "variableDebtEthWETH",
+      "address": "0xeA51d7853EEFb32b6ee06b1C12E6dcCA88Be0fFE",
+      "decimals": "18"
+    },
+    {
+      "symbol": "aEthweETH",
+      "address": "0xBdfa7b7893081B35Fb54027489e2Bc7A38275129",
+      "decimals": "18"
+    },
+    {
+      "symbol": "variableDebtWETH",
+      "address": "0x2e7576042566f8D6990e07A1B61Ad1efd86Ae70d",
+      "decimals": "18"
+    },
+    {
+      "symbol": "spwstETH",
+      "address": "0x12B54025C112Aa61fAce2CDB7118740875A566E9",
+      "decimals": "18"
+    },
+    {
+      "symbol": "liquidMonadETH",
+      "address": "0xA024063B630D554078bbF985718B22F3c6870EE0",
+      "decimals": "18"
+    },
+    {
+      "symbol": "kpdWETH",
+      "address": "0xcc6a16Be713f6a714f68b0E1f4914fD3db15fBeF",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YT-weETH-27JUN2024",
+      "address": "0xfb35Fd0095dD1096b1Ca49AD44d8C5812A201677",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YT-weETH-26SEP2024",
+      "address": "0xA54Df645A042D24121a737dAA89a57EbF8E0b71c",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YT-Karak-WEETH-26SEP2024",
+      "address": "0x5439c3Ef0072e4A19C44478CDF947F5d957e66C7",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YT-weETHs-26DEC2024",
+      "address": "0x719B51Dd92B7809A80A2E8c91D89367BF58f1D7A",
+      "decimals": "18"
+    },
+    {
+      "symbol": "tETHweETH-gauge",
+      "address": "0xFe964d3E779752C7598985436A8598F13f22F6F4",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YT-zs-weETH-27JUN2024",
+      "address": "0x7C2D26182adeEf96976035986cF56474feC03bDa",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PCHS",
+      "address": "0xa4C6984E817c086Ddc3EBAEedBdcc01469586918",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YT-weETH-26DEC2024",
+      "address": "0x129e6B5DBC0Ecc12F9e486C5BC9cDF1a6A80bc6A",
+      "decimals": "18"
+    },
+    {
+      "symbol": "LiquidKatanaETH",
+      "address": "0x69d210d3b60E939BFA6E87cCcC4fAb7e8F44C16B",
+      "decimals": "18"
+    },
+    {
+      "symbol": "UniLife",
+      "address": "0x059B2051BC369A52DFA4BcbAA77388483279320c",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SY-weETH",
+      "address": "0xAC0047886a985071476a1186bE89222659970d65",
+      "decimals": "18"
+    },
+    {
+      "symbol": "AIC",
+      "address": "0x8E27f5bF0eb69fAf8BcE5Cf54e2ca0BFA9dB5313",
+      "decimals": "18"
+    },
+    {
+      "symbol": "tETHweETH",
+      "address": "0x394a1e1b934cb4F4a0dC17BDD592ec078741542F",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YFIB",
+      "address": "0x03829f5675F3b51D0F8C2A74417a757625aCF22f",
+      "decimals": "18"
+    },
+    {
+      "symbol": "UCAP",
+      "address": "0xbaA70614C7AAfB568a93E62a98D55696bcc85DFE",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PT-weETHs-26DEC2024",
+      "address": "0x1D27254125246873a19580B7364BFf322c5DEF0f",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PT-zs-weETH-22AUG2024",
+      "address": "0x7131eD1994BA1A2a5392FE4D99e579f49F5eD48F",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YT-weETH-25JUL2024",
+      "address": "0x9c73E0A1fA310e2BDC95AF1145B9D8Daa87bD9C0",
+      "decimals": "18"
+    },
+    {
+      "symbol": "yRise",
+      "address": "0x6051C1354Ccc51b4d561e43b02735DEaE64768B8",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PENDLE-LPT",
+      "address": "0xe1F19CBDa26b6418B0C8E1EE978a533184496066",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PT-weETH-25JUL2024",
+      "address": "0xe146E7018B3fb588c4EFbC2F211e8BB8d8C31c81",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SY-weETHs",
+      "address": "0x9e8f10574ACc2c62C6e5d19500CEd39163Da37A9",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PENDLE-LPT",
+      "address": "0x18bAFcaBf2d5898956AE6AC31543d9657a604165",
+      "decimals": "18"
+    },
+    {
+      "symbol": "auraweETH/rETH-vault",
+      "address": "0x07A319A023859BbD49CC9C38ee891c3EA9283Cc5",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PENDLE-LPT",
+      "address": "0x792b9eDe7a18C26b814f87Eb5E0c8D26AD189780",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PT-weETHk-26SEP2024",
+      "address": "0xb94AE63D5537932303F107C09E5783491e423c54",
+      "decimals": "18"
+    },
+    {
+      "symbol": "weETH/rETH",
+      "address": "0x05ff47AFADa98a98982113758878F9A8B9FddA0a",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PT-weETH-26DEC2024",
+      "address": "0x6ee2b5E19ECBa773a352E5B21415Dc419A700d1d",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SY-weETHk",
+      "address": "0xE2796707590384430d887f15bDf97c660d95894a",
+      "decimals": "18"
+    },
+    {
+      "symbol": "YT-Karak-WEETH-26DEC2024",
+      "address": "0x6e4FfCcbE83F85CB1A507c581C99eb22b9ed8813",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SY-liquidBeraETH",
+      "address": "0x14C1878BD3F989D0D2199c537EA1a6d3b5225d05",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PT-weETH-26SEP2024",
+      "address": "0x1c085195437738d73d75DC64bC5A3E098b7f93b1",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PENDLE-LPT",
+      "address": "0xFF694CC3f74E080637008B3792a9D7760cB456Ca",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PENDLE-LPT",
+      "address": "0x7d372819240D14fB477f17b964f95F33BeB4c704",
+      "decimals": "18"
+    },
+    {
+      "symbol": "PT-weETHs-29AUG2024",
+      "address": "0xda6530EfaFD63A42d7b9a0a5a60A03839CDb813A",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SY-zs-weETH",
+      "address": "0xD7DF7E085214743530afF339aFC420c7c720BFa7",
+      "decimals": "18"
+    },
+    {
+      "symbol": "SAGA",
+      "address": "0xF42fCFfc27A5B8d0afEC45659407B82f9F32fA98",
+      "decimals": "6"
+    },
+    {
+      "symbol": "PENDLE-LPT",
+      "address": "0x40789E8536C668c6A249aF61c81b9dfaC3EB8F32",
+      "decimals": "18"
+    },
+    {
+      "symbol": "DIXT",
+      "address": "0x43e6228b5bF22Eab754486082cA91FdD8585521A",
+      "decimals": "18"
+    },
+    {
+      "symbol": "FAM",
+      "address": "0x9D24364b97270961b2948734aFe8d58832Efd43a",
+      "decimals": "18"
+    },
+    {
+      "symbol": "XPT",
+      "address": "0xf0814d0E47F2390a8082C4a1BD819FDDe50f9bFc",
+      "decimals": "8"
+    },
+    {
+      "symbol": "YT-weETHk-26DEC2024",
+      "address": "0x7B64b99A1fd80b6c012E354a14ADb352b5916CE1",
+      "decimals": "18"
+    },
+    {
+      "symbol": "QCORE",
+      "address": "0x82866b4A71BA9d930Fe338C386B6A45a7133eb36",
+      "decimals": "9"
+    },
+    {
+      "symbol": "PT-weETH-27JUN2024",
+      "address": "0xc69Ad9baB1dEE23F4605a82b3354F8E40d1E5966",
+      "decimals": "18"
+    },
+    {
+      "symbol": "native ETH",
+      "address": null,
+      "decimals": 18
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x00000000000000000000000000000000000000000012ce2afd5a15826149f590"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x000000000000000000000000000000000000000000043810db4d1c3dcc06b4bc"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x00000000000000000000000000000000000000000000000c7af75daa4925cab1"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x000000000000000000000000000000000000000000000006881cc96cd32d0000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": "0x000000000000000000000000000000000000000000000004ecfe8235c7573fd3"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": "0x000000000000000000000000000000000000000000000002a59f5d90ccb515a5"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x0000000000000000000000000000000000000000000000011e36461a14f0be23"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "result": "0x0000000000000000000000000000000000000000000000009d3523fb4fa00000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "result": "0x00000000000000000000000000000000000000000000053012fbbf70ba52308d"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": "0x00000000000000000000000000000000000000000000056d30907547d881b2d2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 11,
+      "result": "0x00000000000000000000000000000000000000000000000054b21b6adf451f89"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 12,
+      "result": "0x0000000000000000000000000000000000000000000e63270535f6eac3b4695c"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 13,
+      "result": "0x0000000000000000000000000000000000000000000000000000000311083a64"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 14,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 15,
+      "result": "0x000000000000000000000000000000000000000000000029ff804e885245329e"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 16,
+      "result": "0x000000000000000000000000000000000000000000000015a9b0a463872bc955"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 17,
+      "result": "0x0000000000000000000000000000000000000000000000000387eb55e9ac22d6"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 18,
+      "result": "0x00000000000000000000000000000000000000000000001b903a3c937c1759d9"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 19,
+      "result": "0x0000000000000000000000000000000000000000000002916f13f34b9e23a88e"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 20,
+      "result": "0x0000000000000000000000000000000000000000000000af07f69cbb95faee21"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 21,
+      "result": "0x00000000000000000000000000000000000000000000000000b3b340be17ffb5"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 22,
+      "result": "0x00000000000000000000000000000000000000000000001e0f05d10ee8f13a32"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 23,
+      "result": "0x00000000000000000000000000000000000000000000000000000000015c6943"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 24,
+      "result": "0x0000000000000000000000000000000000000000000000056bc75e2d63100000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 25,
+      "result": "0x00000000000000000000000000000000000000000000000006ee08a37fb58e00"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 26,
+      "result": "0x000000000000000000000000000000000000000000000000038646c37e8d543f"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 27,
+      "result": "0x000000000000000000000000000000000000000000000036c090d0ca68880000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 28,
+      "result": "0x00000000000000000000000000000000000000000000000003b5ac6322cfeefb"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 29,
+      "result": "0x0000000000000000000000000000000000000000000000000000000005f5e100"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 30,
+      "result": "0x000000000000000000000000000000000000000000000000000000003b9aca00"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 31,
+      "result": "0x00000000000000000000000000000000000000000000000000000000349c002f"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 32,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 33,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 34,
+      "result": "0x0000000000000000000000000000000000000000002cfc963ca1dd52afce2efd"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 35,
+      "result": "0x000000000000000000000000000000000000000000295c2609c1eafe78b80000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 36,
+      "result": "0x0000000000000000000000000000000000000000001443adce20a450437ed254"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 37,
+      "result": "0x0000000000000000000000000000000000000000000056d96b7594e520d27924"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 38,
+      "result": "0x0000000000000000000000000000000000000000000054fa708544d5ec3441bc"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 39,
+      "result": "0x000000000000000000000000000000000000000000000692ca828a54e59f5718"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 40,
+      "result": "0x0000000000000000000000000000000000000000000005e16c3360df5ed40633"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 41,
+      "result": "0x0000000000000000000000000000000000000000000001b653fa6d2adbfcd3f2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 42,
+      "result": "0x0000000000000000000000000000000000000000000000878678326eac900000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 43,
+      "result": "0x000000000000000000000000000000000000000000000081c2b67484261a7a02"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 44,
+      "result": "0x00000000000000000000000000000000000000000000004c515ae0637cae3676"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 45,
+      "result": "0x0000000000000000000000000000000000000000000000236a41d8555a87e19e"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 46,
+      "result": "0x0000000000000000000000000000000000000000000000137407c03c8c26ffe6"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 47,
+      "result": "0x00000000000000000000000000000000000000000000000f62fdb31c82d078f0"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 48,
+      "result": "0x00000000000000000000000000000000000000000000000f1ca8cd68b2451886"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 49,
+      "result": "0x000000000000000000000000000000000000000000000005935d51115e8f5000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 50,
+      "result": "0x000000000000000000000000000000000000000000000003e56614ba43ea0e73"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 51,
+      "result": "0x000000000000000000000000000000000000000000000000673b3c3d6dd0f685"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 52,
+      "result": "0x0000000000000000000000000000000000000000000000004563918244f40000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 53,
+      "result": "0x0000000000000000000000000000000000000000000000000eeb26b57db09e54"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 54,
+      "result": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 55,
+      "result": "0x00000000000000000000000000000000000000000000000000c9b7788dfb2023"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 56,
+      "result": "0x00000000000000000000000000000000000000000000000000470de4df820000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 57,
+      "result": "0x000000000000000000000000000000000000000000000000002386f26fc10000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 58,
+      "result": "0x00000000000000000000000000000000000000000000000000037dec9f09d5a8"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 59,
+      "result": "0x0000000000000000000000000000000000000000000000000000f18247688c3c"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 60,
+      "result": "0x0000000000000000000000000000000000000000000000000000732c55a698c5"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 61,
+      "result": "0x000000000000000000000000000000000000000000000000000051dac207a000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 62,
+      "result": "0x000000000000000000000000000000000000000000000000000045efb07d44e2"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 63,
+      "result": "0x0000000000000000000000000000000000000000000000000000035ed380b496"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 64,
+      "result": "0x0000000000000000000000000000000000000000000000000000033cac932f31"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 65,
+      "result": "0x0000000000000000000000000000000000000000000000000000014384e139e3"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 66,
+      "result": "0x0000000000000000000000000000000000000000000000000000013994de6e5a"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 67,
+      "result": "0x00000000000000000000000000000000000000000000000000000125bbb587b5"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 68,
+      "result": "0x000000000000000000000000000000000000000000000000000000f18a6c75bb"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 69,
+      "result": "0x000000000000000000000000000000000000000000000000000000e8d4a51000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 70,
+      "result": "0x000000000000000000000000000000000000000000000000000000dd4f9ede00"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 71,
+      "result": "0x000000000000000000000000000000000000000000000000000000d349525695"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 72,
+      "result": "0x000000000000000000000000000000000000000000000000000000afa791cffe"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 73,
+      "result": "0x000000000000000000000000000000000000000000000000000000a57f360416"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 74,
+      "result": "0x0000000000000000000000000000000000000000000000000000009eef6bf0c4"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 75,
+      "result": "0x0000000000000000000000000000000000000000000000000000009eb52ecc87"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 76,
+      "result": "0x00000000000000000000000000000000000000000000000000000092fb75c790"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 77,
+      "result": "0x0000000000000000000000000000000000000000000000000000008fafdba7e4"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 78,
+      "result": "0x000000000000000000000000000000000000000000000000000000895e069de6"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 79,
+      "result": "0x0000000000000000000000000000000000000000000000000000008089b077d8"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 80,
+      "result": "0x00000000000000000000000000000000000000000000000000000038fff1d6f9"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 81,
+      "result": "0x00000000000000000000000000000000000000000000000000000014f5039a80"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 82,
+      "result": "0x00000000000000000000000000000000000000000000000000000000b2d05e00"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 83,
+      "result": "0x00000000000000000000000000000000000000000000000000000000000186a0"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 84,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000398d"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 85,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000002710"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 86,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000002"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 87,
+      "result": "0x15af12d9077847aa1"
+    }
+  ]
+}

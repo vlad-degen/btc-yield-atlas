@@ -1,0 +1,1082 @@
+{
+  "financial_snapshot_timestamp": 1790985599,
+  "labels": [
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "previewRedeem(uint256)",
+      "when": "before_exit",
+      "block": 25990329,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000018bf0e17646"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "convertToAssets(uint256)",
+      "when": "before_exit",
+      "block": 25990329,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000018bf0e17646"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "managementFee()",
+      "when": "before_exit",
+      "block": 25990329,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "performanceFee()",
+      "when": "before_exit",
+      "block": 25990329,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000016345785d8a0000"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "owner()",
+      "when": "before_exit",
+      "block": 25990329,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000bbacdcfb9691dfa1066ab29edfcc4a73f6def918"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "previewRedeem(uint256)",
+      "when": "after_exit",
+      "block": 25990330,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000018bf0e190a6"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "convertToAssets(uint256)",
+      "when": "after_exit",
+      "block": 25990330,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000018bf0e190a6"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "managementFee()",
+      "when": "after_exit",
+      "block": 25990330,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "performanceFee()",
+      "when": "after_exit",
+      "block": 25990330,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000016345785d8a0000"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "owner()",
+      "when": "after_exit",
+      "block": 25990330,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000bbacdcfb9691dfa1066ab29edfcc4a73f6def918"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "previewRedeem(uint256)",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000018c8fc83288"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "convertToAssets(uint256)",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000018c8fc83288"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "managementFee()",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "performanceFee()",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000016345785d8a0000"
+      }
+    },
+    {
+      "vault": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+      "label": "A_redeem",
+      "signature": "owner()",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "1697605793085194127605948",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000bbacdcfb9691dfa1066ab29edfcc4a73f6def918"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "previewRedeem(uint256)",
+      "when": "before_exit",
+      "block": 25997749,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000e8d4c28f52"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "convertToAssets(uint256)",
+      "when": "before_exit",
+      "block": 25997749,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000e8d4c28f52"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "managementFee()",
+      "when": "before_exit",
+      "block": 25997749,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "performanceFee()",
+      "when": "before_exit",
+      "block": 25997749,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000214e8348c4f0000"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "owner()",
+      "when": "before_exit",
+      "block": 25997749,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000e8c9c99ecad0686a14a00d8521c572281e938008"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "previewRedeem(uint256)",
+      "when": "after_exit",
+      "block": 25997750,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000e8d4c2ccc3"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "convertToAssets(uint256)",
+      "when": "after_exit",
+      "block": 25997750,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000e8d4c2ccc3"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "managementFee()",
+      "when": "after_exit",
+      "block": 25997750,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "performanceFee()",
+      "when": "after_exit",
+      "block": 25997750,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000214e8348c4f0000"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "owner()",
+      "when": "after_exit",
+      "block": 25997750,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000e8c9c99ecad0686a14a00d8521c572281e938008"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "previewRedeem(uint256)",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000e952a14d33"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "convertToAssets(uint256)",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000e952a14d33"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "managementFee()",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "performanceFee()",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000214e8348c4f0000"
+      }
+    },
+    {
+      "vault": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+      "label": "B_redeem",
+      "signature": "owner()",
+      "when": "T",
+      "block": 26108081,
+      "shares_raw": "995928814821987126598511",
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000e8c9c99ecad0686a14a00d8521c572281e938008"
+      }
+    },
+    {
+      "vault": "0xe978f22157048e5db8e5d07971376e86671672b2",
+      "signature": "owner()",
+      "when": "T",
+      "block": 26108081,
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000b6d69d5f334d8b97b194617b53c6ab62f8681ef3"
+      }
+    },
+    {
+      "vault": "0xe978f22157048e5db8e5d07971376e86671672b2",
+      "signature": "pauser()",
+      "when": "T",
+      "block": 26108081,
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "vault": "0xe978f22157048e5db8e5d07971376e86671672b2",
+      "signature": "paused()",
+      "when": "T",
+      "block": 26108081,
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "vault": "0xe978f22157048e5db8e5d07971376e86671672b2",
+      "signature": "getObservers()",
+      "when": "T",
+      "block": 26108081,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "error": {
+          "code": 3,
+          "message": "execution reverted"
+        }
+      }
+    },
+    {
+      "vault": "0xe978f22157048e5db8e5d07971376e86671672b2",
+      "signature": "observers()",
+      "when": "T",
+      "block": 26108081,
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "key": "exit_fee_and_control_reads_0_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x4cdad50600000000000000000000000000000000000000000001677b64fa4e03928d00bc"
+            },
+            "0x18c94b9"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x07a2d13a00000000000000000000000000000000000000000001677b64fa4e03928d00bc"
+            },
+            "0x18c94b9"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0xa6f7f5d6"
+            },
+            "0x18c94b9"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:15.731160+00:00",
+      "http_status": 200,
+      "sha256": "0c26d1fe95dc0784b1550b353687cd023948d222a63d91c714ff7450077834cd",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_0_provider0-0c26d1fe95dc0784.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_3_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x87788782"
+            },
+            "0x18c94b9"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x8da5cb5b"
+            },
+            "0x18c94b9"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x4cdad50600000000000000000000000000000000000000000001677b64fa4e03928d00bc"
+            },
+            "0x18c94ba"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:16.145548+00:00",
+      "http_status": 200,
+      "sha256": "2c52e3039a3c56b1e1f968fcb06233799bfe8811586caab4dfdc1065d4c47b11",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_3_provider0-2c52e3039a3c56b1.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_6_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x07a2d13a00000000000000000000000000000000000000000001677b64fa4e03928d00bc"
+            },
+            "0x18c94ba"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0xa6f7f5d6"
+            },
+            "0x18c94ba"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x87788782"
+            },
+            "0x18c94ba"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:16.642325+00:00",
+      "http_status": 200,
+      "sha256": "0a3c0236dc6362d16586064c3bf1c3d9acecd3bfcdc61a651021cf6998ecbb07",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_6_provider0-0a3c0236dc6362d1.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_9_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x8da5cb5b"
+            },
+            "0x18c94ba"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x4cdad50600000000000000000000000000000000000000000001677b64fa4e03928d00bc"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x07a2d13a00000000000000000000000000000000000000000001677b64fa4e03928d00bc"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:17.089628+00:00",
+      "http_status": 200,
+      "sha256": "eb9f2be096ec66389197e7372e059288779f31604cde53f33d507db2bbe2ce5f",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_9_provider0-eb9f2be096ec6638.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_12_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0xa6f7f5d6"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x87788782"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x2ca22cb25558fa2018ecb1ce4ed8af92ee7ea423",
+              "data": "0x8da5cb5b"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:17.714583+00:00",
+      "http_status": 200,
+      "sha256": "ded4b83c8f9b37a366c63a8c96e09b4f09cdc4f065b8eb9d10b12e87c5c084e0",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_12_provider0-ded4b83c8f9b37a3.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_15_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x4cdad50600000000000000000000000000000000000000000000d2e568c38796cc3bdb6f"
+            },
+            "0x18cb1b5"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x07a2d13a00000000000000000000000000000000000000000000d2e568c38796cc3bdb6f"
+            },
+            "0x18cb1b5"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0xa6f7f5d6"
+            },
+            "0x18cb1b5"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:18.230473+00:00",
+      "http_status": 200,
+      "sha256": "a2aab17a95246d93cd42780cefeee19a354d6fb8f58ab93952b4b0491dbca19a",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_15_provider0-a2aab17a95246d93.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_18_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x87788782"
+            },
+            "0x18cb1b5"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x8da5cb5b"
+            },
+            "0x18cb1b5"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x4cdad50600000000000000000000000000000000000000000000d2e568c38796cc3bdb6f"
+            },
+            "0x18cb1b6"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:18.716055+00:00",
+      "http_status": 200,
+      "sha256": "72b424a8bce97ef831364240a1e715a188a63660b65f60d6f4a8d78ab1198bd3",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_18_provider0-72b424a8bce97ef8.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_21_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x07a2d13a00000000000000000000000000000000000000000000d2e568c38796cc3bdb6f"
+            },
+            "0x18cb1b6"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0xa6f7f5d6"
+            },
+            "0x18cb1b6"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x87788782"
+            },
+            "0x18cb1b6"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:19.211983+00:00",
+      "http_status": 200,
+      "sha256": "5af4c19a49e8255f5ae7eb8ae9f0ba0ff95d4626a354e26db6d9e35992bd8f94",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_21_provider0-5af4c19a49e8255f.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_24_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x8da5cb5b"
+            },
+            "0x18cb1b6"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x4cdad50600000000000000000000000000000000000000000000d2e568c38796cc3bdb6f"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x07a2d13a00000000000000000000000000000000000000000000d2e568c38796cc3bdb6f"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:19.694368+00:00",
+      "http_status": 200,
+      "sha256": "8ca40811698132b650f8a14c61c04e6cf98dc2903646695d567984fc7c730543",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_24_provider0-8ca40811698132b6.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_27_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0xa6f7f5d6"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x87788782"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0x8381a156958711e230f325428b5eb4b6555c75d9",
+              "data": "0x8da5cb5b"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:20.220329+00:00",
+      "http_status": 200,
+      "sha256": "8644e598d48150b67eb134bfcf7982f1a1ebddae216fd06b30f719245782c670",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_27_provider0-8644e598d48150b6.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_30_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe978f22157048e5db8e5d07971376e86671672b2",
+              "data": "0x8da5cb5b"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe978f22157048e5db8e5d07971376e86671672b2",
+              "data": "0x9fd0506d"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe978f22157048e5db8e5d07971376e86671672b2",
+              "data": "0x5c975abb"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:20.744699+00:00",
+      "http_status": 200,
+      "sha256": "b96e8aa6105cd4a4a3de7894b676fbca17a926b527b136574ebd1243b2860483",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_30_provider0-b96e8aa6105cd4a4.json",
+      "bytes": 310,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_33_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe978f22157048e5db8e5d07971376e86671672b2",
+              "data": "0xdddd03f3"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe978f22157048e5db8e5d07971376e86671672b2",
+              "data": "0xb3f54d82"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:21.160836+00:00",
+      "http_status": 200,
+      "sha256": "fbffca0d2ad4b15bb15f4cc9d5156d6123d69015f4b044931502e1a22724c569",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_33_provider0-fbffca0d2ad4b15b.json",
+      "bytes": 243,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_33_provider1",
+      "url": "https://gateway.tenderly.co/public/mainnet",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe978f22157048e5db8e5d07971376e86671672b2",
+              "data": "0xdddd03f3"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:21.356188+00:00",
+      "http_status": 200,
+      "sha256": "a4d14aa7aa13dd3834fb46dfecace21c913107dc022518b3e9b8f80b64e03a1a",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_33_provider1-a4d14aa7aa13dd38.json",
+      "bytes": 76,
+      "error": null
+    },
+    {
+      "key": "exit_fee_and_control_reads_33_provider2",
+      "url": "https://eth-mainnet.public.blastapi.io",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xe978f22157048e5db8e5d07971376e86671672b2",
+              "data": "0xdddd03f3"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:44:21.497044+00:00",
+      "http_status": 200,
+      "sha256": "316c0e1e5f1fd08925d497267dba17a36e9889ea0da1c9939e48268bb571e0c2",
+      "path": "raw/eth/credit-expansion-2026-10-04/deep/exit_fee_and_control_reads_33_provider2-316c0e1e5f1fd089.json",
+      "bytes": 76,
+      "error": null
+    }
+  ],
+  "interpretation": "Compare actual cash with historical preview and conversion. Getter absence is unknown, not zero. Before-block discrepancies can include twelve seconds of accrual and realized allocation changes."
+}

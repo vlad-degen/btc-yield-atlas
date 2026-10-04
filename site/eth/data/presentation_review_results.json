@@ -1,0 +1,41 @@
+{
+  "reviewed_at": "2026-10-04T11:10:59.530787+00:00",
+  "financial_snapshot_UTC": "2026-10-02T23:59:59Z",
+  "financial_data_refreshed": false,
+  "website_sha256": "7e82a6990cb5a5e2e274224dc483f959939437bc5b064f5fd595ce3c0af5aa39",
+  "english_articles": 31,
+  "dossiers": 12,
+  "generated_pages_including_mirror": 64,
+  "BTC_reference_dimensions_reviewed": 22,
+  "original_BTC_files_unchanged": 384,
+  "automated_checks": {
+    "financial_integrity": 28,
+    "website_integrity": 21
+  },
+  "browser_checks": 45,
+  "independent_addition_review_checks": 120,
+  "additions": [
+    "team briefing and product selection",
+    "24-month capital reconciliation",
+    "Ethereum fee changes and token-specific payments",
+    "selected historical permissions",
+    "current primary-source fees, exit policies and controls",
+    "one-off exit-fee return illustrations",
+    "sampled borrower concentration",
+    "worked cash-flow examples and Fluid sensitivities"
+  ],
+  "remaining_measurements": [
+    "global unique ETH and external depositor equity",
+    "complete historical portfolio and holder reconstruction",
+    "independent balance-sheet backing, including Liquid ETH residual and Monad",
+    "realized investor cash P&L and operator net profit",
+    "executed stressed withdrawal and repayment paths"
+  ],
+  "research_review_files": [
+    "research/eth/review/BTC-DEPTH-REVIEW.md",
+    "research/eth/review/DOSSIER-EDIT.md",
+    "research/eth/review/ADDITIONS-REVIEW.md",
+    "research/eth/review/PRODUCT-TERMS-SOURCES.md"
+  ],
+  "raw_permission_journal": "raw/eth/presentation-review/requests.jsonl"
+}

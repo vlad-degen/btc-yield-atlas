@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-04T19:20:28.950110+00:00",
+  "financial_snapshot_timestamp": 1790985599,
+  "financial_data_refreshed": false,
+  "audit_question": "Has the study established complete coverage of material ETH yield strategies and ETH-collateral dollar-carry variants?",
+  "verdict": "No. Deep selected-case verification does not establish market completeness.",
+  "exhaustive_market_coverage_established": false,
+  "exhaustive_E4_variant_coverage_established": false,
+  "global_market_coverage_percentage": null,
+  "global_carry_coverage_percentage": null,
+  "measured_scope": {
+    "market_adapter_rows": 85,
+    "adapter_map_is_unique_ETH_or_complete_market_NAV": false,
+    "carry_product_candidates": 14,
+    "products_with_E4_classification": 7,
+    "deep_ranked_product_chapters": 5,
+    "ranking_is_pure_carry_equity": false,
+    "borrow_markets_with_selected_T_economics": 22,
+    "borrow_market_venues": {
+      "Aave V3": 4,
+      "Morpho Blue": 18
+    },
+    "destination_rows": 6,
+    "destination_names": [
+      "Aave V3 USDC (Ethereum)",
+      "Aave V3 USDC (Base)",
+      "Aave V3 USDC (Arbitrum)",
+      "Aave V3 USDC (Optimism)",
+      "Sentora RLUSD Main V2",
+      "Sentora PRIME Main V2"
+    ],
+    "borrower_screen": {
+      "markets": 25,
+      "positions": 237,
+      "chain_address_identities": 213,
+      "unique_address_strings": 207,
+      "sampled_debt_usd": 465256993.9561854,
+      "reported_market_debt_usd": 593751262.9242023,
+      "sampled_vs_reported_debt_fraction": 0.7835890599454264,
+      "top1_sampled_debt_share": 0.15130468816184126,
+      "top5_sampled_debt_share": 0.5059639826475009,
+      "identified_chain_addresses": 3,
+      "unknown_chain_addresses": 210,
+      "coverage_is_diagnostic_not_exact_reconciliation": true
+    },
+    "borrower_screen_date_scope": "Post-T public API borrower discovery; not fixed-block financial state",
+    "borrower_screen_pagination_scope": "At most ten largest BorrowShares positions in each of 25 selected ETH-family collateral markets; not complete borrowers, carry census or depositor ownership. Market and position requests were asynchronous.",
+    "unidentified_debt_is_not_proven_carry_capital": true,
+    "unidentified_borrowers_with_all_currency_debt_valued_at_least_5M": 15,
+    "their_all_currency_sampled_debt_USD_valuation": 180412867.0537765,
+    "unidentified_stablecoin_borrowers_with_sampled_debt_at_least_5M": 7,
+    "their_stablecoin_sampled_debt_USD_valuation": 85049155.85256842,
+    "largest_unidentified_stablecoin_borrowers": [
+      {
+        "chain": "Ethereum",
+        "address": "0xa122687285dc5012141055a801045f069112e7c6",
+        "sampled_stablecoin_debt_USD_valuation": 23532601.33556571,
+        "use_of_borrowed_funds": "Unverified by the original screen; follow-up receipts in credit_expansion.json."
+      },
+      {
+        "chain": "Ethereum",
+        "address": "0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+        "sampled_stablecoin_debt_USD_valuation": 17877267.999650374,
+        "use_of_borrowed_funds": "Unverified by the original screen; follow-up receipts in credit_expansion.json."
+      },
+      {
+        "chain": "Ethereum",
+        "address": "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+        "sampled_stablecoin_debt_USD_valuation": 15571395.90537369,
+        "use_of_borrowed_funds": "Unverified by the original screen; follow-up receipts in credit_expansion.json."
+      },
+      {
+        "chain": "Ethereum",
+        "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
+        "sampled_stablecoin_debt_USD_valuation": 11337832.741214985,
+        "use_of_borrowed_funds": "Unverified by the original screen; follow-up receipts in credit_expansion.json."
+      },
+      {
+        "chain": "Ethereum",
+        "address": "0x90882e7c28ddf0ac1177033a310aeed8eff25e90",
+        "sampled_stablecoin_debt_USD_valuation": 5612115.069353275,
+        "use_of_borrowed_funds": "Unverified by the original screen; follow-up receipts in credit_expansion.json."
+      }
+    ]
+  },
+  "strategy_family_audit": [
+    {
+      "family": "Staking and restaking",
+      "status": "Market discovery and selected backing cases",
+      "gap": "No full validator-state, issuer, external-equity and paid-security-revenue reconstruction across the material universe."
+    },
+    {
+      "family": "ETH-funded LST/LRT loops",
+      "status": "Selected managed-product and contract cases",
+      "gap": "No complete material product and borrower census across all major money markets."
+    },
+    {
+      "family": "ETH-collateral dollar carry",
+      "status": "Selected products and deeply traced Liquid ETH legs",
+      "gap": "No complete borrower/proceeds census, carry-equity denominator or uniform historical sleeve P&L."
+    },
+    {
+      "family": "ETH lending",
+      "status": "Adapter market map and selected economics",
+      "gap": "ETH-only lender equity and debt use are not reconstructed throughout the measured universe."
+    },
+    {
+      "family": "Fixed yield, PT/YT and PT collateral",
+      "status": "Token mechanics and selected PT dossier",
+      "gap": "Material PT borrowing pairs, recursive PT positions, YT and LP variants lack a systematic contract-and-cash-flow census."
+    },
+    {
+      "family": "Liquidity provision",
+      "status": "Selected pool inventory and Fluid position reconstruction",
+      "gap": "Current-address pool history does not enumerate the historical material universe or all hedged/perpetual inventory strategies."
+    },
+    {
+      "family": "Options and structured products",
+      "status": "Mechanics and historical Ribbon documentation",
+      "gap": "No verified current material contract catalogue, capital total or complete payoff-return history."
+    },
+    {
+      "family": "ETH basis and funding",
+      "status": "Ethena mechanism and dated ETH-leg disclosure",
+      "gap": "No ETH-only market-wide venue, margin, funding/basis and product-capital reconstruction."
+    },
+    {
+      "family": "Institutional and exchange products",
+      "status": "Scope and limited issuer discovery",
+      "gap": "No independently established current/historical materiality and exclusion registry for the extended universe."
+    }
+  ],
+  "carry_variant_search_matrix": [
+    {
+      "variant": "Plain stablecoin lending",
+      "existing_coverage_and_gap": "Selected Aave USDC destinations; incomplete venue and proceeds census.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Curated lending vaults and credit tranches",
+      "existing_coverage_and_gap": "Liquid RLUSD/PYUSD cash-flow legs deeply studied; not a full curator/market universe.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Collateralized stablecoin issuance followed by investment",
+      "existing_coverage_and_gap": "Selected carry products; Sky, Curve/crvUSD and other material issuer/market variants require systematic screening.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Stablecoin savings and RWA-backed yield",
+      "existing_coverage_and_gap": "No exhaustive ETH-funded route, capacity, legal-claim and proceeds census.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Stablecoin PT/fixed-maturity investment",
+      "existing_coverage_and_gap": "Not systematically reconstructed for ETH-funded dollar carry; keep separate from ETH PT loops.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Stablecoin LP and fee/incentive carry",
+      "existing_coverage_and_gap": "Selected Liquity and historical Rock routes; no broad material pair/venue census.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Additional stablecoin or tranche leverage inside the destination",
+      "existing_coverage_and_gap": "Reservoir design and nested credit cases found; material variants and combined debt structure not exhaustively reconstructed.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Neutral basis/arbitrage funded with the borrowed dollars",
+      "existing_coverage_and_gap": "Concrete design disclosed; product-specific actual positions, attribution and P&L unresolved.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Cross-chain carry",
+      "existing_coverage_and_gap": "Selected cross-chain observations; no complete common-time collateral/debt/destination catalogue.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "PT/LST/LRT collateral with dollar debt",
+      "existing_coverage_and_gap": "Asset-family classification exists; full eligible collateral-market and proceeds census remains open.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "DEX smart collateral or smart debt",
+      "existing_coverage_and_gap": "One Liquid ETH smart-collateral/ETH-debt case is E3; ETH-collateral dollar-debt variants must be screened separately.",
+      "materiality_of_all_implementations_established": false
+    },
+    {
+      "variant": "Incentive-dependent carry",
+      "existing_coverage_and_gap": "Selected reward ledgers and rewards-off model; sponsor budgets, expiries and organically profitable variants not fully mapped.",
+      "materiality_of_all_implementations_established": false
+    }
+  ],
+  "important_public_work_not_completed": [
+    "Enumerate material stablecoin debt against ETH-family collateral across Aave, Morpho, Spark, Euler, Silo, Fluid, Compound and relevant collateralized-stablecoin markets, with dated chain/version identities.",
+    "Paginate borrower discovery and trace loan proceeds at the stated debt thresholds; distinguish investment, idle cash, spending, ETH purchases and unknown use.",
+    "Apply the published product, historical-peak, sleeve and chain thresholds to a complete discovered registry with explicit inclusions, exclusions and material unresolved rows.",
+    "Reconstruct comparable collateral, debt, destination assets, fees, realized rewards, historical cash flows and exits for each material variant; do not infer an actual route from generic protocol support.",
+    "Complete historical closed/migrated-product discovery rather than using the current surviving product universe alone."
+  ],
+  "completion_gates": {
+    "detailed_product_current_USD_threshold": 5000000,
+    "detailed_product_historical_peak_USD_threshold": 20000000,
+    "carry_or_loop_sleeve_USD_threshold": 1000000,
+    "borrower_discovery_debt_USD_threshold": 1000000,
+    "borrower_identification_priority_debt_USD_threshold": 5000000,
+    "mechanically_distinct_material_variants_require_cases": true,
+    "coverage_denominator": "Dated discovered measurable universe; global coverage remains unknown unless independently established.",
+    "closed_products_and_material_unknowns_must_be_reported": true
+  },
+  "primary_document_spot_checks": [
+    {
+      "url": "https://docs.pendle.finance/pendle-v2/AppGuide/PTLooping",
+      "finding": "PT collateral -> borrowed debt asset -> more PT is a separately documented leveraged fixed-yield mechanism. Not every PT pair is supported; current documentation is not T capital evidence."
+    },
+    {
+      "url": "https://docs.fluid.instadapp.io/",
+      "finding": "Smart collateral and smart debt can combine LP fees and credit exposure. A protocol feature does not prove an active material ETH-dollar carry position."
+    },
+    {
+      "url": "https://resources.curve.finance/developer/crvusd/controller",
+      "finding": "Curve documents ETH-family collateral loans and distinguishes mint-market and lender-funded routes."
+    },
+    {
+      "url": "https://docs.curve.finance/developer/crvusd/llamma-explainer/",
+      "finding": "Soft liquidation changes collateral exposure over a price range and requires a distinct carry stress treatment."
+    },
+    {
+      "url": "https://docs.thetanuts.finance/contracts-and-security/deployed-contracts",
+      "finding": "Official catalogue lists ETH-call and ETH-put contracts on Ethereum/Arbitrum; current activity and material size still require fixed-date investigation."
+    }
+  ],
+  "local_evidence": [
+    {
+      "path": "data/eth/carry_economics_chapter.json",
+      "sha256": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0"
+    },
+    {
+      "path": "data/eth/research_borrowers.json",
+      "sha256": "524efa4e0a6ae3c9ab07a84d6f79c9cbca87c472585d2687ff46f5048198f34c"
+    },
+    {
+      "path": "data/eth/carry_category_candidates.json",
+      "sha256": "bf275a641a40f442ebf96d7589a2598490fe75eefac8e86f037221d25cdc4429"
+    },
+    {
+      "path": "data/eth/market_panel.json",
+      "sha256": "384461b5d6e6fb0e3fa4d42cc2d8ebc851923f71ada54b54341f1acd80f01808"
+    },
+    {
+      "path": "data/eth/product_chapters.json",
+      "sha256": "831a656ad248ed96dd26a0a74781b24b150163a3ab3261debacb1017b8ab94fd"
+    },
+    {
+      "path": "research/eth/en/scope.md",
+      "sha256": "d1c1a971ddbd90186083399bf1c580b676fd3b4e67a6b62f700a4ebf35415207"
+    },
+    {
+      "path": "research/eth/en/RESEARCH-PLAN.md",
+      "sha256": "c5f81d8aefb3704017546d23a2a8e0dc5c0e5bf983a14c420b475a9967f6a410"
+    },
+    {
+      "path": "research/eth/en/MECHANICS.md",
+      "sha256": "e940cec783ab2e8dc30cfef1bb6ca4ae89ab59be2db8eb53ea82009dbcf83a73"
+    },
+    {
+      "path": "research/eth/en/PRODUCT-TERMS.md",
+      "sha256": "0f1b16972645f3578a8f03f07c493f3d3540de686c96d6aed70bd3e419b8232c"
+    }
+  ],
+  "presentation_conclusion": "Suitable to present as selected market mapping and deep case studies with explicit limits; not established as a complete market or maximum-variant carry survey.",
+  "revision_note": "Corrected on 4 October: the original 15 / $180.413M count was a USD valuation of all loan currencies, including WETH. The original stablecoin-only cohort is seven / $85.049M. Neither amount is confirmed carry capital. New follow-up evidence is separate."
+}

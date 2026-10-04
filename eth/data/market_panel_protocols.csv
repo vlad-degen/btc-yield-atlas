@@ -1,0 +1,86 @@
+id,name,category,usd,eth_ref,gross_positive_usd,negative_usd,source_timestamp,source_age_seconds,status,source_url
+lido,Lido,staking,26677057788.86242,9865133.47501,26677057788.86242,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/lido
+binance-staked-eth,Binance staked ETH,staking,10081459145.92437,3728107.5328676733,10081459145.92437,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/binance-staked-eth
+aave-v3,Aave V3,lending,9835181741.10725,3637034.540874745,9835181741.10725,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/aave-v3
+eigencloud,EigenCloud,restaking,7075345067.10396,2616451.335119688,7075345067.10396,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/eigencloud
+ether.fi-stake,ether.fi Stake,staking,5188346728.61038,1918642.3554452816,5188346728.61038,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/ether.fi-stake
+sparklend,SparkLend,lending,4160790531.6249104,1538653.710649247,4160790531.6249104,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/sparklend
+sky-lending,Sky Lending,lending,1639333479.86968,606222.9094738802,1639333479.86968,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/sky-lending
+morpho-blue,Morpho Blue,lending,1421868642.06823,525804.7588662682,1421868642.06823,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/morpho-blue
+rocket-pool,Rocket Pool,staking,1409233145.33776,521132.1723030986,1409233145.33776,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/rocket-pool
+justlend-v1,JustLend V1,lending,1309833259.467,484374.252847483,1309833259.467,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/justlend-v1
+kelp,Kelp,restaking,1130443456.46133,418036.18945559236,1130443456.46133,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/kelp
+stakewise-v3,StakeWise V3,staking,1016916601.08768,376054.1391814129,1016916601.08768,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/stakewise-v3
+concrete,Concrete,managed,953047317.5741999,352435.37987892365,953047317.5741999,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/concrete
+compound-v3,Compound V3,lending,724582028.33551,267949.27985302755,724582028.33551,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/compound-v3
+meth-protocol,mETH Protocol,staking,637235844.43803,235648.80018614468,637235844.43803,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/meth-protocol
+coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,516967955.6051,191173.92647687596,516967955.6051,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/coinbase-wrapped-staked-eth
+ether.fi-liquid,ether.fi Liquid,managed,402664597.86715996,148904.72686531415,402664597.86715996,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/ether.fi-liquid
+curve-dex,Curve DEX,liquidity,269230222.51746,99560.90741574408,269230222.51746,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/curve-dex
+aave-v4,Aave V4,lending,240384881.09420002,88893.94610670877,240384881.09420002,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/aave-v4
+stader,Stader,staking,233251429.06518,86256.0069096342,233251429.06518,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/stader
+fluid-lending,Fluid Lending,lending,231542318.57446998,85623.98057270309,231542318.57446998,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/fluid-lending
+fluid-lite,Fluid Lite,managed,208925836.85868,77260.44166120661,208925836.85868,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/fluid-lite
+liquity-v1,Liquity V1,lending,195871239.22519,72432.87225170838,195871239.22519,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/liquity-v1
+symbiotic,Symbiotic,restaking,165706054.08499,61277.83483859825,165706054.08499,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/symbiotic
+frax-ether,Frax Ether,staking,137014850.34053,50667.873397649026,137014850.34053,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/frax-ether
+renzo,Renzo,restaking,117731665.67793,43536.982426635135,117731665.67793,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/renzo
+liquity-v2,Liquity V2,lending,107835246.53067,39877.30239051345,107835246.53067,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/liquity-v2
+euler-v2,Euler V2,lending,100026455.47155,36989.62389589155,100026455.47155,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/euler-v2
+fluid-dex,Fluid DEX,liquidity,96105614.43368,35539.703125804495,96105614.43368,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/fluid-dex
+crvusd,crvUSD,lending,79607989.88458,29438.907847495306,79607989.88458,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/crvusd
+origin-ether,Origin Ether,staking,64585747.84587,23883.706671312677,64585747.84587,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/origin-ether
+aerodrome-v1,Aerodrome V1,liquidity,62542213.76949,23128.011025122018,62542213.76949,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/aerodrome-v1
+dolomite,Dolomite,lending,60028430.86843,22198.418112649182,60028430.86843,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/dolomite
+compound-v2,Compound V2,lending,58579461.94755,21662.5917138478,58579461.94755,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/compound-v2
+gmx-v2-perps,GMX V2 Perps,liquidity,56519628.9311,20900.86874558271,56519628.9311,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/gmx-v2-perps
+treehouse-protocol,Treehouse Protocol,managed,56010494.31325,20712.591574929524,95665274.68363,-39654780.37038,1790899200,86399,observed,https://api.llama.fi/protocol/treehouse-protocol
+fusion-by-ipor,Fusion by IPOR,managed,54942430.80944,20317.623392596037,54942430.80944,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/fusion-by-ipor
+aerodrome-slipstream,Aerodrome Slipstream,liquidity,50136854.98916,18540.529109315088,50136854.98916,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/aerodrome-slipstream
+venus-core-pool,Venus Core Pool,lending,46226805.62075,17094.599081403714,46226805.62075,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/venus-core-pool
+yearn-finance,Yearn Finance,managed,42851938.885910004,15846.5787388655,42851938.885910004,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/yearn-finance
+lagoon,Lagoon,managed,42848957.7778,15845.476329835188,42848957.7778,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/lagoon
+upshift,Upshift,managed,42306184.38496,15644.759593775707,42306184.38496,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/upshift
+swell-liquid-staking,Swell Liquid Staking,staking,32947518.17521,12183.93973732981,32947518.17521,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/swell-liquid-staking
+alchemix-v3,Alchemix V3,lending,32925405.12866,12175.762367940675,32925405.12866,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/alchemix-v3
+swell-liquid-restaking,Swell Liquid Restaking,restaking,32331777.79465,11956.239925444488,32331777.79465,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/swell-liquid-restaking
+puffer-stake,Puffer Stake,restaking,31366150.46717,11599.15247794177,31366150.46717,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/puffer-stake
+yield-basis,Yield Basis,liquidity,28468050.65391,10527.439783536327,28468050.65391,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/yield-basis
+autofinance,AUTOfinance,managed,28192625.439549997,10425.587978005544,28192625.439549997,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/autofinance
+bedrock-unieth,Bedrock uniETH,restaking,27767047.50159,10268.209934473782,27767047.50159,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/bedrock-unieth
+vesper,Vesper,managed,23602676.82801,8728.232293032543,23602676.82801,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/vesper
+pendle-v2,Pendle V2,fixed_yield,22981331.54195,8498.459796021674,22981331.54195,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/pendle-v2
+ankr,Ankr,staking,22629775.81399,8368.455047833977,22629775.81399,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/ankr
+uniswap-v2,Uniswap V2,liquidity,18011135.274929997,6660.489133768983,18011135.274929997,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/uniswap-v2
+pancakeswap-amm,PancakeSwap AMM,liquidity,15943356.418,5895.82780635174,15943356.418,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/pancakeswap-amm
+sushiswap-v3,SushiSwap V3,liquidity,15023679.67187,5555.732810635115,15023679.67187,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/sushiswap-v3
+tydro,Tydro,lending,14200173.27471,5251.201456772706,14200173.27471,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/tydro
+harvest-finance,Harvest Finance,managed,14187258.20263,5246.42548369063,14187258.20263,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/harvest-finance
+origin-arm,Origin ARM,managed,14153333.36006,5233.88013094894,14153333.36006,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/origin-arm
+yo-protocol,YO Protocol,managed,13406451.61909,4957.684452886082,13406451.61909,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/yo-protocol
+reserve-protocol,Reserve Protocol,managed,12203759.82101,4512.93094178815,12203759.82101,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/reserve-protocol
+lista-lending,Lista Lending,lending,10091310.28947,3731.7504700584345,10091310.28947,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/lista-lending
+vvs-standard,VVS Standard,liquidity,10057415.66419,3719.2162916224506,10057415.66419,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/vvs-standard
+frankencoin,Frankencoin,lending,8637972.26296,3194.308382954864,8637972.26296,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/frankencoin
+beefy,Beefy,managed,8618559.60203,3187.1296118664154,8618559.60203,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/beefy
+balancer-v3,Balancer V3,liquidity,7621143.308730001,2818.286655441804,7621143.308730001,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/balancer-v3
+cian-yield-layer,CIAN Yield Layer,managed,6718219.36149,2484.3868180682716,6718219.36149,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/cian-yield-layer
+camelot-v2,Camelot V2,liquidity,6656378.56429,2461.518189773223,6656378.56429,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/camelot-v2
+native-credit-pool,Native Credit Pool,lending,6586794.66656,2435.7861752365793,6586794.66656,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/native-credit-pool
+across,Across,liquidity,6334656.16005,2342.545757174086,6334656.16005,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/across
+gearbox,Gearbox,lending,5123348.547739999,1894.6061316984915,5123348.547739999,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/gearbox
+ekubo,Ekubo,liquidity,4904072.5746,1813.5182261277382,4904072.5746,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/ekubo
+velodrome-v3,Velodrome V3,liquidity,4749307.0668399995,1756.28618789234,4749307.0668399995,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/velodrome-v3
+velodrome-v2,Velodrome V2,liquidity,4316353.39919,1596.1806112704103,4316353.39919,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/velodrome-v2
+quickswap-dex,Quickswap Dex,liquidity,4226049.89416,1562.7865189595962,4226049.89416,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/quickswap-dex
+bancor-v3,Bancor V3,liquidity,3921764.9787600003,1450.262441956383,3921764.9787600003,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/bancor-v3
+fluxion-network,Fluxion Network,liquidity,2209389.15104,817.0285886005147,2209389.15104,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/fluxion-network
+exactly,Exactly,lending,1390615.06835,514.247237090755,1390615.06835,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/exactly
+stake-dao-yield,Stake DAO Yield,managed,604470.42845,223.53220154755374,604470.42845,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/stake-dao-yield
+spectra-v2,Spectra V2,fixed_yield,256313.06604,94.78416352680838,256313.06604,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/spectra-v2
+convex-finance,Convex Finance,managed,0.0,0.0,0.0,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/convex-finance
+spark-savings,Spark Savings,managed,0.0,0.0,0.0,0.0,1790899200,86399,observed,https://api.llama.fi/protocol/spark-savings
+balancer-v2,Balancer V2,liquidity,,,,,,,missing,https://api.llama.fi/protocol/balancer-v2
+sushiswap,SushiSwap,liquidity,,,,,,,missing,https://api.llama.fi/protocol/sushiswap
+uniswap-v3,Uniswap V3,liquidity,,,,,,,missing,https://api.llama.fi/protocol/uniswap-v3
+uniswap-v4,Uniswap V4,liquidity,,,,,,,missing,https://api.llama.fi/protocol/uniswap-v4

@@ -1,0 +1,397 @@
+{
+  "assets": [
+    {
+      "address": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+      "target_timestamp": 1790985599,
+      "symbol": "PRIME",
+      "decimals": 6,
+      "erc4626_asset": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc"
+    },
+    {
+      "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "target_timestamp": 1790985599,
+      "symbol": "WBTC",
+      "decimals": 8
+    },
+    {
+      "address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+      "target_timestamp": 1790985599,
+      "symbol": "USDe",
+      "decimals": 18
+    },
+    {
+      "address": "0x5a19fa369f2895dcd8d2cee62e4ceae58ef92bbb",
+      "target_timestamp": 1790985599,
+      "symbol": "PT-sUSDE-13AUG2026",
+      "decimals": 18
+    },
+    {
+      "address": "0x73e0c0d45e048d25fc26fa3159b0aa04bfa4db98",
+      "target_timestamp": 1790985599,
+      "symbol": "kBTC",
+      "decimals": 8
+    },
+    {
+      "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "target_timestamp": 1790985599,
+      "symbol": "wstETH",
+      "decimals": 18
+    },
+    {
+      "address": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+      "target_timestamp": 1790985599,
+      "symbol": "syrupUSDC",
+      "decimals": 6,
+      "erc4626_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    },
+    {
+      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "target_timestamp": 1790985599,
+      "symbol": "WETH",
+      "decimals": 18
+    },
+    {
+      "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      "target_timestamp": 1790985599,
+      "symbol": "cbBTC",
+      "decimals": 8
+    },
+    {
+      "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "target_timestamp": 1790985599,
+      "symbol": "weETH",
+      "decimals": 18
+    },
+    {
+      "address": "0xce6170ea245dc8d1f275a710a062b70f125f0110",
+      "target_timestamp": 1790985599,
+      "symbol": "FXRP",
+      "decimals": 6
+    }
+  ],
+  "labels": [
+    {
+      "address": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+      "signature": "asset()"
+    },
+    {
+      "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+      "signature": "asset()"
+    },
+    {
+      "address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+      "signature": "asset()"
+    },
+    {
+      "address": "0x5a19fa369f2895dcd8d2cee62e4ceae58ef92bbb",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0x5a19fa369f2895dcd8d2cee62e4ceae58ef92bbb",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0x5a19fa369f2895dcd8d2cee62e4ceae58ef92bbb",
+      "signature": "asset()"
+    },
+    {
+      "address": "0x73e0c0d45e048d25fc26fa3159b0aa04bfa4db98",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0x73e0c0d45e048d25fc26fa3159b0aa04bfa4db98",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0x73e0c0d45e048d25fc26fa3159b0aa04bfa4db98",
+      "signature": "asset()"
+    },
+    {
+      "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "signature": "asset()"
+    },
+    {
+      "address": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+      "signature": "asset()"
+    },
+    {
+      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "signature": "asset()"
+    },
+    {
+      "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+      "signature": "asset()"
+    },
+    {
+      "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "signature": "asset()"
+    },
+    {
+      "address": "0xce6170ea245dc8d1f275a710a062b70f125f0110",
+      "signature": "symbol()"
+    },
+    {
+      "address": "0xce6170ea245dc8d1f275a710a062b70f125f0110",
+      "signature": "decimals()"
+    },
+    {
+      "address": "0xce6170ea245dc8d1f275a710a062b70f125f0110",
+      "signature": "asset()"
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000055052494d45000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000006"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "result": "0x0000000000000000000000006ad038ca6c04e885630851278ca0a856ad9a66cc"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045742544300000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000008"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045553446500000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000012"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001250542d73555344452d3133415547323032360000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 11,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000012"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 12,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 13,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000046b42544300000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 14,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000008"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 15,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 16,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000067773744554480000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 17,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000012"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 18,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 19,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000097379727570555344430000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 20,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000006"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 21,
+      "result": "0x000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 22,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000045745544800000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 23,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000012"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 24,
+      "result": "0x"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 25,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000056362425443000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 26,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000008"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 27,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 28,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000057765455448000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 29,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000012"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 30,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 31,
+      "result": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000044658525000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 32,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000006"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 33,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    }
+  ]
+}

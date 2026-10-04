@@ -1,0 +1,53 @@
+{
+  "block": 26108081,
+  "labels": [
+    {
+      "label": "accountant_state",
+      "target": "0x0d05d94a5f1e76c18fbeb7a13d17c8a314088198",
+      "signature": "accountantState()"
+    },
+    {
+      "label": "fluid_vault74",
+      "target": "0x324c5dc1fc42c7a4d43d92df1eba58a54d13bf2d",
+      "signature": "getVaultAddress(uint256)"
+    },
+    {
+      "label": "authority_owner_threshold",
+      "target": "0xd829f278016b90fec735f9a12bf8b75e06102c89",
+      "signature": "getThreshold()"
+    },
+    {
+      "label": "authority_owner_owners",
+      "target": "0xd829f278016b90fec735f9a12bf8b75e06102c89",
+      "signature": "getOwners()"
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x000000000000000000000000f6bd950c66869a32170bf26a38c8b7c6d6eca863000000000000000000000000000000000000000000000000122ec2a833f6aa93000000000000000000000000000000000000000000001a9731d0eaf6ecf7462a0000000000000000000000000000000000000000000000000f5c38cd4c1fbf04000000000000000000000000000000000000000000000000000000000000274200000000000000000000000000000000000000000000000000000000000026de000000000000000000000000000000000000000000000000000000006abf4ea7000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000054600000000000000000000000000000000000000000000000000000000000000023"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "result": "0x000000000000000000000000b4a15526d427f4d20b0dadaf3bab4177c85a699a"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    }
+  ]
+}

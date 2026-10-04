@@ -1,0 +1,156 @@
+{
+  "target_timestamp": 1790985599,
+  "labels": [
+    {
+      "label": "etherfi_timelock_min_delay",
+      "address": "0xd829f278016b90fec735f9a12bf8b75e06102c89",
+      "signature": "getMinDelay()"
+    },
+    {
+      "label": "PROPOSER_ROLE_count",
+      "address": "0xd829f278016b90fec735f9a12bf8b75e06102c89",
+      "signature": "getRoleMemberCount(bytes32)"
+    },
+    {
+      "label": "EXECUTOR_ROLE_count",
+      "address": "0xd829f278016b90fec735f9a12bf8b75e06102c89",
+      "signature": "getRoleMemberCount(bytes32)"
+    },
+    {
+      "label": "CANCELLER_ROLE_count",
+      "address": "0xd829f278016b90fec735f9a12bf8b75e06102c89",
+      "signature": "getRoleMemberCount(bytes32)"
+    },
+    {
+      "label": "DEFAULT_ADMIN_ROLE_count",
+      "address": "0xd829f278016b90fec735f9a12bf8b75e06102c89",
+      "signature": "getRoleMemberCount(bytes32)"
+    },
+    {
+      "label": "implementation_0xb9dc54c8261745cb97070cefbe3d3d815aee8f20",
+      "address": "0xb9dc54c8261745cb97070cefbe3d3d815aee8f20"
+    },
+    {
+      "label": "0xb9dc54c8261745cb97070cefbe3d3d815aee8f20_getTotalAllocated()",
+      "address": "0xb9dc54c8261745cb97070cefbe3d3d815aee8f20",
+      "signature": "getTotalAllocated()"
+    },
+    {
+      "label": "0xb9dc54c8261745cb97070cefbe3d3d815aee8f20_cachedTotalAssets()",
+      "address": "0xb9dc54c8261745cb97070cefbe3d3d815aee8f20",
+      "signature": "cachedTotalAssets()"
+    },
+    {
+      "label": "0xb9dc54c8261745cb97070cefbe3d3d815aee8f20_getDeallocationOrder()",
+      "address": "0xb9dc54c8261745cb97070cefbe3d3d815aee8f20",
+      "signature": "getDeallocationOrder()"
+    },
+    {
+      "label": "implementation_0xd57588c73715b65e0ead36ae06c15644169501b7",
+      "address": "0xd57588c73715b65e0ead36ae06c15644169501b7"
+    },
+    {
+      "label": "0xd57588c73715b65e0ead36ae06c15644169501b7_getTotalAllocated()",
+      "address": "0xd57588c73715b65e0ead36ae06c15644169501b7",
+      "signature": "getTotalAllocated()"
+    },
+    {
+      "label": "0xd57588c73715b65e0ead36ae06c15644169501b7_cachedTotalAssets()",
+      "address": "0xd57588c73715b65e0ead36ae06c15644169501b7",
+      "signature": "cachedTotalAssets()"
+    },
+    {
+      "label": "0xd57588c73715b65e0ead36ae06c15644169501b7_getDeallocationOrder()",
+      "address": "0xd57588c73715b65e0ead36ae06c15644169501b7",
+      "signature": "getDeallocationOrder()"
+    },
+    {
+      "label": "implementation_0xd11c452fc99cf405034ee446803b6f6c1f6d5ed8",
+      "address": "0xd11c452fc99cf405034ee446803b6f6c1f6d5ed8"
+    }
+  ],
+  "responses": [
+    {
+      "jsonrpc": "2.0",
+      "id": 1,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000015180"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 2,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 3,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 4,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 5,
+      "error": {
+        "code": 3,
+        "message": "execution reverted"
+      }
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 6,
+      "result": "0x000000000000000000000000fb65336d4323ba79d07f7024c81b8b69e1781527"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 7,
+      "result": "0x000000000000000000000000000000000000000000003ae7abcfc0460a5145ac"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 8,
+      "result": "0x000000000000000000000000000000000000000000003ae7abcfc0460a5145ac"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 9,
+      "result": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000c8ea269d4dba296f7fbba812905c1b2efe5dbe1c"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 10,
+      "result": "0x000000000000000000000000438d1eb241f866a91ebd0cc148fda9ac9b09093e"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 11,
+      "result": "0x0000000000000000000000000000000000000000000007b7663c592f5f200780"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 12,
+      "result": "0x0000000000000000000000000000000000000000000007b7663c592f5f4a1fb5"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 13,
+      "result": "0x0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000050a7510e73d79d60823dcac50e6b2c62e89ed82b"
+    },
+    {
+      "jsonrpc": "2.0",
+      "id": 14,
+      "result": "0x000000000000000000000000d1a622566f277aa76c3c47a30469432aaec95e38"
+    }
+  ]
+}

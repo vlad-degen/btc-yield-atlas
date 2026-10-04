@@ -1,0 +1,412 @@
+ECONOMICS.md	0	# Economics, capacity and stress tests
+ECONOMICS.md	1	Snapshot T: 2 October 2026, 23:59:59 UTC. Contract state, model sensitivity and pending execution simulation are distinguished throughout.
+ECONOMICS.md	2	## ETH loops: a small spread amplified by leverage
+ECONOMICS.md	3	The model uses trailing-30-day staking log return annualized as APR plus current collateral supply APR. WETH debt uses instantaneous variable borrow APR at T. This mixed-window proxy explains economics rather than forecasting or measuring realized historical profit. Rewards, management/performance fees and execution costs are excluded.
+ECONOMICS.md	4	| Account | L | Staking + supply APR proxy | WETH borrow APR at T | Model return on equity | Borrow uplift to zero return | Uplift eliminating loop excess |
+ECONOMICS.md	5	Even with positive staking APR, tens of basis points of additional debt cost can erase the leveraged strategy's appeal. These thresholds belong to the specified model. Variable rates can move with supply yield, staking, utilization and position size.
+ECONOMICS.md	6	## Rate shocks with fixed equity
+ECONOMICS.md	7	Main Aave +100 bp produces −12.3245 pp of annual account-equity return and approximately −2.3136 pp on Liquid ETH book NAV before offsets. Do not combine this isolated shock with changed lender income without complete asset/debt look-through.
+ECONOMICS.md	8	## Available debt asset and unwind
+ECONOMICS.md	9	Aave cash is smaller than the main loop's WETH debt. Full simultaneous repayment through one flash loan solely from this reserve is constrained by observed cash. This does not establish an impossible exit: other lenders, own liquidity, collateral redemption and staged operations remain possible. Spark cash exceeds this account's debt, but eligibility, caps and route execution were not simulated.
+ECONOMICS.md	10	Rates use the 15-word legacy getReserveData layout. WETH cash is `balanceOf(aTokenAddress)` at the same fixed block; debt comes from the corresponding variableDebt token. Maximum withdrawal/flash loan also depends on pause status, reserve rules and execution.
+ECONOMICS.md	11	## Oracle, market discounts and stablecoin debt
+ECONOMICS.md	12	| Account | HF at T | Isolated oracle markdown to HF=1 | Borrow +100 bp: equity-return change |
+ECONOMICS.md	13	| main_aave | 1.02708 | 2.637% | -12.325 pp |
+ECONOMICS.md	14	| main_spark | 1.03615 | 3.488% | -8.762 pp |
+ECONOMICS.md	15	| drone_aave | 1.39045 | 28.081% | -1.355 pp |
+ECONOMICS.md	16	| drone_spark | 1.87192 | 46.579% | -0.814 pp |
+ECONOMICS.md	17	With ETH debt, LST/ETH oracle markdown matters more than ETH/USD direction. Stablecoin debt responds to ETH/USD through collateral value with debt and LT fixed. Drone Aave retains HF approximately 1.112 under a −20% collateral shock; at −40%, HF is approximately 0.834. These are arithmetic sensitivities without liquidation quotes or rebalancing.
+ECONOMICS.md	18	DEX discounts independently change executable exit value. Aave's weETH CAPO source need not track DEX discounts. In a principal-only estimate, a 1% markdown of all collateral reduces account equity by approximately L%. Smart collateral/LP require recalculating reserves and ranges.
+ECONOMICS.md	19	## Carry: credit risk and linked cash flows
+ECONOMICS.md	20	Dollar losses pass into ETH book NAV through ownership and conversion. Self-credit diagnostics of 8.709M RLUSD and 4.759M PYUSD show linked borrower/lender flows; they are neither available cash nor additional assets. Nested curator fees of 10%/15% can apply even when borrower payments partly return to the same investor.
+ECONOMICS.md	21	Verified PRIME/PYUSD utilization is approximately 91.8%, weETH/RLUSD approximately 88.3%. Outstanding loans differ from immediately available supply liquidity. Collateral recovery involving off-chain credit is not instantaneous ETH liquidity.
+ECONOMICS.md	22	## Capacity: what remains unestablished
+ECONOMICS.md	23	Capacity is not protocol TVL. E3 is constrained by LST liquidity/redemption, ETH borrow liquidity, caps, HF and tolerated drawdown. E4 adds dollar borrowing capacity, destination caps, credit terms and redemption duration. E9 adds hedge open interest, funding curves, venue margin and custody limits.
+ECONOMICS.md	24	Full stress execution remains open: archive executable DEX quotes, flash-loan eligibility, redemption throughput, liquidation transactions, bridge settlement and 7/30/90-day rate/funding paths. These tables preserve model assumptions rather than replacing execution checks. Data: `loop_economics_T.json`, `lending_reserve_T.json`, `stress_scenarios.json`.
+HISTORY.md	0	# ETH market and return history
+HISTORY.md	1	Wealth window: 2 October 2024, 23:59:59 UTC to T. Twenty-four completed monthly snapshots cover October 2024–September 2026. Published balances and PPS observations are not a complete reconstruction of every historical product.
+HISTORY.md	2	## Comparable ETH book returns
+HISTORY.md	3	![Growth in published ETH book value](figures/eth-wealth.png)
+HISTORY.md	4	Each position starts at 100 ETH-equivalent units. ETH/USD does not affect this chart. Fluid is already denominated in rebasing stETH; multiplying by wstETH conversion again double counts staking. Treehouse IAU uses historically verified wstETH underlying; CIAN rsETH uses a verified issuer oracle. Excludes separately paid rewards, slippage, withdrawal fees, depegs and private distributions.
+HISTORY.md	5	| Product | 730 days, % | First year, % | Last year, % | Annualized 730 days, % |
+HISTORY.md	6	Ranking changes between the first and second years. Token units per share differ from ETH return; declining receipt units can coexist with positive ETH conversion return. PPS comparison measures accounting results without explaining causes. Attribution needs positions, fees and external payouts over time.
+HISTORY.md	7	## History of the 25 largest observed protocols
+HISTORY.md	8	The following API ETH-family dollar observations overlap and are not summed. The first available point need not be October 2024; history starts can reflect launch, migration or adapter changes. Missing means unknown. Dollar changes combine ETH price, flows and methodology. Direct ETH units exclude other receipts.
+HISTORY.md	9	| Protocol | First point | USD millions | September 2026, USD millions | USD change, % | Months observed / 24 |
+HISTORY.md	10	All 2,088 protocol-month rows are retained in `data/eth/protocol_eth_history_monthly.json`; 247 lack token observations. Current discovery defines this universe, so closed/dead products can be underrepresented. This is survivorship bias, rather than proof of their absence.
+HISTORY.md	11	## Changes in market construction
+HISTORY.md	12	Liquid ETH has 719 Accountant events: 653 rate updates and 66 parameter events. Fees changed within the window; current 35 bp cannot be applied to both years. Optimism rates were reconstructed independently and historically differed from Ethereum.
+HISTORY.md	13	By 3 October, Pendle discovery shows 122 expired ETH-family markets out of 126. Preserve maturity cohorts and redemption claims: deleting expired markets would create a false collapse in the fixed-yield segment.
+HISTORY.md	14	The April 2026 rsETH bridge incident was followed by recovery procedures on some remote networks from June. A historical issuer oracle does not prove that holders on every chain could realize that price at that time. See [staking/restaking](dossiers/staking-restaking.md).
+HISTORY.md	15	Each semantic JSON row identifies protocol sources. Direct contracts, archive blocks and hash manifests are documented in [AUDIT.md](AUDIT.md).
+LENDING-MARKETS.md	0	# WETH lending: selected segment size and balance reconciliation
+LENDING-MARKETS.md	1	Snapshot T: 2 October 2026, 23:59:59 UTC. Coverage: Aave V3 Ethereum, Base, Arbitrum, Optimism and Spark Ethereum. Addresses come from primary address books and fixed-block getReserveData checks. WETH cash, aToken claims and debt-token supply use the same block.
+LENDING-MARKETS.md	2	## Claims and outstanding debt
+LENDING-MARKETS.md	3	| Protocol / chain | Lender claims, WETH | Outstanding debt, WETH | Reserve cash, WETH | Supply APR at T | Borrow APR at T |
+LENDING-MARKETS.md	4	These five markets contain **2,881,418.29 WETH lender claims**, **2,388,253.31 WETH debt** and 410,491.18 WETH cash. This is a gross lending-claim segment. It cannot be added to LST backing or treated as unique ETH yield capital.
+LENDING-MARKETS.md	5	Main Liquid ETH creates **23.28%** of variable WETH debt on Aave Ethereum and **6.31%** on Spark. These shares refer to one verified borrower account, excluding potentially linked borrowers. They directly connect ETH-loan demand to managed yield looping.
+LENDING-MARKETS.md	6	## Reserve deficits: claims differ from cash plus servicing debt
+LENDING-MARKETS.md	7	| Aave chain | getReserveDeficit(WETH), WETH | Deficit / lender claims | Claims − cash − debt, WETH |
+LENDING-MARKETS.md	8	Aave Ethereum reports 52,964.453913 WETH reserve deficit; Arbitrum 29,835.199567 WETH. These are contract getters at T rather than values inferred solely from subtotal differences. Optimism/Base values are small. Spark's analogous getters are unavailable in the checked RPC responses; no zero deficit is assigned.
+LENDING-MARKETS.md	9	[Aave v3.3's definition](https://github.com/aave-dao/aave-v3-origin/blob/main/docs/3.3/Aave-v3.3-features.md) explains reserve deficit and its permissioned reduction through aToken burns. Claims−cash−debt need not exactly equal stored deficit because of treasury accounting, accrued indexes, virtual balances and rounding. The getter gap is preserved rather than forced to zero.
+LENDING-MARKETS.md	10	Deficit/claims describes reserve accounting, **not a proven aToken-holder haircut**. Recovery assets, external compensation and later settlement need separate accounting. Normal APR or restored operational liquidity does not prove the deficit ledger is cleared.
+LENDING-MARKETS.md	11	## Incident attribution and conclusion limits
+LENDING-MARKETS.md	12	The [20 April Aave provider report](https://governance.aave.com/t/rseth-incident-report-april-20-2026/24580) describes rsETH bridge risk becoming WETH borrowing exposure on Ethereum/Arbitrum and possible coverage. [Aave Labs' May update](https://governance.aave.com/t/al-development-update-may-2026/25013) discusses liquidations, recovery guardian and ETH liquidity restoration. These disclosures provide context; each outstanding deficit at T is not yet reconciled to a complete event-level recovery waterfall.
+LENDING-MARKETS.md	13	Staking APY or isolated contract risk alone is insufficient: receipt/bridge collateral quality can affect a reserve holding WETH lender claims. Analyse income, withdrawal cash, debt collectability and recovery rights separately. These states are neither loss forecasts nor a completed Aave audit.
+LENDING-MARKETS.md	14	Full request/response evidence: `weth_lending_markets_T.json`; summary: `weth_lending_summary_T.json`. Each getter uses its chain's fixed block; current UI does not substitute for historical borrowing state.
+DEPENDENCIES.md	0	# Claims, credit and shared-backing dependencies
+DEPENDENCIES.md	1	This maps selected verified products at T, rather than complete market netting. Edges identify ownership/control, lending or contractual claims. They do not establish new external deposits and need not represent historical cash transfers.
+DEPENDENCIES.md	2	  Investors["Liquid ETH investors"] --> V["Liquid ETH\nETH + Optimism shares"]
+DEPENDENCIES.md	3	The investor arrow represents an economic role rather than a complete holder scan. RLUSD/PYUSD claims use par assumptions. Self-credit arises when controlled borrowers borrow from markets already funded through investor-owned carry vaults. Interest partly returns to the same investor, requiring net cash-flow accounting after fees rather than adding both sides' income.
+DEPENDENCIES.md	4	  DS --> S["Shared Concrete Safe\n3 of 5"]
+DEPENDENCIES.md	5	The Safe owns all ctwstETH Plus supply. External equity cannot be inferred from totalAssets without ownership provenance and underlying allocation. Aave/Morpho assets are not fully allocated between the two depicted vaults. Another single address holds all ctDelta supply; its ultimate beneficial owner remains unidentified.
+DEPENDENCIES.md	6	`data/eth/dependency_graph.json` and `carry_credit_lookthrough.json` preserve source, relationship type and prohibition on additive market-capital treatment. Specific Solidity getters prove contract links; off-chain credit-payer links remain disclosure-based rather than blockchain proof of legal claims.
+DEPENDENCIES.md	7	Maintain three geographic layers: root backing, deployment and circulation. Lock/mint creates a remote claim against L1 escrow; burn/mint relocates circulation. Both can coexist in one product. Adding them without asset-level keys and an in-flight ledger is invalid.
+DEPENDENCIES.md	8	Current symbols support discovery. Native/receipt verification needs `(chain,address,version)`, conservation rules and redemption paths. An API can flag `misrepresentedTokens=true`: ether.fi Liquid, for example, distributes synthetic eETH/WETH balances through internal category accounting. These rows are not physical wallet reserves.
+DEPENDENCIES.md	9	A defensible all-chain unique-underlying or external-equity total requires the complete graph. Book claims, oracle-valued accounts, gross pool TVL and native backing remain separate views. Unresolved relationships default to neither zero nor fully external deposits.
+scope.md	0	# ETH yield research scope
+scope.md	1	Research began 3 October 2026 under the approved project plan. Core scope: products accepting ETH or claims on ETH, preserving ETH exposure or delivering ETH-denominated results. Hedged dollar products have a separate segment. Data is dated; unknown amounts remain unknown.
+scope.md	2	## Snapshot and history
+scope.md	3	Target snapshot: 2 October 2026, 23:59:59 UTC. On-chain observations use the last block no later than T, checking the next block. History covers 24 completed months, October 2024–September 2026, plus a separate snapshot. Later APIs/interfaces belong to discovery and do not replace T.
+scope.md	4	## Capital and products
+scope.md	5	A product is an identified external-depositor claim chain with issuer, mechanics and addresses. A protocol, token, loan market and vault sleeve can describe different levels of one product. Proprietary EOA/treasury positions are separate from depositor-accessible products.
+scope.md	6	Publish three distinct measures: unique underlying ETH, external equity and gross deployment. Summed protocol/pool TVL is not market size. Claims graphs net debts and nested shares while preserving external lenders' own claims.
+scope.md	7	## Chains
+scope.md	8	Required coverage: Ethereum execution/consensus, Base, Arbitrum and Optimism. Screen other chains by ETH-family capital. Deep-dive triggers: ≥1% of discovered gross deployment, $25M relevant capital, a $5M product/credit sleeve, or critical systemic dependency. Expand the list from evidence.
+scope.md	9	Track backing, share circulation, collateral/debt and final deployment chains separately. Allocate equity once in additive tables. Unproven splits remain multi-chain/unallocated.
+scope.md	10	## Discovery thresholds
+scope.md	11	Detailed product: current capital ≥$5M or historical peak ≥$20M. Carry/loop sleeve: ≥$1M or important mechanics/incident/dependency. Start borrower discovery at $1M debt; identify positions ≥$5M. Thresholds limit dossier depth, rather than silently deleting smaller observations.
+scope.md	12	## Returns and comparison
+scope.md	13	Primary result: ETH after fees. Also show USD, ETH delta, gross and net returns. Compare the same window with holding ETH and simple staking. Separate staking, tips/MEV, AVS revenue, funded-leg income, debt interest, external rewards and costs. Points enter realized yield only after verified monetization.
+scope.md	14	## Sources and limits
+scope.md	15	Primary contracts/events, official registries and published reports establish identity and mechanics. Aggregators support discovery and scale checks. Preserve raw URL, capture time, parameters and SHA256. Every amount has a date and verification status. Coverage refers to the discovered measurable universe.
+methodology.md	0	# Measuring the ETH yield market
+methodology.md	1	Core tables separate unique backing, external investor capital and gross deployment. Market size follows overlap elimination and denomination verification. Aggregator catalogues and pools support discovery; their sum is not the market total.
+methodology.md	2	## Observation layers
+methodology.md	3	On-chain snapshot: the last block no later than T, with its successor later than T. Target: 2 October 2026, 23:59:59 UTC. Token state, debt, share rates and rules are read at this block.
+methodology.md	4	Historical API: use the nearest preceding source-timestamped observation and retain its age. A later point does not enter the snapshot. Monthly series display actual source dates; missing data is not zero.
+methodology.md	5	Discovery: current aggregator/interface/registry captured after T. It reveals identities and candidates. Amounts and composition require reconstruction at T; current allocations do not populate history.
+methodology.md	6	Prices retain timestamps and distance from T. The nearest initial ETH/USD quote is T+1 second, used for preliminary conversion with that deviation disclosed. Balance/liquidation calculations additionally use actual oracles and conversion rates.
+methodology.md	7	## Six worked balance sheets
+methodology.md	8	The following are illustrative accounting examples, rather than market observations.
+methodology.md	9	| Example | State | Unique ETH | External ETH capital | Why reported positions overlap |
+methodology.md	10	| LST | 100 ETH backing; user holds 100 ETH-equivalent LST | 100 | 100 | Receipt and backing represent one claim |
+methodology.md	11	| LST + restaking | 100 ETH backing; LST deposited with restaker; user holds receipt | 100 | 100 | Three claim layers on one backing |
+methodology.md	12	| ETH loop | Investor supplies 100 ETH; external ETH lender supplies 90; strategy holds 190 ETH LST and 90 debt | 190 | 190 | Strategy equity 100 + lender claim 90; do not add issuer backing again |
+methodology.md	13	| Dollar carry | Investor supplies 100 ETH; dollar debt and dollar deployment each equal 50 ETH | 100 | 100 | External dollar lender remains a separate dollar segment; vault asset and debt offset |
+methodology.md	14	| PT + YT | SY backed by 100 ETH; illustrative PT value 90 ETH and YT value 10 | 100 | 100 | PT/YT split the claim; nominal redemption units cannot be added to SY |
+methodology.md	15	| Multi-chain share | 100 ETH backing; 60 Ethereum shares and 40 L2 shares through burn/mint | 100 | 100 | Share geography and backing geography describe the same capital |
+methodology.md	16	With lock/mint, 40 original shares remain in Ethereum totalSupply while escrowed: external capital is 100 although summed chain supply is 140. Prove bridge type through contracts/events before adding supply. ETH lenders belong to the ETH universe; dollar lenders belong to the dollar universe.
+methodology.md	17	## Returns and debt mechanics
+methodology.md	18	Primary return is ETH claim-value change plus distributions outside NAV, adjusted for cash flows. TWR describes strategy performance; MWR describes investor outcomes where cash flows are available. APR/APY use matched windows and explicit annualization. PT fixed rates refer to their accounting asset and maturity.
+methodology.md	19	Attribute share changes to staking, tips/MEV, paid AVS revenue, funded-leg P&L, debt, external rewards, fees, gas/slippage and residual. Points contribute zero realized base income until monetized. Rewards inside NAV and outside distributions are not counted twice.
+methodology.md	20	ETH borrowing does not prove looping: trace loan use. ETH→LST is correlated looping; USD→USD yield is dollar carry; USD→ETH adds directional exposure; ETH→USD yield changes ETH delta and forms a separate carry variant. Mixed financing requires complete balance/equity allocation; shared debt remains unallocated when evidence is insufficient.
+methodology.md	21	## Comparability and risk
+methodology.md	22	Compare holding ETH, simple staking after issuer fees, lending and each strategy on the same window. Express excess in percentage points and ETH. Rewards-off retains native staking. Book NAV, market price and executable exit value for a specified size are separate measures.
+methodology.md	23	HF is specific to markets, currencies and oracles. ETH/USD can offset between LST collateral and ETH debt while relative discounts and interest remain material. Dollar debt can liquidate under ETH/USD drawdowns. A multi-sleeve vault has no universal HF.
+methodology.md	24	Measure debt-repayment liquidity and investor ETH-payout liquidity separately by size and time. Overlapping buffers are not independent reserves. Verify admin, Authority, manager, Merkle roots and modules even when owner is zero.
+methodology.md	25	## Verification and evidence
+methodology.md	26	Reconcile major balances through two paths: shares×PPS and assets−liabilities including controlled accounts. Sub-vaults enter once at the owned claim's value, not their entire NAV. Raw data retains SHA256, request, URL and capture time.
+methodology.md	27	Product/chain sizes carry statuses: fixed-block verified, dated API estimate, current discovery or unknown. Incomplete pagination cannot prove absence. Negative debt and missing fields retain source semantics. Material residuals/overlaps constrain conclusions and enter the audit.
+MARKET-RESEARCH.md	0	# The ETH yield market: first research edition
+MARKET-RESEARCH.md	1	Published 3 October 2026. Snapshot T: 2 October 2026, 23:59:59 UTC. History covers 24 completed months, October 2024–September 2026; return windows end at T. This edition includes captured data, contract verification and findings. Global net size and complete portfolio reconciliation remain open.
+MARKET-RESEARCH.md	2	## Main finding
+MARKET-RESEARCH.md	3	ETH yield is built from layers of claims on the same underlying ETH. Staking receipts enter restaking, lending, PT, LP and managed vaults; borrowing creates further deployments. Understand unique underlying, external investor equity and gross deployment separately. Conventional TVL sums mix these measures.
+MARKET-RESEARCH.md	4	Screening 16,992 yield pools identified 5,688 ETH-family candidates across 57 chains and 197 feed projects. Of 87 protocols selected for deeper collection, 82 have token history. There are 259 pools with full TVL ≥$5M. Candidate full-pool TVL sums to $70.939B, including mixed assets and repeated accounting. **This is discovery-screen size, not net ETH yield market capital.** Unknown semantic net totals remain `null`.
+MARKET-RESEARCH.md	5	Stronger product-level findings include Liquid ETH Ethereum/Optimism supply/PPS, debt accounts and most identified assets; Concrete custody and share genesis; Fluid Lite/Treehouse/CIAN historical returns; carry-credit dependencies; Tron ETH contract identities; and Ethena's current ETH basis leg.
+MARKET-RESEARCH.md	6	The edition contains 12 dossiers, 25 evidence claims and 31 selected ownership/claim/debt relationships. Start with [README.md](README.md). Explore [return history](HISTORY.md), [economics and stresses](ECONOMICS.md) and [dependencies](DEPENDENCIES.md).
+MARKET-RESEARCH.md	7	## Where the market sits
+MARKET-RESEARCH.md	8	Required coverage: Ethereum, Base, Arbitrum and Optimism. Screening also highlights Tron, BNB Chain, Linea, Monad, Polygon and Gnosis. The other 47 chains remain in tables; missing deep dossiers do not mean zero markets. Mantle/mETH and rsETH sunset chains remain dependencies despite smaller local TVL.
+MARKET-RESEARCH.md	9	| Chain | Current candidate full-pool TVL | Role and limitation |
+MARKET-RESEARCH.md	10	| Ethereum | $66.462B | Staking issuers, lending, carry and core infrastructure; substantial overlap |
+MARKET-RESEARCH.md	11	| Base | $1.319B | Lending and LP; many small pools |
+MARKET-RESEARCH.md	12	| Tron | $1.289B | One large mapped-ETH pool; backing and income require separate analysis |
+MARKET-RESEARCH.md	13	| BNB Chain | $637.576M | ETH representations and DeFi; token chain differs from validator geography |
+MARKET-RESEARCH.md	14	| Arbitrum | $568.131M | Lending, LP and historical PT/strategies |
+MARKET-RESEARCH.md	15	| Linea | $208.053M | Concentrated in relatively few large exposures |
+MARKET-RESEARCH.md	16	| Monad | $127.920M | Cross-chain strategies/claims, including Liquid ETH's sleeve |
+MARKET-RESEARCH.md	17	| Optimism | $96.490M | Distinguish deployment from share circulation |
+MARKET-RESEARCH.md	18	| Polygon | $62.127M | Lending/LP and bridged-asset dependencies |
+MARKET-RESEARCH.md	19	| Gnosis | $39.790M | Local deployments and wrapped ETH |
+MARKET-RESEARCH.md	20	This is current post-T discovery without a common valuation timestamp. All 57 chains and 82 dated protocols appear in [market tables](MARKET-TABLES.md). Ethereum's 93.69% screening share does not establish unique-underlying or equity share: backing can remain on Ethereum while receipts circulate elsewhere.
+MARKET-RESEARCH.md	21	Geography has three dimensions: physical backing, strategy deployment and share circulation. Liquid ETH shares exist on Ethereum/Optimism at T; the allocation UI shows Ethereum/Monad. One logical product has different circulation and deployment maps.
+MARKET-RESEARCH.md	22	Native staking has a different scale and coverage. The captured [Ethereum.org page](https://ethereum.org/staking/) shows approximately 43.87M ETH staked, without a usable state timestamp at T. Treat it as a scale reference, not a sum of LST TVL, validator count×32, or an additive restaking layer. See [staking/restaking](dossiers/staking-restaking.md).
+MARKET-RESEARCH.md	23	## Measured WETH lending and concentrated demand
+MARKET-RESEARCH.md	24	Fixed-block Aave V3 Ethereum/Base/Arbitrum/Optimism and Spark Ethereum contain **2.881M WETH lender claims**, **2.388M WETH debt** and **410,491 WETH cash**. This selected gross segment has verified identities and chain-specific T blocks. It overlaps other backing/deployment layers and is not unique market capital.
+MARKET-RESEARCH.md	25	Main Liquid ETH accounts for **23.28% of Aave Ethereum variable WETH debt**. Managed staking loops therefore materially drive ETH-loan demand. ETH lender interest partly comes from LST loop economics; yield sources are linked.
+MARKET-RESEARCH.md	26	Independent getters report approximately **52,964 ETH reserve deficit on Ethereum and 29,835 on Arbitrum** at T. These are not established investor haircuts; recovery assets, treasury accounting and settlement/burn events remain necessary. [Aave's primary deficit mechanics](https://github.com/aave-dao/aave-v3-origin/blob/main/docs/3.3/Aave-v3.3-features.md) distinguish this ledger from ordinary reserve balances.
+MARKET-RESEARCH.md	27	Operational APY and cash do not describe all backing quality. Inspect claims, servicing debt, cash, deficits and recovery together. See [five-market evidence](LENDING-MARKETS.md). Reserve deficits are not used to explain Liquid ETH's residual without an explicit claim-to-ledger link.
+MARKET-RESEARCH.md	28	## Protocols and strategies
+MARKET-RESEARCH.md	29	Dated ETH-family observations include Lido $26.677B, Binance Staked ETH $10.081B, Aave V3 $9.835B, EigenCloud $7.075B, ether.fi Stake $5.188B, SparkLend $4.161B, Sky Lending $1.639B, Morpho Blue $1.422B, Rocket Pool $1.409B, JustLend $1.310B, Kelp $1.130B, StakeWise V3 $1.017B and Concrete $953.047M. These overlap. Most are dated 2 October, 00:00 UTC, rather than end-of-day execution state.
+MARKET-RESEARCH.md	30	| Class | Income source | Separate accounting |
+MARKET-RESEARCH.md	31	| E1 staking | Issuance, tips and MEV after expenses | Backing, receipts and external rewards |
+MARKET-RESEARCH.md	32	| E2 restaking | Security-service payments | Stake overlap, AVS rewards, slashing and points |
+MARKET-RESEARCH.md	33	| E3 ETH debt loop | Staking spread on amplified collateral | ETH debt, rates, oracles and unwind liquidity |
+MARKET-RESEARCH.md	34	| E4 ETH collateral / USD carry | Dollar deployment yield minus dollar debt cost | Invested principal, collateral HF and credit losses |
+MARKET-RESEARCH.md	35	| E5 lending | Borrower interest | Utilized debt, idle liquidity and bad debt |
+MARKET-RESEARCH.md	36	| E8 options | Transferred counterparty payoff | Directional exposure and obligation losses |
+MARKET-RESEARCH.md	37	| E9 spot/short basis | Funding or dated-futures basis | Dollar exposure, margin, custody and ETH-only leg |
+MARKET-RESEARCH.md	38	| EH hybrid | Combination of the above | Sleeve equity and shared counterparties |
+MARKET-RESEARCH.md	39	Detailed formulas, payers, break-even and stress paths: [MECHANICS.md](MECHANICS.md). E8 has mechanics/discovery coverage without verified aggregate size.
+MARKET-RESEARCH.md	40	## Ether.fi: carry and looping together
+MARKET-RESEARCH.md	41	Liquid ETH published NAV at T is 177,171.063302 ETH, approximately $472.684M using the disclosed T+1-second quote. Partial balance reconstruction, including the Monad claim at its own Accountant rate, totals $460.231M. The $12.453M residual, 2.634%, remains unresolved; it neither establishes a deficit nor proves the other claims' backing.
+MARKET-RESEARCH.md	42	The 3 October UI attributes 64.66% to two carry sleeves and 21.65% to explicit loops. These are post-T weights, not verified fixed-block allocations. Main Aave has $1.182B weETH collateral and $1.094B ETH debt, $88.732M equity, 13.325× leverage and HF 1.02708. Spark has 9.762× leverage and HF 1.03615.
+MARKET-RESEARCH.md	43	Aave HF responds to the capped conversion oracle rather than every DEX movement. Approximately 2.64% headroom refers to oracle markdown with debt/LT fixed. Market discounts separately raise unwind cost. Drone stablecoin debt has different stress: ETH/USD declines can weaken HF even when dollar deployment is market-neutral.
+MARKET-RESEARCH.md	44	The frozen model combines trailing-30-day staking APR and WETH borrow APR at T. Main Aave reaches zero return after approximately **44 bp** additional borrowing cost, before fees/rewards. Its 410,134 WETH debt exceeds reserve cash of 269,693 WETH, constraining a one-reserve flash-loan unwind. Other liquidity sources/staged operations remain possible. This is quantified capacity, not a forecast or proof of impossible exit.
+MARKET-RESEARCH.md	45	Liquid ETH published PPS gains 6.8501% over 730 days versus stETH's 5.4875%: excess 1.3626 pp. Annualized returns are 3.3683% and 2.7071%. Substantial complexity produces measurable but modest excess. The last year is stronger; current composition alone does not explain the historical result.
+MARKET-RESEARCH.md	46	Full fees, governance, LP, queue and limitations: [Liquid ETH dossier](dossiers/etherfi-liquid-eth.md).
+MARKET-RESEARCH.md	47	## Carry reaches BTC collateral and real credit
+MARKET-RESEARCH.md	48	Address-level evidence identifies senRLUSDv2 as dollar lending, not ETH-only interest. Book assets at T are 444.242M RLUSD; approximately 52.89% kBTC/RLUSD, 24.09% weETH/RLUSD and 7.23% USDe/RLUSD, plus cbBTC, syrupUSDC, FXRP and others. Liquid ETH holds 55.105M RLUSD, approximately 12.40% of book assets.
+MARKET-RESEARCH.md	49	senPYUSDPRIMEv2 holds approximately 219.084M PYUSD book assets, with 95.04% supplied to PRIME/PYUSD. Liquid ETH's claim is 49.605M PYUSD, 22.64%. PRIME links income to home-equity financing in [Sentora's primary case study](https://sentora.com/case-studies/sentora-s-prime-main-vault-reaches-200m-in-pyusd-deposits-in-under-100-days). Underwriting, redemption and collateral liquidity matter more here than Ethereum blockspace demand.
+MARKET-RESEARCH.md	50	Main Liquid ETH and LoanManager also borrow in those weETH/RLUSD and PRIME/PYUSD markets. Ownership and supply/borrow shares imply approximately 8.709M RLUSD and 4.759M PYUSD self-credit notional. These do not add NAV or measure interest income. They show borrower interest partly returning through an owned supply portfolio. Cash flows are linked; measure external net income after curator fees and debt costs.
+MARKET-RESEARCH.md	51	BTC and RWA remain material dependencies of ETH products' dollar legs. This edition does not restart the BTC market research. See [carry-credit](dossiers/carry-credit.md).
+MARKET-RESEARCH.md	52	## Concrete changes TVL interpretation
+MARKET-RESEARCH.md	53	Two ETH vaults link to one 3-of-5 Safe. All 278,170.834213 ctDeltaWeETH shares originated in one UnbackedMint on 16 December 2025 and are held by one address at T. The shared custody Safe holds all ctwstETH Plus supply.
+MARKET-RESEARCH.md	54	This can reflect portfolio migration and internal ownership. The events alone do not prove absent backing. However, approximately $953M published ETH-family NAV does not establish new external deposits and cannot be added to all Safe assets. Flat PPS does not establish zero investor income with undisclosed private payouts.
+MARKET-RESEARCH.md	55	Next: reconstruct portfolio origin, holder rights and backing allocation per vault. See [Concrete dossier](dossiers/concrete-eth.md).
+MARKET-RESEARCH.md	56	## Returns and exits change product rankings
+MARKET-RESEARCH.md	57	Matched 730-day ETH book returns: Fluid Lite 8.8243%, Liquid ETH 6.8501%, Treehouse 6.2761%, stETH 5.4875%, weETH 5.2947%, CIAN rsETH 1.0854%. These exclude external rewards, exit costs and full withdrawal execution. Over 365 days Liquid ETH leads Fluid Lite, 3.8700% versus 3.5096%. Ranking depends on horizon.
+MARKET-RESEARCH.md	58	Fluid Lite has approximately 600,256 ETH-equivalent gross assets, 522,809 debt and 77,359 net after revenue at T, with 7.759× leverage. stETH/eETH/WETH parity assumptions make this contract valuation rather than market NAV. WithdrawFee for 1 stETH is 0.0005 stETH, or 5 bp.
+MARKET-RESEARCH.md	59	Treehouse asset is IAU_wstETH rather than physical inventory. Historical getUnderlying verifies denomination. Two-year IAU growth is approximately 0.7475%; including wstETH conversion, ETH return is 6.2761%. [Redemption terms](https://docs.treehouse.finance/protocol/tasset/architecture/redemption-process) specify approximately seven-day standard redemption, 5 bp charge and minimum-rate formula; fast redemption costs 0.5% with capacity limits. This fee is material relative to excess.
+MARKET-RESEARCH.md	60	CIAN rsETH per share declined 4.1177% over two years; underlying-oracle growth offsets part, leaving 1.0854% ETH book return. Full P&L still needs external rewards/event attribution. Compound returns require correct units, rather than current APY multiplied by time.
+MARKET-RESEARCH.md	61	## Tron: a large balance with almost no yield
+MARKET-RESEARCH.md	62	The [JustLend contract directory](https://docs.justlend.org/developers/deployed_contracts/) separates ETH and ETHB by address and explains renaming. Current ETH `THb4…` was ETHOLD; ETHB `TRFe…` represents another mapped token. The 2023 offboarding announcement cannot substitute for today's directory, which lists both active.
+MARKET-RESEARCH.md	63	Current ETH API state: approximately 484,122 cash units, 87.51 borrowed, 0.0002899% annual base supply rate and zero mining rewards. Utilization is approximately 0.0181%. Nominal TVL generates little borrower income. Physical backing remains unverified; keep this representation segment separate from verified native ETH. [Tron dossier](dossiers/justlend-tron.md) reconciles cash+borrows−reserves with share claims.
+MARKET-RESEARCH.md	64	## Ethena and PT: leg size and lifecycle matter
+MARKET-RESEARCH.md	65	The 3 October [Ethena backing dashboard](https://app.ethena.fi/dashboards/backing-assets) shows approximately $374.44M ETH basis across Binance/Ceffu, Bybit/Copper and OKX/Copper. Whole crypto basis is $928.89M; remaining backing includes DeFi/institutional lending, liquid stablecoins and RWA. USDe supply is not ETH carry size. These are rounded post-T disclosures without independent custody books.
+MARKET-RESEARCH.md	66	Pendle's four-chain API is fully paginated: 626 markets, 126 selected ETH accounting assets. At T, 122 are expired and four unexpired. Their current AMM liquidity is approximately $6.264M, not PT principal or the whole fixed-yield market. Expired claims remain; other venues exist. Separate maturity waves from investor exits. See [PT](dossiers/pendle-pt.md) and [basis](dossiers/ethena-basis.md).
+MARKET-RESEARCH.md	67	## What is established and what remains open
+MARKET-RESEARCH.md	68	Confidence is high for read fixed-block states, contract identity and return arithmetic; medium for adapter history/current disclosed allocation; low or unknown for external-deposit provenance, private distributions, omnibus backing and global net totals. Combining them in a table does not make them interchangeable.
+MARKET-RESEARCH.md	69	Priority gaps: native staking at T; market-wide ownership/backing graph; complete Aave/Morpho borrower census; Monad sleeve and Liquid ETH residual; historical asset universes/strategies; investor rewards; executable redemption/repayment; venue rate/funding history; and final-payer concentration.
+MARKET-RESEARCH.md	70	These extend existing data/tools rather than restarting research. Phase status: [EXECUTION-CHECKLIST.md](EXECUTION-CHECKLIST.md). Evidence/reproduction: [AUDIT.md](AUDIT.md). The [research plan](RESEARCH-PLAN.md) preserves the full target scope.
+MECHANICS.md	0	# Where ETH yield comes from and how carry works
+MECHANICS.md	1	Published 3 October 2026. Formulas are analytical models rather than promised returns. Contract values refer to T: 2 October 2026, 23:59:59 UTC; documentation terms may be current.
+MECHANICS.md	2	## Start with the return currency
+MECHANICS.md	3	ETH-product return measures ETH per share. ETH/USD appreciation is not strategy yield. For a dollar product, conversion is:
+MECHANICS.md	4	If a dollar portfolio earns 5% while ETH appreciates 30%, its ETH return is −19.23%. sUSDe and an ETH vault's dollar carry cannot be compared on APY alone. The former holds dollar exposure; the latter can retain ETH collateral while borrowed dollars work separately.
+MECHANICS.md	5	Published PPS differs from realized withdrawal. Account for applicable exit fees, slippage, repayment costs, bridges and idle time. Rewards outside PPS are separate; unredeemed points contribute zero realized cash income.
+MECHANICS.md	6	## Staking and restaking
+MECHANICS.md	7	Staking payers are Ethereum consensus issuance and execution users through tips/MEV. Validator expenses, provider fees, downtime and penalties reduce holder returns: E1 economics.
+MECHANICS.md	8	stETH captures income through rebasing balances; wstETH through stETH per share. Do not add both rebase and wrapper-rate growth. weETH uses verified getRate; separately paid rewards need not enter that rate. See [Lido wstETH](https://docs.lido.fi/contracts/wsteth/).
+MECHANICS.md	9	Restaking E2 adds security services. New economic income requires an AVS/customer payment. Recording the same ETH under EigenCloud and an LRT provider creates neither new income nor capital. Verify slashing, reward beneficiaries and exit timing. Adding Lido, EigenCloud, Kelp, Aave and downstream vaults repeatedly counts one backing chain.
+MECHANICS.md	10	## ETH debt looping: amplifying the staking spread
+MECHANICS.md	11	E3: deposit LST → borrow ETH/WETH → buy/mint LST → add collateral. A flash loan can execute several steps atomically without changing the final economics.
+MECHANICS.md	12	In ETH units define collateral C, debt D, equity E=C−D and leverage L=C/E. With staking rate s and ETH borrow rate b:
+MECHANICS.md	13	Example: L=5, s=2.5%, b=2% gives 4.5% before costs. At b=3%, return falls to 0.5%. Positive staking does not ensure positive looping. Without extra rewards, break-even is `b* = (L × s − fees − costs)/(L−1)`.
+MECHANICS.md	14	Liquid ETH's main Aave account has L=13.3245 at T. Borrow +1 pp reduces annual equity return by approximately 12.3245 pp with positions/rates otherwise fixed; the isolated cost is approximately 2.3136 pp on whole-vault NAV. Neither is a portfolio forecast. Supply rates, rewards and rebalancing can change with borrowing rates.
+MECHANICS.md	15	ETH/USD declines usually reprice LST collateral and ETH debt together. Material risks remain relative LST/ETH markdown, oracle/LT changes, debt interest and insufficient ETH repayment liquidity.
+MECHANICS.md	16	`HF = oracle_collateral × LT / oracle_debt`. With debt/LT fixed, markdown headroom is `1−1/HF`: an oracle threshold. A market discount can first increase unwind cost while a redemption-rate oracle preserves HF. Verified deployed source shows Aave weETH at T reads capped getRate.
+MECHANICS.md	17	## ETH-collateral carry with stablecoin debt
+MECHANICS.md	18	E4: deposit ETH/LST → borrow USDC/RLUSD/PYUSD → invest in a dollar strategy → convert net profit into ETH accounting. Final payers can be traders, Morpho borrowers, Cap operators or off-chain borrowers.
+MECHANICS.md	19	Two conditions must hold: dollar investments earn more than borrowing costs, and ETH collateral survives until dollars return. A market-neutral dollar strategy can coexist with a liquidatable collateral account.
+MECHANICS.md	20	For initial collateral C_ETH, ETH price P, dollar loan B_USD, destination yield y, borrowing rate b and deployed fraction u, additional ETH income is approximately:
+MECHANICS.md	21	If dollar assets retain principal, include them alongside dollar liabilities. Isolated collateral-account equity C×P−B differs from whole-carry equity, which also owns the invested principal. Report account and product leverage separately.
+MECHANICS.md	22	Example: $100 ETH collateral, $60 dollar debt fully invested, y=6%, b=4%, costs=0.5% of debt produces $0.90 annually, or 0.9% of initial collateral at constant ETH price. At only 60% deployment, the spread is negative: 0.6×6%−4%−0.5%=−0.9% of debt.
+MECHANICS.md	23	Capacity is the minimum of collateral cap, available loans, destination caps, redemption liquidity and manager limits. Growth can raise borrow rates and lower destination yield. Current APY cannot scale to unlimited capital.
+MECHANICS.md	24	Verified Liquid ETH paths include weETH/RLUSD debt with senRLUSDv2 and PRIME/PYUSD debt with senPYUSDPRIMEv2. RLUSD allocates approximately 52.89% to kBTC/RLUSD and 24.09% to weETH/RLUSD. This adds BTC/ETH credit-collateral risk without establishing direct long BTC ownership by the ETH vault.
+MECHANICS.md	25	Another carry meaning is long ETH/LST plus an equal-delta short derivative. It mainly preserves dollars rather than ETH upside. Approximate linear short-perpetual economics:
+MECHANICS.md	26	Positive funding pays shorts; negative funding costs them. Dated futures capture entry spot/futures basis if held and settled. Funding is neither guaranteed fixed yield nor collateral return.
+MECHANICS.md	27	[Ethena's basis mechanism](https://docs.ethena.fi/backing-assets/crypto-basis-trade) uses these hedges. [Protocol Revenue](https://docs.ethena.fi/backing-assets/protocol-revenue) also includes lending, RWA and liquid-stablecoin income. Do not assign all USDe to ETH basis. The 3 October dashboard shows approximately $374.44M ETH legs within $928.89M crypto basis: post-T disclosure rather than custody audit.
+MECHANICS.md	28	Delta neutrality does not remove venue margin requirements. Spot gains and short losses can sit at different counterparties and fail to transfer in time. Off-exchange custody leaves settlement, legal, venue-liquidity and operational dependencies. [Funding Risk](https://docs.ethena.fi/protocol-overview/risks/funding-risk) covers negative funding/allocation changes; historical averages are not forecasts.
+MECHANICS.md	29	## Lending, PT, LP and options
+MECHANICS.md	30	E5 income is borrower interest after reserve/curator fees and credit losses. ETH suppliers and collateral borrowers have different roles. Compare lending with the same staking benchmark; do not add staking independently of asset denomination. Idle liquidity can earn almost nothing, as JustLend quantitatively illustrates.
+MECHANICS.md	31	E6 buys a specified redemption unit below maturity value. For price p and d days, `APY_implied ≈ (1/p)^(365/d)−1` only if payout is one of that unit. Pendle PT-wstETH uses stETH accounting: do not substitute one wstETH or ETH without conversion. SY/PT/YT decompose one underlying. PT principal remains after maturity while YT stops future accrual; early exit depends on depth. See [primary PT mechanics](https://docs.pendle.finance/pendle-v2/ProtocolMechanics/YieldTokenization/PT).
+MECHANICS.md	32	E7 LP earns fees/incentives while inventory changes. ETH/stable pools include directional exposure and impermanent loss. LST/ETH reduces currency mismatch while retaining depeg/range risk. Out-of-range concentrated positions stop fee accrual. Fluid imaginary reserves support pricing rather than representing assets. Separate principal, unclaimed fees and debt.
+MECHANICS.md	33	E8 premium pays for a transferred payoff. Covered calls limit upside; short puts accept downside. Premium is not risk-free yield. ETH comparison needs the complete payoff and collateral consumption, rather than premium alone. Aggregate size remains unverified by a contract catalogue.
+MECHANICS.md	34	## Stress dimensions for every product
+MECHANICS.md	35	| Shock | Recalculate | Why APY is insufficient |
+MECHANICS.md	36	| Rewards/points off | Base income − debt − fees | Subsidized spreads can vanish |
+MECHANICS.md	37	| Borrow rate +1/+3 pp | Debt service and supply-income response | Leverage amplifies small rate gaps |
+MECHANICS.md	38	| LST market discount 1/3/5% | Executable unwind NAV | Oracle and DEX can diverge |
+MECHANICS.md	39	| Oracle markdown/LT change | HF and liquidatable amount | Oracle price differs from DEX |
+MECHANICS.md	40	| ETH/USD −20/−40% | Stable-debt collateral HF | Dollar neutrality does not protect ETH collateral |
+MECHANICS.md	41	| Credit loss 1/5/10% | Underlying claim and equity | Dollar principal can be impaired |
+MECHANICS.md	42	| Negative funding 7/30/90 days | Margin, reserves and hedge carry | Annual averages hide cash gaps |
+MECHANICS.md	43	| Queue/bridge delay | Time to debt repayment and ETH payout | Solvency does not establish liquidity |
+MECHANICS.md	44	| Mass withdrawal | Liquidity by debt asset | Total dollar liquidity cannot replace required ETH/RLUSD |
+MECHANICS.md	45	Model sensitivities are retained in `data/eth/stress_scenarios.json`. Full executable DEX, liquidation and queue stress remains open; fixed-balance arithmetic does not replace it.
+AUDIT.md	0	# Sources, verification boundaries and reproduction
+AUDIT.md	1	Published 3 October 2026. Data-integrity validation and economic audit are distinct: passing arithmetic checks does not prove solvency, legal rights or executable withdrawal.
+AUDIT.md	2	## Frozen snapshot
+AUDIT.md	3	T = **1790985599**, 2 October 2026, 23:59:59 UTC.
+AUDIT.md	4	| Chain | Chain ID | Last block ≤ T | Next block timestamp |
+AUDIT.md	5	Headers/hashes are retained in snapshot_manifest.json and mono_remote_T.json. Sixty-six Ethereum/Optimism archive benchmark reads are checked against their target timestamps. Points include 24 month ends, the start and additional return endpoints. Future blocks do not interpolate balances.
+AUDIT.md	6	ETH quote: $2,667.9504418816 at T+1 second, confidence 0.99. This disclosed nearest reference is not an execution price. Protocol API ages are usually 86,399 seconds: start-of-day data versus end-of-day execution state.
+AUDIT.md	7	## Source layers
+AUDIT.md	8	1. **Fixed-block RPC:** supply, convertToAssets, collateral/debt, ownership, cash/rates, NFTs and proxy slots. Strong contract-state evidence, while oracle/book values differ from executable NAV.
+AUDIT.md	9	2. **Verified source and primary documentation:** ABI, accounting, burn/mint bridging, queues, fees and risks. A current implementation is not historical evidence without storage/getter verification at T.
+AUDIT.md	10	3. **Dated aggregator APIs:** selected 87-protocol token observations/history. Filters preserve age, signs and misrepresentedTokens.
+AUDIT.md	11	4. **Current discovery/public UI:** pools, Pendle, Morpho top borrowers, Ether.fi allocations, Ethena backing and JustLend APIs. Captured after T and separately labelled.
+AUDIT.md	12	5. **Analytical models:** conversion, self-credit, break-even and stress. Semantic JSON retains units and assumptions.
+AUDIT.md	13	HTTP 200 does not prove valid content. A guessed Monad GitBook URL returns “Page Not Found”; empty HTTP 202 supplies no data. RPC batches can contain errors under HTTP 200. Errors and excerpts are retained rather than becoming zero balances.
+AUDIT.md	14	## Actual coverage
+AUDIT.md	15	Current feed: 16,992 pools → 5,688 ETH-family candidates, 197 projects, 57 chains; 259 full-pool TVLs ≥$5M. Another 206 symbol-only candidates remain separate. Of 87 selected protocols, 82 have aggregate token history. The 2,088 protocol-month rows include 247 missing observations.
+AUDIT.md	16	Balancer V2, Midas RWA, SushiSwap, Uniswap V3 and V4 lack aggregate token history. This particularly affects LP: absence does not mean zero ETH principal. Current mixed-pool listings cannot fill historical ETH-side inventory.
+AUDIT.md	17	Some adapters flag misrepresentedTokens, including ether.fi Liquid/Stake, Gearbox and some DEX/aggregators. Treat these as reported accounting rather than physical reserves. Current category is a hint, not historical mechanism proof.
+AUDIT.md	18	The vault registry is selected candidates with BTC/dollar negative controls, rather than an exhaustive ETH product inventory. Twelve dossiers have different evidence depth: fixed-block reconciliation, borrower look-through, disclosures or segment mechanics. Not all are independently reconciled to final backing.
+AUDIT.md	19	Morpho: 25 selected markets, ten top positions each, 237 positions / 213 unique chain-address borrowers, not a complete census. Pendle's four-chain listing is fully paginated: 626 unique markets, 126 ETH accounting markets, 122 expired. API-listing completeness does not establish whole-economy completeness.
+AUDIT.md	20	## Integrity and numerical checks
+AUDIT.md	21	`tools/eth/audit.py` checks:
+AUDIT.md	22	- Raw-response SHA256 and file existence, including a separate UI-observation manifest.
+AUDIT.md	23	- All 384 original BTC files against the baseline inventory.
+AUDIT.md	24	- Block boundaries and absence of future benchmark/history observations.
+AUDIT.md	25	- Liquid ETH supply×rate NAV, partial balance rows and explicit residual.
+AUDIT.md	26	- Uniswap token ordering/principal and Fluid gross/debt/net leverage.
+AUDIT.md	27	- Historical Treehouse denomination and rsETH oracle identity.
+AUDIT.md	28	- Matched 730-day windows across six series; missing intermediate points are not zero.
+AUDIT.md	29	- Unique protocol-month rows and preserved missing observations.
+AUDIT.md	30	- Carry supply-share fractions and kBTC/syrupUSDC identity distinction.
+AUDIT.md	31	- Monad internal supply, Concrete ownership, Pendle expiry and listing coverage.
+AUDIT.md	32	- Null market net totals, gross-screen reconciliation and local links.
+AUDIT.md	33	- Five-market fixed-block totals, reserve-deficit getters and evidence-input hashes.
+AUDIT.md	34	Results: data/eth/audit_results.json; raw manifest: data/eth/raw_manifest.json; claims: [EVIDENCE.md](EVIDENCE.md). Checks do not establish full provenance, custody rights, reward entitlement, fresh private NAV or execution.
+AUDIT.md	35	## Reproduction without refreshing sources
+AUDIT.md	36	Semantic outputs rebuild from **captured raw data**. Git ignores the raw namespace; include it separately in data handoff. The manifest validates copied bytes/hashes. Replacing raw with a live API creates another research vintage.
+AUDIT.md	37	From the project root:
+AUDIT.md	38	Rebuild runs deterministic local derivations without API/RPC requests or edits to original BTC outputs. Figures use bundled Python with ReportLab/Pillow; override with ETH_FIGURE_PYTHON. The audit runs after figures/site generation. English reports preserve the same numerical tables and evidence boundaries.
+AUDIT.md	39	## New source collection
+AUDIT.md	40	For a **new vintage**, choose new T/raw namespace, verify boundaries and update provenance. collect.py is fixed to this edition's T; rerunning current requests can mix vintages. Fresh current data must not masquerade as frozen T.
+AUDIT.md	41	Collection is read-only. Public GET/POST and eth_call do not transact. Entry points include collect.py bootstrap/protocols/consensus/pilot/balances/ratelogs, benchmark.py, op_history_rates.py, vaults.py, vault_history.py, rseth_benchmark.py, carry_lookthrough.py, mono_lookthrough.py and lending_liquidity.py. The URL/payload/time/hash log is raw/eth/2026-10-02/requests.jsonl. Manual UI observations are explicitly labelled.
+AUDIT.md	42	## Conclusions this edition cannot establish
+AUDIT.md	43	No defensible global unique-underlying or external-equity total exists yet: historical consensus, issuer overlaps, bridges, leverage, internal shares and custody remain incomplete. The $70.939B screen is neither a precise net total nor a proven upper/lower bound.
+AUDIT.md	44	Liquid ETH's $12.453M residual is not called a deficit. Explained 97.37% book value does not establish independently audited backing. Monad assets, reward ownership, fee growth and accrued Morpho interest remain open.
+AUDIT.md	45	Current-universe history has survivorship bias. PPS returns exclude some distributions/execution costs. Stress holds positions/rates fixed; DEX, withdrawal and funding simulations remain open. Layered evidence and explicit gaps allow further work without false precision.
+EVIDENCE.md	0	# Evidence ledger: what each conclusion establishes
+EVIDENCE.md	1	Confidence belongs to the specific claim. Fixed-block state can be reliable while the same claim's backing and cash realization remain unknown. Semantic/raw SHA256 hashes are preserved in data/eth/evidence_ledger.json. Manual UI observations are labelled separately.
+EVIDENCE.md	2	| ID | Verified finding / research limit | Time and boundary | Main data artifact |
+EVIDENCE.md	3	| C01 | 5,688 ETH-family pools / 57 chains / 197 projects | Current screen, not net total | [discovery_summary.json](../../data/eth/discovery_summary.json) |
+EVIDENCE.md	4	| C02 | 82 sources with token history; 24 months and 247 missing rows | Dated API | [protocol_source_coverage.json](../../data/eth/protocol_source_coverage.json) |
+EVIDENCE.md	5	| C04 | Partial balance $460.231M; residual $12.453M | T, marks + nested book claims; backing not audited | [etherfi_partial_balance_sheet.json](../../data/eth/etherfi_partial_balance_sheet.json) |
+EVIDENCE.md	6	| C05 | Aave loop 13.325×; HF 1.02708 | T oracle-valued account | [etherfi_verified_metrics.json](../../data/eth/etherfi_verified_metrics.json) |
+EVIDENCE.md	7	| C06 | Carry 64.66%; loops 21.65% in disclosed breakdown | 3 October UI, not fixed-block allocation | [etherfi_verified_metrics.json](../../data/eth/etherfi_verified_metrics.json) |
+EVIDENCE.md	8	| C07 | Liquid ETH +6.8501% / stETH +5.4875%, 730 days | Published PPS/conversion; external rewards/costs excluded | [etherfi_staking_comparison.json](../../data/eth/etherfi_staking_comparison.json) |
+EVIDENCE.md	9	| C09 | PRIME/PYUSD approximately 95.04% of carry-vault assets | T; credit economics from separate disclosure | [carry_credit_lookthrough.json](../../data/eth/carry_credit_lookthrough.json) |
+EVIDENCE.md	10	| C10 | Self-credit 8.709M RLUSD / 4.759M PYUSD | Overlap, not extra assets or measured income | [carry_credit_lookthrough.json](../../data/eth/carry_credit_lookthrough.json) |
+EVIDENCE.md	11	| C11 | Concrete vaults share one 3-of-5 Safe | T; exclusive backing allocation unknown | [concrete_lookthrough_T.json](../../data/eth/concrete_lookthrough_T.json) |
+EVIDENCE.md	12	| C12 | Delta sole holder; ctwst supply owned by Safe | T; genesis mint does not prove absent backing | [concrete_self_holdings_T.json](../../data/eth/concrete_self_holdings_T.json) |
+EVIDENCE.md	13	| C14 | Treehouse IAU historically wstETH-denominated; ETH +6.2761% | 730 days; independent backing unreconstructed | [treehouse_denomination_history.json](../../data/eth/treehouse_denomination_history.json) |
+EVIDENCE.md	14	| C15 | CIAN rsETH ETH book return +1.0854%, 730 days | Issuer oracle; rewards/recovery costs excluded | [rseth_benchmark_rpc.json](../../data/eth/rseth_benchmark_rpc.json) |
+EVIDENCE.md	15	| C16 | JustLend mapped ETH approximately 484K units; annual supply rate 0.0002899% | Current 3 October; Ethereum backing unverified | [justlend_eth_semantics.json](../../data/eth/justlend_eth_semantics.json) |
+EVIDENCE.md	16	| C17 | Ethena ETH basis approximately $374.44M | 3 October rounded UI, no custody audit | [ethena_ETH_basis_observation.json](../../data/eth/ethena_ETH_basis_observation.json) |
+EVIDENCE.md	17	| C19 | Monad claim approximately $21.687M; ETH/Monad rates differ | T; remote backing open | [mono_identity_T.json](../../data/eth/mono_identity_T.json) |
+EVIDENCE.md	18	| C20 | Main Aave debt 410,134 WETH; reserve cash 269,693 | T; cash does not guarantee flash-loan eligibility | [lending_reserve_T.json](../../data/eth/lending_reserve_T.json) |
+EVIDENCE.md	19	| C22 | Unique-underlying and external-equity totals remain null | Overlap/consensus/custody/identity gaps | [market_summary.json](../../data/eth/market_summary.json) |
+EVIDENCE.md	20	| C23 | Five WETH markets: 2.881M claims / 2.388M debt | T; gross claims, not unique backing | [weth_lending_markets_T.json](../../data/eth/weth_lending_markets_T.json) |
+EVIDENCE.md	21	| C24 | WETH deficits: Ethereum 52,964 / Arbitrum 29,835 | T getter; no established final haircut | [weth_lending_markets_T.json](../../data/eth/weth_lending_markets_T.json) |
+EVIDENCE.md	22	## Primary links and reproducibility
+EVIDENCE.md	23	The ledger does not turn secondary adapters into primary reserve proof. RPC payloads include block tags, addresses, selectors and results; verified ABI/source and identity getters are tied to relevant contracts. [AUDIT.md](AUDIT.md) explains source layers.
+EVIDENCE.md	24	PPS, debt, cash, oracle marks and executed payouts are different facts. C22 deliberately leaves totals unknown. Preserve contradictory evidence as separate vintages and explain reconciliation. Source errors are not zeros.
+EXECUTION-CHECKLIST.md	0	# ETH research phases: actual status
+EXECUTION-CHECKLIST.md	1	Updated 3 October 2026 after the first edition. [x] means a specific task is complete, rather than the entire phase. Full design: [RESEARCH-PLAN.md](RESEARCH-PLAN.md).
+EXECUTION-CHECKLIST.md	2	## Preparation and phase 0: methodology
+EXECUTION-CHECKLIST.md	3	- [x] BTC project studied; inventory and code/research index retained.
+EXECUTION-CHECKLIST.md	4	- [x] ETH-long / dollar-neutral segments and E1–E9 taxonomy defined.
+EXECUTION-CHECKLIST.md	5	- [x] Unique backing, external equity and gross deployment defined; six examples completed.
+EXECUTION-CHECKLIST.md	6	- [x] T, 24 months, benchmarks and fees/rewards/points rules set.
+EXECUTION-CHECKLIST.md	7	- [x] Ethereum/Base/Arbitrum/Optimism boundaries verified, plus Monad nested sleeve.
+EXECUTION-CHECKLIST.md	8	- [x] Config/schema and read-only URL/time/request/hash collector created.
+EXECUTION-CHECKLIST.md	9	- [ ] Full native consensus balance at T. Finalized header obtained; historical state unavailable from tested public endpoints.
+EXECUTION-CHECKLIST.md	10	## Phase 1: Liquid ETH pilot substantially implemented
+EXECUTION-CHECKLIST.md	11	- [x] Vault/Accountant/Teller, Ethereum/Optimism supply and burn/mint source verified.
+EXECUTION-CHECKLIST.md	12	- [x] Controlled managers, Drone and current 24h timelock verified.
+EXECUTION-CHECKLIST.md	13	- [x] Main/Drone Aave/Spark, Morpho, carry claims, LP NFTs and withdrawal claim reconstructed.
+EXECUTION-CHECKLIST.md	14	- [x] Partial assets $460.231M against $472.684M book NAV; $12.453M residual explicit.
+EXECUTION-CHECKLIST.md	15	- [x] Monad's own Accountant/ETH denomination and differing chain rates verified.
+EXECUTION-CHECKLIST.md	16	- [x] 719 events, historical PPS, own Optimism rates and 24 monthly points reconstructed.
+EXECUTION-CHECKLIST.md	17	- [x] Published returns, UI estimates, fees and external rewards separated.
+EXECUTION-CHECKLIST.md	18	- [ ] Complete remote Monad backing and in-flight messages.
+EXECUTION-CHECKLIST.md	19	- [ ] Remaining assets, reward rights, fee growth and Morpho accrual; independent residual-free NAV.
+EXECUTION-CHECKLIST.md	20	- [ ] Redeem/repay execution simulation and full historical roles.
+EXECUTION-CHECKLIST.md	21	## Phase 2: broad universe ready; exhaustive catalogue open
+EXECUTION-CHECKLIST.md	22	- [x] Four required chains, ten major candidate chains and critical dependencies identified.
+EXECUTION-CHECKLIST.md	23	- [x] Selected asset/product registries and BTC/dollar negative controls retained.
+EXECUTION-CHECKLIST.md	24	- [x] Fully paginated four-chain Pendle listing: 626 markets; ETH subset 126.
+EXECUTION-CHECKLIST.md	25	- [x] Source coverage, missing data, dated/current boundaries and adapter caveats published.
+EXECUTION-CHECKLIST.md	26	- [ ] Complete address-based capital reconciliation per major protocol/chain.
+EXECUTION-CHECKLIST.md	27	- [ ] Closed/migrated historical universe and E8 options catalogue.
+EXECUTION-CHECKLIST.md	28	## Phase 3: selected look-through ready; global netting open
+EXECUTION-CHECKLIST.md	29	- [x] 31 selected ownership/control/claim/debt links verified.
+EXECUTION-CHECKLIST.md	30	- [x] Carry portfolios, supply shares and self-credit diagnostics disclosed.
+EXECUTION-CHECKLIST.md	31	- [x] Concrete ownership/shared Safe verified; provenance not inferred from TVL.
+EXECUTION-CHECKLIST.md	32	- [x] Limited Morpho screen: 25 markets, 237 positions, 213 borrowers.
+EXECUTION-CHECKLIST.md	33	- [x] Five fixed-block WETH lending claims/debt/cash states collected.
+EXECUTION-CHECKLIST.md	34	- [x] Main Liquid ETH Aave WETH debt concentration: 23.28%.
+EXECUTION-CHECKLIST.md	35	- [ ] Full borrower/holder censuses, loan purposes and ultimate ownership.
+EXECUTION-CHECKLIST.md	36	- [ ] Complete issuer/bridge/receipt graph and additive underlying/equity totals.
+EXECUTION-CHECKLIST.md	37	## Phase 4: history/returns ready; attribution open
+EXECUTION-CHECKLIST.md	38	- [x] 2,088 protocol-month rows, including 247 missing, over 24 months.
+EXECUTION-CHECKLIST.md	39	- [x] Six ETH book-return series compared over 365/730-day windows.
+EXECUTION-CHECKLIST.md	40	- [x] Historical Treehouse denomination and CIAN rsETH oracle verified.
+EXECUTION-CHECKLIST.md	41	- [x] First/second years, fee changes and Pendle maturity cohorts separated.
+EXECUTION-CHECKLIST.md	42	- [ ] Complete historical holdings/debt/rewards/migrations per product.
+EXECUTION-CHECKLIST.md	43	- [ ] Market-wide decomposition of flows, income, price and adapter changes.
+EXECUTION-CHECKLIST.md	44	## Phase 5: twelve dossiers, with different verification depth
+EXECUTION-CHECKLIST.md	45	- [x] JustLend, Ethena and Pendle segment dossiers completed.
+EXECUTION-CHECKLIST.md	46	- [x] Risks, fees, redemption and limitations explicit.
+EXECUTION-CHECKLIST.md	47	- [ ] Independent backing and realized cash P&L for every dossier.
+EXECUTION-CHECKLIST.md	48	- [ ] All payer paths verified through on/off-chain credit ledgers.
+EXECUTION-CHECKLIST.md	49	## Phase 6: economics/state stress ready; execution stress open
+EXECUTION-CHECKLIST.md	50	- [x] ETH loop, collateral/dollar carry and spot/short basis distinguished.
+EXECUTION-CHECKLIST.md	51	- [x] Frozen rate shocks, break-even and HF thresholds modelled.
+EXECUTION-CHECKLIST.md	52	- [x] Debt-asset cash and Aave reserve deficits measured at T.
+EXECUTION-CHECKLIST.md	53	- [x] Aave unwind compared with reserve cash; no guaranteed flash-loan capacity inferred.
+EXECUTION-CHECKLIST.md	54	- [x] Credit, funding, depeg, queues/bridges and linked cash-flow risks identified.
+EXECUTION-CHECKLIST.md	55	- [ ] Full DEX/liquidation/redemption/repayment simulation and funding/rate history.
+EXECUTION-CHECKLIST.md	56	- [ ] Quantitative market-wide capacity and shared counterparties.
+EXECUTION-CHECKLIST.md	57	## Phases 7–8: first synthesis and integrity validation complete
+EXECUTION-CHECKLIST.md	58	- [x] Report, tables, history, mechanics, economics and dependencies published.
+EXECUTION-CHECKLIST.md	59	- [x] Claims linked to semantic inputs and raw responses.
+EXECUTION-CHECKLIST.md	60	- [x] Raw manifest retained; local rebuild without refreshing sources.
+EXECUTION-CHECKLIST.md	61	- [x] Units, dates, NAV arithmetic, token order, hashes and links checked.
+EXECUTION-CHECKLIST.md	62	- [x] All 384 original BTC files unchanged.
+EXECUTION-CHECKLIST.md	63	- [x] Unknown totals and gaps published in [AUDIT.md](AUDIT.md).
+EXECUTION-CHECKLIST.md	64	- [ ] Final global net sizing and execution audit.
+EXECUTION-CHECKLIST.md	65	Next work: native/issuer backing census → major lending/bridge/receipt graph → complete borrower/holder scan → remote/private residuals → execution stress and cash-flow attribution. Extend the existing dataset rather than repeating the initial plan.
+README.md	0	First detailed edition, 3 October 2026. Snapshot T: 2 October, 23:59:59 UTC. History: 24 months. Captured data, contract checks and findings are available; complete net market sizing remains open.
+README.md	1	Start with the [market report](MARKET-RESEARCH.md), covering structure, carry/loops and findings while distinguishing book NAV, deployment and unique underlying.
+README.md	2	| Material | Contents |
+README.md	3	| [Market tables](MARKET-TABLES.md) | 57 chains, 82 dated protocols and comparable returns |
+README.md	4	| [WETH lending](LENDING-MARKETS.md) | Fixed-block claims, debt, cash, deficits and borrower concentration |
+README.md	5	| [History](HISTORY.md) | ETH wealth, two-year returns and protocol trends |
+README.md	6	| [Mechanics](MECHANICS.md) | Staking, restaking, ETH loops, dollar carry, basis, PT, LP and options |
+README.md	7	| [Economics](ECONOMICS.md) | Break-even, rate/HF shocks and debt liquidity |
+README.md	8	| [Dependencies](DEPENDENCIES.md) | Nested receipts, shared custody, credit and self-credit |
+README.md	9	| [Evidence](EVIDENCE.md) | Claim ledger and verification semantics |
+README.md	10	| [Audit](AUDIT.md) | Source limits, checks and local reproduction |
+README.md	11	| [Execution status](EXECUTION-CHECKLIST.md) | Completed and open phase tasks |
+README.md	12	| [Research plan](RESEARCH-PLAN.md) | Full phased target scope |
+README.md	13	## Dossiers
+README.md	14	| Product / segment | Evidence depth in this edition |
+README.md	15	| [Concrete ETH](dossiers/concrete-eth.md) | Share genesis/ownership, shared Safe, private accounting and overlap |
+README.md	16	| [Fluid Lite](dossiers/fluid-lite.md) | Gross/debt/net, fees and historical ETH returns |
+README.md	17	| [Treehouse tETH](dossiers/treehouse-teth.md) | IAU identity/conversion and exit terms |
+README.md	18	| [Carry credit](dossiers/carry-credit.md) | RLUSD/PRIME, borrowers, fees and linked flows |
+README.md	19	| [Liquid Monad](dossiers/liquid-monad.md) | Own Accountant, sole holder, chain books and remote gap |
+README.md	20	| [Staking/restaking](dossiers/staking-restaking.md) | Native root, overlap, receipt accounting and rsETH incident |
+README.md	21	| [Lending/LP](dossiers/lending-lp.md) | Payers, selected borrowers, NFT principal and debt |
+README.md	22	| [JustLend Tron](dossiers/justlend-tron.md) | Mapped-token identities, utilization and API reconciliation |
+README.md	23	| [Ethena basis](dossiers/ethena-basis.md) | ETH leg, hedges/custody and disclosure boundaries |
+README.md	24	| [Pendle PT](dossiers/pendle-pt.md) | Expiry, redemption units and liquidity versus principal |
+README.md	25	Semantic data: data/eth; tools: tools/eth; raw: raw/eth/2026-10-02. Original BTC outputs remain unchanged. Reproduce from the root with python3 tools/eth/rebuild.py; Audit explains runtime/raw handoff.
+MARKET-TABLES.md	0	# ETH yield market coverage tables
+MARKET-TABLES.md	1	Published 3 October 2026. T: 2026-10-02T23:59:59+00:00.
+MARKET-TABLES.md	2	Chains use current post-T discovery. Full selected-pool TVL includes non-ETH mixed assets, repeated LST deposits and leverage. It is neither net capital nor a proven upper/lower bound on unique ETH.
+MARKET-TABLES.md	3	| Chain | Candidate pools | Full-pool TVL, $M | Pools ≥$5M | Deep-dive selection |
+MARKET-TABLES.md	4	| Ethereum | 2472 | 66 462.260 | 184 | yes |
+MARKET-TABLES.md	5	| Base | 2121 | 1 319.010 | 32 | yes |
+MARKET-TABLES.md	6	| Tron | 1 | 1 288.655 | 1 | yes |
+MARKET-TABLES.md	7	| BNB Chain | 46 | 637.576 | 5 | yes |
+MARKET-TABLES.md	8	| Arbitrum | 433 | 568.131 | 17 | yes |
+MARKET-TABLES.md	9	| Linea | 32 | 208.053 | 1 | yes |
+MARKET-TABLES.md	10	| Monad | 20 | 127.920 | 5 | yes |
+MARKET-TABLES.md	11	| Optimism | 185 | 96.490 | 4 | yes |
+MARKET-TABLES.md	12	| Polygon | 132 | 62.127 | 2 | yes |
+MARKET-TABLES.md	13	| Gnosis | 9 | 39.790 | 1 | yes |
+MARKET-TABLES.md	14	## Dated protocol observations
+MARKET-TABLES.md	15	Nearest token observation no later than T. ETH-family adapter accounting differs from whole protocol TVL, external equity and unique underlying. Negative signs are retained; unknown wrappers limit coverage. Current category is a hint rather than historical strategy proof.
+MARKET-TABLES.md	16	| Protocol | ETH-family, $M | Current source category | Token date UTC | Age at T, hours |
+MARKET-TABLES.md	17	## Comparable ETH share-price returns
+MARKET-TABLES.md	18	365/730-day windows ending T. Published PPS/contract conversion excludes external rewards, exit fees and market depegs. This does not prove executable cash payout.
+MARKET-TABLES.md	19	| Product / benchmark | 365 days | 730 days | Annualized 730 days |
+MARKET-TABLES.md	20	Treehouse's IAU is historically wstETH-denominated rather than physical inventory. CIAN uses a verified historical oracle excluding bridge/depeg losses. Concrete is not assigned zero APR from flat PPS: private payouts and shorter history remain unknown.
+MARKET-TABLES.md	21	Sources under data/eth: market_summary.json, chain_screen.json, protocol_eth_observations.json, etherfi_staking_comparison.json and vault_history_comparison.json.

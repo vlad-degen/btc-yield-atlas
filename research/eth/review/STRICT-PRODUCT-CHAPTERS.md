@@ -1,0 +1,132 @@
+# Five ETH carry products: snapshot evidence and product chapters
+
+Financial snapshot: **2 October 2026, 23:59:59 UTC**. Ethereum block **26,108,081**; Optimism block **157,693,411**. New contract and document observations were collected on **4 October 2026**. Earlier financial inputs retain their original capture dates.
+
+These chapters follow the Bitcoin product format: capital and return, linked money flow, actor powers, income payers, capital history, funding cost, holder distribution, loan legs and dated events. The ordering uses whole-product book NAV. It does not rank verified carry-only equity, realized profit or investment quality. The five books overlap and must not be added as independent net market capital.
+
+The renderer data is [product_chapters.json](../../../data/eth/product_chapters.json). Published designs remain in the existing carry census; `liveRoute` in this file records what the fixed-block audit actually established.
+
+## Comparable measurements
+
+| Product | Book capital at T | 30-day ETH book return | First funded sampled date | Return from that sample to T | Positive share addresses at T | Configured fees at T |
+| --- | ---: | ---: | --- | ---: | --- | --- |
+| Concrete Delta weETH | 307,362.925 ETH / $820.029M | +0.1915% | 2025-12-31 | +1.8434% | 1 Ethereum | 0% / 0% configured vault fees; private fees unresolved |
+| ether.fi Liquid ETH | 177,171.063 ETH / $472.684M | +0.2610% | 2024-09-30 | +6.8658% | 7,793 Ethereum, 1,511 Optimism | 0.35% management fee at T |
+| Rocksolid rETH | 9,727.767 ETH / $25.953M | +0.2192% | 2025-08-31 | +4.6354% | 388 Ethereum | 1% management / 10% performance at T |
+| Liquity ETH Carry | 6,014.002 ETH / $16.045M | +0.4597% | 2026-03-31 | +3.5159% | 130 Ethereum | 0.5% management / 10% performance at T; indexed UI zero defaults differ |
+| Royco ETH | 116.052 ETH / $0.310M | +0.1849% | 2026-03-31 | +1.3494% | 8 Ethereum | 0% management / 10% performance at T; current documentation says 0% / 0% |
+
+T capital uses the existing standardized ETH/USD quote of $2,667.9504418816 at T plus one second; loan collateral uses its own protocol oracle rather than that display quote. Completed-month USD values use dated Chainlink observations.
+
+Returns are cumulative changes in recorded ETH share value. They are not annualized. Different inception samples make the full-period column unsuitable as a performance ranking. For weETH, rETH and wstETH products, historical exchange rates convert native vault assets to ETH. That conversion includes underlying staking growth. It does not isolate strategy profit. Separately distributed rewards are outside the share-price series.
+
+The first funded sampled date is the earliest archived observation with positive share supply. It can include manager or seed capital before the public launch. January and February Liquity reads returned a default share price of 1 while supply and assets were zero, so those values are excluded as investor-return baselines. The capital chart correctly retains the deployed empty months as zero. Predeployment reads remain absent, rather than zero.
+
+## 1. Concrete Delta weETH
+
+The share contract was deployed on **12 December 2025 at 10:48:23 UTC**. Its book holds **278,170.834213 weETH**, equal to **307,362.925 ETH** at T. One address holds the entire share supply. This establishes a large manager-issued accounting book, not a broad investor base. [Share contract](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code), [reconciled holder ledger](../../../raw/eth/2026-10-04/strict-products/concrete_holder_distribution_T.json).
+
+The linked strategy is [MultisigStrategy](https://etherscan.io/address/0xc8ea269d4dba296f7fbba812905c1b2efe5dbe1c#code). It reports assets to the share contract and identifies the [shared execution Safe](https://etherscan.io/address/0x7ee29373f075ee1d83b1b93b4fe94ae242df5178). That Safe is 3-of-5 at T. Its Aave account contains **$503,452,604.19 collateral** and **$105,736,216.10 debt**, with **21.0022% actual loan-to-value** and **3.82219 health factor**. The account is shared with another Concrete product. Its balances cannot be assigned entirely to Delta or split proportionally using the share books. [Original fixed-block lookthrough](../../../data/eth/concrete_lookthrough_T.json).
+
+The advertised dollar strategy deploys stable borrowing into neutral arbitrage. The available private-strategy documentation does not independently identify the trading venues, hedge counterparties, funding income or investor payout terms. Validators fund the underlying weETH staking return. Arbitrage counterparties would fund the dollar strategy margin, but no product-specific realized profit series was established. The initial share mint itself did not transfer underlying ERC20 assets.
+
+The [vault owner Safe](https://etherscan.io/address/0x8f5f1d40243b259ceb7ab44ba421ff191bcd3381) is **1-of-2**, distinct from custody. It also holds the active `VAULT_MANAGER` role. Verified fee-update functions require that role. Both management and performance fees are zero in the share contract at T; private commercial fees remain outside the verified configuration. No product-specific enforced fee timelock was established. [Controls capture](../../../raw/eth/2026-10-04/strict-products/controls_rpc.json), [role history and active membership](../../../raw/eth/2026-10-04/strict-products/concrete_roles_rpc.json).
+
+Every archived funded observation has a native share price of **1 weETH**. The ten completed-month observations from December 2025 through September 2026 retain the same native book assets. The **+1.8434% ETH book change** since the December sample therefore reflects the changing weETH exchange rate. It must not be presented as independently measured arbitrage profit, organic carry yield or a realized payout.
+
+## 2. ether.fi Liquid ETH
+
+The Ethereum share contract was deployed on **3 June 2024 at 23:23:59 UTC**. The T book covers Ethereum and Optimism share circulation and totals **177,171.063 ETH / $472.684M**. The first funded observation used here is 30 September 2024. Its cumulative ETH book change to T is **+6.8658%**; the exactly 730-day comparison in the existing benchmark uses a different start date and remains **+6.8501%**. These figures are compatible and should keep their explicit window labels. [Share contract](https://etherscan.io/address/0xf0bb20865277abd641a307ece5ee04e79073416c#code), [existing benchmark](../../../data/eth/etherfi_staking_comparison.json).
+
+The product mixes at least two financing mechanisms. The main Aave and Spark accounts borrow WETH against staking collateral, so those legs are E3 staking loops. The controlled Drone account borrows stablecoins, so those legs are E4 dollar carry. Dollar destination claims include cUSD, senRLUSDv2 and senPYUSDPRIMEv2. Borrowing-account collateral less debt is only one part of carry equity; separately held dollar investments must also be counted. [Drone](https://etherscan.io/address/0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c), [loan manager](https://etherscan.io/address/0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3), [existing account metrics](../../../data/eth/etherfi_verified_metrics.json).
+
+| Account | Mechanism | Collateral, protocol oracle USD | Debt, protocol oracle USD | Actual LTV | Weighted liquidation threshold | Health factor |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 0xf0bb20... / Aave V3 | E3 | $1,182,315,320.23 | $1,093,583,118.47 | 92.4950% | 95.00% | 1.027082 |
+| 0xf0bb20... / Spark | E3 | $92,243,395.58 | $82,793,741.88 | 89.7557% | 93.00% | 1.036145 |
+| 0x0a42b2... / Aave V3 | E4 | $133,115,759.35 | $76,588,521.61 | 57.5353% | 80.00% | 1.390451 |
+| 0x0a42b2... / Spark | E4 | $8,048,315.74 | $3,611,570.54 | 44.8736% | 84.00% | 1.871924 |
+
+The main WETH borrowing APR at T is **2.0738% on Aave** and **1.9070% on Spark**. The new dated funding series shows archived Aave WETH variable APR alongside ETH book share value. This is an E3 financing reference inside a mixed portfolio, not the carry sleeve’s blended dollar funding cost. Instantaneous APR and cumulative product return use different measures and must keep separate units. [Funding captures](../../../raw/eth/2026-10-04/strict-products/funding_history_rpc.json).
+
+Income comes from validator staking rewards and payments by destination borrowers. Some destination credit flows back to the same consolidated borrower: the captured proportional overlap is **8,708,987.1107 RLUSD** and **4,758,914.1594 PYUSD**. Those amounts diagnose concentration and recycling of credit, not additional assets or extra income. [Credit lookthrough](../../../data/eth/carry_credit_lookthrough.json).
+
+The authority is a per-function role system. Owner role 8 uses a 24-hour timelock, but management-fee updates also admit role 55, whose active address is `0x607d0c7e3578802eb46d388cb86cfba8ff657306`. The owner delay does not establish that every fee change is delayed. Rate updates, pausing, unpausing and rate-provider changes have their own selectors and roles. The T management fee is **0.35%**. [Exact permission review](../../../data/eth/permissions_review_T.json).
+
+The transfer audit covers every Ethereum and Optimism share-transfer interval through T. Both reconstructed ledgers match each chain’s archived supply exactly. There are **7,793 Ethereum holders** and **1,511 Optimism holders**. Twenty-two addresses occur on both chains, producing **9,282 distinct address strings**. These are positive share balances, including contracts, not identifiable people or original depositors. The largest Ethereum holder owns **25.4187% of Ethereum supply**; that is not 25.4187% of consolidated cross-chain supply. [Ethereum ledger](../../../raw/eth/2026-10-04/strict-products/liquid_holder_distribution_T.json), [Optimism ledger](../../../raw/eth/2026-10-04/strict-products/liquid_op_holder_distribution_T.json).
+
+The capital panel retains 24 completed month ends, October 2024 through September 2026. A separate dated current UI observation labels 64.66% carry and 21.65% looping on 3 October. Those labels cannot reconstruct historical allocation. The existing independent partial reconstruction leaves **$12,452,629.59**, or **2.6345% of book NAV**, unresolved; the difference is not labelled yield. [Partial balance sheet](../../../data/eth/etherfi_partial_balance_sheet.json).
+
+## 3. Rocksolid rETH
+
+The share contract was deployed on **28 August 2025 at 04:55:35 UTC**. The [public launch announcement](https://blog.rocksolid.network/introducing-rocksolid-liquid-vaults/) followed on **25 September 2025**. At T, the book contains **8,293.351834 rETH**, equal to **9,727.767 ETH / $25.953M**. Fourteen completed-month observations run from August 2025 through September 2026. Cumulative ETH book change since the first funded August sample is **+4.6354%**. It includes rETH staking growth and recognized strategy accounting; separately distributed incentives are not included. [Vault](https://etherscan.io/address/0x936facdf10c8c36294e7b9d28345255539d81bc7#code).
+
+Published roles separate Tulipa’s management and valuation proposals from Rocksolid’s co-signing and distribution, using Fordefi policy controls. The configured valuation manager is `0x5856fcbe7b15a5a2cdccff5051b59bb8bdd54204`. At T, both the vault owner and the execution address have **no contract code**. Therefore the documented 30-day fee-change policy cannot be described as an independently verified 30-day onchain wrapper timelock. Fees are **1% management / 10% performance** in the vault at T. [Architecture](https://docs.rocksolid.network/architecture), [reward policy](https://docs.rocksolid.network/for-depositors/rewards), [code and role capture](../../../raw/eth/2026-10-04/strict-products/extra_controls_rpc.json).
+
+The report for **17 to 24 August 2026** labels **28.54% stable carry** and **9.07% looping**. Its carry example posts rETH on Aave, borrows USDC at 50% LTV and deploys dollars to Spectra and a Hyperithm Morpho strategy. Those numbers belong to that report vintage. Direct Aave collateral and debt in the configured execution account are both zero at T. [Dated report page](https://app.rocksolid.network/vaults/0x936facdf10c8c36294e7b9d28345255539d81bc7), [fixed-block account capture](../../../raw/eth/2026-10-04/strict-products/controls_rpc.json).
+
+The snapshot nevertheless proves nested carry-product exposure. The execution account holds **748.638010 Liquity ETH Carry shares**, with a whole-product book value of **728.484 ETH / $1.944M**. That is **7.4887%** of Rocksolid’s own whole book, but not a pure carry-allocation estimate. It also overlaps the underlying Liquity NAV. Adding both products as disjoint market capital would count that claim twice. [Underlying holder ledger](../../../raw/eth/2026-10-04/strict-products/liquity_holder_distribution_T.json).
+
+At T, **388 positive share-holding addresses** reconcile exactly to supply. The largest holds **40.9678%**. The issuer’s [one-month retrospective](https://blog.rocksolid.network/a-rocksolid-retrospective-one-month-post-launch/) reports more than 220 historical depositors and an initial **0.3173 rETH/day** incentive programme. Those are historical issuer claims. They are neither the T holder census nor independently measured organic returns. Validator rewards, external borrower payments, trading fees and issuer-funded incentives have different payers and must remain distinct.
+
+## 4. Liquity ETH Carry
+
+The contract was deployed on **30 January 2026 at 14:23:47 UTC**. The published product name and earlier description point to Liquity/BOLD and Curve. The fixed-block audit instead identifies an **Ebisu wstETH Trove** and an active **Uniswap V4** fuse. Granted stablecoin substrates include **ebUSD and USDC**. The live route must therefore use the onchain finding rather than silently preserving the earlier BOLD/Curve design. [Share contract](https://etherscan.io/address/0xb9e806e8f2d94c015ffefa90cd24ecce18f1663c#code), [Ebisu create fuse](https://etherscan.io/address/0x864d303d4d161209b406eb3d4c43759231a73a07#code), [Uniswap V4 fuse](https://etherscan.io/address/0x1a2d2f51d1874bdc89f6e78feb99b8b7967d16da#code).
+
+The active Trove holds **4,585.482153 wstETH** against **6,752,064.750858 ebUSD accrued debt**. Its borrower-set annual rate is **2.55%**. At the branch oracle price, collateral is **$15,232,433.83**. Treating ebUSD debt as a nominal dollar unit gives **44.3269% actual LTV**. Branch minimum collateralization is **120%**, equivalent to an **83.3333% liquidation LTV**. The derived collateral ratio divided by that minimum is **1.87997**; this is not an Aave health-factor getter. Market ebUSD peg deviation and loan upfront fees are separate from those nominal calculations. [Active Trove getters](../../../raw/eth/2026-10-04/strict-products/trove_final_rpc.json), [oracle read](../../../raw/eth/2026-10-04/strict-products/loan_prices_rpc.json), [Ebisu loan mechanics](https://ebisu.gitbook.io/ebisu-money/managing-your-ebusd-loan).
+
+Nine captured Ebisu enter/exit events establish actual strategy changes. The first rETH Trove opens on **5 March 2026** and closes on **9 March**. The vault then uses the wstETH branch, with further closes and opens in March and April. The currently open Trove was created on **6 June 2026 at 22:07:23 UTC**. Thus a single static borrowing route cannot describe the entire product history. [First enter transaction](https://etherscan.io/tx/0x8f4183c38c56ffd02e711245f2e6a6b46d5c1b0decd1889eba5337ea0c3ea2cc), [current Trove opening](https://etherscan.io/tx/0x076e6b9213e496ffec45190370bbf1ba95a81d8d8712271660fb52b6300795ba), [full captured events](../../../raw/eth/2026-10-04/strict-products/deep_positions_rpc.json).
+
+The vault has **20-decimal shares** and **18-decimal WETH assets**. T book NAV is **6,014.002 ETH / $16.045M**. January and February assets and supply are zero. The funded return series begins at the 31 March sampled observation: cumulative WETH book change is **+3.5159%** through T, and the 30-day change is **+0.4597%**. A default empty-vault price of 1 would give a misleading return baseline. [Historical getters](../../../raw/eth/2026-10-04/strict-products/history_rpc.json).
+
+The market accounting fields are explicitly stored book values: market 29 records **3,265.353049 ETH**, market 53 **59.732893 ETH**, market 16 a negligible balance and market 12 zero. They are not a newly refreshed independent mark of every asset. The captured idle wallet holds **300.678433 WETH** and **1.907947 ebUSD**, with no wstETH, rETH or USDC idle balances in the tested tokens. These observations do not complete a fresh LP and vault asset reconciliation. [Market substrates and books](../../../raw/eth/2026-10-04/strict-products/market_controls_rpc.json), [idle token balances](../../../raw/eth/2026-10-04/strict-products/liquity_wallet_T.json).
+
+Fees at T are **0.5% management / 10% performance**, rather than the indexed zero defaults. The owner, guardian, Atomist and fuse-manager memberships include `0x32787cd59244581a358a068d52e460eb00df6543`. Alpha execution role 200 has two active addresses. The full historical role-grant set was checked through `getAccess` at T: all active memberships have **zero current and pending execution delays**. Per-function permissions still constrain actions. No address is equated to the Sentinel brand without separate identity evidence. The 1-second redemption parameter is a deposit lock; it does not promise a one-second strategy unwind. [Role membership capture](../../../raw/eth/2026-10-04/strict-products/deep_positions_rpc.json), [access-manager source](https://etherscan.io/address/0xcee55bd8ce0361a67f9a48888a2b519c9d207a97#code).
+
+The exact supply reconstruction gives **130 positive share addresses**, including Rocksolid’s execution account. The largest holder owns **36.8805%** of supply. Income comes from retained wstETH staking and the strategy’s recognized stablecoin or liquidity-position returns; the vault pays debt interest and protocol loan fees. No independently isolated organic carry return is claimed.
+
+## 5. Royco ETH
+
+The roywstETH wrapper was deployed on **4 March 2026 at 16:00:47 UTC**. It reports **93.184064 wstETH**, equal to **116.052 ETH / $309,619.94** at T. Its funded monthly samples begin in March. ETH book change since 31 March is **+1.3494%**, and the 30-day change is **+0.1849%**. These are recorded book returns with explicit accounting freshness limits. [Share wrapper](https://etherscan.io/address/0x41ce72e04d349eb957bdc373baa9c69207032c56#code).
+
+The actual contract path is **Concrete share wrapper → RoycoVaultMakinaStrategy → Makina Machine → Caliber**. The machine is `0x0fdf9f1920e160ea8ae267bde13e725def81e5ee`; the executor is `0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0`. The public design borrows dollars against wstETH to invest in srRoyUSDC Senior tranches. A srRoyUSDC share balance is directly verified at Caliber. Its full recorded destination-position value, debt venue and market-level collateral parameters are not inferred merely from numeric position identifiers. [Adapter](https://etherscan.io/address/0x185313dbb1f3aa2b3fcc603f0ee4cba753ef1dd7#code), [machine](https://etherscan.io/address/0x0fdf9f1920e160ea8ae267bde13e725def81e5ee#code), [executor](https://etherscan.io/address/0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0#code), [published vault design](https://royco.gitbook.io/royco-dawn/royco-dawn/3.-vault-products).
+
+| Recorded category | Value in wstETH accounting units | Fresh at T? |
+| --- | ---: | --- |
+| Positive position | 93.075979 | No |
+| Debt position | 26.981276 | No |
+| Destination position | 26.923846 | No |
+
+All three recorded positions are stale under Caliber’s own flag. `isAccountingFresh` is false and `getNetAum` reverts with `PositionAccountingStale`. Wrapper, adapter and machine return **zero immediate maxWithdraw**. This does not prove a loss or permanent inability to exit. It establishes that cached book NAV is not an immediately redeemable, independently current asset valuation. The documented vault process is asynchronous. Direct Aave and Spark accounts at Caliber have zero collateral and debt. [Recorded positions, freshness and destination balance](../../../raw/eth/2026-10-04/strict-products/loan_prices_rpc.json), [Caliber accounting controls](../../../raw/eth/2026-10-04/strict-products/trove_final_rpc.json).
+
+The owner Safe is **3-of-4**, but the active wrapper `VAULT_MANAGER` is a separate address, `0x82eece4a736db0767370d2dffde9bdf6e38aaeb8`. Verified wrapper fee-update functions admit that role. The configured operator and mechanic are `0x425bbc2cff0c7e7960baa9bac2f0cb67b41d3bef`. Caliber’s instruction-root timelock is **172,800 seconds, or 2 days**, at T. That applies to the instruction-root control and is distinct from the current documentation’s minimum **7-day allocation notice**. It is not a universal delay on every wrapper or fee action. [Wrapper role capture](../../../raw/eth/2026-10-04/strict-products/concrete_roles_rpc.json), [machine control reads](../../../raw/eth/2026-10-04/strict-products/deep_positions2_rpc.json).
+
+The T wrapper has **zero management / 10% performance fee**. Current documentation reviewed on 4 October says zero fees. It also describes a **30-day vault withdrawal epoch** and approximately **2 additional processing days**, with KYC/KYB before withdrawal and US-person restrictions. Published policy and fixed-block implementation are shown separately. [Governance and fees](https://royco.gitbook.io/royco-dawn/royco-dawn/4.-governance-and-fees), [withdrawals](https://royco.gitbook.io/royco-dawn/royco-dawn/5.-deposits-and-withdrawals).
+
+The share ledger contains **8 positive holders** at T and reconciles exactly to supply. The largest address holds **90.6311%**. Validators fund wstETH staking income; borrowers in the underlying Senior allocations fund credit returns. Junior capital provides finite first-loss coverage, not guaranteed yield or principal protection. Neither the cached position book nor the public mandate isolates an organic carry result.
+
+The additional [fixed-block withdrawal getters](../../../raw/eth/2026-10-04/strict-products/exit_getters_T.json) query each product’s largest holder. Royco and Rocksolid return zero `maxWithdraw` and `maxRedeem`. Concrete and Liquity return nominal holder balances. These getters are not simulated successful withdrawals, proof of liquid cash or substitutes for request, settlement and collateral-unwind mechanics.
+
+## Deprecated and closed examples
+
+The bounded primary-source review did not establish a discontinued E4 ETH-collateral dollar-carry product with a verified closing date and reason. The closed-product data therefore does not invent failure cards. It includes adjacent official deprecations with an explicit exclusion from the E4 universe.
+
+[Origami wOETH 5x](https://docs.origami.finance/the-second-fold-v2/deprecated-vaults/woeth-5x/token-flow) appears in the issuer’s Deprecated Vaults collection and explicitly borrows WETH to buy wOETH. That is E3, not dollar carry. [Origami wstETH 11x](https://docs.origami.finance/the-second-fold-v2/deprecated-vaults/wsteth-11x/token-flow) is another deprecated ETH staking-loop precedent. The documentation establishes deprecated placement. It does not establish a failure, investor loss, closing date or reason. Both examples retain null values for those unsupported claims.
+
+## Reproduction and schema
+
+Run `python3 tools/eth/build_product_chapters.py` from the repository root. This is an offline build using the captured files and the editorial template, not a new live query. It rebuilds share-price, funding, capital and holder panels and combines them with source-checked product descriptions and fixed-block control reads. The editorial template holds curated English text and the review’s disclosure decisions; it is not an extra financial data feed.
+
+- [Offline builder](../../../tools/eth/build_product_chapters.py)
+- [Editorial input template](../../../raw/eth/2026-10-04/strict-products/product_chapter_editorial_template.json)
+- [Snapshot getters and creation transactions](../../../raw/eth/2026-10-04/strict-products/snapshot_rpc.json)
+- [Historical book/rETH-rate getters](../../../raw/eth/2026-10-04/strict-products/history_rpc.json)
+- [Historical funding getters](../../../raw/eth/2026-10-04/strict-products/funding_history_rpc.json)
+- [Ethereum transfer manifest](../../../raw/eth/2026-10-04/strict-products/transfer_manifest_tenderly.json) and [completed retry manifest](../../../raw/eth/2026-10-04/strict-products/transfer_manifest_retry.json)
+- [Optimism transfer manifest](../../../raw/eth/2026-10-04/strict-products/transfer_manifest_op.json)
+- [Primary HTTP source manifest](../../../raw/eth/2026-10-04/strict-products/http_manifest.json)
+- [Final raw-file hash manifest](../../../raw/eth/2026-10-04/strict-products/all_captures_manifest.json)
+
+Each product provides `keyMetrics`, `moneyFlow`, `actors`, `incomePayers`, `timeline`, `sources`, `limitations` and the `liveRoute` overlay. Chart keys are `capitalHistory`, `returnVsBorrow`, `walletDistribution` and `loanLegs`. Dated return rows use `ethBookPrice`, `cumulativeReturnPct`, `borrowAPR_pct` and `borrowScope`. Separate `windowReturns` are end-at-T intervals, so they are never used as dates on a time-series axis. Wallet bins include `chain`, `holders`, `shares`, `capitalETH` and `shareOfSupplyPct`; named `topHolders` retain exact address links. Loan rows explicitly identify whether values are protocol oracle balances, nominal dollar units, shared custody or cached position accounting.
+
+Raw historical strategy-allocation percentages remain null. Whole managed books are not all carry. The canonical financial census and original input hashes have not been rewritten by these chapters.

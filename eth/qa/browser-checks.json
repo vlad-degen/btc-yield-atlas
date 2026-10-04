@@ -1,0 +1,350 @@
+{
+  "reviewed_on": "2026-10-04",
+  "site_sha256": "833b1907c508b61caf0106899b55f925d64b239e3e5c341f82fb5ba4b2db1794",
+  "all_recorded_checks_passed": true,
+  "recorded_checks": 28,
+  "viewport_widths": [
+    1440,
+    390,
+    319
+  ],
+  "checks": [
+    {
+      "check": "Eight report chapters and five Data disclosures",
+      "passed": true,
+      "detail": {
+        "carryRows": 7,
+        "census": 14,
+        "censusFits": true,
+        "disclosures": 5,
+        "inputs": 7,
+        "loaded": "true",
+        "loans": [
+          3,
+          22
+        ],
+        "longDashes": false,
+        "monthly": 24,
+        "overflow": 0,
+        "playbook": [
+          4,
+          6,
+          7,
+          6
+        ],
+        "presets": 4,
+        "risks": 8,
+        "sections": [
+          "top",
+          "map",
+          "how",
+          "top5",
+          "market",
+          "risks",
+          "do",
+          "data"
+        ],
+        "trons": false,
+        "worked": 9
+      }
+    },
+    {
+      "check": "24 monthly bars, seven carry books and no Tron in primary chains",
+      "passed": true
+    },
+    {
+      "check": "Compact census, risk table and four playbook tables",
+      "passed": true
+    },
+    {
+      "check": "Cash-flow ledger and separate tracked borrowing evidence",
+      "passed": true
+    },
+    {
+      "check": "Desktop census fits the report column",
+      "passed": true
+    },
+    {
+      "check": "Rendered copy has no long dashes",
+      "passed": true
+    },
+    {
+      "check": "Carry category has two protocol parents and seven products",
+      "passed": true
+    },
+    {
+      "check": "Category keyboard navigation",
+      "passed": true
+    },
+    {
+      "check": "Catalogue link opens its 24-row history",
+      "passed": true
+    },
+    {
+      "check": "Search finds the Nonce operator across categories",
+      "passed": true,
+      "detail": {
+        "q": "Nonce",
+        "rows": 1,
+        "text": "Protocol / parentCategory / subtypeETH equivalentSelected-market shareHow it earnsYieldRun byHistoryether.fi Liquid ↗$402.665m · 2026-10-02Dollar carryhybrid or carry parent148,904.70.70%Staking loops, dollar carry and liquidity income.2.73% advertised pool APY (3 Oct capture; not realized or at T)ether.fi / Veda / NonceMonthly table →"
+      }
+    },
+    {
+      "check": "Pointer activation selects Binance monthly history",
+      "passed": true
+    },
+    {
+      "check": "All eight categories reconcile without Tron",
+      "passed": true,
+      "detail": {
+        "csv": "data/market-series-observed-255.csv",
+        "hero": "28.18M",
+        "trons": false
+      }
+    },
+    {
+      "check": "Escape closes the Counting popup",
+      "passed": true
+    },
+    {
+      "check": "USD, share, constant cohort and matching CSV",
+      "passed": true,
+      "detail": {
+        "csv": "data/market-series-constant-255.csv",
+        "rows": 24,
+        "scope": "Constant cohort: 63 selected protocols observed in every completed month and the current snapshot. Categories still follow your selection.",
+        "visible": true
+      }
+    },
+    {
+      "check": "Reset restores six default categories",
+      "passed": true
+    },
+    {
+      "check": "All four calculator presets update annual results",
+      "passed": true,
+      "detail": [
+        {
+          "preset": "observed-rlusd-leg",
+          "result": "Net ETH return, annual2.75%Without investment rewards1.09%Dollar spread before product fee1.29%Per 1 ETH of equityResultStaking baseline2.27%Dollar debt at the initial ETH price0.6"
+        },
+        {
+          "preset": "ethereum-usdc",
+          "result": "Net ETH return, annual0.86%Without investment rewards0.86%Dollar spread before product fee-1.63%Per 1 ETH of equityResultStaking baseline2.27%Dollar debt at the initial ETH price0."
+        },
+        {
+          "preset": "rlusd-no-rewards",
+          "result": "Net ETH return, annual1.09%Without investment rewards1.09%Dollar spread before product fee-1.30%Per 1 ETH of equityResultStaking baseline2.27%Dollar debt at the initial ETH price0."
+        },
+        {
+          "preset": "rlusd-cost-shock",
+          "result": "Net ETH return, annual0.82%Without investment rewards-0.84%Dollar spread before product fee-1.71%Per 1 ETH of equityResultStaking baseline2.27%Dollar debt at the initial ETH price0"
+        }
+      ]
+    },
+    {
+      "check": "Unsafe LTV triggers liquidation warning",
+      "passed": true
+    },
+    {
+      "check": "Rate curve selector renders the selected financing model",
+      "passed": true,
+      "detail": "DefaultReserveInterestRateStrategyV2: T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model. Analytical curve using the actual T ray parameters and verified model formula; fixed governance parameters, not a utilization forecast. Debt / (debt + physical reserve cash), diagnostic; rate calculation can use virtual balance and the stored reserve quote. Market / contract ↗ · Market / contract ↗ · Market / contract ↗"
+    },
+    {
+      "check": "Five smaller carry books have separate scales and a 24-row USD table",
+      "passed": true,
+      "detail": {
+        "charts": 5,
+        "header": "MonthRocksolid rETH, USDLiquity ETH Carry, USDTAU InfiniFi ETH Carry, USDReservoir ETH Yield, USDRoyco ETH, USD",
+        "rows": 24,
+        "visible": true
+      }
+    },
+    {
+      "check": "Five product chapters and the closed-products tab render",
+      "passed": true,
+      "detail": [
+        {
+          "columns": 2,
+          "features": [
+            "What the income records establish",
+            "Whole-product capital history",
+            "Book share return in ETH",
+            "Matched return windows",
+            "Book claim and examined backing",
+            "Investor request and payout evidence"
+          ],
+          "id": "concrete",
+          "textLength": 15795
+        },
+        {
+          "columns": 3,
+          "features": [
+            "What the income records establish",
+            "Whole-product capital history",
+            "Book share return in ETH",
+            "Matched return windows",
+            "Liquid ETH: borrowing costs over two years",
+            "Book claim and examined backing",
+            "Investor request and payout evidence"
+          ],
+          "id": "liquid",
+          "textLength": 40332
+        },
+        {
+          "columns": 2,
+          "features": [
+            "What the income records establish",
+            "Whole-product capital history",
+            "Book share return in ETH",
+            "Matched return windows",
+            "Book claim and examined backing",
+            "Investor request and payout evidence"
+          ],
+          "id": "rocksolid",
+          "textLength": 19003
+        },
+        {
+          "columns": 3,
+          "features": [
+            "What the income records establish",
+            "Whole-product capital history",
+            "Book share return in ETH",
+            "Matched return windows",
+            "Financing quotes: a different denominator",
+            "Book claim and examined backing",
+            "Investor request and payout evidence"
+          ],
+          "id": "liquity",
+          "textLength": 18648
+        },
+        {
+          "columns": 2,
+          "features": [
+            "The duration-changing control is verified at T",
+            "What the income records establish",
+            "Whole-product capital history",
+            "Book share return in ETH",
+            "Matched return windows",
+            "Book claim and examined backing",
+            "Investor request and payout evidence"
+          ],
+          "id": "royco",
+          "textLength": 17324
+        },
+        {
+          "columns": 0,
+          "features": [],
+          "id": "closed",
+          "textLength": 1488
+        }
+      ]
+    },
+    {
+      "check": "Product keyboard navigation persists selection in URL",
+      "passed": true
+    },
+    {
+      "check": "390px Liquid product and mobile flow stay contained",
+      "passed": true,
+      "detail": {
+        "columns": 3,
+        "flowVisible": "grid",
+        "overflow": 0,
+        "selected": "liquid",
+        "width": 390
+      }
+    },
+    {
+      "check": "Bar observations support keyboard inspection",
+      "passed": true,
+      "detail": {
+        "focused": "2024-11-30\nObserved total: 23,281,223 ETH\nFarming / liquidity: 534,005 ETH\nFixed yield: 244,240 ETH\nSpot / short basis: No observation\nDollar carry: 321,036 ETH\nETH loops: 120,960 ETH\nStaking / restaking: 22,060,981 ETH",
+        "overflow": 0,
+        "visible": true
+      }
+    },
+    {
+      "check": "390px census uses labelled product cards",
+      "passed": true,
+      "detail": {
+        "display": "block",
+        "label": "\"How it earns\"",
+        "overflow": 0,
+        "rows": 14,
+        "width": 390
+      }
+    },
+    {
+      "check": "319px main report retains charts, cash flow and controls without page overflow",
+      "passed": true,
+      "detail": {
+        "books": 7,
+        "calcInputs": 7,
+        "marketMonths": 24,
+        "overflow": 0,
+        "width": 319,
+        "workedRows": 9
+      }
+    },
+    {
+      "check": "Supporting exhibits retain all eight linked forensic investigations",
+      "passed": true,
+      "detail": {
+        "loaded": "true",
+        "overflow": 0,
+        "panels": [
+          {
+            "id": "market-net-capital",
+            "length": 8790
+          },
+          {
+            "id": "carry-earned-income",
+            "length": 6415
+          },
+          {
+            "id": "investor-exits",
+            "length": 3860
+          },
+          {
+            "id": "dollar-funding-atlas",
+            "length": 7312
+          },
+          {
+            "id": "strategy-atlas",
+            "length": 5283
+          },
+          {
+            "id": "nested-carry-products",
+            "length": 10333
+          },
+          {
+            "id": "carry-lifecycles",
+            "length": 5547
+          },
+          {
+            "id": "research-conclusions",
+            "length": 1442
+          }
+        ],
+        "ready": "true"
+      }
+    },
+    {
+      "check": "Appendix returns to the main eight-chapter report",
+      "passed": true
+    },
+    {
+      "check": "No browser errors during final reader and appendix checks",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "screenshots": [
+    "qa/reader-carry-desktop.jpg",
+    "qa/reader-census-mobile.jpg"
+  ],
+  "financial_snapshot": "2026-10-02T23:59:59Z",
+  "scope": "Tests the actual eight-chapter reader and linked supporting exhibits through the in-app browser. Local-file navigation was blocked by browser URL policy and was not tested; archive CRCs and local presentation links are checked separately. These checks verify presentation and interactions, not global market completeness, product solvency or executable financial transactions."
+}

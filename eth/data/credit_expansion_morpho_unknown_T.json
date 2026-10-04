@@ -1,0 +1,2167 @@
+{
+  "financial_target_timestamp": 1790985599,
+  "block": 26108081,
+  "labels": [
+    {
+      "id": 1,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+      "wallet_url": "https://eth.blockscout.com/address/0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+      "venue": "Morpho Blue",
+      "market_id": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "market_url": "https://app.morpho.org/ethereum/market/0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "8703421402100000000000",
+      "collateral_units": 8703.4214021,
+      "collateral_usd": 29071169.939825498,
+      "debt_symbol": "USDT",
+      "debt_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "debt_decimals": 6,
+      "debt_raw": "17878973508285",
+      "borrow_shares_raw": "15455673164327728335",
+      "debt_units": 17878973.508285,
+      "debt_usd": 17877267.999650374,
+      "collateral_implied_USD_per_token": 3340.200203659112,
+      "debt_implied_USD_per_token": 0.9999046081345869,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:22.662928+00:00",
+        "completed_at": "2026-10-03T15:00:31.334146+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:31 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2-5cab6a9162b4e5f9.json",
+        "sha256": "5cab6a9162b4e5f97113d50acfc2302294d18871cb5674971e2c39fbcc72d921"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "8703.4214021",
+      "debt_units_exact": "17878973.508285",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d67d94daf44ab4cf0000000000000000000000000000000000000000000001d7d03c4481ceb68800"
+      }
+    },
+    {
+      "id": 1,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+      "wallet_url": "https://eth.blockscout.com/address/0x1778767436111ec0adb10f9ba4f51a329d0e7770",
+      "venue": "Morpho Blue",
+      "market_id": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "market_url": "https://app.morpho.org/ethereum/market/0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "8703421402100000000000",
+      "collateral_units": 8703.4214021,
+      "collateral_usd": 29071169.939825498,
+      "debt_symbol": "USDT",
+      "debt_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "debt_decimals": 6,
+      "debt_raw": "17878973508285",
+      "borrow_shares_raw": "15455673164327728335",
+      "debt_units": 17878973.508285,
+      "debt_usd": 17877267.999650374,
+      "collateral_implied_USD_per_token": 3340.200203659112,
+      "debt_implied_USD_per_token": 0.9999046081345869,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:22.662928+00:00",
+        "completed_at": "2026-10-03T15:00:31.334146+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:31 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2-5cab6a9162b4e5f9.json",
+        "sha256": "5cab6a9162b4e5f97113d50acfc2302294d18871cb5674971e2c39fbcc72d921"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "8703.4214021",
+      "debt_units_exact": "17878973.508285",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000008ca8ef6a0f55000000000000000000000000000000000000000000000007633f4e5f6be5d5a600000000000000000000000000000000000000000000000000006c3757b89cd90000000000000000000000000000000000000000000000059384fafaa682ed7f000000000000000000000000000000000000000000000000000000006ac0434b0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 12,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "wallet_url": "https://eth.blockscout.com/address/0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "venue": "Morpho Blue",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "market_url": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "4837278104570955752591",
+      "collateral_units": 4837.278104570956,
+      "collateral_usd": 14338388.071664667,
+      "debt_symbol": "RLUSD",
+      "debt_address": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "debt_decimals": 18,
+      "debt_raw": "8131504561108958626971648",
+      "borrow_shares_raw": "7976305435934187522552327497840",
+      "debt_units": 8131504.561108959,
+      "debt_usd": 8131982.595993335,
+      "collateral_implied_USD_per_token": 2964.1438349628265,
+      "debt_implied_USD_per_token": 1.0000587879992915,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.336668+00:00",
+        "completed_at": "2026-10-03T15:00:32.071997+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4-ec340f87b4ecc1a8.json",
+        "sha256": "ec340f87b4ecc1a8a9f1e562b9bdf0375feef76bb16fd20f84c8485d7b6fcfec"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "4837.278104570955752591",
+      "debt_units_exact": "8131504.561108958626971648",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000064acd5376663a4a22ba092e8700000000000000000000000000000000000000000000001063ab8171c06aee48f"
+      }
+    },
+    {
+      "id": 12,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "wallet_url": "https://eth.blockscout.com/address/0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "venue": "Morpho Blue",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "market_url": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "4837278104570955752591",
+      "collateral_units": 4837.278104570956,
+      "collateral_usd": 14338388.071664667,
+      "debt_symbol": "RLUSD",
+      "debt_address": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "debt_decimals": 18,
+      "debt_raw": "8131504561108958626971648",
+      "borrow_shares_raw": "7976305435934187522552327497840",
+      "debt_units": 8131504.561108959,
+      "debt_usd": 8131982.595993335,
+      "collateral_implied_USD_per_token": 2964.1438349628265,
+      "debt_implied_USD_per_token": 1.0000587879992915,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.336668+00:00",
+        "completed_at": "2026-10-03T15:00:32.071997+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4-ec340f87b4ecc1a8.json",
+        "sha256": "ec340f87b4ecc1a8a9f1e562b9bdf0375feef76bb16fd20f84c8485d7b6fcfec"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "4837.278104570955752591",
+      "debt_units_exact": "8131504.561108958626971648",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000005883ba42a5d420c7a970a8000000000000000000000000000000000000052fe12ea39335c5c0d8e889ac320000000000000000000000000000000000000000004e32ba7c80f374fed816bd00000000000000000000000000000000000004928d5dbb91230a83cbff10272d000000000000000000000000000000000000000000000000000000006abff2ff0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 13,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa122687285dc5012141055a801045f069112e7c6",
+      "wallet_url": "https://eth.blockscout.com/address/0xa122687285dc5012141055a801045f069112e7c6",
+      "venue": "Morpho Blue",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "market_url": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "3256715997781349738769",
+      "collateral_units": 3256.71599778135,
+      "collateral_usd": 9653374.647048397,
+      "debt_symbol": "RLUSD",
+      "debt_address": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "debt_decimals": 18,
+      "debt_raw": "5589977421216945606230016",
+      "borrow_shares_raw": "5483286267199898336222790343079",
+      "debt_units": 5589977.421216945,
+      "debt_usd": 5590306.044805623,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 1.0000587879992915,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.336668+00:00",
+        "completed_at": "2026-10-03T15:00:32.071997+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4-ec340f87b4ecc1a8.json",
+        "sha256": "ec340f87b4ecc1a8a9f1e562b9bdf0375feef76bb16fd20f84c8485d7b6fcfec"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "3256.715997781349738769",
+      "debt_units_exact": "5589977.421216945606230016",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045357417e2e73155061de4d9a70000000000000000000000000000000000000000000000b08c0379294931a911"
+      }
+    },
+    {
+      "id": 13,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa122687285dc5012141055a801045f069112e7c6",
+      "wallet_url": "https://eth.blockscout.com/address/0xa122687285dc5012141055a801045f069112e7c6",
+      "venue": "Morpho Blue",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "market_url": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "3256715997781349738769",
+      "collateral_units": 3256.71599778135,
+      "collateral_usd": 9653374.647048397,
+      "debt_symbol": "RLUSD",
+      "debt_address": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "debt_decimals": 18,
+      "debt_raw": "5589977421216945606230016",
+      "borrow_shares_raw": "5483286267199898336222790343079",
+      "debt_units": 5589977.421216945,
+      "debt_usd": 5590306.044805623,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 1.0000587879992915,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.336668+00:00",
+        "completed_at": "2026-10-03T15:00:32.071997+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4-ec340f87b4ecc1a8.json",
+        "sha256": "ec340f87b4ecc1a8a9f1e562b9bdf0375feef76bb16fd20f84c8485d7b6fcfec"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "3256.715997781349738769",
+      "debt_units_exact": "5589977.421216945606230016",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000005883ba42a5d420c7a970a8000000000000000000000000000000000000052fe12ea39335c5c0d8e889ac320000000000000000000000000000000000000000004e32ba7c80f374fed816bd00000000000000000000000000000000000004928d5dbb91230a83cbff10272d000000000000000000000000000000000000000000000000000000006abff2ff0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 14,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "wallet_url": "https://eth.blockscout.com/address/0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "venue": "Morpho Blue",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "market_url": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "2482664528104662844931",
+      "collateral_units": 2482.6645281046626,
+      "collateral_usd": 7358974.755262331,
+      "debt_symbol": "RLUSD",
+      "debt_address": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "debt_decimals": 18,
+      "debt_raw": "4290379785311541174206464",
+      "borrow_shares_raw": "4208492948214685290937233973454",
+      "debt_units": 4290379.7853115415,
+      "debt_usd": 4290632.00815532,
+      "collateral_implied_USD_per_token": 2964.1438349628265,
+      "debt_implied_USD_per_token": 1.0000587879992913,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.336668+00:00",
+        "completed_at": "2026-10-03T15:00:32.071997+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4-ec340f87b4ecc1a8.json",
+        "sha256": "ec340f87b4ecc1a8a9f1e562b9bdf0375feef76bb16fd20f84c8485d7b6fcfec"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "2482.664528104662844931",
+      "debt_units_exact": "4290379.785311541174206464",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000351e5fc65b36e0a13b43b820ce00000000000000000000000000000000000000000000008695e43a973d394603"
+      }
+    },
+    {
+      "id": 14,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "wallet_url": "https://eth.blockscout.com/address/0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "venue": "Morpho Blue",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "market_url": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "2482664528104662844931",
+      "collateral_units": 2482.6645281046626,
+      "collateral_usd": 7358974.755262331,
+      "debt_symbol": "RLUSD",
+      "debt_address": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "debt_decimals": 18,
+      "debt_raw": "4290379785311541174206464",
+      "borrow_shares_raw": "4208492948214685290937233973454",
+      "debt_units": 4290379.7853115415,
+      "debt_usd": 4290632.00815532,
+      "collateral_implied_USD_per_token": 2964.1438349628265,
+      "debt_implied_USD_per_token": 1.0000587879992913,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.336668+00:00",
+        "completed_at": "2026-10-03T15:00:32.071997+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4-ec340f87b4ecc1a8.json",
+        "sha256": "ec340f87b4ecc1a8a9f1e562b9bdf0375feef76bb16fd20f84c8485d7b6fcfec"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "2482.664528104662844931",
+      "debt_units_exact": "4290379.785311541174206464",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000005883ba42a5d420c7a970a8000000000000000000000000000000000000052fe12ea39335c5c0d8e889ac320000000000000000000000000000000000000000004e32ba7c80f374fed816bd00000000000000000000000000000000000004928d5dbb91230a83cbff10272d000000000000000000000000000000000000000000000000000000006abff2ff0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 15,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "wallet_url": "https://eth.blockscout.com/address/0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "venue": "Morpho Blue",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "market_url": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "1165514189090752836026",
+      "collateral_units": 1165.5141890907528,
+      "collateral_usd": 3454751.698155053,
+      "debt_symbol": "RLUSD",
+      "debt_address": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "debt_decimals": 18,
+      "debt_raw": "2550411462730434727641088",
+      "borrow_shares_raw": "2501733924044101833328151936657",
+      "debt_units": 2550411.4627304347,
+      "debt_usd": 2550561.3963176985,
+      "collateral_implied_USD_per_token": 2964.1438349628265,
+      "debt_implied_USD_per_token": 1.0000587879992915,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.336668+00:00",
+        "completed_at": "2026-10-03T15:00:32.071997+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4-ec340f87b4ecc1a8.json",
+        "sha256": "ec340f87b4ecc1a8a9f1e562b9bdf0375feef76bb16fd20f84c8485d7b6fcfec"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "1165.514189090752836026",
+      "debt_units_exact": "2550411.462730434727641088",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f9389ccbb770dfd5c2a7abe9100000000000000000000000000000000000000000000003f2ec233d1b7c831ba"
+      }
+    },
+    {
+      "id": 15,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "wallet_url": "https://eth.blockscout.com/address/0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "venue": "Morpho Blue",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "market_url": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "1165514189090752836026",
+      "collateral_units": 1165.5141890907528,
+      "collateral_usd": 3454751.698155053,
+      "debt_symbol": "RLUSD",
+      "debt_address": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "debt_decimals": 18,
+      "debt_raw": "2550411462730434727641088",
+      "borrow_shares_raw": "2501733924044101833328151936657",
+      "debt_units": 2550411.4627304347,
+      "debt_usd": 2550561.3963176985,
+      "collateral_implied_USD_per_token": 2964.1438349628265,
+      "debt_implied_USD_per_token": 1.0000587879992915,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.336668+00:00",
+        "completed_at": "2026-10-03T15:00:32.071997+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4-ec340f87b4ecc1a8.json",
+        "sha256": "ec340f87b4ecc1a8a9f1e562b9bdf0375feef76bb16fd20f84c8485d7b6fcfec"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "1165.514189090752836026",
+      "debt_units_exact": "2550411.462730434727641088",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000005883ba42a5d420c7a970a8000000000000000000000000000000000000052fe12ea39335c5c0d8e889ac320000000000000000000000000000000000000000004e32ba7c80f374fed816bd00000000000000000000000000000000000004928d5dbb91230a83cbff10272d000000000000000000000000000000000000000000000000000000006abff2ff0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 30,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "wallet_url": "https://eth.blockscout.com/address/0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "venue": "Morpho Blue",
+      "market_id": "0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e",
+      "market_url": "https://app.morpho.org/ethereum/market/0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "4906530156558447828320",
+      "collateral_units": 4906.530156558448,
+      "collateral_usd": 16388793.028196106,
+      "debt_symbol": "WETH",
+      "debt_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "debt_decimals": 18,
+      "debt_raw": "5598790831878946422784",
+      "borrow_shares_raw": "5288567936370432693243237097",
+      "debt_units": 5598.790831878947,
+      "debt_usd": 15022674.512368064,
+      "collateral_implied_USD_per_token": 3340.200203659113,
+      "debt_implied_USD_per_token": 2683.1998128650353,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.965,
+      "mechanism_hint": "ETH debt; potential staking loop, destination unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.337766+00:00",
+        "completed_at": "2026-10-03T15:00:31.858060+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:31 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e-28bfbd3d3294f8c7.json",
+        "sha256": "28bfbd3d3294f8c71534aa7663c5cbdc7965408e0375a51306fca2e1454fd0c0"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "4906.53015655844782832",
+      "debt_units_exact": "5598.790831878946422784",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111699d24c28f93427f452e9000000000000000000000000000000000000000000000109fbc8cd7aa0085d60"
+      }
+    },
+    {
+      "id": 30,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "wallet_url": "https://eth.blockscout.com/address/0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "venue": "Morpho Blue",
+      "market_id": "0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e",
+      "market_url": "https://app.morpho.org/ethereum/market/0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "4906530156558447828320",
+      "collateral_units": 4906.530156558448,
+      "collateral_usd": 16388793.028196106,
+      "debt_symbol": "WETH",
+      "debt_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "debt_decimals": 18,
+      "debt_raw": "5598790831878946422784",
+      "borrow_shares_raw": "5288567936370432693243237097",
+      "debt_units": 5598.790831878947,
+      "debt_usd": 15022674.512368064,
+      "collateral_implied_USD_per_token": 3340.200203659113,
+      "debt_implied_USD_per_token": 2683.1998128650353,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.965,
+      "mechanism_hint": "ETH debt; potential staking loop, destination unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.337766+00:00",
+        "completed_at": "2026-10-03T15:00:31.858060+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:31 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xb8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e-28bfbd3d3294f8c7.json",
+        "sha256": "28bfbd3d3294f8c71534aa7663c5cbdc7965408e0375a51306fca2e1454fd0c0"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "4906.53015655844782832",
+      "debt_units_exact": "5598.790831878946422784",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000006657c6a7b3e310fcc4f00000000000000000000000000000000000000005cd217adcb6fcf9fe26ebccf0000000000000000000000000000000000000000000005e831f1a25297dc86ac0000000000000000000000000000000000000000552513b352023ed9cacca661000000000000000000000000000000000000000000000000000000006ac0403f0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 46,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa122687285dc5012141055a801045f069112e7c6",
+      "wallet_url": "https://eth.blockscout.com/address/0xa122687285dc5012141055a801045f069112e7c6",
+      "venue": "Morpho Blue",
+      "market_id": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "market_url": "https://app.morpho.org/ethereum/market/0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "6630379036634013486756",
+      "collateral_units": 6630.379036634014,
+      "collateral_usd": 19653397.144905474,
+      "debt_symbol": "PYUSD",
+      "debt_address": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "debt_decimals": 6,
+      "debt_raw": "11554825982330",
+      "borrow_shares_raw": "11319597129634535224",
+      "debt_units": 11554825.98233,
+      "debt_usd": 11555307.099629818,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 1.0000416377797947,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.858452+00:00",
+        "completed_at": "2026-10-03T15:00:32.382545+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c-8cfbdcee38383bbd.json",
+        "sha256": "8cfbdcee38383bbdcec4af127ab501759c9b0e067f4bcf30614bb58d98b9663d"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "6630.379036634013486756",
+      "debt_units_exact": "11554825.98233",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009d17499d9865d7380000000000000000000000000000000000000000000001676efe4c909f13cea4"
+      }
+    },
+    {
+      "id": 46,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa122687285dc5012141055a801045f069112e7c6",
+      "wallet_url": "https://eth.blockscout.com/address/0xa122687285dc5012141055a801045f069112e7c6",
+      "venue": "Morpho Blue",
+      "market_id": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "market_url": "https://app.morpho.org/ethereum/market/0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "6630379036634013486756",
+      "collateral_units": 6630.379036634014,
+      "collateral_usd": 19653397.144905474,
+      "debt_symbol": "PYUSD",
+      "debt_address": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "debt_decimals": 6,
+      "debt_raw": "11554825982330",
+      "borrow_shares_raw": "11319597129634535224",
+      "debt_units": 11554825.98233,
+      "debt_usd": 11555307.099629818,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 1.0000416377797947,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.858452+00:00",
+        "completed_at": "2026-10-03T15:00:32.382545+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c-8cfbdcee38383bbd.json",
+        "sha256": "8cfbdcee38383bbdcec4af127ab501759c9b0e067f4bcf30614bb58d98b9663d"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "6630.379036634013486756",
+      "debt_units_exact": "11554825.98233",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000001d739393eb7b000000000000000000000000000000000000000000000001b94cd39d7a159d5a00000000000000000000000000000000000000000000000000001aa08231d00a0000000000000000000000000000000000000000000000018e10c20d6e2f7086000000000000000000000000000000000000000000000000000000006ac031c30000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 47,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "wallet_url": "https://eth.blockscout.com/address/0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "venue": "Morpho Blue",
+      "market_id": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "market_url": "https://app.morpho.org/ethereum/market/0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "6374054959329678298995",
+      "collateral_units": 6374.054959329678,
+      "collateral_usd": 18893615.711411294,
+      "debt_symbol": "PYUSD",
+      "debt_address": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "debt_decimals": 6,
+      "debt_raw": "11280294210812",
+      "borrow_shares_raw": "11050654173884097003",
+      "debt_units": 11280294.210812,
+      "debt_usd": 11280763.89721837,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 1.0000416377797947,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.858452+00:00",
+        "completed_at": "2026-10-03T15:00:32.382545+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c-8cfbdcee38383bbd.json",
+        "sha256": "8cfbdcee38383bbdcec4af127ab501759c9b0e067f4bcf30614bb58d98b9663d"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "6374.054959329678298995",
+      "debt_units_exact": "11280294.210812",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000995bcf6c1a0ca1eb00000000000000000000000000000000000000000000015989c83e51de698f73"
+      }
+    },
+    {
+      "id": 47,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "wallet_url": "https://eth.blockscout.com/address/0xa56da9bb528fedf8379b02e95fbbdad34d45846f",
+      "venue": "Morpho Blue",
+      "market_id": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "market_url": "https://app.morpho.org/ethereum/market/0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "6374054959329678298995",
+      "collateral_units": 6374.054959329678,
+      "collateral_usd": 18893615.711411294,
+      "debt_symbol": "PYUSD",
+      "debt_address": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "debt_decimals": 6,
+      "debt_raw": "11280294210812",
+      "borrow_shares_raw": "11050654173884097003",
+      "debt_units": 11280294.210812,
+      "debt_usd": 11280763.89721837,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 1.0000416377797947,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.858452+00:00",
+        "completed_at": "2026-10-03T15:00:32.382545+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c-8cfbdcee38383bbd.json",
+        "sha256": "8cfbdcee38383bbdcec4af127ab501759c9b0e067f4bcf30614bb58d98b9663d"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "6374.054959329678298995",
+      "debt_units_exact": "11280294.210812",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000001d739393eb7b000000000000000000000000000000000000000000000001b94cd39d7a159d5a00000000000000000000000000000000000000000000000000001aa08231d00a0000000000000000000000000000000000000000000000018e10c20d6e2f7086000000000000000000000000000000000000000000000000000000006ac031c30000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 49,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "wallet_url": "https://eth.blockscout.com/address/0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "venue": "Morpho Blue",
+      "market_id": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "market_url": "https://app.morpho.org/ethereum/market/0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "1029928815851741562638",
+      "collateral_units": 1029.9288158517415,
+      "collateral_usd": 3052857.1499575037,
+      "debt_symbol": "PYUSD",
+      "debt_address": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "debt_decimals": 6,
+      "debt_raw": "2248097883498",
+      "borrow_shares_raw": "2202331942349886013",
+      "debt_units": 2248097.883498,
+      "debt_usd": 2248191.48930263,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 1.0000416377797947,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.858452+00:00",
+        "completed_at": "2026-10-03T15:00:32.382545+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c-8cfbdcee38383bbd.json",
+        "sha256": "8cfbdcee38383bbdcec4af127ab501759c9b0e067f4bcf30614bb58d98b9663d"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "1029.928815851741562638",
+      "debt_units_exact": "2248097.883498",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e90413bad42d23d000000000000000000000000000000000000000000000037d52231386dc2c70e"
+      }
+    },
+    {
+      "id": 49,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "wallet_url": "https://eth.blockscout.com/address/0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "venue": "Morpho Blue",
+      "market_id": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "market_url": "https://app.morpho.org/ethereum/market/0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "1029928815851741562638",
+      "collateral_units": 1029.9288158517415,
+      "collateral_usd": 3052857.1499575037,
+      "debt_symbol": "PYUSD",
+      "debt_address": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "debt_decimals": 6,
+      "debt_raw": "2248097883498",
+      "borrow_shares_raw": "2202331942349886013",
+      "debt_units": 2248097.883498,
+      "debt_usd": 2248191.48930263,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 1.0000416377797947,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:31.858452+00:00",
+        "completed_at": "2026-10-03T15:00:32.382545+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:32 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c-8cfbdcee38383bbd.json",
+        "sha256": "8cfbdcee38383bbdcec4af127ab501759c9b0e067f4bcf30614bb58d98b9663d"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "1029.928815851741562638",
+      "debt_units_exact": "2248097.883498",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000001d739393eb7b000000000000000000000000000000000000000000000001b94cd39d7a159d5a00000000000000000000000000000000000000000000000000001aa08231d00a0000000000000000000000000000000000000000000000018e10c20d6e2f7086000000000000000000000000000000000000000000000000000000006ac031c30000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 56,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x20f6c325df578a11209817a30ebb2f0d5454176d",
+      "wallet_url": "https://eth.blockscout.com/address/0x20f6c325df578a11209817a30ebb2f0d5454176d",
+      "venue": "Morpho Blue",
+      "market_id": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+      "market_url": "https://app.morpho.org/ethereum/market/0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "5762687114087577500150",
+      "collateral_units": 5762.687114087577,
+      "collateral_usd": 19248528.67209907,
+      "debt_symbol": "USDC",
+      "debt_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "debt_decimals": 6,
+      "debt_raw": "5518848766322",
+      "borrow_shares_raw": "4723657302629427718",
+      "debt_units": 5518848.766322,
+      "debt_usd": 5518716.781785209,
+      "collateral_implied_USD_per_token": 3340.2002036591125,
+      "debt_implied_USD_per_token": 0.9999760847701432,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:32.072418+00:00",
+        "completed_at": "2026-10-03T15:00:35.004473+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:34 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc-5536457c7c0384e8.json",
+        "sha256": "5536457c7c0384e892be191ad6eb54ec15edb79d23abe4526759cd20ae08d4bd"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "5762.68711408757750015",
+      "debt_units_exact": "5518848.766322",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000418dcd4a2be82a060000000000000000000000000000000000000000000001386559563cdf0139f6"
+      }
+    },
+    {
+      "id": 56,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x20f6c325df578a11209817a30ebb2f0d5454176d",
+      "wallet_url": "https://eth.blockscout.com/address/0x20f6c325df578a11209817a30ebb2f0d5454176d",
+      "venue": "Morpho Blue",
+      "market_id": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+      "market_url": "https://app.morpho.org/ethereum/market/0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "5762687114087577500150",
+      "collateral_units": 5762.687114087577,
+      "collateral_usd": 19248528.67209907,
+      "debt_symbol": "USDC",
+      "debt_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "debt_decimals": 6,
+      "debt_raw": "5518848766322",
+      "borrow_shares_raw": "4723657302629427718",
+      "debt_units": 5518848.766322,
+      "debt_usd": 5518716.781785209,
+      "collateral_implied_USD_per_token": 3340.2002036591125,
+      "debt_implied_USD_per_token": 0.9999760847701432,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:32.072418+00:00",
+        "completed_at": "2026-10-03T15:00:35.004473+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:34 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc-5536457c7c0384e8.json",
+        "sha256": "5536457c7c0384e892be191ad6eb54ec15edb79d23abe4526759cd20ae08d4bd"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "5762.68711408757750015",
+      "debt_units_exact": "5518848.766322",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000001d50e865ac68000000000000000000000000000000000000000000000001866557ce37d0673e00000000000000000000000000000000000000000000000000001a6efe875d7700000000000000000000000000000000000000000000000159418b4b4fbc7e4d000000000000000000000000000000000000000000000000000000006ac043330000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 66,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "wallet_url": "https://eth.blockscout.com/address/0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "venue": "Morpho Blue",
+      "market_id": "0xd0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d",
+      "market_url": "https://app.morpho.org/ethereum/market/0xd0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "8035122056459849164629",
+      "collateral_units": 8035.122056459849,
+      "collateral_usd": 26838916.32941301,
+      "debt_symbol": "WETH",
+      "debt_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "debt_decimals": 18,
+      "debt_raw": "8982919357078124363776",
+      "borrow_shares_raw": "8527051836780614146773188823",
+      "debt_units": 8982.919357078124,
+      "debt_usd": 24102967.537893727,
+      "collateral_implied_USD_per_token": 3340.200203659112,
+      "debt_implied_USD_per_token": 2683.1998128650353,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.945,
+      "mechanism_hint": "ETH debt; potential staking loop, destination unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:32.382897+00:00",
+        "completed_at": "2026-10-03T15:00:33.542741+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:33 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xd0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d-88281d8965cecd1b.json",
+        "sha256": "88281d8965cecd1b7a386c29c11f0090d750c6513e6610594bf6b1c3bc085ed1"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "8035.122056459849164629",
+      "debt_units_exact": "8982.919357078124363776",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b8d697651136c9de87f80d70000000000000000000000000000000000000000000001b395b80a72f385e755"
+      }
+    },
+    {
+      "id": 66,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "wallet_url": "https://eth.blockscout.com/address/0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "venue": "Morpho Blue",
+      "market_id": "0xd0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d",
+      "market_url": "https://app.morpho.org/ethereum/market/0xd0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "8035122056459849164629",
+      "collateral_units": 8035.122056459849,
+      "collateral_usd": 26838916.32941301,
+      "debt_symbol": "WETH",
+      "debt_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "debt_decimals": 18,
+      "debt_raw": "8982919357078124363776",
+      "borrow_shares_raw": "8527051836780614146773188823",
+      "debt_units": 8982.919357078124,
+      "debt_usd": 24102967.537893727,
+      "collateral_implied_USD_per_token": 3340.200203659112,
+      "debt_implied_USD_per_token": 2683.1998128650353,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.945,
+      "mechanism_hint": "ETH debt; potential staking loop, destination unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:32.382897+00:00",
+        "completed_at": "2026-10-03T15:00:33.542741+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:33 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xd0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d-88281d8965cecd1b.json",
+        "sha256": "88281d8965cecd1b7a386c29c11f0090d750c6513e6610594bf6b1c3bc085ed1"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "8035.122056459849164629",
+      "debt_units_exact": "8982.919357078124363776",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000264d9d7e1cf5567084f000000000000000000000000000000000000000022e6dccd41d9c6b36fc8177c00000000000000000000000000000000000000000000023464ff2db6d54d684c00000000000000000000000000000000000000001fef8c0ca81613f3dd83d6a1000000000000000000000000000000000000000000000000000000006abff6530000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 78,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "wallet_url": "https://eth.blockscout.com/address/0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "venue": "Morpho Blue",
+      "market_id": "0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7",
+      "market_url": "https://app.morpho.org/ethereum/market/0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "549512876328256121946",
+      "collateral_units": 549.5128763282561,
+      "collateral_usd": 1628835.2046010906,
+      "debt_symbol": "WETH",
+      "debt_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "debt_decimals": 18,
+      "debt_raw": "543955643005222518784",
+      "borrow_shares_raw": "518231560747109748993997654",
+      "debt_units": 543.9556430052226,
+      "debt_usd": 1459541.679518493,
+      "collateral_implied_USD_per_token": 2964.143834962827,
+      "debt_implied_USD_per_token": 2683.199812865035,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.945,
+      "mechanism_hint": "ETH debt; potential staking loop, destination unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:32.589647+00:00",
+        "completed_at": "2026-10-03T15:00:35.004239+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:34 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7-1bdb33639e3edc2d.json",
+        "sha256": "1bdb33639e3edc2deb6503806d05dccf335b0b5fa1224ebb75f8e08ee2fb3d29"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "549.512876328256121946",
+      "debt_units_exact": "543.955643005222518784",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001acabcd335c63b99024bb5600000000000000000000000000000000000000000000001dca05e99398ddac5a"
+      }
+    },
+    {
+      "id": 78,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "wallet_url": "https://eth.blockscout.com/address/0x462a336dcac6eaf544106266914caa5a18b831d0",
+      "venue": "Morpho Blue",
+      "market_id": "0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7",
+      "market_url": "https://app.morpho.org/ethereum/market/0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "549512876328256121946",
+      "collateral_units": 549.5128763282561,
+      "collateral_usd": 1628835.2046010906,
+      "debt_symbol": "WETH",
+      "debt_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "debt_decimals": 18,
+      "debt_raw": "543955643005222518784",
+      "borrow_shares_raw": "518231560747109748993997654",
+      "debt_units": 543.9556430052226,
+      "debt_usd": 1459541.679518493,
+      "collateral_implied_USD_per_token": 2964.143834962827,
+      "debt_implied_USD_per_token": 2683.199812865035,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.945,
+      "mechanism_hint": "ETH debt; potential staking loop, destination unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:32.589647+00:00",
+        "completed_at": "2026-10-03T15:00:35.004239+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:34 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7-1bdb33639e3edc2d.json",
+        "sha256": "1bdb33639e3edc2deb6503806d05dccf335b0b5fa1224ebb75f8e08ee2fb3d29"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "549.512876328256121946",
+      "debt_units_exact": "543.955643005222518784",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000138a4a578714f5da8ae000000000000000000000000000000000000000011dc40a0fb691e43cafa6d13000000000000000000000000000000000000000000000122846d718824971f910000000000000000000000000000000000000000107faf037d48b649c3164b0d000000000000000000000000000000000000000000000000000000006ac038e30000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 96,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x90882e7c28ddf0ac1177033a310aeed8eff25e90",
+      "wallet_url": "https://eth.blockscout.com/address/0x90882e7c28ddf0ac1177033a310aeed8eff25e90",
+      "venue": "Morpho Blue",
+      "market_id": "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+      "market_url": "https://app.morpho.org/ethereum/market/0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "2381093995941243502217",
+      "collateral_units": 2381.0939959412435,
+      "collateral_usd": 7953330.6501744315,
+      "debt_symbol": "USDC",
+      "debt_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "debt_decimals": 6,
+      "debt_raw": "5612249287585",
+      "borrow_shares_raw": "5499593766347201771",
+      "debt_units": 5612249.287585,
+      "debt_usd": 5612115.069353275,
+      "collateral_implied_USD_per_token": 3340.2002036591125,
+      "debt_implied_USD_per_token": 0.9999760847701435,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:33.543096+00:00",
+        "completed_at": "2026-10-03T15:00:37.635622+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:37 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8-7fbe206e60b879ea.json",
+        "sha256": "7fbe206e60b879eab2a784eabdd8e83f5cff979ec5d0d63feefc3741e56319fe"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "2381.093995941243502217",
+      "debt_units_exact": "5612249.287585",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004c527b647413dceb000000000000000000000000000000000000000000000081145135bb5d39be89"
+      }
+    },
+    {
+      "id": 96,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x90882e7c28ddf0ac1177033a310aeed8eff25e90",
+      "wallet_url": "https://eth.blockscout.com/address/0x90882e7c28ddf0ac1177033a310aeed8eff25e90",
+      "venue": "Morpho Blue",
+      "market_id": "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+      "market_url": "https://app.morpho.org/ethereum/market/0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+      "collateral_symbol": "wstETH",
+      "collateral_address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "collateral_decimals": 18,
+      "collateral_raw": "2381093995941243502217",
+      "collateral_units": 2381.0939959412435,
+      "collateral_usd": 7953330.6501744315,
+      "debt_symbol": "USDC",
+      "debt_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "debt_decimals": 6,
+      "debt_raw": "5612249287585",
+      "borrow_shares_raw": "5499593766347201771",
+      "debt_units": 5612249.287585,
+      "debt_usd": 5612115.069353275,
+      "collateral_implied_USD_per_token": 3340.2002036591125,
+      "debt_implied_USD_per_token": 0.9999760847701435,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:33.543096+00:00",
+        "completed_at": "2026-10-03T15:00:37.635622+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:37 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8-7fbe206e60b879ea.json",
+        "sha256": "7fbe206e60b879eab2a784eabdd8e83f5cff979ec5d0d63feefc3741e56319fe"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "2381.093995941243502217",
+      "debt_units_exact": "5612249.287585",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000b783659ba68000000000000000000000000000000000000000000000000abe40c573e48902500000000000000000000000000000000000000000000000000000a53008fcfa70000000000000000000000000000000000000000000000009a62b7334462cd02000000000000000000000000000000000000000000000000000000006ac040ab0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 106,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa122687285dc5012141055a801045f069112e7c6",
+      "wallet_url": "https://eth.blockscout.com/address/0xa122687285dc5012141055a801045f069112e7c6",
+      "venue": "Morpho Blue",
+      "market_id": "0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e",
+      "market_url": "https://app.morpho.org/ethereum/market/0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e",
+      "collateral_symbol": "OETH",
+      "collateral_address": "0x856c4efb76c1d1ae02e20ceb03a2a6a08b0b8dc3",
+      "collateral_decimals": 18,
+      "collateral_raw": "4948637845046144317148",
+      "collateral_units": 4948.637845046144,
+      "collateral_usd": 13279192.59935819,
+      "debt_symbol": "USDC",
+      "debt_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "debt_decimals": 6,
+      "debt_raw": "6387140941074",
+      "borrow_shares_raw": "6090499603936801111",
+      "debt_units": 6387140.941074,
+      "debt_usd": 6386988.191130267,
+      "collateral_implied_USD_per_token": 2683.4035981540624,
+      "debt_implied_USD_per_token": 0.9999760847701434,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:34.180461+00:00",
+        "completed_at": "2026-10-03T15:00:35.775442+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:35 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e-a470cbace155413a.json",
+        "sha256": "a470cbace155413a745443eb95ef73489bdf19e4cffc938a8c52c9eaddddde15"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "4948.637845046144317148",
+      "debt_units_exact": "6387140.941074",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005485cd1ef54f715700000000000000000000000000000000000000000000010c44255d0ffdfcb6dc"
+      }
+    },
+    {
+      "id": 106,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xa122687285dc5012141055a801045f069112e7c6",
+      "wallet_url": "https://eth.blockscout.com/address/0xa122687285dc5012141055a801045f069112e7c6",
+      "venue": "Morpho Blue",
+      "market_id": "0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e",
+      "market_url": "https://app.morpho.org/ethereum/market/0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e",
+      "collateral_symbol": "OETH",
+      "collateral_address": "0x856c4efb76c1d1ae02e20ceb03a2a6a08b0b8dc3",
+      "collateral_decimals": 18,
+      "collateral_raw": "4948637845046144317148",
+      "collateral_units": 4948.637845046144,
+      "collateral_usd": 13279192.59935819,
+      "debt_symbol": "USDC",
+      "debt_address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "debt_decimals": 6,
+      "debt_raw": "6387140941074",
+      "borrow_shares_raw": "6090499603936801111",
+      "debt_units": 6387140.941074,
+      "debt_usd": 6386988.191130267,
+      "collateral_implied_USD_per_token": 2683.4035981540624,
+      "debt_implied_USD_per_token": 0.9999760847701434,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:34.180461+00:00",
+        "completed_at": "2026-10-03T15:00:35.775442+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:35 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e-a470cbace155413a.json",
+        "sha256": "a470cbace155413a745443eb95ef73489bdf19e4cffc938a8c52c9eaddddde15"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "4948.637845046144317148",
+      "debt_units_exact": "6387140.941074",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000098f0fb45fa30000000000000000000000000000000000000000000000008bc9cd5cd8740d9f0000000000000000000000000000000000000000000000000000089f8edfea020000000000000000000000000000000000000000000000007d7d185ad3f362cb000000000000000000000000000000000000000000000000000000006ac020a70000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 146,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "wallet_url": "https://eth.blockscout.com/address/0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "venue": "Morpho Blue",
+      "market_id": "0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292",
+      "market_url": "https://app.morpho.org/ethereum/market/0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "1869042368406113014917",
+      "collateral_units": 1869.042368406113,
+      "collateral_usd": 5540110.4135953,
+      "debt_symbol": "USDT",
+      "debt_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "debt_decimals": 6,
+      "debt_raw": "3206155986422",
+      "borrow_shares_raw": "3183310254978936970",
+      "debt_units": 3206155.986422,
+      "debt_usd": 3205850.14522165,
+      "collateral_implied_USD_per_token": 2964.143834962827,
+      "debt_implied_USD_per_token": 0.999904608134587,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:35.532713+00:00",
+        "completed_at": "2026-10-03T15:00:36.095695+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:36 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292-a511735b57009c47.json",
+        "sha256": "a511735b57009c47c0c2b86ddf97696f70fd242cff3089f3b2b6189dbaa83e28"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "1869.042368406113014917",
+      "debt_units_exact": "3206155.986422",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002c2d63cf9de0b08a000000000000000000000000000000000000000000000065522c63745924d485"
+      }
+    },
+    {
+      "id": 146,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "wallet_url": "https://eth.blockscout.com/address/0x4f87de7d21aef48090958f7342e1f69dff790545",
+      "venue": "Morpho Blue",
+      "market_id": "0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292",
+      "market_url": "https://app.morpho.org/ethereum/market/0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "1869042368406113014917",
+      "collateral_units": 1869.042368406113,
+      "collateral_usd": 5540110.4135953,
+      "debt_symbol": "USDT",
+      "debt_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "debt_decimals": 6,
+      "debt_raw": "3206155986422",
+      "borrow_shares_raw": "3183310254978936970",
+      "debt_units": 3206155.986422,
+      "debt_usd": 3205850.14522165,
+      "collateral_implied_USD_per_token": 2964.143834962827,
+      "debt_implied_USD_per_token": 0.999904608134587,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:35.532713+00:00",
+        "completed_at": "2026-10-03T15:00:36.095695+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:36 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292-a511735b57009c47.json",
+        "sha256": "a511735b57009c47c0c2b86ddf97696f70fd242cff3089f3b2b6189dbaa83e28"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "1869.042368406113014917",
+      "debt_units_exact": "3206155.986422",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000051e61798e910000000000000000000000000000000000000000000000004da0e41f112b9889000000000000000000000000000000000000000000000000000003e78ee2fd4a0000000000000000000000000000000000000000000000003b286bb9b073e044000000000000000000000000000000000000000000000000000000006ac00e0b0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "id": 187,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "wallet_url": "https://eth.blockscout.com/address/0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "venue": "Morpho Blue",
+      "market_id": "0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6",
+      "market_url": "https://app.morpho.org/ethereum/market/0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "365000000000000000000",
+      "collateral_units": 365.0,
+      "collateral_usd": 1081912.4997614315,
+      "debt_symbol": "USDT",
+      "debt_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "debt_decimals": 6,
+      "debt_raw": "800549499915",
+      "borrow_shares_raw": "775168366630292404",
+      "debt_units": 800549.499915,
+      "debt_usd": 800473.1340048476,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 0.9999046081345869,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:36.642260+00:00",
+        "completed_at": "2026-10-03T15:00:37.101383+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:36 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6-15e3070da2f2be13.json",
+        "sha256": "15e3070da2f2be136ace24514bc740fe0feab50f3506977f9527bb985b43aac4"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "365",
+      "debt_units_exact": "800549.499915",
+      "signature": "position(bytes32,address)",
+      "fixed_T_response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ac1f385be1e4bb4000000000000000000000000000000000000000000000013c9647e25a9940000"
+      }
+    },
+    {
+      "id": 187,
+      "chain_id": 1,
+      "chain": "Ethereum",
+      "address": "0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "wallet_url": "https://eth.blockscout.com/address/0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5",
+      "venue": "Morpho Blue",
+      "market_id": "0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6",
+      "market_url": "https://app.morpho.org/ethereum/market/0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6",
+      "collateral_symbol": "weETH",
+      "collateral_address": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "collateral_decimals": 18,
+      "collateral_raw": "365000000000000000000",
+      "collateral_units": 365.0,
+      "collateral_usd": 1081912.4997614315,
+      "debt_symbol": "USDT",
+      "debt_address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "debt_decimals": 6,
+      "debt_raw": "800549499915",
+      "borrow_shares_raw": "775168366630292404",
+      "debt_units": 800549.499915,
+      "debt_usd": 800473.1340048476,
+      "collateral_implied_USD_per_token": 2964.143834962826,
+      "debt_implied_USD_per_token": 0.9999046081345869,
+      "quote_scope": "Implied from API position USD fields and native quantities in this request, not an independent oracle or fixed-block T price.",
+      "lltv": 0.86,
+      "mechanism_hint": "Dollar debt against ETH-family collateral; reinvestment purpose unverified",
+      "carry_mechanism_verified": false,
+      "target_snapshot_verified": false,
+      "source": {
+        "retrieved_at": "2026-10-03T15:00:36.642260+00:00",
+        "completed_at": "2026-10-03T15:00:37.101383+00:00",
+        "source_date": "Sat, 03 Oct 2026 15:00:36 GMT",
+        "url": "https://api.morpho.org/graphql",
+        "path": "raw/eth/2026-10-02/morpho_borrowers_0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6-15e3070da2f2be13.json",
+        "sha256": "15e3070da2f2be136ace24514bc740fe0feab50f3506977f9527bb985b43aac4"
+      },
+      "who": "Unknown owner",
+      "evidence": "Only the sampled chain/address, collateral and debt are established. Funding destination, outside depositors and strategy purpose have not been verified.",
+      "identity_artifact": null,
+      "economic_group": null,
+      "identity_verified": false,
+      "collateral_units_exact": "365",
+      "debt_units_exact": "800549.499915",
+      "signature": "market(bytes32)",
+      "fixed_T_response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000022f5f131040000000000000000000000000000000000000000000000000206b46ecc6e96442000000000000000000000000000000000000000000000000000001b5893ddb4f0000000000000000000000000000000000000000000000001941104fa51c948f000000000000000000000000000000000000000000000000000000006ac015130000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "key": "unknown_morpho_T_0_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062e7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d20000000000000000000000001778767436111ec0adb10f9ba4f51a329d0e7770"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39ae7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062ea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd40000000000000000000000004f87de7d21aef48090958f7342e1f69dff790545"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:06.312018+00:00",
+      "http_status": 200,
+      "sha256": "b25dbd94ebe7969b554fa918e66fce83813ac69aa6b2b8676859960fd8fd60bc",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_0_provider0-b25dbd94ebe7969b.json",
+      "bytes": 886,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_3_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39aea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062ea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4000000000000000000000000a122687285dc5012141055a801045f069112e7c6"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39aea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:06.825384+00:00",
+      "http_status": 200,
+      "sha256": "6f1391272b56d2a667e182a3dc43af6fe9887879ed28ff3e6f08bfd7ef1caa7c",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_3_provider0-6f1391272b56d2a6.json",
+      "bytes": 1078,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_6_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062ea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4000000000000000000000000a56da9bb528fedf8379b02e95fbbdad34d45846f"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39aea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062ea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4000000000000000000000000aa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:07.240937+00:00",
+      "http_status": 200,
+      "sha256": "f4d7fbb8e2cbc09f4a3fc2a333f61fe678f28a856540d24437f270285e2e9342",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_6_provider0-f4d7fbb8e2cbc09f.json",
+      "bytes": 886,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_9_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39aea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062b8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e000000000000000000000000462a336dcac6eaf544106266914caa5a18b831d0"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39ab8fc70e82bc5bb53e773626fcc6a23f7eefa036918d7ef216ecfb1950a94a85e"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:07.642491+00:00",
+      "http_status": 200,
+      "sha256": "27738eff3c0413f352f4e908fd81924d990f9876a284845b1c008ef2c37ab621",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_9_provider0-27738eff3c0413f3.json",
+      "bytes": 1078,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_12_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c5206285d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c000000000000000000000000a122687285dc5012141055a801045f069112e7c6"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39a85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c5206285d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c000000000000000000000000a56da9bb528fedf8379b02e95fbbdad34d45846f"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:08.073685+00:00",
+      "http_status": 200,
+      "sha256": "725a9200c6997a6cc8af2cd54dfb11e31ab3f08f2c609f1a0ce92b640ca42a99",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_12_provider0-725a9200c6997a6c.json",
+      "bytes": 886,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_15_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39a85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c5206285d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c000000000000000000000000aa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39a85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:08.491560+00:00",
+      "http_status": 200,
+      "sha256": "121eabd01e0133e32103fce8079d5e7a04aaa830a2ef2af32b0c6793e98a2b5d",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_15_provider0-121eabd01e0133e3.json",
+      "bytes": 1078,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_18_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062b323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc00000000000000000000000020f6c325df578a11209817a30ebb2f0d5454176d"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39ab323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062d0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d000000000000000000000000462a336dcac6eaf544106266914caa5a18b831d0"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:08.965787+00:00",
+      "http_status": 200,
+      "sha256": "a3b46a4d1018fc270c74669d3899448ca2da3bed45aaf58b49b4f7646e44465d",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_18_provider0-a3b46a4d1018fc27.json",
+      "bytes": 886,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_21_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39ad0e50cdac92fe2172043f5e0c36532c6369d24947e40968f34a5e8819ca9ec5d"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c5206237e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7000000000000000000000000462a336dcac6eaf544106266914caa5a18b831d0"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39a37e7484d642d90f14451f1910ba4b7b8e4c3ccdd0ec28f8b2bdb35479e472ba7"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:09.529416+00:00",
+      "http_status": 200,
+      "sha256": "aa0d1919ca7cab8261b8c6141435c4283227c2760752507e58430c79de5c2f62",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_21_provider0-aa0d1919ca7cab82.json",
+      "bytes": 1078,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_24_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c520627e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b800000000000000000000000090882e7c28ddf0ac1177033a310aeed8eff25e90"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39a7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062b8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e000000000000000000000000a122687285dc5012141055a801045f069112e7c6"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:10.050400+00:00",
+      "http_status": 200,
+      "sha256": "497bc07e84a717d3310c63358f9ca2ff52b01014b3ae4b05815c1044d29501ad",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_24_provider0-497bc07e84a717d3.json",
+      "bytes": 886,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_27_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39ab8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062a6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff12920000000000000000000000004f87de7d21aef48090958f7342e1f69dff790545"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 3,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39aa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:10.552554+00:00",
+      "http_status": 200,
+      "sha256": "21c26a61fb02b4ba90474380561ca5e458c4be7aa8c0fd4b286f49837aa74279",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_27_provider0-21c26a61fb02b4ba.json",
+      "bytes": 1078,
+      "error": null
+    },
+    {
+      "key": "unknown_morpho_T_30_provider0",
+      "url": "https://eth.drpc.org",
+      "request": [
+        {
+          "jsonrpc": "2.0",
+          "id": 1,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x93c52062c2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6000000000000000000000000aa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5"
+            },
+            "0x18e60b1"
+          ]
+        },
+        {
+          "jsonrpc": "2.0",
+          "id": 2,
+          "method": "eth_call",
+          "params": [
+            {
+              "to": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+              "data": "0x5c60e39ac2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6"
+            },
+            "0x18e60b1"
+          ]
+        }
+      ],
+      "method": "POST",
+      "captured_at_UTC": "2026-10-04T20:24:11.106160+00:00",
+      "http_status": 200,
+      "sha256": "17a63b14de593d0687396cce4a14e1e707b2de0c1211c17365710485141b6747",
+      "path": "raw/eth/credit-expansion-2026-10-04/unknown_morpho_T_30_provider0-17a63b14de593d06.json",
+      "bytes": 655,
+      "error": null
+    }
+  ]
+}

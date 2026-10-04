@@ -1,0 +1,310 @@
+{
+  "financialTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "yearn_spark_looper_POOL()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "POOL()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x7535d246",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x000000000000000000000000c13e21b648a5ee794902342038ff3adab66be987"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_collateralToken()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "collateralToken()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0xb2016bd4",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000007f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_A_TOKEN()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "A_TOKEN()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x9ef0159f",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x00000000000000000000000012b54025c112aa61face2cdb7118740875a566e9"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_VARIABLE_DEBT_TOKEN()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "VARIABLE_DEBT_TOKEN()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x179474b5",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x0000000000000000000000002e7576042566f8d6990e07a1b61ad1efd86ae70d"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_balanceOfAsset()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "balanceOfAsset()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x797bf343",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_balanceOfCollateral()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "balanceOfCollateral()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x6687500e",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x0000000000000000000000000000000000000000000001679cea6ae780b7bd2f"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_balanceOfCollateralToken()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "balanceOfCollateralToken()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x7baf6f77",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_balanceOfDebt()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "balanceOfDebt()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x392f7a70",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x000000000000000000000000000000000000000000000187b5dad73510984496"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_getCurrentLTV()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "getCurrentLTV()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0xe8621149",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 9,
+        "result": "0x0000000000000000000000000000000000000000000000000c2347c3defe923b"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_getCurrentLeverageRatio()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "getCurrentLeverageRatio()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0xc31443bb",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 10,
+        "result": "0x0000000000000000000000000000000000000000000000006eaff1bcb24f2400"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_targetLeverageRatio()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "targetLeverageRatio()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x0ea44a56",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000000000006f05b59d3b200000"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_maxLeverageRatio()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "maxLeverageRatio()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x5ef76292",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x00000000000000000000000000000000000000000000000075f610f70ed20000"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_estimatedTotalAssets()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "estimatedTotalAssets()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0xefbb5cb0",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x0000000000000000000000000000000000000000000000381b84692709f6d29c"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_lastTend()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "lastTend()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x2cd68034",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x000000000000000000000000000000000000000000000000000000006a6394f3"
+      }
+    },
+    {
+      "label": "yearn_spark_looper_slippage()",
+      "address": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+      "signature": "slippage()",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x68a14629cb07c74259f481382fe8b6cfd8970121",
+          "data": "0x3e032a3b",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000002"
+      }
+    },
+    {
+      "label": "yearn_spark_account",
+      "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "signature": "getUserAccountData(address)",
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "data": "0xbf92857c00000000000000000000000068a14629cb07c74259f481382fe8b6cfd8970121",
+          "gas": "0x1c9c380"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x0000000000000000000000000000000000000000000000000007d41143840b430000000000000000000000000000000000000000000000000006d8cd0057ac2600000000000000000000000000000000000000000000000000005af0f617916a000000000000000000000000000000000000000000000000000000000000245400000000000000000000000000000000000000000000000000000000000023f00000000000000000000000000000000000000000000000000ec1a91888f29216"
+      }
+    }
+  ]
+}

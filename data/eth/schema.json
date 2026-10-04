@@ -1,0 +1,17 @@
+{
+ "version":1,
+ "unknown_numeric":null,
+ "units":{"token_balance":"raw integer string plus decimals","eth_value":"ETH","usd_value":"USD","rate":"decimal fraction per year","allocation":"decimal fraction","timestamp":"Unix seconds UTC","block":"integer within chain_id"},
+ "identity_keys":{"asset":["chain_id","address"],"product":["product_id","version"],"position":["chain_id","owner","market_or_contract","asset","block"],"claim":["owner","issuer","instrument","timestamp"]},
+ "datasets":{
+  "registry":{"required":["product_id","name","chain_ids","status","deposit_asset","nav_asset","redemption_asset","source_url"],"optional":["funded_start","funded_end","protocol","issuer","curator","eth_delta","version"]},
+  "asset":{"required":["chain_id","address","symbol","decimals","type","identity_status"],"optional":["canonical_id","backing_asset","backing_chain","conversion_method","market_price_method","bridge_type"]},
+  "position":{"required":["product_id","chain_id","block","owner","contract","asset","raw_balance","decimals","source"],"optional":["eth_units","book_usd","market_usd","exit_usd","strategy","liability","confidence"]},
+  "debt":{"required":["borrower","chain_id","market","block","currency","raw_amount","decimals"],"optional":["accrual_timestamp","apr","oracle","ltv","liquidation_threshold","emode","health_factor","available_liquidity"]},
+  "claim":{"required":["source_node","target_node","kind","timestamp","evidence"],"optional":["amount","unit","ownership_share","control_address","uncertainty","adjustment"]},
+  "return":{"required":["product_id","window_start","window_end","denomination","method","source"],"optional":["cumulative","apr","apy","net_of_fees","external_rewards","benchmark","mtm_adjustment"]},
+  "evidence":{"required":["claim_id","statement","source_url","retrieved_at","source_sha256","status"],"optional":["timestamp","chain_id","block","script","caveat"]}
+ },
+ "statuses":["fixed_block_verified","dated_api_observation","current_discovery","model_assumption","unknown"],
+ "rules":["current discovery cannot silently replace fixed-block data","null differs from zero","report full product NAV separately from allocated strategy equity","nested claims and backing cannot both enter an additive total","reported full-pool TVL includes every asset in a mixed pool"]
+}

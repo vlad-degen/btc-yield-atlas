@@ -1,0 +1,1165 @@
+{
+  "start_timestamp": 1727913599,
+  "end_timestamp": 1790985599,
+  "basis": "published book PPS or issuer conversion rate, ETH denominated; no external rewards, execution, market depeg or redemption costs",
+  "series": {
+    "Liquid ETH": [
+      {
+        "timestamp": 1727913599,
+        "UTC": "2024-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0358643436537465,
+        "normalized_ETH_book_wealth": 100.0
+      },
+      {
+        "timestamp": 1730419199,
+        "UTC": "2024-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0382321796820044,
+        "normalized_ETH_book_wealth": 100.22858553272584
+      },
+      {
+        "timestamp": 1733011199,
+        "UTC": "2024-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0411304491394298,
+        "normalized_ETH_book_wealth": 100.50837790855012
+      },
+      {
+        "timestamp": 1735689599,
+        "UTC": "2024-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0435447827627982,
+        "normalized_ETH_book_wealth": 100.74145221390293
+      },
+      {
+        "timestamp": 1738367999,
+        "UTC": "2025-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0459965753348353,
+        "normalized_ETH_book_wealth": 100.97814272140596
+      },
+      {
+        "timestamp": 1740787199,
+        "UTC": "2025-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0480161788683624,
+        "normalized_ETH_book_wealth": 101.17311067699787
+      },
+      {
+        "timestamp": 1743465599,
+        "UTC": "2025-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.049318466733798,
+        "normalized_ETH_book_wealth": 101.2988306009835
+      },
+      {
+        "timestamp": 1746057599,
+        "UTC": "2025-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0531884684804762,
+        "normalized_ETH_book_wealth": 101.67243181338044
+      },
+      {
+        "timestamp": 1748735999,
+        "UTC": "2025-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.054706242440966,
+        "normalized_ETH_book_wealth": 101.81895427742589
+      },
+      {
+        "timestamp": 1751327999,
+        "UTC": "2025-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.055642743197566,
+        "normalized_ETH_book_wealth": 101.90936194155078
+      },
+      {
+        "timestamp": 1754006399,
+        "UTC": "2025-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0565974019162125,
+        "normalized_ETH_book_wealth": 102.00152253424763
+      },
+      {
+        "timestamp": 1756684799,
+        "UTC": "2025-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0613839107212328,
+        "normalized_ETH_book_wealth": 102.4636012643772
+      },
+      {
+        "timestamp": 1759276799,
+        "UTC": "2025-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.065401991228626,
+        "normalized_ETH_book_wealth": 102.85149766529209
+      },
+      {
+        "timestamp": 1759449599,
+        "UTC": "2025-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0655842090450358,
+        "normalized_ETH_book_wealth": 102.86908856100405
+      },
+      {
+        "timestamp": 1761955199,
+        "UTC": "2025-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0704039012514441,
+        "normalized_ETH_book_wealth": 103.33437074162319
+      },
+      {
+        "timestamp": 1764547199,
+        "UTC": "2025-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.074771302314982,
+        "normalized_ETH_book_wealth": 103.75598975865906
+      },
+      {
+        "timestamp": 1767225599,
+        "UTC": "2025-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0795230634469397,
+        "normalized_ETH_book_wealth": 104.2147140270509
+      },
+      {
+        "timestamp": 1769903999,
+        "UTC": "2026-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.083864309021754,
+        "normalized_ETH_book_wealth": 104.63380805238452
+      },
+      {
+        "timestamp": 1772323199,
+        "UTC": "2026-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0859396326692612,
+        "normalized_ETH_book_wealth": 104.8341551017083
+      },
+      {
+        "timestamp": 1775001599,
+        "UTC": "2026-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0889597242645057,
+        "normalized_ETH_book_wealth": 105.12570791108408
+      },
+      {
+        "timestamp": 1775433599,
+        "UTC": "2026-04-05T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0894813151887885,
+        "normalized_ETH_book_wealth": 105.17606111876792
+      },
+      {
+        "timestamp": 1777593599,
+        "UTC": "2026-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0916493772393845,
+        "normalized_ETH_book_wealth": 105.38536092369688
+      },
+      {
+        "timestamp": 1780271999,
+        "UTC": "2026-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0943472582858773,
+        "normalized_ETH_book_wealth": 105.64580825572655
+      },
+      {
+        "timestamp": 1782863999,
+        "UTC": "2026-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0975952121084622,
+        "normalized_ETH_book_wealth": 105.95935836897097
+      },
+      {
+        "timestamp": 1783209599,
+        "UTC": "2026-07-04T23:59:59+00:00",
+        "ETH_book_unit_value": 1.097935209076652,
+        "normalized_ETH_book_wealth": 105.99218090700627
+      },
+      {
+        "timestamp": 1785542399,
+        "UTC": "2026-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1009863609786943,
+        "normalized_ETH_book_wealth": 106.28673220812357
+      },
+      {
+        "timestamp": 1788220799,
+        "UTC": "2026-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.103763775303421,
+        "normalized_ETH_book_wealth": 106.55485750288274
+      },
+      {
+        "timestamp": 1788393599,
+        "UTC": "2026-09-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1039406599332082,
+        "normalized_ETH_book_wealth": 106.57193354482499
+      },
+      {
+        "timestamp": 1789775999,
+        "UTC": "2026-09-18T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1054618424006677,
+        "normalized_ETH_book_wealth": 106.71878505842125
+      },
+      {
+        "timestamp": 1790380799,
+        "UTC": "2026-09-25T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1061419401472694,
+        "normalized_ETH_book_wealth": 106.78444015609578
+      },
+      {
+        "timestamp": 1790812799,
+        "UTC": "2026-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.106635808577388,
+        "normalized_ETH_book_wealth": 106.83211709691766
+      },
+      {
+        "timestamp": 1790985599,
+        "UTC": "2026-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1068220628228995,
+        "normalized_ETH_book_wealth": 106.85009766036235
+      }
+    ],
+    "stETH": [
+      {
+        "timestamp": 1727913599,
+        "UTC": "2024-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.180615388603347,
+        "normalized_ETH_book_wealth": 100.0
+      },
+      {
+        "timestamp": 1730419199,
+        "UTC": "2024-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1834359276708162,
+        "normalized_ETH_book_wealth": 100.23890414225464
+      },
+      {
+        "timestamp": 1733011199,
+        "UTC": "2024-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1863786298978864,
+        "normalized_ETH_book_wealth": 100.48815569830555
+      },
+      {
+        "timestamp": 1735689599,
+        "UTC": "2024-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1893246808145679,
+        "normalized_ETH_book_wealth": 100.73769089368925
+      },
+      {
+        "timestamp": 1738367999,
+        "UTC": "2025-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.192334343817843,
+        "normalized_ETH_book_wealth": 100.9926141339187
+      },
+      {
+        "timestamp": 1740787199,
+        "UTC": "2025-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1953231136976585,
+        "normalized_ETH_book_wealth": 101.24576769338154
+      },
+      {
+        "timestamp": 1743465599,
+        "UTC": "2025-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1983196110636447,
+        "normalized_ETH_book_wealth": 101.49957578320587
+      },
+      {
+        "timestamp": 1746057599,
+        "UTC": "2025-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2012910258847882,
+        "normalized_ETH_book_wealth": 101.75125934161338
+      },
+      {
+        "timestamp": 1748735999,
+        "UTC": "2025-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.204195331203907,
+        "normalized_ETH_book_wealth": 101.997258618529
+      },
+      {
+        "timestamp": 1751327999,
+        "UTC": "2025-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2069184593273736,
+        "normalized_ETH_book_wealth": 102.22791189899218
+      },
+      {
+        "timestamp": 1754006399,
+        "UTC": "2025-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2097045157270074,
+        "normalized_ETH_book_wealth": 102.46389530447104
+      },
+      {
+        "timestamp": 1756684799,
+        "UTC": "2025-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2124794901730076,
+        "normalized_ETH_book_wealth": 102.6989400508624
+      },
+      {
+        "timestamp": 1759276799,
+        "UTC": "2025-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2151098588932163,
+        "normalized_ETH_book_wealth": 102.92173646242878
+      },
+      {
+        "timestamp": 1759449599,
+        "UTC": "2025-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2152806741718296,
+        "normalized_ETH_book_wealth": 102.93620478803781
+      },
+      {
+        "timestamp": 1761955199,
+        "UTC": "2025-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2179486659812828,
+        "normalized_ETH_book_wealth": 103.16218793506499
+      },
+      {
+        "timestamp": 1764547199,
+        "UTC": "2025-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2206105975249004,
+        "normalized_ETH_book_wealth": 103.38765776794314
+      },
+      {
+        "timestamp": 1767225599,
+        "UTC": "2025-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2232588904107793,
+        "normalized_ETH_book_wealth": 103.6119723848322
+      },
+      {
+        "timestamp": 1769903999,
+        "UTC": "2026-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2258030907293411,
+        "normalized_ETH_book_wealth": 103.82747019581463
+      },
+      {
+        "timestamp": 1772323199,
+        "UTC": "2026-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.228123223457619,
+        "normalized_ETH_book_wealth": 104.0239891257451
+      },
+      {
+        "timestamp": 1775001599,
+        "UTC": "2026-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2307367761451617,
+        "normalized_ETH_book_wealth": 104.24536119261563
+      },
+      {
+        "timestamp": 1775433599,
+        "UTC": "2026-04-05T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2311446268476944,
+        "normalized_ETH_book_wealth": 104.27990679539786
+      },
+      {
+        "timestamp": 1777593599,
+        "UTC": "2026-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2332573076072997,
+        "normalized_ETH_book_wealth": 104.45885421383736
+      },
+      {
+        "timestamp": 1780271999,
+        "UTC": "2026-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2358299946575726,
+        "normalized_ETH_book_wealth": 104.6767648962753
+      },
+      {
+        "timestamp": 1782863999,
+        "UTC": "2026-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2382923170698812,
+        "normalized_ETH_book_wealth": 104.88532751845335
+      },
+      {
+        "timestamp": 1783209599,
+        "UTC": "2026-07-04T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2386020878522952,
+        "normalized_ETH_book_wealth": 104.91156559610371
+      },
+      {
+        "timestamp": 1785542399,
+        "UTC": "2026-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2406245455938198,
+        "normalized_ETH_book_wealth": 105.08287098150254
+      },
+      {
+        "timestamp": 1788220799,
+        "UTC": "2026-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2429536260133671,
+        "normalized_ETH_book_wealth": 105.28014779510585
+      },
+      {
+        "timestamp": 1788393599,
+        "UTC": "2026-09-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2431032118818366,
+        "normalized_ETH_book_wealth": 105.2928179559316
+      },
+      {
+        "timestamp": 1789775999,
+        "UTC": "2026-09-18T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2443297746353719,
+        "normalized_ETH_book_wealth": 105.39670977077455
+      },
+      {
+        "timestamp": 1790380799,
+        "UTC": "2026-09-25T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2448659552982713,
+        "normalized_ETH_book_wealth": 105.44212512518
+      },
+      {
+        "timestamp": 1790812799,
+        "UTC": "2026-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2452505583093638,
+        "normalized_ETH_book_wealth": 105.47470161154509
+      },
+      {
+        "timestamp": 1790985599,
+        "UTC": "2026-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2454018786985979,
+        "normalized_ETH_book_wealth": 105.48751868903662
+      }
+    ],
+    "weETH": [
+      {
+        "timestamp": 1727913599,
+        "UTC": "2024-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.049381257064811,
+        "normalized_ETH_book_wealth": 100.0
+      },
+      {
+        "timestamp": 1730419199,
+        "UTC": "2024-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0515912113391408,
+        "normalized_ETH_book_wealth": 100.21059593540973
+      },
+      {
+        "timestamp": 1733011199,
+        "UTC": "2024-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0541085004442874,
+        "normalized_ETH_book_wealth": 100.45047911306315
+      },
+      {
+        "timestamp": 1735689599,
+        "UTC": "2024-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.056547038247545,
+        "normalized_ETH_book_wealth": 100.68285774445575
+      },
+      {
+        "timestamp": 1738367999,
+        "UTC": "2025-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0589805800859853,
+        "normalized_ETH_book_wealth": 100.91476028912736
+      },
+      {
+        "timestamp": 1740787199,
+        "UTC": "2025-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0613171176497411,
+        "normalized_ETH_book_wealth": 101.13741888418282
+      },
+      {
+        "timestamp": 1743465599,
+        "UTC": "2025-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0637491368789607,
+        "normalized_ETH_book_wealth": 101.3691763329505
+      },
+      {
+        "timestamp": 1746057599,
+        "UTC": "2025-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0664411257421054,
+        "normalized_ETH_book_wealth": 101.62570739304151
+      },
+      {
+        "timestamp": 1748735999,
+        "UTC": "2025-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.068804929259162,
+        "normalized_ETH_book_wealth": 101.85096427667102
+      },
+      {
+        "timestamp": 1751327999,
+        "UTC": "2025-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0710757371130648,
+        "normalized_ETH_book_wealth": 102.06735920831433
+      },
+      {
+        "timestamp": 1754006399,
+        "UTC": "2025-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0734291760847186,
+        "normalized_ETH_book_wealth": 102.29162841036167
+      },
+      {
+        "timestamp": 1756684799,
+        "UTC": "2025-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0758004914619501,
+        "normalized_ETH_book_wealth": 102.5176011310737
+      },
+      {
+        "timestamp": 1759276799,
+        "UTC": "2025-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0780444827361302,
+        "normalized_ETH_book_wealth": 102.73144059686108
+      },
+      {
+        "timestamp": 1759449599,
+        "UTC": "2025-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0781723720251828,
+        "normalized_ETH_book_wealth": 102.74362771076193
+      },
+      {
+        "timestamp": 1761955199,
+        "UTC": "2025-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0804207327040665,
+        "normalized_ETH_book_wealth": 102.95788355569405
+      },
+      {
+        "timestamp": 1764547199,
+        "UTC": "2025-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.08273022609616,
+        "normalized_ETH_book_wealth": 103.17796499669036
+      },
+      {
+        "timestamp": 1767225599,
+        "UTC": "2025-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0849427653313297,
+        "normalized_ETH_book_wealth": 103.38880726400495
+      },
+      {
+        "timestamp": 1769903999,
+        "UTC": "2026-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0871920445258216,
+        "normalized_ETH_book_wealth": 103.60315063819321
+      },
+      {
+        "timestamp": 1772323199,
+        "UTC": "2026-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.089282309089317,
+        "normalized_ETH_book_wealth": 103.80234083235982
+      },
+      {
+        "timestamp": 1775001599,
+        "UTC": "2026-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0915719776703559,
+        "normalized_ETH_book_wealth": 104.02053308285258
+      },
+      {
+        "timestamp": 1775433599,
+        "UTC": "2026-04-05T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0919627030212724,
+        "normalized_ETH_book_wealth": 104.05776696217777
+      },
+      {
+        "timestamp": 1777593599,
+        "UTC": "2026-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.09380458289626,
+        "normalized_ETH_book_wealth": 104.23328752370745
+      },
+      {
+        "timestamp": 1780271999,
+        "UTC": "2026-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.095965717391408,
+        "normalized_ETH_book_wealth": 104.43923121486816
+      },
+      {
+        "timestamp": 1782863999,
+        "UTC": "2026-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0982147229473378,
+        "normalized_ETH_book_wealth": 104.65354851287485
+      },
+      {
+        "timestamp": 1783209599,
+        "UTC": "2026-07-04T23:59:59+00:00",
+        "ETH_book_unit_value": 1.098489447793245,
+        "normalized_ETH_book_wealth": 104.67972821105963
+      },
+      {
+        "timestamp": 1785542399,
+        "UTC": "2026-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1004766692716852,
+        "normalized_ETH_book_wealth": 104.86909899170408
+      },
+      {
+        "timestamp": 1788220799,
+        "UTC": "2026-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1026952808821537,
+        "normalized_ETH_book_wealth": 105.0805199214693
+      },
+      {
+        "timestamp": 1788393599,
+        "UTC": "2026-09-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1028312548004058,
+        "normalized_ETH_book_wealth": 105.09347745404736
+      },
+      {
+        "timestamp": 1789775999,
+        "UTC": "2026-09-18T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1039608765440818,
+        "normalized_ETH_book_wealth": 105.2011239110496
+      },
+      {
+        "timestamp": 1790380799,
+        "UTC": "2026-09-25T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1044447468384235,
+        "normalized_ETH_book_wealth": 105.24723396791256
+      },
+      {
+        "timestamp": 1790812799,
+        "UTC": "2026-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1047948864372463,
+        "normalized_ETH_book_wealth": 105.28060025842572
+      },
+      {
+        "timestamp": 1790985599,
+        "UTC": "2026-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1049430338706405,
+        "normalized_ETH_book_wealth": 105.29471785700076
+      }
+    ],
+    "Fluid Lite ETH": [
+      {
+        "timestamp": 1727913599,
+        "UTC": "2024-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1227954481159657,
+        "normalized_ETH_book_wealth": 100.0
+      },
+      {
+        "timestamp": 1730419199,
+        "UTC": "2024-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1281898171816553,
+        "normalized_ETH_book_wealth": 100.48044094538692
+      },
+      {
+        "timestamp": 1733011199,
+        "UTC": "2024-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1339147613941742,
+        "normalized_ETH_book_wealth": 100.9903240431609
+      },
+      {
+        "timestamp": 1735689599,
+        "UTC": "2024-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1388612739492971,
+        "normalized_ETH_book_wealth": 101.43087735707245
+      },
+      {
+        "timestamp": 1738367999,
+        "UTC": "2025-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1450243409842042,
+        "normalized_ETH_book_wealth": 101.97978117078569
+      },
+      {
+        "timestamp": 1740787199,
+        "UTC": "2025-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1525046272948947,
+        "normalized_ETH_book_wealth": 102.6460010350755
+      },
+      {
+        "timestamp": 1743465599,
+        "UTC": "2025-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1577762467289845,
+        "normalized_ETH_book_wealth": 103.11550947874933
+      },
+      {
+        "timestamp": 1746057599,
+        "UTC": "2025-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1624422181924905,
+        "normalized_ETH_book_wealth": 103.53107684423298
+      },
+      {
+        "timestamp": 1748735999,
+        "UTC": "2025-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1671290185536438,
+        "normalized_ETH_book_wealth": 103.94849930252828
+      },
+      {
+        "timestamp": 1751327999,
+        "UTC": "2025-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.170605555378484,
+        "normalized_ETH_book_wealth": 104.25813155394805
+      },
+      {
+        "timestamp": 1754006399,
+        "UTC": "2025-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.172240609782498,
+        "normalized_ETH_book_wealth": 104.4037550873136
+      },
+      {
+        "timestamp": 1756684799,
+        "UTC": "2025-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.175631252772762,
+        "normalized_ETH_book_wealth": 104.70573734026567
+      },
+      {
+        "timestamp": 1759276799,
+        "UTC": "2025-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1800760954136553,
+        "normalized_ETH_book_wealth": 105.10161021705295
+      },
+      {
+        "timestamp": 1759449599,
+        "UTC": "2025-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1804462175630004,
+        "normalized_ETH_book_wealth": 105.13457456064432
+      },
+      {
+        "timestamp": 1761955199,
+        "UTC": "2025-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.185140075246772,
+        "normalized_ETH_book_wealth": 105.55262556821188
+      },
+      {
+        "timestamp": 1764547199,
+        "UTC": "2025-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1909680761893284,
+        "normalized_ETH_book_wealth": 106.07168725058116
+      },
+      {
+        "timestamp": 1767225599,
+        "UTC": "2025-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1963042442495442,
+        "normalized_ETH_book_wealth": 106.54694461550633
+      },
+      {
+        "timestamp": 1769903999,
+        "UTC": "2026-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2005602151202501,
+        "normalized_ETH_book_wealth": 106.92599592693153
+      },
+      {
+        "timestamp": 1772323199,
+        "UTC": "2026-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.202261369057799,
+        "normalized_ETH_book_wealth": 107.07750651066283
+      },
+      {
+        "timestamp": 1775001599,
+        "UTC": "2026-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2053401261525098,
+        "normalized_ETH_book_wealth": 107.35171113982096
+      },
+      {
+        "timestamp": 1775433599,
+        "UTC": "2026-04-05T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2058657882595434,
+        "normalized_ETH_book_wealth": 107.39852840363474
+      },
+      {
+        "timestamp": 1777593599,
+        "UTC": "2026-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2069256996518176,
+        "normalized_ETH_book_wealth": 107.49292773470192
+      },
+      {
+        "timestamp": 1780271999,
+        "UTC": "2026-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2087606667816289,
+        "normalized_ETH_book_wealth": 107.65635617867098
+      },
+      {
+        "timestamp": 1782863999,
+        "UTC": "2026-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2127991132101144,
+        "normalized_ETH_book_wealth": 108.01603401983625
+      },
+      {
+        "timestamp": 1783209599,
+        "UTC": "2026-07-04T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2131947749987328,
+        "normalized_ETH_book_wealth": 108.05127301098842
+      },
+      {
+        "timestamp": 1785542399,
+        "UTC": "2026-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2158990800440017,
+        "normalized_ETH_book_wealth": 108.29212766085422
+      },
+      {
+        "timestamp": 1788220799,
+        "UTC": "2026-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2186712281325338,
+        "normalized_ETH_book_wealth": 108.539024644021
+      },
+      {
+        "timestamp": 1788393599,
+        "UTC": "2026-09-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2188350388557165,
+        "normalized_ETH_book_wealth": 108.55361418688541
+      },
+      {
+        "timestamp": 1789775999,
+        "UTC": "2026-09-18T23:59:59+00:00",
+        "ETH_book_unit_value": 1.220417039252252,
+        "normalized_ETH_book_wealth": 108.69451254902162
+      },
+      {
+        "timestamp": 1790380799,
+        "UTC": "2026-09-25T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2210836853257436,
+        "normalized_ETH_book_wealth": 108.75388632673068
+      },
+      {
+        "timestamp": 1790812799,
+        "UTC": "2026-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2216379518029419,
+        "normalized_ETH_book_wealth": 108.8032511935128
+      },
+      {
+        "timestamp": 1790985599,
+        "UTC": "2026-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2218746082925973,
+        "normalized_ETH_book_wealth": 108.8243286293051
+      }
+    ],
+    "Treehouse tETH": [
+      {
+        "timestamp": 1727913599,
+        "UTC": "2024-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1806768415099522,
+        "normalized_ETH_book_wealth": 100.0
+      },
+      {
+        "timestamp": 1730419199,
+        "UTC": "2024-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.183497285134133,
+        "normalized_ETH_book_wealth": 100.23888362378428
+      },
+      {
+        "timestamp": 1733011199,
+        "UTC": "2024-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1867133909740173,
+        "normalized_ETH_book_wealth": 100.5112787218173
+      },
+      {
+        "timestamp": 1735689599,
+        "UTC": "2024-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1897920296270779,
+        "normalized_ETH_book_wealth": 100.77203073666358
+      },
+      {
+        "timestamp": 1738367999,
+        "UTC": "2025-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1933400519991386,
+        "normalized_ETH_book_wealth": 101.07253822925769
+      },
+      {
+        "timestamp": 1740787199,
+        "UTC": "2025-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.1969393392776413,
+        "normalized_ETH_book_wealth": 101.37738771490523
+      },
+      {
+        "timestamp": 1743465599,
+        "UTC": "2025-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2002087003734376,
+        "normalized_ETH_book_wealth": 101.65429338298077
+      },
+      {
+        "timestamp": 1746057599,
+        "UTC": "2025-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.203484981149805,
+        "normalized_ETH_book_wealth": 101.93178512849323
+      },
+      {
+        "timestamp": 1748735999,
+        "UTC": "2025-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2069416291210615,
+        "normalized_ETH_book_wealth": 102.22455346693508
+      },
+      {
+        "timestamp": 1751327999,
+        "UTC": "2025-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2105175505916848,
+        "normalized_ETH_book_wealth": 102.52742393452637
+      },
+      {
+        "timestamp": 1754006399,
+        "UTC": "2025-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.213670063194999,
+        "normalized_ETH_book_wealth": 102.79443286469922
+      },
+      {
+        "timestamp": 1756684799,
+        "UTC": "2025-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2172889189105485,
+        "normalized_ETH_book_wealth": 103.10093974179874
+      },
+      {
+        "timestamp": 1759276799,
+        "UTC": "2025-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2205761405591855,
+        "normalized_ETH_book_wealth": 103.37935814834876
+      },
+      {
+        "timestamp": 1759449599,
+        "UTC": "2025-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.220783696754052,
+        "normalized_ETH_book_wealth": 103.39693757292703
+      },
+      {
+        "timestamp": 1761955199,
+        "UTC": "2025-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2240303780300494,
+        "normalized_ETH_book_wealth": 103.67192232420287
+      },
+      {
+        "timestamp": 1764547199,
+        "UTC": "2025-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2271092637036611,
+        "normalized_ETH_book_wealth": 103.93269526099344
+      },
+      {
+        "timestamp": 1767225599,
+        "UTC": "2025-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2305686924810102,
+        "normalized_ETH_book_wealth": 104.2256991258719
+      },
+      {
+        "timestamp": 1769903999,
+        "UTC": "2026-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2335273652099068,
+        "normalized_ETH_book_wealth": 104.47629036514044
+      },
+      {
+        "timestamp": 1772323199,
+        "UTC": "2026-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.236060963784619,
+        "normalized_ETH_book_wealth": 104.69087902188686
+      },
+      {
+        "timestamp": 1775001599,
+        "UTC": "2026-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.238982067879159,
+        "normalized_ETH_book_wealth": 104.9382883037361
+      },
+      {
+        "timestamp": 1775433599,
+        "UTC": "2026-04-05T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2394678298165447,
+        "normalized_ETH_book_wealth": 104.97943097040893
+      },
+      {
+        "timestamp": 1777593599,
+        "UTC": "2026-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2403499668115903,
+        "normalized_ETH_book_wealth": 105.05414548703462
+      },
+      {
+        "timestamp": 1780271999,
+        "UTC": "2026-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2434925910742975,
+        "normalized_ETH_book_wealth": 105.32031690263452
+      },
+      {
+        "timestamp": 1782863999,
+        "UTC": "2026-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.246472079792368,
+        "normalized_ETH_book_wealth": 105.57267119750323
+      },
+      {
+        "timestamp": 1783209599,
+        "UTC": "2026-07-04T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2468533114864222,
+        "normalized_ETH_book_wealth": 105.60496044724971
+      },
+      {
+        "timestamp": 1785542399,
+        "UTC": "2026-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.249348877477809,
+        "normalized_ETH_book_wealth": 105.81632785140707
+      },
+      {
+        "timestamp": 1788220799,
+        "UTC": "2026-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2519459850482055,
+        "normalized_ETH_book_wealth": 106.03629554104813
+      },
+      {
+        "timestamp": 1788393599,
+        "UTC": "2026-09-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2521156643769231,
+        "normalized_ETH_book_wealth": 106.05066690184324
+      },
+      {
+        "timestamp": 1789775999,
+        "UTC": "2026-09-18T23:59:59+00:00",
+        "ETH_book_unit_value": 1.253516504396865,
+        "normalized_ETH_book_wealth": 106.16931410238885
+      },
+      {
+        "timestamp": 1790380799,
+        "UTC": "2026-09-25T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2541553030264851,
+        "normalized_ETH_book_wealth": 106.22341854546434
+      },
+      {
+        "timestamp": 1790812799,
+        "UTC": "2026-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2545994384404044,
+        "normalized_ETH_book_wealth": 106.26103556294994
+      },
+      {
+        "timestamp": 1790985599,
+        "UTC": "2026-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.2547767759705548,
+        "normalized_ETH_book_wealth": 106.27605555181697
+      }
+    ],
+    "CIAN rsETH": [
+      {
+        "timestamp": 1727913599,
+        "UTC": "2024-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.025573981655542,
+        "normalized_ETH_book_wealth": 100.0
+      },
+      {
+        "timestamp": 1730419199,
+        "UTC": "2024-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0282329840535716,
+        "normalized_ETH_book_wealth": 100.25926968171883
+      },
+      {
+        "timestamp": 1733011199,
+        "UTC": "2024-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0298668265034487,
+        "normalized_ETH_book_wealth": 100.4185797343432
+      },
+      {
+        "timestamp": 1735689599,
+        "UTC": "2024-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.028521552086604,
+        "normalized_ETH_book_wealth": 100.28740690421026
+      },
+      {
+        "timestamp": 1738367999,
+        "UTC": "2025-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0254841845325686,
+        "normalized_ETH_book_wealth": 99.99124420816248
+      },
+      {
+        "timestamp": 1740787199,
+        "UTC": "2025-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0212226448355617,
+        "normalized_ETH_book_wealth": 99.57571692556434
+      },
+      {
+        "timestamp": 1743465599,
+        "UTC": "2025-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0219134727883619,
+        "normalized_ETH_book_wealth": 99.64307705415156
+      },
+      {
+        "timestamp": 1746057599,
+        "UTC": "2025-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.02020607992564,
+        "normalized_ETH_book_wealth": 99.47659536748029
+      },
+      {
+        "timestamp": 1748735999,
+        "UTC": "2025-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.018320082792652,
+        "normalized_ETH_book_wealth": 99.29269862607275
+      },
+      {
+        "timestamp": 1751327999,
+        "UTC": "2025-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.016426891597561,
+        "normalized_ETH_book_wealth": 99.10810041775676
+      },
+      {
+        "timestamp": 1754006399,
+        "UTC": "2025-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0165253402553243,
+        "normalized_ETH_book_wealth": 99.11769978937933
+      },
+      {
+        "timestamp": 1756684799,
+        "UTC": "2025-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0152133506408743,
+        "normalized_ETH_book_wealth": 98.98977243963004
+      },
+      {
+        "timestamp": 1759276799,
+        "UTC": "2025-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0150243305023088,
+        "normalized_ETH_book_wealth": 98.97134177134609
+      },
+      {
+        "timestamp": 1759449599,
+        "UTC": "2025-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0139376599168857,
+        "normalized_ETH_book_wealth": 98.86538446306211
+      },
+      {
+        "timestamp": 1761955199,
+        "UTC": "2025-10-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0129781785795722,
+        "normalized_ETH_book_wealth": 98.7718289171458
+      },
+      {
+        "timestamp": 1764547199,
+        "UTC": "2025-11-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0129358998908045,
+        "normalized_ETH_book_wealth": 98.76770647551565
+      },
+      {
+        "timestamp": 1767225599,
+        "UTC": "2025-12-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0124971032682009,
+        "normalized_ETH_book_wealth": 98.72492100801625
+      },
+      {
+        "timestamp": 1769903999,
+        "UTC": "2026-01-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0149654117563114,
+        "normalized_ETH_book_wealth": 98.9655968180759
+      },
+      {
+        "timestamp": 1772323199,
+        "UTC": "2026-02-28T23:59:59+00:00",
+        "ETH_book_unit_value": 1.013902640545102,
+        "normalized_ETH_book_wealth": 98.86196985110723
+      },
+      {
+        "timestamp": 1775001599,
+        "UTC": "2026-03-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0188408374285942,
+        "normalized_ETH_book_wealth": 99.34347552225546
+      },
+      {
+        "timestamp": 1775433599,
+        "UTC": "2026-04-05T23:59:59+00:00",
+        "ETH_book_unit_value": 1.01942574053759,
+        "normalized_ETH_book_wealth": 99.4005073034295
+      },
+      {
+        "timestamp": 1777593599,
+        "UTC": "2026-04-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0055576498454175,
+        "normalized_ETH_book_wealth": 98.04828006870719
+      },
+      {
+        "timestamp": 1780271999,
+        "UTC": "2026-05-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.015662341732117,
+        "normalized_ETH_book_wealth": 99.03355193279911
+      },
+      {
+        "timestamp": 1782863999,
+        "UTC": "2026-06-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0236671132210073,
+        "normalized_ETH_book_wealth": 99.81406817366248
+      },
+      {
+        "timestamp": 1783209599,
+        "UTC": "2026-07-04T23:59:59+00:00",
+        "ETH_book_unit_value": 1.02373468788607,
+        "normalized_ETH_book_wealth": 99.8206571342125
+      },
+      {
+        "timestamp": 1785542399,
+        "UTC": "2026-07-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0281601146205572,
+        "normalized_ETH_book_wealth": 100.25216444754581
+      },
+      {
+        "timestamp": 1788220799,
+        "UTC": "2026-08-31T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0314703454263319,
+        "normalized_ETH_book_wealth": 100.57493304980999
+      },
+      {
+        "timestamp": 1788393599,
+        "UTC": "2026-09-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.03237199921598,
+        "normalized_ETH_book_wealth": 100.66285004124853
+      },
+      {
+        "timestamp": 1789775999,
+        "UTC": "2026-09-18T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0355123156353592,
+        "normalized_ETH_book_wealth": 100.9690509078413
+      },
+      {
+        "timestamp": 1790812799,
+        "UTC": "2026-09-30T23:59:59+00:00",
+        "ETH_book_unit_value": 1.036621352517643,
+        "normalized_ETH_book_wealth": 101.07718907262719
+      },
+      {
+        "timestamp": 1790985599,
+        "UTC": "2026-10-02T23:59:59+00:00",
+        "ETH_book_unit_value": 1.0367058913777634,
+        "normalized_ETH_book_wealth": 101.08543215032147
+      }
+    ]
+  }
+}

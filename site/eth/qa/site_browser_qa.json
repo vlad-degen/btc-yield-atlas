@@ -1,0 +1,383 @@
+{
+  "captured_at": "2026-10-04T14:15:29.961Z",
+  "results": [
+    {
+      "check": "Header counting adds lending and persists URL",
+      "hero": "27.90M",
+      "passed": true
+    },
+    {
+      "check": "Category selection survives reload",
+      "passed": true
+    },
+    {
+      "check": "Counting reset and Escape",
+      "passed": true
+    },
+    {
+      "check": "USD share chart and table use matching units",
+      "passed": true,
+      "rows": 24
+    },
+    {
+      "check": "Constant cohort and selected CSV",
+      "passed": true
+    },
+    {
+      "check": "Global operator search",
+      "passed": true,
+      "rows": 1
+    },
+    {
+      "check": "Category keyboard navigation includes excluded CDP",
+      "passed": true
+    },
+    {
+      "test": "product concrete",
+      "chapter": "concrete",
+      "charts": 2,
+      "longDashes": false,
+      "parts": [
+        "flow",
+        "actors",
+        "payers",
+        "capital",
+        "holders",
+        "loans",
+        "timeline"
+      ],
+      "russian": false,
+      "selected": "concrete",
+      "tables": 8,
+      "url": "http://127.0.0.1:8765/eth/index.html?historyCohort=constant&carryProduct=concrete#map",
+      "passed": true
+    },
+    {
+      "test": "product liquid",
+      "chapter": "liquid",
+      "charts": 3,
+      "longDashes": false,
+      "parts": [
+        "flow",
+        "actors",
+        "payers",
+        "capital",
+        "holders",
+        "loans",
+        "timeline"
+      ],
+      "russian": false,
+      "selected": "liquid",
+      "tables": 9,
+      "url": "http://127.0.0.1:8765/eth/index.html?historyCohort=constant&carryProduct=liquid#map",
+      "passed": true
+    },
+    {
+      "test": "product rocksolid",
+      "chapter": "rocksolid",
+      "charts": 2,
+      "longDashes": false,
+      "parts": [
+        "flow",
+        "actors",
+        "payers",
+        "capital",
+        "holders",
+        "loans",
+        "timeline"
+      ],
+      "russian": false,
+      "selected": "rocksolid",
+      "tables": 8,
+      "url": "http://127.0.0.1:8765/eth/index.html?historyCohort=constant&carryProduct=rocksolid#map",
+      "passed": true
+    },
+    {
+      "test": "product liquity",
+      "chapter": "liquity",
+      "charts": 3,
+      "longDashes": false,
+      "parts": [
+        "flow",
+        "actors",
+        "payers",
+        "capital",
+        "holders",
+        "loans",
+        "timeline"
+      ],
+      "russian": false,
+      "selected": "liquity",
+      "tables": 9,
+      "url": "http://127.0.0.1:8765/eth/index.html?historyCohort=constant&carryProduct=liquity#map",
+      "passed": true
+    },
+    {
+      "test": "product royco",
+      "chapter": "royco",
+      "charts": 2,
+      "longDashes": false,
+      "parts": [
+        "flow",
+        "actors",
+        "payers",
+        "capital",
+        "holders",
+        "loans",
+        "timeline"
+      ],
+      "russian": false,
+      "selected": "royco",
+      "tables": 8,
+      "url": "http://127.0.0.1:8765/eth/index.html?historyCohort=constant&carryProduct=royco#map",
+      "passed": true
+    },
+    {
+      "test": "product closed",
+      "chapter": "closed",
+      "charts": 0,
+      "longDashes": false,
+      "parts": [],
+      "russian": false,
+      "selected": "closed",
+      "tables": 0,
+      "url": "http://127.0.0.1:8765/eth/index.html?historyCohort=constant&carryProduct=closed#map",
+      "passed": true
+    },
+    {
+      "test": "calculator preset observed-rlusd-leg",
+      "inputCount": 7,
+      "outputs": "Net ETH return, annual\n2.75%\nWithout investment rewards\n1.09%\nDollar spread before product fee\n1.29%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth factor\t1.336\nETH return before the product fee\t3.10%\nETH/USD fall to liquidation\t25.17%\nCollateral sold in the illustration\t0.4515 ETH\nLiquidation bonus in the illustration\t0.0215 ETH\n\nDollar debt exposes the position to an ETH/USD fall. The staking baseline is paid on the modeled equity; an unstaked cash portion would earn less. Collateral sold and bonus use the threshold price, a 50% close factor and a 5% bonus.",
+      "selected": "observed-rlusd-leg",
+      "passed": true
+    },
+    {
+      "test": "calculator preset ethereum-usdc",
+      "inputCount": 7,
+      "outputs": "Net ETH return, annual\n0.86%\nWithout investment rewards\n0.86%\nDollar spread before product fee\n-1.63%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6500 ETH equivalent\nHealth factor\t1.246\nETH return before the product fee\t1.21%\nETH/USD fall to liquidation\t19.75%\nCollateral sold in the illustration\t0.4253 ETH\nLiquidation bonus in the illustration\t0.0203 ETH\n\nDollar debt exposes the position to an ETH/USD fall. The staking baseline is paid on the modeled equity; an unstaked cash portion would earn less. Collateral sold and bonus use the threshold price, a 50% close factor and a 5% bonus.",
+      "selected": "ethereum-usdc",
+      "passed": true
+    },
+    {
+      "test": "calculator preset rlusd-no-rewards",
+      "inputCount": 7,
+      "outputs": "Net ETH return, annual\n1.09%\nWithout investment rewards\n1.09%\nDollar spread before product fee\n-1.30%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth factor\t1.336\nETH return before the product fee\t1.44%\nETH/USD fall to liquidation\t25.17%\nCollateral sold in the illustration\t0.4515 ETH\nLiquidation bonus in the illustration\t0.0215 ETH\n\nDollar debt exposes the position to an ETH/USD fall. The staking baseline is paid on the modeled equity; an unstaked cash portion would earn less. Collateral sold and bonus use the threshold price, a 50% close factor and a 5% bonus.",
+      "selected": "rlusd-no-rewards",
+      "passed": true
+    },
+    {
+      "test": "calculator preset rlusd-cost-shock",
+      "inputCount": 7,
+      "outputs": "Net ETH return, annual\n0.82%\nWithout investment rewards\n-0.84%\nDollar spread before product fee\n-1.71%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth factor\t1.336\nETH return before the product fee\t1.17%\nETH/USD fall to liquidation\t25.17%\nCollateral sold in the illustration\t0.4515 ETH\nLiquidation bonus in the illustration\t0.0215 ETH\n\nDollar debt exposes the position to an ETH/USD fall. The staking baseline is paid on the modeled equity; an unstaked cash portion would earn less. Collateral sold and bonus use the threshold price, a 50% close factor and a 5% bonus.",
+      "selected": "rlusd-cost-shock",
+      "passed": true
+    },
+    {
+      "test": "rate curve aave-usdc-ethereum",
+      "points": 20,
+      "rows": 20,
+      "scope": "DefaultReserveInterestRateStrategyV2: T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model. Analyti",
+      "selected": "aave-usdc-ethereum",
+      "passed": true
+    },
+    {
+      "test": "rate curve aave-usdc-base",
+      "points": 20,
+      "rows": 20,
+      "scope": "DefaultReserveInterestRateStrategyV2: T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model. Analyti",
+      "selected": "aave-usdc-base",
+      "passed": true
+    },
+    {
+      "test": "rate curve aave-usdc-arbitrum",
+      "points": 20,
+      "rows": 20,
+      "scope": "DefaultReserveInterestRateStrategyV2: T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model. Analyti",
+      "selected": "aave-usdc-arbitrum",
+      "passed": true
+    },
+    {
+      "test": "rate curve 0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "points": 20,
+      "rows": 20,
+      "scope": "AdaptiveCurveIrm: T market parameter binding, MORPHO() binding and verified deployed contract source. Primary IRM view calls at T, holding the stored per-market target ra",
+      "selected": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "passed": true
+    },
+    {
+      "test": "rate curve 0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "points": 20,
+      "rows": 20,
+      "scope": "AdaptiveCurveIrm: T market parameter binding, MORPHO() binding and verified deployed contract source. Primary IRM view calls at T, holding the stored per-market target ra",
+      "selected": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "passed": true
+    },
+    {
+      "test": "rate curve 0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e",
+      "points": 20,
+      "rows": 20,
+      "scope": "AdaptiveCurveIrm: T market parameter binding, MORPHO() binding and verified deployed contract source. Primary IRM view calls at T, holding the stored per-market target ra",
+      "selected": "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e",
+      "passed": true
+    },
+    {
+      "test": "rate curve aave-usdc-optimism",
+      "points": 20,
+      "rows": 20,
+      "scope": "DefaultReserveInterestRateStrategyV2: T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model. Analyti",
+      "selected": "aave-usdc-optimism",
+      "passed": true
+    },
+    {
+      "test": "mobile width concrete",
+      "docWidth": 319,
+      "product": "concrete",
+      "width": 319,
+      "passed": true
+    },
+    {
+      "test": "mobile width liquid",
+      "docWidth": 319,
+      "product": "liquid",
+      "width": 319,
+      "passed": true
+    },
+    {
+      "test": "mobile width rocksolid",
+      "docWidth": 319,
+      "product": "rocksolid",
+      "width": 319,
+      "passed": true
+    },
+    {
+      "test": "mobile width liquity",
+      "docWidth": 319,
+      "product": "liquity",
+      "width": 319,
+      "passed": true
+    },
+    {
+      "test": "mobile width royco",
+      "docWidth": 319,
+      "product": "royco",
+      "width": 319,
+      "passed": true
+    },
+    {
+      "test": "mobile width closed",
+      "docWidth": 319,
+      "product": "closed",
+      "width": 319,
+      "passed": true
+    },
+    {
+      "header": 105,
+      "open": true,
+      "test": "nested deep link after final render",
+      "top": 104.1015625,
+      "passed": true
+    },
+    {
+      "header": 105,
+      "selected": "royco",
+      "test": "direct product link after final render",
+      "top": 103.953125,
+      "passed": true
+    },
+    {
+      "check": "Unmeasured-only selection has no invented balance or growth",
+      "detail": "The selected groups have no fresh measured balance at T.",
+      "findings": "No measured history\n\nThe selected categories do not have usable observations in this ledger. This cannot establish a zero market or a zero return.\n\nNo growth comparison\n\nA change needs measured balances at both dates. No percentage is inferred from missing observations.\n\nKeep dated disclosures separate\n\nLater product disclosures remain available in Other carry and Data. They cannot fill this historical series without matching the date and denominator.\n\nLook at the same protocols, too\n\nThe constant cohort holds 64 protocol rows fixed across all 24 months and T. All-observation growth can reflect a new claim or new coverage; it cannot by itself establish deposits.\n\nThe strategy label has limits\n\nCarry parents contribute 501,340 ETH equivalent at T. Their monthly category history follows a consistent protocol mapping; dollar-sleeve weights, rewards and debt are measured separately. Basis remains unmeasured in this ledger.",
+      "hero": "Not measured",
+      "menuOpen": true,
+      "passed": true
+    },
+    {
+      "copy": "30 days\n90 days\n365 days\n730 days",
+      "rows": 6,
+      "selected": "30",
+      "test": "matched return window",
+      "requestedDays": "30",
+      "passed": true
+    },
+    {
+      "copy": "30 days\n90 days\n365 days\n730 days",
+      "rows": 6,
+      "selected": "90",
+      "test": "matched return window",
+      "requestedDays": "90",
+      "passed": true
+    },
+    {
+      "copy": "30 days\n90 days\n365 days\n730 days",
+      "rows": 6,
+      "selected": "365",
+      "test": "matched return window",
+      "requestedDays": "365",
+      "passed": true
+    },
+    {
+      "copy": "30 days\n90 days\n365 days\n730 days",
+      "rows": 6,
+      "selected": "730",
+      "test": "matched return window",
+      "requestedDays": "730",
+      "passed": true
+    },
+    {
+      "blocks": [
+        {
+          "open": true,
+          "summary": "Method: counting, categories, switches and disputed decisions",
+          "textLength": 1832
+        },
+        {
+          "open": true,
+          "summary": "Listed, but not counted",
+          "textLength": 1198
+        },
+        {
+          "open": true,
+          "summary": "The DefiLlama cross-check: discovery versus measured ETH",
+          "textLength": 828
+        },
+        {
+          "open": true,
+          "summary": "Re-check: fixed snapshot and later observations",
+          "textLength": 1111
+        },
+        {
+          "open": true,
+          "summary": "Sources, files and detailed research",
+          "textLength": 2118
+        }
+      ],
+      "english": true,
+      "noLongDashes": true,
+      "test": "five populated data disclosures",
+      "passed": true
+    }
+  ],
+  "additional_verified_checks": [
+    "Counting stays open through multiple switches and supports reset and Escape",
+    "A downloaded 24-row CSV matches the selected export byte for byte",
+    "Zero debt produces no NaN/Infinity; unsafe LTV highlights HF and opening warning",
+    "Borrower search distinguishes 2 Liquid identities and 210 unknown identities",
+    "Keyboard End/Home reaches Closed and the first product",
+    "Numeric keyboard-focus tooltips work on market, funding and product charts",
+    "English reader copy contains no long dashes",
+    "Dark theme renders correctly and browser error log is empty",
+    "Wealth chart table has 32 dated rows"
+  ],
+  "scope": "Browser interaction and responsive presentation verification; source integrity and financial checks are separate.",
+  "all_recorded_checks_passed": true,
+  "recorded_check_count": 38,
+  "site_sha256": "78d30afd60e206feb2de491baaba67af6be8359ffedb33cfd0cd1c768a029e55",
+  "datasets": {
+    "research_market_chapter": "d0f050c12bc1ba33f44fec4ef8521b2bf3b5071076025f5c103e19557134cafa",
+    "research_borrowers": "524efa4e0a6ae3c9ab07a84d6f79c9cbca87c472585d2687ff46f5048198f34c",
+    "carry_economics_chapter": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
+    "product_chapters": "5e36589e10e7f3c1332c4900889a51472b9738f7afc91559cfbb33f38a647907",
+    "carry_borrow_rate_history": "60ab984de707d9ff3bbb0d0f8502a3cc405aed8cbba35a933ee0d9c0cf97ddff"
+  }
+}

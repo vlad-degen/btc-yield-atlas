@@ -1,0 +1,3139 @@
+{
+  "schema_version": 1,
+  "target_timestamp": 1790985599,
+  "captured_at": "2026-10-04T12:21:22.261906+00:00",
+  "financial_snapshot_refreshed": false,
+  "scope": "ETH-collateral stablecoin borrowing economics, fixed-block selected markets and separately dated destination discovery. Not all borrowing is carry and no global carry capital sum is inferred.",
+  "rate_units": "All rates, LTVs, fees and reward shares are fractions, not percentages.",
+  "borrow_markets": [
+    {
+      "id": "aave-usdc-ethereum",
+      "venue": "Aave V3",
+      "chain": "ethereum",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "market_id": null,
+      "pool": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "USDC reserve and base wstETH collateral configuration. Reserve debt spans all supported collateral; it is not ETH-only debt.",
+      "market_debt_units": 2246615640.292179,
+      "market_supply_units": 2252744777.187025,
+      "reserve_cash_units": 6325453.553238,
+      "observed_product_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": 0.785,
+      "liquidation_threshold": 0.81,
+      "health_factor": null,
+      "borrow_apr": 0.1393440125511332,
+      "borrow_apy": 0.14951948112095015,
+      "supply_apr": 0.1250592678612383,
+      "utilization": 0.9971923573277092,
+      "utilization_basis": "Debt / (debt + physical reserve cash), diagnostic; rate calculation can use virtual balance and the stored reserve quote.",
+      "rate_basis": "Stored variable borrow rate at T in ray, shown as APR and continuously compounded annual-rate equivalent. No borrower reward rebate included.",
+      "liquidation": {
+        "bonus_fraction": 0.06000000000000005,
+        "close_factor": null,
+        "protocol_share_of_bonus": 0.1,
+        "basis": "Base wstETH reserve configuration at T. eMode and borrower-specific restrictions can override this case; no Aave V4 policy inferred."
+      },
+      "rate_model": {
+        "address": "0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb",
+        "name": "DefaultReserveInterestRateStrategyV2",
+        "verification": "T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model",
+        "target_utilization": 0.94,
+        "base_borrow_apr": 0.0,
+        "slope1_apr": 0.044,
+        "slope2_apr": 0.1,
+        "curve_basis": "Analytical curve using the actual T ray parameters and verified model formula; fixed governance parameters, not a utilization forecast.",
+        "points": [
+          {
+            "utilization": 0,
+            "borrow_apr": 0.0,
+            "borrow_apy": 0.0
+          },
+          {
+            "utilization": 0.1,
+            "borrow_apr": 0.004680851063829788,
+            "borrow_apy": 0.004691823360385945
+          },
+          {
+            "utilization": 0.2,
+            "borrow_apr": 0.009361702127659575,
+            "borrow_apy": 0.009405659927216954
+          },
+          {
+            "utilization": 0.3,
+            "borrow_apr": 0.01404255319148936,
+            "borrow_apy": 0.014141612982569258
+          },
+          {
+            "utilization": 0.4,
+            "borrow_apr": 0.01872340425531915,
+            "borrow_apy": 0.01889978629310036
+          },
+          {
+            "utilization": 0.5,
+            "borrow_apr": 0.023404255319148935,
+            "borrow_apy": 0.023680284112322574
+          },
+          {
+            "utilization": 0.6,
+            "borrow_apr": 0.02808510638297872,
+            "borrow_apy": 0.02848321118288729
+          },
+          {
+            "utilization": 0.7,
+            "borrow_apr": 0.03276595744680851,
+            "borrow_apy": 0.03330867273887991
+          },
+          {
+            "utilization": 0.8,
+            "borrow_apr": 0.0374468085106383,
+            "borrow_apy": 0.03815677450812559
+          },
+          {
+            "utilization": 0.85,
+            "borrow_apr": 0.03978723404255319,
+            "borrow_apy": 0.04058934864824049
+          },
+          {
+            "utilization": 0.89,
+            "borrow_apr": 0.04165957446808511,
+            "borrow_apy": 0.04253951126652881
+          },
+          {
+            "utilization": 0.9,
+            "borrow_apr": 0.04212765957446808,
+            "borrow_apy": 0.04302762271450573
+          },
+          {
+            "utilization": 0.91,
+            "borrow_apr": 0.04259574468085107,
+            "borrow_apy": 0.04351596269366357
+          },
+          {
+            "utilization": 0.92,
+            "borrow_apr": 0.04306382978723405,
+            "borrow_apy": 0.04400453131099938
+          },
+          {
+            "utilization": 0.94,
+            "borrow_apr": 0.044,
+            "borrow_apy": 0.04498235488844378
+          },
+          {
+            "utilization": 0.95,
+            "borrow_apr": 0.06066666666666666,
+            "borrow_apy": 0.06254467359251198
+          },
+          {
+            "utilization": 0.96,
+            "borrow_apr": 0.07733333333333334,
+            "borrow_apy": 0.08040215042706958
+          },
+          {
+            "utilization": 0.98,
+            "borrow_apr": 0.11066666666666666,
+            "borrow_apy": 0.11702250395610467
+          },
+          {
+            "utilization": 0.99,
+            "borrow_apr": 0.12733333333333333,
+            "borrow_apy": 0.13579555320647946
+          },
+          {
+            "utilization": 1,
+            "borrow_apr": 0.14400000000000002,
+            "borrow_apy": 0.15488410852491366
+          }
+        ],
+        "source_path": "raw/eth/carry-economics-2026-10-04/aave_irm_source_ethereum_0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb-779800406ad86bc7.json",
+        "source_sha256": "779800406ad86bc7ceb1e9fd6bcfb5a6daf5f647cc2e760b6ebc8ab1e33fe006",
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "87c1df5203c16b1b0d41023a22dc9f629b37fd43eff2bcf0f9f68b4cd0adc948"
+      },
+      "links": {
+        "market": "https://app.aave.com/reserve-overview/?underlyingAsset=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&marketName=proto_mainnet_v3",
+        "contract": "https://etherscan.io/address/0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+        "model": "https://etherscan.io/address/0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "chain": "ethereum",
+        "chain_id": 1,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "block_timestamp": 1790985599,
+        "next_timestamp": 1790985611,
+        "last_block_at_or_before_T_verified": true,
+        "path": "data/eth/carry_economics_aave_T.json"
+      },
+      "ltv_and_cf_basis": "Base collateral configuration; no borrower eMode eligibility or borrowing availability inferred.",
+      "virtual_reserve_cash_units": 6293707.259601,
+      "virtual_balance_utilization": 0.9972064090077835
+    },
+    {
+      "id": "aave-usdc-base",
+      "venue": "Aave V3",
+      "chain": "base",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+      "loan_symbol": "USDC",
+      "loan_asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "market_id": null,
+      "pool": "0xa238dd80c259a72e81d7e4664a9801593f98d1c5",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "USDC reserve and base wstETH collateral configuration. Reserve debt spans all supported collateral; it is not ETH-only debt.",
+      "market_debt_units": 161645492.952729,
+      "market_supply_units": 181610867.050334,
+      "reserve_cash_units": 19967099.209728,
+      "observed_product_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": 0.75,
+      "liquidation_threshold": 0.79,
+      "health_factor": null,
+      "borrow_apr": 0.046480807421757454,
+      "borrow_apy": 0.04757797315337733,
+      "supply_apr": 0.03723354731794709,
+      "utilization": 0.8900566366462799,
+      "utilization_basis": "Debt / (debt + physical reserve cash), diagnostic; rate calculation can use virtual balance and the stored reserve quote.",
+      "rate_basis": "Stored variable borrow rate at T in ray, shown as APR and continuously compounded annual-rate equivalent. No borrower reward rebate included.",
+      "liquidation": {
+        "bonus_fraction": 0.06000000000000005,
+        "close_factor": null,
+        "protocol_share_of_bonus": 0.1,
+        "basis": "Base wstETH reserve configuration at T. eMode and borrower-specific restrictions can override this case; no Aave V4 policy inferred."
+      },
+      "rate_model": {
+        "address": "0x86ab1c62a8bf868e1b3e1ab87d587aba6fbcbdc5",
+        "name": "DefaultReserveInterestRateStrategyV2",
+        "verification": "T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model",
+        "target_utilization": 0.8999999999999999,
+        "base_borrow_apr": 0.0,
+        "slope1_apr": 0.047,
+        "slope2_apr": 0.1,
+        "curve_basis": "Analytical curve using the actual T ray parameters and verified model formula; fixed governance parameters, not a utilization forecast.",
+        "points": [
+          {
+            "utilization": 0,
+            "borrow_apr": 0.0,
+            "borrow_apy": 0.0
+          },
+          {
+            "utilization": 0.1,
+            "borrow_apr": 0.005222222222222223,
+            "borrow_apy": 0.005235881792109829
+          },
+          {
+            "utilization": 0.2,
+            "borrow_apr": 0.010444444444444445,
+            "borrow_apy": 0.010499178042360604
+          },
+          {
+            "utilization": 0.3,
+            "borrow_apr": 0.01566666666666667,
+            "borrow_apy": 0.01579003228961455
+          },
+          {
+            "utilization": 0.4,
+            "borrow_apr": 0.02088888888888889,
+            "borrow_apy": 0.021108588824286397
+          },
+          {
+            "utilization": 0.5,
+            "borrow_apr": 0.026111111111111113,
+            "borrow_apy": 0.02645499269227844
+          },
+          {
+            "utilization": 0.6,
+            "borrow_apr": 0.03133333333333334,
+            "borrow_apy": 0.031829389698936165
+          },
+          {
+            "utilization": 0.7,
+            "borrow_apr": 0.036555555555555556,
+            "borrow_apy": 0.03723192641302462
+          },
+          {
+            "utilization": 0.8,
+            "borrow_apr": 0.04177777777777778,
+            "borrow_apy": 0.04266275017072558
+          },
+          {
+            "utilization": 0.85,
+            "borrow_apr": 0.044388888888888894,
+            "borrow_apy": 0.045388815944316464
+          },
+          {
+            "utilization": 0.89,
+            "borrow_apr": 0.046477777777777785,
+            "borrow_apy": 0.04757479936988545
+          },
+          {
+            "utilization": 0.9,
+            "borrow_apr": 0.04700000000000011,
+            "borrow_apy": 0.048122009079655755
+          },
+          {
+            "utilization": 0.91,
+            "borrow_apr": 0.05700000000000011,
+            "borrow_apy": 0.058655810395500205
+          },
+          {
+            "utilization": 0.92,
+            "borrow_apr": 0.06700000000000012,
+            "borrow_apy": 0.06929547817460033
+          },
+          {
+            "utilization": 0.94,
+            "borrow_apr": 0.087,
+            "borrow_apy": 0.09089667971827774
+          },
+          {
+            "utilization": 0.95,
+            "borrow_apr": 0.097,
+            "borrow_apy": 0.10186037362101061
+          },
+          {
+            "utilization": 0.96,
+            "borrow_apr": 0.107,
+            "borrow_apy": 0.1129342544793256
+          },
+          {
+            "utilization": 0.98,
+            "borrow_apr": 0.127,
+            "borrow_apy": 0.13541701778148643
+          },
+          {
+            "utilization": 0.99,
+            "borrow_apr": 0.137,
+            "borrow_apy": 0.14682814852039822
+          },
+          {
+            "utilization": 1,
+            "borrow_apr": 0.14700000000000002,
+            "borrow_apy": 0.15835396302985533
+          }
+        ],
+        "source_path": "raw/eth/carry-economics-2026-10-04/aave_irm_source_base_0x86ab1c62a8bf868e1b3e1ab87d587aba6fbcbdc5-849aed17c6c41478.json",
+        "source_sha256": "849aed17c6c41478b1381a3aa785ebf325b3e62c18ecc1e77a0410742836a3b9",
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "13a3ff2d737f019a82e9da747cc9064e1f40b6d4a18150a28e2bb5ee8e48743b"
+      },
+      "links": {
+        "market": "https://app.aave.com/reserve-overview/?underlyingAsset=0x833589fcd6edb6e08f4c7c32d4f71b54bda02913&marketName=proto_base_v3",
+        "contract": "https://basescan.org/address/0xa238dd80c259a72e81d7e4664a9801593f98d1c5",
+        "model": "https://basescan.org/address/0x86ab1c62a8bf868e1b3e1ab87d587aba6fbcbdc5"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "chain": "base",
+        "chain_id": 8453,
+        "block": 52098126,
+        "block_hash": "0x543aed5c1546fc1083c1faf63b68899641a4a16b9afcf7ac3bf2ca19ff406a17",
+        "block_timestamp": 1790985599,
+        "next_timestamp": 1790985601,
+        "last_block_at_or_before_T_verified": true,
+        "path": "data/eth/carry_economics_aave_T.json"
+      },
+      "ltv_and_cf_basis": "Base collateral configuration; no borrower eMode eligibility or borrowing availability inferred.",
+      "virtual_reserve_cash_units": 19966818.013945,
+      "virtual_balance_utilization": 0.8900580147476406
+    },
+    {
+      "id": "aave-usdc-arbitrum",
+      "venue": "Aave V3",
+      "chain": "arbitrum",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x5979d7b546e38e414f7e9822514be443a4800529",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "market_id": null,
+      "pool": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "USDC reserve and base wstETH collateral configuration. Reserve debt spans all supported collateral; it is not ETH-only debt.",
+      "market_debt_units": 158341978.474191,
+      "market_supply_units": 178491078.212283,
+      "reserve_cash_units": 20260421.290913,
+      "observed_product_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": 0.75,
+      "liquidation_threshold": 0.79,
+      "health_factor": null,
+      "borrow_apr": 0.03940273415803079,
+      "borrow_apy": 0.040189319074440844,
+      "supply_apr": 0.031439570839121134,
+      "utilization": 0.8865613154271204,
+      "utilization_basis": "Debt / (debt + physical reserve cash), diagnostic; rate calculation can use virtual balance and the stored reserve quote.",
+      "rate_basis": "Stored variable borrow rate at T in ray, shown as APR and continuously compounded annual-rate equivalent. No borrower reward rebate included.",
+      "liquidation": {
+        "bonus_fraction": 0.07200000000000006,
+        "close_factor": null,
+        "protocol_share_of_bonus": 0.1,
+        "basis": "Base wstETH reserve configuration at T. eMode and borrower-specific restrictions can override this case; no Aave V4 policy inferred."
+      },
+      "rate_model": {
+        "address": "0x429f16dba3b9e1900087cbaa7b50d38bc60fb73f",
+        "name": "DefaultReserveInterestRateStrategyV2",
+        "verification": "T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model",
+        "target_utilization": 0.8999999999999999,
+        "base_borrow_apr": 0.0,
+        "slope1_apr": 0.04,
+        "slope2_apr": 0.1,
+        "curve_basis": "Analytical curve using the actual T ray parameters and verified model formula; fixed governance parameters, not a utilization forecast.",
+        "points": [
+          {
+            "utilization": 0,
+            "borrow_apr": 0.0,
+            "borrow_apy": 0.0
+          },
+          {
+            "utilization": 0.1,
+            "borrow_apr": 0.004444444444444445,
+            "borrow_apy": 0.004454335635842335
+          },
+          {
+            "utilization": 0.2,
+            "borrow_apr": 0.00888888888888889,
+            "borrow_apy": 0.008928512377641404
+          },
+          {
+            "utilization": 0.3,
+            "borrow_apr": 0.013333333333333334,
+            "borrow_apy": 0.013422618604342525
+          },
+          {
+            "utilization": 0.4,
+            "borrow_apr": 0.01777777777777778,
+            "borrow_apy": 0.017936743088560504
+          },
+          {
+            "utilization": 0.5,
+            "borrow_apr": 0.022222222222222227,
+            "borrow_apy": 0.022470974998333164
+          },
+          {
+            "utilization": 0.6,
+            "borrow_apr": 0.02666666666666667,
+            "borrow_apy": 0.02702540389888269
+          },
+          {
+            "utilization": 0.7,
+            "borrow_apr": 0.03111111111111111,
+            "borrow_apy": 0.03160011975438485
+          },
+          {
+            "utilization": 0.8,
+            "borrow_apr": 0.03555555555555556,
+            "borrow_apy": 0.036195212929746035
+          },
+          {
+            "utilization": 0.85,
+            "borrow_apr": 0.037777777777777785,
+            "borrow_apy": 0.03850042936142089
+          },
+          {
+            "utilization": 0.89,
+            "borrow_apr": 0.03955555555555556,
+            "borrow_apy": 0.040348294406978985
+          },
+          {
+            "utilization": 0.9,
+            "borrow_apr": 0.04000000000000011,
+            "borrow_apy": 0.04081077419238834
+          },
+          {
+            "utilization": 0.91,
+            "borrow_apr": 0.050000000000000114,
+            "borrow_apy": 0.05127109637602416
+          },
+          {
+            "utilization": 0.92,
+            "borrow_apr": 0.06000000000000011,
+            "borrow_apy": 0.061836546545359736
+          },
+          {
+            "utilization": 0.94,
+            "borrow_apr": 0.08,
+            "borrow_apy": 0.08328706767495855
+          },
+          {
+            "utilization": 0.95,
+            "borrow_apr": 0.09,
+            "borrow_apy": 0.09417428370521036
+          },
+          {
+            "utilization": 0.96,
+            "borrow_apr": 0.1,
+            "borrow_apy": 0.10517091807564763
+          },
+          {
+            "utilization": 0.98,
+            "borrow_apr": 0.12,
+            "borrow_apy": 0.12749685157937565
+          },
+          {
+            "utilization": 0.99,
+            "borrow_apr": 0.13,
+            "borrow_apy": 0.13882838332462183
+          },
+          {
+            "utilization": 1,
+            "borrow_apr": 0.14,
+            "borrow_apy": 0.15027379885722728
+          }
+        ],
+        "source_path": "raw/eth/carry-economics-2026-10-04/aave_irm_source_arbitrum_0x429f16dba3b9e1900087cbaa7b50d38bc60fb73f-fd7684fbc42d74f4.json",
+        "source_sha256": "fd7684fbc42d74f4e746b491ccb6d835f16a9e4b347e4b1ca0172dedda52ec81",
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "cd13f4ee2b0d2ed6a35af6310776b945683790226a82a44ea215bde6e07861f8"
+      },
+      "links": {
+        "market": "https://app.aave.com/reserve-overview/?underlyingAsset=0xaf88d065e77c8cc2239327c5edb3a432268e5831&marketName=proto_arbitrum_v3",
+        "contract": "https://arbiscan.io/address/0x794a61358d6845594f94dc1db02a252b5b4814ad",
+        "model": "https://arbiscan.io/address/0x429f16dba3b9e1900087cbaa7b50d38bc60fb73f"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "chain": "arbitrum",
+        "chain_id": 42161,
+        "block": 511139919,
+        "block_hash": "0xbd48ba20f74c0862cc3a106aaa296c5469f323a8ba452253cb7eb07434d94f51",
+        "block_timestamp": 1790985599,
+        "next_timestamp": 1790985600,
+        "last_block_at_or_before_T_verified": true,
+        "path": "data/eth/carry_economics_aave_T.json"
+      },
+      "ltv_and_cf_basis": "Base collateral configuration; no borrower eMode eligibility or borrowing availability inferred.",
+      "virtual_reserve_cash_units": 20260380.344298,
+      "virtual_balance_utilization": 0.8865615186813499
+    },
+    {
+      "id": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "loan_symbol": "USDT",
+      "loan_asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "market_id": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 118984950.717657,
+      "estimated_accrued_market_debt_units": 118985019.04245,
+      "market_supply_units": 154657199.099733,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.032108030967888,
+      "borrow_apy": 0.03262905519589068,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.7693463441099032,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790985035,
+      "unaccrued_seconds": 564,
+      "oracle_price_raw": "3308253958601785714855226804",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.036033356560176,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [
+          {
+            "utilization": 0,
+            "borrow_apr": 0.00900833913216,
+            "borrow_apy": 0.009049036332052604
+          },
+          {
+            "utilization": 0.1,
+            "borrow_apr": 0.01201111884288,
+            "borrow_apy": 0.012083542001401664
+          },
+          {
+            "utilization": 0.2,
+            "borrow_apr": 0.0150138985536,
+            "borrow_apy": 0.015127173317102645
+          },
+          {
+            "utilization": 0.3,
+            "borrow_apr": 0.01801667826432,
+            "borrow_apy": 0.018179957722644014
+          },
+          {
+            "utilization": 0.4,
+            "borrow_apr": 0.02101945797504,
+            "borrow_apy": 0.021241922744044833
+          },
+          {
+            "utilization": 0.5,
+            "borrow_apr": 0.02402223768576,
+            "borrow_apy": 0.024313095990102965
+          },
+          {
+            "utilization": 0.6,
+            "borrow_apr": 0.02702501739648,
+            "borrow_apy": 0.027393505152644004
+          },
+          {
+            "utilization": 0.7,
+            "borrow_apr": 0.0300277971072,
+            "borrow_apy": 0.030483178006770955
+          },
+          {
+            "utilization": 0.8,
+            "borrow_apr": 0.03303057681792,
+            "borrow_apy": 0.03358214241111469
+          },
+          {
+            "utilization": 0.85,
+            "borrow_apr": 0.03453196667328,
+            "borrow_apy": 0.03513511767334146
+          },
+          {
+            "utilization": 0.89,
+            "borrow_apr": 0.035733078557568,
+            "borrow_apy": 0.03637917774312607
+          },
+          {
+            "utilization": 0.9,
+            "borrow_apr": 0.03603335652864,
+            "borrow_apy": 0.03669042630808515
+          },
+          {
+            "utilization": 0.91,
+            "borrow_apr": 0.046843363518768,
+            "borrow_apy": 0.04795784779341034
+          },
+          {
+            "utilization": 0.92,
+            "borrow_apr": 0.057653370477359994,
+            "borrow_apy": 0.05934773086328663
+          },
+          {
+            "utilization": 0.94,
+            "borrow_apr": 0.07927338442607999,
+            "borrow_apy": 0.08250022032294925
+          },
+          {
+            "utilization": 0.95,
+            "borrow_apr": 0.090083391384672,
+            "borrow_apy": 0.09426553221841809
+          },
+          {
+            "utilization": 0.96,
+            "borrow_apr": 0.100893398343264,
+            "borrow_apy": 0.10615871712619572
+          },
+          {
+            "utilization": 0.98,
+            "borrow_apr": 0.122513412291984,
+            "borrow_apy": 0.13033428034575134
+          },
+          {
+            "utilization": 0.99,
+            "borrow_apr": 0.133323419250576,
+            "borrow_apy": 0.14261948371544725
+          },
+          {
+            "utilization": 1,
+            "borrow_apr": 0.144133426240704,
+            "borrow_apy": 0.1550382106503679
+          }
+        ],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0x95db30fab9a3754e42423000df27732cb2396992"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "weETH",
+      "collateral_asset": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "loan_symbol": "RLUSD",
+      "loan_asset": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": 37046.188202872276,
+      "collateral_value_loan_units": 109097756.80171403,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 94535772.3199204,
+      "estimated_accrued_market_debt_units": 94538437.79059574,
+      "market_supply_units": 107007538.03221881,
+      "observed_product_debt_units": 70211978.14715412,
+      "observed_product_stored_debt_units": 70209998.55056693,
+      "observed_product_ltv": 0.6435694023917,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": 1.267794952840028,
+      "borrow_apr": 0.042100213955472,
+      "borrow_apy": 0.04299899656860326,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.8834496527848039,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790964479,
+      "unaccrued_seconds": 21120,
+      "oracle_price_raw": "2944911800487356167887209546108441986272",
+      "positions": [
+        {
+          "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "role": "Liquid ETH main vault",
+          "collateral_units": 17982.641179699316,
+          "collateral_value_loan_units": 52957292.21402639,
+          "stored_debt_units": 35922202.6630225,
+          "estimated_accrued_debt_units": 35923215.50266449,
+          "ltv": 0.6783431327546197,
+          "health_factor": 1.267794952840028,
+          "links": {
+            "account": "https://etherscan.io/address/0xf0bb20865277abd641a307ece5ee04e79073416c"
+          }
+        },
+        {
+          "account": "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3",
+          "role": "Controlled LoanManager",
+          "collateral_units": 19063.547023172956,
+          "collateral_value_loan_units": 56140464.58768765,
+          "stored_debt_units": 34287795.88754442,
+          "estimated_accrued_debt_units": 34288762.64448962,
+          "ltv": 0.6107673475151398,
+          "health_factor": 1.4080647950465004,
+          "links": {
+            "account": "https://etherscan.io/address/0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3"
+          }
+        }
+      ],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.04270212291816,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [
+          {
+            "utilization": 0,
+            "borrow_apr": 0.010675530705888,
+            "borrow_apy": 0.010732717502447297
+          },
+          {
+            "utilization": 0.1,
+            "borrow_apr": 0.014234040962207999,
+            "borrow_apy": 0.014335827293471567
+          },
+          {
+            "utilization": 0.2,
+            "borrow_apr": 0.017792551186992,
+            "borrow_apy": 0.017951781595705076
+          },
+          {
+            "utilization": 0.3,
+            "borrow_apr": 0.021351061443312,
+            "borrow_apy": 0.021580626262098498
+          },
+          {
+            "utilization": 0.4,
+            "borrow_apr": 0.024909571699632,
+            "borrow_apy": 0.025222407212754983
+          },
+          {
+            "utilization": 0.5,
+            "borrow_apr": 0.028468081924415998,
+            "borrow_apy": 0.02887717053113138
+          },
+          {
+            "utilization": 0.6,
+            "borrow_apr": 0.032026592180736,
+            "borrow_apy": 0.03254496256230514
+          },
+          {
+            "utilization": 0.7,
+            "borrow_apr": 0.03558510240552,
+            "borrow_apy": 0.036225829686548465
+          },
+          {
+            "utilization": 0.8,
+            "borrow_apr": 0.03914361266184,
+            "borrow_apy": 0.03991981857995422
+          },
+          {
+            "utilization": 0.85,
+            "borrow_apr": 0.040922867790000005,
+            "borrow_apy": 0.041771748289191904
+          },
+          {
+            "utilization": 0.89,
+            "borrow_apr": 0.042346271892528,
+            "borrow_apy": 0.04325566632657099
+          },
+          {
+            "utilization": 0.9,
+            "borrow_apr": 0.042702122886624,
+            "borrow_apy": 0.04362697595406137
+          },
+          {
+            "utilization": 0.91,
+            "borrow_apr": 0.05551275977784,
+            "borrow_apy": 0.057082505124294365
+          },
+          {
+            "utilization": 0.92,
+            "borrow_apr": 0.06832339663752,
+            "borrow_apy": 0.07071151699877272
+          },
+          {
+            "utilization": 0.94,
+            "borrow_apr": 0.093944670388416,
+            "borrow_apy": 0.09849896471464599
+          },
+          {
+            "utilization": 0.95,
+            "borrow_apr": 0.106755307279632,
+            "borrow_apy": 0.11266196088449518
+          },
+          {
+            "utilization": 0.96,
+            "borrow_apr": 0.11956594413931201,
+            "borrow_apy": 0.1270075611604094
+          },
+          {
+            "utilization": 0.98,
+            "borrow_apr": 0.145187217921744,
+            "borrow_apy": 0.15625602185499693
+          },
+          {
+            "utilization": 0.99,
+            "borrow_apr": 0.157997854781424,
+            "borrow_apy": 0.17116368230288784
+          },
+          {
+            "utilization": 1,
+            "borrow_apr": 0.17080849167264,
+            "borrow_apy": 0.18626354791908445
+          }
+        ],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0x6ab351ffde101bb24a97332f4f7162c1711f110b"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      },
+      "aggregate_loan_value_health_ratio": 1.3362972148830847,
+      "health_factor_basis": "Minimum of the tracked separately liquidatable accounts. Aggregate value/loan ratio is not an account health factor."
+    },
+    {
+      "id": "0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+      "venue": "Morpho Blue",
+      "chain": "base",
+      "collateral_symbol": "WETH",
+      "collateral_asset": "0x4200000000000000000000000000000000000006",
+      "loan_symbol": "USDC",
+      "loan_asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "market_id": "0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 92538071.336872,
+      "estimated_accrued_market_debt_units": 92538076.048658,
+      "market_supply_units": 103819310.59811,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.047227267014767996,
+      "borrow_apy": 0.04836023970972848,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.8913377559892661,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790985565,
+      "unaccrued_seconds": 34,
+      "oracle_price_raw": "2669591824866950188104992686",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x46415998764c29ab2a25cbea6254146d50d22687",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_base_0x46415998764c29ab2a25cbea6254146d50d22687-fb080c69134222b6.json",
+        "source_sha256": "fb080c69134222b610ad29d30fbbd3841ad4d1ccb057c06c87a1b0a9cf421624",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.047570669929728006,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "a54e76030926c40b78e8826b244d9e7d1bf5f95f89100ef02a2d272b03c6796d"
+      },
+      "links": {
+        "market": "https://app.morpho.org/base/market/0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+        "contract": "https://basescan.org/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://basescan.org/address/0x46415998764c29ab2a25cbea6254146d50d22687",
+        "oracle": "https://basescan.org/address/0xfea2d58cefcb9fcb597723c6bae66ffe4193afe4"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 52098126,
+        "block_hash": "0x543aed5c1546fc1083c1faf63b68899641a4a16b9afcf7ac3bf2ca19ff406a17",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "weETH",
+      "collateral_asset": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "market_id": "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": 19903.541924203048,
+      "collateral_value_loan_units": 58658961.799024954,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 32028872.927892,
+      "estimated_accrued_market_debt_units": 32028932.137189,
+      "market_supply_units": 35650336.546135,
+      "observed_product_debt_units": 30667083.612682,
+      "observed_product_stored_debt_units": 30667026.920924,
+      "observed_product_ltv": 0.522803041038339,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": 1.6449789547741618,
+      "borrow_apr": 0.047629172836368,
+      "borrow_apy": 0.048781666474464164,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.8984171267624227,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790984375,
+      "unaccrued_seconds": 1224,
+      "oracle_price_raw": "2947161968578800870816372771",
+      "positions": [
+        {
+          "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "role": "Liquid ETH main vault",
+          "collateral_units": 19903.541924203048,
+          "collateral_value_loan_units": 58658961.799024954,
+          "stored_debt_units": 30667026.920924,
+          "estimated_accrued_debt_units": 30667083.612682,
+          "ltv": 0.522803041038339,
+          "health_factor": 1.6449789547741618,
+          "links": {
+            "account": "https://etherscan.io/address/0xf0bb20865277abd641a307ece5ee04e79073416c"
+          }
+        }
+      ],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.047692163000448005,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [
+          {
+            "utilization": 0,
+            "borrow_apr": 0.011923040750112001,
+            "borrow_apy": 0.01199440353893081
+          },
+          {
+            "utilization": 0.1,
+            "borrow_apr": 0.01589738763528,
+            "borrow_apy": 0.016024423388203066
+          },
+          {
+            "utilization": 0.2,
+            "borrow_apr": 0.01987173458352,
+            "borrow_apy": 0.020070491868809957
+          },
+          {
+            "utilization": 0.3,
+            "borrow_apr": 0.023846081468688,
+            "borrow_apy": 0.024132672761819282
+          },
+          {
+            "utilization": 0.4,
+            "borrow_apr": 0.027820428416928,
+            "borrow_apy": 0.028211030360156323
+          },
+          {
+            "utilization": 0.5,
+            "borrow_apr": 0.031794775302096,
+            "borrow_apy": 0.03230562895388531
+          },
+          {
+            "utilization": 0.6,
+            "borrow_apr": 0.035769122250335995,
+            "borrow_apy": 0.03641653334901274
+          },
+          {
+            "utilization": 0.7,
+            "borrow_apr": 0.039743469135504,
+            "borrow_apy": 0.04054380834866129
+          },
+          {
+            "utilization": 0.8,
+            "borrow_apr": 0.043717816083744,
+            "borrow_apy": 0.04468751927601325
+          },
+          {
+            "utilization": 0.85,
+            "borrow_apr": 0.045704989510560005,
+            "borrow_apy": 0.046765558582065804
+          },
+          {
+            "utilization": 0.89,
+            "borrow_apr": 0.047294728289856,
+            "borrow_apy": 0.048430965813860624
+          },
+          {
+            "utilization": 0.9,
+            "borrow_apr": 0.047692162968911996,
+            "borrow_apy": 0.04884773145134408
+          },
+          {
+            "utilization": 0.91,
+            "borrow_apr": 0.06199981188796799,
+            "borrow_apy": 0.06396214458393384
+          },
+          {
+            "utilization": 0.92,
+            "borrow_apr": 0.076307460775488,
+            "borrow_apy": 0.07929436383059821
+          },
+          {
+            "utilization": 0.94,
+            "borrow_apr": 0.104922758582064,
+            "borrow_apy": 0.11062482080654067
+          },
+          {
+            "utilization": 0.95,
+            "borrow_apr": 0.11923040746958401,
+            "borrow_apy": 0.12662947223147664
+          },
+          {
+            "utilization": 0.96,
+            "borrow_apr": 0.13353805638864,
+            "borrow_apy": 0.1428647586129375
+          },
+          {
+            "utilization": 0.98,
+            "borrow_apr": 0.162153354195216,
+            "borrow_apy": 0.17604057824935276
+          },
+          {
+            "utilization": 0.99,
+            "borrow_apr": 0.176461003082736,
+            "borrow_apy": 0.1929879030019117
+          },
+          {
+            "utilization": 1,
+            "borrow_apr": 0.19076865200179202,
+            "borrow_apy": 0.21017944710069333
+          }
+        ],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0xa3a7a3cefee206f9d7fe00ec3c83324ed4228411"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      },
+      "aggregate_loan_value_health_ratio": 1.6449789547741618,
+      "health_factor_basis": "Minimum of the tracked separately liquidatable accounts. Aggregate value/loan ratio is not an account health factor."
+    },
+    {
+      "id": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "weETH",
+      "collateral_asset": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "loan_symbol": "PYUSD",
+      "loan_asset": "0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "market_id": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": 0.000896097633514103,
+      "collateral_value_loan_units": 2.6388596727940192,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 29276681.392138,
+      "estimated_accrued_market_debt_units": 29276954.772496,
+      "market_supply_units": 32382234.389371,
+      "observed_product_debt_units": 0.001636,
+      "observed_product_stored_debt_units": 0.001636,
+      "observed_product_ltv": 0.0006199647585912769,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": 1387.175622617883,
+      "borrow_apr": 0.058289012647776,
+      "borrow_apy": 0.06002131100945137,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.9040970131989301,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790980547,
+      "unaccrued_seconds": 5052,
+      "oracle_price_raw": "2944834997996329688147182710",
+      "positions": [
+        {
+          "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "role": "Liquid ETH main vault",
+          "collateral_units": 0.000896097633514103,
+          "collateral_value_loan_units": 2.6388596727940192,
+          "stored_debt_units": 0.001636,
+          "estimated_accrued_debt_units": 0.001636,
+          "ltv": 0.0006199647585912769,
+          "health_factor": 1387.175622617883,
+          "links": {
+            "account": "https://etherscan.io/address/0xf0bb20865277abd641a307ece5ee04e79073416c"
+          }
+        }
+      ],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.05190035560128,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0x221898da0890fc5fb6c890fcdc051fa97946ee11"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      },
+      "aggregate_loan_value_health_ratio": 1387.175622617883,
+      "health_factor_basis": "Minimum of the tracked separately liquidatable accounts. Aggregate value/loan ratio is not an account health factor."
+    },
+    {
+      "id": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "market_id": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 29064019.008887,
+      "estimated_accrued_market_debt_units": 29064045.463495,
+      "market_supply_units": 32233333.566568,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.048817412766144,
+      "borrow_apy": 0.0500286114163563,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.9016758675879503,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790985011,
+      "unaccrued_seconds": 588,
+      "oracle_price_raw": "3311855218008597560087124008",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.046480192041456,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0x48f7e36eb6b826b2df4b2e630b62cd25e89e40e2"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x0ca10126f6c94cbd9cf0a48cc9516ae5e3dec5aa68303e6d988ee37c5149bf0d",
+      "venue": "Morpho Blue",
+      "chain": "base",
+      "collateral_symbol": "cbETH",
+      "collateral_asset": "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
+      "loan_symbol": "USDC",
+      "loan_asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "market_id": "0x0ca10126f6c94cbd9cf0a48cc9516ae5e3dec5aa68303e6d988ee37c5149bf0d",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 14004549.989622,
+      "estimated_accrued_market_debt_units": 14004554.353331,
+      "market_supply_units": 15567116.124187,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.77,
+      "health_factor": null,
+      "borrow_apr": 0.047700835400448005,
+      "borrow_apy": 0.048856827550929384,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.8996239173588997,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790985393,
+      "unaccrued_seconds": 206,
+      "oracle_price_raw": "3044771046850000000000000000",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.07411385606874332,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x46415998764c29ab2a25cbea6254146d50d22687",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_base_0x46415998764c29ab2a25cbea6254146d50d22687-fb080c69134222b6.json",
+        "source_sha256": "fb080c69134222b610ad29d30fbbd3841ad4d1ccb057c06c87a1b0a9cf421624",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.047715792925248,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "a54e76030926c40b78e8826b244d9e7d1bf5f95f89100ef02a2d272b03c6796d"
+      },
+      "links": {
+        "market": "https://app.morpho.org/base/market/0x0ca10126f6c94cbd9cf0a48cc9516ae5e3dec5aa68303e6d988ee37c5149bf0d",
+        "contract": "https://basescan.org/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://basescan.org/address/0x46415998764c29ab2a25cbea6254146d50d22687",
+        "oracle": "https://basescan.org/address/0x97ff9cbd7e77348b2b8ffbb883bf29452ad18295"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 52098126,
+        "block_hash": "0x543aed5c1546fc1083c1faf63b68899641a4a16b9afcf7ac3bf2ca19ff406a17",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "market_id": "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 11351607.988135,
+      "estimated_accrued_market_debt_units": 11351629.124754,
+      "market_supply_units": 12610935.831144,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.047507904301968,
+      "borrow_apy": 0.04865448997027521,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.9001400165799781,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790984363,
+      "unaccrued_seconds": 1236,
+      "oracle_price_raw": "3320113273572682512600000000",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.047309117315184,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0xe087ad7fe989cf63f8383579d160a20ee7e69f9f"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "OETH",
+      "collateral_asset": "0x856c4efb76c1d1ae02e20ceb03a2a6a08b0b8dc3",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "market_id": "0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 9481389.861378,
+      "estimated_accrued_market_debt_units": 9481606.53303,
+      "market_supply_units": 10510048.452515,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.076406084538192,
+      "borrow_apy": 0.07940081315095439,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.9021261799329909,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790976167,
+      "unaccrued_seconds": 9432,
+      "oracle_price_raw": "2667177797280418613815441121",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.071813298339072,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0xb8fef900b383db2dbbf4458c7f46acf5b140f26d603a6d1829963f241b82510e",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0xe8adff9117151fb5ad7313873780b87cc56eedb0"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "aave-usdc-optimism",
+      "venue": "Aave V3",
+      "chain": "optimism",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x1f32b1c2345538c0c6f582fcb022739c4a194ebb",
+      "loan_symbol": "USDC",
+      "loan_asset": "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
+      "market_id": null,
+      "pool": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "USDC reserve and base wstETH collateral configuration. Reserve debt spans all supported collateral; it is not ETH-only debt.",
+      "market_debt_units": 9295304.707132,
+      "market_supply_units": 10796855.903206,
+      "reserve_cash_units": 1500931.905257,
+      "observed_product_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": 0.75,
+      "liquidation_threshold": 0.79,
+      "health_factor": null,
+      "borrow_apr": 0.03826561989522408,
+      "borrow_apy": 0.039007177206270206,
+      "supply_apr": 0.029649328006921463,
+      "utilization": 0.8609763791639546,
+      "utilization_basis": "Debt / (debt + physical reserve cash), diagnostic; rate calculation can use virtual balance and the stored reserve quote.",
+      "rate_basis": "Stored variable borrow rate at T in ray, shown as APR and continuously compounded annual-rate equivalent. No borrower reward rebate included.",
+      "liquidation": {
+        "bonus_fraction": 0.07200000000000006,
+        "close_factor": null,
+        "protocol_share_of_bonus": 0.1,
+        "basis": "Base wstETH reserve configuration at T. eMode and borrower-specific restrictions can override this case; no Aave V4 policy inferred."
+      },
+      "rate_model": {
+        "address": "0x9359282735496463131139875849d5302fb4bed1",
+        "name": "DefaultReserveInterestRateStrategyV2",
+        "verification": "T reserve model address and T getInterestRateData(address); verified contract source confirms ray units and piecewise model",
+        "target_utilization": 0.8999999999999999,
+        "base_borrow_apr": 0.0,
+        "slope1_apr": 0.04,
+        "slope2_apr": 0.1,
+        "curve_basis": "Analytical curve using the actual T ray parameters and verified model formula; fixed governance parameters, not a utilization forecast.",
+        "points": [
+          {
+            "utilization": 0,
+            "borrow_apr": 0.0,
+            "borrow_apy": 0.0
+          },
+          {
+            "utilization": 0.1,
+            "borrow_apr": 0.004444444444444445,
+            "borrow_apy": 0.004454335635842335
+          },
+          {
+            "utilization": 0.2,
+            "borrow_apr": 0.00888888888888889,
+            "borrow_apy": 0.008928512377641404
+          },
+          {
+            "utilization": 0.3,
+            "borrow_apr": 0.013333333333333334,
+            "borrow_apy": 0.013422618604342525
+          },
+          {
+            "utilization": 0.4,
+            "borrow_apr": 0.01777777777777778,
+            "borrow_apy": 0.017936743088560504
+          },
+          {
+            "utilization": 0.5,
+            "borrow_apr": 0.022222222222222227,
+            "borrow_apy": 0.022470974998333164
+          },
+          {
+            "utilization": 0.6,
+            "borrow_apr": 0.02666666666666667,
+            "borrow_apy": 0.02702540389888269
+          },
+          {
+            "utilization": 0.7,
+            "borrow_apr": 0.03111111111111111,
+            "borrow_apy": 0.03160011975438485
+          },
+          {
+            "utilization": 0.8,
+            "borrow_apr": 0.03555555555555556,
+            "borrow_apy": 0.036195212929746035
+          },
+          {
+            "utilization": 0.85,
+            "borrow_apr": 0.037777777777777785,
+            "borrow_apy": 0.03850042936142089
+          },
+          {
+            "utilization": 0.89,
+            "borrow_apr": 0.03955555555555556,
+            "borrow_apy": 0.040348294406978985
+          },
+          {
+            "utilization": 0.9,
+            "borrow_apr": 0.04000000000000011,
+            "borrow_apy": 0.04081077419238834
+          },
+          {
+            "utilization": 0.91,
+            "borrow_apr": 0.050000000000000114,
+            "borrow_apy": 0.05127109637602416
+          },
+          {
+            "utilization": 0.92,
+            "borrow_apr": 0.06000000000000011,
+            "borrow_apy": 0.061836546545359736
+          },
+          {
+            "utilization": 0.94,
+            "borrow_apr": 0.08,
+            "borrow_apy": 0.08328706767495855
+          },
+          {
+            "utilization": 0.95,
+            "borrow_apr": 0.09,
+            "borrow_apy": 0.09417428370521036
+          },
+          {
+            "utilization": 0.96,
+            "borrow_apr": 0.1,
+            "borrow_apy": 0.10517091807564763
+          },
+          {
+            "utilization": 0.98,
+            "borrow_apr": 0.12,
+            "borrow_apy": 0.12749685157937565
+          },
+          {
+            "utilization": 0.99,
+            "borrow_apr": 0.13,
+            "borrow_apy": 0.13882838332462183
+          },
+          {
+            "utilization": 1,
+            "borrow_apr": 0.14,
+            "borrow_apy": 0.15027379885722728
+          }
+        ],
+        "source_path": "raw/eth/carry-economics-2026-10-04/aave_irm_source_optimism_0x9359282735496463131139875849d5302fb4bed1-21dee5e82f11e9a4.json",
+        "source_sha256": "21dee5e82f11e9a42239c9ba7a63206d25bff94d22626345a21e731026fe9dcf",
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "cd13f4ee2b0d2ed6a35af6310776b945683790226a82a44ea215bde6e07861f8"
+      },
+      "links": {
+        "market": "https://app.aave.com/reserve-overview/?underlyingAsset=0x0b2c639c533813f4aa9d7837caf62653d097ff85&marketName=proto_optimism_v3",
+        "contract": "https://optimistic.etherscan.io/address/0x794a61358d6845594f94dc1db02a252b5b4814ad",
+        "model": "https://optimistic.etherscan.io/address/0x9359282735496463131139875849d5302fb4bed1"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "chain": "optimism",
+        "chain_id": 10,
+        "block": 157693411,
+        "block_hash": "0x98082202f862592f2c27efb93f30218a7bb81c66510cdf9b0a217400da3b433e",
+        "block_timestamp": 1790985599,
+        "next_timestamp": 1790985601,
+        "last_block_at_or_before_T_verified": true,
+        "path": "data/eth/carry_economics_aave_T.json"
+      },
+      "ltv_and_cf_basis": "Base collateral configuration; no borrower eMode eligibility or borrowing availability inferred.",
+      "virtual_reserve_cash_units": 1500930.569408,
+      "virtual_balance_utilization": 0.860976485695019
+    },
+    {
+      "id": "0x94b823e6bd8ea533b4e33fbc307faea0b307301bc48763acc4d4aa4def7636cd",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "WETH",
+      "collateral_asset": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "market_id": "0x94b823e6bd8ea533b4e33fbc307faea0b307301bc48763acc4d4aa4def7636cd",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 8454046.79964,
+      "estimated_accrued_market_debt_units": 8454060.138497,
+      "market_supply_units": 9964653.078813,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.045565654884768,
+      "borrow_apy": 0.04661971805522237,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.8484035252180656,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790984507,
+      "unaccrued_seconds": 1092,
+      "oracle_price_raw": "2667252408710000000000000000",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.047615231401488,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0x94b823e6bd8ea533b4e33fbc307faea0b307301bc48763acc4d4aa4def7636cd",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0x0f948cba8231db7898ef36a4212581ad7b1b4580"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "weETH",
+      "collateral_asset": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "loan_symbol": "USDT",
+      "loan_asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "market_id": "0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 4293069.569354,
+      "estimated_accrued_market_debt_units": 4293132.473808,
+      "market_supply_units": 5628042.514065,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.032549993942832,
+      "borrow_apy": 0.033085539872371006,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.7627997760545023,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790971403,
+      "unaccrued_seconds": 14196,
+      "oracle_price_raw": "2947161968578800870816372771",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.036815054844816,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0xa6a4c1f15490a1ff39d9de3a366b408dd5647a436d8b179726d3e0562aff1292",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0xa3a7a3cefee206f9d7fe00ec3c83324ed4228411"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x0a15460ad263c2186fe0b5df20a8cf71d55f3cfa06de15edcf6138f6b8edd8bf",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "rETH",
+      "collateral_asset": "0xae78736cd615f374d3085123a210448e74fc6393",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "market_id": "0x0a15460ad263c2186fe0b5df20a8cf71d55f3cfa06de15edcf6138f6b8edd8bf",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 2815543.873939,
+      "estimated_accrued_market_debt_units": 2815582.715433,
+      "market_supply_units": 3122320.608589,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.046124689047120006,
+      "borrow_apy": 0.04720497780746207,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.9017472024474019,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790976167,
+      "unaccrued_seconds": 9432,
+      "oracle_price_raw": "3128492028744256423960714322",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.043821701943408,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0x0a15460ad263c2186fe0b5df20a8cf71d55f3cfa06de15edcf6138f6b8edd8bf",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0x36cb058364a811636685ef15a71e8ea99043f815"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x6a57d77b9a173c5ed10d432e7009dd1ee9a97fac62a7bc970b4bd715e2fff5c8",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "loan_symbol": "USDT",
+      "loan_asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "market_id": "0x6a57d77b9a173c5ed10d432e7009dd1ee9a97fac62a7bc970b4bd715e2fff5c8",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 2522766.907049,
+      "estimated_accrued_market_debt_units": 2522798.829169,
+      "market_supply_units": 3241585.370039,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.032191179920784005,
+      "borrow_apy": 0.032714920790327874,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.77825095410603,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790973203,
+      "unaccrued_seconds": 12396,
+      "oracle_price_raw": "3320113273572682512600000000",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.035873638388496006,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0x6a57d77b9a173c5ed10d432e7009dd1ee9a97fac62a7bc970b4bd715e2fff5c8",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0xe087ad7fe989cf63f8383579d160a20ee7e69f9f"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x13c42741a359ac4a8aa8287d2be109dcf28344484f91185f9a79bd5a805a55ae",
+      "venue": "Morpho Blue",
+      "chain": "base",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452",
+      "loan_symbol": "USDC",
+      "loan_asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "market_id": "0x13c42741a359ac4a8aa8287d2be109dcf28344484f91185f9a79bd5a805a55ae",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 2107196.208578,
+      "estimated_accrued_market_debt_units": 2107199.847778,
+      "market_supply_units": 2340202.719344,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.047691517143168,
+      "borrow_apy": 0.048847054078696314,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.9004331937400211,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790984457,
+      "unaccrued_seconds": 1142,
+      "oracle_price_raw": "3323395988997455560652212616",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x46415998764c29ab2a25cbea6254146d50d22687",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_base_0x46415998764c29ab2a25cbea6254146d50d22687-fb080c69134222b6.json",
+        "source_sha256": "fb080c69134222b610ad29d30fbbd3841ad4d1ccb057c06c87a1b0a9cf421624",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.047079493891488,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "a54e76030926c40b78e8826b244d9e7d1bf5f95f89100ef02a2d272b03c6796d"
+      },
+      "links": {
+        "market": "https://app.morpho.org/base/market/0x13c42741a359ac4a8aa8287d2be109dcf28344484f91185f9a79bd5a805a55ae",
+        "contract": "https://basescan.org/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://basescan.org/address/0x46415998764c29ab2a25cbea6254146d50d22687",
+        "oracle": "https://basescan.org/address/0xd7a1aba119a236fea5bbc5cac6836465cbe9289a"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 52098126,
+        "block_hash": "0x543aed5c1546fc1083c1faf63b68899641a4a16b9afcf7ac3bf2ca19ff406a17",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "weETH",
+      "collateral_asset": "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee",
+      "loan_symbol": "USDT",
+      "loan_asset": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "market_id": "0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 1879203.240783,
+      "estimated_accrued_market_debt_units": 1879227.825483,
+      "market_supply_units": 2402481.803328,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.033282303319439994,
+      "borrow_apy": 0.03384235517770802,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.7821924970169861,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790973203,
+      "unaccrued_seconds": 12396,
+      "oracle_price_raw": "2945359119132583766673015296",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.03695290276896,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0xc2c53d2b868e163da71de14a5113cc2743fc9b5ad7488334720ed2846566a8f6",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0x631bea187ae9d90b76ccf91aa8f5e3ee1cdc0f87"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+      "venue": "Morpho Blue",
+      "chain": "base",
+      "collateral_symbol": "cbETH",
+      "collateral_asset": "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
+      "loan_symbol": "USDC",
+      "loan_asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "market_id": "0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 1516335.820469,
+      "estimated_accrued_market_debt_units": 1516342.106904,
+      "market_supply_units": 2631271.945511,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.033906090634416,
+      "borrow_apy": 0.03448745410589904,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.5762748404078483,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790981743,
+      "unaccrued_seconds": 3856,
+      "oracle_price_raw": "3045501775995546172720962846",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x46415998764c29ab2a25cbea6254146d50d22687",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_base_0x46415998764c29ab2a25cbea6254146d50d22687-fb080c69134222b6.json",
+        "source_sha256": "fb080c69134222b610ad29d30fbbd3841ad4d1ccb057c06c87a1b0a9cf421624",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.046483198904448,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "a54e76030926c40b78e8826b244d9e7d1bf5f95f89100ef02a2d272b03c6796d"
+      },
+      "links": {
+        "market": "https://app.morpho.org/base/market/0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+        "contract": "https://basescan.org/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://basescan.org/address/0x46415998764c29ab2a25cbea6254146d50d22687",
+        "oracle": "https://basescan.org/address/0xb40d93f44411d8c09ad17d7f88195ef9b05ccd96"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 52098126,
+        "block_hash": "0x543aed5c1546fc1083c1faf63b68899641a4a16b9afcf7ac3bf2ca19ff406a17",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x88abdf8693e663144c3544b9442e9b04520016d6ebc57aa76424c00ab1683c9d",
+      "venue": "Morpho Blue",
+      "chain": "ethereum",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+      "loan_symbol": "RLUSD",
+      "loan_asset": "0x8292bb45bf1ee4d140127049757c2e0ff06317ed",
+      "market_id": "0x88abdf8693e663144c3544b9442e9b04520016d6ebc57aa76424c00ab1683c9d",
+      "pool": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 1266285.3917122518,
+      "estimated_accrued_market_debt_units": 1266319.7390478095,
+      "market_supply_units": 1383163.3351694993,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.06606318114835201,
+      "borrow_apy": 0.06829421108883349,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.9154995361101553,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790972651,
+      "unaccrued_seconds": 12948,
+      "oracle_price_raw": "3320038593568323515430664946839923360808",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_ethereum_0x870ac11d48b15db9a138cf899d20f13f79ba00bc-752f6c994a197196.json",
+        "source_sha256": "752f6c994a19719678cad7896ecf60b16fadcff592b6e1540d0057bbbe4a4efb",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.045023035431168,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "bf55155ac66f5485cbebe3a3739b3928aef70955256a22fed95802541e72d7ea"
+      },
+      "links": {
+        "market": "https://app.morpho.org/ethereum/market/0x88abdf8693e663144c3544b9442e9b04520016d6ebc57aa76424c00ab1683c9d",
+        "contract": "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+        "model": "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+        "oracle": "https://etherscan.io/address/0x4e58cea93a5252547c99d04042de646b17531653"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 26108081,
+        "block_hash": "0x9f430d0cc4301a9f8ea0315223c2ed6e66373f6454baac771cac7449d725ba37",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    },
+    {
+      "id": "0x33e0c8ab132390822b07e5dc95033cf250c963153320b7ffca73220664da2ea0",
+      "venue": "Morpho Blue",
+      "chain": "arbitrum",
+      "collateral_symbol": "wstETH",
+      "collateral_asset": "0x5979d7b546e38e414f7e9822514be443a4800529",
+      "loan_symbol": "USDC",
+      "loan_asset": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "market_id": "0x33e0c8ab132390822b07e5dc95033cf250c963153320b7ffca73220664da2ea0",
+      "pool": "0x6c247b1f6182318877311737bac0844baa518f5e",
+      "collateral_units": null,
+      "collateral_value_loan_units": null,
+      "collateral_scope": "Tracked Liquid ETH main vault and controlled LoanManager only; market-wide collateral is not reconstructed.",
+      "market_debt_units": 1010896.357415,
+      "estimated_accrued_market_debt_units": 1010899.122687,
+      "market_supply_units": 1251875.55733,
+      "observed_product_debt_units": null,
+      "observed_product_stored_debt_units": null,
+      "observed_product_ltv": null,
+      "ltv_limit": null,
+      "liquidation_threshold": 0.86,
+      "health_factor": null,
+      "borrow_apr": 0.029272326178464,
+      "borrow_apy": 0.029704971916286856,
+      "rate_basis": "Fixed-block borrowRateView quote, average over the pending accrual interval; APY = exp(ratePerSecond \u00d7 365 days) \u2212 1. A frozen annual-rate scenario, not a forecast.",
+      "utilization": 0.8075054676928429,
+      "market_fee": 0.0,
+      "last_update_timestamp": 1790982652,
+      "unaccrued_seconds": 2947,
+      "oracle_price_raw": "3323067743738059942020006833",
+      "positions": [],
+      "liquidation": {
+        "bonus_fraction": 0.04384133611691032,
+        "close_factor": null,
+        "basis": "Morpho incentive factor from LLTV; no fixed 50% close-factor assumption. Exact repay/seize execution is separate."
+      },
+      "rate_model": {
+        "address": "0x66f30587fb8d4206918deb78eca7d5ebbafd06da",
+        "name": "AdaptiveCurveIrm",
+        "verification": "T market parameter binding, MORPHO() binding and verified deployed contract source",
+        "source_path": "raw/eth/carry-economics-2026-10-04/irm_source_arbitrum_0x66f30587fb8d4206918deb78eca7d5ebbafd06da-636858ba80f8d38b.json",
+        "source_sha256": "636858ba80f8d38bf4e468ff78832418b01987b22727341129cd18dbb0fa3e95",
+        "target_utilization": 0.9,
+        "stored_rate_at_target_apr": 0.031724652230928,
+        "curve_basis": "Primary IRM view calls at T, holding the stored per-market target rate constant by setting hypothetical lastUpdate to the block timestamp. No time adaptation or balance forecast.",
+        "points": [],
+        "T_runtime_matches_verified_source": true,
+        "runtime_sha256": "8955697fde3a2922cc3454cd242f251507294deacd399ef01a5dc0dc49dee58d"
+      },
+      "links": {
+        "market": "https://app.morpho.org/arbitrum/market/0x33e0c8ab132390822b07e5dc95033cf250c963153320b7ffca73220664da2ea0",
+        "contract": "https://arbiscan.io/address/0x6c247b1f6182318877311737bac0844baa518f5e",
+        "model": "https://arbiscan.io/address/0x66f30587fb8d4206918deb78eca7d5ebbafd06da",
+        "oracle": "https://arbiscan.io/address/0x8e02a9b9cc29d783b2fcb71c3a72651b591cae31"
+      },
+      "source": {
+        "target_timestamp": 1790985599,
+        "block": 511139919,
+        "block_hash": "0xbd48ba20f74c0862cc3a106aaa296c5469f323a8ba452253cb7eb07434d94f51",
+        "path": "data/eth/carry_economics_primary_T.json",
+        "price_convention": "Morpho collateral oracle in loan units; no stablecoin market-price guarantee."
+      }
+    }
+  ],
+  "destinations": [
+    {
+      "id": "aave-usdc-ethereum",
+      "name": "Aave V3 USDC (Ethereum)",
+      "chain": "ethereum",
+      "asset": "USDC",
+      "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "gross_apy": 0.133215614342338,
+      "organic_apy": 0.133215614342338,
+      "reward_apy": 0.0,
+      "reward_tokens": null,
+      "gross_definition": "Base supply-rate equivalent plus the separately captured reward component, before an outer ETH vault NAV fee. No reward component is reported in the matched captured feed when zero.",
+      "rate_basis": "T contract supply APR converted to an annual equivalent; any reward component is a separately dated 3 October discovery observation.",
+      "source_timestamp": 1790985599,
+      "captured_at": "2026-10-03T13:40:39.080809+00:00",
+      "target_snapshot_verified": true,
+      "links": {
+        "destination": "https://app.aave.com/reserve-overview/?underlyingAsset=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&marketName=proto_mainnet_v3"
+      },
+      "feed_pool_id": "aa70268e-4b52-42bf-a116-608b370f9501",
+      "verified_scope": "T organic supply-rate quote only; reward coverage is a separately dated discovery screen.",
+      "reward_coverage": "Matched 3 October feed; no reward component reported."
+    },
+    {
+      "id": "aave-usdc-base",
+      "name": "Aave V3 USDC (Base)",
+      "chain": "base",
+      "asset": "USDC",
+      "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "gross_apy": 0.03793539956237502,
+      "organic_apy": 0.03793539956237502,
+      "reward_apy": 0.0,
+      "reward_tokens": null,
+      "gross_definition": "Base supply-rate equivalent plus the separately captured reward component, before an outer ETH vault NAV fee. No reward component is reported in the matched captured feed when zero.",
+      "rate_basis": "T contract supply APR converted to an annual equivalent; any reward component is a separately dated 3 October discovery observation.",
+      "source_timestamp": 1790985599,
+      "captured_at": "2026-10-03T13:40:39.080809+00:00",
+      "target_snapshot_verified": true,
+      "links": {
+        "destination": "https://app.aave.com/reserve-overview/?underlyingAsset=0x833589fcd6edb6e08f4c7c32d4f71b54bda02913&marketName=proto_base_v3"
+      },
+      "feed_pool_id": "7e0661bf-8cf3-45e6-9424-31916d4c7b84",
+      "verified_scope": "T organic supply-rate quote only; reward coverage is a separately dated discovery screen.",
+      "reward_coverage": "Matched 3 October feed; no reward component reported."
+    },
+    {
+      "id": "aave-usdc-arbitrum",
+      "name": "Aave V3 USDC (Arbitrum)",
+      "chain": "arbitrum",
+      "asset": "USDC",
+      "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "gross_apy": 0.031939014502726085,
+      "organic_apy": 0.031939014502726085,
+      "reward_apy": 0.0,
+      "reward_tokens": null,
+      "gross_definition": "Base supply-rate equivalent plus the separately captured reward component, before an outer ETH vault NAV fee. No reward component is reported in the matched captured feed when zero.",
+      "rate_basis": "T contract supply APR converted to an annual equivalent; any reward component is a separately dated 3 October discovery observation.",
+      "source_timestamp": 1790985599,
+      "captured_at": "2026-10-03T13:40:39.080809+00:00",
+      "target_snapshot_verified": true,
+      "links": {
+        "destination": "https://app.aave.com/reserve-overview/?underlyingAsset=0xaf88d065e77c8cc2239327c5edb3a432268e5831&marketName=proto_arbitrum_v3"
+      },
+      "feed_pool_id": "d9fa8e14-0447-4207-9ae8-7810199dfa1f",
+      "verified_scope": "T organic supply-rate quote only; reward coverage is a separately dated discovery screen.",
+      "reward_coverage": "Matched 3 October feed; no reward component reported."
+    },
+    {
+      "id": "aave-usdc-optimism",
+      "name": "Aave V3 USDC (Optimism)",
+      "chain": "optimism",
+      "asset": "USDC",
+      "address": "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
+      "gross_apy": 0.03009324575884654,
+      "organic_apy": 0.03009324575884654,
+      "reward_apy": null,
+      "reward_tokens": null,
+      "gross_definition": "Observed organic supply-rate equivalent only, before an outer ETH NAV fee. Additional reward income is unknown and not included.",
+      "rate_basis": "T contract organic supply APR converted to an annual equivalent. No matching reward observation; the total bar includes only the observed organic component.",
+      "source_timestamp": 1790985599,
+      "captured_at": "2026-10-03T13:40:39.080809+00:00",
+      "target_snapshot_verified": true,
+      "links": {
+        "destination": "https://app.aave.com/reserve-overview/?underlyingAsset=0x0b2c639c533813f4aa9d7837caf62653d097ff85&marketName=proto_optimism_v3"
+      },
+      "feed_pool_id": null,
+      "verified_scope": "T organic supply-rate quote only; reward coverage is a separately dated discovery screen.",
+      "reward_coverage": "No matching native-USDC reward feed observation; rewards not reconstructed."
+    },
+    {
+      "id": "senrlusdv2",
+      "name": "Sentora RLUSD Main V2",
+      "chain": "ethereum",
+      "asset": "RLUSD",
+      "address": "0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+      "gross_apy": 0.0559178,
+      "organic_apy": 0.029988,
+      "reward_apy": 0.0259298,
+      "reward_tokens": [
+        "0x8292bb45bf1ee4d140127049757c2e0ff06317ed"
+      ],
+      "destination_performance_fee": 0.1,
+      "gross_definition": "Reported base plus external rewards, before the outer ETH manager fee. Gross does not mean before destination fees; do not deduct its performance fee again.",
+      "rate_basis": "Separately dated captured discovery feed APY split; not a verified T realized investor return.",
+      "source_timestamp": null,
+      "captured_at": "2026-10-03T13:40:39.080809+00:00",
+      "target_snapshot_verified": false,
+      "links": {
+        "destination": "https://app.morpho.org/ethereum/vault/0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf"
+      },
+      "feed_pool_id": "2e53bb82-f13f-4157-a3bf-b1a91b94b6a4",
+      "source": {
+        "path": "raw/eth/2026-10-02/yield_pools-65cd13598ec237ee.json",
+        "sha256": "65cd13598ec237eefc25461937e26df5fda1b1791cf1f7bbea8eeccb59caceda"
+      }
+    },
+    {
+      "id": "senpyusdprimev2",
+      "name": "Sentora PRIME Main V2",
+      "chain": "ethereum",
+      "asset": "PYUSD",
+      "address": "0xc21b08c16458202593d4d9b26b9984ee67b38bbd",
+      "gross_apy": 0.0669962,
+      "organic_apy": 0.0448768,
+      "reward_apy": 0.022119399999999997,
+      "reward_tokens": [
+        "0x6c3ea9036406852006290770bedfcaba0e23a0e8"
+      ],
+      "destination_performance_fee": 0.15,
+      "gross_definition": "Reported base plus external rewards, before the outer ETH manager fee. Gross does not mean before destination fees; do not deduct its performance fee again.",
+      "rate_basis": "Separately dated captured discovery feed APY split; not a verified T realized investor return.",
+      "source_timestamp": null,
+      "captured_at": "2026-10-03T13:40:39.080809+00:00",
+      "target_snapshot_verified": false,
+      "links": {
+        "destination": "https://app.morpho.org/ethereum/vault/0xc21b08c16458202593d4d9b26b9984ee67b38bbd"
+      },
+      "feed_pool_id": "f569e486-da2a-41ef-8bfe-1a4db0d1d268",
+      "source": {
+        "path": "raw/eth/2026-10-02/yield_pools-65cd13598ec237ee.json",
+        "sha256": "65cd13598ec237eefc25461937e26df5fda1b1791cf1f7bbea8eeccb59caceda"
+      }
+    }
+  ],
+  "worked_example": {
+    "title": "An observed RLUSD loan and destination, with a separate income scenario",
+    "measured_leg": {
+      "product": "Ether.fi Liquid ETH",
+      "borrow_market_id": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "destination_id": "senrlusdv2",
+      "tracked_accounts": [
+        "0xf0bb20865277abd641a307ece5ee04e79073416c",
+        "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3"
+      ],
+      "collateral_weETH": 37046.188202872276,
+      "collateral_oracle_RLUSD": 109097756.80171403,
+      "stored_RLUSD_debt": 70209998.55056693,
+      "estimated_accrued_RLUSD_debt": 70211978.14715412,
+      "RLUSD_destination_book_claim": 55104709.535318464,
+      "maximum_matched_notional_RLUSD": 55104709.535318464,
+      "source_of_parked_funds_traced": false,
+      "matched_notional_is_income_attribution": false,
+      "whole_product_carry_return": null,
+      "price_convention": "Collateral uses the market oracle in RLUSD units. Destination uses fixed-block ERC4626 convertToAssets. A $1 RLUSD valuation is an explicit comparison convention, not an executable redemption guarantee.",
+      "minimum_account_health_factor": 1.267794952840028,
+      "individual_accounts": [
+        {
+          "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+          "role": "Liquid ETH main vault",
+          "collateral_units": 17982.641179699316,
+          "collateral_value_loan_units": 52957292.21402639,
+          "stored_debt_units": 35922202.6630225,
+          "estimated_accrued_debt_units": 35923215.50266449,
+          "ltv": 0.6783431327546197,
+          "health_factor": 1.267794952840028,
+          "links": {
+            "account": "https://etherscan.io/address/0xf0bb20865277abd641a307ece5ee04e79073416c"
+          }
+        },
+        {
+          "account": "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3",
+          "role": "Controlled LoanManager",
+          "collateral_units": 19063.547023172956,
+          "collateral_value_loan_units": 56140464.58768765,
+          "stored_debt_units": 34287795.88754442,
+          "estimated_accrued_debt_units": 34288762.64448962,
+          "ltv": 0.6107673475151398,
+          "health_factor": 1.4080647950465004,
+          "links": {
+            "account": "https://etherscan.io/address/0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3"
+          }
+        }
+      ]
+    },
+    "ledger": [
+      {
+        "step": "Collateral in the two tracked weETH/RLUSD accounts",
+        "value": 37046.188202872276,
+        "unit": "weETH",
+        "evidence": "Fixed-block Morpho position getters",
+        "status": "measured"
+      },
+      {
+        "step": "Collateral value at the market oracle",
+        "value": 109097756.80171403,
+        "unit": "RLUSD oracle units",
+        "evidence": "Fixed-block oracle price \u00d7 collateral units",
+        "status": "measured"
+      },
+      {
+        "step": "Debt accrued to the T block",
+        "value": 70211978.14715412,
+        "unit": "RLUSD",
+        "evidence": "Stored borrow shares, market balances and primary IRM rate; exact virtual-share/Taylor projection",
+        "status": "derived from primary state"
+      },
+      {
+        "step": "LTV of this combined loan leg",
+        "value": 0.6435694023917,
+        "unit": "fraction",
+        "evidence": "Projected debt / oracle collateral",
+        "status": "derived from primary state"
+      },
+      {
+        "step": "RLUSD vault claim held by Liquid ETH",
+        "value": 55104709.535318464,
+        "unit": "RLUSD",
+        "evidence": "T vault holdings \u00d7 ERC4626 conversion",
+        "status": "measured book claim"
+      },
+      {
+        "step": "Destination headline yield",
+        "value": 0.0559178,
+        "unit": "annual fraction",
+        "evidence": "3 October captured base + reward APY",
+        "status": "dated discovery"
+      },
+      {
+        "step": "Destination yield without external rewards",
+        "value": 0.029988,
+        "unit": "annual fraction",
+        "evidence": "3 October captured base APY",
+        "status": "dated discovery"
+      },
+      {
+        "step": "Annualized borrow quote",
+        "value": 0.04299899656860326,
+        "unit": "annual fraction",
+        "evidence": "T primary IRM quote converted consistently to annual yield units",
+        "status": "derived from primary state"
+      },
+      {
+        "step": "Outer Ethereum manager charge",
+        "value": 0.0035,
+        "unit": "annual fraction of NAV",
+        "evidence": "Ethereum Accountant managementFee at T",
+        "status": "measured policy, annual charge scenario"
+      },
+      {
+        "step": "No-reward carry uplift before manager charge",
+        "value": -0.008373479286176462,
+        "unit": "annual ETH income / initial ETH",
+        "evidence": "Full collateral and debt-parking assumption \u00d7 measured LTV \u00d7 organic-minus-borrow spread",
+        "status": "scenario"
+      },
+      {
+        "step": "No-reward total ETH income after manager charge",
+        "value": 0.010858078167338721,
+        "unit": "annual ETH income / initial ETH",
+        "evidence": "stETH baseline + no-reward carry uplift \u2212 annual NAV fee",
+        "status": "scenario"
+      }
+    ],
+    "modeled_income": {
+      "normalized_initial_ETH": 1,
+      "staking_baseline": 0.022731557453515183,
+      "weETH_issuer_baseline_for_comparison": 0.023548297891085035,
+      "inputs": {
+        "ltv": 0.6435694023917,
+        "collateral_share": 1.0,
+        "cf": 0.86,
+        "borrow_rate": 0.04299899656860326,
+        "parking_rate": 0.0559178,
+        "reward_share": 0.4637128070131515,
+        "operator_fee": 0.0035
+      },
+      "result": {
+        "gross_ETH_income": 0.031045704057475025,
+        "net_ETH_income": 0.027545704057475025,
+        "no_reward_ETH_income": 0.010858078167338721,
+        "carry_uplift_before_outer_fee": 0.008314146603959842,
+        "no_reward_carry_uplift_before_outer_fee": -0.008373479286176462,
+        "health_factor": 1.3362972148830847,
+        "collateral_price_drop_to_liquidation": 0.25166348559104645,
+        "debt_as_share_of_deposit": 0.6435694023917
+      },
+      "matched_notional_annual_spread_with_rewards_RLUSD": 711886.9106309927,
+      "matched_notional_annual_spread_without_rewards_RLUSD": -716967.1866779078,
+      "not_measured_income": true
+    },
+    "unresolved": [
+      "The destination balance proves a held claim, not the path or source of the borrowed dollars.",
+      "The remaining debt and other dollar destinations are not allocated into this worked income scenario.",
+      "External reward ownership, claim eligibility, realized sale value and sponsor budgets need reconciliation.",
+      "The frozen-rate annual scenario mixes T borrowing state with a separately dated 3 October yield feed.",
+      "The full product contains ETH loops, other carry legs, LP positions, nested vaults, fees and execution costs. No whole-product carry attribution is made.",
+      "The measured LTV aggregates two accounts. Calculator HF is a standalone-account illustration at that LTV; actual liquidation applies separately to the main vault and LoanManager."
+    ],
+    "whole_product_balance_sheet_boundary": {
+      "published_NAV_USD": 472683616.62473655,
+      "unresolved_residual_USD": 12452629.59283626,
+      "note": "Mixed price conventions and incomplete positions; residual is not a proven deficit. No whole-vault return is inferred from the worked leg."
+    }
+  },
+  "calculator": {
+    "staking_baseline": {
+      "annual_rate": 0.022731557453515183,
+      "asset": "stETH",
+      "method": "30-day historical wstETH-to-stETH issuer conversion annualized at T; scenario baseline, not a promised forward staking rate.",
+      "start_timestamp": 1788393599,
+      "end_timestamp": 1790985599,
+      "source_path": "data/eth/etherfi_staking_comparison.json"
+    },
+    "operator_fee_basis": "Annual NAV fee; 0.0035 equals 0.35% of NAV. Destination performance fees are not deducted again.",
+    "presets": [
+      {
+        "id": "observed-rlusd-leg",
+        "label": "Observed RLUSD loan, full parking scenario",
+        "inputs": {
+          "ltv": 0.6435694023917,
+          "collateral_share": 1.0,
+          "cf": 0.86,
+          "borrow_rate": 0.04299899656860326,
+          "parking_rate": 0.0559178,
+          "reward_share": 0.4637128070131515,
+          "operator_fee": 0.0035
+        },
+        "basis": "Measured aggregated LTV and LLTV of two Liquid ETH accounts, T borrow quote, 3 October destination APY split. Full collateral share and full debt parking are assumptions.",
+        "observed_fields": [
+          "ltv",
+          "cf",
+          "borrow_rate",
+          "parking_rate",
+          "reward_share",
+          "operator_fee"
+        ],
+        "illustrative_fields": [
+          "collateral_share",
+          "all borrowed RLUSD earns destination yield"
+        ],
+        "result": {
+          "gross_ETH_income": 0.031045704057475025,
+          "net_ETH_income": 0.027545704057475025,
+          "no_reward_ETH_income": 0.010858078167338721,
+          "carry_uplift_before_outer_fee": 0.008314146603959842,
+          "no_reward_carry_uplift_before_outer_fee": -0.008373479286176462,
+          "health_factor": 1.3362972148830847,
+          "collateral_price_drop_to_liquidation": 0.25166348559104645,
+          "debt_as_share_of_deposit": 0.6435694023917
+        }
+      },
+      {
+        "id": "ethereum-usdc",
+        "label": "Ethereum USDC reserve, 65% LTV scenario",
+        "inputs": {
+          "ltv": 0.65,
+          "collateral_share": 1.0,
+          "cf": 0.81,
+          "borrow_rate": 0.14951948112095015,
+          "parking_rate": 0.133215614342338,
+          "reward_share": 0,
+          "operator_fee": 0.0035
+        },
+        "basis": "T Aave V3 Ethereum USDC borrow and supply rates, base wstETH threshold. 65% LTV and 100% collateral share are illustrative, not an observed product allocation.",
+        "observed_fields": [
+          "cf",
+          "borrow_rate",
+          "parking_rate",
+          "operator_fee"
+        ],
+        "illustrative_fields": [
+          "ltv",
+          "collateral_share",
+          "parking execution and capacity"
+        ],
+        "result": {
+          "gross_ETH_income": 0.012134044047417287,
+          "net_ETH_income": 0.008634044047417288,
+          "no_reward_ETH_income": 0.008634044047417288,
+          "carry_uplift_before_outer_fee": -0.010597513406097896,
+          "no_reward_carry_uplift_before_outer_fee": -0.010597513406097896,
+          "health_factor": 1.2461538461538462,
+          "collateral_price_drop_to_liquidation": 0.19753086419753085,
+          "debt_as_share_of_deposit": 0.65
+        }
+      },
+      {
+        "id": "rlusd-no-rewards",
+        "label": "RLUSD leg with rewards removed",
+        "inputs": {
+          "ltv": 0.6435694023917,
+          "collateral_share": 1.0,
+          "cf": 0.86,
+          "borrow_rate": 0.04299899656860326,
+          "parking_rate": 0.029988,
+          "reward_share": 0,
+          "operator_fee": 0.0035
+        },
+        "basis": "Same observed loan; only the captured organic destination yield remains. Allocation assumptions are unchanged.",
+        "observed_fields": [
+          "ltv",
+          "cf",
+          "borrow_rate",
+          "parking_rate",
+          "operator_fee"
+        ],
+        "illustrative_fields": [
+          "collateral_share",
+          "rewards removed for scenario"
+        ],
+        "result": {
+          "gross_ETH_income": 0.014358078167338724,
+          "net_ETH_income": 0.010858078167338725,
+          "no_reward_ETH_income": 0.010858078167338725,
+          "carry_uplift_before_outer_fee": -0.008373479286176459,
+          "no_reward_carry_uplift_before_outer_fee": -0.008373479286176459,
+          "health_factor": 1.3362972148830847,
+          "collateral_price_drop_to_liquidation": 0.25166348559104645,
+          "debt_as_share_of_deposit": 0.6435694023917
+        }
+      },
+      {
+        "id": "rlusd-cost-shock",
+        "label": "RLUSD loan cost increases 3 percentage points",
+        "inputs": {
+          "ltv": 0.6435694023917,
+          "collateral_share": 1.0,
+          "cf": 0.86,
+          "borrow_rate": 0.07299899656860326,
+          "parking_rate": 0.0559178,
+          "reward_share": 0.4637128070131515,
+          "operator_fee": 0.0035
+        },
+        "basis": "Observed RLUSD loan and destination, with an explicit 300 bp annual-cost stress. This is not an observed or predicted future quote.",
+        "observed_fields": [
+          "ltv",
+          "cf",
+          "parking_rate",
+          "reward_share",
+          "operator_fee"
+        ],
+        "illustrative_fields": [
+          "collateral_share",
+          "borrow_rate stress"
+        ],
+        "result": {
+          "gross_ETH_income": 0.011738621985724024,
+          "net_ETH_income": 0.008238621985724025,
+          "no_reward_ETH_income": -0.008449003904412278,
+          "carry_uplift_before_outer_fee": -0.010992935467791159,
+          "no_reward_carry_uplift_before_outer_fee": -0.02768056135792746,
+          "health_factor": 1.3362972148830847,
+          "collateral_price_drop_to_liquidation": 0.25166348559104645,
+          "debt_as_share_of_deposit": 0.6435694023917
+        }
+      }
+    ],
+    "formulas": {
+      "debt_fraction": "collateral_share \u00d7 ltv",
+      "net_ETH_income": "staking_baseline + debt_fraction \u00d7 (parking_rate \u2212 borrow_rate) \u2212 operator_fee",
+      "no_reward_ETH_income": "staking_baseline + debt_fraction \u00d7 (parking_rate \u00d7 (1 \u2212 reward_share) \u2212 borrow_rate) \u2212 operator_fee",
+      "health_factor": "cf / ltv",
+      "collateral_price_drop_to_liquidation": "1 \u2212 ltv / cf"
+    },
+    "formula_boundary": "One-period, frozen annual-rate illustration, constant ETH/USD and stablecoin value, debt entirely parked. Staking baseline is earned on all initial ETH in this model. Rewards, NAV fee compounding, swaps, exits, taxes and realized P&L need separate accounting.",
+    "liquidation_model": {
+      "close_factor": 0.5,
+      "bonus_fraction": 0.05,
+      "status": "Illustrative calculator defaults, not Aave V4 or the measured venues policy. Actual venue bonus metadata appears in borrow_markets."
+    },
+    "preset_health_factor_boundary": "The first preset uses aggregated observed LTV. Its calculated HF is hypothetical; the actual tracked accounts have separate HFs and cannot pool liquidation headroom."
+  },
+  "playbook": {
+    "title": "What a new ETH carry product would need to prove",
+    "stance": "These are research-backed design and diligence choices. Venue observations are not committed financing or a completed partner selection.",
+    "scenarios": [
+      {
+        "id": "observed-rlusd-leg",
+        "label": "Observed RLUSD loan, full parking scenario",
+        "inputs": {
+          "ltv": 0.6435694023917,
+          "collateral_share": 1.0,
+          "cf": 0.86,
+          "borrow_rate": 0.04299899656860326,
+          "parking_rate": 0.0559178,
+          "reward_share": 0.4637128070131515,
+          "operator_fee": 0.0035
+        },
+        "basis": "Measured aggregated LTV and LLTV of two Liquid ETH accounts, T borrow quote, 3 October destination APY split. Full collateral share and full debt parking are assumptions.",
+        "observed_fields": [
+          "ltv",
+          "cf",
+          "borrow_rate",
+          "parking_rate",
+          "reward_share",
+          "operator_fee"
+        ],
+        "illustrative_fields": [
+          "collateral_share",
+          "all borrowed RLUSD earns destination yield"
+        ],
+        "result": {
+          "gross_ETH_income": 0.031045704057475025,
+          "net_ETH_income": 0.027545704057475025,
+          "no_reward_ETH_income": 0.010858078167338721,
+          "carry_uplift_before_outer_fee": 0.008314146603959842,
+          "no_reward_carry_uplift_before_outer_fee": -0.008373479286176462,
+          "health_factor": 1.3362972148830847,
+          "collateral_price_drop_to_liquidation": 0.25166348559104645,
+          "debt_as_share_of_deposit": 0.6435694023917
+        }
+      },
+      {
+        "id": "ethereum-usdc",
+        "label": "Ethereum USDC reserve, 65% LTV scenario",
+        "inputs": {
+          "ltv": 0.65,
+          "collateral_share": 1.0,
+          "cf": 0.81,
+          "borrow_rate": 0.14951948112095015,
+          "parking_rate": 0.133215614342338,
+          "reward_share": 0,
+          "operator_fee": 0.0035
+        },
+        "basis": "T Aave V3 Ethereum USDC borrow and supply rates, base wstETH threshold. 65% LTV and 100% collateral share are illustrative, not an observed product allocation.",
+        "observed_fields": [
+          "cf",
+          "borrow_rate",
+          "parking_rate",
+          "operator_fee"
+        ],
+        "illustrative_fields": [
+          "ltv",
+          "collateral_share",
+          "parking execution and capacity"
+        ],
+        "result": {
+          "gross_ETH_income": 0.012134044047417287,
+          "net_ETH_income": 0.008634044047417288,
+          "no_reward_ETH_income": 0.008634044047417288,
+          "carry_uplift_before_outer_fee": -0.010597513406097896,
+          "no_reward_carry_uplift_before_outer_fee": -0.010597513406097896,
+          "health_factor": 1.2461538461538462,
+          "collateral_price_drop_to_liquidation": 0.19753086419753085,
+          "debt_as_share_of_deposit": 0.65
+        }
+      },
+      {
+        "id": "rlusd-no-rewards",
+        "label": "RLUSD leg with rewards removed",
+        "inputs": {
+          "ltv": 0.6435694023917,
+          "collateral_share": 1.0,
+          "cf": 0.86,
+          "borrow_rate": 0.04299899656860326,
+          "parking_rate": 0.029988,
+          "reward_share": 0,
+          "operator_fee": 0.0035
+        },
+        "basis": "Same observed loan; only the captured organic destination yield remains. Allocation assumptions are unchanged.",
+        "observed_fields": [
+          "ltv",
+          "cf",
+          "borrow_rate",
+          "parking_rate",
+          "operator_fee"
+        ],
+        "illustrative_fields": [
+          "collateral_share",
+          "rewards removed for scenario"
+        ],
+        "result": {
+          "gross_ETH_income": 0.014358078167338724,
+          "net_ETH_income": 0.010858078167338725,
+          "no_reward_ETH_income": 0.010858078167338725,
+          "carry_uplift_before_outer_fee": -0.008373479286176459,
+          "no_reward_carry_uplift_before_outer_fee": -0.008373479286176459,
+          "health_factor": 1.3362972148830847,
+          "collateral_price_drop_to_liquidation": 0.25166348559104645,
+          "debt_as_share_of_deposit": 0.6435694023917
+        }
+      },
+      {
+        "id": "rlusd-cost-shock",
+        "label": "RLUSD loan cost increases 3 percentage points",
+        "inputs": {
+          "ltv": 0.6435694023917,
+          "collateral_share": 1.0,
+          "cf": 0.86,
+          "borrow_rate": 0.07299899656860326,
+          "parking_rate": 0.0559178,
+          "reward_share": 0.4637128070131515,
+          "operator_fee": 0.0035
+        },
+        "basis": "Observed RLUSD loan and destination, with an explicit 300 bp annual-cost stress. This is not an observed or predicted future quote.",
+        "observed_fields": [
+          "ltv",
+          "cf",
+          "parking_rate",
+          "reward_share",
+          "operator_fee"
+        ],
+        "illustrative_fields": [
+          "collateral_share",
+          "borrow_rate stress"
+        ],
+        "result": {
+          "gross_ETH_income": 0.011738621985724024,
+          "net_ETH_income": 0.008238621985724025,
+          "no_reward_ETH_income": -0.008449003904412278,
+          "carry_uplift_before_outer_fee": -0.010992935467791159,
+          "no_reward_carry_uplift_before_outer_fee": -0.02768056135792746,
+          "health_factor": 1.3362972148830847,
+          "collateral_price_drop_to_liquidation": 0.25166348559104645,
+          "debt_as_share_of_deposit": 0.6435694023917
+        }
+      }
+    ],
+    "reward_payers": [
+      {
+        "id": "staking",
+        "venue": "ETH staking baseline",
+        "income_type": "Staking book income",
+        "payer": "Ethereum issuance and block execution income allocated by the staking issuer",
+        "measured_rate": 0.022731557453515183,
+        "reward_asset": "ETH",
+        "reward_apy": null,
+        "source_type": "Historically measured issuer conversion",
+        "verified_campaign_funder": null,
+        "evidence": "T and T-30d wstETH conversion, not a token-incentive APY",
+        "links": [
+          "https://docs.lido.fi/contracts/wsteth/"
+        ]
+      },
+      {
+        "id": "rlusd-organic",
+        "venue": "Sentora RLUSD Main V2",
+        "income_type": "Organic lending interest",
+        "payer": "Borrowers in the vault allocation markets",
+        "measured_rate": 0.029988,
+        "reward_asset": null,
+        "reward_apy": null,
+        "source_type": "Captured base APY and fixed-block allocation plumbing",
+        "verified_campaign_funder": null,
+        "evidence": "Selected allocations include weETH/RLUSD debt owed by the same Liquid ETH product. Recovered own-loan interest is a recycling effect, not independent external income.",
+        "links": [
+          "https://app.morpho.org/ethereum/vault/0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "https://morpho.org/stories/sentora"
+        ]
+      },
+      {
+        "id": "rlusd-rewards",
+        "venue": "Sentora RLUSD Main V2",
+        "income_type": "External incentive program",
+        "payer": "Campaign sponsor not established from the captured token/APY fields",
+        "measured_rate": 0.0259298,
+        "reward_asset": "RLUSD",
+        "reward_apy": 0.0259298,
+        "source_type": "3 October captured feed",
+        "verified_campaign_funder": null,
+        "evidence": "Reward token is RLUSD; issuer identity does not prove that Ripple is the campaign funder. Funding wallet, budget, expiry and holder eligibility remain open.",
+        "links": [
+          "https://app.morpho.org/ethereum/vault/0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "https://docs.morpho.org/learn/concepts/rewards/"
+        ]
+      },
+      {
+        "id": "pyusd-rewards",
+        "venue": "Sentora PRIME Main V2",
+        "income_type": "External incentive program",
+        "payer": "Campaign sponsor not established from the captured token/APY fields",
+        "measured_rate": 0.022119399999999997,
+        "reward_asset": "PYUSD",
+        "reward_apy": 0.022119399999999997,
+        "source_type": "3 October captured feed",
+        "verified_campaign_funder": null,
+        "evidence": "PYUSD is the reward asset. PayPal/Paxos token identity alone does not verify campaign financing, renewal or distribution to Liquid ETH holders.",
+        "links": [
+          "https://app.morpho.org/ethereum/vault/0xc21b08c16458202593d4d9b26b9984ee67b38bbd",
+          "https://docs.morpho.org/learn/concepts/rewards/"
+        ]
+      },
+      {
+        "id": "aave-organic",
+        "venue": "Aave USDC reserves",
+        "income_type": "Organic lending interest",
+        "payer": "USDC reserve borrowers",
+        "measured_rate": null,
+        "reward_asset": null,
+        "reward_apy": null,
+        "source_type": "T contract supply rates",
+        "verified_campaign_funder": null,
+        "evidence": "Reserve supply income is borrower interest after reserve-factor economics. It changes with borrowing demand and liquidity; the current rate is not a committed parking offer.",
+        "links": [
+          "https://aave.com/docs/aave-v3/overview"
+        ]
+      },
+      {
+        "id": "prime-credit",
+        "venue": "PRIME underlying credit layer",
+        "income_type": "Underlying real-world credit exposure",
+        "payer": "Cash flows from the disclosed underlying home-equity lending business",
+        "measured_rate": null,
+        "reward_asset": null,
+        "reward_apy": null,
+        "source_type": "Primary issuer disclosure",
+        "verified_campaign_funder": null,
+        "evidence": "PRIME is a credit/RWA layer in the observed carry chain. Its complete loan cash flows and repayment rights are not reconstructed by a Morpho collateral oracle.",
+        "links": [
+          "https://help.hastra.io/24d233935654815fb088ffef227d7f5a",
+          "https://morpho.org/stories/sentora"
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "rule": "Require a positive organic marginal spread before scaling unfunded carry",
+        "proposed_limit": "Parking yield without subsidies must exceed borrowing cost and the marginal execution/manager charge. A renewal budget is a separate decision.",
+        "limit_status": "Product-design rule, not an observed contractual limit",
+        "observed_risk": "RLUSD base APY 2.9988% versus borrowing annual equivalent 4.2999%; removing rewards makes the modeled carry uplift negative.",
+        "links": [
+          "https://app.morpho.org/ethereum/vault/0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+        ]
+      },
+      {
+        "rule": "Use each borrowing account health factor",
+        "proposed_limit": "Illustrative operating floor HF 1.25 with additional collateral/oracle stress tests; liquidation remains the venue threshold.",
+        "limit_status": "Illustrative operating proposal, not a protocol requirement or calibrated loss guarantee",
+        "observed_risk": "The observed main RLUSD account HF is 1.267795 and its LoanManager HF is 1.408065. The Liquid ETH Aave ETH loop has HF 1.027082, a different same-asset risk. Aggregating account headroom conceals the weaker account.",
+        "links": [
+          "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+          "https://etherscan.io/address/0xf0bb20865277abd641a307ece5ee04e79073416c"
+        ]
+      },
+      {
+        "rule": "Test borrowing-cost and reward-budget shocks together",
+        "proposed_limit": "Remove 100% of captured external rewards and add 300 bp to the borrowing annual-cost input. Preserve a separate unstressed benchmark.",
+        "limit_status": "Explicit scenario inputs, not predicted market moves",
+        "observed_risk": "With both changes, the RLUSD full-parking illustration has negative total ETH income after the outer NAV fee even at constant ETH/USD.",
+        "links": [
+          "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+          "https://app.morpho.org/ethereum/vault/0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf"
+        ]
+      },
+      {
+        "rule": "Match withdrawal promises to repayable liquidity",
+        "proposed_limit": "Budget reserve cash, destination redemption capacity and collateral exit separately. No fixed universal exit SLA is asserted.",
+        "limit_status": "Operational funding requirement; capacities and account eligibility need execution testing",
+        "observed_risk": "Ethereum Aave USDC has $6.325m physical cash against $2.2466bn variable debt at T. Higher total deposits do not prove enough dollars for a deleveraging batch.",
+        "links": [
+          "https://app.aave.com/reserve-overview/?underlyingAsset=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&marketName=proto_mainnet_v3"
+        ]
+      },
+      {
+        "rule": "Expose recycled self-credit",
+        "proposed_limit": "Count a held vault claim once, and show own-borrower interest recovery separately from external interest and subsidy income.",
+        "limit_status": "Accounting rule, not a proven safe concentration cap",
+        "observed_risk": "Liquid ETH holds 55.105m RLUSD in the vault that supplies its weETH/RLUSD borrowing market. The earlier fixed-block allocation diagnostic identifies about 8.709m RLUSD of indirect self-credit notional.",
+        "links": [
+          "https://app.morpho.org/ethereum/vault/0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "https://app.morpho.org/ethereum/market/0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4"
+        ]
+      },
+      {
+        "rule": "Apply fees at the correct layer",
+        "proposed_limit": "Use 0.35% annual outer Ethereum NAV fee for this scenario. Do not apply destination performance fees twice to a reported net destination base yield.",
+        "limit_status": "Observed Ethereum fee policy at T plus an annual fee scenario; other chains can differ",
+        "observed_risk": "RLUSD destination performanceFee is 10%; the PRIME/PYUSD destination is 15%. These are different from the ETH manager NAV fee.",
+        "links": [
+          "https://etherscan.io/address/0x0d05d94a5f1e76c18fbeb7a13d17c8a314088198",
+          "https://app.morpho.org/ethereum/vault/0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf",
+          "https://app.morpho.org/ethereum/vault/0xc21b08c16458202593d4d9b26b9984ee67b38bbd"
+        ]
+      },
+      {
+        "rule": "Treat price, bridge and oracle marks as separate risks",
+        "proposed_limit": "Stress stablecoin exchange value and collateral-oracle discounts separately; preserve actual oracle units beside dollar assumptions.",
+        "limit_status": "Scenario accounting requirement; no stablecoin parity or reserve audit claimed",
+        "observed_risk": "The same market can have a $1 loan-unit convention, a collateral oracle and an ETH quote with a different timestamp. A positive modeled spread does not cover a depeg or recovery loss.",
+        "links": [
+          "https://etherscan.io/address/0x6ab351ffde101bb24a97332f4f7162c1711f110b"
+        ]
+      }
+    ],
+    "partners": [
+      {
+        "role": "Stablecoin funding and any subsidy budget",
+        "first_candidate": "RLUSD and PYUSD issuer/ecosystem teams, with Sentora as an existing integration lead",
+        "selection_basis": "Measured matching-currency loan and destination legs and documented issuer-vault relationships",
+        "what_to_verify": "Committed liquidity, budget funding address, duration, renewal rights, eligible holder, redemption and stablecoin conversion route",
+        "existing_evidence": "Primary case study links Sentora with both stablecoin ecosystems. It does not establish a funded offer for our product or identify the captured campaigns funders.",
+        "links": [
+          "https://morpho.org/stories/sentora",
+          "https://docs.morpho.org/learn/concepts/rewards/"
+        ]
+      },
+      {
+        "role": "Market and vault curation",
+        "first_candidate": "Sentora; compare alternatives against the same risk and reporting requirements",
+        "selection_basis": "Observed RLUSD and PRIME vault allocations and documented curation role",
+        "what_to_verify": "Market caps, collateral concentration, reallocators, fee rights, oracle policy, withdrawal priority and who bears losses",
+        "existing_evidence": "The observed destination vaults give a concrete diligence starting point, not proof that their present allocation is suitable.",
+        "links": [
+          "https://morpho.org/stories/sentora",
+          "https://app.morpho.org/ethereum/vault/0x6dc58a0fdfc8d694e571dc59b9a52eeea780e6bf"
+        ]
+      },
+      {
+        "role": "ETH vault infrastructure",
+        "first_candidate": "Veda as the observed Ether.fi implementation reference",
+        "selection_basis": "Existing BoringVault, Accountant, Manager, Teller and queue contracts in the ETH product",
+        "what_to_verify": "Exact selectors/roles, fee permissions, rate publishing, cross-chain accounting, solver routes and change delays",
+        "existing_evidence": "The existing deployment is measurable. Its selected permissions are verified, but economic backing and every exit path are not fully reconciled.",
+        "links": [
+          "https://etherfi.gitbook.io/etherfi/products/liquid/veda-vault.md"
+        ]
+      },
+      {
+        "role": "Strategy operation and monitoring",
+        "first_candidate": "Nonce as the observed Liquid ETH strategy-provider reference",
+        "selection_basis": "Captured product interface identifies the provider; measured account and portfolio mechanics supply diligence cases",
+        "what_to_verify": "Debt hedge, keeper uptime, authority limits, withdrawal rehearsals, oracle/bridge incident response, reporting of self-credit and realized rewards",
+        "existing_evidence": "Provider identification is a separately dated UI statement, not a complete fixed-block map of every operator permission.",
+        "links": [
+          "https://www.ether.fi/app/cash/earn/liquid/eth-yield?tab=breakdown"
+        ]
+      },
+      {
+        "role": "Distribution",
+        "first_candidate": "Ether.fi ETH-holder interface; evaluate exchange/broker channels with an ETH-specific business case",
+        "selection_basis": "An existing ETH yield product distributes staking, looping and carry strategies through one interface",
+        "what_to_verify": "Deposit ownership, rewards ownership, exit communications, custody terms, commercial economics and support responsibility",
+        "existing_evidence": "BTC distribution success cannot be assumed to transfer to ETH. The present dataset does not measure acquisition costs or prove a channel wins on net yield.",
+        "links": [
+          "https://www.ether.fi/app/cash/earn/liquid/eth-yield",
+          "https://morpho.org/stories/sentora"
+        ]
+      },
+      {
+        "role": "Independent verification and liquidity counterparties",
+        "first_candidate": "Separate contract/accounting reviewer and repay-liquidity providers selected against the actual contracts and asset routes",
+        "selection_basis": "The incomplete portfolio reconciliation and variable reserve cash create distinct review and execution tasks",
+        "what_to_verify": "Independent claim-graph reconciliation, simulation at the proposed size, price-impact bounds, executable repayment and queue settlement",
+        "existing_evidence": "Seven rate-model bytecodes match verified source at T. That proves model identity, not whole-product solvency or an executable exit.",
+        "links": [
+          "https://etherscan.io/address/0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
+          "https://app.aave.com/reserve-overview/?underlyingAsset=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&marketName=proto_mainnet_v3"
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "The 18 Morpho markets are selected from an existing current discovery screen and verified at T; this is not an exhaustive ETH-collateral debt universe.",
+    "Morpho market debt is tied to its specific collateral, while Aave USDC reserve debt spans all supported collateral. These quantities cannot be added as ETH-only debt.",
+    "Main-vault and controlled LoanManager positions are tracked explicitly; absent tracked debt is null, not proof the market has no borrowers.",
+    "No stablecoin spot-price mark, dollar-to-ETH hedge, destination deposit capacity or exit execution is guaranteed by the annualized rates.",
+    "Borrow rates are variable and model curves are conditional, not forecasts.",
+    "Destination yield screens after T remain separately dated and are not substituted into historical financial observations."
+  ],
+  "sources": [
+    {
+      "path": "data/eth/carry_economics_primary_T.json",
+      "sha256": "dec10e4f8b97ec264c39a7f612b1eeeda38055533fc594af7c7b741828e418bb"
+    },
+    {
+      "path": "data/eth/carry_economics_curves_T.json",
+      "sha256": "ac11dcc34c65981ec298ad6c1ea43a0febcdaeff767598a3b88bce9501fc56d8"
+    },
+    {
+      "path": "data/eth/carry_economics_aave_T.json",
+      "sha256": "0f7c20a1b9e9e010ff10bcdf89a364c1b0283c9b5271c7ee978c2c3695c5a773"
+    },
+    {
+      "path": "data/eth/carry_vaults_T.json",
+      "sha256": "b058c84b689e0086b6bb89a745fc898d309286e992e8579c927d631f20473a79"
+    },
+    {
+      "path": "data/eth/etherfi_partial_balance_sheet.json",
+      "sha256": "b49d1da3b68f6ab170c0db1b5eefadc96e5bf8c611a6507f6ff47d6c96c38599"
+    },
+    {
+      "path": "data/eth/etherfi_staking_comparison.json",
+      "sha256": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858"
+    },
+    {
+      "path": "data/eth/etherfi_verified_metrics.json",
+      "sha256": "230b5cf41ea47e057a9c97e5d17053ddb8a41b82421de112ed535edbe33d7e71"
+    },
+    {
+      "path": "raw/eth/2026-10-02/yield_pools-65cd13598ec237ee.json",
+      "sha256": "65cd13598ec237eefc25461937e26df5fda1b1791cf1f7bbea8eeccb59caceda",
+      "url": "https://yields.llama.fi/pools",
+      "captured_at": "2026-10-03T13:40:39.080809+00:00"
+    },
+    {
+      "path": "data/eth/carry_economics_model_proof_T.json",
+      "sha256": "d1adf88ed1e71a2da0c60d4ce9dda1fd1d850360e458a23e0fde3060d251b962"
+    }
+  ],
+  "raw_manifest": "raw/eth/carry-economics-2026-10-04/requests.jsonl",
+  "primary_document_sources": [
+    {
+      "key": "morpho_core_source",
+      "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+      "path": "raw/eth/carry-economics-2026-10-04/morpho_core_source-2ea4f8cc9d91036d.json",
+      "sha256": "2ea4f8cc9d91036d276c356b6c29fce400ff49926a54a941148b2d7d8bfd382f",
+      "retrieved_at": "2026-10-04T12:33:42.564454+00:00"
+    },
+    {
+      "key": "morpho_irm_docs",
+      "url": "https://docs.morpho.org/developers/contracts/irm/",
+      "path": "raw/eth/carry-economics-2026-10-04/morpho_irm_docs-7a6ba3eaf431794e.txt",
+      "sha256": "7a6ba3eaf431794ef244a2688bc8f3e0e54293a58e8b35af98fff883dcf748c2",
+      "retrieved_at": "2026-10-04T12:33:42.564769+00:00"
+    },
+    {
+      "key": "morpho_rewards_docs",
+      "url": "https://docs.morpho.org/learn/concepts/rewards/",
+      "path": "raw/eth/carry-economics-2026-10-04/morpho_rewards_docs-781db966464e575c.txt",
+      "sha256": "781db966464e575c8fb5cf0b2e3f0a9caf867a57fbf19f9403b107b75b4d6f30",
+      "retrieved_at": "2026-10-04T12:33:42.564698+00:00"
+    },
+    {
+      "key": "morpho_address_docs",
+      "url": "https://docs.morpho.org/developers/contracts/addresses/",
+      "path": "raw/eth/carry-economics-2026-10-04/morpho_address_docs-41239ecafbb936a5.txt",
+      "sha256": "41239ecafbb936a5fac0870a045a364f6a3f332b0b0b28521f2e39b2c26435c5",
+      "retrieved_at": "2026-10-04T12:33:42.564609+00:00"
+    },
+    {
+      "key": "hastra_prime_docs",
+      "url": "https://help.hastra.io/24d233935654815fb088ffef227d7f5a",
+      "path": "raw/eth/carry-economics-2026-10-04/hastra_prime_docs-630bfdb4e7440e2c.txt",
+      "sha256": "630bfdb4e7440e2cc42935c97b4c11cd31126a6135ffb920375c99d9bdc977bb",
+      "retrieved_at": "2026-10-04T12:33:43.049867+00:00"
+    },
+    {
+      "key": "sentora_case_study",
+      "url": "https://morpho.org/stories/sentora",
+      "path": "raw/eth/carry-economics-2026-10-04/sentora_case_study-bb6726bc086cbd01.txt",
+      "sha256": "bb6726bc086cbd012a85be1109fa4b4292c0b98238eb8037b5b30e6c217d1cb2",
+      "retrieved_at": "2026-10-04T12:33:42.789017+00:00"
+    }
+  ]
+}
