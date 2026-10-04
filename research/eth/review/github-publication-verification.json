@@ -1,0 +1,50 @@
+{
+  "all_checks_passed": true,
+  "repository": "vlad-degen/btc-yield-atlas",
+  "public_branch": "codex/eth-research-site",
+  "publication_commit": "32b7c43777a4e05d28fa03f67d79dcf3748eb0d2",
+  "merge_commit": "9385e2736be6205b6c6b946f8a8e1f1c151f54a5",
+  "pull_request": "https://github.com/vlad-degen/btc-yield-atlas/pull/2",
+  "BTC_original_files_unchanged": 345,
+  "pages_source_preserved": {
+    "branch": "main",
+    "path": "/"
+  },
+  "checks": [
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/",
+      "status": 200,
+      "bytes": 315358,
+      "sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "matches_local": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/",
+      "status": 200,
+      "bytes": 11667854,
+      "sha256": "833b1907c508b61caf0106899b55f925d64b239e3e5c341f82fb5ba4b2db1794",
+      "matches_local": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/exhibits.html",
+      "status": 200,
+      "bytes": 11715957,
+      "sha256": "d43095c80a06c80776e5266d9d127f6a65af7446435a9d5d472860ebc8e6fed6",
+      "matches_local": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/library/BRIEFING.html",
+      "status": 200,
+      "bytes": 15985,
+      "sha256": "f23deba11278ff3f7ffcf5329d026a0a23212af010acaa3d3c15542d728cb5ca",
+      "matches_local": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/market-series-observed-63.csv",
+      "status": 200,
+      "bytes": 10818,
+      "sha256": "8f4c30798e7983638bb388685b44822be7191f630488aba5d2bad61e34c7315d",
+      "matches_local": true
+    }
+  ]
+}
