@@ -35,3 +35,7 @@ Two observed capital lenses remain clear: adapter parent exposure in Market and 
 | data | 37 | 45 | 0 | 0 |
 
 At 1440 px, the selected ETH reader has 4,753 visible words versus 5,785 in BTC. Measured section height is 17,908 px versus 17,540 px. Height depends on the selected product, filters, text and chart shape; it is a diagnostic, not a pixel-identical claim. The ETH default includes staking receipts; the recorded comparison preserves the user’s selected five categories.
+
+## Publication completed
+
+Published through [PR 5](https://github.com/vlad-degen/btc-yield-atlas/pull/5), website commit `5d15b8a`, merge `86f51d2`. The matching Pages workflow completed successfully. All 24 public HTML, evidence and CSV responses match the verified local bytes; the BTC root matches its original checksum. All 345 non-ETH Git blobs are unchanged. Public browser verification confirms the eight-book hover, YieldBasis’s eight operational steps and holder scope, and no JavaScript errors. [Verification ledger](../../data/eth/publication_verification_btc_parity.json), [public browser check](../../data/eth/public_browser_parity.json).

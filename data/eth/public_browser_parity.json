@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-05T23:33:06.008Z",
+  "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/?carryProduct=yieldbasis#top5",
+  "yieldbasis": {
+    "scope": "Direct LT holding addresses, including the gauge and contracts; not gauge beneficiaries or unique investors. Gauge beneficiaries are not counted separately. The gauge holds 56.35% of net book; this is not 56.35% of investors.",
+    "steps": 8,
+    "text": "#3 · E4 · whole book NAV\nYieldBasis WETH\n\nDollar financing inside the liquidity pool\n\nProduct data\n\nThe WETH pool owes 27.81M crvUSD against 10,426 ETH of net book equity. The unstaked LT mark fell 0.69% over 94 days, versus a 0.57% stETH gain. Staked gauge receipts have separate fee and reward rights.\n\nCapital at snapshot\n10,426 ETH / $27.82M\nNet fair-value pool book\nHolder addresses at snapshot\n332\nDirect LT addresses; gauge included\nFees\n10% minimum admin parameter\nVariable allocation, not a "
+  },
+  "logs": [],
+  "passed": true
+}

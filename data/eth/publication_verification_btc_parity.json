@@ -1,0 +1,206 @@
+{
+  "verified_at_UTC": "2026-10-05T23:31:53.818702+00:00",
+  "public_url": "https://vlad-degen.github.io/btc-yield-atlas/eth/",
+  "pull_request": "https://github.com/vlad-degen/btc-yield-atlas/pull/5",
+  "site_commit": "5d15b8aeb697ad4a97c6383a6c68b1d34e7af3a2",
+  "merge_commit": "86f51d261ad145e0954ede56c37865f7ecd5fb8f",
+  "workflow_id": 37388821858,
+  "financial_snapshot": "2026-10-02T23:59:59Z",
+  "all_public_responses_match": true,
+  "BTC_public_root_unchanged": true,
+  "BTC_non_ETH_git_blobs_unchanged": 345,
+  "responses": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "bytes": 315358,
+      "local_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "public_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "matches": true
+    },
+    {
+      "path": "assets/favicon.svg",
+      "http_status": 200,
+      "bytes": 728,
+      "local_sha256": "50966b93a554b86374a916a515310d02fa29ca4387cb0563b2e5bce119c6928e",
+      "public_sha256": "50966b93a554b86374a916a515310d02fa29ca4387cb0563b2e5bce119c6928e",
+      "matches": true
+    },
+    {
+      "path": "eth/index.html",
+      "http_status": 200,
+      "bytes": 11889336,
+      "local_sha256": "b0523c0841383159d721271c6406dacd440bb1762f6e52abf2c6715eed08dddc",
+      "public_sha256": "b0523c0841383159d721271c6406dacd440bb1762f6e52abf2c6715eed08dddc",
+      "matches": true
+    },
+    {
+      "path": "eth/exhibits.html",
+      "http_status": 200,
+      "bytes": 11938500,
+      "local_sha256": "35d44c9b00ede86f28f0500a11a717a0844d4e3e2f1c9d0771b9f09d2c8a76b2",
+      "public_sha256": "35d44c9b00ede86f28f0500a11a717a0844d4e3e2f1c9d0771b9f09d2c8a76b2",
+      "matches": true
+    },
+    {
+      "path": "eth/library/index.html",
+      "http_status": 200,
+      "bytes": 5819,
+      "local_sha256": "ce5fb4d88fac35efb8f3e76dbb194abe063c74d2781d8d034af8c8d7b051e172",
+      "public_sha256": "ce5fb4d88fac35efb8f3e76dbb194abe063c74d2781d8d034af8c8d7b051e172",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-CATEGORY.html",
+      "http_status": 200,
+      "bytes": 28731,
+      "local_sha256": "af4bc6e7c801019901f408c10df0e5735396aa5c068ad657483bedf85b5fc402",
+      "public_sha256": "af4bc6e7c801019901f408c10df0e5735396aa5c068ad657483bedf85b5fc402",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-PRODUCTS.html",
+      "http_status": 200,
+      "bytes": 37072,
+      "local_sha256": "08a2946459898e3812cdd6ed02f80c835e82f573bef22c6db9c237aa317e9c60",
+      "public_sha256": "08a2946459898e3812cdd6ed02f80c835e82f573bef22c6db9c237aa317e9c60",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-COVERAGE-AUDIT.html",
+      "http_status": 200,
+      "bytes": 11397,
+      "local_sha256": "a15741c1194959a5cf9488bfcc495d9f7739c131b8151ccfe3efda44d9ec857f",
+      "public_sha256": "a15741c1194959a5cf9488bfcc495d9f7739c131b8151ccfe3efda44d9ec857f",
+      "matches": true
+    },
+    {
+      "path": "eth/data/reader_analysis.json",
+      "http_status": 200,
+      "bytes": 67245,
+      "local_sha256": "d7f1523181715492390fef891418a64b4e6f625b280e48120d2aff6279b0f3fd",
+      "public_sha256": "d7f1523181715492390fef891418a64b4e6f625b280e48120d2aff6279b0f3fd",
+      "matches": true
+    },
+    {
+      "path": "eth/data/reader_carry_category.json",
+      "http_status": 200,
+      "bytes": 610465,
+      "local_sha256": "a9eb0ba379841c8e8d754c27055aadf75b682ffe0494660c6abbf001f22f837e",
+      "public_sha256": "a9eb0ba379841c8e8d754c27055aadf75b682ffe0494660c6abbf001f22f837e",
+      "matches": true
+    },
+    {
+      "path": "eth/data/reader_product_chapters.json",
+      "http_status": 200,
+      "bytes": 292854,
+      "local_sha256": "73bdb984660306b902a78ca886bf78ac6ed4eef071ee19fbc95b50ddacd4b650",
+      "public_sha256": "73bdb984660306b902a78ca886bf78ac6ed4eef071ee19fbc95b50ddacd4b650",
+      "matches": true
+    },
+    {
+      "path": "eth/data/yb_LT_holders_T.json",
+      "http_status": 200,
+      "bytes": 37099,
+      "local_sha256": "bf3f232d6b01ba77423ea2ab08d883ab6a129e77c9806439ea8dc5fab6f4f166",
+      "public_sha256": "bf3f232d6b01ba77423ea2ab08d883ab6a129e77c9806439ea8dc5fab6f4f166",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry_coverage_audit.json",
+      "http_status": 200,
+      "bytes": 130894,
+      "local_sha256": "771e61e0cf735d75007e7fe28670797eaa689f11d5f581c31fe8b1a5d718cabd",
+      "public_sha256": "771e61e0cf735d75007e7fe28670797eaa689f11d5f581c31fe8b1a5d718cabd",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-discovery-dispositions.csv",
+      "http_status": 200,
+      "bytes": 59275,
+      "local_sha256": "77c575ca8cc63646ff6227467fa7f86859981b023fc57fb4a5e08758ab0dd3bb",
+      "public_sha256": "77c575ca8cc63646ff6227467fa7f86859981b023fc57fb4a5e08758ab0dd3bb",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/browser-checks.json",
+      "http_status": 200,
+      "bytes": 21571,
+      "local_sha256": "2b249797a4dc0bb57ed4dcd4aa4380592545d421268769417d91834a41e5ba4a",
+      "public_sha256": "2b249797a4dc0bb57ed4dcd4aa4380592545d421268769417d91834a41e5ba4a",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/reader_alignment_audit.json",
+      "http_status": 200,
+      "bytes": 198,
+      "local_sha256": "02f3ab1a7aa28cfbfa4f5390a7c57aad5249afb65d7814bafce23d7dd01d5dae",
+      "public_sha256": "02f3ab1a7aa28cfbfa4f5390a7c57aad5249afb65d7814bafce23d7dd01d5dae",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-all-eth.csv",
+      "http_status": 200,
+      "bytes": 6798,
+      "local_sha256": "4679442d5d5dd4b01baa479a1694236e63f9027326954cc52128d41610336385",
+      "public_sha256": "4679442d5d5dd4b01baa479a1694236e63f9027326954cc52128d41610336385",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-all-usd.csv",
+      "http_status": 200,
+      "bytes": 6792,
+      "local_sha256": "d049e83337198cb90c5c94bf6cea4abd527e165acd0da711bbeb67c2e918bfc6",
+      "public_sha256": "d049e83337198cb90c5c94bf6cea4abd527e165acd0da711bbeb67c2e918bfc6",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-parents-eth.csv",
+      "http_status": 200,
+      "bytes": 3160,
+      "local_sha256": "6dc4d295a85dc976b5fdea9a50d4241de6609baf14a815eaa75d3a95b415c571",
+      "public_sha256": "6dc4d295a85dc976b5fdea9a50d4241de6609baf14a815eaa75d3a95b415c571",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-parents-usd.csv",
+      "http_status": 200,
+      "bytes": 3139,
+      "local_sha256": "45783dd1bdcfece92c93ea50ce474f5acf5e46670256573b5683601e64b99165",
+      "public_sha256": "45783dd1bdcfece92c93ea50ce474f5acf5e46670256573b5683601e64b99165",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-dedicated-eth.csv",
+      "http_status": 200,
+      "bytes": 4860,
+      "local_sha256": "5a7875b5ca6e15c4abf6f4d507c2f2f04d2e9205fe488bedafbf4291becfb6ea",
+      "public_sha256": "5a7875b5ca6e15c4abf6f4d507c2f2f04d2e9205fe488bedafbf4291becfb6ea",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-dedicated-usd.csv",
+      "http_status": 200,
+      "bytes": 4878,
+      "local_sha256": "df34ea8ea32a6ecafb2bc046eae80b8ef0eba0e865ea3fbf136aa9ff68864c1d",
+      "public_sha256": "df34ea8ea32a6ecafb2bc046eae80b8ef0eba0e865ea3fbf136aa9ff68864c1d",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-category-eth.csv",
+      "http_status": 200,
+      "bytes": 3080,
+      "local_sha256": "78d548bef242b09e8c74fee5090b7fe73363e72e93df057b7114bd9cbef860cf",
+      "public_sha256": "78d548bef242b09e8c74fee5090b7fe73363e72e93df057b7114bd9cbef860cf",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-category-usd.csv",
+      "http_status": 200,
+      "bytes": 2917,
+      "local_sha256": "cb7db66c270454a1cc56c7e06a5d138016e699795cd638008dedcd1f1d892cf8",
+      "public_sha256": "cb7db66c270454a1cc56c7e06a5d138016e699795cd638008dedcd1f1d892cf8",
+      "matches": true
+    }
+  ]
+}
