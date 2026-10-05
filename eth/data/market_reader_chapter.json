@@ -180,12 +180,13 @@
           "gross_positive_usd": 868939902.70308,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 1,
-            "missing": 1,
+            "missing": 2,
             "stale": 0,
             "missing_protocols": [
-              "concrete"
+              "concrete",
+              "yield-basis"
             ],
             "stale_protocols": [],
             "complete": false
@@ -242,15 +243,14 @@
           "gross_positive_usd": 1406365108.28493,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 26,
-            "missing": 12,
+            "missing": 11,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
               "lagoon",
               "upshift",
-              "yield-basis",
               "yo-protocol",
               "balancer-v3",
               "fluxion-network",
@@ -407,12 +407,13 @@
           "gross_positive_usd": 1155259206.56865,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 1,
-            "missing": 1,
+            "missing": 2,
             "stale": 0,
             "missing_protocols": [
-              "concrete"
+              "concrete",
+              "yield-basis"
             ],
             "stale_protocols": [],
             "complete": false
@@ -469,15 +470,14 @@
           "gross_positive_usd": 1921633423.54066,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 26,
-            "missing": 12,
+            "missing": 11,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
               "lagoon",
               "upshift",
-              "yield-basis",
               "yo-protocol",
               "balancer-v3",
               "fluxion-network",
@@ -631,12 +631,13 @@
           "gross_positive_usd": 1121521053.87506,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 1,
-            "missing": 1,
+            "missing": 2,
             "stale": 0,
             "missing_protocols": [
-              "concrete"
+              "concrete",
+              "yield-basis"
             ],
             "stale_protocols": [],
             "complete": false
@@ -693,13 +694,12 @@
           "gross_positive_usd": 1916025141.8114,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 9,
+            "missing": 8,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "yo-protocol",
               "fluxion-network",
               "spark-savings",
@@ -851,12 +851,13 @@
           "gross_positive_usd": 1298183726.65236,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 1,
-            "missing": 1,
+            "missing": 2,
             "stale": 0,
             "missing_protocols": [
-              "concrete"
+              "concrete",
+              "yield-basis"
             ],
             "stale_protocols": [],
             "complete": false
@@ -913,13 +914,12 @@
           "gross_positive_usd": 1786279049.81794,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 9,
+            "missing": 8,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "yo-protocol",
               "fluxion-network",
               "spark-savings",
@@ -1069,13 +1069,15 @@
           "gross_positive_usd": 957740904.7038,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -1129,13 +1131,12 @@
           "gross_positive_usd": 1173316583.10428,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 9,
+            "missing": 8,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "yo-protocol",
               "fluxion-network",
               "spark-savings",
@@ -1284,13 +1285,15 @@
           "gross_positive_usd": 750151406.75532,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -1344,13 +1347,12 @@
           "gross_positive_usd": 1024583490.90854,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 30,
-            "missing": 8,
+            "missing": 7,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -1497,13 +1499,15 @@
           "gross_positive_usd": 719306996.6729801,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -1557,13 +1561,12 @@
           "gross_positive_usd": 1031116482.3575699,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 30,
-            "missing": 8,
+            "missing": 7,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -1711,13 +1714,15 @@
           "gross_positive_usd": 907263003.2851399,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -1771,13 +1776,12 @@
           "gross_positive_usd": 1535230553.72341,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 8,
+            "missing": 7,
             "stale": 1,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -1927,13 +1931,15 @@
           "gross_positive_usd": 789023984.24975,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -1987,13 +1993,12 @@
           "gross_positive_usd": 1517577898.09842,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 8,
+            "missing": 7,
             "stale": 1,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -2141,13 +2146,15 @@
           "gross_positive_usd": 1072145712.19651,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -2201,13 +2208,12 @@
           "gross_positive_usd": 2199688739.55766,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 30,
-            "missing": 8,
+            "missing": 7,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -2353,13 +2359,15 @@
           "gross_positive_usd": 1196126148.4475698,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -2413,13 +2421,12 @@
           "gross_positive_usd": 2249683220.23524,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 30,
-            "missing": 8,
+            "missing": 7,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -2563,8 +2570,8 @@
           "gross_positive_usd": 1086526088.9065201,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -2623,8 +2630,8 @@
           "gross_positive_usd": 2221760933.96994,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 6,
             "stale": 0,
             "missing_protocols": [
@@ -2770,8 +2777,8 @@
           "gross_positive_usd": 906832428.5124501,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -2830,8 +2837,8 @@
           "gross_positive_usd": 1986539370.95415,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 6,
             "stale": 0,
             "missing_protocols": [
@@ -2976,8 +2983,8 @@
           "gross_positive_usd": 590285111.5167699,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -3036,8 +3043,8 @@
           "gross_positive_usd": 1318086865.6740801,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 6,
             "stale": 0,
             "missing_protocols": [
@@ -3182,8 +3189,8 @@
           "gross_positive_usd": 1471790843.20737,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -3242,8 +3249,8 @@
           "gross_positive_usd": 1208101840.22513,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 6,
             "stale": 0,
             "missing_protocols": [
@@ -3382,13 +3389,13 @@
           }
         },
         "carry": {
-          "usd": 1331563721.99398,
-          "eth_ref": 492722.6724383002,
-          "gross_positive_usd": 1331563721.99398,
+          "usd": 1359481273.02132,
+          "eth_ref": 503053.0908200244,
+          "gross_positive_usd": 1359481273.02132,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -3442,13 +3449,13 @@
           }
         },
         "farming": {
-          "usd": 1220836608.86528,
-          "eth_ref": 451749.973805108,
-          "gross_positive_usd": 1220836608.86528,
+          "usd": 1192919057.83794,
+          "eth_ref": 441419.5554233839,
+          "gross_positive_usd": 1192919057.83794,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 33,
+            "expected": 37,
+            "observed": 32,
             "missing": 5,
             "stale": 0,
             "missing_protocols": [
@@ -3588,13 +3595,13 @@
           }
         },
         "carry": {
-          "usd": 934619255.05918,
-          "eth_ref": 485000.66065413225,
-          "gross_positive_usd": 934619255.05918,
+          "usd": 963034945.7504101,
+          "eth_ref": 499746.3752149963,
+          "gross_positive_usd": 963034945.7504101,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -3648,13 +3655,13 @@
           }
         },
         "farming": {
-          "usd": 858435098.58398,
-          "eth_ref": 445466.5230661899,
-          "gross_positive_usd": 858435098.58398,
+          "usd": 830019407.89275,
+          "eth_ref": 430720.80850532587,
+          "gross_positive_usd": 830019407.89275,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 5,
             "stale": 1,
             "missing_protocols": [
@@ -3793,13 +3800,13 @@
           }
         },
         "carry": {
-          "usd": 1060113754.88794,
-          "eth_ref": 524262.5043441097,
-          "gross_positive_usd": 1060113754.88794,
+          "usd": 1089260339.9676101,
+          "eth_ref": 538676.487387431,
+          "gross_positive_usd": 1089260339.9676101,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -3853,13 +3860,13 @@
           }
         },
         "farming": {
-          "usd": 878461358.57254,
-          "eth_ref": 434429.18242623017,
-          "gross_positive_usd": 878461358.57254,
+          "usd": 849314773.49287,
+          "eth_ref": 420015.1993829089,
+          "gross_positive_usd": 849314773.49287,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 33,
+            "expected": 37,
+            "observed": 32,
             "missing": 5,
             "stale": 0,
             "missing_protocols": [
@@ -3993,13 +4000,13 @@
           }
         },
         "carry": {
-          "usd": 1047102122.28467,
-          "eth_ref": 461214.6279981549,
-          "gross_positive_usd": 1047102122.28467,
+          "usd": 1078512159.01674,
+          "eth_ref": 475049.733570457,
+          "gross_positive_usd": 1078512159.01674,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -4053,13 +4060,13 @@
           }
         },
         "farming": {
-          "usd": 868765442.68315,
-          "eth_ref": 382663.08694943954,
-          "gross_positive_usd": 868765442.68315,
+          "usd": 837355405.95108,
+          "eth_ref": 368827.9813771374,
+          "gross_positive_usd": 837355405.95108,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 33,
+            "expected": 37,
+            "observed": 32,
             "missing": 5,
             "stale": 0,
             "missing_protocols": [
@@ -4190,13 +4197,13 @@
           }
         },
         "carry": {
-          "usd": 874822431.10251,
-          "eth_ref": 433458.4931488986,
-          "gross_positive_usd": 874822431.10251,
+          "usd": 908204544.17784,
+          "eth_ref": 449998.7188190645,
+          "gross_positive_usd": 908204544.17784,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -4250,13 +4257,13 @@
           }
         },
         "farming": {
-          "usd": 865440807.27376,
-          "eth_ref": 428810.07035642985,
-          "gross_positive_usd": 865440807.27376,
+          "usd": 832058694.1984301,
+          "eth_ref": 412269.84468626394,
+          "gross_positive_usd": 832058694.1984301,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -4388,13 +4395,13 @@
           }
         },
         "carry": {
-          "usd": 683296897.91212,
-          "eth_ref": 429071.6203311888,
-          "gross_positive_usd": 683296897.91212,
+          "usd": 720212300.63413,
+          "eth_ref": 452252.3953493542,
+          "gross_positive_usd": 720212300.63413,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -4448,13 +4455,13 @@
           }
         },
         "farming": {
-          "usd": 656416325.70107,
-          "eth_ref": 412192.14859750017,
-          "gross_positive_usd": 656416325.70107,
+          "usd": 619500922.9790599,
+          "eth_ref": 389011.37357933476,
+          "gross_positive_usd": 619500922.9790599,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 33,
+            "expected": 37,
+            "observed": 32,
             "missing": 4,
             "stale": 1,
             "missing_protocols": [
@@ -4586,13 +4593,13 @@
           }
         },
         "carry": {
-          "usd": 873961876.78768,
-          "eth_ref": 456595.6805483323,
-          "gross_positive_usd": 873961876.78768,
+          "usd": 916654288.87602,
+          "eth_ref": 478900.0527062738,
+          "gross_positive_usd": 916654288.87602,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -4646,13 +4653,13 @@
           }
         },
         "farming": {
-          "usd": 748538932.34482,
-          "eth_ref": 391069.28151962964,
-          "gross_positive_usd": 748538932.34482,
+          "usd": 705846520.25648,
+          "eth_ref": 368764.90936168813,
+          "gross_positive_usd": 705846520.25648,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -4782,13 +4789,13 @@
           }
         },
         "carry": {
-          "usd": 1223366147.76422,
-          "eth_ref": 505879.4363926923,
-          "gross_positive_usd": 1223366147.76422,
+          "usd": 1253757658.90994,
+          "eth_ref": 518446.7618476404,
+          "gross_positive_usd": 1253757658.90994,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -4842,13 +4849,13 @@
           }
         },
         "farming": {
-          "usd": 885700596.38373,
-          "eth_ref": 366220.45272412174,
-          "gross_positive_usd": 885700596.38373,
+          "usd": 855309085.23801,
+          "eth_ref": 353653.1272691736,
+          "gross_positive_usd": 855309085.23801,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -4978,13 +4985,13 @@
           }
         },
         "carry": {
-          "usd": 1338619348.03644,
-          "eth_ref": 501052.9331056578,
-          "gross_positive_usd": 1338619348.03644,
+          "usd": 1367136541.16328,
+          "eth_ref": 511727.0827667269,
+          "gross_positive_usd": 1367136541.16328,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -5038,13 +5045,13 @@
           }
         },
         "farming": {
-          "usd": 966896599.09628,
-          "eth_ref": 361914.9668632223,
-          "gross_positive_usd": 966896599.09628,
+          "usd": 938379405.96944,
+          "eth_ref": 351240.8172021532,
+          "gross_positive_usd": 938379405.96944,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -5175,13 +5182,13 @@
         }
       },
       "carry": {
-        "usd": 1355711915.44136,
-        "eth_ref": 501340.1067442378,
-        "gross_positive_usd": 1355711915.44136,
+        "usd": 1384179966.09527,
+        "eth_ref": 511867.54652777413,
+        "gross_positive_usd": 1384179966.09527,
         "negative_usd": 0.0,
         "coverage": {
-          "expected": 2,
-          "observed": 2,
+          "expected": 3,
+          "observed": 3,
           "missing": 0,
           "stale": 0,
           "missing_protocols": [],
@@ -5235,13 +5242,13 @@
         }
       },
       "farming": {
-        "usd": 971614153.94188,
-        "eth_ref": 359301.3663915857,
-        "gross_positive_usd": 971614153.94188,
+        "usd": 943146103.28797,
+        "eth_ref": 348773.9266080493,
+        "gross_positive_usd": 943146103.28797,
         "negative_usd": 0.0,
         "coverage": {
-          "expected": 38,
-          "observed": 34,
+          "expected": 37,
+          "observed": 33,
           "missing": 4,
           "stale": 0,
           "missing_protocols": [
@@ -5391,12 +5398,13 @@
           "gross_positive_usd": 868939902.70308,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 1,
-            "missing": 1,
+            "missing": 2,
             "stale": 0,
             "missing_protocols": [
-              "concrete"
+              "concrete",
+              "yield-basis"
             ],
             "stale_protocols": [],
             "complete": false
@@ -5453,15 +5461,14 @@
           "gross_positive_usd": 1406365108.28493,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 26,
-            "missing": 12,
+            "missing": 11,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
               "lagoon",
               "upshift",
-              "yield-basis",
               "yo-protocol",
               "balancer-v3",
               "fluxion-network",
@@ -5618,12 +5625,13 @@
           "gross_positive_usd": 1155259206.56865,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 1,
-            "missing": 1,
+            "missing": 2,
             "stale": 0,
             "missing_protocols": [
-              "concrete"
+              "concrete",
+              "yield-basis"
             ],
             "stale_protocols": [],
             "complete": false
@@ -5680,15 +5688,14 @@
           "gross_positive_usd": 1921633423.54066,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 26,
-            "missing": 12,
+            "missing": 11,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
               "lagoon",
               "upshift",
-              "yield-basis",
               "yo-protocol",
               "balancer-v3",
               "fluxion-network",
@@ -5842,12 +5849,13 @@
           "gross_positive_usd": 1121521053.87506,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 1,
-            "missing": 1,
+            "missing": 2,
             "stale": 0,
             "missing_protocols": [
-              "concrete"
+              "concrete",
+              "yield-basis"
             ],
             "stale_protocols": [],
             "complete": false
@@ -5904,13 +5912,12 @@
           "gross_positive_usd": 1916025141.8114,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 9,
+            "missing": 8,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "yo-protocol",
               "fluxion-network",
               "spark-savings",
@@ -6062,12 +6069,13 @@
           "gross_positive_usd": 1298183726.65236,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 1,
-            "missing": 1,
+            "missing": 2,
             "stale": 0,
             "missing_protocols": [
-              "concrete"
+              "concrete",
+              "yield-basis"
             ],
             "stale_protocols": [],
             "complete": false
@@ -6124,13 +6132,12 @@
           "gross_positive_usd": 1786279049.81794,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 9,
+            "missing": 8,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "yo-protocol",
               "fluxion-network",
               "spark-savings",
@@ -6280,13 +6287,15 @@
           "gross_positive_usd": 957740904.7038,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -6340,13 +6349,12 @@
           "gross_positive_usd": 1173316583.10428,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 9,
+            "missing": 8,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "yo-protocol",
               "fluxion-network",
               "spark-savings",
@@ -6495,13 +6503,15 @@
           "gross_positive_usd": 750151406.75532,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -6555,13 +6565,12 @@
           "gross_positive_usd": 1024583490.90854,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 30,
-            "missing": 8,
+            "missing": 7,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -6708,13 +6717,15 @@
           "gross_positive_usd": 719306996.6729801,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -6768,13 +6779,12 @@
           "gross_positive_usd": 1031116482.3575699,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 30,
-            "missing": 8,
+            "missing": 7,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -6922,13 +6932,15 @@
           "gross_positive_usd": 907263003.2851399,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -6982,13 +6994,12 @@
           "gross_positive_usd": 1535230553.72341,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 8,
+            "missing": 7,
             "stale": 1,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -7138,13 +7149,15 @@
           "gross_positive_usd": 789023984.24975,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -7198,13 +7211,12 @@
           "gross_positive_usd": 1517577898.09842,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 29,
-            "missing": 8,
+            "missing": 7,
             "stale": 1,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -7352,13 +7364,15 @@
           "gross_positive_usd": 1072145712.19651,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -7412,13 +7426,12 @@
           "gross_positive_usd": 2199688739.55766,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 30,
-            "missing": 8,
+            "missing": 7,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -7564,13 +7577,15 @@
           "gross_positive_usd": 1196126148.4475698,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
+            "expected": 3,
             "observed": 2,
-            "missing": 0,
+            "missing": 1,
             "stale": 0,
-            "missing_protocols": [],
+            "missing_protocols": [
+              "yield-basis"
+            ],
             "stale_protocols": [],
-            "complete": true
+            "complete": false
           },
           "constant_cohort": {
             "protocol_count": 1,
@@ -7624,13 +7639,12 @@
           "gross_positive_usd": 2249683220.23524,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
+            "expected": 37,
             "observed": 30,
-            "missing": 8,
+            "missing": 7,
             "stale": 0,
             "missing_protocols": [
               "fluid-dex",
-              "yield-basis",
               "fluxion-network",
               "spark-savings",
               "balancer-v2",
@@ -7774,8 +7788,8 @@
           "gross_positive_usd": 1086526088.9065201,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -7834,8 +7848,8 @@
           "gross_positive_usd": 2221760933.96994,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 6,
             "stale": 0,
             "missing_protocols": [
@@ -7981,8 +7995,8 @@
           "gross_positive_usd": 906832428.5124501,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -8041,8 +8055,8 @@
           "gross_positive_usd": 1986539370.95415,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 6,
             "stale": 0,
             "missing_protocols": [
@@ -8187,8 +8201,8 @@
           "gross_positive_usd": 590285111.5167699,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -8247,8 +8261,8 @@
           "gross_positive_usd": 1318086865.6740801,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 6,
             "stale": 0,
             "missing_protocols": [
@@ -8393,8 +8407,8 @@
           "gross_positive_usd": 1471790843.20737,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -8453,8 +8467,8 @@
           "gross_positive_usd": 1208101840.22513,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 6,
             "stale": 0,
             "missing_protocols": [
@@ -8593,13 +8607,13 @@
           }
         },
         "carry": {
-          "usd": 1331563721.99398,
-          "eth_ref": 492722.6724383002,
-          "gross_positive_usd": 1331563721.99398,
+          "usd": 1359481273.02132,
+          "eth_ref": 503053.0908200244,
+          "gross_positive_usd": 1359481273.02132,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -8653,13 +8667,13 @@
           }
         },
         "farming": {
-          "usd": 1220836608.86528,
-          "eth_ref": 451749.973805108,
-          "gross_positive_usd": 1220836608.86528,
+          "usd": 1192919057.83794,
+          "eth_ref": 441419.5554233839,
+          "gross_positive_usd": 1192919057.83794,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 33,
+            "expected": 37,
+            "observed": 32,
             "missing": 5,
             "stale": 0,
             "missing_protocols": [
@@ -8799,13 +8813,13 @@
           }
         },
         "carry": {
-          "usd": 934619255.05918,
-          "eth_ref": 485000.66065413225,
-          "gross_positive_usd": 934619255.05918,
+          "usd": 963034945.7504101,
+          "eth_ref": 499746.3752149963,
+          "gross_positive_usd": 963034945.7504101,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -8859,13 +8873,13 @@
           }
         },
         "farming": {
-          "usd": 858435098.58398,
-          "eth_ref": 445466.5230661899,
-          "gross_positive_usd": 858435098.58398,
+          "usd": 830019407.89275,
+          "eth_ref": 430720.80850532587,
+          "gross_positive_usd": 830019407.89275,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 32,
+            "expected": 37,
+            "observed": 31,
             "missing": 5,
             "stale": 1,
             "missing_protocols": [
@@ -9004,13 +9018,13 @@
           }
         },
         "carry": {
-          "usd": 1060113754.88794,
-          "eth_ref": 524262.5043441097,
-          "gross_positive_usd": 1060113754.88794,
+          "usd": 1089260339.9676101,
+          "eth_ref": 538676.487387431,
+          "gross_positive_usd": 1089260339.9676101,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -9064,13 +9078,13 @@
           }
         },
         "farming": {
-          "usd": 878461358.57254,
-          "eth_ref": 434429.18242623017,
-          "gross_positive_usd": 878461358.57254,
+          "usd": 849314773.49287,
+          "eth_ref": 420015.1993829089,
+          "gross_positive_usd": 849314773.49287,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 33,
+            "expected": 37,
+            "observed": 32,
             "missing": 5,
             "stale": 0,
             "missing_protocols": [
@@ -9204,13 +9218,13 @@
           }
         },
         "carry": {
-          "usd": 1047102122.28467,
-          "eth_ref": 461214.6279981549,
-          "gross_positive_usd": 1047102122.28467,
+          "usd": 1078512159.01674,
+          "eth_ref": 475049.733570457,
+          "gross_positive_usd": 1078512159.01674,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -9264,13 +9278,13 @@
           }
         },
         "farming": {
-          "usd": 868765442.68315,
-          "eth_ref": 382663.08694943954,
-          "gross_positive_usd": 868765442.68315,
+          "usd": 837355405.95108,
+          "eth_ref": 368827.9813771374,
+          "gross_positive_usd": 837355405.95108,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 33,
+            "expected": 37,
+            "observed": 32,
             "missing": 5,
             "stale": 0,
             "missing_protocols": [
@@ -9401,13 +9415,13 @@
           }
         },
         "carry": {
-          "usd": 874822431.10251,
-          "eth_ref": 433458.4931488986,
-          "gross_positive_usd": 874822431.10251,
+          "usd": 908204544.17784,
+          "eth_ref": 449998.7188190645,
+          "gross_positive_usd": 908204544.17784,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -9461,13 +9475,13 @@
           }
         },
         "farming": {
-          "usd": 865440807.27376,
-          "eth_ref": 428810.07035642985,
-          "gross_positive_usd": 865440807.27376,
+          "usd": 832058694.1984301,
+          "eth_ref": 412269.84468626394,
+          "gross_positive_usd": 832058694.1984301,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -9599,13 +9613,13 @@
           }
         },
         "carry": {
-          "usd": 683296897.91212,
-          "eth_ref": 429071.6203311888,
-          "gross_positive_usd": 683296897.91212,
+          "usd": 720212300.63413,
+          "eth_ref": 452252.3953493542,
+          "gross_positive_usd": 720212300.63413,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -9659,13 +9673,13 @@
           }
         },
         "farming": {
-          "usd": 656416325.70107,
-          "eth_ref": 412192.14859750017,
-          "gross_positive_usd": 656416325.70107,
+          "usd": 619500922.9790599,
+          "eth_ref": 389011.37357933476,
+          "gross_positive_usd": 619500922.9790599,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 33,
+            "expected": 37,
+            "observed": 32,
             "missing": 4,
             "stale": 1,
             "missing_protocols": [
@@ -9797,13 +9811,13 @@
           }
         },
         "carry": {
-          "usd": 873961876.78768,
-          "eth_ref": 456595.6805483323,
-          "gross_positive_usd": 873961876.78768,
+          "usd": 916654288.87602,
+          "eth_ref": 478900.0527062738,
+          "gross_positive_usd": 916654288.87602,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -9857,13 +9871,13 @@
           }
         },
         "farming": {
-          "usd": 748538932.34482,
-          "eth_ref": 391069.28151962964,
-          "gross_positive_usd": 748538932.34482,
+          "usd": 705846520.25648,
+          "eth_ref": 368764.90936168813,
+          "gross_positive_usd": 705846520.25648,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -9993,13 +10007,13 @@
           }
         },
         "carry": {
-          "usd": 1223366147.76422,
-          "eth_ref": 505879.4363926923,
-          "gross_positive_usd": 1223366147.76422,
+          "usd": 1253757658.90994,
+          "eth_ref": 518446.7618476404,
+          "gross_positive_usd": 1253757658.90994,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -10053,13 +10067,13 @@
           }
         },
         "farming": {
-          "usd": 885700596.38373,
-          "eth_ref": 366220.45272412174,
-          "gross_positive_usd": 885700596.38373,
+          "usd": 855309085.23801,
+          "eth_ref": 353653.1272691736,
+          "gross_positive_usd": 855309085.23801,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -10189,13 +10203,13 @@
           }
         },
         "carry": {
-          "usd": 1338619348.03644,
-          "eth_ref": 501052.9331056578,
-          "gross_positive_usd": 1338619348.03644,
+          "usd": 1367136541.16328,
+          "eth_ref": 511727.0827667269,
+          "gross_positive_usd": 1367136541.16328,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -10249,13 +10263,13 @@
           }
         },
         "farming": {
-          "usd": 966896599.09628,
-          "eth_ref": 361914.9668632223,
-          "gross_positive_usd": 966896599.09628,
+          "usd": 938379405.96944,
+          "eth_ref": 351240.8172021532,
+          "gross_positive_usd": 938379405.96944,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -10385,13 +10399,13 @@
           }
         },
         "carry": {
-          "usd": 1355711915.44136,
-          "eth_ref": 501340.1067442378,
-          "gross_positive_usd": 1355711915.44136,
+          "usd": 1384179966.09527,
+          "eth_ref": 511867.54652777413,
+          "gross_positive_usd": 1384179966.09527,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -10445,13 +10459,13 @@
           }
         },
         "farming": {
-          "usd": 971614153.94188,
-          "eth_ref": 359301.3663915857,
-          "gross_positive_usd": 971614153.94188,
+          "usd": 943146103.28797,
+          "eth_ref": 348773.9266080493,
+          "gross_positive_usd": 943146103.28797,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 38,
-            "observed": 34,
+            "expected": 37,
+            "observed": 33,
             "missing": 4,
             "stale": 0,
             "missing_protocols": [
@@ -32537,7 +32551,7 @@
     {
       "id": "yield-basis",
       "name": "Yield Basis",
-      "category": "farming",
+      "category": "carry",
       "source_category": "Leveraged Farming",
       "row_kind": "protocol_adapter",
       "current": {
@@ -32896,8 +32910,8 @@
       "classification_evidence": [
         "data/eth/market_panel.json"
       ],
-      "subtype": "leveraged_pool",
-      "how_earns": "The captured protocol is classified as leveraged farming. Its ETH-related balances do not prove a pure ETH debt loop or a reinvested dollar-carry allocation.",
+      "subtype": "dollar_financed_liquidity",
+      "how_earns": "Borrow crvUSD to maintain leveraged WETH/crvUSD liquidity; trading fees must cover financing and administration.",
       "yield_scope": "Pool rewards, fee income and mixed managed-product returns vary; token emissions and points need separate treatment.",
       "yield": "Varies by pool; advertised discovery range is separately dated.",
       "operator": "Yield Basis protocol; product operators vary",
@@ -51257,13 +51271,13 @@
           }
         },
         "carry": {
-          "usd": 1355711363.31318,
-          "eth_ref": 501339.90256811643,
-          "gross_positive_usd": 1355711363.31318,
+          "usd": 1384179413.96709,
+          "eth_ref": 511867.34235165274,
+          "gross_positive_usd": 1384179413.96709,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 2,
-            "observed": 2,
+            "expected": 3,
+            "observed": 3,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -51317,13 +51331,13 @@
           }
         },
         "farming": {
-          "usd": 630476653.5159,
-          "eth_ref": 233149.26215021755,
-          "gross_positive_usd": 630476653.5159,
+          "usd": 602008602.86199,
+          "eth_ref": 222621.8223666812,
+          "gross_positive_usd": 602008602.86199,
           "negative_usd": 0.0,
           "coverage": {
-            "expected": 22,
-            "observed": 22,
+            "expected": 21,
+            "observed": 21,
             "missing": 0,
             "stale": 0,
             "missing_protocols": [],
@@ -69480,7 +69494,7 @@
       "misrepresented_tokens": null,
       "protocol": "yield-basis",
       "chain": "Ethereum",
-      "category": "farming",
+      "category": "carry",
       "source_role_category": "liquidity"
     },
     {
@@ -76508,10 +76522,17 @@
   "presentation_universe": {
     "source_path": "data/eth/research_market_chapter.json",
     "source_sha256": "d0f050c12bc1ba33f44fec4ef8521b2bf3b5071076025f5c103e19557134cafa",
-    "policy": "Exclude unverified Tron mapped-ETH representation consistently; do not alter captured observations.",
+    "policy": "Exclude unverified Tron mapped-ETH representation; classify YieldBasis WETH as dollar-financed carry, consistently with BTC. Captured observations are unchanged.",
     "excluded_protocols": [
       "justlend-v1"
     ],
+    "reclassified_protocols": {
+      "yield-basis": {
+        "from": "farming",
+        "to": "carry",
+        "evidence": "strategy_universe_deep: yb_weth_pool actual crvUSD loan"
+      }
+    },
     "raw_protocol_rows": 85,
     "reader_protocol_rows": 84
   }
