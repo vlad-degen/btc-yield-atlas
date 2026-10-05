@@ -395,6 +395,189 @@
       }
     },
     {
+      "name": "YieldBasis WETH",
+      "currentETH": 10425.99863386677,
+      "currentUSD": 27816047.662281808,
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": null,
+          "usd": null,
+          "status": "not_deployed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 641.1049670267671,
+          "usd": 1281100.8224605778,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 5085.128255477855,
+          "usd": 7968563.885438149,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 7632.4561127719235,
+          "usd": 14211369.772578897,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 12512.000165048676,
+          "usd": 30855447.99334644,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 10616.20526151943,
+          "usd": 28554946.222719617,
+          "status": "deployed_observed"
+        }
+      ],
+      "firstMaterialMonth": "2026-05",
+      "peak": {
+        "month": "2026-08",
+        "timestamp": 1788220799,
+        "eth": 12512.000165048676,
+        "usd": 30855447.99334644,
+        "status": "deployed_observed"
+      }
+    },
+    {
       "name": "Rocksolid rETH",
       "currentETH": 9727.76735365525,
       "currentUSD": 25953201.209705926,
@@ -1656,6 +1839,179 @@
           "status": "observed"
         }
       ]
+    },
+    {
+      "name": "Yield Basis",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 10330.418381724106,
+          "usd": 27917551.02734,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 14745.71456086401,
+          "usd": 28415690.69123,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 14413.983043321316,
+          "usd": 29146585.07967,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 13835.105572302149,
+          "usd": 31410036.73207,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 16540.22567016591,
+          "usd": 33382113.07533,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 23180.775018165434,
+          "usd": 36915402.72201,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 22304.37215794152,
+          "usd": 42692412.08834,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 12567.325454948084,
+          "usd": 30391511.14572,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 10674.149661069087,
+          "usd": 28517193.12684,
+          "status": "observed"
+        }
+      ]
     }
   ],
   "funding": [
@@ -1988,9 +2344,9 @@
   },
   "scope": "Gross whole-product books with current, historical or declared carry evidence; not unique ETH, historical dollar allocations, deposits or earned income.",
   "sources": {
-    "carry_category_candidates": "bf275a641a40f442ebf96d7589a2598490fe75eefac8e86f037221d25cdc4429",
-    "product_chapters": "831a656ad248ed96dd26a0a74781b24b150163a3ab3261debacb1017b8ab94fd",
-    "market_reader_chapter": "f9e896d91703381436d9ee17c8a715dc17289f8e6f78d3a183c64c8f9e65e8e7",
+    "reader_carry_category": "a9eb0ba379841c8e8d754c27055aadf75b682ffe0494660c6abbf001f22f837e",
+    "reader_product_chapters": "73bdb984660306b902a78ca886bf78ac6ed4eef071ee19fbc95b50ddacd4b650",
+    "market_reader_chapter": "347f9dbb79b47bdcb70675228b57ae8d94a7dd58d9be2ae8542b67e35b0b6e92",
     "funding_atlas_chapter": "6f9407ec0164945417bbbcb27df4cdf4f11988a5474af5c136fd212f44c36caa",
     "strategy_universe_deep": "3f31107993ce3cf59a83f9a513eebc3e1a82fed23899898fb7d2724a82fddb3b",
     "credit_expansion_deep": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0"

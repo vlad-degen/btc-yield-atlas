@@ -1,13 +1,13 @@
-# Five ETH carry products: snapshot evidence and product chapters
+# ETH carry products: snapshot evidence and product chapters
 
 The final edition adds [capital, earned income and investor exit evidence](CAPITAL-INCOME-EXIT.md). Its fixed-block custody graph, common-window cash-flow ledgers and receipt-verified payout history extend the original scope of this chapter. Use that exhibit for the completed measured answer and its evidence boundaries.
 
 
 Financial snapshot: **2 October 2026, 23:59:59 UTC**. Ethereum block **26,108,081**; Optimism block **157,693,411**. New contract and document observations were collected on **4 October 2026**. Earlier financial inputs retain their original capture dates.
 
-These chapters follow the Bitcoin product format: capital and return, linked money flow, actor powers, income payers, capital history, funding cost, holder distribution, loan legs and dated events. The ordering uses whole-product book NAV. It does not rank verified carry-only equity, realized profit or investment quality. The five books overlap and must not be added as independent net market capital.
+These chapters follow the Bitcoin product format: capital and return, linked money flow, actor powers, income payers, capital history, funding cost, holder distribution, loan legs and dated events. The ordering uses whole-product book NAV. It does not rank verified carry-only equity, realized profit or investment quality. The books overlap and must not be added as independent net market capital. The current five largest are Concrete, Liquid, YieldBasis WETH, Rocksolid and Liquity; Royco remains an additional fully examined case.
 
-The renderer data is [product_chapters.json](../../../data/eth/product_chapters.json). Published designs remain in the existing carry census; `liveRoute` in this file records what the fixed-block audit actually established.
+The current renderer data is [reader_product_chapters.json](../../../data/eth/reader_product_chapters.json). The original five-case capture remains in [product_chapters.json](../../../data/eth/product_chapters.json). Published designs remain in the existing carry census; `liveRoute` in this file records what the fixed-block audit actually established.
 
 ## Comparable measurements
 
@@ -15,6 +15,7 @@ The renderer data is [product_chapters.json](../../../data/eth/product_chapters.
 | --- | ---: | ---: | --- | ---: | --- | --- |
 | Concrete Delta weETH | 307,362.925 ETH / $820.029M | +0.1915% | 2025-12-31 | +1.8434% | 1 Ethereum | 0% / 0% configured vault fees; private fees unresolved |
 | ether.fi Liquid ETH | 177,171.063 ETH / $472.684M | +0.2610% | 2024-09-30 | +6.8658% | 7,793 Ethereum, 1,511 Optimism | 0.35% management fee at T |
+| YieldBasis WETH | 10,425.999 ETH / $27.816M | −0.1622% | 2026-05-31 in monthly samples | External gauge rewards excluded; see the matched 94-day comparison below | 332 direct LT addresses, including the gauge | 10% minimum admin parameter; variable fee allocation |
 | Rocksolid rETH | 9,727.767 ETH / $25.953M | +0.2192% | 2025-08-31 | +4.6354% | 388 Ethereum | 1% management / 10% performance at T |
 | Liquity ETH Carry | 6,014.002 ETH / $16.045M | +0.4597% | 2026-03-31 | +3.5159% | 130 Ethereum | 0.5% management / 10% performance at T; indexed UI zero defaults differ |
 | Royco ETH | 116.052 ETH / $0.310M | +0.1849% | 2026-03-31 | +1.3494% | 8 Ethereum | 0% management / 10% performance at T; current documentation says 0% / 0% |
@@ -60,7 +61,21 @@ The transfer audit covers every Ethereum and Optimism share-transfer interval th
 
 The capital panel retains 24 completed month ends, October 2024 through September 2026. A separate dated current UI observation labels 64.66% carry and 21.65% looping on 3 October. Those labels cannot reconstruct historical allocation. The existing independent partial reconstruction leaves **$12,452,629.59**, or **2.6345% of book NAV**, unresolved; the difference is not labelled yield. [Partial balance sheet](../../../data/eth/etherfi_partial_balance_sheet.json).
 
-## 3. Rocksolid rETH
+## 3. YieldBasis WETH
+
+The WETH LT pool has **10,425.999 ETH / $27.816M** of net oracle book at T. Its actual liability is **27,814,855.84 crvUSD**, approximately 99.996% of net equity at a nominal $1 debt mark. The **64.14M crvUSD allocation limit** is capacity, not debt. This liability finances WETH/crvUSD liquidity, which places the pool in the same carry family as BTC YieldBasis. [Pool contract](https://etherscan.io/address/0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea#code), [official design](https://docs.yieldbasis.com/).
+
+WETH deposits create LT claims on the net book. The AMM borrows crvUSD, supplies liquidity and adjusts leverage as prices move. Traders pay swap fees; borrowing, rebalancing and administration consume part of that income. Staking LT in the gauge adds distinct fee and incentive rights. **5,875 ETH** of book is staked and **4,551 ETH** unstaked. Both claims belong to the same pool and must not be added as new capital. The minimum admin parameter is 10%; actual allocation follows the contract mechanism rather than a flat 10% deduction from every investor gain.
+
+All 24 selected month-end blocks were read. Code is absent through April 2026; the first funded monthly observation is May, at **641 ETH**. Net book reaches **12,512 ETH** in August and **10,616 ETH** in September. Updated effective supply and fair value per LT unit provide the book measure. Missing predeployment months remain null. [Reader observations](../../../data/eth/reader_carry_category.json).
+
+The unstaked fair ETH mark fell **0.6926%** over the matched 94-day window while stETH gained **0.5741%**, a **−1.2668 percentage-point** excess. External gauge rewards are excluded; this does not establish the complete return of a staked investor. Realized funding cash flow has not been isolated. [Fixed-block capital and return ledger](../../../data/eth/strategy_universe_deep.json).
+
+Complete LT Transfer discovery identifies 524 touched addresses. Archived balances reconcile exactly to **10,364.971982645044 effective LT shares**, held by **332 positive addresses**. The largest address is the gauge, with **56.35%** of supply. Direct addresses include contracts; they do not count gauge beneficiaries or unique investors. [Reconciled holder ledger](../../../data/eth/yb_LT_holders_T.json).
+
+The configured admin at T is `0x370a449febb9411c95bf897021377fe0b7d100c0`. Snapshot withdrawal previews for 1%, 10% and 30% of raw supply quote approximately **104, 1,043 and 3,128 WETH**. A preview establishes an output calculation, not an executed or paid withdrawal. An actual unwind must remove liquidity, settle crvUSD debt and release WETH. The main product chapter displays the eight operational steps, control actors, income payers, actual loan, monthly capital, ETH return and holder distribution together. [Current product chapter dataset](../../../data/eth/reader_product_chapters.json).
+
+## 4. Rocksolid rETH
 
 The share contract was deployed on **28 August 2025 at 04:55:35 UTC**. The [public launch announcement](https://blog.rocksolid.network/introducing-rocksolid-liquid-vaults/) followed on **25 September 2025**. At T, the book contains **8,293.351834 rETH**, equal to **9,727.767 ETH / $25.953M**. Fourteen completed-month observations run from August 2025 through September 2026. Cumulative ETH book change since the first funded August sample is **+4.6354%**. It includes rETH staking growth and recognized strategy accounting; separately distributed incentives are not included. [Vault](https://etherscan.io/address/0x936facdf10c8c36294e7b9d28345255539d81bc7#code).
 
@@ -72,7 +87,7 @@ The snapshot nevertheless proves nested carry-product exposure. The execution ac
 
 At T, **388 positive share-holding addresses** reconcile exactly to supply. The largest holds **40.9678%**. The issuer’s [one-month retrospective](https://blog.rocksolid.network/a-rocksolid-retrospective-one-month-post-launch/) reports more than 220 historical depositors and an initial **0.3173 rETH/day** incentive programme. Those are historical issuer claims. They are neither the T holder census nor independently measured organic returns. Validator rewards, external borrower payments, trading fees and issuer-funded incentives have different payers and must remain distinct.
 
-## 4. Liquity ETH Carry
+## 5. Liquity ETH Carry
 
 The contract was deployed on **30 January 2026 at 14:23:47 UTC**. The published product name and earlier description point to Liquity/BOLD and Curve. The fixed-block audit instead identifies an **Ebisu wstETH Trove** and an active **Uniswap V4** fuse. Granted stablecoin substrates include **ebUSD and USDC**. The live route must therefore use the onchain finding rather than silently preserving the earlier BOLD/Curve design. [Share contract](https://etherscan.io/address/0xb9e806e8f2d94c015ffefa90cd24ecce18f1663c#code), [Ebisu create fuse](https://etherscan.io/address/0x864d303d4d161209b406eb3d4c43759231a73a07#code), [Uniswap V4 fuse](https://etherscan.io/address/0x1a2d2f51d1874bdc89f6e78feb99b8b7967d16da#code).
 
@@ -88,7 +103,7 @@ Fees at T are **0.5% management / 10% performance**, rather than the indexed zer
 
 The exact supply reconstruction gives **130 positive share addresses**, including Rocksolid’s execution account. The largest holder owns **36.8805%** of supply. Income comes from retained wstETH staking and the strategy’s recognized stablecoin or liquidity-position returns; the vault pays debt interest and protocol loan fees. No independently isolated organic carry return is claimed.
 
-## 5. Royco ETH
+## 6. Royco ETH
 
 The roywstETH wrapper was deployed on **4 March 2026 at 16:00:47 UTC**. It reports **93.184064 wstETH**, equal to **116.052 ETH / $309,619.94** at T. Its funded monthly samples begin in March. ETH book change since 31 March is **+1.3494%**, and the 30-day change is **+0.1849%**. These are recorded book returns with explicit accounting freshness limits. [Share wrapper](https://etherscan.io/address/0x41ce72e04d349eb957bdc373baa9c69207032c56#code).
 

@@ -12,7 +12,7 @@ DATA = ROOT / 'data/eth'
 def run():
     read = lambda name: json.loads((DATA / f'{name}.json').read_text())
     analysis, market = read('reader_analysis'), read('market_reader_chapter')
-    candidates, chapters = read('carry_category_candidates'), read('product_chapters')
+    candidates, chapters = read('reader_carry_category'), read('reader_product_chapters')
     checks = []
     def check(name, value):
         checks.append({'name': name, 'passed': bool(value)})
@@ -21,7 +21,7 @@ def run():
     check('exact_frozen_snapshot', analysis['snapshot'] == 1790985599)
     check('24_completed_months', analysis['months'] == [m['period'] for m in market['months']] and
           analysis['months'][0] == '2024-10' and analysis['months'][-1] == '2026-09' and len(analysis['months']) == 24)
-    check('all_seven_without_size_cutoff', {p['name'] for p in analysis['books']} ==
+    check('all_eight_without_size_cutoff', len(analysis['books']) == 8 and {p['name'] for p in analysis['books']} ==
           {p['product'] for p in candidates['products'] if p['classification'] == 'E4'})
     for name, sha in analysis['sources'].items():
         check('source_hash:' + name, hashlib.sha256((DATA / f'{name}.json').read_bytes()).hexdigest() == sha)
@@ -70,9 +70,45 @@ def run():
     spec.loader.exec_module(builder)
     ARTICLES = builder.ARTICLES
     payload = read('site_payload')
-    check('complete_46_report_navigation', len(payload['reportLibrary']) == len(ARTICLES) == 46 and
+    check('complete_47_report_navigation', len(payload['reportLibrary']) == len(ARTICLES) == 47 and
           {r['id'] for r in payload['reportLibrary']} == set(ARTICLES) and all(
               (ROOT / 'eth' / r['href']).is_file() for r in payload['reportLibrary']))
+    original = read('research_market_chapter')
+    excluded = next(p for p in original['products'] if p['id'] == 'justlend-v1')
+    for i, month in enumerate(market['months']):
+        check('unchanged_market_exposure:' + month['period'], close(month['eth_ref'],
+              original['months'][i]['eth_ref'] - (excluded['history'][i]['eth_ref'] or 0)))
+    yb = next(p for p in chapters['products'] if p['id'] == 'yieldbasis')
+    old_yb = next(p for p in read('strategy_universe_deep')['products'] if p['id'] == 'yb_weth_pool')
+    check('YB_frozen_capital_conserved', close(yb['capitalETH'], old_yb['capitalETH']) and close(yb['capitalUSD'], old_yb['capitalUSD']))
+    check('YB_rank_three_actual_USD_loan', yb['rank'] == 3 and close(yb['charts']['loanLegs']['rows'][0]['debtUSD'], old_yb['state']['loan']['debtCrvUSD']))
+    check('YB_no_fabricated_predeployment_capital', all(r['sizeETH'] is None for r in yb['charts']['capitalHistory']['rows'] if r['month'] <= '2026-04'))
+    holders = read('yb_LT_holders_T')
+    distribution = yb['charts']['walletDistribution']
+    check('YB_direct_holder_balances_reconcile', holders['reconciled'] and len(holders['addresses']) == holders['holderCount'] == 332 and close(sum(r['shares'] for r in holders['addresses']), old_yb['shareSupply']))
+    check('YB_holder_distribution_conserves_book', sum(r['holders'] for r in distribution['rows']) == 332 and close(sum(r['capitalETH'] for r in distribution['rows']), old_yb['capitalETH']) and close(sum(r['shareOfSupplyPct'] for r in distribution['rows']), 100))
+    check('YB_holder_source_hash', distribution['sourceSHA256'] == hashlib.sha256((DATA/'yb_LT_holders_T.json').read_bytes()).hexdigest())
+    discovered = set()
+    transfers = json.loads((ROOT/holders['sourcePaths'][0]).read_text())['records']
+    balances = json.loads((ROOT/holders['sourcePaths'][1]).read_text())['records']
+    for record in transfers:
+        for log in record['response']['result']:
+            for topic in log['topics'][1:3]:
+                address = '0x' + topic[-40:]
+                if int(address, 16): discovered.add(address)
+    check('YB_all_discovered_addresses_read_at_T', len(balances) == len(discovered) and {r['label'].removeprefix('yb_LT_balance_') for r in balances} == discovered and all(r['params'][-1] == hex(26108081) and 'result' in r['response'] for r in balances))
+    check('YB_positive_archive_balances_match', {r['address']:r['shares'] for r in holders['addresses']} == {r['label'].removeprefix('yb_LT_balance_'):int(r['response']['result'],16)/1e18 for r in balances if int(r['response']['result'],16)>0})
+    coverage = read('carry_coverage_audit')
+    check('material_screen_disposed', coverage['materialKeywordPools'] == len(coverage['materialPools']) and all(p['disposition'] for p in coverage['materialPools']))
+    import re
+    discovery = json.loads((ROOT/coverage['source']['path']).read_text())['data']
+    material = [p for p in discovery if re.search('ETH', p['symbol'], re.I) and p['tvlUsd'] >= 5e6]
+    check('material_screen_matches_saved_feed', {p['pool'] for p in material} == {p['pool'] for p in coverage['materialPools']} and len(material) == 299 and len({p['project'] for p in material}) == coverage['materialProjects'] == 86)
+    check('material_feed_source_hash', hashlib.sha256((ROOT/coverage['source']['path']).read_bytes()).hexdigest() == coverage['source']['sha256'])
+    manifest = read('parity_discovery_manifest')
+    check('new_discovery_capture_hashes', all(hashlib.sha256((ROOT/r['path']).read_bytes()).hexdigest() == r['sha256'] if r.get('path') else bool(r.get('error')) for r in manifest))
+    check('YB_monthly_capture_hash', candidates['reader_extension']['monthly_capture_sha256'] == hashlib.sha256((ROOT/'raw/eth/parity-sweep-2026-10-05/yb_monthly_frozen.json').read_bytes()).hexdigest())
+    check('unmeasured_documented_routes_not_added', len(coverage['documentedRoutes']) == 2 and all(not p['counted'] for p in coverage['documentedRoutes']))
     failures = [r for r in checks if not r['passed']]
     result = {'checks': len(checks), 'all_checks_passed': not failures, 'failed': failures,
               'financial_snapshot': '2026-10-02T23:59:59Z',

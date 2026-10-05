@@ -110,3 +110,32 @@ body[data-edition="reader"] .chart-tooltip{position:absolute;width:1px;height:1p
 body[data-edition="reader"] #c-history-findings:empty{display:none}
 body[data-edition="reader"] #strict-top5-comparison th{white-space:normal}
 @media(max-width:560px){.chart-float{padding:10px;font-size:11px}.chart-tip-row{gap:8px}.chart-tip-row strong{font-size:10px}.chart-tip-row>span{max-width:53%}}
+
+/* Match the BTC reader's visual hierarchy; supporting evidence stays reachable. */
+body[data-edition="reader"] .reader-example-pair,body[data-edition="reader"] .reader-funding-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+body[data-edition="reader"] .reader-example-pair>.panel{min-width:0;height:100%}
+body[data-edition="reader"] .reader-funding-pair>div{min-width:0}
+body[data-edition="reader"] .reader-example-pair .horizontal-row{grid-template-columns:150px 1fr 56px}
+body[data-edition="reader"] .reader-example-pair p,body[data-edition="reader"] .reader-funding-pair p{font-size:13px;line-height:1.65}
+body[data-edition="reader"] .category-pills{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+body[data-edition="reader"] .category-pills span{padding:5px 9px;border:1px solid var(--hair);border-radius:4px;font:11px var(--mono);color:var(--muted)}
+body[data-edition="reader"] .product-mechanics{margin-top:20px}
+body[data-edition="reader"] .product-mechanics li{margin-bottom:12px;font-size:14px;line-height:1.7}
+body[data-edition="reader"] .product-mechanics a{font-size:12px;white-space:nowrap}
+body[data-edition="reader"] [data-product-part="capital"]{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+body[data-edition="reader"] [data-product-part="capital"]>h3,body[data-edition="reader"] [data-product-part="capital"]>.strict-unverified,body[data-edition="reader"] [data-product-part="capital"]>h4,body[data-edition="reader"] [data-product-part="capital"]>.tblwrap{grid-column:1/-1}
+body[data-edition="reader"] [data-product-part="capital"] .strict-exhibit{min-width:0}
+body[data-edition="reader"] [data-product-part="capital"] .strict-exhibit svg{max-height:260px}
+body[data-edition="reader"] .flow-exit small{display:none}
+@media(max-width:800px){body[data-edition="reader"] .reader-example-pair,body[data-edition="reader"] .reader-funding-pair,body[data-edition="reader"] [data-product-part="capital"]{grid-template-columns:1fr}body[data-edition="reader"] .reader-example-pair .horizontal-row{grid-template-columns:110px 1fr 54px}}
+
+body[data-edition="reader"] .reader-example-pair>.panel{margin:0;height:100%}
+body[data-edition="reader"] .reader-example-pair .horizontal-bars{--label-w:150px;--value-w:56px}
+body[data-edition="reader"] .reader-example-pair .horizontal-axis{font-size:9px}
+body[data-edition="reader"] .strict-calc-results .metric-strip{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+body[data-edition="reader"] .strict-calc-results .metric-strip>div{padding:12px;font-size:11px}
+body[data-edition="reader"] .strict-calc-results .metric-strip b{font-size:24px}
+body[data-edition="reader"] #carry-calculator .formula{font-size:11px;line-height:1.7;white-space:normal}
+body[data-edition="reader"] .answers .tile .d{font-size:12px;line-height:1.55}
+@media(max-width:800px){body[data-edition="reader"] .reader-example-pair .horizontal-bars{--label-w:110px;--value-w:56px}}
+@media(max-width:380px){body[data-edition="reader"] .strict-calc-results .metric-strip{grid-template-columns:1fr}}

@@ -1,14 +1,14 @@
 # ETH carry: category composition and capital history
 
-Document review: 5 October 2026. Financial snapshot: 2 October 2026, 23:59:59 UTC. Original interface and discovery captures: 3 October. The new archive reads in this review use the original snapshot and completed-month blocks. Current documentation is not treated as proof of every historical strategy allocation.
+Document review: 6 October 2026. Financial snapshot: 2 October 2026, 23:59:59 UTC. Original interface and discovery captures: 3 October. The new archive reads in this review use the original snapshot and completed-month blocks. Current documentation is not treated as proof of every historical strategy allocation.
 
 The carry section should follow the overall ETH market map and answer four questions: which products use ETH to finance dollar investments, how much capital each reports, where the borrowing and investment happen, and how those products have grown. Product mechanics and risk analysis then explain that map. A category composed only of five managed vaults misses documented carry products and includes products whose main mechanism is different.
 
-Machine-ready product rows and monthly histories are in [carry_category_candidates.json](../../../data/eth/carry_category_candidates.json). The [source ledger](../../../data/eth/carry_category_sources.json) contains 20 scoped primary-source and discovery records. It distinguishes financial evidence at T, document observations, and current borrower screening.
+The current reader combines the original source ledger with the separately reconstructed YieldBasis WETH pool in [reader_carry_category.json](../../../data/eth/reader_carry_category.json). The original [candidate ledger](../../../data/eth/carry_category_candidates.json) remains available for provenance. The [source ledger](../../../data/eth/carry_category_sources.json) contains 20 scoped primary-source and discovery records. It distinguishes financial evidence at T, document observations, and current borrower screening.
 
 ## What belongs in this category
 
-Here, **ETH-collateral dollar carry, E4**, means retaining ETH-family exposure as collateral, borrowing or minting a dollar liability, and deploying the dollars into an income-producing strategy. ETH collateral can be ETH, an LST or an LRT. The dollar investment can be lending, a stablecoin LP, a credit vault, a Senior tranche or a hedged arbitrage portfolio. A manager, a curator and a lending protocol are different roles in that route.
+Here, **ETH-collateral dollar carry, E4**, means retaining ETH-family exposure as collateral, borrowing or minting a dollar liability, and deploying the dollars into an income-producing strategy. ETH collateral can be ETH, an LST or an LRT. The financed investment can be lending, liquidity, credit, a Senior tranche or an arbitrage portfolio. Dollar-financed ETH liquidity is included when the debt-funded pool retains net ETH exposure, as in the BTC YieldBasis classification. A manager, a curator and a lending protocol are different roles in that route.
 
 | Mechanism | Collateral and debt | Reinvestment | Category treatment |
 |---|---|---|---|
@@ -25,7 +25,9 @@ An ETH-denominated share does not establish ETH-long dollar carry. An Ethereum c
 
 ## Products and sleeves identified
 
-The [five product chapters](CARRY-PRODUCTS.md) extend the original published-design census with archived live positions, controls, share-holder ledgers and funded return histories. The website uses those findings for its current route table. Historical strategy weights remain unknown.
+The [product chapters](CARRY-PRODUCTS.md) extend the original published-design census with archived live positions, controls, share-holder ledgers and funded return histories. The website uses those findings for its current route table. Historical strategy weights remain unknown.
+
+The latest [coverage audit](CARRY-COVERAGE-AUDIT.md) screens 299 material ETH-keyword pools across 86 projects and documents two additional ZenSats dollar-carry routes. Their book sizes at T remain unmeasured and are excluded from totals.
 
 The table reports **whole-product book NAV at T**, where available. It does not claim that every dollar in a mixed vault is allocated to carry, or that book NAV has been independently reconciled to reserves. USD snapshot marks use the same $2,667.9504418816 ETH quote disclosed in the existing research, timestamped T+1 second. This is a valuation convention, not an execution price.
 
@@ -33,6 +35,7 @@ The table reports **whole-product book NAV at T**, where available. It does not 
 |---|---|---|---:|---|
 | ether.fi Liquid ETH | Mixed portfolio with confirmed E4 sleeve | Ethereum borrowing and dollar destinations; Optimism share circulation; nested Monad exposure | 177,171.063302 ETH / $472.684M | UI capture on 3 October: 64.66% labelled carry, 21.65% explicit ETH loops; not weights at T |
 | Concrete Delta weETH | Disclosed E4 design | weETH collateral, stablecoin borrowing and dollar-neutral arbitrage; shared Ethereum Safe | 278,170.834213 weETH = 307,362.925489 ETH / $820.029M | No product-specific verified allocation; initial issuance, shared backing and external-equity attribution remain unresolved |
+| YieldBasis WETH | Confirmed dollar-financed ETH liquidity, E4 | Ethereum; WETH/crvUSD liquidity with an actual crvUSD liability | 10,425.999 ETH / $27.816M | Actual debt 27,814,855.84 crvUSD; staked and unstaked LT claims share one pool |
 | Concrete wstETH Plus | Candidate, not established E4 | Ethereum product shares and shared Safe with dollar debt | 36,439.686407 wstETH = 45,382.053910 ETH / $121.077M | Shared debt does not prove this product's mandate or allocation |
 | Liquity ETH Carry, Fusion / Sentinel | Confirmed E4 design | Ethereum at T: wstETH → Ebisu ebUSD debt; an active Uniswap V4 fuse | 6,014.001735 ETH / $16.045M | Fixed-block active Ebisu Trove: 44.3269% LTV, 2.55% borrower-set APR; full destination attribution remains incomplete |
 | Reservoir ETH Yield, Fusion / Reservoir | Confirmed E4 design | Ethereum; WETH collateral → USDC → leveraged srUSD strategy | 23.594840 ETH / $62.950K | At T: 36,789.61 USDC outer debt and 11,021.11 USDC in the main wsrUSD-backed inner loan; October 2025 historical inner debt 90.26M USDC before pending accrual |
@@ -88,9 +91,9 @@ A single verified global E4 capital total is not yet available. The category pag
 
 ## Capital history now available
 
-The main page starts with all seven measured books on one 24-month stacked bar chart, followed by three dated development stories, the comparison matrix and five product tabs plus closed cases. The small-book zoom retains all five smaller products. ETH/USD, table and view-matched CSV controls use the same normalized observations. A separate **Market category** view reproduces the two adapter parents used in the category chart. The [normalized reader dataset](../../../data/eth/reader_analysis.json) preserves every missing state and the two measurement lenses.
+The main page starts with all eight measured books on one 24-month stacked bar chart, followed by three dated development stories, the comparison matrix and five product tabs plus closed cases. The small-book zoom retains all six smaller products. ETH/USD, table and view-matched CSV controls use the same normalized observations. A separate **Market category** view reproduces the three adapter parents used in the category chart. The [normalized reader dataset](../../../data/eth/reader_analysis.json) preserves every missing state and the two measurement lenses.
 
-Liquid’s contract whole-book series rises from 146,203.01 ETH in October 2024 to 176,962.43 ETH in September 2026, a **21.04%** change. This is distinct from the adapter category’s **53.88%** growth and its continuously observed parent’s **54.29% decline**. The adapter ledger selects different token balances and ETH reference prices; new Concrete membership also changes its denominator. None of these is a measured deposit-flow series.
+Liquid’s contract whole-book series rises from 146,203.01 ETH in October 2024 to 176,962.43 ETH in September 2026, a **21.04%** change. This is distinct from the adapter category’s **57.16%** growth and its continuously observed parent’s **54.29% decline**. The adapter ledger selects different token balances and ETH reference prices; new Concrete membership also changes its denominator. None of these is a measured deposit-flow series.
 
 
 The [archived borrowing-rate review](BORROW-HISTORY.md) separately follows Liquid's actual main-account RLUSD loan and its Aave WETH debt. The specific RLUSD main account is funded from July 2026 in the month-end sample. Its September quote is 16.6774% APR, independently verified at 100% utilization; this is a point sample rather than the month's average cost.
@@ -107,9 +110,10 @@ The isolated dataset contains primary archive histories at all 24 completed-mont
 | Reservoir ETH Yield | 14 | August 2025 to September 2026 | Vault totalAssets in WETH at dated blocks |
 | Royco ETH | 7 | March 2026 to September 2026 | Vault totalAssets in wstETH at dated blocks |
 | Rocksolid rETH | 14 in the expanded product chapter | August 2025 to September 2026 | Archived rETH book assets, converted at the dated rETH/ETH rate |
+| YieldBasis WETH | 5 funded observations; all 24 months checked | May 2026 to September 2026 | Updated effective supply × fair ETH value; absent code through April stays null |
 | Midas ETH products | Not reconstructed | Launch and issue dates documented | Supply and issuer NAV feeds must be identified before plotting capital |
 
-These are the first successful month-end reads in the selected window, not exact creation dates. Earlier product histories may exist. The complete getter requests, responses and absence checks are preserved in [the candidate dataset](../../../data/eth/carry_category_candidates.json).
+These are the first successful month-end reads in the selected window, not exact creation dates. Earlier product histories may exist. The original getter observations are preserved in [the candidate dataset](../../../data/eth/carry_category_candidates.json); the separately captured YieldBasis monthly reads feed [the current reader ledger](../../../data/eth/reader_carry_category.json).
 
 Historical USD marks use the Ethereum Chainlink ETH/USD proxy. Its description and 8-decimal precision were verified at the examined blocks. The maximum answer age in the collected month-end and T references is 3,420 seconds. These oracle marks are dated valuation references, not executable market prices. Snapshot USD product sizes continue to use the existing nearest ETH quote rather than silently changing the report's T convention. [Chainlink historical data](https://docs.chain.link/docs/historical-price-data), [timestamp checks](https://docs.chain.link/data-feeds/overview).
 

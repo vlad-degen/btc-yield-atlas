@@ -31,7 +31,7 @@ ARTICLES = {
  'MARKET-STRUCTURE': ('library', 'ETH market composition and history'),
  'CARRY-CATEGORY': ('library', 'ETH carry products and capital history'),
  'CARRY-MATH': ('library', 'Dollar carry: rates, payers and calculations'),
- 'CARRY-PRODUCTS': ('library', 'Five carry products: live positions, control and outcomes'),
+ 'CARRY-PRODUCTS': ('library', 'Carry products: live positions, control and outcomes'),
  'BORROW-HISTORY': ('library', 'Liquid ETH: archived borrowing costs'),
  'MARKET-TABLES': ('library', 'Complete market tables'),
  'MECHANICS': ('library', 'Yield mechanics'),
@@ -61,6 +61,7 @@ ARTICLES = {
  'PRODUCT-FINANCIAL-HISTORY': ('library', 'Additional ETH products: capital, returns and exits'),
  'BORROWER-USE': ('library', 'Large dollar borrowers: identities and use of proceeds'),
  'HGETH-LOAN-BOOK': ('library', 'hgETH: loan-book accounting, history and control'),
+ 'CARRY-COVERAGE-AUDIT': ('library', 'Carry coverage: public-feed sweep and product decisions'),
 }
 
 def link(url, source):
@@ -136,8 +137,12 @@ def build():
     translate_reports()
     from reader_market_build import run as build_reader_market
     build_reader_market()
+    from reader_carry_build import run as build_reader_carry
+    build_reader_carry()
     from reader_analysis_build import run as build_reader_analysis
     build_reader_analysis()
+    from parity_coverage_build import run as build_carry_coverage
+    build_carry_coverage()
     for name,source in [('STRATEGY-UNIVERSE-EXPANSION','STRATEGY-UNIVERSE-EXPANSION'),('CARRY-VARIANTS-EXPANSION','CARRY-VARIANTS-EXPANSION'),('CREDIT-EXPANSION','CREDIT-EXPANSION-2026-10-04')]:
         text=(RESEARCH/'review'/f'{source}.md').read_text()
         # These are English editorial sources. Preserve exact units and links.
@@ -172,10 +177,11 @@ def build():
       'marketChapter':read('market_reader_chapter'),
       'borrowersChapter':read('research_borrowers'),
       'economicsChapter':read('carry_economics_chapter'),
-      'productChapters':read('product_chapters'),
+      'productChapters':read('reader_product_chapters'),
       'borrowRateHistory':read('carry_borrow_rate_history'),
-      'carryCategory':{'products':read('carry_category_candidates')['products']},
+      'carryCategory':{'products':read('reader_carry_category')['products']},
       'readerAnalysis':read('reader_analysis'),
+      'carryCoverage':read('carry_coverage_audit'),
       'reportLibrary':[{'id':stem,'title':title,'href':f'{folder}/{stem}.html'} for stem,(folder,title) in ARTICLES.items()],
       'marketNetting':read('market_netting_closure'),
       'carryAttribution':read('carry_attribution_closure'),
@@ -202,7 +208,7 @@ def build():
         claim['claim'],claim['time_scope_and_limit']=translations[claim['id']]
     packed=json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
     (DATA/'site_payload.json').write_text(packed)
-    for name in ['evidence_ledger','market_summary','weth_lending_markets_T','etherfi_partial_balance_sheet','comparable_ETH_wealth','dependency_graph','asset_registry','product_registry','presentation_analysis','permissions_review_T','presentation_terms_sources','btc_depth_review','market_panel','carry_category_candidates','carry_category_sources','market_pool_screen','research_market_chapter','market_reader_chapter','research_borrowers','carry_economics_chapter','product_chapters']:
+    for name in ['evidence_ledger','market_summary','weth_lending_markets_T','etherfi_partial_balance_sheet','comparable_ETH_wealth','dependency_graph','asset_registry','product_registry','presentation_analysis','permissions_review_T','presentation_terms_sources','btc_depth_review','market_panel','carry_category_candidates','reader_carry_category','reader_product_chapters','carry_category_sources','market_pool_screen','research_market_chapter','market_reader_chapter','research_borrowers','carry_economics_chapter','product_chapters']:
         shutil.copyfile(DATA/f'{name}.json',OUT/'data'/f'{name}.json')
     def copy_chapter_evidence(value):
         if isinstance(value,dict):
@@ -217,6 +223,8 @@ def build():
     for prefix in ['market_netting_','carry_attribution_','backing_exit_','basis_closure_','funding_atlas_','strategy_universe_expansion','strategy_universe_deep','carry_variants_expansion','credit_expansion','funding_borrower_deep','manager_case_','market_completeness_','research_expansion_']:
         for source in DATA.glob(prefix+'*'):
             if source.is_file():shutil.copyfile(source,OUT/'data'/source.name)
+    for name in ['carry_coverage_audit.json','carry-discovery-dispositions.csv','yb_LT_holders_T.json']:
+        if (DATA/name).is_file():shutil.copyfile(DATA/name,OUT/'data'/name)
     shutil.copyfile(DATA/'carry_borrow_rate_history.json',OUT/'data/carry_borrow_rate_history.json')
     ledger=read('evidence_ledger')
     ledger['claims']=payload['evidence']
@@ -252,7 +260,7 @@ def build():
     write_csv('borrowers.csv',['chain','address','collateral_assets_and_units','collateral_USD_at_capture','debt_assets_and_units','debt_USD_at_capture','who','evidence','capture_start','capture_end'],[[r['chain'],r['address'],'; '.join(f"{a['units']} {a['symbol']}" for a in r['collateral_native']),r['collateral_usd'],'; '.join(f"{a['units']} {a['symbol']}" for a in r['debt_native']),r['debt_usd'],r['who'],r['evidence'],r['capture_start'],r['capture_end']] for r in payload['borrowersChapter']['borrowers']])
     write_csv('Liquid-ETH-monthly-history.csv',['month','book_NAV_ETH','Liquid_ETH_return_fraction','stETH_return_fraction','weETH_return_fraction'],[[r['month'],r['book_nav_eth'],r['liquidETH_monthly_return'],r['stETH_monthly_return'],r['weETH_monthly_return']] for r in payload['etherfiHistory']])
     write_csv('Liquid-ETH-borrow-rates.csv',['date','series','protocol','market','loan_asset','borrow_APR_fraction','status','account','block','source'],[[r['date'],r['series_id'],r['protocol'],r['market_id'],r['loan_symbol'],r['borrow_apr'],r['status'],r['account'],r['block'],r['sourceURL']] for r in payload['borrowRateHistory']['rows']])
-    carry_rows=[[p['product'],r['month'],r.get('sizeNative'),r.get('sizeNativeSymbol'),r.get('sizeETH'),r.get('sizeUSD'),r.get('status'),r.get('carryAllocationPercent'),'carry_category_candidates.json'] for p in payload['carryCategory']['products'] for r in p.get('history',[])]
+    carry_rows=[[p['product'],r['month'],r.get('sizeNative'),r.get('sizeNativeSymbol'),r.get('sizeETH'),r.get('sizeUSD'),r.get('status'),r.get('carryAllocationPercent'),'reader_carry_category.json' if p['product']=='YieldBasis WETH' else 'carry_category_candidates.json'] for p in payload['carryCategory']['products'] for r in p.get('history',[])]
     shutil.copyfile(DATA/'reader_analysis.json',OUT/'data/reader_analysis.json')
     for path in DATA.glob('carry-history-*.csv'):
         shutil.copyfile(path,OUT/'data'/path.name)
@@ -282,14 +290,14 @@ def build():
     library_groups = [
       ('Market size and counting', ['MARKET-RESEARCH','MARKET-STRUCTURE','MARKET-TABLES','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','MECHANICS','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
-      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','CARRY-VARIANTS-EXPANSION','PRODUCT-SELECTION','concrete-eth','etherfi-liquid-eth']),
+      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','concrete-eth','etherfi-liquid-eth']),
       ('Financing and income', ['CARRY-MATH','BORROW-HISTORY','DOLLAR-FUNDING-ATLAS','CREDIT-EXPANSION','CARRY-LIFECYCLES','BORROWER-USE','carry-credit']),
       ('Returns and investor access', ['HISTORY','RETURN-DRIVERS','PRODUCT-TERMS','LENDING-MARKETS','ECONOMICS','fluid-lite','treehouse-teth','cian-rseth','ethena-basis','liquid-monad']),
       ('Evidence and reproduction', ['BRIEFING','README','scope','methodology','DEPENDENCIES','EVIDENCE','AUDIT','RESEARCH-PLAN','EXECUTION-CHECKLIST','SITE-PARITY','justlend-tron']),
     ]
     listed = [stem for _, group in library_groups for stem in group]
     assert len(listed) == len(set(listed)) == len(ARTICLES) and set(listed) == set(ARTICLES)
-    body = '<h1>Complete research library</h1><p>The main report follows market size, history, carry economics and investor outcomes. This library retains all 46 supporting investigations, including the complete measurements and their limits.</p>'
+    body = f'<h1>Complete research library</h1><p>The main report follows market size, history, carry economics and investor outcomes. This library retains all {len(ARTICLES)} supporting investigations, including the complete measurements and their limits.</p>'
     library_toc = ''
     for group_number, (question, group) in enumerate(library_groups, 1):
         heading_id = f'group-{group_number}'

@@ -8,6 +8,13 @@ def run():
  labels={'loops':'ETH loops','carry':'Dollar carry','farming':'Farming / liquidity'}
  for c in m['categories']:c['label']=labels.get(c['id'],c['label'])
  excluded=[p for p in m['products'] if p['id']=='justlend-v1'];m['products']=[p for p in m['products'] if p['id']!='justlend-v1'];m['constant_cohort_protocols']=[p for p in m['constant_cohort_protocols'] if p!='justlend-v1'];m['constant_cohort_count']=len(m['constant_cohort_protocols'])
+ # Match the BTC report's economic classification: a dollar-financed LT pool
+ # belongs to carry even though DefiLlama labels its parent Leveraged Farming.
+ # This changes presentation roles, never the captured token observations.
+ yb=next(p for p in m['products'] if p['id']=='yield-basis')
+ yb.update(category='carry',subtype='dollar_financed_liquidity',how_earns='Borrow crvUSD to maintain leveraged WETH/crvUSD liquidity; trading fees must cover financing and administration.')
+ for r in m['chain_observations']:
+  if r['protocol']=='yield-basis':r['category']='carry'
  cohort=set(m['constant_cohort_protocols'])
  def total(rows,ids):
   rs=[(p,r) for p,r in rows if p in ids];present=[(p,r) for p,r in rs if r['status']=='observed'];valid=[r for p,r in present];stale=[p for p,r in rs if r['status']=='stale'];missing=[p for p,r in rs if r['status']=='missing']
@@ -30,6 +37,6 @@ def run():
  selected=set(m['default_selection']);m['default_current']=total([(p['id'],p['current']) for p in m['products']],{p['id'] for p in m['products'] if p['category'] in selected})
  m['excluded_representations']=[{'id':p['id'],'name':p['name'],'reason':'Tron mapped ETH: Ethereum backing and redemption not verified. Excluded from all reader totals, category histories and chain charts; full captured observations retained in the source ledger.','current':p['current'],'history':p['history'],'source_url':p['source_url']} for p in excluded]
  m['excluded_protocols']+= [{'id':'justlend-v1','reason':m['excluded_representations'][0]['reason']}]
- m['presentation_universe']={'source_path':'data/eth/research_market_chapter.json','source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'policy':'Exclude unverified Tron mapped-ETH representation consistently; do not alter captured observations.','excluded_protocols':['justlend-v1'],'raw_protocol_rows':len(original['products']),'reader_protocol_rows':len(m['products'])}
+ m['presentation_universe']={'source_path':'data/eth/research_market_chapter.json','source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'policy':'Exclude unverified Tron mapped-ETH representation; classify YieldBasis WETH as dollar-financed carry, consistently with BTC. Captured observations are unchanged.','excluded_protocols':['justlend-v1'],'reclassified_protocols':{'yield-basis':{'from':'farming','to':'carry','evidence':'strategy_universe_deep: yb_weth_pool actual crvUSD loan'}},'raw_protocol_rows':len(original['products']),'reader_protocol_rows':len(m['products'])}
  (D/'market_reader_chapter.json').write_text(json.dumps(m,indent=2)+'\n');print('Reader universe:',len(m['products']),'rows; Tron mapped ETH retained outside counts.')
 if __name__=='__main__':run()

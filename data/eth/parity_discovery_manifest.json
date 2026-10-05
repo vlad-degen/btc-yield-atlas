@@ -1,0 +1,173 @@
+[
+  {
+    "key": "yield_pools",
+    "url": "https://yields.llama.fi/pools",
+    "retrieved_at": "2026-10-05T22:38:29.883355+00:00",
+    "scope": "Post-T discovery only",
+    "status": 200,
+    "source_date": "Mon, 05 Oct 2026 22:38:29 GMT",
+    "sha256": "4d0e649af198ad567a0bbf29b09369f9f5066eaf297dffb67d7f8a44b8cc2df0",
+    "path": "raw/eth/parity-sweep-2026-10-05/yield_pools-4d0e649af198ad56.json",
+    "bytes": 11625955
+  },
+  {
+    "key": "protocols",
+    "url": "https://api.llama.fi/protocols",
+    "retrieved_at": "2026-10-05T22:38:29.883697+00:00",
+    "scope": "Post-T discovery only",
+    "status": 200,
+    "source_date": "Mon, 05 Oct 2026 22:38:29 GMT",
+    "sha256": "57e185060aebbc9d622de818d40cd0c0a2e2037f058f5130fb1f993ce5814f2d",
+    "path": "raw/eth/parity-sweep-2026-10-05/protocols-57e185060aebbc9d.json",
+    "bytes": 9080919
+  },
+  {
+    "key": "zensats_contracts",
+    "url": "https://www.zensats.app/docs/contracts",
+    "retrieved_at": "2026-10-05T22:38:29.883772+00:00",
+    "scope": "Post-T discovery only",
+    "status": 200,
+    "source_date": "Mon, 05 Oct 2026 22:38:30 GMT",
+    "sha256": "bd8904ca9e317b5251c1bd4edfc2133ba5db3191296c76bfe285187759b7d725",
+    "path": "raw/eth/parity-sweep-2026-10-05/zensats_contracts-bd8904ca9e317b52.html",
+    "bytes": 35355
+  },
+  {
+    "key": "zensats_strategy",
+    "url": "https://www.zensats.app/docs/strategy",
+    "retrieved_at": "2026-10-05T22:38:29.883821+00:00",
+    "scope": "Post-T discovery only",
+    "status": 200,
+    "source_date": "Mon, 05 Oct 2026 22:38:30 GMT",
+    "sha256": "30d498be09384e9053c3ca1dfa56b56dcd3ea3a8caac73c7b4e6ab0695d7934f",
+    "path": "raw/eth/parity-sweep-2026-10-05/zensats_strategy-30d498be09384e90.html",
+    "bytes": 9375
+  },
+  {
+    "key": "lucidly_home",
+    "url": "https://www.lucidly.finance/",
+    "retrieved_at": "2026-10-05T22:38:29.883862+00:00",
+    "scope": "Post-T discovery only",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "key": "lucidly_research",
+    "url": "https://research.lucidly.finance/",
+    "retrieved_at": "2026-10-05T22:38:30.072385+00:00",
+    "scope": "Post-T discovery only",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "key": "upshift_registry",
+    "url": "https://docs.upshift.finance/contracts/addresses",
+    "retrieved_at": "2026-10-05T22:38:30.120896+00:00",
+    "scope": "Post-T discovery only",
+    "status": 200,
+    "source_date": "Mon, 05 Oct 2026 22:38:30 GMT",
+    "sha256": "b6d809bcb07116ff8a4d7961fd9a780733578215825eb1229a6f226027b8c765",
+    "path": "raw/eth/parity-sweep-2026-10-05/upshift_registry-b6d809bcb07116ff.html",
+    "bytes": 271705
+  },
+  {
+    "key": "lido_earn",
+    "url": "https://docs.lido.fi/earn/",
+    "retrieved_at": "2026-10-05T22:38:30.720826+00:00",
+    "scope": "Post-T discovery only",
+    "status": 200,
+    "source_date": "Mon, 05 Oct 2026 22:38:31 GMT",
+    "sha256": "81803ec35ad19c3741c4a154718d5f65192894c95f90f3eeb423a431add9381d",
+    "path": "raw/eth/parity-sweep-2026-10-05/lido_earn-81803ec35ad19c37.html",
+    "bytes": 16052
+  },
+  {
+    "key": "yieldbasis_overview",
+    "url": "https://docs.yieldbasis.com/",
+    "retrieved_at": "2026-10-05T22:38:30.724691+00:00",
+    "scope": "Post-T discovery only",
+    "status": 200,
+    "source_date": "Mon, 05 Oct 2026 22:38:31 GMT",
+    "sha256": "33f7da8ded2fee157ae9aac20d8157ce1921ce7c2beab4d4fc6490d34b8cd692",
+    "path": "raw/eth/parity-sweep-2026-10-05/yieldbasis_overview-33f7da8ded2fee15.html",
+    "bytes": 11117
+  },
+  {
+    "key": "yo_index",
+    "url": "https://docs.yo.xyz/llms.txt",
+    "retrieved_at": "2026-10-05T22:54:38.337939+00:00",
+    "scope": "Post-T document discovery, never frozen financial measurement",
+    "status": 200,
+    "path": "raw/eth/parity-sweep-2026-10-05/yo_index-b1329d4130829a64.txt",
+    "sha256": "b1329d4130829a64415337982aacaeada29e52bba347f1d46f6c741c2450a855",
+    "bytes": 5827
+  },
+  {
+    "key": "yo_overview",
+    "url": "https://docs.yo.xyz/welcome-to-yo/what-is-yo.md",
+    "retrieved_at": "2026-10-05T22:54:38.338465+00:00",
+    "scope": "Post-T document discovery, never frozen financial measurement",
+    "status": 200,
+    "path": "raw/eth/parity-sweep-2026-10-05/yo_overview-00be90c5b49539b4.txt",
+    "sha256": "00be90c5b49539b4c7f2bf81af4277a5d5eca82cdcfe5bcc9967326cf0d23787",
+    "bytes": 2198
+  },
+  {
+    "key": "makina_dialectic",
+    "url": "https://makinafi.substack.com/p/operator-deep-dive-dialectic",
+    "retrieved_at": "2026-10-05T22:54:38.338534+00:00",
+    "scope": "Post-T document discovery, never frozen financial measurement",
+    "status": 200,
+    "path": "raw/eth/parity-sweep-2026-10-05/makina_dialectic-69a115d505c9d16c.txt",
+    "sha256": "69a115d505c9d16ced2716337d43abbd05069d47ace376b7fb20c7f6f14a80f3",
+    "bytes": 146777
+  },
+  {
+    "key": "vesper_strategies",
+    "url": "https://docs.vesper.finance/vesper-pools-and-strategies/strategies.md",
+    "retrieved_at": "2026-10-05T22:54:38.338582+00:00",
+    "scope": "Post-T document discovery, never frozen financial measurement",
+    "status": 200,
+    "path": "raw/eth/parity-sweep-2026-10-05/vesper_strategies-2e0ceb890b896c26.txt",
+    "sha256": "2e0ceb890b896c26e3b4a088fd8f4fc5ed64f40ea2d9769ecbc4a633bb812d31",
+    "bytes": 4549
+  },
+  {
+    "key": "lagoon_9seth",
+    "url": "https://app.lagoon.finance/vault/1/0x07ed467acd4ffd13023046968b0859781cb90d9b?from=vaults&return=%2F",
+    "retrieved_at": "2026-10-05T22:54:38.647195+00:00",
+    "scope": "Post-T document discovery, never frozen financial measurement",
+    "status": 200,
+    "path": "raw/eth/parity-sweep-2026-10-05/lagoon_9seth-dacede4d18b92c60.txt",
+    "sha256": "dacede4d18b92c60365ae6c7af6859ce27a67986db6e58fee5107ee4f6306006",
+    "bytes": 176676
+  },
+  {
+    "key": "avant_tokens",
+    "url": "https://docs.avantprotocol.com/overview/core-tokens.md",
+    "retrieved_at": "2026-10-05T22:54:38.716196+00:00",
+    "scope": "Post-T document discovery, never frozen financial measurement",
+    "status": 200,
+    "path": "raw/eth/parity-sweep-2026-10-05/avant_tokens-0dd5f15307203718.txt",
+    "sha256": "0dd5f153072037189513c87a89f119f3d42ca2de58cc4ff12be82f34cb8178bf",
+    "bytes": 20945
+  },
+  {
+    "key": "zensats_github",
+    "url": "https://api.github.com/repos/NateBrune/ZenSats-contracts/git/trees/main?recursive=1",
+    "retrieved_at": "2026-10-05T22:54:38.720266+00:00",
+    "scope": "Post-T document discovery, never frozen financial measurement",
+    "status": 200,
+    "path": "raw/eth/parity-sweep-2026-10-05/zensats_github-d62332b2c32a59fe.txt",
+    "sha256": "d62332b2c32a59feacce5ca51cfa7a81f7ed5113fe3e2e484f67a03f679be2f2",
+    "bytes": 100023
+  },
+  {
+    "key": "metronome_farming",
+    "url": "https://docs.metronome.io/smart-farming/how-does-it-work.md",
+    "retrieved_at": "2026-10-05T22:54:38.732619+00:00",
+    "scope": "Post-T document discovery, never frozen financial measurement",
+    "status": 200,
+    "path": "raw/eth/parity-sweep-2026-10-05/metronome_farming-74adc93d71691af2.txt",
+    "sha256": "74adc93d71691af2bd7d9021dc661821dbc1f2d50485d7f1608b53f7dcc264f3",
+    "bytes": 1848
+  }
+]

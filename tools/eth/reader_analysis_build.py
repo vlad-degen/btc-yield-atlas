@@ -9,13 +9,13 @@ DATA = ROOT / 'data/eth'
 
 
 def run():
-    names = ['carry_category_candidates', 'product_chapters', 'market_reader_chapter',
+    names = ['reader_carry_category', 'reader_product_chapters', 'market_reader_chapter',
              'funding_atlas_chapter', 'strategy_universe_deep', 'credit_expansion_deep']
     source = {name: json.loads((DATA / f'{name}.json').read_text()) for name in names}
     market = source['market_reader_chapter']
-    chapters = source['product_chapters']['products']
+    chapters = source['reader_product_chapters']['products']
     books = []
-    for product in source['carry_category_candidates']['products']:
+    for product in source['reader_carry_category']['products']:
         if product['classification'] != 'E4':
             continue
         history = product.get('history') or next(
@@ -76,7 +76,7 @@ def run():
                     total = sum(v for v in values if v is not None) if any(v is not None for v in values) else None
                     writer.writerow([month, 'protocol_adapter_parents' if view == 'category' else 'gross_whole_product_books',
                                      *values, total, sum(v is not None for v in values), *[r['status'] for r in rows]])
-    print('Reader analysis: 7 books, 24 months, 8 view-matched CSVs; frozen inputs only.')
+    print(f'Reader analysis: {len(books)} books, 24 months, 8 view-matched CSVs; frozen inputs only.')
     return result
 
 

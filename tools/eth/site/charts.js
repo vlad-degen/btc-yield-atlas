@@ -11,7 +11,7 @@ function columnChart(series,{share=false,label='',format=v=>num(v,0),height=300,
  const values=points.map(s=>s.values.map((v,i)=>v==null?null:share?(totals[i]?v/totals[i]:null):v));
  const pos=times.map((t,i)=>grouped?Math.max(0,...values.map(s=>s[i]??0)):values.reduce((n,s)=>n+Math.max(0,s[i]??0),0)),neg=times.map((t,i)=>grouped?Math.min(0,...values.map(s=>s[i]??0)):values.reduce((n,s)=>n+Math.min(0,s[i]??0),0));
  const top=share?1:chartNice(Math.max(...pos)),bottom=Math.min(...neg)<0?-chartNice(-Math.min(...neg)):0;
- const mobile=innerWidth<560,W=mobile?420:small?520:720,H=height,P={l:74,r:14,t:16,b:34},band=(W-P.l-P.r)/times.length,bw=Math.max(3,Math.min(26,band-4));
+ const mobile=innerWidth<560,W=mobile?420:small?520:document.body.dataset.edition==='reader'?1000:720,H=height,P={l:74,r:14,t:16,b:34},band=(W-P.l-P.r)/times.length,bw=Math.max(3,Math.min(26,band-4));
  const y=v=>P.t+(top-v)/(top-bottom)*(H-P.t-P.b),x=i=>P.l+band*(i+.5),vf=v=>share?pct(v,0):chartShort(v,format);
  let svg=`<svg class="line-chart column-chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(label)}"><title>${esc(label)}</title>`;
  for(let i=0;i<=5;i++){const v=bottom+(top-bottom)*i/5;svg+=`<line x1="${P.l}" x2="${W-P.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text x="${P.l-10}" y="${y(v)+4}" text-anchor="end" fill="var(--muted)" font-family="var(--mono)" font-size="11">${esc(vf(v))}</text>`;}

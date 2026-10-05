@@ -41,7 +41,7 @@ def run():
     files.extend([ROOT/'index.html',ROOT/'assets/favicon.svg'])
     # Small public historical-permission capture. The much larger original raw
     # financial collection stays in the project and is described in README.
-    for folder in ['raw/eth/presentation-review','raw/eth/carry-economics-2026-10-04','raw/eth/carry-borrow-history-2026-10-04','raw/eth/2026-10-04/strict-products','raw/eth/research-closure-2026-10-04','raw/eth/funding-atlas-2026-10-04','raw/eth/credit-expansion-2026-10-04','raw/eth/carry-variants-expansion-2026-10-04','raw/eth/strategy-universe-expansion-2026-10-04','raw/eth/strategy-universe-deep-2026-10-04','raw/eth/credit-expansion-deep-2026-10-04','raw/eth/manager-case-2026-10-04','raw/eth/funding-borrower-deep-2026-10-04']:
+    for folder in ['raw/eth/presentation-review','raw/eth/carry-economics-2026-10-04','raw/eth/carry-borrow-history-2026-10-04','raw/eth/2026-10-04/strict-products','raw/eth/research-closure-2026-10-04','raw/eth/funding-atlas-2026-10-04','raw/eth/credit-expansion-2026-10-04','raw/eth/carry-variants-expansion-2026-10-04','raw/eth/strategy-universe-expansion-2026-10-04','raw/eth/strategy-universe-deep-2026-10-04','raw/eth/credit-expansion-deep-2026-10-04','raw/eth/manager-case-2026-10-04','raw/eth/funding-borrower-deep-2026-10-04','raw/eth/parity-sweep-2026-10-05']:
         files.extend(p for p in (ROOT/folder).rglob('*') if p.is_file())
     with zipfile.ZipFile(DEST,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
         for path in sorted(files):archive.write(path,path.relative_to(ROOT))
