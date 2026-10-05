@@ -279,6 +279,29 @@ def build():
         toc=''.join(f'<a href="#{m[2]}">{re.sub("<[^>]+>","",m[3])}</a>' for m in re.finditer(r'<h([34]) id="([^"]+)">(.*?)</h\1>',body))
         page=(SRC/'article.html').read_text().replace('@@TITLE@@',html.escape(title)).replace('@@CONTENT@@',body).replace('@@TOC@@',toc)
         (OUT/folder/f'{stem}.html').write_text(page)
+    library_groups = [
+      ('Market size and counting', ['MARKET-RESEARCH','MARKET-STRUCTURE','MARKET-TABLES','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
+      ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','MECHANICS','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
+      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','CARRY-VARIANTS-EXPANSION','PRODUCT-SELECTION','concrete-eth','etherfi-liquid-eth']),
+      ('Financing and income', ['CARRY-MATH','BORROW-HISTORY','DOLLAR-FUNDING-ATLAS','CREDIT-EXPANSION','CARRY-LIFECYCLES','BORROWER-USE','carry-credit']),
+      ('Returns and investor access', ['HISTORY','RETURN-DRIVERS','PRODUCT-TERMS','LENDING-MARKETS','ECONOMICS','fluid-lite','treehouse-teth','cian-rseth','ethena-basis','liquid-monad']),
+      ('Evidence and reproduction', ['BRIEFING','README','scope','methodology','DEPENDENCIES','EVIDENCE','AUDIT','RESEARCH-PLAN','EXECUTION-CHECKLIST','SITE-PARITY','justlend-tron']),
+    ]
+    listed = [stem for _, group in library_groups for stem in group]
+    assert len(listed) == len(set(listed)) == len(ARTICLES) and set(listed) == set(ARTICLES)
+    body = '<h1>Complete research library</h1><p>The main report follows market size, history, carry economics and investor outcomes. This library retains all 46 supporting investigations, including the complete measurements and their limits.</p>'
+    library_toc = ''
+    for group_number, (question, group) in enumerate(library_groups, 1):
+        heading_id = f'group-{group_number}'
+        library_toc += f'<a href="#{heading_id}">{html.escape(question)}</a>'
+        body += f'<h2 id="{heading_id}">' + html.escape(question) + '</h2><ul>'
+        for stem in group:
+            folder, title = ARTICLES[stem]
+            href = f'{stem}.html' if folder == 'library' else f'../{folder}/{stem}.html'
+            body += f'<li><a href="{href}">{html.escape(title)}</a></li>'
+        body += '</ul>'
+    library = (SRC/'article.html').read_text().replace('@@TITLE@@','Complete research library').replace('@@CONTENT@@',body).replace('@@TOC@@',library_toc).replace('Reviewed 4 October 2026','Reviewed 5 October 2026')
+    (OUT/'library/index.html').write_text(library)
     template=(SRC/'index.html').read_text()
     script='\n'.join((SRC/name).read_text() for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js'])+'\ninitChartInspection();if(document.body.dataset.edition==="reader"){initReader();}else{init();initPresentation();renderResearchAdditions();initMarket();initStrictResearch();initResearchClosure();initResearchExpansion();openHash(true);}'
     page=template.replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)

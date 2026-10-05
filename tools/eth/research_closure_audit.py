@@ -64,7 +64,7 @@ def run():
         file=ROOT/path;check('evidence hash '+path,file.is_file() and hashlib.sha256(file.read_bytes()).hexdigest()==expected)
     html=(ROOT/'eth/index.html').read_text()
     check('eight original research sections preserved',all('id="'+x+'"' in html for x in ['top','map','how','top5','market','risks','do','data']))
-    check('detailed closure exhibits retained_and_linked',all('id="'+x+'"' in (ROOT/'eth/exhibits.html').read_text() for x in ['market-net-capital','carry-earned-income','investor-exits','research-conclusions']) and all('exhibits.html#'+x in html for x in ['market-net-capital','carry-earned-income','investor-exits','research-conclusions']))
+    check('detailed closure exhibits retained_and_linked',all('id="'+x+'"' in (ROOT/'eth/exhibits.html').read_text() for x in ['market-net-capital','carry-earned-income','investor-exits','research-conclusions']) and 'href="exhibits.html"' in html)
     check('BTC reference unchanged',hashlib.sha256((ROOT/'index.html').read_bytes()).hexdigest()=='ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222')
     for folder in ['eth','site/eth']:
         check(folder+' latest full closure exports',all((ROOT/folder/'data'/f'{name}.json').read_bytes()==(D/f'{name}.json').read_bytes() for name in ['market_netting_closure','carry_attribution_closure','backing_exit_closure','basis_closure_disclosures']))

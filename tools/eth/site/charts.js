@@ -17,8 +17,10 @@ function columnChart(series,{share=false,label='',format=v=>num(v,0),height=300,
  for(let i=0;i<=5;i++){const v=bottom+(top-bottom)*i/5;svg+=`<line x1="${P.l}" x2="${W-P.r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text x="${P.l-10}" y="${y(v)+4}" text-anchor="end" fill="var(--muted)" font-family="var(--mono)" font-size="11">${esc(vf(v))}</text>`;}
  const step=Math.max(1,Math.ceil(times.length/(mobile||small?4:8)));times.forEach((t,i)=>{if(i%step===0||i===times.length-1)svg+=`<text x="${x(i)}" y="${H-11}" text-anchor="middle" fill="var(--muted)" font-family="var(--mono)" font-size="11">${chartMonth(t)}</text>`;});
  times.forEach((t,i)=>{let positive=0,negative=0;const last=values.findLastIndex(s=>s[i]>0);values.forEach((s,j)=>{const v=s[i];if(v==null||v===0)return;const base=grouped?0:v>0?positive:negative,end=base+v,yy=Math.min(y(base),y(end)),hh=Math.abs(y(base)-y(end));svg+=`<rect class="capital-column" data-series="${esc(points[j].name)}" data-date="${date(t)}" data-value="${points[j].values[i]}" x="${grouped?x(i)-bw/2+j*bw/values.length:x(i)-bw/2}" y="${yy+.6}" width="${grouped?Math.max(.8,bw/values.length-1):bw}" height="${Math.max(.6,hh-1.2)}" rx="${j===last?2:0}" fill="${points[j].color}"/>`;if(v>0)positive=end;else negative=end;});
- const observed=points.some(s=>s.values[i]!=null),note=date(t)+'\n'+(observed?grouped?'Separate series; values are not added':'Observed total: '+format(totals[i]):'No observation')+'\n'+points.slice().reverse().map(s=>s.name+': '+(s.values[i]==null?'No observation':format(s.values[i])+(share?' · '+pct(totals[i]?s.values[i]/totals[i]:0,2):''))).join('\n');
- svg+=`<rect class="chart-month-hit" tabindex="${i===0?0:-1}" data-chart-tip="${esc(note)}" aria-label="${esc(note.replaceAll('\n',' · '))}" x="${P.l+band*i}" y="${P.t}" width="${band}" height="${H-P.t-P.b}" fill="transparent"><title>${esc(note)}</title></rect>`;
+ const observed=points.some(s=>s.values[i]!=null),title=date(t)+' · '+(observed?grouped?'Separate series':format(totals[i]):'No observation');
+ const rows=points.slice().reverse().map(s=>({name:s.name,color:s.color,value:s.values[i]==null?'No observation':format(s.values[i]),share:!grouped&&points.length>1&&totals[i]>0&&s.values[i]!=null?pct(s.values[i]/totals[i],s.values[i]/totals[i]<.01?2:1):null}));
+ const note=title+'\n'+rows.map(r=>r.name+': '+r.value+(r.share?' · '+r.share:'')).join('\n');
+ svg+=`<rect class="chart-month-hit" tabindex="${i===0?0:-1}" data-chart-tip="${esc(note)}" data-chart-title="${esc(title)}" data-chart-rows="${esc(JSON.stringify(rows))}" aria-label="${esc(note.replaceAll('\n',' · '))}" x="${P.l+band*i}" y="${P.t}" width="${band}" height="${H-P.t-P.b}" fill="transparent"/>`;
  });svg+=`<line x1="${P.l}" x2="${W-P.r}" y1="${y(0)}" y2="${y(0)}" stroke="var(--hair-2)"/></svg>`;
  return `<div class="research-chart">${svg}<div class="chart-float" role="status" hidden></div>${legend&&series.length>1?'<div class="legend">'+series.map(s=>`<span><i class="rect" style="background:${s.color}"></i>${esc(s.name)}</span>`).join('')+'</div>':''}</div>`;
 }
@@ -28,8 +30,22 @@ function horizontalBars(rows,{format=v=>pct(v,2),max=null,label='Annual rate',fi
 }
 function initChartInspection(){
  const off=el=>{if(!el)return;const host=el.closest('.research-chart,.horizontal-bars,.strict-exhibit,.chart-scroll')||el.parentElement;host.querySelector('.chart-float')?.setAttribute('hidden','');host.querySelectorAll('.chart-month-hit').forEach(n=>n.classList.remove('inspected'));};
- const show=(el,event)=>{if(!el)return;const host=el.closest('.research-chart,.horizontal-bars,.strict-exhibit,.chart-scroll')||el.parentElement;let tip=host.querySelector('.chart-float');if(!tip){tip=document.createElement('div');tip.className='chart-float';tip.setAttribute('role','status');host.appendChild(tip);}tip.replaceChildren();(el.dataset.chartTip||el.dataset.point||'').split('\n').forEach((s,i)=>{const row=document.createElement(i?'div':'b');row.textContent=s;tip.appendChild(row);});tip.hidden=false;host.querySelectorAll('.chart-month-hit').forEach(n=>n.classList.toggle('inspected',n===el));const box=host.getBoundingClientRect(),target=el.getBoundingClientRect(),px=event?.clientX?event.clientX-box.left:target.left-box.left+target.width/2;tip.style.left=Math.max(0,Math.min(px+12,box.width-tip.offsetWidth))+'px';tip.style.top=Math.max(4,target.top-box.top-8)+'px';const live=host.closest('.strict-exhibit,.panel')?.querySelector('.chart-tooltip')||host.parentElement.querySelector('.chart-tooltip');if(live)live.textContent=(el.dataset.chartTip||el.dataset.point||'').replaceAll('\n',' · ');};
+ const show=(el,event)=>{
+  if(!el)return;
+  const host=el.closest('.research-chart,.horizontal-bars,.strict-exhibit,.chart-scroll')||el.parentElement;
+  let tip=host.querySelector('.chart-float');if(!tip){tip=document.createElement('div');tip.className='chart-float';tip.setAttribute('role','status');host.appendChild(tip);}tip.replaceChildren();
+  if(el.dataset.chartRows){
+   const title=document.createElement('b');title.textContent=el.dataset.chartTitle;tip.appendChild(title);
+   JSON.parse(el.dataset.chartRows).forEach(r=>{const row=document.createElement('div');row.className='chart-tip-row';const label=document.createElement('span'),color=document.createElement('i'),value=document.createElement('strong');color.style.background=r.color;label.append(color,document.createTextNode(r.name));value.textContent=r.value+(r.share?' · '+r.share:'');row.append(label,value);tip.appendChild(row);});
+  }else (el.dataset.chartTip||el.dataset.point||'').split('\n').forEach((s,i)=>{const row=document.createElement(i?'div':'b');row.textContent=s;tip.appendChild(row);});
+  tip.hidden=false;host.querySelectorAll('.chart-month-hit').forEach(n=>n.classList.toggle('inspected',n===el));
+  const box=host.getBoundingClientRect(),target=el.getBoundingClientRect(),px=event?.clientX!=null?event.clientX-box.left:target.left-box.left+target.width/2;
+  const left=px>box.width*.55?px-tip.offsetWidth-12:px+12;
+  tip.style.left=Math.max(0,Math.min(left,box.width-tip.offsetWidth))+'px';tip.style.top=el.classList.contains('chart-month-hit')?'8px':Math.max(4,target.top-box.top-8)+'px';
+  const live=host.closest('.strict-exhibit,.panel')?.querySelector('.chart-tooltip')||host.parentElement.querySelector('.chart-tooltip');if(live)live.textContent=(el.dataset.chartTip||el.dataset.point||'').replaceAll('\n',' · ');
+ };
  document.addEventListener('pointerover',e=>show(e.target.closest('[data-chart-tip],[data-point]'),e));
+ document.addEventListener('pointermove',e=>show(e.target.closest('[data-chart-tip],[data-point]'),e));
  document.addEventListener('pointerout',e=>{const el=e.target.closest('[data-chart-tip],[data-point]');if(el&&!el.contains(e.relatedTarget))off(el);});
  document.addEventListener('focusin',e=>show(e.target.closest('[data-chart-tip],[data-point]')));
  document.addEventListener('focusout',e=>off(e.target.closest('[data-chart-tip],[data-point]')));

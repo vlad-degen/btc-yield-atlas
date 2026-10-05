@@ -99,3 +99,14 @@ body[data-edition="reader"] #reader-carry-composition th,body[data-edition="read
 }
 #c-history-findings{display:block;margin-top:22px;max-width:100ch}#c-history-findings p{font-size:13px;line-height:1.8}#strict-carry-waves{margin-bottom:30px}#strict-carry-waves .k{font-size:10px;margin-bottom:10px}#reader-funding-comparison p,#reader-earned-carry p,#reader-additional-returns p{max-width:100ch;line-height:1.8}#reader-report-library td{font-size:12px;line-height:1.9}#reader-report-library td:first-child{width:190px;min-width:150px}#reader-funding-comparison table,#reader-earned-carry table,#reader-additional-returns table{width:100%}#reader-funding-comparison,#reader-earned-carry,#reader-additional-returns{min-width:0}#reader-funding-comparison table th,#reader-earned-carry table th{white-space:normal}
 #m-category-body .category-insight{border-top:1px solid var(--hair);margin-top:22px;padding-top:20px;max-width:100ch}#m-category-body .category-insight h4{font:600 17px/1.4 var(--display);margin:0 0 10px}#m-category-body .category-insight p{font-size:13px;line-height:1.8;color:var(--ink-2)}
+
+/* BTC-style hover table: date, total, matching colours, values and shares. */
+.chart-float{max-width:min(420px,100%);box-sizing:border-box;font-family:var(--body);font-size:12px;line-height:1.55}
+.chart-tip-row{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:3px 0}
+.chart-tip-row>span{min-width:0;overflow-wrap:anywhere}
+.chart-tip-row i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;flex-shrink:0}
+.chart-tip-row strong{font:11px/1.7 var(--mono);white-space:nowrap;text-align:right;flex-shrink:0}
+body[data-edition="reader"] .chart-tooltip{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+body[data-edition="reader"] #c-history-findings:empty{display:none}
+body[data-edition="reader"] #strict-top5-comparison th{white-space:normal}
+@media(max-width:560px){.chart-float{padding:10px;font-size:11px}.chart-tip-row{gap:8px}.chart-tip-row strong{font-size:10px}.chart-tip-row>span{max-width:53%}}
