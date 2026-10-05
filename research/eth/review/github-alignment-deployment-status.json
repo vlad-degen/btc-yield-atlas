@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T20:21:18.811942+00:00",
+  "checked_at": "2026-10-05T20:23:37.875299+00:00",
   "state": "queued_after_accepted_rerun",
   "workflow_run": 37366629598,
   "run_url": "https://github.com/vlad-degen/btc-yield-atlas/actions/runs/37366629598",
@@ -21,5 +21,12 @@
   "rerun_queued_update_at": "2026-10-05T20:16:03Z",
   "current_API_run_attempt": 1,
   "current_jobs_returned": 0,
-  "all_five_product_chapters_rendered_and_passed": true
+  "all_five_product_chapters_rendered_and_passed": true,
+  "goal_stage": "public_deployment_and_live_verification",
+  "blocked_audit_consecutive_goal_turns": 3,
+  "latest_ETH_publicly_available": false,
+  "public_ETH_current_sha256": "833b1907c508b61caf0106899b55f925d64b239e3e5c341f82fb5ba4b2db1794",
+  "public_new_carry_CSV_HTTP_status": 404,
+  "public_BTC_original_bytes_preserved": true,
+  "remaining_required_work": "Wait for the accepted GitHub workflow to execute, verify the public pages and all eight CSVs against the local build, and confirm BTC remains byte-identical."
 }
