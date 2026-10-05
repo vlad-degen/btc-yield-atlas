@@ -1,405 +1,217 @@
 {
-  "reviewed_at": "2026-10-05T19:52:12.532Z",
+  "reviewed_at": "2026-10-05T22:03:45.631Z",
+  "site_sha256": "7ff4d4513d726b725ef5ed6bddb84cdb6f971fccf9114db5175260139d55949a",
   "financial_snapshot": "2026-10-02T23:59:59Z",
-  "site_sha256": "8925df0f366e85a3cfb0362cc2360fa7bc8d027ae22b2ebc7882807111a47206",
+  "scope": "Rendered browser checks after editorial compression. Full exhibits retained; financial snapshot and calculations unchanged.",
   "all_recorded_checks_passed": true,
   "checks": [
     {
-      "name": "eight_BTC_chapters_in_order",
-      "passed": true,
-      "evidence": [
-        "top",
-        "map",
-        "how",
-        "top5",
-        "market",
-        "risks",
-        "do",
-        "data"
-      ]
-    },
-    {
-      "name": "default_carry_category_visible",
-      "passed": true,
-      "evidence": "Dollar carry501,340 ETH · 2.37%"
-    },
-    {
-      "name": "all_seven_products_24_months_by_default",
-      "passed": true,
-      "evidence": [
-        "Concrete Delta weETH",
-        "ether.fi Liquid ETH",
-        "Rocksolid rETH",
-        "Liquity ETH Carry",
-        "Royco ETH",
-        "TAU InfiniFi ETH Carry",
-        "Reservoir ETH Yield"
-      ]
-    },
-    {
-      "name": "three_waves_before_comparison",
-      "passed": true,
-      "evidence": 3
-    },
-    {
-      "name": "all_46_reports_reachable",
-      "passed": true,
-      "evidence": 46
-    },
-    {
-      "name": "desktop_no_page_overflow",
-      "passed": true,
-      "evidence": 0
-    },
-    {
-      "name": "carry_view_all_eth_ref",
-      "passed": true,
-      "evidence": {
-        "export": "data/carry-history-all-eth.csv",
-        "last": "2026-09307,322 ETH176,962 ETH9,727 ETH6,017 ETH116 ETH82 ETH60 ETH500,286 ETH7/7 observed",
-        "months": 24,
-        "rows": 24,
-        "selected": [
-          "All 7 products",
-          "ETH"
-        ],
-        "series": 7
+      "box": {
+        "left": 59.859375,
+        "right": 328.7109375
       },
-      "finalBuildObservation": {
-        "export": "data/carry-history-all-eth.csv",
-        "months": 24,
-        "series": 7
-      }
+      "check": "mobile 390 and seven-row hover",
+      "hover": "2026-09-30 · 500,286 ETH\nReservoir ETH Yield\n60 ETH · 0.01%\nTAU InfiniFi ETH Carry\n82 ETH · 0.02%\nRoyco ETH\n116 ETH · 0.02%\nLiquity ETH Carry\n6,017 ETH · 1.2%\nRocksolid rETH\n9,727 ETH · 1.9%\nether.fi Liquid ETH\n176,962 ETH · 35.4%\nConcrete Delta weETH\n307,322 ETH · 61.4%",
+      "pageWidth": 390,
+      "passed": true,
+      "rows": 7,
+      "width": 390
     },
     {
-      "name": "carry_view_all_usd",
-      "passed": true,
-      "evidence": {
-        "export": "data/carry-history-all-usd.csv",
-        "last": "2026-09$826.619m$475.985m$26.162m$16.183m$312,112$221,173$161,921$1.346bn7/7 observed",
-        "months": 24,
-        "rows": 24,
-        "selected": [
-          "All 7 products",
-          "USD"
-        ],
-        "series": 7
+      "box": {
+        "left": 33,
+        "right": 286
       },
-      "finalBuildObservation": {
-        "export": "data/carry-history-all-usd.csv",
-        "months": 24,
-        "series": 7
-      }
+      "check": "mobile 319",
+      "pageWidth": 319,
+      "passed": true,
+      "width": 319
     },
     {
-      "name": "carry_view_dedicated_eth_ref",
+      "check": "carry all eth_ref",
+      "csv": "data/carry-history-all-eth.csv",
+      "last": "2026-09-30 · 500,286 ETH\nReservoir ETH Yield: 60 ETH · 0.01%\nTAU InfiniFi ETH Carry: 82 ETH · 0.02%\nRoyco ETH: 116 ETH · 0.02%\nLiquity ETH Carry: 6,017 ETH · 1.2%\nRocksolid rETH: 9,727 ETH · 1.9%\nether.fi Liquid ETH: 176,962 ETH · 35.4%\nConcrete Delta weETH: 307,322 ETH · 61.4%",
+      "months": 24,
       "passed": true,
-      "evidence": {
-        "export": "data/carry-history-dedicated-eth.csv",
-        "last": "2026-099,727 ETH6,017 ETH116 ETH82 ETH60 ETH16,002 ETH5/5 observed",
-        "months": 24,
-        "rows": 24,
-        "selected": [
-          "Small-book zoom",
-          "ETH"
-        ],
-        "series": 5
-      },
-      "finalBuildObservation": {
-        "export": "data/carry-history-dedicated-eth.csv",
-        "months": 24,
-        "series": 5
-      }
+      "rows": 7
     },
     {
-      "name": "carry_view_dedicated_usd",
+      "check": "carry all usd",
+      "csv": "data/carry-history-all-usd.csv",
+      "last": "2026-09-30 · $1.346bn\nReservoir ETH Yield: $161,921 · 0.01%\nTAU InfiniFi ETH Carry: $221,173 · 0.02%\nRoyco ETH: $312,112 · 0.02%\nLiquity ETH Carry: $16.183m · 1.2%\nRocksolid rETH: $26.162m · 1.9%\nether.fi Liquid ETH: $475.985m · 35.4%\nConcrete Delta weETH: $826.619m · 61.4%",
+      "months": 24,
       "passed": true,
-      "evidence": {
-        "export": "data/carry-history-dedicated-usd.csv",
-        "last": "2026-09$26.162m$16.183m$312,112$221,173$161,921$43.041m5/5 observed",
-        "months": 24,
-        "rows": 24,
-        "selected": [
-          "Small-book zoom",
-          "USD"
-        ],
-        "series": 5
-      },
-      "finalBuildObservation": {
-        "export": "data/carry-history-dedicated-usd.csv",
-        "months": 24,
-        "series": 5
-      }
+      "rows": 7
     },
     {
-      "name": "carry_view_parents_eth_ref",
+      "check": "carry dedicated eth_ref",
+      "csv": "data/carry-history-dedicated-eth.csv",
+      "last": "2026-09-30 · 16,002 ETH\nReservoir ETH Yield: 60 ETH · 0.38%\nTAU InfiniFi ETH Carry: 82 ETH · 0.51%\nRoyco ETH: 116 ETH · 0.73%\nLiquity ETH Carry: 6,017 ETH · 37.6%\nRocksolid rETH: 9,727 ETH · 60.8%",
+      "months": 24,
       "passed": true,
-      "evidence": {
-        "export": "data/carry-history-parents-eth.csv",
-        "last": "2026-09307,322 ETH176,962 ETH484,284 ETH2/2 observed",
-        "months": 24,
-        "rows": 24,
-        "selected": [
-          "Large parents",
-          "ETH"
-        ],
-        "series": 2
-      },
-      "finalBuildObservation": {
-        "export": "data/carry-history-parents-eth.csv",
-        "months": 24,
-        "series": 2
-      }
+      "rows": 5
     },
     {
-      "name": "carry_view_parents_usd",
+      "check": "carry dedicated usd",
+      "csv": "data/carry-history-dedicated-usd.csv",
+      "last": "2026-09-30 · $43.041m\nReservoir ETH Yield: $161,921 · 0.38%\nTAU InfiniFi ETH Carry: $221,173 · 0.51%\nRoyco ETH: $312,112 · 0.73%\nLiquity ETH Carry: $16.183m · 37.6%\nRocksolid rETH: $26.162m · 60.8%",
+      "months": 24,
       "passed": true,
-      "evidence": {
-        "export": "data/carry-history-parents-usd.csv",
-        "last": "2026-09$826.619m$475.985m$1.303bn2/2 observed",
-        "months": 24,
-        "rows": 24,
-        "selected": [
-          "Large parents",
-          "USD"
-        ],
-        "series": 2
-      },
-      "finalBuildObservation": {
-        "export": "data/carry-history-parents-usd.csv",
-        "months": 24,
-        "series": 2
-      }
+      "rows": 5
     },
     {
-      "name": "carry_view_category_eth_ref",
+      "check": "carry table",
       "passed": true,
-      "evidence": {
-        "export": "data/carry-history-category-eth.csv",
-        "last": "2026-09352,222 ETH148,830 ETH501,053 ETH2/2 observed",
-        "months": 24,
-        "rows": 24,
-        "selected": [
-          "Market category",
-          "ETH"
-        ],
-        "series": 2
-      },
-      "finalBuildObservation": {
-        "export": "data/carry-history-category-eth.csv",
-        "months": 24,
-        "series": 2
-      }
+      "rows": 24
     },
     {
-      "name": "carry_view_category_usd",
-      "passed": true,
-      "evidence": {
-        "export": "data/carry-history-category-usd.csv",
-        "last": "2026-09$941.002m$397.617m$1.339bn2/2 observed",
-        "months": 24,
-        "rows": 24,
-        "selected": [
-          "Market category",
-          "USD"
-        ],
-        "series": 2
-      },
-      "finalBuildObservation": {
-        "export": "data/carry-history-category-usd.csv",
-        "months": 24,
-        "series": 2
-      }
+      "check": "product concrete",
+      "parts": 7,
+      "passed": true
     },
     {
-      "name": "carry_keyboard_end_inspects_last_month",
-      "passed": true,
-      "evidence": {
-        "focused": "2026-09-30 · Observed total: 500,286 ETH · Reservoir ETH Yield: 60 ETH · TAU InfiniFi ETH Carry: 82 ETH · Royco ETH: 116 ETH · Liquity ETH Carry: 6,017 ETH · Rocksolid rETH: 9,727 ETH · ether.fi Liquid ETH: 176,962 ETH · Concrete Delta weETH: 307,322 ETH",
-        "tooltip": "Hover a month, or focus the chart and use the arrow keys. Each segment names its product and measured book. Missing observations stay absent."
-      }
+      "check": "product liquid",
+      "parts": 7,
+      "passed": true
     },
     {
-      "name": "keyboard_updates_live_chart_values",
-      "passed": true,
-      "evidence": "2026-09-30 · Observed total: 500,286 ETH · Reservoir ETH Yield: 60 ETH · TAU InfiniFi ETH Carry: 82 ETH · Royco ETH: 116 ETH · Liquity ETH Carry: 6,017 ETH · Rocksolid rETH: 9,727 ETH · ether.fi Liquid ETH: 176,962 ETH · Concrete Delta weETH: 307,322 ETH"
+      "check": "product rocksolid",
+      "parts": 7,
+      "passed": true
     },
     {
-      "name": "product_tabs_keyboard_closed",
-      "passed": true,
-      "evidence": {
-        "content": "Closed and deprecated precedentsRocksolid is in Closing at T, and the owner called initiateClosing. New requests are rejected. Completion of closure, its reason and the complete investor outcome remain unestablished. Its",
-        "tab": "Closed / deprecatedWhat the evidence supports"
-      }
+      "check": "product liquity",
+      "parts": 7,
+      "passed": true
     },
     {
-      "name": "calculator_observed-rlusd-leg",
-      "passed": true,
-      "evidence": "Net ETH return, annual\n2.75%\nWithout investment rewards\n1.09%\nDollar spread before product fee\n1.29%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth fac"
+      "check": "product royco",
+      "parts": 7,
+      "passed": true
     },
     {
-      "name": "calculator_ethereum-usdc",
-      "passed": true,
-      "evidence": "Net ETH return, annual\n0.86%\nWithout investment rewards\n0.86%\nDollar spread before product fee\n-1.63%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6500 ETH equivalent\nHealth fa"
+      "check": "product closed",
+      "parts": 0,
+      "passed": true
     },
     {
-      "name": "calculator_rlusd-no-rewards",
+      "check": "donut tooltip",
       "passed": true,
-      "evidence": "Net ETH return, annual\n1.09%\nWithout investment rewards\n1.09%\nDollar spread before product fee\n-1.30%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth fa"
+      "text": "Lido\nETH equivalent\n9,865,133 ETH\nUS dollars\n$26.677bn\nShare of selected market\n46.63%\nShare of category\n48.86%"
     },
     {
-      "name": "calculator_rlusd-cost-shock",
-      "passed": true,
-      "evidence": "Net ETH return, annual\n0.82%\nWithout investment rewards\n-0.84%\nDollar spread before product fee\n-1.71%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth f"
+      "check": "loop category examples",
+      "passed": true
     },
     {
-      "name": "cross_category_operator_search",
-      "passed": true,
-      "evidence": "Search across all products\n\n1 matches across counted and excluded categories.\n\nPROTOCOL / PARENT\tCATEGORY / SUBTYPE\tETH EQUIVALENT\tSELECTED-MARKET SHARE\tHOW IT EARNS\tYIELD\tRUN BY\tHISTORY\nether.fi Liqu"
+      "check": "CIAN search",
+      "passed": true
     },
     {
-      "name": "five_data_disclosures",
+      "check": "market observed eth_ref amount",
       "passed": true,
-      "evidence": 5
+      "tip": "2026-09-30 · 21,170,031 ETH\nFarming / liquidity: 361,915 ETH · 1.7%\nFixed yield: 8,605 ETH · 0.04%\nSpot / short basis: No observation\nDollar carry: 501,053 ETH · 2.4%\nETH loops: 99,161 ETH · 0.47%\nStaking / restaking: 20,199,298 ETH · 95.4%"
     },
     {
-      "name": "latest_research_synthesised_in_chapters",
+      "check": "market observed usd share",
       "passed": true,
-      "evidence": [
+      "tip": "2026-09-30 · $56.558bn\nFarming / liquidity: $966.897m · 1.7%\nFixed yield: $22.988m · 0.04%\nSpot / short basis: No observation\nDollar carry: $1.339bn · 2.4%\nETH loops: $264.920m · 0.47%\nStaking / restaking: $53.965bn · 95.4%"
+    },
+    {
+      "check": "market constant usd amount",
+      "passed": true,
+      "tip": "2026-09-30 · $55.351bn\nFarming / liquidity: $700.851m · 1.3%\nFixed yield: $22.988m · 0.04%\nSpot / short basis: No observation\nDollar carry: $397.617m · 0.72%\nETH loops: $264.920m · 0.48%\nStaking / restaking: $53.965bn · 97.5%"
+    },
+    {
+      "check": "market constant eth_ref share",
+      "passed": true,
+      "tip": "2026-09-30 · 20,718,227 ETH\nFarming / liquidity: 262,333 ETH · 1.3%\nFixed yield: 8,605 ETH · 0.04%\nSpot / short basis: No observation\nDollar carry: 148,830 ETH · 0.72%\nETH loops: 99,161 ETH · 0.48%\nStaking / restaking: 20,199,298 ETH · 97.5%"
+    },
+    {
+      "check": "return comparison and hover",
+      "passed": true,
+      "rows": 6,
+      "text": "2026-10-02\nLiquid ETH\n106.85 ETH\nstETH\n105.49 ETH\nweETH\n105.29 ETH\nFluid Lite ETH\n108.82 ETH\nTreehouse tETH\n106.28 ETH\nCIAN rsETH\n101.09 ETH"
+    },
+    {
+      "candidates": 3,
+      "carryProducts": 7,
+      "check": "carry census",
+      "passed": true
+    },
+    {
+      "check": "borrowing curve hover",
+      "passed": true,
+      "text": "Morpho Blue / RLUSD\nUtilization\n100.0%\nBorrow APR\n17.081%"
+    },
+    {
+      "check": "basis category",
+      "header": "Spot / short basis\nNot measured at T · Unmeasured",
+      "passed": true
+    },
+    {
+      "check": "library has all 46 reports",
+      "heading": "Complete research library",
+      "passed": true,
+      "reports": 46
+    },
+    {
+      "carryViews": [
+        "All 7 products",
+        "Market category",
+        "Large hybrid parents",
+        "Smaller product books"
+      ],
+      "check": "full exhibits retained",
+      "passed": true,
+      "productParts": 7
+    },
+    {
+      "check": "no browser errors or warnings",
+      "passed": true,
+      "logs": []
+    },
+    {
+      "check": "reader compression and eight chapters",
+      "passed": true,
+      "sections": [
         {
-          "filled": true,
-          "id": "reader-earned-carry"
+          "id": "top",
+          "words": 324
         },
         {
-          "filled": true,
-          "id": "reader-funding-comparison"
+          "id": "map",
+          "words": 1241
         },
         {
-          "filled": true,
-          "id": "reader-borrower-use"
+          "id": "how",
+          "words": 1174
         },
         {
-          "filled": true,
-          "id": "reader-additional-returns"
+          "id": "top5",
+          "words": 1539
+        },
+        {
+          "id": "market",
+          "words": 342
+        },
+        {
+          "id": "risks",
+          "words": 491
+        },
+        {
+          "id": "do",
+          "words": 532
+        },
+        {
+          "id": "data",
+          "words": 45
         }
       ]
-    },
-    {
-      "name": "category_analysis_staking",
-      "passed": true,
-      "evidence": "The receipt is a layer over the income source\n\nCustodied receipts such as WBETH and listed staking products still earn validator income. Their charges, custody and access differ. m"
-    },
-    {
-      "name": "category_analysis_loops",
-      "passed": true,
-      "evidence": "A lending allocator can contain a staking loop\n\nYearn WETH-1 has a measured Spark wstETH/WETH loop: 7.98× collateral leverage, HF 1.0633 and 14.18% of the parent book. It is absent"
-    },
-    {
-      "name": "category_analysis_carry",
-      "passed": true,
-      "evidence": "The route can change while the product name stays\n\nReservoir has both an outer ETH-collateral loan and an inner dollar-savings loan. Each must earn enough to cover its own funding "
-    },
-    {
-      "name": "category_analysis_basis",
-      "passed": true,
-      "evidence": "A dollar return is different from an ETH-long return\n\nA spot ETH position with an offsetting short earns funding or basis while hedging ETH price exposure. Hedge execution, custody"
-    },
-    {
-      "name": "category_analysis_fixed_yield",
-      "passed": true,
-      "evidence": "Maturity and payoff units matter\n\nThe official Ethereum Pendle registry preserves 117 ETH-tagged markets; only four are active and unexpired at the later discovery. The examined PT"
-    },
-    {
-      "name": "category_analysis_farming",
-      "passed": true,
-      "evidence": "Fees are only part of the trading payoff\n\nGMX LP value includes trader P&L and inventory exposure. An ETH index does not establish ETH collateral: ETH/USDC, ETH/ETH and dollar-coll"
-    },
-    {
-      "name": "category_analysis_lending",
-      "passed": true,
-      "evidence": "A loan book needs borrowers, income and cash\n\nThe measured hgETH rsETH pool has a $13.52M book reconciled to loans, physical assets and reserved adapter positions. Its 173 historic"
-    },
-    {
-      "name": "category_analysis_cdp",
-      "passed": true,
-      "evidence": "Dollar debt alone does not establish yield\n\nSeven sampled large-borrower cash loans lead to owner transfers, Maker refinancing or USDC/USDT conversion. A carry position needs an ev"
-    },
-    {
-      "name": "mobile_390_no_page_overflow",
-      "passed": true,
-      "evidence": {
-        "categories": 8,
-        "months": 24,
-        "overflow": 0,
-        "viewport": 390
-      }
-    },
-    {
-      "name": "mobile_small_book_zoom_usable",
-      "passed": true,
-      "evidence": {
-        "overflow": 0,
-        "selected": "true",
-        "series": 5
-      }
-    },
-    {
-      "name": "mobile_319_no_page_overflow",
-      "passed": true,
-      "evidence": {
-        "fundingScrollWrapper": true,
-        "loaded": "true",
-        "overflow": 0,
-        "width": 319
-      }
-    },
-    {
-      "name": "final_console_no_errors_or_warnings",
-      "passed": true,
-      "evidence": []
-    },
-    {
-      "name": "final_reader_complete_and_human_copy",
-      "passed": true,
-      "evidence": {
-        "carryBooks": 7,
-        "carryMonths": 24,
-        "chapters": [
-          "top",
-          "map",
-          "how",
-          "top5",
-          "market",
-          "risks",
-          "do",
-          "data"
-        ],
-        "fundingRows": 5,
-        "longDashes": false,
-        "overflow": 0,
-        "sourceReports": 46,
-        "waves": 3
-      }
-    },
-    {
-      "name": "supporting_exhibits_carry_still_works",
-      "passed": true,
-      "evidence": {
-        "books": 7,
-        "export": "data/carry-history-all-eth.csv",
-        "months": 24,
-        "waves": 3
-      }
     }
   ],
-  "viewports_tested": [
-    1440,
-    390,
-    319
-  ],
   "screenshots": [
-    "reader-carry-desktop-oct5.jpg",
-    "reader-carry-mobile-oct5.jpg"
-  ],
-  "scope": "BTC chapter order, 24-month seven-book carry chart and all measurement lenses, matched downloads, category analysis, calculator, product tabs, source access, responsive layout and browser errors."
+    "eth/qa/reader-carry-hover-editorial-oct5.jpg",
+    "eth/qa/reader-carry-hover-mobile-editorial-oct5.jpg"
+  ]
 }
