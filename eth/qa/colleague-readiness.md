@@ -1,11 +1,11 @@
 # Colleague presentation readiness
 
-Reviewed 5 October 2026. Ready to present the measured scope at the frozen 2 October snapshot.
+Reviewed 6 October 2026. Ready to present the measured scope at the frozen 2 October snapshot.
 
-The reader follows the original eight BTC chapters. Carry development now shows all seven examined books across 24 months, then three dated waves, the comparison and five deep product tabs plus Closed. Four views and two currencies have matching CSVs. The exact adapter-category lens is separate from overlapping whole-product books.
+The main reader follows BTC's eight chapters and default disclosure hierarchy. Market has three main panels; Carry math has four. The carry chart contains eight examined whole-product books across 24 months, ETH/USD, small-book zoom, table and matched exports. Top 5 is Concrete, Liquid, YieldBasis WETH, Rocksolid and Liquity. Royco remains an additional deep chapter through Other carry. Each product has eight or nine visible operational steps, followed by control actors, income sources, actual debt, capital and ETH return, holders and dated events.
 
-Recent financing, earned-income, additional product, borrower-use and loan-book investigations now inform the relevant chapters. All 46 reports are available through a grouped question-based source library. Full ledgers and mechanics remain linked evidence.
+The renewed coverage audit disposes of 299 material ETH-keyword pool candidates across 86 projects. YieldBasis's actual crvUSD debt and archived net book now feed carry. Its 332 direct LT addresses reconcile to total shares; the gauge is one direct holder. Two ZenSats routes are documented with unmeasured snapshot capital. Mixed allocator candidates remain explicit verification cases rather than invented carry allocations.
 
-Checks passed: 428 financial/export alignment checks; 38 browser checks including 1440, 390 and 319 px; 22 site checks; 24 strict checks; 22 market checks; 28 original-data/BTC preservation checks; 1,186 closure checks. The original 384 BTC files and 526 captured responses are unchanged.
+All 47 research articles remain available through the grouped library. Original capture ledgers remain separate from derived reader datasets. Desktop and mobile at 390 and 319 px pass 46 recorded browser checks, including all-eight-product hovers, product mechanics, search, table, calculator stress cases, seven rate curves and JavaScript errors. Financial/export and original BTC preservation results accompany this note. The same final HTML hash binds the browser and source audits.
 
-The report does not establish global unique ETH, global outside carry equity, historical dollar-sleeve weights or complete investor cash profit. Whole-book NAV, debt, simulated withdrawal and paid proceeds remain separately labelled. The additional 732-day benchmark is kept separate from the existing 730-day ranking.
+The report measures publicly evidenced scope. Whole-book claims are not unique global ETH, and historical weights do not establish complete carry cash profit. Debt, share value, simulated exits and paid proceeds remain distinct. The 732-day added benchmark remains separate from the original 730-day comparison.
