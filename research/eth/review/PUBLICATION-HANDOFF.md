@@ -21,3 +21,14 @@ All 345 pre-existing tracked files retain their original Git blob IDs in remote 
 The public ETH HTML SHA256 is `833b1907c508b61caf0106899b55f925d64b239e3e5c341f82fb5ba4b2db1794`, matching the build with 28 recorded desktop/mobile browser checks. Live ETH, supporting exhibits, briefing and a selected CSV returned HTTP 200 and matched their local hashes. The public page also initialized all eight chapters and seven carry-book rows without browser errors.
 
 See `github-publication-verification.json` for public response hashes. The fixed financial snapshot remains 2 October 2026, 23:59:59 UTC. This publication does not change research coverage claims.
+
+
+## 5 October reader alignment update
+
+PR https://github.com/vlad-degen/btc-yield-atlas/pull/3 publishes the carry-history and analytical-synthesis revision. Website branch `codex/eth-reader-alignment` contains commit `23439ac3e3ab19c1a11759d64096d0a778033eb1`, merged as `a9b803325b24c4fbff889f62c04d9d9592577022`. The PR changes 24 files, all inside `eth/`.
+
+The fresh presentation-link manifest selects 872 website files (73.414 MB), including all eight carry CSV views, normalized reader analysis, 48 HTML pages and current presentation QA. Existing public QA from the prior edition can remain in the repository. No full-research source history is pushed.
+
+The new ETH HTML SHA256 is `8925df0f366e85a3cfb0362cc2360fa7bc8d027ae22b2ebc7882807111a47206`. The normalized reader bridge passed 428 financial/export checks and the website passed 38 desktop/mobile browser checks. The remote main tree preserves all 345 original BTC Git blobs. The broader local audit preserves 384 BTC files and 526 original captured responses.
+
+Live Pages and response verification: pending build completion.

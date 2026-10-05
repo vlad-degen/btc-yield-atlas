@@ -1,6 +1,6 @@
 # ETH yield: briefing for the team
 
-Snapshot: 2 October 2026, 23:59:59 UTC. Monthly history: October 2024 through September 2026. Documents reviewed 4 October.
+Snapshot: 2 October 2026, 23:59:59 UTC. Monthly history: October 2024 through September 2026. Presentation reviewed 5 October; underlying document captures retain their own dates.
 
 ## Start with the market
 
@@ -47,6 +47,10 @@ Across a common **732-day** window, stETH's book grows **5.505%**, osETH **5.096
 Yearn's book includes a Spark ETH-debt loop with **7.98× collateral leverage**, **1.0633 health factor** and about **14.18% of parent NAV**. It is absent from the default withdrawal queue. mETH's lending buffer holds about **8.49%** of controlled book value; its available-balance view differs from physical buffer ETH. YieldBasis has about **27.815 million crvUSD of actual AMM debt**, distinct from **64.136 million crvUSD** of allocated funding. Those distinctions matter for both the source of return and exit capacity.
 
 The [hgETH case](HGETH-LOAN-BOOK.md) adds a **$13.52 million** rsETH loan-pool book. Loans, physical rsETH and reserved adapter assets reconcile the parent accounting. Four historical endpoints also show that a nominal ETH share can lose book value. Individual borrower payers, repayments and dollar-carry use remain separate research questions.
+
+## Carry development before the product chapters
+
+The main chart now shows all seven measured product books across 24 completed months. Liquid supplies the early large book; Rocksolid and Reservoir become material in September 2025; Concrete’s large claim appears in December. TAU later unwinds its dollar debt, while Liquity grows and Rocksolid enters Closing. A second chart lens reproduces the two adapter parents in Market. These are whole-book histories and overlapping claims, not a reconstructed historical carry allocation or new-deposit series.
 
 ## Compare the five largest measured carry-design products
 

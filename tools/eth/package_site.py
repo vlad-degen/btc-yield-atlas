@@ -10,7 +10,7 @@ DEST=OUT/'ETH-Yield-Research.zip'
 
 def run():
     # Package the latest check results, rather than stale copies from an earlier build.
-    for name in ['audit_results.json','site_audit_results.json','market_audit_results.json','strict_audit_results.json','research_closure_audit.json','market_netting_validation.json','carry_attribution_verification.json','backing_exit_verification.json','research_expansion_verification.json','strategy_universe_deep_verification.json','credit_expansion_deep_validation.json']:
+    for name in ['audit_results.json','site_audit_results.json','market_audit_results.json','strict_audit_results.json','reader_alignment_audit.json','research_closure_audit.json','market_netting_validation.json','carry_attribution_verification.json','backing_exit_verification.json','research_expansion_verification.json','strategy_universe_deep_verification.json','credit_expansion_deep_validation.json']:
         source=ROOT/'data/eth'/name
         for folder in ['eth/data','eth/qa','site/eth/data','site/eth/qa']:
             destination=ROOT/folder/name
@@ -18,7 +18,7 @@ def run():
             shutil.copyfile(source,destination)
     import hashlib
     site_hash=hashlib.sha256((OUT/'index.html').read_bytes()).hexdigest()
-    for name in ['site_audit_results.json','market_audit_results.json','strict_audit_results.json','research_closure_audit.json']:
+    for name in ['site_audit_results.json','market_audit_results.json','strict_audit_results.json','reader_alignment_audit.json','research_closure_audit.json']:
         report=json.loads((OUT/'qa'/name).read_text())
         assert report['all_checks_passed'] and report['site_sha256']==site_hash, f'Stale or failed checks: {name}'
     backing_report=json.loads((OUT/'qa/backing_exit_verification.json').read_text())

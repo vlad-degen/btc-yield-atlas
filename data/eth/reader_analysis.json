@@ -1,0 +1,1998 @@
+{
+  "schemaVersion": 1,
+  "snapshot": 1790985599,
+  "months": [
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "books": [
+    {
+      "name": "Concrete Delta weETH",
+      "currentETH": 307362.9254893895,
+      "currentUSD": 820029052.8774381,
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 301799.43410533,
+          "usd": 896537470.9306574,
+          "status": "success"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 302425.1179752392,
+          "usd": 738469947.507219,
+          "status": "success"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 303006.56861259206,
+          "usd": 594462786.5063014,
+          "status": "success"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 303643.48763185047,
+          "usd": 639349511.5583422,
+          "status": "success"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 304264.533290008,
+          "usd": 686641500.5947067,
+          "status": "success"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 304865.69787536934,
+          "usd": 609203978.0934143,
+          "status": "success"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 305491.3056270115,
+          "usd": 478714963.130462,
+          "status": "success"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 306120.51312299975,
+          "usd": 569985826.670228,
+          "status": "success"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 306737.6661654779,
+          "usd": 756436059.8721703,
+          "status": "success"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 307321.7151942558,
+          "usd": 826618818.520276,
+          "status": "success"
+        }
+      ],
+      "firstMaterialMonth": "2025-12",
+      "peak": {
+        "month": "2026-09",
+        "timestamp": 1790812799,
+        "eth": 307321.7151942558,
+        "usd": 826618818.520276,
+        "status": "success"
+      }
+    },
+    {
+      "name": "ether.fi Liquid ETH",
+      "currentETH": 177171.06330182485,
+      "currentUSD": 472683616.62473655,
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": 146203.0106193482,
+          "usd": 368012891.8465259,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": 150259.35319519337,
+          "usd": 558341217.5703592,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": 152716.5515029974,
+          "usd": 509262620.2621486,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": 153364.3185725938,
+          "usd": 504538589.2699238,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": 159201.6047613894,
+          "usd": 355559272.0580395,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": 161418.29161691095,
+          "usd": 294774901.03682584,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": 176931.27526531625,
+          "usd": 317943748.0947507,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": 194955.5017961008,
+          "usd": 493896369.1402059,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": 191748.42011462248,
+          "usd": 477607949.8331358,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": 200467.34399336236,
+          "usd": 740189609.8347938,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 203044.5193608262,
+          "usd": 889710302.2900053,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 192310.39331018305,
+          "usd": 797195317.5822791,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 177463.78386920798,
+          "usd": 682548783.052877,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 147816.66338124694,
+          "usd": 444140293.96173126,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 147083.05810735284,
+          "usd": 436930815.73602664,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 154309.5179718106,
+          "usd": 376797213.1396739,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 108292.1728032968,
+          "usd": 212456340.785724,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 147239.05628959305,
+          "usd": 310025482.3683171,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 124604.8980502731,
+          "usd": 281199038.39446175,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 108176.24027074031,
+          "usd": 216165335.64581224,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 88680.87647869605,
+          "usd": 138965861.65273294,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 122177.11491818825,
+          "usd": 227489569.83110052,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 173879.67934999743,
+          "usd": 428799179.388656,
+          "status": "published_product_book_NAV"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 176962.43062852597,
+          "usd": 475984833.14518017,
+          "status": "published_product_book_NAV"
+        }
+      ],
+      "firstMaterialMonth": "2024-10",
+      "peak": {
+        "month": "2025-08",
+        "timestamp": 1756684799,
+        "eth": 203044.5193608262,
+        "usd": 889710302.2900053,
+        "status": "published_product_book_NAV"
+      }
+    },
+    {
+      "name": "Rocksolid rETH",
+      "currentETH": 9727.76735365525,
+      "currentUSD": 25953201.209705926,
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "no_observation"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 2.3763411783756364e-07,
+          "usd": 0.0010412766790319397,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 1846.1063252680624,
+          "usd": 7652770.570173852,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 6116.372938519903,
+          "usd": 23524365.450029556,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 6624.238977169572,
+          "usd": 19903652.1275321,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 7652.415550123473,
+          "usd": 22732571.72981879,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 9534.93211541422,
+          "usd": 23282658.748375963,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 9655.734666282067,
+          "usd": 18943401.002050072,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 9485.054413878594,
+          "usd": 19971661.3516511,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 9662.45744475062,
+          "usd": 21805513.14198782,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 9738.309179343274,
+          "usd": 19459771.083806284,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 9400.11088013891,
+          "usd": 14730284.137454893,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 9560.343316888237,
+          "usd": 17801029.186626934,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 9558.342928155655,
+          "usd": 23571527.272364784,
+          "status": "deployed_observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 9726.62269524358,
+          "usd": 26162190.834619656,
+          "status": "deployed_observed"
+        }
+      ],
+      "firstMaterialMonth": "2025-09",
+      "peak": {
+        "month": "2026-05",
+        "timestamp": 1780271999,
+        "eth": 9738.309179343274,
+        "usd": 19459771.083806284,
+        "status": "deployed_observed"
+      }
+    },
+    {
+      "name": "Liquity ETH Carry",
+      "currentETH": 6014.001735111082,
+      "currentUSD": 16045058.58666632,
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "success"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "success"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 32.02396695866628,
+          "usd": 67429.43111629612,
+          "status": "success"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 31.861886865886586,
+          "usd": 71903.52938217265,
+          "status": "success"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 528.0793539044464,
+          "usd": 1055245.1305266381,
+          "status": "success"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 641.0149841507035,
+          "usd": 1004491.6462481637,
+          "status": "success"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 1502.336799050316,
+          "usd": 2797299.2518790513,
+          "status": "success"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 2813.766788093618,
+          "usd": 6938941.308357177,
+          "status": "success"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 6016.669089666008,
+          "usd": 16183340.286199667,
+          "status": "success"
+        }
+      ],
+      "firstMaterialMonth": "2026-03",
+      "peak": {
+        "month": "2026-09",
+        "timestamp": 1790812799,
+        "eth": 6016.669089666008,
+        "usd": 16183340.286199667,
+        "status": "success"
+      }
+    },
+    {
+      "name": "Royco ETH",
+      "currentETH": 116.05160827212383,
+      "currentUSD": 309619.9395706831,
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 0.0139209397579908,
+          "usd": 29.311829158989443,
+          "status": "success"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 48.52779967335157,
+          "usd": 109513.91812896419,
+          "status": "success"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 115.0234259962324,
+          "usd": 229847.86146549133,
+          "status": "success"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 115.2793409163394,
+          "usd": 180646.53369824032,
+          "status": "success"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 115.53016800123676,
+          "usd": 215113.18415658214,
+          "status": "success"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 115.82347013740825,
+          "usd": 285628.5975136743,
+          "status": "success"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 116.03750762330087,
+          "usd": 312111.9748891839,
+          "status": "success"
+        }
+      ],
+      "firstMaterialMonth": "2026-04",
+      "peak": {
+        "month": "2026-09",
+        "timestamp": 1790812799,
+        "eth": 116.03750762330087,
+        "usd": 312111.9748891839,
+        "status": "success"
+      }
+    },
+    {
+      "name": "TAU InfiniFi ETH Carry",
+      "currentETH": 82.23385424749354,
+      "currentUSD": 219395.84777722746,
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 0.04959344614418042,
+          "usd": 190.74284101851663,
+          "status": "success"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 0.5902506888273252,
+          "usd": 1773.5085371987993,
+          "status": "success"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 41.01452289614396,
+          "usd": 121839.38229620109,
+          "status": "success"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 349.5576928811053,
+          "usd": 853559.5615896865,
+          "status": "success"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 303.9048922016408,
+          "usd": 596225.1903590477,
+          "status": "success"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 44.72359537807414,
+          "usd": 94169.67603393212,
+          "status": "success"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 2.3447368854861566,
+          "usd": 5291.4272857935,
+          "status": "success"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 175.3472273865736,
+          "usd": 350391.1040697684,
+          "status": "success"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 175.8103597032104,
+          "usd": 275500.63884971634,
+          "status": "success"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 83.09970280513241,
+          "usd": 154728.77761838216,
+          "status": "success"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 83.19095048220846,
+          "usd": 205154.57259114063,
+          "status": "success"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 82.22812829418766,
+          "usd": 221173.17097723114,
+          "status": "success"
+        }
+      ],
+      "firstMaterialMonth": "2025-12",
+      "peak": {
+        "month": "2026-01",
+        "timestamp": 1769903999,
+        "eth": 349.5576928811053,
+        "usd": 853559.5615896865,
+        "status": "success"
+      }
+    },
+    {
+      "name": "Reservoir ETH Yield",
+      "currentETH": 23.594839906973554,
+      "currentUSD": 62949.863555935706,
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "absent_predeployment"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "success"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 2428.799206232362,
+          "usd": 10068240.833104623,
+          "status": "success"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 4136.88049784135,
+          "usd": 15910980.189162552,
+          "status": "success"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 1620.1598288357404,
+          "usd": 4868045.632907884,
+          "status": "success"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 575.1905575152527,
+          "usd": 1708684.0777771103,
+          "status": "success"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 152.98739658615756,
+          "usd": 373568.82087914314,
+          "status": "success"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 310.3445773858396,
+          "usd": 608859.0854470339,
+          "status": "success"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 1229.8730869527612,
+          "usd": 2589611.796237049,
+          "status": "success"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 1223.5508993248168,
+          "usd": 2761218.3926991564,
+          "status": "success"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 175.33640639630448,
+          "usd": 350369.48080954334,
+          "status": "success"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 162.54688403261827,
+          "usd": 254716.33451870672,
+          "status": "success"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 62.79302098013036,
+          "usd": 116918.43714537234,
+          "status": "success"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 61.24678357898481,
+          "usd": 151038.75643800863,
+          "status": "success"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 60.19914426828072,
+          "usd": 161920.6943431375,
+          "status": "success"
+        }
+      ],
+      "firstMaterialMonth": "2025-09",
+      "peak": {
+        "month": "2025-10",
+        "timestamp": 1761955199,
+        "eth": 4136.88049784135,
+        "usd": 15910980.189162552,
+        "status": "success"
+      }
+    }
+  ],
+  "adapterParents": [
+    {
+      "name": "Concrete",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": 1293.7692594181449,
+          "usd": 2975358.79204,
+          "status": "observed"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": 12992.425972891591,
+          "usd": 23419237.58891,
+          "status": "observed"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": 12996.657238597725,
+          "usd": 23367859.74843,
+          "status": "observed"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": 13048.453633628238,
+          "usd": 32952042.86821,
+          "status": "observed"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 4.2321309689104805,
+          "usd": 17831.19509,
+          "status": "observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 5.458602937385228,
+          "usd": 20722.72283,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 3.6520521954264034,
+          "usd": 10946.499520000001,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 302508.55575565627,
+          "usd": 896083235.76236,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 302605.4690966695,
+          "usd": 817779426.97888,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 347301.5692244329,
+          "usd": 669266580.9395701,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 350284.6505583417,
+          "usd": 708312292.23152,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 348588.3113941192,
+          "usd": 791404995.6496,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 350207.2073431763,
+          "usd": 706801517.00785,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 355255.67217096646,
+          "usd": 565744941.53852,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 351712.78592625627,
+          "usd": 673207346.39713,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 353560.40334243653,
+          "usd": 855013660.41541,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 352222.48034555337,
+          "usd": 941002029.62891,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "ether.fi Liquid",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": 325605.41040853644,
+          "usd": 868939902.70308,
+          "status": "observed"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": 321036.425031596,
+          "usd": 1155259206.56865,
+          "status": "observed"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": 333954.99326301605,
+          "usd": 1121521053.87506,
+          "status": "observed"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": 399550.56204700103,
+          "usd": 1298183726.65236,
+          "status": "observed"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": 415158.7756598909,
+          "usd": 954765545.91176,
+          "status": "observed"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": 403173.41135326726,
+          "usd": 726732169.16641,
+          "status": "observed"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": 387065.0765156873,
+          "usd": 695939136.92455,
+          "status": "observed"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": 346212.405525224,
+          "usd": 874310960.41693,
+          "status": "observed"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": 315280.44091974176,
+          "usd": 789023984.24975,
+          "status": "observed"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": 281813.58992665383,
+          "usd": 1072145712.19651,
+          "status": "observed"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 272839.61606849753,
+          "usd": 1196126148.4475698,
+          "status": "observed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 257876.44755321398,
+          "usd": 1086508257.71143,
+          "status": "observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 238864.60681279737,
+          "usd": 906811705.78962,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 196931.63611948292,
+          "usd": 590274165.01725,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 194353.01310772466,
+          "usd": 575707607.4450101,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 190117.20334163072,
+          "usd": 513784295.0151,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 137699.09142969933,
+          "usd": 265352674.11961,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 173977.853785768,
+          "usd": 351801462.65642,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 112626.31660403566,
+          "usd": 255697126.63507,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 83251.28580572228,
+          "usd": 168020914.09465998,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 73815.94816022231,
+          "usd": 117551956.37359999,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 104882.89462207601,
+          "usd": 200754530.39055,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 152319.0330502558,
+          "usd": 368352487.34881,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 148830.45276010444,
+          "usd": 397617318.40753,
+          "status": "observed"
+        }
+      ]
+    }
+  ],
+  "funding": [
+    {
+      "symbol": "USDC",
+      "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "role": "dollar",
+      "status": "measured at T",
+      "configuration": {
+        "decimals": 6,
+        "ltv": 0.75,
+        "liquidation_threshold": 0.78,
+        "liquidation_bonus": 1.045,
+        "active": true,
+        "frozen": false,
+        "borrowing_enabled": true,
+        "paused": false,
+        "reserve_factor": 0.1,
+        "borrow_cap_tokens": 2700000000,
+        "supply_cap_tokens": 3000000000,
+        "isolation_debt_ceiling_raw": 0
+      },
+      "reserve_id": 3,
+      "a_token": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+      "variable_debt_token": "0x72e95b8931767c79ba4eee721354d6e99a61d004",
+      "supply_apr": 0.1250592678612383,
+      "borrow_apr": 0.1393440125511332,
+      "last_reserve_update": 1790985479,
+      "oracle_price_USD": 0.99994154,
+      "supply_units": 2252744777.187025,
+      "supply_USD": 2252613081.7273507,
+      "debt_units": 2246615640.292179,
+      "debt_USD": 2246484303.1418476,
+      "cash_units": 6325453.553238,
+      "cash_USD": 6325083.767223278,
+      "cash_scope": "Physical underlying at aToken, not an executable borrowing or withdrawal guarantee. GHO is issuer-funded and needs separate facilitator limits.",
+      "venue_id": "aave-ethereum",
+      "venue": "Aave V3",
+      "chain": "ethereum",
+      "block": 26108081,
+      "pool": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "oracle": "0x54586be62e3c3580375ae3723c145253060ca0c2",
+      "source_url": "https://etherscan.io/address/0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "nominal_variable_debt_cap_headroom": 453384359.7078209,
+      "base_rules_allow_new_borrow": true,
+      "headroom_scope": "Borrow cap less observed variable debt. Legacy stable debt, facilitator limits, eMode, isolation, oracle, account and transaction checks can tighten it.",
+      "rate_scope": "Instantaneous stored variable APR; not a fixed rate or a promised effective borrower rate."
+    },
+    {
+      "symbol": "USDT",
+      "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "role": "dollar",
+      "status": "measured at T",
+      "configuration": {
+        "decimals": 6,
+        "ltv": 0.75,
+        "liquidation_threshold": 0.78,
+        "liquidation_bonus": 1.045,
+        "active": true,
+        "frozen": false,
+        "borrowing_enabled": true,
+        "paused": false,
+        "reserve_factor": 0.1,
+        "borrow_cap_tokens": 3090000000,
+        "supply_cap_tokens": 3480000000,
+        "isolation_debt_ceiling_raw": 0
+      },
+      "reserve_id": 8,
+      "a_token": "0x23878914efe38d27c4d67ab83ed1b93a74d4086a",
+      "variable_debt_token": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+      "supply_apr": 0.03691410623469931,
+      "borrow_apr": 0.043816464877243035,
+      "last_reserve_update": 1790985227,
+      "oracle_price_USD": 0.99983258,
+      "supply_units": 2867785894.328188,
+      "supply_USD": 2867305769.6137595,
+      "debt_units": 2684648115.321584,
+      "debt_USD": 2684198651.534117,
+      "cash_units": 183324930.593817,
+      "cash_USD": 183294238.33393696,
+      "cash_scope": "Physical underlying at aToken, not an executable borrowing or withdrawal guarantee. GHO is issuer-funded and needs separate facilitator limits.",
+      "venue_id": "aave-ethereum",
+      "venue": "Aave V3",
+      "chain": "ethereum",
+      "block": 26108081,
+      "pool": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "oracle": "0x54586be62e3c3580375ae3723c145253060ca0c2",
+      "source_url": "https://etherscan.io/address/0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "nominal_variable_debt_cap_headroom": 405351884.6784158,
+      "base_rules_allow_new_borrow": true,
+      "headroom_scope": "Borrow cap less observed variable debt. Legacy stable debt, facilitator limits, eMode, isolation, oracle, account and transaction checks can tighten it.",
+      "rate_scope": "Instantaneous stored variable APR; not a fixed rate or a promised effective borrower rate."
+    },
+    {
+      "symbol": "USDC",
+      "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "role": "dollar",
+      "status": "measured at T",
+      "configuration": {
+        "decimals": 6,
+        "ltv": 0.75,
+        "liquidation_threshold": 0.78,
+        "liquidation_bonus": 1.05,
+        "active": true,
+        "frozen": false,
+        "borrowing_enabled": true,
+        "paused": false,
+        "reserve_factor": 0.1,
+        "borrow_cap_tokens": 207000000,
+        "supply_cap_tokens": 230000000,
+        "isolation_debt_ceiling_raw": 0
+      },
+      "reserve_id": 4,
+      "a_token": "0x4e65fe4dba92790696d040ac24aa414708f5c0ab",
+      "variable_debt_token": "0x59dca05b6c26dbd64b5381374aaac5cd05644c28",
+      "supply_apr": 0.03723354731794709,
+      "borrow_apr": 0.046480807421757454,
+      "last_reserve_update": 1790985597,
+      "oracle_price_USD": 0.99996703,
+      "supply_units": 181610867.050334,
+      "supply_USD": 181604879.34004736,
+      "debt_units": 161645492.952729,
+      "debt_USD": 161640163.50082633,
+      "cash_units": 19967099.209728,
+      "cash_USD": 19966440.894467052,
+      "cash_scope": "Physical underlying at aToken, not an executable borrowing or withdrawal guarantee. GHO is issuer-funded and needs separate facilitator limits.",
+      "venue_id": "aave-base",
+      "venue": "Aave V3",
+      "chain": "base",
+      "block": 52098126,
+      "pool": "0xa238dd80c259a72e81d7e4664a9801593f98d1c5",
+      "oracle": "0x2cc0fc26ed4563a5ce5e8bdcfe1a2878676ae156",
+      "source_url": "https://basescan.org/address/0xa238dd80c259a72e81d7e4664a9801593f98d1c5",
+      "nominal_variable_debt_cap_headroom": 45354507.04727101,
+      "base_rules_allow_new_borrow": true,
+      "headroom_scope": "Borrow cap less observed variable debt. Legacy stable debt, facilitator limits, eMode, isolation, oracle, account and transaction checks can tighten it.",
+      "rate_scope": "Instantaneous stored variable APR; not a fixed rate or a promised effective borrower rate."
+    },
+    {
+      "symbol": "USDCn",
+      "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+      "role": "dollar",
+      "status": "measured at T",
+      "configuration": {
+        "decimals": 6,
+        "ltv": 0.75,
+        "liquidation_threshold": 0.78,
+        "liquidation_bonus": 1.05,
+        "active": true,
+        "frozen": false,
+        "borrowing_enabled": true,
+        "paused": false,
+        "reserve_factor": 0.1,
+        "borrow_cap_tokens": 225000000,
+        "supply_cap_tokens": 250000000,
+        "isolation_debt_ceiling_raw": 0
+      },
+      "reserve_id": 12,
+      "a_token": "0x724dc807b04555b71ed48a6896b6f41593b8c637",
+      "variable_debt_token": "0xf611aeb5013fd2c0511c9cd55c7dc5c1140741a6",
+      "supply_apr": 0.031439570839121134,
+      "borrow_apr": 0.03940273415803079,
+      "last_reserve_update": 1790985598,
+      "oracle_price_USD": 0.99996647,
+      "supply_units": 178491078.212283,
+      "supply_USD": 178485093.40643054,
+      "debt_units": 158341978.474191,
+      "debt_USD": 158336669.26765278,
+      "cash_units": 20260421.290913,
+      "cash_USD": 20259741.958987117,
+      "cash_scope": "Physical underlying at aToken, not an executable borrowing or withdrawal guarantee. GHO is issuer-funded and needs separate facilitator limits.",
+      "venue_id": "aave-arbitrum",
+      "venue": "Aave V3",
+      "chain": "arbitrum",
+      "block": 511139919,
+      "pool": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "oracle": "0xb56c2f0b653b2e0b10c9b928c8580ac5df02c7c7",
+      "source_url": "https://arbiscan.io/address/0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "nominal_variable_debt_cap_headroom": 66658021.52580899,
+      "base_rules_allow_new_borrow": true,
+      "headroom_scope": "Borrow cap less observed variable debt. Legacy stable debt, facilitator limits, eMode, isolation, oracle, account and transaction checks can tighten it.",
+      "rate_scope": "Instantaneous stored variable APR; not a fixed rate or a promised effective borrower rate."
+    },
+    {
+      "symbol": "USDCn",
+      "address": "0x0b2c639c533813f4aa9d7837caf62653d097ff85",
+      "role": "dollar",
+      "status": "measured at T",
+      "configuration": {
+        "decimals": 6,
+        "ltv": 0.75,
+        "liquidation_threshold": 0.78,
+        "liquidation_bonus": 1.05,
+        "active": true,
+        "frozen": false,
+        "borrowing_enabled": true,
+        "paused": false,
+        "reserve_factor": 0.1,
+        "borrow_cap_tokens": 25200000,
+        "supply_cap_tokens": 28000000,
+        "isolation_debt_ceiling_raw": 0
+      },
+      "reserve_id": 13,
+      "a_token": "0x38d693ce1df5aadf7bc62595a37d667ad57922e5",
+      "variable_debt_token": "0x5d557b07776d12967914379c71a1310e917c7555",
+      "supply_apr": 0.029649328006921463,
+      "borrow_apr": 0.03826561989522408,
+      "last_reserve_update": 1790985337,
+      "oracle_price_USD": 1.00000007,
+      "supply_units": 10796855.903206,
+      "supply_USD": 10796856.658985913,
+      "debt_units": 9295304.707132,
+      "debt_USD": 9295305.35780333,
+      "cash_units": 1500931.905257,
+      "cash_USD": 1500932.0103222332,
+      "cash_scope": "Physical underlying at aToken, not an executable borrowing or withdrawal guarantee. GHO is issuer-funded and needs separate facilitator limits.",
+      "venue_id": "aave-optimism",
+      "venue": "Aave V3",
+      "chain": "optimism",
+      "block": 157693411,
+      "pool": "0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "oracle": "0xd81eb3728a631871a7ebbad631b5f424909f0c77",
+      "source_url": "https://optimistic.etherscan.io/address/0x794a61358d6845594f94dc1db02a252b5b4814ad",
+      "nominal_variable_debt_cap_headroom": 15904695.292868,
+      "base_rules_allow_new_borrow": true,
+      "headroom_scope": "Borrow cap less observed variable debt. Legacy stable debt, facilitator limits, eMode, isolation, oracle, account and transaction checks can tighten it.",
+      "rate_scope": "Instantaneous stored variable APR; not a fixed rate or a promised effective borrower rate."
+    }
+  ],
+  "matchedBenchmarks": [
+    {
+      "name": "StakeWise osETH",
+      "capitalETH": 157019.0112940511,
+      "startDate": "2024-09-30T23:59:59+00:00",
+      "endDate": "2026-10-02T23:59:59+00:00",
+      "windowDays": 732.0,
+      "bookReturnPct": 5.095750240229213,
+      "annualized": false,
+      "measure": "ETH-equivalent share-value change; excludes separate rewards, distributions and execution costs.",
+      "benchmarkId": "steth_exact_blocks",
+      "benchmarkBookReturnPct": 5.505102566859699,
+      "bookExcessPercentagePoints": -0.4093523266304855,
+      "relativeBookOutperformancePct": -0.3879929185141351,
+      "benchmarkSourcePaths": [
+        "raw/eth/strategy-universe-deep-2026-10-04/steth_exact_timestamp_benchmark.json"
+      ]
+    },
+    {
+      "name": "mETH staking",
+      "capitalETH": 235473.91614376009,
+      "startDate": "2024-09-30T23:59:59+00:00",
+      "endDate": "2026-10-02T23:59:59+00:00",
+      "windowDays": 732.0,
+      "bookReturnPct": 5.251181654191006,
+      "annualized": false,
+      "measure": "ETH-equivalent share-value change; excludes separate rewards, distributions and execution costs.",
+      "benchmarkId": "steth_exact_blocks",
+      "benchmarkBookReturnPct": 5.505102566859699,
+      "bookExcessPercentagePoints": -0.25392091266869254,
+      "relativeBookOutperformancePct": -0.2406716893221139,
+      "benchmarkSourcePaths": [
+        "raw/eth/strategy-universe-deep-2026-10-04/steth_exact_timestamp_benchmark.json"
+      ]
+    },
+    {
+      "name": "Yearn WETH-1",
+      "capitalETH": 7296.203786360423,
+      "startDate": "2024-09-30T23:59:59+00:00",
+      "endDate": "2026-10-02T23:59:59+00:00",
+      "windowDays": 732.0,
+      "bookReturnPct": 4.388603280657977,
+      "annualized": false,
+      "measure": "ETH-equivalent share-value change; excludes separate rewards, distributions and execution costs.",
+      "benchmarkId": "steth_exact_blocks",
+      "benchmarkBookReturnPct": 5.505102566859699,
+      "bookExcessPercentagePoints": -1.116499286201722,
+      "relativeBookOutperformancePct": -1.0582419798077392,
+      "benchmarkSourcePaths": [
+        "raw/eth/strategy-universe-deep-2026-10-04/steth_exact_timestamp_benchmark.json"
+      ]
+    },
+    {
+      "name": "Auto Finance autoETH",
+      "capitalETH": 7755.932103816954,
+      "startDate": "2024-09-30T23:59:59+00:00",
+      "endDate": "2026-10-02T23:59:59+00:00",
+      "windowDays": 732.0,
+      "bookReturnPct": 4.182350810295499,
+      "annualized": false,
+      "measure": "ETH-equivalent share-value change; excludes separate rewards, distributions and execution costs.",
+      "benchmarkId": "steth_exact_blocks",
+      "benchmarkBookReturnPct": 5.505102566859699,
+      "bookExcessPercentagePoints": -1.3227517565642,
+      "relativeBookOutperformancePct": -1.2537324967064611,
+      "benchmarkSourcePaths": [
+        "raw/eth/strategy-universe-deep-2026-10-04/steth_exact_timestamp_benchmark.json"
+      ]
+    }
+  ],
+  "financedCashResults": {
+    "financial_snapshot_timestamp": 1790985599,
+    "verified_historical_credit_to_yield_cases": 3,
+    "borrower_owners_identified": 0,
+    "A_full_vault_deposits_USDC": 1700000.0001,
+    "A_full_vault_redemption_USDC": 1700553.39639,
+    "A_full_vault_cash_income_USDC": 553.39629,
+    "A_borrowed_lots_allocated_vault_income_USDC": 91.84038310260394,
+    "A_borrowed_lots_funding_cost_at_redemption_USDC": 239.889887,
+    "A_borrowed_lots_allocated_funded_result_before_gas_USDC": -148.04950389739608,
+    "B_vault_income_PYUSD": 1.948867,
+    "B_funding_cost_PYUSD": 2.347298,
+    "B_funded_result_before_gas_PYUSD": -0.398431,
+    "B_gas_ETH": 0.001004596384898971,
+    "A_wrapped_redemption_USDC": 1700553.39639,
+    "A_current_carry_allocation": null,
+    "whole_wallet_profit": null,
+    "legacy_Silo_ETH_markets_measured": 5,
+    "legacy_Silo_selected_XAI_debt_units": 1.7960224604782031,
+    "lifecycle_transactions": 11,
+    "legacy_Silo_Arbitrum_selected_USDCe_debt_units": 212.33444,
+    "Silo_Arbitrum_current_factory_configs": 13,
+    "Silo_Arbitrum_current_factory_canonical_ETH_USD_routes": 4,
+    "Silo_Arbitrum_current_factory_canonical_ETH_USD_debt_USDC_units": 0.08841,
+    "post_wrap_confidential_outgoing_events": 2,
+    "post_wrap_confidential_incoming_events": 8,
+    "post_wrap_public_wrap_events": 2,
+    "post_wrap_receiver_wallet_unwrap_finalized_events": 0,
+    "post_wrap_public_amount_disclosures": 0,
+    "post_wrap_additional_receipts": 5
+  },
+  "scope": "Gross whole-product books with current, historical or declared carry evidence; not unique ETH, historical dollar allocations, deposits or earned income.",
+  "sources": {
+    "carry_category_candidates": "bf275a641a40f442ebf96d7589a2598490fe75eefac8e86f037221d25cdc4429",
+    "product_chapters": "831a656ad248ed96dd26a0a74781b24b150163a3ab3261debacb1017b8ab94fd",
+    "market_reader_chapter": "f9e896d91703381436d9ee17c8a715dc17289f8e6f78d3a183c64c8f9e65e8e7",
+    "funding_atlas_chapter": "6f9407ec0164945417bbbcb27df4cdf4f11988a5474af5c136fd212f44c36caa",
+    "strategy_universe_deep": "3f31107993ce3cf59a83f9a513eebc3e1a82fed23899898fb7d2724a82fddb3b",
+    "credit_expansion_deep": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0"
+  }
+}

@@ -136,6 +136,8 @@ def build():
     translate_reports()
     from reader_market_build import run as build_reader_market
     build_reader_market()
+    from reader_analysis_build import run as build_reader_analysis
+    build_reader_analysis()
     for name,source in [('STRATEGY-UNIVERSE-EXPANSION','STRATEGY-UNIVERSE-EXPANSION'),('CARRY-VARIANTS-EXPANSION','CARRY-VARIANTS-EXPANSION'),('CREDIT-EXPANSION','CREDIT-EXPANSION-2026-10-04')]:
         text=(RESEARCH/'review'/f'{source}.md').read_text()
         # These are English editorial sources. Preserve exact units and links.
@@ -173,6 +175,8 @@ def build():
       'productChapters':read('product_chapters'),
       'borrowRateHistory':read('carry_borrow_rate_history'),
       'carryCategory':{'products':read('carry_category_candidates')['products']},
+      'readerAnalysis':read('reader_analysis'),
+      'reportLibrary':[{'id':stem,'title':title,'href':f'{folder}/{stem}.html'} for stem,(folder,title) in ARTICLES.items()],
       'marketNetting':read('market_netting_closure'),
       'carryAttribution':read('carry_attribution_closure'),
       'backingExit':read('backing_exit_closure'),
@@ -249,6 +253,9 @@ def build():
     write_csv('Liquid-ETH-monthly-history.csv',['month','book_NAV_ETH','Liquid_ETH_return_fraction','stETH_return_fraction','weETH_return_fraction'],[[r['month'],r['book_nav_eth'],r['liquidETH_monthly_return'],r['stETH_monthly_return'],r['weETH_monthly_return']] for r in payload['etherfiHistory']])
     write_csv('Liquid-ETH-borrow-rates.csv',['date','series','protocol','market','loan_asset','borrow_APR_fraction','status','account','block','source'],[[r['date'],r['series_id'],r['protocol'],r['market_id'],r['loan_symbol'],r['borrow_apr'],r['status'],r['account'],r['block'],r['sourceURL']] for r in payload['borrowRateHistory']['rows']])
     carry_rows=[[p['product'],r['month'],r.get('sizeNative'),r.get('sizeNativeSymbol'),r.get('sizeETH'),r.get('sizeUSD'),r.get('status'),r.get('carryAllocationPercent'),'carry_category_candidates.json'] for p in payload['carryCategory']['products'] for r in p.get('history',[])]
+    shutil.copyfile(DATA/'reader_analysis.json',OUT/'data/reader_analysis.json')
+    for path in DATA.glob('carry-history-*.csv'):
+        shutil.copyfile(path,OUT/'data'/path.name)
     rocksolid=next(p for p in payload['productChapters']['products'] if p['id']=='rocksolid')
     rock_months={r['month']:r for r in rocksolid['charts']['capitalHistory']['rows']}
     for month in chapter['months']:

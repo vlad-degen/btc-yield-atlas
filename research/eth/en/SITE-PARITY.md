@@ -8,14 +8,14 @@ The presentation follows the eight chapters and exhibit order specified in the B
 |---|---|
 | Answer | Four figures: selected market exposure, carry-parent share, concentration of seven measured carry books, and a reward-free carry scenario. Three implications explain what these mean. |
 | Market | Category/protocol donut, 24 monthly stacked bars, ETH/USD and Amount/Share controls, constant cohort, eight category tabs and search. A chain view precedes the explicit seven-product carry composition, with size, share, borrowing venues, destinations and participants. |
-| Carry math | A short ETH-loop versus dollar-carry comparison, followed by the per-1-ETH illustrative cash-flow ledger. Base income, rewards, funding and fees stay separate. Loan markets, utilization curves and the seven-input calculator follow. |
-| Top 5 | Monthly carry-product books, side-by-side comparison and five tabs. Each product follows the money, control, payer, capital and return history, holders, loan legs, withdrawals and timeline. |
-| Other carry | One product census, with two optional disclosures for large borrowers and comparable share-price returns. Traced lifecycles and additional lender investigations are linked exhibits. |
+| Carry math | A short ETH-loop versus dollar-carry comparison, followed by the per-1-ETH illustrative cash-flow ledger. Base income, rewards, funding and fees stay separate. Measured funded-leg results and chain/currency funding constraints accompany the loan markets; utilization curves and the seven-input calculator follow. |
+| Top 5 | 24-month stacked carry development by all seven products, small-book zoom, a separate adapter-category lens, three dated waves, side-by-side comparison and five tabs plus Closed. Each product follows the money, control, payer, capital and return history, holders, loan legs, withdrawals and timeline. |
+| Other carry | One product census, with two optional disclosures for large borrowers and comparable share-price returns. The return disclosure also shows four additional products against the same-block 732-day stETH benchmark, with leverage and exit findings. The borrower disclosure summarises verified uses of loan proceeds. |
 | Risks | One table: risk, measured example and operating response. |
 | Playbook | Three decisions and four tables: income scenarios, reward payers, operating rules and partners. |
-| Data | Exactly five disclosures: method, exclusions, discovery, dates and sources. The complete research library and interactive exhibits are reached here. |
+| Data | Exactly five disclosures: method, exclusions, discovery, dates and sources. The complete 46-report library is grouped by the questions it answers; interactive exhibits remain available. |
 
-The detailed strategy atlas, physical-backing ledger, additional financial histories, hgETH loan book, funding by chain, nested carry and traced repayments remain in `exhibits.html` and linked articles. They do not add extra chapters to the main reading route.
+The detailed strategy atlas, physical-backing ledger, additional financial histories, hgETH loan book, funding by chain, nested carry and traced repayments remain in `exhibits.html` and linked articles. Their financial conclusions appear in the relevant eight chapters; full ledgers and simulations remain linked evidence. They do not add extra chapters to the main reading route.
 
 ## Shared interactions
 

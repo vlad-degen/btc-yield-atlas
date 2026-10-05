@@ -1,868 +1,4362 @@
-{
-  "files": [
-    "eth/README.md",
-    "eth/data/Liquid-ETH-borrow-rates.csv",
-    "eth/data/Liquid-ETH-monthly-history.csv",
-    "eth/data/asset_registry.json",
-    "eth/data/backing_exit_closure.json",
-    "eth/data/backing_exit_demands.csv",
-    "eth/data/backing_exit_manifest.json",
-    "eth/data/basis_closure_disclosures.json",
-    "eth/data/borrowers.csv",
-    "eth/data/carry-category-history.csv",
-    "eth/data/carry_attribution_borrowing_events.csv",
-    "eth/data/carry_attribution_cash_rewards.csv",
-    "eth/data/carry_attribution_closure.json",
-    "eth/data/carry_attribution_common_window_claims.csv",
-    "eth/data/carry_attribution_common_window_components.csv",
-    "eth/data/carry_attribution_common_window_debt.csv",
-    "eth/data/carry_attribution_cross_currency_funding_links.csv",
-    "eth/data/carry_attribution_debt_cohorts.csv",
-    "eth/data/carry_attribution_destination_events.csv",
-    "eth/data/carry_attribution_funding_links.csv",
-    "eth/data/carry_attribution_ledger.json",
-    "eth/data/carry_attribution_recycling_events.csv",
-    "eth/data/carry_borrow_history_crosscheck.json",
-    "eth/data/carry_borrow_history_review.json",
-    "eth/data/carry_borrow_history_rpc.json",
-    "eth/data/carry_borrow_rate_history.json",
-    "eth/data/carry_category_candidates.json",
-    "eth/data/carry_category_sources.json",
-    "eth/data/carry_credit_lookthrough.json",
-    "eth/data/carry_economics_chapter.json",
-    "eth/data/carry_economics_review.json",
-    "eth/data/carry_variants_expansion.json",
-    "eth/data/comparable_ETH_wealth.json",
-    "eth/data/concrete_lookthrough_T.json",
-    "eth/data/concrete_self_holdings_T.json",
-    "eth/data/credit_expansion.json",
-    "eth/data/credit_expansion_deep.json",
-    "eth/data/dependency_graph.json",
-    "eth/data/discovery_summary.json",
-    "eth/data/ethena_ETH_basis_observation.json",
-    "eth/data/etherfi_partial_balance_sheet.json",
-    "eth/data/etherfi_staking_comparison.json",
-    "eth/data/etherfi_verified_metrics.json",
-    "eth/data/evidence_ledger.json",
-    "eth/data/fluid_lite_balance_T.json",
-    "eth/data/funding_atlas_chapter.json",
-    "eth/data/funding_atlas_history.csv",
-    "eth/data/funding_atlas_reserves.csv",
-    "eth/data/funding_borrower_deep_chapter.json",
-    "eth/data/funding_borrower_deep_rankings.csv",
-    "eth/data/justlend_eth_semantics.json",
-    "eth/data/lending.csv",
-    "eth/data/lending_reserve_T.json",
-    "eth/data/liquidity-discovery.csv",
-    "eth/data/loop_economics_T.json",
-    "eth/data/manager_case_capture.json",
-    "eth/data/manager_case_chapter.json",
-    "eth/data/market-chains.csv",
-    "eth/data/market-history.csv",
-    "eth/data/market-prices.csv",
-    "eth/data/market-protocols.csv",
-    "eth/data/market-series-constant-0.csv",
-    "eth/data/market-series-constant-1.csv",
-    "eth/data/market-series-constant-10.csv",
-    "eth/data/market-series-constant-100.csv",
-    "eth/data/market-series-constant-101.csv",
-    "eth/data/market-series-constant-102.csv",
-    "eth/data/market-series-constant-103.csv",
-    "eth/data/market-series-constant-104.csv",
-    "eth/data/market-series-constant-105.csv",
-    "eth/data/market-series-constant-106.csv",
-    "eth/data/market-series-constant-107.csv",
-    "eth/data/market-series-constant-108.csv",
-    "eth/data/market-series-constant-109.csv",
-    "eth/data/market-series-constant-11.csv",
-    "eth/data/market-series-constant-110.csv",
-    "eth/data/market-series-constant-111.csv",
-    "eth/data/market-series-constant-112.csv",
-    "eth/data/market-series-constant-113.csv",
-    "eth/data/market-series-constant-114.csv",
-    "eth/data/market-series-constant-115.csv",
-    "eth/data/market-series-constant-116.csv",
-    "eth/data/market-series-constant-117.csv",
-    "eth/data/market-series-constant-118.csv",
-    "eth/data/market-series-constant-119.csv",
-    "eth/data/market-series-constant-12.csv",
-    "eth/data/market-series-constant-120.csv",
-    "eth/data/market-series-constant-121.csv",
-    "eth/data/market-series-constant-122.csv",
-    "eth/data/market-series-constant-123.csv",
-    "eth/data/market-series-constant-124.csv",
-    "eth/data/market-series-constant-125.csv",
-    "eth/data/market-series-constant-126.csv",
-    "eth/data/market-series-constant-127.csv",
-    "eth/data/market-series-constant-128.csv",
-    "eth/data/market-series-constant-129.csv",
-    "eth/data/market-series-constant-13.csv",
-    "eth/data/market-series-constant-130.csv",
-    "eth/data/market-series-constant-131.csv",
-    "eth/data/market-series-constant-132.csv",
-    "eth/data/market-series-constant-133.csv",
-    "eth/data/market-series-constant-134.csv",
-    "eth/data/market-series-constant-135.csv",
-    "eth/data/market-series-constant-136.csv",
-    "eth/data/market-series-constant-137.csv",
-    "eth/data/market-series-constant-138.csv",
-    "eth/data/market-series-constant-139.csv",
-    "eth/data/market-series-constant-14.csv",
-    "eth/data/market-series-constant-140.csv",
-    "eth/data/market-series-constant-141.csv",
-    "eth/data/market-series-constant-142.csv",
-    "eth/data/market-series-constant-143.csv",
-    "eth/data/market-series-constant-144.csv",
-    "eth/data/market-series-constant-145.csv",
-    "eth/data/market-series-constant-146.csv",
-    "eth/data/market-series-constant-147.csv",
-    "eth/data/market-series-constant-148.csv",
-    "eth/data/market-series-constant-149.csv",
-    "eth/data/market-series-constant-15.csv",
-    "eth/data/market-series-constant-150.csv",
-    "eth/data/market-series-constant-151.csv",
-    "eth/data/market-series-constant-152.csv",
-    "eth/data/market-series-constant-153.csv",
-    "eth/data/market-series-constant-154.csv",
-    "eth/data/market-series-constant-155.csv",
-    "eth/data/market-series-constant-156.csv",
-    "eth/data/market-series-constant-157.csv",
-    "eth/data/market-series-constant-158.csv",
-    "eth/data/market-series-constant-159.csv",
-    "eth/data/market-series-constant-16.csv",
-    "eth/data/market-series-constant-160.csv",
-    "eth/data/market-series-constant-161.csv",
-    "eth/data/market-series-constant-162.csv",
-    "eth/data/market-series-constant-163.csv",
-    "eth/data/market-series-constant-164.csv",
-    "eth/data/market-series-constant-165.csv",
-    "eth/data/market-series-constant-166.csv",
-    "eth/data/market-series-constant-167.csv",
-    "eth/data/market-series-constant-168.csv",
-    "eth/data/market-series-constant-169.csv",
-    "eth/data/market-series-constant-17.csv",
-    "eth/data/market-series-constant-170.csv",
-    "eth/data/market-series-constant-171.csv",
-    "eth/data/market-series-constant-172.csv",
-    "eth/data/market-series-constant-173.csv",
-    "eth/data/market-series-constant-174.csv",
-    "eth/data/market-series-constant-175.csv",
-    "eth/data/market-series-constant-176.csv",
-    "eth/data/market-series-constant-177.csv",
-    "eth/data/market-series-constant-178.csv",
-    "eth/data/market-series-constant-179.csv",
-    "eth/data/market-series-constant-18.csv",
-    "eth/data/market-series-constant-180.csv",
-    "eth/data/market-series-constant-181.csv",
-    "eth/data/market-series-constant-182.csv",
-    "eth/data/market-series-constant-183.csv",
-    "eth/data/market-series-constant-184.csv",
-    "eth/data/market-series-constant-185.csv",
-    "eth/data/market-series-constant-186.csv",
-    "eth/data/market-series-constant-187.csv",
-    "eth/data/market-series-constant-188.csv",
-    "eth/data/market-series-constant-189.csv",
-    "eth/data/market-series-constant-19.csv",
-    "eth/data/market-series-constant-190.csv",
-    "eth/data/market-series-constant-191.csv",
-    "eth/data/market-series-constant-192.csv",
-    "eth/data/market-series-constant-193.csv",
-    "eth/data/market-series-constant-194.csv",
-    "eth/data/market-series-constant-195.csv",
-    "eth/data/market-series-constant-196.csv",
-    "eth/data/market-series-constant-197.csv",
-    "eth/data/market-series-constant-198.csv",
-    "eth/data/market-series-constant-199.csv",
-    "eth/data/market-series-constant-2.csv",
-    "eth/data/market-series-constant-20.csv",
-    "eth/data/market-series-constant-200.csv",
-    "eth/data/market-series-constant-201.csv",
-    "eth/data/market-series-constant-202.csv",
-    "eth/data/market-series-constant-203.csv",
-    "eth/data/market-series-constant-204.csv",
-    "eth/data/market-series-constant-205.csv",
-    "eth/data/market-series-constant-206.csv",
-    "eth/data/market-series-constant-207.csv",
-    "eth/data/market-series-constant-208.csv",
-    "eth/data/market-series-constant-209.csv",
-    "eth/data/market-series-constant-21.csv",
-    "eth/data/market-series-constant-210.csv",
-    "eth/data/market-series-constant-211.csv",
-    "eth/data/market-series-constant-212.csv",
-    "eth/data/market-series-constant-213.csv",
-    "eth/data/market-series-constant-214.csv",
-    "eth/data/market-series-constant-215.csv",
-    "eth/data/market-series-constant-216.csv",
-    "eth/data/market-series-constant-217.csv",
-    "eth/data/market-series-constant-218.csv",
-    "eth/data/market-series-constant-219.csv",
-    "eth/data/market-series-constant-22.csv",
-    "eth/data/market-series-constant-220.csv",
-    "eth/data/market-series-constant-221.csv",
-    "eth/data/market-series-constant-222.csv",
-    "eth/data/market-series-constant-223.csv",
-    "eth/data/market-series-constant-224.csv",
-    "eth/data/market-series-constant-225.csv",
-    "eth/data/market-series-constant-226.csv",
-    "eth/data/market-series-constant-227.csv",
-    "eth/data/market-series-constant-228.csv",
-    "eth/data/market-series-constant-229.csv",
-    "eth/data/market-series-constant-23.csv",
-    "eth/data/market-series-constant-230.csv",
-    "eth/data/market-series-constant-231.csv",
-    "eth/data/market-series-constant-232.csv",
-    "eth/data/market-series-constant-233.csv",
-    "eth/data/market-series-constant-234.csv",
-    "eth/data/market-series-constant-235.csv",
-    "eth/data/market-series-constant-236.csv",
-    "eth/data/market-series-constant-237.csv",
-    "eth/data/market-series-constant-238.csv",
-    "eth/data/market-series-constant-239.csv",
-    "eth/data/market-series-constant-24.csv",
-    "eth/data/market-series-constant-240.csv",
-    "eth/data/market-series-constant-241.csv",
-    "eth/data/market-series-constant-242.csv",
-    "eth/data/market-series-constant-243.csv",
-    "eth/data/market-series-constant-244.csv",
-    "eth/data/market-series-constant-245.csv",
-    "eth/data/market-series-constant-246.csv",
-    "eth/data/market-series-constant-247.csv",
-    "eth/data/market-series-constant-248.csv",
-    "eth/data/market-series-constant-249.csv",
-    "eth/data/market-series-constant-25.csv",
-    "eth/data/market-series-constant-250.csv",
-    "eth/data/market-series-constant-251.csv",
-    "eth/data/market-series-constant-252.csv",
-    "eth/data/market-series-constant-253.csv",
-    "eth/data/market-series-constant-254.csv",
-    "eth/data/market-series-constant-255.csv",
-    "eth/data/market-series-constant-26.csv",
-    "eth/data/market-series-constant-27.csv",
-    "eth/data/market-series-constant-28.csv",
-    "eth/data/market-series-constant-29.csv",
-    "eth/data/market-series-constant-3.csv",
-    "eth/data/market-series-constant-30.csv",
-    "eth/data/market-series-constant-31.csv",
-    "eth/data/market-series-constant-32.csv",
-    "eth/data/market-series-constant-33.csv",
-    "eth/data/market-series-constant-34.csv",
-    "eth/data/market-series-constant-35.csv",
-    "eth/data/market-series-constant-36.csv",
-    "eth/data/market-series-constant-37.csv",
-    "eth/data/market-series-constant-38.csv",
-    "eth/data/market-series-constant-39.csv",
-    "eth/data/market-series-constant-4.csv",
-    "eth/data/market-series-constant-40.csv",
-    "eth/data/market-series-constant-41.csv",
-    "eth/data/market-series-constant-42.csv",
-    "eth/data/market-series-constant-43.csv",
-    "eth/data/market-series-constant-44.csv",
-    "eth/data/market-series-constant-45.csv",
-    "eth/data/market-series-constant-46.csv",
-    "eth/data/market-series-constant-47.csv",
-    "eth/data/market-series-constant-48.csv",
-    "eth/data/market-series-constant-49.csv",
-    "eth/data/market-series-constant-5.csv",
-    "eth/data/market-series-constant-50.csv",
-    "eth/data/market-series-constant-51.csv",
-    "eth/data/market-series-constant-52.csv",
-    "eth/data/market-series-constant-53.csv",
-    "eth/data/market-series-constant-54.csv",
-    "eth/data/market-series-constant-55.csv",
-    "eth/data/market-series-constant-56.csv",
-    "eth/data/market-series-constant-57.csv",
-    "eth/data/market-series-constant-58.csv",
-    "eth/data/market-series-constant-59.csv",
-    "eth/data/market-series-constant-6.csv",
-    "eth/data/market-series-constant-60.csv",
-    "eth/data/market-series-constant-61.csv",
-    "eth/data/market-series-constant-62.csv",
-    "eth/data/market-series-constant-63.csv",
-    "eth/data/market-series-constant-64.csv",
-    "eth/data/market-series-constant-65.csv",
-    "eth/data/market-series-constant-66.csv",
-    "eth/data/market-series-constant-67.csv",
-    "eth/data/market-series-constant-68.csv",
-    "eth/data/market-series-constant-69.csv",
-    "eth/data/market-series-constant-7.csv",
-    "eth/data/market-series-constant-70.csv",
-    "eth/data/market-series-constant-71.csv",
-    "eth/data/market-series-constant-72.csv",
-    "eth/data/market-series-constant-73.csv",
-    "eth/data/market-series-constant-74.csv",
-    "eth/data/market-series-constant-75.csv",
-    "eth/data/market-series-constant-76.csv",
-    "eth/data/market-series-constant-77.csv",
-    "eth/data/market-series-constant-78.csv",
-    "eth/data/market-series-constant-79.csv",
-    "eth/data/market-series-constant-8.csv",
-    "eth/data/market-series-constant-80.csv",
-    "eth/data/market-series-constant-81.csv",
-    "eth/data/market-series-constant-82.csv",
-    "eth/data/market-series-constant-83.csv",
-    "eth/data/market-series-constant-84.csv",
-    "eth/data/market-series-constant-85.csv",
-    "eth/data/market-series-constant-86.csv",
-    "eth/data/market-series-constant-87.csv",
-    "eth/data/market-series-constant-88.csv",
-    "eth/data/market-series-constant-89.csv",
-    "eth/data/market-series-constant-9.csv",
-    "eth/data/market-series-constant-90.csv",
-    "eth/data/market-series-constant-91.csv",
-    "eth/data/market-series-constant-92.csv",
-    "eth/data/market-series-constant-93.csv",
-    "eth/data/market-series-constant-94.csv",
-    "eth/data/market-series-constant-95.csv",
-    "eth/data/market-series-constant-96.csv",
-    "eth/data/market-series-constant-97.csv",
-    "eth/data/market-series-constant-98.csv",
-    "eth/data/market-series-constant-99.csv",
-    "eth/data/market-series-observed-0.csv",
-    "eth/data/market-series-observed-1.csv",
-    "eth/data/market-series-observed-10.csv",
-    "eth/data/market-series-observed-100.csv",
-    "eth/data/market-series-observed-101.csv",
-    "eth/data/market-series-observed-102.csv",
-    "eth/data/market-series-observed-103.csv",
-    "eth/data/market-series-observed-104.csv",
-    "eth/data/market-series-observed-105.csv",
-    "eth/data/market-series-observed-106.csv",
-    "eth/data/market-series-observed-107.csv",
-    "eth/data/market-series-observed-108.csv",
-    "eth/data/market-series-observed-109.csv",
-    "eth/data/market-series-observed-11.csv",
-    "eth/data/market-series-observed-110.csv",
-    "eth/data/market-series-observed-111.csv",
-    "eth/data/market-series-observed-112.csv",
-    "eth/data/market-series-observed-113.csv",
-    "eth/data/market-series-observed-114.csv",
-    "eth/data/market-series-observed-115.csv",
-    "eth/data/market-series-observed-116.csv",
-    "eth/data/market-series-observed-117.csv",
-    "eth/data/market-series-observed-118.csv",
-    "eth/data/market-series-observed-119.csv",
-    "eth/data/market-series-observed-12.csv",
-    "eth/data/market-series-observed-120.csv",
-    "eth/data/market-series-observed-121.csv",
-    "eth/data/market-series-observed-122.csv",
-    "eth/data/market-series-observed-123.csv",
-    "eth/data/market-series-observed-124.csv",
-    "eth/data/market-series-observed-125.csv",
-    "eth/data/market-series-observed-126.csv",
-    "eth/data/market-series-observed-127.csv",
-    "eth/data/market-series-observed-128.csv",
-    "eth/data/market-series-observed-129.csv",
-    "eth/data/market-series-observed-13.csv",
-    "eth/data/market-series-observed-130.csv",
-    "eth/data/market-series-observed-131.csv",
-    "eth/data/market-series-observed-132.csv",
-    "eth/data/market-series-observed-133.csv",
-    "eth/data/market-series-observed-134.csv",
-    "eth/data/market-series-observed-135.csv",
-    "eth/data/market-series-observed-136.csv",
-    "eth/data/market-series-observed-137.csv",
-    "eth/data/market-series-observed-138.csv",
-    "eth/data/market-series-observed-139.csv",
-    "eth/data/market-series-observed-14.csv",
-    "eth/data/market-series-observed-140.csv",
-    "eth/data/market-series-observed-141.csv",
-    "eth/data/market-series-observed-142.csv",
-    "eth/data/market-series-observed-143.csv",
-    "eth/data/market-series-observed-144.csv",
-    "eth/data/market-series-observed-145.csv",
-    "eth/data/market-series-observed-146.csv",
-    "eth/data/market-series-observed-147.csv",
-    "eth/data/market-series-observed-148.csv",
-    "eth/data/market-series-observed-149.csv",
-    "eth/data/market-series-observed-15.csv",
-    "eth/data/market-series-observed-150.csv",
-    "eth/data/market-series-observed-151.csv",
-    "eth/data/market-series-observed-152.csv",
-    "eth/data/market-series-observed-153.csv",
-    "eth/data/market-series-observed-154.csv",
-    "eth/data/market-series-observed-155.csv",
-    "eth/data/market-series-observed-156.csv",
-    "eth/data/market-series-observed-157.csv",
-    "eth/data/market-series-observed-158.csv",
-    "eth/data/market-series-observed-159.csv",
-    "eth/data/market-series-observed-16.csv",
-    "eth/data/market-series-observed-160.csv",
-    "eth/data/market-series-observed-161.csv",
-    "eth/data/market-series-observed-162.csv",
-    "eth/data/market-series-observed-163.csv",
-    "eth/data/market-series-observed-164.csv",
-    "eth/data/market-series-observed-165.csv",
-    "eth/data/market-series-observed-166.csv",
-    "eth/data/market-series-observed-167.csv",
-    "eth/data/market-series-observed-168.csv",
-    "eth/data/market-series-observed-169.csv",
-    "eth/data/market-series-observed-17.csv",
-    "eth/data/market-series-observed-170.csv",
-    "eth/data/market-series-observed-171.csv",
-    "eth/data/market-series-observed-172.csv",
-    "eth/data/market-series-observed-173.csv",
-    "eth/data/market-series-observed-174.csv",
-    "eth/data/market-series-observed-175.csv",
-    "eth/data/market-series-observed-176.csv",
-    "eth/data/market-series-observed-177.csv",
-    "eth/data/market-series-observed-178.csv",
-    "eth/data/market-series-observed-179.csv",
-    "eth/data/market-series-observed-18.csv",
-    "eth/data/market-series-observed-180.csv",
-    "eth/data/market-series-observed-181.csv",
-    "eth/data/market-series-observed-182.csv",
-    "eth/data/market-series-observed-183.csv",
-    "eth/data/market-series-observed-184.csv",
-    "eth/data/market-series-observed-185.csv",
-    "eth/data/market-series-observed-186.csv",
-    "eth/data/market-series-observed-187.csv",
-    "eth/data/market-series-observed-188.csv",
-    "eth/data/market-series-observed-189.csv",
-    "eth/data/market-series-observed-19.csv",
-    "eth/data/market-series-observed-190.csv",
-    "eth/data/market-series-observed-191.csv",
-    "eth/data/market-series-observed-192.csv",
-    "eth/data/market-series-observed-193.csv",
-    "eth/data/market-series-observed-194.csv",
-    "eth/data/market-series-observed-195.csv",
-    "eth/data/market-series-observed-196.csv",
-    "eth/data/market-series-observed-197.csv",
-    "eth/data/market-series-observed-198.csv",
-    "eth/data/market-series-observed-199.csv",
-    "eth/data/market-series-observed-2.csv",
-    "eth/data/market-series-observed-20.csv",
-    "eth/data/market-series-observed-200.csv",
-    "eth/data/market-series-observed-201.csv",
-    "eth/data/market-series-observed-202.csv",
-    "eth/data/market-series-observed-203.csv",
-    "eth/data/market-series-observed-204.csv",
-    "eth/data/market-series-observed-205.csv",
-    "eth/data/market-series-observed-206.csv",
-    "eth/data/market-series-observed-207.csv",
-    "eth/data/market-series-observed-208.csv",
-    "eth/data/market-series-observed-209.csv",
-    "eth/data/market-series-observed-21.csv",
-    "eth/data/market-series-observed-210.csv",
-    "eth/data/market-series-observed-211.csv",
-    "eth/data/market-series-observed-212.csv",
-    "eth/data/market-series-observed-213.csv",
-    "eth/data/market-series-observed-214.csv",
-    "eth/data/market-series-observed-215.csv",
-    "eth/data/market-series-observed-216.csv",
-    "eth/data/market-series-observed-217.csv",
-    "eth/data/market-series-observed-218.csv",
-    "eth/data/market-series-observed-219.csv",
-    "eth/data/market-series-observed-22.csv",
-    "eth/data/market-series-observed-220.csv",
-    "eth/data/market-series-observed-221.csv",
-    "eth/data/market-series-observed-222.csv",
-    "eth/data/market-series-observed-223.csv",
-    "eth/data/market-series-observed-224.csv",
-    "eth/data/market-series-observed-225.csv",
-    "eth/data/market-series-observed-226.csv",
-    "eth/data/market-series-observed-227.csv",
-    "eth/data/market-series-observed-228.csv",
-    "eth/data/market-series-observed-229.csv",
-    "eth/data/market-series-observed-23.csv",
-    "eth/data/market-series-observed-230.csv",
-    "eth/data/market-series-observed-231.csv",
-    "eth/data/market-series-observed-232.csv",
-    "eth/data/market-series-observed-233.csv",
-    "eth/data/market-series-observed-234.csv",
-    "eth/data/market-series-observed-235.csv",
-    "eth/data/market-series-observed-236.csv",
-    "eth/data/market-series-observed-237.csv",
-    "eth/data/market-series-observed-238.csv",
-    "eth/data/market-series-observed-239.csv",
-    "eth/data/market-series-observed-24.csv",
-    "eth/data/market-series-observed-240.csv",
-    "eth/data/market-series-observed-241.csv",
-    "eth/data/market-series-observed-242.csv",
-    "eth/data/market-series-observed-243.csv",
-    "eth/data/market-series-observed-244.csv",
-    "eth/data/market-series-observed-245.csv",
-    "eth/data/market-series-observed-246.csv",
-    "eth/data/market-series-observed-247.csv",
-    "eth/data/market-series-observed-248.csv",
-    "eth/data/market-series-observed-249.csv",
-    "eth/data/market-series-observed-25.csv",
-    "eth/data/market-series-observed-250.csv",
-    "eth/data/market-series-observed-251.csv",
-    "eth/data/market-series-observed-252.csv",
-    "eth/data/market-series-observed-253.csv",
-    "eth/data/market-series-observed-254.csv",
-    "eth/data/market-series-observed-255.csv",
-    "eth/data/market-series-observed-26.csv",
-    "eth/data/market-series-observed-27.csv",
-    "eth/data/market-series-observed-28.csv",
-    "eth/data/market-series-observed-29.csv",
-    "eth/data/market-series-observed-3.csv",
-    "eth/data/market-series-observed-30.csv",
-    "eth/data/market-series-observed-31.csv",
-    "eth/data/market-series-observed-32.csv",
-    "eth/data/market-series-observed-33.csv",
-    "eth/data/market-series-observed-34.csv",
-    "eth/data/market-series-observed-35.csv",
-    "eth/data/market-series-observed-36.csv",
-    "eth/data/market-series-observed-37.csv",
-    "eth/data/market-series-observed-38.csv",
-    "eth/data/market-series-observed-39.csv",
-    "eth/data/market-series-observed-4.csv",
-    "eth/data/market-series-observed-40.csv",
-    "eth/data/market-series-observed-41.csv",
-    "eth/data/market-series-observed-42.csv",
-    "eth/data/market-series-observed-43.csv",
-    "eth/data/market-series-observed-44.csv",
-    "eth/data/market-series-observed-45.csv",
-    "eth/data/market-series-observed-46.csv",
-    "eth/data/market-series-observed-47.csv",
-    "eth/data/market-series-observed-48.csv",
-    "eth/data/market-series-observed-49.csv",
-    "eth/data/market-series-observed-5.csv",
-    "eth/data/market-series-observed-50.csv",
-    "eth/data/market-series-observed-51.csv",
-    "eth/data/market-series-observed-52.csv",
-    "eth/data/market-series-observed-53.csv",
-    "eth/data/market-series-observed-54.csv",
-    "eth/data/market-series-observed-55.csv",
-    "eth/data/market-series-observed-56.csv",
-    "eth/data/market-series-observed-57.csv",
-    "eth/data/market-series-observed-58.csv",
-    "eth/data/market-series-observed-59.csv",
-    "eth/data/market-series-observed-6.csv",
-    "eth/data/market-series-observed-60.csv",
-    "eth/data/market-series-observed-61.csv",
-    "eth/data/market-series-observed-62.csv",
-    "eth/data/market-series-observed-63.csv",
-    "eth/data/market-series-observed-64.csv",
-    "eth/data/market-series-observed-65.csv",
-    "eth/data/market-series-observed-66.csv",
-    "eth/data/market-series-observed-67.csv",
-    "eth/data/market-series-observed-68.csv",
-    "eth/data/market-series-observed-69.csv",
-    "eth/data/market-series-observed-7.csv",
-    "eth/data/market-series-observed-70.csv",
-    "eth/data/market-series-observed-71.csv",
-    "eth/data/market-series-observed-72.csv",
-    "eth/data/market-series-observed-73.csv",
-    "eth/data/market-series-observed-74.csv",
-    "eth/data/market-series-observed-75.csv",
-    "eth/data/market-series-observed-76.csv",
-    "eth/data/market-series-observed-77.csv",
-    "eth/data/market-series-observed-78.csv",
-    "eth/data/market-series-observed-79.csv",
-    "eth/data/market-series-observed-8.csv",
-    "eth/data/market-series-observed-80.csv",
-    "eth/data/market-series-observed-81.csv",
-    "eth/data/market-series-observed-82.csv",
-    "eth/data/market-series-observed-83.csv",
-    "eth/data/market-series-observed-84.csv",
-    "eth/data/market-series-observed-85.csv",
-    "eth/data/market-series-observed-86.csv",
-    "eth/data/market-series-observed-87.csv",
-    "eth/data/market-series-observed-88.csv",
-    "eth/data/market-series-observed-89.csv",
-    "eth/data/market-series-observed-9.csv",
-    "eth/data/market-series-observed-90.csv",
-    "eth/data/market-series-observed-91.csv",
-    "eth/data/market-series-observed-92.csv",
-    "eth/data/market-series-observed-93.csv",
-    "eth/data/market-series-observed-94.csv",
-    "eth/data/market-series-observed-95.csv",
-    "eth/data/market-series-observed-96.csv",
-    "eth/data/market-series-observed-97.csv",
-    "eth/data/market-series-observed-98.csv",
-    "eth/data/market-series-observed-99.csv",
-    "eth/data/market_netting_closure.json",
-    "eth/data/market_netting_lp_history.csv",
-    "eth/data/market_netting_lp_monthly.csv",
-    "eth/data/market_netting_roots.csv",
-    "eth/data/market_panel.json",
-    "eth/data/market_panel_chains.csv",
-    "eth/data/market_panel_monthly.csv",
-    "eth/data/market_panel_prices.csv",
-    "eth/data/market_panel_protocols.csv",
-    "eth/data/market_reader_chapter.json",
-    "eth/data/market_summary.json",
-    "eth/data/mono_identity_T.json",
-    "eth/data/morpho_borrower_screen.json",
-    "eth/data/pendle_source_coverage.json",
-    "eth/data/permissions_review_T.json",
-    "eth/data/pools.csv",
-    "eth/data/presentation_analysis.json",
-    "eth/data/presentation_terms_sources.json",
-    "eth/data/product_chapters.json",
-    "eth/data/protocol-aave-v3-history.csv",
-    "eth/data/protocol-aave-v4-history.csv",
-    "eth/data/protocol-across-history.csv",
-    "eth/data/protocol-aerodrome-slipstream-history.csv",
-    "eth/data/protocol-aerodrome-v1-history.csv",
-    "eth/data/protocol-alchemix-v3-history.csv",
-    "eth/data/protocol-ankr-history.csv",
-    "eth/data/protocol-autofinance-history.csv",
-    "eth/data/protocol-balancer-v2-history.csv",
-    "eth/data/protocol-balancer-v3-history.csv",
-    "eth/data/protocol-bancor-v3-history.csv",
-    "eth/data/protocol-bedrock-unieth-history.csv",
-    "eth/data/protocol-beefy-history.csv",
-    "eth/data/protocol-binance-staked-eth-history.csv",
-    "eth/data/protocol-camelot-v2-history.csv",
-    "eth/data/protocol-cian-yield-layer-history.csv",
-    "eth/data/protocol-coinbase-wrapped-staked-eth-history.csv",
-    "eth/data/protocol-compound-v2-history.csv",
-    "eth/data/protocol-compound-v3-history.csv",
-    "eth/data/protocol-concrete-history.csv",
-    "eth/data/protocol-convex-finance-history.csv",
-    "eth/data/protocol-crvusd-history.csv",
-    "eth/data/protocol-curve-dex-history.csv",
-    "eth/data/protocol-dolomite-history.csv",
-    "eth/data/protocol-eigencloud-history.csv",
-    "eth/data/protocol-ekubo-history.csv",
-    "eth/data/protocol-ethena-usde-history.csv",
-    "eth/data/protocol-ether.fi-liquid-history.csv",
-    "eth/data/protocol-ether.fi-stake-history.csv",
-    "eth/data/protocol-euler-v2-history.csv",
-    "eth/data/protocol-exactly-history.csv",
-    "eth/data/protocol-fluid-dex-history.csv",
-    "eth/data/protocol-fluid-lending-history.csv",
-    "eth/data/protocol-fluid-lite-history.csv",
-    "eth/data/protocol-fluxion-network-history.csv",
-    "eth/data/protocol-frankencoin-history.csv",
-    "eth/data/protocol-frax-ether-history.csv",
-    "eth/data/protocol-fusion-by-ipor-history.csv",
-    "eth/data/protocol-gearbox-history.csv",
-    "eth/data/protocol-gmx-v2-perps-history.csv",
-    "eth/data/protocol-harvest-finance-history.csv",
-    "eth/data/protocol-justlend-v1-history.csv",
-    "eth/data/protocol-kelp-history.csv",
-    "eth/data/protocol-lagoon-history.csv",
-    "eth/data/protocol-lido-history.csv",
-    "eth/data/protocol-liquity-v1-history.csv",
-    "eth/data/protocol-liquity-v2-history.csv",
-    "eth/data/protocol-lista-lending-history.csv",
-    "eth/data/protocol-meth-protocol-history.csv",
-    "eth/data/protocol-midas-rwa-history.csv",
-    "eth/data/protocol-morpho-blue-history.csv",
-    "eth/data/protocol-native-credit-pool-history.csv",
-    "eth/data/protocol-origin-arm-history.csv",
-    "eth/data/protocol-origin-ether-history.csv",
-    "eth/data/protocol-pancakeswap-amm-history.csv",
-    "eth/data/protocol-pendle-v2-history.csv",
-    "eth/data/protocol-puffer-stake-history.csv",
-    "eth/data/protocol-quickswap-dex-history.csv",
-    "eth/data/protocol-renzo-history.csv",
-    "eth/data/protocol-reserve-protocol-history.csv",
-    "eth/data/protocol-rocket-pool-history.csv",
-    "eth/data/protocol-sky-lending-history.csv",
-    "eth/data/protocol-spark-savings-history.csv",
-    "eth/data/protocol-sparklend-history.csv",
-    "eth/data/protocol-spectra-v2-history.csv",
-    "eth/data/protocol-stader-history.csv",
-    "eth/data/protocol-stake-dao-yield-history.csv",
-    "eth/data/protocol-stakewise-v3-history.csv",
-    "eth/data/protocol-sushiswap-history.csv",
-    "eth/data/protocol-sushiswap-v3-history.csv",
-    "eth/data/protocol-swell-liquid-restaking-history.csv",
-    "eth/data/protocol-swell-liquid-staking-history.csv",
-    "eth/data/protocol-symbiotic-history.csv",
-    "eth/data/protocol-treehouse-protocol-history.csv",
-    "eth/data/protocol-tydro-history.csv",
-    "eth/data/protocol-uniswap-v2-history.csv",
-    "eth/data/protocol-uniswap-v3-history.csv",
-    "eth/data/protocol-uniswap-v4-history.csv",
-    "eth/data/protocol-upshift-history.csv",
-    "eth/data/protocol-velodrome-v2-history.csv",
-    "eth/data/protocol-velodrome-v3-history.csv",
-    "eth/data/protocol-venus-core-pool-history.csv",
-    "eth/data/protocol-vesper-history.csv",
-    "eth/data/protocol-vvs-standard-history.csv",
-    "eth/data/protocol-yearn-finance-history.csv",
-    "eth/data/protocol-yield-basis-history.csv",
-    "eth/data/protocol-yo-protocol-history.csv",
-    "eth/data/protocol_source_coverage.json",
-    "eth/data/protocols.csv",
-    "eth/data/reference-PROJECT-CODE-INDEX.md",
-    "eth/data/reference-PROJECT-KNOWLEDGE.md",
-    "eth/data/reference-REPORT.md",
-    "eth/data/reference-RESEARCH-PLAN.md",
-    "eth/data/reference-all_captures_manifest.json",
-    "eth/data/reference-build_product_chapters.py",
-    "eth/data/reference-carry_borrow_history.py",
-    "eth/data/reference-carry_economics_build.py",
-    "eth/data/reference-carry_economics_collect.py",
-    "eth/data/reference-carry_economics_verify.py",
-    "eth/data/reference-concrete_holder_distribution_T.json",
-    "eth/data/reference-concrete_roles_rpc.json",
-    "eth/data/reference-controls_rpc.json",
-    "eth/data/reference-credit_expansion_build.py",
-    "eth/data/reference-credit_expansion_capture.py",
-    "eth/data/reference-deep_positions2_rpc.json",
-    "eth/data/reference-deep_positions_rpc.json",
-    "eth/data/reference-demand_and_fee_allocation_T.json",
-    "eth/data/reference-effective_yb_supply_and_meth_cash_T.json",
-    "eth/data/reference-exit_getters_T.json",
-    "eth/data/reference-extra_controls_rpc.json",
-    "eth/data/reference-funding_history_rpc.json",
-    "eth/data/reference-historical_endpoints_Blast.json",
-    "eth/data/reference-history_rpc.json",
-    "eth/data/reference-holder_exits_and_bounded_history_repair_T.json",
-    "eth/data/reference-http_manifest.json",
-    "eth/data/reference-input_funding_atlas-94d1d4e9dc321477.json",
-    "eth/data/reference-liquid_holder_distribution_T.json",
-    "eth/data/reference-liquid_op_holder_distribution_T.json",
-    "eth/data/reference-liquity_holder_distribution_T.json",
-    "eth/data/reference-liquity_wallet_T.json",
-    "eth/data/reference-loan_prices_rpc.json",
-    "eth/data/reference-market_controls_rpc.json",
-    "eth/data/reference-product_chapter_editorial_template.json",
-    "eth/data/reference-requests.jsonl",
-    "eth/data/reference-snapshot_rpc.json",
-    "eth/data/reference-steth_exact_timestamp_benchmark.json",
-    "eth/data/reference-transfer_manifest_op.json",
-    "eth/data/reference-transfer_manifest_retry.json",
-    "eth/data/reference-transfer_manifest_tenderly.json",
-    "eth/data/reference-trove_final_rpc.json",
-    "eth/data/reference-units_buffer_and_yb_history_T.json",
-    "eth/data/reference-yb_actual_loan_state_T.json",
-    "eth/data/reference-yearn_spark_loop_position_T.json",
-    "eth/data/reference-yield_pools-65cd13598ec237ee.json",
-    "eth/data/research_borrowers.json",
-    "eth/data/research_expansion_coverage.json",
-    "eth/data/research_market_chapter.json",
-    "eth/data/rseth_benchmark_rpc.json",
-    "eth/data/strategy_universe_deep.json",
-    "eth/data/strategy_universe_deep_manifest.json",
-    "eth/data/strategy_universe_expansion.json",
-    "eth/data/strategy_universe_expansion_manifest.json",
-    "eth/data/strategy_universe_expansion_pendle_loops.json",
-    "eth/data/strategy_universe_expansion_pendle_registry.json",
-    "eth/data/treehouse_denomination_history.json",
-    "eth/data/wealth-series-0.csv",
-    "eth/data/wealth-series-1.csv",
-    "eth/data/wealth-series-10.csv",
-    "eth/data/wealth-series-11.csv",
-    "eth/data/wealth-series-12.csv",
-    "eth/data/wealth-series-13.csv",
-    "eth/data/wealth-series-14.csv",
-    "eth/data/wealth-series-15.csv",
-    "eth/data/wealth-series-16.csv",
-    "eth/data/wealth-series-17.csv",
-    "eth/data/wealth-series-18.csv",
-    "eth/data/wealth-series-19.csv",
-    "eth/data/wealth-series-2.csv",
-    "eth/data/wealth-series-20.csv",
-    "eth/data/wealth-series-21.csv",
-    "eth/data/wealth-series-22.csv",
-    "eth/data/wealth-series-23.csv",
-    "eth/data/wealth-series-24.csv",
-    "eth/data/wealth-series-25.csv",
-    "eth/data/wealth-series-26.csv",
-    "eth/data/wealth-series-27.csv",
-    "eth/data/wealth-series-28.csv",
-    "eth/data/wealth-series-29.csv",
-    "eth/data/wealth-series-3.csv",
-    "eth/data/wealth-series-30.csv",
-    "eth/data/wealth-series-31.csv",
-    "eth/data/wealth-series-32.csv",
-    "eth/data/wealth-series-33.csv",
-    "eth/data/wealth-series-34.csv",
-    "eth/data/wealth-series-35.csv",
-    "eth/data/wealth-series-36.csv",
-    "eth/data/wealth-series-37.csv",
-    "eth/data/wealth-series-38.csv",
-    "eth/data/wealth-series-39.csv",
-    "eth/data/wealth-series-4.csv",
-    "eth/data/wealth-series-40.csv",
-    "eth/data/wealth-series-41.csv",
-    "eth/data/wealth-series-42.csv",
-    "eth/data/wealth-series-43.csv",
-    "eth/data/wealth-series-44.csv",
-    "eth/data/wealth-series-45.csv",
-    "eth/data/wealth-series-46.csv",
-    "eth/data/wealth-series-47.csv",
-    "eth/data/wealth-series-48.csv",
-    "eth/data/wealth-series-49.csv",
-    "eth/data/wealth-series-5.csv",
-    "eth/data/wealth-series-50.csv",
-    "eth/data/wealth-series-51.csv",
-    "eth/data/wealth-series-52.csv",
-    "eth/data/wealth-series-53.csv",
-    "eth/data/wealth-series-54.csv",
-    "eth/data/wealth-series-55.csv",
-    "eth/data/wealth-series-56.csv",
-    "eth/data/wealth-series-57.csv",
-    "eth/data/wealth-series-58.csv",
-    "eth/data/wealth-series-59.csv",
-    "eth/data/wealth-series-6.csv",
-    "eth/data/wealth-series-60.csv",
-    "eth/data/wealth-series-61.csv",
-    "eth/data/wealth-series-62.csv",
-    "eth/data/wealth-series-63.csv",
-    "eth/data/wealth-series-7.csv",
-    "eth/data/wealth-series-8.csv",
-    "eth/data/wealth-series-9.csv",
-    "eth/data/weth_lending_markets_T.json",
-    "eth/data/weth_lending_summary_T.json",
-    "eth/dossiers/carry-credit.html",
-    "eth/dossiers/cian-rseth.html",
-    "eth/dossiers/concrete-eth.html",
-    "eth/dossiers/ethena-basis.html",
-    "eth/dossiers/etherfi-liquid-eth.html",
-    "eth/dossiers/fluid-lite.html",
-    "eth/dossiers/justlend-tron.html",
-    "eth/dossiers/lending-lp.html",
-    "eth/dossiers/liquid-monad.html",
-    "eth/dossiers/pendle-pt.html",
-    "eth/dossiers/staking-restaking.html",
-    "eth/dossiers/treehouse-teth.html",
-    "eth/exhibits.html",
-    "eth/figures/eth-wealth.png",
-    "eth/figures/eth-wealth.svg",
-    "eth/index.html",
-    "eth/library/AUDIT.html",
-    "eth/library/BORROW-HISTORY.html",
-    "eth/library/BORROWER-USE.html",
-    "eth/library/BRIEFING.html",
-    "eth/library/CAPITAL-INCOME-EXIT.html",
-    "eth/library/CARRY-CATEGORY.html",
-    "eth/library/CARRY-LIFECYCLES.html",
-    "eth/library/CARRY-MATH.html",
-    "eth/library/CARRY-PRODUCTS.html",
-    "eth/library/CARRY-VARIANTS-EXPANSION.html",
-    "eth/library/CREDIT-EXPANSION.html",
-    "eth/library/DEPENDENCIES.html",
-    "eth/library/DOLLAR-FUNDING-ATLAS.html",
-    "eth/library/ECONOMICS.html",
-    "eth/library/EVIDENCE.html",
-    "eth/library/EXECUTION-CHECKLIST.html",
-    "eth/library/HGETH-LOAN-BOOK.html",
-    "eth/library/HISTORY.html",
-    "eth/library/LENDING-MARKETS.html",
-    "eth/library/MARKET-COVERAGE.html",
-    "eth/library/MARKET-RESEARCH.html",
-    "eth/library/MARKET-STRUCTURE.html",
-    "eth/library/MARKET-TABLES.html",
-    "eth/library/MECHANICS.html",
-    "eth/library/PRODUCT-FINANCIAL-HISTORY.html",
-    "eth/library/PRODUCT-SELECTION.html",
-    "eth/library/PRODUCT-TERMS.html",
-    "eth/library/README.html",
-    "eth/library/RESEARCH-PLAN.html",
-    "eth/library/RETURN-DRIVERS.html",
-    "eth/library/SITE-PARITY.html",
-    "eth/library/STRATEGY-UNIVERSE-EXPANSION.html",
-    "eth/library/methodology.html",
-    "eth/library/scope.html",
-    "eth/qa/browser-checks.json",
-    "eth/qa/colleague-readiness.md",
-    "eth/qa/market_audit_results.json",
-    "eth/qa/reader-carry-desktop.jpg",
-    "eth/qa/reader-census-mobile.jpg",
-    "eth/qa/research_closure_audit.json",
-    "eth/qa/site_audit_results.json",
-    "eth/qa/strict_audit_results.json",
-    "eth/site.css"
-  ],
-  "total_bytes": 73191608,
-  "selection": "All presentation HTML, linked local assets/downloads, dynamic CSV exports, figures, and selected presentation QA. No raw collection, source pipeline, data working directory or mirror."
-}
+[
+  {
+    "path": "eth/README.md",
+    "bytes": 11870,
+    "sha256": "143f7571c4ebe8881b86bb8c73e4ca428558f1f23d95a9967d202d5efd7cac31"
+  },
+  {
+    "path": "eth/data/Liquid-ETH-borrow-rates.csv",
+    "bytes": 14855,
+    "sha256": "8d692e5dc0e2c2cc05edb3a5184cff843001514fe9a072e4454d4abf6b746859"
+  },
+  {
+    "path": "eth/data/Liquid-ETH-monthly-history.csv",
+    "bytes": 2298,
+    "sha256": "19cc45992b2086ddf0ca47a7fdd265d5f117858e934e2658535d25c0bbe384d0"
+  },
+  {
+    "path": "eth/data/asset_registry.json",
+    "bytes": 6465,
+    "sha256": "fc224cf7ff79bad99edfca4fb11c92b24fbf5df7e782fa421ba5b79c0585a1b8"
+  },
+  {
+    "path": "eth/data/backing_exit_closure.json",
+    "bytes": 82634,
+    "sha256": "a3747b21b67dee903e029790ce9b934fc14bed8da5735006ed562a2caf52b7f5"
+  },
+  {
+    "path": "eth/data/backing_exit_demands.csv",
+    "bytes": 3758,
+    "sha256": "36b5e3337039641c8b4831c1f869b818d995a71e394c377b8f08efe6fe0f0a6f"
+  },
+  {
+    "path": "eth/data/backing_exit_manifest.json",
+    "bytes": 194762,
+    "sha256": "e60c47d13816051da3347306557b4449701d1817f39943805c57f285b122d9f9"
+  },
+  {
+    "path": "eth/data/basis_closure_disclosures.json",
+    "bytes": 3642,
+    "sha256": "5b14efd43f399f0daf574f42013261872db535c0b301bb7818ff2a4d5da23ac8"
+  },
+  {
+    "path": "eth/data/borrowers.csv",
+    "bytes": 78999,
+    "sha256": "81881609bcc4021d78f8d009f23bbca3d9695a88a863016cc8b9963d8589a94e"
+  },
+  {
+    "path": "eth/data/carry-category-history.csv",
+    "bytes": 21249,
+    "sha256": "725f99c75dc2d1bb06e323dddd18cd357130cef88893e81e775a39d849598b6b"
+  },
+  {
+    "path": "eth/data/carry-history-all-eth.csv",
+    "bytes": 6307,
+    "sha256": "542a5728852d9a2cbdfbfd80087c051996b69f0e480bea7c9701146c281bb88e"
+  },
+  {
+    "path": "eth/data/carry-history-all-usd.csv",
+    "bytes": 6299,
+    "sha256": "c78a6535d26410bb1c75ef47e8bf63c360a631886248dae6bdf15e7e39cdd277"
+  },
+  {
+    "path": "eth/data/carry-history-category-eth.csv",
+    "bytes": 2648,
+    "sha256": "4634c8f10a5629be0c7ab07d6c6798dd110774671f74b4cbcd1321aa792edc1f"
+  },
+  {
+    "path": "eth/data/carry-history-category-usd.csv",
+    "bytes": 2511,
+    "sha256": "3727ef705d11f3028a9f515d48080e757e76cec87ed0f61ac141e1c89bb664a5"
+  },
+  {
+    "path": "eth/data/carry-history-dedicated-eth.csv",
+    "bytes": 4369,
+    "sha256": "6d2cf263c74b5d0fd04884e48b13dcb286a4ada5f0a3acd39ec4f0fea2aa37f0"
+  },
+  {
+    "path": "eth/data/carry-history-dedicated-usd.csv",
+    "bytes": 4388,
+    "sha256": "caac98815c37e42471842c4511d1aefb426aafa373f1b1d71133c53566e13192"
+  },
+  {
+    "path": "eth/data/carry-history-parents-eth.csv",
+    "bytes": 3160,
+    "sha256": "6dc4d295a85dc976b5fdea9a50d4241de6609baf14a815eaa75d3a95b415c571"
+  },
+  {
+    "path": "eth/data/carry-history-parents-usd.csv",
+    "bytes": 3139,
+    "sha256": "45783dd1bdcfece92c93ea50ce474f5acf5e46670256573b5683601e64b99165"
+  },
+  {
+    "path": "eth/data/carry_attribution_borrowing_events.csv",
+    "bytes": 60099,
+    "sha256": "ffe1d1b376c6d65e523bd3d2cbb98a07ef2a2b5d73dd8dea5ef1f9614688a4ec"
+  },
+  {
+    "path": "eth/data/carry_attribution_cash_rewards.csv",
+    "bytes": 43340,
+    "sha256": "8a0c9ad00fc4ffd596e35a8b0e77337bf68da6c5e80b44589a34011fc76a26f4"
+  },
+  {
+    "path": "eth/data/carry_attribution_closure.json",
+    "bytes": 1264530,
+    "sha256": "7796dba62f2a04baf2d7b554d3f46108ab5b4fd119e8a5620a34ed7960564dd2"
+  },
+  {
+    "path": "eth/data/carry_attribution_common_window_claims.csv",
+    "bytes": 2072,
+    "sha256": "a481f0c5adb8fb123001888999c64b5528a1fad3f0bf1cbc74b7a770722b1a30"
+  },
+  {
+    "path": "eth/data/carry_attribution_common_window_components.csv",
+    "bytes": 1901,
+    "sha256": "6790a03e3c973f86df190dbe6169b5594f4439fcafb47fa60a31e02419f3d75f"
+  },
+  {
+    "path": "eth/data/carry_attribution_common_window_debt.csv",
+    "bytes": 2814,
+    "sha256": "48373c61f41b39cc5b641909412e00b28e1f24e1a77f407a8db1fcd501933016"
+  },
+  {
+    "path": "eth/data/carry_attribution_cross_currency_funding_links.csv",
+    "bytes": 19638,
+    "sha256": "3ca68c1b36fcc3dbb43e984832b5e6a28ca8d212676dc8c6a34bda95ac61c2ca"
+  },
+  {
+    "path": "eth/data/carry_attribution_debt_cohorts.csv",
+    "bytes": 50131,
+    "sha256": "3b012f222194ed1d93369a7d578caa6792984f6bb59214ede1846fc7de3ea4f0"
+  },
+  {
+    "path": "eth/data/carry_attribution_destination_events.csv",
+    "bytes": 25892,
+    "sha256": "be6444807949e36d36cdc915cdf7ed2ed625777de2f467c7f39dff2a36f662d0"
+  },
+  {
+    "path": "eth/data/carry_attribution_funding_links.csv",
+    "bytes": 36022,
+    "sha256": "9dff78b0e7dfd85410b5c8ffc58f3f6b113f92a52ec1b1d805f44f5b38a64ce7"
+  },
+  {
+    "path": "eth/data/carry_attribution_ledger.json",
+    "bytes": 425508,
+    "sha256": "c5d6f482db89bcd83baa21e450707a23d090725693334420c51e1c980792ea76"
+  },
+  {
+    "path": "eth/data/carry_attribution_recycling_events.csv",
+    "bytes": 355014,
+    "sha256": "0f9491626c7e5f5379958ee8d5bfef1427e68bec3cf37d7c05990efec06bc5ae"
+  },
+  {
+    "path": "eth/data/carry_borrow_history_crosscheck.json",
+    "bytes": 1453,
+    "sha256": "38e95fcd880c93d8e85f7cb7d9d07b364ec31317e2820b55b254bb5d8daa6764"
+  },
+  {
+    "path": "eth/data/carry_borrow_history_review.json",
+    "bytes": 335,
+    "sha256": "145b767a6c859640c5ba317b83666e8538562831584f6a857af8a020bf0b3084"
+  },
+  {
+    "path": "eth/data/carry_borrow_history_rpc.json",
+    "bytes": 1847719,
+    "sha256": "60d933ee89750c3e5d253c62516e326ced912fe7d60d755f3b814af659667000"
+  },
+  {
+    "path": "eth/data/carry_borrow_rate_history.json",
+    "bytes": 88367,
+    "sha256": "60ab984de707d9ff3bbb0d0f8502a3cc405aed8cbba35a933ee0d9c0cf97ddff"
+  },
+  {
+    "path": "eth/data/carry_category_candidates.json",
+    "bytes": 595447,
+    "sha256": "bf275a641a40f442ebf96d7589a2598490fe75eefac8e86f037221d25cdc4429"
+  },
+  {
+    "path": "eth/data/carry_category_sources.json",
+    "bytes": 19684,
+    "sha256": "afbf93d35d140b6a16b04083e8544f95dfc2d2bddd7c7aa9ede583a0daf88c9b"
+  },
+  {
+    "path": "eth/data/carry_credit_lookthrough.json",
+    "bytes": 12273,
+    "sha256": "acc028addfd6ef31f10a1d8937bff1109621df4899b761a106afc082d14c3340"
+  },
+  {
+    "path": "eth/data/carry_economics_chapter.json",
+    "bytes": 149898,
+    "sha256": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0"
+  },
+  {
+    "path": "eth/data/carry_economics_review.json",
+    "bytes": 2161,
+    "sha256": "05b151f61ffaeb58bcdc2a3b13bdd8d9d363f0e5ae1bb352103c010c8a4d013c"
+  },
+  {
+    "path": "eth/data/carry_variants_expansion.json",
+    "bytes": 114579,
+    "sha256": "fa097029daf954ac3b7d39c1ecfb96148aa7a9b4a0f67a68902f023eeedbed70"
+  },
+  {
+    "path": "eth/data/comparable_ETH_wealth.json",
+    "bytes": 38775,
+    "sha256": "05bef9114a2822ed0551ac4a6c682ae1dddd5e9bab5ade0ebfd4bb0bcc0b35ab"
+  },
+  {
+    "path": "eth/data/concrete_lookthrough_T.json",
+    "bytes": 9221,
+    "sha256": "c7085ae69bfa651bf785594392f8af0c27e6fee625de5c940cc0ca0e0a76603b"
+  },
+  {
+    "path": "eth/data/concrete_self_holdings_T.json",
+    "bytes": 473,
+    "sha256": "4eb7a018c109e587bf156d2323f860ebe4c46566fbe45cedd315738fec4786fa"
+  },
+  {
+    "path": "eth/data/credit_expansion.json",
+    "bytes": 3648151,
+    "sha256": "8dc06d4043f398f19baa0f56281747b566d43eaf83468fe0f1b9f19269c8a9dc"
+  },
+  {
+    "path": "eth/data/credit_expansion_deep.json",
+    "bytes": 648840,
+    "sha256": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0"
+  },
+  {
+    "path": "eth/data/dependency_graph.json",
+    "bytes": 15136,
+    "sha256": "93a5fd39939443207142469cea3461c92a2bbc020f3b6079e26c89a9c3f8e316"
+  },
+  {
+    "path": "eth/data/discovery_summary.json",
+    "bytes": 436,
+    "sha256": "154ebfe41b9225b226143b762e40c92b2cbb4d5c7ef0154d102d61f2afe0192d"
+  },
+  {
+    "path": "eth/data/ethena_ETH_basis_observation.json",
+    "bytes": 1545,
+    "sha256": "e764eadf4b69e52bee915811cc55e33cafa088fdb31214c57886f9bbb0031765"
+  },
+  {
+    "path": "eth/data/etherfi_partial_balance_sheet.json",
+    "bytes": 24237,
+    "sha256": "b49d1da3b68f6ab170c0db1b5eefadc96e5bf8c611a6507f6ff47d6c96c38599"
+  },
+  {
+    "path": "eth/data/etherfi_staking_comparison.json",
+    "bytes": 3755,
+    "sha256": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858"
+  },
+  {
+    "path": "eth/data/etherfi_verified_metrics.json",
+    "bytes": 2859,
+    "sha256": "230b5cf41ea47e057a9c97e5d17053ddb8a41b82421de112ed535edbe33d7e71"
+  },
+  {
+    "path": "eth/data/evidence_ledger.json",
+    "bytes": 130069,
+    "sha256": "53874e487bbcd3a853b390ac48f2371c2b500a9f2112ea56452eba0344b7830e"
+  },
+  {
+    "path": "eth/data/fluid_lite_balance_T.json",
+    "bytes": 2362,
+    "sha256": "874c6fe976d0adb715279fc2a3c968cef3ed8396a91dd1e9c141ec6581844053"
+  },
+  {
+    "path": "eth/data/funding_atlas_chapter.json",
+    "bytes": 2229495,
+    "sha256": "6f9407ec0164945417bbbcb27df4cdf4f11988a5474af5c136fd212f44c36caa"
+  },
+  {
+    "path": "eth/data/funding_atlas_history.csv",
+    "bytes": 31488,
+    "sha256": "29ffdbfbb87e187d3cc689de737e3c57c6a5bca91187cf01dd2761d71e70d96d"
+  },
+  {
+    "path": "eth/data/funding_atlas_reserves.csv",
+    "bytes": 12334,
+    "sha256": "3ce40588699accbffbacf7d62e33eb7554e65c9e63de1790c497b8deb2ffffb5"
+  },
+  {
+    "path": "eth/data/funding_borrower_deep_chapter.json",
+    "bytes": 344972,
+    "sha256": "aa59e43c4d4b0245e42c871127f66099117ed0d1af84be5d912d4fc624530ce7"
+  },
+  {
+    "path": "eth/data/funding_borrower_deep_rankings.csv",
+    "bytes": 5241,
+    "sha256": "c97b5d10f083f19d7208b93bdbfc9331497da75c7f4ad7002876ab0de4df5523"
+  },
+  {
+    "path": "eth/data/justlend_eth_semantics.json",
+    "bytes": 2430,
+    "sha256": "1cdee98d19394536d57d90b57ae14be1f432756e560ba425d41825e2558fa35b"
+  },
+  {
+    "path": "eth/data/lending.csv",
+    "bytes": 1054,
+    "sha256": "5aebbb5c266f45bac7f4868856793d09532af63b8efe77e423576ec097f06cfa"
+  },
+  {
+    "path": "eth/data/lending_reserve_T.json",
+    "bytes": 11283,
+    "sha256": "ffc86faa8a70b82dc55ac06283cf694f3f65a8f6f535963a0e733330938e03e2"
+  },
+  {
+    "path": "eth/data/liquidity-discovery.csv",
+    "bytes": 209607,
+    "sha256": "30111544335f5abc6cfb90eafe04bcce1f788f2a12025a4a327407babcd28656"
+  },
+  {
+    "path": "eth/data/loop_economics_T.json",
+    "bytes": 2126,
+    "sha256": "0dae58e67e616ab6fc9e7d0f0c0799e83882796c71be706db705bde959b22f4d"
+  },
+  {
+    "path": "eth/data/manager_case_capture.json",
+    "bytes": 112874,
+    "sha256": "50dced06d436bb65f766832058222847e5a8f058e697b279f26303e505937634"
+  },
+  {
+    "path": "eth/data/manager_case_chapter.json",
+    "bytes": 5020,
+    "sha256": "516cdd3f8233a44337232e23c2f1f7a4df80e4d22b2137b4e9561479d6a43d04"
+  },
+  {
+    "path": "eth/data/market-chains.csv",
+    "bytes": 3764,
+    "sha256": "6e493d933bfe693ed49f82f1770e4c22c3cd0aa1dc06933691b7eeed7be11526"
+  },
+  {
+    "path": "eth/data/market-history.csv",
+    "bytes": 18559,
+    "sha256": "8b8c8518d18b58c70e8a18e4c7160dfb53d6438d2960765f659ef73a56417c4e"
+  },
+  {
+    "path": "eth/data/market-prices.csv",
+    "bytes": 3751,
+    "sha256": "47d02da983d322b00d6085f2c493e08c21f5b5cc43d7d4ffe6acd3e9c1871d84"
+  },
+  {
+    "path": "eth/data/market-protocols.csv",
+    "bytes": 13038,
+    "sha256": "044ebd278f202bf942fedc28d00ef4839a7e6aaf998c26103364f2cefe7f9144"
+  },
+  {
+    "path": "eth/data/market-series-constant-0.csv",
+    "bytes": 309,
+    "sha256": "556c4be88beb84d0f63c8deffac6c572156568d3ce1a34872fda0a0c2ee38030"
+  },
+  {
+    "path": "eth/data/market-series-constant-1.csv",
+    "bytes": 2272,
+    "sha256": "79791dd6e6c18b0920692493ff0fb1fbf28b48d18efe206c7d5c0ca0cb1e4ef6"
+  },
+  {
+    "path": "eth/data/market-series-constant-10.csv",
+    "bytes": 2365,
+    "sha256": "997abb7adaf84855790b31282e6a7d8bb1523a39dde5c8b788f13f7ec7de8a59"
+  },
+  {
+    "path": "eth/data/market-series-constant-100.csv",
+    "bytes": 6719,
+    "sha256": "0317fa64d01e2070f3d4521896efb64c26efca6bb7d4c5df9ac2e43030b28993"
+  },
+  {
+    "path": "eth/data/market-series-constant-101.csv",
+    "bytes": 8688,
+    "sha256": "9c6c573b1fb4980c42146762dbd5eb2c1d647a5d253c414c59650578343bb441"
+  },
+  {
+    "path": "eth/data/market-series-constant-102.csv",
+    "bytes": 8622,
+    "sha256": "a35b6bfd37055e033c1b4493065c847ce85c4d156e316c90fb95749d959b56fc"
+  },
+  {
+    "path": "eth/data/market-series-constant-103.csv",
+    "bytes": 10617,
+    "sha256": "12c4aa6f4b226d12abe4d4d223837715a5a62c5bc941c2c187a583ee8e91c4a7"
+  },
+  {
+    "path": "eth/data/market-series-constant-104.csv",
+    "bytes": 4999,
+    "sha256": "ac42ba289dd92ea5accbada0d53855f1ec94ac7d6bc0b90e7346d491f64e23d9"
+  },
+  {
+    "path": "eth/data/market-series-constant-105.csv",
+    "bytes": 6941,
+    "sha256": "d347b5fbbbb10db21923d511b55e08b85ea0b622e6804cd500965c9a7c0495c5"
+  },
+  {
+    "path": "eth/data/market-series-constant-106.csv",
+    "bytes": 6897,
+    "sha256": "087974ca6ac98aadc4473ebe24b61f1f48c1f7b1e711b22d93d84d40cd2e2c54"
+  },
+  {
+    "path": "eth/data/market-series-constant-107.csv",
+    "bytes": 8862,
+    "sha256": "6b7d1121d4496e50c32b8724ab3d828ca2d80f3889137c4d18f7386f503dcd21"
+  },
+  {
+    "path": "eth/data/market-series-constant-108.csv",
+    "bytes": 6878,
+    "sha256": "297080cbb2cdcf1095b4fb2e869be191fae71210b146fe24452bfc91d8ff571b"
+  },
+  {
+    "path": "eth/data/market-series-constant-109.csv",
+    "bytes": 8847,
+    "sha256": "600066fd41734a526291200cc53cb4616cc978769c83e888d0933bc7b626fdcc"
+  },
+  {
+    "path": "eth/data/market-series-constant-11.csv",
+    "bytes": 5063,
+    "sha256": "12d5ff5712f0d6af4729706f836db1e5feb116e148890ccce6ba8aebfac68198"
+  },
+  {
+    "path": "eth/data/market-series-constant-110.csv",
+    "bytes": 8781,
+    "sha256": "a9ef5871ee26487ca97258714dcbd157fc84a35d0f165d3a646965cf3cbb5c9f"
+  },
+  {
+    "path": "eth/data/market-series-constant-111.csv",
+    "bytes": 10776,
+    "sha256": "a65b2135f222ab39b541a99951b0aff5c9c385c65bdb75d4312123967d4634ba"
+  },
+  {
+    "path": "eth/data/market-series-constant-112.csv",
+    "bytes": 6759,
+    "sha256": "36d9b67dd2ecd428ec82a06864c00ef8bfa992787e871356711dcbb2f96385cc"
+  },
+  {
+    "path": "eth/data/market-series-constant-113.csv",
+    "bytes": 8712,
+    "sha256": "ef88ff4bece461f06c903f9b3daa9cc13a6916288b8390ee0b0b26e61050764b"
+  },
+  {
+    "path": "eth/data/market-series-constant-114.csv",
+    "bytes": 8666,
+    "sha256": "d5210cd4d4d18bda0bf8913db063d27cf1ce140fb4841b55231d3b2213000ee8"
+  },
+  {
+    "path": "eth/data/market-series-constant-115.csv",
+    "bytes": 10640,
+    "sha256": "42f03ec2a69a0296bcbaf154c2319f86f0548c73587c5c6302a06d2094654766"
+  },
+  {
+    "path": "eth/data/market-series-constant-116.csv",
+    "bytes": 8633,
+    "sha256": "86dbb95948be04e678170b1c57c33ee3a3e0bdc748bb62b9bc121bc3f1ef4282"
+  },
+  {
+    "path": "eth/data/market-series-constant-117.csv",
+    "bytes": 10638,
+    "sha256": "73fbae74c18aa2598bf5c02139fb6769643d25855c6ccca6c69569a19378737f"
+  },
+  {
+    "path": "eth/data/market-series-constant-118.csv",
+    "bytes": 10553,
+    "sha256": "d136efef0c132180f90bfa6801bff3a4f585d81c581fec2c2d3c24ac1d6f3031"
+  },
+  {
+    "path": "eth/data/market-series-constant-119.csv",
+    "bytes": 12568,
+    "sha256": "ad55cbb6de1f2c7c2e9a67e3befd3952348b9d69face90219c9e3dc0711803b7"
+  },
+  {
+    "path": "eth/data/market-series-constant-12.csv",
+    "bytes": 2363,
+    "sha256": "794af357221196fed74b33a1b116b17a6d83ee3cff52996d2a230d7c54be4586"
+  },
+  {
+    "path": "eth/data/market-series-constant-120.csv",
+    "bytes": 6918,
+    "sha256": "80567bfee0484dda51fb9e54be0d25fb60cf1ed81bf1945d348a24e778e7f254"
+  },
+  {
+    "path": "eth/data/market-series-constant-121.csv",
+    "bytes": 8871,
+    "sha256": "b65bdcdb086f9306cbc0f3b064e7df9bda740889a53ec3824dc9da6eaf0297a5"
+  },
+  {
+    "path": "eth/data/market-series-constant-122.csv",
+    "bytes": 8825,
+    "sha256": "ad6343a2e4751399b517ee607bef8b80dd79a502704f3c1e261b325e79f44074"
+  },
+  {
+    "path": "eth/data/market-series-constant-123.csv",
+    "bytes": 10799,
+    "sha256": "fc01dfd19515b02963e33263d978fbf210cd1befea7fabfbbd3435505bf7a817"
+  },
+  {
+    "path": "eth/data/market-series-constant-124.csv",
+    "bytes": 8792,
+    "sha256": "72dcaca66d41ae0bde83a76d653f75f6cab825611d93253c57f10798f9a80258"
+  },
+  {
+    "path": "eth/data/market-series-constant-125.csv",
+    "bytes": 10797,
+    "sha256": "2bfaa558b0fff2dfe09eca28da2d09cb5494b3b295f27e45c4b9ee4b5aa920c5"
+  },
+  {
+    "path": "eth/data/market-series-constant-126.csv",
+    "bytes": 10712,
+    "sha256": "7cfbf78aeff09977724d3cf3882a07720f4297b263761d777e897a11c4ec9065"
+  },
+  {
+    "path": "eth/data/market-series-constant-127.csv",
+    "bytes": 12727,
+    "sha256": "c259b1cf795a506e7acdd9d57b958bd0b788cf0b036c840e3580e67ec724c84b"
+  },
+  {
+    "path": "eth/data/market-series-constant-128.csv",
+    "bytes": 2222,
+    "sha256": "463e152ead367addaca244858090fbd119127d6b3d6af0c06719f5ed0480cefd"
+  },
+  {
+    "path": "eth/data/market-series-constant-129.csv",
+    "bytes": 4867,
+    "sha256": "0ae4596fa52b984d5b1b4a5d035ce60406b824e8e9941f781018e2f15cbdf447"
+  },
+  {
+    "path": "eth/data/market-series-constant-13.csv",
+    "bytes": 5060,
+    "sha256": "4b6517871385e47f7e84f587d8821459f987adcab789e203c54aef72fae782a7"
+  },
+  {
+    "path": "eth/data/market-series-constant-130.csv",
+    "bytes": 4787,
+    "sha256": "71b62f4960f681118e36edac1e76a415e742ab8e6b578497f826e2bdca8c941b"
+  },
+  {
+    "path": "eth/data/market-series-constant-131.csv",
+    "bytes": 6784,
+    "sha256": "d798a4d2d6dba95c444a855963036d0b07d4699054af7c74290ef820dd66e6c1"
+  },
+  {
+    "path": "eth/data/market-series-constant-132.csv",
+    "bytes": 4797,
+    "sha256": "e99372851793d23f41b7003030a74f90afc2b2a74127189c856c16b9a4dca47f"
+  },
+  {
+    "path": "eth/data/market-series-constant-133.csv",
+    "bytes": 6778,
+    "sha256": "4593e7ebc111da10ba74e6710cf1dec01a2e06e974400d1248efab9192cfe007"
+  },
+  {
+    "path": "eth/data/market-series-constant-134.csv",
+    "bytes": 6668,
+    "sha256": "5fee377ed95e176be1bdba826d89d3c66211a4169bec07ce00ea30a98527ede8"
+  },
+  {
+    "path": "eth/data/market-series-constant-135.csv",
+    "bytes": 8696,
+    "sha256": "89deb3c2a76f0d7affe50325cf47bc248657780cacf4958d39fb5e52228eed5b"
+  },
+  {
+    "path": "eth/data/market-series-constant-136.csv",
+    "bytes": 2381,
+    "sha256": "a36843d82dadf7f4979c30b9079ed270be6ef860b462092138f8a0eca6eaac34"
+  },
+  {
+    "path": "eth/data/market-series-constant-137.csv",
+    "bytes": 5026,
+    "sha256": "8b71ac0901b725a1d9aece604d55258b3aa40294653afd88d03f876b5d91b305"
+  },
+  {
+    "path": "eth/data/market-series-constant-138.csv",
+    "bytes": 4946,
+    "sha256": "ccaa0c0d2b262b87144ac5bf0f4dd3417a44ff4b86dd2f2c84ede7362f986af4"
+  },
+  {
+    "path": "eth/data/market-series-constant-139.csv",
+    "bytes": 6943,
+    "sha256": "73fe60ebb1758537eb4f43e86a558280991b497aa7c94ac3b43ec24d2dd906e3"
+  },
+  {
+    "path": "eth/data/market-series-constant-14.csv",
+    "bytes": 4930,
+    "sha256": "3057d11f03a19050fd284e047669e06316c76a9e6cf290be46efb038f077607a"
+  },
+  {
+    "path": "eth/data/market-series-constant-140.csv",
+    "bytes": 4956,
+    "sha256": "9424b1af75dfdb0f0b2af96460f216797e168af33c58cde0605e77b0be674c9b"
+  },
+  {
+    "path": "eth/data/market-series-constant-141.csv",
+    "bytes": 6937,
+    "sha256": "67091f4283cd6a58ec29bd012775fce0c58e1993c5ecb2839a3d68d9106be002"
+  },
+  {
+    "path": "eth/data/market-series-constant-142.csv",
+    "bytes": 6827,
+    "sha256": "8a4127782d8ebba6d72b892edd2f1e68e4cc7c64cc8f22087fd936f9d2c354de"
+  },
+  {
+    "path": "eth/data/market-series-constant-143.csv",
+    "bytes": 8855,
+    "sha256": "b53c55660a4d6e7796b4c2c681dd0579a7f0a5adb42302fd5f70bdf97c3064b9"
+  },
+  {
+    "path": "eth/data/market-series-constant-144.csv",
+    "bytes": 4826,
+    "sha256": "9fdd7c3bd6ab4c12e251f2d6298531811d5d12cf495ca40f4ec54caa043f33d8"
+  },
+  {
+    "path": "eth/data/market-series-constant-145.csv",
+    "bytes": 6822,
+    "sha256": "fe7125f01b24fe90491814d4dbd275ef733311304956cc9bb51d1b4da49a0a3d"
+  },
+  {
+    "path": "eth/data/market-series-constant-146.csv",
+    "bytes": 6699,
+    "sha256": "e87569866703972f2eb0ba33469b843d5b0a8376be4f30ecdcbd05c111d9f237"
+  },
+  {
+    "path": "eth/data/market-series-constant-147.csv",
+    "bytes": 8736,
+    "sha256": "e1355df1749b630496128a34a6927e9713c262385b52bed82090a5961f175737"
+  },
+  {
+    "path": "eth/data/market-series-constant-148.csv",
+    "bytes": 6693,
+    "sha256": "e43073e6a1a1b7c8cbea1d5755b338569cd6956effe6d58fb72975a2251b46b8"
+  },
+  {
+    "path": "eth/data/market-series-constant-149.csv",
+    "bytes": 8730,
+    "sha256": "01760c52aa6a1666f361df7010aba42134484499397dd0249cdb2df41c41bfb6"
+  },
+  {
+    "path": "eth/data/market-series-constant-15.csv",
+    "bytes": 6972,
+    "sha256": "aea57cc5131c02888faba697afb1b65183ede084209892409a65b79711689fc1"
+  },
+  {
+    "path": "eth/data/market-series-constant-150.csv",
+    "bytes": 8546,
+    "sha256": "41bbda1050afef61c839e5ca1ef76d168facdbd1fc493c53bcb5de9225ed246d"
+  },
+  {
+    "path": "eth/data/market-series-constant-151.csv",
+    "bytes": 10634,
+    "sha256": "9bf4be97aa243a6d65684f4e5cf483107256f117785cd29d4c5f8a1b59e8ab45"
+  },
+  {
+    "path": "eth/data/market-series-constant-152.csv",
+    "bytes": 4985,
+    "sha256": "178a72de00058adc202ac51798af0325ba1b0415ba3e38d640e049a4258cbb4f"
+  },
+  {
+    "path": "eth/data/market-series-constant-153.csv",
+    "bytes": 6981,
+    "sha256": "0efe3d42bf01f0b0f71f5496096ea204daa8d765dfe580624632a46da3e437a4"
+  },
+  {
+    "path": "eth/data/market-series-constant-154.csv",
+    "bytes": 6858,
+    "sha256": "40231326c65e9cd86ffedf9686f3e4cd363b9d2b2b344453275879dcfb3e2775"
+  },
+  {
+    "path": "eth/data/market-series-constant-155.csv",
+    "bytes": 8895,
+    "sha256": "6ba804ce0481d4e9e91149fe69fe6600a8c6776d2c46719b4bd7401ee579152f"
+  },
+  {
+    "path": "eth/data/market-series-constant-156.csv",
+    "bytes": 6852,
+    "sha256": "62e71347061231c4e772110a5c09ae062951c2a6e8707401d41c2a6b2a5b9d77"
+  },
+  {
+    "path": "eth/data/market-series-constant-157.csv",
+    "bytes": 8889,
+    "sha256": "367c254801612d5a6223914e08ec84cce312e4b83ba1c24b75931aef571ee349"
+  },
+  {
+    "path": "eth/data/market-series-constant-158.csv",
+    "bytes": 8705,
+    "sha256": "9076e96fe0bb616147789ad4c1181b0d43f8a8fd4ec3ebb33c06159ebd581930"
+  },
+  {
+    "path": "eth/data/market-series-constant-159.csv",
+    "bytes": 10793,
+    "sha256": "5f076647eb90b1d0da8213c4cb102adebdede539d5f41e67d0a67f2bc92c2bcd"
+  },
+  {
+    "path": "eth/data/market-series-constant-16.csv",
+    "bytes": 2190,
+    "sha256": "96487bf736c7353f8ee12fec699979879d1eaa7d30a1c3fcdb887dac33c3472f"
+  },
+  {
+    "path": "eth/data/market-series-constant-160.csv",
+    "bytes": 4796,
+    "sha256": "4abd78a73f0b582e653a5a0929c5e88b126cf058cb24e518a063f1ee76929f74"
+  },
+  {
+    "path": "eth/data/market-series-constant-161.csv",
+    "bytes": 6779,
+    "sha256": "7539b1bcc4c127887b664c1cc4d30a7e3c2c63af724bbdb37645dd43e8aabd16"
+  },
+  {
+    "path": "eth/data/market-series-constant-162.csv",
+    "bytes": 6667,
+    "sha256": "9d5d448ff6edceb347c2d48dfc728227d280ba3f63e7687cb66445e17d3e1fbd"
+  },
+  {
+    "path": "eth/data/market-series-constant-163.csv",
+    "bytes": 8679,
+    "sha256": "07b8a28b02ab583671dd463658ecb878a15ed587779fd9520642099069340b06"
+  },
+  {
+    "path": "eth/data/market-series-constant-164.csv",
+    "bytes": 6648,
+    "sha256": "706f67f4d480cd694c27d9c5ad72909c4b065a32106d22ded664faa176dec5ee"
+  },
+  {
+    "path": "eth/data/market-series-constant-165.csv",
+    "bytes": 8690,
+    "sha256": "a48733c5a4d69a3047add8dd27c5792835aa42444215c713aeed8bb8bfb96b75"
+  },
+  {
+    "path": "eth/data/market-series-constant-166.csv",
+    "bytes": 8518,
+    "sha256": "2d8db7a7d728446e5edb26a7f9d50be1083427da40314646b7a095b2c0dc422b"
+  },
+  {
+    "path": "eth/data/market-series-constant-167.csv",
+    "bytes": 10601,
+    "sha256": "c44a7b2ec8f5c8d935acf95550c3e031ffde100d011d20c38a73fe2668cdcb60"
+  },
+  {
+    "path": "eth/data/market-series-constant-168.csv",
+    "bytes": 4955,
+    "sha256": "de6758204fd50756cbc388327b4aa66f84e763c8d47ebc5d3a736723090c6cdd"
+  },
+  {
+    "path": "eth/data/market-series-constant-169.csv",
+    "bytes": 6938,
+    "sha256": "8d5a205a735d3889399a6064057943da8fe25d362cd1b092b1c7b9f5ffa154fa"
+  },
+  {
+    "path": "eth/data/market-series-constant-17.csv",
+    "bytes": 4934,
+    "sha256": "d7e64c5f862fb6371edf7b888b0b14b3129a547a9f33dbb7029528e079fe3a5f"
+  },
+  {
+    "path": "eth/data/market-series-constant-170.csv",
+    "bytes": 6826,
+    "sha256": "b74279e8519113f2ce6beb466191bb882df77f9c649633b744a56dd8aef9d28e"
+  },
+  {
+    "path": "eth/data/market-series-constant-171.csv",
+    "bytes": 8838,
+    "sha256": "e4ee3d4e6809b773eb72e91a41aa62da26cab47857808697d5a7fa7b4e597c66"
+  },
+  {
+    "path": "eth/data/market-series-constant-172.csv",
+    "bytes": 6807,
+    "sha256": "2ef65efa69299c30d614fe06725f528db0b6db0bee0c1ea8941864ba9a5312da"
+  },
+  {
+    "path": "eth/data/market-series-constant-173.csv",
+    "bytes": 8849,
+    "sha256": "58b8b8e82122221a03b5524e3f17a21a6e73e97e4dbdb3aaa13a8e4376232f2b"
+  },
+  {
+    "path": "eth/data/market-series-constant-174.csv",
+    "bytes": 8677,
+    "sha256": "d866e0d00dfb7467421f53144891e7008dc7723634b895d6272e411052bd662c"
+  },
+  {
+    "path": "eth/data/market-series-constant-175.csv",
+    "bytes": 10760,
+    "sha256": "adaa82649915a86269a223fae5f792f5327763124ba84c11630f5a43a99266db"
+  },
+  {
+    "path": "eth/data/market-series-constant-176.csv",
+    "bytes": 6672,
+    "sha256": "59ca5af232643a11f3f49772ca6cfc4cbbf85fb9c3eec973d44eb8a87f93554c"
+  },
+  {
+    "path": "eth/data/market-series-constant-177.csv",
+    "bytes": 8718,
+    "sha256": "b19a62207509c37f3914781a49ae0478b977b578b45a2704ec49a00a5e0bda70"
+  },
+  {
+    "path": "eth/data/market-series-constant-178.csv",
+    "bytes": 8557,
+    "sha256": "c8e65bb0ce947fee370d798e3cb142db3b7ce173a1a2adec82479fd7bda73b3f"
+  },
+  {
+    "path": "eth/data/market-series-constant-179.csv",
+    "bytes": 10632,
+    "sha256": "eb0dc818b2830c4eb16bd6bd9df121f9a393bef06f486519aaea2952cf2daf27"
+  },
+  {
+    "path": "eth/data/market-series-constant-18.csv",
+    "bytes": 4793,
+    "sha256": "07b8e60bb6381f2b337a948f1979ffc46fe7f50cf1920f13cea226874afc6b61"
+  },
+  {
+    "path": "eth/data/market-series-constant-180.csv",
+    "bytes": 8538,
+    "sha256": "f421293306f29b95ff357e6de6b2a67df3e7fd867ececb69c0e794a9cbf2f404"
+  },
+  {
+    "path": "eth/data/market-series-constant-181.csv",
+    "bytes": 10629,
+    "sha256": "50d1076435ef171130d3de4d8e9c51934a0d7c1618bfdebff988bb1e77878450"
+  },
+  {
+    "path": "eth/data/market-series-constant-182.csv",
+    "bytes": 10418,
+    "sha256": "d5aa4662f898245ff526e506581f6fe7a9eaa38cf681440c5b335bd897d85d3c"
+  },
+  {
+    "path": "eth/data/market-series-constant-183.csv",
+    "bytes": 12540,
+    "sha256": "a146d2a01c1945e2a628c7bf639ffe62516b7d371e70553405bdc6046987a1fc"
+  },
+  {
+    "path": "eth/data/market-series-constant-184.csv",
+    "bytes": 6831,
+    "sha256": "8475a0c1d33c3f0639959b5312eabf2ae764d424dbcbbb290f9f2437cd1cf60e"
+  },
+  {
+    "path": "eth/data/market-series-constant-185.csv",
+    "bytes": 8877,
+    "sha256": "e74253b9751576c2f28e2f4058b83f9638c83797b9d5aaca3b13e90d958bb459"
+  },
+  {
+    "path": "eth/data/market-series-constant-186.csv",
+    "bytes": 8716,
+    "sha256": "6d90de3c136fd156656d79087d54285f8b0cb71486779926d8b502207e998b7f"
+  },
+  {
+    "path": "eth/data/market-series-constant-187.csv",
+    "bytes": 10791,
+    "sha256": "30e89f2ca713ac7ea78cf584e50db98f4be0e7f5796632011a5ac11d3c6580d0"
+  },
+  {
+    "path": "eth/data/market-series-constant-188.csv",
+    "bytes": 8697,
+    "sha256": "91b2ae9ce802a5956ac0b2673a8287913eaf9db5c6c30bb2f1f838afd3b6e1cb"
+  },
+  {
+    "path": "eth/data/market-series-constant-189.csv",
+    "bytes": 10788,
+    "sha256": "1acf7b6735d78dd11b7b757ae33aae3fb36a613ed742ba120b559320ff97c6a0"
+  },
+  {
+    "path": "eth/data/market-series-constant-19.csv",
+    "bytes": 6839,
+    "sha256": "d3cceb1ec227eb2ac86366759c86753b1cc78ea8b41200f847ad5911049795ed"
+  },
+  {
+    "path": "eth/data/market-series-constant-190.csv",
+    "bytes": 10577,
+    "sha256": "6b3cf5edf76c1c8fed67cbee53601a1865f4d7730d3469ec46bf7e5334f2a52a"
+  },
+  {
+    "path": "eth/data/market-series-constant-191.csv",
+    "bytes": 12699,
+    "sha256": "fae4532cfa09e7006bc283299485eadc3938b4e46dce2de743ebc69ed90fea2b"
+  },
+  {
+    "path": "eth/data/market-series-constant-192.csv",
+    "bytes": 4822,
+    "sha256": "14b2655fc91da0bb8572f6f9c94fd387613a5e75c61e40b5dff4d70568c38785"
+  },
+  {
+    "path": "eth/data/market-series-constant-193.csv",
+    "bytes": 6760,
+    "sha256": "dc1ba5e98361ba917fcdbaa62cde894d4d1f2c6297e17f2d8037e3525c51837f"
+  },
+  {
+    "path": "eth/data/market-series-constant-194.csv",
+    "bytes": 6731,
+    "sha256": "d36415b88055c928b48db89e341ce94cb830a2651bd839fcd02fde0b8ec50304"
+  },
+  {
+    "path": "eth/data/market-series-constant-195.csv",
+    "bytes": 8703,
+    "sha256": "5cfe5048c9c38c268234df8ce06de82ad2f783de1177904ce4d43dfbecae4cb3"
+  },
+  {
+    "path": "eth/data/market-series-constant-196.csv",
+    "bytes": 6705,
+    "sha256": "826664ab3486c9d8773005833e440bbbd381ee92446bcf3cee3bc59727a2d812"
+  },
+  {
+    "path": "eth/data/market-series-constant-197.csv",
+    "bytes": 8680,
+    "sha256": "b2a38466647ad6decda1f22d00706bcb5e38fb24ae3e6dc84a8da009ec80eb6b"
+  },
+  {
+    "path": "eth/data/market-series-constant-198.csv",
+    "bytes": 8600,
+    "sha256": "efd5c4d149b3fb0de2531a7f3b17bff24a003c35c96701701fe8b5940bc38f66"
+  },
+  {
+    "path": "eth/data/market-series-constant-199.csv",
+    "bytes": 10612,
+    "sha256": "39ab5cd7def2523ebdb7d18a036d197e02a9deedbff7eafbdca2aea5b3f40929"
+  },
+  {
+    "path": "eth/data/market-series-constant-2.csv",
+    "bytes": 2206,
+    "sha256": "67065c61639651df99117e7aa078fa5e5e03deb6d95d4ebd07a65c16b7a9fb2e"
+  },
+  {
+    "path": "eth/data/market-series-constant-20.csv",
+    "bytes": 4777,
+    "sha256": "24ef1dc5a07964e06e00dd5f615fc67c2c0ad56046ffcce2ec4ed6fcfbe1cb44"
+  },
+  {
+    "path": "eth/data/market-series-constant-200.csv",
+    "bytes": 4981,
+    "sha256": "a8e0244ed9b8579006267921147c5dcea4b3bd47125ea06644b4fcccc9248968"
+  },
+  {
+    "path": "eth/data/market-series-constant-201.csv",
+    "bytes": 6919,
+    "sha256": "c3f498a030c7a3ef0719ccad84d16ed1652127c6f4653e8b191405815715c98f"
+  },
+  {
+    "path": "eth/data/market-series-constant-202.csv",
+    "bytes": 6890,
+    "sha256": "e7796f94d96a0f9b64e84953d219ec839a58d9c5ca9e7d4ffb40fa14cc610497"
+  },
+  {
+    "path": "eth/data/market-series-constant-203.csv",
+    "bytes": 8862,
+    "sha256": "f7e1de1778310e63ae24e143babc0c4381ba19602d04c1837e4a480ebd4f0347"
+  },
+  {
+    "path": "eth/data/market-series-constant-204.csv",
+    "bytes": 6864,
+    "sha256": "a8487fd0a7ea71459a90967d2630a21e4d3a717f16f848b1538bc0b2c1266b64"
+  },
+  {
+    "path": "eth/data/market-series-constant-205.csv",
+    "bytes": 8839,
+    "sha256": "61ef7724a131e256d8df816197bbb56bc9f4907764a5f58e0ef7a9ee568212a1"
+  },
+  {
+    "path": "eth/data/market-series-constant-206.csv",
+    "bytes": 8759,
+    "sha256": "813fe5d80a4f2d3e1038dd4e4f42f8fc5d819a083e64a0e347086942616858eb"
+  },
+  {
+    "path": "eth/data/market-series-constant-207.csv",
+    "bytes": 10771,
+    "sha256": "ef4a06ce42d09257312a799f6e0924dbb94f021b029993b4eca49ec7d043fc01"
+  },
+  {
+    "path": "eth/data/market-series-constant-208.csv",
+    "bytes": 6757,
+    "sha256": "e84f200fc8bb1945d3e6195ba6f3527fc4abd9087e16689a3086735a6a138d6b"
+  },
+  {
+    "path": "eth/data/market-series-constant-209.csv",
+    "bytes": 8711,
+    "sha256": "7fb51bd40b472e397179c3bef1185f5759e55a3fcbfbb1bf92f70b49526cb658"
+  },
+  {
+    "path": "eth/data/market-series-constant-21.csv",
+    "bytes": 6847,
+    "sha256": "d24ac3f3ee5f74063d26b725c5b004fba22ad3ac7e879155130ddef06d457b9b"
+  },
+  {
+    "path": "eth/data/market-series-constant-210.csv",
+    "bytes": 8648,
+    "sha256": "da9ea92870f3fa0e93e453cbe6caf9662c64ec099cc021dad5c4337febeb4ec4"
+  },
+  {
+    "path": "eth/data/market-series-constant-211.csv",
+    "bytes": 10633,
+    "sha256": "918fd1f28e8f2bb5c823c74572022289d5a5ac95f1a0460cf74a35aa7e2c8a32"
+  },
+  {
+    "path": "eth/data/market-series-constant-212.csv",
+    "bytes": 8631,
+    "sha256": "9239630fa18d52965c8bdf9045b2d31f1c161773cbd333d545d3e53cedcb03cb"
+  },
+  {
+    "path": "eth/data/market-series-constant-213.csv",
+    "bytes": 10634,
+    "sha256": "ccfbcc5840cc5519ae5a3427993525dad6ce1b8fa536e0f022aa2f944a225bc6"
+  },
+  {
+    "path": "eth/data/market-series-constant-214.csv",
+    "bytes": 10543,
+    "sha256": "80feb13cb61552909f0f78c7aa21567b9271fb7bd8bdada3f84201aa052267db"
+  },
+  {
+    "path": "eth/data/market-series-constant-215.csv",
+    "bytes": 12545,
+    "sha256": "08120c451f811ebe528f7da4d91db056abb4a8578a353a4eb3c874df35fad230"
+  },
+  {
+    "path": "eth/data/market-series-constant-216.csv",
+    "bytes": 6916,
+    "sha256": "4d0879b00b2a15ec8e2372f81f2a727099c8d360ce1170b30b0fe0472eb4c0e2"
+  },
+  {
+    "path": "eth/data/market-series-constant-217.csv",
+    "bytes": 8870,
+    "sha256": "aa24c5ca5e8f36d884fd171ff69658fb76f9f5ec4e29177eefa98fcdc5985142"
+  },
+  {
+    "path": "eth/data/market-series-constant-218.csv",
+    "bytes": 8807,
+    "sha256": "5e700be0d69795c036fad01aea0ce81c69e5890c3823b80fbc1a2aaf58c1a3f6"
+  },
+  {
+    "path": "eth/data/market-series-constant-219.csv",
+    "bytes": 10792,
+    "sha256": "d5c80f3a65358f7228d6f89df06e71d66148a0a98afb25a45beb64b204e5a3c9"
+  },
+  {
+    "path": "eth/data/market-series-constant-22.csv",
+    "bytes": 6637,
+    "sha256": "447591ff14aced2e669ca47041503d9592c127d49ec92c1b9b59ab7d4a9f0688"
+  },
+  {
+    "path": "eth/data/market-series-constant-220.csv",
+    "bytes": 8790,
+    "sha256": "085bdba859762a613868b0cd13e0324cc59df3d8ad976eb5517b9fb24b6cc9a6"
+  },
+  {
+    "path": "eth/data/market-series-constant-221.csv",
+    "bytes": 10793,
+    "sha256": "0009819c398dc3309907e510767a7929706f1ea1fb14c106281b6341a64d9ee7"
+  },
+  {
+    "path": "eth/data/market-series-constant-222.csv",
+    "bytes": 10702,
+    "sha256": "2a29ee3b7ea4e9286fa226d3554ddcf16c93d1349aaa1f1e44c9ed1df50e3052"
+  },
+  {
+    "path": "eth/data/market-series-constant-223.csv",
+    "bytes": 12704,
+    "sha256": "7948977bf34bac5fee21623aedf14b070cffbaef5b2764659b0d888c5f6a4138"
+  },
+  {
+    "path": "eth/data/market-series-constant-224.csv",
+    "bytes": 6708,
+    "sha256": "72c866d6600c56a7249603acc797e58826486ac5e05a68744cf3cb4f53b0e6fe"
+  },
+  {
+    "path": "eth/data/market-series-constant-225.csv",
+    "bytes": 8675,
+    "sha256": "49845d2a58fdda8d811bf9fb13ec2f235504007638fd980c2f073283bcfdc621"
+  },
+  {
+    "path": "eth/data/market-series-constant-226.csv",
+    "bytes": 8589,
+    "sha256": "a30982f95ee6df614876d6b6734325af33e914317ffa5c1170c892e7f7a0a975"
+  },
+  {
+    "path": "eth/data/market-series-constant-227.csv",
+    "bytes": 10589,
+    "sha256": "89868fccd519553c6d9f68d1d2bf3d1561b200b8664913b00a7c295c82b099ec"
+  },
+  {
+    "path": "eth/data/market-series-constant-228.csv",
+    "bytes": 8584,
+    "sha256": "1aa0d3ba4a6d444e2c46b624d64486727f04cb866754e3dbfd773fdea1ccae89"
+  },
+  {
+    "path": "eth/data/market-series-constant-229.csv",
+    "bytes": 10593,
+    "sha256": "fd819a741ff336051dd5a3c9bfe1e9911d2730fd5cf314de69546f3200f27394"
+  },
+  {
+    "path": "eth/data/market-series-constant-23.csv",
+    "bytes": 8771,
+    "sha256": "87b0d17c0bbf1eacb487b11ee096cbbeb75496c054bf7c20832a59c4bedcd5e4"
+  },
+  {
+    "path": "eth/data/market-series-constant-230.csv",
+    "bytes": 10506,
+    "sha256": "198fb63cd15f9ef704b02f796a67335376b7dde78276ad1bce3a8eaa3186f5ac"
+  },
+  {
+    "path": "eth/data/market-series-constant-231.csv",
+    "bytes": 12514,
+    "sha256": "be36b4efcc17100e4bc21a5ebb077446dc0520b90366b39d6acd2a12c5023aab"
+  },
+  {
+    "path": "eth/data/market-series-constant-232.csv",
+    "bytes": 6867,
+    "sha256": "e281f3451cb65b710f76f07e2ac68edebd3746d262249107b5ecaa0e7d71185d"
+  },
+  {
+    "path": "eth/data/market-series-constant-233.csv",
+    "bytes": 8834,
+    "sha256": "a481d099608328ff5728e1e770e16b2a996ef6d4d69672127a7c53f10422b578"
+  },
+  {
+    "path": "eth/data/market-series-constant-234.csv",
+    "bytes": 8748,
+    "sha256": "9e9808c2090a0d19e42510f8a20e2f0b0951fc3d58030c1dd2a0304e044cc5c3"
+  },
+  {
+    "path": "eth/data/market-series-constant-235.csv",
+    "bytes": 10748,
+    "sha256": "e0480ba3f1ef29909179977a537350494054ddcf9c2c2b92d1ca1f80b9b8d3ad"
+  },
+  {
+    "path": "eth/data/market-series-constant-236.csv",
+    "bytes": 8743,
+    "sha256": "d7ee767bd1cf303c952d1a4511642fd568bf470e019d2f0e5fa1965f3bab16be"
+  },
+  {
+    "path": "eth/data/market-series-constant-237.csv",
+    "bytes": 10752,
+    "sha256": "160976e518cd926172f2676516551c296d77445b7dba38bf2fbe0fa5f3e55b86"
+  },
+  {
+    "path": "eth/data/market-series-constant-238.csv",
+    "bytes": 10665,
+    "sha256": "1dbb8537af0e627fd1b24a8ed59bb46d3fe3c3c613417682a4c093faf925c152"
+  },
+  {
+    "path": "eth/data/market-series-constant-239.csv",
+    "bytes": 12673,
+    "sha256": "dcc82e4aaa5e99ecea1bc86066f98ec4a1bc51f2ce56430b7d86ea1d725189dd"
+  },
+  {
+    "path": "eth/data/market-series-constant-24.csv",
+    "bytes": 2349,
+    "sha256": "a86a5a193543a75aa7c6e3e5a3fbc22188a12223a448ef3e50a3dce84f54edb8"
+  },
+  {
+    "path": "eth/data/market-series-constant-240.csv",
+    "bytes": 8629,
+    "sha256": "f595ca4b805e30eeb3305bbca0590edf8e48fd53362ba313f712dbfdfa3c6c67"
+  },
+  {
+    "path": "eth/data/market-series-constant-241.csv",
+    "bytes": 10622,
+    "sha256": "4c6d0dfbc8f203bd438896c0cb85e6c9fd09da25c42e9d9937606c0cfa732e6d"
+  },
+  {
+    "path": "eth/data/market-series-constant-242.csv",
+    "bytes": 10524,
+    "sha256": "fd9c7413295a08029e4290aa8423f6bb2b49810067c982616b58e5d9c5dac864"
+  },
+  {
+    "path": "eth/data/market-series-constant-243.csv",
+    "bytes": 12542,
+    "sha256": "6349ef21c48e653e557a546def59fe59923983eea69566fa06a2f6e780a8338d"
+  },
+  {
+    "path": "eth/data/market-series-constant-244.csv",
+    "bytes": 10530,
+    "sha256": "2881beacb4bb6d1000af062f95614021cbec00f9bc57baef1ccaf703336775f8"
+  },
+  {
+    "path": "eth/data/market-series-constant-245.csv",
+    "bytes": 12524,
+    "sha256": "b00372ce2983861922b7888d36df227c0888ed0de5715f779161d8d114b045dd"
+  },
+  {
+    "path": "eth/data/market-series-constant-246.csv",
+    "bytes": 12406,
+    "sha256": "91a7ea0f0f5027a9e0df3c5088c4278e5ac9d621efcdbefe71be15b023d6a5f0"
+  },
+  {
+    "path": "eth/data/market-series-constant-247.csv",
+    "bytes": 14482,
+    "sha256": "e0bdaa0aa4da56881adbeb8c4cc3b155942a4a3c1ac4557593272ed83985307a"
+  },
+  {
+    "path": "eth/data/market-series-constant-248.csv",
+    "bytes": 8788,
+    "sha256": "43899949fba49da738225ce937c3bcb45f3dcc81dc1fabb868490a360841f60a"
+  },
+  {
+    "path": "eth/data/market-series-constant-249.csv",
+    "bytes": 10781,
+    "sha256": "a7805979335bdcbe8a3137e2ee5e5953024968bdbe4a720b06cd0f32eecce648"
+  },
+  {
+    "path": "eth/data/market-series-constant-25.csv",
+    "bytes": 5093,
+    "sha256": "e95c462b090c7fcaa56ec1d51aa1b447942f1d4b6400b5bd15ce4858f9f93546"
+  },
+  {
+    "path": "eth/data/market-series-constant-250.csv",
+    "bytes": 10683,
+    "sha256": "d05d3aff324d4da56a567590b4c596290862d38826cc20eee982cd5f157d565a"
+  },
+  {
+    "path": "eth/data/market-series-constant-251.csv",
+    "bytes": 12701,
+    "sha256": "ea15b8b61ba2d7b063ee85ddaf4fc31d5de0467df6900667b15b17ae646cb3a3"
+  },
+  {
+    "path": "eth/data/market-series-constant-252.csv",
+    "bytes": 10689,
+    "sha256": "b595e22d92215892726b793a0a17da2cba277467759cb6477568c921c8970b89"
+  },
+  {
+    "path": "eth/data/market-series-constant-253.csv",
+    "bytes": 12683,
+    "sha256": "43ae9642067af922d4b2f1153fc45198c8fe7dc6267f8faaf93e7130ca71e1bf"
+  },
+  {
+    "path": "eth/data/market-series-constant-254.csv",
+    "bytes": 12565,
+    "sha256": "19915d7c7556775ea001831d7caaf05a0a28ca4dea074786d78098c5bb5e63e0"
+  },
+  {
+    "path": "eth/data/market-series-constant-255.csv",
+    "bytes": 14641,
+    "sha256": "db1a7c396f727c655769fed595d0a4b83d0b1a82b69daf842b2248ad5bcac0ad"
+  },
+  {
+    "path": "eth/data/market-series-constant-26.csv",
+    "bytes": 4952,
+    "sha256": "d3dd5096af1759899a4456d49bf2cfeb6e1e84d339bb033751807c018721d4b6"
+  },
+  {
+    "path": "eth/data/market-series-constant-27.csv",
+    "bytes": 6998,
+    "sha256": "62ce4be57964fd6fb13972904b1ba40034f718ac1373006ce0b3dcbdad98d769"
+  },
+  {
+    "path": "eth/data/market-series-constant-28.csv",
+    "bytes": 4936,
+    "sha256": "250384785a145ab4ee83283091fc547d2779ea3360d1fcaced580869f0dfcfa9"
+  },
+  {
+    "path": "eth/data/market-series-constant-29.csv",
+    "bytes": 7006,
+    "sha256": "ba48839abc3494b5d9d9323f56a4d43408efb9520a6a88c01af8164e4cbed089"
+  },
+  {
+    "path": "eth/data/market-series-constant-3.csv",
+    "bytes": 4904,
+    "sha256": "debe4ee227cf4d0a02a2f16277bd08ac55eca7806c7283211064e2f4b065b6e2"
+  },
+  {
+    "path": "eth/data/market-series-constant-30.csv",
+    "bytes": 6796,
+    "sha256": "7fef5436995b4ef4035cd558bcf1267862b7518b5964a2a41c0aa2b0802d4e5a"
+  },
+  {
+    "path": "eth/data/market-series-constant-31.csv",
+    "bytes": 8930,
+    "sha256": "34f3abb7f9930219e65a46fb726cdb87e15d7ee95bf3b16a02ba8a9b0f250f89"
+  },
+  {
+    "path": "eth/data/market-series-constant-32.csv",
+    "bytes": 2204,
+    "sha256": "8f8713df650f666c477a59766ef3d4c7bf32093499e7ed3a3798198b51b7d032"
+  },
+  {
+    "path": "eth/data/market-series-constant-33.csv",
+    "bytes": 4892,
+    "sha256": "b58127d4dbbff0a54504a0231128a86f9d09af6381896abd301393045d39d69d"
+  },
+  {
+    "path": "eth/data/market-series-constant-34.csv",
+    "bytes": 4754,
+    "sha256": "17e16c86c51213c8e228340d1b59bc5148d441cdf2f6ff3c0cd358621b74f098"
+  },
+  {
+    "path": "eth/data/market-series-constant-35.csv",
+    "bytes": 6803,
+    "sha256": "bf4b70012e8d23aef5573f19592fd65b39a18b55ec5bb487e9ebaaaaff516a5a"
+  },
+  {
+    "path": "eth/data/market-series-constant-36.csv",
+    "bytes": 4760,
+    "sha256": "9df51a43d65a9a18e03b14d9c31c95a301a6470e91c5766c915b81fc0538fc05"
+  },
+  {
+    "path": "eth/data/market-series-constant-37.csv",
+    "bytes": 6809,
+    "sha256": "6a3089e5447108fc34ac949fc0fcb443c97d8c83f68f680d9eb590357473e631"
+  },
+  {
+    "path": "eth/data/market-series-constant-38.csv",
+    "bytes": 6617,
+    "sha256": "a5bdc92e13b3bf907563f19814a54d3e3f152aeeb1c4a0d98ea9c016351e0037"
+  },
+  {
+    "path": "eth/data/market-series-constant-39.csv",
+    "bytes": 8703,
+    "sha256": "0cc70e9c97926fcdba08ff3d4a76c5f4ebb0865abd5cf7c6f1b74a05ab9a896c"
+  },
+  {
+    "path": "eth/data/market-series-constant-4.csv",
+    "bytes": 2204,
+    "sha256": "dab356cc6ef90223de7fab1ba43e19667cc34d6525747d1bd954c314357f90f3"
+  },
+  {
+    "path": "eth/data/market-series-constant-40.csv",
+    "bytes": 2363,
+    "sha256": "a033cf34b0dedee43cec98f59794dbafdef2186fcf4d935d5cdb342704cbbaed"
+  },
+  {
+    "path": "eth/data/market-series-constant-41.csv",
+    "bytes": 5051,
+    "sha256": "2dd56b63d97964a3d5c878016df592537d1ef3964fb57f717ab3574711efbae8"
+  },
+  {
+    "path": "eth/data/market-series-constant-42.csv",
+    "bytes": 4913,
+    "sha256": "8c4b13bbccf2922028c7b397fe8af0e6b9e0d4846a07c0b01eec9419cf88f62d"
+  },
+  {
+    "path": "eth/data/market-series-constant-43.csv",
+    "bytes": 6962,
+    "sha256": "dda734c50f5278069d2f21ecd0e8d103f23e9d2cca76e9087dab3ad9f5c0e9a6"
+  },
+  {
+    "path": "eth/data/market-series-constant-44.csv",
+    "bytes": 4919,
+    "sha256": "7d0b63d22d54dc128727ca82788052202fe676329dce30c146934bc3297ceba2"
+  },
+  {
+    "path": "eth/data/market-series-constant-45.csv",
+    "bytes": 6968,
+    "sha256": "d15da5a1747f18f68447c64445397bb2f9b3174ea04f3ca70c1dbc6f06909ea3"
+  },
+  {
+    "path": "eth/data/market-series-constant-46.csv",
+    "bytes": 6776,
+    "sha256": "c477b78ad869856cd13e46227f7590452c59f8e1a0ecc9cdaa954482f580d384"
+  },
+  {
+    "path": "eth/data/market-series-constant-47.csv",
+    "bytes": 8862,
+    "sha256": "70d4f5c9ad15382cc847eba02c1fe4342041492b594e98cdda7bc48bc8797680"
+  },
+  {
+    "path": "eth/data/market-series-constant-48.csv",
+    "bytes": 4779,
+    "sha256": "282c535e10af6ea4e7076bf7fb685fc6db2b0026dc4188ab54283cfa02acaa25"
+  },
+  {
+    "path": "eth/data/market-series-constant-49.csv",
+    "bytes": 6838,
+    "sha256": "2d53e67d163d203f834bb0dab44554c382aa256b5260c94d651e7fc3b6931e4b"
+  },
+  {
+    "path": "eth/data/market-series-constant-5.csv",
+    "bytes": 4901,
+    "sha256": "bf8f014d7546cf5015098c19fa369bf6bc838011f9fc9be5dc187cef842085a4"
+  },
+  {
+    "path": "eth/data/market-series-constant-50.csv",
+    "bytes": 6652,
+    "sha256": "10b7dd34e21c4c48026072db5ac0ad653be0f711befc3b13f67b73a7cb056a3d"
+  },
+  {
+    "path": "eth/data/market-series-constant-51.csv",
+    "bytes": 8763,
+    "sha256": "0c078382087d249a55f50db3dd16d366206467c50efb9b424360665c66d97afb"
+  },
+  {
+    "path": "eth/data/market-series-constant-52.csv",
+    "bytes": 6640,
+    "sha256": "04b3f326e967220fe6edd048cac280fedd88d83531aa51a886593377ae619c90"
+  },
+  {
+    "path": "eth/data/market-series-constant-53.csv",
+    "bytes": 8756,
+    "sha256": "c7fdd046b9a0faeb47fa519b3f2f46a74b3397f03871643a94b1c533ccd8138c"
+  },
+  {
+    "path": "eth/data/market-series-constant-54.csv",
+    "bytes": 8525,
+    "sha256": "4cc1df719425a7561d93c101c2321068bd95215ef4f3c6517ed5f5fedafa0156"
+  },
+  {
+    "path": "eth/data/market-series-constant-55.csv",
+    "bytes": 10658,
+    "sha256": "f7f8b1affebdb6461ebd49bd7ca7bde3e57289ceff46c40f59a90a7360aa6125"
+  },
+  {
+    "path": "eth/data/market-series-constant-56.csv",
+    "bytes": 4938,
+    "sha256": "38463648d6605b4886af055e9843dc64000fae624eb56d8e8493581e51bb3bfb"
+  },
+  {
+    "path": "eth/data/market-series-constant-57.csv",
+    "bytes": 6997,
+    "sha256": "1aa8dfc506581af65282ffaa948454afc9799c37a6cd31b2dd0d35ce68e391a1"
+  },
+  {
+    "path": "eth/data/market-series-constant-58.csv",
+    "bytes": 6811,
+    "sha256": "1b0fc972e837912c860664423523f18d7f9bd20c45a72c76dda4a847289597e2"
+  },
+  {
+    "path": "eth/data/market-series-constant-59.csv",
+    "bytes": 8922,
+    "sha256": "1a4d3a03d140e0beff74102cb242027fc631d48711ade072dd3e0bed73e63c0b"
+  },
+  {
+    "path": "eth/data/market-series-constant-6.csv",
+    "bytes": 4771,
+    "sha256": "c8f9885a76e24a86bd8356cbc72d1ad0630f5b180011aa2a09c84ab55d7d69d5"
+  },
+  {
+    "path": "eth/data/market-series-constant-60.csv",
+    "bytes": 6799,
+    "sha256": "f90e1b3b7be80e83e3fed31f26c9f39e583c3a3b2e3716f20216bbfd406e06e5"
+  },
+  {
+    "path": "eth/data/market-series-constant-61.csv",
+    "bytes": 8915,
+    "sha256": "6d9d4ef2da2de4214f0ea16684a096ab3c4d48701da42e7247cea58c40ef9f30"
+  },
+  {
+    "path": "eth/data/market-series-constant-62.csv",
+    "bytes": 8684,
+    "sha256": "7b029f8285cddaecdaaa811fc66f49cc2f038cc5c7e9c7f99127a74031daf8d4"
+  },
+  {
+    "path": "eth/data/market-series-constant-63.csv",
+    "bytes": 10817,
+    "sha256": "e59303b55d4c56a852995b81bd6d44892de06711d2c4284d0eadeb71c33e3fa4"
+  },
+  {
+    "path": "eth/data/market-series-constant-64.csv",
+    "bytes": 2248,
+    "sha256": "e0f01529c3f796098cd413fafcce4a55a10ef05fcc2ede0da086cc937e9932c8"
+  },
+  {
+    "path": "eth/data/market-series-constant-65.csv",
+    "bytes": 4865,
+    "sha256": "c97ad942ea94cf70a3ae03512715b948e8f7b2878a312ff4b5342299427498c4"
+  },
+  {
+    "path": "eth/data/market-series-constant-66.csv",
+    "bytes": 4868,
+    "sha256": "107bb70b7a9d7690305ce1a2cf04f56351cb7344f44752fcdc8355ff849e3616"
+  },
+  {
+    "path": "eth/data/market-series-constant-67.csv",
+    "bytes": 6808,
+    "sha256": "4e25e496b8b1362567d106cec0185f9922323e6e28b524debeb579ef68326921"
+  },
+  {
+    "path": "eth/data/market-series-constant-68.csv",
+    "bytes": 4853,
+    "sha256": "61679a7c71cc93864fdd71ff42aaaf817642e5fb8fd74411da3a5dd50bcde23f"
+  },
+  {
+    "path": "eth/data/market-series-constant-69.csv",
+    "bytes": 6781,
+    "sha256": "50639e31fe33029d3426b91acfd9e406e32942604184137aab19d4e2adaaa637"
+  },
+  {
+    "path": "eth/data/market-series-constant-7.csv",
+    "bytes": 6813,
+    "sha256": "386501868742c0d89dd3f8b822bca6fb7e76c68a39bc99b1fb3c0bf5b67d5f0e"
+  },
+  {
+    "path": "eth/data/market-series-constant-70.csv",
+    "bytes": 6761,
+    "sha256": "32b1dd9d03bcf8a58af9922b2331729b08f848da8c8b8400d571179b00d69e30"
+  },
+  {
+    "path": "eth/data/market-series-constant-71.csv",
+    "bytes": 8689,
+    "sha256": "6dc1ae1bfc03cb0458e56b15e12282420f21c835b993259ac941f1db4cb48370"
+  },
+  {
+    "path": "eth/data/market-series-constant-72.csv",
+    "bytes": 2407,
+    "sha256": "c3cb07813ce5ea46a1ed0af0f16f92bd2193d202050da5accc6d283105d06874"
+  },
+  {
+    "path": "eth/data/market-series-constant-73.csv",
+    "bytes": 5024,
+    "sha256": "b411f71ca7ca95f34e3cf377521bdd55e57f75193f7e7dc43cf67e77878588c4"
+  },
+  {
+    "path": "eth/data/market-series-constant-74.csv",
+    "bytes": 5027,
+    "sha256": "17a803eb8491afa0606aabf4fc96ef91e3522005bc41ed0ba3f2ed922e157c8a"
+  },
+  {
+    "path": "eth/data/market-series-constant-75.csv",
+    "bytes": 6967,
+    "sha256": "eb514db182651cc10c5531f195607677a8d930719cf247d7bcd7bc2b32c21614"
+  },
+  {
+    "path": "eth/data/market-series-constant-76.csv",
+    "bytes": 5012,
+    "sha256": "f0f1fcc2a4de1eba881da5566c023cc179db564b203f485c671b61a431deb031"
+  },
+  {
+    "path": "eth/data/market-series-constant-77.csv",
+    "bytes": 6940,
+    "sha256": "e09a7903bd7385da817cc3579502069eebff538178a41e6c87d99e1257ee60f4"
+  },
+  {
+    "path": "eth/data/market-series-constant-78.csv",
+    "bytes": 6920,
+    "sha256": "6c2c0f87666ba9967c2092c705b5beaf5a02977e50e939de373748bed92f580e"
+  },
+  {
+    "path": "eth/data/market-series-constant-79.csv",
+    "bytes": 8848,
+    "sha256": "cea5f98a2c25eb5942ef8f5c07cc8345be56dd0c0fdd6fa52b00b5435f00f897"
+  },
+  {
+    "path": "eth/data/market-series-constant-8.csv",
+    "bytes": 468,
+    "sha256": "5107cee37f11fe0e714281125cac9d67d615e05eaac0ffcd891edb868be5fd7d"
+  },
+  {
+    "path": "eth/data/market-series-constant-80.csv",
+    "bytes": 4883,
+    "sha256": "69f858841cfb11107c8ace89181e0cc0c814bb2356087fc1cf0d763242956d08"
+  },
+  {
+    "path": "eth/data/market-series-constant-81.csv",
+    "bytes": 6812,
+    "sha256": "eb737349a72952be1299f82fba631ef50d971038e5149774c7c3d37c6596fc46"
+  },
+  {
+    "path": "eth/data/market-series-constant-82.csv",
+    "bytes": 6793,
+    "sha256": "d3c4e5cf45ed81feae4688b9fc7d74c3925aafcd18c6122e566888bf09fed660"
+  },
+  {
+    "path": "eth/data/market-series-constant-83.csv",
+    "bytes": 8735,
+    "sha256": "f02855cd0274663cb102f43757f2ee3097023c565fbbea0c22931ce82d13ce70"
+  },
+  {
+    "path": "eth/data/market-series-constant-84.csv",
+    "bytes": 6766,
+    "sha256": "902d5250de40016ec856752f2eda5205034bfb98c6f0bc1cedc4fb1ff0b44330"
+  },
+  {
+    "path": "eth/data/market-series-constant-85.csv",
+    "bytes": 8725,
+    "sha256": "092f8a17abab5ab356c1b6ce2fb2b0530f13e03cfb071277da5d8678f1210723"
+  },
+  {
+    "path": "eth/data/market-series-constant-86.csv",
+    "bytes": 8682,
+    "sha256": "16bdf7b0a38033b10cafee93ef050d55eea0f1c7ca9f7c2183b1f563d7ab3b5e"
+  },
+  {
+    "path": "eth/data/market-series-constant-87.csv",
+    "bytes": 10650,
+    "sha256": "523e867f9d02dce798afdf16a11e3f1f2c2de053b027e0c2cec2fed6096f92b6"
+  },
+  {
+    "path": "eth/data/market-series-constant-88.csv",
+    "bytes": 5042,
+    "sha256": "b5db83c580ba1cbcb2f2af478d1d5d568aa13554d05e720a553a2bc61ae6d53b"
+  },
+  {
+    "path": "eth/data/market-series-constant-89.csv",
+    "bytes": 6971,
+    "sha256": "33e58cdcc82d43e2d0f7ad21136c6af09186e74a46f891ffc6304ec54a92ecc1"
+  },
+  {
+    "path": "eth/data/market-series-constant-9.csv",
+    "bytes": 2431,
+    "sha256": "99cb7061855a592386fb91bf293e79eda47121fba15fe144fd49d8515267bc0e"
+  },
+  {
+    "path": "eth/data/market-series-constant-90.csv",
+    "bytes": 6952,
+    "sha256": "8c5b4e78fdab949bb9f46ba177b7ccdb19e1b857f8ea2f3e12031baadeab5dd2"
+  },
+  {
+    "path": "eth/data/market-series-constant-91.csv",
+    "bytes": 8894,
+    "sha256": "8e1e83cedd38c4c1093d434ef26e0a79bcd722ecea2806bf202e62e930820b2e"
+  },
+  {
+    "path": "eth/data/market-series-constant-92.csv",
+    "bytes": 6925,
+    "sha256": "ac1e700960b4a3bc5e7aa7de37267a71687df670354de2b3e2a9367cda2bb954"
+  },
+  {
+    "path": "eth/data/market-series-constant-93.csv",
+    "bytes": 8884,
+    "sha256": "23565745c08f71d691a10cc0aab99391cba0f02f35bb1059579d0adcba5b1b37"
+  },
+  {
+    "path": "eth/data/market-series-constant-94.csv",
+    "bytes": 8841,
+    "sha256": "91be502fd094c76e4599f1ccac49b2ccfbdb2c23b7be3bc3abf0cd1286ed8bb2"
+  },
+  {
+    "path": "eth/data/market-series-constant-95.csv",
+    "bytes": 10809,
+    "sha256": "bcf9286441679e2866faf78a051983d01dd681c689db5835ab048f90e7ecf01c"
+  },
+  {
+    "path": "eth/data/market-series-constant-96.csv",
+    "bytes": 4840,
+    "sha256": "6fa9c0d1da6998e5a89bc5b074b74132fc94ae6cd8ee442848a864d0b2812988"
+  },
+  {
+    "path": "eth/data/market-series-constant-97.csv",
+    "bytes": 6782,
+    "sha256": "586464b12299107fcd42964e38070cb797eb372cd6721a2a17554e4278d60037"
+  },
+  {
+    "path": "eth/data/market-series-constant-98.csv",
+    "bytes": 6738,
+    "sha256": "9446a89d7c3580e70f2ca6cef2577bd2e596264d4b1dac6139976e8814ac4ad7"
+  },
+  {
+    "path": "eth/data/market-series-constant-99.csv",
+    "bytes": 8703,
+    "sha256": "71359e892ecce8ac9b7429fa2a649368c9351ed54da38c1a03adac69d61b661e"
+  },
+  {
+    "path": "eth/data/market-series-observed-0.csv",
+    "bytes": 309,
+    "sha256": "556c4be88beb84d0f63c8deffac6c572156568d3ce1a34872fda0a0c2ee38030"
+  },
+  {
+    "path": "eth/data/market-series-observed-1.csv",
+    "bytes": 2272,
+    "sha256": "79791dd6e6c18b0920692493ff0fb1fbf28b48d18efe206c7d5c0ca0cb1e4ef6"
+  },
+  {
+    "path": "eth/data/market-series-observed-10.csv",
+    "bytes": 2365,
+    "sha256": "997abb7adaf84855790b31282e6a7d8bb1523a39dde5c8b788f13f7ec7de8a59"
+  },
+  {
+    "path": "eth/data/market-series-observed-100.csv",
+    "bytes": 6711,
+    "sha256": "cfd5916a452d5f66f8b13d19d22c3ecc311d364a9edf5bd630876692af9f99d5"
+  },
+  {
+    "path": "eth/data/market-series-observed-101.csv",
+    "bytes": 8691,
+    "sha256": "37c48ad6b8dbbe48f8a14734f2bbeda357aae9eabb3588d879b0e8da35ca2876"
+  },
+  {
+    "path": "eth/data/market-series-observed-102.csv",
+    "bytes": 8603,
+    "sha256": "4a79c3ee619359dceb661001ea41c6989c80c436f38f694f775974286ed678df"
+  },
+  {
+    "path": "eth/data/market-series-observed-103.csv",
+    "bytes": 10618,
+    "sha256": "bba45725d4a5eeace8e50f1d93bf4c6ce9920589b73d5a3e32e1c98e076a0118"
+  },
+  {
+    "path": "eth/data/market-series-observed-104.csv",
+    "bytes": 4999,
+    "sha256": "54778b34086e1a734b72256fe5a8d6f023ec085b0ab835c0bb67b76f89b7ddd7"
+  },
+  {
+    "path": "eth/data/market-series-observed-105.csv",
+    "bytes": 6927,
+    "sha256": "f781c32b230aca73d23a8c61c60c0510fda50ac21d28d257c34b31130dbe7460"
+  },
+  {
+    "path": "eth/data/market-series-observed-106.csv",
+    "bytes": 6892,
+    "sha256": "6a47c0c0394562ed405e1177400ebb91443536377830409504118407d2817959"
+  },
+  {
+    "path": "eth/data/market-series-observed-107.csv",
+    "bytes": 8852,
+    "sha256": "be4e3b72e723db83402cd767e4fc2d28b8cd0d0e4a1265d16318f80ec901c5c4"
+  },
+  {
+    "path": "eth/data/market-series-observed-108.csv",
+    "bytes": 6870,
+    "sha256": "1eaff9d359d475df09234af1b991391980b05a75eb4033ef12dc559974307d4c"
+  },
+  {
+    "path": "eth/data/market-series-observed-109.csv",
+    "bytes": 8850,
+    "sha256": "4fee609a77dfad841909e6976764faa77873fc2eacdcd2161f75d579a4aa5dc2"
+  },
+  {
+    "path": "eth/data/market-series-observed-11.csv",
+    "bytes": 5063,
+    "sha256": "12d5ff5712f0d6af4729706f836db1e5feb116e148890ccce6ba8aebfac68198"
+  },
+  {
+    "path": "eth/data/market-series-observed-110.csv",
+    "bytes": 8762,
+    "sha256": "0f30e829ac5fc3d6a9fff64cd05a2036314c57b835323cf39c06e2047a77295f"
+  },
+  {
+    "path": "eth/data/market-series-observed-111.csv",
+    "bytes": 10777,
+    "sha256": "80bffaa2080781a7e884b51fee240480a7c6d2962728bad6f4eef725f5852e62"
+  },
+  {
+    "path": "eth/data/market-series-observed-112.csv",
+    "bytes": 6763,
+    "sha256": "1d4a7feb6940ecedcc3ccbf9975bdc0c059c3b9ed257fb2819187356e05298d8"
+  },
+  {
+    "path": "eth/data/market-series-observed-113.csv",
+    "bytes": 8726,
+    "sha256": "a4a0194e758ed8cb03f630a1d6c278db60d580da77c5c197f926c54e2d084a20"
+  },
+  {
+    "path": "eth/data/market-series-observed-114.csv",
+    "bytes": 8673,
+    "sha256": "fe9c000229108c2750ad80dcca24dcc01a6507f5e31922dd19b7cb1d5fb5d8ab"
+  },
+  {
+    "path": "eth/data/market-series-observed-115.csv",
+    "bytes": 10627,
+    "sha256": "a59cc82461702427093101150d7fe2ce3b39fa851149ec74eed5f692a05cbbd1"
+  },
+  {
+    "path": "eth/data/market-series-observed-116.csv",
+    "bytes": 8651,
+    "sha256": "ab4b38e7cc42083217e9003ba0c42f5dcd0f26e0c2ddf96715801cf25b686ad8"
+  },
+  {
+    "path": "eth/data/market-series-observed-117.csv",
+    "bytes": 10629,
+    "sha256": "d8ae778945c50fcc2160b33b20a161aeeb938b3f60f2679dd4f23381db4ea218"
+  },
+  {
+    "path": "eth/data/market-series-observed-118.csv",
+    "bytes": 10537,
+    "sha256": "d9500c82c4b19c449d732ef005dea7cb87062f7509aad63d95e30ef587f7c00a"
+  },
+  {
+    "path": "eth/data/market-series-observed-119.csv",
+    "bytes": 12540,
+    "sha256": "43bcdef207b0b603e50d7b50b594a7cc33862c52c7554b454af1a5374dd91c77"
+  },
+  {
+    "path": "eth/data/market-series-observed-12.csv",
+    "bytes": 2377,
+    "sha256": "b5189131a523cf0824ab4de5933b066160bc6c14c9e0f90ca78ec1da00e4c328"
+  },
+  {
+    "path": "eth/data/market-series-observed-120.csv",
+    "bytes": 6922,
+    "sha256": "342dc6050316bd31a13b09fa146ec7e50339f5bd3b8c63771dd65b1ca706cb36"
+  },
+  {
+    "path": "eth/data/market-series-observed-121.csv",
+    "bytes": 8885,
+    "sha256": "af61aff3f051c7df60b16acc87b3a570d77beca24ccb64eb66cfdf7221cd19b5"
+  },
+  {
+    "path": "eth/data/market-series-observed-122.csv",
+    "bytes": 8832,
+    "sha256": "87f9161ab34e3ddf90475bed4a07a5599ffbdbcdc69a8d5f1d2aae3f7e8ef36a"
+  },
+  {
+    "path": "eth/data/market-series-observed-123.csv",
+    "bytes": 10786,
+    "sha256": "b70037aa7eea5693740b0fa32e1433b7a5668788a14c07a80b82771b0a050b39"
+  },
+  {
+    "path": "eth/data/market-series-observed-124.csv",
+    "bytes": 8810,
+    "sha256": "a51cdeb70aad490f12183217f0cea7c4539eb84fb84dcb0a89fe39f54715630e"
+  },
+  {
+    "path": "eth/data/market-series-observed-125.csv",
+    "bytes": 10788,
+    "sha256": "7d532f8e3ff9d27179d246380dab5716ee2c58a3b1fc77fd92ba525d3a680909"
+  },
+  {
+    "path": "eth/data/market-series-observed-126.csv",
+    "bytes": 10696,
+    "sha256": "461c5d08ba0ffcc66b0c1792df82157d35e6dd58e47b457fe0be2f5824e77e84"
+  },
+  {
+    "path": "eth/data/market-series-observed-127.csv",
+    "bytes": 12699,
+    "sha256": "8f7aedda81fe8d758cc4269c70cea9633383e1eef1255b8f8de14f641f811048"
+  },
+  {
+    "path": "eth/data/market-series-observed-128.csv",
+    "bytes": 2216,
+    "sha256": "2daa80b5a1783caba5b85522edf63f36ccd66cb982583f24ea04663af87930ae"
+  },
+  {
+    "path": "eth/data/market-series-observed-129.csv",
+    "bytes": 4874,
+    "sha256": "317320069e7ad9a351c8b5c571408ab4a7af15919a8eb1e70dc3e983b235065c"
+  },
+  {
+    "path": "eth/data/market-series-observed-13.csv",
+    "bytes": 5067,
+    "sha256": "49aee1c755ab742d90c54813c75c3e8bacfafd03da0b9a7a8d206a06726ea4ff"
+  },
+  {
+    "path": "eth/data/market-series-observed-130.csv",
+    "bytes": 4804,
+    "sha256": "1ae6b60d15b914d973da3be339fec5b079d1b702247d05a6a3233419aa654f42"
+  },
+  {
+    "path": "eth/data/market-series-observed-131.csv",
+    "bytes": 6781,
+    "sha256": "a4adb2d799e86966f467ff4457f9810b88c462f2f64afb3f1d520b2d1d67d1ec"
+  },
+  {
+    "path": "eth/data/market-series-observed-132.csv",
+    "bytes": 4793,
+    "sha256": "a51d48fd9ec4bdb86e65e5907d94597de84e68ee5c6a0a3779ff16d27876f1a6"
+  },
+  {
+    "path": "eth/data/market-series-observed-133.csv",
+    "bytes": 6769,
+    "sha256": "c82c8d015ab1a6b8391c7826fa3ea97a1bb98a2d14314f92f91673045e30063c"
+  },
+  {
+    "path": "eth/data/market-series-observed-134.csv",
+    "bytes": 6669,
+    "sha256": "dbb45e1e2a649449ecc0d478b588d1c6e788ca8fd75c33635f1e4f179063fb43"
+  },
+  {
+    "path": "eth/data/market-series-observed-135.csv",
+    "bytes": 8708,
+    "sha256": "02ab13bfec807489ca1d6fd56b530f359d695a5bb1a2545ba0a31235bf6a9926"
+  },
+  {
+    "path": "eth/data/market-series-observed-136.csv",
+    "bytes": 2375,
+    "sha256": "29ed6ee108f519b0c426ae3f6e4b07c7f4ee77075f2f72296797b4b1e76c3109"
+  },
+  {
+    "path": "eth/data/market-series-observed-137.csv",
+    "bytes": 5033,
+    "sha256": "25bf1bbd36bf60197996173092a024940c9fd2721aa3bb3749cf6d7157be21ad"
+  },
+  {
+    "path": "eth/data/market-series-observed-138.csv",
+    "bytes": 4963,
+    "sha256": "12141715ee436c745eca0ed716a6389bd422c769bfd3fe8047f2a9b12f8a0950"
+  },
+  {
+    "path": "eth/data/market-series-observed-139.csv",
+    "bytes": 6940,
+    "sha256": "00a7cb4a27aeedc1e0783eae44fd3b88191a71cc8abb1cac5eaa5e489e8467ac"
+  },
+  {
+    "path": "eth/data/market-series-observed-14.csv",
+    "bytes": 4945,
+    "sha256": "a3d2d05e4b12681f21a48f5a36f5a1c3686b02adb01b2ebda1276d4ff0d4e608"
+  },
+  {
+    "path": "eth/data/market-series-observed-140.csv",
+    "bytes": 4952,
+    "sha256": "5997878729f90c567e966ea4cdd95bb86881bcb7fb798092df2dc9900c99787b"
+  },
+  {
+    "path": "eth/data/market-series-observed-141.csv",
+    "bytes": 6928,
+    "sha256": "60e69919e991714ecbe32d3d8cdbfd43a081e96a009e1309aa5dcb2d1921e1b2"
+  },
+  {
+    "path": "eth/data/market-series-observed-142.csv",
+    "bytes": 6828,
+    "sha256": "04fe801f1c6086c9f795d16606ef76971f1bf6f2adde74db6dfc5ac9e6f67d92"
+  },
+  {
+    "path": "eth/data/market-series-observed-143.csv",
+    "bytes": 8867,
+    "sha256": "8b22d03845203148600b36eb8cad5476fdc6655bdbed6cc8813c1f3b83cc053d"
+  },
+  {
+    "path": "eth/data/market-series-observed-144.csv",
+    "bytes": 4827,
+    "sha256": "2e41698341fae1195f50ac5fcc46cc10f1732bdbafd9ab8c78e558f9e071848e"
+  },
+  {
+    "path": "eth/data/market-series-observed-145.csv",
+    "bytes": 6809,
+    "sha256": "c76ed12c852f32b7f744aef44bbb117e0f4c0390170bc055c4a83b01a1291573"
+  },
+  {
+    "path": "eth/data/market-series-observed-146.csv",
+    "bytes": 6702,
+    "sha256": "7f1561242ac92c697addd46db354e30ae21be0cdd9753ad54479a697cd5df043"
+  },
+  {
+    "path": "eth/data/market-series-observed-147.csv",
+    "bytes": 8725,
+    "sha256": "3522e574080f74aaa32522e364982bb2dbb07343967c3bd3a6aa05e249418c2f"
+  },
+  {
+    "path": "eth/data/market-series-observed-148.csv",
+    "bytes": 6692,
+    "sha256": "f142d078d5e9de0764e3da35a61f42ed61fa89793a23ae72e016c8d292ac7ddc"
+  },
+  {
+    "path": "eth/data/market-series-observed-149.csv",
+    "bytes": 8724,
+    "sha256": "b61cfcc5aa630328f440acbcabf2d9ceb94dca0c10608766a959fef7f2dc0bb6"
+  },
+  {
+    "path": "eth/data/market-series-observed-15.csv",
+    "bytes": 6975,
+    "sha256": "b0e196e652a9396abf63677adcc0dd8173481d2ce3c2face2a56f581d92e78d6"
+  },
+  {
+    "path": "eth/data/market-series-observed-150.csv",
+    "bytes": 8555,
+    "sha256": "6394a900668c0f783d1e843de3d1bbe58dfe5c55a2c56092c589796c513310b2"
+  },
+  {
+    "path": "eth/data/market-series-observed-151.csv",
+    "bytes": 10653,
+    "sha256": "d4619948afdb341a6653eddf20987fc6263a39d1dc310db8fd7b66db7a157ea1"
+  },
+  {
+    "path": "eth/data/market-series-observed-152.csv",
+    "bytes": 4986,
+    "sha256": "323cf232d298dc99c4e44c5bdf52ac0067afd1f1651df4ac5941065fca0486a3"
+  },
+  {
+    "path": "eth/data/market-series-observed-153.csv",
+    "bytes": 6968,
+    "sha256": "53527944b607816ac5a9741abe7147323ee9232ea16f043d000fbed7069c83ff"
+  },
+  {
+    "path": "eth/data/market-series-observed-154.csv",
+    "bytes": 6861,
+    "sha256": "e5e3c37a3db3f719c3f6ff7c3a59a8bf30020f0c17d379850935de8a4504cfd0"
+  },
+  {
+    "path": "eth/data/market-series-observed-155.csv",
+    "bytes": 8884,
+    "sha256": "0e6067c7469963179293aa06f4b34bb273940782098982779b75bf6efa65cdc1"
+  },
+  {
+    "path": "eth/data/market-series-observed-156.csv",
+    "bytes": 6851,
+    "sha256": "e3f28662ac86b8642a061e8e3c6788ba591ba3da21a528b14c6fff65818f0883"
+  },
+  {
+    "path": "eth/data/market-series-observed-157.csv",
+    "bytes": 8883,
+    "sha256": "9e26c460a0a1abd764ecd8b68061618ff22804ad7a5db3830a94fc8794c21122"
+  },
+  {
+    "path": "eth/data/market-series-observed-158.csv",
+    "bytes": 8714,
+    "sha256": "b88f83e2624a0ed6f7c9a7ad37b5823234283f25c8641c8c77ca897570c0e1dd"
+  },
+  {
+    "path": "eth/data/market-series-observed-159.csv",
+    "bytes": 10812,
+    "sha256": "22f7bf5608a908ff6461b9974837bbd718381f4332745799bb16c7d6cf40effc"
+  },
+  {
+    "path": "eth/data/market-series-observed-16.csv",
+    "bytes": 2190,
+    "sha256": "96487bf736c7353f8ee12fec699979879d1eaa7d30a1c3fcdb887dac33c3472f"
+  },
+  {
+    "path": "eth/data/market-series-observed-160.csv",
+    "bytes": 4796,
+    "sha256": "e75c636706bbaa014025086ade3409dc42b84c794fe390d7b01bf77f32b85385"
+  },
+  {
+    "path": "eth/data/market-series-observed-161.csv",
+    "bytes": 6759,
+    "sha256": "2bcce07e47f093c7e0deeeec1dfcb421a63a5a59eb6ae506fd496478a9cc22f2"
+  },
+  {
+    "path": "eth/data/market-series-observed-162.csv",
+    "bytes": 6650,
+    "sha256": "ba1dbefe3e6cb621c73adbd6b7c83fd452dddf79c22c7a7e8525b19bf59552e7"
+  },
+  {
+    "path": "eth/data/market-series-observed-163.csv",
+    "bytes": 8695,
+    "sha256": "6464340a98fd9d8bee5dbf17750651ae970a66ef461fbfa8a3c914e532f5834c"
+  },
+  {
+    "path": "eth/data/market-series-observed-164.csv",
+    "bytes": 6647,
+    "sha256": "d894837d8afa8287eedf46d8f163e41261ac4f495ec8a6955403f13012cc47a7"
+  },
+  {
+    "path": "eth/data/market-series-observed-165.csv",
+    "bytes": 8676,
+    "sha256": "7fe3acb95e829e6ccf5b11cc0bcb251a181f65eea7d85625947f6b4ac92f6b96"
+  },
+  {
+    "path": "eth/data/market-series-observed-166.csv",
+    "bytes": 8529,
+    "sha256": "b892ccfc1d8bb3d50bd0fdc59a88d9ca21dbb5d71d6273c74e766bb967195925"
+  },
+  {
+    "path": "eth/data/market-series-observed-167.csv",
+    "bytes": 10600,
+    "sha256": "677d2f8033513dcb88a9e64723fa8b6f16f90b6525f2968809f4b9fccf2f7b6e"
+  },
+  {
+    "path": "eth/data/market-series-observed-168.csv",
+    "bytes": 4955,
+    "sha256": "46ccbc599ce904dc6ed0f00b0f6d52dc013429e92882e248f31b5115b8a7ccbc"
+  },
+  {
+    "path": "eth/data/market-series-observed-169.csv",
+    "bytes": 6918,
+    "sha256": "fadf70dd823ee0de0ddde50ac6e7eef34ddbb46ea4ef935bf91ab55ab02da702"
+  },
+  {
+    "path": "eth/data/market-series-observed-17.csv",
+    "bytes": 4934,
+    "sha256": "d7e64c5f862fb6371edf7b888b0b14b3129a547a9f33dbb7029528e079fe3a5f"
+  },
+  {
+    "path": "eth/data/market-series-observed-170.csv",
+    "bytes": 6809,
+    "sha256": "be046f66f07939618f9ccf762bb7ee49141f40970fb1f6827ac897d6f74e75ee"
+  },
+  {
+    "path": "eth/data/market-series-observed-171.csv",
+    "bytes": 8854,
+    "sha256": "2ba4ba08d4bc5afc1660d80f02d71b89f912296d11f099725f9c1d9093cfad86"
+  },
+  {
+    "path": "eth/data/market-series-observed-172.csv",
+    "bytes": 6806,
+    "sha256": "883a968af8788f59dd7c35247a8fed498da835315bb17822fd6d6c12cfdce244"
+  },
+  {
+    "path": "eth/data/market-series-observed-173.csv",
+    "bytes": 8835,
+    "sha256": "f8411757341769c8e9076c2d58f9e977c0a09b4c8f60dd94f1c516d02aa3f4da"
+  },
+  {
+    "path": "eth/data/market-series-observed-174.csv",
+    "bytes": 8688,
+    "sha256": "c7b5ecf6aad21901a2cabaffc243c8f940a7dcb0fb3f0b8d8a8124838dab82d9"
+  },
+  {
+    "path": "eth/data/market-series-observed-175.csv",
+    "bytes": 10759,
+    "sha256": "0bf1d02ff51841fcd12ebf7e6173cb3224910818ca12db837d89a33669b70947"
+  },
+  {
+    "path": "eth/data/market-series-observed-176.csv",
+    "bytes": 6672,
+    "sha256": "a7772e43a78a298cae7a6788f31565d6dbb43b10f052b514f6d00237c7455e04"
+  },
+  {
+    "path": "eth/data/market-series-observed-177.csv",
+    "bytes": 8725,
+    "sha256": "1bf8cf4e08fe1fbf226b41d155fa3f78c381ca132b9620f52becebb2eb9a6b56"
+  },
+  {
+    "path": "eth/data/market-series-observed-178.csv",
+    "bytes": 8530,
+    "sha256": "a557a8e0d74f04be8d8a95715ea59129aa6054df656ccecd5eed3ef147da3ca4"
+  },
+  {
+    "path": "eth/data/market-series-observed-179.csv",
+    "bytes": 10633,
+    "sha256": "1f3b4d24bd0924be725cf93339e651cad80d710d7b8c7ab73914a6fb199e813c"
+  },
+  {
+    "path": "eth/data/market-series-observed-18.csv",
+    "bytes": 4793,
+    "sha256": "07b8e60bb6381f2b337a948f1979ffc46fe7f50cf1920f13cea226874afc6b61"
+  },
+  {
+    "path": "eth/data/market-series-observed-180.csv",
+    "bytes": 8541,
+    "sha256": "0bc0e35b764171d58e542c0568474a8469f55706b99ad00cf6114b3f49fd7177"
+  },
+  {
+    "path": "eth/data/market-series-observed-181.csv",
+    "bytes": 10636,
+    "sha256": "9aae68af1636a857f86738238fc6c31fd3ee9e53afd5b6806a3053574192e736"
+  },
+  {
+    "path": "eth/data/market-series-observed-182.csv",
+    "bytes": 10433,
+    "sha256": "e131f43c9eda96397e2eca54428eb16752506caa5c27f1e5be46c574aa14c235"
+  },
+  {
+    "path": "eth/data/market-series-observed-183.csv",
+    "bytes": 12534,
+    "sha256": "5e7ad6d348e140a5b2add6a5eb00d3a2d438053ab50278ea55893e2a86628f45"
+  },
+  {
+    "path": "eth/data/market-series-observed-184.csv",
+    "bytes": 6831,
+    "sha256": "7c4a558ff1e07acd95eb3c41ada697e50cbdbed440848a926e458ea28e61aa00"
+  },
+  {
+    "path": "eth/data/market-series-observed-185.csv",
+    "bytes": 8884,
+    "sha256": "a10bbd30d2014bec9612bfd1a46c277b77bc041b26575427e95f914e8bbdbc86"
+  },
+  {
+    "path": "eth/data/market-series-observed-186.csv",
+    "bytes": 8689,
+    "sha256": "62b586e3f54010a2c5091422b622aae3f590c4eba3532359b74dfa16e767f7f1"
+  },
+  {
+    "path": "eth/data/market-series-observed-187.csv",
+    "bytes": 10792,
+    "sha256": "469484ab1595b587d289c1ec5d109fd4059a75f5321d074c297405b9b677e207"
+  },
+  {
+    "path": "eth/data/market-series-observed-188.csv",
+    "bytes": 8700,
+    "sha256": "866fc52ed9e18634de102eafe59ec92ff6d39411f2f96cee1fbc9a5eab263c07"
+  },
+  {
+    "path": "eth/data/market-series-observed-189.csv",
+    "bytes": 10795,
+    "sha256": "e5bd723755b4d63c866f3ea8de8d14047ae151fd9143d1cb7ba5d5d35cec95f7"
+  },
+  {
+    "path": "eth/data/market-series-observed-19.csv",
+    "bytes": 6839,
+    "sha256": "d3cceb1ec227eb2ac86366759c86753b1cc78ea8b41200f847ad5911049795ed"
+  },
+  {
+    "path": "eth/data/market-series-observed-190.csv",
+    "bytes": 10592,
+    "sha256": "338b229563901995ed10b71ab861620cf3c8d83877649e61258ebafc5ac34838"
+  },
+  {
+    "path": "eth/data/market-series-observed-191.csv",
+    "bytes": 12693,
+    "sha256": "6b2dd97090ac3de94b4a7abaa0ccca4c89283ecb7d81af9cb0c34259a26b3134"
+  },
+  {
+    "path": "eth/data/market-series-observed-192.csv",
+    "bytes": 4827,
+    "sha256": "86efc161fdbf8a8f7be6bea911a8fb3b4cf095cead5c173998405cc19ee8d597"
+  },
+  {
+    "path": "eth/data/market-series-observed-193.csv",
+    "bytes": 6755,
+    "sha256": "c39f9b0f6431848fc88d4fa2cdc8a6aab139f030ff78d3e9386303fcefdc41cc"
+  },
+  {
+    "path": "eth/data/market-series-observed-194.csv",
+    "bytes": 6732,
+    "sha256": "f8981e48137adf943368703f98c68d7f639773a9eced497b162d2826b55862d5"
+  },
+  {
+    "path": "eth/data/market-series-observed-195.csv",
+    "bytes": 8687,
+    "sha256": "b517d61961fbbb7bf8ab68d48d450f2a6e4b2a955fae75b62be7665e38048843"
+  },
+  {
+    "path": "eth/data/market-series-observed-196.csv",
+    "bytes": 6706,
+    "sha256": "ec7bd878b40af5812b02112ae76b521a9986585b7421b3aa27f57f7867d83e14"
+  },
+  {
+    "path": "eth/data/market-series-observed-197.csv",
+    "bytes": 8661,
+    "sha256": "08075cddef69e9c022be485046454dd386b09b6d2ad8ece575dd5dc8cf4e4406"
+  },
+  {
+    "path": "eth/data/market-series-observed-198.csv",
+    "bytes": 8603,
+    "sha256": "c6d3cf9570252db0f4f1889e5ed98552be6af2007e27d1bdc593e74a6b8c21c7"
+  },
+  {
+    "path": "eth/data/market-series-observed-199.csv",
+    "bytes": 10598,
+    "sha256": "1d1a71c43a7427fae30ea73b0cf7d12ec69a30d9d5fc4d8848255f062b89508a"
+  },
+  {
+    "path": "eth/data/market-series-observed-2.csv",
+    "bytes": 2206,
+    "sha256": "67065c61639651df99117e7aa078fa5e5e03deb6d95d4ebd07a65c16b7a9fb2e"
+  },
+  {
+    "path": "eth/data/market-series-observed-20.csv",
+    "bytes": 4807,
+    "sha256": "94bb177f60cff02db2b31c7e6cb8dd4686a33767434540268081e878d6321978"
+  },
+  {
+    "path": "eth/data/market-series-observed-200.csv",
+    "bytes": 4986,
+    "sha256": "b41603ea36478ea3c73f19631e8006220ef9d8362a7b10246be0485704423dbd"
+  },
+  {
+    "path": "eth/data/market-series-observed-201.csv",
+    "bytes": 6914,
+    "sha256": "ffe2be740372ae602ac3a47e50596ab89aa1aa6e3a27100197da02a92b0d2834"
+  },
+  {
+    "path": "eth/data/market-series-observed-202.csv",
+    "bytes": 6891,
+    "sha256": "73294b4d35bfc484e028340ab48414f0d9ca008c38290881c61445c39ddfb465"
+  },
+  {
+    "path": "eth/data/market-series-observed-203.csv",
+    "bytes": 8846,
+    "sha256": "c71bcbfcaf27d3837099ba2b10da6ceae7b5234c5a55d1b474097f9d3b958431"
+  },
+  {
+    "path": "eth/data/market-series-observed-204.csv",
+    "bytes": 6865,
+    "sha256": "6b5dc97f91896d18ebb056acf645bcce70c39a4a4142e5a6ada85ee2ba7b1291"
+  },
+  {
+    "path": "eth/data/market-series-observed-205.csv",
+    "bytes": 8820,
+    "sha256": "adc8ab49922bea5ac5cf6dded58abb522673b6511c10efda2ac1cb0d67387b9f"
+  },
+  {
+    "path": "eth/data/market-series-observed-206.csv",
+    "bytes": 8762,
+    "sha256": "1dd620df23b67ed0a68c55466b49b1949bc9c09f27b6c36cda2d670765fb3cde"
+  },
+  {
+    "path": "eth/data/market-series-observed-207.csv",
+    "bytes": 10757,
+    "sha256": "8ae59cd24e79c57eeebe84c88051981df2738bc6bc006971e11b3ad9d07dbd8c"
+  },
+  {
+    "path": "eth/data/market-series-observed-208.csv",
+    "bytes": 6742,
+    "sha256": "d3fca8f4e7e063acdbb9a179b85905657468844cc1aed7282de376fbada14b10"
+  },
+  {
+    "path": "eth/data/market-series-observed-209.csv",
+    "bytes": 8701,
+    "sha256": "e8a9ad662b5d4ae10437cce5d29f0f6fb91ec7007f1211a6278fa1ad968d2455"
+  },
+  {
+    "path": "eth/data/market-series-observed-21.csv",
+    "bytes": 6841,
+    "sha256": "c382cb3854df5619317bcd2d1c6f6fc33af37361c1fcc15c3c095e34926aa7e9"
+  },
+  {
+    "path": "eth/data/market-series-observed-210.csv",
+    "bytes": 8659,
+    "sha256": "f9684695cc371d8d46f4bfcab6f0e64a3a609dac9010513d0c6bf37494095f78"
+  },
+  {
+    "path": "eth/data/market-series-observed-211.csv",
+    "bytes": 10629,
+    "sha256": "be023bd26a3f5000b5ac79c4a48e0a92226965e179de982297c046a84e09b5fe"
+  },
+  {
+    "path": "eth/data/market-series-observed-212.csv",
+    "bytes": 8630,
+    "sha256": "c35f0b421169103cf197a2905265f397dd85de13230e2e28c6b4714f6c5753fd"
+  },
+  {
+    "path": "eth/data/market-series-observed-213.csv",
+    "bytes": 10623,
+    "sha256": "d747a469ecc46f512c2caa86c1a7f4e7c4fbc916e3b1f26b50458f97523e165a"
+  },
+  {
+    "path": "eth/data/market-series-observed-214.csv",
+    "bytes": 10525,
+    "sha256": "ed24d27e78eba3ccb1007e2b4dee154051b4c032ad231822a93a163347d621ee"
+  },
+  {
+    "path": "eth/data/market-series-observed-215.csv",
+    "bytes": 12521,
+    "sha256": "30b4f82fcc13ebf2236c4a8bb8994c9063c06ab564dd2e1a77754e4d4a140e9b"
+  },
+  {
+    "path": "eth/data/market-series-observed-216.csv",
+    "bytes": 6901,
+    "sha256": "a9e490483cf33af45657c6edc9f75474e7018e3e7eb9176646caf9583d7add04"
+  },
+  {
+    "path": "eth/data/market-series-observed-217.csv",
+    "bytes": 8860,
+    "sha256": "6c5f6ef51fd099329c548014fd7a7e1c1c4207d0356ceb9fb6b81357521f8923"
+  },
+  {
+    "path": "eth/data/market-series-observed-218.csv",
+    "bytes": 8818,
+    "sha256": "e02a13bf1142f04fd4c8f99ceb7bff6f7bc18ecdbd5c4ed716ab2d9847a870c7"
+  },
+  {
+    "path": "eth/data/market-series-observed-219.csv",
+    "bytes": 10788,
+    "sha256": "9b4913f621e929abcc37587c55cad9bc4e741ba7ef5bc4466be2b5ca880a9293"
+  },
+  {
+    "path": "eth/data/market-series-observed-22.csv",
+    "bytes": 6649,
+    "sha256": "50e1c7b11ee2da675d939e880625f9eebf959c851c951fcb0ffb47eb4f2415db"
+  },
+  {
+    "path": "eth/data/market-series-observed-220.csv",
+    "bytes": 8789,
+    "sha256": "5d556924b877caadbe0615f7c2669e2cabb27ede39433583d68fb812f8a311f6"
+  },
+  {
+    "path": "eth/data/market-series-observed-221.csv",
+    "bytes": 10782,
+    "sha256": "70aed61e4ed52b5befa1a473f3292bd8d0286e0b728dce4b3ad31b13c5497191"
+  },
+  {
+    "path": "eth/data/market-series-observed-222.csv",
+    "bytes": 10684,
+    "sha256": "9efdb60485e85e1ac74648fce4253df866213ab6f7cd5ffffd972fbc7fd454fb"
+  },
+  {
+    "path": "eth/data/market-series-observed-223.csv",
+    "bytes": 12680,
+    "sha256": "4ddba6456d5af973a2aec7d0d5eeed1c03cf545165c7137510e5628290f92182"
+  },
+  {
+    "path": "eth/data/market-series-observed-224.csv",
+    "bytes": 6697,
+    "sha256": "ba3ffc832bc2c3f24dc0306e0ac4fdb56e7b5ad3fceb44310d054af588f291ac"
+  },
+  {
+    "path": "eth/data/market-series-observed-225.csv",
+    "bytes": 8655,
+    "sha256": "bfd500ea000aacac6fcc634e836e541a104fd98c95d0c2ac10fd6a98c56fabd8"
+  },
+  {
+    "path": "eth/data/market-series-observed-226.csv",
+    "bytes": 8590,
+    "sha256": "7467931ca8e8171e3bb098cf0918b6ace93f9b12f3c7beeab26de2551b3eb110"
+  },
+  {
+    "path": "eth/data/market-series-observed-227.csv",
+    "bytes": 10593,
+    "sha256": "314c8b470d36d702057f6bd3359816a4497fdc85a3a26d1a677155ec801255dc"
+  },
+  {
+    "path": "eth/data/market-series-observed-228.csv",
+    "bytes": 8582,
+    "sha256": "5a760c808205daf99c1f4f67d5d86769459b8274aa5110a96a87114a8b728673"
+  },
+  {
+    "path": "eth/data/market-series-observed-229.csv",
+    "bytes": 10578,
+    "sha256": "8bade5b929862374ed12c4699b26482bcf00c388c4e518166f9089cd25d3abce"
+  },
+  {
+    "path": "eth/data/market-series-observed-23.csv",
+    "bytes": 8769,
+    "sha256": "f500b085fd17ce0d219567d133c8f2ca6d7d25de1c2ba315b45d63851a99a8e5"
+  },
+  {
+    "path": "eth/data/market-series-observed-230.csv",
+    "bytes": 10476,
+    "sha256": "7f13989125028df5108cf9dfe20daeea1996186d6fbb668eba44a32dbc26980d"
+  },
+  {
+    "path": "eth/data/market-series-observed-231.csv",
+    "bytes": 12489,
+    "sha256": "f03c9c11ca315f4e1bdb7bfef9ed3a5877127351ea22326846a90457819c061b"
+  },
+  {
+    "path": "eth/data/market-series-observed-232.csv",
+    "bytes": 6856,
+    "sha256": "f93c56f5337965657bb0645145d8a11ad4c2f5702fe54f2192de1733d0b23fbd"
+  },
+  {
+    "path": "eth/data/market-series-observed-233.csv",
+    "bytes": 8814,
+    "sha256": "b3b2b8c9c8094131535038f262bf1f962b33784f04fba1acec5f6ea04c9968fa"
+  },
+  {
+    "path": "eth/data/market-series-observed-234.csv",
+    "bytes": 8749,
+    "sha256": "e88805cc275b58ae2ff06c22de075d243124e59039985ed1f525c233fbbd61e3"
+  },
+  {
+    "path": "eth/data/market-series-observed-235.csv",
+    "bytes": 10752,
+    "sha256": "1c35cea569bbbcc5b70acb8b2072ea3ab1a7fa727945905b78810b2335e12122"
+  },
+  {
+    "path": "eth/data/market-series-observed-236.csv",
+    "bytes": 8741,
+    "sha256": "3ea9d7344a413d5bdf609b1ffaac7084db10c0ad32d1fc59f0160eab609d4dac"
+  },
+  {
+    "path": "eth/data/market-series-observed-237.csv",
+    "bytes": 10737,
+    "sha256": "1f6f82d53757dc62db934a0d59c90ff4e3fdca5a4cdcb4c41b89be621d465d50"
+  },
+  {
+    "path": "eth/data/market-series-observed-238.csv",
+    "bytes": 10635,
+    "sha256": "9b75071594d64fba9994de65dfdf43b48c7e093382d7d1d473355ef5653e511b"
+  },
+  {
+    "path": "eth/data/market-series-observed-239.csv",
+    "bytes": 12648,
+    "sha256": "9dc11101845987cc6ebdef75f37bd121ef862c312c6171d9df7bb07ee2214b7c"
+  },
+  {
+    "path": "eth/data/market-series-observed-24.csv",
+    "bytes": 2349,
+    "sha256": "a86a5a193543a75aa7c6e3e5a3fbc22188a12223a448ef3e50a3dce84f54edb8"
+  },
+  {
+    "path": "eth/data/market-series-observed-240.csv",
+    "bytes": 8604,
+    "sha256": "01473e069c7e21f512b321ce35c2459ef8a691ef6dab2445128536114e407539"
+  },
+  {
+    "path": "eth/data/market-series-observed-241.csv",
+    "bytes": 10608,
+    "sha256": "f1a0ca29cb761aa0fe844a5b08cd7c8ad70276ec1f72bff684bca57a80a1d931"
+  },
+  {
+    "path": "eth/data/market-series-observed-242.csv",
+    "bytes": 10535,
+    "sha256": "0b770f8fc0bb640ed30713a64ac986eebf69043130a9ed5b3c4198dc301a74e7"
+  },
+  {
+    "path": "eth/data/market-series-observed-243.csv",
+    "bytes": 12517,
+    "sha256": "820c2e31063692acf7d2eb55a5a32c89748ced70ccf792db0e9ee9c96f13c8b2"
+  },
+  {
+    "path": "eth/data/market-series-observed-244.csv",
+    "bytes": 10494,
+    "sha256": "957ec2881edb7e90ebefe4df816de0ffa0b1182f9c2089ca7919845881512306"
+  },
+  {
+    "path": "eth/data/market-series-observed-245.csv",
+    "bytes": 12536,
+    "sha256": "5ff3b1f0f44b4f3bed0cf8ccae55157bfdf7a74e7b1f554a619177339f01b176"
+  },
+  {
+    "path": "eth/data/market-series-observed-246.csv",
+    "bytes": 12402,
+    "sha256": "b9c3666f29694dbf0193c0414d9de863f91448357b1fe15c6a6867b3a0c8aff8"
+  },
+  {
+    "path": "eth/data/market-series-observed-247.csv",
+    "bytes": 14428,
+    "sha256": "1a5ee26e6fea182d8b1a61d06212d3a6f27b95c6469c9e8bd0f0583ef14a84ee"
+  },
+  {
+    "path": "eth/data/market-series-observed-248.csv",
+    "bytes": 8763,
+    "sha256": "eafa9c4d535b1b5a44e98e2e91d6ce0809930a81f38e7d37e554320df86056ce"
+  },
+  {
+    "path": "eth/data/market-series-observed-249.csv",
+    "bytes": 10767,
+    "sha256": "4605ccee3386d24faf0b7a489342f5c338f5a8c2c0413a67a692e1c993991dad"
+  },
+  {
+    "path": "eth/data/market-series-observed-25.csv",
+    "bytes": 5093,
+    "sha256": "e95c462b090c7fcaa56ec1d51aa1b447942f1d4b6400b5bd15ce4858f9f93546"
+  },
+  {
+    "path": "eth/data/market-series-observed-250.csv",
+    "bytes": 10694,
+    "sha256": "ba523c3a044863de8b25a560e1f49f263ee960f4f1623acdf36d6a4e1064a433"
+  },
+  {
+    "path": "eth/data/market-series-observed-251.csv",
+    "bytes": 12676,
+    "sha256": "9612e6db5a57a3a8913b3c993ce819db059dce4a0d6f715fac21e09b0e0969d9"
+  },
+  {
+    "path": "eth/data/market-series-observed-252.csv",
+    "bytes": 10653,
+    "sha256": "ee7afd7d1c38deb2e5f2a3698c197667ea152627b2f43976675d51a79bec7eeb"
+  },
+  {
+    "path": "eth/data/market-series-observed-253.csv",
+    "bytes": 12695,
+    "sha256": "e5ec5595a3c1ddd52e4ac521bbf96a2a5c92a1aee901fb178c080beb060f8c58"
+  },
+  {
+    "path": "eth/data/market-series-observed-254.csv",
+    "bytes": 12561,
+    "sha256": "603db6c3269459c5ab5bc02ba4afbb47546e47eb3120c8a9a8aeb1c246fe0f8f"
+  },
+  {
+    "path": "eth/data/market-series-observed-255.csv",
+    "bytes": 14587,
+    "sha256": "6bb9bb3d3e10e0c0a4102d85331574cf7aa93966310a85402bbe016c0878da67"
+  },
+  {
+    "path": "eth/data/market-series-observed-26.csv",
+    "bytes": 4952,
+    "sha256": "d3dd5096af1759899a4456d49bf2cfeb6e1e84d339bb033751807c018721d4b6"
+  },
+  {
+    "path": "eth/data/market-series-observed-27.csv",
+    "bytes": 6998,
+    "sha256": "62ce4be57964fd6fb13972904b1ba40034f718ac1373006ce0b3dcbdad98d769"
+  },
+  {
+    "path": "eth/data/market-series-observed-28.csv",
+    "bytes": 4966,
+    "sha256": "4894c673a52efbb42aa3db046c62122b44fa1f8f876bdaff7a67b00cc20223fe"
+  },
+  {
+    "path": "eth/data/market-series-observed-29.csv",
+    "bytes": 7000,
+    "sha256": "6ad84ee0773bba79c8c662c5f4919c27dc71f32ccebca6c046d4ad09855ded73"
+  },
+  {
+    "path": "eth/data/market-series-observed-3.csv",
+    "bytes": 4904,
+    "sha256": "debe4ee227cf4d0a02a2f16277bd08ac55eca7806c7283211064e2f4b065b6e2"
+  },
+  {
+    "path": "eth/data/market-series-observed-30.csv",
+    "bytes": 6808,
+    "sha256": "fb784d2e4a3078c67438ec53addea8375b0b403879c3b391d3777393107b2fdf"
+  },
+  {
+    "path": "eth/data/market-series-observed-31.csv",
+    "bytes": 8928,
+    "sha256": "1cd6e4bb1f38e420802acb2caed1f2f7793d2a7201a3dfb3847422c16040ecd9"
+  },
+  {
+    "path": "eth/data/market-series-observed-32.csv",
+    "bytes": 2202,
+    "sha256": "99200a1a251b52f52c9f9891189fcdb9584492bd4c6c07f35c00e770ef9bd933"
+  },
+  {
+    "path": "eth/data/market-series-observed-33.csv",
+    "bytes": 4887,
+    "sha256": "cde0ffae2dc268d34ece1578c57e50471bee034b0af22de6929d29cb26842a66"
+  },
+  {
+    "path": "eth/data/market-series-observed-34.csv",
+    "bytes": 4776,
+    "sha256": "5bec302955e859b464493c97ad5dbf30259eeaeb43dd194fe44e530b04ea3616"
+  },
+  {
+    "path": "eth/data/market-series-observed-35.csv",
+    "bytes": 6792,
+    "sha256": "382eb6f8c7e1f4942debdd4de3d8f69c6551113dddc4be21374739745b864491"
+  },
+  {
+    "path": "eth/data/market-series-observed-36.csv",
+    "bytes": 4778,
+    "sha256": "5c3db7bb7e8a215fe10d99fac188485d89625105eb920252f7a50c2af0887d75"
+  },
+  {
+    "path": "eth/data/market-series-observed-37.csv",
+    "bytes": 6800,
+    "sha256": "f32b8519e8e29432660c0acff2cc98200e0de64ad9eec68fb3c4b2fb16f4449d"
+  },
+  {
+    "path": "eth/data/market-series-observed-38.csv",
+    "bytes": 6654,
+    "sha256": "e4c4f3a477df979d123f166b8522162424bd78a05bd7ac79014ae91e42b31caa"
+  },
+  {
+    "path": "eth/data/market-series-observed-39.csv",
+    "bytes": 8714,
+    "sha256": "75fc6b3a9d2a5d85140ca18aa715be4f87b6d648e416e40d18da2bda59a73385"
+  },
+  {
+    "path": "eth/data/market-series-observed-4.csv",
+    "bytes": 2218,
+    "sha256": "d8a22cafff2ccbb6967410064a32a5cbfeca9ea59a78247c5f057acd91186be5"
+  },
+  {
+    "path": "eth/data/market-series-observed-40.csv",
+    "bytes": 2361,
+    "sha256": "10dadc0b88d2775b465e869a00b915398d00cc6d81ee38985d3e4edc24948a94"
+  },
+  {
+    "path": "eth/data/market-series-observed-41.csv",
+    "bytes": 5046,
+    "sha256": "248169f28e5c2079956b14ad1f3a642343f385fc0690b5f103e0e72e461edcb8"
+  },
+  {
+    "path": "eth/data/market-series-observed-42.csv",
+    "bytes": 4935,
+    "sha256": "442a68cf03cffab95749f1d32e048a305120f4d68a0b011f6794aec199b5cd1a"
+  },
+  {
+    "path": "eth/data/market-series-observed-43.csv",
+    "bytes": 6951,
+    "sha256": "5b7bb72fb6321c202ba447e6a4776ed4932ab1f85c6ee13ba9bbc74d5680bfa0"
+  },
+  {
+    "path": "eth/data/market-series-observed-44.csv",
+    "bytes": 4937,
+    "sha256": "54594bae3579aef54c297638526aca093095b973fb39d572cdb490428bbd2637"
+  },
+  {
+    "path": "eth/data/market-series-observed-45.csv",
+    "bytes": 6959,
+    "sha256": "bdbcb55ddab97aed983d74372e386f92581f21d664a7147a82d18c099676076a"
+  },
+  {
+    "path": "eth/data/market-series-observed-46.csv",
+    "bytes": 6813,
+    "sha256": "7cf427ffe116ebbff7f10d4bcd0826a7c40759ada06a181f321348e374cf9932"
+  },
+  {
+    "path": "eth/data/market-series-observed-47.csv",
+    "bytes": 8873,
+    "sha256": "435557f8dd485040319bf7fd9b7f518341932ad55751f0068de8fad35d914441"
+  },
+  {
+    "path": "eth/data/market-series-observed-48.csv",
+    "bytes": 4795,
+    "sha256": "d147133bc0e1b43723a53a2f5d1dbddff0c1e55eacc52bf7d17f2787d90fcc5b"
+  },
+  {
+    "path": "eth/data/market-series-observed-49.csv",
+    "bytes": 6826,
+    "sha256": "b5c955f2855a1015d010c7fde10a1fae470e5afa6bb5927aea2500e4a161216b"
+  },
+  {
+    "path": "eth/data/market-series-observed-5.csv",
+    "bytes": 4908,
+    "sha256": "f51d82c4ebe4da5ac75dcffa12e234fba12f3480ca251b4a1429529644df30cc"
+  },
+  {
+    "path": "eth/data/market-series-observed-50.csv",
+    "bytes": 6663,
+    "sha256": "a61aa14c409df8a7216903df9ccde9906aa1d27b085c6fbc147f947392df8077"
+  },
+  {
+    "path": "eth/data/market-series-observed-51.csv",
+    "bytes": 8752,
+    "sha256": "99c1778fc0755c97adf7074f1c6cf47b8d862a2a3543b9716c5682c3613e57f2"
+  },
+  {
+    "path": "eth/data/market-series-observed-52.csv",
+    "bytes": 6657,
+    "sha256": "ebed701fcf0b4f1f54abdfc21b0f15103301db2ea84a5228a9df51ae1fc2acac"
+  },
+  {
+    "path": "eth/data/market-series-observed-53.csv",
+    "bytes": 8743,
+    "sha256": "a6392d1874bde26ca56175efd0b6c1e66162e2561f9221670cf68cce371215fa"
+  },
+  {
+    "path": "eth/data/market-series-observed-54.csv",
+    "bytes": 8544,
+    "sha256": "a77242698c65d71a023af34881d9766045576e76c1f8f45aa7c1e0eb6a220d3a"
+  },
+  {
+    "path": "eth/data/market-series-observed-55.csv",
+    "bytes": 10659,
+    "sha256": "f2e5e8c05df7d8fccb9ddd2bf95bdff297b9a1f9fa6805ff6e41a1ed03fb0f52"
+  },
+  {
+    "path": "eth/data/market-series-observed-56.csv",
+    "bytes": 4954,
+    "sha256": "34d51babdc0b1a3ce9f4f6b0f7b8a6213ab2d656b9ecd5333501fce6d6c22a86"
+  },
+  {
+    "path": "eth/data/market-series-observed-57.csv",
+    "bytes": 6985,
+    "sha256": "a1f91f4d4bf963c2002ae500191986e47bffe6790f6c0ac47c07f77d3fa5c735"
+  },
+  {
+    "path": "eth/data/market-series-observed-58.csv",
+    "bytes": 6822,
+    "sha256": "dad8527236562e672e094e1fdea1a66f2ec8eca2c9e77c2cc0bc0bbfe3d9df30"
+  },
+  {
+    "path": "eth/data/market-series-observed-59.csv",
+    "bytes": 8911,
+    "sha256": "1c2eca7417bc41b91ab1b02795af763edd388498d9fb283c53b1e6254da5683b"
+  },
+  {
+    "path": "eth/data/market-series-observed-6.csv",
+    "bytes": 4786,
+    "sha256": "5c9ca26a3eeebc927cca48875ac4960f536e5f596edb06c673428d76bba37987"
+  },
+  {
+    "path": "eth/data/market-series-observed-60.csv",
+    "bytes": 6816,
+    "sha256": "3534d4cc9144dca608b6549fc79e46a474c8100772c76f1546be55d1a6f9a91f"
+  },
+  {
+    "path": "eth/data/market-series-observed-61.csv",
+    "bytes": 8902,
+    "sha256": "d0974651034328cf694d54ef84b3bb22d339ee632a1aed9a2d98f8b8fc1572c4"
+  },
+  {
+    "path": "eth/data/market-series-observed-62.csv",
+    "bytes": 8703,
+    "sha256": "73e880b498afaff5b7e1776845df995c1ffc58e36fa825191fd40b012fb0050d"
+  },
+  {
+    "path": "eth/data/market-series-observed-63.csv",
+    "bytes": 10818,
+    "sha256": "8f4c30798e7983638bb388685b44822be7191f630488aba5d2bad61e34c7315d"
+  },
+  {
+    "path": "eth/data/market-series-observed-64.csv",
+    "bytes": 2246,
+    "sha256": "0c347d1c24df03ecb7c36e7aca2ec0a41c602aa7450d14bbf6e2f122a45b987e"
+  },
+  {
+    "path": "eth/data/market-series-observed-65.csv",
+    "bytes": 4859,
+    "sha256": "99e719e260fa18fcbd16be24b6d2556d3b81f8a20c93ee556b596a78a36871ff"
+  },
+  {
+    "path": "eth/data/market-series-observed-66.csv",
+    "bytes": 4861,
+    "sha256": "6825747d1a3340117370fd95e3bde790ea1e7ce2904b4c83d531cd6a1275b73b"
+  },
+  {
+    "path": "eth/data/market-series-observed-67.csv",
+    "bytes": 6804,
+    "sha256": "92b056879f1ac7366ca9d2b950f7db984b8f1cc46b240c03a5e647041c8ff2a1"
+  },
+  {
+    "path": "eth/data/market-series-observed-68.csv",
+    "bytes": 4838,
+    "sha256": "99105a473599cd4b394717bb21b114715a5fb21a97cc5004ca526441dedba6a7"
+  },
+  {
+    "path": "eth/data/market-series-observed-69.csv",
+    "bytes": 6779,
+    "sha256": "ce25ae199551181bf0ff7c5085fe7a4fce108641bd6462f557c3d439584ffe2b"
+  },
+  {
+    "path": "eth/data/market-series-observed-7.csv",
+    "bytes": 6816,
+    "sha256": "ff1fb5f32aefd19915f83b328e210ca10796e21cba0dc1d3a46a6ae8c358b20d"
+  },
+  {
+    "path": "eth/data/market-series-observed-70.csv",
+    "bytes": 6748,
+    "sha256": "e05459f02f048f2c8fdf4dcc71c305bed60d31839068b940934caa70a3783fd5"
+  },
+  {
+    "path": "eth/data/market-series-observed-71.csv",
+    "bytes": 8699,
+    "sha256": "4e3b05796b0944627bc926ec730038a5adecfd58025eca9a0720e26bc7749135"
+  },
+  {
+    "path": "eth/data/market-series-observed-72.csv",
+    "bytes": 2405,
+    "sha256": "e0bebf9fc10862864c534e023f8fea068ec0328c52b0329733135ab0527ca232"
+  },
+  {
+    "path": "eth/data/market-series-observed-73.csv",
+    "bytes": 5018,
+    "sha256": "91b9bd67509f01b46314305aa5a4d2b272694c22acd79144537527d193994a0f"
+  },
+  {
+    "path": "eth/data/market-series-observed-74.csv",
+    "bytes": 5020,
+    "sha256": "fbdfbd31c609e583387609c5c9075fb5cbcacc81c1a7e9be0abf16bb67cb26eb"
+  },
+  {
+    "path": "eth/data/market-series-observed-75.csv",
+    "bytes": 6963,
+    "sha256": "f0d858e0037555c0a3c3a44d7406e5e6e9de76f20c141bb6d61821109c86f1af"
+  },
+  {
+    "path": "eth/data/market-series-observed-76.csv",
+    "bytes": 4997,
+    "sha256": "5b3762398506f26fdeb8cbfb2f19c7337afb7d5dbcfadada97db50b861528148"
+  },
+  {
+    "path": "eth/data/market-series-observed-77.csv",
+    "bytes": 6938,
+    "sha256": "c1494df77ce4b33def11c2802cba13de921f3815c976ac5b4709c4a1c78ce151"
+  },
+  {
+    "path": "eth/data/market-series-observed-78.csv",
+    "bytes": 6907,
+    "sha256": "6cd4a8af9f26cbecd149ce71fd997d36359dcb5645d8c9c4d6b468fb2c6fea54"
+  },
+  {
+    "path": "eth/data/market-series-observed-79.csv",
+    "bytes": 8858,
+    "sha256": "f76428626acef036356c44ced77adf9addc1010b2e0cf29b568337d7f958c9fc"
+  },
+  {
+    "path": "eth/data/market-series-observed-8.csv",
+    "bytes": 468,
+    "sha256": "5107cee37f11fe0e714281125cac9d67d615e05eaac0ffcd891edb868be5fd7d"
+  },
+  {
+    "path": "eth/data/market-series-observed-80.csv",
+    "bytes": 4876,
+    "sha256": "9970bedf1e654489cdd69320b7b5460454b457609d8202f670c852f0831b0d88"
+  },
+  {
+    "path": "eth/data/market-series-observed-81.csv",
+    "bytes": 6813,
+    "sha256": "3e698ffadd818275e33c55d5319d4b0f587d1a837ab4310a91cab323a4a68977"
+  },
+  {
+    "path": "eth/data/market-series-observed-82.csv",
+    "bytes": 6792,
+    "sha256": "595d8af43e759ba426224e0ac3bfd60c8e91c00142952278b0e65fc9b11d1ce5"
+  },
+  {
+    "path": "eth/data/market-series-observed-83.csv",
+    "bytes": 8736,
+    "sha256": "ba0c11be3f1b745bec4c344331a2402c84730d1e8a409137cd352c12b3c5ae23"
+  },
+  {
+    "path": "eth/data/market-series-observed-84.csv",
+    "bytes": 6745,
+    "sha256": "1e3ad22aa0f05c181323cfd16fae9405348e09af093647e6be731aacf7ef3b60"
+  },
+  {
+    "path": "eth/data/market-series-observed-85.csv",
+    "bytes": 8734,
+    "sha256": "3d033603ccb62248de08c9573b900a9f76f7309540f873a1a18d454c4b925dc5"
+  },
+  {
+    "path": "eth/data/market-series-observed-86.csv",
+    "bytes": 8674,
+    "sha256": "9a2dd04ea41b5c6cdbf707aa3297b9f81abaa2a7a11e806f0806f428562eddf6"
+  },
+  {
+    "path": "eth/data/market-series-observed-87.csv",
+    "bytes": 10673,
+    "sha256": "d06a66d144b0c2b1ace8ccabac987860479cb3e3f32bfa25d4a48494cb36d461"
+  },
+  {
+    "path": "eth/data/market-series-observed-88.csv",
+    "bytes": 5035,
+    "sha256": "e3366190d26ceec28db288427fc168605ce92edd7464b1cbcb7ddce022c66b3a"
+  },
+  {
+    "path": "eth/data/market-series-observed-89.csv",
+    "bytes": 6972,
+    "sha256": "a6522ebdd139aecb66bc76e479d564e2336505630b084a82caa2718ba3f3dcd9"
+  },
+  {
+    "path": "eth/data/market-series-observed-9.csv",
+    "bytes": 2431,
+    "sha256": "99cb7061855a592386fb91bf293e79eda47121fba15fe144fd49d8515267bc0e"
+  },
+  {
+    "path": "eth/data/market-series-observed-90.csv",
+    "bytes": 6951,
+    "sha256": "16a3ae4594927d7de5874a52ee88f003f630c794a530cd752d08e615c9f21e12"
+  },
+  {
+    "path": "eth/data/market-series-observed-91.csv",
+    "bytes": 8895,
+    "sha256": "b6271b2cf491a49a694737570a4abb1efcf2adb8bb50957ed7c58757a7e866de"
+  },
+  {
+    "path": "eth/data/market-series-observed-92.csv",
+    "bytes": 6904,
+    "sha256": "096a4e32e6e1fb12c0fb554b78d3b9da34c0c7f34937f732f7b5eaa664d97c6c"
+  },
+  {
+    "path": "eth/data/market-series-observed-93.csv",
+    "bytes": 8893,
+    "sha256": "4a37e814440dc5d067d8cb881e33ab7fcc023fad4f6f9c821be7446fc6fcd039"
+  },
+  {
+    "path": "eth/data/market-series-observed-94.csv",
+    "bytes": 8833,
+    "sha256": "5a1ff47cbe9678f89b9eecdbf50356dbe21f59b979dbfe84d688b7efdfc907d0"
+  },
+  {
+    "path": "eth/data/market-series-observed-95.csv",
+    "bytes": 10832,
+    "sha256": "29dfdc6ed3d3cea38518a164ac8e92d88c92451a6cec177ba93b7b5e9b8c9588"
+  },
+  {
+    "path": "eth/data/market-series-observed-96.csv",
+    "bytes": 4840,
+    "sha256": "c10df7ed6b7d8b5cf4b97615a37479a440b0f56dcf40b4810981660cd0ce5aae"
+  },
+  {
+    "path": "eth/data/market-series-observed-97.csv",
+    "bytes": 6768,
+    "sha256": "0f7b0ac43403f1da53938cdf3994350accda1f3781e52ec3cca9527691ec924a"
+  },
+  {
+    "path": "eth/data/market-series-observed-98.csv",
+    "bytes": 6733,
+    "sha256": "c9cee2117a5efcb7476d76992ccd905e06451f3357d075c509b3a628dbf74833"
+  },
+  {
+    "path": "eth/data/market-series-observed-99.csv",
+    "bytes": 8693,
+    "sha256": "e0ea60ca1eae167dd01e73aa15ffc73cb8ab23a4c98fc4fdfd58e370c1bfb115"
+  },
+  {
+    "path": "eth/data/market_netting_closure.json",
+    "bytes": 891145,
+    "sha256": "6164a34870ec4210de29c8326acb5f3f0e453028fc0bd77d9d255dc777c90da6"
+  },
+  {
+    "path": "eth/data/market_netting_lp_history.csv",
+    "bytes": 140967,
+    "sha256": "cb815da4fa287b7cdd1673e7616c028b40a107c9c9823044e00fd547e0e9f473"
+  },
+  {
+    "path": "eth/data/market_netting_lp_monthly.csv",
+    "bytes": 3807,
+    "sha256": "64a4eedc68b441af21c36fe9168d313320bbe59699bf8ba557e2c734d5677b56"
+  },
+  {
+    "path": "eth/data/market_netting_roots.csv",
+    "bytes": 8349,
+    "sha256": "4ffd8b1f362955c1327c9dab57fd3cdb3e1ddfc87a80bbd651c9382e577fe73d"
+  },
+  {
+    "path": "eth/data/market_panel.json",
+    "bytes": 2290696,
+    "sha256": "384461b5d6e6fb0e3fa4d42cc2d8ebc851923f71ada54b54341f1acd80f01808"
+  },
+  {
+    "path": "eth/data/market_panel_chains.csv",
+    "bytes": 3764,
+    "sha256": "6e493d933bfe693ed49f82f1770e4c22c3cd0aa1dc06933691b7eeed7be11526"
+  },
+  {
+    "path": "eth/data/market_panel_monthly.csv",
+    "bytes": 18559,
+    "sha256": "8b8c8518d18b58c70e8a18e4c7160dfb53d6438d2960765f659ef73a56417c4e"
+  },
+  {
+    "path": "eth/data/market_panel_prices.csv",
+    "bytes": 3751,
+    "sha256": "47d02da983d322b00d6085f2c493e08c21f5b5cc43d7d4ffe6acd3e9c1871d84"
+  },
+  {
+    "path": "eth/data/market_panel_protocols.csv",
+    "bytes": 13038,
+    "sha256": "044ebd278f202bf942fedc28d00ef4839a7e6aaf998c26103364f2cefe7f9144"
+  },
+  {
+    "path": "eth/data/market_reader_chapter.json",
+    "bytes": 2691688,
+    "sha256": "f9e896d91703381436d9ee17c8a715dc17289f8e6f78d3a183c64c8f9e65e8e7"
+  },
+  {
+    "path": "eth/data/market_summary.json",
+    "bytes": 40853,
+    "sha256": "7608b21bab116dbf3009ccdc298d9bf7e114798e8f52437979d424a8bfa5e767"
+  },
+  {
+    "path": "eth/data/mono_identity_T.json",
+    "bytes": 1326,
+    "sha256": "ca33acc3a84ada944abcf2d8bf0c8f8e7f14be78815a62c175cb8637cfceea7c"
+  },
+  {
+    "path": "eth/data/morpho_borrower_screen.json",
+    "bytes": 257483,
+    "sha256": "40fc80c8a81d58f437ef05b24819c26ae45fc7e8efa433905ca1cc24ef08acd7"
+  },
+  {
+    "path": "eth/data/pendle_source_coverage.json",
+    "bytes": 366,
+    "sha256": "86f27801b0af9e781f4aad03e212e65fa5e8926794744f08c220b9b4d49fcbc2"
+  },
+  {
+    "path": "eth/data/permissions_review_T.json",
+    "bytes": 24994,
+    "sha256": "cc8213d7181f5594b3a5fe5c6d349ed78b802210be38b2aafa5fbe48fca5aa8a"
+  },
+  {
+    "path": "eth/data/pools.csv",
+    "bytes": 562939,
+    "sha256": "97528d0dedb2aa240e8c5adcbf96423e4d471a4d1fae096f30b81b7b2a50fc2e"
+  },
+  {
+    "path": "eth/data/presentation_analysis.json",
+    "bytes": 71257,
+    "sha256": "2d1a213ad3e7a92ff2c5f397d46b3c29c03c1747897b309f566c9c51794dfc0c"
+  },
+  {
+    "path": "eth/data/presentation_terms_sources.json",
+    "bytes": 27669,
+    "sha256": "c8892b2bcb6b4f9a4306667a8629d1a4dd8557dabce462ea1e3e3bb7e1c37fdd"
+  },
+  {
+    "path": "eth/data/product_chapters.json",
+    "bytes": 245114,
+    "sha256": "831a656ad248ed96dd26a0a74781b24b150163a3ab3261debacb1017b8ab94fd"
+  },
+  {
+    "path": "eth/data/protocol-aave-v3-history.csv",
+    "bytes": 1229,
+    "sha256": "fe05987425fef37073531ded6ca682ea30d3ac1d244d04083fe695956595b92d"
+  },
+  {
+    "path": "eth/data/protocol-aave-v4-history.csv",
+    "bytes": 763,
+    "sha256": "c0d40745b6ac833cb543c0b66a752f3798fda38f24b35909cdd9950a41c916c8"
+  },
+  {
+    "path": "eth/data/protocol-across-history.csv",
+    "bytes": 1162,
+    "sha256": "a5ca4ed8f5b837b7baa9b20863c7235623474c5ff0c966d711a5428c5c4263ca"
+  },
+  {
+    "path": "eth/data/protocol-aerodrome-slipstream-history.csv",
+    "bytes": 1182,
+    "sha256": "aff5d6e65ca2fd61d92ecf07a442ccdfc03d39bfd95e55f6b4f93e00233e0acd"
+  },
+  {
+    "path": "eth/data/protocol-aerodrome-v1-history.csv",
+    "bytes": 1188,
+    "sha256": "8066c2ed232a7cc535f6c328b74a652c93e83477c574679e1ede20fd3122e04d"
+  },
+  {
+    "path": "eth/data/protocol-alchemix-v3-history.csv",
+    "bytes": 736,
+    "sha256": "5f0a0d993e196a82736c6d548e7b6d5d54d5b202d2b84af6236f4f6afb47b420"
+  },
+  {
+    "path": "eth/data/protocol-ankr-history.csv",
+    "bytes": 1168,
+    "sha256": "6548229132b75470a74188e90a3841b1383fb5c7cf918c73be0b61a28c4846e6"
+  },
+  {
+    "path": "eth/data/protocol-autofinance-history.csv",
+    "bytes": 1184,
+    "sha256": "6772bd6a81e1c73cb211381e2e50d7f55430192ddcbbf56e7b61559653f0da6c"
+  },
+  {
+    "path": "eth/data/protocol-balancer-v2-history.csv",
+    "bytes": 593,
+    "sha256": "679087f6084dd5d81268f0d1fc4712f18524bb67a2f085abf68bfb82509218c9"
+  },
+  {
+    "path": "eth/data/protocol-balancer-v3-history.csv",
+    "bytes": 1130,
+    "sha256": "0552222e95303bbfac9c6c0a8011a54ada2001e191f91fd49dff27306e632f0c"
+  },
+  {
+    "path": "eth/data/protocol-bancor-v3-history.csv",
+    "bytes": 1165,
+    "sha256": "0979480c9baf50bcc73c9796dee10bca82a54b9c0bb921c941e022eff7ad1e62"
+  },
+  {
+    "path": "eth/data/protocol-bedrock-unieth-history.csv",
+    "bytes": 1163,
+    "sha256": "7b0286a11e230847350d89e053ed70b84db60b32000ff528ec2b87dabd846d7b"
+  },
+  {
+    "path": "eth/data/protocol-beefy-history.csv",
+    "bytes": 1015,
+    "sha256": "12e7919e83cfcf6ad554d41140eff7a1f3e255f8455a860e542e888966eb78cb"
+  },
+  {
+    "path": "eth/data/protocol-binance-staked-eth-history.csv",
+    "bytes": 1222,
+    "sha256": "6a0115d9e350db9f2c2c407ca0fdc1b0c0b26473099eab2a15d847021bdd9053"
+  },
+  {
+    "path": "eth/data/protocol-camelot-v2-history.csv",
+    "bytes": 1183,
+    "sha256": "8186ed7b045a0c8fd1b97851c40584828379feb3ce8b7c58aea90d0cf424a8c1"
+  },
+  {
+    "path": "eth/data/protocol-cian-yield-layer-history.csv",
+    "bytes": 1180,
+    "sha256": "0ea685a77cf7d7e0e19a846170e751ecc8d4b7d7a1c2851eef07ab0e8a0911bb"
+  },
+  {
+    "path": "eth/data/protocol-coinbase-wrapped-staked-eth-history.csv",
+    "bytes": 1187,
+    "sha256": "876afd8338e8280f6d0c5d084be5fcb0c734f564f3eaeeddf5bcee85c84e210b"
+  },
+  {
+    "path": "eth/data/protocol-compound-v2-history.csv",
+    "bytes": 1178,
+    "sha256": "dfcb613c62d9b5c365f355fe57d98e489d6a4933365a1cb44114a785cc6b3a2c"
+  },
+  {
+    "path": "eth/data/protocol-compound-v3-history.csv",
+    "bytes": 1205,
+    "sha256": "d09bfc86ce14402e90af2286e69cda20411bde071b9ebe25eed6a060e7f55c58"
+  },
+  {
+    "path": "eth/data/protocol-concrete-history.csv",
+    "bytes": 1048,
+    "sha256": "84c65d5f41405db54811fb0ee4302ed2f90e85db7aa27227326ee49955deca36"
+  },
+  {
+    "path": "eth/data/protocol-convex-finance-history.csv",
+    "bytes": 905,
+    "sha256": "6160728fbcdffb2caff7c2e69c8987776cb4b0129a6f9941123b1683ae287bd7"
+  },
+  {
+    "path": "eth/data/protocol-crvusd-history.csv",
+    "bytes": 1174,
+    "sha256": "235cd7cb5bf1bf15f881c2855fcd185ef035526a2dd2a1e771ae9880560f05fb"
+  },
+  {
+    "path": "eth/data/protocol-curve-dex-history.csv",
+    "bytes": 1193,
+    "sha256": "460134a4ccc595170cd91b9e2212e5afc4c56a38739e7a75665b89c1961261d3"
+  },
+  {
+    "path": "eth/data/protocol-dolomite-history.csv",
+    "bytes": 1187,
+    "sha256": "5fc341f933fc56fc5956564fe643e19d03fb44176b0862ea9e550588dcbaf9b3"
+  },
+  {
+    "path": "eth/data/protocol-eigencloud-history.csv",
+    "bytes": 1233,
+    "sha256": "f15116ee3d157a91e7f2255de3594e38aae3287617df022ee96f4b5c946d5c9f"
+  },
+  {
+    "path": "eth/data/protocol-ekubo-history.csv",
+    "bytes": 1166,
+    "sha256": "cd1bd197f16a8a63ec6c92608e49db62f09b4602f7e302b419bf301957338b79"
+  },
+  {
+    "path": "eth/data/protocol-ethena-usde-history.csv",
+    "bytes": 857,
+    "sha256": "921e2fe96830418471d424e8c05fb371483394ea75a825a233e38bc4be078b38"
+  },
+  {
+    "path": "eth/data/protocol-ether.fi-liquid-history.csv",
+    "bytes": 1208,
+    "sha256": "d8d4b16c3f52f7979223868a86147d7e380b7bdfffdbf570d59688a100c82eca"
+  },
+  {
+    "path": "eth/data/protocol-ether.fi-stake-history.csv",
+    "bytes": 1173,
+    "sha256": "837708079fa6d640265aa85d0c2a87ec665576657fa2b40473b0c49e4eca5b67"
+  },
+  {
+    "path": "eth/data/protocol-euler-v2-history.csv",
+    "bytes": 1182,
+    "sha256": "142e592078f4f3bdd9300580a96f7d8c74ee6e286253403676b777166b8927b3"
+  },
+  {
+    "path": "eth/data/protocol-exactly-history.csv",
+    "bytes": 1178,
+    "sha256": "4d207c212bd534ce53477054985ed2829a172e497ad608759672dbafb05c8195"
+  },
+  {
+    "path": "eth/data/protocol-fluid-dex-history.csv",
+    "bytes": 718,
+    "sha256": "efd4f9b54fc680a38ac9e716efe9bec47f393a9cc6a572fa18cae91c460e9c16"
+  },
+  {
+    "path": "eth/data/protocol-fluid-lending-history.csv",
+    "bytes": 1203,
+    "sha256": "649ae947df8ad3d85203f110a5930776886a4feec11476d8be686fc861b4e1e7"
+  },
+  {
+    "path": "eth/data/protocol-fluid-lite-history.csv",
+    "bytes": 1198,
+    "sha256": "69bb59e5f1daf16b32aa817da325268646bd6560781784c13e50dae1b3d881e8"
+  },
+  {
+    "path": "eth/data/protocol-fluxion-network-history.csv",
+    "bytes": 820,
+    "sha256": "9604bde50dfa766d47a74a07310b0fada61ff9d989677e9f78114a0ea9a5c587"
+  },
+  {
+    "path": "eth/data/protocol-frankencoin-history.csv",
+    "bytes": 1103,
+    "sha256": "f5aed1f49ec5236045770d1bb3c0c47dd419e1a33ebeef3691f3ba4e105caddc"
+  },
+  {
+    "path": "eth/data/protocol-frax-ether-history.csv",
+    "bytes": 1206,
+    "sha256": "5f0f59c6810271487c7db7a7d2d854e3c5884840a02a0136c15244e5bb27e559"
+  },
+  {
+    "path": "eth/data/protocol-fusion-by-ipor-history.csv",
+    "bytes": 1125,
+    "sha256": "a34e231c89c41152759b23772bb18963971b0579ff05b70c069ef9a4ab86c18d"
+  },
+  {
+    "path": "eth/data/protocol-gearbox-history.csv",
+    "bytes": 1175,
+    "sha256": "645d6a0126fc8e00fef9a498a7b65caf770a32ff990d4d544019aa4d93552279"
+  },
+  {
+    "path": "eth/data/protocol-gmx-v2-perps-history.csv",
+    "bytes": 1196,
+    "sha256": "55a98446f0242ce6347b03b6522b0ffd962f61f4419e3f737217b48bd3440f14"
+  },
+  {
+    "path": "eth/data/protocol-harvest-finance-history.csv",
+    "bytes": 1157,
+    "sha256": "c013124783c7c24b0b322b01fe8ea58bc5eaa4e48da87b277bd6ebe04adc88d7"
+  },
+  {
+    "path": "eth/data/protocol-justlend-v1-history.csv",
+    "bytes": 1207,
+    "sha256": "098b4e0c75ad2ed602e5a8064272887d8200099fa0fcb1e8a18c76b5155adbb4"
+  },
+  {
+    "path": "eth/data/protocol-kelp-history.csv",
+    "bytes": 1218,
+    "sha256": "c2c66c2771bd6697a214de18a4eb501ed99c9c7136c0305af6852737852ea3bb"
+  },
+  {
+    "path": "eth/data/protocol-lagoon-history.csv",
+    "bytes": 1128,
+    "sha256": "517c57716c22b877419e8fa0768c5988bed6a6d9b1fc5e91b9deeff87bcc4508"
+  },
+  {
+    "path": "eth/data/protocol-lido-history.csv",
+    "bytes": 1241,
+    "sha256": "6c82108d02f8cd720bc947001be69089b0dc50d2d3c7eca22a0ec0acf1887209"
+  },
+  {
+    "path": "eth/data/protocol-liquity-v1-history.csv",
+    "bytes": 1191,
+    "sha256": "952d7366081e9ac42b4d1315db71145e2e1ad1a1f7047717efc675c8299fef5c"
+  },
+  {
+    "path": "eth/data/protocol-liquity-v2-history.csv",
+    "bytes": 1127,
+    "sha256": "73cf4a649fef4c9b9534a3c40a01d3dac65761937ce7b14ec3d953416c19f1c0"
+  },
+  {
+    "path": "eth/data/protocol-lista-lending-history.csv",
+    "bytes": 1021,
+    "sha256": "44c4c7f1e5212e56f844a18f9c9831aec76955bd4da0c155dab9dbfb9e67f52e"
+  },
+  {
+    "path": "eth/data/protocol-meth-protocol-history.csv",
+    "bytes": 1197,
+    "sha256": "36bb68e92bf41b7d2ffd4efbb70f30f7a1aa7c7bc1e4b4ecbb54a05f72098203"
+  },
+  {
+    "path": "eth/data/protocol-midas-rwa-history.csv",
+    "bytes": 593,
+    "sha256": "679087f6084dd5d81268f0d1fc4712f18524bb67a2f085abf68bfb82509218c9"
+  },
+  {
+    "path": "eth/data/protocol-morpho-blue-history.csv",
+    "bytes": 1214,
+    "sha256": "514384fe557973794f2e529a00e8080793320c1121a371f639415d2c6501a141"
+  },
+  {
+    "path": "eth/data/protocol-native-credit-pool-history.csv",
+    "bytes": 1158,
+    "sha256": "e64cd433f48dec7980ce06e1518ab7489c5e1a362675f61077f0a8dbe077acd8"
+  },
+  {
+    "path": "eth/data/protocol-origin-arm-history.csv",
+    "bytes": 1173,
+    "sha256": "b951e95f4d6d67405bafcaafd123145e78159bffdfb52d6e1996f6bcfa1b50ce"
+  },
+  {
+    "path": "eth/data/protocol-origin-ether-history.csv",
+    "bytes": 1178,
+    "sha256": "9f8a65464dd7a9a84dcad4289b491757d85282137b2ba4e0fc874920557e07ea"
+  },
+  {
+    "path": "eth/data/protocol-pancakeswap-amm-history.csv",
+    "bytes": 1178,
+    "sha256": "274dc4212ffacade8cffde2f33099d7e0178ef9a48eb11b21fdec5e1bea01ee1"
+  },
+  {
+    "path": "eth/data/protocol-pendle-v2-history.csv",
+    "bytes": 1186,
+    "sha256": "fdd1860473a4c2eefc2e4a7358305ecd799a5452e6f162cbed160ba3bed85096"
+  },
+  {
+    "path": "eth/data/protocol-puffer-stake-history.csv",
+    "bytes": 1182,
+    "sha256": "e37b3bad4b7b435551121794e75903f0199bdac8457562366fa2e3e32f3729e2"
+  },
+  {
+    "path": "eth/data/protocol-quickswap-dex-history.csv",
+    "bytes": 1042,
+    "sha256": "89061b433d35b7a96617d4d7f1dfe61063a223a93f6e8b7203c37c863424a901"
+  },
+  {
+    "path": "eth/data/protocol-renzo-history.csv",
+    "bytes": 1196,
+    "sha256": "6dc5968005ba928e323e702b20a4b8a623283a3b917752db1a936d615cf07ce0"
+  },
+  {
+    "path": "eth/data/protocol-reserve-protocol-history.csv",
+    "bytes": 1186,
+    "sha256": "ae4d561f223d044f492654183448e8c454879103be3240f175e9926c447ac9bf"
+  },
+  {
+    "path": "eth/data/protocol-rocket-pool-history.csv",
+    "bytes": 1215,
+    "sha256": "dcfb8a334ee8361f18367e50a0143bb7f151448cb3619f95861f034439119a31"
+  },
+  {
+    "path": "eth/data/protocol-sky-lending-history.csv",
+    "bytes": 1222,
+    "sha256": "0ae222f1be353f74519a2b996f1ce4a179dec4b2467dcdad5ecc7617042410dc"
+  },
+  {
+    "path": "eth/data/protocol-spark-savings-history.csv",
+    "bytes": 762,
+    "sha256": "1bc8ed27c7d69103c443d352d15a0bd21c1fec6ccfc258851c33385a7484daad"
+  },
+  {
+    "path": "eth/data/protocol-sparklend-history.csv",
+    "bytes": 1224,
+    "sha256": "0fb850e01f1a6209be3bc2d52ef99cbdfec895eb643caa04778f089c3aabbea2"
+  },
+  {
+    "path": "eth/data/protocol-spectra-v2-history.csv",
+    "bytes": 1186,
+    "sha256": "8ef717d100a1b70cbaafffd96f152a7c11397b1539e4c4ecaeeba8770b98f8cb"
+  },
+  {
+    "path": "eth/data/protocol-stader-history.csv",
+    "bytes": 1190,
+    "sha256": "dfcf1a4acac0611c9e57b36e955232ec8f68a59fa2467c9e43b0dd45cb44e802"
+  },
+  {
+    "path": "eth/data/protocol-stake-dao-yield-history.csv",
+    "bytes": 1141,
+    "sha256": "073c6e337861e88da839b69fe6eb89d372bcd18938188936844987a11f56b00e"
+  },
+  {
+    "path": "eth/data/protocol-stakewise-v3-history.csv",
+    "bytes": 1198,
+    "sha256": "3088e0a37bd84e5b23f3d48d63c65f25566d015d5170f39ab0aa5700f468ea89"
+  },
+  {
+    "path": "eth/data/protocol-sushiswap-history.csv",
+    "bytes": 593,
+    "sha256": "679087f6084dd5d81268f0d1fc4712f18524bb67a2f085abf68bfb82509218c9"
+  },
+  {
+    "path": "eth/data/protocol-sushiswap-v3-history.csv",
+    "bytes": 1163,
+    "sha256": "0e594556570d5e48b57ee91beb89bce73295b0736d1b6f69e47f8ba9259d94a0"
+  },
+  {
+    "path": "eth/data/protocol-swell-liquid-restaking-history.csv",
+    "bytes": 1173,
+    "sha256": "3474aa8e181ae44ab7cccc13ce3de49739dcdaa9f43d498968c42ed12523003e"
+  },
+  {
+    "path": "eth/data/protocol-swell-liquid-staking-history.csv",
+    "bytes": 1173,
+    "sha256": "2ffcf8dd2c21fc70ccb98690f976e3d89ff4a9e5b19c659b58cb4ac749ae0b01"
+  },
+  {
+    "path": "eth/data/protocol-symbiotic-history.csv",
+    "bytes": 1205,
+    "sha256": "a1830792347b2f9d8c52150f3477097c98aba92746cb9a14e276308a52b7e348"
+  },
+  {
+    "path": "eth/data/protocol-treehouse-protocol-history.csv",
+    "bytes": 1215,
+    "sha256": "ce037ee0a7949d49d0c0ac7c50e0c02a4e9a296f54d45f97b7c318483754d0ea"
+  },
+  {
+    "path": "eth/data/protocol-tydro-history.csv",
+    "bytes": 883,
+    "sha256": "3e77700e2b99f5ca88d72dcdcca40a2f23fc52105263cc74aeeee98ab4c2821c"
+  },
+  {
+    "path": "eth/data/protocol-uniswap-v2-history.csv",
+    "bytes": 1184,
+    "sha256": "f48b7a6b2704507f212147df5c4e463619945ece4fbcccf8ed82421be0276bde"
+  },
+  {
+    "path": "eth/data/protocol-uniswap-v3-history.csv",
+    "bytes": 593,
+    "sha256": "679087f6084dd5d81268f0d1fc4712f18524bb67a2f085abf68bfb82509218c9"
+  },
+  {
+    "path": "eth/data/protocol-uniswap-v4-history.csv",
+    "bytes": 593,
+    "sha256": "679087f6084dd5d81268f0d1fc4712f18524bb67a2f085abf68bfb82509218c9"
+  },
+  {
+    "path": "eth/data/protocol-upshift-history.csv",
+    "bytes": 1106,
+    "sha256": "eb19e983dc18fe441deb21cdf7ead910a4f0b27c326ff63a136ba59dbb1a9a5b"
+  },
+  {
+    "path": "eth/data/protocol-velodrome-v2-history.csv",
+    "bytes": 1182,
+    "sha256": "1aa597df65dea0c898ebd8537d7c6efc40b7649cd55c3b6450707babd7c977b6"
+  },
+  {
+    "path": "eth/data/protocol-velodrome-v3-history.csv",
+    "bytes": 1162,
+    "sha256": "0486b3d0d9b03851202734bbefe4ea4e90305212cbea411589a6bab00c767496"
+  },
+  {
+    "path": "eth/data/protocol-venus-core-pool-history.csv",
+    "bytes": 1183,
+    "sha256": "ac944f796193c22e7b41a1ed3306573761c8ef89cdbf643ccfc7f73d92afd02d"
+  },
+  {
+    "path": "eth/data/protocol-vesper-history.csv",
+    "bytes": 1181,
+    "sha256": "33f42dc1772562f5e2016f42c770aabbb7e26ed2b93291c83e16b2a7d3001468"
+  },
+  {
+    "path": "eth/data/protocol-vvs-standard-history.csv",
+    "bytes": 1014,
+    "sha256": "f0089928ca9d3336e65e4b561179f8cc9256682ce0a1b3afbdf71aca3523806c"
+  },
+  {
+    "path": "eth/data/protocol-yearn-finance-history.csv",
+    "bytes": 1182,
+    "sha256": "90ee852944f54b22cd10fce76d233085fe80db6cd3280028ca585206144a0b75"
+  },
+  {
+    "path": "eth/data/protocol-yield-basis-history.csv",
+    "bytes": 861,
+    "sha256": "9f2ae2e79dbeb86549ae085c62392dd8ef09489488dcb492c56aeb219bcf0f25"
+  },
+  {
+    "path": "eth/data/protocol-yo-protocol-history.csv",
+    "bytes": 1044,
+    "sha256": "5ba2676febcb79c4c5fad7f77c7354d0e7748557d189c874a6fa44fc1bf048bb"
+  },
+  {
+    "path": "eth/data/protocol_source_coverage.json",
+    "bytes": 21873,
+    "sha256": "ae9cd5f7442b36b70685fd745f9322c3604fadcb53adcc39a5ac1b9d5c42b430"
+  },
+  {
+    "path": "eth/data/protocols.csv",
+    "bytes": 9375,
+    "sha256": "389a31c1dc915e5407159ed6d9f17affddbaa6595aa3c307cbcb0771d627dae7"
+  },
+  {
+    "path": "eth/data/reader_analysis.json",
+    "bytes": 58517,
+    "sha256": "6ecbc2faf24cca95de1e8ed3f6aa44f1c7b14853f610fe32dd7ee34f6c20b608"
+  },
+  {
+    "path": "eth/data/reference-PROJECT-CODE-INDEX.md",
+    "bytes": 66850,
+    "sha256": "71e9e03b19c772926b14a627072e9f4a9f48ec39b9911635ba53c3ac184f5016"
+  },
+  {
+    "path": "eth/data/reference-PROJECT-KNOWLEDGE.md",
+    "bytes": 62479,
+    "sha256": "cc41b96a9e3fce552f8224dfd1d8c0b9e6b43cc8aa49eb8deb5cad18fb6697d9"
+  },
+  {
+    "path": "eth/data/reference-REPORT.md",
+    "bytes": 178523,
+    "sha256": "39a11ffc0c1ac7373caeb7c576470b27c5ff42d6a3d06a56849dc86584cd6c4c"
+  },
+  {
+    "path": "eth/data/reference-RESEARCH-PLAN.md",
+    "bytes": 23763,
+    "sha256": "835a13886889bd4faba32d4c879bf534544d4fb5141c6ed3945291e4e818e3af"
+  },
+  {
+    "path": "eth/data/reference-all_captures_manifest.json",
+    "bytes": 42001,
+    "sha256": "acb9dd48036b4f7c3e4907767e1a5be99e01e62f3ec7e21072066af4e5bf1924"
+  },
+  {
+    "path": "eth/data/reference-build_product_chapters.py",
+    "bytes": 42873,
+    "sha256": "49cf3c2644722c5bba8c80daa4e11b5b5c4f8ae0c9c77f8adfcfdc2b9c12eda1"
+  },
+  {
+    "path": "eth/data/reference-carry_borrow_history.py",
+    "bytes": 19578,
+    "sha256": "81884f96daba81c44bb8ca1ac9fb55f3b636681046ba75e5a0326e24dba0cfdd"
+  },
+  {
+    "path": "eth/data/reference-carry_economics_build.py",
+    "bytes": 38771,
+    "sha256": "9d78fd0ea453dd6e9b80c225c2e418b946354ccd9fb55a7e441a8ebe8040ea6b"
+  },
+  {
+    "path": "eth/data/reference-carry_economics_collect.py",
+    "bytes": 12459,
+    "sha256": "9802c744c7ce1b7c1bf2bd8729d2c3e0c67547639843561c254668501b5026e5"
+  },
+  {
+    "path": "eth/data/reference-carry_economics_verify.py",
+    "bytes": 14833,
+    "sha256": "d3da166577a6be28e4049bbbf4de7c05529f944e90ff5666b3031e6727ce809b"
+  },
+  {
+    "path": "eth/data/reference-concrete_holder_distribution_T.json",
+    "bytes": 1354,
+    "sha256": "d7dbba99faa274aeae0604a9184f04020d1ef7efa92b7e156cbb3c4622b2c366"
+  },
+  {
+    "path": "eth/data/reference-concrete_roles_rpc.json",
+    "bytes": 103857,
+    "sha256": "b26345f5a75f85acc2a0ab187111eb8eca40d7a8e5317549717afe1cc896697f"
+  },
+  {
+    "path": "eth/data/reference-controls_rpc.json",
+    "bytes": 18828,
+    "sha256": "7c33c6adb8ac3e7fcf1a5bad8f30bf33689809283b7cd73ee3a5a8d5ad63ed19"
+  },
+  {
+    "path": "eth/data/reference-credit_expansion_build.py",
+    "bytes": 21321,
+    "sha256": "25664d786a6fe4a1a83d99fcf401e183de388a5fd9f9370e0d7392e9c6d76d0a"
+  },
+  {
+    "path": "eth/data/reference-credit_expansion_capture.py",
+    "bytes": 25861,
+    "sha256": "54d8fb6ec996825fdcd1ab3f269629f358909304a15152e5cedd1c0b461c0d5f"
+  },
+  {
+    "path": "eth/data/reference-deep_positions2_rpc.json",
+    "bytes": 24966,
+    "sha256": "be8982f47e252786733ae819b11c469ccd48885b15e23a919bf3c32250a17b5d"
+  },
+  {
+    "path": "eth/data/reference-deep_positions_rpc.json",
+    "bytes": 66513,
+    "sha256": "d8ab5718598ef2b11032b859ca9d5166c53224554f5abe85a4e1f158066234f1"
+  },
+  {
+    "path": "eth/data/reference-demand_and_fee_allocation_T.json",
+    "bytes": 11009,
+    "sha256": "15d4ea084eb101782680ea02c0d86a0049d71093ee129df08375e894cf052bc5"
+  },
+  {
+    "path": "eth/data/reference-effective_yb_supply_and_meth_cash_T.json",
+    "bytes": 11022,
+    "sha256": "5f40fbc23cbf01a7369c3b2ec2a6645c9c44b123856325d8e8466cf98350b9f2"
+  },
+  {
+    "path": "eth/data/reference-exit_getters_T.json",
+    "bytes": 5512,
+    "sha256": "2c8568ade5ea0bd4354c2180adfef2161fd496adb6fa24ed2cd1c9dbeff562fe"
+  },
+  {
+    "path": "eth/data/reference-extra_controls_rpc.json",
+    "bytes": 8524,
+    "sha256": "b91af870de4084498607d30326fdd33a2519ab0c62cd9f162854bc3f0b8b7050"
+  },
+  {
+    "path": "eth/data/reference-funding_history_rpc.json",
+    "bytes": 126461,
+    "sha256": "68483233791368ea37764dd536de26d365d46362ea31fa5f0a5a3e7b07c19728"
+  },
+  {
+    "path": "eth/data/reference-historical_endpoints_Blast.json",
+    "bytes": 727381,
+    "sha256": "9c273770f75b3e7e388fc348add79c28fe4999e0c55e2066f496f8e82151ee71"
+  },
+  {
+    "path": "eth/data/reference-history_rpc.json",
+    "bytes": 652225,
+    "sha256": "04c4da7b46ca87fa4e8f0558b589f4fcca68807b38106b820201821b65ac7c20"
+  },
+  {
+    "path": "eth/data/reference-holder_exits_and_bounded_history_repair_T.json",
+    "bytes": 217549,
+    "sha256": "e71873c0c0f3c7af9ba5e6b6226845df6a75fb1015ffd9bcd2c4082d5e593210"
+  },
+  {
+    "path": "eth/data/reference-http_manifest.json",
+    "bytes": 14552,
+    "sha256": "e200a3e23dcc384cfd45ea491b2679f9064b133e45e0d27e651ab121f93d920a"
+  },
+  {
+    "path": "eth/data/reference-input_funding_atlas-94d1d4e9dc321477.json",
+    "bytes": 2229304,
+    "sha256": "94d1d4e9dc321477f88ec4792911d725babd6edd685396e56f0e504b63d01921"
+  },
+  {
+    "path": "eth/data/reference-liquid_holder_distribution_T.json",
+    "bytes": 892976,
+    "sha256": "6ea408962cc53cedee716ec31b5627801942fe12afe8278082ba56c45a2fd5bf"
+  },
+  {
+    "path": "eth/data/reference-liquid_op_holder_distribution_T.json",
+    "bytes": 175174,
+    "sha256": "8f466745a0b66cff3ef9c67129576a0a9d4513fe4936b90882c119e98ddce56c"
+  },
+  {
+    "path": "eth/data/reference-liquity_holder_distribution_T.json",
+    "bytes": 16571,
+    "sha256": "64c609b80dcb160baedb014c1e2413eed39c9f3fa3ecb3917d430959852ed8a7"
+  },
+  {
+    "path": "eth/data/reference-liquity_wallet_T.json",
+    "bytes": 3264,
+    "sha256": "b5154c459c4cb3aa91ea2eee7594c4b056fc243a64ef8e685d74f5818c112bba"
+  },
+  {
+    "path": "eth/data/reference-loan_prices_rpc.json",
+    "bytes": 9001,
+    "sha256": "0e37fc762e5aa249f94bb98058963913ae5383ded98e32274af780205c87aca9"
+  },
+  {
+    "path": "eth/data/reference-market_controls_rpc.json",
+    "bytes": 54405,
+    "sha256": "210e21a0f6800f895f4190bc853bd06940add795f6ee96928b13b8e4eb6d3146"
+  },
+  {
+    "path": "eth/data/reference-product_chapter_editorial_template.json",
+    "bytes": 209529,
+    "sha256": "9c22df22a7f63ca6466b3b4c44387f701290a2a491edd9d0f33c48bee6d8f1d8"
+  },
+  {
+    "path": "eth/data/reference-requests.jsonl",
+    "bytes": 105559,
+    "sha256": "0333fddf6b69e87fd4c26c353c657b80003a92a08a3fe411f79b558c010ded26"
+  },
+  {
+    "path": "eth/data/reference-snapshot_rpc.json",
+    "bytes": 161363,
+    "sha256": "24ad9f898cb960678208d6587c747b78f90d8e2c06b09b25a07d1272d6b8ea40"
+  },
+  {
+    "path": "eth/data/reference-steth_exact_timestamp_benchmark.json",
+    "bytes": 9565,
+    "sha256": "172186208e64db15bdc644b30bed06751b0755d27403794acb2e3628685f1bf9"
+  },
+  {
+    "path": "eth/data/reference-transfer_manifest_op.json",
+    "bytes": 26560,
+    "sha256": "609dc77455fe3d02e89cf21851abc547bc75bf0a21814af9e1fb44b2012fce77"
+  },
+  {
+    "path": "eth/data/reference-transfer_manifest_retry.json",
+    "bytes": 10872,
+    "sha256": "7e7757fbc7906272c2980defdec7c4c9fa29ce8857722bc098369080bb4df2b2"
+  },
+  {
+    "path": "eth/data/reference-transfer_manifest_tenderly.json",
+    "bytes": 44361,
+    "sha256": "17a3a96d4496e1443de6c0377467c5bef2ddd8f3015db5cd184d94101d64e9ab"
+  },
+  {
+    "path": "eth/data/reference-trove_final_rpc.json",
+    "bytes": 19269,
+    "sha256": "701087469733bc43c1c10cacfb1ff0530180ffce55eb8d7330858a38a7ee0f5c"
+  },
+  {
+    "path": "eth/data/reference-units_buffer_and_yb_history_T.json",
+    "bytes": 321166,
+    "sha256": "f838eb96cb2b6c7c47f56462631df7493909271a8d1a40a9c0655897adfd28d8"
+  },
+  {
+    "path": "eth/data/reference-yb_actual_loan_state_T.json",
+    "bytes": 737,
+    "sha256": "85fbac50a685e755ee6f3f794f85e77c0b1c83987069b399837575bdd695541e"
+  },
+  {
+    "path": "eth/data/reference-yearn_spark_loop_position_T.json",
+    "bytes": 9227,
+    "sha256": "41f79a9d34d02759d58f63e2b0e6743f6feb6187d79fc728e32b02e345094fa3"
+  },
+  {
+    "path": "eth/data/reference-yield_pools-65cd13598ec237ee.json",
+    "bytes": 11684076,
+    "sha256": "65cd13598ec237eefc25461937e26df5fda1b1791cf1f7bbea8eeccb59caceda"
+  },
+  {
+    "path": "eth/data/research_borrowers.json",
+    "bytes": 1075219,
+    "sha256": "524efa4e0a6ae3c9ab07a84d6f79c9cbca87c472585d2687ff46f5048198f34c"
+  },
+  {
+    "path": "eth/data/research_expansion_coverage.json",
+    "bytes": 5032,
+    "sha256": "ff904f372d31364f6ea0bd765e39a62964cadd7b316b9688df5a08cf0f7580c3"
+  },
+  {
+    "path": "eth/data/research_market_chapter.json",
+    "bytes": 2979855,
+    "sha256": "d0f050c12bc1ba33f44fec4ef8521b2bf3b5071076025f5c103e19557134cafa"
+  },
+  {
+    "path": "eth/data/rseth_benchmark_rpc.json",
+    "bytes": 17130,
+    "sha256": "c1e3720515ca37455636d4fb4b798c512e3b9f4259db2816605d6075e1f23735"
+  },
+  {
+    "path": "eth/data/strategy_universe_deep.json",
+    "bytes": 97318,
+    "sha256": "3f31107993ce3cf59a83f9a513eebc3e1a82fed23899898fb7d2724a82fddb3b"
+  },
+  {
+    "path": "eth/data/strategy_universe_deep_manifest.json",
+    "bytes": 421761,
+    "sha256": "bc9064546229bc0abde01e7a1c4919f241b55da5f0b327fecf46eb99a3e3b4e1"
+  },
+  {
+    "path": "eth/data/strategy_universe_expansion.json",
+    "bytes": 225782,
+    "sha256": "fa4b72f23dd14274f9bc3f536b9e4af6e28d49c0ece5cd95c46343e4225e8142"
+  },
+  {
+    "path": "eth/data/strategy_universe_expansion_manifest.json",
+    "bytes": 23717,
+    "sha256": "8dd26ac52b9fbd1215f3578c01b15a46df58f223cb593e49a9b2288fd084af85"
+  },
+  {
+    "path": "eth/data/strategy_universe_expansion_pendle_loops.json",
+    "bytes": 223062,
+    "sha256": "954fe9fb623d5f3bced1a77e3d12887f265fadf300f9f4646a0eaadffad0a1f9"
+  },
+  {
+    "path": "eth/data/strategy_universe_expansion_pendle_registry.json",
+    "bytes": 357461,
+    "sha256": "84d5c96085704c2d3807e367d093803413362406bb1bd939981f20ccb722232b"
+  },
+  {
+    "path": "eth/data/treehouse_denomination_history.json",
+    "bytes": 8034,
+    "sha256": "c59b3a6c46fdc959ec98557d3e28ec83fcb110a20fc95c2c785b0ca5cd3f6586"
+  },
+  {
+    "path": "eth/data/wealth-series-0.csv",
+    "bytes": 10,
+    "sha256": "329d424c5a0bd232e5087240c1e358d7e6b5b79ed1535bf351012aaa8ddc7c81"
+  },
+  {
+    "path": "eth/data/wealth-series-1.csv",
+    "bytes": 996,
+    "sha256": "585af55804515899d27f0bf64fefb385b13a0821d8408325fe77c532c14ddad9"
+  },
+  {
+    "path": "eth/data/wealth-series-10.csv",
+    "bytes": 1587,
+    "sha256": "273a555c525a5fd72400bd7517a14d2bf0498712b052dc1efa9d08bfd76ee1a1"
+  },
+  {
+    "path": "eth/data/wealth-series-11.csv",
+    "bytes": 2189,
+    "sha256": "072349b13c986a582ced1c74b66a16118cf749760785be88dd6a1995100ec70b"
+  },
+  {
+    "path": "eth/data/wealth-series-12.csv",
+    "bytes": 1594,
+    "sha256": "6c5d852954974d4c77cb86a6632133895f67ddf1b08717df4a51649e8b98b3b5"
+  },
+  {
+    "path": "eth/data/wealth-series-13.csv",
+    "bytes": 2196,
+    "sha256": "e825dab17e4d1ec27034e72bbe1f4cac6b13ebdefaf402845d74bb839c0b629b"
+  },
+  {
+    "path": "eth/data/wealth-series-14.csv",
+    "bytes": 2184,
+    "sha256": "f212aa93035bd230f242bebce91bb16d3d3e32e6397be7f093ac04bb42ab2d96"
+  },
+  {
+    "path": "eth/data/wealth-series-15.csv",
+    "bytes": 2786,
+    "sha256": "243a6e402f978b8bae5d748b57318d10229ca21850f28ce61986815a9502a1fd"
+  },
+  {
+    "path": "eth/data/wealth-series-16.csv",
+    "bytes": 1001,
+    "sha256": "acc77f0879d648a466046e3750298fc595baf40b6db5d27c80d9146c59631178"
+  },
+  {
+    "path": "eth/data/wealth-series-17.csv",
+    "bytes": 1603,
+    "sha256": "77e6601c24e450342f64a7519082d08e929c6062d36f86aca5956218fcfcf191"
+  },
+  {
+    "path": "eth/data/wealth-series-18.csv",
+    "bytes": 1591,
+    "sha256": "1b2084efefffe3a90237a87e493aa2ac222ea2ce3d51cea6ddfbd750cd9c9bf9"
+  },
+  {
+    "path": "eth/data/wealth-series-19.csv",
+    "bytes": 2193,
+    "sha256": "43b3d09cd5e20611de98f8d1660db4b490ac8008b895a078a678561c7ff67421"
+  },
+  {
+    "path": "eth/data/wealth-series-2.csv",
+    "bytes": 984,
+    "sha256": "c04bdc6d4291b8ddb1fff97271c248348300a21e30228a4136debcada0c95497"
+  },
+  {
+    "path": "eth/data/wealth-series-20.csv",
+    "bytes": 1598,
+    "sha256": "9b463061af981c8e3eba5e06b3e81969b1a0e988365f2a98c9f115b30a31f46d"
+  },
+  {
+    "path": "eth/data/wealth-series-21.csv",
+    "bytes": 2200,
+    "sha256": "ba3f1e72d5ea00358faa2735406df3503f1abdc9fbafc435e03187fb525004cc"
+  },
+  {
+    "path": "eth/data/wealth-series-22.csv",
+    "bytes": 2188,
+    "sha256": "6768c57fbe75967eac1a9665cacdaffaddb606797cdec0db2ddb60fdd6ed4c42"
+  },
+  {
+    "path": "eth/data/wealth-series-23.csv",
+    "bytes": 2790,
+    "sha256": "69d864c09628e7a9e268f4ead4deb2149da62cf70b6fa7c5b934ce0e95433ee7"
+  },
+  {
+    "path": "eth/data/wealth-series-24.csv",
+    "bytes": 1604,
+    "sha256": "10c8fa45e4af961e0dbb25c480e94e6288824d88bcae3858ad7d1d0315ab134d"
+  },
+  {
+    "path": "eth/data/wealth-series-25.csv",
+    "bytes": 2206,
+    "sha256": "138f863effc0f84a48e9b0d3beabdac8e39ba30f0831f28bf557354edcc10522"
+  },
+  {
+    "path": "eth/data/wealth-series-26.csv",
+    "bytes": 2194,
+    "sha256": "cd0bc1ed7f1cbd112180fae0d66aaa9eeb186867573a37ecab4968efb6cdd1b9"
+  },
+  {
+    "path": "eth/data/wealth-series-27.csv",
+    "bytes": 2796,
+    "sha256": "2adc42594d06b5d852b9e9f75ed150dd2ac8147153745ec1c25b8748f6f58c12"
+  },
+  {
+    "path": "eth/data/wealth-series-28.csv",
+    "bytes": 2201,
+    "sha256": "be3cd7e088ef92b32602e2e634cd3f5c90bb2662a806b2bda9475067a3a4e6e1"
+  },
+  {
+    "path": "eth/data/wealth-series-29.csv",
+    "bytes": 2803,
+    "sha256": "fa2f10543ce98302422804c2f8d2e387dc441aa31c39fe5d1ca9de44da66acfc"
+  },
+  {
+    "path": "eth/data/wealth-series-3.csv",
+    "bytes": 1586,
+    "sha256": "d36ab654ac55a822991fb2b0f26bf990eeeb953adf6877084b2f41147597d465"
+  },
+  {
+    "path": "eth/data/wealth-series-30.csv",
+    "bytes": 2791,
+    "sha256": "a070e847bf007eb9ae3c8ec9e5d8336fffc6f5a4c40f45c6cab2f0d77c6d19cf"
+  },
+  {
+    "path": "eth/data/wealth-series-31.csv",
+    "bytes": 3393,
+    "sha256": "ee17a279d09abfd26ab384c8ef940f7d2a49637b9599b26499641be355b4adc0"
+  },
+  {
+    "path": "eth/data/wealth-series-32.csv",
+    "bytes": 942,
+    "sha256": "14f4004788873bdd449db1006a87927cb4d4bbb7ff07e2fc0b4cff9e8f4293bf"
+  },
+  {
+    "path": "eth/data/wealth-series-33.csv",
+    "bytes": 1557,
+    "sha256": "34e2b3d6adb81a96035ef7b63986cdb79c05a559e8fb8a53b1457909832994b6"
+  },
+  {
+    "path": "eth/data/wealth-series-34.csv",
+    "bytes": 1545,
+    "sha256": "4883eb00d58928bf4b8be8c570d2ff82d0d9fa79e3e1acafaa8753464f0c09e7"
+  },
+  {
+    "path": "eth/data/wealth-series-35.csv",
+    "bytes": 2147,
+    "sha256": "75c9421acd1d82d8834e24560a00b9d469f3b4dbd918640d1326bd2b5a9dae32"
+  },
+  {
+    "path": "eth/data/wealth-series-36.csv",
+    "bytes": 1552,
+    "sha256": "75821f1e54619754b813a95e9ca02b32f043ed5a3c0bb3de2f95be09222c83d4"
+  },
+  {
+    "path": "eth/data/wealth-series-37.csv",
+    "bytes": 2154,
+    "sha256": "79c72fb4bbadfff711bd765d2f8ddcaf7cc42985f43c265fd2bc3bfe413986da"
+  },
+  {
+    "path": "eth/data/wealth-series-38.csv",
+    "bytes": 2142,
+    "sha256": "595f988aed5ed7b31aa90d70f03513778219e5f1a775f2c044ec42394777f9ce"
+  },
+  {
+    "path": "eth/data/wealth-series-39.csv",
+    "bytes": 2744,
+    "sha256": "f126f0ad81947b96b5cf9cb66084c972bf8996fd43797a5ba689bf4d3bc48fe8"
+  },
+  {
+    "path": "eth/data/wealth-series-4.csv",
+    "bytes": 991,
+    "sha256": "fea20b35b769a3220e02de17c2309f57fe57c9fb0bc8c2fef5761e6d676e7dbf"
+  },
+  {
+    "path": "eth/data/wealth-series-40.csv",
+    "bytes": 1558,
+    "sha256": "6477100ee44dfee8a45882d2354f70e1f7f7a9d6a3213a5f692acb2e5ebf08be"
+  },
+  {
+    "path": "eth/data/wealth-series-41.csv",
+    "bytes": 2160,
+    "sha256": "7a1ea9aa89466ad4bbcfd6a09df4d53e7e9d04ded031321894cd1c11cf0316e4"
+  },
+  {
+    "path": "eth/data/wealth-series-42.csv",
+    "bytes": 2148,
+    "sha256": "f8277ccb297ca2dda51c5c79f2c2a4ed822ed4d782ea49aee5e9a14f904c0d89"
+  },
+  {
+    "path": "eth/data/wealth-series-43.csv",
+    "bytes": 2750,
+    "sha256": "5056b3a05dd396e63e0b820ef2df80a488fa8b44cb670fe60c2e61c3822c506f"
+  },
+  {
+    "path": "eth/data/wealth-series-44.csv",
+    "bytes": 2155,
+    "sha256": "5df6569862caa59c49ddf79f17cd3a14a5276e92715b79a29dc4026fb63ad1b2"
+  },
+  {
+    "path": "eth/data/wealth-series-45.csv",
+    "bytes": 2757,
+    "sha256": "a219d012aeb4b02960f4d85b5971996db03eae9e55b7a75f2a425d6ecdc7a08d"
+  },
+  {
+    "path": "eth/data/wealth-series-46.csv",
+    "bytes": 2745,
+    "sha256": "0b621bf76285234bb6fd4a9e748e2ef69132cdacdbf63ddc58a0665d1d8aaa8e"
+  },
+  {
+    "path": "eth/data/wealth-series-47.csv",
+    "bytes": 3347,
+    "sha256": "461e86f43a94b77d54440b812d3286acbc0b22d35e84e872e83a5b1cd690ca75"
+  },
+  {
+    "path": "eth/data/wealth-series-48.csv",
+    "bytes": 1562,
+    "sha256": "0b29dfa1333d360d59e4863f3aecd4c6c10f2b3f6124ce6b54e85ff9c88a3521"
+  },
+  {
+    "path": "eth/data/wealth-series-49.csv",
+    "bytes": 2164,
+    "sha256": "3c218068fc5bdd1c7521b500968dedcd7d091018b18ce581700ce916fab77198"
+  },
+  {
+    "path": "eth/data/wealth-series-5.csv",
+    "bytes": 1593,
+    "sha256": "d78761c129bc63c02bb38afc03745c1e81215f4ede5695c046ab0e6437397c73"
+  },
+  {
+    "path": "eth/data/wealth-series-50.csv",
+    "bytes": 2152,
+    "sha256": "27e501f27fd7ddf90fd344fabfe9c7155cc67acd7ae05333b78017594c69dda8"
+  },
+  {
+    "path": "eth/data/wealth-series-51.csv",
+    "bytes": 2754,
+    "sha256": "c7b7b6f4176c9156247e1929577147086046d0576a031d9ecab544501d9133bb"
+  },
+  {
+    "path": "eth/data/wealth-series-52.csv",
+    "bytes": 2159,
+    "sha256": "97ee47f409e3cc9c2f4b50b4cc6e43fdd623e80d4032fc1813133f50d113351e"
+  },
+  {
+    "path": "eth/data/wealth-series-53.csv",
+    "bytes": 2761,
+    "sha256": "6408ce669a192a90479718829204bcb73d59831c0275c5b9756321dc92867103"
+  },
+  {
+    "path": "eth/data/wealth-series-54.csv",
+    "bytes": 2749,
+    "sha256": "50f0f11da29895f20cb44ff2fd8264301a1de35818afa8922f85da84d1dfb67c"
+  },
+  {
+    "path": "eth/data/wealth-series-55.csv",
+    "bytes": 3351,
+    "sha256": "99bf25635f4c0b513143ae12bc28adcc5182ff141c9b23d5f6c22a7adec3c22f"
+  },
+  {
+    "path": "eth/data/wealth-series-56.csv",
+    "bytes": 2165,
+    "sha256": "c887c280036f3d5949fd17e11f109f81e232009dc7da096dcf1aa07fbe84187e"
+  },
+  {
+    "path": "eth/data/wealth-series-57.csv",
+    "bytes": 2767,
+    "sha256": "54b9d18267f59ce19745463dead853176315d3b13ea89ca637ef6fb0c5d971b9"
+  },
+  {
+    "path": "eth/data/wealth-series-58.csv",
+    "bytes": 2755,
+    "sha256": "ba48b33e1f52ea9999c7f3adc8be01b100884c05c5ea2b9a8da1b77cfaf3e1c4"
+  },
+  {
+    "path": "eth/data/wealth-series-59.csv",
+    "bytes": 3357,
+    "sha256": "bc1a853e776e9e13598f7a6638b47af2fc233206d2b6fa8ef59f713d857a07ec"
+  },
+  {
+    "path": "eth/data/wealth-series-6.csv",
+    "bytes": 1581,
+    "sha256": "d13a111bb45dcb4f72233714b349ee1aa3fdc01d7e625fe2abc4697f1b928412"
+  },
+  {
+    "path": "eth/data/wealth-series-60.csv",
+    "bytes": 2762,
+    "sha256": "85cc03b7c6a967b06adefac1479a270ac598cde0bcbea296e0b12d698f1265b3"
+  },
+  {
+    "path": "eth/data/wealth-series-61.csv",
+    "bytes": 3364,
+    "sha256": "cccd5a5ac66850f4b454839601ba476b9758f1aadda5d30aa95fb0d4819da45a"
+  },
+  {
+    "path": "eth/data/wealth-series-62.csv",
+    "bytes": 3352,
+    "sha256": "4d39a8e72b03662a7f1c9785ed50f2a9c5a5da8a2bff2838589d073d003f6353"
+  },
+  {
+    "path": "eth/data/wealth-series-63.csv",
+    "bytes": 3954,
+    "sha256": "b654872c2867c491de442c6c846d60777c66670104f1f71c09b16ed1ce2354e3"
+  },
+  {
+    "path": "eth/data/wealth-series-7.csv",
+    "bytes": 2183,
+    "sha256": "1bb398fa240836a3c462c7ec691ab3a4b3991e7685a5462563b0acb575aa6af8"
+  },
+  {
+    "path": "eth/data/wealth-series-8.csv",
+    "bytes": 997,
+    "sha256": "07c82c9f6ab145668265005103f00eb3c9e7195efefa77d44127cf309237f7e8"
+  },
+  {
+    "path": "eth/data/wealth-series-9.csv",
+    "bytes": 1599,
+    "sha256": "4aa8bb1d01948699f6f8ade4d586d0228fc86b171c956bedad90d4167d18c4ed"
+  },
+  {
+    "path": "eth/data/weth_lending_markets_T.json",
+    "bytes": 27069,
+    "sha256": "cfce8df4fc3f93e8941cdd2637a209f38fead47fda17fa22c688c7697fcb63d0"
+  },
+  {
+    "path": "eth/data/weth_lending_summary_T.json",
+    "bytes": 630,
+    "sha256": "d39f011950a49557e4dcab6c4b5861ca2ca9f686a7c5feddc6334025c3d1cf14"
+  },
+  {
+    "path": "eth/dossiers/carry-credit.html",
+    "bytes": 8658,
+    "sha256": "e16a1d8db91d224273f10247b2c4970a8c0e613a1dde442ce07c052c2d47e221"
+  },
+  {
+    "path": "eth/dossiers/cian-rseth.html",
+    "bytes": 6877,
+    "sha256": "5ac28b0fb0fb13b77de1e1d3fd8825b7aa00dad6d09d5e7818b8e76390f85309"
+  },
+  {
+    "path": "eth/dossiers/concrete-eth.html",
+    "bytes": 11298,
+    "sha256": "1809e038831ecbf2361862656c66b7edc25769b874b67b98916500232506ea01"
+  },
+  {
+    "path": "eth/dossiers/ethena-basis.html",
+    "bytes": 8590,
+    "sha256": "fb9c3a3af04eef24f95b267ea14a1ac750d8e59f7c0a7eb63e5a50dcf9a1bbba"
+  },
+  {
+    "path": "eth/dossiers/etherfi-liquid-eth.html",
+    "bytes": 23971,
+    "sha256": "ab2b31e20e0cbea6ebb54e63773c17e537f8dd016207573919a91d25acf303ca"
+  },
+  {
+    "path": "eth/dossiers/fluid-lite.html",
+    "bytes": 8258,
+    "sha256": "2090fbfabe04c6e0bcc5c71431960d07cb261da124818c7f11e377866126d92f"
+  },
+  {
+    "path": "eth/dossiers/justlend-tron.html",
+    "bytes": 6331,
+    "sha256": "745c434eeec457f07a8686a412cc11de47699726308c9b79ae3054008b3a7634"
+  },
+  {
+    "path": "eth/dossiers/lending-lp.html",
+    "bytes": 8837,
+    "sha256": "59f30876b83768efdbbe601afb56aa32dd886a5bb5c2f30e167c785f79ac6722"
+  },
+  {
+    "path": "eth/dossiers/liquid-monad.html",
+    "bytes": 6684,
+    "sha256": "ae405bc6bad5eb54ba025ebc30bee8cdb37fd02c210103221cac45eeb0aa26af"
+  },
+  {
+    "path": "eth/dossiers/pendle-pt.html",
+    "bytes": 6145,
+    "sha256": "1731643a7ca1aea3c8d722a9363b124f0f77a945689b311fdbbf7573c76f33c0"
+  },
+  {
+    "path": "eth/dossiers/staking-restaking.html",
+    "bytes": 9055,
+    "sha256": "4419f85913794cac0fe4208cbe8dd29a43f3ec2e47d1f3e07ea6200b7767bb77"
+  },
+  {
+    "path": "eth/dossiers/treehouse-teth.html",
+    "bytes": 7506,
+    "sha256": "a3db966d2a25bb2a2233657b3369a05fc7075a432fc7322fbcbaa2fdcc27fcd8"
+  },
+  {
+    "path": "eth/exhibits.html",
+    "bytes": 11771782,
+    "sha256": "6853e167dc8bbe649c242bee85e372e41825d3c0a541a14760bd6801d8fd8ef2"
+  },
+  {
+    "path": "eth/figures/eth-wealth.png",
+    "bytes": 84860,
+    "sha256": "9dbbc43e782a6a656f702ba4a103374f08ee394d2c4b3791d0adc34eda997771"
+  },
+  {
+    "path": "eth/figures/eth-wealth.svg",
+    "bytes": 10785,
+    "sha256": "adbbe8fe5383f404b5bd2e25422295bccd5b9381952973eadef384aa5733222e"
+  },
+  {
+    "path": "eth/index.html",
+    "bytes": 11724711,
+    "sha256": "8925df0f366e85a3cfb0362cc2360fa7bc8d027ae22b2ebc7882807111a47206"
+  },
+  {
+    "path": "eth/library/AUDIT.html",
+    "bytes": 11004,
+    "sha256": "cc2e62d0da6fbf84933dcd80f22f8e3244b89862dda8e7efbe2e275cb825129e"
+  },
+  {
+    "path": "eth/library/BORROW-HISTORY.html",
+    "bytes": 10613,
+    "sha256": "d59a2bb13a1a6df6ebb6adb2b93d0df81b9d887bb5a97bbe19072820f7bf1a15"
+  },
+  {
+    "path": "eth/library/BORROWER-USE.html",
+    "bytes": 19427,
+    "sha256": "6d91a4a2fb9ef542c58668f7753e6f390d682dc9f91788b270d63649885ff067"
+  },
+  {
+    "path": "eth/library/BRIEFING.html",
+    "bytes": 16766,
+    "sha256": "b9f494b7816f5164c7e4b88d30aa81d3c0a52bed0889925cd7c34d1d355c29cd"
+  },
+  {
+    "path": "eth/library/CAPITAL-INCOME-EXIT.html",
+    "bytes": 21159,
+    "sha256": "c11f41fe8c66e055492fdb54385971260816a4e961fb42a19c6fef7fea58e244"
+  },
+  {
+    "path": "eth/library/CARRY-CATEGORY.html",
+    "bytes": 27590,
+    "sha256": "cf077111448f32d12cf9f94e76fa0d9fac1ad0d474a199271bcdb941a4afa028"
+  },
+  {
+    "path": "eth/library/CARRY-LIFECYCLES.html",
+    "bytes": 22595,
+    "sha256": "a8463dde4d91fafa92f049f594fb479f48ac79b19712b85cf530601843cc0230"
+  },
+  {
+    "path": "eth/library/CARRY-MATH.html",
+    "bytes": 48878,
+    "sha256": "8aaf2f5ee49c3cca1dba2ecc8a1c979bd4108f63902d1b622831ec6eda368233"
+  },
+  {
+    "path": "eth/library/CARRY-PRODUCTS.html",
+    "bytes": 33195,
+    "sha256": "16caf7cfa8d2413aee5a2573d2ea3d185108576503c06604a505efcc516aa42a"
+  },
+  {
+    "path": "eth/library/CARRY-VARIANTS-EXPANSION.html",
+    "bytes": 14796,
+    "sha256": "7b13ef74b901ebaf9093dd3abb13579739fbd6b4fc4da4b8077a19c91d5b82f5"
+  },
+  {
+    "path": "eth/library/CREDIT-EXPANSION.html",
+    "bytes": 14454,
+    "sha256": "3c6c63fa75b26f32c511ef576d538251b0419ca590eb3467374d0725a2d0e565"
+  },
+  {
+    "path": "eth/library/DEPENDENCIES.html",
+    "bytes": 5187,
+    "sha256": "9f2faf1f3c14e81dbb3092ce15956f54400047dbd02fd096cf3f4b5c4da67d34"
+  },
+  {
+    "path": "eth/library/DOLLAR-FUNDING-ATLAS.html",
+    "bytes": 15692,
+    "sha256": "0d99d51fc74d0978ad910bae08ee44af41e8afde6854c9fc50c5e47f917ea6fb"
+  },
+  {
+    "path": "eth/library/ECONOMICS.html",
+    "bytes": 11219,
+    "sha256": "80036a8192888f16844b353e1e7b42d5f4e6f876d8ca0f6743b3285abada4626"
+  },
+  {
+    "path": "eth/library/EVIDENCE.html",
+    "bytes": 8198,
+    "sha256": "089114668d27890c67f34daf78801dbe715825f57a83e44b9677445bb5d6d075"
+  },
+  {
+    "path": "eth/library/EXECUTION-CHECKLIST.html",
+    "bytes": 8583,
+    "sha256": "0efb75353c9d06eea40664b8a8c9019a77af88f43e151a255379cf2a67fdd9a9"
+  },
+  {
+    "path": "eth/library/HGETH-LOAN-BOOK.html",
+    "bytes": 6534,
+    "sha256": "e01b6162a7c556432136e985b8f7f5d0b02bba7274a8545ecb371ad21aacbf1a"
+  },
+  {
+    "path": "eth/library/HISTORY.html",
+    "bytes": 9622,
+    "sha256": "dfd8e27e7aa29c4d3b129e7df8c155189626ac5beb96b8fd9a57a9b607b0c9b0"
+  },
+  {
+    "path": "eth/library/LENDING-MARKETS.html",
+    "bytes": 6796,
+    "sha256": "134301a71cc5c1eca506481a6d1c8394bcf8f5bf639d2a442b6e52624348f67e"
+  },
+  {
+    "path": "eth/library/MARKET-COVERAGE.html",
+    "bytes": 13557,
+    "sha256": "b1b3375ed47527d06bb8cbd37b1de3bb6b721b8105ca9abc597d407414738323"
+  },
+  {
+    "path": "eth/library/MARKET-RESEARCH.html",
+    "bytes": 25847,
+    "sha256": "8a91899b0b09cb8192102a86047b190565c100e3cea1f674a27438ec8c9f6c0b"
+  },
+  {
+    "path": "eth/library/MARKET-STRUCTURE.html",
+    "bytes": 7815,
+    "sha256": "6b42cfbbc28c852055c8ed1a02d6d3b44428933ad2c9c8700655f7b6b01d5959"
+  },
+  {
+    "path": "eth/library/MARKET-TABLES.html",
+    "bytes": 27381,
+    "sha256": "1b87af7e4d1f0d749616f045c24fe321954b56dac1131da842df52b07820c026"
+  },
+  {
+    "path": "eth/library/MECHANICS.html",
+    "bytes": 15696,
+    "sha256": "cccca5a32c56bb252dd4b5c767e357bc1f30c452b6ce1cb28f401c584b6fcffc"
+  },
+  {
+    "path": "eth/library/PRODUCT-FINANCIAL-HISTORY.html",
+    "bytes": 15325,
+    "sha256": "e5e0a7035a690728c7c9443ede8d5dd6cab79741624e612367a674bb3b5968d0"
+  },
+  {
+    "path": "eth/library/PRODUCT-SELECTION.html",
+    "bytes": 4607,
+    "sha256": "56095d9477cc0dfb4867799ae35c9e826add6423c3f38ca114eab8d0cb0f03e1"
+  },
+  {
+    "path": "eth/library/PRODUCT-TERMS.html",
+    "bytes": 21948,
+    "sha256": "293f749621abe6901cbb8b75549d4148558ec95c4f8b95476727b462341e2c3e"
+  },
+  {
+    "path": "eth/library/README.html",
+    "bytes": 7675,
+    "sha256": "94a8ad5f6d8584e41f08613a3648d50e2056233c2a18c0d0922c7367717dd500"
+  },
+  {
+    "path": "eth/library/RESEARCH-PLAN.html",
+    "bytes": 33724,
+    "sha256": "f7c870afd0e070ddbf39145e6e69be53657876446c9f423992560ab00f898fef"
+  },
+  {
+    "path": "eth/library/RETURN-DRIVERS.html",
+    "bytes": 20825,
+    "sha256": "c136236fd776b67c372b3f16d237942bffebdd3287ed70a2ff89697789da8436"
+  },
+  {
+    "path": "eth/library/SITE-PARITY.html",
+    "bytes": 6355,
+    "sha256": "0c0cde37a46ffa269cf23dcdafe9af598c470e46bafb474ad29705c12c8001cd"
+  },
+  {
+    "path": "eth/library/STRATEGY-UNIVERSE-EXPANSION.html",
+    "bytes": 19422,
+    "sha256": "14bfd76b156533fc7d554fbf6666142ebefa5dc94006919db9f0ab685cba8579"
+  },
+  {
+    "path": "eth/library/methodology.html",
+    "bytes": 8293,
+    "sha256": "02c9e4edf77780c38dde312d5fcdaa2418406c6a00524add92f6fa3b47f78ae5"
+  },
+  {
+    "path": "eth/library/scope.html",
+    "bytes": 5172,
+    "sha256": "fd36857c600477a43cb2a4218ee91abda65bef4ffa0686a45ebacf5b3856615a"
+  },
+  {
+    "path": "eth/qa/browser-checks.json",
+    "bytes": 12980,
+    "sha256": "a948253d5d31deadcfb3a7cca4280b3daecaf6de9ac3f197c916ff80adcc6995"
+  },
+  {
+    "path": "eth/qa/colleague-readiness.md",
+    "bytes": 1335,
+    "sha256": "ccda8acf100f288e5adf2baf2d69ca3c0c4dcb58324627f84d146e599fa92b43"
+  },
+  {
+    "path": "eth/qa/market_audit_results.json",
+    "bytes": 2909,
+    "sha256": "5300d8a3b5fc36cdb86d8cb63ecf8531f185fd7a4062e41d4f5eeb8c0b78560b"
+  },
+  {
+    "path": "eth/qa/reader-carry-desktop-oct5.jpg",
+    "bytes": 124923,
+    "sha256": "55de281e1865c3f79440929b80695aa53a529741b59222e8f4a2a8995c48065b"
+  },
+  {
+    "path": "eth/qa/reader-carry-mobile-oct5.jpg",
+    "bytes": 50154,
+    "sha256": "df08a0d1b67312f857d431f701d45a1b367dc246e74f6ceb0f584bafa2949971"
+  },
+  {
+    "path": "eth/qa/reader_alignment_audit.json",
+    "bytes": 198,
+    "sha256": "1a50e7d66ee84454dfebc08d23f9eacd39697ff1e0d9fdc9024eba22e6457b93"
+  },
+  {
+    "path": "eth/qa/research_closure_audit.json",
+    "bytes": 209497,
+    "sha256": "c1cb9dc2ce2d97fd2a10c25029f4924eb46983a52a56e2796621f3b4bfea4d47"
+  },
+  {
+    "path": "eth/qa/site_audit_results.json",
+    "bytes": 2886,
+    "sha256": "bca8a4f9551b66da9fefebda4328deafa479a99c4557b442df7d59e8bec6c7fb"
+  },
+  {
+    "path": "eth/qa/strict_audit_results.json",
+    "bytes": 3172,
+    "sha256": "6d5d4734be5b781a0d3b0de9aa06f6d8f92a7eb6c42b038e6f37a7ba467bbe81"
+  },
+  {
+    "path": "eth/site.css",
+    "bytes": 79405,
+    "sha256": "613fa41eb4cb5545e62c662027706e4a5528a693ca87f1dbd8f06c53f268e014"
+  }
+]

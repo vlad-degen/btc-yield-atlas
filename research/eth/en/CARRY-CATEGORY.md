@@ -1,6 +1,6 @@
 # ETH carry: category composition and capital history
 
-Document review: 4 October 2026. Financial snapshot: 2 October 2026, 23:59:59 UTC. Original interface and discovery captures: 3 October. The new archive reads in this review use the original snapshot and completed-month blocks. Current documentation is not treated as proof of every historical strategy allocation.
+Document review: 5 October 2026. Financial snapshot: 2 October 2026, 23:59:59 UTC. Original interface and discovery captures: 3 October. The new archive reads in this review use the original snapshot and completed-month blocks. Current documentation is not treated as proof of every historical strategy allocation.
 
 The carry section should follow the overall ETH market map and answer four questions: which products use ETH to finance dollar investments, how much capital each reports, where the borrowing and investment happen, and how those products have grown. Product mechanics and risk analysis then explain that map. A category composed only of five managed vaults misses documented carry products and includes products whose main mechanism is different.
 
@@ -88,6 +88,11 @@ A single verified global E4 capital total is not yet available. The category pag
 
 ## Capital history now available
 
+The main page starts with all seven measured books on one 24-month stacked bar chart, followed by three dated development stories, the comparison matrix and five product tabs plus closed cases. The small-book zoom retains all five smaller products. ETH/USD, table and view-matched CSV controls use the same normalized observations. A separate **Market category** view reproduces the two adapter parents used in the category chart. The [normalized reader dataset](../../../data/eth/reader_analysis.json) preserves every missing state and the two measurement lenses.
+
+Liquid’s contract whole-book series rises from 146,203.01 ETH in October 2024 to 176,962.43 ETH in September 2026, a **21.04%** change. This is distinct from the adapter category’s **53.88%** growth and its continuously observed parent’s **54.29% decline**. The adapter ledger selects different token balances and ETH reference prices; new Concrete membership also changes its denominator. None of these is a measured deposit-flow series.
+
+
 The [archived borrowing-rate review](BORROW-HISTORY.md) separately follows Liquid's actual main-account RLUSD loan and its Aave WETH debt. The specific RLUSD main account is funded from July 2026 in the month-end sample. Its September quote is 16.6774% APR, independently verified at 100% utilization; this is a point sample rather than the month's average cost.
 
 The isolated dataset contains primary archive histories at all 24 completed-month blocks, October 2024 through September 2026. Each successful observation retains native book assets, ETH conversion, a same-block Chainlink ETH/USD answer and its update timestamp. Predeployment getter absences were checked against empty code and are null, not zero.
@@ -110,7 +115,7 @@ Historical USD marks use the Ethereum Chainlink ETH/USD proxy. Its description a
 
 The native and dollar curves answer different questions. Concrete's native book assets are flat, while their ETH equivalent increases with LST conversion and their USD value changes with ETH/USD. Neither change alone establishes external inflows or realized arbitrage income. The documented genesis issuance and self-held share findings remain necessary context.
 
-The page can now present **capital history of products that offer carry today**, with the whole-product scope visible. It cannot present a verified two-year carry allocation series. In particular, multiplying Liquid ETH's historical NAV by the current 64.66% weight would invent a historical strategy allocation. The same applies to Rocksolid's August weight or a currently described Fusion mandate.
+The page presents **capital history of products with current, historical or declared carry evidence**, with the whole-product scope visible. It cannot present a verified two-year carry allocation series. In particular, multiplying Liquid ETH's historical NAV by the current 64.66% weight would invent a historical strategy allocation. The same applies to Rocksolid's August weight or a currently described Fusion mandate.
 
 To complete category evolution, retain a dated strategy-weight ledger or reconstruct historical collateral, debts and dollar destinations. Existing product NAV can then be split only for months where that split has evidence. A missing strategy weight should create a gap in the carry-allocation series, even if total product NAV is known.
 
