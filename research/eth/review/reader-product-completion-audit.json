@@ -1,0 +1,206 @@
+{
+  "checked_at": "2026-10-05T20:10:52.517Z",
+  "site_sha256": "8925df0f366e85a3cfb0362cc2360fa7bc8d027ae22b2ebc7882807111a47206",
+  "all_passed": true,
+  "requirements": [
+    "contract-linked flow",
+    "actors and control",
+    "income payer",
+    "capital and return history",
+    "shareholders",
+    "collateral and borrowing legs",
+    "dated events"
+  ],
+  "products": [
+    {
+      "chartColumns": 25,
+      "errors": false,
+      "id": "concrete",
+      "metricCount": 6,
+      "overflow": 0,
+      "parts": [
+        {
+          "part": "flow",
+          "textLength": 1292
+        },
+        {
+          "part": "actors",
+          "textLength": 663
+        },
+        {
+          "part": "payers",
+          "textLength": 567
+        },
+        {
+          "part": "capital",
+          "textLength": 7321
+        },
+        {
+          "part": "holders",
+          "textLength": 1144
+        },
+        {
+          "part": "loans",
+          "textLength": 1631
+        },
+        {
+          "part": "timeline",
+          "textLength": 593
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chartColumns": 83,
+      "errors": false,
+      "id": "liquid",
+      "metricCount": 6,
+      "overflow": 0,
+      "parts": [
+        {
+          "part": "flow",
+          "textLength": 1602
+        },
+        {
+          "part": "actors",
+          "textLength": 546
+        },
+        {
+          "part": "payers",
+          "textLength": 773
+        },
+        {
+          "part": "capital",
+          "textLength": 28788
+        },
+        {
+          "part": "holders",
+          "textLength": 2688
+        },
+        {
+          "part": "loans",
+          "textLength": 3147
+        },
+        {
+          "part": "timeline",
+          "textLength": 609
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chartColumns": 34,
+      "errors": false,
+      "id": "rocksolid",
+      "metricCount": 6,
+      "overflow": 0,
+      "parts": [
+        {
+          "part": "flow",
+          "textLength": 1832
+        },
+        {
+          "part": "actors",
+          "textLength": 954
+        },
+        {
+          "part": "payers",
+          "textLength": 669
+        },
+        {
+          "part": "capital",
+          "textLength": 8507
+        },
+        {
+          "part": "holders",
+          "textLength": 1582
+        },
+        {
+          "part": "loans",
+          "textLength": 1768
+        },
+        {
+          "part": "timeline",
+          "textLength": 1192
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chartColumns": 32,
+      "errors": false,
+      "id": "liquity",
+      "metricCount": 6,
+      "overflow": 0,
+      "parts": [
+        {
+          "part": "flow",
+          "textLength": 1562
+        },
+        {
+          "part": "actors",
+          "textLength": 1015
+        },
+        {
+          "part": "payers",
+          "textLength": 628
+        },
+        {
+          "part": "capital",
+          "textLength": 8410
+        },
+        {
+          "part": "holders",
+          "textLength": 1568
+        },
+        {
+          "part": "loans",
+          "textLength": 2060
+        },
+        {
+          "part": "timeline",
+          "textLength": 855
+        }
+      ],
+      "passed": true
+    },
+    {
+      "chartColumns": 19,
+      "errors": false,
+      "id": "royco",
+      "metricCount": 6,
+      "overflow": 0,
+      "parts": [
+        {
+          "part": "flow",
+          "textLength": 1565
+        },
+        {
+          "part": "actors",
+          "textLength": 2321
+        },
+        {
+          "part": "payers",
+          "textLength": 581
+        },
+        {
+          "part": "capital",
+          "textLength": 5849
+        },
+        {
+          "part": "holders",
+          "textLength": 1419
+        },
+        {
+          "part": "loans",
+          "textLength": 1591
+        },
+        {
+          "part": "timeline",
+          "textLength": 750
+        }
+      ],
+      "passed": true
+    }
+  ]
+}
