@@ -31,4 +31,4 @@ The fresh presentation-link manifest selects 872 website files (73.414 MB), incl
 
 The new ETH HTML SHA256 is `8925df0f366e85a3cfb0362cc2360fa7bc8d027ae22b2ebc7882807111a47206`. The normalized reader bridge passed 428 financial/export checks and the website passed 38 desktop/mobile browser checks. The remote main tree preserves all 345 original BTC Git blobs. The broader local audit preserves 384 BTC files and 526 original captured responses.
 
-Live Pages and response verification: pending build completion.
+Live Pages and response verification: pending build completion. Run `37366629598` is queued for a GitHub-hosted runner. GitHub reports an Actions incident affecting runner assignment (created 19:11 UTC on 5 October). The ETH change is merged; the published website may still serve the previous edition until that queued deployment completes. Status source: https://www.githubstatus.com/api/v2/incidents/unresolved.json .
