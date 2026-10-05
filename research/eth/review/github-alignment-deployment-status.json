@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-10-05T20:04:24.505445+00:00",
-  "state": "queued",
+  "checked_at": "2026-10-05T20:21:18.811942+00:00",
+  "state": "queued_after_accepted_rerun",
   "workflow_run": 37366629598,
   "run_url": "https://github.com/vlad-degen/btc-yield-atlas/actions/runs/37366629598",
   "merge_commit": "a9b803325b24c4fbff889f62c04d9d9592577022",
@@ -11,5 +11,15 @@
   "browser_checks": 38,
   "public_live_verification": "pending",
   "external_condition": "GitHub Actions runner assignment delays; incident 3q1yb5m7ltvb",
-  "status_source": "https://www.githubstatus.com/api/v2/incidents/unresolved.json"
+  "status_source": "https://www.githubstatus.com/api/v2/incidents/unresolved.json",
+  "first_build_job": 111953288610,
+  "first_build_conclusion": "cancelled",
+  "first_build_completed_at": "2026-10-05T20:11:33Z",
+  "first_build_error": "The job was not acquired by Runner of type hosted even after multiple attempts",
+  "residual_reporting_job_cancelled": true,
+  "whole_workflow_rerun_accepted": true,
+  "rerun_queued_update_at": "2026-10-05T20:16:03Z",
+  "current_API_run_attempt": 1,
+  "current_jobs_returned": 0,
+  "all_five_product_chapters_rendered_and_passed": true
 }
