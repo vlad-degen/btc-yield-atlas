@@ -4121,8 +4121,8 @@
   },
   {
     "path": "eth/exhibits.html",
-    "bytes": 11771782,
-    "sha256": "6853e167dc8bbe649c242bee85e372e41825d3c0a541a14760bd6801d8fd8ef2"
+    "bytes": 11782029,
+    "sha256": "f1f53b7bc32a5e1ee47093fb1ab0b34dd4e47a39793e961975e153c065a91086"
   },
   {
     "path": "eth/figures/eth-wealth.png",
@@ -4136,8 +4136,8 @@
   },
   {
     "path": "eth/index.html",
-    "bytes": 11724711,
-    "sha256": "8925df0f366e85a3cfb0362cc2360fa7bc8d027ae22b2ebc7882807111a47206"
+    "bytes": 11734015,
+    "sha256": "7ff4d4513d726b725ef5ed6bddb84cdb6f971fccf9114db5175260139d55949a"
   },
   {
     "path": "eth/library/AUDIT.html",
@@ -4300,6 +4300,11 @@
     "sha256": "14bfd76b156533fc7d554fbf6666142ebefa5dc94006919db9f0ab685cba8579"
   },
   {
+    "path": "eth/library/index.html",
+    "bytes": 5720,
+    "sha256": "c8f73faa7dcea66b0502ea2a8ebcd654bbb3bd5ac507e98a8490ed192f3c81df"
+  },
+  {
     "path": "eth/library/methodology.html",
     "bytes": 8293,
     "sha256": "02c9e4edf77780c38dde312d5fcdaa2418406c6a00524add92f6fa3b47f78ae5"
@@ -4311,8 +4316,8 @@
   },
   {
     "path": "eth/qa/browser-checks.json",
-    "bytes": 12980,
-    "sha256": "a948253d5d31deadcfb3a7cca4280b3daecaf6de9ac3f197c916ff80adcc6995"
+    "bytes": 7052,
+    "sha256": "25940f8fac5fcbaaa280aa4aa09dfe17c79db02a77da93eacf21619a2a746f6e"
   },
   {
     "path": "eth/qa/colleague-readiness.md",
@@ -4322,12 +4327,22 @@
   {
     "path": "eth/qa/market_audit_results.json",
     "bytes": 2909,
-    "sha256": "5300d8a3b5fc36cdb86d8cb63ecf8531f185fd7a4062e41d4f5eeb8c0b78560b"
+    "sha256": "4715bbef387c2938e2493654bb0c33429c910a727231d55116ce43e85239ddb0"
   },
   {
     "path": "eth/qa/reader-carry-desktop-oct5.jpg",
     "bytes": 124923,
     "sha256": "55de281e1865c3f79440929b80695aa53a529741b59222e8f4a2a8995c48065b"
+  },
+  {
+    "path": "eth/qa/reader-carry-hover-editorial-oct5.jpg",
+    "bytes": 121974,
+    "sha256": "84c73179bfcfa1f0569c0c3ae62795d8e8ec308b4621e803bfabdce15b63bc8c"
+  },
+  {
+    "path": "eth/qa/reader-carry-hover-mobile-editorial-oct5.jpg",
+    "bytes": 53529,
+    "sha256": "f265504288f577387fa56133cdc5b39cff36d5b29dd0a1d7e3ed3ce10f14753e"
   },
   {
     "path": "eth/qa/reader-carry-mobile-oct5.jpg",
@@ -4337,26 +4352,26 @@
   {
     "path": "eth/qa/reader_alignment_audit.json",
     "bytes": 198,
-    "sha256": "1a50e7d66ee84454dfebc08d23f9eacd39697ff1e0d9fdc9024eba22e6457b93"
+    "sha256": "d019805d49d096ffc684adf56d8d3503afeaf86abbf8a143a11f8b49e61d5989"
   },
   {
     "path": "eth/qa/research_closure_audit.json",
     "bytes": 209497,
-    "sha256": "c1cb9dc2ce2d97fd2a10c25029f4924eb46983a52a56e2796621f3b4bfea4d47"
+    "sha256": "5e12a687216d579c538152635410b7fcd3049257a9b0318936c0de0796a56147"
   },
   {
     "path": "eth/qa/site_audit_results.json",
     "bytes": 2886,
-    "sha256": "bca8a4f9551b66da9fefebda4328deafa479a99c4557b442df7d59e8bec6c7fb"
+    "sha256": "2f9f5c3d53bcf26a06df020353d14367001699613fc2712fd951246b61e68fbd"
   },
   {
     "path": "eth/qa/strict_audit_results.json",
     "bytes": 3172,
-    "sha256": "6d5d4734be5b781a0d3b0de9aa06f6d8f92a7eb6c42b038e6f37a7ba467bbe81"
+    "sha256": "136216ffdf2b0cdf01af7ad647424c4fdb17ec2028e085b06521a2750678f5eb"
   },
   {
     "path": "eth/site.css",
-    "bytes": 79405,
-    "sha256": "613fa41eb4cb5545e62c662027706e4a5528a693ca87f1dbd8f06c53f268e014"
+    "bytes": 80437,
+    "sha256": "8207f2a821d6c337749ca8887f1b81984843f1ca0befb8a02c00aaaa3ca642c6"
   }
 ]

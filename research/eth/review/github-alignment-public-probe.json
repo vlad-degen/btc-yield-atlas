@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-05T20:23:37.875299+00:00",
+  "checked_at": "2026-10-05T22:08:58.359116+00:00",
   "responses": [
     {
       "path": "index.html",
@@ -10,18 +10,19 @@
     },
     {
       "path": "eth/index.html",
-      "expected_sha256": "8925df0f366e85a3cfb0362cc2360fa7bc8d027ae22b2ebc7882807111a47206",
+      "expected_sha256": "7ff4d4513d726b725ef5ed6bddb84cdb6f971fccf9114db5175260139d55949a",
       "http_status": 200,
-      "public_sha256": "833b1907c508b61caf0106899b55f925d64b239e3e5c341f82fb5ba4b2db1794",
-      "matches_latest": false
+      "public_sha256": "7ff4d4513d726b725ef5ed6bddb84cdb6f971fccf9114db5175260139d55949a",
+      "matches_latest": true
     },
     {
       "path": "eth/data/carry-history-all-eth.csv",
       "expected_sha256": "542a5728852d9a2cbdfbfd80087c051996b69f0e480bea7c9701146c281bb88e",
-      "http_status": 404,
-      "matches_latest": false
+      "http_status": 200,
+      "public_sha256": "542a5728852d9a2cbdfbfd80087c051996b69f0e480bea7c9701146c281bb88e",
+      "matches_latest": true
     }
   ],
   "BTC_unchanged": true,
-  "latest_ETH_publicly_available": false
+  "latest_ETH_publicly_available": true
 }
