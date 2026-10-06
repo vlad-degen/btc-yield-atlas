@@ -10,6 +10,10 @@
       "passed": true
     },
     {
+      "name": "history_description_matches_census",
+      "passed": true
+    },
+    {
       "name": "sample_concentration_conserves_books",
       "passed": true
     },
@@ -411,10 +415,6 @@
     },
     {
       "name": "frozen_source:finalization_targeted_allocators_T.json",
-      "passed": true
-    },
-    {
-      "name": "frozen_source:finalization_verification.json",
       "passed": true
     },
     {
