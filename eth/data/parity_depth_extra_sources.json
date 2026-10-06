@@ -1,0 +1,68 @@
+[
+  {
+    "key": "yb_hybrid_impl",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xD772EDF092f155f3e81E2b261d96Bcfae4fDC3Ac",
+    "capturedUTC": "2026-10-06T18:05:21.197222+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 18:05:21 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yb_hybrid_impl-79abc9e6a26f2ae9.json",
+    "sha256": "79abc9e6a26f2ae98310fa9ce1c0a79d23eab806c7c393cc0e9febc6f3b461f2",
+    "bytes": 129123
+  },
+  {
+    "key": "yb_old_pool",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x6e5492F8ea2370844EE098A56DD88e1717e4A9C2",
+    "capturedUTC": "2026-10-06T18:05:21.197490+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 18:05:21 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yb_old_pool-e1c24ec981a82f2b.json",
+    "sha256": "e1c24ec981a82f2b1a09d0a0aad96371a799c239c09cb24ed1a18165ceb325d9",
+    "bytes": 201939
+  },
+  {
+    "key": "liquid_cash_hub",
+    "url": "https://optimism.blockscout.com/api/v2/smart-contracts/0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+    "capturedUTC": "2026-10-06T18:05:21.197571+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 18:05:22 GMT",
+    "path": "raw/eth/finalization-2026-10-06/liquid_cash_hub-5a619504c6eecec0.json",
+    "sha256": "5a619504c6eecec0052598a6145a0e6bb97ceedd3849936efbda53a892ad7fce",
+    "bytes": 56259
+  },
+  {
+    "key": "liquid_season3",
+    "url": "https://governance.ether.fi/t/2-ethfi-dao-proposal-season-3-and-airdrop-token-allocation/1145.json",
+    "capturedUTC": "2026-10-06T18:05:21.471635+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 18:05:21 GMT",
+    "path": "raw/eth/finalization-2026-10-06/liquid_season3-c4128456f424156f.json",
+    "sha256": "c4128456f424156fb391781691958e1d76e5a316878b9e0bef7f74b74651706b",
+    "bytes": 61664
+  },
+  {
+    "key": "liquid_help",
+    "url": "https://help.ether.fi/en/articles/517109-how-liquid-works",
+    "capturedUTC": "2026-10-06T18:05:21.515137+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 18:05:22 GMT",
+    "path": "raw/eth/finalization-2026-10-06/liquid_help-cb977eb9faa43b25.txt",
+    "sha256": "cb977eb9faa43b252768b0141829dbd76ffe4b701a78d65d466bb0d4eedbba4c",
+    "bytes": 170152
+  },
+  {
+    "key": "yb_factory_actual",
+    "url": "https://forum.yieldbasis.com/t/deploy-a-permissionless-yield-basis-pool-factory/36.json",
+    "capturedUTC": "2026-10-06T18:05:22.141079+00:00",
+    "request": null,
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden",
+    "path": "raw/eth/finalization-2026-10-06/yb_factory_actual-e295458af6793f1d.txt",
+    "sha256": "e295458af6793f1d26c6c101dfd175910a9687e008d2401697fd3aec60eb168a",
+    "bytes": 5713
+  }
+]
