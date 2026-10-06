@@ -1,0 +1,208 @@
+{
+  "legs": [
+    {
+      "id": "liquid",
+      "name": "ether.fi Liquid ETH",
+      "account": "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+      "venue": "Aave",
+      "symbol": "USDC"
+    },
+    {
+      "id": "liquid",
+      "name": "ether.fi Liquid ETH",
+      "account": "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+      "venue": "Aave",
+      "symbol": "USDT"
+    },
+    {
+      "id": "liquid",
+      "name": "ether.fi Liquid ETH",
+      "account": "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+      "venue": "Spark",
+      "symbol": "PYUSD"
+    },
+    {
+      "id": "lido-earn",
+      "name": "Lido Earn ETH",
+      "account": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+      "venue": "Aave",
+      "symbol": "USDT"
+    },
+    {
+      "id": "lido-earn",
+      "name": "Lido Earn ETH",
+      "account": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+      "venue": "Spark",
+      "symbol": "USDT"
+    },
+    {
+      "id": "lido-earn",
+      "name": "Lido Earn ETH",
+      "account": "0x9938a09fea37ba681a1bd53d33ddde2debec1da0",
+      "venue": "Aave",
+      "symbol": "USDC"
+    },
+    {
+      "id": "avant",
+      "name": "Avant avETH / savETH",
+      "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+      "venue": "Aave",
+      "symbol": "USDC"
+    },
+    {
+      "id": "avant",
+      "name": "Avant avETH / savETH",
+      "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+      "venue": "Spark",
+      "symbol": "USDS"
+    },
+    {
+      "id": "avant",
+      "name": "Avant avETH / savETH",
+      "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+      "venue": "Spark",
+      "symbol": "PYUSD"
+    },
+    {
+      "id": "vesper",
+      "name": "Vesper vaETH",
+      "account": "0x666c80feca6fcd371b0535a9846e2d223cbf1d10",
+      "venue": "Aave",
+      "symbol": "DAI"
+    },
+    {
+      "id": "reservoir-eth",
+      "name": "Reservoir ETH Yield",
+      "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+      "venue": "Aave",
+      "symbol": "USDC"
+    }
+  ],
+  "months": [
+    {
+      "month": "2024-10",
+      "timestamp": 1730419199,
+      "block": 21089068
+    },
+    {
+      "month": "2024-11",
+      "timestamp": 1733011199,
+      "block": 21303933
+    },
+    {
+      "month": "2024-12",
+      "timestamp": 1735689599,
+      "block": 21525890
+    },
+    {
+      "month": "2025-01",
+      "timestamp": 1738367999,
+      "block": 21747949
+    },
+    {
+      "month": "2025-02",
+      "timestamp": 1740787199,
+      "block": 21948291
+    },
+    {
+      "month": "2025-03",
+      "timestamp": 1743465599,
+      "block": 22170334
+    },
+    {
+      "month": "2025-04",
+      "timestamp": 1746057599,
+      "block": 22385293
+    },
+    {
+      "month": "2025-05",
+      "timestamp": 1748735999,
+      "block": 22606142
+    },
+    {
+      "month": "2025-06",
+      "timestamp": 1751327999,
+      "block": 22820673
+    },
+    {
+      "month": "2025-07",
+      "timestamp": 1754006399,
+      "block": 23042513
+    },
+    {
+      "month": "2025-08",
+      "timestamp": 1756684799,
+      "block": 23264565
+    },
+    {
+      "month": "2025-09",
+      "timestamp": 1759276799,
+      "block": 23479243
+    },
+    {
+      "month": "2025-10",
+      "timestamp": 1761955199,
+      "block": 23700766
+    },
+    {
+      "month": "2025-11",
+      "timestamp": 1764547199,
+      "block": 23914920
+    },
+    {
+      "month": "2025-12",
+      "timestamp": 1767225599,
+      "block": 24136052
+    },
+    {
+      "month": "2026-01",
+      "timestamp": 1769903999,
+      "block": 24358292
+    },
+    {
+      "month": "2026-02",
+      "timestamp": 1772323199,
+      "block": 24558867
+    },
+    {
+      "month": "2026-03",
+      "timestamp": 1775001599,
+      "block": 24781026
+    },
+    {
+      "month": "2026-04",
+      "timestamp": 1777593599,
+      "block": 24996367
+    },
+    {
+      "month": "2026-05",
+      "timestamp": 1780271999,
+      "block": 25218797
+    },
+    {
+      "month": "2026-06",
+      "timestamp": 1782863999,
+      "block": 25433938
+    },
+    {
+      "month": "2026-07",
+      "timestamp": 1785542399,
+      "block": 25656292
+    },
+    {
+      "month": "2026-08",
+      "timestamp": 1788220799,
+      "block": 25878704
+    },
+    {
+      "month": "2026-09",
+      "timestamp": 1790812799,
+      "block": 26093737
+    },
+    {
+      "month": "snapshot",
+      "timestamp": 1790985599,
+      "block": 26108081
+    }
+  ]
+}

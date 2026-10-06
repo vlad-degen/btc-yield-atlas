@@ -81,7 +81,8 @@ def run():
     yb = next(p for p in chapters['products'] if p['id'] == 'yieldbasis')
     old_yb = next(p for p in read('strategy_universe_deep')['products'] if p['id'] == 'yb_weth_pool')
     check('YB_frozen_capital_conserved', close(yb['capitalETH'], old_yb['capitalETH']) and close(yb['capitalUSD'], old_yb['capitalUSD']))
-    check('YB_rank_five_actual_USD_loan', yb['rank'] == 5 and close(yb['charts']['loanLegs']['rows'][0]['debtUSD'], old_yb['state']['loan']['debtCrvUSD']))
+    financing=read('economic_questions')
+    check('YB_rank_matches_attributed_USD_financing', yb['rank'] == financing['topFive'].index('yieldbasis')+1 and close(yb['charts']['loanLegs']['rows'][0]['debtUSD'], old_yb['state']['loan']['debtCrvUSD']))
     check('YB_no_fabricated_predeployment_capital', all(r['sizeETH'] is None for r in yb['charts']['capitalHistory']['rows'] if r['month'] <= '2026-04'))
     holders = read('yb_LT_holders_T')
     distribution = yb['charts']['walletDistribution']

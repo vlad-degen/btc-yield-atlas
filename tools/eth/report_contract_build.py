@@ -101,12 +101,16 @@ def run():
            'custodySubsetETH': src['market_netting_closure']['headline']['physical_custody_floor_ETH'],
            'lpCustodyETH': src['market_netting_closure']['lp']['current_root_custody_ETH'],
            'sources': {n: hashlib.sha256((D / (n + '.json')).read_bytes()).hexdigest() for n in names}}
+    economic_path=D/'economic_questions.json'
+    if economic_path.exists():
+        economic=json.loads(economic_path.read_text())
+        out['verifiedDollarFinancing']={'source':'data/eth/economic_questions.json','sourceSHA256':hashlib.sha256(economic_path.read_bytes()).hexdigest(),'directDebtUSD':economic['attributedDollarDebtUSD'],'topFive':economic['topFive'],'topTwoDebtShare':economic['topTwoDebtShare'],'unit':'Outstanding nominal-dollar financing; not TVL or equity'}
     (D / 'report_contract.json').write_text(json.dumps(out, indent=2) + '\n')
     for filename, heads, rows in [
       ('carry-common-30d.csv', ['product', 'start', 'end', 'days', 'ETH_book_return_pct', 'stETH_return_pct', 'excess_pp', 'basis'], [[r['name'], r['start'], r['end'], 30, r['bookReturnPct'], r['benchmarkReturnPct'], r['excessPercentagePoints'], r['basis']] for r in returns]),
       ('carry-status-and-capital.csv', ['product', 'status', 'whole_book_ETH', 'verified_carry_equity_ETH', 'evidence'], [[p['name'], p['status'], p['bookETH'], p['carryEquityETH'], p['allocationEvidence']] for p in census])]:
         with (D / filename).open('w', newline='') as f:
-            w = csv.writer(f); w.writerow(heads); w.writerows(rows)
+            w = csv.writer(f, lineterminator="\n"); w.writerow(heads); w.writerows(rows)
     h = out['headline']
     overview = f'''# ETH yield research: team briefing
 

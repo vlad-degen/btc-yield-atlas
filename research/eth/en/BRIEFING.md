@@ -46,13 +46,13 @@ All eleven detailed products have the same **2 September to 2 October 2026** ret
 
 | Product | 30-day ETH book return | Excess vs stETH, pp |
 | --- | --- | --- |
-| Concrete Delta weETH | 0.1915% | +0.0066 |
 | ether.fi Liquid ETH | 0.2610% | +0.0761 |
+| YieldBasis WETH | -0.1622% | -0.3471 |
 | Lido Earn ETH | 0.2513% | +0.0664 |
 | Avant avETH / savETH | 0.3385% | +0.1536 |
-| YieldBasis WETH | -0.1622% | -0.3471 |
-| Rocksolid rETH | 0.2192% | +0.0343 |
 | Liquity ETH Carry | 0.4597% | +0.2748 |
+| Concrete Delta weETH | 0.1915% | +0.0066 |
+| Rocksolid rETH | 0.2192% | +0.0343 |
 | Makina DETH | 0.3468% | +0.1619 |
 | Vesper vaETH | 0.0698% | -0.1151 |
 | Royco ETH | 0.1849% | +0.0000 |
@@ -123,3 +123,24 @@ At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan in
 Liquid’s stablecoin borrowing predates its current Morpho routes: Aave USDC financing is observed in August 2025. Its 18M PYUSD cohort is negative after funding under three explicit withdrawal conventions, before rewards and other costs. Cash Hub ownership now resolves to 7,012 positive account positions. Lido’s current wrapper follows its November 2025 underlying strategy; its April crisis required a 27-day pause and DAO loss absorption. YieldBasis’s present LT history starts after an earlier WETH pool, and gauge investors have different income rights from unstaked holders. Avant’s senior holder analysis traces Gearbox and Morpho custody instead of treating their contracts as single investors.
 
 [Full product development, accounting assumptions and source evidence](PRODUCT-EVOLUTION.md).
+
+<!-- economic-answers -->
+## Current financing comparison
+
+| Product | Direct dollar debt at T | Debt-weighted quoted APR | Whole book ETH | Scope |
+| --- | --- | --- | --- | --- |
+| ether.fi Liquid ETH | $181,084,944 | 7.79% | 177,171 | attributed product account / direct loan |
+| YieldBasis WETH | $27,814,856 | 10.00% | 10,426 | attributed product account / direct loan |
+| Lido Earn ETH | $25,555,160 | 4.33% | 83,309 | attributed product account / direct loan |
+| Avant avETH / savETH | $10,034,777 | 6.30% | 12,583 | attributed product account / direct loan |
+| Liquity ETH Carry | $6,752,065 | 2.55% | 6,014 | attributed product account / direct loan |
+| NEMO ETH Prime | $5,611,801 | 4.75% | Not reconstructed | operator-associated, not included in attributed total |
+| Makina DETH | $384,701 | 3.21% | 2,499 | attributed product account / direct loan |
+| Sentora ETH | $256,232 | 4.21% | Not reconstructed | operator-associated, not included in attributed total |
+| Royco ETH | $90,891 | 30.24% | 116 | attributed product account / direct loan |
+| Vesper vaETH | $68,998 | 5.00% | 1,052 | attributed product account / direct loan |
+| Reservoir ETH Yield | $36,790 | 13.93% | Not reconstructed | attributed product account / direct loan |
+| TAU InfiniFi ETH Carry | $0 | Unavailable | Not reconstructed | attributed product account / direct loan |
+
+
+The principal five are ordered by attributed direct dollar financing. Monthly quotes and whole-book ETH returns measure different units. Concrete is an unresolved case, not a verified member of the five. [Economic answers and historical debt](ECONOMIC-ANSWERS.md).

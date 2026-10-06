@@ -63,6 +63,7 @@ ARTICLES = {
  'HGETH-LOAN-BOOK': ('library', 'hgETH: loan-book accounting, history and control'),
  'CARRY-COVERAGE-AUDIT': ('library', 'Carry coverage: public-feed sweep and product decisions'),
  'PRODUCT-EVOLUTION': ('library', 'Product development, ownership and carry economics'),
+ 'ECONOMIC-ANSWERS': ('library', 'Market accounting and verified dollar financing'),
 }
 
 def link(url, source):
@@ -151,6 +152,8 @@ def build():
     augment_final_measurements()
     from parity_depth_build import augment as augment_substantive_history
     augment_substantive_history()
+    from economic_build import run as build_economic_answers
+    economic_answers = build_economic_answers()
     # Hash and analyse the final product chapters, including their history.
     build_reader_analysis()
     contract = build_report_contract()
@@ -175,6 +178,8 @@ def build():
     build_final_editorial()
     from parity_depth_build import editorial as write_substantive_history
     write_substantive_history()
+    from economic_build import editorial as write_economic_answers
+    write_economic_answers(economic_answers,read('reader_product_chapters'))
     payload={
       'summary':read('market_summary'),'chains':read('chain_screen'),'protocols':observations,
       'coverage':read('protocol_source_coverage'),'pools':pools,
@@ -197,6 +202,7 @@ def build():
       'carryCategory':{'products':read('reader_carry_category')['products']},
       'readerAnalysis':read('reader_analysis'),
       'reportContract':contract,
+      'economicAnswers':economic_answers,
       'productEvolution':read('parity_depth_reader'),
       'finalMeasurements':{k:v for k,v in read('finalization_reconstruction').items() if k not in ['topFiveHolderReconstruction','makinaMorpho','makinaAccountingInstructions','sourceFileHashes','avantPublishedAllocation','nativeHistory']},
       'carryCoverage':read('carry_coverage_audit'),
@@ -240,7 +246,7 @@ def build():
             if source.is_file():shutil.copyfile(source,OUT/'data'/source.name)
     for key in ['marketChapter','economicsChapter','productChapters','borrowersChapter','borrowRateHistory','marketNetting','carryAttribution','backingExit','basisDisclosures','fundingAtlas','strategyExpansion','carryExpansion','creditExpansion']:
         copy_chapter_evidence(payload[key])
-    for prefix in ['market_netting_','carry_attribution_','backing_exit_','basis_closure_','funding_atlas_','strategy_universe_expansion','strategy_universe_deep','carry_variants_expansion','credit_expansion','funding_borrower_deep','manager_case_','market_completeness_','research_expansion_']:
+    for prefix in ['economic','market_netting_','carry_attribution_','backing_exit_','basis_closure_','funding_atlas_','strategy_universe_expansion','strategy_universe_deep','carry_variants_expansion','credit_expansion','funding_borrower_deep','manager_case_','market_completeness_','research_expansion_']:
         for source in DATA.glob(prefix+'*'):
             if source.is_file():shutil.copyfile(source,OUT/'data'/source.name)
     for name in ['carry_coverage_audit.json','carry-discovery-dispositions.csv','yb_LT_holders_T.json']:
@@ -316,7 +322,7 @@ def build():
       ('Market size and counting', ['MARKET-RESEARCH','MARKET-STRUCTURE','MARKET-TABLES','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','MECHANICS','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
       ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','concrete-eth','etherfi-liquid-eth']),
-      ('Financing and income', ['CARRY-MATH','BORROW-HISTORY','DOLLAR-FUNDING-ATLAS','CREDIT-EXPANSION','CARRY-LIFECYCLES','BORROWER-USE','carry-credit']),
+      ('Financing and income', ['ECONOMIC-ANSWERS','CARRY-MATH','BORROW-HISTORY','DOLLAR-FUNDING-ATLAS','CREDIT-EXPANSION','CARRY-LIFECYCLES','BORROWER-USE','carry-credit']),
       ('Returns and investor access', ['HISTORY','RETURN-DRIVERS','PRODUCT-TERMS','LENDING-MARKETS','ECONOMICS','fluid-lite','treehouse-teth','cian-rseth','ethena-basis','liquid-monad']),
       ('Evidence and reproduction', ['BRIEFING','README','scope','methodology','DEPENDENCIES','EVIDENCE','AUDIT','RESEARCH-PLAN','EXECUTION-CHECKLIST','SITE-PARITY','justlend-tron']),
     ]
@@ -336,7 +342,7 @@ def build():
     library = (SRC/'article.html').read_text().replace('@@TITLE@@','Complete research library').replace('@@CONTENT@@',body).replace('@@TOC@@',library_toc).replace('Reviewed 4 October 2026','Reviewed 5 October 2026')
     (OUT/'library/index.html').write_text(library)
     template=(SRC/'index.html').read_text()
-    script='\n'.join((SRC/name).read_text() for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js'])+'\ninitChartInspection();if(document.body.dataset.edition==="reader"){initReader();}else{init();initPresentation();renderResearchAdditions();initMarket();initStrictResearch();initResearchClosure();initResearchExpansion();openHash(true);}'
+    script='\n'.join((SRC/name).read_text() for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js','economic.js'])+'\ninitChartInspection();if(document.body.dataset.edition==="reader"){initReader();economicReader();}else{init();initPresentation();renderResearchAdditions();initMarket();initStrictResearch();initResearchClosure();initResearchExpansion();openHash(true);}'
     page=template.replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)
     (OUT/'index.html').write_text(page)
     exhibits=(SRC/'exhibits.html').read_text().replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)

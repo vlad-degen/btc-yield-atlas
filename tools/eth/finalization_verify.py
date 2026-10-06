@@ -6,10 +6,12 @@ ROOT=Path(__file__).resolve().parents[2];D=ROOT/'data/eth'
 def run():
  f=json.loads((D/'finalization_reconstruction.json').read_text());c=json.loads((D/'report_contract.json').read_text());pc=json.loads((D/'reader_product_chapters.json').read_text());checks=[]
  def ck(name,ok):checks.append({'name':name,'passed':bool(ok)})
- ck('new_top_five_order',[p['id']for p in pc['products'][:5]]==['concrete','liquid','lido-earn','avant','yieldbasis'])
+ economic=json.loads((D/'economic_questions.json').read_text())
+ measured=sorted([p for p in economic['products']if p['included']and p['id']in{q['id']for q in pc['products']}and(p['current']['debtUSD']or 0)>=1],key=lambda p:-p['current']['debtUSD'])[:5]
+ ck('five_follow_attributed_dollar_financing',[p['id']for p in pc['products'][:5]]==[p['id']for p in measured] and 'concrete'not in economic['topFive'])
  ck('all_material_routes_in_census',len(c['census'])==13 and c['headline']['currentRoutes']==10)
  reader=(ROOT/'eth/index.html').read_text();template=(ROOT/'tools/eth/site/index.html').read_text()
- ck('history_description_matches_census',all('Thirteen whole-product books' in s and 'All 13 products' in s and 'Eight whole-product books' not in s for s in [reader,template]))
+ ck('history_description_matches_financing_measure',all('Two years of dollar financing, by product' in s and 'All attributed products' in s and 'Thirteen whole-product books' not in s for s in [reader,template]))
  ck('sample_concentration_conserves_books',math.isclose(c['sampleTopTwoShare'],sum(p['bookETH']for p in c['census'][:2])/sum(p['bookETH']for p in c['census'])))
  ck('no_nested_strATEGY_double_count',not any(r['name']=='stRATEGY'for r in c['census']))
  for p in f['newProducts']:

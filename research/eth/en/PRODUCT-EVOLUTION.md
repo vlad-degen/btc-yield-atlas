@@ -2,24 +2,6 @@
 
 Financial snapshot: **2 October 2026, 23:59:59 UTC**. Public documents reviewed on 6 October. The main report retains the BTC eight-chapter route. This supporting chapter explains the history behind the five largest examined books.
 
-## Concrete Delta weETH
-
-The share contract was deployed in December 2025. Its first completed-month weETH book is already large, but the native share price stays flat through T. The resulting ETH mark largely follows weETH staking conversion.
-
-| Date | Change | Economic significance |
-| --- | --- | --- |
-| 2025-12-12T10:48:23Z | Share contract deployed | The contract creation transaction establishes the first possible onchain history. Public launch can occur later. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
-| 2025-12-31 | First completed-month book observation | 278,170.834213 weETH book assets. Subsequent captured month ends retain the same native asset book and unit share price. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
-| 2026-10-02T23:59:59Z | Owner, fee role and private-account scope verified | Configured vault management and performance fees are both zero; private service fees and arbitrage payout terms are not established. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
-
-### What the investor owns and earns
-
-The stated mandate includes neutral arbitrage and staking collateral financed with dollars. The shared account has observable loans, but Delta-specific investment principal, revenue and private fees are not publicly assigned. Its place at the top of the book-size table is therefore not evidence of dominance in verified carry capital.
-
-One externally owned address holds all issued Delta shares at T. That establishes concentration in this claim, while the shared custody Safe holds the actual strategy assets. It does not identify outside investor capital or assign the Safe’s dollar arbitrage profit to Delta.
-
-[Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
-
 ## ether.fi Liquid ETH
 
 The present contract was used in June 2024. ETH loops came first; Aave dollar borrowing appeared in August 2025. Morpho financing followed through the LoanManager in June 2026 and the main vault in July.
@@ -64,6 +46,38 @@ At T, Aave USDC funding is 13.93% APR, versus 4.38% for Aave USDT and 4.39% for 
 | [0x559e319c3710c2370ed1b18878ee10a2ff1f9339](https://optimistic.etherscan.io/address/0x559e319c3710c2370ed1b18878ee10a2ff1f9339) | 1.4378% | Share of Cash Hub |
 | [0x1c0a6763a251be74ef56c1919b1184f94f93a70d](https://optimistic.etherscan.io/address/0x1c0a6763a251be74ef56c1919b1184f94f93a70d) | 1.4326% | Share of Cash Hub |
 | [0xed0e0f34671338fd51c90cad6b5eabc239ac4f6e](https://optimistic.etherscan.io/address/0xed0e0f34671338fd51c90cad6b5eabc239ac4f6e) | 1.2906% | Share of Cash Hub |
+
+[Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
+
+## YieldBasis WETH
+
+WETH liquidity existed by January 2026. The chart follows the current LT contract from May and does not splice the old Curve pool into its return series.
+
+| Date | Change | Economic significance |
+| --- | --- | --- |
+| 2026-01-23 | An earlier WETH pool is already operating | The parameter proposal identifies Curve pool 0x6e54…A9C2 and discusses dynamic swap fees, financing and temporary redemption discounts. Its history must not be confused with the current LT receipt. [Primary evidence](https://forum.yieldbasis.com/t/tweak-weth-pool-parameters/25) |
+| 2026-05 | The measured current WETH LT book appears | The present LT contract is absent at the sampled April end and funded at May end. Its AMM at T is 0x5f8d…233c, distinct from the January pool. [Primary evidence](https://etherscan.io/address/0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea) |
+| 2026-05 to 2026-06 | V3 changes the liquidity architecture | Curve’s dated recap describes FXSwap upgrades and personal HybridVaults combining crypto exposure with crvUSD allocation. It reports an allocation adjustment from 55% to 45%; this is not an investor yield promise. [Primary evidence](https://news.curve.finance/curve-monthly-recap-may-june-2026/) |
+| 2026-10-02 | Staking changes the economic claim | The gauge holds 56.35% of direct LT supply for 155 receipt holders. Unstaked LT marks and gauge fee/reward rights are different investor outcomes. [Primary evidence](https://etherscan.io/address/0xd829456fd63ada7de0657714a3a7a26de403e3d8) |
+
+### What the investor owns and earns
+
+Traders pay Curve swap fees. Those fees must fund rebalancing and crvUSD financing before the ETH holder earns a spread. A staked gauge receipt has additional fee and YB reward rights; the unstaked LT return chart excludes those cash flows.
+
+Of 332 direct LT addresses, the largest is a gauge with 56.35% of supply. Its 155 holders own the gauge claim. After replacing that custody balance and mapping four personal HybridVaults to their owners, the largest named-owner claim is 21.77% of LT supply. Other contracts remain identified as custody.
+
+| Named owner / account | Share of stated claim | Denominator |
+| --- | --- | --- |
+| [0x0b077c44454fdfb799e303a0fd43f278fd1ae081](https://etherscan.io/address/0x0b077c44454fdfb799e303a0fd43f278fd1ae081) | 21.7721% | Share of LT supply |
+| [0xb016f77cdc7874da1cddf28605010fd2d19b55a8](https://etherscan.io/address/0xb016f77cdc7874da1cddf28605010fd2d19b55a8) | 9.5236% | Share of LT supply |
+| [0x9e406b2c2021966f3983e899643609c45e3bbffe](https://etherscan.io/address/0x9e406b2c2021966f3983e899643609c45e3bbffe) | 7.2044% | Share of LT supply |
+| [0x3da232a0c0a5c59918d7b5ff77bf1c8fc93aee1b](https://etherscan.io/address/0x3da232a0c0a5c59918d7b5ff77bf1c8fc93aee1b) | 6.1207% | Share of LT supply |
+| [0x2cc4e9d6d5656205f9b3206287945c3ca97dc6ce](https://etherscan.io/address/0x2cc4e9d6d5656205f9b3206287945c3ca97dc6ce) | 6.1188% | Share of LT supply |
+| [0xf791da446d04282f921f38fbf954ad5caee899a3](https://etherscan.io/address/0xf791da446d04282f921f38fbf954ad5caee899a3) | 5.7027% | Share of LT supply |
+| [0xb24d671f0c7bef757412897ef60013040185c6fa](https://etherscan.io/address/0xb24d671f0c7bef757412897ef60013040185c6fa) | 4.5105% | Share of LT supply |
+| [0x8e8745acd6fbe3e70afc96042c7f3ec84b1f0e9f](https://etherscan.io/address/0x8e8745acd6fbe3e70afc96042c7f3ec84b1f0e9f) | 4.0442% | Share of LT supply |
+| [0xdfbe92a83a3c17c69acca978b0ba23fdcca286f4](https://etherscan.io/address/0xdfbe92a83a3c17c69acca978b0ba23fdcca286f4) | 3.0556% | Share of LT supply |
+| [0x27a6df167b15450f6653e5314988f281d65631d1](https://etherscan.io/address/0x27a6df167b15450f6653e5314988f281d65631d1) | 2.6138% | Share of LT supply |
 
 [Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
 
@@ -121,35 +135,21 @@ The 37 direct avETH holders do not describe senior investor ownership: savETH ho
 
 [Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
 
-## YieldBasis WETH
+## Concrete Delta weETH
 
-WETH liquidity existed by January 2026. The chart follows the current LT contract from May and does not splice the old Curve pool into its return series.
+The share contract was deployed in December 2025. Its first completed-month weETH book is already large, but the native share price stays flat through T. The resulting ETH mark largely follows weETH staking conversion.
 
 | Date | Change | Economic significance |
 | --- | --- | --- |
-| 2026-01-23 | An earlier WETH pool is already operating | The parameter proposal identifies Curve pool 0x6e54…A9C2 and discusses dynamic swap fees, financing and temporary redemption discounts. Its history must not be confused with the current LT receipt. [Primary evidence](https://forum.yieldbasis.com/t/tweak-weth-pool-parameters/25) |
-| 2026-05 | The measured current WETH LT book appears | The present LT contract is absent at the sampled April end and funded at May end. Its AMM at T is 0x5f8d…233c, distinct from the January pool. [Primary evidence](https://etherscan.io/address/0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea) |
-| 2026-05 to 2026-06 | V3 changes the liquidity architecture | Curve’s dated recap describes FXSwap upgrades and personal HybridVaults combining crypto exposure with crvUSD allocation. It reports an allocation adjustment from 55% to 45%; this is not an investor yield promise. [Primary evidence](https://news.curve.finance/curve-monthly-recap-may-june-2026/) |
-| 2026-10-02 | Staking changes the economic claim | The gauge holds 56.35% of direct LT supply for 155 receipt holders. Unstaked LT marks and gauge fee/reward rights are different investor outcomes. [Primary evidence](https://etherscan.io/address/0xd829456fd63ada7de0657714a3a7a26de403e3d8) |
+| 2025-12-12T10:48:23Z | Share contract deployed | The contract creation transaction establishes the first possible onchain history. Public launch can occur later. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
+| 2025-12-31 | First completed-month book observation | 278,170.834213 weETH book assets. Subsequent captured month ends retain the same native asset book and unit share price. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
+| 2026-10-02T23:59:59Z | Owner, fee role and private-account scope verified | Configured vault management and performance fees are both zero; private service fees and arbitrage payout terms are not established. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
 
 ### What the investor owns and earns
 
-Traders pay Curve swap fees. Those fees must fund rebalancing and crvUSD financing before the ETH holder earns a spread. A staked gauge receipt has additional fee and YB reward rights; the unstaked LT return chart excludes those cash flows.
+The stated mandate includes neutral arbitrage and staking collateral financed with dollars. The shared account has observable loans, but Delta-specific investment principal, revenue and private fees are not publicly assigned. Its place at the top of the book-size table is therefore not evidence of dominance in verified carry capital.
 
-Of 332 direct LT addresses, the largest is a gauge with 56.35% of supply. Its 155 holders own the gauge claim. After replacing that custody balance and mapping four personal HybridVaults to their owners, the largest named-owner claim is 21.77% of LT supply. Other contracts remain identified as custody.
-
-| Named owner / account | Share of stated claim | Denominator |
-| --- | --- | --- |
-| [0x0b077c44454fdfb799e303a0fd43f278fd1ae081](https://etherscan.io/address/0x0b077c44454fdfb799e303a0fd43f278fd1ae081) | 21.7721% | Share of LT supply |
-| [0xb016f77cdc7874da1cddf28605010fd2d19b55a8](https://etherscan.io/address/0xb016f77cdc7874da1cddf28605010fd2d19b55a8) | 9.5236% | Share of LT supply |
-| [0x9e406b2c2021966f3983e899643609c45e3bbffe](https://etherscan.io/address/0x9e406b2c2021966f3983e899643609c45e3bbffe) | 7.2044% | Share of LT supply |
-| [0x3da232a0c0a5c59918d7b5ff77bf1c8fc93aee1b](https://etherscan.io/address/0x3da232a0c0a5c59918d7b5ff77bf1c8fc93aee1b) | 6.1207% | Share of LT supply |
-| [0x2cc4e9d6d5656205f9b3206287945c3ca97dc6ce](https://etherscan.io/address/0x2cc4e9d6d5656205f9b3206287945c3ca97dc6ce) | 6.1188% | Share of LT supply |
-| [0xf791da446d04282f921f38fbf954ad5caee899a3](https://etherscan.io/address/0xf791da446d04282f921f38fbf954ad5caee899a3) | 5.7027% | Share of LT supply |
-| [0xb24d671f0c7bef757412897ef60013040185c6fa](https://etherscan.io/address/0xb24d671f0c7bef757412897ef60013040185c6fa) | 4.5105% | Share of LT supply |
-| [0x8e8745acd6fbe3e70afc96042c7f3ec84b1f0e9f](https://etherscan.io/address/0x8e8745acd6fbe3e70afc96042c7f3ec84b1f0e9f) | 4.0442% | Share of LT supply |
-| [0xdfbe92a83a3c17c69acca978b0ba23fdcca286f4](https://etherscan.io/address/0xdfbe92a83a3c17c69acca978b0ba23fdcca286f4) | 3.0556% | Share of LT supply |
-| [0x27a6df167b15450f6653e5314988f281d65631d1](https://etherscan.io/address/0x27a6df167b15450f6653e5314988f281d65631d1) | 2.6138% | Share of LT supply |
+One externally owned address holds all issued Delta shares at T. That establishes concentration in this claim, while the shared custody Safe holds the actual strategy assets. It does not identify outside investor capital or assign the Safe’s dollar arbitrage profit to Delta.
 
 [Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
 

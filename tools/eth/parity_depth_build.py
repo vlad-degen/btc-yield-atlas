@@ -118,7 +118,7 @@ def augment():
 
 def editorial():
     pc=read('reader_product_chapters');m=read('parity_depth_measurements');text='# Product development, ownership and carry economics\n\nFinancial snapshot: **2 October 2026, 23:59:59 UTC**. Public documents reviewed on 6 October. The main report retains the BTC eight-chapter route. This supporting chapter explains the history behind the five largest examined books.\n\n'
-    for p in [p for p in pc['products'] if p['rank']<=5]:
+    for p in [p for p in pc['products'] if p.get('depth')]:
         depth=p['depth'];section='## '+p['name']+'\n\n'+depth['historySummary']+'\n\n'
         section+=table(['Date','Change','Economic significance'],[[r['date'],r['title'],r['text']+' [Primary evidence]('+r['url']+')'] for r in p['timeline']])+'\n\n'
         section+='### What the investor owns and earns\n\n'+depth['incomeText']+'\n\n'+depth['holdersText']+'\n\n'
