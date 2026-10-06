@@ -1,0 +1,46 @@
+[
+  {
+    "key": "lido_carry_sub_tokens",
+    "url": "https://eth.blockscout.com/api/v2/addresses/0x181cb55f872450d16ae858d532b4e35e50eaa76d/token-balances",
+    "capturedUTC": "2026-10-06T15:43:24.242865+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:43:24 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_carry_sub_tokens-1f070749cee26514.json",
+    "sha256": "1f070749cee26514599644c8c46aab485e463e03c67f2259dfc3d8915b67021c",
+    "bytes": 4094
+  },
+  {
+    "key": "avant_carry_wallet_tokens",
+    "url": "https://eth.blockscout.com/api/v2/addresses/0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD/token-balances",
+    "capturedUTC": "2026-10-06T15:43:24.243167+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:43:24 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_carry_wallet_tokens-5822cd571ae01a9b.json",
+    "sha256": "5822cd571ae01a9bf4f2429d06223422cb4252a8a2d177ee7c919ef29d4f5b0d",
+    "bytes": 41033
+  },
+  {
+    "key": "beacon_light_page",
+    "url": "https://light-mainnet.beaconcha.in/",
+    "capturedUTC": "2026-10-06T15:43:24.243260+00:00",
+    "request": null,
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden",
+    "path": "raw/eth/finalization-2026-10-06/beacon_light_page-5e69c63c92c132e1.txt",
+    "sha256": "5e69c63c92c132e13d51158e569af943a648f1252dc19c7e2fdf211f3402d67d",
+    "bytes": 5566
+  },
+  {
+    "key": "beacon_light_epoch_2024",
+    "url": "https://light-mainnet.beaconcha.in/epoch/321862",
+    "capturedUTC": "2026-10-06T15:43:24.297697+00:00",
+    "request": null,
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden",
+    "path": "raw/eth/finalization-2026-10-06/beacon_light_epoch_2024-3f9e4bc875988944.txt",
+    "sha256": "3f9e4bc875988944da573089cd7762e73decaa1a68d291ddea83836e6ffb138c",
+    "bytes": 5623
+  }
+]

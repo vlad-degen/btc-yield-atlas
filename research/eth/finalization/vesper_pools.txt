@@ -1,0 +1,29 @@
+> For the complete documentation index, see [llms.txt](https://docs.vesper.finance/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.vesper.finance/vesper-pools-and-strategies/vesper-grow/vesper-grow-pools.md).
+
+# Vesper Grow Pools
+
+{% hint style="info" %}
+**Important:** Although contracts are accessible to all, you should not send assets directly to any Vesper contract address. Instead, you should always use the [Vesper App.](broken://pages/EP3etUmoUDo3WVeockJk) This is because, as explained in [Vesper's Modular Architecture,](broken://pages/FqyayuQnKybh8NKStkJT) Vesper pools (and other contracts) are designed to be upgradeable at any time. Sending funds directly to a contract may result in a total loss of user funds. &#x20;
+{% endhint %}
+
+Vesper's Grow Pools allow you to easily grow your holdings by routing your deposits through DeFi's leading yield sources. Deposit one coin, earn more of that coin. Aggressive and conservative strategies are available.
+
+Vesper pools rebalance their loans algorithmically along parameters specified by each pool. Conservative and Aggressive pools are differentiated by the criteria used to take additional loans (when sufficient capital is deposited or the underlying asset appreciates) and partially refund outstanding loans (when capital is removed or the underlying asset depreciates). As the names imply, “conservative” pools are less risky than “aggressive” pools.
+
+#### Universal Fee
+
+The Universal Fee charges a 2% annual fee on the assets deposited (principal) at the time of rebalance. If this fee is greater than 50% of the yield earned, then the fee will only equate to 50% of the yield earned.
+
+#### Earning Rate
+
+The earning rate, also known as 'yield' or 'APY', is:
+
+* the underlying yield accrued by pool assets as they are routed to other DeFi per the pool strategy.
+
+The Grow Pool underlying yield is auto-compounded in the deposited asset. That is, the DAI Grow Pool yield is returned in the form of DAI. The "spot" earning rate is calculated as the last 72 hours’ performance annualized and compounded, while the "average" reflects the last 30 days, annualized and compounded.
+
+**Sweeping:** This is a contract function that swaps non-native ERC20 tokens and deposits them back into the Grow Pool. For example, if the strategy interfaces with Compound, and receives Compound's COMP token, sweeping will liquidate the COMP and reap the profits from it in to form of the pool's deposited asset. This also handles any tokens mistakenly sent to the contract.
+
+#### Available Vesper Grow Pools
+
+Because the family of Vesper pools is continuously growing and changing, for an accurate list of currently available pools you should consult the Vesper App.&#x20;

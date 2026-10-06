@@ -20,7 +20,7 @@ def run():
         return math.isclose(a, b, abs_tol=1e-8, rel_tol=1e-12)
     check('unknown_global_measures_are_not_zero_or_sample_totals', c['globalUniqueETH'] is None and c['globalCarryEquityETH'] is None)
     check('fixed_receipt_headline_uses_only_its_layer', close(c['headline']['receiptClaimsETH'], m['current']['by_category']['staking']['eth_ref']))
-    check('active_count_is_status_count_not_all_books', c['headline']['currentRoutes'] == sum(r['status'] == 'active' for r in c['census']) == 5 and len(c['census']) == 8)
+    check('active_count_is_status_count_not_all_books', c['headline']['currentRoutes'] == sum(r['status'] == 'active' for r in c['census']) == 10 and len(c['census']) == 13)
     for name, sha in c['sources'].items():
         check('source_hash:' + name, hashlib.sha256((D / (name + '.json')).read_bytes()).hexdigest() == sha)
     # Independently recompute every common return from the two share marks.
@@ -56,7 +56,7 @@ def run():
     reader = (ROOT / 'tools/eth/site/reader.js').read_text()
     index = (ROOT / 'tools/eth/site/index.html').read_text()
     check('primary_comparison_has_no_mixed_return_windows', 'filter(r=>[94,90,365]' not in reader and 'measuredReturn' not in reader)
-    check('headlines_use_contract_not_filter_denominator', 'h.receiptClaimsETH' in reader and 'h.examinedBooks' in reader and 'h.liquid730dExcessPP' in reader)
+    check('headlines_use_contract_not_filter_denominator', 'h.nativeActiveETH' in reader and 'h.examinedBooks' in reader and 'h.liquid730dExcessPP' in reader)
     check('no_complete_market_or_concentration_headline', 'All the ETH that earns a yield' not in index and 'top two / measured carry books' not in index)
     failures = [r for r in checks if not r['passed']]
     result = {'checks': len(checks), 'all_checks_passed': not failures, 'failed': failures,

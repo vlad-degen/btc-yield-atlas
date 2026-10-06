@@ -42,3 +42,93 @@ Most discovered markets are expired. Reconstructing historical market size requi
 API pagination and expiry coverage are verified. Completeness of the whole ETH fixed-yield market is not. PT and YT supply at T, SY backing, owners and market-wide redemption paths have not been reconstructed.
 
 Data: `pendle_source_coverage.json`, `pendle_eth_market_screen.json`, raw `pendle_markets_*`.
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).

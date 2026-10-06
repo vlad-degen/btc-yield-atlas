@@ -1,0 +1,46 @@
+[
+  {
+    "key": "yo_eth_detail",
+    "url": "https://api-v2.yo.xyz/v1/vaults/yoeth",
+    "capturedUTC": "2026-10-06T15:17:02.847647+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:17:03 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yo_eth_detail-c07a6075ee695307.json",
+    "sha256": "c07a6075ee695307bd441e944cac123209dc1672af3bd9bbb049460c628ae0a8",
+    "bytes": 6670
+  },
+  {
+    "key": "vesper_adapter",
+    "url": "https://raw.githubusercontent.com/DefiLlama/DefiLlama-Adapters/main/projects/vesper/index.js",
+    "capturedUTC": "2026-10-06T15:17:02.847962+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:17:03 GMT",
+    "path": "raw/eth/finalization-2026-10-06/vesper_adapter-33eab5222c4a64d8.txt",
+    "sha256": "33eab5222c4a64d8b938aee7382ca15403cf5f34671cbb0d1c6f0d415264458e",
+    "bytes": 1834
+  },
+  {
+    "key": "makina_adapter",
+    "url": "https://raw.githubusercontent.com/DefiLlama/DefiLlama-Adapters/main/projects/makina/index.js",
+    "capturedUTC": "2026-10-06T15:17:02.848052+00:00",
+    "request": null,
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "path": "raw/eth/finalization-2026-10-06/makina_adapter-d5558cd419c8d46b.txt",
+    "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+    "bytes": 14
+  },
+  {
+    "key": "lido_earn_page",
+    "url": "https://earn.lido.fi/eth",
+    "capturedUTC": "2026-10-06T15:17:03.106644+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:17:03 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_earn_page-9f636791253cee9e.txt",
+    "sha256": "9f636791253cee9ebf3a3c268605d490efc076e5b7013bfa2ed8dee52acef54e",
+    "bytes": 261126
+  }
+]

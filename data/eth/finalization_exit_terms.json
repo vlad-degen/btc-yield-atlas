@@ -1,0 +1,35 @@
+[
+  {
+    "key": "lido_earn_faq",
+    "url": "https://docs.lido.fi/earn/faq/",
+    "capturedUTC": "2026-10-06T15:56:27.461786+00:00",
+    "request": null,
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "path": "raw/eth/finalization-2026-10-06/lido_earn_faq-50383404e7d7a704.txt",
+    "sha256": "50383404e7d7a704df36ca01b4ea4101424f879eb54c65cd33084ccd9624d738",
+    "bytes": 7274
+  },
+  {
+    "key": "avant_core_tokens",
+    "url": "https://docs.avantprotocol.com/overview/core-tokens.md",
+    "capturedUTC": "2026-10-06T15:56:27.462112+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:56:27 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_core_tokens-0dd5f15307203718.txt",
+    "sha256": "0dd5f153072037189513c87a89f119f3d42ca2de58cc4ff12be82f34cb8178bf",
+    "bytes": 20945
+  },
+  {
+    "key": "avant_mint_redeem",
+    "url": "https://docs.avantprotocol.com/how-it-works/minting-and-redeeming.md",
+    "capturedUTC": "2026-10-06T15:56:27.462207+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:56:27 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_mint_redeem-891ff16aaa05ad6d.txt",
+    "sha256": "891ff16aaa05ad6ded92f9c3441541c090b4d8aaff326847dc737e8a51ce109e",
+    "bytes": 2233
+  }
+]

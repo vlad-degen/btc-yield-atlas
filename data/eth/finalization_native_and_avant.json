@@ -1,0 +1,35 @@
+[
+  {
+    "key": "nimbus_all_active_validators_T",
+    "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed",
+    "capturedUTC": "2026-10-06T15:36:18.881801+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:36:52 GMT",
+    "path": "raw/eth/finalization-2026-10-06/nimbus_all_active_validators_T-c7637a221926db5b.json",
+    "sha256": "c7637a221926db5bcf794d94f747d1ea7ad099ca10ded81cdc475879d0a665da",
+    "bytes": 423898738
+  },
+  {
+    "key": "avant_metrics_aveth",
+    "url": "https://app.avantprotocol.com/api/metrics/aveth",
+    "capturedUTC": "2026-10-06T15:36:18.882127+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:36:19 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_metrics_aveth-09be6ec7b066ff45.json",
+    "sha256": "09be6ec7b066ff455cfdff7329868bc96d57e77a485754ece59a1d89af759f9c",
+    "bytes": 14597
+  },
+  {
+    "key": "avant_wallets_aveth",
+    "url": "https://app.avantprotocol.com/api/metrics/wallets/aveth",
+    "capturedUTC": "2026-10-06T15:36:18.882215+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:36:20 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_wallets_aveth-bc88526a7cd8f554.json",
+    "sha256": "bc88526a7cd8f554125ca0fa96fbc04835e8648443fc1fd6567bb991738644bd",
+    "bytes": 2459
+  }
+]

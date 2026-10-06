@@ -1,0 +1,530 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "aave_borrow_test",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "fromBlock": "0x18e4d29",
+          "toBlock": "0x18e60b1",
+          "topics": [
+            "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+            [
+              "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+              "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+            ],
+            [
+              "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+            ]
+          ]
+        }
+      ],
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": []
+      },
+      "capture": {
+        "key": "finalization_log_tenderly_test_0",
+        "url": "https://gateway.tenderly.co/public/mainnet",
+        "capturedUTC": "2026-10-06T16:02:19.446665+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:02:19 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_log_tenderly_test_0-70abc6d5b8933fdf.json",
+        "sha256": "70abc6d5b8933fdffccafcce6a0768e2ecd3485e8bbe7b1dd0f29679309c8154",
+        "bytes": 149
+      }
+    },
+    {
+      "label": "aave_repay_test",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "fromBlock": "0x18e4d29",
+          "toBlock": "0x18e60b1",
+          "topics": [
+            "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+            [
+              "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+              "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+            ],
+            [
+              "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+            ]
+          ]
+        }
+      ],
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": []
+      },
+      "capture": {
+        "key": "finalization_log_tenderly_test_0",
+        "url": "https://gateway.tenderly.co/public/mainnet",
+        "capturedUTC": "2026-10-06T16:02:19.446665+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:02:19 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_log_tenderly_test_0-70abc6d5b8933fdf.json",
+        "sha256": "70abc6d5b8933fdffccafcce6a0768e2ecd3485e8bbe7b1dd0f29679309c8154",
+        "bytes": 149
+      }
+    },
+    {
+      "label": "spark_borrow_test",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "fromBlock": "0x18e4d29",
+          "toBlock": "0x18e60b1",
+          "topics": [
+            "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+            [
+              "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+              "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+            ],
+            [
+              "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+            ]
+          ]
+        }
+      ],
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": []
+      },
+      "capture": {
+        "key": "finalization_log_tenderly_test_0",
+        "url": "https://gateway.tenderly.co/public/mainnet",
+        "capturedUTC": "2026-10-06T16:02:19.446665+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:02:19 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_log_tenderly_test_0-70abc6d5b8933fdf.json",
+        "sha256": "70abc6d5b8933fdffccafcce6a0768e2ecd3485e8bbe7b1dd0f29679309c8154",
+        "bytes": 149
+      }
+    },
+    {
+      "label": "spark_repay_test",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "fromBlock": "0x18e4d29",
+          "toBlock": "0x18e60b1",
+          "topics": [
+            "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+            [
+              "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+              "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+            ],
+            [
+              "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+            ]
+          ]
+        }
+      ],
+      "response": {
+        "id": 4,
+        "jsonrpc": "2.0",
+        "result": []
+      },
+      "capture": {
+        "key": "finalization_log_tenderly_test_0",
+        "url": "https://gateway.tenderly.co/public/mainnet",
+        "capturedUTC": "2026-10-06T16:02:19.446665+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18e4d29",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:02:19 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_log_tenderly_test_0-70abc6d5b8933fdf.json",
+        "sha256": "70abc6d5b8933fdffccafcce6a0768e2ecd3485e8bbe7b1dd0f29679309c8154",
+        "bytes": 149
+      }
+    }
+  ]
+}

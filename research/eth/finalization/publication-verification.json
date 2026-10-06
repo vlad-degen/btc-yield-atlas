@@ -1,0 +1,268 @@
+{
+  "verified_at_UTC": "2026-10-06T16:57:35.537651+00:00",
+  "public_url": "https://vlad-degen.github.io/btc-yield-atlas/eth/",
+  "pull_request": "https://github.com/vlad-degen/btc-yield-atlas/pull/8",
+  "site_commit": "fd4c258d339a1b98a48bcb348eab2669d4e5b248",
+  "financial_snapshot": "2026-10-02T23:59:59Z",
+  "all_public_responses_match": true,
+  "BTC_public_root_unchanged": true,
+  "BTC_non_ETH_git_blobs_unchanged": 345,
+  "responses": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "bytes": 315358,
+      "local_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "public_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "matches": true
+    },
+    {
+      "path": "assets/favicon.svg",
+      "http_status": 200,
+      "bytes": 728,
+      "local_sha256": "50966b93a554b86374a916a515310d02fa29ca4387cb0563b2e5bce119c6928e",
+      "public_sha256": "50966b93a554b86374a916a515310d02fa29ca4387cb0563b2e5bce119c6928e",
+      "matches": true
+    },
+    {
+      "path": "eth/index.html",
+      "http_status": 200,
+      "bytes": 12150732,
+      "local_sha256": "b16f9620deb4918c7e9605473c6c68e57a4e468a6e93c8698d9a20309ce6a8f9",
+      "public_sha256": "b16f9620deb4918c7e9605473c6c68e57a4e468a6e93c8698d9a20309ce6a8f9",
+      "matches": true
+    },
+    {
+      "path": "eth/exhibits.html",
+      "http_status": 200,
+      "bytes": 12199256,
+      "local_sha256": "6b34939553fad675e3d6a5024bec9126a50bb2c28061de2bbdac46936a697bfe",
+      "public_sha256": "6b34939553fad675e3d6a5024bec9126a50bb2c28061de2bbdac46936a697bfe",
+      "matches": true
+    },
+    {
+      "path": "eth/library/index.html",
+      "http_status": 200,
+      "bytes": 5967,
+      "local_sha256": "8aec6e0efec941afbdcc4a4d476fe3fecbb6f6e50420a7e5a0836407459feceb",
+      "public_sha256": "8aec6e0efec941afbdcc4a4d476fe3fecbb6f6e50420a7e5a0836407459feceb",
+      "matches": true
+    },
+    {
+      "path": "eth/library/BRIEFING.html",
+      "http_status": 200,
+      "bytes": 18716,
+      "local_sha256": "3b8b4b090f09e168c2a78eb09d482797c3fd07f8281887aa126a136b11bfe30f",
+      "public_sha256": "3b8b4b090f09e168c2a78eb09d482797c3fd07f8281887aa126a136b11bfe30f",
+      "matches": true
+    },
+    {
+      "path": "eth/library/MARKET-STRUCTURE.html",
+      "http_status": 200,
+      "bytes": 7274,
+      "local_sha256": "592959785f8ce87ebde60fcf3c8c318b122074291a01c6cff8eb11191e8f66b8",
+      "public_sha256": "592959785f8ce87ebde60fcf3c8c318b122074291a01c6cff8eb11191e8f66b8",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-CATEGORY.html",
+      "http_status": 200,
+      "bytes": 8755,
+      "local_sha256": "8dfa1a9b38ac89807f75345a633faea0a64884b4ad793c922500f08a69acbfcc",
+      "public_sha256": "8dfa1a9b38ac89807f75345a633faea0a64884b4ad793c922500f08a69acbfcc",
+      "matches": true
+    },
+    {
+      "path": "eth/library/MARKET-COVERAGE.html",
+      "http_status": 200,
+      "bytes": 14822,
+      "local_sha256": "bc53b6026e55b9a86a7dec4add63d100d645ea6d1180a4e1ef0b1f4c0e61ab03",
+      "public_sha256": "bc53b6026e55b9a86a7dec4add63d100d645ea6d1180a4e1ef0b1f4c0e61ab03",
+      "matches": true
+    },
+    {
+      "path": "eth/library/PRODUCT-SELECTION.html",
+      "http_status": 200,
+      "bytes": 3294,
+      "local_sha256": "8305919abc6931768996e421fded4feaf32aa162819d154c26a11f99cde8e622",
+      "public_sha256": "8305919abc6931768996e421fded4feaf32aa162819d154c26a11f99cde8e622",
+      "matches": true
+    },
+    {
+      "path": "eth/data/report_contract.json",
+      "http_status": 200,
+      "bytes": 21995,
+      "local_sha256": "9814d28927412b804cdd5c8e2bbf50fdfd3b19e0ef9a6970a53ab0693b8fc536",
+      "public_sha256": "9814d28927412b804cdd5c8e2bbf50fdfd3b19e0ef9a6970a53ab0693b8fc536",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-common-30d.csv",
+      "http_status": 200,
+      "bytes": 2083,
+      "local_sha256": "d02171f6246ee370893df1a09b1d4c7903038d74b8a50a1df479fc9f2807f346",
+      "public_sha256": "d02171f6246ee370893df1a09b1d4c7903038d74b8a50a1df479fc9f2807f346",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-status-and-capital.csv",
+      "http_status": 200,
+      "bytes": 2654,
+      "local_sha256": "5bb0d38cf6694b7829ac69c5047716ea5da0878bf7f9ca3359af09788090db74",
+      "public_sha256": "5bb0d38cf6694b7829ac69c5047716ea5da0878bf7f9ca3359af09788090db74",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/browser-checks.json",
+      "http_status": 200,
+      "bytes": 1648,
+      "local_sha256": "7f08988ee07206e5952da9eedf9c54659e28acfd581a270d364bb01ddab36de3",
+      "public_sha256": "7f08988ee07206e5952da9eedf9c54659e28acfd581a270d364bb01ddab36de3",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/reader_alignment_audit.json",
+      "http_status": 200,
+      "bytes": 198,
+      "local_sha256": "c570702d7570558f791505fdce036da8b49408f2d483967790f8a50ef4e05995",
+      "public_sha256": "c570702d7570558f791505fdce036da8b49408f2d483967790f8a50ef4e05995",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/report_contract_verification.json",
+      "http_status": 200,
+      "bytes": 264,
+      "local_sha256": "702673427b551a3eb087ee4a926252cc593c85cf1b2e5cf015ad587637ca1bf5",
+      "public_sha256": "702673427b551a3eb087ee4a926252cc593c85cf1b2e5cf015ad587637ca1bf5",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-all-eth.csv",
+      "http_status": 200,
+      "bytes": 11184,
+      "local_sha256": "acf8b4cb6e5500cbb401006d28eb0150ee213f17256548c81e84cc345a48cba1",
+      "public_sha256": "acf8b4cb6e5500cbb401006d28eb0150ee213f17256548c81e84cc345a48cba1",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-all-usd.csv",
+      "http_status": 200,
+      "bytes": 11167,
+      "local_sha256": "166483d88d0cef8e2fd951b69bcc5688888fc6284005cb020924eccccfd67ec7",
+      "public_sha256": "166483d88d0cef8e2fd951b69bcc5688888fc6284005cb020924eccccfd67ec7",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-parents-eth.csv",
+      "http_status": 200,
+      "bytes": 4861,
+      "local_sha256": "f020448f25d5e943feb8652a07b099583f6fbb85892865996069d4194b5798cc",
+      "public_sha256": "f020448f25d5e943feb8652a07b099583f6fbb85892865996069d4194b5798cc",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-parents-usd.csv",
+      "http_status": 200,
+      "bytes": 4844,
+      "local_sha256": "eadd49e7e398f29f71e792d3763c176fcf748ea40c8afdd60f8122633f0e9c59",
+      "public_sha256": "eadd49e7e398f29f71e792d3763c176fcf748ea40c8afdd60f8122633f0e9c59",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-dedicated-eth.csv",
+      "http_status": 200,
+      "bytes": 7705,
+      "local_sha256": "ede872e8a5b9e783dbb81d07a5f57db1dc07899f61258df93a1084fe23a01d3d",
+      "public_sha256": "ede872e8a5b9e783dbb81d07a5f57db1dc07899f61258df93a1084fe23a01d3d",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-dedicated-usd.csv",
+      "http_status": 200,
+      "bytes": 7694,
+      "local_sha256": "e36fea7154627bc0eb32abaf87f9a8d27fe2f2b23bfe9829c78ff1804286dcb9",
+      "public_sha256": "e36fea7154627bc0eb32abaf87f9a8d27fe2f2b23bfe9829c78ff1804286dcb9",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-category-eth.csv",
+      "http_status": 200,
+      "bytes": 3080,
+      "local_sha256": "78d548bef242b09e8c74fee5090b7fe73363e72e93df057b7114bd9cbef860cf",
+      "public_sha256": "78d548bef242b09e8c74fee5090b7fe73363e72e93df057b7114bd9cbef860cf",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-category-usd.csv",
+      "http_status": 200,
+      "bytes": 2917,
+      "local_sha256": "cb7db66c270454a1cc56c7e06a5d138016e699795cd638008dedcd1f1d892cf8",
+      "public_sha256": "cb7db66c270454a1cc56c7e06a5d138016e699795cd638008dedcd1f1d892cf8",
+      "matches": true
+    },
+    {
+      "path": "eth/data/finalization_reconstruction.json",
+      "http_status": 200,
+      "bytes": 380668,
+      "local_sha256": "5a98fa419572fc60e74a419d40ec7e75a69487138c55916a7dbcbc139a5057a0",
+      "public_sha256": "5a98fa419572fc60e74a419d40ec7e75a69487138c55916a7dbcbc139a5057a0",
+      "matches": true
+    },
+    {
+      "path": "eth/data/finalization_financial_ledgers.json",
+      "http_status": 200,
+      "bytes": 54517,
+      "local_sha256": "f88ba9263a044ee96ed912504b523efc508e2966a90fb2acdf5ceea87a9b5fbb",
+      "public_sha256": "f88ba9263a044ee96ed912504b523efc508e2966a90fb2acdf5ceea87a9b5fbb",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-flow-adjusted-ledgers.csv",
+      "http_status": 200,
+      "bytes": 943,
+      "local_sha256": "16eec9ead03cc01003ba1b79a63ae7308872f20b6f3c38357c12f63b1aeea7a2",
+      "public_sha256": "16eec9ead03cc01003ba1b79a63ae7308872f20b6f3c38357c12f63b1aeea7a2",
+      "matches": true
+    },
+    {
+      "path": "eth/data/native-staking-observations.csv",
+      "http_status": 200,
+      "bytes": 1213,
+      "local_sha256": "28a10931b57d0971324a10694f5a4d82fbb6714cf9de5399297bb9b3dcb91e7d",
+      "public_sha256": "28a10931b57d0971324a10694f5a4d82fbb6714cf9de5399297bb9b3dcb91e7d",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/finalization_verification.json",
+      "http_status": 200,
+      "bytes": 10474,
+      "local_sha256": "8197ab1b6151a78fb41aa409628ca256e4d90257f6ed40af159e0b1d165aa7ee",
+      "public_sha256": "8197ab1b6151a78fb41aa409628ca256e4d90257f6ed40af159e0b1d165aa7ee",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-MATH.html",
+      "http_status": 200,
+      "bytes": 79440,
+      "local_sha256": "971aa4e51a0d5bf8a03b5568bce94a597d19565a435121c8d7f2dedcee07c2b0",
+      "public_sha256": "971aa4e51a0d5bf8a03b5568bce94a597d19565a435121c8d7f2dedcee07c2b0",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-PRODUCTS.html",
+      "http_status": 200,
+      "bytes": 286724,
+      "local_sha256": "bc1b67564966f0108a4b567a19b52c49745b98bb85d68cc9a27d64146da26210",
+      "public_sha256": "bc1b67564966f0108a4b567a19b52c49745b98bb85d68cc9a27d64146da26210",
+      "matches": true
+    },
+    {
+      "path": "eth/dossiers/pendle-pt.html",
+      "http_status": 200,
+      "bytes": 22301,
+      "local_sha256": "1e49624e76b9224ac0ff99ecb3d62bffb1192f551797a754e99d5ccb039cf341",
+      "public_sha256": "1e49624e76b9224ac0ff99ecb3d62bffb1192f551797a754e99d5ccb039cf341",
+      "matches": true
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # ETH yield strategy atlas: material families beyond the five carry chapters
 
+**Final measurement update, 6 October 2026:** Lido Earn, Avant, Makina DETH, Vesper and active ZenSats now have fixed-block financial reconstructions and matched claim histories. Earlier discovery-only decisions below describe the prior screen; use the [final product chapters](CARRY-PRODUCTS.md) and [coverage decisions](CARRY-COVERAGE-AUDIT.md) for the completed census.
+
 The ETH market needs a broader product map than a list of carry vaults. A product can preserve ETH exposure, lend ETH, sell ETH options, supply trading liquidity or hedge ETH into a dollar claim. These strategies have different income payers, maturity payoffs and withdrawal rights. The same ETH can also appear as staking collateral, a lending deposit, an LP balance and a vault receipt. Those layers cannot be added as independent capital.
 
 This review expands ten selected families and records 25 product identities. The financial snapshot remains **2 October 2026 at 23:59:59 UTC**. Product documentation and official registries were reviewed on **4 October**. The discovery yield feed was captured on **3 October at 13:40:39 UTC**. Its values are useful for selecting large products, but they are not frozen-snapshot NAV or proof of executable backing. No new discovery value has been joined to the snapshot market total.
@@ -76,3 +78,12 @@ Euler's April handover proposal similarly separates curator transfer from wind-d
 The expansion supplies an evidence-backed family atlas, primary contract catalogs, payer and full-payoff explanations, withdrawal/control terms, incentive treatment and specific historical transitions. It does not close whole-market capital or return coverage. The concrete remaining work is frozen-block product binding and positions for large selected wrappers, their realized return histories, actual fee and role configuration, product-level exit evidence, and multichain principal-token coverage. Options additionally need recent auctions and settlements before a current material-product claim is justified.
 
 Rebuild offline with `python3 tools/eth/strategy_universe_expansion_build.py`. The [manifest](../../../data/eth/strategy_universe_expansion_manifest.json) records captured URLs, observation dates, input hashes, outputs and failed or non-content responses. Browser-read fact observations are explicitly distinguished from full HTTP source captures.
+
+
+## Fixed-maturity and option capacity at the snapshot
+
+Four active, unexpired Ethereum Pendle markets from the saved registry have verified PT, YT and SY identities at T. Their PT face supplies are **153.219 superWETH**, **123.843 pufETH**, **305.243 stETH** and **5.969 mixWETH** units. SY accounting assets are WETH, native ETH, stETH and WETH respectively. Face supply, market liquidity and underlying unique ETH are different measurements. The zero-address SY asset denotes native ETH, not missing metadata. PT redemption also depends on its conversion index and underlying asset performance. These four markets are an examined active subset, not all fixed-income ETH products.
+
+Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
+
+[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).

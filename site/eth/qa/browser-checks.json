@@ -1,65 +1,63 @@
 {
-  "reviewed_at": "2026-10-06T01:09:11.950611+00:00",
-  "financial_snapshot": "2026-10-02T23:59:59Z",
-  "site_sha256": "03940a13495b5524e8f92cdef21a6ea4c0bf2f83d343029277dbffc9c079f156",
-  "scope": "Final October 6 report fixes. Desktop and 390 px mobile, matched common-window cards, coverage disclosure, carry tooltip, fixed answers under chart filters and current Briefing. Earlier broader browser checks belong to their earlier HTML editions.",
-  "all_recorded_checks_passed": true,
-  "checks": [
+  "verifiedUTC": "2026-10-06T16:54:12.318362+00:00",
+  "siteSHA256": "b16f9620deb4918c7e9605473c6c68e57a4e468a6e93c8698d9a20309ce6a8f9",
+  "financialSnapshot": "2026-10-02T23:59:59Z",
+  "desktop": [
+    "eight chapters",
+    "updated Top 5 tabs",
+    "Lido / Avant / YieldBasis product switches",
+    "direct links to Makina / Vesper / ZenSats",
+    "four financing lots visible",
+    "13-product hover table and keyboard End navigation",
+    "static history description agrees with all 13 products"
+  ],
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "mobile": [
+    "13 hover rows fit viewport",
+    "no document horizontal overflow",
+    "new product chapters have seven mechanism steps and no undefined / NaN copy"
+  ],
+  "historicalRuntimeErrors": "Two defects found during development were fixed; no new errors occurred on the final checks.",
+  "browserResults": [
     {
-      "check": "filters_do_not_change_answers",
-      "passed": true
+      "product": "avant",
+      "mechanics": 7,
+      "invalidCopy": false,
+      "pageOverflow": false
     },
     {
-      "check": "constant_cohort_keeps_fixed_answers",
-      "passed": true
+      "product": "yieldbasis",
+      "mechanics": 8,
+      "invalidCopy": false,
+      "pageOverflow": false
     },
     {
-      "check": "carry_chart_keyboard_inspection",
-      "passed": true
+      "product": "lido-earn",
+      "mechanics": 7,
+      "invalidCopy": false,
+      "pageOverflow": false
     },
     {
-      "check": "product_liquid",
-      "passed": true
+      "product": "makina-deth",
+      "mechanics": 7,
+      "invalidCopy": false,
+      "pageOverflow": false
     },
     {
-      "check": "product_yieldbasis",
-      "passed": true
+      "product": "vesper",
+      "mechanics": 7,
+      "invalidCopy": false,
+      "pageOverflow": false
     },
     {
-      "check": "product_rocksolid",
-      "passed": true
-    },
-    {
-      "check": "product_liquity",
-      "passed": true
-    },
-    {
-      "check": "product_concrete",
-      "passed": true
-    },
-    {
-      "check": "additional_deep_royco",
-      "passed": true
-    },
-    {
-      "check": "all_ten_mechanism_families",
-      "passed": true
-    },
-    {
-      "check": "mobile_no_page_overflow",
-      "passed": true
-    },
-    {
-      "check": "mobile_yieldbasis",
-      "passed": true
-    },
-    {
-      "check": "mobile_carry_tooltip",
-      "passed": true
-    },
-    {
-      "check": "current_briefing_synced",
-      "passed": true
+      "product": "zensats",
+      "mechanics": 7,
+      "invalidCopy": false,
+      "pageOverflow": false
     }
-  ]
+  ],
+  "allFinalChecksPassed": true
 }

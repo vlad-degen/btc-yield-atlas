@@ -1,0 +1,3097 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "earnUSDAllShares_25893051",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25893051,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b18bb"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:56.252014+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b73f2"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b7a28"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b915a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b92a5"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b99f9"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18ba05c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bb38d"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:56 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_0-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25916402",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25916402,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b73f2"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:56.252014+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b73f2"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b7a28"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b915a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b92a5"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b99f9"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18ba05c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bb38d"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:56 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_0-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25917992",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25917992,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b7a28"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:56.252014+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b73f2"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b7a28"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b915a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b92a5"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b99f9"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18ba05c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bb38d"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:56 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_0-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25923930",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25923930,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b915a"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:56.252014+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b73f2"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b7a28"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b915a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b92a5"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b99f9"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18ba05c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bb38d"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:56 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_0-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25924261",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25924261,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b92a5"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:56.252014+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b73f2"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b7a28"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b915a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b92a5"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b99f9"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18ba05c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bb38d"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:56 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_0-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25926137",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25926137,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b99f9"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:56.252014+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b73f2"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b7a28"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b915a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b92a5"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b99f9"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18ba05c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bb38d"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:56 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_0-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25927772",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25927772,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18ba05c"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:56.252014+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b73f2"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b7a28"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b915a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b92a5"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b99f9"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18ba05c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bb38d"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:56 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_0-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25932685",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25932685,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18bb38d"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:56.252014+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b73f2"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b7a28"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b915a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b92a5"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b99f9"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18ba05c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bb38d"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:56 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_0-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25937999",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25937999,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18bc84f"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.023950+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc84f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc953"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcca4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bccff"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcdef"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be6be"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be713"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be78a"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_1-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25938259",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25938259,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18bc953"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.023950+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc84f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc953"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcca4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bccff"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcdef"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be6be"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be713"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be78a"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_1-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25939108",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25939108,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18bcca4"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.023950+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc84f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc953"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcca4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bccff"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcdef"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be6be"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be713"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be78a"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_1-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25939199",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25939199,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18bccff"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.023950+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc84f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc953"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcca4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bccff"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcdef"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be6be"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be713"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be78a"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_1-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25939439",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25939439,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18bcdef"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.023950+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc84f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc953"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcca4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bccff"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcdef"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be6be"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be713"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be78a"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_1-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25945790",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25945790,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18be6be"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.023950+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc84f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc953"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcca4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bccff"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcdef"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be6be"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be713"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be78a"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_1-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25945875",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25945875,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18be713"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.023950+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc84f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc953"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcca4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bccff"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcdef"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be6be"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be713"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be78a"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_1-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25945994",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25945994,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18be78a"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.023950+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc84f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bc953"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcca4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bccff"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bcdef"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be6be"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be713"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18be78a"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_1-b50c2bbace3c4ae9.json",
+        "sha256": "b50c2bbace3c4ae9136549ed29b187cc12c33d51e9120091cfc6bf9714172312",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25946794",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25946794,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18beaaa"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_2",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.790315+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18beaaa"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bec3f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18c0201"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cbad0"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18dde88"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18df7a4"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_2-19ea22ad9097f8c5.json",
+        "sha256": "19ea22ad9097f8c5c922d1967ac26c58f29320fc22ce31f34498485e0f474788",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25947199",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25947199,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18bec3f"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_2",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.790315+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18beaaa"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bec3f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18c0201"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cbad0"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18dde88"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18df7a4"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_2-19ea22ad9097f8c5.json",
+        "sha256": "19ea22ad9097f8c5c922d1967ac26c58f29320fc22ce31f34498485e0f474788",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25952769",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25952769,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18c0201"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_2",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.790315+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18beaaa"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bec3f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18c0201"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cbad0"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18dde88"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18df7a4"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_2-19ea22ad9097f8c5.json",
+        "sha256": "19ea22ad9097f8c5c922d1967ac26c58f29320fc22ce31f34498485e0f474788",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25999978",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25999978,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18cba6a"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_2",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.790315+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18beaaa"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bec3f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18c0201"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cbad0"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18dde88"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18df7a4"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_2-19ea22ad9097f8c5.json",
+        "sha256": "19ea22ad9097f8c5c922d1967ac26c58f29320fc22ce31f34498485e0f474788",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_25999980",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 25999980,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18cba6c"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_2",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.790315+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18beaaa"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bec3f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18c0201"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cbad0"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18dde88"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18df7a4"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_2-19ea22ad9097f8c5.json",
+        "sha256": "19ea22ad9097f8c5c922d1967ac26c58f29320fc22ce31f34498485e0f474788",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_26000080",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 26000080,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18cbad0"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_2",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.790315+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18beaaa"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bec3f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18c0201"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cbad0"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18dde88"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18df7a4"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_2-19ea22ad9097f8c5.json",
+        "sha256": "19ea22ad9097f8c5c922d1967ac26c58f29320fc22ce31f34498485e0f474788",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_26074760",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 26074760,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18dde88"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x0000000000000000000000000000000000000000001073576d0c39b669e58a66"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_2",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.790315+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18beaaa"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bec3f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18c0201"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cbad0"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18dde88"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18df7a4"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_2-19ea22ad9097f8c5.json",
+        "sha256": "19ea22ad9097f8c5c922d1967ac26c58f29320fc22ce31f34498485e0f474788",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_26081188",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 26081188,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18df7a4"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x0000000000000000000000000000000000000000001473e12c3d424daa9d999b"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_2",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:57.790315+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18beaaa"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18bec3f"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18c0201"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6a"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cba6c"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18cbad0"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18dde88"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18df7a4"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:57 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_2-19ea22ad9097f8c5.json",
+        "sha256": "19ea22ad9097f8c5c922d1967ac26c58f29320fc22ce31f34498485e0f474788",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "earnUSDAllShares_26108081",
+      "address": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+      "signature": "sharesOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+          "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x0000000000000000000000000000000000000000001473e12c3d424daa9d999b"
+      },
+      "capture": {
+        "key": "finalization_allocation_shares_3",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:18:58.547809+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x4Ce1ac8F43E0E5BD7A346A98aF777bF8fbeA1981",
+                "data": "0xf5eb42dc000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:18:58 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_allocation_shares_3-24008eba47262afa.json",
+        "sha256": "24008eba47262afafa99aa5c4f135979ecd9aaa568042d2d66866b6b2a82712a",
+        "bytes": 104
+      }
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # The extra funding layer inside ETH carry
 
+**Final measurement update, 6 October 2026:** Lido Earn, Avant, Makina DETH, Vesper and active ZenSats now have fixed-block financial reconstructions and matched claim histories. Earlier discovery-only decisions below describe the prior screen; use the [final product chapters](CARRY-PRODUCTS.md) and [coverage decisions](CARRY-COVERAGE-AUDIT.md) for the completed census.
+
 Financial snapshot: 2 October 2026, 23:59:59 UTC. Public discovery and contract-source review: 4 October 2026. This article supplements the five deep product chapters. It does not present a complete market census.
 
 ## Follow the liabilities as well as the investment

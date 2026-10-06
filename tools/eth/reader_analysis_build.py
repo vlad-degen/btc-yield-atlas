@@ -63,7 +63,7 @@ def run():
     (DATA / 'reader_analysis.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
     for view in ['all', 'parents', 'dedicated', 'category']:
         shown = adapters if view == 'category' else [p for p in books if view == 'all' or
-                ((p['name'] in ['Concrete Delta weETH', 'ether.fi Liquid ETH']) == (view == 'parents'))]
+                ((p['name'] in ['Concrete Delta weETH', 'ether.fi Liquid ETH', 'Lido Earn ETH', 'Avant avETH / savETH']) == (view == 'parents'))]
         for unit in ['eth', 'usd']:
             with (DATA / f'carry-history-{view}-{unit}.csv').open('w', newline='') as f:
                 writer = csv.writer(f)

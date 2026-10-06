@@ -1,0 +1,24 @@
+[
+  {
+    "key": "coinmetrics_active_stake_history",
+    "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=eth&metrics=SplyActStkedNtv&frequency=1d&start_time=2024-10-01&end_time=2026-10-03&page_size=10000",
+    "capturedUTC": "2026-10-06T15:41:56.860502+00:00",
+    "request": null,
+    "status": 400,
+    "error": "HTTP Error 400: Bad Request",
+    "path": "raw/eth/finalization-2026-10-06/coinmetrics_active_stake_history-e86d672af3f5470d.json",
+    "sha256": "e86d672af3f5470d583edee7e3bf57809bcac56d9ebea3cb037f372cb4ba9c1c",
+    "bytes": 146
+  },
+  {
+    "key": "coinmetrics_staking_definition",
+    "url": "https://docs.coinmetrics.io/network-data/network-data-overview/supply/validator-supply",
+    "capturedUTC": "2026-10-06T15:41:56.860799+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:41:57 GMT",
+    "path": "raw/eth/finalization-2026-10-06/coinmetrics_staking_definition-835241fe07d58709.txt",
+    "sha256": "835241fe07d58709297a204010e4901846490971608ac3a14a94991e1ed45503",
+    "bytes": 1468069
+  }
+]

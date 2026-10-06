@@ -139,11 +139,15 @@ def build():
     build_reader_market()
     from reader_carry_build import run as build_reader_carry
     build_reader_carry()
+    from finalization_reconstruction_build import augment as augment_final_measurements
+    augment_final_measurements()
     from reader_analysis_build import run as build_reader_analysis
     build_reader_analysis()
     from parity_coverage_build import run as build_carry_coverage
     build_carry_coverage()
     from report_contract_build import run as build_report_contract
+    # The coverage builder regenerates its discovery decisions; update the measured cases afterwards.
+    augment_final_measurements()
     contract = build_report_contract()
     for name,source in [('STRATEGY-UNIVERSE-EXPANSION','STRATEGY-UNIVERSE-EXPANSION'),('CARRY-VARIANTS-EXPANSION','CARRY-VARIANTS-EXPANSION'),('CREDIT-EXPANSION','CREDIT-EXPANSION-2026-10-04')]:
         text=(RESEARCH/'review'/f'{source}.md').read_text()
@@ -162,6 +166,8 @@ def build():
     observations=[{'protocol':p['id'],'name':p['name'],'category_current_hint':p['source_category'],'period':'snapshot','eth_family_reported_usd':p['current']['usd'],'positive_usd':p['current']['gross_positive_usd'],'negative_usd':p['current']['negative_usd'],'tokens_usd':p['current'].get('selected_tokens_usd',{}),'source_timestamp':p['current']['source_timestamp'],'source_age_seconds':p['current']['source_age_seconds'],'source_url':p['source_url']} for p in panel['products']]
     market_histories=[{'protocol':p['id'],'period':r['period'],'eth_family_reported_usd':r['usd'] if r['status']=='observed' else None,'tokens_units':None,'source_timestamp':r['source_timestamp'],'source_age_seconds':r['source_age_seconds'],'target_timestamp':m['target_timestamp']} for p in panel['products'] for r,m in zip(p['history'],panel['months'])]
     pools=[{k:r.get(k) for k in ['chain','project','symbol','pool','tvlUsd','apy','apyBase','apyReward','apyMean30d','poolMeta','category_hint','underlyingTokens','matched_components']} for r in read('yield_pool_candidates')]
+    from finalization_editorial_build import run as build_final_editorial
+    build_final_editorial()
     payload={
       'summary':read('market_summary'),'chains':read('chain_screen'),'protocols':observations,
       'coverage':read('protocol_source_coverage'),'pools':pools,
@@ -184,6 +190,7 @@ def build():
       'carryCategory':{'products':read('reader_carry_category')['products']},
       'readerAnalysis':read('reader_analysis'),
       'reportContract':contract,
+      'finalMeasurements':{k:v for k,v in read('finalization_reconstruction').items() if k not in ['topFiveHolderReconstruction','makinaMorpho','makinaAccountingInstructions','sourceFileHashes','avantPublishedAllocation','nativeHistory']},
       'carryCoverage':read('carry_coverage_audit'),
       'reportLibrary':[{'id':stem,'title':title,'href':f'{folder}/{stem}.html'} for stem,(folder,title) in ARTICLES.items()],
       'marketNetting':read('market_netting_closure'),
@@ -228,7 +235,7 @@ def build():
             if source.is_file():shutil.copyfile(source,OUT/'data'/source.name)
     for name in ['carry_coverage_audit.json','carry-discovery-dispositions.csv','yb_LT_holders_T.json']:
         if (DATA/name).is_file():shutil.copyfile(DATA/name,OUT/'data'/name)
-    for name in ['report_contract.json','carry-common-30d.csv','carry-status-and-capital.csv']:
+    for name in ['report_contract.json','carry-common-30d.csv','carry-status-and-capital.csv','finalization_reconstruction.json','native-staking-observations.csv','carry-flow-adjusted-ledgers.csv']:
         shutil.copyfile(DATA/name,OUT/'data'/name)
     shutil.copyfile(DATA/'carry_borrow_rate_history.json',OUT/'data/carry_borrow_rate_history.json')
     ledger=read('evidence_ledger')

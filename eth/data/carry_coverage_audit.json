@@ -3611,38 +3611,38 @@
     },
     {
       "product": "ZenSats wstETH / LlamaLend",
-      "decision": "Documented E4 route; frozen capital unmeasured",
-      "evidence": "wstETH collateral \u2192 crvUSD loan \u2192 Curve crvUSD/USDT \u2192 StakeDAO; CRV harvest converts to debt asset",
+      "decision": "Fixed-block dollar funding route confirmed; included in the examined product census.",
+      "evidence": "The active vault manages less than one ETH and owes about 953 crvUSD. The old Aave / RAAC vault has zero share supply and assets at T. A documented strategy can be real without being a large market category.",
       "source": "https://www.zensats.app/docs/strategy",
-      "counted": false
+      "counted": true
     },
     {
       "product": "ZenSats wstETH / pmUSD",
-      "decision": "Documented legacy E4; withdraw-only",
-      "evidence": "Aave USDT loan \u2192 crvUSD swap \u2192 RAAC pmUSD/crvUSD \u2192 StakeDAO; historical book unmeasured",
+      "decision": "Fixed-block dollar funding route confirmed; included in the examined product census.",
+      "evidence": "The active vault manages less than one ETH and owes about 953 crvUSD. The old Aave / RAAC vault has zero share supply and assets at T. A documented strategy can be real without being a large market category.",
       "source": "https://www.zensats.app/docs/strategy",
-      "counted": false
+      "counted": true
     },
     {
       "product": "Vesper ETH / stETH / msETH",
-      "decision": "Mixed strategy family; current dollar-loan allocation unresolved",
-      "evidence": "Official strategies distinguish same-token leverage from a different-token loan routed to another Vesper pool. msETH is an ETH synth, not proof of dollar debt.",
+      "decision": "Fixed-block dollar funding route confirmed; included in the examined product census.",
+      "evidence": "vaETH reports 1,052 ETH. Its XY strategy supplies 57.35 WETH, owes 68,998 DAI and holds 60,034 vDAI shares. Other strategies in the same pool are lending or liquidity positions, so the whole pool cannot be labelled carry.",
       "source": "https://docs.vesper.finance/vesper-pools-and-strategies/strategies",
-      "counted": false
+      "counted": true
     },
     {
       "product": "Makina DETH",
-      "decision": "Mixed ETH allocator; dollar carry unverified",
-      "evidence": "Official DETH mandate names restaking, lending, AMMs, PTs and loops. The same article assigns explicit stablecoin carry to DBIT; it does not prove DETH dollar debt.",
+      "decision": "Fixed-block dollar funding route confirmed; included in the examined product census.",
+      "evidence": "DETH reports 2,499 ETH in a cached book. Its hub has 15,065 WETH of Aave debt against weETH, plus a Morpho USDT / wstETH carry route. Verified accounting instructions identify the credit receipts instead of relying on the vault name.",
       "source": "https://makinafi.substack.com/p/operator-deep-dive-dialectic",
-      "counted": false
+      "counted": true
     },
     {
       "product": "Avant savETH / avETHx",
-      "decision": "ETH managed and tranched return; dollar-carry portfolio unresolved",
-      "evidence": "ETH base and senior/junior wrappers are documented. The ETH-collateral dollar loan, counterparties and portfolio weights are not reconstructed.",
+      "decision": "Fixed-block dollar funding route confirmed; included in the examined product census.",
+      "evidence": "The published 29 September portfolio has a $33.18M net NAV and a $32.53M savUSD position. Ethereum reads at T confirm USDC, USDS and PYUSD borrowing against ETH collateral. The large own-credit destination makes this a concentrated issuer dependency.",
       "source": "https://docs.avantprotocol.com/overview/core-tokens",
-      "counted": false
+      "counted": true
     },
     {
       "product": "yoETH",
@@ -3660,10 +3660,10 @@
     },
     {
       "product": "Lido earnETH / GGV / stRATEGY",
-      "decision": "Mixed ETH allocation; sub-vault lookthrough needed",
-      "evidence": "earnETH sub-vaults are documented. earnUSD accepts dollars and is not automatically an ETH-collateral carry product.",
+      "decision": "Fixed-block dollar funding route confirmed; included in the examined product census.",
+      "evidence": "Earn ETH reports 83,309 ETH. Its main holding is stRATEGY, whose book must not be added again. The nested portfolio owes about 355,217 WETH in staking loops and 25.55M USDT in its main dollar-carry account. Those are gross loans, not the carry sleeve\u2019s equity.",
       "source": "https://docs.lido.fi/earn/",
-      "counted": false
+      "counted": true
     },
     {
       "product": "YieldNest ynETHx",
@@ -3680,21 +3680,6 @@
       "counted": false
     }
   ],
-  "documentedRoutes": [
-    {
-      "product": "ZenSats wstETH / LlamaLend",
-      "decision": "Documented E4 route; frozen capital unmeasured",
-      "evidence": "wstETH collateral \u2192 crvUSD loan \u2192 Curve crvUSD/USDT \u2192 StakeDAO; CRV harvest converts to debt asset",
-      "source": "https://www.zensats.app/docs/strategy",
-      "counted": false
-    },
-    {
-      "product": "ZenSats wstETH / pmUSD",
-      "decision": "Documented legacy E4; withdraw-only",
-      "evidence": "Aave USDT loan \u2192 crvUSD swap \u2192 RAAC pmUSD/crvUSD \u2192 StakeDAO; historical book unmeasured",
-      "source": "https://www.zensats.app/docs/strategy",
-      "counted": false
-    }
-  ],
+  "documentedRoutes": [],
   "boundary": "A finite public-feed and primary-document sweep covers the significant observed strategy families. Wallet-level carry, private mandates and unsupported adapter histories remain outside a verified exhaustive global capital total."
 }

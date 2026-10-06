@@ -1,0 +1,105 @@
+> For the complete documentation index, see [llms.txt](https://docs.yo.xyz/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://docs.yo.xyz/yo-risk-graph/vault-exposure-api.md).
+
+# Vault Exposure API
+
+Returns the current collateral exposure of a vault: the underlying assets, their USD value, and their share of total allocation.
+
+No API key required. Works with most Morpho vaults today.
+
+**Use cases**
+
+* **Agentic exploration** — drop this into any agent flow to instantly surface a vault's full collateral picture.
+* **Real-time decisions** — let an agent evaluate what a vault actually holds, not just its headline yield, before allocating.
+* **UX enrichment** — surface exposure breakdowns directly in your product without a backend integration.
+
+#### Endpoint
+
+<mark style="color:green;">`GET`</mark> `https://risk.yo.xyz/api/v1/public/vault/:chain/:vaultAddress/exposure`
+
+**Headers**
+
+| Name         | Value              |
+| ------------ | ------------------ |
+| Content-Type | `application/json` |
+
+**Query Parameters**
+
+| Name           | Type   | Description                 |
+| -------------- | ------ | --------------------------- |
+| `chain`        | string | Chain slug, e.g. `ethereum` |
+| `vaultAddress` | string | Vault contract address      |
+
+**Response fields**
+
+| Field                                         | Description                                                                           |
+| --------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `vault`                                       | Vault identity — `id`, `name`, `tvlUsd`                                               |
+| `allocatedUsd`                                | Total USD value allocated by the vault                                                |
+| `underlying`                                  | The vault's base asset(s) and their share of allocation                               |
+| `collateral`                                  | Each collateral asset backing the vault's positions, with USD exposure and percentage |
+| `uncollateralizedUsd` / `uncollateralizedPct` | Portion of the vault with no identified collateral backing                            |
+
+**Example Response**
+
+{% tabs %}
+{% tab title="200" %}
+
+```json
+{
+  "data": {
+    "vault": {
+      "id": "pool:ethereum:0xb576765fb15505433af24fee2c0325895c559fb2",
+      "name": "Paypal USD Main",
+      "tvlUsd": "0"
+    },
+    "allocatedUsd": "302736823.84312195",
+    "underlying": [
+      {
+        "assetId": "asset:ethereum:0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+        "symbol": "PYUSD",
+        "chain": "ethereum",
+        "exposureUsd": "302736823.84312195",
+        "exposurePct": "1"
+      }
+    ],
+    "collateral": [
+      {
+        "assetId": "pool:ethereum:0x8236a87084f8b84306f72007f36f2618a5634494",
+        "symbol": "LBTC",
+        "chain": "ethereum",
+        "exposureUsd": "86096652.66067237",
+        "exposurePct": "0.2843943844283958"
+      }
+    ],
+    "uncollateralizedUsd": "0",
+    "uncollateralizedPct": "0"
+  },
+  "message": "SUCCESS",
+  "statusCode": 200
+}
+```
+
+{% endtab %}
+{% endtabs %}
+
+
+---
+
+# Agent Instructions
+This documentation is published with GitBook. GitBook is the documentation platform designed so that both humans and AI agents can read, navigate, and reason over technical content effectively. Learn more at gitbook.com.
+
+## Querying This Documentation
+If you need additional information that is not directly available in this page, you can query the documentation dynamically by asking a question.
+
+Perform an HTTP GET request on the current page URL with the `ask` query parameter, and the optional `goal` query parameter:
+
+```
+GET https://docs.yo.xyz/yo-risk-graph/vault-exposure-api.md?ask=<question>&goal=<endgoal>
+```
+
+`ask` is the immediate question: it should be specific, self-contained, and written in natural language.
+`goal` is optional and describes the broader end goal you are ultimately trying to accomplish on behalf of the user. GitBook uses it to tailor the answer towards what is most useful for that goal.
+
+The response will contain a direct answer to the question and relevant excerpts and sources from the documentation.
+
+Use this mechanism when the answer is not explicitly present in the current page, you need clarification or additional context, or you want to retrieve related documentation sections.

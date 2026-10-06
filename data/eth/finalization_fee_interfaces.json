@@ -1,0 +1,24 @@
+[
+  {
+    "key": "lido_earn_fee_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xed4fac879ee86f3ab0101993a3713e7caa0488e1",
+    "capturedUTC": "2026-10-06T15:56:25.660014+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:56:25 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_earn_fee_interface-7d166d3f0404f511.json",
+    "sha256": "7d166d3f0404f5118af808c79a4b990c0667d77b14f34cb9c998b3eaf9c91da2",
+    "bytes": 51064
+  },
+  {
+    "key": "lido_strategy_fee_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x24fd64eb4766d91fd79a4d5e8086b2460debcae7",
+    "capturedUTC": "2026-10-06T15:56:25.660297+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:56:25 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_strategy_fee_interface-80571a4aeeda4686.json",
+    "sha256": "80571a4aeeda4686689fb6aac0d2c94d74d551a6d07d5dfa5a647f118dadde5c",
+    "bytes": 52750
+  }
+]

@@ -163,3 +163,313 @@ Evidence: [backing and exits](../../../data/eth/backing_exit_closure.json), [all
 The completed website supports a colleague presentation of the market’s reported layers, two-year category changes, financing mechanics, measured income components and investor exit constraints. It preserves the original Bitcoin chapter structure and uses bars for capital exhibits. Every numerical answer keeps its measurement date, unit, denominator and evidence boundary.
 
 Private custody allocation, full actual consensus state and a complete strategy-attributed investor P&L cannot be created from public share prices or sampled rates. They remain precise evidence limits, not silently filled estimates. The record needed to improve each answer is stated in its ledger.
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Native stake: measured backing, not another wrapper
+
+The archived consensus state at T has **43,805,557.723 actual active ETH**, **43,739,959 effective active ETH** and **874,362 active validators**. Actual balance and effective stake answer different questions. The active set includes 22,432 exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer.
+
+The archived slot is **15346798**, state root `0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.
+
+[Archived state endpoint](http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).

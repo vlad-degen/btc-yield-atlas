@@ -1,0 +1,116 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "LidoAaveUSDTindex_26081188",
+      "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "signature": "getReserveNormalizedVariableDebt(address)",
+      "block": 26081188,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "data": "0x386497fd000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+        },
+        "0x18df7a4"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x00000000000000000000000000000000000000000406fbdc545f5bfce423c51d"
+      },
+      "capture": {
+        "key": "finalization_loan_index_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:21:55.429986+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x386497fd000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18df7a4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x386497fd000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:21:55 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_loan_index_0-2ea46ec25b4662dc.json",
+        "sha256": "2ea46ec25b4662dc1387545e8ee7448591d252d6c3b94446b67691abc4820e98",
+        "bytes": 207
+      }
+    },
+    {
+      "label": "LidoAaveUSDTindex_26108081",
+      "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "signature": "getReserveNormalizedVariableDebt(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "data": "0x386497fd000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x0000000000000000000000000000000000000000040772aeb10f28c098578e11"
+      },
+      "capture": {
+        "key": "finalization_loan_index_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:21:55.429986+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x386497fd000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18df7a4"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x386497fd000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:21:55 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_loan_index_0-2ea46ec25b4662dc.json",
+        "sha256": "2ea46ec25b4662dc1387545e8ee7448591d252d6c3b94446b67691abc4820e98",
+        "bytes": 207
+      }
+    }
+  ]
+}

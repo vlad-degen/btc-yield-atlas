@@ -1,0 +1,112 @@
+[
+  {
+    "key": "yo_addresses",
+    "url": "https://docs.yo.xyz/protocol/contract-addresses.md",
+    "capturedUTC": "2026-10-06T15:13:57.010846+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:57 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yo_addresses-6e757392526479a1.txt",
+    "sha256": "6e757392526479a1edf67dbbd2991d488d2b5ec37a2cbe762c284ad58037caaf",
+    "bytes": 12317
+  },
+  {
+    "key": "yo_exposure_docs",
+    "url": "https://docs.yo.xyz/yo-risk-graph/vault-exposure-api.md",
+    "capturedUTC": "2026-10-06T15:13:57.011145+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:57 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yo_exposure_docs-6629a3d478a6d389.txt",
+    "sha256": "6629a3d478a6d3890f550e0870a0883fad82d12eea616063905769c409342966",
+    "bytes": 4537
+  },
+  {
+    "key": "yo_api_docs",
+    "url": "https://docs.yo.xyz/integrations/api.md",
+    "capturedUTC": "2026-10-06T15:13:57.011216+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:57 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yo_api_docs-6641e2493c5fa7dd.txt",
+    "sha256": "6641e2493c5fa7ddbec231467f808bac80d92023e89ced3287d3fea38731dd68",
+    "bytes": 30188
+  },
+  {
+    "key": "makina_strategies",
+    "url": "https://docs.makina.finance/strategies/deployments",
+    "capturedUTC": "2026-10-06T15:13:57.321198+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:59 GMT",
+    "path": "raw/eth/finalization-2026-10-06/makina_strategies-534deceb3be3d7d4.txt",
+    "sha256": "534deceb3be3d7d4dac02c53bc7798177215b0012d3129780dd0d575a0ca8f5c",
+    "bytes": 231439
+  },
+  {
+    "key": "makina_deployments",
+    "url": "https://docs.makina.finance/contracts/core/deployments",
+    "capturedUTC": "2026-10-06T15:13:57.421414+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:59 GMT",
+    "path": "raw/eth/finalization-2026-10-06/makina_deployments-bdb72b0affbae627.txt",
+    "sha256": "bdb72b0affbae627bc5cf313e1c90c072ce836f8adb8571486800fd257a80955",
+    "bytes": 130178
+  },
+  {
+    "key": "vesper_pools",
+    "url": "https://docs.vesper.finance/vesper-pools-and-strategies/vesper-grow/vesper-grow-pools.md",
+    "capturedUTC": "2026-10-06T15:13:57.559208+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:57 GMT",
+    "path": "raw/eth/finalization-2026-10-06/vesper_pools-4a740e7ec6fdff99.txt",
+    "sha256": "4a740e7ec6fdff995c4a374c2718d9dff555e19edde185f3fc05c437f7212e44",
+    "bytes": 2831
+  },
+  {
+    "key": "vesper_strategies",
+    "url": "https://docs.vesper.finance/vesper-pools-and-strategies/strategies.md",
+    "capturedUTC": "2026-10-06T15:13:57.904870+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:58 GMT",
+    "path": "raw/eth/finalization-2026-10-06/vesper_strategies-2e0ceb890b896c26.txt",
+    "sha256": "2e0ceb890b896c26e3b4a088fd8f4fc5ed64f40ea2d9769ecbc4a633bb812d31",
+    "bytes": 4549
+  },
+  {
+    "key": "avant_addresses",
+    "url": "https://docs.avantprotocol.com/security/contract-addresses.md",
+    "capturedUTC": "2026-10-06T15:13:58.254295+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:58 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_addresses-55eae26867168e3e.txt",
+    "sha256": "55eae26867168e3e1966ec4e096fc59f1b8fe8d39148406c1ba6960cb65ea7ee",
+    "bytes": 15705
+  },
+  {
+    "key": "avant_strategies",
+    "url": "https://docs.avantprotocol.com/yield-strategies-and-revenue/strategy-addresses.md",
+    "capturedUTC": "2026-10-06T15:13:58.560663+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:58 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_strategies-59a013f3e09dba7d.txt",
+    "sha256": "59a013f3e09dba7dba5026cdb0a9370fb5c32f459a1f3a5613b2a3bd9b1025a4",
+    "bytes": 7145
+  },
+  {
+    "key": "avant_yield",
+    "url": "https://docs.avantprotocol.com/yield-strategies-and-revenue/yield-generation.md",
+    "capturedUTC": "2026-10-06T15:13:58.879464+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:59 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_yield-fc9366bf2ce7af3b.txt",
+    "sha256": "fc9366bf2ce7af3b801357e7e282ba776950ad7d05b3663d6274d963d0634536",
+    "bytes": 5175
+  }
+]

@@ -21,7 +21,7 @@ def run():
     check('exact_frozen_snapshot', analysis['snapshot'] == 1790985599)
     check('24_completed_months', analysis['months'] == [m['period'] for m in market['months']] and
           analysis['months'][0] == '2024-10' and analysis['months'][-1] == '2026-09' and len(analysis['months']) == 24)
-    check('all_eight_without_size_cutoff', len(analysis['books']) == 8 and {p['name'] for p in analysis['books']} ==
+    check('all_thirteen_without_size_cutoff', len(analysis['books']) == 13 and {p['name'] for p in analysis['books']} ==
           {p['product'] for p in candidates['products'] if p['classification'] == 'E4'})
     for name, sha in analysis['sources'].items():
         check('source_hash:' + name, hashlib.sha256((DATA / f'{name}.json').read_bytes()).hexdigest() == sha)
@@ -42,7 +42,7 @@ def run():
                   close(total, month['by_category']['carry'][field]))
     for view in ['all', 'parents', 'dedicated', 'category']:
         shown = analysis['adapterParents'] if view == 'category' else [p for p in analysis['books'] if
-                view == 'all' or ((p['name'] in ['Concrete Delta weETH', 'ether.fi Liquid ETH']) == (view == 'parents'))]
+                view == 'all' or ((p['name'] in ['Concrete Delta weETH', 'ether.fi Liquid ETH', 'Lido Earn ETH', 'Avant avETH / savETH']) == (view == 'parents'))]
         for unit in ['eth', 'usd']:
             path = ROOT / 'eth/data' / f'carry-history-{view}-{unit}.csv'
             rows = list(csv.DictReader(path.open()))
@@ -81,7 +81,7 @@ def run():
     yb = next(p for p in chapters['products'] if p['id'] == 'yieldbasis')
     old_yb = next(p for p in read('strategy_universe_deep')['products'] if p['id'] == 'yb_weth_pool')
     check('YB_frozen_capital_conserved', close(yb['capitalETH'], old_yb['capitalETH']) and close(yb['capitalUSD'], old_yb['capitalUSD']))
-    check('YB_rank_three_actual_USD_loan', yb['rank'] == 3 and close(yb['charts']['loanLegs']['rows'][0]['debtUSD'], old_yb['state']['loan']['debtCrvUSD']))
+    check('YB_rank_five_actual_USD_loan', yb['rank'] == 5 and close(yb['charts']['loanLegs']['rows'][0]['debtUSD'], old_yb['state']['loan']['debtCrvUSD']))
     check('YB_no_fabricated_predeployment_capital', all(r['sizeETH'] is None for r in yb['charts']['capitalHistory']['rows'] if r['month'] <= '2026-04'))
     holders = read('yb_LT_holders_T')
     distribution = yb['charts']['walletDistribution']
@@ -108,7 +108,7 @@ def run():
     manifest = read('parity_discovery_manifest')
     check('new_discovery_capture_hashes', all(hashlib.sha256((ROOT/r['path']).read_bytes()).hexdigest() == r['sha256'] if r.get('path') else bool(r.get('error')) for r in manifest))
     check('YB_monthly_capture_hash', candidates['reader_extension']['monthly_capture_sha256'] == hashlib.sha256((ROOT/'raw/eth/parity-sweep-2026-10-05/yb_monthly_frozen.json').read_bytes()).hexdigest())
-    check('unmeasured_documented_routes_not_added', len(coverage['documentedRoutes']) == 2 and all(not p['counted'] for p in coverage['documentedRoutes']))
+    check('documented_routes_replaced_by_fixed_block_cases', not coverage['documentedRoutes'] and any(p['name']=='ZenSats wstETH' for p in analysis['books']))
     failures = [r for r in checks if not r['passed']]
     result = {'checks': len(checks), 'all_checks_passed': not failures, 'failed': failures,
               'financial_snapshot': '2026-10-02T23:59:59Z',

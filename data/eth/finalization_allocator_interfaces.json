@@ -1,0 +1,57 @@
+[
+  {
+    "key": "makina_deth_machine_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x0447D0aD7FD6a3409B48Ecbb9DDB075C1e11D735",
+    "capturedUTC": "2026-10-06T15:17:04.870899+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:17:05 GMT",
+    "path": "raw/eth/finalization-2026-10-06/makina_deth_machine_interface-d4be93d4bb66374e.json",
+    "sha256": "d4be93d4bb66374eeecca886ed4bf73b9806a5dfc604f756a7a41fb904e75cff",
+    "bytes": 32135
+  },
+  {
+    "key": "makina_deth_token_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x871aB8E36CaE9AF35c6A3488B049965233DeB7ed",
+    "capturedUTC": "2026-10-06T15:17:04.871213+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:17:05 GMT",
+    "path": "raw/eth/finalization-2026-10-06/makina_deth_token_interface-79aa17ea95f19ea7.json",
+    "sha256": "79aa17ea95f19ea76c969d6ee9cb69a0fe295b583a5e8c642ac8fbf78183dd1d",
+    "bytes": 53247
+  },
+  {
+    "key": "avant_aveth_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x9469470C9878bf3d6d0604831d9A3A366156f7EE",
+    "capturedUTC": "2026-10-06T15:17:04.871290+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:17:05 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_aveth_interface-0dd0e0f32019a5c5.json",
+    "sha256": "0dd0e0f32019a5c56166e4ebca194bcfce00122c460b5bcd05a14de7a0d64f9c",
+    "bytes": 127317
+  },
+  {
+    "key": "avant_saveth_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xDA06eE2dACF9245Aa80072a4407deBDea0D7e341",
+    "capturedUTC": "2026-10-06T15:17:05.084354+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:17:05 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_saveth_interface-e12260018f6d5208.json",
+    "sha256": "e12260018f6d5208aaba6f3951cd0c90d87d05e2a9923bcddd943ee6e159f12c",
+    "bytes": 248658
+  },
+  {
+    "key": "avant_minter_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x09becF6E5e297825D19aA14eD6081A03524532D7",
+    "capturedUTC": "2026-10-06T15:17:05.205945+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:17:05 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_minter_interface-cbac4a541f14bb9e.json",
+    "sha256": "cbac4a541f14bb9ea723d7b3b991dbb697997ae4606c90757f476259d1ef522c",
+    "bytes": 201071
+  }
+]

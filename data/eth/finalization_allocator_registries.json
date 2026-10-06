@@ -1,0 +1,57 @@
+[
+  {
+    "key": "vesper_ethereum_registry",
+    "url": "https://api.vesper.finance/pools?stages=prod",
+    "capturedUTC": "2026-10-06T15:18:53.618979+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:18:54 GMT",
+    "path": "raw/eth/finalization-2026-10-06/vesper_ethereum_registry-6f89ed39c0c672ec.json",
+    "sha256": "6f89ed39c0c672ec333950a50455d22c56aea43ca8d316223f55e22cc2e816e8",
+    "bytes": 30929
+  },
+  {
+    "key": "vesper_orbit_registry",
+    "url": "https://api.vesper.finance/pools?stages=orbit",
+    "capturedUTC": "2026-10-06T15:18:53.619288+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:18:54 GMT",
+    "path": "raw/eth/finalization-2026-10-06/vesper_orbit_registry-4f53cda18c2baa0c.json",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2
+  },
+  {
+    "key": "vesper_base_registry",
+    "url": "https://api-base.vesper.finance/pools",
+    "capturedUTC": "2026-10-06T15:18:53.619399+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:18:54 GMT",
+    "path": "raw/eth/finalization-2026-10-06/vesper_base_registry-580e0104fcb059bc.json",
+    "sha256": "580e0104fcb059bc3c7d9801b67f33053ccb2953fa3899321410c1faa6da67f5",
+    "bytes": 7628
+  },
+  {
+    "key": "yo_eth_history",
+    "url": "https://api-v2.yo.xyz/v1/vaults/yoeth/timeseries/tvl?from=2024-10-01&to=2026-10-02T23%3A59%3A59Z&interval=day&limit=1000",
+    "capturedUTC": "2026-10-06T15:18:54.171987+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:18:54 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yo_eth_history-59bd8ea6b768db7e.json",
+    "sha256": "59bd8ea6b768db7e95ea79a51b47ca6da9033fd0ee14c2d62fa886ac9d03ea40",
+    "bytes": 54931
+  },
+  {
+    "key": "yo_eth_apy_history",
+    "url": "https://api-v2.yo.xyz/v1/vaults/yoeth/timeseries/apy?from=2024-10-01&to=2026-10-02T23%3A59%3A59Z&interval=day&limit=1000",
+    "capturedUTC": "2026-10-06T15:18:54.231730+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:18:54 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yo_eth_apy_history-9a0a5925cdfe4a5c.json",
+    "sha256": "9a0a5925cdfe4a5c97cd5dec87f2c83fd49f2723448c0b8d53643f40733740e7",
+    "bytes": 29917
+  }
+]

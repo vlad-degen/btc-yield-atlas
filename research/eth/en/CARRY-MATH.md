@@ -288,3 +288,223 @@ Veda and Nonce identification uses the observed deployment and separately dated 
 - Destination cash and Aave physical/virtual cash are not guaranteed withdrawal or deposit capacity at a proposed trade size. No exit was executed and no wallet transaction was submitted.
 - Main vault and LoanManager liquidate separately. Combined LTV is useful for accounting but cannot transfer collateral headroom between them.
 - The illustration does not allocate all Ether.fi fees, credit exposure, other carry legs, ETH loops, LP claims, cross-chain balances or realized income. The original financial snapshot and partial-balance accounting were preserved.
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+
+## Two additional dollar investment and funding ledgers
+
+All figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.
+
+| Account | Debt token | Investment share-price income | Full-account interest | Difference, before other items |
+| --- | --- | --- | --- | --- |
+| lido | USDT | 84,397.186521 | 64,970.446482 | +19,426.740039 |
+| vesper | DAI | 13.495808 | 452.498002 | -439.002194 |
+
+Lido’s opening investment includes **9,855,091 already allocated but unclaimed earnUSD shares**. Their later mint is not new capital. The account also sends **13,304,800 USDT back to the stRATEGY parent** during the window. Its investment claim starts around $20.49M while debt starts around $7.18M; the full-account difference is therefore not a matched-principal carry return.
+
+Vesper’s opening and closing vDAI balances reconcile exactly to the saved mint and burn events. The **13.50 DAI** of share-price income is below **452.50 DAI** of accrued funding. Reinvested reward purchases are treated as acquisition flows, so this comparison does not establish the result after external incentives.
+
+### A directly matched 5M USDT investment
+
+On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 USDT** from Aave and transfers it to the earnUSD deposit queue. The newly allocated economic claim is **4,838,244.259 earnUSD shares**, worth exactly 5M USDT at the transaction’s archived oracle mark. The 9.855M old allocated shares minted in the same transaction are excluded.
+
+At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
+
+[Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).

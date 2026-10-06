@@ -1,0 +1,25 @@
+{
+  "snapshot": "2026-10-02T23:59:59Z",
+  "slot": 15346798,
+  "stateRoot": "0x14a3c4ae7fcd440993b15b81da8e0cc491d93d866ccc1b4d858add1d30441282",
+  "activeValidatorCount": 874362,
+  "activeBalanceGwei": "43805557723469370",
+  "activeEffectiveBalanceGwei": "43739959000000000",
+  "statusCounts": {
+    "active_ongoing": 851930,
+    "active_exiting": 22432
+  },
+  "executionOptimistic": true,
+  "finalized": true,
+  "source": {
+    "key": "nimbus_all_active_validators_T",
+    "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validators?status=active_ongoing,active_exiting,active_slashed",
+    "capturedUTC": "2026-10-06T15:36:18.881801+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:36:52 GMT",
+    "path": "raw/eth/finalization-2026-10-06/nimbus_all_active_validators_T-c7637a221926db5b.json",
+    "sha256": "c7637a221926db5bcf794d94f747d1ea7ad099ca10ded81cdc475879d0a665da",
+    "bytes": 423898738
+  }
+}

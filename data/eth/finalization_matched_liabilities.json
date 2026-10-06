@@ -1,0 +1,1022 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "LidoAaveUSDT_start_balanceOf(address)",
+      "address": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+      "signature": "balanceOf(address)",
+      "block": 25893051,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+          "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b18bb"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x00000000000000000000000000000000000000000000000000000112e28c35f5"
+      },
+      "capture": {
+        "key": "finalization_matched_liabilities_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:00:51.804476+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:00:51 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_matched_liabilities_0-96f79e43a222d96f.json",
+        "sha256": "96f79e43a222d96fa417add1b2f17d0c32a21fb48fc80e9b70171e85788e8327",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "LidoAaveUSDT_start_scaledBalanceOf(address)",
+      "address": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+      "signature": "scaledBalanceOf(address)",
+      "block": 25893051,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+          "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b18bb"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x000000000000000000000000000000000000000000000000000000dd3eba42a3"
+      },
+      "capture": {
+        "key": "finalization_matched_liabilities_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:00:51.804476+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:00:51 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_matched_liabilities_0-96f79e43a222d96f.json",
+        "sha256": "96f79e43a222d96fa417add1b2f17d0c32a21fb48fc80e9b70171e85788e8327",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "LidoAaveUSDT_end_balanceOf(address)",
+      "address": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+          "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x0000000000000000000000000000000000000000000000000000143a136b4b81"
+      },
+      "capture": {
+        "key": "finalization_matched_liabilities_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:00:51.804476+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:00:51 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_matched_liabilities_0-96f79e43a222d96f.json",
+        "sha256": "96f79e43a222d96fa417add1b2f17d0c32a21fb48fc80e9b70171e85788e8327",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "LidoAaveUSDT_end_scaledBalanceOf(address)",
+      "address": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+      "signature": "scaledBalanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+          "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x000000000000000000000000000000000000000000000000000010389cd8f74c"
+      },
+      "capture": {
+        "key": "finalization_matched_liabilities_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:00:51.804476+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:00:51 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_matched_liabilities_0-96f79e43a222d96f.json",
+        "sha256": "96f79e43a222d96fa417add1b2f17d0c32a21fb48fc80e9b70171e85788e8327",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "LidoSparkUSDT_start_balanceOf(address)",
+      "address": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+      "signature": "balanceOf(address)",
+      "block": 25893051,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+          "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b18bb"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x000000000000000000000000000000000000000000000000000005758ba02946"
+      },
+      "capture": {
+        "key": "finalization_matched_liabilities_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:00:51.804476+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:00:51 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_matched_liabilities_0-96f79e43a222d96f.json",
+        "sha256": "96f79e43a222d96fa417add1b2f17d0c32a21fb48fc80e9b70171e85788e8327",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "LidoSparkUSDT_start_scaledBalanceOf(address)",
+      "address": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+      "signature": "scaledBalanceOf(address)",
+      "block": 25893051,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+          "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18b18bb"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x000000000000000000000000000000000000000000000000000004882c40f9f8"
+      },
+      "capture": {
+        "key": "finalization_matched_liabilities_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:00:51.804476+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:00:51 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_matched_liabilities_0-96f79e43a222d96f.json",
+        "sha256": "96f79e43a222d96fa417add1b2f17d0c32a21fb48fc80e9b70171e85788e8327",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "LidoSparkUSDT_end_balanceOf(address)",
+      "address": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+          "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x000000000000000000000000000000000000000000000000000003036665724c"
+      },
+      "capture": {
+        "key": "finalization_matched_liabilities_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:00:51.804476+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:00:51 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_matched_liabilities_0-96f79e43a222d96f.json",
+        "sha256": "96f79e43a222d96fa417add1b2f17d0c32a21fb48fc80e9b70171e85788e8327",
+        "bytes": 825
+      }
+    },
+    {
+      "label": "LidoSparkUSDT_end_scaledBalanceOf(address)",
+      "address": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+      "signature": "scaledBalanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+          "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x0000000000000000000000000000000000000000000000000000027e404d01d4"
+      },
+      "capture": {
+        "key": "finalization_matched_liabilities_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:00:51.804476+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18b18bb"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x70a08231000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "data": "0x1da24f3e000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:00:51 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_matched_liabilities_0-96f79e43a222d96f.json",
+        "sha256": "96f79e43a222d96fa417add1b2f17d0c32a21fb48fc80e9b70171e85788e8327",
+        "bytes": 825
+      }
+    }
+  ]
+}

@@ -1,0 +1,3512 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "lidoEarn_holderBalance_0x93f0103186171f876d10980a8a8941a181e3609b",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x00000000000000000000000000000000000000000000000004337511575f13f0"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:13.957824+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_0-b52a6e1377b0745e.json",
+        "sha256": "b52a6e1377b0745e77fe408b352af4ae8addaae2edac2ab9b58c9065cdf5b1a3",
+        "bytes": 825
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_83",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:36:30.101116+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000031c3e393d3ac5be17f52e116a52d9bf0d265fe29"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000538205b40d9c3fe4f7ed7de12bfede4f3959448e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001710c9c18255a446722288abfb6ab1485e979fcc"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000b142de15e25254b2752919e407cf6e8e9b3c5263"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000031610500c81421c08c62c3a6ef2733fea93d7363"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000de92728804683ec03efaf6c293e428fc72c2ec95"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:36:30 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_83-b0f72f682641c3ad.json",
+            "sha256": "b0f72f682641c3adf0192a7f46297a11b4b172eb24e3d79dceec2b4a33d079c4",
+            "bytes": 1405
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_1",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:52.298875+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000044f7371b9a980efff1b126a9d291f8b3e575289e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000031c3e393d3ac5be17f52e116a52d9bf0d265fe29"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001710c9c18255a446722288abfb6ab1485e979fcc"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000000e12e946102ac511ba41d79ab7c3a4032ce39c54"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000003d1a38b9bd4377cf36307b05fe58053e6bc0b13f"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:39:52 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_1-283b388f85c51e2a.json",
+            "sha256": "283b388f85c51e2a49f6d780ca8b606ae541c2312dae9c8c49335418fff4eb75",
+            "bytes": 1550
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0x6e20f53279e1ee612e71c739b05989a78898723f",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x000000000000000000000000000000000000000000000000030e0c1eb9bc8b1b"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:13.957824+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_0-b52a6e1377b0745e.json",
+        "sha256": "b52a6e1377b0745e77fe408b352af4ae8addaae2edac2ab9b58c9065cdf5b1a3",
+        "bytes": 825
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_83",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:36:30.101116+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000031c3e393d3ac5be17f52e116a52d9bf0d265fe29"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000538205b40d9c3fe4f7ed7de12bfede4f3959448e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001710c9c18255a446722288abfb6ab1485e979fcc"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000b142de15e25254b2752919e407cf6e8e9b3c5263"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000031610500c81421c08c62c3a6ef2733fea93d7363"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000de92728804683ec03efaf6c293e428fc72c2ec95"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:36:30 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_83-b0f72f682641c3ad.json",
+            "sha256": "b0f72f682641c3adf0192a7f46297a11b4b172eb24e3d79dceec2b4a33d079c4",
+            "bytes": 1405
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_1",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:52.298875+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000044f7371b9a980efff1b126a9d291f8b3e575289e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000031c3e393d3ac5be17f52e116a52d9bf0d265fe29"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001710c9c18255a446722288abfb6ab1485e979fcc"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000000e12e946102ac511ba41d79ab7c3a4032ce39c54"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000003d1a38b9bd4377cf36307b05fe58053e6bc0b13f"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:39:52 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_1-283b388f85c51e2a.json",
+            "sha256": "283b388f85c51e2a49f6d780ca8b606ae541c2312dae9c8c49335418fff4eb75",
+            "bytes": 1550
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0x81d3ffbfd90252f5260c942c3e4930bef1155a10",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x0000000000000000000000000000000000000000000000057f999a926dbbee49"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:13.957824+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_0-b52a6e1377b0745e.json",
+        "sha256": "b52a6e1377b0745e77fe408b352af4ae8addaae2edac2ab9b58c9065cdf5b1a3",
+        "bytes": 825
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_96",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:36:40.014403+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000049f085c68338b1a6a314c92fe51e1228ad933c8b"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000931ec1f0c23d4238d66b82e14e0e414f77d85125"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000ac3a93e3e19c373254b35e760340ed3d9f5dfbdb"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000000640b10fa9d3bd108189921bd6906928f5c2991f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000cd6b980029e6e6e0733ac8ec3e02be9410d09799"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000077ba6980ff5fd1dc485933ddfbdab828f842f65e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000248f1a070909821db1823a3e70de80f276c6545e"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:36:40 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_96-76233be7661f5d4b.json",
+            "sha256": "76233be7661f5d4b7d3ba796d3297ced801b82502cadd06aff7f68b77212dbb9",
+            "bytes": 970
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_1",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:52.298875+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000044f7371b9a980efff1b126a9d291f8b3e575289e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000031c3e393d3ac5be17f52e116a52d9bf0d265fe29"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001710c9c18255a446722288abfb6ab1485e979fcc"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000000e12e946102ac511ba41d79ab7c3a4032ce39c54"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000003d1a38b9bd4377cf36307b05fe58053e6bc0b13f"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:39:52 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_1-283b388f85c51e2a.json",
+            "sha256": "283b388f85c51e2a49f6d780ca8b606ae541c2312dae9c8c49335418fff4eb75",
+            "bytes": 1550
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0x16e0288bde4a0f8b97ed1bd3d62835c4f5dd1785",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x0000000000000000000000000000000000000000000000000214552d1e32fac2"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:13.957824+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_0-b52a6e1377b0745e.json",
+        "sha256": "b52a6e1377b0745e77fe408b352af4ae8addaae2edac2ab9b58c9065cdf5b1a3",
+        "bytes": 825
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_97",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:36:40.845863+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000e9aeb0e6b064ffe0deac3d3e7e311e4c3ca796a7"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000f4c1b69a65f3fdbafcae0786c5fb02dad3e0f353"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000000e12e946102ac511ba41d79ab7c3a4032ce39c54"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000003d1a38b9bd4377cf36307b05fe58053e6bc0b13f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000025f22f64abc98b4d2048de0f0111232a2c9760bd"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000003c5a725f73f9426a19c9258f85b7b60b3d8125a9"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000f6103ad9f3b8a24f26a2b05ca651348d40607883"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:36:41 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_97-09926252e412e8a5.json",
+            "sha256": "09926252e412e8a5c3757cbb0bef6d611013e7ee208f30b71609d73d33fee3f4",
+            "bytes": 1405
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_2",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:53.045066+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000025f22f64abc98b4d2048de0f0111232a2c9760bd"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000cc0cc0e651f36c63348a77909b4c43b56498bfe8"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000e13a04afdb6add0848fde42c288f77e5d1a34a27"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000008213a5638109a962693499fb306ea874ef5ac38"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000008cc0300c986fa64848d90b486b483f4a8aa6e4c7"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000086da1280642d2ef80a2d113172bf58bf657ec6d4"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:39:53 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_2-e9c37b64d01a7889.json",
+            "sha256": "e9c37b64d01a7889cdb2bbc3240c9bc2e938d2f0bf3b2e9e2571db398a28320e",
+            "bytes": 1260
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0xc96054188ba90125f497ad200f9f9c8673e132d1",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x000000000000000000000000000000000000000000000000000baa74a221dddd"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:13.957824+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_0-b52a6e1377b0745e.json",
+        "sha256": "b52a6e1377b0745e77fe408b352af4ae8addaae2edac2ab9b58c9065cdf5b1a3",
+        "bytes": 825
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_98",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:36:41.586203+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000008286cb2c7335c84ca47185d8be794a6d858f7d7a"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000cc0cc0e651f36c63348a77909b4c43b56498bfe8"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000e13a04afdb6add0848fde42c288f77e5d1a34a27"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000009f6b7ca82e862c073d11bf50d6848a5ec3346e51"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000037be7ad23a1f96359a1c247ef44d32f9f2ad1b9"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000026b9665289aa022bac6092ddfcc3a260a37e40d8"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000095dac47aebe8b00455fd851848a4297617431575"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:36:41 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_98-17e10d38e692950f.json",
+            "sha256": "17e10d38e692950f70ca33000547fa437ba6331bb664abcc08c9fdc8debd399f",
+            "bytes": 1260
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_2",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:53.045066+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000025f22f64abc98b4d2048de0f0111232a2c9760bd"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000cc0cc0e651f36c63348a77909b4c43b56498bfe8"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000e13a04afdb6add0848fde42c288f77e5d1a34a27"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000008213a5638109a962693499fb306ea874ef5ac38"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000008cc0300c986fa64848d90b486b483f4a8aa6e4c7"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000086da1280642d2ef80a2d113172bf58bf657ec6d4"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:39:53 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_2-e9c37b64d01a7889.json",
+            "sha256": "e9c37b64d01a7889cdb2bbc3240c9bc2e938d2f0bf3b2e9e2571db398a28320e",
+            "bytes": 1260
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0xc22996d24c9b654426be94eeef5fab104313b629",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x000000000000000000000000000000000000000000000000000037d06c855afa"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:13.957824+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_0-b52a6e1377b0745e.json",
+        "sha256": "b52a6e1377b0745e77fe408b352af4ae8addaae2edac2ab9b58c9065cdf5b1a3",
+        "bytes": 825
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_235",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:38:25.827262+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000045ec6a0a7f366ebcb58d82e7ea16af2660e5da7f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000bd82129454eea7dfc196c20679f62f63f3cc82ad"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000437de66fdd78bf95c1b519b180d9d4b0aad7cafa"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000000527b0f89b76755285a714f215e867058c25d4d8"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000d918f972ccb1627a3fd2a9c532695e2e09bceb17"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000062f40f2fe0d603ad1008c7d775651ca243a40260"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001323360c7b1966f03166564cb4262dafe72373fd"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:38:25 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_235-cc18031ed743bd5a.json",
+            "sha256": "cc18031ed743bd5a9c7d00ea9654ba7cb4d95d450a68646914e6c001d8359e6a",
+            "bytes": 1405
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_5",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:55.435979+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000d918f972ccb1627a3fd2a9c532695e2e09bceb17"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001323360c7b1966f03166564cb4262dafe72373fd"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000054233766341b7cfe12a0efa2651293b0febc66a5"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000bbe683de8f18e4d5cdd0602cfeea42502c7b70bf"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000005ce1e1281ca20dba7bd0c133ef352108b53ce58e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000bbdd5bbb360abb165ebed301c3bfd14ef2072e5d"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000009891525981af3ea556b4da5052f6ddc1f2fdd63f"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:39:55 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_5-48be472fca3d21e3.json",
+            "sha256": "48be472fca3d21e32cb019486c6bdbf1ecabc8c533d6f10412205550f94f959b",
+            "bytes": 1115
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0xd5f2b174b055167c12b45b7b4a870010732aaea9",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x00000000000000000000000000000000000000000000000000001944189bdb18"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:13.957824+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_0-b52a6e1377b0745e.json",
+        "sha256": "b52a6e1377b0745e77fe408b352af4ae8addaae2edac2ab9b58c9065cdf5b1a3",
+        "bytes": 825
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_239",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:38:28.871428+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000bc07e0273a25a6ce9e8cdaf2f148b9d227d6448f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000167310ba50eb028abeaebbf85453a3ce596a0a23"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000d57defbb792590027c76286f721226fcf9341ba3"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000076ebe492277c6ec247e95e67bf726e4402975e23"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000a274358649cf8ee9709cf8d028eff74dca638aa4"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000aba65ed7ad59f53ce2024fc07b4090a38094cd4e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006ef2b0082d045343e78e6e6b0134de4544630fbe"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:38:29 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_239-50c553807d18cfad.json",
+            "sha256": "50c553807d18cfadddcb2fc4541a90b408e1b4038d8ae76912a181439267c32f",
+            "bytes": 1840
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_6",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:56.191293+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000776e273eef19cf80c1ea17b193fc86c3b581995a"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000152cf24070586d1fca96d794b17fa9308e269b7b"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000167310ba50eb028abeaebbf85453a3ce596a0a23"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000d57defbb792590027c76286f721226fcf9341ba3"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000076ebe492277c6ec247e95e67bf726e4402975e23"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000a274358649cf8ee9709cf8d028eff74dca638aa4"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000aba65ed7ad59f53ce2024fc07b4090a38094cd4e"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:39:56 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_6-bb0f7f0e7d4a50c7.json",
+            "sha256": "bb0f7f0e7d4a50c77789d453fb2c501f195b903a66234225dffc2392cf75a76d",
+            "bytes": 1695
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0x50bfb5d8dd9186a285a1b654c127263833d8caca",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x00000000000000000000000000000000000000000000000000000000ca5e9c92"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:13.957824+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000093f0103186171f876d10980a8a8941a181e3609b"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000006e20f53279e1ee612e71c739b05989a78898723f"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000081d3ffbfd90252f5260c942c3e4930bef1155a10"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000016e0288bde4a0f8b97ed1bd3d62835c4f5dd1785"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c96054188ba90125f497ad200f9f9c8673e132d1"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000c22996d24c9b654426be94eeef5fab104313b629"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000d5f2b174b055167c12b45b7b4a870010732aaea9"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_0-b52a6e1377b0745e.json",
+        "sha256": "b52a6e1377b0745e77fe408b352af4ae8addaae2edac2ab9b58c9065cdf5b1a3",
+        "bytes": 825
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_256",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:38:42.329350+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000ab1b3ab5315d4825fa151d01c211946ca4b4f4b7"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000a4dfce304b8d7fa16685d5d055c39f95b171d1f4"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000015fbaed545ea1de34ffef8254d8e5cc6f8be1329"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000004d6b30a075dd69d19e717d0969d351796faeb950"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c4276e2b95e782e24474ef81be28d80a3cebc960"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000090cbe4bdd538d6e9b379bff5fe72c3d67a521de5"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000ad01c20d5886137e056775af56915de824c8fce5"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:38:42 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_256-cac30ea78acae466.json",
+            "sha256": "cac30ea78acae4666592e1f4df57ab7853aee55e372fcd769f52a339d2f84ee0",
+            "bytes": 1260
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_11",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:59.989581+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000007b0b26d423afc25878292d6c7032ae02a09c8d0b"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000b60c67a447636f9f0489b0e70ae8ac1a248e55b4"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000008e20449458b7ec6ae2181c2446efbd971485a1b6"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000a4dfce304b8d7fa16685d5d055c39f95b171d1f4"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000090cbe4bdd538d6e9b379bff5fe72c3d67a521de5"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000050bfb5d8dd9186a285a1b654c127263833d8caca"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000f6ae6a97ae4d6c0f9bb14ae78dcbdd9015571803"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000e2809c352edbfcc9bb512958ee4e68c85052fddd"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:40:00 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_11-f0e16a0ff2265f99.json",
+            "sha256": "f0e16a0ff2265f995df28fcea59e8df6a2dd2bab7fa08e5d421db0d673742cd0",
+            "bytes": 1550
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0x7c0db0e7f460479f277eb81fbd68e909c66e9ee6",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a082310000000000000000000000007c0db0e7f460479f277eb81fbd68e909c66e9ee6"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x00000000000000000000000000000000000000000000000003032d0f36c01ace"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:14.706054+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000007c0db0e7f460479f277eb81fbd68e909c66e9ee6"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000f6914ba8dadf472ef36164a78afb3cb3740551d0"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_1-f54ed24c65812d82.json",
+        "sha256": "f54ed24c65812d820ad5e4feac07fc7f28577746fbf900c21425e9a43dfcea11",
+        "bytes": 207
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_271",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:38:53.632353+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000abe1887de959612a741ebf9f771f1c0dda3ca509"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000a4a0ef14704bd6777b7b722352b4fccde097f6ac"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006d20ea97e617a55b6988979cb690c206da143c21"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c9c0229370736543820c6bbb7200e702a4ea9de5"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000e004a610872e60d1fa30757a50457a97a850f21c"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000007c0db0e7f460479f277eb81fbd68e909c66e9ee6"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001b9da6a404df58c6bef6336e207c92b0d330bea2"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c766949a6693ed8f2c207543024495fe0f666a7a"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:38:53 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_271-ecd303764614527e.json",
+            "sha256": "ecd303764614527ee8efea54c5bfb68545d3805c813041b55ba931836bf82fd6",
+            "bytes": 1260
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_12",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:40:00.740790+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000a20565abc81cc5d57f1b0ef953a6f48ad65b5b69"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000049f4d0222c880d4780b636662f5f18f572f2f88a"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000004c0a8ac14e62a4001672e637e02ab0566e7e9ef9"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000a17de2fef81416115faab9deb73efd9b1d9d478e"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000076cae279bf4b97d75f346333971209b49bd1b442"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006d20ea97e617a55b6988979cb690c206da143c21"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000007c0db0e7f460479f277eb81fbd68e909c66e9ee6"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000001b9da6a404df58c6bef6336e207c92b0d330bea2"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:40:00 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_12-69a0d4339b63b0a0.json",
+            "sha256": "69a0d4339b63b0a0d5a4fe2f893e9738d75e79f4ed2c6226615d3553c97fdf0a",
+            "bytes": 1550
+          }
+        }
+      ]
+    },
+    {
+      "label": "lidoEarn_holderBalance_0xf6914ba8dadf472ef36164a78afb3cb3740551d0",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "signature": "balanceOf(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "data": "0x70a08231000000000000000000000000f6914ba8dadf472ef36164a78afb3cb3740551d0"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x000000000000000000000000000000000000000000000001c498ecd0bfcb8d19"
+      },
+      "capture": {
+        "key": "finalization_holder_balances_T_retry_3_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T16:40:14.706054+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a082310000000000000000000000007c0db0e7f460479f277eb81fbd68e909c66e9ee6"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                "data": "0x70a08231000000000000000000000000f6914ba8dadf472ef36164a78afb3cb3740551d0"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 16:40:14 GMT",
+        "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_3_1-f54ed24c65812d82.json",
+        "sha256": "f54ed24c65812d820ad5e4feac07fc7f28577746fbf900c21425e9a43dfcea11",
+        "bytes": 207
+      },
+      "earlierAttempts": [
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_285",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:39:04.283963+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000607ce71ae895d7759141c6ae2695a2eb64e92bb7"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000f6914ba8dadf472ef36164a78afb3cb3740551d0"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000052ed35ec8b0c9b8770ac5d8ead78029112543b1d"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000c73ef1ea81ae335e6f6fa153f03513458a82b2cc"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000de87550ca97be82ab573cf508b4fbffeb7ad9375"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000006e21baa7e598fc41cef64d0109d6f185d0485b44"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a0823100000000000000000000000081a2fc13d7fde5557fea2a428a73d45aa19e9b7f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000e5f8a81f072150701c25fba31c910884fa33098c"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:39:04 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_285-d97a77db054bf665.json",
+            "sha256": "d97a77db054bf665360df64d51bdd2dc4d7f9abcda87299292f74bfdf057996c",
+            "bytes": 1550
+          }
+        },
+        {
+          "response": {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "error": {
+              "code": 429,
+              "message": "Your app has exceeded its compute units per second capacity. If you have retries enabled, you can safely ignore this message. If not, check out https://docs.alchemy.com/reference/throughput"
+            }
+          },
+          "capture": {
+            "key": "finalization_holder_balances_T_retry_1_14",
+            "url": "https://eth-mainnet.public.blastapi.io",
+            "capturedUTC": "2026-10-06T16:40:02.262586+00:00",
+            "request": [
+              {
+                "jsonrpc": "2.0",
+                "id": 1,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000336c80c35af455de84d23e639bdeebc05b27b17a"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 2,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a082310000000000000000000000008d1ae479a51a14c3e1a0326c6b77d4b700c88f41"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 3,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000e2982d68a045c74f95accfa22e99868cd4d6fee4"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 4,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000dd4c330b2f405ce6c7a21a24b8903eb8a7f7dc1f"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 5,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000ffacbd17399a29de9860bb0e6bf1dd9b73bf424a"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 6,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000607ce71ae895d7759141c6ae2695a2eb64e92bb7"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 7,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000f6914ba8dadf472ef36164a78afb3cb3740551d0"
+                  },
+                  "0x18e60b1"
+                ]
+              },
+              {
+                "jsonrpc": "2.0",
+                "id": 8,
+                "method": "eth_call",
+                "params": [
+                  {
+                    "to": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+                    "data": "0x70a08231000000000000000000000000de87550ca97be82ab573cf508b4fbffeb7ad9375"
+                  },
+                  "0x18e60b1"
+                ]
+              }
+            ],
+            "status": 200,
+            "HTTPDate": "Tue, 06 Oct 2026 16:40:02 GMT",
+            "path": "raw/eth/finalization-2026-10-06/finalization_holder_balances_T_retry_1_14-f42e1111c1dd1d78.json",
+            "sha256": "f42e1111c1dd1d7892c67823f5d4ad812b952ea770a5bc4438849518c19f8925",
+            "bytes": 1695
+          }
+        }
+      ]
+    }
+  ]
+}

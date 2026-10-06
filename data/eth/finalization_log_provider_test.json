@@ -1,0 +1,542 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "aave_borrow_test",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "fromBlock": "0x18d7651",
+          "toBlock": "0x18e60b1",
+          "topics": [
+            "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+            [
+              "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+              "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+            ],
+            [
+              "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+            ]
+          ]
+        }
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32602,
+          "message": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"
+        },
+        "id": 1
+      },
+      "capture": {
+        "key": "finalization_log_provider_test_0",
+        "url": "https://ethereum-rpc.publicnode.com",
+        "capturedUTC": "2026-10-06T16:00:53.823544+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "status": 403,
+        "error": "HTTP Error 403: Forbidden",
+        "path": "raw/eth/finalization-2026-10-06/finalization_log_provider_test_0-e050f29258e9107a.json",
+        "sha256": "e050f29258e9107afa1182574b6e268a90ac8193b87d868c999a4fc23a22978d",
+        "bytes": 610
+      }
+    },
+    {
+      "label": "aave_repay_test",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "fromBlock": "0x18d7651",
+          "toBlock": "0x18e60b1",
+          "topics": [
+            "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+            [
+              "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+              "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+            ],
+            [
+              "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+            ]
+          ]
+        }
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32602,
+          "message": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"
+        },
+        "id": 2
+      },
+      "capture": {
+        "key": "finalization_log_provider_test_0",
+        "url": "https://ethereum-rpc.publicnode.com",
+        "capturedUTC": "2026-10-06T16:00:53.823544+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "status": 403,
+        "error": "HTTP Error 403: Forbidden",
+        "path": "raw/eth/finalization-2026-10-06/finalization_log_provider_test_0-e050f29258e9107a.json",
+        "sha256": "e050f29258e9107afa1182574b6e268a90ac8193b87d868c999a4fc23a22978d",
+        "bytes": 610
+      }
+    },
+    {
+      "label": "spark_borrow_test",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "fromBlock": "0x18d7651",
+          "toBlock": "0x18e60b1",
+          "topics": [
+            "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+            [
+              "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+              "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+            ],
+            [
+              "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+            ]
+          ]
+        }
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32602,
+          "message": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"
+        },
+        "id": 3
+      },
+      "capture": {
+        "key": "finalization_log_provider_test_0",
+        "url": "https://ethereum-rpc.publicnode.com",
+        "capturedUTC": "2026-10-06T16:00:53.823544+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "status": 403,
+        "error": "HTTP Error 403: Forbidden",
+        "path": "raw/eth/finalization-2026-10-06/finalization_log_provider_test_0-e050f29258e9107a.json",
+        "sha256": "e050f29258e9107afa1182574b6e268a90ac8193b87d868c999a4fc23a22978d",
+        "bytes": 610
+      }
+    },
+    {
+      "label": "spark_repay_test",
+      "method": "eth_getLogs",
+      "params": [
+        {
+          "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "fromBlock": "0x18d7651",
+          "toBlock": "0x18e60b1",
+          "topics": [
+            "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+            [
+              "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+              "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+            ],
+            [
+              "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+            ]
+          ]
+        }
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": -32602,
+          "message": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"
+        },
+        "id": 4
+      },
+      "capture": {
+        "key": "finalization_log_provider_test_0",
+        "url": "https://ethereum-rpc.publicnode.com",
+        "capturedUTC": "2026-10-06T16:00:53.823544+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xb3d084820fb1a9decffb176436bd02558d15fac9b0ddfed8c465bc7359d7dce0",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_getLogs",
+            "params": [
+              {
+                "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "fromBlock": "0x18d7651",
+                "toBlock": "0x18e60b1",
+                "topics": [
+                  "0xa534c8dbe71f871f9f3530e97a74601fea17b426cae02e1c5aee42c96c784051",
+                  [
+                    "0x000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7",
+                    "0x0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
+                  ],
+                  [
+                    "0x000000000000000000000000181cb55f872450d16ae858d532b4e35e50eaa76d",
+                    "0x000000000000000000000000666c80feca6fcd371b0535a9846e2d223cbf1d10"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "status": 403,
+        "error": "HTTP Error 403: Forbidden",
+        "path": "raw/eth/finalization-2026-10-06/finalization_log_provider_test_0-e050f29258e9107a.json",
+        "sha256": "e050f29258e9107afa1182574b6e268a90ac8193b87d868c999a4fc23a22978d",
+        "bytes": 610
+      }
+    }
+  ]
+}

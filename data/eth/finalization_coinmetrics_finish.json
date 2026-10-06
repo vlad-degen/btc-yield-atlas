@@ -1,0 +1,24 @@
+[
+  {
+    "key": "cm_eth_catalogue",
+    "url": "https://community-api.coinmetrics.io/v4/catalog/assets",
+    "capturedUTC": "2026-10-06T15:53:42.433513+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:53:46 GMT",
+    "path": "raw/eth/finalization-2026-10-06/cm_eth_catalogue-9a00870b3248e8c4.json",
+    "sha256": "9a00870b3248e8c4f588756d1d5078b5b02491653ce2a64458799a2f325a46c7",
+    "bytes": 6660086
+  },
+  {
+    "key": "cm_staked_history",
+    "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=eth&metrics=SplyStkedNtv&frequency=1d&start_time=2024-10-01&end_time=2026-10-03&page_size=10000",
+    "capturedUTC": "2026-10-06T15:53:42.433818+00:00",
+    "request": null,
+    "status": 400,
+    "error": "HTTP Error 400: Bad Request",
+    "path": "raw/eth/finalization-2026-10-06/cm_staked_history-e86d672af3f5470d.json",
+    "sha256": "e86d672af3f5470d583edee7e3bf57809bcac56d9ebea3cb037f372cb4ba9c1c",
+    "bytes": 146
+  }
+]

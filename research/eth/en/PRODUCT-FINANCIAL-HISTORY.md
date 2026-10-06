@@ -1,5 +1,7 @@
 # Measured ETH products: capital, funded share history and exit constraints
 
+**Final measurement update, 6 October 2026:** Lido Earn, Avant, Makina DETH, Vesper and active ZenSats now have fixed-block financial reconstructions and matched claim histories. Earlier discovery-only decisions below describe the prior screen; use the [final product chapters](CARRY-PRODUCTS.md) and [coverage decisions](CARRY-COVERAGE-AUDIT.md) for the completed census.
+
 The strategy atlas now has a financial layer for five large onchain cases and a separately qualified cmETH principal claim. Every current-state call uses Ethereum block **26,108,081**, the frozen research snapshot for **2 October 2026 at 23:59:59 UTC**. Thirteen sampled historical blocks supply capital and funded share-price endpoints. The stETH benchmark uses those same blocks, with no interpolation.
 
 These are contract book values and oracle claims. They are more useful than a forward APY quote, but they are not independent backing audits or proof that every share can immediately be sold for its mark. Read-only withdrawal simulations change no chain state and are not paid cash receipts. The [structured data](../../../data/eth/strategy_universe_deep.json) and [capture manifest](../../../data/eth/strategy_universe_deep_manifest.json) preserve the distinction.

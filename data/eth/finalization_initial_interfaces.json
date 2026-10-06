@@ -1,0 +1,101 @@
+[
+  {
+    "key": "zensats_active_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x23F189dE34EED95f6303CfF1C77f7676F211Dd2c",
+    "capturedUTC": "2026-10-06T15:13:34.150542+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/zensats_active_interface-beaa2eadb7f99f1f.json",
+    "sha256": "beaa2eadb7f99f1fd289e9c2797b68269a16d2aca62c832c2fae5f0eaae5d4e7",
+    "bytes": 355312
+  },
+  {
+    "key": "zensats_active_loan_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xCf9f54218666a32BE9da1d60BC81412BA86730C7",
+    "capturedUTC": "2026-10-06T15:13:34.150908+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/zensats_active_loan_interface-f311554519e3fc4b.json",
+    "sha256": "f311554519e3fc4bced7fa863e91b07d68ef144cc55771a8f73dde744b80947d",
+    "bytes": 167420
+  },
+  {
+    "key": "zensats_active_strategy_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x8bD4d875E2Cf1174e282B532Fa534b6633F59B5f",
+    "capturedUTC": "2026-10-06T15:13:34.151002+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/zensats_active_strategy_interface-8785d466c28cbdda.json",
+    "sha256": "8785d466c28cbddac5470b4edffed58aa18188462b71524a7029b8a5ec43f3f3",
+    "bytes": 142151
+  },
+  {
+    "key": "zensats_legacy_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xbaEc8343B610A5ee7Ca2c5b93507AC7def98E2B1",
+    "capturedUTC": "2026-10-06T15:13:34.439850+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/zensats_legacy_interface-feb097cdf3329660.json",
+    "sha256": "feb097cdf33296602486bc95acd27aa418b125375d56b744ecc02f6d0ec76d96",
+    "bytes": 264260
+  },
+  {
+    "key": "lido_earn_eth_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x6a37725ca7f4CE81c004c955f7280d5C704a249e",
+    "capturedUTC": "2026-10-06T15:13:34.486619+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_earn_eth_interface-538c1e0d3a6b9cb9.json",
+    "sha256": "538c1e0d3a6b9cb9edb98ad2178c9263841e271f1b339a3b6f9c1a790f712cd4",
+    "bytes": 53619
+  },
+  {
+    "key": "lido_earn_sub0_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xC5901C2481ca9C26398A9Da258b13717894bfebF",
+    "capturedUTC": "2026-10-06T15:13:34.533189+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_earn_sub0_interface-fa11bee861e91aff.json",
+    "sha256": "fa11bee861e91affd8c6fcaa6bd2442ef4200f8593c7bd5add62155631b104bb",
+    "bytes": 50806
+  },
+  {
+    "key": "lido_earn_sub1_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x7F515C80fA4C1FCFF34F0329141A9C3b20468FE5",
+    "capturedUTC": "2026-10-06T15:13:34.633526+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_earn_sub1_interface-853fd6e428a93b9d.json",
+    "sha256": "853fd6e428a93b9df63619079a12cb6fa2915031b4beb604107310f4ad2a9c06",
+    "bytes": 50806
+  },
+  {
+    "key": "lido_share_manager_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+    "capturedUTC": "2026-10-06T15:13:34.649657+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_share_manager_interface-72fff8cf65ff3b8d.json",
+    "sha256": "72fff8cf65ff3b8d13c28842fd4784b4d97fa82e45fe53c2af8dabc5c065dde0",
+    "bytes": 51147
+  },
+  {
+    "key": "lido_oracle_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xAda1f4c24603aB2fe5aBd35BCD12370e98A20358",
+    "capturedUTC": "2026-10-06T15:13:34.707131+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:13:34 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_oracle_interface-b6c7738908ffea66.json",
+    "sha256": "b6c7738908ffea66f71962f41dd554d143797b06acc68b09e2c8ffd34add0215",
+    "bytes": 51636
+  }
+]

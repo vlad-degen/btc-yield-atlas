@@ -1,0 +1,35 @@
+[
+  {
+    "key": "lido_strategy_vault_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x277c6a642564a91ff78b008022d65683cee5ccc5",
+    "capturedUTC": "2026-10-06T15:31:57.804430+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:31:58 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_strategy_vault_interface-d9fb8294b85263e3.json",
+    "sha256": "d9fb8294b85263e33113a360fe032678d33b7c9c52fed386944db74174c6f5e5",
+    "bytes": 62729
+  },
+  {
+    "key": "vesper_dai_pool_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0x0538c8bac84e95a9df8ac10aad17dbe81b9e36ee",
+    "capturedUTC": "2026-10-06T15:31:57.804719+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:31:58 GMT",
+    "path": "raw/eth/finalization-2026-10-06/vesper_dai_pool_interface-4578fc12ffc60467.json",
+    "sha256": "4578fc12ffc6046751baa694af4d62d28143f42d39d25e8a565bbf5c22428f4f",
+    "bytes": 33984
+  },
+  {
+    "key": "yo_impl_interface",
+    "url": "https://eth.blockscout.com/api/v2/smart-contracts/0xc84a6E01BFF58996540F1ABC22355A9DFE0d78DC",
+    "capturedUTC": "2026-10-06T15:31:57.804789+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:31:57 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yo_impl_interface-352bfd44bfcfa9c2.json",
+    "sha256": "352bfd44bfcfa9c27d9fc12d59532fb6847ff69123877913b49b4ff5ae3d7d01",
+    "bytes": 328978
+  }
+]

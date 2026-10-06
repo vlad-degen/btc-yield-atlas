@@ -35,6 +35,10 @@ def run():
              'market_netting_closure', 'credit_expansion_deep', 'carry_attribution_closure']
     src = {n: json.loads((D / (n + '.json')).read_text()) for n in names}
     m, pc = src['market_reader_chapter'], src['reader_product_chapters']['products']
+    final = json.loads((D / 'finalization_reconstruction.json').read_text())
+    for p in pc:
+        if p.get('newReconstruction'):
+            PRODUCT_STATUS[p['name']] = (p['status'], p['statusLabel'], p['allocationEvidence'])
     products = sorted([p for p in src['reader_carry_category']['products'] if p['classification'] == 'E4'], key=lambda p: -p['sizeETH'])
     benchmark = next(r for r in src['etherfi_staking_comparison'] if r['days'] == 30)
     two_year = next(r for r in src['etherfi_staking_comparison'] if r['days'] == 730)
@@ -47,7 +51,7 @@ def run():
                         'benchmarkReturnPct': benchmark['stETH_cumulative_return'] * 100,
                         'excessPercentagePoints': w['cumulativeReturnPct'] - benchmark['stETH_cumulative_return'] * 100,
                         'basis': 'Unstaked fair-value LT mark; gauge income excluded' if p['id'] == 'yieldbasis' else
-                                 'ETH book share value; external payouts and exit costs excluded',
+                                 p.get('returnBasis', 'ETH book share value; external payouts and exit costs excluded'),
                         'carryOnlyProfit': None})
     census = [{'name': p['product'], 'status': PRODUCT_STATUS[p['product']][0],
                'statusLabel': PRODUCT_STATUS[p['product']][1], 'allocationEvidence': PRODUCT_STATUS[p['product']][2],
@@ -56,15 +60,15 @@ def run():
                'sources': p.get('sourceURLs', [])} for p in products]
     # The native custody and receipt series are separate layers. No sum is a net market total.
     coverage = [
-      ['Native validator staking', 'Consensus issuance, tips and MEV', 'No exact all-validator balance at T', 'No full market history', 'Issuer benchmarks only', 'staking-restaking'],
+      ['Native validator staking', 'Consensus issuance, tips and MEV', '43.806M actual active ETH; 43.740M effective active ETH', 'Five archived month ends; earlier states pruned at tested public endpoints', 'Issuer benchmarks only', 'staking-restaking'],
       ['Liquid staking / restaking', 'Validator income; additional service rewards where realised', 'Issuer and security-layer claims; overlapping', '24-month protocol observations', 'Matched share conversions for selected issuers', 'staking-restaking'],
       ['ETH lending', 'Borrower interest', 'Lending claims, cash and debt measured separately', 'Protocol histories; selected reserve histories', 'Selected rates and share returns', 'LENDING-MARKETS'],
       ['ETH-debt loops', 'Leveraged staking-minus-ETH-funding spread', 'Fluid / Treehouse parents; Liquid, CIAN and Yearn positions', 'Selected product books, not monthly loop weights', 'Selected matched ETH book returns', 'PRODUCT-FINANCIAL-HISTORY'],
-      ['Dollar carry', 'Dollar investment income minus dollar funding', 'Eight examined books; five have current traced routes; unassigned sleeves retained', '24 monthly whole-book observations; allocation weights incomplete', 'Matched 30-day books; three financed investment lots', 'CARRY-PRODUCTS'],
+      ['Dollar carry', 'Dollar investment income minus dollar funding', 'Thirteen examined books; ten current traced routes; carry equity remains distinct from whole books', '24 monthly whole-book observations; allocation weights incomplete', 'Matched 30-day claims; four financed lots plus two flow-adjusted investment / funding ledgers', 'CARRY-PRODUCTS'],
       ['Spot / short basis', 'Funding or dated-futures premium', 'Frozen ETH slice unmeasured; later Ethena disclosure separate', 'No complete frozen ETH-slice history', 'No matched ETH-long strategy comparison', 'ethena-basis'],
-      ['Fixed maturity', 'Underlying income or principal-claim discount', 'Pendle / Spectra parent claims; market registries screened', 'Parent histories; maturity-level coverage partial', 'Payoff denomination checked; no full investor-return panel', 'pendle-pt'],
+      ['Fixed maturity', 'Underlying income or principal-claim discount', 'Pendle / Spectra parent claims; market registries screened', 'Parent histories; four active Ethereum PT faces verified at T; maturity coverage remains partial', 'Payoff denomination checked; no full investor-return panel', 'pendle-pt'],
       ['DEX / trading liquidity', 'Swap fees; inventory and trader P&L', '28 verified ETH-custody pools; broader adapters incomplete', '24 month ends for that same pool subset', 'Custody is not LP profit; selected positions traced', 'CAPITAL-INCOME-EXIT'],
-      ['Options / structured yield', 'Option premiums in exchange for contingent payoff', 'Materiality and funded capacity not established at T', 'Historical / retired product screens', 'No full premium, settlement and cash-return ledger', 'STRATEGY-UNIVERSE-EXPANSION'],
+      ['Options / structured yield', 'Option premiums in exchange for contingent payoff', 'Ribbon residual book: 713 ETH; current option expired in December 2025; other funded capacity partial', 'Historical / retired product screens', 'No full premium, settlement and cash-return ledger', 'STRATEGY-UNIVERSE-EXPANSION'],
       ['Mixed allocators / tranches', 'A blend of the mechanisms above', 'Parent books and selected sleeves; never add both as unique capital', 'Parent NAV; changing allocation weights incomplete', 'Selected share marks; strategy attribution incomplete', 'PRODUCT-FINANCIAL-HISTORY'],
     ]
     loan_cases = []
@@ -77,10 +81,12 @@ def run():
                            'start': r['borrow_timestamp_UTC'], 'end': r.get('repay_timestamp_UTC', r['redeem_timestamp_UTC']),
                            'receipt': 'https://etherscan.io/tx/' + r['redeem_transaction'],
                            'completeWalletProfit': None})
+    direct = final['directFinancedLot']
+    loan_cases.append({**direct, 'completeWalletProfit': None})
     material = src['carry_coverage_audit']['materialPools']
     parent_join = sum(r['disposition'].startswith('Parent covered') for r in material)
     out = {'schemaVersion': 1, 'snapshot': '2026-10-02T23:59:59Z',
-           'headline': {'receiptClaimsETH': m['current']['by_category']['staking']['eth_ref'],
+           'headline': {'nativeActiveETH': final['native']['activeBalanceETH'], 'nativeEffectiveETH': final['native']['activeEffectiveBalanceETH'], 'nativeActiveValidators': final['native']['activeValidatorCount'], 'receiptClaimsETH': m['current']['by_category']['staking']['eth_ref'],
                         'receiptClaimsUSD': m['current']['by_category']['staking']['usd'],
                         'examinedBooks': len(census), 'currentRoutes': sum(r['status'] == 'active' for r in census),
                         'liquid730dExcessPP': two_year['liquidETH_minus_stETH_cumulative_pp'],
@@ -88,7 +94,7 @@ def run():
            'globalUniqueETH': None, 'globalCarryEquityETH': None,
            'sampleGrossBooksETH': sum(p['bookETH'] for p in census),
            'sampleTopTwoShare': sum(p['bookETH'] for p in census[:2]) / sum(p['bookETH'] for p in census),
-           'census': census, 'matched30dReturns': returns, 'financedLots': loan_cases,
+           'census': census, 'matched30dReturns': returns, 'financedLots': loan_cases, 'flowAdjustedLedgers': final.get('flowAdjustedLedgers', []),
            'coverage': [{'family': r[0], 'income': r[1], 'capital': r[2], 'history': r[3], 'returns': r[4], 'report': r[5]} for r in coverage],
            'discovery': {'materialPools': len(material), 'parentDispositions': parent_join,
                          'otherDispositions': len(material) - parent_join, 'exhaustiveStrategyCensus': False},
@@ -108,7 +114,7 @@ Financial snapshot: **2 October 2026**. This briefing and the main page use the 
 
 ## Answer
 
-**Staking is the base income layer.** The protocol panel reports {h['receiptClaimsETH']/1e6:.2f}M ETH-equivalent staking and restaking claims. Receipts and security-layer balances overlap. This is neither unique validator stake nor the size of the complete yield market.
+**Staking is the base income layer.** The archived consensus state contains **{h['nativeActiveETH']/1e6:.2f}M actual active ETH**, with {h['nativeActiveValidators']:,} active validators and {h['nativeEffectiveETH']/1e6:.2f}M ETH of effective stake. The protocol panel separately reports {h['receiptClaimsETH']/1e6:.2f}M ETH-equivalent staking and restaking claims. Receipts and security-layer balances overlap. This is neither unique validator stake nor the size of the complete yield market.
 
 **Carry is a financing mechanism inside products.** We examine {h['examinedBooks']} books: {h['currentRoutes']} with current traced routes, one in Closing, one with historical dust debt, and one declared arbitrage book with unresolved shared custody. Their sizes cannot establish a global carry-equity total.
 
@@ -118,21 +124,21 @@ Financial snapshot: **2 October 2026**. This briefing and the main page use the 
 
 The eight Market groups organise protocol families. Loop-focused vaults, carry-linked parents and liquidity / mixed vaults retain full parent exposure. Lending infrastructure and CDP collateral are optional financing layers. Historical grouping is consistent across dates, but does not reconstruct changing portfolio weights. ETH equivalents normalise reported USD by each date's ETH reference quote; they are not always native token quantities. Missing and stale observations remain absent. The constant-cohort control holds protocol membership fixed, not the survival of the entire historical market.
 
-Native consensus staking is outside the protocol panel. The verified physical-custody subset is {out['custodySubsetETH']:,.0f} ETH; some cash is idle, so it is not an earning-capital floor. The separately traced 28-pool liquidity subset holds {out['lpCustodyETH']:,.0f} ETH of custody. Neither subset is added to receipt claims. [Counting and custody](CAPITAL-INCOME-EXIT.md).
+Native consensus staking is measured separately from the protocol panel. Five archived monthly active-balance states cover May to September 2026; tested public sources prune the earlier states. Missing native history is not estimated from validator counts or interpolated. The verified physical-custody subset is {out['custodySubsetETH']:,.0f} ETH; some cash is idle, so it is not an earning-capital floor. The separately traced 28-pool liquidity subset holds {out['lpCustodyETH']:,.0f} ETH of custody. Neither subset is added to receipt claims. [Counting and custody](CAPITAL-INCOME-EXIT.md).
 
 ## Carry product development
 
-The 24-month stacked bars show whole books for all eight examined products, with a small-book zoom. Liquid is the early large hybrid; new wrappers and Concrete's issued claim appear in 2025; Liquity and YieldBasis become funded in 2026. TAU unwinds and Rocksolid enters Closing. The bars establish changing books and routes, not new deposits or historical carry allocation.
+The 24-month stacked bars show whole books for all thirteen examined products, with a small-book zoom. Liquid is the early large hybrid; new wrappers and Concrete's issued claim appear in 2025; Liquity and YieldBasis become funded in 2026. TAU unwinds and Rocksolid enters Closing. Avant becomes materially funded in September 2025; Lido Earn exceeds 1 ETH in the sampled March 2026 book. Vesper, Makina and ZenSats add smaller but distinct financing routes. The bars establish changing books and routes, not new deposits or historical carry allocation.
 
 ## Largest examined books with carry links
 
-The five largest whole books are Concrete Delta, Liquid ETH, YieldBasis WETH, Rocksolid and Liquity ETH Carry. Royco is an additional deep case. The first two represent {100*out['sampleTopTwoShare']:.2f}% of the eight-book sample, a sample concentration measure rather than a market share. Concrete's unassigned shared backing and Rocksolid's Closing status remain explicit.
+The five largest examined books are Concrete Delta, Liquid ETH, Lido Earn ETH, Avant and YieldBasis WETH. Smaller products, Closing and historical routes remain available as additional cases. Avant’s size uses avETH face supply; its return uses the senior savETH claim. Lido uses oracle-valued shares including allocated shares. These conventions are explicit. The first two represent {100*out['sampleTopTwoShare']:.2f}% of the thirteen-book sample, a sample concentration measure rather than a market share. Concrete's unassigned shared backing and Rocksolid's Closing status remain explicit.
 
 {table(['Product', 'Whole book, ETH', 'Status', 'What is attributable'], [[p['name'], f"{p['bookETH']:,.0f}", p['statusLabel'], p['allocationEvidence']] for p in census])}
 
 ## What returns can be compared
 
-All six detailed products have the same **2 September to 2 October 2026** return window. These are ETH book marks, excluding external payouts and exit costs. YieldBasis uses unstaked LT fair value. Recognised book income is not stripped into organic carry. Whole-product fees already recognised in share value are not deducted twice.
+All eleven detailed products have the same **2 September to 2 October 2026** return window. These are ETH book marks, excluding external payouts and exit costs. YieldBasis uses unstaked LT fair value. Recognised book income is not stripped into organic carry. Whole-product fees already recognised in share value are not deducted twice.
 
 {table(['Product', '30-day ETH book return', 'Excess vs stETH, pp'], [[r['name'], f"{r['bookReturnPct']:.4f}%", f"{r['excessPercentagePoints']:+.4f}"] for r in returns])}
 
@@ -140,7 +146,7 @@ stETH's matched book return is **{benchmark['stETH_cumulative_return']*100:.4f}%
 
 ## Financing, income and rewards
 
-Three traced investment lots compare destination income with funding on the same borrowed principal through the measured exit or repayment date. They are selected cases, not a market average. The USDC lots use proportional redemption allocation; the PYUSD case includes the residual debt liability. Gas, collateral income and whole-wallet profit remain separate.
+Three traced exit / repayment lots and one directly matched open Lido investment compare destination income with funding on the same borrowed principal through the measured exit or repayment date. They are selected cases, not a market average. The USDC lots use proportional redemption allocation; the PYUSD case includes the residual debt liability. Gas, collateral income and whole-wallet profit remain separate.
 
 {table(['Borrowed amount', 'Investment income', 'Funding cost', 'Result before gas'], [[f"{r['borrowed']:,.0f} {r['currency']}", f"{r['income']:.6f}", f"{r['fundingCost']:.6f}", f"{r['resultBeforeGas']:.6f} {r['currency']}"] for r in loan_cases])}
 
@@ -152,7 +158,7 @@ Secure a positive base spread in the debt currency after fees. Test every borrow
 
 ## Coverage
 
-The material discovery screen contains {len(material)} ETH-name pools above $5M. {parent_join} dispositions join an already-covered parent; they do not prove that each pool's strategy has been reconstructed. Other public documentation adds ZenSats routes and mixed allocators. The family map is broad; unique market capital, historical sleeve weights, complete organic carry profit and funded options capacity remain unmeasured. [Coverage matrix](MARKET-COVERAGE.md).
+The material discovery screen contains {len(material)} ETH-name pools above $5M. {parent_join} dispositions join an already-covered parent; they do not prove that each pool's strategy has been reconstructed. Fixed-block reconstruction adds Lido Earn, Avant, Makina DETH, Vesper and ZenSats; YO ETH is separately classified as ETH lending / staking after inspecting its deployments. The family map is broad; global unique capital and complete historical sleeve weights remain unresolved. The reconstruction now measures native stake, five additional carry-linked books, four active PT faces and the residual Ribbon option book. Own-credit, fees and exit cash still limit complete organic carry attribution. [Coverage matrix](MARKET-COVERAGE.md).
 
 ## Reproduce the answers
 
@@ -181,7 +187,7 @@ The saved DefiLlama screen contains **{len(material)}** ETH-name pools above $5M
 
 {table(['Product', 'Status', 'Attribution boundary'], [[p['name'], p['statusLabel'], p['allocationEvidence']] for p in census])}
 
-Five examined products have current traced routes, including the small Reservoir position and stale-mark Royco. Rocksolid is Closing, TAU's current debt is dust, and Concrete's published arbitrage mandate does not establish a product-attributed sleeve. ZenSats documents active LlamaLend / Curve / StakeDAO and legacy withdraw-only Aave / RAAC designs, with frozen capital unmeasured. [Official strategy documentation](https://www.zensats.app/docs/strategy).
+Ten examined products have current traced routes, including the small Reservoir and ZenSats positions and stale-mark Royco. Rocksolid is Closing, TAU's current debt is dust, and Concrete's published arbitrage mandate does not establish a product-attributed sleeve. ZenSats has a measured sub-one-ETH LlamaLend / Curve / StakeDAO book. Its withdraw-only legacy Aave / RAAC vault has zero assets and supply at T. [Official strategy documentation](https://www.zensats.app/docs/strategy).
 
 ## How to read TVL
 
@@ -236,24 +242,24 @@ The gross sum is **{out['sampleGrossBooksETH']:,.0f} ETH** of overlapping sample
 
 ## Two years of product development
 
-The stacked bars show 24 month-end observations for all eight books; a small-book zoom uses the same records. Missing observations remain absent. Current labels are not historical allocation weights. Share issuance, staking conversion, portfolio movements and discovery coverage can change book NAV without outside deposits or new carry capital.
+The stacked bars show 24 month-end observations for all thirteen books; a small-book zoom uses the same records. Missing observations remain absent. Current labels are not historical allocation weights. Share issuance, staking conversion, portfolio movements and discovery coverage can change book NAV without outside deposits or new carry capital.
 
 Liquid is the early large hybrid. Rocksolid and Reservoir acquire material books in September 2025, and Concrete's issued claim appears in December. Liquity becomes funded in March 2026; YieldBasis WETH is funded by May. TAU reduces its dollar liability and Rocksolid enters Closing on 29 September. These dates describe observed books and route changes.
 
 ## Carry variants
 
-The examined routes include dollar lending, nested savings borrowing, senior credit, minted-dollar stablecoin LP, dollar-financed ETH LP and a manager's declared neutral arbitrage. Fixed-maturity and cross-chain destinations need separately verified loans and positions. ZenSats documents an active wstETH / LlamaLend / Curve / StakeDAO route and a legacy withdraw-only Aave / RAAC route; their frozen books are not measured. Mixed ETH allocators stay candidates until the actual loan and investment are traced. [Route decisions](CARRY-COVERAGE-AUDIT.md).
+The examined routes include dollar lending, nested savings borrowing, senior credit, minted-dollar stablecoin LP, dollar-financed ETH LP and a manager's declared neutral arbitrage. Fixed-maturity and cross-chain destinations need separately verified loans and positions. ZenSats documents an active wstETH / LlamaLend / Curve / StakeDAO route and a legacy withdraw-only Aave / RAAC route; the active book is a measured micro-position and the legacy book has zero assets and share supply at T. Lido Earn, Avant, Makina DETH and Vesper are included after tracing dollar loans and investments. Their large ETH loops and nested books remain separate from dollar carry. YO ETH lends and allocates ETH receipts without a traced own dollar loan, so it stays outside the carry census. [Route decisions](CARRY-COVERAGE-AUDIT.md).
 
 ## Return and profit
 
-The main comparison uses one 30-day ETH book window. Historical carry-only profit is not independently isolated for the whole sample. Three financed investment lots have matched principal and period evidence; their results cannot be scaled into market-wide carry returns. [Common returns and funded results](BRIEFING.md).
+The main comparison uses one 30-day ETH book window. Historical carry-only profit is not independently isolated for the whole sample. Four financed investment lots and two flow-adjusted dollar claim / funding ledgers provide measured economics; their results cannot be scaled into market-wide carry returns. [Common returns and funded results](BRIEFING.md).
 
 ## Sources
 
 [Status and capital CSV](../../../data/eth/carry-status-and-capital.csv), [24-month product ledger](../../../data/eth/reader_analysis.json), [deep product evidence](CARRY-PRODUCTS.md), [nested routes](CARRY-VARIANTS-EXPANSION.md), [capital and exits](CAPITAL-INCOME-EXIT.md).
 ''')
-    (EN / 'PRODUCT-SELECTION.md').write_text('# Which products are compared?\n\nThe five largest examined whole books with carry links are Concrete Delta, Liquid ETH, YieldBasis WETH, Rocksolid and Liquity ETH Carry. Royco remains an additional deep case. This is a size ordering within the sample, not a ranking of active carry equity, realised profit or investment quality.\n\n' + table(['Product', 'Status', 'Whole book ETH'], [[p['name'], p['statusLabel'], f"{p['bookETH']:,.0f}"] for p in census]) + '\n\nThe common return comparison uses 30 days ending 2 October 2026. [Current briefing and matched results](BRIEFING.md).\n')
-    print('Report contract: fixed answers, eight statuses, six common returns, ten coverage families.')
+    (EN / 'PRODUCT-SELECTION.md').write_text('# Which products are compared?\n\nThe five largest examined whole books with carry links are Concrete Delta, Liquid ETH, Lido Earn ETH, Avant and YieldBasis WETH. Additional cases remain available. Lido is oracle-valued; Avant size is issuer face supply, while its measured return belongs to savETH. This is a size ordering within the sample, not a ranking of active carry equity, realised profit or investment quality.\n\n' + table(['Product', 'Status', 'Whole book ETH'], [[p['name'], p['statusLabel'], f"{p['bookETH']:,.0f}"] for p in census]) + '\n\nThe common return comparison uses 30 days ending 2 October 2026. [Current briefing and matched results](BRIEFING.md).\n')
+    print(f'Report contract: {len(census)} books, {len(returns)} matched claim returns, ten coverage families.')
     return out
 
 

@@ -1,0 +1,90 @@
+[
+  {
+    "key": "consensus_provider_0",
+    "url": "https://sync-mainnet.beaconcha.in/eth/v1/beacon/states/15346798/validator_balances?id=0",
+    "capturedUTC": "2026-10-06T15:33:48.064113+00:00",
+    "request": null,
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "path": "raw/eth/finalization-2026-10-06/consensus_provider_0-b16e15764b8bc06c.txt",
+    "sha256": "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793",
+    "bytes": 19
+  },
+  {
+    "key": "consensus_provider_1",
+    "url": "https://checkpointz.pietjepuk.net/eth/v1/beacon/states/15346798/validator_balances?id=0",
+    "capturedUTC": "2026-10-06T15:33:48.064426+00:00",
+    "request": null,
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "path": "raw/eth/finalization-2026-10-06/consensus_provider_1-b16e15764b8bc06c.txt",
+    "sha256": "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793",
+    "bytes": 19
+  },
+  {
+    "key": "consensus_provider_2",
+    "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/validator_balances?id=0",
+    "capturedUTC": "2026-10-06T15:33:48.064527+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:33:55 GMT",
+    "path": "raw/eth/finalization-2026-10-06/consensus_provider_2-42c0bf8030980858.json",
+    "sha256": "42c0bf8030980858eb4bca1264f84ebb60f6085a29e07acef403096c34b30124",
+    "bytes": 93
+  },
+  {
+    "key": "consensus_provider_3",
+    "url": "https://beaconstate.ethstaker.cc/eth/v1/beacon/states/15346798/validator_balances?id=0",
+    "capturedUTC": "2026-10-06T15:33:48.280976+00:00",
+    "request": null,
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "path": "raw/eth/finalization-2026-10-06/consensus_provider_3-b16e15764b8bc06c.txt",
+    "sha256": "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793",
+    "bytes": 19
+  },
+  {
+    "key": "consensus_provider_4",
+    "url": "https://mainnet-checkpoint-sync.attestant.io/eth/v1/beacon/states/15346798/validator_balances?id=0",
+    "capturedUTC": "2026-10-06T15:33:48.303860+00:00",
+    "request": null,
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "path": "raw/eth/finalization-2026-10-06/consensus_provider_4-b16e15764b8bc06c.txt",
+    "sha256": "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793",
+    "bytes": 19
+  },
+  {
+    "key": "consensus_provider_5",
+    "url": "https://mainnet.checkpoint.sigp.io/eth/v1/beacon/states/15346798/validator_balances?id=0",
+    "capturedUTC": "2026-10-06T15:33:48.499572+00:00",
+    "request": null,
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "path": "raw/eth/finalization-2026-10-06/consensus_provider_5-b16e15764b8bc06c.txt",
+    "sha256": "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793",
+    "bytes": 19
+  },
+  {
+    "key": "consensus_provider_6",
+    "url": "https://mainnet-checkpoint-sync.stakely.io/eth/v1/beacon/states/15346798/validator_balances?id=0",
+    "capturedUTC": "2026-10-06T15:33:48.689515+00:00",
+    "request": null,
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "path": "raw/eth/finalization-2026-10-06/consensus_provider_6-b16e15764b8bc06c.txt",
+    "sha256": "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793",
+    "bytes": 19
+  },
+  {
+    "key": "avant_transparency_page",
+    "url": "https://app.avantprotocol.com/transparency",
+    "capturedUTC": "2026-10-06T15:33:49.232742+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:33:49 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_transparency_page-37044d153cd4ae4f.txt",
+    "sha256": "37044d153cd4ae4f33e19d3732ce57fd00cbf44e2139325cfbad066212ce15b9",
+    "bytes": 85089
+  }
+]

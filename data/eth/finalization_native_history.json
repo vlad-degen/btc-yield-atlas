@@ -1,0 +1,468 @@
+[
+  {
+    "month": "2024-10",
+    "timestamp": 1730419199,
+    "block": 21089068,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2024-10",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/10299598/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:04.737520+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2024-11",
+    "timestamp": 1733011199,
+    "block": 21303933,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2024-11",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/10515598/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:05.259499+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2024-12",
+    "timestamp": 1735689599,
+    "block": 21525890,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2024-12",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/10738798/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:05.775019+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-01",
+    "timestamp": 1738367999,
+    "block": 21747949,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-01",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/10961998/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:06.307931+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-02",
+    "timestamp": 1740787199,
+    "block": 21948291,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-02",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/11163598/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:06.826747+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-03",
+    "timestamp": 1743465599,
+    "block": 22170334,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-03",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/11386798/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:07.346129+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-04",
+    "timestamp": 1746057599,
+    "block": 22385293,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-04",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/11602798/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:07.860651+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-05",
+    "timestamp": 1748735999,
+    "block": 22606142,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-05",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/11825998/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:08.400027+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-06",
+    "timestamp": 1751327999,
+    "block": 22820673,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-06",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/12041998/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:09.320933+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-07",
+    "timestamp": 1754006399,
+    "block": 23042513,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-07",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/12265198/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:09.832427+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-08",
+    "timestamp": 1756684799,
+    "block": 23264565,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-08",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/12488398/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:10.357759+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-09",
+    "timestamp": 1759276799,
+    "block": 23479243,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-09",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/12704398/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:10.875492+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-10",
+    "timestamp": 1761955199,
+    "block": 23700766,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-10",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/12927598/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:11.503171+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-11",
+    "timestamp": 1764547199,
+    "block": 23914920,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-11",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/13143598/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:12.022379+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2025-12",
+    "timestamp": 1767225599,
+    "block": 24136052,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2025-12",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/13366798/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:12.536944+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2026-01",
+    "timestamp": 1769903999,
+    "block": 24358292,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2026-01",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/13589998/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:13.066248+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2026-02",
+    "timestamp": 1772323199,
+    "block": 24558867,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2026-02",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/13791598/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:13.581384+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2026-03",
+    "timestamp": 1775001599,
+    "block": 24781026,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2026-03",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/14014798/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:14.117881+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2026-04",
+    "timestamp": 1777593599,
+    "block": 24996367,
+    "status": "capture failed",
+    "source": {
+      "key": "finalization_native_history_2026-04",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/14230798/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:14.653601+00:00",
+      "request": null,
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  {
+    "month": "2026-05",
+    "timestamp": 1780271999,
+    "block": 25218797,
+    "status": "observed",
+    "slot": 14453998,
+    "stateTimestamp": 1780271999,
+    "stateRoot": "0xc582157be6665515d020edfaae34e2e45dce0996eadb80609197e3cbfbd94397",
+    "blockRoot": "0x4b765eb5bcaabfeb6fe8e21fc4cabcc546bdcdbb97ae5f92008d98a1b5bc1287",
+    "activeValidatorCount": 894158,
+    "activeBalanceGwei": "39317006834545089",
+    "activeEffectiveBalanceGwei": "39255687000000000",
+    "statusCounts": {
+      "active_ongoing": 892506,
+      "active_exiting": 1652
+    },
+    "finalized": true,
+    "executionOptimistic": true,
+    "source": {
+      "key": "finalization_native_history_2026-05",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/14453998/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:40:15.713805+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:40:32 GMT",
+      "encoding": null,
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-05-66b60f2ec3b27d29.json.gz",
+      "sha256": "66b60f2ec3b27d29365ef4ebab1742d088bb2a94368c6ff4138ed7f2133d75c3",
+      "bytes": 434044530,
+      "compressedBytes": 73779240,
+      "compressedSha256": "210365543d7da94a9e9416ec60eafb05fa1b969f331325402f38c2c0f1d07815"
+    },
+    "headerSource": {
+      "key": "finalization_native_history_2026-05_header_14453998",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/headers/14453998",
+      "capturedUTC": "2026-10-06T15:40:15.006011+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:40:15 GMT",
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-05_header_14453998-59a05a56230c2a5a.json",
+      "sha256": "59a05a56230c2a5acf4bb568e49779fad6d3e1a2fb048847cba5d451170d2d6e",
+      "bytes": 671
+    }
+  },
+  {
+    "month": "2026-06",
+    "timestamp": 1782863999,
+    "block": 25433938,
+    "status": "observed",
+    "slot": 14669998,
+    "stateTimestamp": 1782863999,
+    "stateRoot": "0x57c68b8ac40fe2d1ac462323a45110ef2680d056748db348b96568779156f5a1",
+    "blockRoot": "0x61af101db20bd2b8abac88a5b70e0ae560514fff9fde85c8560432e6e4b531bc",
+    "activeValidatorCount": 885899,
+    "activeBalanceGwei": "40239923193704479",
+    "activeEffectiveBalanceGwei": "40177722000000000",
+    "statusCounts": {
+      "active_ongoing": 885399,
+      "active_exiting": 500
+    },
+    "finalized": true,
+    "executionOptimistic": true,
+    "source": {
+      "key": "finalization_native_history_2026-06",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/14669998/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:41:18.409387+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:41:32 GMT",
+      "encoding": null,
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-06-aff3e6a5168dc571.json.gz",
+      "sha256": "aff3e6a5168dc571297c1d5bdb0cea13b5721ef15871d7e2a651d7c15902f5c1",
+      "bytes": 430072320,
+      "compressedBytes": 73013312,
+      "compressedSha256": "4ca5f4e69240901675a91436851a4e2ffc004c77c6ae82ed88402f3aa920adc4"
+    },
+    "headerSource": {
+      "key": "finalization_native_history_2026-06_header_14669998",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/headers/14669998",
+      "capturedUTC": "2026-10-06T15:41:18.217001+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:41:18 GMT",
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-06_header_14669998-04c02e9d68c700a1.json",
+      "sha256": "04c02e9d68c700a16921c7de0fdac9cdb2879a058b9c8d4a029d6c4d00a02f86",
+      "bytes": 670
+    }
+  },
+  {
+    "month": "2026-07",
+    "timestamp": 1785542399,
+    "block": 25656292,
+    "status": "observed",
+    "slot": 14893198,
+    "stateTimestamp": 1785542399,
+    "stateRoot": "0x95fad362fc13e5904043cd991451844f9fc75940ea3d8447eb939363cb385b8a",
+    "blockRoot": "0xd9ff11474048ceab3c135bd99715c1fd36c7ef68f095d78d323fc3d3ec8768cc",
+    "activeValidatorCount": 890778,
+    "activeBalanceGwei": "41422366209699855",
+    "activeEffectiveBalanceGwei": "41359005000000000",
+    "statusCounts": {
+      "active_ongoing": 890774,
+      "active_exiting": 4
+    },
+    "finalized": true,
+    "executionOptimistic": true,
+    "source": {
+      "key": "finalization_native_history_2026-07",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/14893198/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:42:17.595540+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:42:29 GMT",
+      "encoding": null,
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-07-79331f4b041cdeb4.json.gz",
+      "sha256": "79331f4b041cdeb4f1ea680b05ab5349feddafd5825327f3fcd7fab4726eb44b",
+      "bytes": 432463644,
+      "compressedBytes": 73228014,
+      "compressedSha256": "cf78c548fa3e8cab6664514f11e67b9d6fd3dde8aad807ee513117685408bc6b"
+    },
+    "headerSource": {
+      "key": "finalization_native_history_2026-07_header_14893198",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/headers/14893198",
+      "capturedUTC": "2026-10-06T15:42:17.411292+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:42:17 GMT",
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-07_header_14893198-eb87c3dbc0163762.json",
+      "sha256": "eb87c3dbc016376273a7189e004f00683cc3421b382477615863defdd76e8698",
+      "bytes": 671
+    }
+  },
+  {
+    "month": "2026-08",
+    "timestamp": 1788220799,
+    "block": 25878704,
+    "status": "observed",
+    "slot": 15116398,
+    "stateTimestamp": 1788220799,
+    "stateRoot": "0x78a8a83d246dd1f679770eb97f751efb398da51746ca4c731f6a53531043e3da",
+    "blockRoot": "0x018f1fb01d3a0ca0d73a679f7f3ad1dfc55df2b4808e4fd9afef2ef515a117ba",
+    "activeValidatorCount": 903890,
+    "activeBalanceGwei": "42765350963018681",
+    "activeEffectiveBalanceGwei": "42700498000000000",
+    "statusCounts": {
+      "active_ongoing": 903890
+    },
+    "finalized": true,
+    "executionOptimistic": true,
+    "source": {
+      "key": "finalization_native_history_2026-08",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15116398/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:43:47.181622+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:43:57 GMT",
+      "encoding": null,
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-08-32e85728a43bd4b7.json.gz",
+      "sha256": "32e85728a43bd4b7d8b714f8a22103b97554204a54949ed1c860e6db4fd62ab6",
+      "bytes": 438843672,
+      "compressedBytes": 74553473,
+      "compressedSha256": "e92d0b54dd5fbad495f136aaa71050deab2bf81fa76245abc141986f73b645a8"
+    },
+    "headerSource": {
+      "key": "finalization_native_history_2026-08_header_15116398",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/headers/15116398",
+      "capturedUTC": "2026-10-06T15:43:46.934986+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:43:47 GMT",
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-08_header_15116398-da96dfceed7ceefa.json",
+      "sha256": "da96dfceed7ceefa97c16d8e1016cbc292368732180ee750018a2e3fd15737b5",
+      "bytes": 670
+    }
+  },
+  {
+    "month": "2026-09",
+    "timestamp": 1790812799,
+    "block": 26093737,
+    "status": "observed",
+    "slot": 15332398,
+    "stateTimestamp": 1790812799,
+    "stateRoot": "0xb209373b2a0c92715dda3fd3a87843032be41aed3e45b1606883ed1afc151184",
+    "blockRoot": "0x11f7b01bca1717ca90a000881beb00bc764842bdd4e703e20983c28c54bcff4b",
+    "activeValidatorCount": 881139,
+    "activeBalanceGwei": "43803416952556785",
+    "activeEffectiveBalanceGwei": "43737996000000000",
+    "statusCounts": {
+      "active_ongoing": 858027,
+      "active_exiting": 23112
+    },
+    "finalized": true,
+    "executionOptimistic": true,
+    "source": {
+      "key": "finalization_native_history_2026-09",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15332398/validators?status=active_ongoing,active_exiting,active_slashed",
+      "capturedUTC": "2026-10-06T15:44:48.486137+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:44:55 GMT",
+      "encoding": null,
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-09-28f1ef0778ec27b2.json.gz",
+      "sha256": "28f1ef0778ec27b299e20e783b6e876627f5a9f097ae11e63e629830cfb23182",
+      "bytes": 427167873,
+      "compressedBytes": 73364905,
+      "compressedSha256": "ca62e4e55f05455738a314db3179f8c95c5e02c28d00e36b656950b8547bd280"
+    },
+    "headerSource": {
+      "key": "finalization_native_history_2026-09_header_15332398",
+      "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/headers/15332398",
+      "capturedUTC": "2026-10-06T15:44:45.785676+00:00",
+      "request": null,
+      "status": 200,
+      "HTTPDate": "Tue, 06 Oct 2026 15:44:48 GMT",
+      "path": "raw/eth/finalization-2026-10-06/finalization_native_history_2026-09_header_15332398-82b1b8a99f022844.json",
+      "sha256": "82b1b8a99f022844ece1bbdc0be7d04ea77e280b75dc705a6dc7d9d3d589e9c3",
+      "bytes": 671
+    }
+  }
+]

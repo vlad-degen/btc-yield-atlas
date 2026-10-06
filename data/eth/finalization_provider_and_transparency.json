@@ -1,0 +1,68 @@
+[
+  {
+    "key": "nimbus_T_header",
+    "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/headers/15346798",
+    "capturedUTC": "2026-10-06T15:35:22.342145+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:35:28 GMT",
+    "path": "raw/eth/finalization-2026-10-06/nimbus_T_header-1342e75449cb6be3.json",
+    "sha256": "1342e75449cb6be3f9f507ff9ce86f908c44a62c1ead4a87708e08d0a857b79e",
+    "bytes": 671
+  },
+  {
+    "key": "nimbus_T_state_root",
+    "url": "http://testing.mainnet.beacon-api.nimbus.team/eth/v1/beacon/states/15346798/root",
+    "capturedUTC": "2026-10-06T15:35:22.342436+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:35:28 GMT",
+    "path": "raw/eth/finalization-2026-10-06/nimbus_T_state_root-33e3aa7034d5d075.json",
+    "sha256": "33e3aa7034d5d0752fd7a68ce5becbc789b41c341b8fc41108e3633ff7ecaea0",
+    "bytes": 131
+  },
+  {
+    "key": "avant_public_script_19",
+    "url": "https://app.avantprotocol.com/_next/static/chunks/8525-772b7c7e3b4bffb7.js?dpl=dpl_E1E9x2TBq1b8GqNMgraYJj9NsSwb",
+    "capturedUTC": "2026-10-06T15:35:22.342511+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:35:22 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_public_script_19-375599a5047b9e62.txt",
+    "sha256": "375599a5047b9e625e5e3e93ee698f3bfe6749dced80717757255de03b43ca41",
+    "bytes": 12198
+  },
+  {
+    "key": "avant_public_script_20",
+    "url": "https://app.avantprotocol.com/_next/static/chunks/2228-6e43480b1ee9c340.js?dpl=dpl_E1E9x2TBq1b8GqNMgraYJj9NsSwb",
+    "capturedUTC": "2026-10-06T15:35:22.476828+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:35:22 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_public_script_20-28390f6a80038366.txt",
+    "sha256": "28390f6a800383669326a3505c1be5871050725d1e7c533b67b22bba0ddc0627",
+    "bytes": 335453
+  },
+  {
+    "key": "avant_public_script_21",
+    "url": "https://app.avantprotocol.com/_next/static/chunks/8384-a455cdc3316e2a3a.js?dpl=dpl_E1E9x2TBq1b8GqNMgraYJj9NsSwb",
+    "capturedUTC": "2026-10-06T15:35:22.650947+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:35:22 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_public_script_21-6abd0424189ddd39.txt",
+    "sha256": "6abd0424189ddd3926e4172974b401172d7bc47eae056245511a0cc59800cc3c",
+    "bytes": 44762
+  },
+  {
+    "key": "avant_public_script_22",
+    "url": "https://app.avantprotocol.com/_next/static/chunks/app/transparency/page-a718e6c0ab9e1f9e.js?dpl=dpl_E1E9x2TBq1b8GqNMgraYJj9NsSwb",
+    "capturedUTC": "2026-10-06T15:35:22.773036+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:35:22 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_public_script_22-49b48eab080a0247.txt",
+    "sha256": "49b48eab080a024722dbe40eeb67b936b6995ed1773a7f7943f72c2324ef5e28",
+    "bytes": 63945
+  }
+]

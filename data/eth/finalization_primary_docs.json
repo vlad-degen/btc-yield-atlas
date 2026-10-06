@@ -1,0 +1,90 @@
+[
+  {
+    "key": "zensats_docs",
+    "url": "https://www.zensats.app/llms-full.txt",
+    "capturedUTC": "2026-10-06T15:12:27.863649+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:12:28 GMT",
+    "path": "raw/eth/finalization-2026-10-06/zensats_docs-f4623663d666aa47.txt",
+    "sha256": "f4623663d666aa47debebc8d6d814e4846355d3cd06fcd90997b63df13ad7fe3",
+    "bytes": 22948
+  },
+  {
+    "key": "zensats_vault_registry",
+    "url": "https://www.zensats.app/api/agent/vaults",
+    "capturedUTC": "2026-10-06T15:12:27.863968+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:12:28 GMT",
+    "path": "raw/eth/finalization-2026-10-06/zensats_vault_registry-1484fb33c7057865.json",
+    "sha256": "1484fb33c7057865b86df035f9c23eaf52f20c538ce47e0cce36769838e3bc61",
+    "bytes": 7404
+  },
+  {
+    "key": "yo_index",
+    "url": "https://docs.yo.xyz/llms.txt",
+    "capturedUTC": "2026-10-06T15:12:27.864063+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:12:28 GMT",
+    "path": "raw/eth/finalization-2026-10-06/yo_index-b1329d4130829a64.txt",
+    "sha256": "b1329d4130829a64415337982aacaeada29e52bba347f1d46f6c741c2450a855",
+    "bytes": 5827
+  },
+  {
+    "key": "lido_earn_deployments",
+    "url": "https://docs.lido.fi/earn/deployment-contracts/",
+    "capturedUTC": "2026-10-06T15:12:28.317546+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:12:28 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_earn_deployments-db1264e988480a1e.txt",
+    "sha256": "db1264e988480a1e0d09f20229bad9fec40445c66406b2130793275256aa73c2",
+    "bytes": 43792
+  },
+  {
+    "key": "lido_earn_architecture",
+    "url": "https://docs.lido.fi/earn/architecture/",
+    "capturedUTC": "2026-10-06T15:12:28.458652+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:12:28 GMT",
+    "path": "raw/eth/finalization-2026-10-06/lido_earn_architecture-44a775bab8a992d1.txt",
+    "sha256": "44a775bab8a992d15ceebd95157b73148b508cac29d4611da253cd5f00037086",
+    "bytes": 61196
+  },
+  {
+    "key": "makina_docs",
+    "url": "https://docs.makina.finance/llms.txt",
+    "capturedUTC": "2026-10-06T15:12:28.596137+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:12:28 GMT",
+    "path": "raw/eth/finalization-2026-10-06/makina_docs-d2a5d46e0c8efabd.txt",
+    "sha256": "d2a5d46e0c8efabd8c24da40451715b68e9ec1c1c8de86d0fdc0c7e3dd332a79",
+    "bytes": 12234
+  },
+  {
+    "key": "vesper_docs",
+    "url": "https://docs.vesper.finance/llms.txt",
+    "capturedUTC": "2026-10-06T15:12:28.611878+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:12:29 GMT",
+    "path": "raw/eth/finalization-2026-10-06/vesper_docs-ae5ba4a2c31e7c49.txt",
+    "sha256": "ae5ba4a2c31e7c4975138030bb777618b1f0e2fd181831273aca77cc2fefe8e8",
+    "bytes": 5459
+  },
+  {
+    "key": "avant_docs",
+    "url": "https://docs.avantprotocol.com/llms.txt",
+    "capturedUTC": "2026-10-06T15:12:28.664734+00:00",
+    "request": null,
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 15:12:29 GMT",
+    "path": "raw/eth/finalization-2026-10-06/avant_docs-d0e40c8b4f5e089a.txt",
+    "sha256": "d0e40c8b4f5e089ad90a08db91bedefb9fb375b9644fa65a1eedb30975f94f98",
+    "bytes": 2948
+  }
+]

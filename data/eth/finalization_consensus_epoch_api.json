@@ -1,0 +1,24 @@
+[
+  {
+    "key": "beaconchain_epoch_T",
+    "url": "https://beaconcha.in/api/v1/epoch/479587",
+    "capturedUTC": "2026-10-06T15:41:21.901688+00:00",
+    "request": null,
+    "status": 401,
+    "error": "HTTP Error 401: Unauthorized",
+    "path": "raw/eth/finalization-2026-10-06/beaconchain_epoch_T-5549e91f43c46456.json",
+    "sha256": "5549e91f43c4645616c6604a6b4d5f6d7abf9e6602f16f557fc792dfaa2dfa63",
+    "bytes": 96
+  },
+  {
+    "key": "beaconchain_epoch_2024",
+    "url": "https://beaconcha.in/api/v1/epoch/321862",
+    "capturedUTC": "2026-10-06T15:41:21.901980+00:00",
+    "request": null,
+    "status": 401,
+    "error": "HTTP Error 401: Unauthorized",
+    "path": "raw/eth/finalization-2026-10-06/beaconchain_epoch_2024-5549e91f43c46456.json",
+    "sha256": "5549e91f43c4645616c6604a6b4d5f6d7abf9e6602f16f557fc792dfaa2dfa63",
+    "bytes": 96
+  }
+]
