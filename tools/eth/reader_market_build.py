@@ -5,8 +5,10 @@ ROOT=Path(__file__).resolve().parents[2];D=ROOT/'data/eth'
 def run():
  src=D/'research_market_chapter.json';original=json.loads(src.read_text());m=copy.deepcopy(original)
  # A matching ETH symbol on Tron does not verify an Ethereum-backed claim.
- labels={'loops':'ETH loops','carry':'Dollar carry','farming':'Farming / liquidity'}
- for c in m['categories']:c['label']=labels.get(c['id'],c['label'])
+ labels={'staking':'Staking / restaking claims','loops':'Loop-focused vaults','carry':'Carry-linked parents','basis':'Basis / hedged ETH','fixed_yield':'Fixed-yield venues','farming':'Liquidity / mixed vaults','lending':'Lending infrastructure','cdp':'CDP collateral'}
+ for c in m['categories']:
+  c['label']=labels.get(c['id'],c['label'])
+  c['measurement']='Protocol-family exposure; not a measured strategy allocation or unique ETH capital.'
  excluded=[p for p in m['products'] if p['id']=='justlend-v1'];m['products']=[p for p in m['products'] if p['id']!='justlend-v1'];m['constant_cohort_protocols']=[p for p in m['constant_cohort_protocols'] if p!='justlend-v1'];m['constant_cohort_count']=len(m['constant_cohort_protocols'])
  # Match the BTC report's economic classification: a dollar-financed LT pool
  # belongs to carry even though DefiLlama labels its parent Leveraged Farming.
@@ -38,5 +40,6 @@ def run():
  m['excluded_representations']=[{'id':p['id'],'name':p['name'],'reason':'Tron mapped ETH: Ethereum backing and redemption not verified. Excluded from all reader totals, category histories and chain charts; full captured observations retained in the source ledger.','current':p['current'],'history':p['history'],'source_url':p['source_url']} for p in excluded]
  m['excluded_protocols']+= [{'id':'justlend-v1','reason':m['excluded_representations'][0]['reason']}]
  m['presentation_universe']={'source_path':'data/eth/research_market_chapter.json','source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'policy':'Exclude unverified Tron mapped-ETH representation; classify YieldBasis WETH as dollar-financed carry, consistently with BTC. Captured observations are unchanged.','excluded_protocols':['justlend-v1'],'reclassified_protocols':{'yield-basis':{'from':'farming','to':'carry','evidence':'strategy_universe_deep: yb_weth_pool actual crvUSD loan'}},'raw_protocol_rows':len(original['products']),'reader_protocol_rows':len(m['products'])}
+ m['presentation_universe']['category_policy']='Group protocol families for discovery. Carry-linked parents and mixed vaults retain their entire reported ETH exposure; unmeasured sleeve weights are never inferred. Lending and CDP are optional financing layers. Historical categories use the same family mapping, not historical portfolio allocations.'
  (D/'market_reader_chapter.json').write_text(json.dumps(m,indent=2)+'\n');print('Reader universe:',len(m['products']),'rows; Tron mapped ETH retained outside counts.')
 if __name__=='__main__':run()

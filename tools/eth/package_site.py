@@ -10,7 +10,7 @@ DEST=OUT/'ETH-Yield-Research.zip'
 
 def run():
     # Package the latest check results, rather than stale copies from an earlier build.
-    for name in ['audit_results.json','site_audit_results.json','market_audit_results.json','strict_audit_results.json','reader_alignment_audit.json','research_closure_audit.json','market_netting_validation.json','carry_attribution_verification.json','backing_exit_verification.json','research_expansion_verification.json','strategy_universe_deep_verification.json','credit_expansion_deep_validation.json']:
+    for name in ['audit_results.json','site_audit_results.json','market_audit_results.json','strict_audit_results.json','reader_alignment_audit.json','research_closure_audit.json','market_netting_validation.json','carry_attribution_verification.json','backing_exit_verification.json','research_expansion_verification.json','strategy_universe_deep_verification.json','credit_expansion_deep_validation.json','report_contract_verification.json']:
         source=ROOT/'data/eth'/name
         for folder in ['eth/data','eth/qa','site/eth/data','site/eth/qa']:
             destination=ROOT/folder/name
@@ -50,7 +50,7 @@ def run():
         assert archive.read('eth/index.html')==(OUT/'index.html').read_bytes()
         assert archive.read('index.html')==(ROOT/'index.html').read_bytes()
         assert archive.read('eth/README.md')==(OUT/'README.md').read_bytes()
-        for name in ['audit_results.json','site_audit_results.json','market_audit_results.json','strict_audit_results.json','research_closure_audit.json','market_netting_validation.json','carry_attribution_verification.json','backing_exit_verification.json','research_expansion_verification.json','strategy_universe_deep_verification.json','credit_expansion_deep_validation.json']:
+        for name in ['audit_results.json','site_audit_results.json','market_audit_results.json','strict_audit_results.json','research_closure_audit.json','market_netting_validation.json','carry_attribution_verification.json','backing_exit_verification.json','research_expansion_verification.json','strategy_universe_deep_verification.json','credit_expansion_deep_validation.json','report_contract_verification.json']:
             assert archive.read('eth/qa/'+name)==(ROOT/'data/eth'/name).read_bytes()
         assert archive.read('eth/qa/browser-checks.json')==browser_source.read_bytes()
         names=set(archive.namelist());broken=[]

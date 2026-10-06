@@ -143,6 +143,8 @@ def build():
     build_reader_analysis()
     from parity_coverage_build import run as build_carry_coverage
     build_carry_coverage()
+    from report_contract_build import run as build_report_contract
+    contract = build_report_contract()
     for name,source in [('STRATEGY-UNIVERSE-EXPANSION','STRATEGY-UNIVERSE-EXPANSION'),('CARRY-VARIANTS-EXPANSION','CARRY-VARIANTS-EXPANSION'),('CREDIT-EXPANSION','CREDIT-EXPANSION-2026-10-04')]:
         text=(RESEARCH/'review'/f'{source}.md').read_text()
         # These are English editorial sources. Preserve exact units and links.
@@ -181,6 +183,7 @@ def build():
       'borrowRateHistory':read('carry_borrow_rate_history'),
       'carryCategory':{'products':read('reader_carry_category')['products']},
       'readerAnalysis':read('reader_analysis'),
+      'reportContract':contract,
       'carryCoverage':read('carry_coverage_audit'),
       'reportLibrary':[{'id':stem,'title':title,'href':f'{folder}/{stem}.html'} for stem,(folder,title) in ARTICLES.items()],
       'marketNetting':read('market_netting_closure'),
@@ -225,6 +228,8 @@ def build():
             if source.is_file():shutil.copyfile(source,OUT/'data'/source.name)
     for name in ['carry_coverage_audit.json','carry-discovery-dispositions.csv','yb_LT_holders_T.json']:
         if (DATA/name).is_file():shutil.copyfile(DATA/name,OUT/'data'/name)
+    for name in ['report_contract.json','carry-common-30d.csv','carry-status-and-capital.csv']:
+        shutil.copyfile(DATA/name,OUT/'data'/name)
     shutil.copyfile(DATA/'carry_borrow_rate_history.json',OUT/'data/carry_borrow_rate_history.json')
     ledger=read('evidence_ledger')
     ledger['claims']=payload['evidence']
@@ -285,7 +290,10 @@ def build():
         source=(ENGLISH/'dossiers'/f'{stem}.md') if folder=='dossiers' else ENGLISH/f'{stem}.md'
         body=markdown(source)
         toc=''.join(f'<a href="#{m[2]}">{re.sub("<[^>]+>","",m[3])}</a>' for m in re.finditer(r'<h([34]) id="([^"]+)">(.*?)</h\1>',body))
-        page=(SRC/'article.html').read_text().replace('@@TITLE@@',html.escape(title)).replace('@@CONTENT@@',body).replace('@@TOC@@',toc)
+        current=stem in ['BRIEFING','MARKET-STRUCTURE','CARRY-CATEGORY','MARKET-COVERAGE','PRODUCT-SELECTION','CARRY-PRODUCTS']
+        earlier=stem in ['MARKET-RESEARCH','MARKET-TABLES','SITE-PARITY','RESEARCH-PLAN','EXECUTION-CHECKLIST','README']
+        status='<p class="note">Current report · 6 October 2026 · financial snapshot 2 October.</p>' if current else '<p class="note">'+('Earlier research note. Product selection and coverage figures may refer to an earlier edition. ' if earlier else 'Supporting evidence with its own observation dates. ')+'For current comparisons and conclusions, read the <a href="../library/BRIEFING.html">team briefing</a>. Earlier scopes are retained for provenance.</p>'
+        page=(SRC/'article.html').read_text().replace('@@TITLE@@',html.escape(title)).replace('@@CONTENT@@',status+body).replace('@@TOC@@',toc)
         (OUT/folder/f'{stem}.html').write_text(page)
     library_groups = [
       ('Market size and counting', ['MARKET-RESEARCH','MARKET-STRUCTURE','MARKET-TABLES','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
@@ -297,7 +305,7 @@ def build():
     ]
     listed = [stem for _, group in library_groups for stem in group]
     assert len(listed) == len(set(listed)) == len(ARTICLES) and set(listed) == set(ARTICLES)
-    body = f'<h1>Complete research library</h1><p>The main report follows market size, history, carry economics and investor outcomes. This library retains all {len(ARTICLES)} supporting investigations, including the complete measurements and their limits.</p>'
+    body = f'<h1>Research library</h1><p>Start with the <a href="BRIEFING.html">current team briefing</a>, <a href="MARKET-STRUCTURE.html">market structure</a>, <a href="CARRY-CATEGORY.html">carry census</a> and <a href="MARKET-COVERAGE.html">coverage matrix</a>. Their comparisons are rebuilt from one dataset. The {len(ARTICLES)} linked investigations retain dated evidence and earlier discovery scopes; they are not competing final reports.</p>'
     library_toc = ''
     for group_number, (question, group) in enumerate(library_groups, 1):
         heading_id = f'group-{group_number}'

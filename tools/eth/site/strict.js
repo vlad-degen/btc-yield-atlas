@@ -28,6 +28,7 @@ const stLocal=(name,label='Download data')=>`<a class="btn" href="data/${esc(nam
 function stSources(rows){return (rows||[]).map((r,i)=>{if(typeof r==='string')return r.startsWith('http')?a(r,'Source '+(i+1)):r.startsWith('data/eth/')?`<a href="data/${esc(r.split('/').at(-1))}">${esc(r.split('/').at(-1))}</a>`:esc(r);const url=r.url||r.source_url;return url?a(url,r.title||r.label||r.name||'Source '+(i+1)):esc(r.title||r.label||r.path||'')}).filter(Boolean).join(' · ')}
 function stChart(title,chart,heads,rows,note=''){return `<div class="strict-exhibit"><h4>${esc(title)}</h4><div class="chart-scroll">${chart}</div><div class="chart-tooltip strict-chart-tooltip" aria-live="polite">Focus or hover on a point to inspect its date and value.</div><details class="more chart-data"><summary>Table: chart data</summary><div class="body tblwrap">${stTable(heads,rows)}</div></details>${note?'<p class="note">'+esc(note)+'</p>':''}</div>`}
 function renderStrictHeadline(){
+ if(document.body.dataset.edition==='reader'){readerAnswer();return;}
  $('#strict-count-label').textContent=mactive().length+' of '+MP.categories.length+' groups';
  const fixed=n=>mactive().reduce((sum,c)=>sum+(MP.months[n].by_category[c.id].constant_cohort?.eth_ref||0),0),count=mactive().reduce((sum,c)=>sum+(MP.months[0].by_category[c.id].constant_cohort?.protocol_count||0),0);
  $('#hero-fixed-change').textContent=count?pct(mchange(fixed(0),fixed(23)),2):'n/a';$('#hero-fixed-detail').textContent=count+' selected protocols held fixed. Oct 2024 to Sep 2026; ETH equivalents.';

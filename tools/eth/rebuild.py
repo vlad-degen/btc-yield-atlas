@@ -19,6 +19,7 @@ def run():
  subprocess.run([sys.executable,str(ROOT/'tools/eth/carry_borrow_history.py'),'--verify'],cwd=ROOT,check=True)
  subprocess.run([sys.executable,str(ROOT/'tools/eth/strict_audit.py')],cwd=ROOT,check=True)
  subprocess.run([sys.executable,str(ROOT/'tools/eth/reader_alignment_audit.py')],cwd=ROOT,check=True)
+ subprocess.run([sys.executable,str(ROOT/'tools/eth/report_contract_verify.py')],cwd=ROOT,check=True)
  subprocess.run([sys.executable,str(ROOT/'tools/eth/market_netting_validate.py')],cwd=ROOT,check=True)
  subprocess.run([sys.executable,str(ROOT/'tools/eth/carry_attribution_verify.py')],cwd=ROOT,check=True)
  verified=subprocess.run([sys.executable,str(ROOT/'tools/eth/backing_exit_verify.py')],cwd=ROOT,capture_output=True,text=True,check=True)

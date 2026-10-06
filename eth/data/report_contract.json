@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-02T23:59:59Z",
+  "headline": {
+    "receiptClaimsETH": 20190378.32741262,
+    "receiptClaimsUSD": 54598337750.198135,
+    "examinedBooks": 8,
+    "currentRoutes": 5,
+    "liquid730dExcessPP": 1.3625789713257452,
+    "scenarioCarryWithoutRewardsPP": -0.8373479286176463
+  },
+  "globalUniqueETH": null,
+  "globalCarryEquityETH": null,
+  "sampleGrossBooksETH": 510923.636816274,
+  "sampleTopTwoShare": 0.9483491345409231,
+  "census": [
+    {
+      "name": "Concrete Delta weETH",
+      "status": "unverified",
+      "statusLabel": "Declared arbitrage; shared custody",
+      "allocationEvidence": "Dollar debt is observed in a shared Safe; assets and debt attributable to Delta are unresolved.",
+      "bookETH": 307362.9254893895,
+      "bookUSD": 820029052.8774381,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://app.concrete.xyz/earn"
+      ]
+    },
+    {
+      "name": "ether.fi Liquid ETH",
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "Dollar loans and destination claims are measured; full carry-sleeve equity is not reconciled.",
+      "bookETH": 177171.06330182485,
+      "bookUSD": 472683616.62473655,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://etherfi.gitbook.io/etherfi/products/liquid/live-vaults/liquid-eth-vault"
+      ]
+    },
+    {
+      "name": "YieldBasis WETH",
+      "status": "active",
+      "statusLabel": "Active dollar-financed LP",
+      "allocationEvidence": "Net fair-value WETH pool equity is measured separately from actual crvUSD debt; gauge income is separate.",
+      "bookETH": 10425.99863386677,
+      "bookUSD": 27816047.662281808,
+      "carryEquityETH": 10425.99863386677,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://docs.yieldbasis.com/",
+        "https://etherscan.io/address/0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea#code"
+      ]
+    },
+    {
+      "name": "Rocksolid rETH",
+      "status": "closing",
+      "statusLabel": "Closing; nested carry",
+      "allocationEvidence": "728.48 ETH of Liquity shares is the evidenced nested carry claim; direct Aave debt is zero.",
+      "bookETH": 9727.76735365525,
+      "bookUSD": 25953201.209705926,
+      "carryEquityETH": null,
+      "nestedClaimETH": 728.48,
+      "sources": [
+        "https://app.rocksolid.network/vaults/0x936facdf10c8c36294e7b9d28345255539d81bc7"
+      ]
+    },
+    {
+      "name": "Liquity ETH Carry",
+      "status": "active",
+      "statusLabel": "Active minted-dollar LP",
+      "allocationEvidence": "Ebisu collateral, ebUSD debt and dollar LP positions are measured; do not equate collateral with sleeve equity.",
+      "bookETH": 6014.001735111082,
+      "bookUSD": 16045058.58666632,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://app.ipor.io/fusion/ethereum/0xb9e806e8f2d94c015ffefa90cd24ecce18f1663c/vault-info"
+      ]
+    },
+    {
+      "name": "Royco ETH",
+      "status": "active",
+      "statusLabel": "Loan traced; parent marks stale",
+      "allocationEvidence": "Morpho PYUSD debt and the senior credit receipt are traced; parent accounting and immediate exit remain restricted.",
+      "bookETH": 116.05160827212383,
+      "bookUSD": 309619.9395706831,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://royco.gitbook.io/royco-dawn"
+      ]
+    },
+    {
+      "name": "TAU InfiniFi ETH Carry",
+      "status": "historical",
+      "statusLabel": "Historical; dust debt at T",
+      "allocationEvidence": "Accrued debt is 0.022132 USDC at T; the old whole book is not current active carry equity.",
+      "bookETH": 82.23385424749354,
+      "bookUSD": 219395.84777722746,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://app.ipor.io/fusion/ethereum/0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b"
+      ]
+    },
+    {
+      "name": "Reservoir ETH Yield",
+      "status": "active",
+      "statusLabel": "Small current nested savings",
+      "allocationEvidence": "Outer dollar borrowing and borrowing inside the savings destination are distinct liabilities.",
+      "bookETH": 23.594839906973554,
+      "bookUSD": 62949.863555935706,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://app.ipor.io/fusion/ethereum/0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e/vault-info"
+      ]
+    }
+  ],
+  "matched30dReturns": [
+    {
+      "id": "concrete",
+      "name": "Concrete Delta weETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.19148705307747704,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.006573459838388196,
+      "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "liquid",
+      "name": "ether.fi Liquid ETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.26101066789818717,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.07609707465909832,
+      "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "yieldbasis",
+      "name": "YieldBasis WETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": -0.16217852420224999,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": -0.34709211744133883,
+      "basis": "Unstaked fair-value LT mark; gauge income excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "rocksolid",
+      "name": "Rocksolid rETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.21920570033533426,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.03429210709624542,
+      "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "liquity",
+      "name": "Liquity ETH Carry",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.4597242901151377,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.27481069687604887,
+      "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "royco",
+      "name": "Royco ETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.18491359323908885,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.0,
+      "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    }
+  ],
+  "financedLots": [
+    {
+      "id": "a122-usdc-2026-09-14",
+      "currency": "USDC",
+      "borrowed": 350000.0,
+      "income": 59.63384057107145,
+      "fundingCost": 146.057155,
+      "resultBeforeGas": -86.42331442892855,
+      "start": "2026-09-14T13:42:11+00:00",
+      "end": "2026-09-16T13:27:23+00:00",
+      "receipt": "https://etherscan.io/tx/0x324c54a149f5fcdcd2cf22bf1dd338decfb06d767cedb5b5117758f7221430aa",
+      "completeWalletProfit": null
+    },
+    {
+      "id": "a122-usdc-2026-09-15",
+      "currency": "USDC",
+      "borrowed": 350000.0,
+      "income": 32.20654253153248,
+      "fundingCost": 93.832732,
+      "resultBeforeGas": -61.62618946846752,
+      "start": "2026-09-15T07:49:23+00:00",
+      "end": "2026-09-16T13:27:23+00:00",
+      "receipt": "https://etherscan.io/tx/0x324c54a149f5fcdcd2cf22bf1dd338decfb06d767cedb5b5117758f7221430aa",
+      "completeWalletProfit": null
+    },
+    {
+      "id": "4f87-pyusd-2026-09-17",
+      "currency": "PYUSD",
+      "borrowed": 1000000,
+      "income": 1.948867,
+      "fundingCost": 2.347298,
+      "resultBeforeGas": -0.398431,
+      "start": "2026-09-17T13:50:23+00:00",
+      "end": "2026-09-17T14:18:11+00:00",
+      "receipt": "https://etherscan.io/tx/0x72df97be87198f5077b3ad8f050b7ccef35157653649d3f4774162ce49923e98",
+      "completeWalletProfit": null
+    }
+  ],
+  "coverage": [
+    {
+      "family": "Native validator staking",
+      "income": "Consensus issuance, tips and MEV",
+      "capital": "No exact all-validator balance at T",
+      "history": "No full market history",
+      "returns": "Issuer benchmarks only",
+      "report": "staking-restaking"
+    },
+    {
+      "family": "Liquid staking / restaking",
+      "income": "Validator income; additional service rewards where realised",
+      "capital": "Issuer and security-layer claims; overlapping",
+      "history": "24-month protocol observations",
+      "returns": "Matched share conversions for selected issuers",
+      "report": "staking-restaking"
+    },
+    {
+      "family": "ETH lending",
+      "income": "Borrower interest",
+      "capital": "Lending claims, cash and debt measured separately",
+      "history": "Protocol histories; selected reserve histories",
+      "returns": "Selected rates and share returns",
+      "report": "LENDING-MARKETS"
+    },
+    {
+      "family": "ETH-debt loops",
+      "income": "Leveraged staking-minus-ETH-funding spread",
+      "capital": "Fluid / Treehouse parents; Liquid, CIAN and Yearn positions",
+      "history": "Selected product books, not monthly loop weights",
+      "returns": "Selected matched ETH book returns",
+      "report": "PRODUCT-FINANCIAL-HISTORY"
+    },
+    {
+      "family": "Dollar carry",
+      "income": "Dollar investment income minus dollar funding",
+      "capital": "Eight examined books; five have current traced routes; unassigned sleeves retained",
+      "history": "24 monthly whole-book observations; allocation weights incomplete",
+      "returns": "Matched 30-day books; three financed investment lots",
+      "report": "CARRY-PRODUCTS"
+    },
+    {
+      "family": "Spot / short basis",
+      "income": "Funding or dated-futures premium",
+      "capital": "Frozen ETH slice unmeasured; later Ethena disclosure separate",
+      "history": "No complete frozen ETH-slice history",
+      "returns": "No matched ETH-long strategy comparison",
+      "report": "ethena-basis"
+    },
+    {
+      "family": "Fixed maturity",
+      "income": "Underlying income or principal-claim discount",
+      "capital": "Pendle / Spectra parent claims; market registries screened",
+      "history": "Parent histories; maturity-level coverage partial",
+      "returns": "Payoff denomination checked; no full investor-return panel",
+      "report": "pendle-pt"
+    },
+    {
+      "family": "DEX / trading liquidity",
+      "income": "Swap fees; inventory and trader P&L",
+      "capital": "28 verified ETH-custody pools; broader adapters incomplete",
+      "history": "24 month ends for that same pool subset",
+      "returns": "Custody is not LP profit; selected positions traced",
+      "report": "CAPITAL-INCOME-EXIT"
+    },
+    {
+      "family": "Options / structured yield",
+      "income": "Option premiums in exchange for contingent payoff",
+      "capital": "Materiality and funded capacity not established at T",
+      "history": "Historical / retired product screens",
+      "returns": "No full premium, settlement and cash-return ledger",
+      "report": "STRATEGY-UNIVERSE-EXPANSION"
+    },
+    {
+      "family": "Mixed allocators / tranches",
+      "income": "A blend of the mechanisms above",
+      "capital": "Parent books and selected sleeves; never add both as unique capital",
+      "history": "Parent NAV; changing allocation weights incomplete",
+      "returns": "Selected share marks; strategy attribution incomplete",
+      "report": "PRODUCT-FINANCIAL-HISTORY"
+    }
+  ],
+  "discovery": {
+    "materialPools": 299,
+    "parentDispositions": 287,
+    "otherDispositions": 12,
+    "exhaustiveStrategyCensus": false
+  },
+  "custodySubsetETH": 457182.30402225326,
+  "lpCustodyETH": 69531.48533136006,
+  "sources": {
+    "market_reader_chapter": "72da40f294ea5ea4db6a7db56038c9716099bbfeb09a2e78ae4e82d0233aaf5c",
+    "reader_carry_category": "a9eb0ba379841c8e8d754c27055aadf75b682ffe0494660c6abbf001f22f837e",
+    "reader_product_chapters": "73bdb984660306b902a78ca886bf78ac6ed4eef071ee19fbc95b50ddacd4b650",
+    "etherfi_staking_comparison": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858",
+    "carry_economics_chapter": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
+    "carry_coverage_audit": "771e61e0cf735d75007e7fe28670797eaa689f11d5f581c31fe8b1a5d718cabd",
+    "market_netting_closure": "6164a34870ec4210de29c8326acb5f3f0e453028fc0bd77d9d255dc777c90da6",
+    "credit_expansion_deep": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0",
+    "carry_attribution_closure": "7796dba62f2a04baf2d7b554d3f46108ab5b4fd119e8a5620a34ed7960564dd2"
+  }
+}

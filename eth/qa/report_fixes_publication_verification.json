@@ -1,0 +1,209 @@
+{
+  "verified_at_UTC": "2026-10-06T01:12:14.774879+00:00",
+  "public_url": "https://vlad-degen.github.io/btc-yield-atlas/eth/",
+  "pull_request": "https://github.com/vlad-degen/btc-yield-atlas/pull/6",
+  "site_commit": "2f9cd14d2c5c1a1470939424a62bf43c7ab94cf9",
+  "financial_snapshot": "2026-10-02T23:59:59Z",
+  "all_public_responses_match": true,
+  "BTC_public_root_unchanged": true,
+  "BTC_non_ETH_git_blobs_unchanged": 345,
+  "responses": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "bytes": 315358,
+      "local_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "public_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "matches": true
+    },
+    {
+      "path": "assets/favicon.svg",
+      "http_status": 200,
+      "bytes": 728,
+      "local_sha256": "50966b93a554b86374a916a515310d02fa29ca4387cb0563b2e5bce119c6928e",
+      "public_sha256": "50966b93a554b86374a916a515310d02fa29ca4387cb0563b2e5bce119c6928e",
+      "matches": true
+    },
+    {
+      "path": "eth/index.html",
+      "http_status": 200,
+      "bytes": 11902241,
+      "local_sha256": "03940a13495b5524e8f92cdef21a6ea4c0bf2f83d343029277dbffc9c079f156",
+      "public_sha256": "03940a13495b5524e8f92cdef21a6ea4c0bf2f83d343029277dbffc9c079f156",
+      "matches": true
+    },
+    {
+      "path": "eth/exhibits.html",
+      "http_status": 200,
+      "bytes": 11950791,
+      "local_sha256": "8dc30ec0a9ef453793e42b44be4ce4e72b64d41233e9e096d66aca4838cc7cab",
+      "public_sha256": "8dc30ec0a9ef453793e42b44be4ce4e72b64d41233e9e096d66aca4838cc7cab",
+      "matches": true
+    },
+    {
+      "path": "eth/library/index.html",
+      "http_status": 200,
+      "bytes": 5967,
+      "local_sha256": "8aec6e0efec941afbdcc4a4d476fe3fecbb6f6e50420a7e5a0836407459feceb",
+      "public_sha256": "8aec6e0efec941afbdcc4a4d476fe3fecbb6f6e50420a7e5a0836407459feceb",
+      "matches": true
+    },
+    {
+      "path": "eth/library/BRIEFING.html",
+      "http_status": 200,
+      "bytes": 10921,
+      "local_sha256": "47943257b04247d94dec53cd1ce3b0bb3615c292357c85b6df8857d2f990f7da",
+      "public_sha256": "47943257b04247d94dec53cd1ce3b0bb3615c292357c85b6df8857d2f990f7da",
+      "matches": true
+    },
+    {
+      "path": "eth/library/MARKET-STRUCTURE.html",
+      "http_status": 200,
+      "bytes": 5601,
+      "local_sha256": "15926ddfc880f5e72a9e5ed95706ea865c09af167dc715ab9fd6452823665090",
+      "public_sha256": "15926ddfc880f5e72a9e5ed95706ea865c09af167dc715ab9fd6452823665090",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-CATEGORY.html",
+      "http_status": 200,
+      "bytes": 6887,
+      "local_sha256": "8dc740885cf5bc0ed2482755d01948f50d537ec65244088e4e05486fafdaf017",
+      "public_sha256": "8dc740885cf5bc0ed2482755d01948f50d537ec65244088e4e05486fafdaf017",
+      "matches": true
+    },
+    {
+      "path": "eth/library/MARKET-COVERAGE.html",
+      "http_status": 200,
+      "bytes": 9808,
+      "local_sha256": "cfe94d314bbb0d2ba5dd569af9f2416f52390a0760c92e40c428ca1ecbd284ed",
+      "public_sha256": "cfe94d314bbb0d2ba5dd569af9f2416f52390a0760c92e40c428ca1ecbd284ed",
+      "matches": true
+    },
+    {
+      "path": "eth/library/PRODUCT-SELECTION.html",
+      "http_status": 200,
+      "bytes": 2858,
+      "local_sha256": "6c4de8d4d334e14f25400268acaa9c111ec8a77bdfa41e3b8a71bd8df3b21b31",
+      "public_sha256": "6c4de8d4d334e14f25400268acaa9c111ec8a77bdfa41e3b8a71bd8df3b21b31",
+      "matches": true
+    },
+    {
+      "path": "eth/data/report_contract.json",
+      "http_status": 200,
+      "bytes": 13074,
+      "local_sha256": "3ef9e21a8c081f526d3e715f4c1424c9da934dafac9914ff6585b8d2c49a87de",
+      "public_sha256": "3ef9e21a8c081f526d3e715f4c1424c9da934dafac9914ff6585b8d2c49a87de",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-common-30d.csv",
+      "http_status": 200,
+      "bytes": 1165,
+      "local_sha256": "0576e15faf0c9b92b5513019f38991e1a4efe281f372d92e89e686d8247b12f0",
+      "public_sha256": "0576e15faf0c9b92b5513019f38991e1a4efe281f372d92e89e686d8247b12f0",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-status-and-capital.csv",
+      "http_status": 200,
+      "bytes": 1256,
+      "local_sha256": "09e4e7055d1b31186a23bc16b3b53a77c2a80005f0d3ba881990bc8a8e2de7e8",
+      "public_sha256": "09e4e7055d1b31186a23bc16b3b53a77c2a80005f0d3ba881990bc8a8e2de7e8",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/browser-checks.json",
+      "http_status": 200,
+      "bytes": 1554,
+      "local_sha256": "f4f6585d8dfde0f19af75ea8f5fa8cba5fdc70f100cb311adad06eb1f38e3125",
+      "public_sha256": "f4f6585d8dfde0f19af75ea8f5fa8cba5fdc70f100cb311adad06eb1f38e3125",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/reader_alignment_audit.json",
+      "http_status": 200,
+      "bytes": 198,
+      "local_sha256": "ef3ffad89338f080f09fc6b1ee14ad73ea45e1e16dd2aa0fcb983a3af5d4c3df",
+      "public_sha256": "ef3ffad89338f080f09fc6b1ee14ad73ea45e1e16dd2aa0fcb983a3af5d4c3df",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/report_contract_verification.json",
+      "http_status": 200,
+      "bytes": 264,
+      "local_sha256": "483de1b56cd4a27cbbfb241567a5a114291c306f01fab7fb55a9fe1c752babf8",
+      "public_sha256": "483de1b56cd4a27cbbfb241567a5a114291c306f01fab7fb55a9fe1c752babf8",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-all-eth.csv",
+      "http_status": 200,
+      "bytes": 6798,
+      "local_sha256": "4679442d5d5dd4b01baa479a1694236e63f9027326954cc52128d41610336385",
+      "public_sha256": "4679442d5d5dd4b01baa479a1694236e63f9027326954cc52128d41610336385",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-all-usd.csv",
+      "http_status": 200,
+      "bytes": 6792,
+      "local_sha256": "d049e83337198cb90c5c94bf6cea4abd527e165acd0da711bbeb67c2e918bfc6",
+      "public_sha256": "d049e83337198cb90c5c94bf6cea4abd527e165acd0da711bbeb67c2e918bfc6",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-parents-eth.csv",
+      "http_status": 200,
+      "bytes": 3160,
+      "local_sha256": "6dc4d295a85dc976b5fdea9a50d4241de6609baf14a815eaa75d3a95b415c571",
+      "public_sha256": "6dc4d295a85dc976b5fdea9a50d4241de6609baf14a815eaa75d3a95b415c571",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-parents-usd.csv",
+      "http_status": 200,
+      "bytes": 3139,
+      "local_sha256": "45783dd1bdcfece92c93ea50ce474f5acf5e46670256573b5683601e64b99165",
+      "public_sha256": "45783dd1bdcfece92c93ea50ce474f5acf5e46670256573b5683601e64b99165",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-dedicated-eth.csv",
+      "http_status": 200,
+      "bytes": 4860,
+      "local_sha256": "5a7875b5ca6e15c4abf6f4d507c2f2f04d2e9205fe488bedafbf4291becfb6ea",
+      "public_sha256": "5a7875b5ca6e15c4abf6f4d507c2f2f04d2e9205fe488bedafbf4291becfb6ea",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-dedicated-usd.csv",
+      "http_status": 200,
+      "bytes": 4878,
+      "local_sha256": "df34ea8ea32a6ecafb2bc046eae80b8ef0eba0e865ea3fbf136aa9ff68864c1d",
+      "public_sha256": "df34ea8ea32a6ecafb2bc046eae80b8ef0eba0e865ea3fbf136aa9ff68864c1d",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-category-eth.csv",
+      "http_status": 200,
+      "bytes": 3080,
+      "local_sha256": "78d548bef242b09e8c74fee5090b7fe73363e72e93df057b7114bd9cbef860cf",
+      "public_sha256": "78d548bef242b09e8c74fee5090b7fe73363e72e93df057b7114bd9cbef860cf",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-category-usd.csv",
+      "http_status": 200,
+      "bytes": 2917,
+      "local_sha256": "cb7db66c270454a1cc56c7e06a5d138016e699795cd638008dedcd1f1d892cf8",
+      "public_sha256": "cb7db66c270454a1cc56c7e06a5d138016e699795cd638008dedcd1f1d892cf8",
+      "matches": true
+    }
+  ],
+  "merge_commit": "1b4cc1c46f428efc9a8cd148269f1749ae6d31ae",
+  "workflow_id": 37397873190,
+  "workflow_conclusion": "success",
+  "public_browser_carry_tooltip": "8 product rows; amounts and shares verified",
+  "public_browser_JS_errors": 0
+}

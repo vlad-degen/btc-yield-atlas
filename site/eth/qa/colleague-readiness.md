@@ -1,11 +1,17 @@
 # Colleague presentation readiness
 
-Reviewed 6 October 2026. Ready to present the measured scope at the frozen 2 October snapshot.
+Reviewed 6 October 2026. Ready to present the measured findings at the frozen 2 October snapshot.
 
-The main reader follows BTC's eight chapters and default disclosure hierarchy. Market has three main panels; Carry math has four. The carry chart contains eight examined whole-product books across 24 months, ETH/USD, small-book zoom, table and matched exports. Top 5 is Concrete, Liquid, YieldBasis WETH, Rocksolid and Liquity. Royco remains an additional deep chapter through Other carry. Each product has eight or nine visible operational steps, followed by control actors, income sources, actual debt, capital and ETH return, holders and dated events.
+The main reader follows BTC's eight chapters and disclosure hierarchy. The main narrative ends in conclusions, operating choices and source access. Repeated scenario tables, an empty Concrete holder chart and duplicated timelines have been removed from the reader; detailed evidence remains linked.
 
-The renewed coverage audit disposes of 299 material ETH-keyword pool candidates across 86 projects. YieldBasis's actual crvUSD debt and archived net book now feed carry. Its 332 direct LT addresses reconcile to total shares; the gauge is one direct holder. Two ZenSats routes are documented with unmeasured snapshot capital. Mixed allocator candidates remain explicit verification cases rather than invented carry allocations.
+The market panel reports overlapping protocol-family exposure. The headline 20.19 million ETH is the staking/restaking receipt layer. It is not global unique underlying capital. Exact native validator balances, omitted liquidity histories and unmeasured mechanism families are explicitly identified in the coverage matrix.
 
-All 47 research articles remain available through the grouped library. Original capture ledgers remain separate from derived reader datasets. Desktop and mobile at 390 and 319 px pass 46 recorded browser checks, including all-eight-product hovers, product mechanics, search, table, calculator stress cases, seven rate curves and JavaScript errors. Financial/export and original BTC preservation results accompany this note. The same final HTML hash binds the browser and source audits.
+The carry chart shows eight examined whole-product books over 24 months, with ETH/USD, small-book zoom, keyboard inspection and exports. Five have current traced financing routes. Rocksolid is Closing, TAU's debt is historical/dust, and Concrete's carry attribution remains unverified. Sample concentration is stated only for these books; it is not whole-market carry concentration.
 
-The report measures publicly evidenced scope. Whole-book claims are not unique global ETH, and historical weights do not establish complete carry cash profit. Debt, share value, simulated exits and paid proceeds remain distinct. The 732-day added benchmark remains separate from the original 730-day comparison.
+All six deep products have the same 30-day comparison against stETH. Whole-book change is not labelled organic carry P&L. Three traced financed lots show investment income less funding cost with the original transactions linked. Full product-level organic profit remains unmeasured where public evidence is insufficient.
+
+The 299-candidate discovery disposition screen is not an exhaustive strategy census. The ten-family coverage matrix states income, capital, history and return measurement limits separately. All 47 library articles remain available; earlier notes are clearly dated/scoped, and the current Briefing shares the reader's canonical dataset.
+
+The latest browser checks cover fixed headline behavior under filters, the eight-book tooltip, six product chapters, coverage disclosures, synchronized Briefing, mobile width and mobile chart inspection. Source audits verify arithmetic, exports, navigation and preservation of the original BTC files. Browser results are bound to the final HTML hash. Earlier browser records remain supporting historical QA rather than claims about this final build.
+
+The report is suitable for presenting its measured scope. It cannot support a claim that the whole global ETH yield market, every private allocation or complete carry P&L has been reconstructed.

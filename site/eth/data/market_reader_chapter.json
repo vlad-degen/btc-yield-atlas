@@ -10,74 +10,81 @@
   "categories": [
     {
       "id": "staking",
-      "label": "Staking / restaking",
+      "label": "Staking / restaking claims",
       "color": "#7c6ce7",
       "default": true,
       "scope": "Staking issuers and restaking collateral layers; overlapping claims, not unique ETH.",
       "how": "ETH earns validator income; restaking can add paid security-service income or incentives. Restaking claims can reuse an LST counted at its issuer.",
       "payer": "Consensus issuance, transaction tips and MEV; additional service payers and reward sponsors where evidenced.",
-      "yield_scope": "Issuer or product returns vary. A reward token or points balance is not automatically ETH income."
+      "yield_scope": "Issuer or product returns vary. A reward token or points balance is not automatically ETH income.",
+      "measurement": "Protocol-family exposure; not a measured strategy allocation or unique ETH capital."
     },
     {
       "id": "loops",
-      "label": "ETH loops",
+      "label": "Loop-focused vaults",
       "color": "#42a5a0",
       "default": true,
       "scope": "Examined ETH-debt loop products. Adapter exposure is not independently reconciled product NAV.",
       "how": "Borrow ETH against an LST, buy more staking exposure and retain the staking income left after ETH interest and costs.",
       "payer": "Underlying staking income less ETH borrowing costs; external rewards are separate.",
-      "yield_scope": "Compare ETH book share-price returns with unlevered staking on matched dates."
+      "yield_scope": "Compare ETH book share-price returns with unlevered staking on matched dates.",
+      "measurement": "Protocol-family exposure; not a measured strategy allocation or unique ETH capital."
     },
     {
       "id": "carry",
-      "label": "Dollar carry",
+      "label": "Carry-linked parents",
       "color": "#e07c49",
       "default": true,
       "scope": "Parent protocol exposures associated with examined dollar-carry designs. Whole parent exposure is not allocated carry equity.",
       "how": "Keep ETH-family collateral, borrow dollars and invest the dollars. Hybrid parents also contain loops and other positions; their full adapter balances are displayed as parents.",
       "payer": "Collateral staking income plus dollar investment income, less dollar funding and costs; rewards and credit exposures require lookthrough.",
-      "yield_scope": "Parent returns and current sleeve disclosures differ from measured carry profit or historical carry allocation."
+      "yield_scope": "Parent returns and current sleeve disclosures differ from measured carry profit or historical carry allocation.",
+      "measurement": "Protocol-family exposure; not a measured strategy allocation or unique ETH capital."
     },
     {
       "id": "basis",
-      "label": "Spot / short basis",
+      "label": "Basis / hedged ETH",
       "color": "#6a67be",
       "default": true,
       "scope": "ETH spot hedged by short derivatives. No basis exposure measured at T in the frozen adapter ledger.",
       "how": "Hold ETH spot or staking assets and short ETH derivatives to earn basis or funding while reducing price exposure.",
       "payer": "Derivative counterparties and any staking leg, after hedge, custody and margin costs.",
       "yield_scope": "A dollar return on hedged ETH backing is not an ETH-long staking return. The separate Ethena disclosure is dated after T.",
-      "empty_means": "Not measured at T, not zero market capital."
+      "empty_means": "Not measured at T, not zero market capital.",
+      "measurement": "Protocol-family exposure; not a measured strategy allocation or unique ETH capital."
     },
     {
       "id": "fixed_yield",
-      "label": "Fixed yield",
+      "label": "Fixed-yield venues",
       "color": "#5596cf",
       "default": true,
       "scope": "Selected ETH-related balances in yield markets; not outstanding PT principal or independently reconciled SY backing.",
       "how": "Buy a principal claim at a discount and redeem its accounting unit at maturity. Yield-token trading and liquidity provision are different positions.",
       "payer": "Underlying yield and the discount paid for a maturity claim; rewards and LP fees are separate.",
-      "yield_scope": "Yield depends on maturity, purchase price, accounting unit and exit route; a protocol-wide APY is not defined."
+      "yield_scope": "Yield depends on maturity, purchase price, accounting unit and exit route; a protocol-wide APY is not defined.",
+      "measurement": "Protocol-family exposure; not a measured strategy allocation or unique ETH capital."
     },
     {
       "id": "farming",
-      "label": "Farming / liquidity",
+      "label": "Liquidity / mixed vaults",
       "color": "#cf6e8a",
       "default": true,
       "scope": "ETH-family inventory in trading/bridge pools and managed protocols whose full strategy allocation is unverified.",
       "how": "Provide liquidity for fees or deploy ETH through managed strategies. Unclassified managed products stay in a separate subtype rather than being assigned to carry.",
       "payer": "Trading or transfer fees, strategy income and separately identified incentive sponsors.",
-      "yield_scope": "Pool rewards, fee income and mixed managed-product returns vary; token emissions and points need separate treatment."
+      "yield_scope": "Pool rewards, fee income and mixed managed-product returns vary; token emissions and points need separate treatment.",
+      "measurement": "Protocol-family exposure; not a measured strategy allocation or unique ETH capital."
     },
     {
       "id": "lending",
-      "label": "Lending markets",
+      "label": "Lending infrastructure",
       "color": "#e7ae54",
       "default": false,
       "scope": "ETH loan assets, lending receipts and collateral. Optional contextual layer; it overlaps issuer and managed-product balances.",
       "how": "Supply ETH or an ETH claim to a lending venue. Supplied assets may earn interest; collateral alone does not establish lender interest.",
       "payer": "Borrowers pay supply interest where a loan asset is lent. Collateral can separately retain staking income.",
-      "yield_scope": "ETH lending can earn material income. Default exclusion is an overlap/presentation choice, not a claim that ETH lending pays zero."
+      "yield_scope": "ETH lending can earn material income. Default exclusion is an overlap/presentation choice, not a claim that ETH lending pays zero.",
+      "measurement": "Protocol-family exposure; not a measured strategy allocation or unique ETH capital."
     },
     {
       "id": "cdp",
@@ -87,7 +94,8 @@
       "scope": "ETH-family collateral in stablecoin-issuance and self-repaying-debt systems, not evidence of reinvested dollar proceeds.",
       "how": "Post ETH or an ETH claim to issue a stablecoin or borrow against future yield. Income-bearing collateral may retain staking income.",
       "payer": "Collateral yield or specific protocol incentives where evidenced; stablecoin issuance alone creates no investment income.",
-      "yield_scope": "A CDP is not automatically carry. Dollar proceeds must be traced to an income-producing destination."
+      "yield_scope": "A CDP is not automatically carry. Dollar proceeds must be traced to an income-producing destination.",
+      "measurement": "Protocol-family exposure; not a measured strategy allocation or unique ETH capital."
     }
   ],
   "months": [
@@ -76534,6 +76542,7 @@
       }
     },
     "raw_protocol_rows": 85,
-    "reader_protocol_rows": 84
+    "reader_protocol_rows": 84,
+    "category_policy": "Group protocol families for discovery. Carry-linked parents and mixed vaults retain their entire reported ETH exposure; unmeasured sleeve weights are never inferred. Lending and CDP are optional financing layers. Historical categories use the same family mapping, not historical portfolio allocations."
   }
 }
