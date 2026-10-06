@@ -1,0 +1,850 @@
+{
+  "verified_at_UTC": "2026-10-06T22:49:45.975731+00:00",
+  "public_url": "https://vlad-degen.github.io/btc-yield-atlas/eth/",
+  "pull_request": "https://github.com/vlad-degen/btc-yield-atlas/pull/10",
+  "site_commit": "34a7b1dc8f094654fb21c7bd3c47e71bc8efdf93",
+  "financial_snapshot": "2026-10-02T23:59:59Z",
+  "all_public_responses_match": true,
+  "BTC_public_root_unchanged": true,
+  "published_parity_source_ledgers": 39,
+  "published_economic_source_files": 17,
+  "responses": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "bytes": 315358,
+      "local_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "public_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "matches": true
+    },
+    {
+      "path": "assets/favicon.svg",
+      "http_status": 200,
+      "bytes": 728,
+      "local_sha256": "50966b93a554b86374a916a515310d02fa29ca4387cb0563b2e5bce119c6928e",
+      "public_sha256": "50966b93a554b86374a916a515310d02fa29ca4387cb0563b2e5bce119c6928e",
+      "matches": true
+    },
+    {
+      "path": "eth/index.html",
+      "http_status": 200,
+      "bytes": 12732250,
+      "local_sha256": "8d4608fee74481702197d6896dac8483d6c0aeab51000d76b2e2a4f2d346644d",
+      "public_sha256": "8d4608fee74481702197d6896dac8483d6c0aeab51000d76b2e2a4f2d346644d",
+      "matches": true
+    },
+    {
+      "path": "eth/exhibits.html",
+      "http_status": 200,
+      "bytes": 12780734,
+      "local_sha256": "637e8558fbb6e091bf1edb5f513c37e294dfcf6f032833b0b88c3686b29d0dac",
+      "public_sha256": "637e8558fbb6e091bf1edb5f513c37e294dfcf6f032833b0b88c3686b29d0dac",
+      "matches": true
+    },
+    {
+      "path": "eth/library/index.html",
+      "http_status": 200,
+      "bytes": 6155,
+      "local_sha256": "71dc9d4f4174a87b6c33d8d62d6873b89ac48e1649910264d6b8e464381d4cca",
+      "public_sha256": "71dc9d4f4174a87b6c33d8d62d6873b89ac48e1649910264d6b8e464381d4cca",
+      "matches": true
+    },
+    {
+      "path": "eth/library/BRIEFING.html",
+      "http_status": 200,
+      "bytes": 22072,
+      "local_sha256": "a82bb8eb53d6a5b53c0ee2917067aa6ef4210f419220fb0764625ce6e274a757",
+      "public_sha256": "a82bb8eb53d6a5b53c0ee2917067aa6ef4210f419220fb0764625ce6e274a757",
+      "matches": true
+    },
+    {
+      "path": "eth/library/MARKET-STRUCTURE.html",
+      "http_status": 200,
+      "bytes": 7274,
+      "local_sha256": "592959785f8ce87ebde60fcf3c8c318b122074291a01c6cff8eb11191e8f66b8",
+      "public_sha256": "592959785f8ce87ebde60fcf3c8c318b122074291a01c6cff8eb11191e8f66b8",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-CATEGORY.html",
+      "http_status": 200,
+      "bytes": 8812,
+      "local_sha256": "a7de6c3fdc4c6f9f7537397102aa0cf22419ef8a8d9dd54499181a386eca209e",
+      "public_sha256": "a7de6c3fdc4c6f9f7537397102aa0cf22419ef8a8d9dd54499181a386eca209e",
+      "matches": true
+    },
+    {
+      "path": "eth/library/MARKET-COVERAGE.html",
+      "http_status": 200,
+      "bytes": 14822,
+      "local_sha256": "bc53b6026e55b9a86a7dec4add63d100d645ea6d1180a4e1ef0b1f4c0e61ab03",
+      "public_sha256": "bc53b6026e55b9a86a7dec4add63d100d645ea6d1180a4e1ef0b1f4c0e61ab03",
+      "matches": true
+    },
+    {
+      "path": "eth/library/PRODUCT-SELECTION.html",
+      "http_status": 200,
+      "bytes": 2644,
+      "local_sha256": "3cd451ee7dff792555188ef6d14cbcd7db8131b9d52d5d9c3d78c5f56593b687",
+      "public_sha256": "3cd451ee7dff792555188ef6d14cbcd7db8131b9d52d5d9c3d78c5f56593b687",
+      "matches": true
+    },
+    {
+      "path": "eth/data/report_contract.json",
+      "http_status": 200,
+      "bytes": 22432,
+      "local_sha256": "1e33960b250ee8e3d907473f4aa968ba043c8c6b6d44748484d2cc5588458156",
+      "public_sha256": "1e33960b250ee8e3d907473f4aa968ba043c8c6b6d44748484d2cc5588458156",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-common-30d.csv",
+      "http_status": 200,
+      "bytes": 2071,
+      "local_sha256": "c5d659b204fb9265f6b4f8a12f9b6f5ecafdf3639c7c96b631ba3a8f9f93b9a1",
+      "public_sha256": "c5d659b204fb9265f6b4f8a12f9b6f5ecafdf3639c7c96b631ba3a8f9f93b9a1",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-status-and-capital.csv",
+      "http_status": 200,
+      "bytes": 2640,
+      "local_sha256": "b7119277a8135289face21c166570b7d2d61169517d3c0e8f4655fd38b0f0242",
+      "public_sha256": "b7119277a8135289face21c166570b7d2d61169517d3c0e8f4655fd38b0f0242",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/browser-checks.json",
+      "http_status": 200,
+      "bytes": 1648,
+      "local_sha256": "7f08988ee07206e5952da9eedf9c54659e28acfd581a270d364bb01ddab36de3",
+      "public_sha256": "7f08988ee07206e5952da9eedf9c54659e28acfd581a270d364bb01ddab36de3",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/reader_alignment_audit.json",
+      "http_status": 200,
+      "bytes": 198,
+      "local_sha256": "3617ca51100bd4cc26a2b45f316a0e43e7afaebec8aeb90513493dce058e6712",
+      "public_sha256": "3617ca51100bd4cc26a2b45f316a0e43e7afaebec8aeb90513493dce058e6712",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/report_contract_verification.json",
+      "http_status": 200,
+      "bytes": 264,
+      "local_sha256": "702673427b551a3eb087ee4a926252cc593c85cf1b2e5cf015ad587637ca1bf5",
+      "public_sha256": "702673427b551a3eb087ee4a926252cc593c85cf1b2e5cf015ad587637ca1bf5",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-all-eth.csv",
+      "http_status": 200,
+      "bytes": 11184,
+      "local_sha256": "acf8b4cb6e5500cbb401006d28eb0150ee213f17256548c81e84cc345a48cba1",
+      "public_sha256": "acf8b4cb6e5500cbb401006d28eb0150ee213f17256548c81e84cc345a48cba1",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-all-usd.csv",
+      "http_status": 200,
+      "bytes": 11167,
+      "local_sha256": "166483d88d0cef8e2fd951b69bcc5688888fc6284005cb020924eccccfd67ec7",
+      "public_sha256": "166483d88d0cef8e2fd951b69bcc5688888fc6284005cb020924eccccfd67ec7",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-parents-eth.csv",
+      "http_status": 200,
+      "bytes": 4861,
+      "local_sha256": "f020448f25d5e943feb8652a07b099583f6fbb85892865996069d4194b5798cc",
+      "public_sha256": "f020448f25d5e943feb8652a07b099583f6fbb85892865996069d4194b5798cc",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-parents-usd.csv",
+      "http_status": 200,
+      "bytes": 4844,
+      "local_sha256": "eadd49e7e398f29f71e792d3763c176fcf748ea40c8afdd60f8122633f0e9c59",
+      "public_sha256": "eadd49e7e398f29f71e792d3763c176fcf748ea40c8afdd60f8122633f0e9c59",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-dedicated-eth.csv",
+      "http_status": 200,
+      "bytes": 7705,
+      "local_sha256": "ede872e8a5b9e783dbb81d07a5f57db1dc07899f61258df93a1084fe23a01d3d",
+      "public_sha256": "ede872e8a5b9e783dbb81d07a5f57db1dc07899f61258df93a1084fe23a01d3d",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-dedicated-usd.csv",
+      "http_status": 200,
+      "bytes": 7694,
+      "local_sha256": "e36fea7154627bc0eb32abaf87f9a8d27fe2f2b23bfe9829c78ff1804286dcb9",
+      "public_sha256": "e36fea7154627bc0eb32abaf87f9a8d27fe2f2b23bfe9829c78ff1804286dcb9",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-category-eth.csv",
+      "http_status": 200,
+      "bytes": 3080,
+      "local_sha256": "78d548bef242b09e8c74fee5090b7fe73363e72e93df057b7114bd9cbef860cf",
+      "public_sha256": "78d548bef242b09e8c74fee5090b7fe73363e72e93df057b7114bd9cbef860cf",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-history-category-usd.csv",
+      "http_status": 200,
+      "bytes": 2917,
+      "local_sha256": "cb7db66c270454a1cc56c7e06a5d138016e699795cd638008dedcd1f1d892cf8",
+      "public_sha256": "cb7db66c270454a1cc56c7e06a5d138016e699795cd638008dedcd1f1d892cf8",
+      "matches": true
+    },
+    {
+      "path": "eth/data/finalization_reconstruction.json",
+      "http_status": 200,
+      "bytes": 380668,
+      "local_sha256": "5a98fa419572fc60e74a419d40ec7e75a69487138c55916a7dbcbc139a5057a0",
+      "public_sha256": "5a98fa419572fc60e74a419d40ec7e75a69487138c55916a7dbcbc139a5057a0",
+      "matches": true
+    },
+    {
+      "path": "eth/data/finalization_financial_ledgers.json",
+      "http_status": 200,
+      "bytes": 54517,
+      "local_sha256": "f88ba9263a044ee96ed912504b523efc508e2966a90fb2acdf5ceea87a9b5fbb",
+      "public_sha256": "f88ba9263a044ee96ed912504b523efc508e2966a90fb2acdf5ceea87a9b5fbb",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry-flow-adjusted-ledgers.csv",
+      "http_status": 200,
+      "bytes": 943,
+      "local_sha256": "16eec9ead03cc01003ba1b79a63ae7308872f20b6f3c38357c12f63b1aeea7a2",
+      "public_sha256": "16eec9ead03cc01003ba1b79a63ae7308872f20b6f3c38357c12f63b1aeea7a2",
+      "matches": true
+    },
+    {
+      "path": "eth/data/native-staking-observations.csv",
+      "http_status": 200,
+      "bytes": 1213,
+      "local_sha256": "28a10931b57d0971324a10694f5a4d82fbb6714cf9de5399297bb9b3dcb91e7d",
+      "public_sha256": "28a10931b57d0971324a10694f5a4d82fbb6714cf9de5399297bb9b3dcb91e7d",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/finalization_verification.json",
+      "http_status": 200,
+      "bytes": 10506,
+      "local_sha256": "30bcf745fb812cc803bf0a654b61d8eee79517b97a7050ca0aedf87304d81f6a",
+      "public_sha256": "30bcf745fb812cc803bf0a654b61d8eee79517b97a7050ca0aedf87304d81f6a",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-MATH.html",
+      "http_status": 200,
+      "bytes": 52089,
+      "local_sha256": "1e5c7c7d3d71b0cb195b455e7a01cf83e0c9653be76b3aa0e515dfcf78345264",
+      "public_sha256": "1e5c7c7d3d71b0cb195b455e7a01cf83e0c9653be76b3aa0e515dfcf78345264",
+      "matches": true
+    },
+    {
+      "path": "eth/library/CARRY-PRODUCTS.html",
+      "http_status": 200,
+      "bytes": 66805,
+      "local_sha256": "565ab09203c25b8db524a5b3a20e46043a191b76caa3ebc7e60f02c4a8d65760",
+      "public_sha256": "565ab09203c25b8db524a5b3a20e46043a191b76caa3ebc7e60f02c4a8d65760",
+      "matches": true
+    },
+    {
+      "path": "eth/dossiers/pendle-pt.html",
+      "http_status": 200,
+      "bytes": 7919,
+      "local_sha256": "138a6ba16bcf76994acfa46b2219a9d26935bc1decf6f795406006c92c10198f",
+      "public_sha256": "138a6ba16bcf76994acfa46b2219a9d26935bc1decf6f795406006c92c10198f",
+      "matches": true
+    },
+    {
+      "path": "eth/library/PRODUCT-EVOLUTION.html",
+      "http_status": 200,
+      "bytes": 34702,
+      "local_sha256": "c51082b3c2875c2eaa878ed679b6300bd9bbb245c051cf40ca768eb219ed3c08",
+      "public_sha256": "c51082b3c2875c2eaa878ed679b6300bd9bbb245c051cf40ca768eb219ed3c08",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_measurements.json",
+      "http_status": 200,
+      "bytes": 2647556,
+      "local_sha256": "e95a3e77d570c44e66c4c6d07427e43e9de6d6de12ed7b17da981b7823e09904",
+      "public_sha256": "e95a3e77d570c44e66c4c6d07427e43e9de6d6de12ed7b17da981b7823e09904",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/parity_depth_verification.json",
+      "http_status": 200,
+      "bytes": 43904,
+      "local_sha256": "a3f2cac4d44ad5f498c1f943a43af7747fd7aef377148d7bda37ae4882a45b4d",
+      "public_sha256": "a3f2cac4d44ad5f498c1f943a43af7747fd7aef377148d7bda37ae4882a45b4d",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/substantive-browser-checks.json",
+      "http_status": 200,
+      "bytes": 850,
+      "local_sha256": "47494b42217d99fd5777ce2c7e7d91590de501d49ba4535de20307366eee4016",
+      "public_sha256": "47494b42217d99fd5777ce2c7e7d91590de501d49ba4535de20307366eee4016",
+      "matches": true
+    },
+    {
+      "path": "eth/data/reader_product_chapters.json",
+      "http_status": 200,
+      "bytes": 579330,
+      "local_sha256": "890fde3d49e1d92c0b2f0046d3083ba4d3e4db425cfe1b7bd17dabd0ddf9cdcc",
+      "public_sha256": "890fde3d49e1d92c0b2f0046d3083ba4d3e4db425cfe1b7bd17dabd0ddf9cdcc",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity-savETH-holders.csv",
+      "http_status": 200,
+      "bytes": 14598,
+      "local_sha256": "6bbb9ef9f876599a5c2eb85f8daacfc66d7597d80428cc8f5a906ee1a5167758",
+      "public_sha256": "6bbb9ef9f876599a5c2eb85f8daacfc66d7597d80428cc8f5a906ee1a5167758",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity-ybGauge-holders.csv",
+      "http_status": 200,
+      "bytes": 26795,
+      "local_sha256": "2a0f63ec63128525795c1e522fcce29cc7db5881b267922f00c59eabf05b30cc",
+      "public_sha256": "2a0f63ec63128525795c1e522fcce29cc7db5881b267922f00c59eabf05b30cc",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity-Liquid-Cash-beneficiaries.csv",
+      "http_status": 200,
+      "bytes": 1309724,
+      "local_sha256": "78101a7cf436c894543acd14bf9cd574ca9a4520ac096ea3e3880bb9efa92ebf",
+      "public_sha256": "78101a7cf436c894543acd14bf9cd574ca9a4520ac096ea3e3880bb9efa92ebf",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity-Liquid-monthly-debt.csv",
+      "http_status": 200,
+      "bytes": 18790,
+      "local_sha256": "6555cf0b0e26aab349fdfcc7b62d67a2968531a5c8e1811dc64a5eb873145f79",
+      "public_sha256": "6555cf0b0e26aab349fdfcc7b62d67a2968531a5c8e1811dc64a5eb873145f79",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity-Liquid-cohort-sensitivity.csv",
+      "http_status": 200,
+      "bytes": 1300,
+      "local_sha256": "8f300971460de9b0c723b40beda31bb8d08343e97a59f5c0c2656dce1bf7468d",
+      "public_sha256": "8f300971460de9b0c723b40beda31bb8d08343e97a59f5c0c2656dce1bf7468d",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_extra_sources.json",
+      "http_status": 200,
+      "bytes": 2807,
+      "local_sha256": "6858ce9eaee9901ef2ad80152b195d8e165c268e969edd56a53a2c6e7095b274",
+      "public_sha256": "6858ce9eaee9901ef2ad80152b195d8e165c268e969edd56a53a2c6e7095b274",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_fee_receipts.json",
+      "http_status": 200,
+      "bytes": 380831,
+      "local_sha256": "2c1c1a43e3e9eae91137e621cc17279d44f1927202eb9d004654b612128e131b",
+      "public_sha256": "2c1c1a43e3e9eae91137e621cc17279d44f1927202eb9d004654b612128e131b",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_fees_owners.json",
+      "http_status": 200,
+      "bytes": 24402,
+      "local_sha256": "670e6ed96331cb1abfdc79027d2efe9440b4c50cf0c4c91bac208f2e45320aaa",
+      "public_sha256": "670e6ed96331cb1abfdc79027d2efe9440b4c50cf0c4c91bac208f2e45320aaa",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_holder_bindings.json",
+      "http_status": 200,
+      "bytes": 259403,
+      "local_sha256": "17543e7c847151e4b31763f4b3128799321c7a6c110cda775f7a973be357a1bb",
+      "public_sha256": "17543e7c847151e4b31763f4b3128799321c7a6c110cda775f7a973be357a1bb",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_holder_checks.json",
+      "http_status": 200,
+      "bytes": 1146340,
+      "local_sha256": "3bfd6da21f1d0976d5e85f01218ed545470847bd7ab302e7acfd05469179de0a",
+      "public_sha256": "3bfd6da21f1d0976d5e85f01218ed545470847bd7ab302e7acfd05469179de0a",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_holder_transfers.json",
+      "http_status": 200,
+      "bytes": 2149415,
+      "local_sha256": "95aba1c7f6627cf1349c1f156acbd8b73e5b91063e1be1f77b9a55235d445e4b",
+      "public_sha256": "95aba1c7f6627cf1349c1f156acbd8b73e5b91063e1be1f77b9a55235d445e4b",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_lending_events.json",
+      "http_status": 200,
+      "bytes": 297262,
+      "local_sha256": "84056ec9c0c3023d16d8373884db426e29b50eaa17d2b472a129ca8750a54d1e",
+      "public_sha256": "84056ec9c0c3023d16d8373884db426e29b50eaa17d2b472a129ca8750a54d1e",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_monthly_debt.json",
+      "http_status": 200,
+      "bytes": 429318,
+      "local_sha256": "4f80a78ad247d4e73bc25d4780073ea0dd2c405ee5d1233024dea94c076947e2",
+      "public_sha256": "4f80a78ad247d4e73bc25d4780073ea0dd2c405ee5d1233024dea94c076947e2",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_and_seed_sources.json",
+      "http_status": 200,
+      "bytes": 1541,
+      "local_sha256": "f0a72818e5ea3b87f453cf47b671b6f87ff4fac0bc225f0929370a195dc961b0",
+      "public_sha256": "f0a72818e5ea3b87f453cf47b671b6f87ff4fac0bc225f0929370a195dc961b0",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_asset.json",
+      "http_status": 200,
+      "bytes": 11580,
+      "local_sha256": "bd248c3df911939b74c58402eeb7145a9210bee5eb2146a3d5c6c34693c56c4f",
+      "public_sha256": "bd248c3df911939b74c58402eeb7145a9210bee5eb2146a3d5c6c34693c56c4f",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_beneficiary_events.json",
+      "http_status": 200,
+      "bytes": 11000684,
+      "local_sha256": "549139b9d10b26247fe19b9b41e6629e28626153f4212e3c98a31f651f281251",
+      "public_sha256": "549139b9d10b26247fe19b9b41e6629e28626153f4212e3c98a31f651f281251",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_hub.json",
+      "http_status": 200,
+      "bytes": 3465,
+      "local_sha256": "840c0836d6cf22eb68982994006378c6cca45364642f15814f7a1c07f5a94375",
+      "public_sha256": "840c0836d6cf22eb68982994006378c6cca45364642f15814f7a1c07f5a94375",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_interface.json",
+      "http_status": 200,
+      "bytes": 495,
+      "local_sha256": "df1c2bf59df01cfd3b8b6ae3fdaf05379f9a441f73262ca480c1b0a776bda450",
+      "public_sha256": "df1c2bf59df01cfd3b8b6ae3fdaf05379f9a441f73262ca480c1b0a776bda450",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_liquidations.json",
+      "http_status": 200,
+      "bytes": 1705,
+      "local_sha256": "f6e2dceb59b196c7687a0f9bc16f406386e42b9880759242c77a76036613cf08",
+      "public_sha256": "f6e2dceb59b196c7687a0f9bc16f406386e42b9880759242c77a76036613cf08",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_reserves.json",
+      "http_status": 200,
+      "bytes": 21021,
+      "local_sha256": "b5ff0cb8e72240865bf28eed6b3d0de1f3dd584c19e0df0b887e19692845c882",
+      "public_sha256": "b5ff0cb8e72240865bf28eed6b3d0de1f3dd584c19e0df0b887e19692845c882",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_spoke_interfaces.json",
+      "http_status": 200,
+      "bytes": 989,
+      "local_sha256": "138a71b2d161fec43a30a2337dbe5582074bc7a8f36b7dc6212f70e425d28ad8",
+      "public_sha256": "138a71b2d161fec43a30a2337dbe5582074bc7a8f36b7dc6212f70e425d28ad8",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_spokes.json",
+      "http_status": 200,
+      "bytes": 4146,
+      "local_sha256": "5fbeacc45c80144dce404bd2088f28b0d069afbcd1292a801d5005d021e3ce83",
+      "public_sha256": "5fbeacc45c80144dce404bd2088f28b0d069afbcd1292a801d5005d021e3ce83",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_op_user_balances.json",
+      "http_status": 200,
+      "bytes": 21637666,
+      "local_sha256": "4e4e37f2fb71d80019103237e2338351bddb42e68276e2ca95cf21b81162d82e",
+      "public_sha256": "4e4e37f2fb71d80019103237e2338351bddb42e68276e2ca95cf21b81162d82e",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_prime_rate.json",
+      "http_status": 200,
+      "bytes": 2930,
+      "local_sha256": "bccb97241ceceede52ba0a464eb57d83dafc7e9084fa8c99340ce4bc691bdc8e",
+      "public_sha256": "bccb97241ceceede52ba0a464eb57d83dafc7e9084fa8c99340ce4bc691bdc8e",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_reserve_tokens.json",
+      "http_status": 200,
+      "bytes": 44433,
+      "local_sha256": "325e3d713034c68a685131544a98f595695a69909e56aac29a97340cc9169fce",
+      "public_sha256": "325e3d713034c68a685131544a98f595695a69909e56aac29a97340cc9169fce",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_sav_gearbox_owner.json",
+      "http_status": 200,
+      "bytes": 1575,
+      "local_sha256": "2234d3214258ea8ffd7e59938eefd22dc407df23602ed2051dad0248824cea0d",
+      "public_sha256": "2234d3214258ea8ffd7e59938eefd22dc407df23602ed2051dad0248824cea0d",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_sav_holder_bindings.json",
+      "http_status": 200,
+      "bytes": 118082,
+      "local_sha256": "537543ed95271ad04f22a9d9a58f72610ae6675165125c69bb2eda74e46c0df7",
+      "public_sha256": "537543ed95271ad04f22a9d9a58f72610ae6675165125c69bb2eda74e46c0df7",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_sav_holders.json",
+      "http_status": 200,
+      "bytes": 3309,
+      "local_sha256": "f7d3816dd25f631713f93a4f50f48392c0b486e1e2934c77050c77b3ec9f113c",
+      "public_sha256": "f7d3816dd25f631713f93a4f50f48392c0b486e1e2934c77050c77b3ec9f113c",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_sav_morpho_events.json",
+      "http_status": 200,
+      "bytes": 142614,
+      "local_sha256": "bc388b4cbb2ab6b89081f75aa5b1b7463a7a01645e30d1e9ff10dd70fd2cc64a",
+      "public_sha256": "bc388b4cbb2ab6b89081f75aa5b1b7463a7a01645e30d1e9ff10dd70fd2cc64a",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_sav_morpho_markets.json",
+      "http_status": 200,
+      "bytes": 685,
+      "local_sha256": "43dee13ab6a8def1ca26d3e7419bcec420ab54a3706471d68626e45628dd82ce",
+      "public_sha256": "43dee13ab6a8def1ca26d3e7419bcec420ab54a3706471d68626e45628dd82ce",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_sav_morpho_positions.json",
+      "http_status": 200,
+      "bytes": 57576,
+      "local_sha256": "94af57a68dc25f0d59847909bdf67b61b2089c63e926e11f77a1e6dd727677a8",
+      "public_sha256": "94af57a68dc25f0d59847909bdf67b61b2089c63e926e11f77a1e6dd727677a8",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_sav_routes.json",
+      "http_status": 200,
+      "bytes": 6216,
+      "local_sha256": "d13870df93582875636209f21be70ecf2f622cde05dcfc3d0c662206d0d5c708",
+      "public_sha256": "d13870df93582875636209f21be70ecf2f622cde05dcfc3d0c662206d0d5c708",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_sources.json",
+      "http_status": 200,
+      "bytes": 20429,
+      "local_sha256": "0aae8bae3433cf908a5dad658e672a6e06fe4928228d5bc44e827c42ccf0d16f",
+      "public_sha256": "0aae8bae3433cf908a5dad658e672a6e06fe4928228d5bc44e827c42ccf0d16f",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_spark_debt.json",
+      "http_status": 200,
+      "bytes": 1559,
+      "local_sha256": "a8fa47726a8f339e13fa8fd30e6a22b5f4fce1e38e799ceeb4c1706eb9fda108",
+      "public_sha256": "a8fa47726a8f339e13fa8fd30e6a22b5f4fce1e38e799ceeb4c1706eb9fda108",
+      "matches": true
+    },
+    {
+      "path": "eth/data/parity_depth_yb_v3_source.json",
+      "http_status": 200,
+      "bytes": 439,
+      "local_sha256": "c75f8a800e38f69cadee5cfcd0659707ff01d36b11c236637d070acf3bfb7739",
+      "public_sha256": "c75f8a800e38f69cadee5cfcd0659707ff01d36b11c236637d070acf3bfb7739",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry_attribution_ledger.json",
+      "http_status": 200,
+      "bytes": 425508,
+      "local_sha256": "c5d6f482db89bcd83baa21e450707a23d090725693334420c51e1c980792ea76",
+      "public_sha256": "c5d6f482db89bcd83baa21e450707a23d090725693334420c51e1c980792ea76",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry_attribution_tranches.json",
+      "http_status": 200,
+      "bytes": 105963,
+      "local_sha256": "240a829da75ea776960b4ee61bc5840a8488674ee3f9607f9300221d4f9d186e",
+      "public_sha256": "240a829da75ea776960b4ee61bc5840a8488674ee3f9607f9300221d4f9d186e",
+      "matches": true
+    },
+    {
+      "path": "eth/data/presentation_analysis.json",
+      "http_status": 200,
+      "bytes": 71257,
+      "local_sha256": "2d1a213ad3e7a92ff2c5f397d46b3c29c03c1747897b309f566c9c51794dfc0c",
+      "public_sha256": "2d1a213ad3e7a92ff2c5f397d46b3c29c03c1747897b309f566c9c51794dfc0c",
+      "matches": true
+    },
+    {
+      "path": "eth/data/etherfi_parameter_events.json",
+      "http_status": 200,
+      "bytes": 47407,
+      "local_sha256": "3a6e670b286d6947bd6442bedf45e3df9bcc7ac14f152bc80013ac9d8fabab98",
+      "public_sha256": "3a6e670b286d6947bd6442bedf45e3df9bcc7ac14f152bc80013ac9d8fabab98",
+      "matches": true
+    },
+    {
+      "path": "eth/data/etherfi_verified_metrics.json",
+      "http_status": 200,
+      "bytes": 2859,
+      "local_sha256": "230b5cf41ea47e057a9c97e5d17053ddb8a41b82421de112ed535edbe33d7e71",
+      "public_sha256": "230b5cf41ea47e057a9c97e5d17053ddb8a41b82421de112ed535edbe33d7e71",
+      "matches": true
+    },
+    {
+      "path": "eth/data/yb_LT_holders_T.json",
+      "http_status": 200,
+      "bytes": 37099,
+      "local_sha256": "bf3f232d6b01ba77423ea2ab08d883ab6a129e77c9806439ea8dc5fab6f4f166",
+      "public_sha256": "bf3f232d6b01ba77423ea2ab08d883ab6a129e77c9806439ea8dc5fab6f4f166",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry_attribution_states.json",
+      "http_status": 200,
+      "bytes": 5981507,
+      "local_sha256": "a224c70284809c77e21a758c2610281303f5e7cfc8f5e933c0ab773c1f4d9d43",
+      "public_sha256": "a224c70284809c77e21a758c2610281303f5e7cfc8f5e933c0ab773c1f4d9d43",
+      "matches": true
+    },
+    {
+      "path": "eth/data/pilot_details_T.json",
+      "http_status": 200,
+      "bytes": 20902,
+      "local_sha256": "55c4472d0df51cf3d8e6eabf410ca9e802532eb0f9459e27325eaf3af77a1c93",
+      "public_sha256": "55c4472d0df51cf3d8e6eabf410ca9e802532eb0f9459e27325eaf3af77a1c93",
+      "matches": true
+    },
+    {
+      "path": "eth/data/carry_economics_chapter.json",
+      "http_status": 200,
+      "bytes": 149898,
+      "local_sha256": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
+      "public_sha256": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
+      "matches": true
+    },
+    {
+      "path": "eth/library/ECONOMIC-ANSWERS.html",
+      "http_status": 200,
+      "bytes": 8955,
+      "local_sha256": "490de7cfbc72788a60744095b31a31046f9ae5aaf62137edef1a633887638eef",
+      "public_sha256": "490de7cfbc72788a60744095b31a31046f9ae5aaf62137edef1a633887638eef",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/economic-browser-checks.json",
+      "http_status": 200,
+      "bytes": 1703,
+      "local_sha256": "e93206f1babd093d30d82d32405bcd5b3772ed05ec3f41cac3338e9171faeae8",
+      "public_sha256": "e93206f1babd093d30d82d32405bcd5b3772ed05ec3f41cac3338e9171faeae8",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/economic_verification.json",
+      "http_status": 200,
+      "bytes": 301,
+      "local_sha256": "6dea9f6496ce4aa0c696fec3349b1e288372a680ba15fabc5bf60edd41c51388",
+      "public_sha256": "6dea9f6496ce4aa0c696fec3349b1e288372a680ba15fabc5bf60edd41c51388",
+      "matches": true
+    },
+    {
+      "path": "eth/qa/colleague-readiness.md",
+      "http_status": 200,
+      "bytes": 2672,
+      "local_sha256": "1e026c20741636e0a3166dacf03af2738495712424c98c5491357c4c5a3ff2b8",
+      "public_sha256": "1e026c20741636e0a3166dacf03af2738495712424c98c5491357c4c5a3ff2b8",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic-dollar-loans.csv",
+      "http_status": 200,
+      "bytes": 172708,
+      "local_sha256": "74eb3328ed41e0a80713467e0107bb0933bff8cd21aab778b231eff14d89c092",
+      "public_sha256": "74eb3328ed41e0a80713467e0107bb0933bff8cd21aab778b231eff14d89c092",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic-carry-history.csv",
+      "http_status": 200,
+      "bytes": 2947,
+      "local_sha256": "1543a49dafd0999de92694337a9ee1c4282357ad878a42416cb4a1a42e154fb6",
+      "public_sha256": "1543a49dafd0999de92694337a9ee1c4282357ad878a42416cb4a1a42e154fb6",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_aave_debt_history.json",
+      "http_status": 200,
+      "bytes": 2804481,
+      "local_sha256": "ece00ee7f306aa0fa31d102188b66e80a9c4b6ddf561e02771277bfe938c811f",
+      "public_sha256": "ece00ee7f306aa0fa31d102188b66e80a9c4b6ddf561e02771277bfe938c811f",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_morpho_history.json",
+      "http_status": 200,
+      "bytes": 4684715,
+      "local_sha256": "5bdbe45cc9510e383a18971c938083cd51458a13596b548c78a7e435f2d11e04",
+      "public_sha256": "5bdbe45cc9510e383a18971c938083cd51458a13596b548c78a7e435f2d11e04",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_upshift_census_sources.json",
+      "http_status": 200,
+      "bytes": 2339,
+      "local_sha256": "666d73227b58f671aa27c809ab183ea52eaebd887cd1e2fe2a238a81307346b4",
+      "public_sha256": "666d73227b58f671aa27c809ab183ea52eaebd887cd1e2fe2a238a81307346b4",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_upshift_interfaces.json",
+      "http_status": 200,
+      "bytes": 987,
+      "local_sha256": "89a889475231936467d50a73bf21397c97b485237019f23919f6479a43f648a0",
+      "public_sha256": "89a889475231936467d50a73bf21397c97b485237019f23919f6479a43f648a0",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_verification.json",
+      "http_status": 200,
+      "bytes": 301,
+      "local_sha256": "6dea9f6496ce4aa0c696fec3349b1e288372a680ba15fabc5bf60edd41c51388",
+      "public_sha256": "6dea9f6496ce4aa0c696fec3349b1e288372a680ba15fabc5bf60edd41c51388",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_questions.json",
+      "http_status": 200,
+      "bytes": 576969,
+      "local_sha256": "787508f243a2ba1dd56871dfcbc30760056379c86dbb8789ee38d40438fa82d5",
+      "public_sha256": "787508f243a2ba1dd56871dfcbc30760056379c86dbb8789ee38d40438fa82d5",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_upshift_impl_sources.json",
+      "http_status": 200,
+      "bytes": 1490,
+      "local_sha256": "624a00ebd64ee0f6610264db7bf18d89d8e1e0821e5afe3677867cc58bc0534f",
+      "public_sha256": "624a00ebd64ee0f6610264db7bf18d89d8e1e0821e5afe3677867cc58bc0534f",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_reserves_history.json",
+      "http_status": 200,
+      "bytes": 1640812,
+      "local_sha256": "5a899ca529b7e7322cee919438cb630dffcf4d481d3cab04ac58568da2e76859",
+      "public_sha256": "5a899ca529b7e7322cee919438cb630dffcf4d481d3cab04ac58568da2e76859",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_aave_legs.json",
+      "http_status": 200,
+      "bytes": 4375,
+      "local_sha256": "1548c78dce65bd18bbcb1bb9354c3f4b24a7518d78644dc7be22b94856f0b63a",
+      "public_sha256": "1548c78dce65bd18bbcb1bb9354c3f4b24a7518d78644dc7be22b94856f0b63a",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_upshift_binding_T.json",
+      "http_status": 200,
+      "bytes": 518436,
+      "local_sha256": "586da9bda5614b1ce8f0b45f6a3b43c11fa253de12a54e6ee726cf116eb2911d",
+      "public_sha256": "586da9bda5614b1ce8f0b45f6a3b43c11fa253de12a54e6ee726cf116eb2911d",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_morpho_rates_retry_1.json",
+      "http_status": 200,
+      "bytes": 61860,
+      "local_sha256": "4b4ab8aadf26fb770ab0c8de65a5a26f73319dbfac94c02ba0cee1a0ac487c1a",
+      "public_sha256": "4b4ab8aadf26fb770ab0c8de65a5a26f73319dbfac94c02ba0cee1a0ac487c1a",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_trove_source.json",
+      "http_status": 200,
+      "bytes": 1036,
+      "local_sha256": "bbf2d029a9df9b899f793417a050c82c6057385da989e73401ec9b34f314d1ae",
+      "public_sha256": "bbf2d029a9df9b899f793417a050c82c6057385da989e73401ec9b34f314d1ae",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_upshift_eth_registry.json",
+      "http_status": 200,
+      "bytes": 14586,
+      "local_sha256": "d06633ef7fd6ddad6dab2a16390a03afd223291fbf683c698b31d299a620b2df",
+      "public_sha256": "d06633ef7fd6ddad6dab2a16390a03afd223291fbf683c698b31d299a620b2df",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_upshift_positions_T_retry_1.json",
+      "http_status": 200,
+      "bytes": 895757,
+      "local_sha256": "0caa52e126a8b518bad721b28f675e69ead03b5ed54195965a5aa06b17c3a4b1",
+      "public_sha256": "0caa52e126a8b518bad721b28f675e69ead03b5ed54195965a5aa06b17c3a4b1",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_morpho_rates.json",
+      "http_status": 200,
+      "bytes": 2250410,
+      "local_sha256": "d8c785e138568c03aaf48fb06a892418ceba13406ea030d449058989e6cdbef6",
+      "public_sha256": "d8c785e138568c03aaf48fb06a892418ceba13406ea030d449058989e6cdbef6",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_morpho_legs.json",
+      "http_status": 200,
+      "bytes": 5383,
+      "local_sha256": "7963a31ad140593cb848f1f9c67789e1445277f13319a590b725395e70d5b09f",
+      "public_sha256": "7963a31ad140593cb848f1f9c67789e1445277f13319a590b725395e70d5b09f",
+      "matches": true
+    },
+    {
+      "path": "eth/data/economic_upshift_positions_T.json",
+      "http_status": 200,
+      "bytes": 8179967,
+      "local_sha256": "2921a63b45298cced5f8f2330324050e05eb0290cde4aec788c2dfc1e1c98d6a",
+      "public_sha256": "2921a63b45298cced5f8f2330324050e05eb0290cde4aec788c2dfc1e1c98d6a",
+      "matches": true
+    }
+  ],
+  "github_pages_run": "https://github.com/vlad-degen/btc-yield-atlas/actions/runs/37542853115",
+  "github_pages_conclusion": "success",
+  "all_nonETH_git_blobs_unchanged": 345,
+  "public_manifest_files_equal_merged_main": 947,
+  "research_implementation_commit": "60bc344"
+}
