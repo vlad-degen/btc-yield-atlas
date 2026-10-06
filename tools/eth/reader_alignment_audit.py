@@ -70,7 +70,7 @@ def run():
     spec.loader.exec_module(builder)
     ARTICLES = builder.ARTICLES
     payload = read('site_payload')
-    check('complete_47_report_navigation', len(payload['reportLibrary']) == len(ARTICLES) == 47 and
+    check('complete_report_navigation', len(payload['reportLibrary']) == len(ARTICLES) and
           {r['id'] for r in payload['reportLibrary']} == set(ARTICLES) and all(
               (ROOT / 'eth' / r['href']).is_file() for r in payload['reportLibrary']))
     original = read('research_market_chapter')

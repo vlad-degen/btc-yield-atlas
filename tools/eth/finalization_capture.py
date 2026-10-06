@@ -45,7 +45,7 @@ def fetch(key, url, payload=None):
 
 def capture_urls(items, name):
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        results = list(pool.map(lambda item: fetch(item['key'], item['url']), items))
+        results = list(pool.map(lambda item: fetch(item['key'], item['url'], item.get('payload')), items))
     records = [record for record, _ in results]
     (DATA / (name + '.json')).write_text(json.dumps(records, indent=2) + '\n')
     print(json.dumps([{'key':r['key'], 'status':r.get('status'), 'bytes':r['bytes'], 'error':r.get('error')} for r in records]), flush=True)

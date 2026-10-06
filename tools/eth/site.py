@@ -62,6 +62,7 @@ ARTICLES = {
  'BORROWER-USE': ('library', 'Large dollar borrowers: identities and use of proceeds'),
  'HGETH-LOAN-BOOK': ('library', 'hgETH: loan-book accounting, history and control'),
  'CARRY-COVERAGE-AUDIT': ('library', 'Carry coverage: public-feed sweep and product decisions'),
+ 'PRODUCT-EVOLUTION': ('library', 'Product development, ownership and carry economics'),
 }
 
 def link(url, source):
@@ -148,6 +149,10 @@ def build():
     from report_contract_build import run as build_report_contract
     # The coverage builder regenerates its discovery decisions; update the measured cases afterwards.
     augment_final_measurements()
+    from parity_depth_build import augment as augment_substantive_history
+    augment_substantive_history()
+    # Hash and analyse the final product chapters, including their history.
+    build_reader_analysis()
     contract = build_report_contract()
     for name,source in [('STRATEGY-UNIVERSE-EXPANSION','STRATEGY-UNIVERSE-EXPANSION'),('CARRY-VARIANTS-EXPANSION','CARRY-VARIANTS-EXPANSION'),('CREDIT-EXPANSION','CREDIT-EXPANSION-2026-10-04')]:
         text=(RESEARCH/'review'/f'{source}.md').read_text()
@@ -168,6 +173,8 @@ def build():
     pools=[{k:r.get(k) for k in ['chain','project','symbol','pool','tvlUsd','apy','apyBase','apyReward','apyMean30d','poolMeta','category_hint','underlyingTokens','matched_components']} for r in read('yield_pool_candidates')]
     from finalization_editorial_build import run as build_final_editorial
     build_final_editorial()
+    from parity_depth_build import editorial as write_substantive_history
+    write_substantive_history()
     payload={
       'summary':read('market_summary'),'chains':read('chain_screen'),'protocols':observations,
       'coverage':read('protocol_source_coverage'),'pools':pools,
@@ -190,6 +197,7 @@ def build():
       'carryCategory':{'products':read('reader_carry_category')['products']},
       'readerAnalysis':read('reader_analysis'),
       'reportContract':contract,
+      'productEvolution':read('parity_depth_reader'),
       'finalMeasurements':{k:v for k,v in read('finalization_reconstruction').items() if k not in ['topFiveHolderReconstruction','makinaMorpho','makinaAccountingInstructions','sourceFileHashes','avantPublishedAllocation','nativeHistory']},
       'carryCoverage':read('carry_coverage_audit'),
       'reportLibrary':[{'id':stem,'title':title,'href':f'{folder}/{stem}.html'} for stem,(folder,title) in ARTICLES.items()],
@@ -218,6 +226,8 @@ def build():
         claim['claim'],claim['time_scope_and_limit']=translations[claim['id']]
     packed=json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
     (DATA/'site_payload.json').write_text(packed)
+    for filename in read('parity_depth_measurements')['sourceFiles']:
+        shutil.copyfile(DATA/filename,OUT/'data'/filename)
     for name in ['evidence_ledger','market_summary','weth_lending_markets_T','etherfi_partial_balance_sheet','comparable_ETH_wealth','dependency_graph','asset_registry','product_registry','presentation_analysis','permissions_review_T','presentation_terms_sources','btc_depth_review','market_panel','carry_category_candidates','reader_carry_category','reader_product_chapters','carry_category_sources','market_pool_screen','research_market_chapter','market_reader_chapter','research_borrowers','carry_economics_chapter','product_chapters']:
         shutil.copyfile(DATA/f'{name}.json',OUT/'data'/f'{name}.json')
     def copy_chapter_evidence(value):
@@ -235,7 +245,7 @@ def build():
             if source.is_file():shutil.copyfile(source,OUT/'data'/source.name)
     for name in ['carry_coverage_audit.json','carry-discovery-dispositions.csv','yb_LT_holders_T.json']:
         if (DATA/name).is_file():shutil.copyfile(DATA/name,OUT/'data'/name)
-    for name in ['report_contract.json','carry-common-30d.csv','carry-status-and-capital.csv','finalization_reconstruction.json','native-staking-observations.csv','carry-flow-adjusted-ledgers.csv']:
+    for name in ['report_contract.json','carry-common-30d.csv','carry-status-and-capital.csv','finalization_reconstruction.json','native-staking-observations.csv','carry-flow-adjusted-ledgers.csv','parity_depth_measurements.json','parity_depth_reader.json','parity-Liquid-Cash-beneficiaries.csv','parity-Liquid-monthly-debt.csv','parity-Liquid-cohort-sensitivity.csv','parity-savETH-holders.csv','parity-ybGauge-holders.csv']:
         shutil.copyfile(DATA/name,OUT/'data'/name)
     shutil.copyfile(DATA/'carry_borrow_rate_history.json',OUT/'data/carry_borrow_rate_history.json')
     ledger=read('evidence_ledger')
@@ -305,7 +315,7 @@ def build():
     library_groups = [
       ('Market size and counting', ['MARKET-RESEARCH','MARKET-STRUCTURE','MARKET-TABLES','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','MECHANICS','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
-      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','concrete-eth','etherfi-liquid-eth']),
+      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','concrete-eth','etherfi-liquid-eth']),
       ('Financing and income', ['CARRY-MATH','BORROW-HISTORY','DOLLAR-FUNDING-ATLAS','CREDIT-EXPANSION','CARRY-LIFECYCLES','BORROWER-USE','carry-credit']),
       ('Returns and investor access', ['HISTORY','RETURN-DRIVERS','PRODUCT-TERMS','LENDING-MARKETS','ECONOMICS','fluid-lite','treehouse-teth','cian-rseth','ethena-basis','liquid-monad']),
       ('Evidence and reproduction', ['BRIEFING','README','scope','methodology','DEPENDENCIES','EVIDENCE','AUDIT','RESEARCH-PLAN','EXECUTION-CHECKLIST','SITE-PARITY','justlend-tron']),
@@ -335,8 +345,19 @@ def build():
     artifact=ROOT/'site/eth';artifact.mkdir(parents=True,exist_ok=True)
     (artifact/'index.html').write_text(page)
     (artifact/'exhibits.html').write_text(exhibits)
+    def copy_artifact(source, destination):
+        # macOS fcopyfile can stop midway on a large evidence file. A normal
+        # buffered copy preserves the same bytes without that fast-copy path.
+        try:
+            return shutil.copy2(source,destination)
+        except OSError as error:
+            if error.errno!=5:raise
+            with open(source,'rb') as src,open(destination,'wb') as dest:
+                shutil.copyfileobj(src,dest,1024*1024)
+            shutil.copystat(source,destination)
+            return destination
     for folder in ['dossiers','library','data','figures']:
-        shutil.copytree(OUT/folder,artifact/folder,dirs_exist_ok=True)
+        shutil.copytree(OUT/folder,artifact/folder,dirs_exist_ok=True,copy_function=copy_artifact)
     shutil.copyfile(OUT/'site.css',artifact/'site.css')
     print(f'ETH site built: {len(page):,} characters; {len(ARTICLES)} articles; {len(pools)} pool rows; {len(observations)} protocols')
 

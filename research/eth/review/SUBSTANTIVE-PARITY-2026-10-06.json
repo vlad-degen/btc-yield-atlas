@@ -1,0 +1,110 @@
+{
+  "snapshot": "2026-10-02T23:59:59Z",
+  "reference": [
+    "index.html",
+    "research/top5/en/05-etherfi.md",
+    "research/eth/review/BTC-SITE-STRUCTURE-SPEC.md",
+    "research/eth/review/STRICT-BTC-RESEARCH-CONTRACT.md"
+  ],
+  "phases": [
+    {
+      "id": "audit",
+      "status": "complete",
+      "outcome": "Block-by-block content and claim matrix; actual product identity and predecessor boundaries"
+    },
+    {
+      "id": "reconstruct",
+      "status": "complete",
+      "outcome": "Funded regime histories, real launch dates, holder intermediaries, income/fee/financing decomposition"
+    },
+    {
+      "id": "reader",
+      "status": "complete",
+      "outcome": "Same eight chapters and coherent deposit-to-exit flagship stories, evidence hidden appropriately"
+    },
+    {
+      "id": "verify",
+      "status": "complete",
+      "outcome": "Independent arithmetic/source/time checks and BTC comparison, desktop/mobile and reader burden"
+    },
+    {
+      "id": "publish",
+      "status": "pending",
+      "outcome": "ETH-only commit/deploy, live proof and BTC preservation"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "question": "Did Liquid book growth come mainly from investor share changes rather than carry profit?",
+      "test": "Exact share-supply and conversion decomposition, holder net-flow cohorts",
+      "status": "tested",
+      "finding": "30,053 ETH growth decomposes into 19,717 share-supply effect and 10,336 share-price effect.",
+      "scope": "Accounting identity; not actual subscription cash or isolated carry profit."
+    },
+    {
+      "id": "H2",
+      "question": "Did carry use different lenders and destinations across its history?",
+      "test": "First/last funded events, month-end debt/position marks, migration contract lineage",
+      "status": "tested",
+      "finding": "Aave WETH from June 2024, Aave USDC from August 2025, LoanManager Morpho RLUSD from June 2026; full nine material T legs visible with debt currency, HF and point rate.",
+      "scope": "Named-account histories are bounded; current debt-token absence stays missing before deployment."
+    },
+    {
+      "id": "H3",
+      "question": "Do holder contracts obscure meaningful investor concentration?",
+      "test": "Classify large intermediaries at T, trace receipt or gauge claims, reconcile aggregate ownership",
+      "status": "tested",
+      "finding": "All 7,351 Cash accounts checked at T, 7,012 positive claims; 83 savETH and 155 gauge balances reconciled; Gearbox/Morpho and four personal HybridVault owners traced.",
+      "scope": "Addresses are not unique people. Remote savETH CCIP ownership and other custody remain separate."
+    },
+    {
+      "id": "H4",
+      "question": "Do fee and strategy-control changes explain investor outcomes or incentives?",
+      "test": "All captured Accountant/configuration events, receipt-confirmed payments, time-weighted fee regimes",
+      "status": "tested",
+      "finding": "Nineteen successful Ethereum fee receipts match exact vault transfers; historical weETH conversions give 2,130.604903 ETH claimed.",
+      "scope": "Ethereum platform cash, not operator profit or complete strategy income; separate OP costs/rewards."
+    },
+    {
+      "id": "H5",
+      "question": "Do current share deployment dates omit earlier product launch and migrations?",
+      "test": "First-party launch announcements, governance proposals, deployment/first funding logs for predecessors and current shares",
+      "status": "tested",
+      "finding": "Liquid issuance, Lido November 2025 predecessor and April/May 2026 crisis, earlier January YieldBasis WETH pool and later LT architecture are explicit.",
+      "scope": "Deployment, first sampled material book and public launch are not interchanged."
+    },
+    {
+      "id": "H6",
+      "question": "What carry result can be attributed to actual financed principal after funding, rewards and fees?",
+      "test": "Common-window claim and debt ledgers, self-credit, exact funded cohorts and complete account flows",
+      "status": "tested",
+      "finding": "The 18M PYUSD cohort is -5,360 to -4,584 PYUSD after exact funding under three withdrawal conventions. The matched Lido 5M USDT lot remains +1,400.57 before gas and outer fees.",
+      "scope": "Sensitivity models are not provenance proof, complete profits or rigorous bounds. Concrete shared/private allocation and Avant private multi-chain P&L remain unassigned."
+    },
+    {
+      "id": "H7",
+      "question": "Does the main market/carry catalogue reconcile to the product histories without changing denominators silently?",
+      "test": "Category membership, current/historical cohort bridge, optional financing layers, no false unique total",
+      "status": "tested",
+      "finding": "Thirteen product histories and canonical status census reconcile. Market adapter parents, dollar debt, receipt claims and net carry equity retain distinct denominators.",
+      "scope": "No invented unique ETH market total or false whole-book carry concentration."
+    },
+    {
+      "id": "H8",
+      "question": "Does the reader answer BTC questions without repeated evidence/progress noise?",
+      "test": "Visible block inventory, repeated qualifiers, product walk-through and visual comparison",
+      "status": "tested",
+      "finding": "Same eight chapter route as BTC; bars and complete hovers, five deposit-to-exit stories, collapsible backing/exit proofs. Main section text is about 5,958 words versus 5,785 for BTC default view.",
+      "scope": "Word count compares Liquid ETH with default Kraken BTC; evidence disclosures and source libraries stay available."
+    }
+  ],
+  "completion": "Nonempty widgets and structural count alone do not establish substantive parity. Private data and genuinely inaccessible history must remain bounded after feasible public reconstruction.",
+  "verification": {
+    "automaticChecks": 1188,
+    "allPassed": true,
+    "browser": "All five flagships, 24 carry columns, 13-product hover, USD CSV/table, ten account rows, 390 px viewport and no console errors.",
+    "buildIdempotence": "2097 final artifacts identical on repeat; no duplicated generated research sections.",
+    "BTC_SHA256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222"
+  }
+}

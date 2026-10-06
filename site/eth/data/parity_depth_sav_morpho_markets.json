@@ -1,0 +1,15 @@
+[
+  {
+    "key": "sav_morpho_markets",
+    "url": "https://api.morpho.org/graphql",
+    "capturedUTC": "2026-10-06T18:17:42.083174+00:00",
+    "request": {
+      "query": "query{markets(first:1000,where:{chainId_in:[1],collateralAssetAddress_in:[\"0xda06ee2dacf9245aa80072a4407debdea0d7e341\"]}){items{marketId loanAsset{address symbol decimals} collateralAsset{address symbol decimals}}pageInfo{count countTotal}}}"
+    },
+    "status": 200,
+    "HTTPDate": "Tue, 06 Oct 2026 18:17:42 GMT",
+    "path": "raw/eth/finalization-2026-10-06/sav_morpho_markets-d720d7cba6d9325c.json",
+    "sha256": "d720d7cba6d9325cb8a078044f350a5252175d8958da1664934cf8fe2c9f47f4",
+    "bytes": 710
+  }
+]

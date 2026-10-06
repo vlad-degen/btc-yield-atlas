@@ -1,0 +1,107 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "hub_asset_id",
+      "address": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+      "signature": "getAssetId(address)",
+      "block": 157693411,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+          "data": "0xd6abe642000000000000000000000000f0bb20865277abd641a307ece5ee04e79073416c"
+        },
+        "0x96635e3"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000000000000d",
+        "id": 1
+      },
+      "capture": {
+        "key": "parity_depth_op_hub_0",
+        "url": "https://mainnet.optimism.io",
+        "capturedUTC": "2026-10-06T18:08:49.497709+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0xd6abe642000000000000000000000000f0bb20865277abd641a307ece5ee04e79073416c"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:08:49 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_op_hub_0-0f164741c5318375.json",
+        "sha256": "0f164741c5318375d9b0d8911c6b96b8dc83f8f18f6a00f81f50170e29030627",
+        "bytes": 208
+      }
+    },
+    {
+      "label": "hub_T_implementation",
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x96635e3"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000697af34263bc8e5e6b0e6b0c37a1ec58cede2ce9",
+        "id": 2
+      },
+      "capture": {
+        "key": "parity_depth_op_hub_0",
+        "url": "https://mainnet.optimism.io",
+        "capturedUTC": "2026-10-06T18:08:49.497709+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0xd6abe642000000000000000000000000f0bb20865277abd641a307ece5ee04e79073416c"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:08:49 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_op_hub_0-0f164741c5318375.json",
+        "sha256": "0f164741c5318375d9b0d8911c6b96b8dc83f8f18f6a00f81f50170e29030627",
+        "bytes": 208
+      }
+    }
+  ]
+}

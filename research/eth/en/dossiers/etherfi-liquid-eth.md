@@ -190,3 +190,52 @@ The two loops and the carry investments respond differently to stress. Shared ET
 Calculations: `data/eth/etherfi_verified_metrics.json`, `etherfi_partial_balance_sheet.json`, `etherfi_staking_comparison.json`, `etherfi_history_monthly.json`, `fluid_pilot_decoded.json`, `governance_T.json`. Raw requests and responses: `raw/eth/2026-10-02/requests.jsonl` and content-addressed files.
 
 Remaining work includes Liquid Monad assets and liabilities, pending bridge messages, complete strategy and timelock permissions, economic reward rights, complete fee ledgers on both chains, Morpho interest accrual, Uniswap fee growth, historical asset inventory at T, and simulations of redemption and debt repayment. Until those checks are complete, the dossier cannot be described as fully reconciled.
+
+<!-- substantive-parity -->
+## ether.fi Liquid ETH
+
+The present contract was used in June 2024. ETH loops came first; Aave dollar borrowing appeared in August 2025. Morpho financing followed through the LoanManager in June 2026 and the main vault in July.
+
+| Date | Change | Economic significance |
+| --- | --- | --- |
+| 2024-06-11T02:15:35+00:00 | First observed share issuance | A 0.24446-share mint establishes use of the present contract. Deployment was 3 June; neither timestamp alone establishes the public launch. [Primary evidence](https://etherscan.io/tx/0x1221b300eb5ee3ef6ec3b94b16dc888a68293e49b84b3a5d7418be126ff19070) |
+| 2024-06-25 | The Aave ETH loop begins | The main vault first borrows WETH. This increases staking exposure; it does not create dollar investment capital. [Primary evidence](https://etherscan.io/tx/0x744955da54daf75b9d30f6c648f685e3921e45f6cdc17aa695d1314aaf0f6cfd) |
+| 2025-08-18 | Dollar financing appears in the managed account | The controlled account 0x0a42…c02c first borrows USDC on Aave. It already owes 47.07M USDC at the August month end. [Primary evidence](https://etherscan.io/tx/0x4e906fd4127e61b3360c3bf1d1953366ca49246a67cec545c033c4f46e63ebfb) |
+| 2025-11-26 | Cap becomes an investment destination | The captured stcUSD deposit history begins. Its receipt earns through Cap’s credit machinery; this is a new destination, not extra underlying ETH. [Primary evidence](https://etherscan.io/tx/0x9b217842406c49d31c2dc5e32d0d8bc3cee67cf2aeb18c2bae3ef033dd64bc88) |
+| 2026-03-24 | Spark adds a second ETH loop | The first main-vault Spark WETH borrowing is observed. The main Aave and Spark accounts have different liquidations and funding costs. [Primary evidence](https://etherscan.io/tx/0x8fd92c153ccdf45c864f79b4b7fd288f430e40aa017d4f56338cb35abb5a3442) |
+| 2026-06-23 | Morpho dollar routes expand beyond the main vault | The controlled LoanManager begins RLUSD borrowing in June. The main vault adds weETH/RLUSD and weETH/PYUSD in July; Sentora RLUSD V2 deposits begin on 7 August. [Primary evidence](https://etherscan.io/tx/0x2ad45b7723fbbfb5b6c36ce035167a0c7bfc825b6ad36573a4d9e4fed2d0cb08) |
+| 2026-08-09T11:00:21+00:00 | Cash shares move into pooled custody | The captured Cash spoke history begins. By T, the Hub holds 20.53% of the whole Liquid book on behalf of 7,012 positive account positions. [Primary evidence](https://optimistic.etherscan.io/address/0xdffcc3536d932eb51df51a7f5fa407c4270d5308) |
+| 2026-09-25 | PRIME-backed financing enters the credit vault | An 18M PYUSD loan against PRIME is deposited into a PYUSD credit vault. Its claim and financing are measured through T. [Primary evidence](https://etherscan.io/tx/0xb12b59b3177d97b6f2118b14b6712c09558c75c977fa78c5ef3eb1d4d2fbc176) |
+| 2026-09-25 | Kyber adds a distribution channel | Kyber announces Liquid ETH on KyberEarn. This establishes an integration announcement, not how many new deposits it generated. [Primary evidence](https://blog.kyberswap.com/ether-fi-liquid-vaults-are-live-on-kyberearn/) |
+
+### What the investor owns and earns
+
+For the 18M PYUSD investment originated on 25 September, FIFO, LIFO and proportional withdrawal allocation all give a negative claim-minus-funding result: -5,360 to -4,584 PYUSD through T. Rewards, collateral income, gas and outer fees are separate.
+
+The two largest Ethereum wallets together hold about 37% of the whole book. The Optimism Hub holds another 20.53% across 7,012 positive Cash account positions. Its single address conceals a distribution of claims; these accounts are not necessarily different people.
+
+Between September 2024 and September 2026, the ETH book grew by 30,053 ETH. Share-supply changes account for 19,717 ETH of that change; the share-price effect accounts for 10,336 ETH. This is an accounting bridge, not a cash-flow or carry-profit estimate.
+
+The Ethereum management fee changed repeatedly: 1.50% in January 2025, zero in July, and 0.35% at T. Nineteen claimed payments total 2,130.60 ETH after converting each weETH payment at its own block. This is platform cash received, not operator profit.
+
+The May 2025 Member Rewards proposal budgets 7.5M ETHFI across ether.fi for June to August and assigns Liquid ETH nine points per ETH per day, versus three for staking. This explains the distribution incentive; the ecosystem budget is not a measured payment to this vault or organic carry income.
+
+At T, Aave USDC funding is 13.93% APR, versus 4.38% for Aave USDT and 4.39% for Spark PYUSD. Funding cost depends on the actual loan currency and venue; a low quote on one route does not describe the whole carry book.
+
+[Distribution proposal](https://governance.ether.fi/t/ether-fi-member-rewards/2974).
+
+| Named owner / account | Share of stated claim | Denominator |
+| --- | --- | --- |
+| [0x6794662db6a212b607ecfc07360941b5ddfd4b6b](https://optimistic.etherscan.io/address/0x6794662db6a212b607ecfc07360941b5ddfd4b6b) | 33.3449% | Share of Cash Hub |
+| [0xc93c35246652b40f3f090bd180b58322679b9f1b](https://optimistic.etherscan.io/address/0xc93c35246652b40f3f090bd180b58322679b9f1b) | 9.1729% | Share of Cash Hub |
+| [0x463ff502f702a306f2c5850a0562fb47b8e4acea](https://optimistic.etherscan.io/address/0x463ff502f702a306f2c5850a0562fb47b8e4acea) | 3.0972% | Share of Cash Hub |
+| [0x72cbd2c5e6cfe895224af00c039c7d2b3b11a9b5](https://optimistic.etherscan.io/address/0x72cbd2c5e6cfe895224af00c039c7d2b3b11a9b5) | 2.0542% | Share of Cash Hub |
+| [0x0cb7977b907782ca1038ba68699263c9eecaf879](https://optimistic.etherscan.io/address/0x0cb7977b907782ca1038ba68699263c9eecaf879) | 1.7065% | Share of Cash Hub |
+| [0xf387f8058e00fe37d5c11a205ee0bad9774ac4df](https://optimistic.etherscan.io/address/0xf387f8058e00fe37d5c11a205ee0bad9774ac4df) | 1.5225% | Share of Cash Hub |
+| [0x428167a972786b7f924af2f2ecf6680aa8b5243e](https://optimistic.etherscan.io/address/0x428167a972786b7f924af2f2ecf6680aa8b5243e) | 1.4596% | Share of Cash Hub |
+| [0x559e319c3710c2370ed1b18878ee10a2ff1f9339](https://optimistic.etherscan.io/address/0x559e319c3710c2370ed1b18878ee10a2ff1f9339) | 1.4378% | Share of Cash Hub |
+| [0x1c0a6763a251be74ef56c1919b1184f94f93a70d](https://optimistic.etherscan.io/address/0x1c0a6763a251be74ef56c1919b1184f94f93a70d) | 1.4326% | Share of Cash Hub |
+| [0xed0e0f34671338fd51c90cad6b5eabc239ac4f6e](https://optimistic.etherscan.io/address/0xed0e0f34671338fd51c90cad6b5eabc239ac4f6e) | 1.2906% | Share of Cash Hub |
+
+[Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
+

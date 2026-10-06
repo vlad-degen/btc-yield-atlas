@@ -3,6 +3,20 @@ from finalization_reconstruction_build import EN,D,read,DETAILS
 from report_contract_build import table
 
 def run():
+ # Reviewed English sources are retained by the legacy builders. Strip only
+ # this builder's previously appended sections before regenerating them.
+ # Otherwise repeated site builds multiply the same research paragraphs.
+ generated=['\n\n## Native stake: measured backing, not another wrapper',
+            '\n\n## Additional carry books: fixed-block reconstruction',
+            '\n\n## Two additional dollar investment and funding ledgers',
+            '\n\n## Fixed-maturity and option capacity at the snapshot',
+            '\n<!-- substantive-parity -->']
+ import re
+ for path in EN.rglob('*.md'):
+  s=path.read_text();positions=[s.find(marker) for marker in generated if marker in s]
+  if positions:s=s[:min(positions)].rstrip()+'\n'
+  s=re.sub(r'\n\n\*\*Final measurement update, 6 October 2026:\*\*[^\n]+\n','\n',s)
+  path.write_text(s)
  f=read('finalization_reconstruction');pc=read('reader_product_chapters')['products'];c=read('report_contract')
  native=f['native'];paragraph=f"The archived consensus state at T has **{native['activeBalanceETH']:,.3f} actual active ETH**, **{native['activeEffectiveBalanceETH']:,.0f} effective active ETH** and **{native['activeValidatorCount']:,} active validators**. Actual balance and effective stake answer different questions. The active set includes {native['statusCounts']['active_exiting']:,} exiting validators. These balances are measured directly from validator objects, including compounding validators; they are not validator count multiplied by 32. Receipt claims are a separate, overlapping layer."
  native_text='\n\n## Native stake: measured backing, not another wrapper\n\n'+paragraph+'\n\nThe archived slot is **15346798**, state root `'+native['stateRoot']+'`. The public provider marks the response finalized and execution optimistic. The header state root agrees with the saved header; we do not claim an independent state-root recomputation from the validator JSON. Five successful monthly state reads cover May to September 2026. Earlier headers exist but their complete states are pruned at the tested public endpoints. Those missing balances remain absent.\n\n[Archived state endpoint]('+native['source']['url']+'), [monthly observations](../../../data/eth/native-staking-observations.csv), [normalised reconstruction and receipt hashes](../../../data/eth/finalization_reconstruction.json).\n'
@@ -18,7 +32,7 @@ def run():
   notes+='**Holder distribution:** '+p['keyMetrics'][1]['value']+'. '+p['charts']['walletDistribution']['scope']+'\n\n'
   notes+='**Size convention:** '+p['capitalBasis']+'. **Matched claim return:** '+f"{p['charts']['returnVsBorrow']['windowReturns'][0]['cumulativeReturnPct']:+.4f}%"+' from 2 September to 2 October 2026.\n\n'
   notes+='**Fee and exit detail:** '+p['comparison']['fees']+'.\n\n'+table(['Actor','Control'],[[r['who'],r['role']]for r in p['actors']])+'\n\n'
-  notes+='**Evidence limits:** '+' '.join(p['limitations'])+'\n\n'+', '.join('['+r['label']+']('+r['url'].replace('data/','../../../data/eth/')+')'for r in p['sources'])+'.\n\n'
+  notes+='**Evidence limits:** '+' '.join(p['limitations'])+'\n\n'+', '.join('['+r['label']+']('+r['url'].replace('data/','../../../data/eth/').replace('library/','../library/')+')'for r in p['sources'])+'.\n\n'
  path=EN/'CARRY-PRODUCTS.md';path.write_text(path.read_text()+notes)
  ledgers=f['flowAdjustedLedgers'];lot=f['directFinancedLot']
  econ='\n\n## Two additional dollar investment and funding ledgers\n\nAll figures below use **2 September to 2 October 2026**. New borrowing and repayments are removed from debt growth; share acquisitions and redemptions are removed from investment-value growth. External rewards, gas and executable exit costs are separate.\n\n'

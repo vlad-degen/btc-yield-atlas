@@ -142,3 +142,11 @@ Using Fluid's captured resolver balance, a one-percentage-point increase in debt
 Inputs and their SHA-256 hashes are recorded in the [calculation dataset](../../../data/eth/presentation_analysis.json). New historical permission reads retain their request URL, payload, block and response hashes. The frozen financial series have not been refreshed.
 
 The additions explain growth arithmetic, fee history and selected permissions. They do not close independent portfolio backing, transaction-level investor flows, a full holder census, realized fee-adjusted investor cash P&L, or executable liquidation and exit simulation.
+
+<!-- substantive-parity -->
+
+## Product history behind the snapshot
+
+Liquid’s stablecoin borrowing predates its current Morpho routes: Aave USDC financing is observed in August 2025. Its 18M PYUSD cohort is negative after funding under three explicit withdrawal conventions, before rewards and other costs. Cash Hub ownership now resolves to 7,012 positive account positions. Lido’s current wrapper follows its November 2025 underlying strategy; its April crisis required a 27-day pause and DAO loss absorption. YieldBasis’s present LT history starts after an earlier WETH pool, and gauge investors have different income rights from unstaked holders. Avant’s senior holder analysis traces Gearbox and Morpho custody instead of treating their contracts as single investors.
+
+[Full product development, accounting assumptions and source evidence](PRODUCT-EVOLUTION.md).

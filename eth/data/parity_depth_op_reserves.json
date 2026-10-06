@@ -1,0 +1,593 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "spoke_reserve_0",
+      "address": "0x7eb4d25f137868662350603a2863f682287b0768",
+      "signature": "getReserveId(address,uint256)",
+      "block": 157693411,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x7eb4d25f137868662350603a2863f682287b0768",
+          "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+        },
+        "0x96635e3"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "error": {
+          "code": 3,
+          "message": "execution reverted"
+        },
+        "id": 1
+      },
+      "capture": {
+        "key": "parity_depth_op_reserves_0",
+        "url": "https://mainnet.optimism.io",
+        "capturedUTC": "2026-10-06T18:11:18.025864+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x7eb4d25f137868662350603a2863f682287b0768",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d0000000000000000000000007eb4d25f137868662350603a2863f682287b0768"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0x7eb4d25f137868662350603a2863f682287b0768",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d000000000000000000000000dffcc3536d932eb51df51a7f5fa407c4270d5308"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:18 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_op_reserves_0-c20caa3422ff6f29.json",
+        "sha256": "c20caa3422ff6f29f8ade9b395420ac1b89783cdc8a9746bd90634eca0ef46d7",
+        "bytes": 592
+      }
+    },
+    {
+      "label": "hub_spoke_assets_0",
+      "address": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+      "signature": "getSpokeAddedAssets(uint256,address)",
+      "block": 157693411,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+          "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d0000000000000000000000007eb4d25f137868662350603a2863f682287b0768"
+        },
+        "0x96635e3"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "id": 2
+      },
+      "capture": {
+        "key": "parity_depth_op_reserves_0",
+        "url": "https://mainnet.optimism.io",
+        "capturedUTC": "2026-10-06T18:11:18.025864+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x7eb4d25f137868662350603a2863f682287b0768",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d0000000000000000000000007eb4d25f137868662350603a2863f682287b0768"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0x7eb4d25f137868662350603a2863f682287b0768",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d000000000000000000000000dffcc3536d932eb51df51a7f5fa407c4270d5308"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:18 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_op_reserves_0-c20caa3422ff6f29.json",
+        "sha256": "c20caa3422ff6f29f8ade9b395420ac1b89783cdc8a9746bd90634eca0ef46d7",
+        "bytes": 592
+      }
+    },
+    {
+      "label": "spoke_impl_0",
+      "method": "eth_getStorageAt",
+      "params": [
+        "0x7eb4d25f137868662350603a2863f682287b0768",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x96635e3"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000e634f603440ad127b2f7ce9d84bfd51d565be9f7",
+        "id": 3
+      },
+      "capture": {
+        "key": "parity_depth_op_reserves_0",
+        "url": "https://mainnet.optimism.io",
+        "capturedUTC": "2026-10-06T18:11:18.025864+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x7eb4d25f137868662350603a2863f682287b0768",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d0000000000000000000000007eb4d25f137868662350603a2863f682287b0768"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0x7eb4d25f137868662350603a2863f682287b0768",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d000000000000000000000000dffcc3536d932eb51df51a7f5fa407c4270d5308"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:18 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_op_reserves_0-c20caa3422ff6f29.json",
+        "sha256": "c20caa3422ff6f29f8ade9b395420ac1b89783cdc8a9746bd90634eca0ef46d7",
+        "bytes": 592
+      }
+    },
+    {
+      "label": "spoke_reserve_1",
+      "address": "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+      "signature": "getReserveId(address,uint256)",
+      "block": 157693411,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+          "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+        },
+        "0x96635e3"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000000000000000000000000000000000000000000d",
+        "id": 4
+      },
+      "capture": {
+        "key": "parity_depth_op_reserves_0",
+        "url": "https://mainnet.optimism.io",
+        "capturedUTC": "2026-10-06T18:11:18.025864+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x7eb4d25f137868662350603a2863f682287b0768",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d0000000000000000000000007eb4d25f137868662350603a2863f682287b0768"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0x7eb4d25f137868662350603a2863f682287b0768",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d000000000000000000000000dffcc3536d932eb51df51a7f5fa407c4270d5308"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:18 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_op_reserves_0-c20caa3422ff6f29.json",
+        "sha256": "c20caa3422ff6f29f8ade9b395420ac1b89783cdc8a9746bd90634eca0ef46d7",
+        "bytes": 592
+      }
+    },
+    {
+      "label": "hub_spoke_assets_1",
+      "address": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+      "signature": "getSpokeAddedAssets(uint256,address)",
+      "block": 157693411,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+          "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d000000000000000000000000dffcc3536d932eb51df51a7f5fa407c4270d5308"
+        },
+        "0x96635e3"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x0000000000000000000000000000000000000000000006f595fcf19bf05e9c18",
+        "id": 5
+      },
+      "capture": {
+        "key": "parity_depth_op_reserves_0",
+        "url": "https://mainnet.optimism.io",
+        "capturedUTC": "2026-10-06T18:11:18.025864+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x7eb4d25f137868662350603a2863f682287b0768",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d0000000000000000000000007eb4d25f137868662350603a2863f682287b0768"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0x7eb4d25f137868662350603a2863f682287b0768",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d000000000000000000000000dffcc3536d932eb51df51a7f5fa407c4270d5308"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:18 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_op_reserves_0-c20caa3422ff6f29.json",
+        "sha256": "c20caa3422ff6f29f8ade9b395420ac1b89783cdc8a9746bd90634eca0ef46d7",
+        "bytes": 592
+      }
+    },
+    {
+      "label": "spoke_impl_1",
+      "method": "eth_getStorageAt",
+      "params": [
+        "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+        "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+        "0x96635e3"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "result": "0x000000000000000000000000a1f75d801633a1941cae6670352d627884dc3b68",
+        "id": 6
+      },
+      "capture": {
+        "key": "parity_depth_op_reserves_0",
+        "url": "https://mainnet.optimism.io",
+        "capturedUTC": "2026-10-06T18:11:18.025864+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x7eb4d25f137868662350603a2863f682287b0768",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d0000000000000000000000007eb4d25f137868662350603a2863f682287b0768"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0x7eb4d25f137868662350603a2863f682287b0768",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+                "data": "0x42aef1f100000000000000000000000066753c4e3fc84f1ed0e3c267c927284e9d90c572000000000000000000000000000000000000000000000000000000000000000d"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x66753c4e3fc84f1ed0e3c267c927284e9d90c572",
+                "data": "0x9c7ee64f000000000000000000000000000000000000000000000000000000000000000d000000000000000000000000dffcc3536d932eb51df51a7f5fa407c4270d5308"
+              },
+              "0x96635e3"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_getStorageAt",
+            "params": [
+              "0xdffcc3536d932eb51df51a7f5fa407c4270d5308",
+              "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+              "0x96635e3"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:18 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_op_reserves_0-c20caa3422ff6f29.json",
+        "sha256": "c20caa3422ff6f29f8ade9b395420ac1b89783cdc8a9746bd90634eca0ef46d7",
+        "bytes": 592
+      }
+    }
+  ]
+}

@@ -1,0 +1,1087 @@
+{
+  "snapshotTimestamp": 1790985599,
+  "ethereumBlock": 26108081,
+  "records": [
+    {
+      "label": "lido_actual_burn",
+      "method": "eth_getTransactionReceipt",
+      "params": [
+        "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": {
+          "type": "0x2",
+          "status": "0x1",
+          "cumulativeGasUsed": "0xfc3c3f",
+          "logs": [
+            {
+              "address": "0x6a37725ca7f4ce81c004c955f7280d5c704a249e",
+              "topics": [
+                "0x3a97aa17a51b3fa88e27cdce48823bea308838ed5ea8015ae0598abb1288954b",
+                "0x00000000000000000000000087d93d9b2c672bf9c9642d853a8682546a5012b5"
+              ],
+              "data": "0x",
+              "blockHash": "0x1d8f589d900fa9a78c5b0b07e4b3c5dd5e31ee45510427ef2b11c6b9684fb7ab",
+              "blockNumber": "0x17f0527",
+              "blockTimestamp": "0x6a07432f",
+              "transactionHash": "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7",
+              "transactionIndex": "0x5d",
+              "logIndex": "0x139",
+              "removed": false
+            },
+            {
+              "address": "0xbbfc8683c8fe8cf73777fede7ab9574935fea0a4",
+              "topics": [
+                "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+                "0x00000000000000000000000087d93d9b2c672bf9c9642d853a8682546a5012b5",
+                "0x0000000000000000000000000000000000000000000000000000000000000000"
+              ],
+              "data": "0x000000000000000000000000000000000000000000000007ce1396a8edb06233",
+              "blockHash": "0x1d8f589d900fa9a78c5b0b07e4b3c5dd5e31ee45510427ef2b11c6b9684fb7ab",
+              "blockNumber": "0x17f0527",
+              "blockTimestamp": "0x6a07432f",
+              "transactionHash": "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7",
+              "transactionIndex": "0x5d",
+              "logIndex": "0x13a",
+              "removed": false
+            },
+            {
+              "address": "0x87d93d9b2c672bf9c9642d853a8682546a5012b5",
+              "topics": [
+                "0x442e715f626346e8c54381002da614f62bee8d27386535b2521ec8540898556e"
+              ],
+              "data": "0x055959398b723c46e92fbae6e26a81ff90dc3d84c82d8c6a9e219061751260f70000000000000000000000000000000000000000000000000000000000000000",
+              "blockHash": "0x1d8f589d900fa9a78c5b0b07e4b3c5dd5e31ee45510427ef2b11c6b9684fb7ab",
+              "blockNumber": "0x17f0527",
+              "blockTimestamp": "0x6a07432f",
+              "transactionHash": "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7",
+              "transactionIndex": "0x5d",
+              "logIndex": "0x13b",
+              "removed": false
+            }
+          ],
+          "logsBloom": "0x00000000400000000000000000000010000000000000800000000000440000000000000000000000000000100100000000000000000000100000000000000000000000000000000000000008000000000000000040000000000000000000004000000000020010004000000000000800000000000000000000000010000000000000000200000010000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000020000000000000020000000080000000000000000000000000000001000000000000",
+          "transactionHash": "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7",
+          "transactionIndex": "0x5d",
+          "blockHash": "0x1d8f589d900fa9a78c5b0b07e4b3c5dd5e31ee45510427ef2b11c6b9684fb7ab",
+          "blockNumber": "0x17f0527",
+          "gasUsed": "0x5dd42",
+          "effectiveGasPrice": "0x61b2fdc6",
+          "from": "0x04e7c0350241b818ee5c92cc260008c9898f41cf",
+          "to": "0x87d93d9b2c672bf9c9642d853a8682546a5012b5",
+          "contractAddress": null
+        }
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.112303+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getTransactionReceipt",
+            "params": [
+              "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:17 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_0-f615760305d20b54.json",
+        "sha256": "f615760305d20b548c2daa82c12b95d96f19fb12153895fdf58807ce3b40f4b8",
+        "bytes": 9726
+      }
+    },
+    {
+      "label": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "signature": "getReserveData(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 2,
+        "result": "0x100000000000000000000103e80002932e0000249f0005dc85122904206c1f7200000000000000000000000000000000000000000376517c7734e372c5af665c0000000000000000000000000000000000000000000c52e465c16769a3211fbf000000000000000000000000000000000000000003946d410e79926146596e9c000000000000000000000000000000000000000000112777f4f39431e1c904a50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ac0451f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000004d5f47fa6a74757f35c14fd3a6ef8e3c9bc514e8000000000000000000000000102633152313c81cd80419b6ecf66d14ad68949a000000000000000000000000ea51d7853eefb32b6ee06b1c12e6dcca88be0ffe0000000000000000000000009ec6f08190dea04a54f8afc53db96134e5e3fdfb0000000000000000000000000000000000000000000000043fe85ca2002e1c5400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.112303+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getTransactionReceipt",
+            "params": [
+              "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:17 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_0-f615760305d20b54.json",
+        "sha256": "f615760305d20b548c2daa82c12b95d96f19fb12153895fdf58807ce3b40f4b8",
+        "bytes": 9726
+      }
+    },
+    {
+      "label": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2_0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "signature": "getReserveData(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 3,
+        "result": "0x100000000000000000000007d00b2d05e000a0eebb0003e8850628d21e781d4c000000000000000000000000000000000000000003d6aa9c4322ffad6053d6c00000000000000000000000000000000000000000006772547ec765aab4cf4e1b0000000000000000000000000000000000000000040b716aa1fb11d765f4d7c000000000000000000000000000000000000000000073433e0e795c1295442dd60000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ac04507000000000000000000000000000000000000000000000000000000000000000300000000000000000000000098c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c000000000000000000000000102633152313c81cd80419b6ecf66d14ad68949a00000000000000000000000072e95b8931767c79ba4eee721354d6e99a61d0040000000000000000000000009ec6f08190dea04a54f8afc53db96134e5e3fdfb0000000000000000000000000000000000000000000000000000002049966f3e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.112303+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getTransactionReceipt",
+            "params": [
+              "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:17 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_0-f615760305d20b54.json",
+        "sha256": "f615760305d20b548c2daa82c12b95d96f19fb12153895fdf58807ce3b40f4b8",
+        "bytes": 9726
+      }
+    },
+    {
+      "label": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2_0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "signature": "getReserveData(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 4,
+        "result": "0x100000000000000000000003e80cf6c96000b82da88003e8850628d21e781d4c000000000000000000000000000000000000000003cdfb6f5897a1a3352525060000000000000000000000000000000000000000001e88ddb570b609abc94add00000000000000000000000000000000000000000407728bc0dfc240607fc71e000000000000000000000000000000000000000000243e7f520e10240da628f70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ac0440b000000000000000000000000000000000000000000000000000000000000000800000000000000000000000023878914efe38d27c4d67ab83ed1b93a74d4086a000000000000000000000000102633152313c81cd80419b6ecf66d14ad68949a0000000000000000000000006df1c1e379bc5a00a7b4c6e67a203333772f45a80000000000000000000000009ec6f08190dea04a54f8afc53db96134e5e3fdfb00000000000000000000000000000000000000000000000000000024e646e63d00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.112303+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getTransactionReceipt",
+            "params": [
+              "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:17 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_0-f615760305d20b54.json",
+        "sha256": "f615760305d20b548c2daa82c12b95d96f19fb12153895fdf58807ce3b40f4b8",
+        "bytes": 9726
+      }
+    },
+    {
+      "label": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2_0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+      "signature": "getReserveData(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+          "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 5,
+        "result": "0x100000000000000000000003e8001406f4000112a88003e8850629fe1e78000000000000000000000000000000000000000000000387543de9f6d24411f70efb000000000000000000000000000000000000000000216d8b62d1d2417d54b32e000000000000000000000000000000000000000003cb9a8ed3ce0941fa558fdc0000000000000000000000000000000000000000002951ab0600c13cca4251aa0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ac03613000000000000000000000000000000000000000000000000000000000000001b0000000000000000000000000c0d01abf3e6adfca0989ebba9d6e85dd58eab1e000000000000000000000000102633152313c81cd80419b6ecf66d14ad68949a00000000000000000000000057b67e4de077085fd0af2174e9c14871be6645460000000000000000000000009ec6f08190dea04a54f8afc53db96134e5e3fdfb000000000000000000000000000000000000000000000000000000002844a79b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.112303+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getTransactionReceipt",
+            "params": [
+              "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:17 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_0-f615760305d20b54.json",
+        "sha256": "f615760305d20b548c2daa82c12b95d96f19fb12153895fdf58807ce3b40f4b8",
+        "bytes": 9726
+      }
+    },
+    {
+      "label": "0xc13e21b648a5ee794902342038ff3adab66be987_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "signature": "getReserveData(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 6,
+        "result": "0x000000000000000000000103e80000a954300007a59201f485122904219821340000000000000000000000000000000000000000036cf25f0b4845a3b4457a790000000000000000000000000000000000000000000c1fef812587a31982df26000000000000000000000000000000000000000003825e209db03a422f51f78f0000000000000000000000000000000000000000000fc65582987d570560a72e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ac043c3000000000000000000000000000000000000000000000000000000000000000300000000000000000000000059cd1c87501baa753d0b5b5ab5d8416a45cd71db0000000000000000000000003c6b93d38ffa15ea995d1bc950d5d0fa6b22bd050000000000000000000000002e7576042566f8d6990e07a1b61ad1efd86ae70d000000000000000000000000dfb6206ffc5ba5b48d2852370ee6a1bf6887476a0000000000000000000000000000000000000000000000004aaf8877f501cf4800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.112303+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getTransactionReceipt",
+            "params": [
+              "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:17 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_0-f615760305d20b54.json",
+        "sha256": "f615760305d20b548c2daa82c12b95d96f19fb12153895fdf58807ce3b40f4b8",
+        "bytes": 9726
+      }
+    },
+    {
+      "label": "0xc13e21b648a5ee794902342038ff3adab66be987_0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "signature": "getReserveData(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 7,
+        "result": "0x00000000000000000000020000ffffffffffffffffff03e88506000000000000000000000000000000000000000000000000000003d1a4d952547bc805a449be0000000000000000000000000000000000000000001c0afce2eb924a61281bb1000000000000000000000000000000000000000003f15b1605d342458a71f569000000000000000000000000000000000000000000228ac4672466b2350b51350000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ac03a570000000000000000000000000000000000000000000000000000000000000002000000000000000000000000377c3bd93f2a2984e1e7be6a5c22c525ed4a4815000000000000000000000000887ac022983ff083aeb623923789052a955c67980000000000000000000000007b70d04099cb9cfb1db7b6820badafb4c5c70a67000000000000000000000000de99e49e9e42b1d8490c38926e6c9a79010e6ef2000000000000000000000000000000000000000000000000000000005e5822aa00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.112303+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getTransactionReceipt",
+            "params": [
+              "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:17 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_0-f615760305d20b54.json",
+        "sha256": "f615760305d20b548c2daa82c12b95d96f19fb12153895fdf58807ce3b40f4b8",
+        "bytes": 9726
+      }
+    },
+    {
+      "label": "0xc13e21b648a5ee794902342038ff3adab66be987_0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "signature": "getReserveData(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 8,
+        "result": "0x00000000000000000000020000ffffffffffffffffff03e88506000000000000000000000000000000000000000000000000000003c5331d147a9206323c666f0000000000000000000000000000000000000000001c14f75b948cd21f36ceca000000000000000000000000000000000000000003e7be1a3b5ba4f015a916d700000000000000000000000000000000000000000020ce715133f9a48bb9d9c40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ac0445f0000000000000000000000000000000000000000000000000000000000000008000000000000000000000000e7df13b8e3d6740fe17cbe928c7334243d86c92f0000000000000000000000000dae62f953ceb2e969fb4de85f3f9074fa920776000000000000000000000000529b6158d1d2992e3129f7c69e81a7c677dc3b120000000000000000000000004fa65b096681bd6feecf78e5d83096bf4a5762a000000000000000000000000000000000000000000000000000000002f2af390e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_0",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.112303+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_getTransactionReceipt",
+            "params": [
+              "0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 2,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 3,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 4,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 5,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 6,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 7,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+              },
+              "0x18e60b1"
+            ]
+          },
+          {
+            "jsonrpc": "2.0",
+            "id": 8,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a75000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec7"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:17 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_0-f615760305d20b54.json",
+        "sha256": "f615760305d20b548c2daa82c12b95d96f19fb12153895fdf58807ce3b40f4b8",
+        "bytes": 9726
+      }
+    },
+    {
+      "label": "0xc13e21b648a5ee794902342038ff3adab66be987_0x6c3ea9036406852006290770bedfcaba0e23a0e8",
+      "address": "0xc13e21b648a5ee794902342038ff3adab66be987",
+      "signature": "getReserveData(address)",
+      "block": 26108081,
+      "method": "eth_call",
+      "params": [
+        {
+          "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+          "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+        },
+        "0x18e60b1"
+      ],
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x000000000000000000000203e8ffffffffffffffffff03e885060000000000000000000000000000000000000000000000000000034625193f25c0695136bdb90000000000000000000000000000000000000000000d3472a539be28ee6bbd950000000000000000000000000000000000000000036219906b4b6d8113eb89d1000000000000000000000000000000000000000000244b7355a6839a2efe4e7b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ac045130000000000000000000000000000000000000000000000000000000000000011000000000000000000000000779224df1c756b4edd899854f32a53e8c2b2ce5d00000000000000000000000076e39b016ae2b4db14b40845abe4b9b7adaf0c120000000000000000000000003357d2db7763d6cd3a99f0763ebf87e0096d95f9000000000000000000000000df7dedcfd522b1ee8da2c8526f642745800c803500000000000000000000000000000000000000000000000000000000a4171caf00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "capture": {
+        "key": "parity_depth_reserve_tokens_1",
+        "url": "https://eth-mainnet.public.blastapi.io",
+        "capturedUTC": "2026-10-06T18:11:17.883186+00:00",
+        "request": [
+          {
+            "jsonrpc": "2.0",
+            "id": 1,
+            "method": "eth_call",
+            "params": [
+              {
+                "to": "0xc13e21b648a5ee794902342038ff3adab66be987",
+                "data": "0x35ea6a750000000000000000000000006c3ea9036406852006290770bedfcaba0e23a0e8"
+              },
+              "0x18e60b1"
+            ]
+          }
+        ],
+        "status": 200,
+        "HTTPDate": "Tue, 06 Oct 2026 18:11:18 GMT",
+        "path": "raw/eth/finalization-2026-10-06/parity_depth_reserve_tokens_1-e04a1242f4fe31fb.json",
+        "sha256": "e04a1242f4fe31fb3da4e6c589b87f232ef175045c887c60a26f31616679ee82",
+        "bytes": 1000
+      }
+    }
+  ]
+}

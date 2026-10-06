@@ -66,3 +66,23 @@ The captured withdrawal delay is a policy observation, not an independently test
 The T ledger confirms one positive ctDeltaWeETH share holder and reconciles to supply. Beneficial ownership, investor agreements and attributable custody backing remain unresolved. ctwstETH Plus 100% self-holding is independently verified through `eth_call`. See the [ranked carry-product review](../CARRY-PRODUCTS.md) for the updated holder evidence.
 
 Artifacts: `data/eth/vault_registry_rpc_T.json`, `governance_T.json`, `concrete_lookthrough_T.json`, `concrete_self_holdings_T.json`; raw keys `concrete_holders`, `concrete_logs`, `concrete_multisig_strategy_abi`, `concrete_vault_api`, `concrete_ui_observation.json`. Current explorer labels were not the sole evidence of the implementation at T.
+
+<!-- substantive-parity -->
+## Concrete Delta weETH
+
+The share contract was deployed in December 2025. Its first completed-month weETH book is already large, but the native share price stays flat through T. The resulting ETH mark largely follows weETH staking conversion.
+
+| Date | Change | Economic significance |
+| --- | --- | --- |
+| 2025-12-12T10:48:23Z | Share contract deployed | The contract creation transaction establishes the first possible onchain history. Public launch can occur later. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
+| 2025-12-31 | First completed-month book observation | 278,170.834213 weETH book assets. Subsequent captured month ends retain the same native asset book and unit share price. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
+| 2026-10-02T23:59:59Z | Owner, fee role and private-account scope verified | Configured vault management and performance fees are both zero; private service fees and arbitrage payout terms are not established. [Primary evidence](https://etherscan.io/address/0xb9dc54c8261745cb97070cefbe3d3d815aee8f20#code) |
+
+### What the investor owns and earns
+
+The stated mandate includes neutral arbitrage and staking collateral financed with dollars. The shared account has observable loans, but Delta-specific investment principal, revenue and private fees are not publicly assigned. Its place at the top of the book-size table is therefore not evidence of dominance in verified carry capital.
+
+One externally owned address holds all issued Delta shares at T. That establishes concentration in this claim, while the shared custody Safe holds the actual strategy assets. It does not identify outside investor capital or assign the Safe’s dollar arbitrage profit to Delta.
+
+[Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
+

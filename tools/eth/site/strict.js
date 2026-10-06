@@ -70,6 +70,7 @@ function stRisks(){const rows=[
  ['Fees and control','Configured fees can differ from later app terms. Liquid’s owner timelock does not delay every fee change.','Show the fee base, recipient, change authority and effective delay for each action.'],
  ['Credit and nested claims','Liquid invests in BTC-backed and PRIME credit. Rocksolid owns 728 ETH of Liquity claims.','Trace borrowers and loss allocation. Remove nested principal when calculating unique capital.'],
  ['Exit liquidity','Rocksolid is in Closing. Liquity passes the 1% demand call but fails 10% and 30%; Royco has zero immediate capacity.','Test investment redemption, debt-token sourcing, repayment and payment at the intended size.'],
+ ['Funding during an incident','Lido Earn paused for 27 days after the April Kelp crisis. Elevated borrowing costs created a loss; a DAO share burn supplied cover before operations resumed.','Budget funding through a frozen exit. Disclose the size, authority and exhaustion of any first-loss reserve.'],
  ['Rewards and return attribution','Liquid’s two-year excess over stETH is 1.36 pp. YieldBasis’s unstaked mark excludes gauge rewards.','Match return dates and cash rights. Separate fees, paid incentives and valuation gains.'],
  ['Remote assets and valuation','Cross-chain receipts, stale prices and fair-value previews can outlive executable liquidity.','Reconcile bridge supply and queues. Verify the mark’s age and a complete unwind.']
  ];$('#strict-risk-table').innerHTML=stTable(['Risk','What we saw','Operating rule'],rows.map(r=>r.map(esc)),'strict-risks');}

@@ -115,3 +115,11 @@ On **29 September 2026 at 05:59:35 UTC**, one transaction borrows **5,000,000 US
 At T, the new claim has gained **3,651.565 USDT**. The allocated indexed loan interest is **2,250.992 USDT**, leaving **1,400.573 USDT before gas and outer fees**. This is a positive recognised-claim spread over about 3.75 days; it is not a realised cash exit, an organic-income decomposition or a sustainable annual quote. No later account repayment appears before T.
 
 [Borrowing and investment transaction](https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1), [flow-adjusted CSV](../../../data/eth/carry-flow-adjusted-ledgers.csv), [normalised ledger](../../../data/eth/finalization_financial_ledgers.json).
+
+<!-- substantive-parity -->
+
+## Product history behind the snapshot
+
+Liquid’s stablecoin borrowing predates its current Morpho routes: Aave USDC financing is observed in August 2025. Its 18M PYUSD cohort is negative after funding under three explicit withdrawal conventions, before rewards and other costs. Cash Hub ownership now resolves to 7,012 positive account positions. Lido’s current wrapper follows its November 2025 underlying strategy; its April crisis required a 27-day pause and DAO loss absorption. YieldBasis’s present LT history starts after an earlier WETH pool, and gauge investors have different income rights from unstaked holders. Avant’s senior holder analysis traces Gearbox and Morpho custody instead of treating their contracts as single investors.
+
+[Full product development, accounting assumptions and source evidence](PRODUCT-EVOLUTION.md).
