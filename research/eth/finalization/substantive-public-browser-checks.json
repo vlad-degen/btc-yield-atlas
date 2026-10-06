@@ -1,0 +1,30 @@
+{
+  "carryMonthlyColumns": 24,
+  "documentWidth": 1280,
+  "eightChapters": [
+    "Answer",
+    "Market",
+    "Carry math",
+    "Top 5",
+    "Other carry",
+    "Risks",
+    "Playbook",
+    "Data"
+  ],
+  "liquidHolderText": "Who holds the shares?\n\nThe two largest Ethereum wallets together hold about 37% of the whole book. The Optimism Hub holds another 20.53% across 7,012 positive Cash account positions. Its single address conceals a distribution of claims; these accounts are not necessarily different people.\n\n0%\n25%\n50%\n75%\n100%\nBelow 1 ETH\nEthereum · 2026-10-02T23:59:59Z\n0%\n1 to 10 ETH\nEthereum · 2026-10-02T23:59:59Z\n2%\n10 to 100 ETH\nEthereum · 2026-10-02T23:59:59Z\n8%\n100 to 1,000 ETH\nEthereum · 2026-10-02T23:59:59Z\n20%\n1,000 ETH or more\nEthereum · 2026-10-02T23:59:59Z\n70%\nBelow 1 ETH\nOptimism · 2026-10-02T23:59:59Z\n0%\n1 to 10 ETH\nOptimism · 2026-10-02T23:59:59Z\n0%\n10 to 100 ETH\nOptimism · 2026-10-02T23:59:59Z\n1%\n100 to 1,000 ETH\nOptimism · 2026-10-02T23:59:59Z\n3%\n1,000 ETH or more\nOptimism · 2026-10-02T23:59:59Z\n95%\nDistribution data\n\nAll Transfer events from deployment to T; reconstructed positive balances exactly match archived totalSupply on each covered chain. This measures holders, not people or original depositors. Separate Liquid ETH chain distributions avoid silently treating cross-chain address strings as distinct people.\n\nLargest share-holding addresses\nLook through the large custody contracts",
+  "liquidLoanText": "Collateral and borrowing legs\nLOAN / CHAIN\tCOLLATERAL\tDEBT AT T\tHF / RATE\nAave V3 ↗\tETH-family collateral\t410,134.20 WETH\n$1.094bn reference value\n\t1.027 HF\n2.07% APR\n\nSpark ↗\tETH-family collateral\t31,042.02 WETH\n$82.794m reference value\n\t1.036 HF\n1.91% APR\n\nAave V3 · managed account ↗\tETH-family collateral\t64,552,083.93 USDC\n$64.552m reference value\n\t1.390 HF\n13.93% APR\n\nAave V3 · managed account ↗\tETH-family collateral\t12,042,227.51 USDT\n$12.042m reference value\n\t1.390 HF\n4.38% APR\n\nSpark · managed account ↗\tETH-family collateral\t3,611,570.54 PYUSD\n$3.612m reference value\n\t1.872 HF\n4.39% APR\n\nMorpho · main vault ↗\tPRIME\t21,017,993.33 PYUSD\n$21.018m reference value\n\t1.078 HF\n7.32% APR\n\nMorpho · main vault ↗\tweETH\t30,667,083.61 USDC\n$30.667m reference value\n\t1.645 HF\n4.76% APR\n\nMorpho · main vault ↗\tweETH\t35,923,215.50 RLUSD\n$35.923m reference value\n\t1.268 HF\n4.21% APR\n\nMorpho · LoanManager ↗\tweETH\t34,288,762.64 RLUSD\n$34.289m reference value\n\t1.408 HF\n4.21% APR\n\nNine material financing legs across the main vault and named controlled accounts. ETH-debt loops and dollar loans stay separate. Aave currencies share an account health factor. Dollar reference values assume $1; rates are point quotes at T, not average costs. Repaid Morpho WETH and PYUSD dust remain in the source ledger.\n\nWithdrawal evidence\n\nThe examined route has 2,822 cash payouts confirmed by transaction receipts. Portfolio size alone does not establish how much can be redeemed immediately.\n\nSnapshot exit calls and paid withdrawal records\n\nAt T, Aave USDC funding is 13.93% APR, versus 4.38% for Aave USDT and 4.39% for Spark PYUSD. Funding cost depends on the actual loan currency and venue; a low quote on one route does not describe the whole carry book.\n\nRepaid Morpho positions and residual debt",
+  "liquidTimelineText": "What changed, and when?\n\nThe present contract was used in June 2024. ETH loops came first; Aave dollar borrowing appeared in August 2025. Morpho financing followed through the LoanManager in June 2026 and the main vault in July.\n\n11 Jun 2024\nFirst observed share issuance\n\nA 0.24446-share mint establishes use of the present contract. Deployment was 3 June; neither timestamp alone establishes the public launch.\n\nPrimary evidence → ↗\n18 Aug 2025\nDollar financing appears in the managed account\n\nThe controlled account 0x0a42…c02c first borrows USDC on Aave. It already owes 47.07M USDC at the August month end.\n\nPrimary evidence → ↗\n23 Jun 2026\nMorpho dollar routes expand beyond the main vault\n\nThe controlled LoanManager begins RLUSD borrowing in June. The main vault adds weETH/RLUSD and weETH/PYUSD in July; Sentora RLUSD V2 deposits begin on 7 August.\n\nPrimary evidence → ↗\n25 Sept 2026\nPRIME-backed financing enters the credit vault\n\nAn 18M PYUSD loan against PRIME is deposited into a PYUSD credit vault. Its claim and financing are measured through T.\n\nPrimary evidence → ↗\nAdditional dated strategy and distribution events",
+  "materialLiquidLoanRows": 9,
+  "viewport": [
+    1280,
+    720
+  ],
+  "consoleErrors": [],
+  "publicURL": "https://vlad-degen.github.io/btc-yield-atlas/eth/?revision=69147e7&carryProduct=liquid&categories=loops%2Ccarry%2Cbasis%2Cfixed_yield%2Cfarming%2Ccdp%2Clending#top5",
+  "carryHoverProducts": 13,
+  "carryHoverMonth": "2026-09-30",
+  "carryHoverTotalETH": 609857,
+  "screenshot": "/Users/vladdegen/.codex/visualizations/2026/10/03/01a10191-8fd2-77d1-96d4-92ff41355edd/eth-published-carry-2026-10-06.png",
+  "cleanPublicURL": "https://vlad-degen.github.io/btc-yield-atlas/eth/?carryProduct=liquid&categories=loops%2Ccarry%2Cbasis%2Cfixed_yield%2Cfarming%2Ccdp%2Clending#top",
+  "allPassed": true
+}

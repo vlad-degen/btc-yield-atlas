@@ -29,8 +29,8 @@
     },
     {
       "id": "publish",
-      "status": "pending",
-      "outcome": "ETH-only commit/deploy, live proof and BTC preservation"
+      "status": "complete",
+      "outcome": "ETH-only PR #9 merged and GitHub Pages succeeded. 81 public files match, all 39 source ledgers are published, public browser proof passes, all 345 non-ETH blobs remain identical."
     }
   ],
   "hypotheses": [
@@ -106,5 +106,15 @@
     "browser": "All five flagships, 24 carry columns, 13-product hover, USD CSV/table, ten account rows, 390 px viewport and no console errors.",
     "buildIdempotence": "2097 final artifacts identical on repeat; no duplicated generated research sections.",
     "BTC_SHA256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222"
+  },
+  "publication": {
+    "publicURL": "https://vlad-degen.github.io/btc-yield-atlas/eth/",
+    "pullRequest": "https://github.com/vlad-degen/btc-yield-atlas/pull/9",
+    "commit": "69147e7e9e7a5d7c2d150b3f14b7171f9f02a7da",
+    "liveFileChecks": 81,
+    "allPassed": true,
+    "proof": "research/eth/finalization/substantive-publication-verification.json",
+    "BTCproof": "research/eth/finalization/substantive-btc-preservation.json",
+    "browserProof": "research/eth/finalization/substantive-public-browser-checks.json"
   }
 }
