@@ -1,9 +1,14 @@
 product,status,whole_book_ETH,verified_carry_equity_ETH,evidence
 Concrete Delta weETH,unverified,307362.9254893895,,Dollar debt is observed in a shared Safe; assets and debt attributable to Delta are unresolved.
 ether.fi Liquid ETH,active,177171.06330182485,,Dollar loans and destination claims are measured; full carry-sleeve equity is not reconciled.
+Lido Earn ETH,active,83309.20314634746,,"Earn ETH reports 83,309 ETH. Its main holding is stRATEGY, whose book must not be added again. The nested portfolio owes about 355,217 WETH in staking loops and 25.55M USDT in its main dollar-carry account. Those are gross loans, not the carry sleeve’s equity."
+Avant avETH / savETH,active,12582.712224349118,,"The published 29 September portfolio has a $33.18M net NAV and a $32.53M savUSD position. Ethereum reads at T confirm USDC, USDS and PYUSD borrowing against ETH collateral. The large own-credit destination makes this a concentrated issuer dependency."
 YieldBasis WETH,active,10425.99863386677,10425.99863386677,Net fair-value WETH pool equity is measured separately from actual crvUSD debt; gauge income is separate.
 Rocksolid rETH,closing,9727.76735365525,,728.48 ETH of Liquity shares is the evidenced nested carry claim; direct Aave debt is zero.
 Liquity ETH Carry,active,6014.001735111082,,"Ebisu collateral, ebUSD debt and dollar LP positions are measured; do not equate collateral with sleeve equity."
+Makina DETH,active,2499.359088055877,,"DETH reports 2,499 ETH in a cached book. Its hub has 15,065 WETH of Aave debt against weETH, plus a Morpho USDT / wstETH carry route. Verified accounting instructions identify the credit receipts instead of relying on the vault name."
+Vesper vaETH,active,1052.395279700216,,"vaETH reports 1,052 ETH. Its XY strategy supplies 57.35 WETH, owes 68,998 DAI and holds 60,034 vDAI shares. Other strategies in the same pool are lending or liquidity positions, so the whole pool cannot be labelled carry."
 Royco ETH,active,116.05160827212383,,Morpho PYUSD debt and the senior credit receipt are traced; parent accounting and immediate exit remain restricted.
 TAU InfiniFi ETH Carry,historical,82.23385424749354,,Accrued debt is 0.022132 USDC at T; the old whole book is not current active carry equity.
 Reservoir ETH Yield,active,23.594839906973554,,Outer dollar borrowing and borrowing inside the savings destination are distinct liabilities.
+ZenSats wstETH,active,0.5485690453716627,,The active vault manages less than one ETH and owes about 953 crvUSD. The old Aave / RAAC vault has zero share supply and assets at T. A documented strategy can be real without being a large market category.

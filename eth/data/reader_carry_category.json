@@ -4225,6 +4225,1791 @@
           "sourcePath": "raw/eth/parity-sweep-2026-10-05/yb_monthly_frozen.json"
         }
       ]
+    },
+    {
+      "product": "Lido Earn ETH",
+      "classification": "E4",
+      "address": "0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+      "chain": "Ethereum",
+      "sizeETH": 83309.20314634746,
+      "sizeUSD": 222264825.3471017,
+      "sizeNative": 83309.20314634746,
+      "sizeNativeSymbol": "ETH-equivalent",
+      "sizeScope": "Oracle-valued ETH claim; includes allocated, unclaimed shares",
+      "date": "2026-10-02T23:59:59Z",
+      "status": "Active hybrid",
+      "sourceURLs": [
+        "https://docs.lido.fi/earn/deployment-contracts/"
+      ],
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "date": "2024-10-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "date": "2024-11-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "date": "2024-12-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "date": "2025-01-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "date": "2025-02-28T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "date": "2025-03-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "date": "2025-04-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "date": "2025-05-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "date": "2025-06-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "date": "2025-07-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "date": "2025-08-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "date": "2025-09-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "date": "2025-10-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "date": "2025-11-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "date": "2025-12-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "date": "2026-01-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "date": "2026-02-28T23:59:59Z",
+          "sizeETH": 0.0,
+          "sizeUSD": 0.0,
+          "sizeNative": 0.0,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "date": "2026-03-31T23:59:59Z",
+          "sizeETH": 86458.91962026412,
+          "sizeUSD": 182047270.17263898,
+          "sizeNative": 86458.91962026412,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "date": "2026-04-30T23:59:59Z",
+          "sizeETH": 110594.33429852969,
+          "sizeUSD": 249581043.30758312,
+          "sizeNative": 110594.33429852969,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "date": "2026-05-31T23:59:59Z",
+          "sizeETH": 44337.321668691795,
+          "sizeUSD": 88597939.77089676,
+          "sizeNative": 44337.321668691795,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "date": "2026-06-30T23:59:59Z",
+          "sizeETH": 90416.9798725818,
+          "sizeUSD": 141686392.99646094,
+          "sizeNative": 90416.9798725818,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "date": "2026-07-31T23:59:59Z",
+          "sizeETH": 77748.21357681736,
+          "sizeUSD": 144764489.4346224,
+          "sizeNative": 77748.21357681736,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "date": "2026-08-31T23:59:59Z",
+          "sizeETH": 79323.1161443374,
+          "sizeUSD": 195616228.6265651,
+          "sizeNative": 79323.1161443374,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "date": "2026-09-30T23:59:59Z",
+          "sizeETH": 83046.35775670082,
+          "sizeUSD": 223374004.299906,
+          "sizeNative": 83046.35775670082,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.lido.fi/earn/deployment-contracts/"
+          ]
+        }
+      ],
+      "collateral": "wstETH and other ETH-family receipts",
+      "debt": "WETH loops; USDT carry; a small USDC position",
+      "destination": "earnUSD for the USDT sleeve; separate leveraged staking positions"
+    },
+    {
+      "product": "Avant avETH / savETH",
+      "classification": "E4",
+      "address": "0x9469470C9878bf3d6d0604831d9A3A366156f7EE",
+      "chain": "Ethereum; cross-chain disclosure separate",
+      "sizeETH": 12582.712224349118,
+      "sizeUSD": 33570052.63902124,
+      "sizeNative": 12582.712224349118,
+      "sizeNativeSymbol": "ETH-equivalent",
+      "sizeScope": "avETH face supply; returns belong to the senior savETH claim",
+      "date": "2026-10-02T23:59:59Z",
+      "status": "Active hybrid",
+      "sourceURLs": [
+        "https://docs.avantprotocol.com/security/contract-addresses"
+      ],
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "date": "2024-10-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "date": "2024-11-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "date": "2024-12-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "date": "2025-01-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "date": "2025-02-28T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "date": "2025-03-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "date": "2025-04-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "date": "2025-05-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "date": "2025-06-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "date": "2025-07-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "date": "2025-08-31T23:59:59Z",
+          "sizeETH": 0.0031,
+          "sizeUSD": 13.58373004,
+          "sizeNative": 0.0031,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "date": "2025-09-30T23:59:59Z",
+          "sizeETH": 1059.1332696047118,
+          "sizeUSD": 4390485.967456952,
+          "sizeNative": 1059.1332696047118,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "date": "2025-10-31T23:59:59Z",
+          "sizeETH": 2178.5908562421205,
+          "sizeUSD": 8379143.649918506,
+          "sizeNative": 2178.5908562421205,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "date": "2025-11-30T23:59:59Z",
+          "sizeETH": 1953.8778867897213,
+          "sizeUSD": 5870758.270100472,
+          "sizeNative": 1953.8778867897213,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "date": "2025-12-31T23:59:59Z",
+          "sizeETH": 2888.6281936864348,
+          "sizeUSD": 8581074.45729267,
+          "sizeNative": 2888.6281936864348,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "date": "2026-01-31T23:59:59Z",
+          "sizeETH": 2819.4798398944217,
+          "sizeUSD": 6884683.201264274,
+          "sizeNative": 2819.4798398944217,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "date": "2026-02-28T23:59:59Z",
+          "sizeETH": 3987.179027021058,
+          "sizeUSD": 7822370.2065445,
+          "sizeNative": 3987.179027021058,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "date": "2026-03-31T23:59:59Z",
+          "sizeETH": 5739.112679696192,
+          "sizeUSD": 12084233.77415179,
+          "sizeNative": 5739.112679696192,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "date": "2026-04-30T23:59:59Z",
+          "sizeETH": 6556.286431484754,
+          "sizeUSD": 14795738.119607003,
+          "sizeNative": 6556.286431484754,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "date": "2026-05-31T23:59:59Z",
+          "sizeETH": 6530.304872183906,
+          "sizeUSD": 13049312.316938933,
+          "sizeNative": 6530.304872183906,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "date": "2026-06-30T23:59:59Z",
+          "sizeETH": 9164.060038590638,
+          "sizeUSD": 14360384.674434943,
+          "sizeNative": 9164.060038590638,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "date": "2026-07-31T23:59:59Z",
+          "sizeETH": 10330.234570455612,
+          "sizeUSD": 19234540.120389342,
+          "sizeNative": 10330.234570455612,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "date": "2026-08-31T23:59:59Z",
+          "sizeETH": 12572.689103104556,
+          "sizeUSD": 31005111.064578295,
+          "sizeNative": 12572.689103104556,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "date": "2026-09-30T23:59:59Z",
+          "sizeETH": 12356.755063369086,
+          "sizeUSD": 33236591.383626085,
+          "sizeNative": 12356.755063369086,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.avantprotocol.com/security/contract-addresses"
+          ]
+        }
+      ],
+      "collateral": "WETH, wstETH and weETH",
+      "debt": "USDC, USDS and PYUSD in the traced Ethereum account; other chains separately disclosed",
+      "destination": "savUSD / avUSD, dollar credit and liquidity positions across chains"
+    },
+    {
+      "product": "Makina DETH",
+      "classification": "E4",
+      "address": "0x871aB8E36CaE9AF35c6A3488B049965233DeB7ed",
+      "chain": "Ethereum",
+      "sizeETH": 2499.359088055877,
+      "sizeUSD": 6668166.18339947,
+      "sizeNative": 2499.359088055877,
+      "sizeNativeSymbol": "ETH-equivalent",
+      "sizeScope": "Cached reported ETH book; accounting timestamp retained",
+      "date": "2026-10-02T23:59:59Z",
+      "status": "Active hybrid",
+      "sourceURLs": [
+        "https://docs.makina.finance/strategies/deployments"
+      ],
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "date": "2024-10-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "date": "2024-11-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "date": "2024-12-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "date": "2025-01-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "date": "2025-02-28T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "date": "2025-03-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "date": "2025-04-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "date": "2025-05-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "date": "2025-06-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "date": "2025-07-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "date": "2025-08-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "date": "2025-09-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "date": "2025-10-31T23:59:59Z",
+          "sizeETH": 9566.825639392599,
+          "sizeUSD": 36795255.09643705,
+          "sizeNative": 9566.825639392599,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "date": "2025-11-30T23:59:59Z",
+          "sizeETH": 11263.451566550262,
+          "sizeUSD": 33842955.01846658,
+          "sizeNative": 11263.451566550262,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "date": "2025-12-31T23:59:59Z",
+          "sizeETH": 9812.318610795559,
+          "sizeUSD": 29148866.157973718,
+          "sizeNative": 9812.318610795559,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "date": "2026-01-31T23:59:59Z",
+          "sizeETH": 7873.013216906936,
+          "sizeUSD": 19224539.601531778,
+          "sizeNative": 7873.013216906936,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "date": "2026-02-28T23:59:59Z",
+          "sizeETH": 4026.3925798881737,
+          "sizeUSD": 7899302.525249451,
+          "sizeNative": 4026.3925798881737,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "date": "2026-03-31T23:59:59Z",
+          "sizeETH": 3820.1191705928886,
+          "sizeUSD": 8043615.046256077,
+          "sizeNative": 3820.1191705928886,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "date": "2026-04-30T23:59:59Z",
+          "sizeETH": 3542.788054703419,
+          "sizeUSD": 7995099.7898657955,
+          "sizeNative": 3542.788054703419,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "date": "2026-05-31T23:59:59Z",
+          "sizeETH": 2891.163309418132,
+          "sizeUSD": 5777324.906310971,
+          "sizeNative": 2891.163309418132,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "date": "2026-06-30T23:59:59Z",
+          "sizeETH": 2665.174068090851,
+          "sizeUSD": 4176415.7677866295,
+          "sizeNative": 2665.174068090851,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "date": "2026-07-31T23:59:59Z",
+          "sizeETH": 2591.4613499343545,
+          "sizeUSD": 4825211.563763381,
+          "sizeNative": 2591.4613499343545,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "date": "2026-08-31T23:59:59Z",
+          "sizeETH": 2593.3251862953784,
+          "sizeUSD": 6395317.244248232,
+          "sizeNative": 2593.3251862953784,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "date": "2026-09-30T23:59:59Z",
+          "sizeETH": 2498.8037382042357,
+          "sizeUSD": 6721159.2662197985,
+          "sizeNative": 2498.8037382042357,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.makina.finance/strategies/deployments"
+          ]
+        }
+      ],
+      "collateral": "weETH and wstETH",
+      "debt": "Large WETH loop; Morpho USDT carry and minor other debt",
+      "destination": "Senior PYUSD credit receipt and nested strategy shares"
+    },
+    {
+      "product": "Vesper vaETH",
+      "classification": "E4",
+      "address": "0xd1C117319B3595fbc39b471AB1fd485629eb05F2",
+      "chain": "Ethereum",
+      "sizeETH": 1052.395279700216,
+      "sizeUSD": 2807738.4515103013,
+      "sizeNative": 1052.395279700216,
+      "sizeNativeSymbol": "ETH-equivalent",
+      "sizeScope": "Reported ETH pool book; carry is one strategy",
+      "date": "2026-10-02T23:59:59Z",
+      "status": "Active hybrid",
+      "sourceURLs": [
+        "https://docs.vesper.finance"
+      ],
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "date": "2024-10-31T23:59:59Z",
+          "sizeETH": 1105.9506255625572,
+          "sizeUSD": 2783828.36460475,
+          "sizeNative": 1105.9506255625572,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "date": "2024-11-30T23:59:59Z",
+          "sizeETH": 1156.7817609405686,
+          "sizeUSD": 4298427.506391011,
+          "sizeNative": 1156.7817609405686,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "date": "2024-12-31T23:59:59Z",
+          "sizeETH": 1165.1647793797868,
+          "sizeUSD": 3885465.345728896,
+          "sizeNative": 1165.1647793797868,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "date": "2025-01-31T23:59:59Z",
+          "sizeETH": 1095.1440752573753,
+          "sizeUSD": 3602809.6490783794,
+          "sizeNative": 1095.1440752573753,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "date": "2025-02-28T23:59:59Z",
+          "sizeETH": 1090.711793089364,
+          "sizeUSD": 2435984.8115678546,
+          "sizeNative": 1090.711793089364,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "date": "2025-03-31T23:59:59Z",
+          "sizeETH": 1354.743125393972,
+          "sizeUSD": 2473971.609525392,
+          "sizeNative": 1354.743125393972,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "date": "2025-04-30T23:59:59Z",
+          "sizeETH": 1460.4111618750999,
+          "sizeUSD": 2624344.38382755,
+          "sizeNative": 1460.4111618750999,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "date": "2025-05-31T23:59:59Z",
+          "sizeETH": 1433.3794671219339,
+          "sizeUSD": 3631294.874417365,
+          "sizeNative": 1433.3794671219339,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "date": "2025-06-30T23:59:59Z",
+          "sizeETH": 1463.500272384039,
+          "sizeUSD": 3645293.9964550636,
+          "sizeNative": 1463.500272384039,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "date": "2025-07-31T23:59:59Z",
+          "sizeETH": 1448.445519985272,
+          "sizeUSD": 5348124.552098383,
+          "sizeNative": 1448.445519985272,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "date": "2025-08-31T23:59:59Z",
+          "sizeETH": 1583.3293339038853,
+          "sizeUSD": 6937909.108439806,
+          "sizeNative": 1583.3293339038853,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "date": "2025-09-30T23:59:59Z",
+          "sizeETH": 1870.8418171592423,
+          "sizeUSD": 7755308.025244925,
+          "sizeNative": 1870.8418171592423,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "date": "2025-10-31T23:59:59Z",
+          "sizeETH": 1876.1911530589887,
+          "sizeUSD": 7216075.079514768,
+          "sizeNative": 1876.1911530589887,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "date": "2025-11-30T23:59:59Z",
+          "sizeETH": 2182.307546488531,
+          "sizeUSD": 6557114.015707694,
+          "sizeNative": 2182.307546488531,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "date": "2025-12-31T23:59:59Z",
+          "sizeETH": 2215.690342937011,
+          "sizeUSD": 6582018.360342403,
+          "sizeNative": 2215.690342937011,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "date": "2026-01-31T23:59:59Z",
+          "sizeETH": 2240.5752902523313,
+          "sizeUSD": 5471098.194674689,
+          "sizeNative": 2240.5752902523313,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "date": "2026-02-28T23:59:59Z",
+          "sizeETH": 2541.503932882619,
+          "sizeUSD": 4986127.913912623,
+          "sizeNative": 2541.503932882619,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "date": "2026-03-31T23:59:59Z",
+          "sizeETH": 2490.977754304706,
+          "sizeUSD": 5244984.580233609,
+          "sizeNative": 2490.977754304706,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "date": "2026-04-30T23:59:59Z",
+          "sizeETH": 2443.0773639730373,
+          "sizeUSD": 5513354.741442999,
+          "sizeNative": 2443.0773639730373,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "date": "2026-05-31T23:59:59Z",
+          "sizeETH": 2622.0867100336513,
+          "sizeUSD": 5239637.210058944,
+          "sizeNative": 2622.0867100336513,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "date": "2026-06-30T23:59:59Z",
+          "sizeETH": 1881.9656437383603,
+          "sizeUSD": 2949102.305566059,
+          "sizeNative": 1881.9656437383603,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "date": "2026-07-31T23:59:59Z",
+          "sizeETH": 1862.688647488232,
+          "sizeUSD": 3468261.9525769367,
+          "sizeNative": 1862.688647488232,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "date": "2026-08-31T23:59:59Z",
+          "sizeETH": 1617.5358901941113,
+          "sizeUSD": 3988954.1143609453,
+          "sizeNative": 1617.5358901941113,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "date": "2026-09-30T23:59:59Z",
+          "sizeETH": 1052.2899295891168,
+          "sizeUSD": 2830397.64302994,
+          "sizeNative": 1052.2899295891168,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://docs.vesper.finance"
+          ]
+        }
+      ],
+      "collateral": "WETH",
+      "debt": "DAI on Aave V3",
+      "destination": "Vesper vDAI dollar lending pool"
+    },
+    {
+      "product": "ZenSats wstETH",
+      "classification": "E4",
+      "address": "0x23F189dE34EED95f6303CfF1C77f7676F211Dd2c",
+      "chain": "Ethereum",
+      "sizeETH": 0.5485690453716627,
+      "sizeUSD": 1463.555027001895,
+      "sizeNative": 0.5485690453716627,
+      "sizeNativeSymbol": "ETH-equivalent",
+      "sizeScope": "Reported wstETH managed assets converted to ETH; not independently netted carry equity",
+      "date": "2026-10-02T23:59:59Z",
+      "status": "Active micro-position",
+      "sourceURLs": [
+        "https://www.zensats.app/llms-full.txt"
+      ],
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "date": "2024-10-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "date": "2024-11-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "date": "2024-12-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "date": "2025-01-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "date": "2025-02-28T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "date": "2025-03-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "date": "2025-04-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "date": "2025-05-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "date": "2025-06-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "date": "2025-07-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "date": "2025-08-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "date": "2025-09-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "date": "2025-10-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "date": "2025-11-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "date": "2025-12-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "date": "2026-01-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "date": "2026-02-28T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "date": "2026-03-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "date": "2026-04-30T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "date": "2026-05-31T23:59:59Z",
+          "sizeETH": null,
+          "sizeUSD": null,
+          "sizeNative": null,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "no_usable_book_observation",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "date": "2026-06-30T23:59:59Z",
+          "sizeETH": 0.5432994514605468,
+          "sizeUSD": 851.3681799909763,
+          "sizeNative": 0.5432994514605468,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "date": "2026-07-31T23:59:59Z",
+          "sizeETH": 0.5449837930500447,
+          "sizeUSD": 1014.7410071754758,
+          "sizeNative": 0.5449837930500447,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "date": "2026-08-31T23:59:59Z",
+          "sizeETH": 0.5471035393974735,
+          "sizeUSD": 1349.194739783544,
+          "sizeNative": 0.5471035393974735,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "date": "2026-09-30T23:59:59Z",
+          "sizeETH": 0.5485192911913805,
+          "sizeUSD": 1475.380183055392,
+          "sizeNative": 0.5485192911913805,
+          "sizeNativeSymbol": "ETH-equivalent",
+          "status": "archived_reported_book",
+          "carryAllocationPercent": null,
+          "sourceURLs": [
+            "https://www.zensats.app/llms-full.txt"
+          ]
+        }
+      ],
+      "collateral": "wstETH",
+      "debt": "crvUSD on LlamaLend",
+      "destination": "Curve crvUSD / USDT liquidity through StakeDAO"
     }
   ],
   "history_captures": [
