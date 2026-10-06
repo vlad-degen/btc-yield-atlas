@@ -1,0 +1,217 @@
+{
+  "legs": [
+    {
+      "id": "liquid",
+      "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+      "market": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "outer": true
+    },
+    {
+      "id": "liquid",
+      "account": "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3",
+      "market": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "outer": true
+    },
+    {
+      "id": "liquid",
+      "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+      "market": "0x85252bb8485c99bba46fe149c7dd2aad83672640f53c630890673cf1848ba16e",
+      "outer": true
+    },
+    {
+      "id": "liquid",
+      "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+      "market": "0x85d59152eeeab7ca024804895b358868d8dd1e134171be400d7792d5604a212c",
+      "outer": true
+    },
+    {
+      "id": "tau-infinifi",
+      "account": "0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b",
+      "market": "0xb323495f7e4148be5643a4ea4a8221eef163e4bccfdedc2a6f4696baacbc86cc",
+      "outer": true
+    },
+    {
+      "id": "tau-infinifi",
+      "account": "0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b",
+      "market": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
+      "outer": false
+    },
+    {
+      "id": "reservoir-eth",
+      "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+      "market": "0xbfed072faee09b963949defcdb91094465c34c6c62d798b906274ef3563c9cac",
+      "outer": false
+    },
+    {
+      "id": "reservoir-eth",
+      "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+      "market": "0x32e253d33f1594a67fc6ef51bf7a39cc4bf2d14904998dee769706fcde489ed9",
+      "outer": false
+    },
+    {
+      "id": "reservoir-eth",
+      "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+      "market": "0x1590cb22d797e226df92ebc6e0153427e207299916e7e4e53461389ad68272fb",
+      "outer": false
+    },
+    {
+      "id": "reservoir-eth",
+      "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+      "market": "0x3e29fdb9fefb8930c040f661368c505edc5081e86112c6da4238d683f6f282ac",
+      "outer": false
+    },
+    {
+      "id": "makina-deth",
+      "account": "0xD1A2d9DF5db842DA2Ee81075Fa441602B2352915",
+      "market": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2",
+      "outer": true
+    },
+    {
+      "id": "royco",
+      "account": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+      "market": "0xf5c5df23559b0fb56560a7578ea17d81e245153ba64b8132df026c9358864d27",
+      "outer": true
+    },
+    {
+      "id": "upshift-nemo-eth-prime",
+      "name": "NEMO ETH Prime",
+      "account": "0x90882e7C28dDf0ac1177033A310aeeD8eFf25E90",
+      "market": "0x7e585a933ffe8443c371b4f8cfeb4430f5f6a14c2f32a898c26662c67a1cb8b8",
+      "outer": true
+    },
+    {
+      "id": "upshift-sentora-eth",
+      "name": "Sentora ETH",
+      "account": "0xfB9776DE51A24Eb75E11110fAE659e54B346658f",
+      "market": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+      "outer": true
+    }
+  ],
+  "months": [
+    {
+      "month": "2024-10",
+      "timestamp": 1730419199,
+      "block": 21089068
+    },
+    {
+      "month": "2024-11",
+      "timestamp": 1733011199,
+      "block": 21303933
+    },
+    {
+      "month": "2024-12",
+      "timestamp": 1735689599,
+      "block": 21525890
+    },
+    {
+      "month": "2025-01",
+      "timestamp": 1738367999,
+      "block": 21747949
+    },
+    {
+      "month": "2025-02",
+      "timestamp": 1740787199,
+      "block": 21948291
+    },
+    {
+      "month": "2025-03",
+      "timestamp": 1743465599,
+      "block": 22170334
+    },
+    {
+      "month": "2025-04",
+      "timestamp": 1746057599,
+      "block": 22385293
+    },
+    {
+      "month": "2025-05",
+      "timestamp": 1748735999,
+      "block": 22606142
+    },
+    {
+      "month": "2025-06",
+      "timestamp": 1751327999,
+      "block": 22820673
+    },
+    {
+      "month": "2025-07",
+      "timestamp": 1754006399,
+      "block": 23042513
+    },
+    {
+      "month": "2025-08",
+      "timestamp": 1756684799,
+      "block": 23264565
+    },
+    {
+      "month": "2025-09",
+      "timestamp": 1759276799,
+      "block": 23479243
+    },
+    {
+      "month": "2025-10",
+      "timestamp": 1761955199,
+      "block": 23700766
+    },
+    {
+      "month": "2025-11",
+      "timestamp": 1764547199,
+      "block": 23914920
+    },
+    {
+      "month": "2025-12",
+      "timestamp": 1767225599,
+      "block": 24136052
+    },
+    {
+      "month": "2026-01",
+      "timestamp": 1769903999,
+      "block": 24358292
+    },
+    {
+      "month": "2026-02",
+      "timestamp": 1772323199,
+      "block": 24558867
+    },
+    {
+      "month": "2026-03",
+      "timestamp": 1775001599,
+      "block": 24781026
+    },
+    {
+      "month": "2026-04",
+      "timestamp": 1777593599,
+      "block": 24996367
+    },
+    {
+      "month": "2026-05",
+      "timestamp": 1780271999,
+      "block": 25218797
+    },
+    {
+      "month": "2026-06",
+      "timestamp": 1782863999,
+      "block": 25433938
+    },
+    {
+      "month": "2026-07",
+      "timestamp": 1785542399,
+      "block": 25656292
+    },
+    {
+      "month": "2026-08",
+      "timestamp": 1788220799,
+      "block": 25878704
+    },
+    {
+      "month": "2026-09",
+      "timestamp": 1790812799,
+      "block": 26093737
+    },
+    {
+      "month": "snapshot",
+      "timestamp": 1790985599,
+      "block": 26108081
+    }
+  ]
+}

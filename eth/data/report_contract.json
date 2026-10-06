@@ -190,18 +190,6 @@
   ],
   "matched30dReturns": [
     {
-      "id": "concrete",
-      "name": "Concrete Delta weETH",
-      "start": "2026-09-02T23:59:59Z",
-      "end": "2026-10-02T23:59:59Z",
-      "days": 30,
-      "bookReturnPct": 0.19148705307747704,
-      "benchmarkReturnPct": 0.18491359323908885,
-      "excessPercentagePoints": 0.006573459838388196,
-      "basis": "ETH book share value; external payouts and exit costs excluded",
-      "carryOnlyProfit": null
-    },
-    {
       "id": "liquid",
       "name": "ether.fi Liquid ETH",
       "start": "2026-09-02T23:59:59Z",
@@ -211,6 +199,18 @@
       "benchmarkReturnPct": 0.18491359323908885,
       "excessPercentagePoints": 0.07609707465909832,
       "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "yieldbasis",
+      "name": "YieldBasis WETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": -0.16217852420224999,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": -0.34709211744133883,
+      "basis": "Unstaked fair-value LT mark; gauge income excluded",
       "carryOnlyProfit": null
     },
     {
@@ -238,15 +238,27 @@
       "carryOnlyProfit": null
     },
     {
-      "id": "yieldbasis",
-      "name": "YieldBasis WETH",
+      "id": "liquity",
+      "name": "Liquity ETH Carry",
       "start": "2026-09-02T23:59:59Z",
       "end": "2026-10-02T23:59:59Z",
       "days": 30,
-      "bookReturnPct": -0.16217852420224999,
+      "bookReturnPct": 0.4597242901151377,
       "benchmarkReturnPct": 0.18491359323908885,
-      "excessPercentagePoints": -0.34709211744133883,
-      "basis": "Unstaked fair-value LT mark; gauge income excluded",
+      "excessPercentagePoints": 0.27481069687604887,
+      "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "concrete",
+      "name": "Concrete Delta weETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.19148705307747704,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.006573459838388196,
+      "basis": "ETH book share value; external payouts and exit costs excluded",
       "carryOnlyProfit": null
     },
     {
@@ -258,18 +270,6 @@
       "bookReturnPct": 0.21920570033533426,
       "benchmarkReturnPct": 0.18491359323908885,
       "excessPercentagePoints": 0.03429210709624542,
-      "basis": "ETH book share value; external payouts and exit costs excluded",
-      "carryOnlyProfit": null
-    },
-    {
-      "id": "liquity",
-      "name": "Liquity ETH Carry",
-      "start": "2026-09-02T23:59:59Z",
-      "end": "2026-10-02T23:59:59Z",
-      "days": 30,
-      "bookReturnPct": 0.4597242901151377,
-      "benchmarkReturnPct": 0.18491359323908885,
-      "excessPercentagePoints": 0.27481069687604887,
       "basis": "ETH book share value; external payouts and exit costs excluded",
       "carryOnlyProfit": null
     },
@@ -511,12 +511,26 @@
   "sources": {
     "market_reader_chapter": "72da40f294ea5ea4db6a7db56038c9716099bbfeb09a2e78ae4e82d0233aaf5c",
     "reader_carry_category": "7de0c236e26cef3266c9204f5a7cbef73e195b6d4476e5b0b7a09a817b0d0d01",
-    "reader_product_chapters": "f062adbd84369ac09b129f3beec7142f5fa3cc58cd515f47156b713ed4875f97",
+    "reader_product_chapters": "890fde3d49e1d92c0b2f0046d3083ba4d3e4db425cfe1b7bd17dabd0ddf9cdcc",
     "etherfi_staking_comparison": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858",
     "carry_economics_chapter": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
     "carry_coverage_audit": "8c6919af225c0ed8c4b2edb39ef7cfe65a15545941b6a5a812edc3ddb44751a3",
     "market_netting_closure": "6164a34870ec4210de29c8326acb5f3f0e453028fc0bd77d9d255dc777c90da6",
     "credit_expansion_deep": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0",
     "carry_attribution_closure": "7796dba62f2a04baf2d7b554d3f46108ab5b4fd119e8a5620a34ed7960564dd2"
+  },
+  "verifiedDollarFinancing": {
+    "source": "data/eth/economic_questions.json",
+    "sourceSHA256": "787508f243a2ba1dd56871dfcbc30760056379c86dbb8789ee38d40438fa82d5",
+    "directDebtUSD": 251823181.2884103,
+    "topFive": [
+      "liquid",
+      "yieldbasis",
+      "lido-earn",
+      "avant",
+      "liquity"
+    ],
+    "topTwoDebtShare": 0.8295495216740614,
+    "unit": "Outstanding nominal-dollar financing; not TVL or equity"
   }
 }
