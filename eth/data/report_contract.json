@@ -2,17 +2,20 @@
   "schemaVersion": 1,
   "snapshot": "2026-10-02T23:59:59Z",
   "headline": {
+    "nativeActiveETH": 43805557.72346937,
+    "nativeEffectiveETH": 43739959.0,
+    "nativeActiveValidators": 874362,
     "receiptClaimsETH": 20190378.32741262,
     "receiptClaimsUSD": 54598337750.198135,
-    "examinedBooks": 8,
-    "currentRoutes": 5,
+    "examinedBooks": 13,
+    "currentRoutes": 10,
     "liquid730dExcessPP": 1.3625789713257452,
     "scenarioCarryWithoutRewardsPP": -0.8373479286176463
   },
   "globalUniqueETH": null,
   "globalCarryEquityETH": null,
-  "sampleGrossBooksETH": 510923.636816274,
-  "sampleTopTwoShare": 0.9483491345409231,
+  "sampleGrossBooksETH": 610367.855123772,
+  "sampleTopTwoShare": 0.7938392966204932,
   "census": [
     {
       "name": "Concrete Delta weETH",
@@ -38,6 +41,32 @@
       "nestedClaimETH": null,
       "sources": [
         "https://etherfi.gitbook.io/etherfi/products/liquid/live-vaults/liquid-eth-vault"
+      ]
+    },
+    {
+      "name": "Lido Earn ETH",
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "Earn ETH reports 83,309 ETH. Its main holding is stRATEGY, whose book must not be added again. The nested portfolio owes about 355,217 WETH in staking loops and 25.55M USDT in its main dollar-carry account. Those are gross loans, not the carry sleeve\u2019s equity.",
+      "bookETH": 83309.20314634746,
+      "bookUSD": 222264825.3471017,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://docs.lido.fi/earn/deployment-contracts/"
+      ]
+    },
+    {
+      "name": "Avant avETH / savETH",
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "The published 29 September portfolio has a $33.18M net NAV and a $32.53M savUSD position. Ethereum reads at T confirm USDC, USDS and PYUSD borrowing against ETH collateral. The large own-credit destination makes this a concentrated issuer dependency.",
+      "bookETH": 12582.712224349118,
+      "bookUSD": 33570052.63902124,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://docs.avantprotocol.com/security/contract-addresses"
       ]
     },
     {
@@ -81,6 +110,32 @@
       ]
     },
     {
+      "name": "Makina DETH",
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "DETH reports 2,499 ETH in a cached book. Its hub has 15,065 WETH of Aave debt against weETH, plus a Morpho USDT / wstETH carry route. Verified accounting instructions identify the credit receipts instead of relying on the vault name.",
+      "bookETH": 2499.359088055877,
+      "bookUSD": 6668166.18339947,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://docs.makina.finance/strategies/deployments"
+      ]
+    },
+    {
+      "name": "Vesper vaETH",
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "vaETH reports 1,052 ETH. Its XY strategy supplies 57.35 WETH, owes 68,998 DAI and holds 60,034 vDAI shares. Other strategies in the same pool are lending or liquidity positions, so the whole pool cannot be labelled carry.",
+      "bookETH": 1052.395279700216,
+      "bookUSD": 2807738.4515103013,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://docs.vesper.finance"
+      ]
+    },
+    {
       "name": "Royco ETH",
       "status": "active",
       "statusLabel": "Loan traced; parent marks stale",
@@ -118,6 +173,19 @@
       "sources": [
         "https://app.ipor.io/fusion/ethereum/0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e/vault-info"
       ]
+    },
+    {
+      "name": "ZenSats wstETH",
+      "status": "active",
+      "statusLabel": "Active micro-position",
+      "allocationEvidence": "The active vault manages less than one ETH and owes about 953 crvUSD. The old Aave / RAAC vault has zero share supply and assets at T. A documented strategy can be real without being a large market category.",
+      "bookETH": 0.5485690453716627,
+      "bookUSD": 1463.555027001895,
+      "carryEquityETH": null,
+      "nestedClaimETH": null,
+      "sources": [
+        "https://www.zensats.app/llms-full.txt"
+      ]
     }
   ],
   "matched30dReturns": [
@@ -143,6 +211,30 @@
       "benchmarkReturnPct": 0.18491359323908885,
       "excessPercentagePoints": 0.07609707465909832,
       "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "lido-earn",
+      "name": "Lido Earn ETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.2513120369097028,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.06639844367061393,
+      "basis": "Oracle-valued ETH claim; includes allocated, unclaimed shares",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "avant",
+      "name": "Avant avETH / savETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.33849230557570936,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.15357871233662052,
+      "basis": "avETH face supply; returns belong to the senior savETH claim",
       "carryOnlyProfit": null
     },
     {
@@ -182,6 +274,30 @@
       "carryOnlyProfit": null
     },
     {
+      "id": "makina-deth",
+      "name": "Makina DETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.34682189280773995,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.1619082995686511,
+      "basis": "Cached reported ETH book; accounting timestamp retained",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "vesper",
+      "name": "Vesper vaETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.06984278433907487,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": -0.11507080890001398,
+      "basis": "Reported ETH pool book; carry is one strategy",
+      "carryOnlyProfit": null
+    },
+    {
       "id": "royco",
       "name": "Royco ETH",
       "start": "2026-09-02T23:59:59Z",
@@ -191,6 +307,18 @@
       "benchmarkReturnPct": 0.18491359323908885,
       "excessPercentagePoints": 0.0,
       "basis": "ETH book share value; external payouts and exit costs excluded",
+      "carryOnlyProfit": null
+    },
+    {
+      "id": "zensats",
+      "name": "ZenSats wstETH",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "days": 30,
+      "bookReturnPct": 0.24795127218690285,
+      "benchmarkReturnPct": 0.18491359323908885,
+      "excessPercentagePoints": 0.06303767894781401,
+      "basis": "Reported wstETH managed assets converted to ETH; not independently netted carry equity",
       "carryOnlyProfit": null
     }
   ],
@@ -230,14 +358,72 @@
       "end": "2026-09-17T14:18:11+00:00",
       "receipt": "https://etherscan.io/tx/0x72df97be87198f5077b3ad8f050b7ccef35157653649d3f4774162ce49923e98",
       "completeWalletProfit": null
+    },
+    {
+      "id": "lido-direct-usdt",
+      "currency": "USDT",
+      "borrowed": 5000000,
+      "acquiredEconomicShares": 4838244.259198796,
+      "recognisedAcquisitionValue": 5000000.0,
+      "start": "2026-09-29T05:59:35Z",
+      "end": "2026-10-02T23:59:59Z",
+      "income": 3651.5650582105195,
+      "fundingCost": 2250.992481333261,
+      "resultBeforeGas": 1400.5725768772584,
+      "receipt": "https://etherscan.io/tx/0x48c24a9436a519bd778454ff6946404afa79f943afc1952e36c08d69949adbc1",
+      "scope": "The 5M USDT Aave borrowing and transfer to the earnUSD deposit queue occur in the same transaction. Newly allocated economic shares exclude the separately minted old 9.855M claim. Funding uses the archived normalised debt index; no subsequent account repayment appears before T. Value is a recognised claim, not redemption cash; external rewards, gas and outer fees excluded.",
+      "completeWalletProfit": null
+    }
+  ],
+  "flowAdjustedLedgers": [
+    {
+      "id": "lido",
+      "currency": "USDT",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "openingDebt": 7183033.720635,
+      "closingDebt": 25552804.167117,
+      "newBorrowing": 41682960.334359,
+      "repayments": 23378160.334359,
+      "accruedFundingCost": 64970.446482,
+      "openingInvestmentClaim": 20486655.501915015,
+      "closingInvestmentClaim": 25571052.68843568,
+      "netInvestmentAcquisitionMark": 5000000.0,
+      "investmentSharePriceIncome": 84397.18652066604,
+      "claimIncomeLessFullAccountInterest": 19426.74003866605,
+      "scope": "Flow-adjusted recognised investment price growth versus full account debt interest. Different equity and loan principals are explicit; this is not organic carry-only, whole-wallet or investor cash profit. External rewards, cash transfers, gas and exit costs are separate.",
+      "openingAllocatedUnclaimedShares": 9855091.34474627,
+      "newEconomicShares": 4838244.259198796,
+      "mintedSharesInMonth": 14693335.603945065,
+      "ownershipConvention": "sharesOf includes allocated, unclaimed shares. Minting 9.855M previously allocated shares is not a new acquisition. The observed increase in total claims is valued at the archived oracle price in its allocation / claim transaction.",
+      "cashTransferredToParentUSDT": 13304800.0
+    },
+    {
+      "id": "vesper",
+      "currency": "DAI",
+      "start": "2026-09-02T23:59:59Z",
+      "end": "2026-10-02T23:59:59Z",
+      "openingDebt": 164339.80296601658,
+      "closingDebt": 68998.30281590614,
+      "newBorrowing": 0.02402887037877265,
+      "repayments": 95794.02218119983,
+      "accruedFundingCost": 452.49800221903575,
+      "openingInvestmentClaim": 164221.89279675475,
+      "closingInvestmentClaim": 68955.75577054755,
+      "netInvestmentAcquisitionMark": -95279.63283464395,
+      "investmentSharePriceIncome": 13.49580843675243,
+      "claimIncomeLessFullAccountInterest": -439.0021937822833,
+      "scope": "Flow-adjusted recognised investment price growth versus full account debt interest. Different equity and loan principals are explicit; this is not organic carry-only, whole-wallet or investor cash profit. External rewards, cash transfers, gas and exit costs are separate.",
+      "receiptReconciliationResidualShares": 0.0,
+      "ownershipConvention": "All mint and burn transfers reconcile opening and closing vDAI shares. Each transfer is valued at its archived DAI-per-share price. Reinvested reward acquisitions are flows, not organic share-price income."
     }
   ],
   "coverage": [
     {
       "family": "Native validator staking",
       "income": "Consensus issuance, tips and MEV",
-      "capital": "No exact all-validator balance at T",
-      "history": "No full market history",
+      "capital": "43.806M actual active ETH; 43.740M effective active ETH",
+      "history": "Five archived month ends; earlier states pruned at tested public endpoints",
       "returns": "Issuer benchmarks only",
       "report": "staking-restaking"
     },
@@ -268,9 +454,9 @@
     {
       "family": "Dollar carry",
       "income": "Dollar investment income minus dollar funding",
-      "capital": "Eight examined books; five have current traced routes; unassigned sleeves retained",
+      "capital": "Thirteen examined books; ten current traced routes; carry equity remains distinct from whole books",
       "history": "24 monthly whole-book observations; allocation weights incomplete",
-      "returns": "Matched 30-day books; three financed investment lots",
+      "returns": "Matched 30-day claims; four financed lots plus two flow-adjusted investment / funding ledgers",
       "report": "CARRY-PRODUCTS"
     },
     {
@@ -285,7 +471,7 @@
       "family": "Fixed maturity",
       "income": "Underlying income or principal-claim discount",
       "capital": "Pendle / Spectra parent claims; market registries screened",
-      "history": "Parent histories; maturity-level coverage partial",
+      "history": "Parent histories; four active Ethereum PT faces verified at T; maturity coverage remains partial",
       "returns": "Payoff denomination checked; no full investor-return panel",
       "report": "pendle-pt"
     },
@@ -300,7 +486,7 @@
     {
       "family": "Options / structured yield",
       "income": "Option premiums in exchange for contingent payoff",
-      "capital": "Materiality and funded capacity not established at T",
+      "capital": "Ribbon residual book: 713 ETH; current option expired in December 2025; other funded capacity partial",
       "history": "Historical / retired product screens",
       "returns": "No full premium, settlement and cash-return ledger",
       "report": "STRATEGY-UNIVERSE-EXPANSION"
@@ -324,11 +510,11 @@
   "lpCustodyETH": 69531.48533136006,
   "sources": {
     "market_reader_chapter": "72da40f294ea5ea4db6a7db56038c9716099bbfeb09a2e78ae4e82d0233aaf5c",
-    "reader_carry_category": "a9eb0ba379841c8e8d754c27055aadf75b682ffe0494660c6abbf001f22f837e",
-    "reader_product_chapters": "73bdb984660306b902a78ca886bf78ac6ed4eef071ee19fbc95b50ddacd4b650",
+    "reader_carry_category": "7de0c236e26cef3266c9204f5a7cbef73e195b6d4476e5b0b7a09a817b0d0d01",
+    "reader_product_chapters": "b8fd87ac9b51d98e0f585f15c6766238ac392710b933ebae7f11adbfa6108b10",
     "etherfi_staking_comparison": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858",
     "carry_economics_chapter": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
-    "carry_coverage_audit": "771e61e0cf735d75007e7fe28670797eaa689f11d5f581c31fe8b1a5d718cabd",
+    "carry_coverage_audit": "8c6919af225c0ed8c4b2edb39ef7cfe65a15545941b6a5a812edc3ddb44751a3",
     "market_netting_closure": "6164a34870ec4210de29c8326acb5f3f0e453028fc0bd77d9d255dc777c90da6",
     "credit_expansion_deep": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0",
     "carry_attribution_closure": "7796dba62f2a04baf2d7b554d3f46108ab5b4fd119e8a5620a34ed7960564dd2"

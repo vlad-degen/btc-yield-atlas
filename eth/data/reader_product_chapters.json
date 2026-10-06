@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "snapshot": "2026-10-02T23:59:59Z",
   "documentReview": "2026-10-04",
-  "rankingBasis": "Five largest examined carry-design whole books; additional measured cases remain accessible. Hybrid and nested books are not unique carry equity.",
+  "rankingBasis": "Thirteen examined carry-linked books. Claim conventions differ; status and overlap are explicit.",
   "products": [
     {
       "id": "concrete",
@@ -2238,8 +2238,1916 @@
       "backingExitEvidence": "data/eth/backing_exit_closure.json"
     },
     {
-      "id": "yieldbasis",
+      "id": "lido-earn",
       "rank": 3,
+      "name": "Lido Earn ETH",
+      "subtitle": "A large nested allocator with two different borrowing risks",
+      "classification": "E4",
+      "capitalETH": 83309.20314634746,
+      "capitalUSD": 222264825.3471017,
+      "capitalBasis": "Oracle-valued ETH claim; includes allocated, unclaimed shares",
+      "returnBasis": "Oracle-valued ETH claim; includes allocated, unclaimed shares",
+      "keyMetrics": [
+        {
+          "label": "Capital at snapshot",
+          "value": "83,309.20 ETH",
+          "scope": "Oracle-valued ETH claim; includes allocated, unclaimed shares",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Holder addresses at snapshot",
+          "value": "2,500 on Ethereum",
+          "scope": "All Transfer events from block 0 through T reconcile exactly to archived issued totalSupply. Contracts count as addresses, not people. The outer book additionally includes 788.324 allocated, unclaimed shares; these are outside the issued-token distribution.",
+          "date": "2026-10-02T23:59:59Z",
+          "numeric": 2500
+        },
+        {
+          "label": "Fees",
+          "value": "15% performance + 0.20% annual outer fee; nested stRATEGY and earnUSD settings are zero",
+          "scope": "Configured state and applicable claim layer",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "First measured material month",
+          "value": "2026-03",
+          "scope": "First >1 ETH archived book in the sampled history; not launch date",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Observed 30-day ETH claim return",
+          "value": "+0.2513%",
+          "numeric": 0.2513120369097028,
+          "scope": "Oracle-valued ETH claim; includes allocated, unclaimed shares",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Carry-only investor profit",
+          "value": "Claim and funding evidence shown separately",
+          "scope": "No whole-book return presented as organic carry profit",
+          "date": "2026-10-02T23:59:59Z"
+        }
+      ],
+      "moneyFlow": [
+        {
+          "step": 1,
+          "title": "Buy the outer ETH claim",
+          "text": "Deposits enter the outer queue. Oracle processing allocates shares, which can remain unclaimed. Total shares, rather than minted supply alone, form the reported book.",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/",
+          "contract": null
+        },
+        {
+          "step": 2,
+          "title": "Follow the nested holding",
+          "text": "The main subvault holds 79,267 strETH shares. stRATEGY reports 84,664 ETH, but almost all its shares are already represented inside Earn ETH. Count the outer book once.",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/",
+          "contract": null
+        },
+        {
+          "step": 3,
+          "title": "Keep ETH loops separate",
+          "text": "Aave and Spark WETH borrowing totals about 355,217 ETH. Health factors are 1.035 to 1.039. These loops depend on collateral conversion and funding; they are not dollar carry.",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/",
+          "contract": null
+        },
+        {
+          "step": 4,
+          "title": "Borrow dollars in the carry account",
+          "text": "The separate account owes 22.240M USDT on Aave and 3.313M USDT on Spark. Their health factors are 2.124 and 2.488. Loan cost accrues in USDT even when the investor holds an ETH claim.",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/",
+          "contract": null
+        },
+        {
+          "step": 5,
+          "title": "Invest in the dollar vault",
+          "text": "That account holds 24.726M earnUSD shares. The oracle reports shares per asset: invert its six-decimal USDT price to value the claim. Share growth and changing deposits must be separated.",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/",
+          "contract": null
+        },
+        {
+          "step": 6,
+          "title": "Apply the fee layers once",
+          "text": "The outer fee settings are 15% of performance and 0.20% annually. stRATEGY and earnUSD settings are zero at T. Fees already recognised in the reported share price are not deducted again.",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/",
+          "contract": null
+        },
+        {
+          "step": 7,
+          "title": "Exit through two liquidity decisions",
+          "text": "EarnUSD must provide dollar liquidity so the carry account can repay USDT; the outer vault must then settle the investor\u2019s ETH redemption. Oracle pricing and liquidity settlement are separate steps. A quoted NAV is not immediate cash.",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/",
+          "contract": null
+        }
+      ],
+      "actors": [
+        {
+          "who": "Outer fee owner",
+          "address": "0x0dd73341d6158a72b4d224541f1094188f57076e",
+          "role": "Controls the outer fee-manager settings; owner and fee recipient are distinct",
+          "canChange": "Controls the outer fee-manager settings; owner and fee recipient are distinct",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0x0dd73341d6158a72b4d224541f1094188f57076e"
+        },
+        {
+          "who": "Carry account",
+          "address": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+          "role": "Executes the separately traced Aave / Spark USDT position",
+          "canChange": "Executes the separately traced Aave / Spark USDT position",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0x181cb55f872450d16ae858d532b4e35e50eaa76d"
+        },
+        {
+          "who": "Oracle and curators",
+          "address": null,
+          "role": "Authorised reports price claims; curators arrange swaps and queue liquidity",
+          "canChange": "Authorised reports price claims; curators arrange swaps and queue liquidity",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/"
+        }
+      ],
+      "incomePayers": [
+        {
+          "payer": "Validator issuance, tips and MEV on the staking collateral",
+          "text": "Validator issuance, tips and MEV on the staking collateral"
+        },
+        {
+          "payer": "Borrowers and strategies inside earnUSD; recognised rewards can be part of its reported price",
+          "text": "Borrowers and strategies inside earnUSD; recognised rewards can be part of its reported price"
+        }
+      ],
+      "charts": {
+        "capitalHistory": {
+          "title": "Whole-product book history",
+          "rows": [
+            {
+              "month": "2024-10",
+              "timestamp": 1730419199,
+              "date": "2024-10-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2024-11",
+              "timestamp": 1733011199,
+              "date": "2024-11-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2024-12",
+              "timestamp": 1735689599,
+              "date": "2024-12-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-01",
+              "timestamp": 1738367999,
+              "date": "2025-01-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-02",
+              "timestamp": 1740787199,
+              "date": "2025-02-28T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-03",
+              "timestamp": 1743465599,
+              "date": "2025-03-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-04",
+              "timestamp": 1746057599,
+              "date": "2025-04-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-05",
+              "timestamp": 1748735999,
+              "date": "2025-05-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-06",
+              "timestamp": 1751327999,
+              "date": "2025-06-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-07",
+              "timestamp": 1754006399,
+              "date": "2025-07-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-08",
+              "timestamp": 1756684799,
+              "date": "2025-08-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-09",
+              "timestamp": 1759276799,
+              "date": "2025-09-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-10",
+              "timestamp": 1761955199,
+              "date": "2025-10-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-11",
+              "timestamp": 1764547199,
+              "date": "2025-11-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2025-12",
+              "timestamp": 1767225599,
+              "date": "2025-12-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-01",
+              "timestamp": 1769903999,
+              "date": "2026-01-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-02",
+              "timestamp": 1772323199,
+              "date": "2026-02-28T23:59:59Z",
+              "sizeETH": 0.0,
+              "sizeUSD": 0.0,
+              "sizeNative": 0.0,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-03",
+              "timestamp": 1775001599,
+              "date": "2026-03-31T23:59:59Z",
+              "sizeETH": 86458.91962026412,
+              "sizeUSD": 182047270.17263898,
+              "sizeNative": 86458.91962026412,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-04",
+              "timestamp": 1777593599,
+              "date": "2026-04-30T23:59:59Z",
+              "sizeETH": 110594.33429852969,
+              "sizeUSD": 249581043.30758312,
+              "sizeNative": 110594.33429852969,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-05",
+              "timestamp": 1780271999,
+              "date": "2026-05-31T23:59:59Z",
+              "sizeETH": 44337.321668691795,
+              "sizeUSD": 88597939.77089676,
+              "sizeNative": 44337.321668691795,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-06",
+              "timestamp": 1782863999,
+              "date": "2026-06-30T23:59:59Z",
+              "sizeETH": 90416.9798725818,
+              "sizeUSD": 141686392.99646094,
+              "sizeNative": 90416.9798725818,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-07",
+              "timestamp": 1785542399,
+              "date": "2026-07-31T23:59:59Z",
+              "sizeETH": 77748.21357681736,
+              "sizeUSD": 144764489.4346224,
+              "sizeNative": 77748.21357681736,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-08",
+              "timestamp": 1788220799,
+              "date": "2026-08-31T23:59:59Z",
+              "sizeETH": 79323.1161443374,
+              "sizeUSD": 195616228.6265651,
+              "sizeNative": 79323.1161443374,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "month": "2026-09",
+              "timestamp": 1790812799,
+              "date": "2026-09-30T23:59:59Z",
+              "sizeETH": 83046.35775670082,
+              "sizeUSD": 223374004.299906,
+              "sizeNative": 83046.35775670082,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            }
+          ],
+          "scope": "Oracle-valued ETH claim; includes allocated, unclaimed shares. Missing observations stay absent."
+        },
+        "returnVsBorrow": {
+          "title": "ETH claim value",
+          "rows": [
+            {
+              "date": "2026-02-28T23:59:59Z",
+              "timestamp": 1772323199,
+              "ethBookPrice": 1.0,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-03-31T23:59:59Z",
+              "timestamp": 1775001599,
+              "ethBookPrice": 1.0037456592592444,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-04-30T23:59:59Z",
+              "timestamp": 1777593599,
+              "ethBookPrice": 1.0055153570596196,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-05-31T23:59:59Z",
+              "timestamp": 1780271999,
+              "ethBookPrice": 1.006912339842775,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-06-30T23:59:59Z",
+              "timestamp": 1782863999,
+              "ethBookPrice": 1.0103596019183125,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-07-31T23:59:59Z",
+              "timestamp": 1785542399,
+              "ethBookPrice": 1.0131787265565524,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-08-31T23:59:59Z",
+              "timestamp": 1788220799,
+              "ethBookPrice": 1.0158031139764692,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-09-02T23:59:59Z",
+              "timestamp": 1788393599,
+              "ethBookPrice": 1.0159308323427954,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-09-30T23:59:59Z",
+              "timestamp": 1790812799,
+              "ethBookPrice": 1.0183732759065447,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "timestamp": 1790985599,
+              "ethBookPrice": 1.0184839888111497,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.lido.fi/earn/deployment-contracts/"
+              ]
+            }
+          ],
+          "windowReturns": [
+            {
+              "windowDays": 30,
+              "date": "2026-10-02T23:59:59Z",
+              "startDate": "2026-09-02T23:59:59Z",
+              "cumulativeReturnPct": 0.2513120369097028,
+              "endBookPrice": 1.0184839888111497,
+              "startBookPrice": 1.0159308323427954,
+              "basis": "Oracle-valued ETH claim; includes allocated, unclaimed shares"
+            }
+          ],
+          "scope": "Oracle-valued ETH claim; includes allocated, unclaimed shares. External payouts and executable exit costs are separate."
+        },
+        "walletDistribution": {
+          "title": "Share ownership",
+          "rows": [
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "Below 1 ETH",
+              "holders": 1353,
+              "shares": 225.18091157350028,
+              "capitalETH": 229.34315302350936,
+              "shareOfSupplyPct": 0.2779704460428619,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "1 to 10 ETH",
+              "holders": 665,
+              "shares": 2190.3663561277745,
+              "capitalETH": 2230.853063346759,
+              "shareOfSupplyPct": 2.7038575728093246,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "10 to 100 ETH",
+              "holders": 366,
+              "shares": 11545.740828250371,
+              "capitalETH": 11759.152172536185,
+              "shareOfSupplyPct": 14.252427994441618,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "100 to 1,000 ETH",
+              "holders": 106,
+              "shares": 28428.0367512075,
+              "capitalETH": 28953.500264439772,
+              "shareOfSupplyPct": 35.09246854290628,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "1,000 ETH and above",
+              "holders": 10,
+              "shares": 38619.61505243661,
+              "capitalETH": 39333.45958495676,
+              "shareOfSupplyPct": 47.67327544379991,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            }
+          ],
+          "topHolders": [
+            {
+              "chain": "Ethereum",
+              "address": "0xee9535a8a408e13acc8b65cf4163257af240e39e",
+              "shares": 16074.772721749874,
+              "capitalETH": 16371.898640880472,
+              "shareOfSupplyPct": 19.843208344255952,
+              "url": "https://etherscan.io/address/0xee9535a8a408e13acc8b65cf4163257af240e39e"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0x97fed74a8d5bd772167017d6fc58433cc2b99e9d",
+              "shares": 8222.291699975041,
+              "capitalETH": 8374.27244775939,
+              "shareOfSupplyPct": 10.149857176462165,
+              "url": "https://etherscan.io/address/0x97fed74a8d5bd772167017d6fc58433cc2b99e9d"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xf5c7ec06ff5f4dfa8e29d8d900bf65353f103089",
+              "shares": 3243.317109238596,
+              "capitalETH": 3303.266546396773,
+              "shareOfSupplyPct": 4.003653316854207,
+              "url": "https://etherscan.io/address/0xf5c7ec06ff5f4dfa8e29d8d900bf65353f103089"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xaf3f8594261bbb4b913b21870614262981bcb9ef",
+              "shares": 3104.3031265883496,
+              "capitalETH": 3161.6830308466256,
+              "shareOfSupplyPct": 3.832050055754205,
+              "url": "https://etherscan.io/address/0xaf3f8594261bbb4b913b21870614262981bcb9ef"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0x6a60fbe212f0bab3aa7d57763d4711bc4547d9cf",
+              "shares": 1497.7608381731854,
+              "capitalETH": 1525.4454327477567,
+              "shareOfSupplyPct": 1.8488833948815313,
+              "url": "https://etherscan.io/address/0x6a60fbe212f0bab3aa7d57763d4711bc4547d9cf"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xc3c09403a4e222856327a3d7e1e8d20afad1b882",
+              "shares": 1473.4276810926856,
+              "capitalETH": 1500.662501864041,
+              "shareOfSupplyPct": 1.818845775440197,
+              "url": "https://etherscan.io/address/0xc3c09403a4e222856327a3d7e1e8d20afad1b882"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xf6f0732c1e9971497342c295141566e6f1a31e96",
+              "shares": 1362.8358940905794,
+              "capitalETH": 1388.026537508383,
+              "shareOfSupplyPct": 1.6823277724405576,
+              "url": "https://etherscan.io/address/0xf6f0732c1e9971497342c295141566e6f1a31e96"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xeb314bd592ac3ea4bc141fa9155b34dd3c2c47ba",
+              "shares": 1308.8305420453858,
+              "capitalETH": 1333.0229511402435,
+              "shareOfSupplyPct": 1.6156618561699223,
+              "url": "https://etherscan.io/address/0xeb314bd592ac3ea4bc141fa9155b34dd3c2c47ba"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0x3ffba13e5e713cc435271a1c4a50ffcfa835f9d4",
+              "shares": 1228.3667357440136,
+              "capitalETH": 1251.0718527434944,
+              "shareOfSupplyPct": 1.5163347863414556,
+              "url": "https://etherscan.io/address/0x3ffba13e5e713cc435271a1c4a50ffcfa835f9d4"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xfd4bf04bd8d0e7b8c7539f0cea970df25188e81b",
+              "shares": 1103.7087037389024,
+              "capitalETH": 1124.109643069581,
+              "shareOfSupplyPct": 1.3624529651997213,
+              "url": "https://etherscan.io/address/0xfd4bf04bd8d0e7b8c7539f0cea970df25188e81b"
+            }
+          ],
+          "holderCounts": {
+            "Ethereum": 2500
+          },
+          "scope": "All Transfer events from block 0 through T reconcile exactly to archived issued totalSupply. Contracts count as addresses, not people. The outer book additionally includes 788.324 allocated, unclaimed shares; these are outside the issued-token distribution.",
+          "supplyReconciled": true
+        },
+        "loanLegs": {
+          "title": "Actual borrowing accounts",
+          "rows": [
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x893aa69fbaa1ee81b536f0fbe3a3453e86290080",
+              "protocol": "Aave V3",
+              "collateralAsset": "wstETH / ETH-family collateral",
+              "collateralETH": null,
+              "collateralUSD": 233780374.01366624,
+              "debtAsset": "WETH",
+              "debtUnits": 80273.39605346275,
+              "debtUSD": 214165442.47217265,
+              "LTV_pct": 91.55654487061318,
+              "healthFactor": 1.0376101471965011,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x893aa69fbaa1ee81b536f0fbe3a3453e86290080"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "strATEGY_sub_1_aave_reserve_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2_debt",
+                "block": 26108081,
+                "address": "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x0000000000000000000000000000000000000000000010ffa12833f1bb3349c4",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_0-c6d5e3bb40dc413b.json",
+                "captureSHA256": "c6d5e3bb40dc413bf1938cf785b64fd8e5d8856e975fd6ca012794a794ac6bc7"
+              }
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0xcdfa7efe670869c6b6be4375654e0b206ef49c89",
+              "protocol": "Aave V3",
+              "collateralAsset": "wstETH / ETH-family collateral",
+              "collateralETH": null,
+              "collateralUSD": 326399530.6824525,
+              "debtAsset": "WETH",
+              "debtUnits": 112309.5855579917,
+              "debtUSD": 299636408.4169833,
+              "LTV_pct": 91.74726072423849,
+              "healthFactor": 1.0354532576785933,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xcdfa7efe670869c6b6be4375654e0b206ef49c89"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "strATEGY_sub_6_aave_reserve_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2_debt",
+                "block": 26108081,
+                "address": "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x0000000000000000000000000000000000000000000017c85098df4e8c465352",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_0-c6d5e3bb40dc413b.json",
+                "captureSHA256": "c6d5e3bb40dc413bf1938cf785b64fd8e5d8856e975fd6ca012794a794ac6bc7"
+              }
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x3883d8cdcdda03784908cfa2f34ed2cf1604e4d7",
+              "protocol": "Spark V3",
+              "collateralAsset": "wstETH / ETH-family collateral",
+              "collateralETH": null,
+              "collateralUSD": 484631306.3881794,
+              "debtAsset": "WETH",
+              "debtUnits": 162634.5118864717,
+              "debtUSD": 433900817.85271055,
+              "LTV_pct": 89.50531782440022,
+              "healthFactor": 1.0390444083161179,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x3883d8cdcdda03784908cfa2f34ed2cf1604e4d7"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "strATEGY_sub_4_spark_reserve_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2_debt",
+                "block": 26108081,
+                "address": "0x2e7576042566f8d6990e07a1b61ad1efd86ae70d",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x0000000000000000000000000000000000000000000022706f3f062c1f24cd25",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_103-108f40b057f054cb.json",
+                "captureSHA256": "108f40b057f054cb99a6f35baedb07381c68436c98e4490460d34cca824eb478"
+              }
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "protocol": "Aave V3",
+              "collateralAsset": "wstETH / ETH-family collateral",
+              "collateralETH": null,
+              "collateralUSD": 58318474.40613193,
+              "debtAsset": "USDT",
+              "debtUnits": 22239666.457473,
+              "debtUSD": 22239666.457473,
+              "LTV_pct": 38.12847184180915,
+              "healthFactor": 2.1243967063789,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x181cb55f872450d16ae858d532b4e35e50eaa76d"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "strATEGY_sub_2_aave_reserve_0xdac17f958d2ee523a2206206994597c13d831ec7_debt",
+                "block": 26108081,
+                "address": "0x6df1c1e379bc5a00a7b4c6e67a203333772f45a8",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x0000000000000000000000000000000000000000000000000000143a136b4b81",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_12-1fe52407eece6bc0.json",
+                "captureSHA256": "1fe52407eece6bc09654d11ac93ec874c78f5819636f3d5e3e18a1a6252f7d24"
+              }
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+              "protocol": "Spark V3",
+              "collateralAsset": "wstETH / ETH-family collateral",
+              "collateralETH": null,
+              "collateralUSD": 9812127.60379002,
+              "debtAsset": "USDT",
+              "debtUnits": 3313137.709644,
+              "debtUSD": 3313137.709644,
+              "LTV_pct": 33.76574218586672,
+              "healthFactor": 2.4877285248940804,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x181cb55f872450d16ae858d532b4e35e50eaa76d"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "strATEGY_sub_2_spark_reserve_0xdac17f958d2ee523a2206206994597c13d831ec7_debt",
+                "block": 26108081,
+                "address": "0x529b6158d1d2992e3129f7c69e81a7c677dc3b12",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x000000000000000000000000000000000000000000000000000003036665724c",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_retry_1_27-1ef40e7dae49577b.json",
+                "captureSHA256": "1ef40e7dae49577bfe115c4d02a3d222acc0f45b3d0e0fe149c544ebd9e6734d"
+              }
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x9938a09fea37ba681a1bd53d33ddde2debec1da0",
+              "protocol": "Aave V3",
+              "collateralAsset": "wstETH / ETH-family collateral",
+              "collateralETH": null,
+              "collateralUSD": 2632.59587577,
+              "debtAsset": "USDC",
+              "debtUnits": 2356.026137,
+              "debtUSD": 2356.026137,
+              "LTV_pct": 89.48917778847972,
+              "healthFactor": 1.028057272103393,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x9938a09fea37ba681a1bd53d33ddde2debec1da0"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "strATEGY_sub_3_aave_reserve_0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48_debt",
+                "block": 26108081,
+                "address": "0x72e95b8931767c79ba4eee721354d6e99a61d004",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x000000000000000000000000000000000000000000000000000000008c6e1b19",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_5-5355005b95157cfa.json",
+                "captureSHA256": "5355005b95157cfa16d813373b561c304ad41e5cd8c7ceeb0207579def96fc81"
+              }
+            }
+          ],
+          "scope": "Actual debt currency and individual account headroom at T. Gross loops, dollar loans and product equity are different quantities."
+        }
+      },
+      "timeline": [
+        {
+          "date": "2026-10-02T23:59:59Z",
+          "title": "Frozen route and book measured",
+          "text": "Earn ETH reports 83,309 ETH. Its main holding is stRATEGY, whose book must not be added again. The nested portfolio owes about 355,217 WETH in staking loops and 25.55M USDT in its main dollar-carry account. Those are gross loans, not the carry sleeve\u2019s equity.",
+          "url": "https://docs.lido.fi/earn/deployment-contracts/"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.lido.fi/earn/deployment-contracts/",
+          "label": "Official deployments and strategy documentation"
+        },
+        {
+          "url": "https://etherscan.io/address/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4",
+          "label": "Fixed-block share contract"
+        },
+        {
+          "url": "data/finalization_reconstruction.json",
+          "label": "Reconstruction, timestamps and source hashes"
+        }
+      ],
+      "limitations": [
+        "The outer ETH oracle mark is about 17 hours old at T; this is a reported claim, not an independently recomputed exit NAV.",
+        "Loop loan balances are gross and cannot be used as carry-equity weights.",
+        "The earning period, borrower mix and incentive sponsor inside earnUSD require further look-through before calling all share growth organic income."
+      ],
+      "liveRoute": {
+        "collateral": "wstETH and other ETH-family receipts",
+        "debt": "WETH loops; USDT carry; a small USDC position",
+        "destination": "earnUSD for the USDT sleeve; separate leveraged staking positions"
+      },
+      "story": {
+        "title": "A large nested allocator with two different borrowing risks",
+        "text": "Earn ETH reports 83,309 ETH. Its main holding is stRATEGY, whose book must not be added again. The nested portfolio owes about 355,217 WETH in staking loops and 25.55M USDT in its main dollar-carry account. Those are gross loans, not the carry sleeve\u2019s equity.",
+        "lesson": "Separate the WETH loop from the USDT investment before judging income or liquidation risk."
+      },
+      "comparison": {
+        "route": "wstETH and other ETH-family receipts \u2192 WETH loops; USDT carry; a small USDC position",
+        "destination": "earnUSD for the USDT sleeve; separate leveraged staking positions",
+        "fees": "15% performance + 0.20% annual outer fee; nested stRATEGY and earnUSD settings are zero",
+        "operator": "Lido / Mellow / stRATEGY curator",
+        "risk": "Thin loop headroom; nested credit, oracle and redemption queues"
+      },
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "Earn ETH reports 83,309 ETH. Its main holding is stRATEGY, whose book must not be added again. The nested portfolio owes about 355,217 WETH in staking loops and 25.55M USDT in its main dollar-carry account. Those are gross loans, not the carry sleeve\u2019s equity.",
+      "captureStatus": "Archived financial state and matched claim returns; capital convention explicit",
+      "newReconstruction": true
+    },
+    {
+      "id": "avant",
+      "rank": 4,
+      "name": "Avant avETH / savETH",
+      "subtitle": "Dollar carry with its own issuer credit inside the destination",
+      "classification": "E4",
+      "capitalETH": 12582.712224349118,
+      "capitalUSD": 33570052.63902124,
+      "capitalBasis": "avETH face supply; returns belong to the senior savETH claim",
+      "returnBasis": "avETH face supply; returns belong to the senior savETH claim",
+      "keyMetrics": [
+        {
+          "label": "Capital at snapshot",
+          "value": "12,582.71 ETH",
+          "scope": "avETH face supply; returns belong to the senior savETH claim",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Holder addresses at snapshot",
+          "value": "37 on Ethereum",
+          "scope": "All Transfer events from block 0 through T reconcile exactly to archived issued totalSupply. Contracts count as addresses, not people. Issuer face-token ownership is different from savETH senior-tranche ownership.",
+          "date": "2026-10-02T23:59:59Z",
+          "numeric": 37
+        },
+        {
+          "label": "Fees",
+          "value": "Senior savETH conversion measured; fee rights depend on the mint, redemption and tranche contracts",
+          "scope": "Configured state and applicable claim layer",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "First measured material month",
+          "value": "2025-09",
+          "scope": "First >1 ETH archived book in the sampled history; not launch date",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Observed 30-day ETH claim return",
+          "value": "+0.3385%",
+          "numeric": 0.33849230557570936,
+          "scope": "avETH face supply; returns belong to the senior savETH claim",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Carry-only investor profit",
+          "value": "Claim and funding evidence shown separately",
+          "scope": "No whole-book return presented as organic carry profit",
+          "date": "2026-10-02T23:59:59Z"
+        }
+      ],
+      "moneyFlow": [
+        {
+          "step": 1,
+          "title": "Distinguish the token claims",
+          "text": "avETH is the issuer\u2019s nominal ETH liability. savETH is a senior staking claim on avETH. The book-size row uses avETH supply; the return row uses savETH conversion. They do not describe the same investor right.",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses",
+          "contract": null
+        },
+        {
+          "step": 2,
+          "title": "Post ETH collateral",
+          "text": "A listed strategy wallet has WETH, wstETH and weETH supplied on Ethereum. At T its Aave health factor is 1.382 and Spark health factor 1.370.",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses",
+          "contract": null
+        },
+        {
+          "step": 3,
+          "title": "Borrow several dollar currencies",
+          "text": "The traced wallet owes 2.211M USDC on Aave, plus 7.322M USDS and 0.502M PYUSD on Spark. Repayment requires those specific tokens, not merely any dollar balance.",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses",
+          "contract": null
+        },
+        {
+          "step": 4,
+          "title": "Follow the published investments",
+          "text": "The latest saved allocation is dated 29 September, three days before T. It includes 32.535M dollars of savUSD plus avUSD, credit receipts and stablecoin liquidity. This disclosure is dated separately from the fixed-block debt.",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses",
+          "contract": null
+        },
+        {
+          "step": 5,
+          "title": "Look through the issuer relationship",
+          "text": "savUSD and avUSD are Avant claims. The dollar portfolio\u2019s borrower credit, reserve backing and valuation affect the ETH product through this link. The roughly 98% savUSD / net-NAV ratio is a concentration indicator, not a carry-allocation percentage.",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses",
+          "contract": null
+        },
+        {
+          "step": 6,
+          "title": "Assign income to the tranche",
+          "text": "Senior savETH receives income under its distribution and vesting rules. Issuer NAV growth, junior income and a senior conversion return cannot be substituted for one another.",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses",
+          "contract": null
+        },
+        {
+          "step": 7,
+          "title": "Complete the redemption chain",
+          "text": "savETH has a one-day cooldown at T. Converting it to avETH is one step; receiving final ETH still depends on avETH redemption, reserve liquidity and strategy unwinds. The cooldown does not guarantee the whole exit.",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses",
+          "contract": null
+        }
+      ],
+      "actors": [
+        {
+          "who": "Issuer and NAV process",
+          "address": null,
+          "role": "Publishes portfolio NAV and distributes income; disclosure is dated",
+          "canChange": "Publishes portfolio NAV and distributes income; disclosure is dated",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses"
+        },
+        {
+          "who": "Traced Ethereum strategy wallet",
+          "address": "0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD",
+          "role": "Holds collateral and debt on Aave and Spark",
+          "canChange": "Holds collateral and debt on Aave and Spark",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD"
+        },
+        {
+          "who": "savETH contract",
+          "address": "0xDA06eE2dACF9245Aa80072a4407deBDea0D7e341",
+          "role": "Controls senior conversion, vesting and cooldown state",
+          "canChange": "Controls senior conversion, vesting and cooldown state",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0xDA06eE2dACF9245Aa80072a4407deBDea0D7e341"
+        }
+      ],
+      "incomePayers": [
+        {
+          "payer": "Validator income on supplied ETH receipts",
+          "text": "Validator income on supplied ETH receipts"
+        },
+        {
+          "payer": "Dollar borrowers and investment positions in the Avant dollar portfolio; internal tranche allocation determines savETH income",
+          "text": "Dollar borrowers and investment positions in the Avant dollar portfolio; internal tranche allocation determines savETH income"
+        }
+      ],
+      "charts": {
+        "capitalHistory": {
+          "title": "Whole-product book history",
+          "rows": [
+            {
+              "month": "2024-10",
+              "timestamp": 1730419199,
+              "date": "2024-10-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2024-11",
+              "timestamp": 1733011199,
+              "date": "2024-11-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2024-12",
+              "timestamp": 1735689599,
+              "date": "2024-12-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-01",
+              "timestamp": 1738367999,
+              "date": "2025-01-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-02",
+              "timestamp": 1740787199,
+              "date": "2025-02-28T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-03",
+              "timestamp": 1743465599,
+              "date": "2025-03-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-04",
+              "timestamp": 1746057599,
+              "date": "2025-04-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-05",
+              "timestamp": 1748735999,
+              "date": "2025-05-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-06",
+              "timestamp": 1751327999,
+              "date": "2025-06-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-07",
+              "timestamp": 1754006399,
+              "date": "2025-07-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-08",
+              "timestamp": 1756684799,
+              "date": "2025-08-31T23:59:59Z",
+              "sizeETH": 0.0031,
+              "sizeUSD": 13.58373004,
+              "sizeNative": 0.0031,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-09",
+              "timestamp": 1759276799,
+              "date": "2025-09-30T23:59:59Z",
+              "sizeETH": 1059.1332696047118,
+              "sizeUSD": 4390485.967456952,
+              "sizeNative": 1059.1332696047118,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-10",
+              "timestamp": 1761955199,
+              "date": "2025-10-31T23:59:59Z",
+              "sizeETH": 2178.5908562421205,
+              "sizeUSD": 8379143.649918506,
+              "sizeNative": 2178.5908562421205,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-11",
+              "timestamp": 1764547199,
+              "date": "2025-11-30T23:59:59Z",
+              "sizeETH": 1953.8778867897213,
+              "sizeUSD": 5870758.270100472,
+              "sizeNative": 1953.8778867897213,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2025-12",
+              "timestamp": 1767225599,
+              "date": "2025-12-31T23:59:59Z",
+              "sizeETH": 2888.6281936864348,
+              "sizeUSD": 8581074.45729267,
+              "sizeNative": 2888.6281936864348,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-01",
+              "timestamp": 1769903999,
+              "date": "2026-01-31T23:59:59Z",
+              "sizeETH": 2819.4798398944217,
+              "sizeUSD": 6884683.201264274,
+              "sizeNative": 2819.4798398944217,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-02",
+              "timestamp": 1772323199,
+              "date": "2026-02-28T23:59:59Z",
+              "sizeETH": 3987.179027021058,
+              "sizeUSD": 7822370.2065445,
+              "sizeNative": 3987.179027021058,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-03",
+              "timestamp": 1775001599,
+              "date": "2026-03-31T23:59:59Z",
+              "sizeETH": 5739.112679696192,
+              "sizeUSD": 12084233.77415179,
+              "sizeNative": 5739.112679696192,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-04",
+              "timestamp": 1777593599,
+              "date": "2026-04-30T23:59:59Z",
+              "sizeETH": 6556.286431484754,
+              "sizeUSD": 14795738.119607003,
+              "sizeNative": 6556.286431484754,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-05",
+              "timestamp": 1780271999,
+              "date": "2026-05-31T23:59:59Z",
+              "sizeETH": 6530.304872183906,
+              "sizeUSD": 13049312.316938933,
+              "sizeNative": 6530.304872183906,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-06",
+              "timestamp": 1782863999,
+              "date": "2026-06-30T23:59:59Z",
+              "sizeETH": 9164.060038590638,
+              "sizeUSD": 14360384.674434943,
+              "sizeNative": 9164.060038590638,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-07",
+              "timestamp": 1785542399,
+              "date": "2026-07-31T23:59:59Z",
+              "sizeETH": 10330.234570455612,
+              "sizeUSD": 19234540.120389342,
+              "sizeNative": 10330.234570455612,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-08",
+              "timestamp": 1788220799,
+              "date": "2026-08-31T23:59:59Z",
+              "sizeETH": 12572.689103104556,
+              "sizeUSD": 31005111.064578295,
+              "sizeNative": 12572.689103104556,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "month": "2026-09",
+              "timestamp": 1790812799,
+              "date": "2026-09-30T23:59:59Z",
+              "sizeETH": 12356.755063369086,
+              "sizeUSD": 33236591.383626085,
+              "sizeNative": 12356.755063369086,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            }
+          ],
+          "scope": "avETH face supply; returns belong to the senior savETH claim. Missing observations stay absent."
+        },
+        "returnVsBorrow": {
+          "title": "ETH claim value",
+          "rows": [
+            {
+              "date": "2025-08-31T23:59:59Z",
+              "timestamp": 1756684799,
+              "ethBookPrice": 1.0,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2025-09-30T23:59:59Z",
+              "timestamp": 1759276799,
+              "ethBookPrice": 1.0038673268962601,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2025-10-31T23:59:59Z",
+              "timestamp": 1761955199,
+              "ethBookPrice": 1.0099421795945942,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2025-11-30T23:59:59Z",
+              "timestamp": 1764547199,
+              "ethBookPrice": 1.017013278156903,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2025-12-31T23:59:59Z",
+              "timestamp": 1767225599,
+              "ethBookPrice": 1.0216246331373853,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-01-31T23:59:59Z",
+              "timestamp": 1769903999,
+              "ethBookPrice": 1.0254864057419053,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-02-28T23:59:59Z",
+              "timestamp": 1772323199,
+              "ethBookPrice": 1.0300426104754719,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-03-31T23:59:59Z",
+              "timestamp": 1775001599,
+              "ethBookPrice": 1.03351183686131,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-04-30T23:59:59Z",
+              "timestamp": 1777593599,
+              "ethBookPrice": 1.0374448175399529,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-05-31T23:59:59Z",
+              "timestamp": 1780271999,
+              "ethBookPrice": 1.0422790008776286,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-06-30T23:59:59Z",
+              "timestamp": 1782863999,
+              "ethBookPrice": 1.0466050640239253,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-07-31T23:59:59Z",
+              "timestamp": 1785542399,
+              "ethBookPrice": 1.0511833380837778,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-08-31T23:59:59Z",
+              "timestamp": 1788220799,
+              "ethBookPrice": 1.0553489968973282,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-09-02T23:59:59Z",
+              "timestamp": 1788393599,
+              "ethBookPrice": 1.0556352412635768,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-09-30T23:59:59Z",
+              "timestamp": 1790812799,
+              "ethBookPrice": 1.0589715800932535,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "timestamp": 1790985599,
+              "ethBookPrice": 1.0592084853301995,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.avantprotocol.com/security/contract-addresses"
+              ]
+            }
+          ],
+          "windowReturns": [
+            {
+              "windowDays": 30,
+              "date": "2026-10-02T23:59:59Z",
+              "startDate": "2026-09-02T23:59:59Z",
+              "cumulativeReturnPct": 0.33849230557570936,
+              "endBookPrice": 1.0592084853301995,
+              "startBookPrice": 1.0556352412635768,
+              "basis": "avETH face supply; returns belong to the senior savETH claim"
+            }
+          ],
+          "scope": "avETH face supply; returns belong to the senior savETH claim. External payouts and executable exit costs are separate."
+        },
+        "walletDistribution": {
+          "title": "Share ownership",
+          "rows": [
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "Below 1 ETH",
+              "holders": 31,
+              "shares": 2.650553399223133,
+              "capitalETH": 2.650553399223133,
+              "shareOfSupplyPct": 0.021065040286735493,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x9469470C9878bf3d6d0604831d9A3A366156f7EE"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "1 to 10 ETH",
+              "holders": 3,
+              "shares": 14.114392711805642,
+              "capitalETH": 14.114392711805642,
+              "shareOfSupplyPct": 0.11217289611450011,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x9469470C9878bf3d6d0604831d9A3A366156f7EE"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "10 to 100 ETH",
+              "holders": 1,
+              "shares": 72.1943,
+              "capitalETH": 72.1943,
+              "shareOfSupplyPct": 0.5737578569133531,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x9469470C9878bf3d6d0604831d9A3A366156f7EE"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "100 to 1,000 ETH",
+              "holders": 0,
+              "shares": 0.0,
+              "capitalETH": 0.0,
+              "shareOfSupplyPct": 0.0,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x9469470C9878bf3d6d0604831d9A3A366156f7EE"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "bucket": "1,000 ETH and above",
+              "holders": 2,
+              "shares": 12493.752978238088,
+              "capitalETH": 12493.752978238088,
+              "shareOfSupplyPct": 99.29300420668541,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x9469470C9878bf3d6d0604831d9A3A366156f7EE"
+              ],
+              "scope": "Positive issued-token balances, not beneficial investor identities; allocated unclaimed shares excluded."
+            }
+          ],
+          "topHolders": [
+            {
+              "chain": "Ethereum",
+              "address": "0xda06ee2dacf9245aa80072a4407debdea0d7e341",
+              "shares": 11082.718477277725,
+              "capitalETH": 11082.718477277725,
+              "shareOfSupplyPct": 88.07893147100101,
+              "url": "https://etherscan.io/address/0xda06ee2dacf9245aa80072a4407debdea0d7e341"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xdd71cdd615f677e98c604bff5679294cc7a6089b",
+              "shares": 1411.0345009603627,
+              "capitalETH": 1411.0345009603627,
+              "shareOfSupplyPct": 11.214072735684402,
+              "url": "https://etherscan.io/address/0xdd71cdd615f677e98c604bff5679294cc7a6089b"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0x29b091b0b70d24fed3bec3f511b92cc54307c0f6",
+              "shares": 72.1943,
+              "capitalETH": 72.1943,
+              "shareOfSupplyPct": 0.5737578569133531,
+              "url": "https://etherscan.io/address/0x29b091b0b70d24fed3bec3f511b92cc54307c0f6"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xdb87e930065bc4c9cc4273672a64bf8e2761f1d8",
+              "shares": 6.393571428571429,
+              "capitalETH": 6.393571428571429,
+              "shareOfSupplyPct": 0.050812347247353166,
+              "url": "https://etherscan.io/address/0xdb87e930065bc4c9cc4273672a64bf8e2761f1d8"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xdbf380ed7261a37bd219d69a3eb70b225a68f3ea",
+              "shares": 6.320821283234213,
+              "capitalETH": 6.320821283234213,
+              "shareOfSupplyPct": 0.05023417185845382,
+              "url": "https://etherscan.io/address/0xdbf380ed7261a37bd219d69a3eb70b225a68f3ea"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0x4a336f03ba8caeaedf4240a1dc799dbea1ded318",
+              "shares": 1.4,
+              "capitalETH": 1.4,
+              "shareOfSupplyPct": 0.01112637700869313,
+              "url": "https://etherscan.io/address/0x4a336f03ba8caeaedf4240a1dc799dbea1ded318"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0x10738a7238fe9b6b74f837faeea3e8398cc26d63",
+              "shares": 0.5484,
+              "capitalETH": 0.5484,
+              "shareOfSupplyPct": 0.00435836082254808,
+              "url": "https://etherscan.io/address/0x10738a7238fe9b6b74f837faeea3e8398cc26d63"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0xcbd7888f34e96546fab24ee08edb32f53672bee3",
+              "shares": 0.46993883,
+              "capitalETH": 0.46993883,
+              "shareOfSupplyPct": 0.0037347975668601064,
+              "url": "https://etherscan.io/address/0xcbd7888f34e96546fab24ee08edb32f53672bee3"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0x55c4a5eb2b5323a7ddf97c6870f4794cd19a3ed1",
+              "shares": 0.418908,
+              "capitalETH": 0.418908,
+              "shareOfSupplyPct": 0.0033292345285411582,
+              "url": "https://etherscan.io/address/0x55c4a5eb2b5323a7ddf97c6870f4794cd19a3ed1"
+            },
+            {
+              "chain": "Ethereum",
+              "address": "0x407012c92792369916b2bf788e2eec695c180e05",
+              "shares": 0.4145,
+              "capitalETH": 0.4145,
+              "shareOfSupplyPct": 0.003294202335788073,
+              "url": "https://etherscan.io/address/0x407012c92792369916b2bf788e2eec695c180e05"
+            }
+          ],
+          "holderCounts": {
+            "Ethereum": 37
+          },
+          "scope": "All Transfer events from block 0 through T reconcile exactly to archived issued totalSupply. Contracts count as addresses, not people. Issuer face-token ownership is different from savETH senior-tranche ownership.",
+          "supplyReconciled": true
+        },
+        "loanLegs": {
+          "title": "Actual borrowing accounts",
+          "rows": [
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD",
+              "protocol": "Aave V3",
+              "collateralAsset": "WETH, wstETH and weETH",
+              "collateralETH": null,
+              "collateralUSD": 3738550.72141847,
+              "debtAsset": "USDC",
+              "debtUnits": 2211129.911781,
+              "debtUSD": 2211129.911781,
+              "LTV_pct": 59.140907393142015,
+              "healthFactor": 1.3819842055240927,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "avant_wallet_aave_reserve_0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48_debt",
+                "block": 26108081,
+                "address": "0x72e95b8931767c79ba4eee721354d6e99a61d004",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x00000000000000000000000000000000000000000000000000000202d19ce9e5",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_5-5355005b95157cfa.json",
+                "captureSHA256": "5355005b95157cfa16d813373b561c304ad41e5cd8c7ceeb0207579def96fc81"
+              }
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD",
+              "protocol": "Spark V3",
+              "collateralAsset": "WETH, wstETH and weETH",
+              "collateralETH": null,
+              "collateralUSD": 12590455.92267056,
+              "debtAsset": "USDS",
+              "debtUnits": 7322116.673908037,
+              "debtUSD": 7322116.673908037,
+              "LTV_pct": 62.13950262242415,
+              "healthFactor": 1.369821070458374,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "avant_wallet_spark_reserve_0xdc035d45d973e3ec169d2276ddab16f1e407384f_debt",
+                "block": 26108081,
+                "address": "0x8c147debea24fb98ade8dda4bf142992928b449e",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x000000000000000000000000000000000000000000060e84bd812a935185dfbc",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_110-2524de5771ae1ec3.json",
+                "captureSHA256": "2524de5771ae1ec35f8366f0bdf5a6cefe6b5abe6878472fec6047cd1c636d38"
+              }
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD",
+              "protocol": "Spark V3",
+              "collateralAsset": "WETH, wstETH and weETH",
+              "collateralETH": null,
+              "collateralUSD": 12590455.92267056,
+              "debtAsset": "PYUSD",
+              "debtUnits": 501530.013453,
+              "debtUSD": 501530.013453,
+              "LTV_pct": 62.13950262242415,
+              "healthFactor": 1.369821070458374,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x6CC60A0b57bc882A0471980D0e2D4aD7DDf3C4bD"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "avant_wallet_spark_reserve_0x6c3ea9036406852006290770bedfcaba0e23a0e8_debt",
+                "block": 26108081,
+                "address": "0x3357d2db7763d6cd3a99f0763ebf87e0096d95f9",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x00000000000000000000000000000000000000000000000000000074c584af0d",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_113-7fd581a4b365b4e9.json",
+                "captureSHA256": "7fd581a4b365b4e95c8b1a6c7d376f75d6dda7bfb0c5231255994648549c8a05"
+              }
+            }
+          ],
+          "scope": "Actual debt currency and individual account headroom at T. Gross loops, dollar loans and product equity are different quantities."
+        }
+      },
+      "timeline": [
+        {
+          "date": "2026-10-02T23:59:59Z",
+          "title": "Frozen route and book measured",
+          "text": "The published 29 September portfolio has a $33.18M net NAV and a $32.53M savUSD position. Ethereum reads at T confirm USDC, USDS and PYUSD borrowing against ETH collateral. The large own-credit destination makes this a concentrated issuer dependency.",
+          "url": "https://docs.avantprotocol.com/security/contract-addresses"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.avantprotocol.com/security/contract-addresses",
+          "label": "Official deployments and strategy documentation"
+        },
+        {
+          "url": "https://etherscan.io/address/0x9469470C9878bf3d6d0604831d9A3A366156f7EE",
+          "label": "Fixed-block share contract"
+        },
+        {
+          "url": "data/finalization_reconstruction.json",
+          "label": "Reconstruction, timestamps and source hashes"
+        }
+      ],
+      "limitations": [
+        "avETH face supply is not an independently verified reserve NAV.",
+        "The fixed-block Ethereum loans do not reconstruct all cross-chain weights at T.",
+        "The common 30-day return belongs to savETH\u2019s senior claim; it is not whole-issuer or organic carry profit."
+      ],
+      "liveRoute": {
+        "collateral": "WETH, wstETH and weETH",
+        "debt": "USDC, USDS and PYUSD in the traced Ethereum account; other chains separately disclosed",
+        "destination": "savUSD / avUSD, dollar credit and liquidity positions across chains"
+      },
+      "story": {
+        "title": "Dollar carry with its own issuer credit inside the destination",
+        "text": "The published 29 September portfolio has a $33.18M net NAV and a $32.53M savUSD position. Ethereum reads at T confirm USDC, USDS and PYUSD borrowing against ETH collateral. The large own-credit destination makes this a concentrated issuer dependency.",
+        "lesson": "A second product from the same issuer does not create independent credit diversification."
+      },
+      "comparison": {
+        "route": "WETH, wstETH and weETH \u2192 USDC, USDS and PYUSD in the traced Ethereum account; other chains separately disclosed",
+        "destination": "savUSD / avUSD, dollar credit and liquidity positions across chains",
+        "fees": "Senior savETH conversion measured; fee rights depend on the mint, redemption and tranche contracts",
+        "operator": "Avant / strategy wallets / NAV reporting",
+        "risk": "Own-credit concentration; cross-chain custody, NAV freshness and tranche allocation"
+      },
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "The published 29 September portfolio has a $33.18M net NAV and a $32.53M savUSD position. Ethereum reads at T confirm USDC, USDS and PYUSD borrowing against ETH collateral. The large own-credit destination makes this a concentrated issuer dependency.",
+      "captureStatus": "Archived financial state and matched claim returns; capital convention explicit",
+      "newReconstruction": true
+    },
+    {
+      "id": "yieldbasis",
+      "rank": 5,
       "name": "YieldBasis WETH",
       "subtitle": "Dollar-financed liquidity, with automated leverage adjustment",
       "classification": "E4",
@@ -3156,7 +5064,7 @@
     },
     {
       "id": "rocksolid",
-      "rank": 4,
+      "rank": 6,
       "name": "Rocksolid rETH",
       "subtitle": "hybrid: dated E4 sleeve confirmed; whole vault is not carry",
       "classification": "E4",
@@ -4169,7 +6077,7 @@
     },
     {
       "id": "liquity",
-      "rank": 5,
+      "rank": 7,
       "name": "Liquity ETH Carry",
       "subtitle": "E4 product design confirmed; T book NAV measured; T positions not fully reconstructed",
       "classification": "E4",
@@ -5322,8 +7230,1534 @@
       "backingExitEvidence": "data/eth/backing_exit_closure.json"
     },
     {
+      "id": "makina-deth",
+      "rank": 8,
+      "name": "Makina DETH",
+      "subtitle": "A restaking loop with a smaller dollar-financed credit position",
+      "classification": "E4",
+      "capitalETH": 2499.359088055877,
+      "capitalUSD": 6668166.18339947,
+      "capitalBasis": "Cached reported ETH book; accounting timestamp retained",
+      "returnBasis": "Cached reported ETH book; accounting timestamp retained",
+      "keyMetrics": [
+        {
+          "label": "Capital at snapshot",
+          "value": "2,499.36 ETH",
+          "scope": "Cached reported ETH book; accounting timestamp retained",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Holder addresses at snapshot",
+          "value": "Not independently replayed",
+          "scope": "No current holder count substituted for the frozen snapshot",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Fees",
+          "value": "Machine fee manager and redemption module identified; quoted book is a cached accounting value",
+          "scope": "Configured state and applicable claim layer",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "First measured material month",
+          "value": "2025-10",
+          "scope": "First >1 ETH archived book in the sampled history; not launch date",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Observed 30-day ETH claim return",
+          "value": "+0.3468%",
+          "numeric": 0.34682189280773995,
+          "scope": "Cached reported ETH book; accounting timestamp retained",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Carry-only investor profit",
+          "value": "Claim and funding evidence shown separately",
+          "scope": "No whole-book return presented as organic carry profit",
+          "date": "2026-10-02T23:59:59Z"
+        }
+      ],
+      "moneyFlow": [
+        {
+          "step": 1,
+          "title": "Start with the machine book",
+          "text": "DETH shares reference a WETH-accounted machine. The last reported AUM is 2,499 ETH. Its accounting timestamp is about 14.5 hours before T.",
+          "url": "https://docs.makina.finance/strategies/deployments",
+          "contract": null
+        },
+        {
+          "step": 2,
+          "title": "Inspect the actual accounting instructions",
+          "text": "The saved accounting transaction decodes 15 positions, their debt flags, commands and affected tokens. This identifies what the machine values and prevents classifying every position as carry.",
+          "url": "https://docs.makina.finance/strategies/deployments",
+          "contract": null
+        },
+        {
+          "step": 3,
+          "title": "Separate the dominant loop",
+          "text": "The hub owes 15,065 WETH on Aave and supplies 15,110 weETH units. The gross borrowed ETH is leveraged restaking exposure; it is not new investor capital or a dollar loan.",
+          "url": "https://docs.makina.finance/strategies/deployments",
+          "contract": null
+        },
+        {
+          "step": 4,
+          "title": "Trace the dollar route",
+          "text": "A Morpho wstETH / USDT market has 279.57 wstETH collateral and about 384,701 USDT of stored indexed debt before pending interest. The small USDC loan is a different position.",
+          "url": "https://docs.makina.finance/strategies/deployments",
+          "contract": null
+        },
+        {
+          "step": 5,
+          "title": "Identify the investment claim",
+          "text": "Accounting includes senPYUSDmain and nested DQAeETH / DCM shares. USDT funding and a PYUSD destination introduce currency sourcing and borrower credit. The whole receipt cannot be assigned to a single loan without transaction allocation.",
+          "url": "https://docs.makina.finance/strategies/deployments",
+          "contract": null
+        },
+        {
+          "step": 6,
+          "title": "Respect stale and cross-chain state",
+          "text": "The fresh accounting getter rejects stale positions. Cached AUM is retained as a book observation. Configured spokes do not prove substantial deployments: the reported spoke balances at T are negligible.",
+          "url": "https://docs.makina.finance/strategies/deployments",
+          "contract": null
+        },
+        {
+          "step": 7,
+          "title": "Use the redemption module",
+          "text": "Selling a DETH share and redeeming through the machine are different routes. A complete unwind needs updated accounting, the configured redeemer and sufficient hub liquidity, including repayment of both WETH and dollar debts.",
+          "url": "https://docs.makina.finance/strategies/deployments",
+          "contract": null
+        }
+      ],
+      "actors": [
+        {
+          "who": "Machine",
+          "address": "0x0447D0aD7FD6a3409B48Ecbb9DDB075C1e11D735",
+          "role": "Sets the reported share book and connects fees, depositor and redeemer modules",
+          "canChange": "Sets the reported share book and connects fees, depositor and redeemer modules",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0x0447D0aD7FD6a3409B48Ecbb9DDB075C1e11D735"
+        },
+        {
+          "who": "Hub Caliber",
+          "address": "0xD1A2d9DF5db842DA2Ee81075Fa441602B2352915",
+          "role": "Executes and accounts for permitted investment positions",
+          "canChange": "Executes and accounts for permitted investment positions",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0xD1A2d9DF5db842DA2Ee81075Fa441602B2352915"
+        }
+      ],
+      "incomePayers": [
+        {
+          "payer": "Ethereum staking / restaking income after WETH funding",
+          "text": "Ethereum staking / restaking income after WETH funding"
+        },
+        {
+          "payer": "Borrowers in the senior dollar-credit receipt; nested strategy income",
+          "text": "Borrowers in the senior dollar-credit receipt; nested strategy income"
+        }
+      ],
+      "charts": {
+        "capitalHistory": {
+          "title": "Whole-product book history",
+          "rows": [
+            {
+              "month": "2024-10",
+              "timestamp": 1730419199,
+              "date": "2024-10-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2024-11",
+              "timestamp": 1733011199,
+              "date": "2024-11-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2024-12",
+              "timestamp": 1735689599,
+              "date": "2024-12-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-01",
+              "timestamp": 1738367999,
+              "date": "2025-01-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-02",
+              "timestamp": 1740787199,
+              "date": "2025-02-28T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-03",
+              "timestamp": 1743465599,
+              "date": "2025-03-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-04",
+              "timestamp": 1746057599,
+              "date": "2025-04-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-05",
+              "timestamp": 1748735999,
+              "date": "2025-05-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-06",
+              "timestamp": 1751327999,
+              "date": "2025-06-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-07",
+              "timestamp": 1754006399,
+              "date": "2025-07-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-08",
+              "timestamp": 1756684799,
+              "date": "2025-08-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-09",
+              "timestamp": 1759276799,
+              "date": "2025-09-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-10",
+              "timestamp": 1761955199,
+              "date": "2025-10-31T23:59:59Z",
+              "sizeETH": 9566.825639392599,
+              "sizeUSD": 36795255.09643705,
+              "sizeNative": 9566.825639392599,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-11",
+              "timestamp": 1764547199,
+              "date": "2025-11-30T23:59:59Z",
+              "sizeETH": 11263.451566550262,
+              "sizeUSD": 33842955.01846658,
+              "sizeNative": 11263.451566550262,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2025-12",
+              "timestamp": 1767225599,
+              "date": "2025-12-31T23:59:59Z",
+              "sizeETH": 9812.318610795559,
+              "sizeUSD": 29148866.157973718,
+              "sizeNative": 9812.318610795559,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-01",
+              "timestamp": 1769903999,
+              "date": "2026-01-31T23:59:59Z",
+              "sizeETH": 7873.013216906936,
+              "sizeUSD": 19224539.601531778,
+              "sizeNative": 7873.013216906936,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-02",
+              "timestamp": 1772323199,
+              "date": "2026-02-28T23:59:59Z",
+              "sizeETH": 4026.3925798881737,
+              "sizeUSD": 7899302.525249451,
+              "sizeNative": 4026.3925798881737,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-03",
+              "timestamp": 1775001599,
+              "date": "2026-03-31T23:59:59Z",
+              "sizeETH": 3820.1191705928886,
+              "sizeUSD": 8043615.046256077,
+              "sizeNative": 3820.1191705928886,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-04",
+              "timestamp": 1777593599,
+              "date": "2026-04-30T23:59:59Z",
+              "sizeETH": 3542.788054703419,
+              "sizeUSD": 7995099.7898657955,
+              "sizeNative": 3542.788054703419,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-05",
+              "timestamp": 1780271999,
+              "date": "2026-05-31T23:59:59Z",
+              "sizeETH": 2891.163309418132,
+              "sizeUSD": 5777324.906310971,
+              "sizeNative": 2891.163309418132,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-06",
+              "timestamp": 1782863999,
+              "date": "2026-06-30T23:59:59Z",
+              "sizeETH": 2665.174068090851,
+              "sizeUSD": 4176415.7677866295,
+              "sizeNative": 2665.174068090851,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-07",
+              "timestamp": 1785542399,
+              "date": "2026-07-31T23:59:59Z",
+              "sizeETH": 2591.4613499343545,
+              "sizeUSD": 4825211.563763381,
+              "sizeNative": 2591.4613499343545,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-08",
+              "timestamp": 1788220799,
+              "date": "2026-08-31T23:59:59Z",
+              "sizeETH": 2593.3251862953784,
+              "sizeUSD": 6395317.244248232,
+              "sizeNative": 2593.3251862953784,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "month": "2026-09",
+              "timestamp": 1790812799,
+              "date": "2026-09-30T23:59:59Z",
+              "sizeETH": 2498.8037382042357,
+              "sizeUSD": 6721159.2662197985,
+              "sizeNative": 2498.8037382042357,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            }
+          ],
+          "scope": "Cached reported ETH book; accounting timestamp retained. Missing observations stay absent."
+        },
+        "returnVsBorrow": {
+          "title": "ETH claim value",
+          "rows": [
+            {
+              "date": "2025-10-31T23:59:59Z",
+              "timestamp": 1761955199,
+              "ethBookPrice": 1.002298260102337,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2025-11-30T23:59:59Z",
+              "timestamp": 1764547199,
+              "ethBookPrice": 1.0044541660755293,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2025-12-31T23:59:59Z",
+              "timestamp": 1767225599,
+              "ethBookPrice": 1.0059699496022316,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-01-31T23:59:59Z",
+              "timestamp": 1769903999,
+              "ethBookPrice": 1.0074325140835099,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-02-28T23:59:59Z",
+              "timestamp": 1772323199,
+              "ethBookPrice": 1.0080937541354038,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-03-31T23:59:59Z",
+              "timestamp": 1775001599,
+              "ethBookPrice": 1.0100409712570264,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-04-30T23:59:59Z",
+              "timestamp": 1777593599,
+              "ethBookPrice": 1.0095370351670483,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-05-31T23:59:59Z",
+              "timestamp": 1780271999,
+              "ethBookPrice": 1.0111842667436683,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-06-30T23:59:59Z",
+              "timestamp": 1782863999,
+              "ethBookPrice": 1.0142911840562385,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-07-31T23:59:59Z",
+              "timestamp": 1785542399,
+              "ethBookPrice": 1.0173637030062603,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-08-31T23:59:59Z",
+              "timestamp": 1788220799,
+              "ethBookPrice": 1.0201048117847473,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-09-02T23:59:59Z",
+              "timestamp": 1788393599,
+              "ethBookPrice": 1.0201593933365496,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-09-30T23:59:59Z",
+              "timestamp": 1790812799,
+              "ethBookPrice": 1.023515606890624,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "timestamp": 1790985599,
+              "ethBookPrice": 1.0236975294541752,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.makina.finance/strategies/deployments"
+              ]
+            }
+          ],
+          "windowReturns": [
+            {
+              "windowDays": 30,
+              "date": "2026-10-02T23:59:59Z",
+              "startDate": "2026-09-02T23:59:59Z",
+              "cumulativeReturnPct": 0.34682189280773995,
+              "endBookPrice": 1.0236975294541752,
+              "startBookPrice": 1.0201593933365496,
+              "basis": "Cached reported ETH book; accounting timestamp retained"
+            }
+          ],
+          "scope": "Cached reported ETH book; accounting timestamp retained. External payouts and executable exit costs are separate."
+        },
+        "walletDistribution": {
+          "title": "Share ownership",
+          "rows": [],
+          "topHolders": [],
+          "holderCounts": {},
+          "scope": "A complete all-transfer holder replay at T is not included for this additional product; the report does not replace it with a current holder count."
+        },
+        "loanLegs": {
+          "title": "Actual borrowing accounts",
+          "rows": [
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0xD1A2d9DF5db842DA2Ee81075Fa441602B2352915",
+              "protocol": "Aave V3",
+              "collateralAsset": "weETH",
+              "collateralETH": null,
+              "collateralUSD": null,
+              "debtAsset": "WETH",
+              "debtUnits": 15064.646058736545,
+              "debtUSD": 40191729.109196074,
+              "LTV_pct": null,
+              "healthFactor": null,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xD1A2d9DF5db842DA2Ee81075Fa441602B2352915"
+              ],
+              "scope": "Archived reserve debt; USD token uses face value. ETH loans are staking loops, not dollar carry.",
+              "evidence": {
+                "label": "deth_aave_reserve_0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2_debt",
+                "block": 26108081,
+                "address": "0xea51d7853eefb32b6ee06b1c12e6dcca88be0ffe",
+                "signature": "balanceOf(address)",
+                "rawResult": "0x000000000000000000000000000000000000000000000330a7f61e815c3d5216",
+                "capture": "raw/eth/finalization-2026-10-06/finalization_complete_loans_T_1-e629d9384d59d6c4.json",
+                "captureSHA256": "e629d9384d59d6c49cb5e0cb71d490b991978fbe31db60277c8234ab6ea32f2d"
+              }
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0xD1A2d9DF5db842DA2Ee81075Fa441602B2352915",
+              "protocol": "Morpho USDT / wstETH",
+              "collateralAsset": "wstETH",
+              "collateralUnits": 279.5703215067927,
+              "debtAsset": "USDT",
+              "debtUnits": 384701.1137359634,
+              "debtUSD": 384701.1137359634,
+              "healthFactor": null,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb"
+              ],
+              "scope": "Stored indexed debt before pending interest. This is a distinct dollar route from the larger Aave WETH loop."
+            }
+          ],
+          "scope": "Actual debt currency and individual account headroom at T. Gross loops, dollar loans and product equity are different quantities."
+        }
+      },
+      "timeline": [
+        {
+          "date": "2026-10-02T23:59:59Z",
+          "title": "Frozen route and book measured",
+          "text": "DETH reports 2,499 ETH in a cached book. Its hub has 15,065 WETH of Aave debt against weETH, plus a Morpho USDT / wstETH carry route. Verified accounting instructions identify the credit receipts instead of relying on the vault name.",
+          "url": "https://docs.makina.finance/strategies/deployments"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.makina.finance/strategies/deployments",
+          "label": "Official deployments and strategy documentation"
+        },
+        {
+          "url": "https://etherscan.io/address/0x871aB8E36CaE9AF35c6A3488B049965233DeB7ed",
+          "label": "Fixed-block share contract"
+        },
+        {
+          "url": "data/finalization_reconstruction.json",
+          "label": "Reconstruction, timestamps and source hashes"
+        }
+      ],
+      "limitations": [
+        "A cached book is not an executable fresh NAV.",
+        "Morpho stored debt requires pending-interest treatment before final repayment sizing.",
+        "Nested receipts and debt do not establish a uniquely attributed carry-equity amount."
+      ],
+      "liveRoute": {
+        "collateral": "weETH and wstETH",
+        "debt": "Large WETH loop; Morpho USDT carry and minor other debt",
+        "destination": "Senior PYUSD credit receipt and nested strategy shares"
+      },
+      "story": {
+        "title": "A restaking loop with a smaller dollar-financed credit position",
+        "text": "DETH reports 2,499 ETH in a cached book. Its hub has 15,065 WETH of Aave debt against weETH, plus a Morpho USDT / wstETH carry route. Verified accounting instructions identify the credit receipts instead of relying on the vault name.",
+        "lesson": "The biggest gross position is an ETH loop; the USDT route has separate currency and exit risk."
+      },
+      "comparison": {
+        "route": "weETH and wstETH \u2192 Large WETH loop; Morpho USDT carry and minor other debt",
+        "destination": "Senior PYUSD credit receipt and nested strategy shares",
+        "fees": "Machine fee manager and redemption module identified; quoted book is a cached accounting value",
+        "operator": "Makina / strategy operator / hub Caliber",
+        "risk": "Stale accounting; cross-currency carry, nested shares and exit controls"
+      },
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "DETH reports 2,499 ETH in a cached book. Its hub has 15,065 WETH of Aave debt against weETH, plus a Morpho USDT / wstETH carry route. Verified accounting instructions identify the credit receipts instead of relying on the vault name.",
+      "captureStatus": "Archived financial state and matched claim returns; capital convention explicit",
+      "newReconstruction": true
+    },
+    {
+      "id": "vesper",
+      "rank": 9,
+      "name": "Vesper vaETH",
+      "subtitle": "A small, directly traceable DAI carry sleeve inside an ETH pool",
+      "classification": "E4",
+      "capitalETH": 1052.395279700216,
+      "capitalUSD": 2807738.4515103013,
+      "capitalBasis": "Reported ETH pool book; carry is one strategy",
+      "returnBasis": "Reported ETH pool book; carry is one strategy",
+      "keyMetrics": [
+        {
+          "label": "Capital at snapshot",
+          "value": "1,052.40 ETH",
+          "scope": "Reported ETH pool book; carry is one strategy",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Holder addresses at snapshot",
+          "value": "Not independently replayed",
+          "scope": "No current holder count substituted for the frozen snapshot",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Fees",
+          "value": "Pool universalFee is 100 bps at T; strategy and realised profit fees require the pool\u2019s fee formula",
+          "scope": "Configured state and applicable claim layer",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "First measured material month",
+          "value": "2024-10",
+          "scope": "First >1 ETH archived book in the sampled history; not launch date",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Observed 30-day ETH claim return",
+          "value": "+0.0698%",
+          "numeric": 0.06984278433907487,
+          "scope": "Reported ETH pool book; carry is one strategy",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Carry-only investor profit",
+          "value": "Claim and funding evidence shown separately",
+          "scope": "No whole-book return presented as organic carry profit",
+          "date": "2026-10-02T23:59:59Z"
+        }
+      ],
+      "moneyFlow": [
+        {
+          "step": 1,
+          "title": "Hold a share of the ETH pool",
+          "text": "vaETH shares represent the combined pool book. The eight registered strategies include lending, nested pools, liquidity and a dollar-carry route.",
+          "url": "https://docs.vesper.finance",
+          "contract": null
+        },
+        {
+          "step": 2,
+          "title": "Select the funded XY strategy",
+          "text": "The funded AaveV3_Vesper_Xy_ETH_DAI strategy posts WETH. Another registered ETH / DAI strategy has zero actual debt at T; an active flag alone does not establish deployment.",
+          "url": "https://docs.vesper.finance",
+          "contract": null
+        },
+        {
+          "step": 3,
+          "title": "Read the lender liability",
+          "text": "The XY account\u2019s variable DAI debt is 68,998 DAI. The pool accountant\u2019s totalDebtOf is the allocation owed to the ETH pool, not the DAI loan amount.",
+          "url": "https://docs.vesper.finance",
+          "contract": null
+        },
+        {
+          "step": 4,
+          "title": "Value the dollar investment",
+          "text": "The account holds 60,034 vDAI shares. The archived share price is 1.148609 DAI per share. Multiply to value the destination; keep VSP and other externally paid rewards separate.",
+          "url": "https://docs.vesper.finance",
+          "contract": null
+        },
+        {
+          "step": 5,
+          "title": "Account for flows before income",
+          "text": "During the matched 30 days both the loan and vDAI share balance fell materially. A simple end-minus-start balance would confuse withdrawals with losses.",
+          "url": "https://docs.vesper.finance",
+          "contract": null
+        },
+        {
+          "step": 6,
+          "title": "Return income to the ETH book",
+          "text": "Dollar yield after DAI interest and strategy costs supports the ETH pool. The pool\u2019s observed 30-day ETH share gain is a different measure from carry-only profit.",
+          "url": "https://docs.vesper.finance",
+          "contract": null
+        },
+        {
+          "step": 7,
+          "title": "Unwind the lending route",
+          "text": "Redeem vDAI, source and repay DAI, withdraw WETH collateral and provide ETH-pool liquidity. A destination share price does not guarantee redemption at the required size.",
+          "url": "https://docs.vesper.finance",
+          "contract": null
+        }
+      ],
+      "actors": [
+        {
+          "who": "ETH pool",
+          "address": "0xd1C117319B3595fbc39b471AB1fd485629eb05F2",
+          "role": "Issues shares and combines strategy accounting",
+          "canChange": "Issues shares and combines strategy accounting",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0xd1C117319B3595fbc39b471AB1fd485629eb05F2"
+        },
+        {
+          "who": "Funded XY strategy",
+          "address": "0x666C80fEcA6Fcd371B0535A9846E2d223CbF1d10",
+          "role": "Manages WETH collateral, DAI debt and vDAI shares",
+          "canChange": "Manages WETH collateral, DAI debt and vDAI shares",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0x666C80fEcA6Fcd371B0535A9846E2d223CbF1d10"
+        }
+      ],
+      "incomePayers": [
+        {
+          "payer": "Borrowers in the vDAI pool",
+          "text": "Borrowers in the vDAI pool"
+        },
+        {
+          "payer": "Borrowers, validators and traders in the other vaETH strategies; external rewards separately",
+          "text": "Borrowers, validators and traders in the other vaETH strategies; external rewards separately"
+        }
+      ],
+      "charts": {
+        "capitalHistory": {
+          "title": "Whole-product book history",
+          "rows": [
+            {
+              "month": "2024-10",
+              "timestamp": 1730419199,
+              "date": "2024-10-31T23:59:59Z",
+              "sizeETH": 1105.9506255625572,
+              "sizeUSD": 2783828.36460475,
+              "sizeNative": 1105.9506255625572,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2024-11",
+              "timestamp": 1733011199,
+              "date": "2024-11-30T23:59:59Z",
+              "sizeETH": 1156.7817609405686,
+              "sizeUSD": 4298427.506391011,
+              "sizeNative": 1156.7817609405686,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2024-12",
+              "timestamp": 1735689599,
+              "date": "2024-12-31T23:59:59Z",
+              "sizeETH": 1165.1647793797868,
+              "sizeUSD": 3885465.345728896,
+              "sizeNative": 1165.1647793797868,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-01",
+              "timestamp": 1738367999,
+              "date": "2025-01-31T23:59:59Z",
+              "sizeETH": 1095.1440752573753,
+              "sizeUSD": 3602809.6490783794,
+              "sizeNative": 1095.1440752573753,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-02",
+              "timestamp": 1740787199,
+              "date": "2025-02-28T23:59:59Z",
+              "sizeETH": 1090.711793089364,
+              "sizeUSD": 2435984.8115678546,
+              "sizeNative": 1090.711793089364,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-03",
+              "timestamp": 1743465599,
+              "date": "2025-03-31T23:59:59Z",
+              "sizeETH": 1354.743125393972,
+              "sizeUSD": 2473971.609525392,
+              "sizeNative": 1354.743125393972,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-04",
+              "timestamp": 1746057599,
+              "date": "2025-04-30T23:59:59Z",
+              "sizeETH": 1460.4111618750999,
+              "sizeUSD": 2624344.38382755,
+              "sizeNative": 1460.4111618750999,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-05",
+              "timestamp": 1748735999,
+              "date": "2025-05-31T23:59:59Z",
+              "sizeETH": 1433.3794671219339,
+              "sizeUSD": 3631294.874417365,
+              "sizeNative": 1433.3794671219339,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-06",
+              "timestamp": 1751327999,
+              "date": "2025-06-30T23:59:59Z",
+              "sizeETH": 1463.500272384039,
+              "sizeUSD": 3645293.9964550636,
+              "sizeNative": 1463.500272384039,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-07",
+              "timestamp": 1754006399,
+              "date": "2025-07-31T23:59:59Z",
+              "sizeETH": 1448.445519985272,
+              "sizeUSD": 5348124.552098383,
+              "sizeNative": 1448.445519985272,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-08",
+              "timestamp": 1756684799,
+              "date": "2025-08-31T23:59:59Z",
+              "sizeETH": 1583.3293339038853,
+              "sizeUSD": 6937909.108439806,
+              "sizeNative": 1583.3293339038853,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-09",
+              "timestamp": 1759276799,
+              "date": "2025-09-30T23:59:59Z",
+              "sizeETH": 1870.8418171592423,
+              "sizeUSD": 7755308.025244925,
+              "sizeNative": 1870.8418171592423,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-10",
+              "timestamp": 1761955199,
+              "date": "2025-10-31T23:59:59Z",
+              "sizeETH": 1876.1911530589887,
+              "sizeUSD": 7216075.079514768,
+              "sizeNative": 1876.1911530589887,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-11",
+              "timestamp": 1764547199,
+              "date": "2025-11-30T23:59:59Z",
+              "sizeETH": 2182.307546488531,
+              "sizeUSD": 6557114.015707694,
+              "sizeNative": 2182.307546488531,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2025-12",
+              "timestamp": 1767225599,
+              "date": "2025-12-31T23:59:59Z",
+              "sizeETH": 2215.690342937011,
+              "sizeUSD": 6582018.360342403,
+              "sizeNative": 2215.690342937011,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-01",
+              "timestamp": 1769903999,
+              "date": "2026-01-31T23:59:59Z",
+              "sizeETH": 2240.5752902523313,
+              "sizeUSD": 5471098.194674689,
+              "sizeNative": 2240.5752902523313,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-02",
+              "timestamp": 1772323199,
+              "date": "2026-02-28T23:59:59Z",
+              "sizeETH": 2541.503932882619,
+              "sizeUSD": 4986127.913912623,
+              "sizeNative": 2541.503932882619,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-03",
+              "timestamp": 1775001599,
+              "date": "2026-03-31T23:59:59Z",
+              "sizeETH": 2490.977754304706,
+              "sizeUSD": 5244984.580233609,
+              "sizeNative": 2490.977754304706,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-04",
+              "timestamp": 1777593599,
+              "date": "2026-04-30T23:59:59Z",
+              "sizeETH": 2443.0773639730373,
+              "sizeUSD": 5513354.741442999,
+              "sizeNative": 2443.0773639730373,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-05",
+              "timestamp": 1780271999,
+              "date": "2026-05-31T23:59:59Z",
+              "sizeETH": 2622.0867100336513,
+              "sizeUSD": 5239637.210058944,
+              "sizeNative": 2622.0867100336513,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-06",
+              "timestamp": 1782863999,
+              "date": "2026-06-30T23:59:59Z",
+              "sizeETH": 1881.9656437383603,
+              "sizeUSD": 2949102.305566059,
+              "sizeNative": 1881.9656437383603,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-07",
+              "timestamp": 1785542399,
+              "date": "2026-07-31T23:59:59Z",
+              "sizeETH": 1862.688647488232,
+              "sizeUSD": 3468261.9525769367,
+              "sizeNative": 1862.688647488232,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-08",
+              "timestamp": 1788220799,
+              "date": "2026-08-31T23:59:59Z",
+              "sizeETH": 1617.5358901941113,
+              "sizeUSD": 3988954.1143609453,
+              "sizeNative": 1617.5358901941113,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "month": "2026-09",
+              "timestamp": 1790812799,
+              "date": "2026-09-30T23:59:59Z",
+              "sizeETH": 1052.2899295891168,
+              "sizeUSD": 2830397.64302994,
+              "sizeNative": 1052.2899295891168,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            }
+          ],
+          "scope": "Reported ETH pool book; carry is one strategy. Missing observations stay absent."
+        },
+        "returnVsBorrow": {
+          "title": "ETH claim value",
+          "rows": [
+            {
+              "date": "2024-10-31T23:59:59Z",
+              "timestamp": 1730419199,
+              "ethBookPrice": 1.02834895576592,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2024-11-30T23:59:59Z",
+              "timestamp": 1733011199,
+              "ethBookPrice": 1.0290751596719532,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2024-12-31T23:59:59Z",
+              "timestamp": 1735689599,
+              "ethBookPrice": 1.0304279712221835,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-01-31T23:59:59Z",
+              "timestamp": 1738367999,
+              "ethBookPrice": 1.033676257807516,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-02-28T23:59:59Z",
+              "timestamp": 1740787199,
+              "ethBookPrice": 1.0332772068755507,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-03-31T23:59:59Z",
+              "timestamp": 1743465599,
+              "ethBookPrice": 1.037877647075505,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-04-30T23:59:59Z",
+              "timestamp": 1746057599,
+              "ethBookPrice": 1.0390293543777809,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-05-31T23:59:59Z",
+              "timestamp": 1748735999,
+              "ethBookPrice": 1.03992441545218,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-06-30T23:59:59Z",
+              "timestamp": 1751327999,
+              "ethBookPrice": 1.0415776405659476,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-07-31T23:59:59Z",
+              "timestamp": 1754006399,
+              "ethBookPrice": 1.0429901913851076,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-08-31T23:59:59Z",
+              "timestamp": 1756684799,
+              "ethBookPrice": 1.043687517855881,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-09-30T23:59:59Z",
+              "timestamp": 1759276799,
+              "ethBookPrice": 1.0442997147298188,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-10-31T23:59:59Z",
+              "timestamp": 1761955199,
+              "ethBookPrice": 1.045043579377953,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-11-30T23:59:59Z",
+              "timestamp": 1764547199,
+              "ethBookPrice": 1.0464179086868766,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2025-12-31T23:59:59Z",
+              "timestamp": 1767225599,
+              "ethBookPrice": 1.0470992474457201,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-01-31T23:59:59Z",
+              "timestamp": 1769903999,
+              "ethBookPrice": 1.0476322921937218,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-02-28T23:59:59Z",
+              "timestamp": 1772323199,
+              "ethBookPrice": 1.0484082970393156,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-03-31T23:59:59Z",
+              "timestamp": 1775001599,
+              "ethBookPrice": 1.0515550375119536,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-04-30T23:59:59Z",
+              "timestamp": 1777593599,
+              "ethBookPrice": 1.0530743524296728,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-05-31T23:59:59Z",
+              "timestamp": 1780271999,
+              "ethBookPrice": 1.0551105275462251,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-06-30T23:59:59Z",
+              "timestamp": 1782863999,
+              "ethBookPrice": 1.0559444157223703,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-07-31T23:59:59Z",
+              "timestamp": 1785542399,
+              "ethBookPrice": 1.0561010181994435,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-08-31T23:59:59Z",
+              "timestamp": 1788220799,
+              "ethBookPrice": 1.056739036007284,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-09-02T23:59:59Z",
+              "timestamp": 1788393599,
+              "ethBookPrice": 1.056739036007284,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-09-30T23:59:59Z",
+              "timestamp": 1790812799,
+              "ethBookPrice": 1.057393263820903,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "timestamp": 1790985599,
+              "ethBookPrice": 1.0574770919732293,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://docs.vesper.finance"
+              ]
+            }
+          ],
+          "windowReturns": [
+            {
+              "windowDays": 30,
+              "date": "2026-10-02T23:59:59Z",
+              "startDate": "2026-09-02T23:59:59Z",
+              "cumulativeReturnPct": 0.06984278433907487,
+              "endBookPrice": 1.0574770919732293,
+              "startBookPrice": 1.056739036007284,
+              "basis": "Reported ETH pool book; carry is one strategy"
+            }
+          ],
+          "scope": "Reported ETH pool book; carry is one strategy. External payouts and executable exit costs are separate."
+        },
+        "walletDistribution": {
+          "title": "Share ownership",
+          "rows": [],
+          "topHolders": [],
+          "holderCounts": {},
+          "scope": "A complete all-transfer holder replay at T is not included for this additional product; the report does not replace it with a current holder count."
+        },
+        "loanLegs": {
+          "title": "Actual borrowing accounts",
+          "rows": [
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0x666C80fEcA6Fcd371B0535A9846E2d223CbF1d10",
+              "protocol": "Aave V3 \u2192 Vesper vDAI",
+              "collateralAsset": "WETH",
+              "collateralETH": 57.3468199891587,
+              "debtAsset": "DAI",
+              "debtUnits": 68998.30281590614,
+              "debtUSD": 68998.30281590614,
+              "healthFactor": null,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0x666C80fEcA6Fcd371B0535A9846E2d223CbF1d10"
+              ],
+              "scope": "Actual variable DAI loan. PoolAccountant strategy allocation is a different quantity."
+            }
+          ],
+          "scope": "Actual debt currency and individual account headroom at T. Gross loops, dollar loans and product equity are different quantities."
+        }
+      },
+      "timeline": [
+        {
+          "date": "2026-10-02T23:59:59Z",
+          "title": "Frozen route and book measured",
+          "text": "vaETH reports 1,052 ETH. Its XY strategy supplies 57.35 WETH, owes 68,998 DAI and holds 60,034 vDAI shares. Other strategies in the same pool are lending or liquidity positions, so the whole pool cannot be labelled carry.",
+          "url": "https://docs.vesper.finance"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.vesper.finance",
+          "label": "Official deployments and strategy documentation"
+        },
+        {
+          "url": "https://etherscan.io/address/0xd1C117319B3595fbc39b471AB1fd485629eb05F2",
+          "label": "Fixed-block share contract"
+        },
+        {
+          "url": "data/finalization_reconstruction.json",
+          "label": "Reconstruction, timestamps and source hashes"
+        }
+      ],
+      "limitations": [
+        "Carry is one strategy in a mixed pool.",
+        "Dollar share growth excludes unassigned external reward cash.",
+        "Pool-reported NAV, loan interest and investor exit cash answer different questions."
+      ],
+      "liveRoute": {
+        "collateral": "WETH",
+        "debt": "DAI on Aave V3",
+        "destination": "Vesper vDAI dollar lending pool"
+      },
+      "story": {
+        "title": "A small, directly traceable DAI carry sleeve inside an ETH pool",
+        "text": "vaETH reports 1,052 ETH. Its XY strategy supplies 57.35 WETH, owes 68,998 DAI and holds 60,034 vDAI shares. Other strategies in the same pool are lending or liquidity positions, so the whole pool cannot be labelled carry.",
+        "lesson": "The strategy\u2019s actual dollar loan is different from its pool-accounting allocation."
+      },
+      "comparison": {
+        "route": "WETH \u2192 DAI on Aave V3",
+        "destination": "Vesper vDAI dollar lending pool",
+        "fees": "Pool universalFee is 100 bps at T; strategy and realised profit fees require the pool\u2019s fee formula",
+        "operator": "Vesper / pool accountant / XY strategy",
+        "risk": "Dollar funding versus vDAI return; reward dependence and withdrawal liquidity"
+      },
+      "status": "active",
+      "statusLabel": "Active hybrid",
+      "allocationEvidence": "vaETH reports 1,052 ETH. Its XY strategy supplies 57.35 WETH, owes 68,998 DAI and holds 60,034 vDAI shares. Other strategies in the same pool are lending or liquidity positions, so the whole pool cannot be labelled carry.",
+      "captureStatus": "Archived financial state and matched claim returns; capital convention explicit",
+      "newReconstruction": true
+    },
+    {
       "id": "royco",
-      "rank": 6,
+      "rank": 10,
       "name": "Royco ETH",
       "subtitle": "E4 product design confirmed; T book NAV measured; T positions not fully reconstructed",
       "classification": "E4",
@@ -6140,6 +9574,637 @@
         "date": "2026-10-02T23:59:59Z"
       },
       "backingExitEvidence": "data/eth/backing_exit_closure.json"
+    },
+    {
+      "id": "zensats",
+      "rank": 11,
+      "name": "ZenSats wstETH",
+      "subtitle": "An active but very small soft-liquidation carry route",
+      "classification": "E4",
+      "capitalETH": 0.5485690453716627,
+      "capitalUSD": 1463.555027001895,
+      "capitalBasis": "Reported wstETH managed assets converted to ETH; not independently netted carry equity",
+      "returnBasis": "Reported wstETH managed assets converted to ETH; not independently netted carry equity",
+      "keyMetrics": [
+        {
+          "label": "Capital at snapshot",
+          "value": "0.55 ETH",
+          "scope": "Reported wstETH managed assets converted to ETH; not independently netted carry equity",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Holder addresses at snapshot",
+          "value": "Not independently replayed",
+          "scope": "No current holder count substituted for the frozen snapshot",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Fees",
+          "value": "Configured vault fee settings are zero at T",
+          "scope": "Configured state and applicable claim layer",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "First measured material month",
+          "value": "Micro-position",
+          "scope": "First >1 ETH archived book in the sampled history; not launch date",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Observed 30-day ETH claim return",
+          "value": "+0.2480%",
+          "numeric": 0.24795127218690285,
+          "scope": "Reported wstETH managed assets converted to ETH; not independently netted carry equity",
+          "date": "2026-10-02T23:59:59Z"
+        },
+        {
+          "label": "Carry-only investor profit",
+          "value": "Claim and funding evidence shown separately",
+          "scope": "No whole-book return presented as organic carry profit",
+          "date": "2026-10-02T23:59:59Z"
+        }
+      ],
+      "moneyFlow": [
+        {
+          "step": 1,
+          "title": "Use the active deployment",
+          "text": "The active vault differs from the withdraw-only legacy deployment. Archived supply and assets establish which book is funded.",
+          "url": "https://www.zensats.app/llms-full.txt",
+          "contract": null
+        },
+        {
+          "step": 2,
+          "title": "Post staking collateral",
+          "text": "The loan manager supplies wstETH. Staking income remains on the collateral while the loan is denominated in crvUSD.",
+          "url": "https://www.zensats.app/llms-full.txt",
+          "contract": null
+        },
+        {
+          "step": 3,
+          "title": "Borrow with soft liquidation",
+          "text": "LlamaLend converts collateral exposure across price bands during soft liquidation. Its risk cannot be expressed as an Aave health factor.",
+          "url": "https://www.zensats.app/llms-full.txt",
+          "contract": null
+        },
+        {
+          "step": 4,
+          "title": "Supply dollar liquidity",
+          "text": "The strategy invests crvUSD in the crvUSD / USDT pool and StakeDAO route. Trading fees, inventory changes and incentives contribute differently to its result.",
+          "url": "https://www.zensats.app/llms-full.txt",
+          "contract": null
+        },
+        {
+          "step": 5,
+          "title": "Compare the dollar claim with debt",
+          "text": "The saved strategy value is about 951 crvUSD against 953 crvUSD of debt. This snapshot comparison does not by itself establish full realised profit, including collateral staking and rewards.",
+          "url": "https://www.zensats.app/llms-full.txt",
+          "contract": null
+        },
+        {
+          "step": 6,
+          "title": "Keep the legacy product separate",
+          "text": "The old Aave / RAAC route is withdraw-only in documentation and has zero share supply / assets at T. Do not add its historical design as current funded capital.",
+          "url": "https://www.zensats.app/llms-full.txt",
+          "contract": null
+        },
+        {
+          "step": 7,
+          "title": "Exit in the debt currency",
+          "text": "Withdraw or rebalance the liquidity position, source crvUSD, repay the controller and release wstETH. Soft-liquidation inventory and pool liquidity determine actual proceeds.",
+          "url": "https://www.zensats.app/llms-full.txt",
+          "contract": null
+        }
+      ],
+      "actors": [
+        {
+          "who": "Active vault",
+          "address": "0x23F189dE34EED95f6303CfF1C77f7676F211Dd2c",
+          "role": "Issues the current wstETH-accounted claim",
+          "canChange": "Issues the current wstETH-accounted claim",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0x23F189dE34EED95f6303CfF1C77f7676F211Dd2c"
+        },
+        {
+          "who": "Loan manager",
+          "address": "0xCf9f54218666a32BE9da1d60BC81412BA86730C7",
+          "role": "Manages the LlamaLend collateral and crvUSD debt",
+          "canChange": "Manages the LlamaLend collateral and crvUSD debt",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0xCf9f54218666a32BE9da1d60BC81412BA86730C7"
+        },
+        {
+          "who": "Yield strategy",
+          "address": "0x8bD4d875E2Cf1174e282B532Fa534b6633F59B5f",
+          "role": "Holds the dollar investment claim",
+          "canChange": "Holds the dollar investment claim",
+          "delay": "Contract-specific; no blanket timelock assumed",
+          "url": "https://etherscan.io/address/0x8bD4d875E2Cf1174e282B532Fa534b6633F59B5f"
+        }
+      ],
+      "incomePayers": [
+        {
+          "payer": "Ethereum validator income on wstETH collateral",
+          "text": "Ethereum validator income on wstETH collateral"
+        },
+        {
+          "payer": "Curve traders and separately funded StakeDAO / pool incentives",
+          "text": "Curve traders and separately funded StakeDAO / pool incentives"
+        }
+      ],
+      "charts": {
+        "capitalHistory": {
+          "title": "Whole-product book history",
+          "rows": [
+            {
+              "month": "2024-10",
+              "timestamp": 1730419199,
+              "date": "2024-10-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2024-11",
+              "timestamp": 1733011199,
+              "date": "2024-11-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2024-12",
+              "timestamp": 1735689599,
+              "date": "2024-12-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-01",
+              "timestamp": 1738367999,
+              "date": "2025-01-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-02",
+              "timestamp": 1740787199,
+              "date": "2025-02-28T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-03",
+              "timestamp": 1743465599,
+              "date": "2025-03-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-04",
+              "timestamp": 1746057599,
+              "date": "2025-04-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-05",
+              "timestamp": 1748735999,
+              "date": "2025-05-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-06",
+              "timestamp": 1751327999,
+              "date": "2025-06-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-07",
+              "timestamp": 1754006399,
+              "date": "2025-07-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-08",
+              "timestamp": 1756684799,
+              "date": "2025-08-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-09",
+              "timestamp": 1759276799,
+              "date": "2025-09-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-10",
+              "timestamp": 1761955199,
+              "date": "2025-10-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-11",
+              "timestamp": 1764547199,
+              "date": "2025-11-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2025-12",
+              "timestamp": 1767225599,
+              "date": "2025-12-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-01",
+              "timestamp": 1769903999,
+              "date": "2026-01-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-02",
+              "timestamp": 1772323199,
+              "date": "2026-02-28T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-03",
+              "timestamp": 1775001599,
+              "date": "2026-03-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-04",
+              "timestamp": 1777593599,
+              "date": "2026-04-30T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-05",
+              "timestamp": 1780271999,
+              "date": "2026-05-31T23:59:59Z",
+              "sizeETH": null,
+              "sizeUSD": null,
+              "sizeNative": null,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "no_usable_book_observation",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-06",
+              "timestamp": 1782863999,
+              "date": "2026-06-30T23:59:59Z",
+              "sizeETH": 0.5432994514605468,
+              "sizeUSD": 851.3681799909763,
+              "sizeNative": 0.5432994514605468,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-07",
+              "timestamp": 1785542399,
+              "date": "2026-07-31T23:59:59Z",
+              "sizeETH": 0.5449837930500447,
+              "sizeUSD": 1014.7410071754758,
+              "sizeNative": 0.5449837930500447,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-08",
+              "timestamp": 1788220799,
+              "date": "2026-08-31T23:59:59Z",
+              "sizeETH": 0.5471035393974735,
+              "sizeUSD": 1349.194739783544,
+              "sizeNative": 0.5471035393974735,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "month": "2026-09",
+              "timestamp": 1790812799,
+              "date": "2026-09-30T23:59:59Z",
+              "sizeETH": 0.5485192911913805,
+              "sizeUSD": 1475.380183055392,
+              "sizeNative": 0.5485192911913805,
+              "sizeNativeSymbol": "ETH-equivalent",
+              "status": "archived_reported_book",
+              "carryAllocationPercent": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            }
+          ],
+          "scope": "Reported wstETH managed assets converted to ETH; not independently netted carry equity. Missing observations stay absent."
+        },
+        "returnVsBorrow": {
+          "title": "ETH claim value",
+          "rows": [
+            {
+              "date": "2026-06-30T23:59:59Z",
+              "timestamp": 1782863999,
+              "ethBookPrice": 1.2387454341625195,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "date": "2026-07-31T23:59:59Z",
+              "timestamp": 1785542399,
+              "ethBookPrice": 1.2425858033142858,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "date": "2026-08-31T23:59:59Z",
+              "timestamp": 1788220799,
+              "ethBookPrice": 1.2474189134939502,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "date": "2026-09-02T23:59:59Z",
+              "timestamp": 1788393599,
+              "ethBookPrice": 1.247666722793768,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "date": "2026-09-30T23:59:59Z",
+              "timestamp": 1790812799,
+              "ethBookPrice": 1.2506468866971168,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            },
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "timestamp": 1790985599,
+              "ethBookPrice": 1.2507603283055877,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://www.zensats.app/llms-full.txt"
+              ]
+            }
+          ],
+          "windowReturns": [
+            {
+              "windowDays": 30,
+              "date": "2026-10-02T23:59:59Z",
+              "startDate": "2026-09-02T23:59:59Z",
+              "cumulativeReturnPct": 0.24795127218690285,
+              "endBookPrice": 1.2507603283055877,
+              "startBookPrice": 1.247666722793768,
+              "basis": "Reported wstETH managed assets converted to ETH; not independently netted carry equity"
+            }
+          ],
+          "scope": "Reported wstETH managed assets converted to ETH; not independently netted carry equity. External payouts and executable exit costs are separate."
+        },
+        "walletDistribution": {
+          "title": "Share ownership",
+          "rows": [],
+          "topHolders": [],
+          "holderCounts": {},
+          "scope": "A complete all-transfer holder replay at T is not included for this additional product; the report does not replace it with a current holder count."
+        },
+        "loanLegs": {
+          "title": "Actual borrowing accounts",
+          "rows": [
+            {
+              "date": "2026-10-02T23:59:59Z",
+              "chain": "Ethereum",
+              "account": "0xCf9f54218666a32BE9da1d60BC81412BA86730C7",
+              "protocol": "Curve LlamaLend",
+              "collateralAsset": "wstETH",
+              "collateralETH": null,
+              "debtAsset": "crvUSD",
+              "debtUnits": 952.7918881801421,
+              "debtUSD": 952.7918881801421,
+              "healthFactor": null,
+              "borrowAPR_pct": null,
+              "sourceURLs": [
+                "https://etherscan.io/address/0xCf9f54218666a32BE9da1d60BC81412BA86730C7"
+              ],
+              "scope": "LlamaLend soft-liquidation mechanics differ from Aave health factor."
+            }
+          ],
+          "scope": "Actual debt currency and individual account headroom at T. Gross loops, dollar loans and product equity are different quantities."
+        }
+      },
+      "timeline": [
+        {
+          "date": "2026-10-02T23:59:59Z",
+          "title": "Frozen route and book measured",
+          "text": "The active vault manages less than one ETH and owes about 953 crvUSD. The old Aave / RAAC vault has zero share supply and assets at T. A documented strategy can be real without being a large market category.",
+          "url": "https://www.zensats.app/llms-full.txt"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.zensats.app/llms-full.txt",
+          "label": "Official deployments and strategy documentation"
+        },
+        {
+          "url": "https://etherscan.io/address/0x23F189dE34EED95f6303CfF1C77f7676F211Dd2c",
+          "label": "Fixed-block share contract"
+        },
+        {
+          "url": "data/finalization_reconstruction.json",
+          "label": "Reconstruction, timestamps and source hashes"
+        }
+      ],
+      "limitations": [
+        "This micro-position is included for route completeness, not evidence of large carry-market capital.",
+        "Reported managed assets are not independently netted carry equity.",
+        "No complete reward-adjusted investor cash return is claimed."
+      ],
+      "liveRoute": {
+        "collateral": "wstETH",
+        "debt": "crvUSD on LlamaLend",
+        "destination": "Curve crvUSD / USDT liquidity through StakeDAO"
+      },
+      "story": {
+        "title": "An active but very small soft-liquidation carry route",
+        "text": "The active vault manages less than one ETH and owes about 953 crvUSD. The old Aave / RAAC vault has zero share supply and assets at T. A documented strategy can be real without being a large market category.",
+        "lesson": "Use frozen balances to distinguish a live micro-position from an empty legacy design."
+      },
+      "comparison": {
+        "route": "wstETH \u2192 crvUSD on LlamaLend",
+        "destination": "Curve crvUSD / USDT liquidity through StakeDAO",
+        "fees": "Configured vault fee settings are zero at T",
+        "operator": "ZenSats / loan manager / yield strategy",
+        "risk": "Soft liquidation, pool inventory and incentive expiry"
+      },
+      "status": "active",
+      "statusLabel": "Active micro-position",
+      "allocationEvidence": "The active vault manages less than one ETH and owes about 953 crvUSD. The old Aave / RAAC vault has zero share supply and assets at T. A documented strategy can be real without being a large market category.",
+      "captureStatus": "Archived financial state and matched claim returns; capital convention explicit",
+      "newReconstruction": true
     }
   ],
   "closedProducts": [
