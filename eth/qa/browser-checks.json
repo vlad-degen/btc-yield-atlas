@@ -1,422 +1,65 @@
 {
-  "reviewed_at": "2026-10-05T23:26:15.048Z",
+  "reviewed_at": "2026-10-06T01:09:11.950611+00:00",
   "financial_snapshot": "2026-10-02T23:59:59Z",
-  "site_sha256": "b0523c0841383159d721271c6406dacd440bb1762f6e52abf2c6715eed08dddc",
-  "scope": "Final BTC-parity reader. 45 desktop/mobile functional checks plus final source-library copy regression; 390 and 319 px; all-eight-book hover, product mechanics, market, calculator and financing curves.",
+  "site_sha256": "03940a13495b5524e8f92cdef21a6ea4c0bf2f83d343029277dbffc9c079f156",
+  "scope": "Final October 6 report fixes. Desktop and 390 px mobile, matched common-window cards, coverage disclosure, carry tooltip, fixed answers under chart filters and current Briefing. Earlier broader browser checks belong to their earlier HTML editions.",
   "all_recorded_checks_passed": true,
   "checks": [
     {
-      "check": "desktop carry eight-row keyboard hover",
-      "passed": true,
-      "tip": "2026-09-30 \u00b7 510,902 ETH\nReservoir ETH Yield\n60 ETH \u00b7 0.01%\nTAU InfiniFi ETH Carry\n82 ETH \u00b7 0.02%\nRoyco ETH\n116 ETH \u00b7 0.02%\nLiquity ETH Carry\n6,017 ETH \u00b7 1.2%\nRocksolid rETH\n9,727 ETH \u00b7 1.9%\nYieldBasis WETH\n10,616 ETH \u00b7 2.1%\nether.fi Liquid ETH\n176,962 ETH \u00b7 34.6%\nConcrete Delta weETH\n307,322 ETH \u00b7 60.2%"
-    },
-    {
-      "check": "carry All 8 products ETH",
-      "passed": true,
-      "csv": "data/carry-history-all-eth.csv",
-      "months": 24,
-      "rows": 8,
-      "tip": "2026-09-30 \u00b7 510,902 ETH\nReservoir ETH Yield\n60 ETH \u00b7 0.01%\nTAU InfiniFi ETH Carry\n82 ETH \u00b7 0.02%\nRoyco ETH\n116 ETH \u00b7 0.02%\nLiquity ETH Carry\n6,017 ETH \u00b7 1.2%\nRocksolid rETH\n9,727 ETH \u00b7 1.9%\nYieldBasis WETH\n10,616 ETH \u00b7 2.1%\nether.fi Liquid ETH\n176,962 ETH \u00b7 34.6%\nConcrete Delta weETH\n307,322 ETH \u00b7 60.2%"
-    },
-    {
-      "check": "carry All 8 products USD",
-      "passed": true,
-      "csv": "data/carry-history-all-usd.csv",
-      "months": 24,
-      "rows": 8,
-      "tip": "2026-09-30 \u00b7 $1.374bn\nReservoir ETH Yield\n$161,921 \u00b7 0.01%\nTAU InfiniFi ETH Carry\n$221,173 \u00b7 0.02%\nRoyco ETH\n$312,112 \u00b7 0.02%\nLiquity ETH Carry\n$16.183m \u00b7 1.2%\nRocksolid rETH\n$26.162m \u00b7 1.9%\nYieldBasis WETH\n$28.555m \u00b7 2.1%\nether.fi Liquid ETH\n$475.985m \u00b7 34.6%\nConcrete Delta weETH\n$826.619m \u00b7 60.2%"
-    },
-    {
-      "check": "carry Small-book zoom ETH",
-      "passed": true,
-      "csv": "data/carry-history-dedicated-eth.csv",
-      "months": 24,
-      "rows": 6,
-      "tip": "2026-09-30 \u00b7 26,618 ETH\nReservoir ETH Yield\n60 ETH \u00b7 0.23%\nTAU InfiniFi ETH Carry\n82 ETH \u00b7 0.31%\nRoyco ETH\n116 ETH \u00b7 0.44%\nLiquity ETH Carry\n6,017 ETH \u00b7 22.6%\nRocksolid rETH\n9,727 ETH \u00b7 36.5%\nYieldBasis WETH\n10,616 ETH \u00b7 39.9%"
-    },
-    {
-      "check": "carry Small-book zoom USD",
-      "passed": true,
-      "csv": "data/carry-history-dedicated-usd.csv",
-      "months": 24,
-      "rows": 6,
-      "tip": "2026-09-30 \u00b7 $71.596m\nReservoir ETH Yield\n$161,921 \u00b7 0.23%\nTAU InfiniFi ETH Carry\n$221,173 \u00b7 0.31%\nRoyco ETH\n$312,112 \u00b7 0.44%\nLiquity ETH Carry\n$16.183m \u00b7 22.6%\nRocksolid rETH\n$26.162m \u00b7 36.5%\nYieldBasis WETH\n$28.555m \u00b7 39.9%"
-    },
-    {
-      "check": "carry table 24 months",
+      "check": "filters_do_not_change_answers",
       "passed": true
     },
     {
-      "check": "predeployment months remain missing",
-      "passed": true,
-      "tip": "2024-10-31 \u00b7 146,203 ETH\nReservoir ETH Yield\nNo observation\nTAU InfiniFi ETH Carry\nNo observation\nRoyco ETH\nNo observation\nLiquity ETH Carry\nNo observation\nRocksolid rETH\nNo observation\nYieldBasis WETH\nNo observation\nether.fi Liquid ETH\n146,203 ETH \u00b7 100.0%\nConcrete Delta weETH\nNo observation"
-    },
-    {
-      "check": "visible product mechanics concrete",
-      "passed": true,
-      "headings": [
-        "Concrete Delta weETH",
-        "How the money moves",
-        "People, contracts and control",
-        "Who pays the income?",
-        "Collateral and borrowing legs",
-        "Capital and investor outcomes",
-        "Who holds the shares?",
-        "What changed, and when?"
-      ],
-      "selected": "carry-tab-concrete",
-      "steps": 0,
-      "text": "#1 \u00b7 E4 \u00b7 whole book NAV\nConcrete Delta weETH\n\nA large claim needs a custody and payout reconciliation\n\nProduct data\n\nA single holder owns the 307,363 ETH claim. Its flat weETH share price tracks stak"
-    },
-    {
-      "check": "visible product mechanics liquid",
-      "passed": true,
-      "headings": [
-        "ether.fi Liquid ETH",
-        "How the money moves",
-        "People, contracts and control",
-        "Who pays the income?",
-        "Collateral and borrowing legs",
-        "Capital and investor outcomes",
-        "Who holds the shares?",
-        "What changed, and when?"
-      ],
-      "selected": "carry-tab-liquid",
-      "steps": 0,
-      "text": "#2 \u00b7 E4 \u00b7 whole book NAV\nether.fi Liquid ETH\n\nModest excess return sits beside substantial borrowing\n\nProduct data\n\nLiquid combines staking loops and dollar carry. Its two-year ETH book gain is 6.85%,"
-    },
-    {
-      "check": "visible product mechanics yieldbasis",
-      "passed": true,
-      "headings": [
-        "YieldBasis WETH",
-        "How the money moves",
-        "People, contracts and control",
-        "Who pays the income?",
-        "Collateral and borrowing legs",
-        "Capital and investor outcomes",
-        "Who holds the shares?",
-        "What changed, and when?"
-      ],
-      "selected": "carry-tab-yieldbasis",
-      "steps": 0,
-      "text": "#3 \u00b7 E4 \u00b7 whole book NAV\nYieldBasis WETH\n\nDollar financing inside the liquidity pool\n\nProduct data\n\nThe WETH pool owes 27.81M crvUSD against 10,426 ETH of net book equity. The unstaked LT mark fell 0."
-    },
-    {
-      "check": "visible product mechanics rocksolid",
-      "passed": true,
-      "headings": [
-        "Rocksolid rETH",
-        "How the money moves",
-        "People, contracts and control",
-        "Who pays the income?",
-        "Collateral and borrowing legs",
-        "Capital and investor outcomes",
-        "Who holds the shares?",
-        "What changed, and when?"
-      ],
-      "selected": "carry-tab-rocksolid",
-      "steps": 0,
-      "text": "#4 \u00b7 E4 \u00b7 whole book NAV\nRocksolid rETH\n\nCarry can sit inside another carry product\n\nProduct data\n\nRocksolid holds a 728 ETH claim in Liquity ETH Carry, 7.49% of its book. Direct Aave debt is zero at "
-    },
-    {
-      "check": "visible product mechanics liquity",
-      "passed": true,
-      "headings": [
-        "Liquity ETH Carry",
-        "How the money moves",
-        "People, contracts and control",
-        "Who pays the income?",
-        "Collateral and borrowing legs",
-        "Capital and investor outcomes",
-        "Who holds the shares?",
-        "What changed, and when?"
-      ],
-      "selected": "carry-tab-liquity",
-      "steps": 0,
-      "text": "#5 \u00b7 E4 \u00b7 whole book NAV\nLiquity ETH Carry\n\nThe active loan matters more than the product name\n\nProduct data\n\nThe current route pledges 4,585 wstETH to Ebisu and borrows 6.75M ebUSD at a 2.55% annual "
-    },
-    {
-      "check": "calculator Observed RLUSD loan, full parking scenario",
-      "passed": true,
-      "result": "Net ETH return, annual\n2.75%\nWithout investment rewards\n1.09%\nDollar spread before product fee\n1.29%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth factor\t1.336\nETH return before the product fee\t3.10%\nETH/USD fall to liquidation\t25.17%\nCollateral sold in the illustration\t0.4515 ETH\nLiquidation bonus in the illustration\t0.0215 ETH\n\nDollar debt becomes harder to repay when ETH falls. An unstaked portion earns less than the modeled baseline. Collateral sold uses the threshold price, 50% repayment and a 5% bonus."
-    },
-    {
-      "check": "calculator Ethereum USDC reserve, 65% LTV scenario",
-      "passed": true,
-      "result": "Net ETH return, annual\n0.86%\nWithout investment rewards\n0.86%\nDollar spread before product fee\n-1.63%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6500 ETH equivalent\nHealth factor\t1.246\nETH return before the product fee\t1.21%\nETH/USD fall to liquidation\t19.75%\nCollateral sold in the illustration\t0.4253 ETH\nLiquidation bonus in the illustration\t0.0203 ETH\n\nDollar debt becomes harder to repay when ETH falls. An unstaked portion earns less than the modeled baseline. Collateral sold uses the threshold price, 50% repayment and a 5% bonus."
-    },
-    {
-      "check": "calculator RLUSD leg with rewards removed",
-      "passed": true,
-      "result": "Net ETH return, annual\n1.09%\nWithout investment rewards\n1.09%\nDollar spread before product fee\n-1.30%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth factor\t1.336\nETH return before the product fee\t1.44%\nETH/USD fall to liquidation\t25.17%\nCollateral sold in the illustration\t0.4515 ETH\nLiquidation bonus in the illustration\t0.0215 ETH\n\nDollar debt becomes harder to repay when ETH falls. An unstaked portion earns less than the modeled baseline. Collateral sold uses the threshold price, 50% repayment and a 5% bonus."
-    },
-    {
-      "check": "calculator RLUSD loan cost increases 3 percentage points",
-      "passed": true,
-      "result": "Net ETH return, annual\n0.82%\nWithout investment rewards\n-0.84%\nDollar spread before product fee\n-1.71%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.6436 ETH equivalent\nHealth factor\t1.336\nETH return before the product fee\t1.17%\nETH/USD fall to liquidation\t25.17%\nCollateral sold in the illustration\t0.4515 ETH\nLiquidation bonus in the illustration\t0.0215 ETH\n\nDollar debt becomes harder to repay when ETH falls. An unstaked portion earns less than the modeled baseline. Collateral sold uses the threshold price, 50% repayment and a 5% bonus."
-    },
-    {
-      "check": "calculator zero collateral",
-      "passed": true,
-      "result": "Net ETH return, annual\n1.92%\nWithout investment rewards\n1.92%\nDollar spread before product fee\n-1.71%\nPER 1 ETH OF EQUITY\tRESULT\nStaking baseline\t2.27%\nDollar debt at the initial ETH price\t0.0000 ETH equivalent\nHealth factor\tNo debt\nETH return before the product fee\t2.27%\nETH/USD fall to liquidation\tNo debt\nCollateral sold in the illustration\t0.0000 ETH\nLiquidation bonus in the illustration\t0.0000 ETH\n\nDollar debt becomes harder to repay when ETH falls. An unstaked portion earns less than the modeled baseline. Collateral sold uses the threshold price, 50% repayment and a 5% bonus."
-    },
-    {
-      "check": "funding curve Aave V3 USDC \u00b7 ethereum",
-      "passed": true,
-      "hits": 20,
-      "selected": "Aave V3 USDC \u00b7 ethereum",
-      "tip": "Aave V3 / USDC \u00b7 100.0% utilization \u00b7 14.400% APR"
-    },
-    {
-      "check": "funding curve Aave V3 USDC \u00b7 base",
-      "passed": true,
-      "hits": 20,
-      "selected": "Aave V3 USDC \u00b7 base",
-      "tip": "Aave V3 / USDC \u00b7 100.0% utilization \u00b7 14.700% APR"
-    },
-    {
-      "check": "funding curve Aave V3 USDCn \u00b7 arbitrum",
-      "passed": true,
-      "hits": 20,
-      "selected": "Aave V3 USDCn \u00b7 arbitrum",
-      "tip": "Aave V3 / USDC \u00b7 100.0% utilization \u00b7 14.000% APR"
-    },
-    {
-      "check": "funding curve Morpho USDT \u00b7 ethereum",
-      "passed": true,
-      "hits": 20,
-      "selected": "Morpho USDT \u00b7 ethereum",
-      "tip": "Morpho Blue / USDT \u00b7 100.0% utilization \u00b7 14.413% APR"
-    },
-    {
-      "check": "funding curve Morpho RLUSD \u00b7 ethereum",
-      "passed": true,
-      "hits": 20,
-      "selected": "Morpho RLUSD \u00b7 ethereum",
-      "tip": "Morpho Blue / RLUSD \u00b7 100.0% utilization \u00b7 17.081% APR"
-    },
-    {
-      "check": "funding curve Morpho USDC \u00b7 ethereum",
-      "passed": true,
-      "hits": 20,
-      "selected": "Morpho USDC \u00b7 ethereum",
-      "tip": "Morpho Blue / USDC \u00b7 100.0% utilization \u00b7 19.077% APR"
-    },
-    {
-      "check": "funding curve Aave V3 USDCn \u00b7 optimism",
-      "passed": true,
-      "hits": 20,
-      "selected": "Aave V3 USDCn \u00b7 optimism",
-      "tip": "Aave V3 / USDC \u00b7 100.0% utilization \u00b7 14.000% APR"
-    },
-    {
-      "check": "market category hover",
-      "passed": true,
-      "tip": "2026-09-30 \u00b7 21,170,031 ETH\nFarming / liquidity\n351,241 ETH \u00b7 1.7%\nFixed yield\n8,605 ETH \u00b7 0.04%\nSpot / short basis\nNo observation\nDollar carry\n511,727 ETH \u00b7 2.4%\nETH loops\n99,161 ETH \u00b7 0.47%\nStaking / restaking\n20,199,298 ETH \u00b7 95.4%"
-    },
-    {
-      "check": "carry category three protocol parents",
-      "passed": true,
-      "text": "Dollar carry 511,868 ETH \u00b7 3 protocols\n\nKeep ETH-family collateral, borrow dollars and invest the dollars. Hybrid parents also contain loops and other positions; their full adapter balances are displayed as parents. Collateral staking income plus dollar investment income, less dollar funding and costs; rewards and credit exposures require lookthrough.\n\n325,605 ETH in 2024-10\nPeak 538,676 ETH in 2026-03\nIncluded in total\nPROTOCOL / PARENT\tCATEGORY / SUBTYPE\tETH EQUIVALENT\tCATEGORY SHARE\tHOW IT EARNS\tYIELD\tRUN BY\tHISTORY\nConcrete \u2197\n$953.047m \u00b7 2026-10-02\n\tDollar carry\nhybrid or carry parent\n\t352,435.4\t68.85%\tPublished carry designs; shared custody and product attribution require reconciliation.\t0.00% advertised pool APY (3 Oct capture; not realized or at T)\tConcrete; shared 3-of-5 Safe in examined products\tMonthly table \u2192\nether.fi Liquid \u2197\n$402.665m \u00b7 2026-10-02\n\tDollar carry\nhybrid or carry parent\n\t148,904.7\t29.09%\tStaking loops, dollar carry and liquidity income.\t2.73% advertised pool APY (3 Oct capture; not realized or at T)\tether.fi / Veda / Nonce\tMonthly table \u2192\nYield Basis \u2197\n$28.468m \u00b7 2026-10-02\n\tDollar carry\ndollar financed liquidity\n\t10,527.4\t2.06%\tBorrow crvUSD to maintain leveraged WETH/crvUSD liquidity; trading fees must cover financing and administration.\tVaries by pool; advertised discovery range is separately dated.\tYield Basis\tMonthly table \u2192\nProduct breakdown, mechanics and counting"
-    },
-    {
-      "check": "cross-category product search",
-      "passed": true,
-      "text": "Search across all products\n\n1 matches.\n\nPROTOCOL / PARENT\tCATEGORY / SUBTYPE\tETH EQUIVALENT\tSELECTED-MARKET SHARE\tHOW IT EARNS\tYIELD\tRUN BY\tHISTORY\nCIAN Yield Layer \u2197\n$6.718m \u00b7 2026-10-02\n\tFarming / liquidity\nother managed\n\t2,484.4\t0.01%\tManaged strategy income and paid incentives; the full allocation varies.\tVaries by pool; advertised discovery range is separately dated.\tCIAN Yield Layer\tMonthly table \u2192\nProduct breakdown, mechanics and counting"
-    },
-    {
-      "check": "deep ordered mechanics concrete",
-      "passed": true,
-      "metrics": "Capital at snapshot\n307,362.925 ETH / $820.029M\nWhole-product book\nHolder addresses at snapshot\n1 on Ethereum\nAddresses, including contracts\nFees\n0% / 0% configured vault fees; private fees unresolved\nConfigured fees at T\nContract deployment\n12 Dec 2025\nDeployment, not public launch\nObserved 30-day ETH book return\n+0.1915%\nCumulative ETH book change\nOrganic carry estimate\nNot independently isolated\nWhole-book income mixes strategies",
-      "parts": [
-        "flow",
-        "actors",
-        "payers",
-        "loans",
-        "capital",
-        "holders",
-        "timeline"
-      ],
-      "steps": 8
-    },
-    {
-      "check": "deep ordered mechanics liquid",
-      "passed": true,
-      "metrics": "Capital at snapshot\n177,171.063 ETH / $472.684M\nWhole-product book\nHolder addresses at snapshot\n7,793 on Ethereum, 1,511 on Optimism\nAddresses, including contracts\nFees\n0.35% management fee at T\nConfigured fees at T\nContract deployment\n3 Jun 2024\nDeployment, not public launch\nObserved 30-day ETH book return\n+0.2610%\nCumulative ETH book change\nOrganic carry estimate\nNot independently isolated\nWhole-book income mixes strategies",
-      "parts": [
-        "flow",
-        "actors",
-        "payers",
-        "loans",
-        "capital",
-        "holders",
-        "timeline"
-      ],
-      "steps": 9
-    },
-    {
-      "check": "deep ordered mechanics yieldbasis",
-      "passed": true,
-      "metrics": "Capital at snapshot\n10,426 ETH / $27.82M\nNet fair-value pool book\nHolder addresses at snapshot\n332\nDirect LT addresses; gauge included\nFees\n10% minimum admin parameter\nVariable allocation, not a flat fee\nContract deployment\nAbsent on 30 Apr; funded by 31 May 2026\nMonth-end observations, not launch date\nObserved 30-day ETH book return\n-0.16%\nUnstaked ETH mark; rewards excluded\nOrganic carry estimate\nNot independently isolated\nSeparate income attribution unavailable",
-      "parts": [
-        "flow",
-        "actors",
-        "payers",
-        "loans",
-        "capital",
-        "holders",
-        "timeline"
-      ],
-      "steps": 8
-    },
-    {
-      "check": "deep ordered mechanics rocksolid",
-      "passed": true,
-      "metrics": "Capital at snapshot\n9,727.767 ETH / $25.953M\nWhole-product book\nHolder addresses at snapshot\n388 on Ethereum\nAddresses, including contracts\nFees\n1% management / 10% performance at T\nConfigured fees at T\nContract deployment\n28 Aug 2025\nDeployment, not public launch\nObserved 30-day ETH book return\n+0.2192%\nCumulative ETH book change\nOrganic carry estimate\nNot independently isolated\nWhole-book income mixes strategies",
-      "parts": [
-        "flow",
-        "actors",
-        "payers",
-        "loans",
-        "capital",
-        "holders",
-        "timeline"
-      ],
-      "steps": 9
-    },
-    {
-      "check": "deep ordered mechanics liquity",
-      "passed": true,
-      "metrics": "Capital at snapshot\n6,014.002 ETH / $16.045M\nWhole-product book\nHolder addresses at snapshot\n130 on Ethereum\nAddresses, including contracts\nFees\n0.5% management / 10% performance at T; indexed UI zero defaults differ\nConfigured fees at T\nContract deployment\n30 Jan 2026\nDeployment, not public launch\nObserved 30-day ETH book return\n+0.4597%\nCumulative ETH book change\nOrganic carry estimate\nNot independently isolated\nWhole-book income mixes strategies",
-      "parts": [
-        "flow",
-        "actors",
-        "payers",
-        "loans",
-        "capital",
-        "holders",
-        "timeline"
-      ],
-      "steps": 9
-    },
-    {
-      "check": "sixth dossier accessible from other carry",
-      "passed": true,
-      "text": "#6 \u00b7 E4 \u00b7 whole book NAV\nRoyco ETH\n\nA book price needs fresh marks and a withdrawal state\n\nProduct data\n\nEight addresses hold a 116 ETH book. Fresh reads trace a Morpho wstETH/PYUSD loan and a senior credit receipt, while parent accounting marks are stale. Immediate withdrawal capacity is zero; the "
-    },
-    {
-      "check": "closed product cases",
+      "check": "constant_cohort_keeps_fixed_answers",
       "passed": true
     },
     {
-      "check": "YieldBasis debt and holder scopes",
+      "check": "carry_chart_keyboard_inspection",
       "passed": true
     },
     {
-      "check": "mobile 390 and eight-row hover",
-      "passed": true,
-      "box": {
-        "bottom": 4034.484375,
-        "height": 231.5234375,
-        "left": 65.296875,
-        "right": 334.1484375,
-        "top": 3802.9609375,
-        "width": 268.8515625,
-        "x": 65.296875,
-        "y": 3802.9609375
-      },
-      "pageWidth": 390,
-      "rows": 8,
-      "tip": "2026-09-30 \u00b7 510,902 ETH\nReservoir ETH Yield\n60 ETH \u00b7 0.01%\nTAU InfiniFi ETH Carry\n82 ETH \u00b7 0.02%\nRoyco ETH\n116 ETH \u00b7 0.02%\nLiquity ETH Carry\n6,017 ETH \u00b7 1.2%\nRocksolid rETH\n9,727 ETH \u00b7 1.9%\nYieldBasis WETH\n10,616 ETH \u00b7 2.1%\nether.fi Liquid ETH\n176,962 ETH \u00b7 34.6%\nConcrete Delta weETH\n307,322 ETH \u00b7 60.2%",
-      "width": 390
-    },
-    {
-      "check": "mobile 319 and eight-row hover",
-      "passed": true,
-      "box": {
-        "bottom": 3203.4453125,
-        "height": 265.6171875,
-        "left": 33,
-        "right": 286,
-        "top": 2937.828125,
-        "width": 253,
-        "x": 33,
-        "y": 2937.828125
-      },
-      "pageWidth": 319,
-      "rows": 8,
-      "width": 319
-    },
-    {
-      "check": "mobile product concrete",
-      "passed": true,
-      "pageWidth": 390,
-      "steps": 8,
-      "width": 390
-    },
-    {
-      "check": "mobile product liquid",
-      "passed": true,
-      "pageWidth": 390,
-      "steps": 9,
-      "width": 390
-    },
-    {
-      "check": "mobile product yieldbasis",
-      "passed": true,
-      "pageWidth": 390,
-      "steps": 8,
-      "width": 390
-    },
-    {
-      "check": "mobile product rocksolid",
-      "passed": true,
-      "pageWidth": 390,
-      "steps": 9,
-      "width": 390
-    },
-    {
-      "check": "mobile product liquity",
-      "passed": true,
-      "pageWidth": 390,
-      "steps": 9,
-      "width": 390
-    },
-    {
-      "check": "same eight main chapters",
+      "check": "product_liquid",
       "passed": true
     },
     {
-      "check": "same main Market and Carry math panel count",
+      "check": "product_yieldbasis",
       "passed": true
     },
     {
-      "check": "no browser JavaScript errors",
-      "passed": true,
-      "logs": []
+      "check": "product_rocksolid",
+      "passed": true
     },
     {
-      "check": "final source-library copy and carry regression",
-      "passed": true,
-      "chapterLink": [
-        "Evidence \u2192",
-        "Complete product evidence and source review \u2192",
-        ""
-      ],
-      "docWidth": 1440,
-      "rows": 8,
-      "sections": [
-        "top",
-        "map",
-        "how",
-        "top5",
-        "market",
-        "risks",
-        "do",
-        "data"
-      ],
-      "width": 1440
+      "check": "product_liquity",
+      "passed": true
+    },
+    {
+      "check": "product_concrete",
+      "passed": true
+    },
+    {
+      "check": "additional_deep_royco",
+      "passed": true
+    },
+    {
+      "check": "all_ten_mechanism_families",
+      "passed": true
+    },
+    {
+      "check": "mobile_no_page_overflow",
+      "passed": true
+    },
+    {
+      "check": "mobile_yieldbasis",
+      "passed": true
+    },
+    {
+      "check": "mobile_carry_tooltip",
+      "passed": true
+    },
+    {
+      "check": "current_briefing_synced",
+      "passed": true
     }
   ]
 }
