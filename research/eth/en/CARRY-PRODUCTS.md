@@ -451,9 +451,10 @@ Liquid’s stablecoin borrowing predates its current Morpho routes: Aave USDC fi
 | Lido Earn ETH | $25,555,160 | 4.33% | 83,309 | attributed product account / direct loan |
 | Avant avETH / savETH | $10,034,777 | 6.30% | 12,583 | attributed product account / direct loan |
 | Liquity ETH Carry | $6,752,065 | 2.55% | 6,014 | attributed product account / direct loan |
-| NEMO ETH Prime | $5,611,801 | 4.75% | Not reconstructed | operator-associated, not included in attributed total |
+| NEMO ETH Prime | $5,611,801 | 4.75% | Not reconstructed | attributed product account / direct loan (vault book reconciles with the loan) |
+| Rocksolid rETH | $2,727,060 | 4.61% | 9,728 | attributed product account / direct loan (second strategy wallet) |
+| Sentora ETH | $1,163,324 | 11.79% | Not reconstructed | attributed product account / direct loan (vault book reconciles with the loan) |
 | Makina DETH | $384,701 | 3.21% | 2,499 | attributed product account / direct loan |
-| Sentora ETH | $256,232 | 4.21% | Not reconstructed | operator-associated, not included in attributed total |
 | Royco ETH | $90,891 | 30.24% | 116 | attributed product account / direct loan |
 | Vesper vaETH | $68,998 | 5.00% | 1,052 | attributed product account / direct loan |
 | Reservoir ETH Yield | $36,790 | 13.93% | Not reconstructed | attributed product account / direct loan |

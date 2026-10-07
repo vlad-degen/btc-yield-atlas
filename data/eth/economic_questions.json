@@ -1859,8 +1859,8 @@
       "name": "NEMO ETH Prime",
       "bookETH": null,
       "bookUSD": null,
-      "attribution": "operator-associated, not included in attributed total",
-      "included": false,
+      "attribution": "attributed product account / direct loan (vault book reconciles with the loan)",
+      "included": true,
       "current": {
         "month": "snapshot",
         "timestamp": 1790985599,
@@ -2194,6 +2194,656 @@
       }
     },
     {
+      "id": "rocksolid",
+      "name": "Rocksolid rETH",
+      "bookETH": 9727.76735365525,
+      "bookUSD": 25953201.21,
+      "attribution": "attributed product account / direct loan (second strategy wallet)",
+      "included": true,
+      "current": {
+        "month": "snapshot",
+        "timestamp": 1790985599,
+        "block": 26108081,
+        "debtUSD": 2727059.88,
+        "apr": 0.046125,
+        "ratedDebtUSD": 2727059.88,
+        "observedLegs": 1,
+        "expectedLegs": 1,
+        "fundedLegs": 1,
+        "allObserved": true
+      },
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "block": 21089068,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "block": 21303933,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "block": 21525890,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "block": 21747949,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "block": 21948291,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "block": 22170334,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "block": 22385293,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "block": 22606142,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "block": 22820673,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "block": 23042513,
+          "debtUSD": null,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 0,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": false
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "block": 23264565,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "block": 23479243,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "block": 23700766,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "block": 23914920,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "block": 24136052,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "block": 24358292,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "block": 24558867,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "block": 24781026,
+          "debtUSD": 2501096.17,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "block": 24996367,
+          "debtUSD": 2507518.95,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "block": 25218797,
+          "debtUSD": 2507795.9,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "block": 25433938,
+          "debtUSD": 2207031.74,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "block": 25656292,
+          "debtUSD": 2215017.98,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "block": 25878704,
+          "debtUSD": 2217642.78,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "block": 26093737,
+          "debtUSD": 2726021.49,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        }
+      ],
+      "currentLegs": []
+    },
+    {
+      "id": "upshift-sentora-eth",
+      "name": "Sentora ETH",
+      "bookETH": null,
+      "bookUSD": null,
+      "attribution": "attributed product account / direct loan (vault book reconciles with the loan)",
+      "included": true,
+      "current": {
+        "month": "snapshot",
+        "timestamp": 1790985599,
+        "block": 26108081,
+        "debtUSD": 1163324.0307151405,
+        "apr": 0.11789091886208515,
+        "ratedDebtUSD": 256232.03071514043,
+        "observedLegs": 1,
+        "expectedLegs": 1,
+        "fundedLegs": 1,
+        "allObserved": true
+      },
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "block": 21089068,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "block": 21303933,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "block": 21525890,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "block": 21747949,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "block": 21948291,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "block": 22170334,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "block": 22385293,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "block": 22606142,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "block": 22820673,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "block": 23042513,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "block": 23264565,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "block": 23479243,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "block": 23700766,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "block": 23914920,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "block": 24136052,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "block": 24358292,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "block": 24558867,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "block": 24781026,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "block": 24996367,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "block": 25218797,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "block": 25433938,
+          "debtUSD": 0,
+          "apr": null,
+          "ratedDebtUSD": 0,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 0,
+          "allObserved": true
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "block": 25656292,
+          "debtUSD": 201444.53282814988,
+          "apr": 0.035986053096288,
+          "ratedDebtUSD": 201444.53282814988,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "block": 25878704,
+          "debtUSD": 246028.63707966756,
+          "apr": 0.037606705670304004,
+          "ratedDebtUSD": 246028.63707966756,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "block": 26093737,
+          "debtUSD": 298008.94285573735,
+          "apr": 0.166774056755328,
+          "ratedDebtUSD": 298008.94285573735,
+          "observedLegs": 1,
+          "expectedLegs": 1,
+          "fundedLegs": 1,
+          "allObserved": true
+        }
+      ],
+      "currentLegs": [
+        {
+          "month": "snapshot",
+          "timestamp": 1790985599,
+          "block": 26108081,
+          "id": "upshift-sentora-eth",
+          "name": "Sentora ETH",
+          "account": "0xfb9776de51a24eb75e11110fae659e54b346658f",
+          "market": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
+          "outer": true,
+          "venue": "Morpho",
+          "symbol": "RLUSD",
+          "debtUSD": 256232.03071514043,
+          "collateralUSD": 356380.89156541013,
+          "apr": 0.042100213955472,
+          "status": "observed",
+          "principalBasis": "Borrow shares converted with virtual accrual; nominal USD",
+          "source": "snapshot|upshift-sentora-eth|0xfb9776de51a24eb75e11110fae659e54b346658f|0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4|position",
+          "sourceFile": "economic_morpho_history.json"
+        }
+      ],
+      "discoveryBinding": {
+        "accountPermittedAtT": false,
+        "permissionTypeAtT": 0,
+        "vaultBookAssetsETH": 676.671792885609,
+        "markUpdatedTimestamp": 1790094119,
+        "source": "economic_upshift_binding_T.json",
+        "bookScope": "Vault accounting mark, not independently assigned EOA assets"
+      }
+    },
+    {
       "id": "makina-deth",
       "name": "Makina DETH",
       "bookETH": 2499.359088055877,
@@ -2522,345 +3172,6 @@
           "sourceFile": "economic_morpho_history.json"
         }
       ]
-    },
-    {
-      "id": "upshift-sentora-eth",
-      "name": "Sentora ETH",
-      "bookETH": null,
-      "bookUSD": null,
-      "attribution": "operator-associated, not included in attributed total",
-      "included": false,
-      "current": {
-        "month": "snapshot",
-        "timestamp": 1790985599,
-        "block": 26108081,
-        "debtUSD": 256232.03071514043,
-        "apr": 0.042100213955472,
-        "ratedDebtUSD": 256232.03071514043,
-        "observedLegs": 1,
-        "expectedLegs": 1,
-        "fundedLegs": 1,
-        "allObserved": true
-      },
-      "history": [
-        {
-          "month": "2024-10",
-          "timestamp": 1730419199,
-          "block": 21089068,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2024-11",
-          "timestamp": 1733011199,
-          "block": 21303933,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2024-12",
-          "timestamp": 1735689599,
-          "block": 21525890,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-01",
-          "timestamp": 1738367999,
-          "block": 21747949,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-02",
-          "timestamp": 1740787199,
-          "block": 21948291,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-03",
-          "timestamp": 1743465599,
-          "block": 22170334,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-04",
-          "timestamp": 1746057599,
-          "block": 22385293,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-05",
-          "timestamp": 1748735999,
-          "block": 22606142,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-06",
-          "timestamp": 1751327999,
-          "block": 22820673,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-07",
-          "timestamp": 1754006399,
-          "block": 23042513,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-08",
-          "timestamp": 1756684799,
-          "block": 23264565,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-09",
-          "timestamp": 1759276799,
-          "block": 23479243,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-10",
-          "timestamp": 1761955199,
-          "block": 23700766,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-11",
-          "timestamp": 1764547199,
-          "block": 23914920,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2025-12",
-          "timestamp": 1767225599,
-          "block": 24136052,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2026-01",
-          "timestamp": 1769903999,
-          "block": 24358292,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2026-02",
-          "timestamp": 1772323199,
-          "block": 24558867,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2026-03",
-          "timestamp": 1775001599,
-          "block": 24781026,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2026-04",
-          "timestamp": 1777593599,
-          "block": 24996367,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2026-05",
-          "timestamp": 1780271999,
-          "block": 25218797,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2026-06",
-          "timestamp": 1782863999,
-          "block": 25433938,
-          "debtUSD": 0,
-          "apr": null,
-          "ratedDebtUSD": 0,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 0,
-          "allObserved": true
-        },
-        {
-          "month": "2026-07",
-          "timestamp": 1785542399,
-          "block": 25656292,
-          "debtUSD": 201444.53282814988,
-          "apr": 0.035986053096288,
-          "ratedDebtUSD": 201444.53282814988,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 1,
-          "allObserved": true
-        },
-        {
-          "month": "2026-08",
-          "timestamp": 1788220799,
-          "block": 25878704,
-          "debtUSD": 246028.63707966756,
-          "apr": 0.037606705670304004,
-          "ratedDebtUSD": 246028.63707966756,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 1,
-          "allObserved": true
-        },
-        {
-          "month": "2026-09",
-          "timestamp": 1790812799,
-          "block": 26093737,
-          "debtUSD": 298008.94285573735,
-          "apr": 0.166774056755328,
-          "ratedDebtUSD": 298008.94285573735,
-          "observedLegs": 1,
-          "expectedLegs": 1,
-          "fundedLegs": 1,
-          "allObserved": true
-        }
-      ],
-      "currentLegs": [
-        {
-          "month": "snapshot",
-          "timestamp": 1790985599,
-          "block": 26108081,
-          "id": "upshift-sentora-eth",
-          "name": "Sentora ETH",
-          "account": "0xfb9776de51a24eb75e11110fae659e54b346658f",
-          "market": "0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4",
-          "outer": true,
-          "venue": "Morpho",
-          "symbol": "RLUSD",
-          "debtUSD": 256232.03071514043,
-          "collateralUSD": 356380.89156541013,
-          "apr": 0.042100213955472,
-          "status": "observed",
-          "principalBasis": "Borrow shares converted with virtual accrual; nominal USD",
-          "source": "snapshot|upshift-sentora-eth|0xfb9776de51a24eb75e11110fae659e54b346658f|0xea4bfb18df0ee6bffb7b3f0270899a8adb92ab6b684709634c8276128813cfd4|position",
-          "sourceFile": "economic_morpho_history.json"
-        }
-      ],
-      "discoveryBinding": {
-        "accountPermittedAtT": false,
-        "permissionTypeAtT": 0,
-        "vaultBookAssetsETH": 676.671792885609,
-        "markUpdatedTimestamp": 1790094119,
-        "source": "economic_upshift_binding_T.json",
-        "bookScope": "Vault accounting mark, not independently assigned EOA assets"
-      }
     },
     {
       "id": "royco",
@@ -16014,219 +16325,219 @@
       "timestamp": 1730419199,
       "block": 21089068,
       "debtUSD": 0,
-      "observedProducts": 8,
-      "allLegsObservedProducts": 8,
-      "expectedProducts": 10
+      "observedProducts": 10,
+      "allLegsObservedProducts": 10,
+      "expectedProducts": 13
     },
     {
       "month": "2024-11",
       "timestamp": 1733011199,
       "block": 21303933,
       "debtUSD": 0,
-      "observedProducts": 8,
-      "allLegsObservedProducts": 8,
-      "expectedProducts": 10
+      "observedProducts": 10,
+      "allLegsObservedProducts": 10,
+      "expectedProducts": 13
     },
     {
       "month": "2024-12",
       "timestamp": 1735689599,
       "block": 21525890,
       "debtUSD": 0,
-      "observedProducts": 8,
-      "allLegsObservedProducts": 8,
-      "expectedProducts": 10
+      "observedProducts": 10,
+      "allLegsObservedProducts": 10,
+      "expectedProducts": 13
     },
     {
       "month": "2025-01",
       "timestamp": 1738367999,
       "block": 21747949,
       "debtUSD": 580485.0700285251,
-      "observedProducts": 8,
-      "allLegsObservedProducts": 8,
-      "expectedProducts": 10
+      "observedProducts": 10,
+      "allLegsObservedProducts": 10,
+      "expectedProducts": 13
     },
     {
       "month": "2025-02",
       "timestamp": 1740787199,
       "block": 21948291,
       "debtUSD": 440875.6230468023,
-      "observedProducts": 8,
-      "allLegsObservedProducts": 8,
-      "expectedProducts": 10
+      "observedProducts": 10,
+      "allLegsObservedProducts": 10,
+      "expectedProducts": 13
     },
     {
       "month": "2025-03",
       "timestamp": 1743465599,
       "block": 22170334,
       "debtUSD": 412100.61166228645,
-      "observedProducts": 8,
-      "allLegsObservedProducts": 8,
-      "expectedProducts": 10
+      "observedProducts": 10,
+      "allLegsObservedProducts": 10,
+      "expectedProducts": 13
     },
     {
       "month": "2025-04",
       "timestamp": 1746057599,
       "block": 22385293,
       "debtUSD": 438057.61284777004,
-      "observedProducts": 8,
-      "allLegsObservedProducts": 8,
-      "expectedProducts": 10
+      "observedProducts": 10,
+      "allLegsObservedProducts": 10,
+      "expectedProducts": 13
     },
     {
       "month": "2025-05",
       "timestamp": 1748735999,
       "block": 22606142,
       "debtUSD": 469057.7775525228,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 11,
+      "allLegsObservedProducts": 11,
+      "expectedProducts": 13
     },
     {
       "month": "2025-06",
       "timestamp": 1751327999,
       "block": 22820673,
       "debtUSD": 596148.7809926032,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 11,
+      "allLegsObservedProducts": 11,
+      "expectedProducts": 13
     },
     {
       "month": "2025-07",
       "timestamp": 1754006399,
       "block": 23042513,
       "debtUSD": 902501.538325835,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 11,
+      "allLegsObservedProducts": 11,
+      "expectedProducts": 13
     },
     {
       "month": "2025-08",
       "timestamp": 1756684799,
       "block": 23264565,
       "debtUSD": 47864668.37500254,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2025-09",
       "timestamp": 1759276799,
       "block": 23479243,
       "debtUSD": 61583750.29198686,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2025-10",
       "timestamp": 1761955199,
       "block": 23700766,
       "debtUSD": 15771514.519046672,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2025-11",
       "timestamp": 1764547199,
       "block": 23914920,
       "debtUSD": 14627203.030226786,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2025-12",
       "timestamp": 1767225599,
       "block": 24136052,
       "debtUSD": 31705252.79378236,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2026-01",
       "timestamp": 1769903999,
       "block": 24358292,
       "debtUSD": 30709586.4139174,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2026-02",
       "timestamp": 1772323199,
       "block": 24558867,
       "debtUSD": 11125508.867937775,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2026-03",
       "timestamp": 1775001599,
       "block": 24781026,
-      "debtUSD": 26230459.169964205,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "debtUSD": 28731555.339964207,
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2026-04",
       "timestamp": 1777593599,
       "block": 24996367,
-      "debtUSD": 66112091.02475997,
-      "observedProducts": 9,
-      "allLegsObservedProducts": 9,
-      "expectedProducts": 10
+      "debtUSD": 68619609.97475997,
+      "observedProducts": 12,
+      "allLegsObservedProducts": 12,
+      "expectedProducts": 13
     },
     {
       "month": "2026-05",
       "timestamp": 1780271999,
       "block": 25218797,
-      "debtUSD": 15027101.27799373,
-      "observedProducts": 10,
-      "allLegsObservedProducts": 10,
-      "expectedProducts": 10
+      "debtUSD": 17534897.17799373,
+      "observedProducts": 13,
+      "allLegsObservedProducts": 13,
+      "expectedProducts": 13
     },
     {
       "month": "2026-06",
       "timestamp": 1782863999,
       "block": 25433938,
-      "debtUSD": 44803900.0285111,
-      "observedProducts": 10,
-      "allLegsObservedProducts": 10,
-      "expectedProducts": 10
+      "debtUSD": 47010931.7685111,
+      "observedProducts": 13,
+      "allLegsObservedProducts": 13,
+      "expectedProducts": 13
     },
     {
       "month": "2026-07",
       "timestamp": 1785542399,
       "block": 25656292,
-      "debtUSD": 87349351.96651787,
-      "observedProducts": 10,
-      "allLegsObservedProducts": 10,
-      "expectedProducts": 10
+      "debtUSD": 92379489.76182503,
+      "observedProducts": 13,
+      "allLegsObservedProducts": 13,
+      "expectedProducts": 13
     },
     {
       "month": "2026-08",
       "timestamp": 1788220799,
       "block": 25878704,
-      "debtUSD": 231895547.79931715,
-      "observedProducts": 10,
-      "allLegsObservedProducts": 10,
-      "expectedProducts": 10
+      "debtUSD": 239478078.26148683,
+      "observedProducts": 13,
+      "allLegsObservedProducts": 13,
+      "expectedProducts": 13
     },
     {
       "month": "2026-09",
       "timestamp": 1790812799,
       "block": 26093737,
-      "debtUSD": 254345890.44575232,
-      "observedProducts": 10,
-      "allLegsObservedProducts": 10,
-      "expectedProducts": 10
+      "debtUSD": 263101890.61913309,
+      "observedProducts": 13,
+      "allLegsObservedProducts": 13,
+      "expectedProducts": 13
     }
   ],
-  "attributedDollarDebtUSD": 251823181.2884103,
+  "attributedDollarDebtUSD": 261325365.85171545,
   "topFive": [
     "liquid",
     "yieldbasis",
@@ -16234,7 +16545,7 @@
     "avant",
     "liquity"
   ],
-  "topTwoDebtShare": 0.8295495216740614,
+  "topTwoDebtShare": 0.7993858495266694,
   "nestedDollarDebtAtT": [
     {
       "month": "snapshot",
@@ -16350,9 +16661,9 @@
     }
   ],
   "market": {
-    "defaultGrossETHReference": 18337894.206154615,
-    "defaultGrossUSD": 48950947444.26018,
-    "defaultObservedProtocols": 175,
+    "defaultGrossETHReference": 18349193.283302955,
+    "defaultGrossUSD": 48981109060.7162,
+    "defaultObservedProtocols": 178,
     "globalNetYieldCapitalETH": null,
     "globalCarryEquityShare": null,
     "sameBlockDedupExamples": [
@@ -16421,7 +16732,7 @@
     },
     {
       "path": "data/eth/market_reader_chapter.json",
-      "sha256": "46b69effba2a698ab5303ba7737298331eb953b4ea3b8c7ce10b59601d633761"
+      "sha256": "8538d66733e173dce36c85c0085a7d203949b866373a231bc05ae5ca6259a44d"
     },
     {
       "path": "data/eth/market_netting_closure.json",

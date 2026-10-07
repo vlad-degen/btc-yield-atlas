@@ -28,7 +28,7 @@ SNAP = LABELS[-1]
 
 
 def plain_eth(br):
-    return sum(v for k, v in br.items() if k in ('ETH', 'WETH', 'WETH.E', 'ETH.E'))
+    return sum(v for k, v in br.items() if k in ('ETH', 'WETH', 'WETH.E', 'ETH.E', 'SPETH'))  # spETH: WETH lent into SparkLend
 
 
 def lst_holdings(br):
@@ -107,7 +107,7 @@ def carry_rows():
             v = r.get(prod + '_ETH')
             if v not in (None, ''):
                 vals[r['month']] = float(v)
-        vals[SNAP] = snap[prod]
+        vals[SNAP] = meta.get('snapshot_eth', snap.get(prod))
         out['carry:' + meta['id']] = dict(slug='carry:' + meta['id'], name=meta['name'], dl_category='on-chain',
                                           category=meta['category'], kind=meta.get('kind'), source='on-chain product book (this study)',
                                           eth=vals, issuer_mix=meta['issuer_mix'], replaces=meta.get('replaces', {}))

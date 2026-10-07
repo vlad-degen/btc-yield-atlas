@@ -1,0 +1,1190 @@
+{
+ "schema": "gap_rocksolid_upshift/v1",
+ "snapshot": {
+  "timestamp": 1790985599,
+  "utc": "2026-10-02T23:59:59Z",
+  "ethereumBlock": 26108081,
+  "monadBlock": 110031481,
+  "baseBlock": 52098126,
+  "avalancheBlock": 96636400,
+  "thirtyDayStartBlock": 25893051,
+  "ETHUSD": 2667.9504,
+  "rETH_ETH": 1.1729596849277224,
+  "wstETH_stETH": 1.2454018786985979,
+  "weETH_ETH": 1.1049430338706405,
+  "priceNote": "ETHUSD = Rocksolid whole-book USD/ETH used in data/eth/backing_exit_closure.json; LST rates are fixed-block getExchangeRate/stEthPerToken/getRate."
+ },
+ "rocksolid": {
+  "vault": "0x936facdf10c8c36294e7b9d28345255539d81bc7",
+  "safe": "0x9ca1d6e730eb9fbfd45c9ff5f0ac4e3d172d8f4d",
+  "owner": "0x3d4366cea3fc7ea9af9c1426e25d16599f8de0da",
+  "valuationManager": "0x5856fcbe7b15a5a2cdccff5051b59bb8bdd54204",
+  "feeReceiver": "0xe841d56c504c55693a098948bd3b74f4e01e593a",
+  "secondStrategyWallet": "0x80c9dc967b77b5e0768e5179e92f18df9e95e18c",
+  "bookAtT": {
+   "totalAssets_rETH": 8293.351833532688,
+   "totalSupply": 8121.354364161988,
+   "ETH": 9727.76735365525,
+   "USD": 25953201.21,
+   "feeRates_bps": {
+    "management": 100,
+    "performance": 1000
+   },
+   "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_vault_getters_T-a33ff042463abb3c.json"
+  },
+  "backingAtT": {
+   "lines": [
+    {
+     "account": "0x9ca1d6e730eb9fbfd45c9ff5f0ac4e3d172d8f4d (vault safe, Fordefi MPC EOA reth-mpc.vaults.rocksolidnetwork.eth)",
+     "chain": "Ethereum",
+     "venue": "previously mapped: loose rETH/weETH/USDT, Liquity ETH Carry, Spark net, Balancer V3 gauge, YieldBasis gauge, native ETH",
+     "ETH": 2286.9488,
+     "USD": 6101466.15,
+     "block": 26108081,
+     "source": "data/eth/backing_exit_closure.json (products[2].backing)"
+    },
+    {
+     "account": "0x9ca1...8f4d",
+     "chain": "Ethereum",
+     "venue": "Morpho Blue rETH/WETH 0x251b7cbc... (LLTV 94.5%)",
+     "collateral_rETH": 851.11,
+     "debt_WETH": 326.729677,
+     "ETH": 671.588,
+     "block": 26108081,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_mpc_morpho_eth_positions_T-0d132822df1853b3.json"
+    },
+    {
+     "account": "0x9ca1...8f4d",
+     "chain": "Ethereum",
+     "venue": "Morpho Blue savETH/WETH 0xd98cd88a... WETH supply (lends to Avant savETH loopers)",
+     "supply_WETH": 563.571999,
+     "ETH": 563.572,
+     "block": 26108081,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_mpc_morpho_eth_positions_T-0d132822df1853b3.json"
+    },
+    {
+     "account": "0x9ca1...8f4d",
+     "chain": "Monad",
+     "venue": "Morpho Blue (0xd5d960e8...) wstETH/WETH 0x8bdb7d2c... (LLTV 94.5%)",
+     "collateral_wstETH": 2642.568936,
+     "debt_WETH": 2717.253319,
+     "ETH": 573.807,
+     "block": 110031481,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_mpc_monad_positions_T-b528ba927aec40e0.json"
+    },
+    {
+     "account": "0x9ca1...8f4c (EVC sub-account)",
+     "chain": "Monad",
+     "venue": "Euler EVK ewstETH-2 0x61788859... collateral / eWETH 0x502e4a0b... debt",
+     "collateral_wstETH": 1967.475697,
+     "debt_WETH": 2152.868194,
+     "ETH": 297.4297,
+     "block": 110031481,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_mpc_monad_euler_subaccounts_T-e6b144e1dc6b20d9.json"
+    },
+    {
+     "account": "0x9ca1...8f4d",
+     "chain": "Monad",
+     "venue": "Steakhouse Prime ETH (steakETH, Morpho vault 0xbeef04b0...)",
+     "shares": 2554.517517,
+     "pps_WETH": 1.0090797,
+     "ETH": 2577.7119,
+     "block": 110031481,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_mpc_monad_positions_T-b528ba927aec40e0.json"
+    },
+    {
+     "account": "0x9ca1...8f4d",
+     "chain": "Monad",
+     "venue": "loose WETH (551.09 MON native not valued)",
+     "ETH": 1.1978,
+     "block": 110031481,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_mpc_monad_positions_T-b528ba927aec40e0.json"
+    },
+    {
+     "account": "0x80c9dc967b77b5e0768e5179e92f18df9e95e18c (second Rocksolid strategy EOA; funded only by 2,319.64 net rETH from the vault safe)",
+     "chain": "Ethereum",
+     "venue": "Morpho Blue rETH/USDC 0x0a15460a... (LLTV 86%)",
+     "collateral_rETH": 2330.510556,
+     "debt_USDC": 2727059.875,
+     "ETH": 1711.4396,
+     "USD": 4566036.0,
+     "block": 26108081,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/wallet2_morpho_position_T-fffe73a01da0e7de.json"
+    },
+    {
+     "account": "0x80c9...e18c",
+     "chain": "Base",
+     "venue": "Gami USDC (gamisUSDC, 0x776f9532...) 1,953,554.02 shares = 76.93% of vault",
+     "USD": 2018596.01,
+     "ETH": 756.6093,
+     "block": 52098126,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/wallet2_base_gami_usdc_T-bb8708777996a11a.json"
+    },
+    {
+     "account": "0x80c9...e18c",
+     "chain": "Monad",
+     "venue": "Hyperithm USDC Morpho vault (hyperUSDCa 0x78999cc9...) 680,050.49 shares",
+     "USD": 707336.58,
+     "ETH": 265.1236,
+     "block": 110031481,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/wallet2_monad_hyperUSDCa_T-2ab0ccd9f72bb25a.json"
+    },
+    {
+     "account": "0x80c9...e18c",
+     "chain": "Ethereum",
+     "venue": "loose 20.983 rETH, 3,532.35 USDC, 0.0335 ETH",
+     "ETH": 25.9702,
+     "block": 26108081,
+     "source": "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_rates_and_misc_T-493faba30ba50e2d.json"
+    }
+   ],
+   "reconstructedETH": 9731.398,
+   "reconstructedUSD": 25962887.0,
+   "bookETH": 9727.76735365525,
+   "residualETH": -3.631,
+   "residualPctOfBook": -0.037,
+   "notInventoried": "Same MPC address on Unichain (nonce 84), Linea (122), Ink (17), Katana (32), Base (29; csETH fully redeemed 2026-08-06) not balance-checked at T; 551.09 MON on Monad not valued. Residual is -0.04% of book, so these are immaterial."
+  },
+  "bucketsPctOfBook": {
+   "Monad ETH loops + steakETH (MPC)": 35.47,
+   "Ethereum Morpho rETH/WETH loop + savETH/WETH lending (MPC)": 12.7,
+   "rETH collateral funding USDC carry (wallet2 net)": 28.36,
+   "previously mapped mainnet lines": 23.51
+  },
+  "dollarCarry": {
+   "directDebtUSD": 2727059.88,
+   "debtAPR_atT": 0.046125,
+   "debtAPR_source": "raw/eth/gap-2026-10-07/rocksolid-upshift/borrow_rates_T_b-03cc42fce1ee3760.json",
+   "dollarAssetsUSD": 2729465.0,
+   "dollarAssetsDetail": {
+    "GamiUSDC_Base": 2018596.01,
+    "hyperUSDCa_Monad": 707336.58,
+    "looseUSDC": 3532.35
+   },
+   "collateral_rETH": 2330.5106,
+   "collateral_ETH": 2733.595,
+   "debtShareOfBookUSD_pct": 10.51,
+   "nestedLiquityETHCarryUSD": 1943559.34,
+   "nestedLiquityShareOfBook_pct": 7.49,
+   "harvestedUSDC_2026-03-27_to_T": 97997.53,
+   "harvestedUSDC_last30d": 13378.51,
+   "harvestNote": "USDC received by wallet2 from 0x8a25d8c9... and small CCTP mints (Avalanche Merkl/Spectra reward sales), mostly swapped to rETH via LI.FI. Gross, before borrow cost.",
+   "debtHistory": [
+    {
+     "month": "2025-08",
+     "block": 23264565,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 0,
+     "morpho_rETH_collateral": 0.0
+    },
+    {
+     "month": "2025-09",
+     "block": 23479243,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 0,
+     "morpho_rETH_collateral": 0.0
+    },
+    {
+     "month": "2025-10",
+     "block": 23700766,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 0,
+     "morpho_rETH_collateral": 0.0
+    },
+    {
+     "month": "2025-11",
+     "block": 23914920,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 0,
+     "morpho_rETH_collateral": 0.0
+    },
+    {
+     "month": "2025-12",
+     "block": 24136052,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 0,
+     "morpho_rETH_collateral": 0.0
+    },
+    {
+     "month": "2026-01",
+     "block": 24358292,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 0,
+     "morpho_rETH_collateral": 0.0
+    },
+    {
+     "month": "2026-02",
+     "block": 24558867,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 0,
+     "morpho_rETH_collateral": 0.0
+    },
+    {
+     "month": "2026-03",
+     "block": 24781026,
+     "aaveUSDC": 2501096.17,
+     "morphoUSDC": 0.0,
+     "morpho_rETH_collateral": 0.0
+    },
+    {
+     "month": "2026-04",
+     "block": 24996367,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 2507518.95,
+     "morpho_rETH_collateral": 2096.042510255045
+    },
+    {
+     "month": "2026-05",
+     "block": 25218797,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 2507795.9,
+     "morpho_rETH_collateral": 2096.042510255045
+    },
+    {
+     "month": "2026-06",
+     "block": 25433938,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 2207031.74,
+     "morpho_rETH_collateral": 2330.5105555172513
+    },
+    {
+     "month": "2026-07",
+     "block": 25656292,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 2215017.98,
+     "morpho_rETH_collateral": 2330.5105555172513
+    },
+    {
+     "month": "2026-08",
+     "block": 25878704,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 2217642.78,
+     "morpho_rETH_collateral": 2330.5105555172513
+    },
+    {
+     "month": "2026-09",
+     "block": 26093737,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 2726021.49,
+     "morpho_rETH_collateral": 2330.5105555172513
+    },
+    {
+     "month": "T",
+     "block": 26108081,
+     "aaveUSDC": 0.0,
+     "morphoUSDC": 2727059.88,
+     "morpho_rETH_collateral": 2330.5105555172513
+    }
+   ],
+   "keyTx": {
+    "rETH_to_wallet2_2092": "0x43294576f1b104bbf8048167d5851cf328ed0895e8018911e864102e20c9ff91",
+    "aave_borrow_2026-03-27": [
+     "0xfa291796e5f7fc0d04b59a2a625c6287a8e3ae0fb5736ee9a36d4f42f6c87c2a",
+     "0x54ea0a8c64b8121586e9e23eef1138269be43b3116eb0387fbe44125be5e847e",
+     "0x107743b3ea2dad47ecad30b688e3530cc47d264968f5b692e394581e2c2a3621"
+    ],
+    "cctp_to_Base_2.0M": "0xa799cf782d0ccf22898de126061b869775f4c0e6d311b7f81c5127a044f42355",
+    "cctp_to_Monad_0.5M": "0xe20b44440739e24dbca680c9adf70eada28c9314d551ed424e4afb6700bf570f",
+    "morpho_borrow_0.5M_2026-09-25": "0x2b60f1eefcdb67f638143d303d32f88bc993f65dd39ca4380565ff655089bf5e",
+    "cctp_to_Monad_0.502M": "0xf3966aa0f901d2e8ba95e6bb8ecd17fe3eaca062b6d949713cfe2cce640c5dd3",
+    "refi_to_morpho_2026-04-14": [
+     "0xa662a81a54b1bd0a2d1598e2525f468aeda3858ac5d4554c80c7f4fd7236aa0d",
+     "0xdc9ccfe0d15ce455dd8e7f417b7844c776aa71e722bb963794b08dc4825fe05c",
+     "0xfffff145f323e1a32dc9cb56bbdf3db377891efe2dd1c75329bb87a6d06aed3a"
+    ]
+   },
+   "sources": [
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/eoa_80c9dc96_tokentransfers-547d3c86ed82842f.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/wallet2_morpho_position_T-fffe73a01da0e7de.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/wallet2_base_gami_usdc_T-bb8708777996a11a.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/wallet2_monad_hyperUSDCa_T-2ab0ccd9f72bb25a.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/wallet2_monad_transfer_logs-a342ff6c2d6d63b4.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/basescan_wallet2_tokentxns_2026-10-07.html",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/routescan_avalanche_wallet2_tokentx.json"
+   ]
+  },
+  "monadBridgeFlowsByMonth": {
+   "2026-06": {
+    "wstETH_to_Monad_CCIP": 1967.4756966960008,
+    "wstETH_minted": 1748.6254817338224,
+    "WETH_Monad_to_ETH_NTT": 1729.4173323100001
+   },
+   "2026-05": {
+    "wstETH_to_Monad_CCIP": 2838.36554548788,
+    "wstETH_minted": 2758.590199297785,
+    "wstETH_from_CCIP": 102.82895133638463,
+    "WETH_to_Monad_NTT": 318.8,
+    "WETH_Monad_to_ETH_NTT": 3117.16761984
+   },
+   "2026-04": {
+    "wstETH_from_CCIP": 195.7966098158885,
+    "WETH_to_Monad_NTT": 961.4768905000001,
+    "wstETH_to_Monad_CCIP": 251.86485442399328,
+    "wstETH_minted": 251.86485442399328,
+    "WETH_Monad_to_ETH_NTT": 842.73556789
+   },
+   "2026-03": {
+    "WETH_to_Monad_NTT": 200.0,
+    "WETH_Monad_to_ETH_NTT": 1555.4040163599998
+   },
+   "2026-02": {
+    "WETH_to_Monad_NTT": 1714.08733783
+   },
+   "2026-01": {
+    "WETH_to_Monad_NTT": 1854.23500962,
+    "wstETH_to_Monad_CCIP": 125.29071057056898,
+    "WETH_Monad_to_ETH_NTT": 1.4884347500000001
+   },
+   "2026-09": {
+    "WETH_Monad_to_ETH_NTT": 729.4300507199999
+   }
+  },
+  "monadBridgeNote": "WETH to Monad via Wormhole NTT 0x03db430d (recipientChain 48); wstETH via Chainlink CCIP pool 0xa586a732 (destChainSelector 8481857512324358265); WETH back to Ethereum via Monad NTT 0xfea937f7. May-June 2026: wstETH minted on Ethereum, bridged, posted on Morpho/Euler, WETH borrowed and bridged back.",
+  "incentives": {
+   "RPL_from_Merkl_mainnet_toT": 14417.1,
+   "RPL_last30d": 3151.42,
+   "WMON_from_Merkl_Monad_toT": 5427532.03,
+   "WMON_sold_for": {
+    "WETH": 59.81,
+    "USDC": 1481.6
+   },
+   "source": [
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_mpc_eth_tokentransfers-121fdd139e565466.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_mpc_monad_transfer_logs-ce3adbe5f3c9602a.json"
+   ]
+  },
+  "monthlyBook": [
+   {
+    "month": "2025-08",
+    "timestamp": 1756684799,
+    "block": 23264565,
+    "totalAssets_rETH": 2.07583380233e-07,
+    "totalSupply": 2.07588291102e-07,
+    "pps_rETH": 0.9999763432273858,
+    "rETH_rate": 1.144764660691205,
+    "book_ETH": 2.3763411783756364e-07
+   },
+   {
+    "month": "2025-09",
+    "timestamp": 1759276799,
+    "block": 23479243,
+    "totalAssets_rETH": 1609.5203478301996,
+    "totalSupply": 1592.6056613587932,
+    "pps_rETH": 1.0106207624911838,
+    "rETH_rate": 1.1469916039003827,
+    "book_ETH": 1846.1063252680624
+   },
+   {
+    "month": "2025-10",
+    "timestamp": 1761955199,
+    "block": 23700766,
+    "totalAssets_rETH": 5321.24069683,
+    "totalSupply": 5255.769001754446,
+    "pps_rETH": 1.0124571104730247,
+    "rETH_rate": 1.1494260994740537,
+    "book_ETH": 6116.372938519903
+   },
+   {
+    "month": "2025-11",
+    "timestamp": 1764547199,
+    "block": 23914920,
+    "totalAssets_rETH": 5751.774591466605,
+    "totalSupply": 5676.103210923167,
+    "pps_rETH": 1.0133315723360727,
+    "rETH_rate": 1.151686122574651,
+    "book_ETH": 6624.238977169572
+   },
+   {
+    "month": "2025-12",
+    "timestamp": 1767225599,
+    "block": 24136052,
+    "totalAssets_rETH": 6631.644603193126,
+    "totalSupply": 6536.716907480207,
+    "pps_rETH": 1.0145222283688453,
+    "rETH_rate": 1.1539242537874914,
+    "book_ETH": 7652.415550123473
+   },
+   {
+    "month": "2026-01",
+    "timestamp": 1769903999,
+    "block": 24358292,
+    "totalAssets_rETH": 8244.674225158906,
+    "totalSupply": 8118.061024817717,
+    "pps_rETH": 1.0155964829476052,
+    "rETH_rate": 1.1564959214905117,
+    "book_ETH": 9534.93211541422
+   },
+   {
+    "month": "2026-02",
+    "timestamp": 1772323199,
+    "block": 24558867,
+    "totalAssets_rETH": 8334.980479034948,
+    "totalSupply": 8204.18156079133,
+    "pps_rETH": 1.0159429575362788,
+    "rETH_rate": 1.1584591818264272,
+    "book_ETH": 9655.734666282067
+   },
+   {
+    "month": "2026-03",
+    "timestamp": 1775001599,
+    "block": 24781026,
+    "totalAssets_rETH": 8173.380263137393,
+    "totalSupply": 8039.117734270237,
+    "pps_rETH": 1.0167011522041534,
+    "rETH_rate": 1.1604812340197797,
+    "book_ETH": 9485.054413878594
+   },
+   {
+    "month": "2026-04",
+    "timestamp": 1777593599,
+    "block": 24996367,
+    "totalAssets_rETH": 8311.919263079955,
+    "totalSupply": 8170.981144148789,
+    "pps_rETH": 1.0172486163466539,
+    "rETH_rate": 1.1624821101992064,
+    "book_ETH": 9662.45744475062
+   },
+   {
+    "month": "2026-05",
+    "timestamp": 1780271999,
+    "block": 25218797,
+    "totalAssets_rETH": 8362.764284977822,
+    "totalSupply": 8218.223015232972,
+    "pps_rETH": 1.0175878981961106,
+    "rETH_rate": 1.1644844751676628,
+    "book_ETH": 9738.309179343274
+   },
+   {
+    "month": "2026-06",
+    "timestamp": 1782863999,
+    "block": 25433938,
+    "totalAssets_rETH": 8059.140256619088,
+    "totalSupply": 7910.6928818538245,
+    "pps_rETH": 1.0187654074026542,
+    "rETH_rate": 1.1663912751013934,
+    "book_ETH": 9400.11088013891
+   },
+   {
+    "month": "2026-07",
+    "timestamp": 1785542399,
+    "block": 25656292,
+    "totalAssets_rETH": 8181.1933538288085,
+    "totalSupply": 8020.621024794825,
+    "pps_rETH": 1.0200199371766343,
+    "rETH_rate": 1.1685756470251354,
+    "book_ETH": 9560.343316888237
+   },
+   {
+    "month": "2026-08",
+    "timestamp": 1788220799,
+    "block": 25878704,
+    "totalAssets_rETH": 8164.346219060836,
+    "totalSupply": 7998.552297011194,
+    "pps_rETH": 1.0207279912530665,
+    "rETH_rate": 1.1707419886041008,
+    "book_ETH": 9558.342928155655
+   },
+   {
+    "month": "2026-09",
+    "timestamp": 1790812799,
+    "block": 26093737,
+    "totalAssets_rETH": 8293.351833532688,
+    "totalSupply": 8121.354364161988,
+    "pps_rETH": 1.0211784219304223,
+    "rETH_rate": 1.1728216637229496,
+    "book_ETH": 9726.62269524358
+   },
+   {
+    "month": "T",
+    "timestamp": 1790985599,
+    "block": 26108081,
+    "totalAssets_rETH": 8293.351833532688,
+    "totalSupply": 8121.354364161988,
+    "pps_rETH": 1.0211784219304223,
+    "rETH_rate": 1.1729596849277224,
+    "book_ETH": 9727.76735365525
+   }
+  ],
+  "returns": {
+   "thirtyDay_ETH_pct": 0.2192,
+   "thirtyDay_ppsInRETH_pct": 0.0417,
+   "stETH_thirtyDay_pct": 0.1849,
+   "source": [
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_30d_start-ae582039595a8de6.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_hist_30d_start-711e5028f66dc1b5.json"
+   ]
+  },
+  "closing": {
+   "initiateClosing": {
+    "tx": "0xb3ed2719618ec664e52d904c4f65eb9dcbbddd7ff1ae5c5599148bbadf23b70a",
+    "block": 26080189,
+    "utc": "2026-09-29T02:39:23Z",
+    "caller": "0x3d4366cea3fc7ea9af9c1426e25d16599f8de0da"
+   },
+   "upgrade": {
+    "tx": "0x137aade1a7d7c45cb5f81bc166a749f644fd5c2e0304bab9fc70d69fe9fc53f0",
+    "block": 26136796,
+    "utc": "2026-10-07T00:02:47Z",
+    "proxyAdmin": "0x5c6c0e4f7182db1c7fbe0c7ace8f045acba7b8c8",
+    "from": "0xe50554ec802375c9c3f9c087a8a7bb8c26d3dedf",
+    "to": "0x8a051dd8f97b1725dc60f0f69cacc1d3e12ff92c",
+    "note": "old implementation has no cancelClosing(); new one adds cancelClosing() and syncDeposit()"
+   },
+   "cancelClosing": {
+    "tx": "0xb87bfc604a9d05824f2158e4160fcff2ee40b2b583df8b743199a3cf6ea946e1",
+    "block": 26136838,
+    "stateAfter": "Open"
+   },
+   "afterReopen": {
+    "settleDeposit": "0x620af0e3f0a2f83f9483c5068779de995c84ea6415f998e818f10df6498afaab",
+    "totalAssets_rETH": 8296.08619237293,
+    "syncDeposit": "0xe516835b4348ae353b8e44e49ddab181bc56b2d02b8d8a57d03f9d0068efe5c6"
+   },
+   "duringClosing": "Existing claimable redemptions kept paying (redeem txs 2026-09-29..10-05); new requests reverted (one failed claimSharesAndRequestRedeem 0xee57ac6b... on 2026-09-30).",
+   "publicReason": "None found: RockSolid blog/RSS (last post 2026-05-01), docs, app page, Rocket Pool forum search; X not reachable.",
+   "sources": [
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_vault_logs_latest-7ac4a49a3c000881.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_vault_txs_latest-0a40106f7d944d36.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/tx_upgrade_20261007-ad3fc65e1116f6da.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/new_impl_contract-2eba22c4a7945932.json",
+    "raw/eth/gap-2026-10-07/rocksolid-upshift/rocksolid_impl_contract-f39784c7d3220778.json"
+   ]
+  }
+ },
+ "upshift": {
+  "nemoEthPrime": {
+   "vault": "0xa422c3018c46ba90a14acd14f96cb60616f5c91b",
+   "implementation": "0xee95a5ab0752cfd0a251126685707fbc6ef148b9",
+   "lpToken": "0xd211f28f4ae15b10c724e1136f9a98073bfad3a1",
+   "asset": "WETH",
+   "atT": {
+    "block": 26108081,
+    "shareSupply": 2891.2186924417824,
+    "pps_WETH": 1.0506525376582776,
+    "totalAssets_WETH": 3037.6662561390062,
+    "externalAssets_WETH": 2965.736,
+    "assetsUpdatedOn_utc": "2026-10-02T16:16:11Z",
+    "vaultWETH": 71.93025613900622,
+    "USD": 8104343.0,
+    "holders": 55,
+    "top": [
+     [
+      "0x5d97c2a6e93ae603dfaac6f2ed7ca8cf76e0dee5",
+      73.14
+     ],
+     [
+      "0x6de1d63281a9a4796c52c8f38a528ee2cb6bacb4",
+      10.51
+     ],
+     [
+      "0x95470d0198897b2cc5c5ee75f3d3c8327e8f5fc0",
+      6.73
+     ],
+     [
+      "0xfe8ee554e14ab6faef86393f0e7e2f597b0b92e3",
+      3.37
+     ],
+     [
+      "0x6f9bb7e454f5b3eb2310343f0e99269dc2bb8a1d",
+      1.65
+     ]
+    ],
+    "fees": {
+     "management_bps": 100,
+     "performance": 0,
+     "withdrawalFee": 0,
+     "instantRedemptionFee_bps": 200,
+     "feeCollectors": {
+      "0x3e11d59fce5c004c714721d72841ac13437c13d3": 0.825,
+      "0xf87d27d313261cbb04b794cbf513d8004b7e4b5b": 0.175
+     },
+     "collectableFeesWETH": 0.0866
+    },
+    "roles": {
+     "owner": "0x9328b0bbb7d63a365c1c185681772a7d02b40733 (Safe 3-of-4)",
+     "proxyAdmin": "0xd3a67c75925e2480ef81a357a5736275b851ca8b owned by Safe 0xfc76bbc445e7de9ed839b6bcd7cbb93283c6e36d (3-of-4, same signers)",
+     "safeSigners": [
+      "0x2b4ad74f38ea2a7a52183512a2ca9ef63469495e",
+      "0x7691e1e752ac65eb7af5f388e83a8586c88c26ad",
+      "0x4ea4987211ebe22e83aaafc1b38aaa6127c101ef",
+      "0x5524ebe33d9c00d7c56b609072c5d84bd7ceffd9"
+     ],
+     "operator": "0x8baf70cb6d2e2c0ef03452b6d63e6609d948439e (EOA)",
+     "whitelistedWallet_type2": "0x90882e7c28ddf0ac1177033a310aeed8eff25e90 (EOA)",
+     "scheduledCaller": "0x4d24bb5721402762ad0eb3e87e24a268b1cf8a07 TIMELOCK_DURATION 86400 s",
+     "timelockedFunctions": [
+      "acceptOwnership",
+      "updateManagementFee",
+      "updateMaxChangePercent",
+      "updateTimelockDuration"
+     ],
+     "notTimelocked": "depositToSubaccount, enableSubAccount, performance fee, proxy upgrades (Safe)",
+     "redemptionLag_days": 30,
+     "maxChangePercent": 20
+    },
+    "sources": [
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_nemo_vault_state_26108081-d6aad922b37fdbfe.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/nemo_lp_transfers-c2f9e3923afdc01d.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_admin_roles_T-27d80ef81ab3e562.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_proxyadmin_owners_T-e9ce53678a0f6c47.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/sched_caller_0x4d24bb57-a05638fc654c32d6.json"
+    ]
+   },
+   "debt": {
+    "borrower": "0x90882e7c28ddf0ac1177033a310aeed8eff25e90",
+    "venue": "Morpho Blue wstETH/USDC 0x7e585a93... LLTV 86%",
+    "collateral_wstETH": 2381.0939959412435,
+    "collateral_ETH": 2965.419,
+    "debtUSDC": 5611790.2,
+    "repoDebtUSDC": 5611800.65,
+    "aprAtT_repo": 0.0475,
+    "fundedBy": "2,820.65 WETH net from the vault via depositToSubaccount",
+    "destination": "5,265,419.07 nUSDC (NEMO USDC Yield, Upshift vault 0x955256b3..., LP 0xee012ec1...) = 43.42% of nUSDC supply; value 5,611,170 USD at PPS 1.065665",
+    "nUSDC": {
+     "totalAssetsUSD": 12922446.82,
+     "externalAssetsUSD": 12403503.65,
+     "pps": 1.065665,
+     "mgmt_bps": 200,
+     "perf": 0.2,
+     "lag_days": 30,
+     "deploymentWallet": "0xfb1898bb5955fdd11704e397104c6a0e0725eb17 (EOA; 19.44M USDC CCTP burns; nonces Arbitrum 5371, Base 33390, HyperEVM 9846; Derive/Lyra deposits)"
+    },
+    "navReconciliationETH": {
+     "wstETHcollateral": 2965.419,
+     "vaultWETH": 71.93,
+     "nUSDCminusDebt_ETH": -0.231,
+     "sum": 3037.118,
+     "reportedTotalAssets": 3037.666
+    },
+    "attributable": true,
+    "sources": [
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_morpho_positions_T-05a81602093f254f.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/nemo_wallet_tokentransfers-6aa842dbee845e7f.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/nemo_wallet_balances_T-69b79829d5efb029.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/nemo_usdc_vault_state_T-9c9e47f9d597c1cb.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/nemo_usdc_vault_tokentransfers-aebc0facc2b352ba.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/nemo_usdc_wallet_tokentransfers-2f1f42a98da7f8f2.json"
+    ]
+   },
+   "history": [
+    {
+     "month": "2026-01",
+     "block": 24358292,
+     "pps": null,
+     "totalAssets": null,
+     "externalAssets": null,
+     "assetsUpdatedOn": null,
+     "shareSupply": null
+    },
+    {
+     "month": "2026-02",
+     "block": 24558867,
+     "pps": null,
+     "totalAssets": null,
+     "externalAssets": null,
+     "assetsUpdatedOn": null,
+     "shareSupply": null
+    },
+    {
+     "month": "2026-03",
+     "block": 24781026,
+     "pps": 1.002226830054821,
+     "totalAssets": 1765.716104937724,
+     "externalAssets": 1765.716104937724,
+     "assetsUpdatedOn": 1773925391,
+     "shareSupply": 1761.7928915763916
+    },
+    {
+     "month": "2026-04",
+     "block": 24996367,
+     "pps": 1.0011395987637473,
+     "totalAssets": 2221.104,
+     "externalAssets": 2221.104,
+     "assetsUpdatedOn": 1777568783,
+     "shareSupply": 2218.575713859206
+    },
+    {
+     "month": "2026-05",
+     "block": 25218797,
+     "pps": 1.0053127214431161,
+     "totalAssets": 2231.4369848888628,
+     "externalAssets": 2220.5933,
+     "assetsUpdatedOn": 1780070507,
+     "shareSupply": 2219.6446312602684
+    },
+    {
+     "month": "2026-06",
+     "block": 25433938,
+     "pps": 1.0108193345319152,
+     "totalAssets": 2442.2128853281515,
+     "externalAssets": 2428.5862,
+     "assetsUpdatedOn": 1782836015,
+     "shareSupply": 2416.072587747917
+    },
+    {
+     "month": "2026-07",
+     "block": 25656292,
+     "pps": 1.0237801238766409,
+     "totalAssets": 2785.83842581056,
+     "externalAssets": 2774.4077,
+     "assetsUpdatedOn": 1785515063,
+     "shareSupply": 2721.1296262147753
+    },
+    {
+     "month": "2026-08",
+     "block": 25878704,
+     "pps": 1.0395681166379844,
+     "totalAssets": 2952.0741333631927,
+     "externalAssets": 2881.0432,
+     "assetsUpdatedOn": 1788192119,
+     "shareSupply": 2839.7120747703852
+    },
+    {
+     "month": "30d_start",
+     "block": 25893051,
+     "pps": 1.0398921038983004,
+     "totalAssets": 2958.621804109081,
+     "externalAssets": 2882.127,
+     "assetsUpdatedOn": 1788365867,
+     "shareSupply": 2845.123828729859
+    },
+    {
+     "month": "2026-09",
+     "block": 26093737,
+     "pps": 1.0495097754438039,
+     "totalAssets": 3022.689345303522,
+     "externalAssets": 2962.3503,
+     "assetsUpdatedOn": 1790789027,
+     "shareSupply": 2880.0964183733536
+    },
+    {
+     "month": "T",
+     "block": 26108081,
+     "pps": 1.0506525376582776,
+     "totalAssets": 3037.6662561390062,
+     "externalAssets": 2965.736,
+     "assetsUpdatedOn": 1790957771,
+     "shareSupply": 2891.2186924417824
+    }
+   ],
+   "debtHistory": [
+    {
+     "month": "2026-01",
+     "block": 24358292,
+     "wstETH": 0,
+     "USDC_debt": 0,
+     "nUSDC_shares": 0.0,
+     "nUSDC_pps": null
+    },
+    {
+     "month": "2026-02",
+     "block": 24558867,
+     "wstETH": 0,
+     "USDC_debt": 0,
+     "nUSDC_shares": 0.0,
+     "nUSDC_pps": null
+    },
+    {
+     "month": "2026-03",
+     "block": 24781026,
+     "wstETH": 0,
+     "USDC_debt": 0,
+     "nUSDC_shares": 0.0,
+     "nUSDC_pps": null
+    },
+    {
+     "month": "2026-04",
+     "block": 24996367,
+     "wstETH": 0.0,
+     "USDC_debt": 0.0,
+     "nUSDC_shares": 0.0,
+     "nUSDC_pps": null
+    },
+    {
+     "month": "2026-05",
+     "block": 25218797,
+     "wstETH": 0.0,
+     "USDC_debt": 0.0,
+     "nUSDC_shares": 0.0,
+     "nUSDC_pps": null
+    },
+    {
+     "month": "2026-06",
+     "block": 25433938,
+     "wstETH": 0.0,
+     "USDC_debt": 0.0,
+     "nUSDC_shares": 0.0,
+     "nUSDC_pps": 0.999766
+    },
+    {
+     "month": "2026-07",
+     "block": 25656292,
+     "wstETH": 1570.7514078923646,
+     "USDC_debt": 2613669.987437119,
+     "nUSDC_shares": 2558197.205527,
+     "nUSDC_pps": 1.021775
+    },
+    {
+     "month": "2026-08",
+     "block": 25878704,
+     "wstETH": 2317.6710138414232,
+     "USDC_debt": 5118847.46138134,
+     "nUSDC_shares": 4889640.31896,
+     "nUSDC_pps": 1.046345
+    },
+    {
+     "month": "30d_start",
+     "block": 25893051,
+     "wstETH": 2317.6710138414232,
+     "USDC_debt": 4881450.651394541,
+     "nUSDC_shares": 4661583.451188,
+     "nUSDC_pps": 1.047284
+    },
+    {
+     "month": "2026-09",
+     "block": 26093737,
+     "wstETH": 2376.571454415953,
+     "USDC_debt": 5731954.567348731,
+     "nUSDC_shares": 5393958.243548,
+     "nUSDC_pps": 1.063635
+    },
+    {
+     "month": "T",
+     "block": 26108081,
+     "wstETH": 2381.0939959412435,
+     "USDC_debt": 5611790.2034737,
+     "nUSDC_shares": 5265419.068479,
+     "nUSDC_pps": 1.065665
+    }
+   ],
+   "returns": {
+    "thirtyDay_ETH_pct": 1.0348,
+    "pps_start": 1.0398921038983004,
+    "pps_end": 1.0506525376582776,
+    "nUSDC_thirtyDay_pct": 1.7551,
+    "stETH_thirtyDay_pct": 0.1849,
+    "since_2026-03_pps": 4.832
+   }
+  },
+  "sentoraEth": {
+   "vault": "0xd0271e199f886ff943859579465498b18ecf1e9d",
+   "implementation": "0xa00958a1ad0d028313b1015c0562efc22b88b187",
+   "lpToken": "0x18039d7d9118a82ec45464ca8471c244c14fcb66 (sentETH)",
+   "asset": "WETH",
+   "atT": {
+    "block": 26108081,
+    "shareSupply": 665.3434359812583,
+    "sharesHeldByVaultPendingRedeem": 19.930322169013266,
+    "pps_WETH": 1.01702633,
+    "totalAssets_WETH": 676.671792885609,
+    "externalAssets_WETH": 671.3156722425917,
+    "assetsUpdatedOn_utc": "2026-09-22T16:21:59Z",
+    "navStalenessDays": 10.3,
+    "vaultWETH": 5.356120643017208,
+    "USD": 1805327.0,
+    "holders": 26,
+    "holdersExVault": 25,
+    "top": [
+     [
+      "0xb7b9fad3ce7b370a473510d629a1716c59f752b7",
+      71.66
+     ],
+     [
+      "0xb12a9d1bae6a2220936734792390f5ee5cc8a3e6",
+      19.63
+     ],
+     [
+      "0xec105f292457e28f31ad8a46f3539c2680d56cc5",
+      3.71
+     ],
+     [
+      "vault itself (pending redemptions)",
+      3.0
+     ]
+    ],
+    "fees": {
+     "management_bps": 0,
+     "performance": 0,
+     "withdrawalFee": 0,
+     "instantRedemptionFee_bps": 20,
+     "feeCollector": "0x3f4ce21b8c0d11854f6c038a2276c321900edae9",
+     "performanceRecipient": "0x8fac7cacd58ea7bd8753732c7292da77d5f3b2dd"
+    },
+    "roles": {
+     "owner": "0x9aa69b81ba8b762c4dce28be4feb12990550fa33 (sub-account proxy; its owner() is the vault)",
+     "subaccountProxyAdmin": "0x674869d34b913c4bd84515bd0b3814c4cd669f9b owned by 0x828f86bc497849043d6ddfc9a72ec3aee18f15df",
+     "vaultProxyAdmin": "0xa5d3e7b57f7a76eedf50aac1715b89e507ab9398 owned by Safe 0xbfbc2596e45aaf763808f84898d4b2c8c7bbe20c (1-of-2: 0x4ea49872..., 0x5524ebe3...; both also NEMO Safe signers)",
+     "operator": "0xe0b7deab801d864650dec58cbd1b3c441d058c79 (EOA)",
+     "scheduledCaller": "0x332f52b00d8a7417c5a96c62153bfd671e8cdce9 TIMELOCK_DURATION 86400 s",
+     "redemptionLag_days": 3,
+     "maxChangePercent": 20
+    },
+    "sources": [
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_sentora_vault_state_26108081-22267ba4ecbdea80.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/sentora_lp_transfers-da6209b371905d85.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_admin_roles_T-27d80ef81ab3e562.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_proxyadmin_owners_T-e9ce53678a0f6c47.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/sentora_loanmgr_owners_T-0e7847a308f2570b.json"
+    ]
+   },
+   "debt": {
+    "chain": "vault -> sub-account 0x9aa69b81 (664.29 WETH, swapped to weETH) -> SupervisedLoanPositionManagers (all owner()=0x9aa69b81)",
+    "legs": [
+     {
+      "loanManager": "0xfb9776de51a24eb75e11110fae659e54b346658f (contract, LoanManagerOwnable2StepWithShortcut)",
+      "parent": "0x310829f01e89fffebd8a2a447f0a567e87547938",
+      "venue": "Morpho Blue weETH/RLUSD 0xea4bfb18... LLTV 86%",
+      "collateral_weETH": 121.01581157929155,
+      "debt": 256224.81,
+      "currency": "RLUSD",
+      "aprAtT_repo": 0.0421,
+      "destination": "PositionManager 0x264f0dd8 -> 252,891.85 senRLUSDv2 (Morpho VaultV2 0x6dc58a0f...) = 256,235.96 RLUSD"
+     },
+     {
+      "loanManager": "0x38752981012591312bb56b1fb319511be12f6e2d",
+      "parent": "0xc21c82b3eb976e0bbf64d23e9b22810e4a203196",
+      "venue": "Aave v3 Core",
+      "collateralUSD": 1389512.96,
+      "collateral_weETH_approx": 471.6,
+      "debt": 907092.42,
+      "currency": "USDC",
+      "aprAtT": 0.13934,
+      "destination": "905,872.90 USDC swapped via 1inch into 798,266.61 PST (Huma PayFi Strategy Token 0x22ae3d9a...), held by PositionManager 0x58dc5ce5 (798,110.48 at T; cost-implied 1.1348 USD/PST, no on-chain mark)",
+      "newVsRepo": true
+     }
+    ],
+    "totalDebtUSD": 1163317.23,
+    "debtWeightedAPR": 0.1179,
+    "navReconciliationETH": {
+     "morpho_weETH": 133.716,
+     "aave_weETH": 520.817,
+     "subaccount_weETH": 16.473,
+     "vaultWETH": 5.356,
+     "dollarSleevesNet_USD": "~0 (+11 RLUSD; PST at cost -1,399)",
+     "sum": 676.361,
+     "reportedTotalAssets": 676.672
+    },
+    "attributable": true,
+    "sources": [
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_morpho_positions_T-05a81602093f254f.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/upshift_aave_spark_accounts_T-88b6252dafdc90f3.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/sentora_dollar_sleeves_T-f55ff17f7a969cec.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/sentora_rlusd_vault_convert_T-46e167546ad46695.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/tt_0x9aa69b81ba8b762c4dce28be4feb12990550fa33-d88ccf07a44c7127.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/tt_0xc21c82b3eb976e0bbf64d23e9b22810e4a203196-53607947ba060146.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/tt_0x264f0dd8f4183ea93b3c51b9f0e02375f88b8c2c-0530c5b27ee858c9.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/tt_0x38752981012591312bb56b1fb319511be12f6e2d-38332b730b97b2b7.json",
+     "raw/eth/gap-2026-10-07/rocksolid-upshift/borrow_rates_T_a-f86db766ecd1bee6.json"
+    ]
+   },
+   "history": [
+    {
+     "month": "2026-01",
+     "block": 24358292,
+     "pps": 1.0,
+     "totalAssets": 0.006244608698064118,
+     "externalAssets": 0.0,
+     "assetsUpdatedOn": 1768496051,
+     "shareSupply": 0.006244608698064118
+    },
+    {
+     "month": "2026-02",
+     "block": 24558867,
+     "pps": 1.0,
+     "totalAssets": 0.006244608698064118,
+     "externalAssets": 0.000624461,
+     "assetsUpdatedOn": 1768496051,
+     "shareSupply": 0.006244608698064118
+    },
+    {
+     "month": "2026-03",
+     "block": 24781026,
+     "pps": 1.0,
+     "totalAssets": 0.006244608698064118,
+     "externalAssets": 0.006057270437122194,
+     "assetsUpdatedOn": 1768496051,
+     "shareSupply": 0.006244608698064118
+    },
+    {
+     "month": "2026-04",
+     "block": 24996367,
+     "pps": 1.001786306,
+     "totalAssets": 17.13144003577034,
+     "externalAssets": 16.618413257509395,
+     "assetsUpdatedOn": 1777492139,
+     "shareSupply": 17.100892608698064
+    },
+    {
+     "month": "2026-05",
+     "block": 25218797,
+     "pps": 1.0061988,
+     "totalAssets": 524.2133248786959,
+     "externalAssets": 508.48692513233493,
+     "assetsUpdatedOn": 1780050935,
+     "shareSupply": 520.9838501881495
+    },
+    {
+     "month": "2026-06",
+     "block": 25433938,
+     "pps": 1.0095865856558166,
+     "totalAssets": 526.1420668881203,
+     "externalAssets": 510.2519895689594,
+     "assetsUpdatedOn": 1782815807,
+     "shareSupply": 521.1460555870441
+    },
+    {
+     "month": "2026-07",
+     "block": 25656292,
+     "pps": 1.0120574190000002,
+     "totalAssets": 661.4552283293888,
+     "externalAssets": 639.8426022543284,
+     "assetsUpdatedOn": 1785494951,
+     "shareSupply": 653.5748030808011
+    },
+    {
+     "month": "2026-08",
+     "block": 25878704,
+     "pps": 1.015138338,
+     "totalAssets": 675.3193408101417,
+     "externalAssets": 655.0597605858375,
+     "assetsUpdatedOn": 1788171887,
+     "shareSupply": 665.2485829080584
+    },
+    {
+     "month": "30d_start",
+     "block": 25893051,
+     "pps": 1.015346756,
+     "totalAssets": 675.4139017615456,
+     "externalAssets": 670.1984064645046,
+     "assetsUpdatedOn": 1788347555,
+     "shareSupply": 665.2051604738132
+    },
+    {
+     "month": "2026-09",
+     "block": 26093737,
+     "pps": 1.01702633,
+     "totalAssets": 676.671792885609,
+     "externalAssets": 671.3156722425917,
+     "assetsUpdatedOn": 1790094119,
+     "shareSupply": 665.3434359812583
+    },
+    {
+     "month": "T",
+     "block": 26108081,
+     "pps": 1.01702633,
+     "totalAssets": 676.671792885609,
+     "externalAssets": 671.3156722425917,
+     "assetsUpdatedOn": 1790094119,
+     "shareSupply": 665.3434359812583
+    }
+   ],
+   "debtHistory": [
+    {
+     "month": "2026-01",
+     "block": 24358292,
+     "morpho_weETH": 0,
+     "RLUSD_debt": 0,
+     "aave_collUSD": 0.0,
+     "aave_debtUSD": 0.0
+    },
+    {
+     "month": "2026-02",
+     "block": 24558867,
+     "morpho_weETH": 0,
+     "RLUSD_debt": 0,
+     "aave_collUSD": 0.0,
+     "aave_debtUSD": 0.0
+    },
+    {
+     "month": "2026-03",
+     "block": 24781026,
+     "morpho_weETH": 0.0,
+     "RLUSD_debt": 0.0,
+     "aave_collUSD": 0.0,
+     "aave_debtUSD": 0.0
+    },
+    {
+     "month": "2026-04",
+     "block": 24996367,
+     "morpho_weETH": 0.0,
+     "RLUSD_debt": 0.0,
+     "aave_collUSD": 0.0,
+     "aave_debtUSD": 0.0
+    },
+    {
+     "month": "2026-05",
+     "block": 25218797,
+     "morpho_weETH": 0.0,
+     "RLUSD_debt": 0.0,
+     "aave_collUSD": 0.0,
+     "aave_debtUSD": 0.0
+    },
+    {
+     "month": "2026-06",
+     "block": 25433938,
+     "morpho_weETH": 0.0,
+     "RLUSD_debt": 0.0,
+     "aave_collUSD": 0.0,
+     "aave_debtUSD": 0.0
+    },
+    {
+     "month": "2026-07",
+     "block": 25656292,
+     "morpho_weETH": 135.73821868110963,
+     "RLUSD_debt": 201436.85622178207,
+     "aave_collUSD": 0.0,
+     "aave_debtUSD": 0.0
+    },
+    {
+     "month": "2026-08",
+     "block": 25878704,
+     "morpho_weETH": 135.73821868110963,
+     "RLUSD_debt": 246025.01785526684,
+     "aave_collUSD": 119692.83743721,
+     "aave_debtUSD": 79381.271752
+    },
+    {
+     "month": "30d_start",
+     "block": 25893051,
+     "morpho_weETH": 135.73821868110963,
+     "RLUSD_debt": 246075.5468108987,
+     "aave_collUSD": 115729.34578419,
+     "aave_debtUSD": 79379.15807036
+    },
+    {
+     "month": "2026-09",
+     "block": 26093737,
+     "morpho_weETH": 135.9201246138113,
+     "RLUSD_debt": 298007.5055638508,
+     "aave_collUSD": 1401618.82989206,
+     "aave_debtUSD": 906886.32571147
+    },
+    {
+     "month": "T",
+     "block": 26108081,
+     "morpho_weETH": 121.01581157929155,
+     "RLUSD_debt": 256224.8063630154,
+     "aave_collUSD": 1389512.9626602,
+     "aave_debtUSD": 907092.41913495
+    }
+   ],
+   "returns": {
+    "thirtyDay_ETH_pct": 0.1654,
+    "pps_start": 1.015346756,
+    "pps_end": 1.01702633,
+    "stETH_thirtyDay_pct": 0.1849,
+    "note": "NAV last updated 2026-09-22; PPS flat 22 Sep - T."
+   }
+  }
+ },
+ "attributedTotal": {
+  "repoAttributedUSD": 251823181,
+  "addNEMO": 5611801,
+  "addSentoraMorphoRLUSD": 256232,
+  "addSentoraAaveUSDC_new": 907092,
+  "addRocksolidMorphoUSDC_new": 2727060,
+  "newTotalUSD": 261325366,
+  "newTotal_UpshiftOnlyUSD": 258598306,
+  "note": "Rocksolid wallet2 (0x80c9...) was listed in data/eth/research_borrowers.json as 'Unknown owner'."
+ }
+}

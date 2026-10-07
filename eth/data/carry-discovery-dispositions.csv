@@ -64,7 +64,7 @@ c19dd7b2-fab0-4137-a2d5-1031b03695d0,liquity-v2,Ethereum,WSTETH,60561936,,liquit
 5ce23e7e-3800-4c9c-ad30-6db3db0515a1,convex-finance,Ethereum,ETH-STETH,59605932,,,,Discovery only; token identity and frozen ETH-side exposure need verification,5 Oct discovery; not frozen T
 1e5da7c6-59bb-49bd-9f97-4f4fceeffad4,compound-v2,Ethereum,WETH,58379912,,compound-v2,lending,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 333f3e8b-6fe3-4ba0-9657-265ae94b7496,ether.fi-stake,Base,WEETH,57436066,,ether.fi-stake,restaking,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
-bace601a-530a-432c-9b79-8c6451de25ea,spark-savings,Ethereum,ETH,56748465,,,,Discovery only; token identity and frozen ETH-side exposure need verification,5 Oct discovery; not frozen T
+bace601a-530a-432c-9b79-8c6451de25ea,spark-savings,Ethereum,ETH,56748465,,spark-savings,lending,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 077b47b8-76c9-4081-97f2-9ca43ebdbaa0,curve-dex,Ethereum,OETH-WETH,56540002,,curve-dex,farming,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 0fe44dca-3690-4bd2-85a6-77d823b283c5,curve-dex,Ethereum,CRVUSD-WETH,53323628,,curve-dex,farming,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 7a950566-436e-4399-9e32-e92260a3e42d,aave-v3,Ethereum,TETH,50502585,Prime Instance,aave-v3,lending,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
@@ -98,7 +98,7 @@ bac6982a-f344-42f7-9af4-a9882f4a77f0,puffer-stake,Ethereum,PUFETH,31179109,,puff
 14170877-8941-4c7d-b12c-06517c70f1e7,morpho-blue,Base,ETHENAUSDC,30934557,,morpho-blue,lending,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 1b2ca876-3a09-4261-a685-7818260bdc67,morpho-blue,Ethereum,STEAKETH,30840828,,morpho-blue,lending,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 82969010-fb6e-4af6-a72c-55c8da9c78cf,aave-v3,Ethereum,WETH,30803219,Umbrella,aave-v3,lending,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
-d2c913a6-25be-5c09-bd32-72c63db7c660,alchemix-v3,Ethereum,WETH,29981097,Mixed Yield Token (alETH vault),,,Discovery only; token identity and frozen ETH-side exposure need verification,5 Oct discovery; not frozen T
+d2c913a6-25be-5c09-bd32-72c63db7c660,alchemix-v3,Ethereum,WETH,29981097,Mixed Yield Token (alETH vault),alchemix-v3,farming,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 b2c0504c-fed5-46ae-908e-aac28bfbede2,avant-aveth,Ethereum,SAVETH,29814852,ERC-4626: savETH → avETH,avant-aveth,farming,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 2c20c54c-f42d-4fb0-b474-28dad8f7b1b4,liquity-v2,Ethereum,ETH,29198828,,liquity-v2,cdp,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 b8872d86-c39e-423c-83dd-8b32f7eea91d,venus-core-pool,BSC,WBETH,29172464,,venus-core-pool,lending,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
@@ -267,7 +267,7 @@ b2cca178-6e44-4e34-bdec-693994727bc4,uniswap-v3,OP Mainnet,USDC-WETH,6048940,0.3
 4c29fa57-dec3-4977-ac87-805b0833235c,curve-dex,Ethereum,USDC-WBTC-WETH,6031023,,curve-dex,farming,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 1edc8161-b61a-4c93-afdf-36c9376322b4,uniswap-v3,Ethereum,RCH-WETH,6007669,0.05%,,,Discovery only; token identity and frozen ETH-side exposure need verification,5 Oct discovery; not frozen T
 afcd77c4-3900-4bd7-aae8-a8d10edea579,uniswap-v3,Ethereum,WDOGE-WETH,5901838,1%,,,Discovery only; token identity and frozen ETH-side exposure need verification,5 Oct discovery; not frozen T
-739a70c7-fb99-58e5-a066-02e2d892abe4,alchemix-v3,Ethereum,ALETH,5897139,Fixed Yield: 5 month term,,,Discovery only; token identity and frozen ETH-side exposure need verification,5 Oct discovery; not frozen T
+739a70c7-fb99-58e5-a066-02e2d892abe4,alchemix-v3,Ethereum,ALETH,5897139,Fixed Yield: 5 month term,alchemix-v3,farming,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 525c6864-6e24-4d23-aa44-62344acdf527,morpho-blue,Base,WSTETH,5894068,,morpho-blue,lending,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 acbd8c1e-4dcc-4297-9ef1-b7cb9c5e421f,fluid-dex,Ethereum,RSETH-ETH,5873615,,fluid-dex,farming,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T
 6220e7aa-f086-4340-bd72-2ef46efb5418,uniswap-v2,Ethereum,ELON-WETH,5803827,,uniswap-v2,farming,Parent covered in frozen ledger; pool TVL is not additive ETH capital,5 Oct discovery; not frozen T

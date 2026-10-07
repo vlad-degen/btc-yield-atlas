@@ -1,13 +1,13 @@
 slug,product,category,kind,eth,usd,source
-lido,Lido,staking,,9336582.34,24922957147.0,DefiLlama protocol token breakdown
+lido,Lido,staking,,9333544.67,24914848439.0,DefiLlama protocol token breakdown
 binance-staked-eth,Binance staked ETH,staking,,3741640.09,9987887664.0,DefiLlama protocol token breakdown
-ether.fi-stake,ether.fi Stake,restaking,,1689702.85,4510471836.0,DefiLlama protocol token breakdown
+ether.fi-stake,ether.fi Stake,restaking,,1689026.18,4508665542.0,DefiLlama protocol token breakdown
 sky-lending,Sky Lending,cdp,,569708.04,1520771574.0,DefiLlama protocol token breakdown
 rocket-pool,Rocket Pool,staking,,498340.23,1330263229.0,DefiLlama protocol token breakdown
-kelp,Kelp,restaking,,400654.73,1069502764.0,DefiLlama protocol token breakdown
+kelp,Kelp,restaking,,403270.83,1076486150.0,DefiLlama protocol token breakdown
 stakewise-v3,StakeWise V3,staking,,368211.35,982898816.0,DefiLlama protocol token breakdown
 aave-v3,Aave V3,lending,,320221.93,854796448.0,DefiLlama protocol token breakdown
-liquid-collective,Liquid Collective,staking,,273667.29,730524078.0,DefiLlama protocol token breakdown
+liquid-collective,Liquid Collective,staking,,273698.24,730606683.0,DefiLlama protocol token breakdown
 meth-protocol,mETH Protocol,staking,,234551.0,626107524.0,DefiLlama protocol token breakdown
 eigencloud,EigenLayer: direct restaking,restaking,,204199.67,545088070.0,DefiLlama protocol token breakdown
 coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,183392.67,489546132.0,DefiLlama protocol token breakdown
@@ -15,7 +15,7 @@ carry:liquid-eth,ether.fi Liquid ETH,carry,,177171.06,472938240.0,on-chain produ
 pools:uniswap-v3,Uniswap v3 ETH pools,farming,pools,154941.66,413599335.0,"DefiLlama yields pools above $1M (78 pools), ETH side only"
 compound-v3,Compound V3,lending,,122186.3,326162585.0,DefiLlama protocol token breakdown
 sparklend,SparkLend,lending,,116154.42,310061180.0,DefiLlama protocol token breakdown
-morpho-blue,Morpho Blue,lending,,101023.88,269671884.0,DefiLlama protocol token breakdown
+morpho-blue,Morpho Blue,lending,,101023.88,269671887.0,DefiLlama protocol token breakdown
 curve-dex,Curve DEX,farming,pools,99826.8,266476417.0,DefiLlama protocol token breakdown
 carry:lido-earn,Lido Earn ETH,carry,,83309.2,222384554.0,on-chain product book (this study)
 fluid-lite,Fluid Lite,loops,,77313.65,206380086.0,DefiLlama protocol token breakdown
@@ -30,21 +30,23 @@ jupiter-perpetual-exchange,Jupiter Perpetual Exchange,farming,pools,27258.78,727
 stader,Stader,staking,,26766.35,71449754.0,DefiLlama protocol token breakdown
 aerodrome-v1,Aerodrome V1,farming,pools,23663.15,63166116.0,DefiLlama protocol token breakdown
 zircuit-staking,Zircuit Staking,farming,points,23534.08,62821583.0,DefiLlama protocol token breakdown
+spark-savings,Spark Savings,lending,,23512.83,62764853.0,DefiLlama protocol token breakdown
 cap,cap,credit,,22666.22,60504934.0,DefiLlama protocol token breakdown
 origin-ether,Origin Ether,staking,,22445.01,59914430.0,DefiLlama protocol token breakdown
 compound-v2,Compound V2,lending,,21669.03,57843048.0,DefiLlama protocol token breakdown
 gmx-v2-perps,GMX V2 Perps,farming,pools,20965.33,55964585.0,DefiLlama protocol token breakdown
 aerodrome-slipstream,Aerodrome Slipstream,farming,pools,19748.16,52715488.0,DefiLlama protocol token breakdown
 enzyme-finance,Enzyme Finance,farming,vaults,17749.22,47379559.0,DefiLlama protocol token breakdown
-treehouse-protocol,Treehouse Protocol,loops,,17030.42,45460793.0,DefiLlama protocol token breakdown
+treehouse-protocol,Treehouse Protocol,loops,,17224.25,45978208.0,DefiLlama protocol token breakdown
 mantle-restaking,Mantle Restaking,restaking,,16045.88,42832671.0,DefiLlama protocol token breakdown
-upshift,Upshift ETH vaults,farming,vaults,15795.04,42163091.0,DefiLlama protocol token breakdown
 fusion-by-ipor,Fusion by IPOR,farming,vaults,14561.08,38869154.0,DefiLlama protocol token breakdown
 nodedao,NodeDAO,staking,,14359.79,38331844.0,DefiLlama protocol token breakdown
 fluid-lending,Fluid Lending,lending,,13785.68,36799312.0,DefiLlama protocol token breakdown
 yearn-finance,Yearn Finance,farming,vaults,13230.35,35316943.0,DefiLlama protocol token breakdown
 carry:avant-aveth,Avant avETH / savETH,carry,,12582.71,33588136.0,on-chain product book (this study)
+alchemix-v3,Alchemix V3,farming,vaults,12172.53,32493213.0,DefiLlama protocol token breakdown
 aave-v4,Aave V4,lending,,12093.54,32282357.0,DefiLlama protocol token breakdown
+upshift,Upshift ETH vaults,farming,vaults,12080.71,32248088.0,DefiLlama protocol token breakdown
 veda,Veda: other ETH vaults,farming,vaults,10834.04,28920253.0,DefiLlama protocol token breakdown
 liquity-v2,Liquity V2,cdp,,10743.5,28678559.0,DefiLlama protocol token breakdown
 swell-liquid-restaking,Swell Liquid Restaking,restaking,,10598.85,28292442.0,DefiLlama protocol token breakdown
@@ -80,6 +82,7 @@ beefy,Beefy,farming,vaults,4676.56,12483538.0,DefiLlama protocol token breakdown
 vvs-standard,VVS Standard,farming,pools,3725.97,9946048.0,DefiLlama protocol token breakdown
 mellow-core,Mellow Core vaults (other than Lido Earn),farming,vaults,3414.54,9114743.0,DefiLlama protocol token breakdown
 pools:sushiswap,SushiSwap v2 ETH pools,farming,pools,3209.43,8567212.0,"DefiLlama yields pools above $1M (4 pools), ETH side only"
+carry:nemo-eth-prime,NEMO ETH Prime,carry,,3037.67,8108708.0,on-chain product book (this study)
 inceptionlrt-(isolated-restaking),InceptionLRT (Isolated Restaking),restaking,,2793.89,7457971.0,DefiLlama protocol token breakdown
 balancer-v3,Balancer V3,farming,pools,2791.14,7450628.0,DefiLlama protocol token breakdown
 carry:makina-deth,Makina DETH,carry,,2499.36,6671758.0,on-chain product book (this study)
@@ -130,6 +133,7 @@ camelot-v3,Camelot V3,farming,pools,770.21,2056002.0,DefiLlama protocol token br
 agni-finance,Agni Finance,farming,pools,745.76,1990712.0,DefiLlama protocol token breakdown
 balancer-v1,Balancer V1,farming,pools,699.35,1866832.0,DefiLlama protocol token breakdown
 creth2,CRETH2,staking,,681.26,1818541.0,DefiLlama protocol token breakdown
+carry:sentora-eth,Sentora ETH,carry,,676.67,1806295.0,on-chain product book (this study)
 nucleus,Nucleus,farming,vaults,665.15,1775538.0,DefiLlama protocol token breakdown
 abracadabra-spell,Abracadabra Spell,cdp,,654.86,1748085.0,DefiLlama protocol token breakdown
 veno-finance,Veno Finance,staking,,649.57,1733961.0,DefiLlama protocol token breakdown
@@ -172,6 +176,7 @@ forgeyields,ForgeYields,farming,vaults,199.14,531581.0,DefiLlama protocol token 
 bifi,BiFi,lending,,192.28,513276.0,DefiLlama protocol token breakdown
 save,Save,lending,,180.33,481362.0,DefiLlama protocol token breakdown
 frax-swap,Frax Swap,farming,pools,178.56,476656.0,DefiLlama protocol token breakdown
+flying-tulip-lend,Flying Tulip Lend,lending,,177.56,473970.0,DefiLlama protocol token breakdown
 arbitrove,Arbitrove,farming,vaults,176.87,472137.0,DefiLlama protocol token breakdown
 autofarm,Autofarm,farming,vaults,158.12,422091.0,DefiLlama protocol token breakdown
 fyde-protocol,Fyde Protocol,farming,vaults,151.62,404737.0,DefiLlama protocol token breakdown
@@ -227,6 +232,5 @@ sparkdex-v3.1,SparkDEX V3.1,farming,vaults,5.15,13758.0,DefiLlama protocol token
 thetanuts-finance,Thetanuts Finance,options,,4.01,10716.0,DefiLlama protocol token breakdown
 fraxlend,Fraxlend,lending,,3.23,8625.0,DefiLlama protocol token breakdown
 layerbank,LayerBank,lending,,2.44,6516.0,DefiLlama protocol token breakdown
-flying-tulip-lend,Flying Tulip Lend,lending,,1.78,4755.0,DefiLlama protocol token breakdown
 twyne,Twyne,lending,,0.68,1806.0,DefiLlama protocol token breakdown
 carry:zensats,ZenSats wstETH,carry,,0.55,1464.0,on-chain product book (this study)

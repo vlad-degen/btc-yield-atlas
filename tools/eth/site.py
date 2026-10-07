@@ -64,6 +64,10 @@ ARTICLES = {
  'CARRY-COVERAGE-AUDIT': ('library', 'Carry coverage: public-feed sweep and product decisions'),
  'PRODUCT-EVOLUTION': ('library', 'Product development, ownership and carry economics'),
  'ECONOMIC-ANSWERS': ('library', 'Market accounting and verified dollar financing'),
+ 'CONCRETE-DELTA': ('library', 'Concrete Delta: whose 307k ETH it is'),
+ 'ROCKSOLID-NEMO-SENTORA': ('library', 'Rocksolid, NEMO and Sentora: books, loans and closing'),
+ 'TOP5-RISK-LIQUIDITY': ('library', 'Top five: health factors, repayment ladders and reward payers'),
+ 'OUTSIDE-AND-SMALL': ('library', 'Off-chain staking, ETFs, treasuries and the small categories'),
 }
 
 def link(url, source):
@@ -79,6 +83,9 @@ def link(url, source):
         return f'../{folder}/{target.stem}.html' + frag
     if 'figures/' in url:
         return '../' + url[url.index('figures/'):]
+    if target.is_dir():
+        # a folder (scripts, captures): point at the research branch on GitHub
+        return 'https://github.com/vlad-degen/btc-yield-atlas/tree/codex/eth-research/'+str(target.relative_to(ROOT))
     if target.exists():
         # Keep linked evidence portable in both site copies and the ZIP.
         name=target.name if target.parent==DATA else 'reference-'+target.name
@@ -225,7 +232,7 @@ def build():
     for key in ['fundingAtlas','strategyExpansion','carryExpansion','creditExpansion']:
         payload[key]=presentation_value(payload[key])
     payload['fundingAtlas'].pop('borrower_discovery',None)
-    for key,name in [('atlasTop5Risk','atlas_top5_risk'),('creditDeep','credit_expansion_deep'),('strategyDeep','strategy_universe_deep'),('borrowerDeep','funding_borrower_deep_chapter'),('managerCase','manager_case_chapter')]:
+    for key,name in [('netmapCheck','netmap/crosscheck'),('atlasTop5Risk','atlas_top5_risk'),('creditDeep','credit_expansion_deep'),('strategyDeep','strategy_universe_deep'),('borrowerDeep','funding_borrower_deep_chapter'),('managerCase','manager_case_chapter')]:
         if (DATA/(name+'.json')).exists():payload[key]=presentation_value(read(name))
     translations=json.loads((SRC/'english-evidence.json').read_text())
     for claim in payload['evidence']:
@@ -324,6 +331,7 @@ def build():
         page=(SRC/'article.html').read_text().replace('@@TITLE@@',html.escape(title)).replace('@@CONTENT@@',status+body).replace('@@TOC@@',toc)
         (OUT/folder/f'{stem}.html').write_text(page)
     library_groups = [
+      ('New findings, 7 October', ['CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','OUTSIDE-AND-SMALL']),
       ('Market size and counting', ['MARKET-RESEARCH','MARKET-STRUCTURE','MARKET-TABLES','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','MECHANICS','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
       ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','concrete-eth','etherfi-liquid-eth']),

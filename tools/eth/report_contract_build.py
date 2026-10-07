@@ -112,33 +112,44 @@ def run():
         with (D / filename).open('w', newline='') as f:
             w = csv.writer(f, lineterminator="\n"); w.writerow(heads); w.writerows(rows)
     h = out['headline']
+    _net = json.loads((D / 'netmap' / 'market_chapter.json').read_text()) if (D / 'netmap' / 'market_chapter.json').exists() else None
+    _eq = json.loads((D / 'economic_questions.json').read_text()) if (D / 'economic_questions.json').exists() else None
+    if _net:
+        _cat = {c['id']: _net['current']['by_category'][c['id']]['eth_ref'] or 0 for c in _net['categories']}
+        _cv = sorted((p['current']['eth_ref'] or 0 for p in _net['products'] if p['category'] == 'carry'), reverse=True); _ncarry = sum(1 for v in _cv if v >= 0.5); _top2 = 100 * sum(_cv[:2]) / (sum(_cv) or 1)
+        _tot = _net['default_current']['eth_ref']; _first = {c['id']: _net['months'][0]['by_category'][c['id']]['eth_ref'] or 0 for c in _net['categories']}
+        _answer = (f"**{_tot:,.0f} ETH earns a yield** in {_net['products_count_default']} products counted once (${_net['default_current']['usd']/1e9:.1f}B on 2 October 2026): "
+                   f"{100*_cat['staking']/_tot:.0f}% staking, {100*_cat['restaking']/_tot:.0f}% restaking, {100*_cat['farming']/_tot:.1f}% farming and pools. "
+                   "About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.\n\n"
+                   f"**Carry is {100*_cat['carry']/_tot:.1f}%**: {_cat['carry']:,.0f} ETH in {_ncarry} products that borrow dollars against ETH (in BTC it is 9.9%). "
+                   f"They owe ${(_eq or {}).get('attributedDollarDebtUSD',0)/1e6:,.0f}M; Liquid ETH and Lido Earn hold {_top2:.0f}% of the books.\n\n"
+                   "**Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years, but its dollar leg loses about $6.8M a year at 2 October rates "
+                   "($9.0M of interest on one 13.93% Aave USDC loan). YieldBasis is the only top-five product whose fees cover its loan.")
+        _market = table(['Category', 'ETH, 2 Oct 2026', 'Share', 'Oct 2024', 'Switch'], [[c['label'], f"{_cat[c['id']]:,.0f}", f"{100*_cat[c['id']]/_tot:.1f}%" if c['default'] else 'off', f"{_first[c['id']]:,.0f}", 'on' if c['default'] else 'off'] for c in _net['categories']]) + \
+            "\n\nEach product is counted once: a staking token held by another product leaves its issuer's row. Money markets count only idle plain WETH and are off by default, because lent ETH is staked again by its borrowers. Binance's wBETH grew by 2.19M ETH, the largest change on the map; restaking fell from 4.67M ETH (July 2025) and farming and pools from 2.09M (February 2025) as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv)."
+        _rows = [p for p in (_eq or {}).get('products', []) if p['id'] in (_eq or {}).get('topFive', [])]
+        _top5 = table(['Product', 'Dollars borrowed', 'Loan rate', 'Book, ETH'], [[p['name'], f"${(p['current']['debtUSD'] or 0)/1e6:,.1f}M", f"{100*(p['current']['apr'] or 0):.2f}%", f"{p['bookETH']:,.0f}" if p.get('bookETH') else ''] for p in sorted(_rows, key=lambda p: -(p['current']['debtUSD'] or 0))])
+    else:
+        _answer = _market = _top5 = ''
     overview = f'''# ETH yield research: team briefing
 
 Financial snapshot: **2 October 2026**. This briefing and the main page use the same generated analytical contract. Filters affect Market charts, not these answers.
 
 ## Answer
 
-**Staking is the base income layer.** The archived consensus state contains **{h['nativeActiveETH']/1e6:.2f}M actual active ETH**, with {h['nativeActiveValidators']:,} active validators and {h['nativeEffectiveETH']/1e6:.2f}M ETH of effective stake. The protocol panel separately reports {h['receiptClaimsETH']/1e6:.2f}M ETH-equivalent staking and restaking claims. Receipts and security-layer balances overlap. This is neither unique validator stake nor the size of the complete yield market.
-
-**Carry is a financing mechanism inside products.** We examine {h['examinedBooks']} books: {h['currentRoutes']} with current traced routes, one in Closing, one with historical dust debt, and one declared arbitrage book with unresolved shared custody. Their sizes cannot establish a global carry-equity total.
-
-**Complexity must pay beyond staking.** Liquid's ETH book gained 6.85% over 730 days versus 5.49% for stETH, an excess of {h['liquid730dExcessPP']:.2f} percentage points. This whole-product result cannot be assigned entirely to carry. The RLUSD worked scenario contributes {h['scenarioCarryWithoutRewardsPP']:.2f} percentage points annually without destination rewards, before the outer fee; it is an illustration, not a measured market return.
+{_answer}
 
 ## Market and two years of history
 
-The eight Market groups organise protocol families. Loop-focused vaults, carry-linked parents and liquidity / mixed vaults retain full parent exposure. Lending infrastructure and CDP collateral are optional financing layers. Historical grouping is consistent across dates, but does not reconstruct changing portfolio weights. ETH equivalents normalise reported USD by each date's ETH reference quote; they are not always native token quantities. Missing and stale observations remain absent. The constant-cohort control holds protocol membership fixed, not the survival of the entire historical market.
+{_market}
 
-Native consensus staking is measured separately from the protocol panel. Five archived monthly active-balance states cover May to September 2026; tested public sources prune the earlier states. Missing native history is not estimated from validator counts or interpolated. The verified physical-custody subset is {out['custodySubsetETH']:,.0f} ETH; some cash is idle, so it is not an earning-capital floor. The separately traced 28-pool liquidity subset holds {out['lpCustodyETH']:,.0f} ETH of custody. Neither subset is added to receipt claims. [Counting and custody](CAPITAL-INCOME-EXIT.md).
+## Top five carry products
 
-## Carry product development
+Ranked by dollars borrowed against ETH. Concrete Delta (307,363 ETH) is left out of the map and the ranking: its whole supply was minted to one address after a Bitfinex-linked wallet moved its own Aave position into the vault's Safe; there are no outside depositors ([evidence](CONCRETE-DELTA.md)).
 
-The 24-month stacked bars show whole books for all thirteen examined products, with a small-book zoom. Liquid is the early large hybrid; new wrappers and Concrete's issued claim appear in 2025; Liquity and YieldBasis become funded in 2026. TAU unwinds and Rocksolid enters Closing. Avant becomes materially funded in September 2025; Lido Earn exceeds 1 ETH in the sampled March 2026 book. Vesper, Makina and ZenSats add smaller but distinct financing routes. The bars establish changing books and routes, not new deposits or historical carry allocation.
+{_top5}
 
-## Largest examined books with carry links
-
-The five largest examined books are Concrete Delta, Liquid ETH, Lido Earn ETH, Avant and YieldBasis WETH. Smaller products, Closing and historical routes remain available as additional cases. Avant’s size uses avETH face supply; its return uses the senior savETH claim. Lido uses oracle-valued shares including allocated shares. These conventions are explicit. The first two represent {100*out['sampleTopTwoShare']:.2f}% of the thirteen-book sample, a sample concentration measure rather than a market share. Concrete's unassigned shared backing and Rocksolid's Closing status remain explicit.
-
-{table(['Product', 'Whole book, ETH', 'Status', 'What is attributable'], [[p['name'], f"{p['bookETH']:,.0f}", p['statusLabel'], p['allocationEvidence']] for p in census])}
+[Risk, repayment ladder and reward payers](TOP5-RISK-LIQUIDITY.md).
 
 ## What returns can be compared
 
@@ -208,32 +219,7 @@ DefiLlama separates borrowed balances and flags reused receipt assets. Native va
         first, last = m['months'][0]['by_category'][c['id']], m['months'][-1]['by_category'][c['id']]
         change = f"{100*(last['eth_ref']/first['eth_ref']-1):+.2f}%" if first['eth_ref'] and last['eth_ref'] is not None else 'Not measured'
         category_rows.append([c['label'], cur['coverage']['observed'], f"{cur['eth_ref']:,.0f}" if cur['eth_ref'] is not None else 'Not measured', change, 'Default' if c['default'] else 'Optional financing layer'])
-    (EN / 'MARKET-STRUCTURE.md').write_text('''# ETH market structure and two years of history
-
-Financial snapshot: **2 October 2026**. Monthly window: October 2024 to September 2026.
-
-## A layered market
-
-Staking is the base income source. Receipts move into lending, restaking and managed products; the same underlying ETH can support claims in multiple layers. The protocol panel groups full parent exposure by family. It does not measure unique ETH, investor equity or precise strategy weights. Native validator balances are outside the panel.
-
-''' + table(['Protocol family', 'Observed parents at T', 'ETH-equivalent exposure', 'Oct 2024 to Sep 2026 change', 'Chart scope'], category_rows) + '''
-
-## How to interpret history
-
-The stacked bars retain a stable protocol-family mapping through 24 monthly snapshots. A mixed parent's entire book stays in its family. Changes reflect reported claims, conversion, membership and coverage; they are neither historical carry allocations nor external deposit flows. Constant cohort fixes the protocols observed at every date, while current discovery can still omit dead products. ETH equivalents use the dated ETH reference price; dollar values use reported token balances and marks. Missing and stale observations remain absent.
-
-## Carry-linked parents versus product books
-
-Concrete, ether.fi Liquid and YieldBasis form the three carry-linked protocol parents. Their adapter histories use different asset scopes and valuation dates from the eight contract-level product books. The latter include nested Liquity claims, historical carry and a declared arbitrage book. Neither series establishes global carry equity. The five largest examined books are Concrete Delta, Liquid, YieldBasis WETH, Rocksolid and Liquity. [Product status and attribution](CARRY-CATEGORY.md).
-
-## Chains and missing liquidity history
-
-The chain chart reports where adapters place balances, rather than validator geography or every strategy destination. Product chapters identify actual loan and investment chains. Unverified Tron mapped ETH stays excluded. Four major liquidity adapters lack token history at T; the separate 28-pool custody subset does not fill the whole DEX market. [Coverage by mechanism](MARKET-COVERAGE.md).
-
-## Sources
-
-[Reader ledger](../../../data/eth/market_reader_chapter.json), [original captured grouping](../../../data/eth/research_market_chapter.json), [custody and overlap evidence](CAPITAL-INCOME-EXIT.md), [current briefing](BRIEFING.md).
-''')
+    (EN / 'MARKET-STRUCTURE.md').write_text('# ETH market: every product, counted once\n\nFinancial snapshot: **2 October 2026**. Month-ends October 2024 to September 2026.\n\n' + _market + '\n\nCategories follow where the yield comes from, as in the BTC study. Restaking platforms count only what no restaking token on the map already counts (estimate). DEX projects without a token breakdown are their ETH pools above $1M, plain-ETH side only; their history covers pools that still exist. Off-chain staking, ETFs, treasuries and the rows left out are listed with reasons on the site (Data, Listed but not counted).\n\n[Map CSV](../../../data/eth/netmap/market_map_current.csv), [month-ends](../../../data/eth/netmap/market_map_history_monthly.csv), [netting ledger](../../../data/eth/netmap/netting_ledger.csv), [product notes](../../../data/eth/netmap/product_notes.csv).\n')
     (EN / 'CARRY-CATEGORY.md').write_text('''# ETH dollar carry: products, positions and history
 
 Financial snapshot: **2 October 2026**. Eight examined books have current, historical or declared carry links. A carry route retains ETH-family exposure, incurs dollar debt and deploys the financing to income-generating assets. Dollar-financed ETH liquidity is shown as its own subtype. An ETH loan used to buy more staking exposure is a loop; an offsetting ETH short is basis. Debt with no evidenced income destination is financing, not confirmed carry.

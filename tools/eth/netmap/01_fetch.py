@@ -18,7 +18,7 @@ mellow-lrt mellow-core pendle spectra-v2 ethena-usde lagoon upshift veda yo-prot
 reservoir-protocol infinifi rocksolid lido-earn mev-capital gauntlet steakhouse-financial re7-labs sentora-curator nemo
 uniswap-v3 uniswap-v4 uniswap-v2 curve-dex balancer-v2 balancer-v3 fluid-dex aerodrome-slipstream aerodrome-v1 velodrome-v2 velodrome-v3
 gmx-v2-perps across ribbon thetanuts-finance derive stryke rysk hegic wildcat-protocol maple clearpool truefi
-morpho-blue aave-v3 aave-v4 sparklend compound-v3 euler-v2 fluid-lending sky-lending liquity-v1 crvusd'''.split()
+alchemix-v3 midas-rwa morpho-blue aave-v3 aave-v4 sparklend compound-v3 euler-v2 fluid-lending sky-lending liquity-v1 crvusd'''.split()
 
 
 def get(url, tries=4):

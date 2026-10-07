@@ -163,6 +163,9 @@ CARRY = {
     'Royco ETH': dict(id='royco-eth', name='Royco ETH', category='carry', issuer_mix={'lido': 1.0}, replaces={'royco-v2': 1.0}),
     'TAU InfiniFi ETH Carry': dict(id='tau-infinifi', name='TAU InfiniFi ETH Carry', category='carry', issuer_mix={'coinbase-wrapped-staked-eth': 1.0}, replaces={'fusion-by-ipor': 1.0}),
     'Reservoir ETH Yield': dict(id='reservoir-eth', name='Reservoir ETH Yield', category='carry', issuer_mix={}, replaces={'fusion-by-ipor': 1.0}),
+    # Upshift vaults reconstructed on 7 Oct (data/eth/gap_rocksolid_upshift.json); book at the snapshot only
+    'NEMO ETH Prime': dict(id='nemo-eth-prime', name='NEMO ETH Prime', category='carry', issuer_mix={'lido': 1.0}, replaces={'upshift': 1.0}, snapshot_eth=3037.666),
+    'Sentora ETH': dict(id='sentora-eth', name='Sentora ETH', category='carry', issuer_mix={'ether.fi-stake': 1.0}, replaces={'upshift': 1.0}, snapshot_eth=676.67),
     'ZenSats wstETH': dict(id='zensats', name='ZenSats wstETH', category='carry', issuer_mix={'lido': 1.0}),
 }
 

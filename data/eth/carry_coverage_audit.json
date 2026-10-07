@@ -799,9 +799,9 @@
       "symbol": "ETH",
       "tvlUsd": 56748465,
       "poolMeta": null,
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
+      "parent_id": "spark-savings",
+      "parent_role": "lending",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1207,9 +1207,9 @@
       "symbol": "WETH",
       "tvlUsd": 29981097,
       "poolMeta": "Mixed Yield Token (alETH vault)",
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
+      "parent_id": "alchemix-v3",
+      "parent_role": "farming",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3235,9 +3235,9 @@
       "symbol": "ALETH",
       "tvlUsd": 5897139,
       "poolMeta": "Fixed Yield: 5 month term",
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
+      "parent_id": "alchemix-v3",
+      "parent_role": "farming",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {

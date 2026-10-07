@@ -4,7 +4,7 @@ Financial snapshot: 2 October 2026, 23:59:59 UTC. Ethereum block 26,108,081. Lat
 
 ## What the category actually contains
 
-The attributed product accounts owe **$251,823,181** of direct ETH-backed dollar debt at the snapshot. This measures financing, not carry equity. Whole hybrid vault books contain other strategies, while outstanding debt includes accrued interest and can differ from dollars invested. The top two account for **82.95%** of this measured financing sample, not the global ETH yield market.
+The attributed product accounts owe **$261,325,366** of direct ETH-backed dollar debt at the snapshot. This measures financing, not carry equity. Whole hybrid vault books contain other strategies, while outstanding debt includes accrued interest and can differ from dollars invested. The top two account for **79.94%** of this measured financing sample, not the global ETH yield market.
 
 | Product | Direct dollar debt at T | Debt-weighted quoted APR | Whole book ETH | Scope |
 | --- | --- | --- | --- | --- |
@@ -13,9 +13,10 @@ The attributed product accounts owe **$251,823,181** of direct ETH-backed dollar
 | Lido Earn ETH | $25,555,160 | 4.33% | 83,309 | attributed product account / direct loan |
 | Avant avETH / savETH | $10,034,777 | 6.30% | 12,583 | attributed product account / direct loan |
 | Liquity ETH Carry | $6,752,065 | 2.55% | 6,014 | attributed product account / direct loan |
-| NEMO ETH Prime | $5,611,801 | 4.75% | Not reconstructed | operator-associated, not included in attributed total |
+| NEMO ETH Prime | $5,611,801 | 4.75% | Not reconstructed | attributed product account / direct loan (vault book reconciles with the loan) |
+| Rocksolid rETH | $2,727,060 | 4.61% | 9,728 | attributed product account / direct loan (second strategy wallet) |
+| Sentora ETH | $1,163,324 | 11.79% | Not reconstructed | attributed product account / direct loan (vault book reconciles with the loan) |
 | Makina DETH | $384,701 | 3.21% | 2,499 | attributed product account / direct loan |
-| Sentora ETH | $256,232 | 4.21% | Not reconstructed | operator-associated, not included in attributed total |
 | Royco ETH | $90,891 | 30.24% | 116 | attributed product account / direct loan |
 | Vesper vaETH | $68,998 | 5.00% | 1,052 | attributed product account / direct loan |
 | Reservoir ETH Yield | $36,790 | 13.93% | Not reconstructed | attributed product account / direct loan |
@@ -44,7 +45,7 @@ The full official Upshift registry was examined after finding Sentora ETH's docu
 
 ## Market accounting
 
-The default protocol panel contains 175 observed parents and 18,337,894 ETH equivalents of reported exposure. The headline, donut, category table and two-year bars all use that same selection. Issuer, restaking, lending and vault claims overlap; this is a protocol-exposure market map. Exact-block Lido, Aave and Spark reconciliation demonstrates the duplication numerically. Public inputs do not establish a complete global net yield-capital total or carry-equity share, and neither number is manufactured from the panel.
+The default protocol panel contains 178 observed parents and 18,349,193 ETH equivalents of reported exposure. The headline, donut, category table and two-year bars all use that same selection. Issuer, restaking, lending and vault claims overlap; this is a protocol-exposure market map. Exact-block Lido, Aave and Spark reconciliation demonstrates the duplication numerically. Public inputs do not establish a complete global net yield-capital total or carry-equity share, and neither number is manufactured from the panel.
 
 ## Sources and reproduction
 

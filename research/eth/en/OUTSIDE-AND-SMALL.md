@@ -4,7 +4,7 @@ Snapshot T = 2 October 2026 (ETH about $2,668). Collected 7 October 2026. Beacon
 
 ## 1. Listed but not counted: off-chain ETH yield
 
-Full rows with sources: [gap_outside_totals.csv](../../../../data/eth/gap_outside_totals.csv). It follows the BTC `outside_totals.csv` columns, adds `size_eth`, `size_date` and `overlap_note`.
+Full rows with sources: [gap_outside_totals.csv](../../../data/eth/gap_outside_totals.csv). It follows the BTC `outside_totals.csv` columns, adds `size_eth`, `size_date` and `overlap_note`.
 
 **About 14.4M ETH of staked ETH can be attributed to custodial or institutional holders outside on-chain receipts, a third of the 43.7M ETH staked.** The layers overlap, so the parts below cannot all be added:
 
@@ -30,7 +30,7 @@ Findings:
 
 ## 2. Small ETH yield categories
 
-Sizes are ETH-family token units at 2 October 2026 from DefiLlama protocol token series (pulled 7 October), unless the row says otherwise. Full rows: [gap_small_categories.csv](../../../../data/eth/gap_small_categories.csv); month-ends October 2024 to September 2026: [gap_small_categories_monthly.csv](../../../../data/eth/gap_small_categories_monthly.csv).
+Sizes are ETH-family token units at 2 October 2026 from DefiLlama protocol token series (pulled 7 October), unless the row says otherwise. Full rows: [gap_small_categories.csv](../../../data/eth/gap_small_categories.csv); month-ends October 2024 to September 2026: [gap_small_categories_monthly.csv](../../../data/eth/gap_small_categories_monthly.csv).
 
 **Options, ETH credit, ETH basis and fixed yield together hold about 6,500 ETH at T, excluding Kelp Gain (10,322 rsETH, a layer on rsETH) and exchange margin.** More than half is residual capital in retired products (Ribbon, Opyn, Manta) or expired Pendle markets. Only Rysk (1,182) and Panoptic (255) grew in 2026. Most categories peaked between October 2024 and early 2025 and are down 80% to 99%.
 
@@ -75,6 +75,6 @@ Overlap: almost all of these products hold an LST or LRT (wstETH, weETH, rsETH, 
 - DefiLlama: https://api.llama.fi/protocols, https://api.llama.fi/protocol/{slug} (`llama_protocol/`), https://yields.llama.fi/pools (`pools.json`), Wildcat pool chart (`wildcat_wmtweth_chart.json`), ETH prices from coins.llama.fi
 - Derive vault statistics: https://api.lyra.finance/public/get_vault_statistics (`derive_vault_statistics.json`)
 - Pendle active markets by chain: https://api-v2.pendle.finance/core/v1/{chainId}/markets/active (`pendle/`)
-- PT face supplies and the Ribbon residual: [MARKET-COVERAGE.md](../MARKET-COVERAGE.md)
+- PT face supplies and the Ribbon residual: [MARKET-COVERAGE.md](MARKET-COVERAGE.md)
 
 The series are rebuilt with `python3 build_small_series.py`, run from the raw folder. ETH-family means a fixed list of ETH, WETH, LST and LRT symbols. LP tokens such as GMX GM `WETH-USDC` are excluded.

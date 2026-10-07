@@ -48,6 +48,20 @@ def run():
    for h in p['history']:
     d=g.get((p['id'],'dollar_debt_usd',h['month']))
     if d is not None:h.update(debtUSD=d,apr=g.get((p['id'],'borrow_rate_debt_weighted',h['month'])) if d>=1 else None,source='gap_top5_risk_series.csv')
+ # 7 Oct reconstruction (data/eth/gap_rocksolid_upshift.json): NEMO ETH Prime and Sentora ETH books reconcile only with
+ # their loans inside, so the loans are attributed; Sentora also has a 907,092 USDC Aave loan; Rocksolid's second wallet
+ # borrows USDC on Morpho against rETH.
+ gr=ROOT/'data/eth/gap_rocksolid_upshift.json'
+ if gr.exists():
+  G=json.loads(gr.read_text())
+  for p in products:
+   if p['id'].startswith('upshift-'):p.update(included=True,attribution='attributed product account / direct loan (vault book reconciles with the loan)')
+   if p['id']=='upshift-sentora-eth':
+    c=p['current'];d0=c['debtUSD'] or 0;extra=G['attributedTotal']['addSentoraAaveUSDC_new'];c['apr']=((c['apr'] or 0)*d0+0.1393*extra)/(d0+extra);c['debtUSD']=d0+extra
+  dc=G['rocksolid']['dollarCarry'];dh={r['month']:(r.get('aaveUSDC') or 0)+(r.get('morphoUSDC') or 0) for r in dc['debtHistory']}
+  if not any(p['id']=='rocksolid' for p in products):
+   hist=[{**m,'debtUSD':dh.get(m['month']),'apr':None,'ratedDebtUSD':0,'observedLegs':1 if m['month'] in dh else 0,'expectedLegs':1,'fundedLegs':1 if dh.get(m['month']) else 0,'allObserved':m['month'] in dh} for m in months[:-1]]
+   products.append({'id':'rocksolid','name':'Rocksolid rETH','bookETH':G['rocksolid']['bookAtT']['ETH'],'bookUSD':G['rocksolid']['bookAtT']['USD'],'attribution':'attributed product account / direct loan (second strategy wallet)','included':True,'current':{**months[-1],'debtUSD':dc['directDebtUSD'],'apr':dc['debtAPR_atT'],'ratedDebtUSD':dc['directDebtUSD'],'observedLegs':1,'expectedLegs':1,'fundedLegs':1,'allObserved':True},'history':hist,'currentLegs':[]})
  products.sort(key=lambda p:-(p['current']['debtUSD'] or 0));included=[p for p in products if p['included']];total=sum(p['current']['debtUSD'] or 0 for p in included);top=[p for p in included if p['id']in{q['id'] for q in pc['products']} and (p['current']['debtUSD'] or 0)>=1][:5]
  bindings=rows('economic_upshift_binding_T')
  for p in products:

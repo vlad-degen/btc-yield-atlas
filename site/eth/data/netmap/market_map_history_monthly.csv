@@ -207,6 +207,13 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,agni-finance,Agni Finance,farming,pools,781.8992,1931780.58,2470.6262
 2026-09,agni-finance,Agni Finance,farming,pools,744.0787,1992065.75,2677.2247
 2026-10-02,agni-finance,Agni Finance,farming,pools,745.756,1990711.69,2669.3876
+2026-04,alchemix-v3,Alchemix V3,farming,vaults,11911.9881,26902863.13,2258.4696
+2026-05,alchemix-v3,Alchemix V3,farming,vaults,12860.6636,25844285.6,2009.5608
+2026-06,alchemix-v3,Alchemix V3,farming,vaults,12933.6616,20277279.37,1567.7911
+2026-07,alchemix-v3,Alchemix V3,farming,vaults,11800.6619,21990242.38,1863.4753
+2026-08,alchemix-v3,Alchemix V3,farming,vaults,11830.9267,29229797.58,2470.6262
+2026-09,alchemix-v3,Alchemix V3,farming,vaults,12222.2553,32721723.67,2677.2247
+2026-10-02,alchemix-v3,Alchemix V3,farming,vaults,12172.5347,32493213.26,2669.3876
 2024-10,alpaca-finance-2.0,Alpaca Finance 2.0,lending,,325.791,820243.94,2517.7
 2024-11,alpaca-finance-2.0,Alpaca Finance 2.0,lending,,225.9912,841597.93,3724.03
 2024-12,alpaca-finance-2.0,Alpaca Finance 2.0,lending,,175.9716,585867.51,3329.33
@@ -942,6 +949,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:makina-deth,Makina DETH,carry,,2593.3252,6407137.15,2470.6262
 2026-09,carry:makina-deth,Makina DETH,carry,,2498.8037,6689859.07,2677.2247
 2026-10-02,carry:makina-deth,Makina DETH,carry,,2499.3591,6671758.16,2669.3876
+2026-10-02,carry:nemo-eth-prime,NEMO ETH Prime,carry,,3037.666,8108707.96,2669.3876
 2025-08,carry:reservoir-eth,Reservoir ETH Yield,carry,,0.0,0.0,4400.37
 2025-09,carry:reservoir-eth,Reservoir ETH Yield,carry,,2428.7992,10071865.99,4146.85
 2025-10,carry:reservoir-eth,Reservoir ETH Yield,carry,,4136.8805,15946419.92,3854.6968
@@ -980,6 +988,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:royco-eth,Royco ETH,carry,,115.8235,286156.5,2470.6262
 2026-09,carry:royco-eth,Royco ETH,carry,,116.0375,310658.48,2677.2247
 2026-10-02,carry:royco-eth,Royco ETH,carry,,116.0516,309786.72,2669.3876
+2026-10-02,carry:sentora-eth,Sentora ETH,carry,,676.67,1806294.51,2669.3876
 2025-10,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0496,191.17,3854.6968
 2025-11,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.5903,1763.11,2987.0461
 2025-12,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,41.0145,121875.18,2971.5129
@@ -1627,7 +1636,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-07,ether.fi-stake,ether.fi Stake,restaking,,1555895.7802,2899373411.8,1863.4753
 2026-08,ether.fi-stake,ether.fi Stake,restaking,,1581213.4918,3906587482.56,2470.6262
 2026-09,ether.fi-stake,ether.fi Stake,restaking,,1699119.9402,4548925856.5,2677.2247
-2026-10-02,ether.fi-stake,ether.fi Stake,restaking,,1689702.849,4510471836.41,2669.3876
+2026-10-02,ether.fi-stake,ether.fi Stake,restaking,,1689026.179,4508665541.9,2669.3876
 2024-10,euclid-finance,Euclid Finance,restaking,,220.2026,554404.21,2517.7
 2024-11,euclid-finance,Euclid Finance,restaking,,103.237,384457.62,3724.03
 2024-12,euclid-finance,Euclid Finance,restaking,,103.5167,344641.35,3329.33
@@ -1791,12 +1800,12 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,fluxion-network,Fluxion Network,farming,pools,1014.6249,2506758.92,2470.6262
 2026-09,fluxion-network,Fluxion Network,farming,pools,831.1438,2225158.78,2677.2247
 2026-10-02,fluxion-network,Fluxion Network,farming,pools,838.3744,2237946.22,2669.3876
-2026-05,flying-tulip-lend,Flying Tulip Lend,lending,,0.2891,580.99,2009.5608
-2026-06,flying-tulip-lend,Flying Tulip Lend,lending,,0.2443,382.97,1567.7911
-2026-07,flying-tulip-lend,Flying Tulip Lend,lending,,0.4388,817.77,1863.4753
-2026-08,flying-tulip-lend,Flying Tulip Lend,lending,,2.0798,5138.38,2470.6262
-2026-09,flying-tulip-lend,Flying Tulip Lend,lending,,1.7839,4775.83,2677.2247
-2026-10-02,flying-tulip-lend,Flying Tulip Lend,lending,,1.7815,4755.46,2669.3876
+2026-05,flying-tulip-lend,Flying Tulip Lend,lending,,5.9402,11937.23,2009.5608
+2026-06,flying-tulip-lend,Flying Tulip Lend,lending,,727.7239,1140918.99,1567.7911
+2026-07,flying-tulip-lend,Flying Tulip Lend,lending,,737.5784,1374459.13,1863.4753
+2026-08,flying-tulip-lend,Flying Tulip Lend,lending,,429.0192,1059946.06,2470.6262
+2026-09,flying-tulip-lend,Flying Tulip Lend,lending,,172.8029,462632.3,2677.2247
+2026-10-02,flying-tulip-lend,Flying Tulip Lend,lending,,177.5577,473970.42,2669.3876
 2024-10,folks-finance-xchain,Folks Finance xChain,lending,,37.1209,93459.29,2517.7
 2024-11,folks-finance-xchain,Folks Finance xChain,lending,,330.7848,1231852.66,3724.03
 2024-12,folks-finance-xchain,Folks Finance xChain,lending,,403.3243,1342799.55,3329.33
@@ -2558,7 +2567,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-07,kelp,Kelp,restaking,,454404.6585,846771873.65,1863.4753
 2026-08,kelp,Kelp,restaking,,429951.4342,1062249278.51,2470.6262
 2026-09,kelp,Kelp,restaking,,403937.1717,1081430569.6,2677.2247
-2026-10-02,kelp,Kelp,restaking,,400654.7282,1069502764.33,2669.3876
+2026-10-02,kelp,Kelp,restaking,,403270.8286,1076486150.09,2669.3876
 2024-10,kinetic,Kinetic,lending,,291.2289,733227.06,2517.7
 2024-11,kinetic,Kinetic,lending,,301.8525,1124107.83,3724.03
 2024-12,kinetic,Kinetic,lending,,347.5815,1157213.44,3329.33
@@ -2722,7 +2731,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-07,lido,Lido,staking,,8811463.6232,16419945135.45,1863.4753
 2026-08,lido,Lido,staking,,9119005.1691,22529653100.49,2470.6262
 2026-09,lido,Lido,staking,,9333456.905,24987761276.75,2677.2247
-2026-10-02,lido,Lido,staking,,9336582.3407,24922957147.25,2669.3876
+2026-10-02,lido,Lido,staking,,9333544.6747,24914848439.29,2669.3876
 2025-04,liminal-basis,Liminal Basis,basis,,0.0,0.0,1792.98
 2025-05,liminal-basis,Liminal Basis,basis,,16.751,42177.2,2517.89
 2025-06,liminal-basis,Liminal Basis,basis,,27.0742,67583.24,2496.22
@@ -2766,7 +2775,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-07,liquid-collective,Liquid Collective,staking,,319440.1547,595268849.62,1863.4753
 2026-08,liquid-collective,Liquid Collective,staking,,320000.0452,790600496.12,2470.6262
 2026-09,liquid-collective,Liquid Collective,staking,,273627.9333,732563459.08,2677.2247
-2026-10-02,liquid-collective,Liquid Collective,staking,,273667.2925,730524077.65,2669.3876
+2026-10-02,liquid-collective,Liquid Collective,staking,,273698.2378,730606682.61,2669.3876
 2024-10,liquity-v1,Liquity V1,cdp,,136239.6921,343010672.7,2517.7
 2024-11,liquity-v1,Liquity V1,cdp,,129664.043,482872786.15,3724.03
 2024-12,liquity-v1,Liquity V1,cdp,,123141.1695,409977589.74,3329.33
@@ -3128,10 +3137,10 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-04,morpho-blue,Morpho Blue,lending,,82481.8143,186282671.1,2258.4696
 2026-05,morpho-blue,Morpho Blue,lending,,92958.9282,186806618.84,2009.5608
 2026-06,morpho-blue,Morpho Blue,lending,,99516.1211,156020487.08,1567.7911
-2026-07,morpho-blue,Morpho Blue,lending,,99878.0643,186120309.37,1863.4753
-2026-08,morpho-blue,Morpho Blue,lending,,96283.3989,237880288.13,2470.6262
-2026-09,morpho-blue,Morpho Blue,lending,,100575.3924,269262923.79,2677.2247
-2026-10-02,morpho-blue,Morpho Blue,lending,,101023.8768,269671884.23,2669.3876
+2026-07,morpho-blue,Morpho Blue,lending,,99878.0653,186120311.24,1863.4753
+2026-08,morpho-blue,Morpho Blue,lending,,96283.3999,237880290.61,2470.6262
+2026-09,morpho-blue,Morpho Blue,lending,,100575.3934,269262926.48,2677.2247
+2026-10-02,morpho-blue,Morpho Blue,lending,,101023.8778,269671886.91,2669.3876
 2026-07,morpho-midnight,Morpho Midnight,lending,,421.6078,785655.65,1863.4753
 2026-08,morpho-midnight,Morpho Midnight,lending,,141.2306,348928.03,2470.6262
 2026-09,morpho-midnight,Morpho Midnight,lending,,148.4403,397407.92,2677.2247
@@ -4203,19 +4212,19 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-09,sophon-farm,Sophon Farm,farming,points,28.564,76472.3,2677.2247
 2026-10-02,sophon-farm,Sophon Farm,farming,points,28.4827,76031.35,2669.3876
 2025-09,spark-savings,Spark Savings,lending,,0,0.0,4146.85
-2025-10,spark-savings,Spark Savings,lending,,0,0.0,3854.6968
-2025-11,spark-savings,Spark Savings,lending,,0,0.0,2987.0461
-2025-12,spark-savings,Spark Savings,lending,,0,0.0,2971.5129
-2026-01,spark-savings,Spark Savings,lending,,0,0.0,2469.7591
-2026-02,spark-savings,Spark Savings,lending,,0,0.0,1957.2655
-2026-03,spark-savings,Spark Savings,lending,,0,0.0,2100.0636
-2026-04,spark-savings,Spark Savings,lending,,0,0.0,2258.4696
-2026-05,spark-savings,Spark Savings,lending,,0,0.0,2009.5608
-2026-06,spark-savings,Spark Savings,lending,,0,0.0,1567.7911
-2026-07,spark-savings,Spark Savings,lending,,0,0.0,1863.4753
-2026-08,spark-savings,Spark Savings,lending,,0,0.0,2470.6262
-2026-09,spark-savings,Spark Savings,lending,,0,0.0,2677.2247
-2026-10-02,spark-savings,Spark Savings,lending,,0,0.0,2669.3876
+2025-10,spark-savings,Spark Savings,lending,,9984.1547,38485888.99,3854.6968
+2025-11,spark-savings,Spark Savings,lending,,14499.4914,43310649.84,2987.0461
+2025-12,spark-savings,Spark Savings,lending,,14185.3522,42151956.46,2971.5129
+2026-01,spark-savings,Spark Savings,lending,,10381.1929,25639045.63,2469.7591
+2026-02,spark-savings,Spark Savings,lending,,10856.1398,21248348.34,1957.2655
+2026-03,spark-savings,Spark Savings,lending,,16369.7619,34377540.89,2100.0636
+2026-04,spark-savings,Spark Savings,lending,,81754.9524,184641075.51,2258.4696
+2026-05,spark-savings,Spark Savings,lending,,90736.2251,182339961.82,2009.5608
+2026-06,spark-savings,Spark Savings,lending,,46438.5482,72805941.64,1567.7911
+2026-07,spark-savings,Spark Savings,lending,,34727.7684,64714339.88,1863.4753
+2026-08,spark-savings,Spark Savings,lending,,26098.0364,64478492.51,2470.6262
+2026-09,spark-savings,Spark Savings,lending,,21210.5184,56785323.63,2677.2247
+2026-10-02,spark-savings,Spark Savings,lending,,23512.8285,62764852.89,2669.3876
 2024-10,sparkdex-v3.1,SparkDEX V3.1,farming,vaults,106.315,267669.31,2517.7
 2024-11,sparkdex-v3.1,SparkDEX V3.1,farming,vaults,247.6384,922212.69,3724.03
 2024-12,sparkdex-v3.1,SparkDEX V3.1,farming,vaults,474.4881,1579727.39,3329.33
@@ -4870,7 +4879,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-07,treehouse-protocol,Treehouse Protocol,loops,,16534.2844,30811231.21,1863.4753
 2026-08,treehouse-protocol,Treehouse Protocol,loops,,16518.4779,40810984.35,2470.6262
 2026-09,treehouse-protocol,Treehouse Protocol,loops,,16524.7109,44240364.0,2677.2247
-2026-10-02,treehouse-protocol,Treehouse Protocol,loops,,17030.4205,45460793.28,2669.3876
+2026-10-02,treehouse-protocol,Treehouse Protocol,loops,,17224.2533,45978208.23,2669.3876
 2024-12,trevee-earn,Trevee Earn,farming,vaults,190.3338,633683.99,3329.33
 2025-01,trevee-earn,Trevee Earn,farming,vaults,1599.0367,5275142.18,3298.95
 2025-02,trevee-earn,Trevee Earn,farming,vaults,17517.316,38988290.23,2225.7
@@ -5042,7 +5051,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-07,upshift,Upshift ETH vaults,farming,vaults,17955.4539,33459545.46,1863.4753
 2026-08,upshift,Upshift ETH vaults,farming,vaults,17189.7837,42469529.89,2470.6262
 2026-09,upshift,Upshift ETH vaults,farming,vaults,15858.6481,42457164.23,2677.2247
-2026-10-02,upshift,Upshift ETH vaults,farming,vaults,15795.0426,42163090.91,2669.3876
+2026-10-02,upshift,Upshift ETH vaults,farming,vaults,12080.7066,32248088.44,2669.3876
 2024-10,vaultcraft,VaultCraft,farming,vaults,995.4635,2506278.48,2517.7
 2024-11,vaultcraft,VaultCraft,farming,vaults,122.1645,454944.1,3724.03
 2024-12,vaultcraft,VaultCraft,farming,vaults,4270.017,14216295.57,3329.33

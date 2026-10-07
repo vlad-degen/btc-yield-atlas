@@ -4,41 +4,43 @@ Financial snapshot: **2 October 2026**. This briefing and the main page use the 
 
 ## Answer
 
-**Staking is the base income layer.** The archived consensus state contains **43.81M actual active ETH**, with 874,362 active validators and 43.74M ETH of effective stake. The protocol panel separately reports 14.79M ETH-equivalent staking and restaking claims. Receipts and security-layer balances overlap. This is neither unique validator stake nor the size of the complete yield market.
+**18,349,193 ETH earns a yield** in 170 products counted once ($49.0B on 2 October 2026): 81% staking, 13% restaking, 3.8% farming and pools. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.
 
-**Carry is a financing mechanism inside products.** We examine 13 books: 10 with current traced routes, one in Closing, one with historical dust debt, and one declared arbitrage book with unresolved shared custody. Their sizes cannot establish a global carry-equity total.
+**Carry is 1.7%**: 305,991 ETH in 14 products that borrow dollars against ETH (in BTC it is 9.9%). They owe $261M; Liquid ETH and Lido Earn hold 85% of the books.
 
-**Complexity must pay beyond staking.** Liquid's ETH book gained 6.85% over 730 days versus 5.49% for stETH, an excess of 1.36 percentage points. This whole-product result cannot be assigned entirely to carry. The RLUSD worked scenario contributes -0.84 percentage points annually without destination rewards, before the outer fee; it is an illustration, not a measured market return.
+**Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years, but its dollar leg loses about $6.8M a year at 2 October rates ($9.0M of interest on one 13.93% Aave USDC loan). YieldBasis is the only top-five product whose fees cover its loan.
 
 ## Market and two years of history
 
-The eight Market groups organise protocol families. Loop-focused vaults, carry-linked parents and liquidity / mixed vaults retain full parent exposure. Lending infrastructure and CDP collateral are optional financing layers. Historical grouping is consistent across dates, but does not reconstruct changing portfolio weights. ETH equivalents normalise reported USD by each date's ETH reference quote; they are not always native token quantities. Missing and stale observations remain absent. The constant-cohort control holds protocol membership fixed, not the survival of the entire historical market.
+| Category | ETH, 2 Oct 2026 | Share | Oct 2024 | Switch |
+| --- | --- | --- | --- | --- |
+| Staking | 14,783,197 | 80.6% | 12,231,280 | on |
+| Restaking | 2,430,237 | 13.2% | 4,173,272 | on |
+| Leveraged staking | 97,209 | 0.5% | 121,804 | on |
+| Carry | 305,991 | 1.7% | 147,309 | on |
+| Fixed yield | 9,315 | 0.1% | 307,484 | on |
+| Basis | 372 | 0.0% | 25,423 | on |
+| Options | 3,182 | 0.0% | 5,449 | on |
+| Credit | 24,279 | 0.1% | 2,496 | on |
+| Farming and pools | 695,413 | 3.8% | 1,918,324 | on |
+| Money markets | 787,912 | off | 809,351 | off |
+| CDP collateral | 657,327 | off | 1,277,081 | off |
 
-Native consensus staking is measured separately from the protocol panel. Five archived monthly active-balance states cover May to September 2026; tested public sources prune the earlier states. Missing native history is not estimated from validator counts or interpolated. The verified physical-custody subset is 457,182 ETH; some cash is idle, so it is not an earning-capital floor. The separately traced 28-pool liquidity subset holds 69,531 ETH of custody. Neither subset is added to receipt claims. [Counting and custody](CAPITAL-INCOME-EXIT.md).
+Each product is counted once: a staking token held by another product leaves its issuer's row. Money markets count only idle plain WETH and are off by default, because lent ETH is staked again by its borrowers. Binance's wBETH grew by 2.19M ETH, the largest change on the map; restaking fell from 4.67M ETH (July 2025) and farming and pools from 2.09M (February 2025) as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv).
 
-## Carry product development
+## Top five carry products
 
-The 24-month stacked bars show whole books for all thirteen examined products, with a small-book zoom. Liquid is the early large hybrid; new wrappers and Concrete's issued claim appear in 2025; Liquity and YieldBasis become funded in 2026. TAU unwinds and Rocksolid enters Closing. Avant becomes materially funded in September 2025; Lido Earn exceeds 1 ETH in the sampled March 2026 book. Vesper, Makina and ZenSats add smaller but distinct financing routes. The bars establish changing books and routes, not new deposits or historical carry allocation.
+Ranked by dollars borrowed against ETH. Concrete Delta (307,363 ETH) is left out of the map and the ranking: its whole supply was minted to one address after a Bitfinex-linked wallet moved its own Aave position into the vault's Safe; there are no outside depositors ([evidence](CONCRETE-DELTA.md)).
 
-## Largest examined books with carry links
-
-The five largest examined books are Concrete Delta, Liquid ETH, Lido Earn ETH, Avant and YieldBasis WETH. Smaller products, Closing and historical routes remain available as additional cases. Avant’s size uses avETH face supply; its return uses the senior savETH claim. Lido uses oracle-valued shares including allocated shares. These conventions are explicit. The first two represent 79.38% of the thirteen-book sample, a sample concentration measure rather than a market share. Concrete's unassigned shared backing and Rocksolid's Closing status remain explicit.
-
-| Product | Whole book, ETH | Status | What is attributable |
+| Product | Dollars borrowed | Loan rate | Book, ETH |
 | --- | --- | --- | --- |
-| Concrete Delta weETH | 307,363 | Declared arbitrage; shared custody | Dollar debt is observed in a shared Safe; assets and debt attributable to Delta are unresolved. |
-| ether.fi Liquid ETH | 177,171 | Active hybrid | Dollar loans and destination claims are measured; full carry-sleeve equity is not reconciled. |
-| Lido Earn ETH | 83,309 | Active hybrid | Earn ETH reports 83,309 ETH. Its main holding is stRATEGY, whose book must not be added again. The nested portfolio owes about 355,217 WETH in staking loops and 25.55M USDT in its main dollar-carry account. Those are gross loans, not the carry sleeve’s equity. |
-| Avant avETH / savETH | 12,583 | Active hybrid | The published 29 September portfolio has a $33.18M net NAV and a $32.53M savUSD position. Ethereum reads at T confirm USDC, USDS and PYUSD borrowing against ETH collateral. The large own-credit destination makes this a concentrated issuer dependency. |
-| YieldBasis WETH | 10,426 | Active dollar-financed LP | Net fair-value WETH pool equity is measured separately from actual crvUSD debt; gauge income is separate. |
-| Rocksolid rETH | 9,728 | Closing; nested carry | 728.48 ETH of Liquity shares is the evidenced nested carry claim; direct Aave debt is zero. |
-| Liquity ETH Carry | 6,014 | Active minted-dollar LP | Ebisu collateral, ebUSD debt and dollar LP positions are measured; do not equate collateral with sleeve equity. |
-| Makina DETH | 2,499 | Active hybrid | DETH reports 2,499 ETH in a cached book. Its hub has 15,065 WETH of Aave debt against weETH, plus a Morpho USDT / wstETH carry route. Verified accounting instructions identify the credit receipts instead of relying on the vault name. |
-| Vesper vaETH | 1,052 | Active hybrid | vaETH reports 1,052 ETH. Its XY strategy supplies 57.35 WETH, owes 68,998 DAI and holds 60,034 vDAI shares. Other strategies in the same pool are lending or liquidity positions, so the whole pool cannot be labelled carry. |
-| Royco ETH | 116 | Loan traced; parent marks stale | Morpho PYUSD debt and the senior credit receipt are traced; parent accounting and immediate exit remain restricted. |
-| TAU InfiniFi ETH Carry | 82 | Historical; dust debt at T | Accrued debt is 0.022132 USDC at T; the old whole book is not current active carry equity. |
-| Reservoir ETH Yield | 24 | Small current nested savings | Outer dollar borrowing and borrowing inside the savings destination are distinct liabilities. |
-| ZenSats wstETH | 1 | Active micro-position | The active vault manages less than one ETH and owes about 953 crvUSD. The old Aave / RAAC vault has zero share supply and assets at T. A documented strategy can be real without being a large market category. |
+| ether.fi Liquid ETH | $181.1M | 7.79% | 177,171 |
+| YieldBasis WETH | $27.8M | 10.00% | 10,426 |
+| Lido Earn ETH | $25.6M | 4.33% | 83,309 |
+| Avant avETH / savETH | $10.0M | 6.30% | 12,583 |
+| Liquity ETH Carry | $6.8M | 2.55% | 6,014 |
+
+[Risk, repayment ladder and reward payers](TOP5-RISK-LIQUIDITY.md).
 
 ## What returns can be compared
 
@@ -79,7 +81,7 @@ Secure a positive base spread in the debt currency after fees. Test every borrow
 
 ## Coverage
 
-The material discovery screen contains 299 ETH-name pools above $5M. 221 dispositions join an already-covered parent; they do not prove that each pool's strategy has been reconstructed. Fixed-block reconstruction adds Lido Earn, Avant, Makina DETH, Vesper and ZenSats; YO ETH is separately classified as ETH lending / staking after inspecting its deployments. The family map is broad; global unique capital and complete historical sleeve weights remain unresolved. The reconstruction now measures native stake, five additional carry-linked books, four active PT faces and the residual Ribbon option book. Own-credit, fees and exit cash still limit complete organic carry attribution. [Coverage matrix](MARKET-COVERAGE.md).
+The material discovery screen contains 299 ETH-name pools above $5M. 224 dispositions join an already-covered parent; they do not prove that each pool's strategy has been reconstructed. Fixed-block reconstruction adds Lido Earn, Avant, Makina DETH, Vesper and ZenSats; YO ETH is separately classified as ETH lending / staking after inspecting its deployments. The family map is broad; global unique capital and complete historical sleeve weights remain unresolved. The reconstruction now measures native stake, five additional carry-linked books, four active PT faces and the residual Ribbon option book. Own-credit, fees and exit cash still limit complete organic carry attribution. [Coverage matrix](MARKET-COVERAGE.md).
 
 ## Reproduce the answers
 
@@ -134,9 +136,10 @@ Liquid’s stablecoin borrowing predates its current Morpho routes: Aave USDC fi
 | Lido Earn ETH | $25,555,160 | 4.33% | 83,309 | attributed product account / direct loan |
 | Avant avETH / savETH | $10,034,777 | 6.30% | 12,583 | attributed product account / direct loan |
 | Liquity ETH Carry | $6,752,065 | 2.55% | 6,014 | attributed product account / direct loan |
-| NEMO ETH Prime | $5,611,801 | 4.75% | Not reconstructed | operator-associated, not included in attributed total |
+| NEMO ETH Prime | $5,611,801 | 4.75% | Not reconstructed | attributed product account / direct loan (vault book reconciles with the loan) |
+| Rocksolid rETH | $2,727,060 | 4.61% | 9,728 | attributed product account / direct loan (second strategy wallet) |
+| Sentora ETH | $1,163,324 | 11.79% | Not reconstructed | attributed product account / direct loan (vault book reconciles with the loan) |
 | Makina DETH | $384,701 | 3.21% | 2,499 | attributed product account / direct loan |
-| Sentora ETH | $256,232 | 4.21% | Not reconstructed | operator-associated, not included in attributed total |
 | Royco ETH | $90,891 | 30.24% | 116 | attributed product account / direct loan |
 | Vesper vaETH | $68,998 | 5.00% | 1,052 | attributed product account / direct loan |
 | Reservoir ETH Yield | $36,790 | 13.93% | Not reconstructed | attributed product account / direct loan |

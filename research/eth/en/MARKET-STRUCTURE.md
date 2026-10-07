@@ -1,40 +1,26 @@
-# ETH market structure and two years of history
+# ETH market: every product, counted once
 
-Financial snapshot: **2 October 2026**. Monthly window: October 2024 to September 2026.
+Financial snapshot: **2 October 2026**. Month-ends October 2024 to September 2026.
 
-## A layered market
-
-Staking is the base income source. Receipts move into lending, restaking and managed products; the same underlying ETH can support claims in multiple layers. The protocol panel groups full parent exposure by family. It does not measure unique ETH, investor equity or precise strategy weights. Native validator balances are outside the panel.
-
-| Protocol family | Observed parents at T | ETH-equivalent exposure | Oct 2024 to Sep 2026 change | Chart scope |
+| Category | ETH, 2 Oct 2026 | Share | Oct 2024 | Switch |
 | --- | --- | --- | --- | --- |
-| Staking | 23 | 14,786,203 | +20.83% | Default |
-| Restaking | 15 | 2,428,297 | -41.84% | Default |
-| Leveraged staking | 6 | 97,015 | -20.44% | Default |
-| Carry | 12 | 302,276 | +104.88% | Default |
-| Fixed yield | 5 | 9,315 | -96.95% | Default |
-| Basis | 3 | 372 | -98.54% | Default |
-| Options | 8 | 3,182 | -41.78% | Default |
-| Credit | 2 | 24,279 | +879.49% | Default |
-| Farming and pools | 101 | 686,955 | -64.26% | Default |
-| Money markets | 55 | 764,223 | -4.09% | Optional financing layer |
-| CDP collateral | 10 | 657,327 | -48.40% | Optional financing layer |
+| Staking | 14,783,197 | 80.6% | 12,231,280 | on |
+| Restaking | 2,430,237 | 13.2% | 4,173,272 | on |
+| Leveraged staking | 97,209 | 0.5% | 121,804 | on |
+| Carry | 305,991 | 1.7% | 147,309 | on |
+| Fixed yield | 9,315 | 0.1% | 307,484 | on |
+| Basis | 372 | 0.0% | 25,423 | on |
+| Options | 3,182 | 0.0% | 5,449 | on |
+| Credit | 24,279 | 0.1% | 2,496 | on |
+| Farming and pools | 695,413 | 3.8% | 1,918,324 | on |
+| Money markets | 787,912 | off | 809,351 | off |
+| CDP collateral | 657,327 | off | 1,277,081 | off |
 
-## How to interpret history
+Each product is counted once: a staking token held by another product leaves its issuer's row. Money markets count only idle plain WETH and are off by default, because lent ETH is staked again by its borrowers. Binance's wBETH grew by 2.19M ETH, the largest change on the map; restaking fell from 4.67M ETH (July 2025) and farming and pools from 2.09M (February 2025) as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv).
 
-The stacked bars retain a stable protocol-family mapping through 24 monthly snapshots. A mixed parent's entire book stays in its family. Changes reflect reported claims, conversion, membership and coverage; they are neither historical carry allocations nor external deposit flows. Constant cohort fixes the protocols observed at every date, while current discovery can still omit dead products. ETH equivalents use the dated ETH reference price; dollar values use reported token balances and marks. Missing and stale observations remain absent.
+Categories follow where the yield comes from, as in the BTC study. Restaking platforms count only what no restaking token on the map already counts (estimate). DEX projects without a token breakdown are their ETH pools above $1M, plain-ETH side only; their history covers pools that still exist. Off-chain staking, ETFs, treasuries and the rows left out are listed with reasons on the site (Data, Listed but not counted).
 
-## Carry-linked parents versus product books
-
-Concrete, ether.fi Liquid and YieldBasis form the three carry-linked protocol parents. Their adapter histories use different asset scopes and valuation dates from the eight contract-level product books. The latter include nested Liquity claims, historical carry and a declared arbitrage book. Neither series establishes global carry equity. The five largest examined books are Concrete Delta, Liquid, YieldBasis WETH, Rocksolid and Liquity. [Product status and attribution](CARRY-CATEGORY.md).
-
-## Chains and missing liquidity history
-
-The chain chart reports where adapters place balances, rather than validator geography or every strategy destination. Product chapters identify actual loan and investment chains. Unverified Tron mapped ETH stays excluded. Four major liquidity adapters lack token history at T; the separate 28-pool custody subset does not fill the whole DEX market. [Coverage by mechanism](MARKET-COVERAGE.md).
-
-## Sources
-
-[Reader ledger](../../../data/eth/market_reader_chapter.json), [original captured grouping](../../../data/eth/research_market_chapter.json), [custody and overlap evidence](CAPITAL-INCOME-EXIT.md), [current briefing](BRIEFING.md).
+[Map CSV](../../../data/eth/netmap/market_map_current.csv), [month-ends](../../../data/eth/netmap/market_map_history_monthly.csv), [netting ledger](../../../data/eth/netmap/netting_ledger.csv), [product notes](../../../data/eth/netmap/product_notes.csv).
 
 
 ## Native stake: measured backing, not another wrapper

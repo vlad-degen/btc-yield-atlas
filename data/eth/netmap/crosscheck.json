@@ -1,0 +1,162 @@
+{
+ "pools_checked": 603,
+ "tvl_by_status": {
+  "map": 69189981371,
+  "excluded": 1927854613,
+  "screened out (under 100 ETH today and under 1,000 at every month-end)": 26041817,
+  "not a candidate": 1160207
+ },
+ "not_in_map": [
+  {
+   "project": "midas-rwa",
+   "pools": 1,
+   "tvlUsd": 12917798.0,
+   "symbols": [
+    "ETH"
+   ],
+   "status": "screened out (under 100 ETH today and under 1,000 at every month-end)",
+   "chain": "OP Mainnet"
+  },
+  {
+   "project": "balancer-v2",
+   "pools": 4,
+   "tvlUsd": 12082429.0,
+   "symbols": [
+    "BAL-WETH",
+    "WSTETH-AAVE",
+    "WBTC-WETH",
+    "WBTC-USDC-WETH"
+   ],
+   "status": "screened out (under 100 ETH today and under 1,000 at every month-end)",
+   "chain": "Polygon"
+  },
+  {
+   "project": "berapaw",
+   "pools": 1,
+   "tvlUsd": 1160207.0,
+   "symbols": [
+    "KODIWBTC-WETH"
+   ],
+   "status": "not a candidate",
+   "chain": "Berachain"
+  },
+  {
+   "project": "sovryn-dex",
+   "pools": 1,
+   "tvlUsd": 1041590.0,
+   "symbols": [
+    "ETH-RBTC"
+   ],
+   "status": "screened out (under 100 ETH today and under 1,000 at every month-end)",
+   "chain": "Rootstock"
+  }
+ ],
+ "note": "Pool TVL is the whole pool in USD on 7 October (DefiLlama yields list), not its ETH side at the snapshot.",
+ "recheck": [
+  {
+   "product": "Lido",
+   "snapshot_gross_eth": 9866628.48663,
+   "later_gross_eth": 9802447.47661,
+   "later_date": "2026-10-07",
+   "change": -0.006504857267806363
+  },
+  {
+   "product": "Binance staked ETH",
+   "snapshot_gross_eth": 3741853.4704187904,
+   "later_gross_eth": 3711631.644545965,
+   "later_date": "2026-10-07",
+   "change": -0.008076699451687208
+  },
+  {
+   "product": "ether.fi Stake",
+   "snapshot_gross_eth": 1917979.5018596658,
+   "later_gross_eth": 1910906.4946518077,
+   "later_date": "2026-10-07",
+   "change": -0.0036877386859454075
+  },
+  {
+   "product": "Rocket Pool",
+   "snapshot_gross_eth": 522271.10515205056,
+   "later_gross_eth": 521503.7391406422,
+   "later_date": "2026-10-07",
+   "change": -0.0014692867436825185
+  },
+  {
+   "product": "Kelp",
+   "snapshot_gross_eth": 416377.31682673394,
+   "later_gross_eth": 417363.6938963988,
+   "later_date": "2026-10-07",
+   "change": 0.0023689500599652913
+  },
+  {
+   "product": "StakeWise V3",
+   "snapshot_gross_eth": 377800.1442790382,
+   "later_gross_eth": 377828.6708156351,
+   "later_date": "2026-10-07",
+   "change": 7.550694998115226e-05
+  },
+  {
+   "product": "Liquid Collective",
+   "snapshot_gross_eth": 273809.64392796834,
+   "later_gross_eth": 273886.07107726875,
+   "later_date": "2026-10-07",
+   "change": 0.00027912511847283383
+  },
+  {
+   "product": "mETH Protocol",
+   "snapshot_gross_eth": 236298.59771485237,
+   "later_gross_eth": 235342.2164287495,
+   "later_date": "2026-10-07",
+   "change": -0.004047342199029691
+  },
+  {
+   "product": "EigenLayer: direct restaking",
+   "snapshot_gross_eth": 2626337.835369634,
+   "later_gross_eth": 2611845.2682776065,
+   "later_date": "2026-10-07",
+   "change": -0.005518165598062841
+  },
+  {
+   "product": "Coinbase Wrapped Staked ETH",
+   "snapshot_gross_eth": 188701.2910740909,
+   "later_gross_eth": 188752.26386335288,
+   "later_date": "2026-10-07",
+   "change": 0.0002701242210472188
+  },
+  {
+   "product": "Curve DEX",
+   "snapshot_gross_eth": 99826.79791549746,
+   "later_gross_eth": 98811.4498266034,
+   "later_date": "2026-10-07",
+   "change": -0.010171097441726396
+  },
+  {
+   "product": "Fluid Lite",
+   "snapshot_gross_eth": 77313.64505186099,
+   "later_gross_eth": 77144.8925995987,
+   "later_date": "2026-10-07",
+   "change": -0.0021826994723778137
+  },
+  {
+   "product": "Frax Ether",
+   "snapshot_gross_eth": 50730.355989261865,
+   "later_gross_eth": 50493.48519010653,
+   "later_date": "2026-10-07",
+   "change": -0.004669212240605569
+  },
+  {
+   "product": "Renzo",
+   "snapshot_gross_eth": 43481.20079480339,
+   "later_gross_eth": 43471.32087040379,
+   "later_date": "2026-10-07",
+   "change": -0.00022722289676935237
+  },
+  {
+   "product": "Fluid DEX",
+   "snapshot_gross_eth": 35573.89827510605,
+   "later_gross_eth": 35639.66797736534,
+   "later_date": "2026-10-07",
+   "change": 0.0018488190906340574
+  }
+ ]
+}
