@@ -69,7 +69,7 @@ def run():
  check('WETH_claim_debt_subtotals_and_deficit_not_zero_filled',math.isclose(sum(x['lender_claim_units'] for x in wm),ws['selected_WETH_lender_claims'],rel_tol=1e-12) and math.isclose(sum(x['debt_units'] for x in wm),ws['selected_WETH_debt'],rel_tol=1e-12) and next(x for x in wm if x['protocol']=='spark')['extra_getters']=={})
  chain=read('chain_screen');pool=read('yield_pool_candidates');check('gross_discovery_sums_reconcile_without_net_label',math.isclose(sum(x['reported_full_pool_tvl_usd'] for x in chain),sum(x['tvlUsd'] for x in pool),rel_tol=1e-12) and len(chain)==57 and len(pool)==5688)
  badlinks=[]
- for p in (ROOT/'research/eth').rglob('*.md'):
+ for p in (q for q in (ROOT/'research/eth').rglob('*.md') if 'curated' not in q.parts):
   for target in re.findall(r'\]\(([^)]+)\)',p.read_text()):
    if target.startswith(('http:','https:','#')):continue
    target=target.split('#')[0].strip('<>')

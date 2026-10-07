@@ -262,7 +262,7 @@ def main():
     with open(os.path.join(OUT, 'netting_ledger.csv'), 'w', newline='') as f:
         w = csv.writer(f)
         w.writerow(['month', 'from', 'to', 'eth', 'reason'])
-        for r in ledger:
+        for r in sorted(ledger, key=lambda r: (r[0], r[1], r[2], r[4], r[3])):
             if r[3] >= 1:
                 w.writerow([r[0], r[1], r[2], round(r[3], 2), r[4]])
     cats = collections.defaultdict(lambda: collections.defaultdict(float))
