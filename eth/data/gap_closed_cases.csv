@@ -1,0 +1,59 @@
+case,date_utc,item,value,unit,borne_by,status,source
+lido_earn_eth,2026-04-18 17:35,Kelp rsETH bridge exploit starts; Lido detects 18:53,,,,"published",https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+lido_earn_eth,2026-04-18 20:33,SyncDepositQueues paused (UI deposits off 20:29),,,,"published",https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+lido_earn_eth,2026-04-18,rsETH supplied as collateral in the underlying strategy,113200,rsETH,,"published",https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+lido_earn_eth,2026-04-18,WETH borrowed against it,111100,WETH,,"published",https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+lido_earn_eth,2026-04-18,Net exposure through strETH,9000,ETH,,"published (about $21M)",https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+lido_earn_eth,2026-04,Initial projected loss,400-600,ETH,,"published",https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+lido_earn_eth,2026-05-15,Realised loss (elevated WETH borrow cost and slow unwind),143.98,ETH,Lido DAO first-loss shares,"published",https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+lido_earn_eth,2026-05-15,DAO first-loss shares burned,143.9766,earnETH,Lido DAO,"onchain",https://etherscan.io/tx/0xdfca0390d39299ec88e6be26f5254d873b9a1098f71591c42f357412d60e71c7
+lido_earn_eth,2026-05-15,Value of burned shares per treasury report,144.77,ETH,Lido DAO,"published",https://blog.lido.fi/lido-poolside-recap-tokenholder-update-may-2026/
+lido_earn_eth,2026-05-15 17:15,Deposits and withdrawals resume (pause 27 days),27,days,depositors (no exit),"published",https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+lido_earn_eth,2026-05,Depositor loss,0,%,,"published (worst case modelled about 12%)",https://blog.lido.fi/lido-poolside-recap-tokenholder-update-may-2026/
+lido_earn_eth,2026-05,Earn ETH TVL before incident,111000,ETH,,"published",https://blog.lido.fi/lido-poolside-recap-tokenholder-update-may-2026/
+lido_earn_eth,2026-05,Earn ETH TVL after reopening,58000,ETH,,"published",https://blog.lido.fi/lido-poolside-recap-tokenholder-update-may-2026/
+lido_earn_eth,2026-03-09,First-loss reserve approved (wstETH to EarnETH; plus $2M USDC to EarnUSD),3000000,USD,Lido DAO,"published; balance remaining after burn not published",https://research.lido.fi/t/lido-earn-competing-on-trust-5m-treasury-allocation/11228
+lido_earn_eth,2026-05,Separate Lido DAO contribution to DeFi United,2500,stETH,Lido DAO,"published (about $5.7M)",https://blog.lido.fi/lido-poolside-recap-tokenholder-update-may-2026/
+kelp_rseth_exploit,2026-04-18,rsETH released from LayerZero OFT adapter (balance 116723 to 223),116500,rsETH,,"published (about $292M)",https://governance.aave.com/t/rseth-incident-report-april-20-2026/24580
+kelp_rseth_exploit,2026-04-18,Attacker rsETH posted on Aave (Ethereum Core 53400; Arbitrum 36167),89567,rsETH,,"published",https://governance.aave.com/t/rseth-incident-report-april-20-2026/24580
+kelp_rseth_exploit,2026-04-18,Aave Umbrella WETH stake at risk (18922 in cooldown),23507.63,WETH,Umbrella stakers (not slashed; module paused 2026-04-20),"published",https://governance.aave.com/t/direct-to-aip-pause-stkwaweth-umbrella-staked-token-on-ethereum-v3/24595
+kelp_rseth_exploit,2026-05-18,Unbacked rsETH,112103,rsETH,,"reported",https://www.coindesk.com/markets/2026/05/18/aave-restores-weth-collateral-limits-as-rseth-crisis-enters-recovery-phase
+kelp_rseth_exploit,2026-05-18,Recovered via Aave liquidations to Recovery Guardian,89567,rsETH,,"reported",https://www.coindesk.com/markets/2026/05/18/aave-restores-weth-collateral-limits-as-rseth-crisis-enters-recovery-phase
+kelp_rseth_exploit,2026-05-18,Recovered via Compound,17426,rsETH,Compound DAO (pledged 1900-3000 ETH),"reported",https://www.coindesk.com/markets/2026/05/18/aave-restores-weth-collateral-limits-as-rseth-crisis-enters-recovery-phase
+kelp_rseth_exploit,2026-05-18,Residual shortfall assigned to DeFi United,5200,rsETH,DeFi United,"reported (approx)",https://www.coindesk.com/markets/2026/05/18/aave-restores-weth-collateral-limits-as-rseth-crisis-enters-recovery-phase
+kelp_rseth_exploit,2026-05-25,rsETH backing restored (final tranche 20373.72 rsETH),100.01,% backed,Kelp plus DeFi United,"reported",https://ambcrypto.com/kelpdao-says-rseth-recovery-completed-as-backing-returns-above-100/
+kelp_rseth_exploit,2026-05,Arbitrum DAO frozen attacker ETH (30000 voted for release to remediation),30766,ETH,,"published",https://governance.aave.com/t/al-development-update-may-2026/25013
+kelp_rseth_exploit,2026-04/05,DeFi United pledges: Aave DAO 25k ETH; Consensys/Lubin 30k; Mantle 30k (loan); Arbitrum DAO 30k; Kulechov 5k; ether.fi 5k; Lido 2.5k stETH,,ETH,listed contributors,"reported",https://news.bitcoin.com/compound-dao-defi-united-rseth-recovery-proposal/
+kelp_rseth_exploit,2026-10-02,Aave v3 Ethereum WETH reserve deficit (getReserveDeficit at block 26108081),52964.45,WETH,Aave (recovery funds not reconciled),"onchain",research/eth/en/LENDING-MARKETS.md
+kelp_rseth_exploit,2026-10-02,Aave v3 Arbitrum WETH reserve deficit,29835.20,WETH,Aave (recovery funds not reconciled),"onchain",research/eth/en/LENDING-MARKETS.md
+kelp_rseth_exploit,2026-04-30,Aave v3 Ethereum WETH utilization at month end,99.22,%,WETH suppliers (exit blocked) and WETH borrowers (rate spike),"onchain",data/eth/gap_loop_regime_monthly.csv
+kelp_rseth_exploit,2026-04,Aave v3 Ethereum WETH average borrow APR for April (index growth),3.53,%,ETH loopers,"onchain",data/eth/gap_loop_regime_monthly.csv
+cian_rseth,2026-04-17 to 2026-05-16,Share price drawdown (rsETH per share 0.95449 to 0.92949),-2.62,%,holders who exited in the window,"onchain",raw/eth/gap-2026-10-07/cases/vaults/kelp_exposed_vaults.json
+cian_rseth,2026-10-02,Share price back to 0.95882 (above pre-incident),0.45,% vs 2026-04-17,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/kelp_exposed_vaults.json
+hgeth_kelp_gain,2026-04-19 to 2026-06-05,Share supply frozen at 14752.14 and share price flat at 1.03677 rsETH,,,"holders (no exit)","onchain",raw/eth/gap-2026-10-07/cases/vaults/kelp_exposed_vaults.json
+hgeth_kelp_gain,2026-06-05 18:51,"Safe tx 0xb435916e calls liquidate(0xd08e3ec3...) on the pool; OnLoanMatured; totalAssets falls by 500.000 rsETH, supply unchanged",500,rsETH,hgETH holders,"onchain; link to Kelp exploit not established",raw/eth/gap-2026-10-07/cases/vaults/hg_block_25253082_logs.json
+hgeth_kelp_gain,2026-05-31 to 2026-06-30,Share price 1.03677 to 0.99433 rsETH (cumulative markdown about 626 rsETH),-4.09,%,hgETH holders,"onchain",raw/eth/gap-2026-10-07/cases/vaults/kelp_exposed_vaults.json
+compound_v3,2026-04/05,Compound recovery contribution pledged,1900-3000,ETH,Compound DAO,"reported",https://news.bitcoin.com/compound-dao-defi-united-rseth-recovery-proposal/
+euler_morpho_spark_fluid,2026-04,"Froze rsETH; no depositor loss found (Euler attacker debt about $0.84M per search snippet, unverified)",,,,"unverified",
+reservoir_eth_yield,2025-08-31,Launch (share price 1.000),0,WETH,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+reservoir_eth_yield,2025-10-31,Peak book (share price 1.01914),4136.88,WETH,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+reservoir_eth_yield,2026-01-31,Book after 96% outflow,152.99,WETH,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+reservoir_eth_yield,2026-02-28,Low share price 0.98706 (-3.15% from Oct peak),-3.15,%,holders at the time,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+reservoir_eth_yield,2026-10-02,Book at T (share price 1.00288; 13 months),23.59,WETH,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+reservoir_eth_yield,2025-08 to 2026-10,No Aave or Morpho liquidation of the vault found,0,events,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/liquidations.json
+tau_infinifi_eth_carry,2025-10-31,Launch (share price 0.99984 wstETH),0.04,wstETH,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+tau_infinifi_eth_carry,2026-01-31,Peak book (share price 1.00104),285.17,wstETH,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+tau_infinifi_eth_carry,2026-04-30,Book after outflow,1.90,wstETH,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+tau_infinifi_eth_carry,2026-10-02,Book at T (share price 0.99673; USDC debt 0.022),66.03,wstETH,,"onchain",raw/eth/gap-2026-10-07/cases/vaults/ipor_vault_month_end.json
+rocksolid_reth,2026-09-29 02:39,initiateClosing() (tx 0xb3ed2719...),,,,"onchain",research/eth/en/ROCKSOLID-NEMO-SENTORA.md
+rocksolid_reth,2026-10-07 00:02,Implementation upgraded to add cancelClosing(); vault reopened (tx 0xb87bfc60...),8,days closed,new depositors (no entry); no loss,"onchain",research/eth/en/ROCKSOLID-NEMO-SENTORA.md
+lrt_outflow_eigenpie,2024-10 to 2026-10-02,ETH at peak 434227; at T 1683; 2025-07: 213k to 6k ETH in one month; no sunset notice found,-432544,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_renzo,2024-11 to 2026-10-02,ETH at peak 421989; at T 40897; 2025-11 to 2026-01 and 2026-04 to 2026-05 (Kelp exploit month: 148k to 70k),-381091,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_puffer-stake,2024-10 to 2026-10-02,ETH at peak 289102; at T 8956; 2024-10 to 2024-12 after withdrawals opened and PUFFER airdrop (14 Oct 2024),-280146,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_mellow-restaking,2024-10 to 2026-10-02,"ETH at peak 230577; at T 5643; 2025-12 to 2026-01: 88k to 22k; LRT vaults deprecated, Lido stRATEGY moved to Earn",-224934,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_symbiotic,2024-10 to 2026-10-02,"ETH at peak 333865; at T 31033; netted residual row, noisy; USD TVL $2.13B Jan 2025 to $478M",-302832,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_swell-liquid-restaking,2024-10 to 2026-10-02,ETH at peak 50261; at T 10599; gradual; 2025-08 step 28k to 16k,-39662,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_mantle-restaking,2025-03 to 2026-10-02,ETH at peak 195579; at T 16046; 2025-08 and 2026-05 steps,-179533,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_eigencloud,2025-07 to 2026-10-02,ETH at peak 1337083; at T 204200; direct EigenLayer residual after LRT issuers; peak 2025-07,-1132883,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_kelp,2026-04 to 2026-10-02,ETH at peak 641768; at T 403271; peak 2026-04 then outflow after exploit,-238497,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
+lrt_outflow_ether.fi-stake,2026-01 to 2026-10-02,ETH at peak 2627213; at T 1689026; 2026-03 to 2026-05: 2.63M to 1.53M,-938187,ETH,holders who exited (no loss event),netted market map,data/eth/netmap/market_map_history_monthly.csv
