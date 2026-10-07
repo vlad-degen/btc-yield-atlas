@@ -139,3 +139,11 @@ body[data-edition="reader"] #carry-calculator .formula{font-size:11px;line-heigh
 body[data-edition="reader"] .answers .tile .d{font-size:12px;line-height:1.55}
 @media(max-width:800px){body[data-edition="reader"] .reader-example-pair .horizontal-bars{--label-w:110px;--value-w:56px}}
 @media(max-width:380px){body[data-edition="reader"] .strict-calc-results .metric-strip{grid-template-columns:1fr}}
+
+/* Reader cleanup requested on 7 October: a shorter main route, optional risk detail. */
+body[data-edition="reader"] #how[hidden],body[data-edition="reader"] #do[hidden]{display:none!important}
+body[data-edition="reader"] #risks{padding-block:20px}
+body[data-edition="reader"] #risks details.more{margin:0}
+body[data-edition="reader"] #m-history-findings{grid-template-columns:repeat(3,minmax(0,1fr))}
+html:has(body[data-edition="reader"]){scroll-padding-top:78px}
+@media(max-width:780px){html:has(body[data-edition="reader"]){scroll-padding-top:110px}body[data-edition="reader"] #m-history-findings{grid-template-columns:1fr}}
