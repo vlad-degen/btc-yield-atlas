@@ -13,10 +13,10 @@ D = ROOT / 'data/eth'
 EN = ROOT / 'research/eth/en'
 
 PRODUCT_STATUS = {
- 'Concrete Delta weETH': ('unverified', 'Declared arbitrage; shared custody', 'Dollar debt is observed in a shared Safe; assets and debt attributable to Delta are unresolved.'),
+ 'Concrete Delta weETH': ('unverified', 'One wallet\'s own position', 'A Bitfinex-linked wallet moved its own Aave position into the vault\'s Safe and holds 100% of the shares; $176.2M of stablecoin debt (Aave $105.7M, Morpho $70.4M). Not a pooled product; left out of the map.'),
  'ether.fi Liquid ETH': ('active', 'Active hybrid', 'Dollar loans and destination claims are measured; full carry-sleeve equity is not reconciled.'),
  'YieldBasis WETH': ('active', 'Active dollar-financed LP', 'Net fair-value WETH pool equity is measured separately from actual crvUSD debt; gauge income is separate.'),
- 'Rocksolid rETH': ('closing', 'Closing; nested carry', '728.48 ETH of Liquity shares is the evidenced nested carry claim; direct Aave debt is zero.'),
+ 'Rocksolid rETH': ('closing', 'Closing at T (29 Sep); reopened 7 Oct', 'Book reconciles to within 0.04% across Monad, Ethereum and a second wallet; $2.73M USDC carry (10.5% of book) plus 728.48 ETH of Liquity shares.'),
  'Liquity ETH Carry': ('active', 'Active minted-dollar LP', 'Ebisu collateral, ebUSD debt and dollar LP positions are measured; do not equate collateral with sleeve equity.'),
  'Royco ETH': ('active', 'Loan traced; parent marks stale', 'Morpho PYUSD debt and the senior credit receipt are traced; parent accounting and immediate exit remain restricted.'),
  'TAU InfiniFi ETH Carry': ('historical', 'Historical; dust debt at T', 'Accrued debt is 0.022132 USDC at T; the old whole book is not current active carry equity.'),

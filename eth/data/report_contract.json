@@ -20,8 +20,8 @@
     {
       "name": "Concrete Delta weETH",
       "status": "unverified",
-      "statusLabel": "Declared arbitrage; shared custody",
-      "allocationEvidence": "Dollar debt is observed in a shared Safe; assets and debt attributable to Delta are unresolved.",
+      "statusLabel": "One wallet's own position",
+      "allocationEvidence": "A Bitfinex-linked wallet moved its own Aave position into the vault's Safe and holds 100% of the shares; $176.2M of stablecoin debt (Aave $105.7M, Morpho $70.4M). Not a pooled product; left out of the map.",
       "bookETH": 307362.9254893895,
       "bookUSD": 820029052.8774381,
       "carryEquityETH": null,
@@ -86,8 +86,8 @@
     {
       "name": "Rocksolid rETH",
       "status": "closing",
-      "statusLabel": "Closing; nested carry",
-      "allocationEvidence": "728.48 ETH of Liquity shares is the evidenced nested carry claim; direct Aave debt is zero.",
+      "statusLabel": "Closing at T (29 Sep); reopened 7 Oct",
+      "allocationEvidence": "Book reconciles to within 0.04% across Monad, Ethereum and a second wallet; $2.73M USDC carry (10.5% of book) plus 728.48 ETH of Liquity shares.",
       "bookETH": 9727.76735365525,
       "bookUSD": 25953201.209705926,
       "carryEquityETH": null,
@@ -509,7 +509,7 @@
   "custodySubsetETH": 457182.30402225326,
   "lpCustodyETH": 69531.48533136006,
   "sources": {
-    "market_reader_chapter": "8538d66733e173dce36c85c0085a7d203949b866373a231bc05ae5ca6259a44d",
+    "market_reader_chapter": "d50714861ec6894d03d016570965cf276d92a1c21c287180ed8dca12d537c4f5",
     "reader_carry_category": "7de0c236e26cef3266c9204f5a7cbef73e195b6d4476e5b0b7a09a817b0d0d01",
     "reader_product_chapters": "0710dbbda4daf3dafb376fe670bf0afa4a59c1448f76897c4709a6d9cc54da43",
     "etherfi_staking_comparison": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858",
@@ -521,7 +521,7 @@
   },
   "verifiedDollarFinancing": {
     "source": "data/eth/economic_questions.json",
-    "sourceSHA256": "716279931a3103f5275fe431541bab39fb2d2ad6a38f08132b3b66844b7abc48",
+    "sourceSHA256": "9724dcb22e47579cad2debbd22cda9a436d66d261d770332b7a83a49ae032f7d",
     "directDebtUSD": 261325365.85171545,
     "topFive": [
       "liquid",

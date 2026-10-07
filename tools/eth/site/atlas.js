@@ -52,7 +52,7 @@ function marketRender(){
  const active=mactive(),total=marketTotals(),cats=active.map(c=>({...c,eth_ref:atCatSize(c.id),usd:msum(atRows(c.id).map(p=>p.current),'usd')})).sort((a,b)=>b.eth_ref-a.eth_ref);
  $('#strict-count-label').textContent=active.length===MP.categories.filter(c=>c.default).length&&active.every(c=>c.default)?'all yield categories':active.length+' of '+MP.categories.length+' categories';
  $('#m-selection').innerHTML=active.length===MP.categories.length?'Every category, money markets and CDPs included.':`Counting: ${active.map(c=>esc(c.label)).join(', ')||'nothing'}.`;
- $('#m-donut').innerHTML=marketDonut(MP.products.filter(p=>(p.current.eth_ref||0)>=0.5),total).replace('layered exposure','counted once');
+ $('#m-donut').innerHTML=marketDonut(MP.products.filter(p=>(p.current.eth_ref||0)>=0.5),total).replace('layered exposure','counted once').replace(money(total.usd),ATUSD(total.usd));
  $('#m-category-summary tbody').innerHTML=cats.map(c=>`<tr><td><button class="market-text-button" data-market-pick="${c.id}"><i class="pdot" style="background:${c.color}"></i>${esc(c.label)}</button></td><td class="n">${num(c.eth_ref,0)}</td><td class="n">${ATUSD(c.usd)}</td><td class="n">${total.eth_ref?ATPCT(c.eth_ref/total.eth_ref):''}</td></tr>`).join('');
  $('#m-map-findings').innerHTML=atMapFindings(total);
  const series=marketSeries();
@@ -181,7 +181,7 @@ function atRiskPanel(id){
  const anchor=[...host.querySelectorAll('h3,h4')].find(h=>/Capital and investor outcomes/i.test(h.textContent));
  if(anchor)(anchor.closest('section,.panel,div')||anchor).insertAdjacentHTML('beforebegin',html);else host.insertAdjacentHTML('beforeend',html);
 }
-const _atRenderProduct=stRenderProduct;stRenderProduct=function(id,u){_atRenderProduct(id,u);atRiskPanel(id);};
+const _atRenderProduct=stRenderProduct;stRenderProduct=function(id,u){_atRenderProduct(id,u);atRiskPanel(id);$$('#strict-product-content details.more>summary').forEach(x=>{if(/Repaid Morpho positions and residual debt/.test(x.textContent))x.parentElement.remove();});const k=$('#strict-product-content .k, #strict-product-content .kicker');if(k&&/attributed/.test(k.textContent))k.textContent=k.textContent.replace(/#(\d) by attributed dollar financing.*/,'#$1 by dollars borrowed against ETH');};
 
 // Carry waves (replaces reader.js): three phases, numbers from the books and the corrected debt history.
 function readerCarryWaves(){
@@ -256,7 +256,7 @@ function atMethod(){
  const el=$('#strict-method');if(!el)return;
  el.innerHTML=`<p><b>What is counted.</b> Products that pay a yield on ETH, each counted once: ${MP.products_count_default} products and ${ATK(MP.default_current.eth_ref)} ETH on 2 October 2026 (DefiLlama point stamped 3 October 00:00 UTC), and every month-end from October 2024. The ETH part of each protocol’s token breakdown, at the ETH price of the same point.</p>
  <p><b>Counted once.</b> A staking or restaking token held by another product leaves its issuer’s row and is counted in the product that holds it. Products report what their depositors own: a looped vault counts its equity, and the ETH it borrowed stays with the staking issuer it was staked through. Restaking platforms count only what no restaking token on the map already counts (an estimate). Money markets and CDPs count only plain ETH and WETH, not staking tokens posted as collateral, and are off by default: lent ETH is staked again by its borrowers.</p>
- <p><b>On-chain books.</b> The twelve carry products are measured at block 26,108,081 and at each month-end and replace their DefiLlama rows. DEX projects without a token breakdown (Uniswap v3 and v4, SushiSwap v2) are their ETH pools above $1M, plain-ETH side only.</p>
+ <p><b>On-chain books.</b> The carry products are measured at block 26,108,081 and replace their DefiLlama rows; twelve also at each month-end, NEMO and Sentora at the snapshot only. DEX projects without a token breakdown (Uniswap v3 and v4, SushiSwap v2) are their ETH pools above $1M, plain-ETH side only.</p>
  <p><b>What was cut.</b> Infrastructure (SSV, Obol), curators whose vaults sit in Morpho and Euler, LP-staking aggregators, duplicate listings, synthetic ETH (msETH, alETH), frozen adapters and non-products; each with its reason in “Listed, but not counted”. Every netting step is in the ledger below.</p>
  <div class="section-actions"><a class="btn" href="data/netmap/market_map_current.csv" download>Map, 2 October</a><a class="btn" href="data/netmap/market_map_history_monthly.csv" download>Month-ends by product</a><a class="btn" href="data/netmap/category_history_monthly.csv" download>Month-ends by category</a><a class="btn" href="data/netmap/netting_ledger.csv" download>Netting ledger</a><a class="btn" href="data/netmap/product_notes.csv" download>Product notes</a></div>`;
 }
@@ -266,8 +266,8 @@ const _atPrevAnswer2=readerAnswer;readerAnswer=function(){_atPrevAnswer2();atMet
 function atCheck(){
  const C=R.netmapCheck;if(!C)return;const d=$('#strict-discovery'),r=$('#strict-recheck');
  const tv=C.tvl_by_status||{},all=Object.values(tv).reduce((s,v)=>s+v,0);
- if(d)d.innerHTML=`<p>DefiLlama lists ${num(C.pools_checked,0)} ETH pools above $1M on its yields page. ${ATPCT((tv.map||0)/all,1)} of their TVL belongs to products on the map and ${ATPCT((tv.excluded||0)/all,1)} to rows left out for a stated reason. The rest (${ATUSD(all-(tv.map||0)-(tv.excluded||0))}) is below:</p>`+stTable(['Project','Pools','Pool TVL','Why it is not on the map'],C.not_in_map.map(x=>[esc(x.project),num(x.pools,0),ATUSD(x.tvlUsd),esc(x.status)+'<div class="sub">'+esc(x.symbols.join(', '))+'</div>']))+`<p class="note">${esc(C.note)}</p>`;
- if(r)r.innerHTML=`<p>The largest rows read again at DefiLlama’s latest point (${esc(C.recheck?.[0]?.later_date||'')}): the median moved ${(()=>{const v=(C.recheck||[]).map(x=>Math.abs(x.change||0)).sort((a,b)=>a-b);return v.length?ATPCT(v[Math.floor(v.length/2)],2):'n/a'})()}.</p>`+stTable(['Product','2 October, ETH','Later, ETH','Change'],(C.recheck||[]).map(x=>[esc(x.product),num(x.snapshot_gross_eth,0),num(x.later_gross_eth,0),(x.change>=0?'+':'')+ATPCT(x.change,2)]))+'<p class="note">Gross ETH part of each protocol before netting.</p>';
+ if(d)d.innerHTML=`<p>DefiLlama lists ${num(C.pools_checked,0)} ETH pools above $1M on its yields page. ${ATPCT((tv.map||0)/all,1)} of their TVL belongs to products on the map and ${ATPCT((tv.excluded||0)/all,1)} to rows left out for a stated reason. The rest (${ATUSD(all-(tv.map||0)-(tv.excluded||0))}) is below:</p>`+'<div class="tblwrap">'+stTable(['Project','Pools','Pool TVL','Why it is not on the map'],C.not_in_map.map(x=>[esc(x.project),num(x.pools,0),ATUSD(x.tvlUsd),esc(x.status)+'<div class="sub">'+esc(x.symbols.join(', '))+'</div>']))+'</div>'+`<p class="note">${esc(C.note)}</p>`;
+ if(r)r.innerHTML=`<p>The largest rows read again at DefiLlama’s latest point (${esc(C.recheck?.[0]?.later_date||'')}): the median moved ${(()=>{const v=(C.recheck||[]).map(x=>Math.abs(x.change||0)).sort((a,b)=>a-b);return v.length?ATPCT(v[Math.floor(v.length/2)],2):'n/a'})()}.</p>`+'<div class="tblwrap">'+stTable(['Product','2 October, ETH','Later, ETH','Change'],(C.recheck||[]).map(x=>[esc(x.product),num(x.snapshot_gross_eth,0),num(x.later_gross_eth,0),(x.change>=0?'+':'')+ATPCT(x.change,2)]))+'</div><p class="note">Gross ETH part of each protocol before netting.</p>';
 }
 const _atPrevAnswer3=readerAnswer;readerAnswer=function(){_atPrevAnswer3();atCheck();};
 
@@ -304,3 +304,22 @@ function atComparison(){
  const h=el.closest('.panel')?.querySelector('h3');if(h)h.textContent='The five, side by side';
 }
 const _atPrevFinal=atlasFinal;atlasFinal=function(){_atPrevFinal();atHideOld();atComparison();};
+
+// Borrower table: identities resolved after the snapshot research (Concrete Delta).
+(function(){const B=R.borrowersChapter;if(!B)return;const walk=v=>{if(Array.isArray(v))v.forEach(walk);else if(v&&typeof v==='object'){if(v.who==='Concrete shared Safe'){v.who='Concrete Delta Safe (Bitfinex-linked principal)';v.evidence='The wallet that funded the Safe moved its own Aave position into it on 10 Dec 2025 and holds 100% of Concrete Delta; it remains one of five signers. Not a pooled product.';}Object.values(v).forEach(walk);}};walk(B);})();
+
+// Data: coverage by category (replaces the earlier mechanism matrix).
+function atCoverage(){
+ const el=$('#reader-coverage-matrix');if(!el)return;
+ const n=id=>atRows(id).length,v=id=>ATK(atCatSize(id));
+ const rows=[
+  ['Staking',v('staking'),n('staking'),'Issuer backing from DefiLlama, net of tokens held by other products; native consensus state (43.81M ETH active) as the ceiling','Every month-end; 14.4M ETH of off-chain stake listed, not counted'],
+  ['Restaking',v('restaking'),n('restaking'),'Restaking-token issuers; EigenLayer and Symbiotic only for what no restaking token counts (estimate)','Every month-end'],
+  ['Carry',v('carry'),n('carry'),'On-chain books, loans and destinations at block 26,108,081; Concrete Delta excluded as one wallet’s position','Twelve products every month-end; NEMO and Sentora at the snapshot'],
+  ['Leveraged staking',v('loops'),n('loops'),'Depositor equity (gross collateral scaled down where the adapter reports it)','Every month-end'],
+  ['Farming and pools',v('farming'),n('farming'),'DEX pools: plain ETH side only; Uniswap v3/v4 from pools above $1M','Pools without a token breakdown only for pools that still exist'],
+  ['Fixed yield, basis, options, credit',ATK(atCatSize('fixed_yield')+atCatSize('basis')+atCatSize('options')+atCatSize('credit')),n('fixed_yield')+n('basis')+n('options')+n('credit'),'DefiLlama breakdowns, checked against the products’ own pages','Every month-end; most are residuals of 2024 products'],
+  ['Money markets, CDPs (off)',ATK(atCatSize('lending')+atCatSize('cdp')),n('lending')+n('cdp'),'Idle plain WETH and ETH collateral only','Every month-end']];
+ el.innerHTML='<div class="tblwrap">'+stTable(['Category','ETH','Products','How it is measured','History'],rows.map(r=>r.map(x=>esc(String(x)))))+'</div>';
+}
+const _atPrevAnswer4=readerAnswer;readerAnswer=function(){_atPrevAnswer4();atCoverage();};

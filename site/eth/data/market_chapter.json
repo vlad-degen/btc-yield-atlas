@@ -29419,7 +29419,7 @@
      "observed_zero": false
     }
    ],
-   "how_earns": "Lagoon vault holding 8,293 rETH; reported strategy (Aug 2026): rETH on Aave borrowing USDC at 50% LTV into Spectra and Hyperithm Morpho; at T direct Aave debt is zero and 728 ETH sits in Liquity ETH Carry shares",
+   "how_earns": "rETH vault run from a Fordefi MPC wallet: ETH loops on Monad and Ethereum (wstETH out over CCIP, WETH back over Wormhole), Steakhouse Prime ETH, 728 ETH of Liquity ETH Carry shares, and a second wallet borrowing $2.73M USDC against rETH into Gami and Hyperithm vaults",
    "yield": "+0.22% over 30 days to 2 Oct (book); 1% management / 10% performance",
    "operator": "Rocksolid; managed by Tulipa Capital",
    "official_url": "https://app.rocksolid.network/vaults/0x936facdf10c8c36294e7b9d28345255539d81bc7",
@@ -29437,7 +29437,7 @@
     "eth_ref": null,
     "status": "missing"
    },
-   "flag": "Closing since 29 Sep 2026 (no new requests); no direct dollar debt at T, only nested Liquity carry shares (728 ETH, netted)"
+   "flag": ""
   },
   {
    "id": "puffer-stake",

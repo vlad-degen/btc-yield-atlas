@@ -31,12 +31,12 @@ The saved DefiLlama screen contains **299** ETH-name pools above $5M from **86**
 
 | Product | Status | Attribution boundary |
 | --- | --- | --- |
-| Concrete Delta weETH | Declared arbitrage; shared custody | Dollar debt is observed in a shared Safe; assets and debt attributable to Delta are unresolved. |
+| Concrete Delta weETH | One wallet's own position | A Bitfinex-linked wallet moved its own Aave position into the vault's Safe and holds 100% of the shares; $176.2M of stablecoin debt (Aave $105.7M, Morpho $70.4M). Not a pooled product; left out of the map. |
 | ether.fi Liquid ETH | Active hybrid | Dollar loans and destination claims are measured; full carry-sleeve equity is not reconciled. |
 | Lido Earn ETH | Active hybrid | Earn ETH reports 83,309 ETH. Its main holding is stRATEGY, whose book must not be added again. The nested portfolio owes about 355,217 WETH in staking loops and 25.55M USDT in its main dollar-carry account. Those are gross loans, not the carry sleeve’s equity. |
 | Avant avETH / savETH | Active hybrid | The published 29 September portfolio has a $33.18M net NAV and a $32.53M savUSD position. Ethereum reads at T confirm USDC, USDS and PYUSD borrowing against ETH collateral. The large own-credit destination makes this a concentrated issuer dependency. |
 | YieldBasis WETH | Active dollar-financed LP | Net fair-value WETH pool equity is measured separately from actual crvUSD debt; gauge income is separate. |
-| Rocksolid rETH | Closing; nested carry | 728.48 ETH of Liquity shares is the evidenced nested carry claim; direct Aave debt is zero. |
+| Rocksolid rETH | Closing at T (29 Sep); reopened 7 Oct | Book reconciles to within 0.04% across Monad, Ethereum and a second wallet; $2.73M USDC carry (10.5% of book) plus 728.48 ETH of Liquity shares. |
 | Liquity ETH Carry | Active minted-dollar LP | Ebisu collateral, ebUSD debt and dollar LP positions are measured; do not equate collateral with sleeve equity. |
 | Makina DETH | Active hybrid | DETH reports 2,499 ETH in a cached book. Its hub has 15,065 WETH of Aave debt against weETH, plus a Morpho USDT / wstETH carry route. Verified accounting instructions identify the credit receipts instead of relying on the vault name. |
 | Vesper vaETH | Active hybrid | vaETH reports 1,052 ETH. Its XY strategy supplies 57.35 WETH, owes 68,998 DAI and holds 60,034 vDAI shares. Other strategies in the same pool are lending or liquidity positions, so the whole pool cannot be labelled carry. |
