@@ -28,10 +28,9 @@ ARTICLES = {
  'lending-lp': ('dossiers', 'Lending and LP'),
  'MARKET-STRUCTURE': ('library', 'ETH market composition and history'),
  'CARRY-CATEGORY': ('library', 'ETH carry products and capital history'),
- 'CARRY-MATH': ('library', 'Dollar carry: rates, payers and calculations'),
+ 'CARRY-MATH': ('library', 'Dollar carry: rates and payers'),
  'CARRY-PRODUCTS': ('library', 'Carry products: live positions, control and outcomes'),
  'BORROW-HISTORY': ('library', 'Liquid ETH: archived borrowing costs'),
- 'MECHANICS': ('library', 'Yield mechanics'),
  'ECONOMICS': ('library', 'Economics and stress tests'),
  'HISTORY': ('library', 'History and comparable returns'),
  'LENDING-MARKETS': ('library', 'Five WETH lending markets'),
@@ -42,7 +41,6 @@ ARTICLES = {
  'README': ('library', 'Research library guide'),
  'RETURN-DRIVERS': ('library', 'Returns, capital growth and fees'),
  'PRODUCT-TERMS': ('library', 'Withdrawals, fees and control'),
- 'PRODUCT-SELECTION': ('library', 'Why these five products?'),
  'BRIEFING': ('library', 'ETH yield: briefing for the team'),
  'CAPITAL-INCOME-EXIT': ('library', 'Capital, earned income and investor exits'),
  'DOLLAR-FUNDING-ATLAS': ('library', 'Dollar financing across chains'),
@@ -69,7 +67,7 @@ ARTICLES = {
 }
 
 # removed from the library (parity audit 7 Oct): links to them go to the article that replaces them
-ALIASES = {'ECONOMIC-ANSWERS':'CARRY-CATEGORY','concrete-eth':'CONCRETE-DELTA','MARKET-RESEARCH':'MARKET-STRUCTURE','MARKET-TABLES':'MARKET-STRUCTURE',
+ALIASES = {'MECHANICS':'STRATEGY-UNIVERSE-EXPANSION','PRODUCT-SELECTION':'CARRY-CATEGORY','ECONOMIC-ANSWERS':'CARRY-CATEGORY','concrete-eth':'CONCRETE-DELTA','MARKET-RESEARCH':'MARKET-STRUCTURE','MARKET-TABLES':'MARKET-STRUCTURE',
            'RESEARCH-PLAN':'README','EXECUTION-CHECKLIST':'README','SITE-PARITY':'README','DEPENDENCIES':'AUDIT'}
 READER_DROP={'assets','balance','basisDisclosures','carryAssets','coverage','credit','economics','edges','etherfi','etherfiHistory','evidence',
  'marketPanel','pendle','stress','summary','fundingAtlas','marketNetting','creditExpansion','borrowerDeep','creditDeep','managerCase'}
@@ -196,6 +194,9 @@ def build():
     write_substantive_history()
     from economic_build import editorial as write_economic_answers
     write_economic_answers(economic_answers,read('reader_product_chapters'))
+    # Hand-edited articles (7 Oct) replace the generated text and its appended sections.
+    for source in (ENGLISH/'curated').rglob('*.md'):
+        shutil.copyfile(source,ENGLISH/source.relative_to(ENGLISH/'curated'))
     payload={
       'summary':read('market_summary'),'chains':read('chain_screen'),'protocols':observations,
       'coverage':read('protocol_source_coverage'),'pools':pools,
@@ -343,8 +344,8 @@ def build():
     library_groups = [
       ('New findings, 7 October', ['CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','LIQUID-LOOP','REWARDS-SPLIT','TOP5-KEYS-HOLDERS-TERMS','CLOSED-CASES','RESTAKING-AND-LOOPS','OUTSIDE-AND-SMALL']),
       ('Market size and counting', ['MARKET-STRUCTURE','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
-      ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','MECHANICS','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
-      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','etherfi-liquid-eth']),
+      ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
+      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','etherfi-liquid-eth']),
       ('Financing and income', ['CARRY-MATH','BORROW-HISTORY','DOLLAR-FUNDING-ATLAS','CREDIT-EXPANSION','CARRY-LIFECYCLES','BORROWER-USE','carry-credit']),
       ('Returns and investor access', ['HISTORY','RETURN-DRIVERS','PRODUCT-TERMS','LENDING-MARKETS','ECONOMICS','fluid-lite','treehouse-teth','cian-rseth','ethena-basis','liquid-monad']),
       ('Evidence and reproduction', ['BRIEFING','README','scope','methodology','EVIDENCE','AUDIT','justlend-tron']),

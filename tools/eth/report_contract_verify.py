@@ -47,7 +47,7 @@ def run():
     exported = list(csv.DictReader((D / 'carry-common-30d.csv').open()))
     for r, row in zip(c['matched30dReturns'], exported):
         check('exported_common_return:' + r['id'], row['start'] == r['start'] and row['end'] == r['end'] and close(float(row['ETH_book_return_pct']), r['bookReturnPct']))
-    for stem in ['BRIEFING', 'MARKET-STRUCTURE', 'CARRY-CATEGORY', 'MARKET-COVERAGE', 'PRODUCT-SELECTION', 'CARRY-PRODUCTS']:
+    for stem in ['BRIEFING', 'MARKET-STRUCTURE', 'CARRY-CATEGORY', 'MARKET-COVERAGE', 'CARRY-PRODUCTS']:
         md = (ROOT / 'research/eth/en' / (stem + '.md')).read_text()
         page = (ROOT / 'eth/library' / (stem + '.html')).read_text()
         check('no_stale_primary_metrics:' + stem, not re.search(r'96\.81|53\.88|all seven measured|two examined carry parents', md + page))
