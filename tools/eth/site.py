@@ -67,6 +67,10 @@ ARTICLES = {
 }
 
 # removed from the library (parity audit 7 Oct): links to them go to the article that replaces them
+# Top-five deep dives (Kraken template), added when written
+TOP5_DIVES = {'01-liquid':'Deep dive: ether.fi Liquid ETH','02-yieldbasis':'Deep dive: YieldBasis WETH','03-lido-earn':'Deep dive: Lido Earn ETH','04-avant':'Deep dive: Avant savETH','05-liquity':'Deep dive: Liquity ETH Carry'}
+for _stem,_title in TOP5_DIVES.items():
+    if (ROOT/'research/eth/top5/en'/f'{_stem}.md').exists():ARTICLES[_stem]=('top5',_title)
 ALIASES = {'MECHANICS':'STRATEGY-UNIVERSE-EXPANSION','PRODUCT-SELECTION':'CARRY-CATEGORY','ECONOMIC-ANSWERS':'CARRY-CATEGORY','concrete-eth':'CONCRETE-DELTA','MARKET-RESEARCH':'MARKET-STRUCTURE','MARKET-TABLES':'MARKET-STRUCTURE',
            'RESEARCH-PLAN':'README','EXECUTION-CHECKLIST':'README','SITE-PARITY':'README','DEPENDENCIES':'AUDIT'}
 READER_DROP={'assets','balance','basisDisclosures','carryAssets','coverage','credit','economics','edges','etherfi','etherfiHistory','evidence',
@@ -180,7 +184,7 @@ def build():
     for target,source in [('PRODUCT-FINANCIAL-HISTORY','STRATEGY-UNIVERSE-DEEP'),('BORROWER-USE','FUNDING-BORROWER-DEEP')]:
         if (RESEARCH/'review'/f'{source}.md').exists():
             (ENGLISH/f'{target}.md').write_text((RESEARCH/'review'/f'{source}.md').read_text().replace('—',', ').replace('–','-'))
-    for folder in ['dossiers','library','data','figures']:(OUT/folder).mkdir(parents=True,exist_ok=True)
+    for folder in ['dossiers','library','data','figures','top5']:(OUT/folder).mkdir(parents=True,exist_ok=True)
     css='\n'.join((SRC/name).read_text() for name in ['base.css','eth.css','closure.css','expansion.css','top5.css'])
     (OUT/'site.css').write_text(css)
     histories=read('protocol_eth_history_monthly')
@@ -333,7 +337,7 @@ def build():
         write_csv(f'protocol-{slug}-history.csv',['month','ETH_family_reported_USD','source_timestamp','target_timestamp'],[[r['period'],r['eth_family_reported_usd'],r['source_timestamp'],r['target_timestamp']] for r in rows])
     for p in (RESEARCH/'figures').iterdir():shutil.copyfile(p,OUT/'figures'/p.name)
     for stem,(folder,title) in ARTICLES.items():
-        source=(ENGLISH/'dossiers'/f'{stem}.md') if folder=='dossiers' else ENGLISH/f'{stem}.md'
+        source=(ENGLISH/'dossiers'/f'{stem}.md') if folder=='dossiers' else (RESEARCH/'top5/en'/f'{stem}.md') if folder=='top5' else ENGLISH/f'{stem}.md'
         body=markdown(source)
         toc=''.join(f'<a href="#{m[2]}">{re.sub("<[^>]+>","",m[3])}</a>' for m in re.finditer(r'<h([34]) id="([^"]+)">(.*?)</h\1>',body))
         current=stem in ['BRIEFING','MARKET-STRUCTURE','CARRY-CATEGORY','MARKET-COVERAGE','PRODUCT-SELECTION','CARRY-PRODUCTS']
@@ -342,6 +346,7 @@ def build():
         page=(SRC/'article.html').read_text().replace('@@TITLE@@',html.escape(title)).replace('@@CONTENT@@',status+body).replace('@@TOC@@',toc)
         (OUT/folder/f'{stem}.html').write_text(page)
     library_groups = [
+      ('Top five, deep dives', [k for k in TOP5_DIVES if k in ARTICLES]),
       ('New findings, 7 October', ['CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','LIQUID-LOOP','REWARDS-SPLIT','TOP5-KEYS-HOLDERS-TERMS','CLOSED-CASES','RESTAKING-AND-LOOPS','OUTSIDE-AND-SMALL']),
       ('Market size and counting', ['MARKET-STRUCTURE','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),

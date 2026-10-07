@@ -301,7 +301,7 @@ function atComparison(){
   row('Dollar spread at 2 October',id=>esc(C[id].spread))+
   row('Without rewards (90 days, a year)',id=>({liquid:'2.94%<div class="sub">actual 3.32%</div>',yieldbasis:'\u22122.96%<div class="sub">staked +1.69% with YB</div>','lido-earn':'3.14%<div class="sub">no rewards</div>',avant:'4.55%<div class="sub">actual 4.74%</div>',liquity:'2.26%<div class="sub">actual 3.84%</div>'})[id]||'')+
   row('Rewards share of the lead over stETH',id=>({liquid:'35%',yieldbasis:'all of it (staked)','lido-earn':'0%',avant:'7%, points unpriced',liquity:'99%'})[id]||'')+
-  row('Paid in ETH, a year (Sep)',id=>R30[id]?(R30[id].bookReturnPct*365/30).toFixed(2)+'%<div class="sub">'+(R30[id].excessPercentagePoints>=0?'+':'')+(R30[id].excessPercentagePoints*365/30).toFixed(2)+' pp vs stETH</div>':'')+
+  row('Paid in ETH, a year (2 Sep to 2 Oct)',id=>R30[id]?(R30[id].bookReturnPct*365/30).toFixed(2)+'%<div class="sub">'+(R30[id].excessPercentagePoints>=0?'+':'')+(R30[id].excessPercentagePoints*365/30).toFixed(2)+' pp vs stETH</div>':'')+
   row('Lowest health factor of a dollar loan',id=>worst(id))+
   row('Debt repayable',id=>esc(C[id].exit))+
   row('Who can change it',id=>esc(C[id].key))+

@@ -35,7 +35,7 @@
 | [0x1676d237](https://etherscan.io/address/0x1676d23711186076fa74aa53511dda750a1f0d9a) | 3-of-6 Safe, top holder of Liquity ETH Carry | unknown, likely fund | no | $19.56M | 2,168 |
 | [0xaa34d20b](https://etherscan.io/address/0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5) | Stablecoin farmer EOA | individual | no | $18.37M (ETH-backed 5.60M) | 0 |
 | [0x17787674](https://etherscan.io/address/0x1778767436111ec0adb10f9ba4f51a329d0e7770) | Fasanara Capital-linked | fund / market maker | no | $17.88M | 0 |
-| [0x6cc60a0b](https://etherscan.io/address/0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd) | Stablecoin farmer EOA | individual | no | $13.74M | 0 |
+| [0x6cc60a0b](https://etherscan.io/address/0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd) | Avant strategy wallet (gas from Avant's minting custodian) | product | yes | $13.74M | 0 |
 | [0x577557e0](https://etherscan.io/address/0x577557e04ce02cf279b265c7a7b77540acba4a81) | Stablecoin looper EOA | individual | no | $10.12M (ETH-backed 3.73M) | 189 |
 | [0x90882e7c](https://etherscan.io/address/0x90882e7c28ddf0ac1177033a310aeed8eff25e90) | NEMO ETH Prime wallet | product | yes | $5.61M | 0 |
 | [0x20f6c325](https://etherscan.io/address/0x20f6c325df578a11209817a30ebb2f0d5454176d) | 1-of-1 Safe of a Binance user | individual | no | $5.52M | 0 |
