@@ -178,7 +178,7 @@ function atRiskPanel(id){
  const html=`<section class="panel atlas-risk" id="atlas-risk-${id}"><h3>Risk and exit</h3><p>${ATRISK_TEXT[id]||''}</p>
  <div class="reader-example-pair"><div><h4>${isYB?'Debt against collateral, month-end':'Health factor, month-end'}</h4><div class="chart-scroll">${hf}</div></div><div><h4>Loan rate against what the dollars earn</h4><div class="chart-scroll">${rate}</div></div></div>
  ${lad?`<h4>How much of the dollar debt can be repaid, and how fast (2 October)</h4><div class="chart-scroll">${lad}</div><details class="more"><summary>Repayment ladder: sources and ETH released</summary><div class="body tblwrap"><table><thead><tr><th>When</th><th class="n">USD</th><th class="n">Share</th><th class="n">ETH released</th><th>From where</th></tr></thead><tbody>${ladRows}</tbody></table><p class="note">What the manager can repay from the destinations, assuming no other depositor withdraws in the same block and stablecoins at $1.</p></div></details>`:''}
- ${rw?`<h4>Who pays the rewards</h4><div class="tblwrap"><table><thead><tr><th>Vault</th><th>Token</th><th class="n">Budget</th><th class="n">APR at T</th><th class="n">Liquid, $ a year</th><th>Campaign creator</th></tr></thead><tbody>${rw}</tbody></table></div><p class="note">Sentora creates the Merkl campaigns but does not fund them: the RLUSD and PYUSD trace back through unlabelled wallets to addresses that receive the tokens straight from mint, on the issuers’ side. No rewards on stcUSD, earnUSD, savUSD or the YieldBasis pool.</p>`:''}
+ ${rw?`<h4>Who pays the rewards</h4><div class="tblwrap"><table><thead><tr><th>Vault</th><th>Token</th><th class="n">Budget</th><th class="n">APR, 2 Oct</th><th class="n">Liquid, $ a year</th><th>Campaign creator</th></tr></thead><tbody>${rw}</tbody></table></div><p class="note">Sentora creates the Merkl campaigns but does not fund them: the RLUSD and PYUSD trace back through unlabelled wallets to addresses that receive the tokens straight from mint, on the issuers’ side. No rewards on stcUSD, earnUSD, savUSD or the YieldBasis pool.</p>`:''}
  </section>`;
  const anchor=[...host.querySelectorAll('h3,h4')].find(h=>/Capital and investor outcomes/i.test(h.textContent));
  if(anchor)(anchor.closest('section,.panel,div')||anchor).insertAdjacentHTML('beforebegin',html);else host.insertAdjacentHTML('beforeend',html);
@@ -336,6 +336,8 @@ ATLAND.splice(1,0,['Private rSHARE vaults (three managers)','Private; not counte
 
 // Reader pruning to the BTC page's scope (parity audit 7 Oct, research/eth/review/parity-audit-2026-10-07).
 function atPrune(){
+ // older layers still say "at T" and "Hover"; plain wording for the reader
+ const tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while((n=tw.nextNode())){const v=n.nodeValue;if(/\bat T\b|Hover /.test(v))n.nodeValue=v.replace(/\bat T\b/g,'on 2 October').replace(/Hover a month, or focus the chart and use the arrow keys/g,'Point at a month').replace(/Hover /g,'Point at ');}
  if(document.body.dataset.edition!=='reader')return;
  const drop=(sel)=>$$(sel).forEach(e=>e.remove());
  const dropDetails=re=>$$('details.more>summary').forEach(s=>{if(re.test(s.textContent))s.parentElement.remove();});

@@ -6,8 +6,8 @@ Financial snapshot: **2 October 2026, 23:59:59 UTC** (Ethereum block 26,108,081)
 
 ## What the page says
 
-- **18.35M ETH earns a yield** in 170 products, each counted once ($49.0B): 81% staking, 13% restaking. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.
-- **Carry is 1.7%**: 306k ETH in 14 products that borrow $261M of dollars against ETH (BTC: 9.9%). Liquid ETH and Lido Earn hold 85%.
+- **18.54M ETH earns a yield** in 144 products, each counted once ($49.5B): 81% staking, 13% restaking. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.
+- **Carry is 1.6%**: 306k ETH in 12 products that borrow $261M of dollars against ETH (BTC: 9.9%). Liquid ETH and Lido Earn hold 85%. Rewards are a minority of the lead over stETH except at YieldBasis and Liquity.
 - **Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years; its dollar leg loses about $6.8M a year at 2 October rates. YieldBasis is the only top-five product whose fees cover its loan.
 - **Concrete Delta (307k ETH) is not a product**: one Bitfinex-linked wallet's own position, left out of the map.
 
@@ -24,7 +24,7 @@ python3 tools/eth/rebuild.py
 python3 tools/eth/package_site.py
 ```
 
-The counted-once map is `tools/eth/netmap/` (fetch: `01_fetch.py`, `02b_pool_charts.py`, `02c_yields.py`; offline: `02_screen.py` to `06_crosscheck.py`); decisions with reasons are in `tools/eth/netmap/decisions.py`. The reader's text and charts for the new findings are in `tools/eth/site/atlas.js`. Output: `eth/`, mirrored to `site/eth/`.
+The counted-once map is `tools/eth/netmap/` (fetch: `01_fetch.py`, `02b_pool_charts.py`, `02c_yields.py`; offline: `02_screen.py` to `06_crosscheck.py`); decisions with reasons are in `tools/eth/netmap/decisions.py`. The reader's text and charts for the new findings are in `tools/eth/site/atlas.js`. Output: `eth/`.
 
 ## Local preview
 
