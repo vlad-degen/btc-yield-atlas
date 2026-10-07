@@ -55,10 +55,10 @@ def product(slug):
     hist = [obs(slug, l) for l in LABELS[:-1]]
     hv = [(h['period'], h['eth_ref']) for h in hist if h['eth_ref']]
     peak = max(hv, key=lambda x: x[1]) if hv else None
-    n = NOTES.get(slug, {})
+    n = NOTES.get(slug) or NOTES.get(slug.replace(':nodebt', ''), {})
     dl = SCREEN.get(slug, {})
     return {
-        'id': slug, 'name': n.get('product') or m['name'], 'category': m['category'], 'subtype': m.get('kind') or '',
+        'id': slug, 'name': m['name'] if slug.endswith(':nodebt') else (n.get('product') or m['name']), 'category': m['category'], 'subtype': m.get('kind') or '',
         'source_category': m['dl_category'], 'row_kind': 'onchain_book' if slug.startswith('carry:') else ('pool_set' if slug.startswith('pools:') else 'protocol_net'),
         'current': obs(slug, SNAP), 'history': hist,
         'how_earns': n.get('how') or '', 'yield': yield_text(slug), 'operator': n.get('run_by') or '',

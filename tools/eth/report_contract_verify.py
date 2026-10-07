@@ -43,7 +43,7 @@ def run():
     screen = read('carry_coverage_audit')['materialPools']
     check('discovery_count_does_not_claim_strategy_census', c['discovery']['exhaustiveStrategyCensus'] is False and c['discovery']['parentDispositions'] == sum(r['disposition'].startswith('Parent covered') for r in screen))
     for filename in ['carry-common-30d.csv', 'carry-status-and-capital.csv', 'report_contract.json']:
-        check('download_and_mirror:' + filename, (ROOT / 'eth/data' / filename).read_bytes() == (D / filename).read_bytes() == (ROOT / 'site/eth/data' / filename).read_bytes())
+        check('download_and_mirror:' + filename, (ROOT / 'eth/data' / filename).read_bytes() == (D / filename).read_bytes())
     exported = list(csv.DictReader((D / 'carry-common-30d.csv').open()))
     for r, row in zip(c['matched30dReturns'], exported):
         check('exported_common_return:' + r['id'], row['start'] == r['start'] and row['end'] == r['end'] and close(float(row['ETH_book_return_pct']), r['bookReturnPct']))

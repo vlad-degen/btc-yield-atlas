@@ -27,7 +27,7 @@ def run():
     builder=importlib.util.module_from_spec(builder_spec);builder_spec.loader.exec_module(builder)
     checks=[]
     def check(name,passed,details=None):checks.append({'check':name,'passed':bool(passed),'details':details})
-    pages={p:Page() for folder in ['eth','site/eth'] for p in (ROOT/folder).rglob('*.html')}
+    pages={p:Page() for folder in ['eth'] for p in (ROOT/folder).rglob('*.html')}
     for p,parsed in pages.items():parsed.feed(p.read_text())
     errors=[];duplicates=[];fragments=[]
     for p,parsed in pages.items():
@@ -45,7 +45,7 @@ def run():
     check('all_article_fragment_links_resolve',not fragments,fragments)
     check('generated_pages_have_unique_IDs',not duplicates,duplicates)
     check('all_pages_and_static_copy_are_English',all(p.lang=='en' and not re.search('[А-Яа-яЁё]',''.join(p.copy)) for p in pages.values()))
-    main=pages[ROOT/'eth/index.html'];embedded=json.loads(''.join(main.data))
+    main=pages[ROOT/'eth/exhibits.html'];embedded=json.loads(''.join(main.data))  # full payload lives in the exhibits edition; the reader carries a subset
     check('site_payload_equals_generated_data',embedded==json.loads((ROOT/'data/eth/site_payload.json').read_text()))
     check('full_catalog_preserves_scope_and_missing_values',len(embedded['pools'])==5688 and len(embedded['chains'])==57 and len(embedded['protocols'])==85 and embedded['summary']['unique_underlying_ETH'] is None and embedded['summary']['verified_external_depositor_equity_ETH'] is None)
     counts=collections.Counter(r['days'] for r in embedded['etherfiReturns'])
@@ -56,7 +56,7 @@ def run():
     presentation='\n'.join((ROOT/'tools/eth/site'/name).read_text() for name in ['presentation.js','market.js','strict.js','closure.js','expansion.js'])
     check('English_dynamic_copy_and_evidence',not re.search('[А-Яа-яЁё]',script+enhancement+presentation) and all(not re.search('[А-Яа-яЁё]',r['claim']+r['time_scope_and_limit']) for r in embedded['evidence']))
     check('reader_copy_has_no_long_dashes',all(not re.search('[—–]',''.join(p.copy)) for p in pages.values()) and not re.search('[—–]',script+enhancement+presentation))
-    check('colleague_edition_has_market_structure_and_product_panels',len(pages)==2*(len(builder.ARTICLES)+3) and all(x in (ROOT/'eth/index.html').read_text() for x in ['library/BRIEFING.html','id="exit-cost-table"','id="borrower-sample-summary"','id="liquid-permission-review"','id="market-method"']))
+    check('colleague_edition_has_market_structure_and_product_panels',len(pages)==len(builder.ARTICLES)+3 and all(x in (ROOT/'eth/index.html').read_text() for x in ['library/BRIEFING.html','id="exit-cost-table"','id="borrower-sample-summary"','id="liquid-permission-review"','id="market-method"']))
     check('reader_has_compact_market_and_separate_complete_exhibits',all(x not in (ROOT/'tools/eth/site/index.html').read_text() for x in ['id="strategy-atlas"','id="market-net-capital"','id="additional-product-history"','id="hgeth-loan-book"','id="coverage-findings"']) and all(x in (ROOT/'eth/exhibits.html').read_text() for x in ['id="strategy-atlas"','id="market-net-capital"','id="additional-product-history"','id="hgeth-loan-book"']))
     review=embedded['review']
     check('review_inputs_preserved_at_frozen_snapshot',review['financial_snapshot_timestamp']==1790985599 and review['financial_data_refreshed'] is False and all(hashlib.sha256((ROOT/r['path']).read_bytes()).hexdigest()==r['sha256'] for r in review['inputs']))
@@ -94,7 +94,7 @@ def run():
     check('all_five_product_renderers_exist',all('function '+name+'(' in script for name in ['renderEtherfi','renderFluid','renderTreehouse','renderConcrete','renderCian']))
     syntax=[subprocess.run(['node','--check',str(ROOT/'tools/eth/site'/name)],capture_output=True,text=True) for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js']]
     check('browser_script_syntax_valid',all(r.returncode==0 for r in syntax),[r.stderr.strip() for r in syntax if r.stderr])
-    check('artifact_copy_matches_main_site',(ROOT/'site/eth/index.html').read_bytes()==(ROOT/'eth/index.html').read_bytes())
+    check('no_stale_mirror',not (ROOT/'site/eth').exists())
     result={'all_checks_passed':all(r['passed'] for r in checks),'checks':checks,'pages':len(pages),'scope':'Generated website integrity and arithmetic consistency; browser interaction QA recorded separately. Not a complete financial audit.','site_sha256':hashlib.sha256((ROOT/'eth/index.html').read_bytes()).hexdigest()}
     (ROOT/'data/eth/site_audit_results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
     print(json.dumps({'passed':sum(r['passed'] for r in checks),'checks':len(checks),'failed':[r for r in checks if not r['passed']],'pages':len(pages)},ensure_ascii=False))

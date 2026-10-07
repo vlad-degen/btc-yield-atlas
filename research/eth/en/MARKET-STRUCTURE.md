@@ -7,12 +7,12 @@ Financial snapshot: **2 October 2026**. Month-ends October 2024 to September 202
 | Staking | 15,016,520 | 81.0% | 12,463,594 | on |
 | Restaking | 2,427,324 | 13.1% | 4,173,272 | on |
 | Leveraged staking | 97,144 | 0.5% | 268,007 | on |
-| Carry | 304,716 | 1.6% | 0 | on |
+| Carry | 305,908 | 1.6% | 0 | on |
 | Fixed yield | 9,315 | 0.1% | 307,484 | on |
 | Basis | 372 | 0.0% | 25,423 | on |
 | Options | 1,664 | 0.0% | 4,786 | on |
 | Credit | 24,279 | 0.1% | 2,496 | on |
-| Farming and pools | 661,258 | 3.6% | 1,918,811 | on |
+| Farming and pools | 660,066 | 3.6% | 1,918,811 | on |
 | Money markets | 786,904 | off | 809,351 | off |
 | CDP collateral | 657,327 | off | 1,277,081 | off |
 

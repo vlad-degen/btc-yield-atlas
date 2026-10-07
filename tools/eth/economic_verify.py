@@ -38,6 +38,6 @@ def run():
  check('unknown net market is not estimated',e['market']['globalNetYieldCapitalETH'] is None and e['market']['globalCarryEquityShare'] is None)
  example=next(r for r in e['market']['sameBlockDedupExamples']if r['id']=='lido_and_lender_claims');check('subset dedup arithmetic',close(example['naive_sum_ETH']-example['duplicate_adjustment_ETH'],example['count_once_ETH']))
  for name in ['economic_questions.json','economic-dollar-loans.csv','economic-carry-history.csv']:
-  check('source/site/mirror '+name,(D/name).read_bytes()==(ROOT/'eth/data'/name).read_bytes()==(ROOT/'site/eth/data'/name).read_bytes())
+  check('source/site/mirror '+name,(D/name).read_bytes()==(ROOT/'eth/data'/name).read_bytes())
  failures=[r for r in checks if not r['passed']];out={'checks':len(checks),'all_checks_passed':not failures,'failed':failures,'scope':'Direct dollar-financing conservation, archive call identities, funded-rate nulls, snapshot quote weights, ranking, ownership exclusions and export equality. Not global market completeness or realised whole-sleeve profit.'};(D/'economic_verification.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out));assert not failures
 if __name__=='__main__':run()

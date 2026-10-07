@@ -226,7 +226,7 @@ def build():
         d = debt.get(eid, {})
         moved = {}
         for l, v in list(result[slug].items()):
-            if v and (eid is None or (d.get(l) or 0) < 100000):  # under $100k of dollar debt: not a carry month
+            if v and (eid is None or (d.get(l) or 0) < 10000):  # under $10k of dollar debt: not a carry month
                 moved[l] = v
                 result[slug][l] = 0.0
         if moved:
@@ -236,7 +236,7 @@ def build():
         for slug, r in d.items():
             meta[slug] = {k: r.get(k) for k in ('slug', 'name', 'dl_category', 'category', 'kind', 'source')}
     for s2, (base, cat_then) in extra_meta.items():
-        meta[s2] = dict(meta[base]); meta[s2].update(slug=s2, category=cat_then, kind='vaults' if cat_then == 'farming' else None,
+        meta[s2] = dict(meta[base]); meta[s2].update(slug=s2, name=meta[base]['name'] + ' (months without dollar debt)', category=cat_then, kind='vaults' if cat_then == 'farming' else None,
                                                     source=meta[base]['source'] + '; months without dollar debt')
     return result, meta, ledger
 

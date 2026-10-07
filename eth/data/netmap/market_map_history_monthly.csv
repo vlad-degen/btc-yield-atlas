@@ -885,16 +885,15 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-01,carry:avant-aveth,Avant avETH / savETH,carry,,2819.4798,6963436.0,2469.7591
 2026-02,carry:avant-aveth,Avant avETH / savETH,carry,,3987.179,7803968.09,1957.2655
 2026-03,carry:avant-aveth,Avant avETH / savETH,carry,,5739.1127,12052501.58,2100.0636
-2026-04,carry:avant-aveth,Avant avETH / savETH,carry,,0.0,0.0,2258.4696
+2026-04,carry:avant-aveth,Avant avETH / savETH,carry,,6556.2864,14807173.66,2258.4696
 2026-05,carry:avant-aveth,Avant avETH / savETH,carry,,0.0,0.0,2009.5608
 2026-06,carry:avant-aveth,Avant avETH / savETH,carry,,9164.06,14367331.59,1567.7911
 2026-07,carry:avant-aveth,Avant avETH / savETH,carry,,10330.2346,19250137.34,1863.4753
 2026-08,carry:avant-aveth,Avant avETH / savETH,carry,,12572.6891,31062415.12,2470.6262
 2026-09,carry:avant-aveth,Avant avETH / savETH,carry,,12356.7551,33081809.75,2677.2247
 2026-10-02,carry:avant-aveth,Avant avETH / savETH,carry,,12582.7122,33588136.01,2669.3876
-2025-08,carry:avant-aveth:nodebt,Avant avETH / savETH,staking,,0.0031,13.64,4400.37
-2026-04,carry:avant-aveth:nodebt,Avant avETH / savETH,staking,,6556.2864,14807173.66,2258.4696
-2026-05,carry:avant-aveth:nodebt,Avant avETH / savETH,staking,,6530.3049,13123044.73,2009.5608
+2025-08,carry:avant-aveth:nodebt,Avant avETH / savETH (months without dollar debt),staking,,0.0031,13.64,4400.37
+2026-05,carry:avant-aveth:nodebt,Avant avETH / savETH (months without dollar debt),staking,,6530.3049,13123044.73,2009.5608
 2026-02,carry:lido-earn,Lido Earn ETH,carry,,0.0,0.0,1957.2655
 2026-03,carry:lido-earn,Lido Earn ETH,carry,,86458.9196,181569229.17,2100.0636
 2026-04,carry:lido-earn,Lido Earn ETH,carry,,110594.3343,249773943.07,2258.4696
@@ -929,36 +928,35 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:liquid-eth,ether.fi Liquid ETH,carry,,173879.6793,429591691.67,2470.6262
 2026-09,carry:liquid-eth,ether.fi Liquid ETH,carry,,176962.4306,473768188.63,2677.2247
 2026-10-02,carry:liquid-eth,ether.fi Liquid ETH,carry,,177171.0633,472938239.85,2669.3876
-2024-10,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,146203.0106,368095319.84,2517.7
-2024-11,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,150259.3532,559570339.08,3724.03
-2024-12,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,152716.5515,508443796.42,3329.33
-2025-01,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,153364.3186,505941218.76,3298.95
-2025-02,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,159201.6048,354335011.72,2225.7
-2025-03,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,161418.2916,294373695.87,1823.67
-2025-04,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,176931.2753,317234237.93,1792.98
-2025-05,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,194955.5018,490876508.42,2517.89
-2025-06,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,191748.4201,478646241.26,2496.22
-2025-07,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,200467.344,740662686.51,3694.68
-2025-10,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,177463.7839,684069075.6,3854.6968
-2025-11,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,147816.6634,441535195.22,2987.0461
-2025-12,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,147083.0581,437059199.74,2971.5129
-2026-01,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,154309.518,381107336.42,2469.7591
-2026-02,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,108292.1728,211956537.41,1957.2655
-2026-03,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,147239.0563,309211381.21,2100.0636
-2026-04,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,124604.8981,281416375.52,2258.4696
-2026-05,carry:liquid-eth:nodebt,ether.fi Liquid ETH,loops,,108176.2403,217386732.76,2009.5608
+2024-10,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,146203.0106,368095319.84,2517.7
+2024-11,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,150259.3532,559570339.08,3724.03
+2024-12,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,152716.5515,508443796.42,3329.33
+2025-01,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,153364.3186,505941218.76,3298.95
+2025-02,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,159201.6048,354335011.72,2225.7
+2025-03,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,161418.2916,294373695.87,1823.67
+2025-04,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,176931.2753,317234237.93,1792.98
+2025-05,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,194955.5018,490876508.42,2517.89
+2025-06,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,191748.4201,478646241.26,2496.22
+2025-07,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,200467.344,740662686.51,3694.68
+2025-10,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,177463.7839,684069075.6,3854.6968
+2025-11,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,147816.6634,441535195.22,2987.0461
+2025-12,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,147083.0581,437059199.74,2971.5129
+2026-01,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,154309.518,381107336.42,2469.7591
+2026-02,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,108292.1728,211956537.41,1957.2655
+2026-03,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,147239.0563,309211381.21,2100.0636
+2026-04,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,124604.8981,281416375.52,2258.4696
+2026-05,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,108176.2403,217386732.76,2009.5608
 2026-01,carry:liquity-carry,Liquity ETH Carry,carry,,0.0,0.0,2469.7591
 2026-02,carry:liquity-carry,Liquity ETH Carry,carry,,0.0,0.0,1957.2655
 2026-03,carry:liquity-carry,Liquity ETH Carry,carry,,0.0,0.0,2100.0636
-2026-04,carry:liquity-carry,Liquity ETH Carry,carry,,0.0,0.0,2258.4696
+2026-04,carry:liquity-carry,Liquity ETH Carry,carry,,31.8619,71959.1,2258.4696
 2026-05,carry:liquity-carry,Liquity ETH Carry,carry,,528.0794,1061207.57,2009.5608
 2026-06,carry:liquity-carry,Liquity ETH Carry,carry,,641.015,1004977.57,1567.7911
 2026-07,carry:liquity-carry,Liquity ETH Carry,carry,,1502.3368,2799567.57,1863.4753
 2026-08,carry:liquity-carry,Liquity ETH Carry,carry,,2813.7668,6951765.95,2470.6262
 2026-09,carry:liquity-carry,Liquity ETH Carry,carry,,6016.6691,16107975.04,2677.2247
 2026-10-02,carry:liquity-carry,Liquity ETH Carry,carry,,6014.0017,16053701.67,2669.3876
-2026-03,carry:liquity-carry:nodebt,Liquity ETH Carry,farming,vaults,32.024,67252.37,2100.0636
-2026-04,carry:liquity-carry:nodebt,Liquity ETH Carry,farming,vaults,31.8619,71959.1,2258.4696
+2026-03,carry:liquity-carry:nodebt,Liquity ETH Carry (months without dollar debt),farming,vaults,32.024,67252.37,2100.0636
 2025-10,carry:makina-deth,Makina DETH,carry,,0.0,0.0,3854.6968
 2025-11,carry:makina-deth,Makina DETH,carry,,0.0,0.0,2987.0461
 2025-12,carry:makina-deth,Makina DETH,carry,,0.0,0.0,2971.5129
@@ -972,16 +970,16 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:makina-deth,Makina DETH,carry,,2593.3252,6407137.15,2470.6262
 2026-09,carry:makina-deth,Makina DETH,carry,,2498.8037,6689859.07,2677.2247
 2026-10-02,carry:makina-deth,Makina DETH,carry,,2499.3591,6671758.16,2669.3876
-2025-10,carry:makina-deth:nodebt,Makina DETH,loops,,9566.8256,36877211.95,3854.6968
-2025-11,carry:makina-deth:nodebt,Makina DETH,loops,,11263.4516,33644449.63,2987.0461
-2025-12,carry:makina-deth:nodebt,Makina DETH,loops,,9812.3186,29157431.01,2971.5129
-2026-01,carry:makina-deth:nodebt,Makina DETH,loops,,7873.0132,19444446.05,2469.7591
-2026-02,carry:makina-deth:nodebt,Makina DETH,loops,,4026.3926,7880719.42,1957.2655
-2026-03,carry:makina-deth:nodebt,Makina DETH,loops,,3820.1192,8022493.18,2100.0636
-2026-04,carry:makina-deth:nodebt,Makina DETH,loops,,3542.7881,8001279.16,2258.4696
-2026-05,carry:makina-deth:nodebt,Makina DETH,loops,,2891.1633,5809968.47,2009.5608
-2026-06,carry:makina-deth:nodebt,Makina DETH,loops,,2665.1741,4178436.13,1567.7911
-2026-07,carry:makina-deth:nodebt,Makina DETH,loops,,2591.4613,4829124.31,1863.4753
+2025-10,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,9566.8256,36877211.95,3854.6968
+2025-11,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,11263.4516,33644449.63,2987.0461
+2025-12,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,9812.3186,29157431.01,2971.5129
+2026-01,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,7873.0132,19444446.05,2469.7591
+2026-02,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,4026.3926,7880719.42,1957.2655
+2026-03,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,3820.1192,8022493.18,2100.0636
+2026-04,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,3542.7881,8001279.16,2258.4696
+2026-05,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,2891.1633,5809968.47,2009.5608
+2026-06,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,2665.1741,4178436.13,1567.7911
+2026-07,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,2591.4613,4829124.31,1863.4753
 2026-10-02,carry:nemo-eth-prime,NEMO ETH Prime,carry,,3037.666,8108707.96,2669.3876
 2025-08,carry:reservoir-eth,Reservoir ETH Yield,carry,,0.0,0.0,4400.37
 2025-09,carry:reservoir-eth,Reservoir ETH Yield,carry,,2428.7992,10071865.99,4146.85
@@ -994,15 +992,11 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-04,carry:reservoir-eth,Reservoir ETH Yield,carry,,0.0,0.0,2258.4696
 2026-05,carry:reservoir-eth,Reservoir ETH Yield,carry,,175.3364,352349.17,2009.5608
 2026-06,carry:reservoir-eth,Reservoir ETH Yield,carry,,162.5469,254839.56,1567.7911
-2026-07,carry:reservoir-eth,Reservoir ETH Yield,carry,,0.0,0.0,1863.4753
-2026-08,carry:reservoir-eth,Reservoir ETH Yield,carry,,0.0,0.0,2470.6262
-2026-09,carry:reservoir-eth,Reservoir ETH Yield,carry,,0.0,0.0,2677.2247
-2026-10-02,carry:reservoir-eth,Reservoir ETH Yield,carry,,0.0,0.0,2669.3876
-2026-04,carry:reservoir-eth:nodebt,Reservoir ETH Yield,farming,vaults,1223.5509,2763352.52,2258.4696
-2026-07,carry:reservoir-eth:nodebt,Reservoir ETH Yield,farming,vaults,62.793,117013.25,1863.4753
-2026-08,carry:reservoir-eth:nodebt,Reservoir ETH Yield,farming,vaults,61.2468,151317.91,2470.6262
-2026-09,carry:reservoir-eth:nodebt,Reservoir ETH Yield,farming,vaults,60.1991,161166.64,2677.2247
-2026-10-02,carry:reservoir-eth:nodebt,Reservoir ETH Yield,farming,vaults,23.5948,62983.77,2669.3876
+2026-07,carry:reservoir-eth,Reservoir ETH Yield,carry,,62.793,117013.25,1863.4753
+2026-08,carry:reservoir-eth,Reservoir ETH Yield,carry,,61.2468,151317.91,2470.6262
+2026-09,carry:reservoir-eth,Reservoir ETH Yield,carry,,60.1991,161166.64,2677.2247
+2026-10-02,carry:reservoir-eth,Reservoir ETH Yield,carry,,23.5948,62983.77,2669.3876
+2026-04,carry:reservoir-eth:nodebt,Reservoir ETH Yield (months without dollar debt),farming,vaults,1223.5509,2763352.52,2258.4696
 2025-08,carry:rocksolid,Rocksolid rETH,carry,,0.0,0.0,4400.37
 2025-09,carry:rocksolid,Rocksolid rETH,carry,,0.0,0.0,4146.85
 2025-10,carry:rocksolid,Rocksolid rETH,carry,,0.0,0.0,3854.6968
@@ -1018,35 +1012,29 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:rocksolid,Rocksolid rETH,carry,,8829.8629,21815290.7,2470.6262
 2026-09,carry:rocksolid,Rocksolid rETH,carry,,8998.1427,24090049.8,2677.2247
 2026-10-02,carry:rocksolid,Rocksolid rETH,carry,,8999.2874,24022586.09,2669.3876
-2025-08,carry:rocksolid:nodebt,Rocksolid rETH,loops,,0.0,0.0,4400.37
-2025-09,carry:rocksolid:nodebt,Rocksolid rETH,loops,,1846.1063,7655526.01,4146.85
-2025-10,carry:rocksolid:nodebt,Rocksolid rETH,loops,,6116.3729,23576763.05,3854.6968
-2025-11,carry:rocksolid:nodebt,Rocksolid rETH,loops,,6624.239,19786907.53,2987.0461
-2025-12,carry:rocksolid:nodebt,Rocksolid rETH,loops,,7652.4156,22739251.27,2971.5129
-2026-01,carry:rocksolid:nodebt,Rocksolid rETH,loops,,9534.9321,23548985.37,2469.7591
-2026-02,carry:rocksolid:nodebt,Rocksolid rETH,loops,,9655.7347,18898836.67,1957.2655
+2025-08,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,0.0,0.0,4400.37
+2025-09,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,1846.1063,7655526.01,4146.85
+2025-10,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,6116.3729,23576763.05,3854.6968
+2025-11,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,6624.239,19786907.53,2987.0461
+2025-12,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,7652.4156,22739251.27,2971.5129
+2026-01,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,9534.9321,23548985.37,2469.7591
+2026-02,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,9655.7347,18898836.67,1957.2655
 2026-03,carry:royco-eth,Royco ETH,carry,,0.0,0.0,2100.0636
-2026-04,carry:royco-eth,Royco ETH,carry,,0.0,0.0,2258.4696
+2026-04,carry:royco-eth,Royco ETH,carry,,48.5278,109598.56,2258.4696
 2026-05,carry:royco-eth,Royco ETH,carry,,115.0234,231146.57,2009.5608
-2026-06,carry:royco-eth,Royco ETH,carry,,0.0,0.0,1567.7911
-2026-07,carry:royco-eth,Royco ETH,carry,,0.0,0.0,1863.4753
-2026-08,carry:royco-eth,Royco ETH,carry,,0.0,0.0,2470.6262
-2026-09,carry:royco-eth,Royco ETH,carry,,0.0,0.0,2677.2247
-2026-10-02,carry:royco-eth,Royco ETH,carry,,0.0,0.0,2669.3876
-2026-03,carry:royco-eth:nodebt,Royco ETH,farming,vaults,0.0139,29.23,2100.0636
-2026-04,carry:royco-eth:nodebt,Royco ETH,farming,vaults,48.5278,109598.56,2258.4696
-2026-06,carry:royco-eth:nodebt,Royco ETH,farming,vaults,115.2793,180733.92,1567.7911
-2026-07,carry:royco-eth:nodebt,Royco ETH,farming,vaults,115.5302,215287.62,1863.4753
-2026-08,carry:royco-eth:nodebt,Royco ETH,farming,vaults,115.8235,286156.5,2470.6262
-2026-09,carry:royco-eth:nodebt,Royco ETH,farming,vaults,116.0375,310658.48,2677.2247
-2026-10-02,carry:royco-eth:nodebt,Royco ETH,farming,vaults,116.0516,309786.72,2669.3876
+2026-06,carry:royco-eth,Royco ETH,carry,,115.2793,180733.92,1567.7911
+2026-07,carry:royco-eth,Royco ETH,carry,,115.5302,215287.62,1863.4753
+2026-08,carry:royco-eth,Royco ETH,carry,,115.8235,286156.5,2470.6262
+2026-09,carry:royco-eth,Royco ETH,carry,,116.0375,310658.48,2677.2247
+2026-10-02,carry:royco-eth,Royco ETH,carry,,116.0516,309786.72,2669.3876
+2026-03,carry:royco-eth:nodebt,Royco ETH (months without dollar debt),farming,vaults,0.0139,29.23,2100.0636
 2026-10-02,carry:sentora-eth,Sentora ETH,carry,,676.67,1806294.51,2669.3876
 2025-10,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,3854.6968
 2025-11,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,2987.0461
-2025-12,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,2971.5129
+2025-12,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,41.0145,121875.18,2971.5129
 2026-01,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,349.5577,863323.29,2469.7591
 2026-02,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,303.9049,594822.57,1957.2655
-2026-03,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,2100.0636
+2026-03,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,44.7236,93922.39,2100.0636
 2026-04,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,2258.4696
 2026-05,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,175.3472,352370.92,2009.5608
 2026-06,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,1567.7911
@@ -1054,16 +1042,14 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,2470.6262
 2026-09,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,2677.2247
 2026-10-02,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,2669.3876
-2025-10,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,0.0496,191.17,3854.6968
-2025-11,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,0.5903,1763.11,2987.0461
-2025-12,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,41.0145,121875.18,2971.5129
-2026-03,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,44.7236,93922.39,2100.0636
-2026-04,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,2.3447,5295.52,2258.4696
-2026-06,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,175.8104,275633.91,1567.7911
-2026-07,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,83.0997,154854.25,1863.4753
-2026-08,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,83.191,205533.74,2470.6262
-2026-09,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,82.2281,220143.18,2677.2247
-2026-10-02,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry,farming,vaults,82.2339,219514.03,2669.3876
+2025-10,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,0.0496,191.17,3854.6968
+2025-11,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,0.5903,1763.11,2987.0461
+2026-04,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,2.3447,5295.52,2258.4696
+2026-06,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,175.8104,275633.91,1567.7911
+2026-07,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,83.0997,154854.25,1863.4753
+2026-08,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,83.191,205533.74,2470.6262
+2026-09,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,82.2281,220143.18,2677.2247
+2026-10-02,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,82.2339,219514.03,2669.3876
 2024-10,carry:vesper-vaeth,Vesper vaETH,carry,,0.0,0.0,2517.7
 2024-11,carry:vesper-vaeth,Vesper vaETH,carry,,0.0,0.0,3724.03
 2024-12,carry:vesper-vaeth,Vesper vaETH,carry,,0.0,0.0,3329.33
@@ -1087,13 +1073,11 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-06,carry:vesper-vaeth,Vesper vaETH,carry,,1881.9656,2950528.95,1567.7911
 2026-07,carry:vesper-vaeth,Vesper vaETH,carry,,1862.6886,3471074.35,1863.4753
 2026-08,carry:vesper-vaeth,Vesper vaETH,carry,,1617.5359,3996326.55,2470.6262
-2026-09,carry:vesper-vaeth,Vesper vaETH,carry,,0.0,0.0,2677.2247
-2026-10-02,carry:vesper-vaeth,Vesper vaETH,carry,,0.0,0.0,2669.3876
-2024-10,carry:vesper-vaeth:nodebt,Vesper vaETH,farming,vaults,1105.9506,2784451.89,2517.7
-2024-11,carry:vesper-vaeth:nodebt,Vesper vaETH,farming,vaults,1156.7818,4307889.98,3724.03
-2024-12,carry:vesper-vaeth:nodebt,Vesper vaETH,farming,vaults,1165.1648,3879218.05,3329.33
-2026-09,carry:vesper-vaeth:nodebt,Vesper vaETH,farming,vaults,1052.2899,2817216.58,2677.2247
-2026-10-02,carry:vesper-vaeth:nodebt,Vesper vaETH,farming,vaults,1052.3953,2809250.91,2669.3876
+2026-09,carry:vesper-vaeth,Vesper vaETH,carry,,1052.2899,2817216.58,2677.2247
+2026-10-02,carry:vesper-vaeth,Vesper vaETH,carry,,1052.3953,2809250.91,2669.3876
+2024-10,carry:vesper-vaeth:nodebt,Vesper vaETH (months without dollar debt),farming,vaults,1105.9506,2784451.89,2517.7
+2024-11,carry:vesper-vaeth:nodebt,Vesper vaETH (months without dollar debt),farming,vaults,1156.7818,4307889.98,3724.03
+2024-12,carry:vesper-vaeth:nodebt,Vesper vaETH (months without dollar debt),farming,vaults,1165.1648,3879218.05,3329.33
 2026-05,carry:yieldbasis-weth,YieldBasis WETH,carry,,641.105,1288339.42,2009.5608
 2026-06,carry:yieldbasis-weth,YieldBasis WETH,carry,,5085.1283,7972418.72,1567.7911
 2026-07,carry:yieldbasis-weth,YieldBasis WETH,carry,,7632.4561,14222893.72,1863.4753
@@ -1105,11 +1089,11 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:zensats,ZenSats wstETH,carry,,0.0,0.0,2470.6262
 2026-09,carry:zensats,ZenSats wstETH,carry,,0.0,0.0,2677.2247
 2026-10-02,carry:zensats,ZenSats wstETH,carry,,0.0,0.0,2669.3876
-2026-06,carry:zensats:nodebt,ZenSats wstETH,farming,vaults,0.5433,851.78,1567.7911
-2026-07,carry:zensats:nodebt,ZenSats wstETH,farming,vaults,0.545,1015.56,1863.4753
-2026-08,carry:zensats:nodebt,ZenSats wstETH,farming,vaults,0.5471,1351.69,2470.6262
-2026-09,carry:zensats:nodebt,ZenSats wstETH,farming,vaults,0.5485,1468.51,2677.2247
-2026-10-02,carry:zensats:nodebt,ZenSats wstETH,farming,vaults,0.5486,1464.34,2669.3876
+2026-06,carry:zensats:nodebt,ZenSats wstETH (months without dollar debt),farming,vaults,0.5433,851.78,1567.7911
+2026-07,carry:zensats:nodebt,ZenSats wstETH (months without dollar debt),farming,vaults,0.545,1015.56,1863.4753
+2026-08,carry:zensats:nodebt,ZenSats wstETH (months without dollar debt),farming,vaults,0.5471,1351.69,2470.6262
+2026-09,carry:zensats:nodebt,ZenSats wstETH (months without dollar debt),farming,vaults,0.5485,1468.51,2677.2247
+2026-10-02,carry:zensats:nodebt,ZenSats wstETH (months without dollar debt),farming,vaults,0.5486,1464.34,2669.3876
 2024-10,chainflip-amm,Chainflip AMM,farming,pools,404.6408,1018764.04,2517.7
 2024-11,chainflip-amm,Chainflip AMM,farming,pools,464.5032,1729823.76,3724.03
 2024-12,chainflip-amm,Chainflip AMM,farming,pools,278.7341,927997.77,3329.33

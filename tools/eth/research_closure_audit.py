@@ -66,7 +66,7 @@ def run():
     check('eight original research sections preserved',all('id="'+x+'"' in html for x in ['top','map','how','top5','market','risks','do','data']))
     check('detailed closure exhibits retained_and_linked',all('id="'+x+'"' in (ROOT/'eth/exhibits.html').read_text() for x in ['market-net-capital','carry-earned-income','investor-exits','research-conclusions']) and 'href="exhibits.html"' in html)
     check('BTC reference unchanged',hashlib.sha256((ROOT/'index.html').read_bytes()).hexdigest()=='ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222')
-    for folder in ['eth','site/eth']:
+    for folder in ['eth']:
         check(folder+' latest full closure exports',all((ROOT/folder/'data'/f'{name}.json').read_bytes()==(D/f'{name}.json').read_bytes() for name in ['market_netting_closure','carry_attribution_closure','backing_exit_closure','basis_closure_disclosures']))
     report={'all_checks_passed':all(r['passed'] for r in checks),'site_sha256':hashlib.sha256(html.encode()).hexdigest(),'checks':checks,'check_count':len(checks),'scope':'Verifies captured calculations, provenance and integrated presentation. Does not establish global unique earning capital, complete carry profit, independent solvency or a future executed withdrawal.'}
     (D/'research_closure_audit.json').write_text(json.dumps(report,indent=2)+'\n')

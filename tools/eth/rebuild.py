@@ -7,7 +7,8 @@ def run():
  modules += ['funding_atlas_build','strategy_universe_expansion_build','carry_variants_expansion_build','credit_expansion_build','credit_expansion_deep_build','strategy_universe_deep_build','funding_borrower_deep_build','manager_case_build','research_expansion_build']
  # counted-once market map: offline steps over the saved DefiLlama pulls (fetch: netmap/01_fetch.py, 02b, 02c)
  for step in ['02_screen','03_build','04_chapter','05_verify','06_crosscheck']:
-  subprocess.run([sys.executable,str(ROOT/'tools/eth/netmap'/f'{step}.py')],cwd=ROOT/'tools/eth/netmap',check=True,capture_output=True)
+  r=subprocess.run([sys.executable,str(ROOT/'tools/eth/netmap'/f'{step}.py')],cwd=ROOT/'tools/eth/netmap',capture_output=True,text=True)
+  if r.returncode:print(step,'failed:',r.stdout[-2500:],r.stderr[-2500:]);raise SystemExit(r.returncode)
  modules=['atlas_build']+modules
  for name in modules:
   r=subprocess.run([sys.executable,str(ROOT/'tools/eth'/f'{name}.py')],cwd=ROOT,capture_output=True,text=True)

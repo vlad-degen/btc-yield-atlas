@@ -1,6 +1,6 @@
 {
   "all_checks_passed": true,
-  "site_sha256": "587df051ce251fb1e80e22109a274349d18cf7f0f841a2fa3dd0f1a99c505532",
+  "site_sha256": "09a6f145eaa226389d0e9f12271bdf9723c7410e2c16e19205a92b64b4e00eeb",
   "checks": [
     {
       "check": "frozen market timestamp and block",
@@ -5926,13 +5926,8 @@
       "check": "eth latest full closure exports",
       "passed": true,
       "detail": null
-    },
-    {
-      "check": "site/eth latest full closure exports",
-      "passed": true,
-      "detail": null
     }
   ],
-  "check_count": 1186,
+  "check_count": 1185,
   "scope": "Verifies captured calculations, provenance and integrated presentation. Does not establish global unique earning capital, complete carry profit, independent solvency or a future executed withdrawal."
 }

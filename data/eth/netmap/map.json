@@ -2163,7 +2163,7 @@
   },
   "carry:liquid-eth:nodebt": {
    "slug": "carry:liquid-eth:nodebt",
-   "name": "ether.fi Liquid ETH",
+   "name": "ether.fi Liquid ETH (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "loops",
    "kind": null,
@@ -2171,7 +2171,7 @@
   },
   "carry:makina-deth:nodebt": {
    "slug": "carry:makina-deth:nodebt",
-   "name": "Makina DETH",
+   "name": "Makina DETH (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "loops",
    "kind": null,
@@ -2179,7 +2179,7 @@
   },
   "carry:rocksolid:nodebt": {
    "slug": "carry:rocksolid:nodebt",
-   "name": "Rocksolid rETH",
+   "name": "Rocksolid rETH (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "loops",
    "kind": null,
@@ -2187,7 +2187,7 @@
   },
   "carry:avant-aveth:nodebt": {
    "slug": "carry:avant-aveth:nodebt",
-   "name": "Avant avETH / savETH",
+   "name": "Avant avETH / savETH (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "staking",
    "kind": null,
@@ -2195,7 +2195,7 @@
   },
   "carry:liquity-carry:nodebt": {
    "slug": "carry:liquity-carry:nodebt",
-   "name": "Liquity ETH Carry",
+   "name": "Liquity ETH Carry (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "farming",
    "kind": "vaults",
@@ -2203,7 +2203,7 @@
   },
   "carry:royco-eth:nodebt": {
    "slug": "carry:royco-eth:nodebt",
-   "name": "Royco ETH",
+   "name": "Royco ETH (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "farming",
    "kind": "vaults",
@@ -2211,7 +2211,7 @@
   },
   "carry:vesper-vaeth:nodebt": {
    "slug": "carry:vesper-vaeth:nodebt",
-   "name": "Vesper vaETH",
+   "name": "Vesper vaETH (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "farming",
    "kind": "vaults",
@@ -2219,7 +2219,7 @@
   },
   "carry:reservoir-eth:nodebt": {
    "slug": "carry:reservoir-eth:nodebt",
-   "name": "Reservoir ETH Yield",
+   "name": "Reservoir ETH Yield (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "farming",
    "kind": "vaults",
@@ -2227,7 +2227,7 @@
   },
   "carry:tau-infinifi:nodebt": {
    "slug": "carry:tau-infinifi:nodebt",
-   "name": "TAU InfiniFi ETH Carry",
+   "name": "TAU InfiniFi ETH Carry (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "farming",
    "kind": "vaults",
@@ -2235,7 +2235,7 @@
   },
   "carry:zensats:nodebt": {
    "slug": "carry:zensats:nodebt",
-   "name": "ZenSats wstETH",
+   "name": "ZenSats wstETH (months without dollar debt)",
    "dl_category": "on-chain",
    "category": "farming",
    "kind": "vaults",
@@ -7023,8 +7023,8 @@
    "2026-06": 1881.9656437383603,
    "2026-07": 1862.688647488232,
    "2026-08": 1617.5358901941113,
-   "2026-09": 0.0,
-   "2026-10-02": 0.0
+   "2026-09": 1052.2899295891168,
+   "2026-10-02": 1052.395279700216
   },
   "origami-finance": {
    "2024-11": 5.230781683948423,
@@ -7745,7 +7745,7 @@
    "2026-01": 2819.4798398944217,
    "2026-02": 3987.179027021058,
    "2026-03": 5739.112679696192,
-   "2026-04": 0.0,
+   "2026-04": 6556.286431484754,
    "2026-05": 0.0,
    "2026-06": 9164.060038590638,
    "2026-07": 10330.234570455612,
@@ -7782,10 +7782,10 @@
    "2026-04": 0.0,
    "2026-05": 175.33640639630448,
    "2026-06": 162.54688403261827,
-   "2026-07": 0.0,
-   "2026-08": 0.0,
-   "2026-09": 0.0,
-   "2026-10-02": 0.0
+   "2026-07": 62.79302098013036,
+   "2026-08": 61.24678357898481,
+   "2026-09": 60.19914426828072,
+   "2026-10-02": 23.594839906973554
   },
   "spark-savings": {
    "2025-09": 0,
@@ -7928,10 +7928,10 @@
   "carry:tau-infinifi": {
    "2025-10": 0.0,
    "2025-11": 0.0,
-   "2025-12": 0.0,
+   "2025-12": 41.01452289614396,
    "2026-01": 349.5576928811053,
    "2026-02": 303.9048922016408,
-   "2026-03": 0.0,
+   "2026-03": 44.72359537807414,
    "2026-04": 0.0,
    "2026-05": 175.3472273865736,
    "2026-06": 0.0,
@@ -8033,7 +8033,7 @@
    "2026-01": 0.0,
    "2026-02": 0.0,
    "2026-03": 0.0,
-   "2026-04": 0.0,
+   "2026-04": 31.861886865886586,
    "2026-05": 528.0793539044464,
    "2026-06": 641.0149841507035,
    "2026-07": 1502.336799050316,
@@ -8086,13 +8086,13 @@
   },
   "carry:royco-eth": {
    "2026-03": 0.0,
-   "2026-04": 0.0,
+   "2026-04": 48.52779967335157,
    "2026-05": 115.0234259962324,
-   "2026-06": 0.0,
-   "2026-07": 0.0,
-   "2026-08": 0.0,
-   "2026-09": 0.0,
-   "2026-10-02": 0.0
+   "2026-06": 115.2793409163394,
+   "2026-07": 115.53016800123676,
+   "2026-08": 115.82347013740825,
+   "2026-09": 116.03750762330087,
+   "2026-10-02": 116.05160827212383
   },
   "alchemix-v3": {
    "2026-04": 11911.988106032271,
@@ -8213,41 +8213,25 @@
   },
   "carry:avant-aveth:nodebt": {
    "2025-08": 0.0031,
-   "2026-04": 6556.286431484754,
    "2026-05": 6530.304872183906
   },
   "carry:liquity-carry:nodebt": {
-   "2026-03": 32.02396695866628,
-   "2026-04": 31.861886865886586
+   "2026-03": 32.02396695866628
   },
   "carry:royco-eth:nodebt": {
-   "2026-03": 0.0139209397579908,
-   "2026-04": 48.52779967335157,
-   "2026-06": 115.2793409163394,
-   "2026-07": 115.53016800123676,
-   "2026-08": 115.82347013740825,
-   "2026-09": 116.03750762330087,
-   "2026-10-02": 116.05160827212383
+   "2026-03": 0.0139209397579908
   },
   "carry:vesper-vaeth:nodebt": {
    "2024-10": 1105.9506255625572,
    "2024-11": 1156.7817609405686,
-   "2024-12": 1165.1647793797868,
-   "2026-09": 1052.2899295891168,
-   "2026-10-02": 1052.395279700216
+   "2024-12": 1165.1647793797868
   },
   "carry:reservoir-eth:nodebt": {
-   "2026-04": 1223.5508993248168,
-   "2026-07": 62.79302098013036,
-   "2026-08": 61.24678357898481,
-   "2026-09": 60.19914426828072,
-   "2026-10-02": 23.594839906973554
+   "2026-04": 1223.5508993248168
   },
   "carry:tau-infinifi:nodebt": {
    "2025-10": 0.04959344614418042,
    "2025-11": 0.5902506888273252,
-   "2025-12": 41.01452289614396,
-   "2026-03": 44.72359537807414,
    "2026-04": 2.3447368854861566,
    "2026-06": 175.8103597032104,
    "2026-07": 83.09970280513241,

@@ -66,6 +66,9 @@ ARTICLES = {
 # removed from the library (parity audit 7 Oct): links to them go to the article that replaces them
 ALIASES = {'ECONOMIC-ANSWERS':'CARRY-CATEGORY','concrete-eth':'CONCRETE-DELTA','MARKET-RESEARCH':'MARKET-STRUCTURE','MARKET-TABLES':'MARKET-STRUCTURE',
            'RESEARCH-PLAN':'README','EXECUTION-CHECKLIST':'README','SITE-PARITY':'README','DEPENDENCIES':'AUDIT'}
+READER_DROP={'assets','balance','basisDisclosures','carryAssets','coverage','credit','economics','edges','etherfi','etherfiHistory','evidence',
+ 'marketPanel','pendle','stress','summary','fundingAtlas','marketNetting','creditExpansion','borrowerDeep','creditDeep','managerCase'}
+
 def link(url, source):
     if url.startswith(('https://','http://','#','mailto:')):
         return url
@@ -87,9 +90,11 @@ def link(url, source):
         return 'https://github.com/vlad-degen/btc-yield-atlas/tree/codex/eth-research/'+str(target.relative_to(ROOT))
     if target.exists():
         # Keep linked evidence portable in both site copies and the ZIP.
-        name=target.name if target.parent==DATA else 'reference-'+target.name
-        shutil.copyfile(target,OUT/'data'/name)
-        return '../data/' + name + frag
+        if target.parent!=DATA:
+            # research files, scripts and raw captures stay in the repository: link them on GitHub, do not publish copies
+            return 'https://github.com/vlad-degen/btc-yield-atlas/blob/codex/eth-research/'+str(target.relative_to(ROOT))+frag
+        shutil.copyfile(target,OUT/'data'/target.name)
+        return '../data/' + target.name + frag
     return url
 
 def inline(text, source):
@@ -355,28 +360,28 @@ def build():
     (OUT/'library/index.html').write_text(library)
     template=(SRC/'index.html').read_text()
     script='\n'.join((SRC/name).read_text() for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js','economic.js','atlas.js','top5.js'])+'\ninitChartInspection();if(document.body.dataset.edition==="reader"){initReader();economicReader();atlasFinal();}else{init();initPresentation();renderResearchAdditions();initMarket();initStrictResearch();initResearchClosure();initResearchExpansion();openHash(true);}'
-    page=template.replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)
+    # The reader edition gets only what it reads (runtime trace, parity audit 7 Oct); exhibits keeps the full payload.
+    reader_payload={k:v for k,v in payload.items() if k not in READER_DROP}
+    reader_payload['pools']=[None]*len(payload.get('pools',[]))
+    if isinstance(payload.get('carryAttribution'),dict):reader_payload['carryAttribution']={'top5_coverage':payload['carryAttribution'].get('top5_coverage')}
+    packed_reader=json.dumps(reader_payload,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
+    page=template.replace('@@CSS@@',css).replace('@@DATA@@',packed_reader).replace('@@JS@@',script)
     (OUT/'index.html').write_text(page)
     exhibits=(SRC/'exhibits.html').read_text().replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)
     (OUT/'exhibits.html').write_text(exhibits)
-    # Standalone artifact version, matching the original BTC delivery format.
-    artifact=ROOT/'site/eth';artifact.mkdir(parents=True,exist_ok=True)
-    (artifact/'index.html').write_text(page)
-    (artifact/'exhibits.html').write_text(exhibits)
-    def copy_artifact(source, destination):
-        # macOS fcopyfile can stop midway on a large evidence file. A normal
-        # buffered copy preserves the same bytes without that fast-copy path.
-        try:
-            return shutil.copy2(source,destination)
-        except OSError as error:
-            if error.errno!=5:raise
-            with open(source,'rb') as src,open(destination,'wb') as dest:
-                shutil.copyfileobj(src,dest,1024*1024)
-            shutil.copystat(source,destination)
-            return destination
-    for folder in ['dossiers','library','data','figures']:
-        shutil.copytree(OUT/folder,artifact/folder,dirs_exist_ok=True,copy_function=copy_artifact)
-    shutil.copyfile(OUT/'site.css',artifact/'site.css')
+    # The site/eth mirror is no longer written: GitHub Pages serves eth/ directly (parity audit 7 Oct).
+    # Publish only data files that a page links to (in HTML or in the page script); the rest stays in data/eth.
+    import re as _re
+    texts=[(OUT/'index.html').read_text(),(OUT/'exhibits.html').read_text()]+[p.read_text() for d in ['library','dossiers'] for p in (OUT/d).glob('*.html')]
+    wanted=set()
+    for t in texts:
+        for m in _re.finditer(r'data/([A-Za-z0-9_.\-/]+\.(?:json|csv|jsonl|md|txt|py))',t):wanted.add(m.group(1))
+    prefixes={m.group(1) for t in texts for m in _re.finditer(r"data/([A-Za-z0-9_\-]+)(?:['\"]\s*\+|\$\{)",t)}  # names built in the script, e.g. 'data/wealth-series-'+mask
+    removed=0
+    for f in (OUT/'data').rglob('*'):
+        rel=str(f.relative_to(OUT/'data'))
+        if f.is_file() and f.suffix=='.json' and rel not in wanted and rel not in ('report_contract.json','market_netting_closure.json','carry_attribution_closure.json','backing_exit_closure.json','basis_closure_disclosures.json') and not any(rel.startswith(x) for x in prefixes):f.unlink();removed+=1  # CSV exports stay
+    print('Published data files:',sum(1 for f in (OUT/'data').rglob('*') if f.is_file()),'kept;',removed,'unlinked removed')
     print(f'ETH site built: {len(page):,} characters; {len(ARTICLES)} articles; {len(pools)} pool rows; {len(observations)} protocols')
 
 if __name__=='__main__':build()

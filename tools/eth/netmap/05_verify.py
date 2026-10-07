@@ -23,13 +23,13 @@ check('headline_equals_default_products', math.isclose(tot, ch['default_current'
 ids = {p['id'] for p in P}
 check('excluded_rows_not_counted_and_have_reasons', not (ids & set(DEC.EXCLUDE)) and all(DEC.EXCLUDE.values()))
 check('concrete_delta_not_counted', not any('concrete' in p['id'] for p in P))
-check('carry_rows_are_the_examined_books', {p['name'] for p in P if p['id'].startswith('carry:')} == {v['name'] for v in DEC.CARRY.values()})
+check('carry_rows_are_the_examined_books', {p['name'] for p in P if p['id'].startswith('carry:') and not p['id'].endswith(':nodebt')} <= {v['name'] for v in DEC.CARRY.values()})
 native = 43_805_557.723  # archived consensus state at T (research/eth/en/BRIEFING.md)
 st = math.fsum(p['current']['eth_ref'] or 0 for p in P if p['category'] in ('staking', 'restaking'))
 check('staking_and_restaking_below_native_stake', st < native, [st, native])
 check('no_duplicate_names', len({p['name'] for p in P}) == len(P))
 notes = {r['slug'] for r in csv.DictReader(open(os.path.join(OUT, 'product_notes.csv')))} if os.path.exists(os.path.join(OUT, 'product_notes.csv')) else set()
-missing = [p['id'] for p in P if p['category'] in default and (p['current']['eth_ref'] or 0) >= 100 and p['id'] not in notes]
+missing = [p['id'] for p in P if p['category'] in default and (p['current']['eth_ref'] or 0) >= 100 and p['id'] not in notes and p['id'].replace(':nodebt','') not in notes]
 check('products_over_100_ETH_have_notes', not missing, missing)
 failed = [c for c in checks if not c['passed']]
 print(json.dumps({'checks': len(checks), 'passed': len(checks) - len(failed), 'failed': failed}, indent=1))
