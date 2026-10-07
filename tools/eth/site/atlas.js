@@ -126,6 +126,7 @@ function atMeaning(){
  ol.innerHTML=[
   '<b>ETH carry has to beat staking; BTC carry only has to beat zero.</b> ETH collateral already earns about 2.7% staked, so the dollar leg must add on top. Liquid ETH beat stETH by 0.66 pp a year over two years; YieldBasis and Vesper trailed it in September.',
   '<b>The same dollar vaults fund BTC and ETH carry.</b> Liquid ETH parks $55M in Sentora’s RLUSD vault, where 53% of the money is lent to Kraken’s kBTC loop, and $50M in the PYUSD vault that is 95% PRIME home-equity credit. A loss there hits both markets at once.',
+  '<b>Private mandates borrow as much as all ETH carry products together.</b> Concrete Delta (one Bitfinex-linked wallet, $176M of stablecoin debt) and three whitelist-only rSHARE vaults run by one operator ($87M) owe $263M against ETH; the 14 pooled products owe $261M. The demand for large ETH-backed dollar loans comes from single principals, not from depositors.',
   '<b>The loan currency decides the spread.</b> On 2 October Aave charged 13.93% for USDC and 4.38% for USDT; Morpho USDT cost 3.2%. Liquid’s 7.79% average comes from its $65M Aave USDC leg. Pick the cheapest hub currency, not the venue.'
  ].map(t=>'<li>'+t+'</li>').join('');
 }
@@ -142,7 +143,7 @@ function atOutside(){
 const _atPrevAnswer=readerAnswer;readerAnswer=function(){_atPrevAnswer();atOutside();};
 
 // runs after every earlier layer has initialised
-function atlasFinal(){readerAnswer();atTop5Text();readerLandscape();const h=$('#market .shead');if(h)h.innerHTML='<div class="k">03 \u00b7 Other carry</div><h2>Every other product that borrows against ETH</h2><p class="lede">Live, small, closing and one that is not a product at all, with what each paid.</p>';}
+function atlasFinal(){readerAnswer();atTop5Text();readerLandscape();const h=$('#market .shead');if(h)h.innerHTML='<div class="k">03 \u00b7 Other carry</div><h2>Every other product that borrows against ETH</h2><p class="lede">Live, small, reopened, and two private mandates that borrow as much as all the products together.</p>';}
 function atTop5Text(){
  const set=(sel,html)=>{const e=$(sel);if(e)e.innerHTML=html;};
  set('#top5 .shead h2','The five largest carry products');
@@ -247,7 +248,7 @@ function stRisks(){const rows=[
  ['Restaking tokens','The April 2026 rsETH exploit froze Lido Earn for 27 days and cost its DAO 144.8 ETH; Aave was left with bad debt.','Treat a restaking token as credit, not as ETH, when sizing collateral.'],
  ['Own and nested credit','Avant parks 98% in its own savUSD; Lido Earn is 48.5% of earnUSD; Liquid borrows from the Sentora vaults it deposits into.','Disclose self-credit and look through to the final borrower.'],
  ['Keys and fees','Liquid’s 24-hour timelock does not cover the role that can change its fee; Liquity’s and Rocksolid’s managers act with no delay.','Put every fee and strategy change behind a delay longer than the exit.'],
- ['Who is the investor','Concrete Delta’s 307k ETH is one wallet’s own position, shown by DefiLlama as an 820M product.','Check holders before calling a vault a product.']
+ ['Who is the investor','Concrete Delta’s 307k ETH is one wallet’s own position, shown by DefiLlama as an $820M product; three private rSHARE vaults hold 83k WETH for what looks like one principal.','Check holders before calling a vault a product.']
  ];$('#strict-risk-table').innerHTML=stTable(['Risk','What we saw','Rule for a product'],rows.map(r=>r.map(esc)),'strict-risks');}
 
 // Data: method of the counted-once map (replaces the protocol-ledger method text of strict.js stData).
@@ -323,3 +324,7 @@ function atCoverage(){
  el.innerHTML='<div class="tblwrap">'+stTable(['Category','ETH','Products','How it is measured','History'],rows.map(r=>r.map(x=>esc(String(x)))))+'</div>';
 }
 const _atPrevAnswer4=readerAnswer;readerAnswer=function(){_atPrevAnswer4();atCoverage();};
+
+// Borrower table: names from the 7 Oct identification (data/eth/gap_borrowers.csv via atlas_build.py).
+(function(){const ID=R.atlasTop5Risk?.borrowers;const B=R.borrowersChapter;if(!ID||!B)return;const walk=v=>{if(Array.isArray(v))v.forEach(walk);else if(v&&typeof v==='object'){const k=String(v.address||'').toLowerCase();if(k&&ID[k]&&'who' in v){v.who=ID[k].who;v.evidence=(ID[k].pooled_product==='yes'?'Pooled product. ':ID[k].pooled_product==='no'?'Not a pooled product. ':'Private vault. ')+(ID[k].destination_of_dollars?'Dollars went to: '+ID[k].destination_of_dollars+'. ':'')+'Full trace in Borrower identities.';}Object.values(v).forEach(walk);}};walk(B);})();
+ATLAND.splice(1,0,['Private rSHARE vaults (three managers)','Private; not counted','Three whitelist-only WETH receipt vaults (about 83k WETH) whose managers borrow $87.1M of dollars, 10.6M EURCV and 75k WETH against it, into RockawayX, Sentora, Hastra, Wintermute and Pendle vaults','Same operator (managers created the same day, gas from the same exchange); depositors look like one principal; shares cannot move and the owner sets NAV off-chain, never posted. Like Concrete, a mandate, not a product.','']);

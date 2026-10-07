@@ -1663,5 +1663,237 @@
    ],
    "dollarDebtUSD": 27814855.843944114
   }
+ },
+ "borrowers": {
+  "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178": {
+   "who": "Concrete Delta weETH Safe; capital from one Bitfinex-linked principal",
+   "kind": "product vault/strategy wallet",
+   "pooled_product": "no",
+   "product_if_any": "Concrete Delta weETH (single principal, 100% of shares)",
+   "dollar_debt_usd_T": "176147855",
+   "weth_debt_T": "0",
+   "destination_of_dollars": "Morpho USDT 70.40M + Aave USDC 40.28M + USDT 65.47M. Stables went to Aave USDT supply, Theo thBILL/thUSD, Concrete ctDefiUSDT (24.9M shares minted), Savings 0xUSD (9.8M), CoW swaps",
+   "evidence": "Safe 3-of-5 deployed by 0x266bf5ed, which Etherscan shows funded by Concrete: Deployer; principal analysis in CONCRETE-DELTA.md"
+  },
+  "0xf0bb20865277abd641a307ece5ee04e79073416c": {
+   "who": "ether.fi Liquid ETH BoringVault",
+   "kind": "product vault/strategy wallet",
+   "pooled_product": "yes",
+   "product_if_any": "ether.fi Liquid ETH (Veda)",
+   "dollar_debt_usd_T": "87607218",
+   "weth_debt_T": "441176.2",
+   "destination_of_dollars": "Morpho RLUSD 35.92M, USDC 30.67M, PYUSD 21.02M (PYUSD leg is against PRIME, not ETH). Holds Sentora RLUSD Main and Sentora PRIME Main shares (Morpho API). Also 441,176 WETH debt on Aave/Spark (ETH loop)",
+   "evidence": "Etherscan name tag ether.fi: liquidETH Token; already in the census"
+  },
+  "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3": {
+   "who": "ether.fi Liquid ETH loan manager",
+   "kind": "product vault/strategy wallet",
+   "pooled_product": "yes",
+   "product_if_any": "ether.fi Liquid ETH (Veda)",
+   "dollar_debt_usd_T": "34287796",
+   "weth_debt_T": "0",
+   "destination_of_dollars": "Morpho RLUSD 34.29M; Liquid ETH strategy",
+   "evidence": "Contract LoanManagerOwnable2StepWithShortcut (Blockscout); already in the census"
+  },
+  "0xa122687285dc5012141055a801045f069112e7c6": {
+   "who": "Manager wallet of private WETH receipt vault 0x66723dc7 (rSHARE); unnamed principal, same operator pattern as 0x4f87 and 0xa56d",
+   "kind": "fund (private managed vault)",
+   "pooled_product": "borderline: permissioned vault, depositors look like one principal",
+   "product_if_any": "ManagedReceiptVault 0x66723dc7 (39,966.65 rSHARE at T)",
+   "dollar_debt_usd_T": "31724623",
+   "weth_debt_T": "5549.4",
+   "destination_of_dollars": "Dollar 31.72M (Morpho PYUSD 11.55M, USDC 6.39M, RLUSD 5.59M; Spark USDS 8.20M) + EURCV 5.92M + 5,549 WETH on Aave. Shares minted to it in the window: RockawayX USDC Yield 17.0M, Hastra wYLDS 15.1M and PRIME 14.5M, Sentora RLUSD Main 8.9M, Sentora PRIME Main 7.8M, Ember Y10K 7.3M, RockawayX Tori 5.0M, Wintermute USDC Select 4.1M, Pendle Ecosystem USDC 4.0M, Bitwise PAPY 3.5M, Huma 3.3M; 10M USDC to Coinshift USPC silo",
+   "evidence": "Constructor of 0x66723dc7 names it manager; first gas from FixedFloat Hot Wallet 2 (0.00496549 ETH) on 2026-03-26, same as 0x4f87; WETH arrived from vault depositor 0xba4cf6e9 (funded by Binance-funded 0x8cef85ae)"
+  },
+  "0x4f87de7d21aef48090958f7342e1f69dff790545": {
+   "who": "Manager wallet of private WETH receipt vault 0xc802afc4 (rSHARE); Ethena-whitelisted minter; same operator as 0xa122/0xa56d",
+   "kind": "fund (private managed vault)",
+   "pooled_product": "borderline: permissioned vault, depositors look like one principal",
+   "product_if_any": "ManagedReceiptVault 0xc802afc4 (25,361.63 rSHARE at T)",
+   "dollar_debt_usd_T": "33696630",
+   "weth_debt_T": "69424.2",
+   "destination_of_dollars": "Dollar 33.70M (Morpho PST/USDC 10.63M and PST/PYUSD 0.18M against PST; weETH RLUSD 8.13M, USDT 3.21M; Spark USDS 10.04M, PYUSD 1.51M) + EURCV 4.68M + 69,424 WETH (Aave loop). Uses: Ethena USDe mint with USDT (115.8M USDe minted to it), Huma PST 13.0M, Belem RWA EURCV 5.0M, RockawayX USDC Yield 4.6M, Pendle Ecosystem USDC 2.0M, Bitwise PAPY 2.0M, Steakhouse, Sky USDT savings; USDC bridged out via Circle CCTP",
+   "evidence": "Constructor of 0xc802afc4 names it manager; EthenaMinting V2 Mint event with benefactor = beneficiary = 0x4f87; first gas from FixedFloat Hot Wallet 2 on 2026-03-26"
+  },
+  "0x8328446602cb4c3b2b4a25beca6488e947b6f54a": {
+   "who": "Unlabeled EIP-7702 EOA; mixed BTC and ETH collateral",
+   "kind": "unknown after checks",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "30635088",
+   "weth_debt_T": "0",
+   "destination_of_dollars": "Dollar 30.64M, of which only 3.99M (Morpho weETH/PYUSD) is ETH-backed; kBTC RLUSD 7.55M + PYUSD 9.50M, PRIME/PYUSD 3.40M, Aave USDC 5.82M. Stables to Hastra wYLDS (6.3M) and PRIME (6.05M), Aave USDC supply, apyUSD, Velora/LI.FI swaps",
+   "evidence": "Gas funding chain 0xaecfcc17 <- 0xa0caa6ae <- 0x6d89acfc <- Binance 15 (Etherscan); no name tag; BTC study listed it as an out-of-scope EOA"
+  },
+  "0xa56da9bb528fedf8379b02e95fbbdad34d45846f": {
+   "who": "Manager wallet of private WETH receipt vault 0x49a6f032 (rSHARE); Ethena-whitelisted minter; same operator as 0xa122/0x4f87",
+   "kind": "fund (private managed vault)",
+   "pooled_product": "borderline: permissioned vault, depositors look like one principal",
+   "product_if_any": "ManagedReceiptVault 0x49a6f032 (17,720.33 rSHARE at T)",
+   "dollar_debt_usd_T": "21697147",
+   "weth_debt_T": "0",
+   "destination_of_dollars": "Dollar 21.70M (Morpho weETH PYUSD 11.28M, RLUSD 4.29M; fxSAVE/USDC 3.01M; Spark USDS 3.12M). Uses: Ethena USDe mint and redeem (49.7M minted), USDe supplied to Aave against USDT borrow, RockawayX USDC Yield 9.0M, f(x) fxSAVE 8.1M, RockawayX f(x) 6.0M, Pendle Ecosystem USDC 2.9M, Sentora PRIME Main 2.7M, PT-reUSD, 4.24M USDC into Zama confidential cUSDC wrapper",
+   "evidence": "Constructor of 0x49a6f032 names it manager; EthenaMinting V2 Mint with benefactor 0xa56d; created 2026-03-26 with the same 0.1 WETH test then bulk deposit pattern; deposited 17,720 ETH into ether.fi weETH on 2026-04-01"
+  },
+  "0x1676d23711186076fa74aa53511dda750a1f0d9a": {
+   "who": "Unlabeled 3-of-6 Safe; largest holder (36.9%) of Liquity ETH Carry; sister Safe 0x458cd345 has the same six owners",
+   "kind": "unknown after checks (likely fund or team treasury)",
+   "pooled_product": "no",
+   "product_if_any": "Depositor in Liquity ETH Carry (IPOR Fusion), not the product itself",
+   "dollar_debt_usd_T": "19559087",
+   "weth_debt_T": "2168.3",
+   "destination_of_dollars": "Dollar 19.56M (Aave Prime GHO 10.54M, Spark USDS 9.02M) + 2,168 WETH (Morpho). Stables to Compound Institutional ciUSDCv3 (11.3M), Aave sGHO (10.9M), Sky USDS Flagship (3.3M), Paypal USD Main (2.2M), Steakhouse USDC; borrowed WETH to Liquity ETH Carry vault 0xb9e806e8 (2,021 WETH)",
+   "evidence": "Owners funded by noca.eth and, for 0x1b0c6386, by Gnosis: Active Treasury Management (Etherscan funded-by); no name tag; Arkham not reachable"
+  },
+  "0xaa34d20be3f9623ccf5bff53ef4dfa765c3f5dd5": {
+   "who": "Unlabeled EOA; active stablecoin yield farmer",
+   "kind": "individual whale (unlabeled)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "18368182",
+   "weth_debt_T": "0",
+   "destination_of_dollars": "Dollar 18.37M, of which 5.60M is weETH-backed (RLUSD 2.55M, PYUSD 2.25M, USDT 0.80M); 12.77M is stable-on-stable looping. Stables to Re Protocol reUSD (5.2M minted), Pendle PT/YT reUSD, YT sUSDe/srUSDe/sUSDx/apyUSD, 3Jane, DOLA/sUSDe",
+   "evidence": "Gas funding 0x739afbe9 <- 0x75501338 (Etherscan Fake_Phishing tag, likely dusting); no name tag"
+  },
+  "0x1778767436111ec0adb10f9ba4f51a329d0e7770": {
+   "who": "Fasanara Capital-linked trading wallet",
+   "kind": "fund / market maker",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "17878575",
+   "weth_debt_T": "0.0",
+   "destination_of_dollars": "Morpho USDT 17.88M. Borrowed USDT/USDC sent to Binance deposit 0xbd9f00b3 (31.8M USDT + 22.7M USDC in window), Fasanara-funded 0x1c68c3de (7.0M USDT), related 0xae9746a8 and 0x6448dbc9 (both gas-funded by 0x4831c121); smaller Sentora RLUSD Main and Paypal USD Main round trips",
+   "evidence": "First gas 2021-06-29 from 0x4831c121, which Etherscan shows funded by Fasanara Capital 0x85464b20; 0x1c68c3de also funded by that Fasanara address; inflows from Coinbase 10, Bullish, Binance hot wallet"
+  },
+  "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd": {
+   "who": "Unlabeled EOA; multi-venue stablecoin farmer incl. Aave v4 Core Hub",
+   "kind": "individual whale (unlabeled)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "13735051",
+   "weth_debt_T": "0",
+   "destination_of_dollars": "Dollar 13.74M (Spark USDS 7.32M, PYUSD 0.50M; Aave USDC 2.21M; Morpho savUSD/USDC 3.05M, weETH/RLUSD 0.65M); about 10.7M is ETH-backed. Stables to Avant savUSD/avUSD, Stake DAO avUSD pools, Aave v4 Core Hub (USDG, frxUSD), USDe bridge, Euler emGLOBAL",
+   "evidence": "Gas funding chain 0xd0f02713 <- 0xdbf380ed <- 0xbcade668 (no labels); no name tag"
+  },
+  "0x577557e04ce02cf279b265c7a7b77540acba4a81": {
+   "who": "Unlabeled EOA; stablecoin looper",
+   "kind": "individual whale (unlabeled)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "10120816",
+   "weth_debt_T": "189.2",
+   "destination_of_dollars": "Dollar 10.12M, of which 3.73M is wstETH-backed USDC; rest is PT-reUSD and strUSD loops. Stables to strUSD, sUSDx, Curve router, aggregator 0x8f10b468",
+   "evidence": "Gas funding 0x06068de7 <- 0xef7cec68 <- Binance 17; no name tag"
+  },
+  "0x90882e7c28ddf0ac1177033a310aeed8eff25e90": {
+   "who": "NEMO ETH Prime strategy wallet",
+   "kind": "product vault/strategy wallet",
+   "pooled_product": "yes",
+   "product_if_any": "NEMO ETH Prime (Upshift)",
+   "dollar_debt_usd_T": "5611790",
+   "weth_debt_T": "0",
+   "destination_of_dollars": "Morpho USDC 5.61M; 12.1M NEMO USDC Yield (nUSDC) minted to it in window via TokenizedVault 0x955256b3",
+   "evidence": "Already attributed in the study (NEMO); gas from 0xd6c33d97 funded by Binance 20"
+  },
+  "0x20f6c325df578a11209817a30ebb2f0d5454176d": {
+   "who": "1-of-1 Safe of EOA 0x2f5a9b91 (Binance user)",
+   "kind": "individual whale (unlabeled)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "5518398",
+   "weth_debt_T": "0",
+   "destination_of_dollars": "Morpho USDC 5.52M (dormant since 2026-07-30). Borrowed USDC went to owner-side wallet 0x9ee13f3c (15.0M, Binance 15-funded), Binance deposit 0xa8b50955 (5.55M) and owner 0x2f5a9b91 (1.5M)",
+   "evidence": "Safe owner 0x2f5a9b91 funded by 0x9ee13f3c, funded by Binance 15; no name tag"
+  },
+  "0x893aa69fbaa1ee81b536f0fbe3a3453e86290080": {
+   "who": "Mellow strETH Sub Vault 2 (Lido Earn ETH strategy)",
+   "kind": "product vault/strategy wallet",
+   "pooled_product": "yes",
+   "product_if_any": "Lido Earn ETH / strETH (Mellow)",
+   "dollar_debt_usd_T": "0",
+   "weth_debt_T": "82554.9",
+   "destination_of_dollars": "No dollar debt; 82,555 WETH (Aave 80,273, Morpho 2,282), ETH staking loop",
+   "evidence": "Etherscan name tag Mellow Protocol: strETH Sub Vault 2; created by Mellow Subvault Factory for vault 0x277c6a64"
+  },
+  "0x13d0503352f34b751cacfbe27e694b58561f2983": {
+   "who": "Safe owned by 3-of-8 Safe 0xcb177d12; wstETH loop across four venues",
+   "kind": "unknown after checks (likely fund)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "0",
+   "weth_debt_T": "32471.6",
+   "destination_of_dollars": "No dollar debt; 32,472 WETH (Spark 17,995, Prime 6,693, Core 4,875, Morpho 2,908); wstETH loop with DeFi Saver FLAction flash loans",
+   "evidence": "Owner Safe signer 0xd34f0795 funded by OKX Hot Wallet 3 and funds two other signers; no name tag"
+  },
+  "0x462a336dcac6eaf544106266914caa5a18b831d0": {
+   "who": "Unlabeled EOA; wstETH loop on Morpho, Spark, Aave (also Optimism)",
+   "kind": "individual whale (unlabeled)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "0",
+   "weth_debt_T": "31385.1",
+   "destination_of_dollars": "No dollar debt; 31,385 WETH (Morpho 15,125, Spark 10,503, Aave 5,758)",
+   "evidence": "First funded 2026-04-22 with 1,750 ETH by 0x24b89d94 (funded by 0x48bf52fc, no labels)"
+  },
+  "0x9a3569c7053f9fb5abeb7ccb1678bd33c47ad278": {
+   "who": "Contango v2 position account of 3-of-7 Safe 0xe979438b",
+   "kind": "individual whale (via Contango)",
+   "pooled_product": "no",
+   "product_if_any": "Contango (trading platform, per-position account)",
+   "dollar_debt_usd_T": "0",
+   "weth_debt_T": "4100.3",
+   "destination_of_dollars": "No dollar debt; 4,100 WETH (leveraged wstETH long)",
+   "evidence": "ImmutableBeaconProxy created by Contango UnderlyingPositionFactory 0xdaba8381 (verified source) in a tx sent by the Safe"
+  },
+  "0x5cede91b3c5783d093b2f6c29cb2571a11204b27": {
+   "who": "Instadapp DSA of EOA 0x56f91d80",
+   "kind": "individual whale (unlabeled)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "0",
+   "weth_debt_T": "4055.1",
+   "destination_of_dollars": "No dollar debt; 4,055 WETH",
+   "evidence": "DSA built by 0x56f91d80 via InstaIndex; that EOA was funded through Across bridge"
+  },
+  "0x4b441cd7c5085d0c255eff3db7ec3417cca1a1a0": {
+   "who": "Old EOA (2021, Binance 11 funded), Etherscan label Abyss Finance: Eth2 Depositor 138, MetaMask 7702",
+   "kind": "individual whale (labeled)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "0",
+   "weth_debt_T": "2943.3",
+   "destination_of_dollars": "No dollar debt; 2,943 WETH",
+   "evidence": "Etherscan name tag; first funding 299.995 ETH from Binance 11 on 2021-02-09"
+  },
+  "0xb224f589297a5a207e6069de5dafd4b120129817": {
+   "who": "Seamless WSTETH-ETH-25x Leverage Token lending adapter",
+   "kind": "product vault/strategy wallet",
+   "pooled_product": "yes (ETH-debt loop, not dollar carry)",
+   "product_if_any": "Seamless wstETH / ETH 25x Leverage Token 0x98c4e43e",
+   "dollar_debt_usd_T": "0",
+   "weth_debt_T": "2560.0",
+   "destination_of_dollars": "No dollar debt; 2,560 WETH; token supply 80.48 at T",
+   "evidence": "MorphoLendingAdapter clone from Seamless MorphoLendingAdapterFactory; created in LeverageTokenDeploymentBatcher tx with token WSTETH-ETH-25x"
+  },
+  "0xfb74196eccf35a260dd5cfd300baa37ae058b6c0": {
+   "who": "Old EOA (2021, Binance 16 funded), MetaMask 7702",
+   "kind": "individual whale (unlabeled)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "1887315",
+   "weth_debt_T": "1634.5",
+   "destination_of_dollars": "Dollar 1.89M (apyUSD/USDC loop) + 1,634 WETH",
+   "evidence": "Etherscan funded-by Binance 16"
+  },
+  "0xb7829e0a55975e9380e76e27d89391a795807a7f": {
+   "who": "Instadapp DSA of dankest.eth",
+   "kind": "individual whale (ENS dankest.eth)",
+   "pooled_product": "no",
+   "product_if_any": "",
+   "dollar_debt_usd_T": "780959",
+   "weth_debt_T": "1488.3",
+   "destination_of_dollars": "Dollar 0.78M (sUSDS/USDT, wstETH/USDT) + 1,488 WETH",
+   "evidence": "DSA built 2021 by 0xf2d2c1d5 (ENS dankest.eth)"
+  }
  }
 }

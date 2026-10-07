@@ -1,63 +1,223 @@
 {
-  "verifiedUTC": "2026-10-06T16:54:12.318362+00:00",
-  "siteSHA256": "b16f9620deb4918c7e9605473c6c68e57a4e468a6e93c8698d9a20309ce6a8f9",
-  "financialSnapshot": "2026-10-02T23:59:59Z",
-  "desktop": [
-    "eight chapters",
-    "updated Top 5 tabs",
-    "Lido / Avant / YieldBasis product switches",
-    "direct links to Makina / Vesper / ZenSats",
-    "four financing lots visible",
-    "13-product hover table and keyboard End navigation",
-    "static history description agrees with all 13 products"
-  ],
-  "mobileViewport": {
-    "width": 390,
-    "height": 844
-  },
-  "mobile": [
-    "13 hover rows fit viewport",
-    "no document horizontal overflow",
-    "new product chapters have seven mechanism steps and no undefined / NaN copy"
-  ],
-  "historicalRuntimeErrors": "Two defects found during development were fixed; no new errors occurred on the final checks.",
-  "browserResults": [
+  "site_sha256": "587df051ce251fb1e80e22109a274349d18cf7f0f841a2fa3dd0f1a99c505532",
+  "recorded_utc": "2026-10-07T04:57:23+00:00",
+  "tool": "Claude in-app browser (Chromium), desktop 1150px and mobile 375x812 emulation",
+  "all_recorded_checks_passed": true,
+  "checks": [
     {
-      "product": "avant",
-      "mechanics": 7,
-      "invalidCopy": false,
-      "pageOverflow": false
+      "viewport": "desktop",
+      "check": "hero_total_is_counted_once_map",
+      "passed": true
     },
     {
-      "product": "yieldbasis",
-      "mechanics": 8,
-      "invalidCopy": false,
-      "pageOverflow": false
+      "viewport": "desktop",
+      "check": "what_it_means_has_four_findings",
+      "passed": true
     },
     {
-      "product": "lido-earn",
-      "mechanics": 7,
-      "invalidCopy": false,
-      "pageOverflow": false
+      "viewport": "desktop",
+      "check": "market_switches_eleven",
+      "passed": true
     },
     {
-      "product": "makina-deth",
-      "mechanics": 7,
-      "invalidCopy": false,
-      "pageOverflow": false
+      "viewport": "desktop",
+      "check": "donut_and_history_render",
+      "passed": true
     },
     {
-      "product": "vesper",
-      "mechanics": 7,
-      "invalidCopy": false,
-      "pageOverflow": false
+      "viewport": "desktop",
+      "check": "history_findings_four_cards",
+      "passed": true
     },
     {
-      "product": "zensats",
-      "mechanics": 7,
-      "invalidCopy": false,
-      "pageOverflow": false
+      "viewport": "desktop",
+      "check": "category_table:staking",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:restaking",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:loops",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:carry",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:fixed_yield",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:basis",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:options",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:credit",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:farming",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:lending",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:cdp",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "switch_changes_total",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "carry_history_excludes_concrete",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "comparison_matrix_five_products",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:liquid",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:liquid",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:yieldbasis",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:yieldbasis",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:lido-earn",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:lido-earn",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:avant",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:avant",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:liquity",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:liquity",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "other_carry_rows",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_table_rows",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "listed_not_counted",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "crosscheck_and_recheck",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "desktop_no_page_overflow",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "no_runtime_errors",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:liquid",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:yieldbasis",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:lido-earn",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:avant",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:liquity",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow_category:staking",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow_category:carry",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow_category:farming",
+      "passed": true
     }
-  ],
-  "allFinalChecksPassed": true
+  ]
 }

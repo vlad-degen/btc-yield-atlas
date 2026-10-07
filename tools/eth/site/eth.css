@@ -155,3 +155,9 @@ html:has(body[data-edition="reader"]){scroll-padding-top:78px}
 .at-compare td{font-size:13px;vertical-align:top}
 .atlas-risk h4{margin-top:18px}
 main .body>table,main .panel>table{display:block;overflow-x:auto;max-width:100%}
+.atlas-risk{grid-column:1/-1;min-width:0;max-width:100%}
+.atlas-risk .reader-example-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.atlas-risk .reader-example-pair>div,.atlas-risk .chart-scroll{min-width:0;max-width:100%;overflow-x:auto}
+@media (max-width:760px){.atlas-risk .reader-example-pair{grid-template-columns:minmax(0,1fr)}}
+.strict-product-chapter .panel>*{min-width:0}
+@media (max-width:760px){.strict-product-chapter .panel{grid-template-columns:minmax(0,1fr)}}

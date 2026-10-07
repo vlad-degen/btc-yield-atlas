@@ -1,64 +1,222 @@
 {
-  "reviewed_at": "2026-10-06T01:09:11.950611+00:00",
-  "financial_snapshot": "2026-10-02T23:59:59Z",
-  "site_sha256": "03940a13495b5524e8f92cdef21a6ea4c0bf2f83d343029277dbffc9c079f156",
-  "scope": "Final October 6 report fixes. Desktop and 390 px mobile, matched common-window cards, coverage disclosure, carry tooltip, fixed answers under chart filters and current Briefing. Earlier broader browser checks belong to their earlier HTML editions.",
+  "site_sha256": "587df051ce251fb1e80e22109a274349d18cf7f0f841a2fa3dd0f1a99c505532",
+  "recorded_utc": "2026-10-07T04:57:23+00:00",
+  "tool": "Claude in-app browser (Chromium), desktop 1150px and mobile 375x812 emulation",
   "all_recorded_checks_passed": true,
   "checks": [
     {
-      "check": "filters_do_not_change_answers",
+      "viewport": "desktop",
+      "check": "hero_total_is_counted_once_map",
       "passed": true
     },
     {
-      "check": "constant_cohort_keeps_fixed_answers",
+      "viewport": "desktop",
+      "check": "what_it_means_has_four_findings",
       "passed": true
     },
     {
-      "check": "carry_chart_keyboard_inspection",
+      "viewport": "desktop",
+      "check": "market_switches_eleven",
       "passed": true
     },
     {
-      "check": "product_liquid",
+      "viewport": "desktop",
+      "check": "donut_and_history_render",
       "passed": true
     },
     {
-      "check": "product_yieldbasis",
+      "viewport": "desktop",
+      "check": "history_findings_four_cards",
       "passed": true
     },
     {
-      "check": "product_rocksolid",
+      "viewport": "desktop",
+      "check": "category_table:staking",
       "passed": true
     },
     {
-      "check": "product_liquity",
+      "viewport": "desktop",
+      "check": "category_table:restaking",
       "passed": true
     },
     {
-      "check": "product_concrete",
+      "viewport": "desktop",
+      "check": "category_table:loops",
       "passed": true
     },
     {
-      "check": "additional_deep_royco",
+      "viewport": "desktop",
+      "check": "category_table:carry",
       "passed": true
     },
     {
-      "check": "all_ten_mechanism_families",
+      "viewport": "desktop",
+      "check": "category_table:fixed_yield",
       "passed": true
     },
     {
-      "check": "mobile_no_page_overflow",
+      "viewport": "desktop",
+      "check": "category_table:basis",
       "passed": true
     },
     {
-      "check": "mobile_yieldbasis",
+      "viewport": "desktop",
+      "check": "category_table:options",
       "passed": true
     },
     {
-      "check": "mobile_carry_tooltip",
+      "viewport": "desktop",
+      "check": "category_table:credit",
       "passed": true
     },
     {
-      "check": "current_briefing_synced",
+      "viewport": "desktop",
+      "check": "category_table:farming",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:lending",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "category_table:cdp",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "switch_changes_total",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "carry_history_excludes_concrete",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "comparison_matrix_five_products",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:liquid",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:liquid",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:yieldbasis",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:yieldbasis",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:lido-earn",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:lido-earn",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:avant",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:avant",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_panel:liquity",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "story:liquity",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "other_carry_rows",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "risk_table_rows",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "listed_not_counted",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "crosscheck_and_recheck",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "desktop_no_page_overflow",
+      "passed": true
+    },
+    {
+      "viewport": "desktop",
+      "check": "no_runtime_errors",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:liquid",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:yieldbasis",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:lido-earn",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:avant",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow:liquity",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow_category:staking",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow_category:carry",
+      "passed": true
+    },
+    {
+      "viewport": "mobile",
+      "check": "mobile_375_no_overflow_category:farming",
       "passed": true
     }
   ]

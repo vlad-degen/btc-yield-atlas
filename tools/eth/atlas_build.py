@@ -38,6 +38,9 @@ def run():
             p['rewards'] = [{k: c.get(k) for k in ('opportunity', 'token', 'creator', 'creatorMerklTags', 'rewardAPRatT', 'liquidRewardUSDperYearAtT', 'amount')} for c in r.get('activeCampaignsAtT', [])]
             p['rewardsNote'] = {k: v for k, v in r.items() if k != 'activeCampaignsAtT' and not isinstance(v, (list, dict))}
         out['products'][pid] = p
+    bpath = D / 'gap_borrowers.csv'
+    if bpath.exists():
+        out['borrowers'] = {r['address'].lower(): {k: r[k] for k in ('who', 'kind', 'pooled_product', 'product_if_any', 'dollar_debt_usd_T', 'weth_debt_T', 'destination_of_dollars', 'evidence')} for r in csv.DictReader(bpath.open())}
     (D / 'atlas_top5_risk.json').write_text(json.dumps(out, indent=1) + '\n')
     print('Atlas top-5 risk:', {k: len(v['health_factor']) for k, v in out['products'].items()})
 
