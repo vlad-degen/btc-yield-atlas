@@ -70,7 +70,7 @@ function marketRender(){
  $('#m-chain-table tbody').innerHTML=chains.map(c=>{const lead=active.slice().sort((x,y)=>(c.by_category[y.id]?.eth_ref||0)-(c.by_category[x.id]?.eth_ref||0))[0];return `<tr><td>${esc(c.chain)}</td><td class="n">${num(c.eth_ref,0)}</td><td class="n">${ATUSD(c.usd)}</td><td class="n">${c.protocol_count}</td><td>${esc(lead?.label)}</td></tr>`}).join('');
  $('#m-chain-note').textContent='Where the product’s balance sits by DefiLlama’s chain split, scaled to what the map counts. Staking tokens bridged to L2s are counted where their issuer holds the ETH.';
  $('#m-method-note').textContent='';
- marketCatalogue();marketFindings();marketPersist();if(document.body.dataset.edition==='reader')readerAnswer();
+ marketCatalogue();marketFindings();marketPersist();if(document.body.dataset.edition==='reader')readerAnswer();else if(typeof renderStrictHeadline==='function')renderStrictHeadline();if(document.body.dataset.edition!=='reader'){$('#m-hero-total').textContent=ATK(total.eth_ref);atLabel('#m-hero-total','ETH earns a yield, each product counted once');const st=atCatSize('staking')+atCatSize('restaking');if($('#m-hero-staking'))$('#m-hero-staking').textContent=total.eth_ref?ATPCT(st/total.eth_ref,0):'';const n=$('#m-hero-total').closest('section')?.querySelector('.hero-note,.tiles+p');if(n)n.textContent='The market counts each product once, as in the BTC study: staking tokens held by other products leave their issuer\u2019s row. Method in Data.';}
 }
 
 function atMapFindings(total){
