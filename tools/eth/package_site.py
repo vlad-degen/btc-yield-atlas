@@ -55,7 +55,7 @@ def run():
                 url=urlsplit(link)
                 if url.scheme or url.netloc:continue
                 target=posixpath.normpath(posixpath.join(posixpath.dirname(name),unquote(url.path))) if url.path else name
-                if target not in names and target+'/index.html' not in names:broken.append([name,link,target])
+                if target not in names and posixpath.normpath(target+'/index.html') not in names:broken.append([name,link,target])
         assert not broken,broken
     sha=hashlib.sha256(DEST.read_bytes()).hexdigest()
     (OUT/(DEST.name+'.sha256')).write_text(sha+'  '+DEST.name+'\n')

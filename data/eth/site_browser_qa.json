@@ -1,223 +1,218 @@
 {
-  "site_sha256": "587df051ce251fb1e80e22109a274349d18cf7f0f841a2fa3dd0f1a99c505532",
-  "recorded_utc": "2026-10-07T04:57:23+00:00",
-  "tool": "Claude in-app browser (Chromium), desktop 1150px and mobile 375x812 emulation",
-  "all_recorded_checks_passed": true,
-  "checks": [
-    {
-      "viewport": "desktop",
-      "check": "hero_total_is_counted_once_map",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "what_it_means_has_four_findings",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "market_switches_eleven",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "donut_and_history_render",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "history_findings_four_cards",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:staking",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:restaking",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:loops",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:carry",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:fixed_yield",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:basis",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:options",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:credit",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:farming",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:lending",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "category_table:cdp",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "switch_changes_total",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "carry_history_excludes_concrete",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "comparison_matrix_five_products",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "risk_panel:liquid",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "story:liquid",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "risk_panel:yieldbasis",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "story:yieldbasis",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "risk_panel:lido-earn",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "story:lido-earn",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "risk_panel:avant",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "story:avant",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "risk_panel:liquity",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "story:liquity",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "other_carry_rows",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "risk_table_rows",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "listed_not_counted",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "crosscheck_and_recheck",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "desktop_no_page_overflow",
-      "passed": true
-    },
-    {
-      "viewport": "desktop",
-      "check": "no_runtime_errors",
-      "passed": true
-    },
-    {
-      "viewport": "mobile",
-      "check": "mobile_375_no_overflow:liquid",
-      "passed": true
-    },
-    {
-      "viewport": "mobile",
-      "check": "mobile_375_no_overflow:yieldbasis",
-      "passed": true
-    },
-    {
-      "viewport": "mobile",
-      "check": "mobile_375_no_overflow:lido-earn",
-      "passed": true
-    },
-    {
-      "viewport": "mobile",
-      "check": "mobile_375_no_overflow:avant",
-      "passed": true
-    },
-    {
-      "viewport": "mobile",
-      "check": "mobile_375_no_overflow:liquity",
-      "passed": true
-    },
-    {
-      "viewport": "mobile",
-      "check": "mobile_375_no_overflow_category:staking",
-      "passed": true
-    },
-    {
-      "viewport": "mobile",
-      "check": "mobile_375_no_overflow_category:carry",
-      "passed": true
-    },
-    {
-      "viewport": "mobile",
-      "check": "mobile_375_no_overflow_category:farming",
-      "passed": true
-    }
-  ]
+ "site_sha256": "b7ec5e1bc9b913468bee3d1c2fe9594a7a4b91e7b0a5d7edce562188e85b9f6a",
+ "recorded_utc": "2026-10-07T15:13:43+00:00",
+ "tool": "Claude in-app browser (Chromium), desktop and mobile 375x812 emulation; no console errors",
+ "all_recorded_checks_passed": true,
+ "checks": [
+  {
+   "viewport": "desktop",
+   "check": "hero_total_is_counted_once_map",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "carry_share_and_debt",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "what_it_means_findings",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "donut_and_history_render",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "borrower_table_from_full_scan",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "product:liquid",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "no_horizontal_scroll:liquid",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "product:yieldbasis",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "no_horizontal_scroll:yieldbasis",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "product:lido-earn",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "no_horizontal_scroll:lido-earn",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "product:avant",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "no_horizontal_scroll:avant",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "product:liquity",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "no_horizontal_scroll:liquity",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "product:closed",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "no_horizontal_scroll:closed",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "comparison_has_rewards_rows",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "library_links_report_and_selection",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "no_long_dashes",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "rerender_without_errors",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "hero_total_is_counted_once_map",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "carry_share_and_debt",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "what_it_means_findings",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "donut_and_history_render",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "borrower_table_from_full_scan",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "product:liquid",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "no_horizontal_scroll:liquid",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "product:yieldbasis",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "no_horizontal_scroll:yieldbasis",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "product:lido-earn",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "no_horizontal_scroll:lido-earn",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "product:avant",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "no_horizontal_scroll:avant",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "product:liquity",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "no_horizontal_scroll:liquity",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "product:closed",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "no_horizontal_scroll:closed",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "comparison_has_rewards_rows",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "library_links_report_and_selection",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "no_long_dashes",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "rerender_without_errors",
+   "passed": true
+  }
+ ]
 }

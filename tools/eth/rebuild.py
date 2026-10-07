@@ -33,6 +33,6 @@ def run():
  (ROOT/'data/eth/backing_exit_verification.json').write_text(json.dumps(backing_report,indent=2)+'\n')
  print('Backing and exit verification:',backing_report['checks'],'passed')
  subprocess.run([sys.executable,str(ROOT/'tools/eth/research_closure_audit.py')],cwd=ROOT,check=True)
- for name in ['strategy_universe_expansion_verify','strategy_universe_deep_verify','credit_expansion_deep_validate','research_expansion_verify']:
+ for name in ['economic_verify','strategy_universe_expansion_verify','strategy_universe_deep_verify','credit_expansion_deep_validate','research_expansion_verify']:
   subprocess.run([sys.executable,str(ROOT/'tools/eth'/f'{name}.py')],cwd=ROOT,check=True)
 if __name__=='__main__':run()
