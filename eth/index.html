@@ -1897,7 +1897,7 @@ function atTop5Text(){
  set('#top5 .shead h2','The five largest carry products');
  set('#top5 .shead .lede','Ranked by dollars borrowed against ETH on 2 October. Each product from deposit to exit: where the borrowed dollars go, who holds the keys, who pays the yield, how fast the debt can be repaid.');
  set('#carry-history > h3','Two years of carry, by product');
- set('#carry-history > .sub','Month-end book of the twelve products that borrow dollars against ETH, in ETH. Grey: months when a product had no dollar loan at month-end. Those months count under Leveraged staking in Market, so the coloured bars match the carry category there.');
+ set('#carry-history > .sub','Month-end book of the twelve products that borrow dollars against ETH, in ETH. Grey: months when a product owed no dollars at month-end, so it was not carry then. Liquid ETH in those months was only an ETH loop (borrow WETH, restake), which Market counts as Leveraged staking; the smaller ones count as staking or farming. The coloured bars equal the carry category in Market.');
  set('#c-history-options','Concrete Delta (307k ETH) is left out: it is one wallet\u2019s own position, not a pooled product. See Other carry.');
 }
 
@@ -2128,13 +2128,13 @@ function atCarryNoDebt(){
  const key=MS.carryUnit==='usd'?'usd':'eth',format=v=>key==='usd'?money(v):num(v,v<10?3:0)+' ETH',off=(p,h)=>(ND[p.name]||[]).includes(h.month);
  const series=shown.map((p,i)=>({id:p.name,name:p.name,color:CARRY_COLORS[books.findIndex(b=>b.name===p.name)%CARRY_COLORS.length]||CARRY_COLORS[i%CARRY_COLORS.length],points:p.history.map(h=>[h.timestamp,off(p,h)?0:h[key]])}));
  const ref=shown[0]?.history||[];
- series.push({id:'no-dollar-loan',name:'No dollar loan that month (counted as Leveraged staking)',color:'#8a9099',points:ref.map((h,i)=>[h.timestamp,shown.reduce((s,p)=>s+(off(p,p.history[i]||{})?(p.history[i]?.[key]||0):0),0)])});
+ series.push({id:'no-dollar-loan',name:'No dollar loan that month, so not carry',color:'#8a9099',points:ref.map((h,i)=>[h.timestamp,shown.reduce((s,p)=>s+(off(p,p.history[i]||{})?(p.history[i]?.[key]||0):0),0)])});
  $('#c-history-chart').innerHTML=columnChart(series,{label:'Carry products by month: coloured with a dollar loan, grey without, October 2024 to September 2026',format});
 }
 const _atPrevCCR=carryCategoryRender;carryCategoryRender=function(){_atPrevCCR();try{atCarryNoDebt()}catch(e){}};
 function atCarryDips(){
  const p=$('#market-history');if(!p||$('#at-carry-dips'))return;
- p.insertAdjacentHTML('beforeend','<p class="note" id="at-carry-dips"><b>Why carry jumps.</b> A product counts as carry only in months it owes dollars at month-end; otherwise its ETH counts under Leveraged staking. ether.fi Liquid ETH (150k to 200k ETH) borrowed dollars in August and September 2025, repaid by the end of October and ran only ETH loops until June 2026. Lido Earn enters the map in March 2026; its book fell from 111k to 44k ETH in May 2026 after the rsETH freeze.</p>');
+ p.insertAdjacentHTML('beforeend','<p class="note" id="at-carry-dips"><b>Why carry jumps.</b> A product counts as carry only in months it owes dollars at month-end; otherwise its ETH counts in its base category (for Liquid ETH, Leveraged staking: it only borrowed WETH against staked ETH). ether.fi Liquid ETH (150k to 200k ETH) borrowed dollars in August and September 2025, repaid by the end of October and ran only ETH loops until June 2026. Lido Earn enters the map in March 2026; its book fell from 111k to 44k ETH in May 2026 after the rsETH freeze.</p>');
 }
 const _atPrevFinalND=atlasFinal;atlasFinal=function(){_atPrevFinalND();atCarryDips();try{atCarryNoDebt()}catch(e){}};
 
