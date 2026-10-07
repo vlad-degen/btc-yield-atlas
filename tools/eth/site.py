@@ -15,6 +15,7 @@ def read(name):
     return json.loads((DATA / f'{name}.json').read_text())
 
 ARTICLES = {
+ 'REPORT': ('library', 'Report: the whole study on one page'),
  'etherfi-liquid-eth': ('dossiers', 'ether.fi Liquid ETH'),
  'fluid-lite': ('dossiers', 'Fluid Lite ETH'),
  'treehouse-teth': ('dossiers', 'Treehouse tETH'),
@@ -347,7 +348,7 @@ def build():
         (OUT/folder/f'{stem}.html').write_text(page)
     library_groups = [
       ('Top five, deep dives', [k for k in TOP5_DIVES if k in ARTICLES]),
-      ('New findings, 7 October', ['CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','LIQUID-LOOP','REWARDS-SPLIT','TOP5-KEYS-HOLDERS-TERMS','CLOSED-CASES','RESTAKING-AND-LOOPS','OUTSIDE-AND-SMALL']),
+      ('New findings, 7 October', ['REPORT','CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','LIQUID-LOOP','REWARDS-SPLIT','TOP5-KEYS-HOLDERS-TERMS','CLOSED-CASES','RESTAKING-AND-LOOPS','OUTSIDE-AND-SMALL']),
       ('Market size and counting', ['MARKET-STRUCTURE','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
       ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','etherfi-liquid-eth']),
