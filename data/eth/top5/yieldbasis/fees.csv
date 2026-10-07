@@ -1,0 +1,13 @@
+date,block,contract,fee,old,new,source,note
+2026-05-25,25170804,0x5f8d24f33cc5a1d5d1bf012261e6a2214c92233c,LEVAMM trading fee,,1.30%,AMM.fee() = 0.013e18; no SetFee event through T,set at add_market; unchanged
+2026-05-25,25170804,0x5f8d24f33cc5a1d5d1bf012261e6a2214c92233c,"crvUSD borrow rate (paid by the AMM, recycled to the Curve pool as donation)",,10.00%/yr,SetRate event (rate 3170979198 per second); AMM.rate() at T same,no later SetRate event
+2025-09-15,23371071,0x370a449febb9411c95bf897021377fe0b7d100c0,min_admin_fee (floor of admin fee),,10%,Factory.min_admin_fee(); no change event,
+2026-05-31,25218797,0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea,effective admin fee f_a = 1-(1-0.10)*sqrt(1-staked/supply),,41.18% (staked 57.28%),replay of LT balances at month-end + LT source formula,applies to positive value change after the staked watermark is repaid
+2026-06-30,25433938,0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea,effective admin fee,41.18%,30.23% (staked 39.91%),same,
+2026-07-31,25656292,0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea,effective admin fee,30.23%,33.49% (staked 45.39%),same,
+2026-08-31,25878704,0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea,effective admin fee,33.49%,42.97% (staked 59.85%),same,
+2026-09-30,26093737,0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea,effective admin fee,42.97%,40.90% (staked 56.88%),same,
+T,26108081,0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea,effective admin fee,40.90%,40.54% (staked 56.35%),same,current
+2026-05-31 to 2026-06-18,25197716-25323480,0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea,admin fee realised (WithdrawAdminFees),,5.47 LT minted to 0xd11b4165,7 WithdrawAdminFees events,
+2026-07-20 to T,25575830-26097567,0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea,admin fee realised,,0 LT in 5 calls,WithdrawAdminFees amount = 0,staked side in watermark recovery: no admin fee is taken until losses are repaid
+2026-07-20,25575797,0x370a449febb9411c95bf897021377fe0b7d100c0,fee receiver,0xd11b416573ebc59b6b2387da0d2c0d1b3b1f7a90,"0x4b7782fd (FeeSplitter, 15% split)",SetFeeReceiver event,"earlier: DAO 2025-11-12, 0xd11b4165 2025-12-03"

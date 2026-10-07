@@ -1,0 +1,11 @@
+date,event,type,effect_on_deposits_or_yield,source
+2025-08-11,"avETH, savETH and AvantMintingV2 deployed by EOA 0xa5ab0683; savETH cooldown 7 days",launch,,savETH RoleGranted tx 0xd98e5477
+2025-08-12,First avETH mint,launch,,tx 0x38cb7e6b
+2025-09-04,"Ownership of avETH, savETH and minting moved to EOA 0xd4d23209 (via 0xd47777cf)",governance,"single key controls mint, cooldown and pools",AdminTransferred / OwnershipTransferred
+2025-09-05,savETH cooldown cut from 7 days to 1 day,terms,faster exit to avETH,CooldownDurationUpdated tx 0xfe6b5b71
+2025-09-19,First daily reward pushed to savETH,yield,senior yield starts (1.91 avETH in Sep),RewardsReceived
+2025-10-15,"Per-block mint and redeem caps raised 250 to 5,000 avETH",limits,larger flows possible,MaxMint/RedeemPerBlockChanged
+2025-11-04,First savETH supplied to Morpho savETH/WETH markets (loops),structure,by T 17.63% of savETH sits in Morpho; one EOA owns 37.8% look-through,Morpho SupplyCollateral
+2026-04-20,Admin starts setting cooldown to 60 s for short windows (30 times to 2026-09-27; longest 30 Jul-6 Aug),terms,some exits skip the 24h cooldown; no on-chain notice,CooldownDurationUpdated events
+2026-06-02,Admin EOA grants itself COLLATERAL_MANAGER_ROLE on AvantMintingV2,governance,admin can move minting collateral to custody,RoleGranted
+2026-09-29,"Issuer discloses $72.65M assets, $39.47M liabilities, $33.18M net NAV, $32.53M in savUSD",disclosure,ETH product depends on Avant dollar credit,https://app.avantprotocol.com/api/metrics/aveth

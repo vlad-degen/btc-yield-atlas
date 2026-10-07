@@ -1,0 +1,10 @@
+date,event,type,effect_on_deposits_or_yield,source
+2026-01-07,"Earlier WETH market (Factory idx 6, LT 0x931d40dd) created; the current LT is a separate contract",predecessor,"history before 2026-05-25 belongs to the old LT, not to this receipt","Factory MarketParameters, block 24184012"
+2026-04-07,Factory admin moved from the DAO to HybridFactoryOwner v1 (0x0f4e1a1b),governance,HybridVault factory became a limit setter (can raise crvUSD allocation),"Factory SetAdmin, block 24825748"
+2026-05-25,"Current WETH market (idx 10) deployed; first deposit; gauge set; fee 1.3%, rate 10%",launch,641 ETH and 26 holders by 31 May,"Factory MarketParameters + LT Transfer, tx 0x3b5b1080"
+2026-06-03,Factory admin moved to HybridFactoryOwner 0xb8ba33cd (ADMIN = DAO),governance,no change to fees; new limit setters,"Factory SetAdmin, block 25239216"
+2026-06-30,"Growth month: 164 holders, 5,085 ETH; staked share 39.9%",flows,admin fee fell to 30.2% as staking ratio fell,holders_monthly.csv
+2026-07-20,Fee receiver switched to FeeSplitter; every later admin-fee withdrawal mints 0,fees,staked side below watermark: no admin fee since; recovery first,Factory SetFeeReceiver block 25575797; LT WithdrawAdminFees
+2026-08-31,"Peak book: 12,512 ETH, 324 holders, staked 59.9%",flows,,holders_monthly.csv
+2026-09-10,LTMigrator 0xd5b450fd made a limit setter (migration path from legacy markets),governance,migrations can raise this LT crvUSD allocation without a vote,"HybridFactoryOwner SetLimitSetter, block 25949201"
+2026-09-30,"Book down 15% in September to 10,616 ETH; 28 addresses exited",flows,unstaked mark fell 0.69% over the matched 94 days (prior study),holders_monthly.csv; CARRY-PRODUCTS.md

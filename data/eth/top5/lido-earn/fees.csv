@@ -1,0 +1,7 @@
+date,block,contract,fee,old,new,source,note
+2026-02-02,24370480,0xed4fac879ee86f3ab0101993a3713e7caa0488e1,deposit / redeem / performance / protocol (annual),,0 / 0 / 0 / 0,SetFees event tx 0x3d3b6074,deployment
+2026-07-01,25436850,0xed4fac879ee86f3ab0101993a3713e7caa0488e1,performance / protocol (annual),0 / 0,10% / 1.0%,SetFees tx 0x52bbe34d,performance fee charged on price above minPriceD18 (high-water mark)
+2026-07-21,25578838,0xed4fac879ee86f3ab0101993a3713e7caa0488e1,performance / protocol (annual),10% / 1.0%,0 / 0,SetFees tx 0x89277186,switched off after 20 days; 114.73 earnETH fee shares minted to Treasury in July
+2026-09-03,25895586,0xed4fac879ee86f3ab0101993a3713e7caa0488e1,performance / protocol (annual),0 / 0,15% / 0.20%,SetFees tx 0x133c5b58,current at T; deposit and redeem fees 0
+2026-07-01 to T,,0xbbfc8683c8fe8cf73777fede7ab9574935fea0a4,fee shares minted to Treasury 0xccf2daba,,154.28 earnETH (about 157 ETH),ShareManager mints from 0x0 to feeRecipient,"Jul 114.73, Sep 37.33, Oct 1-2 2.22"
+T,26108081,0x277c6a642564a91ff78b008022d65683cee5ccc5,nested stRATEGY fees,,0 / 0 / 0 / 0,FeeManager getters at T,no double charge inside the nested vault at T

@@ -117,14 +117,14 @@ function atHero(){
  $('#strict-carry-concentration').textContent=cy?ATPCT(t2/cy,0):'n/a';
  $('#strict-carry-concentration-note').textContent=top2.map(p=>p.name+' '+ATK(p.current.eth_ref)).join(' and ')+' ETH.';
  $('#strict-organic-return').textContent='+0.66 pp';
- $('#strict-organic-return-note').textContent='Liquid ETH 3.37% a year vs stETH 2.71% over two years: share price of the whole book, mostly an ETH loop. Its dollar leg alone loses about $6.8M a year at 2 October rates.';
+ $('#strict-organic-return-note').textContent='Liquid ETH 3.37% a year vs stETH 2.71% over two years. The ETH loop added +0.02 pp and the dollar leg \u22120.13 pp; the rest our model cannot assign.';
 }
 
 readerAnswer=function(){atHero();atMeaning();const T=marketTotals();atLabel('#m-hero-total','ETH earns a yield ('+ATUSD(T.usd)+')');atLabel('#strict-carry-share','is carry');atLabel('#strict-carry-concentration','of carry is in two products');atLabel('#strict-organic-return','largest carry product over stETH, a year');};
 function atMeaning(){
  const ol=$('.market-conclusions ol');if(!ol)return;
  ol.innerHTML=[
-  '<b>ETH carry has to beat staking; BTC carry only has to beat zero.</b> Staked ETH earns 2.2 to 2.7%, so the dollar leg must add on top. Liquid ETH beat stETH by 0.66 pp a year over two years, and that came from its ETH loop; YieldBasis and Vesper trailed stETH in September.',
+  '<b>ETH carry has to beat staking; BTC carry only has to beat zero.</b> Staked ETH earns 2.2 to 2.7%, so the dollar leg must add on top. Liquid ETH beat stETH by 0.66 pp a year over two years, but neither its ETH loop (+0.02 pp) nor its dollar leg (\u22120.13 pp) explains it; YieldBasis and Vesper trailed stETH in September.',
   '<b>The same dollar vaults fund BTC and ETH carry.</b> Liquid ETH parks $55M in Sentora’s RLUSD vault, where 53% of the money is lent to Kraken’s kBTC loop, and $50M in the PYUSD vault that is 95% PRIME home-equity credit. A loss there hits both markets at once.',
   '<b>Private mandates borrow as much as all ETH carry products together.</b> Concrete Delta (one Bitfinex-linked wallet, $176M of stablecoin debt) and three whitelist-only rSHARE vaults run by one operator ($76M against ETH) owe $252M; the 14 pooled products owe $261M. The demand for large ETH-backed dollar loans comes from single principals, not from depositors.',
   '<b>The loan currency decides the spread.</b> On 2 October Aave charged 13.93% for USDC and 4.38% for USDT; Morpho USDT cost 3.2%. Liquid’s 7.79% average comes from its $65M Aave USDC leg. Pick the cheapest hub currency, not the venue.'
@@ -229,7 +229,7 @@ function marketPersist(){
 
 // Product stories, one finding each (replaces strict.js and reader_product_chapters wording).
 Object.assign(ST_STORIES,{
- liquid:{title:'Beats stETH by 0.7 pp a year, but the dollar leg loses money',text:'Liquid ETH is mostly a staking loop: $1.18B of weETH and wstETH on Aave against $1.09B of WETH debt, health factor 1.027. The dollar side ($181M of loans since August 2025) costs about $14.1M a year and earns $7.3M, $2.6M of it in Merkl rewards paid from the RLUSD and PYUSD issuers’ side. Over two years the share price beat stETH by 0.66 pp a year (6.85% vs 5.49% cumulative); at today\u2019s rates the dollar leg subtracts from that, so the loop is what pays.',lesson:'Price each loan separately: one 13.93% USDC loan erased the spread on the other $117M.'},
+ liquid:{title:'Beats stETH by 0.66 pp a year, and neither the loop nor the carry explains why',text:'Liquid ETH loops weETH and wstETH on Aave and Spark ($1.18B of collateral, health factor 1.027) and borrows $181M of dollars on the side. Over two years the loop added about +68 ETH over holding the same ETH unlevered (+0.02 pp a year), and the dollar leg cost about 0.13 pp a year; two rate spikes (July 2025, April 2026) wiped out the loop\u2019s carry. The 0.66 pp lead over stETH sits in income our model cannot assign (other strategies and timing, +1.5 pp a year before fees), and the share price did not show the loop\u2019s April loss when it happened.',lesson:'Ask a manager to explain the return by leg; here neither leg does.'},
  yieldbasis:{title:'The only top-five product whose fees pay for its debt',text:'YieldBasis pairs 10,426 ETH of depositors’ WETH with an equal 27.8M crvUSD loan in a 2x Curve LP. Curve fees grew 9.19% a year on twice the debt against a fixed 10% rate. Unstaked LP holders still trailed stETH by 1.27 pp over 94 days: gauge rewards in YB go to stakers, and the token fell 87%.',lesson:'Trading fees can carry the loan; the depositor’s ETH return depends on who gets the rewards.'},
  'lido-earn':{title:'Mostly a staking loop with a small USDT sleeve that pays',text:'Earn ETH (83,309 ETH) holds stRATEGY, which owes 355k WETH across Aave and Spark at health factor 1.035 and $25.6M of USDT parked in earnUSD. The USDT sleeve earned 4.80% against 4.33% of interest; a 5M USDT loan made on 29 September cleared +1,401 USDT in four days. The April rsETH incident froze the vault for 27 days and cost the DAO 144.8 ETH.',lesson:'A positive dollar spread is easiest when the parking vault is your own and you are half of it.'},
  avant:{title:'Positive spread, all of it Avant’s own credit',text:'Avant borrows $10.0M of USDC, USDS and PYUSD against ETH on Aave and Spark at 6.30% and parks 98% of it in savUSD, Avant’s own dollar product, which paid 7.54%. Repaying the debt means a 24-hour cooldown, a bridge from Avalanche and up to seven days of redemption.',lesson:'Parking in the issuer’s own product turns the spread into one credit bet with a week-long exit.'},
@@ -283,11 +283,11 @@ function atHideOld(){['#market-net-capital','#m-overlap-example'].forEach(s=>{co
 function atComparison(){
  const el=$('#strict-top5-comparison');if(!el)return;
  const ids=EQ.topFive,R30=Object.fromEntries((R.reportContract.matched30dReturns||[]).map(r=>[r.id,r]));
- const C={liquid:{to:'Sentora RLUSD and PRIME vaults, Cap stcUSD',park:'2.8 to 5.6% + 1.4% rewards',spread:'−$6.8M a year',exit:'49% same block; 26% unmatched',key:'24h timelock, fee role without delay',risk:'13.93% USDC loan; ETH loop at HF 1.03'},
-  yieldbasis:{to:'Its own 2x WETH/crvUSD Curve pool',park:'9.19% fees on 2x debt',spread:'fees cover the 10%',exit:'99.6% same block',key:'YieldBasis DAO; Curve EmergencyDAO',risk:'Rewards go to stakers; LP exit value'},
-  'lido-earn':{to:'earnUSD (Lido Earn USD)',park:'4.80%',spread:'+0.47 pp',exit:'earnUSD queue, next daily report',key:'Lido DAO; Mellow vault roles',risk:'Loops at HF 1.035; 48.5% of earnUSD'},
-  avant:{to:'savUSD, Avant’s own dollar product',park:'7.54%',spread:'+1.24 pp',exit:'2.4% same block; savUSD cooldown + bridge + 7 days',key:'Avant',risk:'Own credit; Avalanche exit'},
-  liquity:{to:'ebUSD/USDC on Curve and Uniswap v4',park:'0.45% fees',spread:'−2.1 pp',exit:'97.5% same block via Curve',key:'Curator roles, no delay',risk:'ebUSD peg; self-set rate'}};
+ const C={liquid:{to:'Sentora RLUSD and PRIME vaults, Cap stcUSD',park:'2.8 to 5.6% + 1.4% rewards',spread:'−$6.8M a year',exit:'49% same block; 26% unmatched',key:'24h timelock; a fee role has none',risk:'13.93% USDC loan; ETH loop at HF 1.03'},
+  yieldbasis:{to:'Its own 2x WETH/crvUSD Curve pool',park:'9.19% fees on 2x debt',spread:'fees cover the 10%',exit:'99.6% same block',key:'veYB vote (7 days, can run early); a 5-of-9 Safe can kill',risk:'Rewards go to stakers; LP exit value'},
+  'lido-earn':{to:'earnUSD (Lido Earn USD)',park:'4.80%',spread:'+0.47 pp',exit:'earnUSD queue, next daily report',key:'5-of-8 Safe, no timelock; upgrades instantly',risk:'Loops at HF 1.035; 48.5% of earnUSD'},
+  avant:{to:'savUSD, Avant’s own dollar product',park:'7.54%',spread:'+1.24 pp',exit:'2.4% same block; savUSD cooldown + bridge + 7 days',key:'One plain address, no delay on anything',risk:'Own credit; Avalanche exit'},
+  liquity:{to:'ebUSD/USDC on Curve and Uniswap v4',park:'0.45% fees',spread:'−2.1 pp',exit:'97.5% same block via Curve',key:'One 2-of-3 Safe, no delay',risk:'ebUSD peg; self-set rate'}};
  const p=id=>PC.products.find(x=>x.id===id),f=id=>EQ.products.find(x=>x.id===id),risk=id=>R.atlasTop5Risk?.products?.[id];
  const worst=id=>({liquid:'1.27 (Morpho weETH/RLUSD); 21% ETH fall to liquidation',yieldbasis:'no liquidation; debt 50% vs 56.25% critical','lido-earn':'2.12; 53% fall',avant:'1.37; 27% fall',liquity:'1.88; 47% fall'})[id]||'';
  const row=(label,fn)=>`<tr><th>${label}</th>${ids.map(id=>`<td>${fn(id)}</td>`).join('')}</tr>`;

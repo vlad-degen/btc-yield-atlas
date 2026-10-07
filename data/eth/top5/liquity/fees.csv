@@ -1,0 +1,7 @@
+date,block,contract,fee,old,new,source,note
+2026-01-30,24348259,0x3060495027274e934752e2f5ea1b3c36054252d5,performance / management (annual),,2.00% / 0.30% (IPOR DAO only),getTotalPerformanceFee/getTotalManagementFee at blocks 24400000 and 25190000,FeeManager initialised with the vault
+2026-05-19,,0x3060495027274e934752e2f5ea1b3c36054252d5,deposit fee,0,0.20%,DepositFeeUpdated event,set the same day deposits became public
+2026-05-19,,0xe99b6ef767a42131263bdd3d4a0a7c16b32f0543,withdraw fee / request fee,0 / 0,0.20% / 0.20%,"WithdrawFeeUpdated, RequestFeeUpdated events",instant withdraw pays withdraw fee; scheduled path pays request fee
+2026-05-28,,0x3060495027274e934752e2f5ea1b3c36054252d5,performance / management (annual),2.00% / 0.30%,10.00% / 0.50% (curator Safe 8% / 0.2% + IPOR DAO 2% / 0.3%),"PerformanceFeeUpdated, ManagementFeeUpdated events",performance fee on a high-water mark (HWM 0.973052 WETH per share at T)
+2026-05-08 to T,,0x3060495027274e934752e2f5ea1b3c36054252d5,fees harvested (shares),,"8.25 shares (about 8.0 WETH): IPOR DAO 3.21, curator Safe 5.05",36 HarvestManagementFee + 37 HarvestPerformanceFee events,largest harvest 2026-09-25: 3.27 shares
+T,26108081,0x3060495027274e934752e2f5ea1b3c36054252d5; 0xe99b6ef767a42131263bdd3d4a0a7c16b32f0543,current,,"perf 10%, mgmt 0.5%, deposit 0.2%, withdraw 0.2%, request 0.2%",getters at T,withdraw window 24h

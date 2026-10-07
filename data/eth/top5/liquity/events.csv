@@ -1,0 +1,11 @@
+date,event,type,effect_on_deposits_or_yield,source
+2026-01-30,"PlasmaVault, AccessManager, FeeManager, WithdrawManager deployed; deposits whitelist-only",launch,empty until March,contract creation; RoleGranted
+2026-03-03,"First deposit (whitelisted EIP-7702 EOA 0x81fa729b, also owner/atomist)",launch,32 ETH at 31 Mar,Transfer tx 0x394772cc
+2026-03-05,"First Ebisu trove opened (rETH branch); closed 9 Mar, then wstETH branch",strategy,"live route is Ebisu ebUSD, not Liquity BOLD",tx 0x8f4183c3
+2026-05-19,"Deposits opened to the public; 0.2% deposit, withdraw and request fees set",terms,43 holders and 528 ETH by 31 May,TargetFunctionRoleUpdated to PUBLIC; fee events
+2026-05-26,"Vault closed by guardian for 15 minutes, then reopened",incident,all user functions blocked during the window,AccessManager TargetClosed events
+2026-05-28,"Performance fee 2% to 10%, management 0.3% to 0.5%",fees,net yield reduced,FeeManager events
+2026-06-06,"Current Ebisu wstETH trove opened; owner, guardian and atomist moved to Safe 2-of-3 (6 to 11 Jun)",governance,control moved from one EOA to a 2-of-3 Safe,tx 0x076e6b92; RoleGranted/Revoked
+2026-07-28,New strategist EOA 0xad34f0fe gets ALPHA; previous EOA removed next day,governance,,RoleGranted/Revoked
+2026-08-25,Safe 3-of-6 0x1676d237 enters; becomes 36.9% holder,flows,"book 2,814 ETH (Aug) to 6,017 ETH (Sep)",Transfer events
+2026-09-23,Rocksolid rETH execution account enters (12.1% at T); Rocksolid enters Closing on 29 Sep,flows,a closing product holds 728 ETH of this vault,Transfer tx 0x26c59d71; CARRY-PRODUCTS.md

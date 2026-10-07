@@ -44,6 +44,21 @@ def run():
     lr = D / 'gap_loop_regime_monthly.csv'
     if lr.exists():
         out['loopRegime'] = [{k: r[k] for k in ('month', 'aave_core_weth_borrow_apr_month_avg', 'steth_holder_apr_month', 'spread_steth_minus_aave_core_borrow_month_avg', 'aave_core_weth_utilization', 'total_weth_debt_eth', 'lido_gross_cl_apr', 'lido_gross_el_apr')} for r in csv.DictReader(lr.open())]
+    T5 = D / 'top5'
+    out['keys'], out['events'], out['buckets'], out['holdersMonthly'] = {}, {}, {}, {}
+    for pid in ('liquid', 'yieldbasis', 'lido-earn', 'avant', 'liquity'):
+        f = T5 / pid
+        if (f / 'keys.csv').exists():
+            out['keys'][pid] = [dict(r) for r in csv.DictReader((f / 'keys.csv').open())]
+        if (f / 'events.csv').exists():
+            out['events'][pid] = [dict(r) for r in csv.DictReader((f / 'events.csv').open())]
+        if (f / 'holder_buckets.csv').exists():
+            out['buckets'][pid] = [dict(r) for r in csv.DictReader((f / 'holder_buckets.csv').open())]
+        if (f / 'holders_monthly.csv').exists():
+            out['holdersMonthly'][pid] = [{k: r[k] for k in ('token', 'month_end', 'holders', 'capital_eth', 'top1_pct', 'top10_pct')} for r in csv.DictReader((f / 'holders_monthly.csv').open())]
+    if (T5 / 'liquid' / 'loop_weekly.csv').exists():
+        out['liquidLoop'] = [{k: r[k] for k in ('week_end', 'pool', 'health_factor', 'weth_debt', 'equity_eth', 'weth_borrow_apr_instant', 'staking_apr_week')} for r in csv.DictReader((T5 / 'liquid' / 'loop_weekly.csv').open())]
+        out['liquidRepays'] = [{k: r[k] for k in ('utc', 'pool', 'event', 'amount_units', 'hf_before_block', 'hf_after_block')} for r in csv.DictReader((T5 / 'liquid' / 'loop_events.csv').open()) if r['event'] == 'Repay' and float(r['amount_units'] or 0) >= 1000]
     (D / 'atlas_top5_risk.json').write_text(json.dumps(out, indent=1) + '\n')
     print('Atlas top-5 risk:', {k: len(v['health_factor']) for k, v in out['products'].items()})
 

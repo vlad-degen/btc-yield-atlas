@@ -1,0 +1,7 @@
+date,block,contract,fee,old,new,source,note
+T,26108081,0x9469470c9878bf3d6d0604831d9a3a366156f7ee; 0xda06ee2dacf9245aa80072a4407debdea0d7e341; 0x09becf6e5e297825d19aa14ed6081a03524532d7,on-chain fee parameter,,none exists,"ABI review: no fee setter or fee state in avETH, savETH, AvantMintingV2",fees are taken off-chain before rewards are pushed to savETH
+"docs, read 2026-10-07",,n/a,performance fee,,10% of net strategy profit + variable fee to trading partners,https://docs.avantprotocol.com/yield-strategies-and-revenue/protocol-revenue-and-fees,not verifiable on-chain
+"docs, read 2026-10-07",,n/a,yield on unstaked avETH,,kept by protocol (funds reserve),same page; https://docs.avantprotocol.com/security/reserve-fund,avETH holders earn 0
+"docs, read 2026-10-07",,n/a,redemption fee (avETH to ETH),,"variable, shown in app before confirm",https://docs.avantprotocol.com/yield-strategies-and-revenue/protocol-revenue-and-fees,
+"docs, read 2026-10-07",,n/a,junior tranche top-up,,10% of total yield on main-strategy capital goes to avETHx,https://docs.avantprotocol.com/yield-strategies-and-revenue/yield-distribution,a second carve-out from senior yield
+2025-09 to T,,0xda06ee2dacf9245aa80072a4407debdea0d7e341,net yield pushed to savETH (RewardsReceived),,248.62 avETH in total,RewardsReceived events,"monthly: Sep 1.91, Oct 6.86, Nov 10.23, Dec 7.45, Jan 7.95, Feb 10.90, Mar 12.96, Apr 20.52, May 23.87, Jun 27.59, Jul 35.60, Aug 43.04, Sep 37.19"

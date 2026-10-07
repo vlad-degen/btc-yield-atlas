@@ -2147,5 +2147,5560 @@
    "lido_gross_cl_apr": "0.02375",
    "lido_gross_el_apr": "0.00086"
   }
+ ],
+ "keys": {
+  "yieldbasis": [
+   {
+    "layer": "LT + LEVAMM code",
+    "contract": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea / 0x5f8d24f33cc5a1d5d1bf012261e6a2214c92233c",
+    "power": "upgrade",
+    "holder": "none (Vyper 0.4.3, no proxy)",
+    "holder_type": "immutable",
+    "can_change": "nothing: code cannot be replaced",
+    "delay_at_T": "n/a",
+    "verified_by": "no EIP-1967 slots; Blockscout source, no proxy",
+    "note": "Docs: core contracts are immutable"
+   },
+   {
+    "layer": "LT",
+    "contract": "0x2b9c9f3bdceb5d8e36a4704f08a78fca53343cea",
+    "power": "admin()",
+    "holder": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+    "holder_type": "contract Factory",
+    "can_change": "set_rate, set_amm_fee, allocate_stablecoins(limit), set_admin, set_killed",
+    "delay_at_T": "inherits Factory admin path",
+    "verified_by": "LT.admin() at T",
+    "note": "_check_admin accepts admin or Factory.admin()"
+   },
+   {
+    "layer": "Factory",
+    "contract": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+    "power": "admin()",
+    "holder": "0xb8ba33cd1ccb091a8468572950bd3669723fa5c6",
+    "holder_type": "contract HybridFactoryOwner",
+    "can_change": "lt_set_rate, lt_set_amm_fee, set_min_admin_fee, set_fee_receiver, set_implementations, set_allocator, lt_set_killed",
+    "delay_at_T": "inherits DAO vote",
+    "verified_by": "Factory.admin() at T; SetAdmin event 2026-06-03",
+    "note": "HybridFactoryOwner forwards only when msg.sender == ADMIN (immutable)"
+   },
+   {
+    "layer": "HybridFactoryOwner",
+    "contract": "0xb8ba33cd1ccb091a8468572950bd3669723fa5c6",
+    "power": "ADMIN (immutable)",
+    "holder": "0x42f2a41a0d0e65a440813190880c8a65124895fa",
+    "holder_type": "Aragon OSx DAO (ERC1967 proxy)",
+    "can_change": "every fee, rate, allocation and kill call on the WETH LT",
+    "delay_at_T": "7-day vote, but EarlyExecution mode: can execute as soon as the outcome is certain; no separate timelock",
+    "verified_by": "HFO.ADMIN(); plugin getters",
+    "note": "TokenVoting plugin 0x2be6670de1ccec715bdbba2e3a6c1a05e496ec78: minDuration 604800 s, supportThreshold 55%, minParticipation 30%, votingMode 1 (EarlyExecution), proposal cooldown 86400 s, voting token veYB"
+   },
+   {
+    "layer": "DAO",
+    "contract": "0x42f2a41a0d0e65a440813190880c8a65124895fa",
+    "power": "EXECUTE_PERMISSION",
+    "holder": "0x2be6670de1ccec715bdbba2e3a6c1a05e496ec78",
+    "holder_type": "TokenVoting plugin (veYB)",
+    "can_change": "executes passed proposals; DAO can upgrade itself (UPGRADE_DAO permission held by DAO)",
+    "delay_at_T": "see vote rules above",
+    "verified_by": "Granted events at DAO setup (2025-09-15)",
+    "note": ""
+   },
+   {
+    "layer": "HybridFactoryOwner",
+    "contract": "0xb8ba33cd1ccb091a8468572950bd3669723fa5c6",
+    "power": "limit_setters",
+    "holder": "0xbdc32268851c324c6185809271dfe6d8dab8dc5b; 0xd5b450fdd5af5341436fc37a46bbec39ca8f92cb",
+    "holder_type": "contracts HybridVaultFactory; LTMigrator",
+    "can_change": "raise crvUSD allocation for an LT (floored at 95% of LP collateral value)",
+    "delay_at_T": "none",
+    "verified_by": "SetLimitSetter events (latest 2026-09-10)",
+    "note": "LTMigrator replaced 0x3e6db519 on 2026-09-10"
+   },
+   {
+    "layer": "Factory",
+    "contract": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+    "power": "emergency_admin()",
+    "holder": "0x467947ee34af926cf1dcac093870f613c96b1e0c",
+    "holder_type": "Safe 5-of-9 (no modules, no guard)",
+    "can_change": "LT.set_killed: blocks deposits and normal withdraw; emergency_withdraw stays open",
+    "delay_at_T": "none",
+    "verified_by": "Factory.emergency_admin(); Safe getThreshold/getOwners",
+    "note": "unchanged since Factory deploy"
+   },
+   {
+    "layer": "Factory",
+    "contract": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+    "power": "fee_receiver()",
+    "holder": "0x4b7782fd52143058e4495686edf8917021d1c346",
+    "holder_type": "contract FeeSplitter, owner = DAO",
+    "can_change": "receives admin-fee LT mints; split_fraction 15%",
+    "delay_at_T": "DAO vote to change",
+    "verified_by": "Factory.fee_receiver(); FeeSplitter.owner(), split_fraction()",
+    "note": "set 2026-07-20"
+   },
+   {
+    "layer": "Factory",
+    "contract": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+    "power": "min_admin_fee()",
+    "holder": "DAO via HybridFactoryOwner",
+    "holder_type": "parameter",
+    "can_change": "10% floor of the admin fee curve",
+    "delay_at_T": "DAO vote",
+    "verified_by": "Factory.min_admin_fee() = 0.1e18",
+    "note": "no SetMinAdminFee event since deploy"
+   },
+   {
+    "layer": "LiquidityGauge",
+    "contract": "0xd829456fd63ada7de0657714a3a7a26de403e3d8",
+    "power": "owner / minter",
+    "holder": "0x370a449febb9411c95bf897021377fe0b7d100c0",
+    "holder_type": "contract Factory",
+    "can_change": "add_reward, change_reward_distributor; YB emissions via GaugeController 0x1be14811",
+    "delay_at_T": "DAO path",
+    "verified_by": "OwnershipTransferred + RoleMinterChanged at 2026-05-25",
+    "note": "staked LT forgo PPS growth, earn YB"
+   },
+   {
+    "layer": "crvUSD source",
+    "contract": "0xc9332fdcb1c491dcc683bae86fe3cb70360738bc",
+    "power": "Factory allocator",
+    "holder": "Curve crvUSD ControllerFactory",
+    "holder_type": "Curve DAO contract",
+    "can_change": "crvUSD mint ceiling for YB (allocator amount set to max uint)",
+    "delay_at_T": "Curve DAO",
+    "verified_by": "Factory SetAllocator event 2025-09-15",
+    "note": "external dependency: Curve Emergency DAO can pause the Cryptoswap pool"
+   }
+  ],
+  "lido-earn": [
+   {
+    "layer": "Vault, ShareManager (earnETH token), FeeManager, Oracle, RiskManager",
+    "contract": "0x6a37725ca7f4ce81c004c955f7280d5c704a249e; 0xbbfc8683c8fe8cf73777fede7ab9574935fea0a4; 0xed4fac879ee86f3ab0101993a3713e7caa0488e1; 0xada1f4c24603ab2fe5abd35bcd12370e98a20358; 0xa2a4c4ece27229af51c546844ab752824ccb557e",
+    "power": "proxy admin (5 ProxyAdmin contracts)",
+    "holder": "0x81698f87c6482bf1ce9bfcfc0f103c4a0adf0af0",
+    "holder_type": "Safe 5-of-8 \"Proxy Admin\" (no modules, no guard)",
+    "can_change": "replace implementation of every core contract",
+    "delay_at_T": "none",
+    "verified_by": "EIP-1967 admin slot -> ProxyAdmin.owner() at T",
+    "note": "ShareManager was upgraded 2026-03-02 (Burnable implementation); same Safe owns both subvaults"
+   },
+   {
+    "layer": "Vault",
+    "contract": "0x6a37725ca7f4ce81c004c955f7280d5c704a249e",
+    "power": "DEFAULT_ADMIN_ROLE",
+    "holder": "0x0dd73341d6158a72b4d224541f1094188f57076e",
+    "holder_type": "Safe 5-of-8 \"Lazy Vault Admin\" (no modules, no guard)",
+    "can_change": "grant any role to itself and use it in the same tx (queues, oracle params, limits, pause)",
+    "delay_at_T": "none",
+    "verified_by": "getRoleMembers at T; RoleGranted/Revoked history",
+    "note": "used this way 2026-03-03, 2026-04-18, 2026-07-07, 2026-07-23"
+   },
+   {
+    "layer": "FeeManager",
+    "contract": "0xed4fac879ee86f3ab0101993a3713e7caa0488e1",
+    "power": "owner()",
+    "holder": "0x0dd73341d6158a72b4d224541f1094188f57076e",
+    "holder_type": "Safe 5-of-8",
+    "can_change": "setFees (deposit, redeem, performance, protocol), setFeeRecipient",
+    "delay_at_T": "none",
+    "verified_by": "FeeManager.owner() at T",
+    "note": "fees changed 3 times without notice delay (fees.csv)"
+   },
+   {
+    "layer": "FeeManager",
+    "contract": "0xed4fac879ee86f3ab0101993a3713e7caa0488e1",
+    "power": "feeRecipient()",
+    "holder": "0xccf2daba8bb04a232a2fda0d01010d4ef6c69b85",
+    "holder_type": "Safe 4-of-6 \"Treasury\"",
+    "can_change": "receives fee shares",
+    "delay_at_T": "n/a",
+    "verified_by": "FeeManager.feeRecipient()",
+    "note": ""
+   },
+   {
+    "layer": "RiskManager",
+    "contract": "0xa2a4c4ece27229af51c546844ab752824ccb557e",
+    "power": "SET_VAULT_LIMIT, SET_SUBVAULT_LIMIT, ALLOW_SUBVAULT_ASSETS, MODIFY_VAULT/SUBVAULT_BALANCE",
+    "holder": "0x982ab69785f5329bb59c36b19cbd4865353fef10",
+    "holder_type": "Safe 3-of-8 \"Active Vault Admin\"",
+    "can_change": "deposit limits, subvault limits and allowed assets",
+    "delay_at_T": "none",
+    "verified_by": "getRoleMembers at T",
+    "note": ""
+   },
+   {
+    "layer": "Vault",
+    "contract": "0x6a37725ca7f4ce81c004c955f7280d5c704a249e",
+    "power": "PUSH_LIQUIDITY, PULL_LIQUIDITY, role 0x877766a8 (unresolved name)",
+    "holder": "0xe5abcc40196174ae0d12153de286f0d8e401769d",
+    "holder_type": "Safe 3-of-6 \"Curator (earnETH, earnUSD)\"",
+    "can_change": "move assets between vault and the two subvaults (stRATEGY, GGV)",
+    "delay_at_T": "none",
+    "verified_by": "getRoleMembers at T",
+    "note": "Lido docs list this Safe as 3/5; on-chain threshold is 3-of-6"
+   },
+   {
+    "layer": "Oracle",
+    "contract": "0xada1f4c24603ab2fe5abd35bcd12370e98a20358",
+    "power": "SUBMIT_REPORTS, ACCEPT_REPORT",
+    "holder": "0xfbd83f7c531d35d99392a5a20bb5f1e75e97076e",
+    "holder_type": "contract OracleSubmitter",
+    "can_change": "prices earnETH for deposits and redemptions",
+    "delay_at_T": "redeem requests settle at the first report >= 24h after request",
+    "verified_by": "getRoleMembers at T; Oracle.securityParams()",
+    "note": "securityParams: max abs deviation 0.5%, suspicious 0.1%, timeout 20h, depositInterval 1h, redeemInterval 24h"
+   },
+   {
+    "layer": "OracleSubmitter",
+    "contract": "0xfbd83f7c531d35d99392a5a20bb5f1e75e97076e",
+    "power": "submit / accept suspicious",
+    "holder": "0x93a797643d74fc81e7a51f3f84a9d78f930435d1 (submit); 0x0dd73341d6158a72b4d224541f1094188f57076e (accept, admin)",
+    "holder_type": "Safe 3-of-8 \"Oracle Updater\"; Safe 5-of-8",
+    "can_change": "post price reports; accept a report outside deviation bounds",
+    "delay_at_T": "none",
+    "verified_by": "OracleSubmitter RoleGranted history",
+    "note": "Lazy admin took submit role for one tx on 2026-05-15 (recovery report)"
+   },
+   {
+    "layer": "Pause path",
+    "contract": "0x363ba8843d06ba5968f55c26ab055162edd62189",
+    "power": "SET_QUEUE_STATUS, ShareManager SET_FLAGS, role 0xfc199f68",
+    "holder": "TimelockController minDelay 0",
+    "holder_type": "proposer+canceller: Lazy admin Safe; executors: Lido Pauser Safe 3-of-5 0xa916fd52, Mellow Pauser Safe 1-of-8 0x6e887af3",
+    "can_change": "pause deposit/redeem queues and share transfers via 16 pre-scheduled calls (2026-02-02)",
+    "delay_at_T": "0 s (getMinDelay)",
+    "verified_by": "TimelockController.getMinDelay(); RoleGranted; CallScheduled",
+    "note": "one signer of the Mellow Pauser Safe can execute a pre-approved pause"
+   },
+   {
+    "layer": "Nested stRATEGY vault",
+    "contract": "0x277c6a642564a91ff78b008022d65683cee5ccc5",
+    "power": "DEFAULT_ADMIN, oracle, queue roles; FeeManager owner",
+    "holder": "0xabe20d266ae54b9ae30492dea6b6407bf18feeb5",
+    "holder_type": "Safe 5-of-8 \"Curator (stRATEGY)\"",
+    "can_change": "all stRATEGY settings; fees 0/0/0/0 at T",
+    "delay_at_T": "none",
+    "verified_by": "getRoleMembers at T",
+    "note": "proxy admin owner is the same Proxy Admin Safe; operator 0x5dbf9287 holds PUSH/PULL"
+   }
+  ],
+  "avant": [
+   {
+    "layer": "avETH token",
+    "contract": "0x9469470c9878bf3d6d0604831d9a3a366156f7ee",
+    "power": "owner()",
+    "holder": "0xd4d23209aae8630bf386b7393763a5b7865e57cb",
+    "holder_type": "EOA (no code at T; docs say MPC custody, not verifiable on-chain)",
+    "can_change": "setMinter: add or remove any minter, so unlimited avETH can be minted",
+    "delay_at_T": "none (Ownable2Step only for ownership transfer)",
+    "verified_by": "owner(); eth_getCode = empty",
+    "note": "not upgradeable (no proxy)"
+   },
+   {
+    "layer": "avETH token",
+    "contract": "0x9469470c9878bf3d6d0604831d9a3a366156f7ee",
+    "power": "minter",
+    "holder": "0x09becf6e5e297825d19aa14ed6081a03524532d7",
+    "holder_type": "contract AvantMintingV2",
+    "can_change": "mint/burn avETH against signed orders",
+    "delay_at_T": "n/a",
+    "verified_by": "MinterUpdated event 2025-08-11",
+    "note": "only minter at T"
+   },
+   {
+    "layer": "AvantMintingV2",
+    "contract": "0x09becf6e5e297825d19aa14ed6081a03524532d7",
+    "power": "DEFAULT_ADMIN / owner",
+    "holder": "0xd4d23209aae8630bf386b7393763a5b7865e57cb",
+    "holder_type": "EOA",
+    "can_change": "grant MINTER/REDEEMER/COLLATERAL_MANAGER, set custodians, supported assets, per-block caps, disableMintRedeem",
+    "delay_at_T": "none",
+    "verified_by": "owner(); AdminTransferred history",
+    "note": "per-block caps 5,000 avETH mint and redeem since 2025-10-15"
+   },
+   {
+    "layer": "AvantMintingV2",
+    "contract": "0x09becf6e5e297825d19aa14ed6081a03524532d7",
+    "power": "MINTER_ROLE, REDEEMER_ROLE",
+    "holder": "0xaf6fd55a83b0f85b4f330e2b25512c2b669786d2",
+    "holder_type": "EOA (backend signer)",
+    "can_change": "execute mint and redeem orders; users cannot redeem on-chain by themselves",
+    "delay_at_T": "none",
+    "verified_by": "RoleGranted 2025-08-11",
+    "note": "docs: redemption up to 7 days"
+   },
+   {
+    "layer": "AvantMintingV2",
+    "contract": "0x09becf6e5e297825d19aa14ed6081a03524532d7",
+    "power": "custodian / COLLATERAL_MANAGER_ROLE",
+    "holder": "0xd0f02713d9905d4f08512f3305eee1cac47d6ac9 (custodian); 0xd4d23209aae8630bf386b7393763a5b7865e57cb (collateral manager since 2026-06-02)",
+    "holder_type": "EOAs",
+    "can_change": "collateral WETH sent from minting contract to custody",
+    "delay_at_T": "none",
+    "verified_by": "CustodianAddressAdded, RoleGranted",
+    "note": ""
+   },
+   {
+    "layer": "savETH (StakedAvantCoinV2)",
+    "contract": "0xda06ee2dacf9245aa80072a4407debdea0d7e341",
+    "power": "DEFAULT_ADMIN_ROLE / owner",
+    "holder": "0xd4d23209aae8630bf386b7393763a5b7865e57cb",
+    "holder_type": "EOA",
+    "can_change": "setCooldownDuration (0 to 90 days), blacklist, redistributeLockedAmount (move a restricted holder balance), rescueTokens, grant REWARDER",
+    "delay_at_T": "none",
+    "verified_by": "owner(); RoleGranted history; MAX_COOLDOWN_DURATION = 7776000 s",
+    "note": "64 CooldownDurationUpdated events; set to 60 s on 30 occasions in Apr-Sep 2026, 219 hours in total (166 h on 30 Jul-6 Aug)"
+   },
+   {
+    "layer": "savETH",
+    "contract": "0xda06ee2dacf9245aa80072a4407debdea0d7e341",
+    "power": "REWARDER_ROLE",
+    "holder": "0xdb87e930065bc4c9cc4273672a64bf8e2761f1d8",
+    "holder_type": "EOA",
+    "can_change": "transferInRewards (daily yield push, vested)",
+    "delay_at_T": "none",
+    "verified_by": "RoleGranted 2025-08-11",
+    "note": "sets the realised senior yield"
+   },
+   {
+    "layer": "CCIP pools (avETH, savETH)",
+    "contract": "0xbd09e8846b9dbda54ef386bd9ef3bbd15add50ee; 0x43f47a434dadd5a122c42e49378365cca949fa54",
+    "power": "owner()",
+    "holder": "0xd4d23209aae8630bf386b7393763a5b7865e57cb",
+    "holder_type": "EOA",
+    "can_change": "pool config, rate limits, remote chains (Avalanche, Linea, Arbitrum)",
+    "delay_at_T": "none",
+    "verified_by": "owner() at T; getRebalancer() = 0x0",
+    "note": "savETH pool holds 16.27% of savETH for bridged holders"
+   },
+   {
+    "layer": "Strategy wallet",
+    "contract": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+    "power": "holds ETH collateral and dollar debt",
+    "holder": "itself",
+    "holder_type": "EOA (MPC per docs)",
+    "can_change": "all Ethereum Aave/Spark legs",
+    "delay_at_T": "none",
+    "verified_by": "eth_getCode = empty",
+    "note": "see TOP5-RISK-LIQUIDITY.md"
+   },
+   {
+    "layer": "ETH Reserve Fund",
+    "contract": "0x4a6f696a6f921921dc959d19e911a2034063cfda",
+    "power": "first-loss buffer",
+    "holder": "itself",
+    "holder_type": "EOA (MPC per docs)",
+    "can_change": "covers losses before the junior tranche",
+    "delay_at_T": "n/a",
+    "verified_by": "balanceOf at T: 38.01 savETH",
+    "note": "about 40.3 ETH, 0.36% of savETH"
+   }
+  ],
+  "liquity": [
+   {
+    "layer": "PlasmaVault",
+    "contract": "0xb9e806e8f2d94c015ffefa90cd24ecce18f1663c",
+    "power": "upgrade",
+    "holder": "none",
+    "holder_type": "EIP-1167 clone of PlasmaVault 0xae4362a9",
+    "can_change": "implementation cannot change; config can",
+    "delay_at_T": "n/a",
+    "verified_by": "Blockscout proxy_type eip1167",
+    "note": "on-chain name \"rETH Liquity LP Carry\""
+   },
+   {
+    "layer": "AccessManager",
+    "contract": "0x2c6ce3773eceb3107a5aade37f3c20d4e41902d2",
+    "power": "ADMIN_ROLE (0)",
+    "holder": "nobody",
+    "holder_type": "revoked at init",
+    "can_change": "top-level role admin unused",
+    "delay_at_T": "n/a",
+    "verified_by": "RoleGranted/Revoked replay; hasRole(0, owner Safe) = false",
+    "note": ""
+   },
+   {
+    "layer": "AccessManager",
+    "contract": "0x2c6ce3773eceb3107a5aade37f3c20d4e41902d2",
+    "power": "OWNER_ROLE (1), GUARDIAN (2), ATOMIST (100), FUSE_MANAGER (300), PRE_HOOKS (301), CONFIG_INSTANT_WITHDRAWAL_FUSES (900), withdraw fee roles (901, 902), PRICE_ORACLE_MIDDLEWARE (1200)",
+    "holder": "0x32787cd59244581a358a068d52e460eb00df6543",
+    "holder_type": "Safe 2-of-3 (no modules, no guard)",
+    "can_change": "owner: grants atomist/guardian, sets execution delays; atomist: fees, supply cap, oracle, withdraw window; fuse manager: add fuses and market substrates (what the strategist may touch); guardian: close vault",
+    "delay_at_T": "0 s: getAccess current and pending delay 0, minimal execution delay 0 for every role, grant delay 0, target admin delay 0",
+    "verified_by": "getAccess / getMinimalExecutionDelayForRole / getRoleGrantDelay at T",
+    "note": "since 2026-06-08; previous holder EIP-7702 EOA 0x81fa729b revoked 2026-06-11 to 2026-07-28"
+   },
+   {
+    "layer": "AccessManager",
+    "contract": "0x2c6ce3773eceb3107a5aade37f3c20d4e41902d2",
+    "power": "ALPHA_ROLE (200)",
+    "holder": "0x8ff4d4a12a4df051abfbd1ff94f6b17d42cc3856; 0xad34f0feec06684d86a6a18ee6250beb588d956d",
+    "holder_type": "contract PlasmaVaultWrapper; EOA",
+    "can_change": "execute() strategy actions inside granted fuses; releaseFunds on WithdrawManager",
+    "delay_at_T": "0 s",
+    "verified_by": "getAccess at T",
+    "note": "EOA 0xad34 also holds markets-balance, rewards and request-fee roles"
+   },
+   {
+    "layer": "AccessManager",
+    "contract": "0x2c6ce3773eceb3107a5aade37f3c20d4e41902d2",
+    "power": "IPOR_DAO_ROLE (4)",
+    "holder": "0xf6a9bd8f6dc537675d499ac1ca14f2c55d8b5569",
+    "holder_type": "Safe 4-of-6 (IPOR DAO)",
+    "can_change": "set the DAO fee recipient",
+    "delay_at_T": "0 s",
+    "verified_by": "getAccess at T",
+    "note": "receives 2% performance and 0.3% management"
+   },
+   {
+    "layer": "FeeManager",
+    "contract": "0x3060495027274e934752e2f5ea1b3c36054252d5",
+    "power": "updatePerformanceFee, updateManagementFee, setDepositFee",
+    "holder": "0x32787cd59244581a358a068d52e460eb00df6543",
+    "holder_type": "Safe 2-of-3 via ATOMIST_ROLE",
+    "can_change": "curator fee share and deposit fee",
+    "delay_at_T": "0 s",
+    "verified_by": "getTargetFunctionRole(FeeManager, selector) = ATOMIST",
+    "note": "IPOR DAO part (2% / 0.3%) is a constant in FeeManager"
+   },
+   {
+    "layer": "WithdrawManager",
+    "contract": "0xe99b6ef767a42131263bdd3d4a0a7c16b32f0543",
+    "power": "updateWithdrawWindow / updateWithdrawFee / updateRequestFee",
+    "holder": "0x32787cd59244581a358a068d52e460eb00df6543 (+ EOAs 0xa2faa7a4, 0xad34f0fe for request fee)",
+    "holder_type": "Safe 2-of-3; EOAs",
+    "can_change": "withdraw window (86,400 s at T) and exit fees",
+    "delay_at_T": "0 s",
+    "verified_by": "getTargetFunctionRole at T",
+    "note": "request fee and withdraw fee 0.2% each since 2026-05-19"
+   },
+   {
+    "layer": "PlasmaVault",
+    "contract": "0xb9e806e8f2d94c015ffefa90cd24ecce18f1663c",
+    "power": "deposit, mint, redeem, withdraw, transfer",
+    "holder": "PUBLIC_ROLE",
+    "holder_type": "anyone",
+    "can_change": "open since 2026-05-19 (deposits) and 2026-06-05 (transfers); WHITELIST_ROLE before",
+    "delay_at_T": "n/a",
+    "verified_by": "getTargetFunctionRole at T",
+    "note": "redemption lock after deposit: 1 s"
+   },
+   {
+    "layer": "Ebisu trove",
+    "contract": "0xa2895d6a3bf110561dfe4b71ca539d84e1928b22",
+    "power": "loan owner",
+    "holder": "0xb9e806e8f2d94c015ffefa90cd24ecce18f1663c",
+    "holder_type": "vault",
+    "can_change": "borrower-set rate 2.55% (low rate = early in Ebisu redemption order)",
+    "delay_at_T": "n/a",
+    "verified_by": "prior study getters",
+    "note": "Ebisu governance outside this map"
+   }
+  ]
+ },
+ "events": {
+  "yieldbasis": [
+   {
+    "date": "2026-01-07",
+    "event": "Earlier WETH market (Factory idx 6, LT 0x931d40dd) created; the current LT is a separate contract",
+    "type": "predecessor",
+    "effect_on_deposits_or_yield": "history before 2026-05-25 belongs to the old LT, not to this receipt",
+    "source": "Factory MarketParameters, block 24184012"
+   },
+   {
+    "date": "2026-04-07",
+    "event": "Factory admin moved from the DAO to HybridFactoryOwner v1 (0x0f4e1a1b)",
+    "type": "governance",
+    "effect_on_deposits_or_yield": "HybridVault factory became a limit setter (can raise crvUSD allocation)",
+    "source": "Factory SetAdmin, block 24825748"
+   },
+   {
+    "date": "2026-05-25",
+    "event": "Current WETH market (idx 10) deployed; first deposit; gauge set; fee 1.3%, rate 10%",
+    "type": "launch",
+    "effect_on_deposits_or_yield": "641 ETH and 26 holders by 31 May",
+    "source": "Factory MarketParameters + LT Transfer, tx 0x3b5b1080"
+   },
+   {
+    "date": "2026-06-03",
+    "event": "Factory admin moved to HybridFactoryOwner 0xb8ba33cd (ADMIN = DAO)",
+    "type": "governance",
+    "effect_on_deposits_or_yield": "no change to fees; new limit setters",
+    "source": "Factory SetAdmin, block 25239216"
+   },
+   {
+    "date": "2026-06-30",
+    "event": "Growth month: 164 holders, 5,085 ETH; staked share 39.9%",
+    "type": "flows",
+    "effect_on_deposits_or_yield": "admin fee fell to 30.2% as staking ratio fell",
+    "source": "holders_monthly.csv"
+   },
+   {
+    "date": "2026-07-20",
+    "event": "Fee receiver switched to FeeSplitter; every later admin-fee withdrawal mints 0",
+    "type": "fees",
+    "effect_on_deposits_or_yield": "staked side below watermark: no admin fee since; recovery first",
+    "source": "Factory SetFeeReceiver block 25575797; LT WithdrawAdminFees"
+   },
+   {
+    "date": "2026-08-31",
+    "event": "Peak book: 12,512 ETH, 324 holders, staked 59.9%",
+    "type": "flows",
+    "effect_on_deposits_or_yield": "",
+    "source": "holders_monthly.csv"
+   },
+   {
+    "date": "2026-09-10",
+    "event": "LTMigrator 0xd5b450fd made a limit setter (migration path from legacy markets)",
+    "type": "governance",
+    "effect_on_deposits_or_yield": "migrations can raise this LT crvUSD allocation without a vote",
+    "source": "HybridFactoryOwner SetLimitSetter, block 25949201"
+   },
+   {
+    "date": "2026-09-30",
+    "event": "Book down 15% in September to 10,616 ETH; 28 addresses exited",
+    "type": "flows",
+    "effect_on_deposits_or_yield": "unstaked mark fell 0.69% over the matched 94 days (prior study)",
+    "source": "holders_monthly.csv; CARRY-PRODUCTS.md"
+   }
+  ],
+  "lido-earn": [
+   {
+    "date": "2025-11-06",
+    "event": "stRATEGY (strETH) launches; it becomes the main earnETH subvault holding",
+    "type": "predecessor",
+    "effect_on_deposits_or_yield": "strETH holders later migrate into earnETH",
+    "source": "https://blog.lido.fi/introducing-the-lido-strategy-vault/"
+   },
+   {
+    "date": "2026-02-02",
+    "event": "earnETH vault, ShareManager, FeeManager (fees 0), Oracle, pause timelock deployed by 0xe98be1e5; roles handed to Lido/Mellow Safes",
+    "type": "launch",
+    "effect_on_deposits_or_yield": "no deposits yet",
+    "source": "tx 0x3d3b6074; Vault RoleGranted"
+   },
+   {
+    "date": "2026-02-19",
+    "event": "Lido DAO proposes first-loss allocation (3M USD of wstETH into earnETH)",
+    "type": "governance",
+    "effect_on_deposits_or_yield": "DAO shares rank first for losses (burned)",
+    "source": "https://research.lido.fi/t/lido-earn-competing-on-trust-5m-treasury-allocation/11228"
+   },
+   {
+    "date": "2026-03-02",
+    "event": "ShareManager upgraded to BurnableTokenizedShareManager by the Proxy Admin Safe",
+    "type": "upgrade",
+    "effect_on_deposits_or_yield": "adds share burn used later to absorb losses",
+    "source": "ShareManager Upgraded event tx 0xac9413e7"
+   },
+   {
+    "date": "2026-03-13",
+    "event": "Bulk migration: 8,703 strETH, 3,280 GG, 2,884 DVstETH, 1,404 wstETH deposited and claimed",
+    "type": "flows",
+    "effect_on_deposits_or_yield": "1,195 holders and 77,576 ETH by 31 Mar",
+    "source": "Vault HookCalled/SharesClaimed events"
+   },
+   {
+    "date": "2026-04-18",
+    "event": "Lazy Vault Admin pauses all six deposit queues (Kelp-related rsETH stress)",
+    "type": "incident",
+    "effect_on_deposits_or_yield": "deposits frozen 27 days; book 107,422 ETH (Apr) to 42,805 ETH (May)",
+    "source": "Vault SetQueueStatus tx 0xf4bb7942; https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579"
+   },
+   {
+    "date": "2026-05-15",
+    "event": "DAO burns 143.98 earnETH (first loss); recovery oracle report; queues unpaused",
+    "type": "recovery",
+    "effect_on_deposits_or_yield": "loss absorbed by DAO shares, not by other holders",
+    "source": "tx 0xdfca0390; SetQueueStatus tx 0x21d174cd"
+   },
+   {
+    "date": "2026-07-01",
+    "event": "Fees switched on: 10% performance, 1% annual; switched off 21 Jul",
+    "type": "fees",
+    "effect_on_deposits_or_yield": "114.73 earnETH taken in 20 days",
+    "source": "FeeManager SetFees"
+   },
+   {
+    "date": "2026-09-03",
+    "event": "Fees 15% performance, 0.2% annual (current)",
+    "type": "fees",
+    "effect_on_deposits_or_yield": "net yield to holders reduced",
+    "source": "FeeManager SetFees tx 0x133c5b58"
+   },
+   {
+    "date": "2026-09-29",
+    "event": "Carry account borrows 5M USDT and buys earnUSD in one tx",
+    "type": "strategy",
+    "effect_on_deposits_or_yield": "adds a dollar-carry leg inside the nested strategy",
+    "source": "tx 0x48c24a94"
+   }
+  ],
+  "avant": [
+   {
+    "date": "2025-08-11",
+    "event": "avETH, savETH and AvantMintingV2 deployed by EOA 0xa5ab0683; savETH cooldown 7 days",
+    "type": "launch",
+    "effect_on_deposits_or_yield": "",
+    "source": "savETH RoleGranted tx 0xd98e5477"
+   },
+   {
+    "date": "2025-08-12",
+    "event": "First avETH mint",
+    "type": "launch",
+    "effect_on_deposits_or_yield": "",
+    "source": "tx 0x38cb7e6b"
+   },
+   {
+    "date": "2025-09-04",
+    "event": "Ownership of avETH, savETH and minting moved to EOA 0xd4d23209 (via 0xd47777cf)",
+    "type": "governance",
+    "effect_on_deposits_or_yield": "single key controls mint, cooldown and pools",
+    "source": "AdminTransferred / OwnershipTransferred"
+   },
+   {
+    "date": "2025-09-05",
+    "event": "savETH cooldown cut from 7 days to 1 day",
+    "type": "terms",
+    "effect_on_deposits_or_yield": "faster exit to avETH",
+    "source": "CooldownDurationUpdated tx 0xfe6b5b71"
+   },
+   {
+    "date": "2025-09-19",
+    "event": "First daily reward pushed to savETH",
+    "type": "yield",
+    "effect_on_deposits_or_yield": "senior yield starts (1.91 avETH in Sep)",
+    "source": "RewardsReceived"
+   },
+   {
+    "date": "2025-10-15",
+    "event": "Per-block mint and redeem caps raised 250 to 5,000 avETH",
+    "type": "limits",
+    "effect_on_deposits_or_yield": "larger flows possible",
+    "source": "MaxMint/RedeemPerBlockChanged"
+   },
+   {
+    "date": "2025-11-04",
+    "event": "First savETH supplied to Morpho savETH/WETH markets (loops)",
+    "type": "structure",
+    "effect_on_deposits_or_yield": "by T 17.63% of savETH sits in Morpho; one EOA owns 37.8% look-through",
+    "source": "Morpho SupplyCollateral"
+   },
+   {
+    "date": "2026-04-20",
+    "event": "Admin starts setting cooldown to 60 s for short windows (30 times to 2026-09-27; longest 30 Jul-6 Aug)",
+    "type": "terms",
+    "effect_on_deposits_or_yield": "some exits skip the 24h cooldown; no on-chain notice",
+    "source": "CooldownDurationUpdated events"
+   },
+   {
+    "date": "2026-06-02",
+    "event": "Admin EOA grants itself COLLATERAL_MANAGER_ROLE on AvantMintingV2",
+    "type": "governance",
+    "effect_on_deposits_or_yield": "admin can move minting collateral to custody",
+    "source": "RoleGranted"
+   },
+   {
+    "date": "2026-09-29",
+    "event": "Issuer discloses $72.65M assets, $39.47M liabilities, $33.18M net NAV, $32.53M in savUSD",
+    "type": "disclosure",
+    "effect_on_deposits_or_yield": "ETH product depends on Avant dollar credit",
+    "source": "https://app.avantprotocol.com/api/metrics/aveth"
+   }
+  ],
+  "liquity": [
+   {
+    "date": "2026-01-30",
+    "event": "PlasmaVault, AccessManager, FeeManager, WithdrawManager deployed; deposits whitelist-only",
+    "type": "launch",
+    "effect_on_deposits_or_yield": "empty until March",
+    "source": "contract creation; RoleGranted"
+   },
+   {
+    "date": "2026-03-03",
+    "event": "First deposit (whitelisted EIP-7702 EOA 0x81fa729b, also owner/atomist)",
+    "type": "launch",
+    "effect_on_deposits_or_yield": "32 ETH at 31 Mar",
+    "source": "Transfer tx 0x394772cc"
+   },
+   {
+    "date": "2026-03-05",
+    "event": "First Ebisu trove opened (rETH branch); closed 9 Mar, then wstETH branch",
+    "type": "strategy",
+    "effect_on_deposits_or_yield": "live route is Ebisu ebUSD, not Liquity BOLD",
+    "source": "tx 0x8f4183c3"
+   },
+   {
+    "date": "2026-05-19",
+    "event": "Deposits opened to the public; 0.2% deposit, withdraw and request fees set",
+    "type": "terms",
+    "effect_on_deposits_or_yield": "43 holders and 528 ETH by 31 May",
+    "source": "TargetFunctionRoleUpdated to PUBLIC; fee events"
+   },
+   {
+    "date": "2026-05-26",
+    "event": "Vault closed by guardian for 15 minutes, then reopened",
+    "type": "incident",
+    "effect_on_deposits_or_yield": "all user functions blocked during the window",
+    "source": "AccessManager TargetClosed events"
+   },
+   {
+    "date": "2026-05-28",
+    "event": "Performance fee 2% to 10%, management 0.3% to 0.5%",
+    "type": "fees",
+    "effect_on_deposits_or_yield": "net yield reduced",
+    "source": "FeeManager events"
+   },
+   {
+    "date": "2026-06-06",
+    "event": "Current Ebisu wstETH trove opened; owner, guardian and atomist moved to Safe 2-of-3 (6 to 11 Jun)",
+    "type": "governance",
+    "effect_on_deposits_or_yield": "control moved from one EOA to a 2-of-3 Safe",
+    "source": "tx 0x076e6b92; RoleGranted/Revoked"
+   },
+   {
+    "date": "2026-07-28",
+    "event": "New strategist EOA 0xad34f0fe gets ALPHA; previous EOA removed next day",
+    "type": "governance",
+    "effect_on_deposits_or_yield": "",
+    "source": "RoleGranted/Revoked"
+   },
+   {
+    "date": "2026-08-25",
+    "event": "Safe 3-of-6 0x1676d237 enters; becomes 36.9% holder",
+    "type": "flows",
+    "effect_on_deposits_or_yield": "book 2,814 ETH (Aug) to 6,017 ETH (Sep)",
+    "source": "Transfer events"
+   },
+   {
+    "date": "2026-09-23",
+    "event": "Rocksolid rETH execution account enters (12.1% at T); Rocksolid enters Closing on 29 Sep",
+    "type": "flows",
+    "effect_on_deposits_or_yield": "a closing product holds 728 ETH of this vault",
+    "source": "Transfer tx 0x26c59d71; CARRY-PRODUCTS.md"
+   }
+  ]
+ },
+ "buckets": {
+  "liquid": [
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "bucket",
+    "label": "<1 ETH",
+    "holders": "6425",
+    "holders_pct": "82.45",
+    "eth": "365.71",
+    "eth_pct": "0.26",
+    "avg_eth": "0.0569",
+    "note": ""
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "bucket",
+    "label": "1-10 ETH",
+    "holders": "881",
+    "holders_pct": "11.31",
+    "eth": "2924.698",
+    "eth_pct": "2.1",
+    "avg_eth": "3.3197",
+    "note": ""
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "bucket",
+    "label": "10-100 ETH",
+    "holders": "374",
+    "holders_pct": "4.8",
+    "eth": "10636.822",
+    "eth_pct": "7.66",
+    "avg_eth": "28.4407",
+    "note": ""
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "bucket",
+    "label": "100-1k ETH",
+    "holders": "102",
+    "holders_pct": "1.31",
+    "eth": "27398.658",
+    "eth_pct": "19.72",
+    "avg_eth": "268.6143",
+    "note": ""
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "bucket",
+    "label": ">1k ETH",
+    "holders": "11",
+    "holders_pct": "0.14",
+    "eth": "97622.974",
+    "eth_pct": "70.26",
+    "avg_eth": "8874.8158",
+    "note": ""
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "total",
+    "label": "all",
+    "holders": "7793",
+    "holders_pct": "100",
+    "eth": "138948.862",
+    "eth_pct": "100",
+    "avg_eth": "17.83",
+    "note": "median 0.0025 ETH; HHI 1230"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "concentration",
+    "label": "top1",
+    "holders": "1",
+    "holders_pct": "0.01",
+    "eth": "35319.016",
+    "eth_pct": "25.42",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "concentration",
+    "label": "top10",
+    "holders": "10",
+    "holders_pct": "0.13",
+    "eth": "96551.944",
+    "eth_pct": "69.49",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "concentration",
+    "label": "top100",
+    "holders": "100",
+    "holders_pct": "1.28",
+    "eth": "123658.682",
+    "eth_pct": "89.0",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#1",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "35319.016",
+    "eth_pct": "25.42",
+    "avg_eth": "",
+    "note": "0xc51828dd0e827e6d7e0f4176eef87160de7efb4b | EOA"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#2",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "30423.828",
+    "eth_pct": "21.9",
+    "avg_eth": "",
+    "note": "0xf23c9b89700cd03fb602f3d076086f9b9d19a2ca | EOA"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#3",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "11068.674",
+    "eth_pct": "7.97",
+    "avg_eth": "",
+    "note": "0x49c59d74b371c429af70fafec10cccbe97eff1f2 | EIP-7702 EOA (EIP7702StatelessDeleGator)"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#4",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "4583.853",
+    "eth_pct": "3.3",
+    "avg_eth": "",
+    "note": "0x267ed5f71ee47d3e45bb1569aa37889a2d10f91e | EOA"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#5",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "4430.673",
+    "eth_pct": "3.19",
+    "avg_eth": "",
+    "note": "0xea1a6307d9b18f8d1cbf1c3dd6aad8416c06a221 | contract Ether.fi-Liquid1"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#6",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "3383.779",
+    "eth_pct": "2.44",
+    "avg_eth": "",
+    "note": "0x0b1bad6fb57761591896374a2c3760b2edc90b7a | EOA"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#7",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "2779.733",
+    "eth_pct": "2.0",
+    "avg_eth": "",
+    "note": "0xf5c7ec06ff5f4dfa8e29d8d900bf65353f103089 | Safe 2-of-2"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#8",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "2245.669",
+    "eth_pct": "1.62",
+    "avg_eth": "",
+    "note": "0x54d250405d22e858d125ce2c1affc7d73afe6029 | EIP-7702 EOA (EIP7702StatelessDeleGator)"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#9",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1205.774",
+    "eth_pct": "0.87",
+    "avg_eth": "",
+    "note": "0x1e78322001bdc85f21a7a2f3429dc55c1c13cfae | EOA"
+   },
+   {
+    "product": "liquid",
+    "view": "direct Ethereum shares (OP chain excluded)",
+    "row_type": "top_holder",
+    "label": "#10",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1110.945",
+    "eth_pct": "0.8",
+    "avg_eth": "",
+    "note": "0x3fb61cab57e70e23a1fd3a1fed21be866ca2bbfa | EOA"
+   }
+  ],
+  "yieldbasis": [
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "bucket",
+    "label": "<1 ETH",
+    "holders": "262",
+    "holders_pct": "78.92",
+    "eth": "14.504",
+    "eth_pct": "0.14",
+    "avg_eth": "0.0554",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "bucket",
+    "label": "1-10 ETH",
+    "holders": "39",
+    "holders_pct": "11.75",
+    "eth": "157.254",
+    "eth_pct": "1.51",
+    "avg_eth": "4.0322",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "bucket",
+    "label": "10-100 ETH",
+    "holders": "22",
+    "holders_pct": "6.63",
+    "eth": "622.505",
+    "eth_pct": "5.97",
+    "avg_eth": "28.2957",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "bucket",
+    "label": "100-1k ETH",
+    "holders": "7",
+    "holders_pct": "2.11",
+    "eth": "1802.844",
+    "eth_pct": "17.29",
+    "avg_eth": "257.5492",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "bucket",
+    "label": ">1k ETH",
+    "holders": "2",
+    "holders_pct": "0.6",
+    "eth": "7828.892",
+    "eth_pct": "75.09",
+    "avg_eth": "3914.4458",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "total",
+    "label": "all",
+    "holders": "332",
+    "holders_pct": "100",
+    "eth": "10425.999",
+    "eth_pct": "100",
+    "avg_eth": "31.4036",
+    "note": "median 0.0060 ETH; HHI 3580"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "concentration",
+    "label": "top1",
+    "holders": "1",
+    "holders_pct": "0.3",
+    "eth": "5875.019",
+    "eth_pct": "56.35",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "concentration",
+    "label": "top10",
+    "holders": "10",
+    "holders_pct": "3.01",
+    "eth": "9731.001",
+    "eth_pct": "93.33",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "concentration",
+    "label": "top100",
+    "holders": "100",
+    "holders_pct": "30.12",
+    "eth": "10423.229",
+    "eth_pct": "99.97",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#1",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "5875.019",
+    "eth_pct": "56.35",
+    "avg_eth": "",
+    "note": "0xd829456fd63ada7de0657714a3a7a26de403e3d8 | YieldBasis LiquidityGauge (staked LT)"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#2",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1953.873",
+    "eth_pct": "18.74",
+    "avg_eth": "",
+    "note": "0xbaec9eb119a479b8c616754f9cf7426ee038aa72 | contract HybridVault"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#3",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "403.783",
+    "eth_pct": "3.87",
+    "avg_eth": "",
+    "note": "0x9d1f3a69bd4d4e4f407c12bb0bd41fecf8f05d16 | contract HybridVault"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#4",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "399.069",
+    "eth_pct": "3.83",
+    "avg_eth": "",
+    "note": "0x9e406b2c2021966f3983e899643609c45e3bbffe | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#5",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "272.511",
+    "eth_pct": "2.61",
+    "avg_eth": "",
+    "note": "0x27a6df167b15450f6653e5314988f281d65631d1 | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#6",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "248.73",
+    "eth_pct": "2.39",
+    "avg_eth": "",
+    "note": "0x06533a7eca685f872e7fa0a3f1cc98092f53e349 | contract HybridVault"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#7",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "248.103",
+    "eth_pct": "2.38",
+    "avg_eth": "",
+    "note": "0xb016f77cdc7874da1cddf28605010fd2d19b55a8 | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#8",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "124.683",
+    "eth_pct": "1.2",
+    "avg_eth": "",
+    "note": "0xbae9a180d24f827a6a8027d9dd78508638c92afd | contract HybridVault"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#9",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "105.966",
+    "eth_pct": "1.02",
+    "avg_eth": "",
+    "note": "0x9588a6c1bee7af97e8e753f0ad30c1df1aa2ddc0 | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "direct LT holders (gauge as one address)",
+    "row_type": "top_holder",
+    "label": "#10",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "99.265",
+    "eth_pct": "0.95",
+    "avg_eth": "",
+    "note": "0xbb8151d891ae8b3ee3696944652ef2308edc8d65 | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "bucket",
+    "label": "<1 ETH",
+    "holders": "265",
+    "holders_pct": "65.11",
+    "eth": "27.789",
+    "eth_pct": "0.27",
+    "avg_eth": "0.1049",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "bucket",
+    "label": "1-10 ETH",
+    "holders": "73",
+    "holders_pct": "17.94",
+    "eth": "276.998",
+    "eth_pct": "2.66",
+    "avg_eth": "3.7945",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "bucket",
+    "label": "10-100 ETH",
+    "holders": "51",
+    "holders_pct": "12.53",
+    "eth": "1632.767",
+    "eth_pct": "15.66",
+    "avg_eth": "32.015",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "bucket",
+    "label": "100-1k ETH",
+    "holders": "17",
+    "holders_pct": "4.18",
+    "eth": "6218.481",
+    "eth_pct": "59.64",
+    "avg_eth": "365.793",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "bucket",
+    "label": ">1k ETH",
+    "holders": "1",
+    "holders_pct": "0.25",
+    "eth": "2269.964",
+    "eth_pct": "21.77",
+    "avg_eth": "2269.9639",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "total",
+    "label": "all",
+    "holders": "407",
+    "holders_pct": "100",
+    "eth": "10425.999",
+    "eth_pct": "100",
+    "avg_eth": "25.6167",
+    "note": "median 0.0965 ETH; HHI 801"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "concentration",
+    "label": "top1",
+    "holders": "1",
+    "holders_pct": "0.25",
+    "eth": "2269.964",
+    "eth_pct": "21.77",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "concentration",
+    "label": "top10",
+    "holders": "10",
+    "holders_pct": "2.46",
+    "eth": "7367.692",
+    "eth_pct": "70.67",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "concentration",
+    "label": "top100",
+    "holders": "100",
+    "holders_pct": "24.57",
+    "eth": "10321.93",
+    "eth_pct": "99.0",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#1",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "2269.964",
+    "eth_pct": "21.77",
+    "avg_eth": "",
+    "note": "0x0b077c44454fdfb799e303a0fd43f278fd1ae081 | owner of HybridVault 0xbaec9eb119a479b8c616754f9cf7426ee038aa72"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#2",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "992.935",
+    "eth_pct": "9.52",
+    "avg_eth": "",
+    "note": "0xb016f77cdc7874da1cddf28605010fd2d19b55a8 | owner of HybridVault 0x06533a7eca685f872e7fa0a3f1cc98092f53e349"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#3",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "751.13",
+    "eth_pct": "7.2",
+    "avg_eth": "",
+    "note": "0x9e406b2c2021966f3983e899643609c45e3bbffe | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#4",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "638.147",
+    "eth_pct": "6.12",
+    "avg_eth": "",
+    "note": "0x3da232a0c0a5c59918d7b5ff77bf1c8fc93aee1b | owner of HybridVault 0x9d1f3a69bd4d4e4f407c12bb0bd41fecf8f05d16"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#5",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "637.945",
+    "eth_pct": "6.12",
+    "avg_eth": "",
+    "note": "0x2cc4e9d6d5656205f9b3206287945c3ca97dc6ce | EIP-7702 EOA (EIP7702StatelessDeleGator)"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#6",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "594.563",
+    "eth_pct": "5.7",
+    "avg_eth": "",
+    "note": "0xf791da446d04282f921f38fbf954ad5caee899a3 | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#7",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "470.269",
+    "eth_pct": "4.51",
+    "avg_eth": "",
+    "note": "0xb24d671f0c7bef757412897ef60013040185c6fa | owner of HybridVault 0xe5af644ceedbe4f417161f4a3257fe7879a7906f"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#8",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "421.647",
+    "eth_pct": "4.04",
+    "avg_eth": "",
+    "note": "0x8e8745acd6fbe3e70afc96042c7f3ec84b1f0e9f | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#9",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "318.581",
+    "eth_pct": "3.06",
+    "avg_eth": "",
+    "note": "0xdfbe92a83a3c17c69acca978b0ba23fdcca286f4 | EOA"
+   },
+   {
+    "product": "yieldbasis",
+    "view": "look-through: gauge stakers and HybridVault owners",
+    "row_type": "top_holder",
+    "label": "#10",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "272.511",
+    "eth_pct": "2.61",
+    "avg_eth": "",
+    "note": "0x27a6df167b15450f6653e5314988f281d65631d1 | EOA"
+   }
+  ],
+  "lido-earn": [
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "bucket",
+    "label": "<1 ETH",
+    "holders": "1353",
+    "holders_pct": "54.12",
+    "eth": "229.343",
+    "eth_pct": "0.28",
+    "avg_eth": "0.1695",
+    "note": ""
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "bucket",
+    "label": "1-10 ETH",
+    "holders": "665",
+    "holders_pct": "26.6",
+    "eth": "2230.853",
+    "eth_pct": "2.7",
+    "avg_eth": "3.3547",
+    "note": ""
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "bucket",
+    "label": "10-100 ETH",
+    "holders": "366",
+    "holders_pct": "14.64",
+    "eth": "11759.152",
+    "eth_pct": "14.25",
+    "avg_eth": "32.1288",
+    "note": ""
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "bucket",
+    "label": "100-1k ETH",
+    "holders": "106",
+    "holders_pct": "4.24",
+    "eth": "28953.5",
+    "eth_pct": "35.09",
+    "avg_eth": "273.1462",
+    "note": ""
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "bucket",
+    "label": ">1k ETH",
+    "holders": "10",
+    "holders_pct": "0.4",
+    "eth": "39333.46",
+    "eth_pct": "47.67",
+    "avg_eth": "3933.346",
+    "note": ""
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "total",
+    "label": "all",
+    "holders": "2500",
+    "holders_pct": "100",
+    "eth": "82506.308",
+    "eth_pct": "100",
+    "avg_eth": "33.0025",
+    "note": "median 0.6611 ETH; HHI 563"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "concentration",
+    "label": "top1",
+    "holders": "1",
+    "holders_pct": "0.04",
+    "eth": "16371.899",
+    "eth_pct": "19.84",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "concentration",
+    "label": "top10",
+    "holders": "10",
+    "holders_pct": "0.4",
+    "eth": "39333.46",
+    "eth_pct": "47.67",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "concentration",
+    "label": "top100",
+    "holders": "100",
+    "holders_pct": "4.0",
+    "eth": "66659.774",
+    "eth_pct": "80.79",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#1",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "16371.899",
+    "eth_pct": "19.84",
+    "avg_eth": "",
+    "note": "0xee9535a8a408e13acc8b65cf4163257af240e39e | EOA"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#2",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "8374.272",
+    "eth_pct": "10.15",
+    "avg_eth": "",
+    "note": "0x97fed74a8d5bd772167017d6fc58433cc2b99e9d | EOA"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#3",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "3303.267",
+    "eth_pct": "4.0",
+    "avg_eth": "",
+    "note": "0xf5c7ec06ff5f4dfa8e29d8d900bf65353f103089 | Safe 2-of-2"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#4",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "3161.683",
+    "eth_pct": "3.83",
+    "avg_eth": "",
+    "note": "0xaf3f8594261bbb4b913b21870614262981bcb9ef | Safe 2-of-2"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#5",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1525.445",
+    "eth_pct": "1.85",
+    "avg_eth": "",
+    "note": "0x6a60fbe212f0bab3aa7d57763d4711bc4547d9cf | EOA"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#6",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1500.663",
+    "eth_pct": "1.82",
+    "avg_eth": "",
+    "note": "0xc3c09403a4e222856327a3d7e1e8d20afad1b882 | EOA"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#7",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1388.027",
+    "eth_pct": "1.68",
+    "avg_eth": "",
+    "note": "0xf6f0732c1e9971497342c295141566e6f1a31e96 | Safe 5-of-9"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#8",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1333.023",
+    "eth_pct": "1.62",
+    "avg_eth": "",
+    "note": "0xeb314bd592ac3ea4bc141fa9155b34dd3c2c47ba | EOA"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#9",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1251.072",
+    "eth_pct": "1.52",
+    "avg_eth": "",
+    "note": "0x3ffba13e5e713cc435271a1c4a50ffcfa835f9d4 | EOA"
+   },
+   {
+    "product": "lido-earn",
+    "view": "direct earnETH token holders (788.3 allocated-unclaimed shares excluded)",
+    "row_type": "top_holder",
+    "label": "#10",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1124.11",
+    "eth_pct": "1.36",
+    "avg_eth": "",
+    "note": "0xfd4bf04bd8d0e7b8c7539f0cea970df25188e81b | EIP-7702 EOA (EIP7702StatelessDeleGator)"
+   }
+  ],
+  "avant": [
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "bucket",
+    "label": "<1 ETH",
+    "holders": "31",
+    "holders_pct": "83.78",
+    "eth": "2.651",
+    "eth_pct": "0.02",
+    "avg_eth": "0.0855",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "bucket",
+    "label": "1-10 ETH",
+    "holders": "3",
+    "holders_pct": "8.11",
+    "eth": "14.114",
+    "eth_pct": "0.11",
+    "avg_eth": "4.7048",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "bucket",
+    "label": "10-100 ETH",
+    "holders": "1",
+    "holders_pct": "2.7",
+    "eth": "72.194",
+    "eth_pct": "0.57",
+    "avg_eth": "72.1943",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "bucket",
+    "label": "100-1k ETH",
+    "holders": "0",
+    "holders_pct": "0.0",
+    "eth": "0",
+    "eth_pct": "0.0",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "bucket",
+    "label": ">1k ETH",
+    "holders": "2",
+    "holders_pct": "5.41",
+    "eth": "12493.753",
+    "eth_pct": "99.29",
+    "avg_eth": "6246.8765",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "total",
+    "label": "all",
+    "holders": "37",
+    "holders_pct": "100",
+    "eth": "12582.712",
+    "eth_pct": "100",
+    "avg_eth": "340.0733",
+    "note": "median 0.0101 ETH; HHI 7884"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "concentration",
+    "label": "top1",
+    "holders": "1",
+    "holders_pct": "2.7",
+    "eth": "11082.718",
+    "eth_pct": "88.08",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "concentration",
+    "label": "top10",
+    "holders": "10",
+    "holders_pct": "27.03",
+    "eth": "12581.913",
+    "eth_pct": "99.99",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "concentration",
+    "label": "top100",
+    "holders": "37",
+    "holders_pct": "100.0",
+    "eth": "12582.712",
+    "eth_pct": "100.0",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#1",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "11082.718",
+    "eth_pct": "88.08",
+    "avg_eth": "",
+    "note": "0xda06ee2dacf9245aa80072a4407debdea0d7e341 | savETH contract (staked avETH)"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#2",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1411.035",
+    "eth_pct": "11.21",
+    "avg_eth": "",
+    "note": "0xdd71cdd615f677e98c604bff5679294cc7a6089b | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#3",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "72.194",
+    "eth_pct": "0.57",
+    "avg_eth": "",
+    "note": "0x29b091b0b70d24fed3bec3f511b92cc54307c0f6 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#4",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "6.394",
+    "eth_pct": "0.05",
+    "avg_eth": "",
+    "note": "0xdb87e930065bc4c9cc4273672a64bf8e2761f1d8 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#5",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "6.321",
+    "eth_pct": "0.05",
+    "avg_eth": "",
+    "note": "0xdbf380ed7261a37bd219d69a3eb70b225a68f3ea | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#6",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1.4",
+    "eth_pct": "0.01",
+    "avg_eth": "",
+    "note": "0x4a336f03ba8caeaedf4240a1dc799dbea1ded318 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#7",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "0.548",
+    "eth_pct": "0.0",
+    "avg_eth": "",
+    "note": "0x10738a7238fe9b6b74f837faeea3e8398cc26d63 | Safe 1-of-1"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#8",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "0.47",
+    "eth_pct": "0.0",
+    "avg_eth": "",
+    "note": "0xcbd7888f34e96546fab24ee08edb32f53672bee3 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#9",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "0.419",
+    "eth_pct": "0.0",
+    "avg_eth": "",
+    "note": "0x55c4a5eb2b5323a7ddf97c6870f4794cd19a3ed1 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct avETH holders",
+    "row_type": "top_holder",
+    "label": "#10",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "0.414",
+    "eth_pct": "0.0",
+    "avg_eth": "",
+    "note": "0x407012c92792369916b2bf788e2eec695c180e05 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "bucket",
+    "label": "<1 ETH",
+    "holders": "29",
+    "holders_pct": "34.94",
+    "eth": "7.409",
+    "eth_pct": "0.07",
+    "avg_eth": "0.2555",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "bucket",
+    "label": "1-10 ETH",
+    "holders": "28",
+    "holders_pct": "33.73",
+    "eth": "118.582",
+    "eth_pct": "1.07",
+    "avg_eth": "4.2351",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "bucket",
+    "label": "10-100 ETH",
+    "holders": "16",
+    "holders_pct": "19.28",
+    "eth": "605.123",
+    "eth_pct": "5.46",
+    "avg_eth": "37.8202",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "bucket",
+    "label": "100-1k ETH",
+    "holders": "6",
+    "holders_pct": "7.23",
+    "eth": "1742.104",
+    "eth_pct": "15.72",
+    "avg_eth": "290.3507",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "bucket",
+    "label": ">1k ETH",
+    "holders": "4",
+    "holders_pct": "4.82",
+    "eth": "8608.226",
+    "eth_pct": "77.68",
+    "avg_eth": "2152.0565",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "total",
+    "label": "all",
+    "holders": "83",
+    "holders_pct": "100",
+    "eth": "11081.444",
+    "eth_pct": "100",
+    "avg_eth": "133.5114",
+    "note": "median 3.3520 ETH; HHI 1795"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "concentration",
+    "label": "top1",
+    "holders": "1",
+    "holders_pct": "1.2",
+    "eth": "3552.569",
+    "eth_pct": "32.06",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "concentration",
+    "label": "top10",
+    "holders": "10",
+    "holders_pct": "12.05",
+    "eth": "10350.33",
+    "eth_pct": "93.4",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "concentration",
+    "label": "top100",
+    "holders": "83",
+    "holders_pct": "100.0",
+    "eth": "11081.444",
+    "eth_pct": "100.0",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#1",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "3552.569",
+    "eth_pct": "32.06",
+    "avg_eth": "",
+    "note": "0x6cc892a7ad2c72b8f0d49ce8660da928f7e6101b | contract CreditAccountV3"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#2",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1953.763",
+    "eth_pct": "17.63",
+    "avg_eth": "",
+    "note": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb | Morpho Blue (savETH collateral)"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#3",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1802.884",
+    "eth_pct": "16.27",
+    "avg_eth": "",
+    "note": "0x43f47a434dadd5a122c42e49378365cca949fa54 | Chainlink CCIP LockReleaseTokenPool (savETH bridged to other chains)"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#4",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1299.01",
+    "eth_pct": "11.72",
+    "avg_eth": "",
+    "note": "0x66b206c91374453cda591e84287eefef7a3d4f21 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#5",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "597.072",
+    "eth_pct": "5.39",
+    "avg_eth": "",
+    "note": "0x3d461625dc02f1d4c8b14601439357be2ec07904 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#6",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "334.79",
+    "eth_pct": "3.02",
+    "avg_eth": "",
+    "note": "0xcf7e7c56614b6e22b0043895a37e3858971ec904 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#7",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "241.99",
+    "eth_pct": "2.18",
+    "avg_eth": "",
+    "note": "0x55c4a5eb2b5323a7ddf97c6870f4794cd19a3ed1 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#8",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "230.433",
+    "eth_pct": "2.08",
+    "avg_eth": "",
+    "note": "0x96977d15ee849bcbb23ea88f0517e1e4faad81d4 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#9",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "211.842",
+    "eth_pct": "1.91",
+    "avg_eth": "",
+    "note": "0x1cde180fd33935c744623d655696eb3a77e5d891 | Safe 2-of-5"
+   },
+   {
+    "product": "avant",
+    "view": "direct savETH holders (avETH-equivalent)",
+    "row_type": "top_holder",
+    "label": "#10",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "125.976",
+    "eth_pct": "1.14",
+    "avg_eth": "",
+    "note": "0x6f593a98f9fd364027cd053bdee1fa97f9826a45 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "bucket",
+    "label": "<1 ETH",
+    "holders": "51",
+    "holders_pct": "46.79",
+    "eth": "9.64",
+    "eth_pct": "0.08",
+    "avg_eth": "0.189",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "bucket",
+    "label": "1-10 ETH",
+    "holders": "30",
+    "holders_pct": "27.52",
+    "eth": "123.554",
+    "eth_pct": "0.98",
+    "avg_eth": "4.1185",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "bucket",
+    "label": "10-100 ETH",
+    "holders": "17",
+    "holders_pct": "15.6",
+    "eth": "677.317",
+    "eth_pct": "5.38",
+    "avg_eth": "39.8422",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "bucket",
+    "label": "100-1k ETH",
+    "holders": "7",
+    "holders_pct": "6.42",
+    "eth": "2503.661",
+    "eth_pct": "19.9",
+    "avg_eth": "357.6659",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "bucket",
+    "label": ">1k ETH",
+    "holders": "4",
+    "holders_pct": "3.67",
+    "eth": "9267.264",
+    "eth_pct": "73.66",
+    "avg_eth": "2316.8159",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "total",
+    "label": "all",
+    "holders": "109",
+    "holders_pct": "100",
+    "eth": "12581.437",
+    "eth_pct": "100",
+    "avg_eth": "115.426",
+    "note": "median 1.2145 ETH; HHI 1953"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "concentration",
+    "label": "top1",
+    "holders": "1",
+    "holders_pct": "0.92",
+    "eth": "4754.336",
+    "eth_pct": "37.79",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "concentration",
+    "label": "top10",
+    "holders": "10",
+    "holders_pct": "9.17",
+    "eth": "11644.949",
+    "eth_pct": "92.56",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "concentration",
+    "label": "top100",
+    "holders": "100",
+    "holders_pct": "91.74",
+    "eth": "12581.437",
+    "eth_pct": "100.0",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#1",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "4754.336",
+    "eth_pct": "37.79",
+    "avg_eth": "",
+    "note": "0x3d461625dc02f1d4c8b14601439357be2ec07904 | EOA; also Gearbox credit-account borrower and Morpho savETH/WETH borrower"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#2",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1802.884",
+    "eth_pct": "14.33",
+    "avg_eth": "",
+    "note": "0x43f47a434dadd5a122c42e49378365cca949fa54 | CCIP bridge pool (savETH on other chains)"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#3",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1411.035",
+    "eth_pct": "11.22",
+    "avg_eth": "",
+    "note": "0xdd71cdd615f677e98c604bff5679294cc7a6089b | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#4",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "1299.01",
+    "eth_pct": "10.32",
+    "avg_eth": "",
+    "note": "0x66b206c91374453cda591e84287eefef7a3d4f21 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#5",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "938.254",
+    "eth_pct": "7.46",
+    "avg_eth": "",
+    "note": "0xe29bb87d5a3a8ef6b24edb35d0d8ef0241cb39d1 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#6",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "419.947",
+    "eth_pct": "3.34",
+    "avg_eth": "",
+    "note": "0x8c2527051d0e98ad09211749fafbe1aa590c01b3 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#7",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "334.79",
+    "eth_pct": "2.66",
+    "avg_eth": "",
+    "note": "0xcf7e7c56614b6e22b0043895a37e3858971ec904 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#8",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "242.409",
+    "eth_pct": "1.93",
+    "avg_eth": "",
+    "note": "0x55c4a5eb2b5323a7ddf97c6870f4794cd19a3ed1 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#9",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "230.433",
+    "eth_pct": "1.83",
+    "avg_eth": "",
+    "note": "0x96977d15ee849bcbb23ea88f0517e1e4faad81d4 | EOA"
+   },
+   {
+    "product": "avant",
+    "view": "look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",
+    "row_type": "top_holder",
+    "label": "#10",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "211.852",
+    "eth_pct": "1.68",
+    "avg_eth": "",
+    "note": "0x1cde180fd33935c744623d655696eb3a77e5d891 | Safe 2-of-5"
+   }
+  ],
+  "liquity": [
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "bucket",
+    "label": "<1 ETH",
+    "holders": "34",
+    "holders_pct": "26.15",
+    "eth": "8.056",
+    "eth_pct": "0.13",
+    "avg_eth": "0.2369",
+    "note": ""
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "bucket",
+    "label": "1-10 ETH",
+    "holders": "43",
+    "holders_pct": "33.08",
+    "eth": "148.411",
+    "eth_pct": "2.47",
+    "avg_eth": "3.4514",
+    "note": ""
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "bucket",
+    "label": "10-100 ETH",
+    "holders": "47",
+    "holders_pct": "36.15",
+    "eth": "1539.4",
+    "eth_pct": "25.6",
+    "avg_eth": "32.7532",
+    "note": ""
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "bucket",
+    "label": "100-1k ETH",
+    "holders": "5",
+    "holders_pct": "3.85",
+    "eth": "2100.143",
+    "eth_pct": "34.92",
+    "avg_eth": "420.0286",
+    "note": ""
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "bucket",
+    "label": ">1k ETH",
+    "holders": "1",
+    "holders_pct": "0.77",
+    "eth": "2217.992",
+    "eth_pct": "36.88",
+    "avg_eth": "2217.992",
+    "note": ""
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "total",
+    "label": "all",
+    "holders": "130",
+    "holders_pct": "100",
+    "eth": "6014.002",
+    "eth_pct": "100",
+    "avg_eth": "46.2616",
+    "note": "median 5.0118 ETH; HHI 1723"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "concentration",
+    "label": "top1",
+    "holders": "1",
+    "holders_pct": "0.77",
+    "eth": "2217.992",
+    "eth_pct": "36.88",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "concentration",
+    "label": "top10",
+    "holders": "10",
+    "holders_pct": "7.69",
+    "eth": "4651.539",
+    "eth_pct": "77.35",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "concentration",
+    "label": "top100",
+    "holders": "100",
+    "holders_pct": "76.92",
+    "eth": "6009.493",
+    "eth_pct": "99.93",
+    "avg_eth": "",
+    "note": ""
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#1",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "2217.992",
+    "eth_pct": "36.88",
+    "avg_eth": "",
+    "note": "0x1676d23711186076fa74aa53511dda750a1f0d9a | Safe 3-of-6"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#2",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "728.484",
+    "eth_pct": "12.11",
+    "avg_eth": "",
+    "note": "0x9ca1d6e730eb9fbfd45c9ff5f0ac4e3d172d8f4d | EOA; Rocksolid rETH execution account (nested product)"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#3",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "714.355",
+    "eth_pct": "11.88",
+    "avg_eth": "",
+    "note": "0x8a25d8c9fa8c7a726137f2d618d85cbc2c083f78 | EOA"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#4",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "401.439",
+    "eth_pct": "6.68",
+    "avg_eth": "",
+    "note": "0xe5ebcde141e98c23c150bc350b72c23fdcb747c1 | EOA"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#5",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "150.586",
+    "eth_pct": "2.5",
+    "avg_eth": "",
+    "note": "0x59e369d9d1246f8a45df4acf123130a83ce69972 | EOA"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#6",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "105.278",
+    "eth_pct": "1.75",
+    "avg_eth": "",
+    "note": "0x1cde180fd33935c744623d655696eb3a77e5d891 | Safe 2-of-5"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#7",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "90.092",
+    "eth_pct": "1.5",
+    "avg_eth": "",
+    "note": "0x03280de83ff6acd35f166276156dbf928dc7604f | EOA"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#8",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "89.097",
+    "eth_pct": "1.48",
+    "avg_eth": "",
+    "note": "0x22561c5931143536309c17e832587b625c390b9a | EOA"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#9",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "79.024",
+    "eth_pct": "1.31",
+    "avg_eth": "",
+    "note": "0x08ad0eadfc5643a944538f6b19e3cc3e5c4f4997 | EOA"
+   },
+   {
+    "product": "liquity",
+    "view": "direct share holders",
+    "row_type": "top_holder",
+    "label": "#10",
+    "holders": "1",
+    "holders_pct": "",
+    "eth": "75.191",
+    "eth_pct": "1.25",
+    "avg_eth": "",
+    "note": "0x6665e62ef6f6db29d5f8191fbac472222c2cc80f | Safe 2-of-3"
+   }
+  ]
+ },
+ "holdersMonthly": {
+  "liquid": [
+   {
+    "token": "liquid",
+    "month_end": "2024-06",
+    "holders": "1",
+    "capital_eth": "197004.344",
+    "top1_pct": "100.0",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2024-07",
+    "holders": "3352",
+    "capital_eth": "167197.778",
+    "top1_pct": "54.27",
+    "top10_pct": "78.58"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2024-08",
+    "holders": "4178",
+    "capital_eth": "152862.416",
+    "top1_pct": "46.38",
+    "top10_pct": "73.96"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2024-09",
+    "holders": "4659",
+    "capital_eth": "146909.028",
+    "top1_pct": "34.72",
+    "top10_pct": "61.92"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2024-10",
+    "holders": "4846",
+    "capital_eth": "146203.001",
+    "top1_pct": "25.73",
+    "top10_pct": "60.77"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2024-11",
+    "holders": "4828",
+    "capital_eth": "150259.343",
+    "top1_pct": "23.21",
+    "top10_pct": "59.65"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2024-12",
+    "holders": "5024",
+    "capital_eth": "152716.542",
+    "top1_pct": "17.16",
+    "top10_pct": "53.09"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-01",
+    "holders": "4931",
+    "capital_eth": "153364.309",
+    "top1_pct": "15.93",
+    "top10_pct": "52.31"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-02",
+    "holders": "4657",
+    "capital_eth": "159201.595",
+    "top1_pct": "12.71",
+    "top10_pct": "47.32"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-03",
+    "holders": "4893",
+    "capital_eth": "161418.282",
+    "top1_pct": "11.44",
+    "top10_pct": "46.06"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-04",
+    "holders": "4924",
+    "capital_eth": "176931.265",
+    "top1_pct": "12.6",
+    "top10_pct": "47.3"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-05",
+    "holders": "5049",
+    "capital_eth": "194955.492",
+    "top1_pct": "11.45",
+    "top10_pct": "47.59"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-06",
+    "holders": "4750",
+    "capital_eth": "191748.41",
+    "top1_pct": "11.65",
+    "top10_pct": "51.02"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-07",
+    "holders": "4544",
+    "capital_eth": "200467.334",
+    "top1_pct": "11.23",
+    "top10_pct": "56.32"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-08",
+    "holders": "4957",
+    "capital_eth": "203044.509",
+    "top1_pct": "11.14",
+    "top10_pct": "55.82"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-09",
+    "holders": "4635",
+    "capital_eth": "192310.383",
+    "top1_pct": "11.81",
+    "top10_pct": "57.82"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-10",
+    "holders": "9710",
+    "capital_eth": "177463.774",
+    "top1_pct": "12.88",
+    "top10_pct": "59.39"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-11",
+    "holders": "9394",
+    "capital_eth": "147816.653",
+    "top1_pct": "15.53",
+    "top10_pct": "55.94"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2025-12",
+    "holders": "9270",
+    "capital_eth": "147083.048",
+    "top1_pct": "15.67",
+    "top10_pct": "54.15"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-01",
+    "holders": "9240",
+    "capital_eth": "154309.508",
+    "top1_pct": "15.0",
+    "top10_pct": "51.48"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-02",
+    "holders": "8988",
+    "capital_eth": "108292.163",
+    "top1_pct": "6.38",
+    "top10_pct": "36.45"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-03",
+    "holders": "8898",
+    "capital_eth": "147239.046",
+    "top1_pct": "15.78",
+    "top10_pct": "52.1"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-04",
+    "holders": "8481",
+    "capital_eth": "86319.781",
+    "top1_pct": "8.05",
+    "top10_pct": "40.96"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-05",
+    "holders": "8260",
+    "capital_eth": "70941.591",
+    "top1_pct": "9.82",
+    "top10_pct": "38.57"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-06",
+    "holders": "8135",
+    "capital_eth": "61866.87",
+    "top1_pct": "7.35",
+    "top10_pct": "33.5"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-07",
+    "holders": "8056",
+    "capital_eth": "93749.068",
+    "top1_pct": "21.14",
+    "top10_pct": "53.28"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-08",
+    "holders": "7934",
+    "capital_eth": "141142.543",
+    "top1_pct": "24.95",
+    "top10_pct": "68.24"
+   },
+   {
+    "token": "liquid",
+    "month_end": "2026-09",
+    "holders": "7811",
+    "capital_eth": "138918.049",
+    "top1_pct": "25.42",
+    "top10_pct": "69.49"
+   },
+   {
+    "token": "liquid",
+    "month_end": "T",
+    "holders": "7793",
+    "capital_eth": "138948.863",
+    "top1_pct": "25.42",
+    "top10_pct": "69.49"
+   }
+  ],
+  "yieldbasis": [
+   {
+    "token": "yb_LT",
+    "month_end": "2026-05",
+    "holders": "26",
+    "capital_eth": "641.105",
+    "top1_pct": "57.28",
+    "top10_pct": "99.55"
+   },
+   {
+    "token": "yb_LT",
+    "month_end": "2026-06",
+    "holders": "164",
+    "capital_eth": "5085.128",
+    "top1_pct": "39.91",
+    "top10_pct": "93.79"
+   },
+   {
+    "token": "yb_LT",
+    "month_end": "2026-07",
+    "holders": "243",
+    "capital_eth": "7632.456",
+    "top1_pct": "45.39",
+    "top10_pct": "89.95"
+   },
+   {
+    "token": "yb_LT",
+    "month_end": "2026-08",
+    "holders": "324",
+    "capital_eth": "12512.0",
+    "top1_pct": "59.85",
+    "top10_pct": "91.04"
+   },
+   {
+    "token": "yb_LT",
+    "month_end": "2026-09",
+    "holders": "334",
+    "capital_eth": "10616.205",
+    "top1_pct": "56.88",
+    "top10_pct": "93.21"
+   },
+   {
+    "token": "yb_LT",
+    "month_end": "T",
+    "holders": "332",
+    "capital_eth": "10425.999",
+    "top1_pct": "56.35",
+    "top10_pct": "93.33"
+   },
+   {
+    "token": "yb_gauge",
+    "month_end": "2026-05",
+    "holders": "32",
+    "capital_eth": "367.257",
+    "top1_pct": "30.72",
+    "top10_pct": "89.94"
+   },
+   {
+    "token": "yb_gauge",
+    "month_end": "2026-06",
+    "holders": "79",
+    "capital_eth": "2029.559",
+    "top1_pct": "15.68",
+    "top10_pct": "70.33"
+   },
+   {
+    "token": "yb_gauge",
+    "month_end": "2026-07",
+    "holders": "104",
+    "capital_eth": "3464.689",
+    "top1_pct": "9.44",
+    "top10_pct": "70.23"
+   },
+   {
+    "token": "yb_gauge",
+    "month_end": "2026-08",
+    "holders": "147",
+    "capital_eth": "7488.584",
+    "top1_pct": "25.73",
+    "top10_pct": "68.22"
+   },
+   {
+    "token": "yb_gauge",
+    "month_end": "2026-09",
+    "holders": "159",
+    "capital_eth": "6038.473",
+    "top1_pct": "10.57",
+    "top10_pct": "63.63"
+   },
+   {
+    "token": "yb_gauge",
+    "month_end": "T",
+    "holders": "155",
+    "capital_eth": "5875.019",
+    "top1_pct": "10.86",
+    "top10_pct": "65.39"
+   }
+  ],
+  "lido-earn": [
+   {
+    "token": "lido_earnETH",
+    "month_end": "2026-03",
+    "holders": "1195",
+    "capital_eth": "77575.665",
+    "top1_pct": "13.54",
+    "top10_pct": "39.02"
+   },
+   {
+    "token": "lido_earnETH",
+    "month_end": "2026-04",
+    "holders": "1199",
+    "capital_eth": "107422.189",
+    "top1_pct": "52.58",
+    "top10_pct": "76.81"
+   },
+   {
+    "token": "lido_earnETH",
+    "month_end": "2026-05",
+    "holders": "1118",
+    "capital_eth": "42805.433",
+    "top1_pct": "24.61",
+    "top10_pct": "49.99"
+   },
+   {
+    "token": "lido_earnETH",
+    "month_end": "2026-06",
+    "holders": "1527",
+    "capital_eth": "89320.313",
+    "top1_pct": "34.94",
+    "top10_pct": "56.87"
+   },
+   {
+    "token": "lido_earnETH",
+    "month_end": "2026-07",
+    "holders": "2389",
+    "capital_eth": "76658.456",
+    "top1_pct": "13.22",
+    "top10_pct": "38.98"
+   },
+   {
+    "token": "lido_earnETH",
+    "month_end": "2026-08",
+    "holders": "2429",
+    "capital_eth": "78178.03",
+    "top1_pct": "20.89",
+    "top10_pct": "48.46"
+   },
+   {
+    "token": "lido_earnETH",
+    "month_end": "2026-09",
+    "holders": "2500",
+    "capital_eth": "82240.819",
+    "top1_pct": "19.91",
+    "top10_pct": "47.82"
+   },
+   {
+    "token": "lido_earnETH",
+    "month_end": "T",
+    "holders": "2500",
+    "capital_eth": "82506.308",
+    "top1_pct": "19.84",
+    "top10_pct": "47.67"
+   }
+  ],
+  "avant": [
+   {
+    "token": "avant_avETH",
+    "month_end": "2025-08",
+    "holders": "3",
+    "capital_eth": "0.003",
+    "top1_pct": "75.81",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2025-09",
+    "holders": "13",
+    "capital_eth": "1059.133",
+    "top1_pct": "82.17",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2025-10",
+    "holders": "16",
+    "capital_eth": "2178.591",
+    "top1_pct": "65.86",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2025-11",
+    "holders": "19",
+    "capital_eth": "1953.878",
+    "top1_pct": "70.69",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2025-12",
+    "holders": "25",
+    "capital_eth": "2888.628",
+    "top1_pct": "76.08",
+    "top10_pct": "99.98"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-01",
+    "holders": "24",
+    "capital_eth": "2819.48",
+    "top1_pct": "75.54",
+    "top10_pct": "99.95"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-02",
+    "holders": "25",
+    "capital_eth": "3987.179",
+    "top1_pct": "77.31",
+    "top10_pct": "99.95"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-03",
+    "holders": "30",
+    "capital_eth": "5739.113",
+    "top1_pct": "80.68",
+    "top10_pct": "99.91"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-04",
+    "holders": "31",
+    "capital_eth": "6556.286",
+    "top1_pct": "76.04",
+    "top10_pct": "99.98"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-05",
+    "holders": "36",
+    "capital_eth": "6530.305",
+    "top1_pct": "84.1",
+    "top10_pct": "99.99"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-06",
+    "holders": "36",
+    "capital_eth": "9164.06",
+    "top1_pct": "86.8",
+    "top10_pct": "99.99"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-07",
+    "holders": "34",
+    "capital_eth": "10330.235",
+    "top1_pct": "86.9",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-08",
+    "holders": "35",
+    "capital_eth": "12572.689",
+    "top1_pct": "88.11",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "2026-09",
+    "holders": "34",
+    "capital_eth": "12356.755",
+    "top1_pct": "87.84",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "avant_avETH",
+    "month_end": "T",
+    "holders": "37",
+    "capital_eth": "12582.712",
+    "top1_pct": "88.08",
+    "top10_pct": "99.99"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2025-08",
+    "holders": "1",
+    "capital_eth": "0.001",
+    "top1_pct": "100.0",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2025-09",
+    "holders": "22",
+    "capital_eth": "870.095",
+    "top1_pct": "33.8",
+    "top10_pct": "98.42"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2025-10",
+    "holders": "29",
+    "capital_eth": "1434.639",
+    "top1_pct": "40.61",
+    "top10_pct": "95.65"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2025-11",
+    "holders": "30",
+    "capital_eth": "1380.966",
+    "top1_pct": "56.07",
+    "top10_pct": "96.13"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2025-12",
+    "holders": "29",
+    "capital_eth": "2197.56",
+    "top1_pct": "63.57",
+    "top10_pct": "97.05"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-01",
+    "holders": "30",
+    "capital_eth": "2129.504",
+    "top1_pct": "63.34",
+    "top10_pct": "97.36"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-02",
+    "holders": "39",
+    "capital_eth": "3081.952",
+    "top1_pct": "62.42",
+    "top10_pct": "97.58"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-03",
+    "holders": "42",
+    "capital_eth": "4629.648",
+    "top1_pct": "77.97",
+    "top10_pct": "98.61"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-04",
+    "holders": "44",
+    "capital_eth": "4984.389",
+    "top1_pct": "56.25",
+    "top10_pct": "99.04"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-05",
+    "holders": "73",
+    "capital_eth": "5490.988",
+    "top1_pct": "65.99",
+    "top10_pct": "93.1"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-06",
+    "holders": "78",
+    "capital_eth": "7953.437",
+    "top1_pct": "38.21",
+    "top10_pct": "92.89"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-07",
+    "holders": "76",
+    "capital_eth": "8975.859",
+    "top1_pct": "33.42",
+    "top10_pct": "94.06"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-08",
+    "holders": "78",
+    "capital_eth": "11075.813",
+    "top1_pct": "31.96",
+    "top10_pct": "94.95"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "2026-09",
+    "holders": "82",
+    "capital_eth": "10853.039",
+    "top1_pct": "32.73",
+    "top10_pct": "94.12"
+   },
+   {
+    "token": "avant_savETH",
+    "month_end": "T",
+    "holders": "83",
+    "capital_eth": "11081.443",
+    "top1_pct": "32.06",
+    "top10_pct": "93.4"
+   }
+  ],
+  "liquity": [
+   {
+    "token": "liquity",
+    "month_end": "2026-03",
+    "holders": "4",
+    "capital_eth": "32.024",
+    "top1_pct": "93.31",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "liquity",
+    "month_end": "2026-04",
+    "holders": "5",
+    "capital_eth": "31.862",
+    "top1_pct": "93.73",
+    "top10_pct": "100.0"
+   },
+   {
+    "token": "liquity",
+    "month_end": "2026-05",
+    "holders": "43",
+    "capital_eth": "528.079",
+    "top1_pct": "10.01",
+    "top10_pct": "72.57"
+   },
+   {
+    "token": "liquity",
+    "month_end": "2026-06",
+    "holders": "61",
+    "capital_eth": "641.015",
+    "top1_pct": "9.25",
+    "top10_pct": "60.65"
+   },
+   {
+    "token": "liquity",
+    "month_end": "2026-07",
+    "holders": "92",
+    "capital_eth": "1502.337",
+    "top1_pct": "13.29",
+    "top10_pct": "52.98"
+   },
+   {
+    "token": "liquity",
+    "month_end": "2026-08",
+    "holders": "112",
+    "capital_eth": "2813.767",
+    "top1_pct": "30.06",
+    "top10_pct": "67.46"
+   },
+   {
+    "token": "liquity",
+    "month_end": "2026-09",
+    "holders": "131",
+    "capital_eth": "6016.669",
+    "top1_pct": "36.85",
+    "top10_pct": "77.28"
+   },
+   {
+    "token": "liquity",
+    "month_end": "T",
+    "holders": "130",
+    "capital_eth": "6014.002",
+    "top1_pct": "36.88",
+    "top10_pct": "77.35"
+   }
+  ]
+ },
+ "liquidLoop": [
+  {
+   "week_end": "2024-10-04",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.145499",
+   "weth_debt": "78719.1656",
+   "equity_eth": "16199.4920",
+   "weth_borrow_apr_instant": "0.029743",
+   "staking_apr_week": ""
+  },
+  {
+   "week_end": "2024-10-04",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.027665",
+   "staking_apr_week": ""
+  },
+  {
+   "week_end": "2024-10-11",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.342296",
+   "weth_debt": "67214.4148",
+   "equity_eth": "27755.7433",
+   "weth_borrow_apr_instant": "0.026952",
+   "staking_apr_week": "0.027996"
+  },
+  {
+   "week_end": "2024-10-11",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.027334",
+   "staking_apr_week": "0.031471"
+  },
+  {
+   "week_end": "2024-10-18",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.107177",
+   "weth_debt": "93251.3445",
+   "equity_eth": "15428.3780",
+   "weth_borrow_apr_instant": "0.026864",
+   "staking_apr_week": "0.027668"
+  },
+  {
+   "week_end": "2024-10-18",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.026191",
+   "staking_apr_week": "0.030534"
+  },
+  {
+   "week_end": "2024-10-25",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.153756",
+   "weth_debt": "110305.3931",
+   "equity_eth": "23658.2716",
+   "weth_borrow_apr_instant": "0.026674",
+   "staking_apr_week": "0.026186"
+  },
+  {
+   "week_end": "2024-10-25",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.018339",
+   "staking_apr_week": "0.029122"
+  },
+  {
+   "week_end": "2024-11-01",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.153723",
+   "weth_debt": "110363.5033",
+   "equity_eth": "23666.9815",
+   "weth_borrow_apr_instant": "0.026214",
+   "staking_apr_week": "0.025832"
+  },
+  {
+   "week_end": "2024-11-01",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020090",
+   "staking_apr_week": "0.029342"
+  },
+  {
+   "week_end": "2024-11-08",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.089756",
+   "weth_debt": "138924.1157",
+   "equity_eth": "20437.3167",
+   "weth_borrow_apr_instant": "0.026447",
+   "staking_apr_week": "0.028672"
+  },
+  {
+   "week_end": "2024-11-08",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.024125",
+   "staking_apr_week": "0.029644"
+  },
+  {
+   "week_end": "2024-11-15",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.089826",
+   "weth_debt": "138994.7411",
+   "equity_eth": "20457.9724",
+   "weth_borrow_apr_instant": "0.026445",
+   "staking_apr_week": "0.029618"
+  },
+  {
+   "week_end": "2024-11-15",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.029499",
+   "staking_apr_week": "0.032044"
+  },
+  {
+   "week_end": "2024-11-22",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.085988",
+   "weth_debt": "139564.6643",
+   "equity_eth": "19978.0631",
+   "weth_borrow_apr_instant": "0.025822",
+   "staking_apr_week": "0.029244"
+  },
+  {
+   "week_end": "2024-11-22",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023186",
+   "staking_apr_week": "0.029935"
+  },
+  {
+   "week_end": "2024-11-29",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.083999",
+   "weth_debt": "211898.7613",
+   "equity_eth": "29888.6296",
+   "weth_borrow_apr_instant": "0.026806",
+   "staking_apr_week": "0.026949"
+  },
+  {
+   "week_end": "2024-11-29",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022279",
+   "staking_apr_week": "0.029371"
+  },
+  {
+   "week_end": "2024-12-06",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.096926",
+   "weth_debt": "209512.4672",
+   "equity_eth": "32402.9411",
+   "weth_borrow_apr_instant": "0.026793",
+   "staking_apr_week": "0.027566"
+  },
+  {
+   "week_end": "2024-12-06",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.025801",
+   "staking_apr_week": "0.030188"
+  },
+  {
+   "week_end": "2024-12-13",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.152111",
+   "weth_debt": "198930.9604",
+   "equity_eth": "42322.3162",
+   "weth_borrow_apr_instant": "0.026990",
+   "staking_apr_week": "0.027822"
+  },
+  {
+   "week_end": "2024-12-13",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023793",
+   "staking_apr_week": "0.029715"
+  },
+  {
+   "week_end": "2024-12-20",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.145756",
+   "weth_debt": "199048.1296",
+   "equity_eth": "41015.6101",
+   "weth_borrow_apr_instant": "0.026958",
+   "staking_apr_week": "0.027985"
+  },
+  {
+   "week_end": "2024-12-20",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.026021",
+   "staking_apr_week": "0.029118"
+  },
+  {
+   "week_end": "2024-12-27",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.070086",
+   "weth_debt": "199164.7307",
+   "equity_eth": "25175.6930",
+   "weth_borrow_apr_instant": "0.025789",
+   "staking_apr_week": "0.026081"
+  },
+  {
+   "week_end": "2024-12-27",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022710",
+   "staking_apr_week": "0.028316"
+  },
+  {
+   "week_end": "2025-01-03",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.070097",
+   "weth_debt": "199263.0763",
+   "equity_eth": "25190.4667",
+   "weth_borrow_apr_instant": "0.025731",
+   "staking_apr_week": "0.026258"
+  },
+  {
+   "week_end": "2025-01-03",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.024309",
+   "staking_apr_week": "0.028515"
+  },
+  {
+   "week_end": "2025-01-10",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.070116",
+   "weth_debt": "199361.6676",
+   "equity_eth": "25206.9403",
+   "weth_borrow_apr_instant": "0.025471",
+   "staking_apr_week": "0.026690"
+  },
+  {
+   "week_end": "2025-01-10",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023490",
+   "staking_apr_week": "0.029076"
+  },
+  {
+   "week_end": "2025-01-17",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.069113",
+   "weth_debt": "236957.8374",
+   "equity_eth": "29710.3684",
+   "weth_borrow_apr_instant": "0.025079",
+   "staking_apr_week": "0.024163"
+  },
+  {
+   "week_end": "2025-01-17",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022695",
+   "staking_apr_week": "0.028854"
+  },
+  {
+   "week_end": "2025-01-24",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.069216",
+   "weth_debt": "237074.4430",
+   "equity_eth": "29750.5306",
+   "weth_borrow_apr_instant": "0.026414",
+   "staking_apr_week": "0.030534"
+  },
+  {
+   "week_end": "2025-01-24",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.029813",
+   "staking_apr_week": "0.032846"
+  },
+  {
+   "week_end": "2025-01-31",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.069156",
+   "weth_debt": "264498.6560",
+   "equity_eth": "33175.2427",
+   "weth_borrow_apr_instant": "0.026828",
+   "staking_apr_week": "0.027040"
+  },
+  {
+   "week_end": "2025-01-31",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022738",
+   "staking_apr_week": "0.028559"
+  },
+  {
+   "week_end": "2025-02-07",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.069244",
+   "weth_debt": "264644.0058",
+   "equity_eth": "33218.0062",
+   "weth_borrow_apr_instant": "0.026377",
+   "staking_apr_week": "0.032921"
+  },
+  {
+   "week_end": "2025-02-07",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023535",
+   "staking_apr_week": "0.042057"
+  },
+  {
+   "week_end": "2025-02-14",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.069240",
+   "weth_debt": "264774.9542",
+   "equity_eth": "33233.4316",
+   "weth_borrow_apr_instant": "0.025017",
+   "staking_apr_week": "0.025605"
+  },
+  {
+   "week_end": "2025-02-14",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.021696",
+   "staking_apr_week": "0.028332"
+  },
+  {
+   "week_end": "2025-02-21",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.066888",
+   "weth_debt": "312905.6891",
+   "equity_eth": "38499.8577",
+   "weth_borrow_apr_instant": "0.025909",
+   "staking_apr_week": "0.026205"
+  },
+  {
+   "week_end": "2025-02-21",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022194",
+   "staking_apr_week": "0.027555"
+  },
+  {
+   "week_end": "2025-02-28",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.066977",
+   "weth_debt": "313061.4523",
+   "equity_eth": "38548.2565",
+   "weth_borrow_apr_instant": "0.025784",
+   "staking_apr_week": "0.030223"
+  },
+  {
+   "week_end": "2025-02-28",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.027960",
+   "staking_apr_week": "0.032638"
+  },
+  {
+   "week_end": "2025-03-07",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.067016",
+   "weth_debt": "313216.8205",
+   "equity_eth": "38580.2720",
+   "weth_borrow_apr_instant": "0.025564",
+   "staking_apr_week": "0.027754"
+  },
+  {
+   "week_end": "2025-03-07",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022670",
+   "staking_apr_week": "0.030847"
+  },
+  {
+   "week_end": "2025-03-14",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053982",
+   "weth_debt": "359412.9630",
+   "equity_eth": "39339.2940",
+   "weth_borrow_apr_instant": "0.026980",
+   "staking_apr_week": "0.030255"
+  },
+  {
+   "week_end": "2025-03-14",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022536",
+   "staking_apr_week": "0.032593"
+  },
+  {
+   "week_end": "2025-03-21",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053523",
+   "weth_debt": "359745.3248",
+   "equity_eth": "39202.0973",
+   "weth_borrow_apr_instant": "0.026012",
+   "staking_apr_week": "0.025506"
+  },
+  {
+   "week_end": "2025-03-21",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022444",
+   "staking_apr_week": "0.027897"
+  },
+  {
+   "week_end": "2025-03-28",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053494",
+   "weth_debt": "359928.0377",
+   "equity_eth": "39211.0143",
+   "weth_borrow_apr_instant": "0.026292",
+   "staking_apr_week": "0.024976"
+  },
+  {
+   "week_end": "2025-03-28",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023075",
+   "staking_apr_week": "0.027368"
+  },
+  {
+   "week_end": "2025-04-04",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.052067",
+   "weth_debt": "360610.7484",
+   "equity_eth": "38743.5673",
+   "weth_borrow_apr_instant": "0.026187",
+   "staking_apr_week": "0.028052"
+  },
+  {
+   "week_end": "2025-04-04",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023635",
+   "staking_apr_week": "0.028154"
+  },
+  {
+   "week_end": "2025-04-11",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.052136",
+   "weth_debt": "360835.3392",
+   "equity_eth": "38793.9603",
+   "weth_borrow_apr_instant": "0.026882",
+   "staking_apr_week": "0.035879"
+  },
+  {
+   "week_end": "2025-04-11",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.024731",
+   "staking_apr_week": "0.036716"
+  },
+  {
+   "week_end": "2025-04-18",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.052065",
+   "weth_debt": "361036.1277",
+   "equity_eth": "38788.4309",
+   "weth_borrow_apr_instant": "0.026610",
+   "staking_apr_week": "0.025470"
+  },
+  {
+   "week_end": "2025-04-18",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.021685",
+   "staking_apr_week": "0.028397"
+  },
+  {
+   "week_end": "2025-04-25",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.052096",
+   "weth_debt": "374725.3339",
+   "equity_eth": "40271.4030",
+   "weth_borrow_apr_instant": "0.026459",
+   "staking_apr_week": "0.032337"
+  },
+  {
+   "week_end": "2025-04-25",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.021571",
+   "staking_apr_week": "0.028264"
+  },
+  {
+   "week_end": "2025-05-02",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.052145",
+   "weth_debt": "374913.3202",
+   "equity_eth": "40310.9483",
+   "weth_borrow_apr_instant": "0.025339",
+   "staking_apr_week": "0.028582"
+  },
+  {
+   "week_end": "2025-05-02",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020655",
+   "staking_apr_week": "0.027408"
+  },
+  {
+   "week_end": "2025-05-09",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.056160",
+   "weth_debt": "435105.4252",
+   "equity_eth": "48621.9281",
+   "weth_borrow_apr_instant": "0.025758",
+   "staking_apr_week": "0.025936"
+  },
+  {
+   "week_end": "2025-05-09",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.025256",
+   "staking_apr_week": "0.028011"
+  },
+  {
+   "week_end": "2025-05-16",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.056168",
+   "weth_debt": "435320.1432",
+   "equity_eth": "48649.6620",
+   "weth_borrow_apr_instant": "0.025603",
+   "staking_apr_week": "0.026127"
+  },
+  {
+   "week_end": "2025-05-16",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023105",
+   "staking_apr_week": "0.029381"
+  },
+  {
+   "week_end": "2025-05-23",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.056176",
+   "weth_debt": "435530.4475",
+   "equity_eth": "48676.8143",
+   "weth_borrow_apr_instant": "0.024577",
+   "staking_apr_week": "0.025554"
+  },
+  {
+   "week_end": "2025-05-23",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.024251",
+   "staking_apr_week": "0.028621"
+  },
+  {
+   "week_end": "2025-05-30",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.060569",
+   "weth_debt": "505749.0166",
+   "equity_eth": "58863.5517",
+   "weth_borrow_apr_instant": "0.026096",
+   "staking_apr_week": "0.026922"
+  },
+  {
+   "week_end": "2025-05-30",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023455",
+   "staking_apr_week": "0.027926"
+  },
+  {
+   "week_end": "2025-06-06",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.060541",
+   "weth_debt": "505999.9947",
+   "equity_eth": "58877.5410",
+   "weth_borrow_apr_instant": "0.025805",
+   "staking_apr_week": "0.024465"
+  },
+  {
+   "week_end": "2025-06-06",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023129",
+   "staking_apr_week": "0.027928"
+  },
+  {
+   "week_end": "2025-06-13",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.060554",
+   "weth_debt": "506251.6959",
+   "equity_eth": "58913.8369",
+   "weth_borrow_apr_instant": "0.025882",
+   "staking_apr_week": "0.026579"
+  },
+  {
+   "week_end": "2025-06-13",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023205",
+   "staking_apr_week": "0.027772"
+  },
+  {
+   "week_end": "2025-06-20",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.060539",
+   "weth_debt": "506503.3803",
+   "equity_eth": "58934.8759",
+   "weth_borrow_apr_instant": "0.025917",
+   "staking_apr_week": "0.025157"
+  },
+  {
+   "week_end": "2025-06-20",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.021959",
+   "staking_apr_week": "0.026706"
+  },
+  {
+   "week_end": "2025-06-27",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.060582",
+   "weth_debt": "506751.8575",
+   "equity_eth": "58986.8872",
+   "weth_borrow_apr_instant": "0.025238",
+   "staking_apr_week": "0.027704"
+  },
+  {
+   "week_end": "2025-06-27",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022105",
+   "staking_apr_week": "0.028204"
+  },
+  {
+   "week_end": "2025-07-04",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.063965",
+   "weth_debt": "591001.0111",
+   "equity_eth": "70898.0373",
+   "weth_borrow_apr_instant": "0.025769",
+   "staking_apr_week": "0.025029"
+  },
+  {
+   "week_end": "2025-07-04",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.021589",
+   "staking_apr_week": "0.026705"
+  },
+  {
+   "week_end": "2025-07-11",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.063964",
+   "weth_debt": "591295.1962",
+   "equity_eth": "70933.2740",
+   "weth_borrow_apr_instant": "0.026858",
+   "staking_apr_week": "0.025947"
+  },
+  {
+   "week_end": "2025-07-11",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023238",
+   "staking_apr_week": "0.027073"
+  },
+  {
+   "week_end": "2025-07-18",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.090345",
+   "weth_debt": "577272.7564",
+   "equity_eth": "85281.6930",
+   "weth_borrow_apr_instant": "0.051400",
+   "staking_apr_week": "0.025663"
+  },
+  {
+   "week_end": "2025-07-18",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023584",
+   "staking_apr_week": "0.027593"
+  },
+  {
+   "week_end": "2025-07-25",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.054682",
+   "weth_debt": "577763.3168",
+   "equity_eth": "63664.4499",
+   "weth_borrow_apr_instant": "0.029660",
+   "staking_apr_week": "0.026198"
+  },
+  {
+   "week_end": "2025-07-25",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.028475",
+   "staking_apr_week": "0.027358"
+  },
+  {
+   "week_end": "2025-08-01",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.077510",
+   "weth_debt": "555391.3063",
+   "equity_eth": "74544.9749",
+   "weth_borrow_apr_instant": "0.028935",
+   "staking_apr_week": "0.025777"
+  },
+  {
+   "week_end": "2025-08-01",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.021813",
+   "staking_apr_week": "0.026693"
+  },
+  {
+   "week_end": "2025-08-08",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.081379",
+   "weth_debt": "519702.9229",
+   "equity_eth": "71871.5945",
+   "weth_borrow_apr_instant": "0.026858",
+   "staking_apr_week": "0.025099"
+  },
+  {
+   "week_end": "2025-08-08",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.021309",
+   "staking_apr_week": "0.026641"
+  },
+  {
+   "week_end": "2025-08-15",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.081384",
+   "weth_debt": "519962.6080",
+   "equity_eth": "71910.4918",
+   "weth_borrow_apr_instant": "0.026655",
+   "staking_apr_week": "0.026314"
+  },
+  {
+   "week_end": "2025-08-15",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.024110",
+   "staking_apr_week": "0.027751"
+  },
+  {
+   "week_end": "2025-08-22",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.086156",
+   "weth_debt": "489726.2270",
+   "equity_eth": "70188.5676",
+   "weth_borrow_apr_instant": "0.026165",
+   "staking_apr_week": "0.025974"
+  },
+  {
+   "week_end": "2025-08-22",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.022064",
+   "staking_apr_week": "0.026681"
+  },
+  {
+   "week_end": "2025-08-29",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.086147",
+   "weth_debt": "489971.5664",
+   "equity_eth": "70219.2494",
+   "weth_borrow_apr_instant": "0.026516",
+   "staking_apr_week": "0.025701"
+  },
+  {
+   "week_end": "2025-08-29",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023361",
+   "staking_apr_week": "0.026928"
+  },
+  {
+   "week_end": "2025-09-05",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.086144",
+   "weth_debt": "490218.4364",
+   "equity_eth": "70252.9601",
+   "weth_borrow_apr_instant": "0.025915",
+   "staking_apr_week": "0.026113"
+  },
+  {
+   "week_end": "2025-09-05",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023542",
+   "staking_apr_week": "0.027060"
+  },
+  {
+   "week_end": "2025-09-12",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.115700",
+   "weth_debt": "477456.6147",
+   "equity_eth": "83278.2707",
+   "weth_borrow_apr_instant": "0.024825",
+   "staking_apr_week": "0.024509"
+  },
+  {
+   "week_end": "2025-09-12",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020295",
+   "staking_apr_week": "0.026219"
+  },
+  {
+   "week_end": "2025-09-19",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064319",
+   "weth_debt": "477675.0524",
+   "equity_eth": "57481.5943",
+   "weth_borrow_apr_instant": "0.022355",
+   "staking_apr_week": "0.025545"
+  },
+  {
+   "week_end": "2025-09-19",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020015",
+   "staking_apr_week": "0.026264"
+  },
+  {
+   "week_end": "2025-09-26",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064370",
+   "weth_debt": "477884.5309",
+   "equity_eth": "57532.0939",
+   "weth_borrow_apr_instant": "0.022801",
+   "staking_apr_week": "0.025327"
+  },
+  {
+   "week_end": "2025-09-26",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.019447",
+   "staking_apr_week": "0.026184"
+  },
+  {
+   "week_end": "2025-10-03",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064419",
+   "weth_debt": "478092.9581",
+   "equity_eth": "57582.2395",
+   "weth_borrow_apr_instant": "0.023108",
+   "staking_apr_week": "0.025178"
+  },
+  {
+   "week_end": "2025-10-03",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.018410",
+   "staking_apr_week": "0.025967"
+  },
+  {
+   "week_end": "2025-10-10",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064474",
+   "weth_debt": "478310.2038",
+   "equity_eth": "57635.7073",
+   "weth_borrow_apr_instant": "0.023506",
+   "staking_apr_week": "0.026347"
+  },
+  {
+   "week_end": "2025-10-10",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.019367",
+   "staking_apr_week": "0.026716"
+  },
+  {
+   "week_end": "2025-10-17",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064549",
+   "weth_debt": "478530.1193",
+   "equity_eth": "57700.2812",
+   "weth_borrow_apr_instant": "0.024483",
+   "staking_apr_week": "0.027674"
+  },
+  {
+   "week_end": "2025-10-17",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.018849",
+   "staking_apr_week": "0.032714"
+  },
+  {
+   "week_end": "2025-10-24",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064562",
+   "weth_debt": "478759.8630",
+   "equity_eth": "57734.6001",
+   "weth_borrow_apr_instant": "0.025172",
+   "staking_apr_week": "0.025673"
+  },
+  {
+   "week_end": "2025-10-24",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020063",
+   "staking_apr_week": "0.025811"
+  },
+  {
+   "week_end": "2025-10-31",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064573",
+   "weth_debt": "478985.9762",
+   "equity_eth": "57767.1225",
+   "weth_borrow_apr_instant": "0.024604",
+   "staking_apr_week": "0.025133"
+  },
+  {
+   "week_end": "2025-10-31",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020255",
+   "staking_apr_week": "0.025467"
+  },
+  {
+   "week_end": "2025-11-07",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064581",
+   "weth_debt": "479213.1975",
+   "equity_eth": "57798.7579",
+   "weth_borrow_apr_instant": "0.024534",
+   "staking_apr_week": "0.025142"
+  },
+  {
+   "week_end": "2025-11-07",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020071",
+   "staking_apr_week": "0.026667"
+  },
+  {
+   "week_end": "2025-11-14",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064641",
+   "weth_debt": "479424.3649",
+   "equity_eth": "57854.3775",
+   "weth_borrow_apr_instant": "0.020203",
+   "staking_apr_week": "0.025900"
+  },
+  {
+   "week_end": "2025-11-14",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.019844",
+   "staking_apr_week": "0.025941"
+  },
+  {
+   "week_end": "2025-11-21",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.063678",
+   "weth_debt": "480115.3722",
+   "equity_eth": "57451.2988",
+   "weth_borrow_apr_instant": "0.020202",
+   "staking_apr_week": "0.027939"
+  },
+  {
+   "week_end": "2025-11-21",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.023915",
+   "staking_apr_week": "0.028097"
+  },
+  {
+   "week_end": "2025-11-28",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.063763",
+   "weth_debt": "480299.1124",
+   "equity_eth": "57516.1622",
+   "weth_borrow_apr_instant": "0.019935",
+   "staking_apr_week": "0.024110"
+  },
+  {
+   "week_end": "2025-11-28",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.021283",
+   "staking_apr_week": "0.025881"
+  },
+  {
+   "week_end": "2025-12-05",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.063912",
+   "weth_debt": "480472.1334",
+   "equity_eth": "57611.9137",
+   "weth_borrow_apr_instant": "0.018345",
+   "staking_apr_week": "0.026054"
+  },
+  {
+   "week_end": "2025-12-05",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.016893",
+   "staking_apr_week": "0.025569"
+  },
+  {
+   "week_end": "2025-12-12",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064246",
+   "weth_debt": "515199.1753",
+   "equity_eth": "61957.4319",
+   "weth_borrow_apr_instant": "0.019679",
+   "staking_apr_week": "0.024033"
+  },
+  {
+   "week_end": "2025-12-12",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.019562",
+   "staking_apr_week": "0.025369"
+  },
+  {
+   "week_end": "2025-12-19",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064648",
+   "weth_debt": "568578.0292",
+   "equity_eth": "68617.3067",
+   "weth_borrow_apr_instant": "0.020287",
+   "staking_apr_week": "0.025272"
+  },
+  {
+   "week_end": "2025-12-19",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020559",
+   "staking_apr_week": "0.025715"
+  },
+  {
+   "week_end": "2025-12-26",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064699",
+   "weth_debt": "568798.8056",
+   "equity_eth": "68674.4930",
+   "weth_borrow_apr_instant": "0.020097",
+   "staking_apr_week": "0.022744"
+  },
+  {
+   "week_end": "2025-12-26",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.019149",
+   "staking_apr_week": "0.025494"
+  },
+  {
+   "week_end": "2026-01-02",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064782",
+   "weth_debt": "569014.8173",
+   "equity_eth": "68749.9519",
+   "weth_borrow_apr_instant": "0.019702",
+   "staking_apr_week": "0.023839"
+  },
+  {
+   "week_end": "2026-01-02",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.019172",
+   "staking_apr_week": "0.025446"
+  },
+  {
+   "week_end": "2026-01-09",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064871",
+   "weth_debt": "569232.0362",
+   "equity_eth": "68829.6343",
+   "weth_borrow_apr_instant": "0.020249",
+   "staking_apr_week": "0.024273"
+  },
+  {
+   "week_end": "2026-01-09",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.019949",
+   "staking_apr_week": "0.025226"
+  },
+  {
+   "week_end": "2026-01-16",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.064909",
+   "weth_debt": "569454.8088",
+   "equity_eth": "68879.1953",
+   "weth_borrow_apr_instant": "0.020623",
+   "staking_apr_week": "0.022254"
+  },
+  {
+   "week_end": "2026-01-16",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020398",
+   "staking_apr_week": "0.024723"
+  },
+  {
+   "week_end": "2026-01-23",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.065014",
+   "weth_debt": "569675.3267",
+   "equity_eth": "68969.3554",
+   "weth_borrow_apr_instant": "0.021384",
+   "staking_apr_week": "0.025377"
+  },
+  {
+   "week_end": "2026-01-23",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020150",
+   "staking_apr_week": "0.024234"
+  },
+  {
+   "week_end": "2026-01-30",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.065849",
+   "weth_debt": "572699.7559",
+   "equity_eth": "69838.8920",
+   "weth_borrow_apr_instant": "0.021874",
+   "staking_apr_week": "0.025023"
+  },
+  {
+   "week_end": "2026-01-30",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.019112",
+   "staking_apr_week": "0.023497"
+  },
+  {
+   "week_end": "2026-02-06",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.023574",
+   "weth_debt": "550224.5499",
+   "equity_eth": "42612.7338",
+   "weth_borrow_apr_instant": "0.054801",
+   "staking_apr_week": "0.026904"
+  },
+  {
+   "week_end": "2026-02-06",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.028901",
+   "staking_apr_week": "0.028292"
+  },
+  {
+   "week_end": "2026-02-13",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.090029",
+   "weth_debt": "490368.2166",
+   "equity_eth": "72279.7091",
+   "weth_borrow_apr_instant": "0.024344",
+   "staking_apr_week": "0.024611"
+  },
+  {
+   "week_end": "2026-02-13",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020638",
+   "staking_apr_week": "0.023725"
+  },
+  {
+   "week_end": "2026-02-20",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.085583",
+   "weth_debt": "490704.5951",
+   "equity_eth": "70032.7188",
+   "weth_borrow_apr_instant": "0.024441",
+   "staking_apr_week": "0.024724"
+  },
+  {
+   "week_end": "2026-02-20",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020270",
+   "staking_apr_week": "0.023291"
+  },
+  {
+   "week_end": "2026-02-27",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053965",
+   "weth_debt": "490939.1999",
+   "equity_eth": "53726.9896",
+   "weth_borrow_apr_instant": "0.024265",
+   "staking_apr_week": "0.024844"
+  },
+  {
+   "week_end": "2026-02-27",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020556",
+   "staking_apr_week": "0.023348"
+  },
+  {
+   "week_end": "2026-03-06",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053959",
+   "weth_debt": "491166.9298",
+   "equity_eth": "53748.4085",
+   "weth_borrow_apr_instant": "0.023349",
+   "staking_apr_week": "0.023851"
+  },
+  {
+   "week_end": "2026-03-06",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.020850",
+   "staking_apr_week": "0.024132"
+  },
+  {
+   "week_end": "2026-03-13",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053940",
+   "weth_debt": "491385.5969",
+   "equity_eth": "53762.6553",
+   "weth_borrow_apr_instant": "0.023032",
+   "staking_apr_week": "0.022287"
+  },
+  {
+   "week_end": "2026-03-13",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.025179",
+   "staking_apr_week": "0.026974"
+  },
+  {
+   "week_end": "2026-03-20",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.054126",
+   "weth_debt": "527604.4678",
+   "equity_eth": "57829.0055",
+   "weth_borrow_apr_instant": "0.022301",
+   "staking_apr_week": "0.026774"
+  },
+  {
+   "week_end": "2026-03-20",
+   "pool": "Spark",
+   "health_factor": "",
+   "weth_debt": "0.0000",
+   "equity_eth": "0.0000",
+   "weth_borrow_apr_instant": "0.018298",
+   "staking_apr_week": "0.024272"
+  },
+  {
+   "week_end": "2026-03-27",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.054189",
+   "weth_debt": "527830.0002",
+   "equity_eth": "57888.6336",
+   "weth_borrow_apr_instant": "0.022421",
+   "staking_apr_week": "0.025397"
+  },
+  {
+   "week_end": "2026-03-27",
+   "pool": "Spark",
+   "health_factor": "1.080701",
+   "weth_debt": "6.1746",
+   "equity_eth": "1.0006",
+   "weth_borrow_apr_instant": "0.016888",
+   "staking_apr_week": "0.025128"
+  },
+  {
+   "week_end": "2026-04-03",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053869",
+   "weth_debt": "534596.5796",
+   "equity_eth": "58450.3080",
+   "weth_borrow_apr_instant": "0.022034",
+   "staking_apr_week": "0.025276"
+  },
+  {
+   "week_end": "2026-04-03",
+   "pool": "Spark",
+   "health_factor": "1.168438",
+   "weth_debt": "25520.4361",
+   "equity_eth": "6543.0650",
+   "weth_borrow_apr_instant": "0.020353",
+   "staking_apr_week": "0.024263"
+  },
+  {
+   "week_end": "2026-04-10",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053922",
+   "weth_debt": "534829.4769",
+   "equity_eth": "58505.5999",
+   "weth_borrow_apr_instant": "0.022795",
+   "staking_apr_week": "0.025338"
+  },
+  {
+   "week_end": "2026-04-10",
+   "pool": "Spark",
+   "health_factor": "1.168523",
+   "weth_debt": "25530.2455",
+   "equity_eth": "6547.9008",
+   "weth_borrow_apr_instant": "0.020333",
+   "staking_apr_week": "0.023817"
+  },
+  {
+   "week_end": "2026-04-17",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.053941",
+   "weth_debt": "535064.3486",
+   "equity_eth": "58542.2004",
+   "weth_borrow_apr_instant": "0.022637",
+   "staking_apr_week": "0.023856"
+  },
+  {
+   "week_end": "2026-04-17",
+   "pool": "Spark",
+   "health_factor": "1.168599",
+   "weth_debt": "25540.2678",
+   "equity_eth": "6552.5711",
+   "weth_borrow_apr_instant": "0.020876",
+   "staking_apr_week": "0.023883"
+  },
+  {
+   "week_end": "2026-04-24",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.029697",
+   "weth_debt": "495480.0414",
+   "equity_eth": "41566.7215",
+   "weth_borrow_apr_instant": "0.050000",
+   "staking_apr_week": "0.025994"
+  },
+  {
+   "week_end": "2026-04-24",
+   "pool": "Spark",
+   "health_factor": "1.027248",
+   "weth_debt": "25564.9824",
+   "equity_eth": "2673.2636",
+   "weth_borrow_apr_instant": "0.023243",
+   "staking_apr_week": "0.026302"
+  },
+  {
+   "week_end": "2026-05-01",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.026678",
+   "weth_debt": "447053.6868",
+   "equity_eth": "36083.3768",
+   "weth_borrow_apr_instant": "0.040977",
+   "staking_apr_week": "0.022951"
+  },
+  {
+   "week_end": "2026-05-01",
+   "pool": "Spark",
+   "health_factor": "1.027291",
+   "weth_debt": "25576.5764",
+   "equity_eth": "2675.6599",
+   "weth_borrow_apr_instant": "0.024063",
+   "staking_apr_week": "0.025834"
+  },
+  {
+   "week_end": "2026-05-08",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.015212",
+   "weth_debt": "333305.5341",
+   "equity_eth": "22879.4786",
+   "weth_borrow_apr_instant": "0.021766",
+   "staking_apr_week": "0.022629"
+  },
+  {
+   "week_end": "2026-05-08",
+   "pool": "Spark",
+   "health_factor": "1.027333",
+   "weth_debt": "25588.1864",
+   "equity_eth": "2678.0246",
+   "weth_borrow_apr_instant": "0.024968",
+   "staking_apr_week": "0.025792"
+  },
+  {
+   "week_end": "2026-05-15",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.085141",
+   "weth_debt": "265958.4134",
+   "equity_eth": "37833.5300",
+   "weth_borrow_apr_instant": "0.019621",
+   "staking_apr_week": "0.023183"
+  },
+  {
+   "week_end": "2026-05-15",
+   "pool": "Spark",
+   "health_factor": "1.028165",
+   "weth_debt": "27997.9034",
+   "equity_eth": "2955.2946",
+   "weth_borrow_apr_instant": "0.018476",
+   "staking_apr_week": "0.024671"
+  },
+  {
+   "week_end": "2026-05-22",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.085167",
+   "weth_debt": "266064.7911",
+   "equity_eth": "37855.9942",
+   "weth_borrow_apr_instant": "0.021703",
+   "staking_apr_week": "0.022114"
+  },
+  {
+   "week_end": "2026-05-22",
+   "pool": "Spark",
+   "health_factor": "1.028270",
+   "weth_debt": "28007.9066",
+   "equity_eth": "2959.4927",
+   "weth_borrow_apr_instant": "0.019057",
+   "staking_apr_week": "0.023923"
+  },
+  {
+   "week_end": "2026-05-29",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.096840",
+   "weth_debt": "263363.6197",
+   "equity_eth": "40707.6314",
+   "weth_borrow_apr_instant": "0.021207",
+   "staking_apr_week": "0.025815"
+  },
+  {
+   "week_end": "2026-05-29",
+   "pool": "Spark",
+   "health_factor": "1.035152",
+   "weth_debt": "30828.9823",
+   "equity_eth": "3485.7281",
+   "weth_borrow_apr_instant": "0.017842",
+   "staking_apr_week": "0.023856"
+  },
+  {
+   "week_end": "2026-06-05",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.096929",
+   "weth_debt": "263469.3978",
+   "equity_eth": "40748.6882",
+   "weth_borrow_apr_instant": "0.020701",
+   "staking_apr_week": "0.025179"
+  },
+  {
+   "week_end": "2026-06-05",
+   "pool": "Spark",
+   "health_factor": "1.035261",
+   "weth_debt": "30840.3962",
+   "equity_eth": "3490.6219",
+   "weth_borrow_apr_instant": "0.020946",
+   "staking_apr_week": "0.024780"
+  },
+  {
+   "week_end": "2026-06-12",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.070959",
+   "weth_debt": "263574.0883",
+   "equity_eth": "33559.6255",
+   "weth_borrow_apr_instant": "0.020513",
+   "staking_apr_week": "0.026614"
+  },
+  {
+   "week_end": "2026-06-12",
+   "pool": "Spark",
+   "health_factor": "1.035359",
+   "weth_debt": "30852.5231",
+   "equity_eth": "3495.2561",
+   "weth_borrow_apr_instant": "0.019547",
+   "staking_apr_week": "0.025457"
+  },
+  {
+   "week_end": "2026-06-19",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.071107",
+   "weth_debt": "258793.7067",
+   "equity_eth": "32991.2857",
+   "weth_borrow_apr_instant": "0.021434",
+   "staking_apr_week": "0.024290"
+  },
+  {
+   "week_end": "2026-06-19",
+   "pool": "Spark",
+   "health_factor": "1.035427",
+   "weth_debt": "30864.4920",
+   "equity_eth": "3498.8572",
+   "weth_borrow_apr_instant": "0.020910",
+   "staking_apr_week": "0.023636"
+  },
+  {
+   "week_end": "2026-06-26",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.034489",
+   "weth_debt": "258899.4561",
+   "equity_eth": "23025.5333",
+   "weth_borrow_apr_instant": "0.021753",
+   "staking_apr_week": "0.023423"
+  },
+  {
+   "week_end": "2026-06-26",
+   "pool": "Spark",
+   "health_factor": "1.035495",
+   "weth_debt": "30876.4616",
+   "equity_eth": "3502.4956",
+   "weth_borrow_apr_instant": "0.019487",
+   "staking_apr_week": "0.023684"
+  },
+  {
+   "week_end": "2026-07-03",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.030515",
+   "weth_debt": "259005.2071",
+   "equity_eth": "21951.3829",
+   "weth_borrow_apr_instant": "0.021264",
+   "staking_apr_week": "0.024049"
+  },
+  {
+   "week_end": "2026-07-03",
+   "pool": "Spark",
+   "health_factor": "1.035548",
+   "weth_debt": "30888.4309",
+   "equity_eth": "3505.6169",
+   "weth_borrow_apr_instant": "0.020598",
+   "staking_apr_week": "0.022888"
+  },
+  {
+   "week_end": "2026-07-10",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.033377",
+   "weth_debt": "259109.3964",
+   "equity_eth": "22740.8027",
+   "weth_borrow_apr_instant": "0.020441",
+   "staking_apr_week": "0.023082"
+  },
+  {
+   "week_end": "2026-07-10",
+   "pool": "Spark",
+   "health_factor": "1.035593",
+   "weth_debt": "30900.3397",
+   "equity_eth": "3508.4357",
+   "weth_borrow_apr_instant": "0.019649",
+   "staking_apr_week": "0.022328"
+  },
+  {
+   "week_end": "2026-07-17",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.033496",
+   "weth_debt": "259210.3861",
+   "equity_eth": "22782.0953",
+   "weth_borrow_apr_instant": "0.020080",
+   "staking_apr_week": "0.026322"
+  },
+  {
+   "week_end": "2026-07-17",
+   "pool": "Spark",
+   "health_factor": "1.035643",
+   "weth_debt": "30911.8796",
+   "equity_eth": "3511.4335",
+   "weth_borrow_apr_instant": "0.019462",
+   "staking_apr_week": "0.022030"
+  },
+  {
+   "week_end": "2026-07-24",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.033481",
+   "weth_debt": "284685.0842",
+   "equity_eth": "25016.5996",
+   "weth_borrow_apr_instant": "0.021722",
+   "staking_apr_week": "0.024082"
+  },
+  {
+   "week_end": "2026-07-24",
+   "pool": "Spark",
+   "health_factor": "1.035680",
+   "weth_debt": "30923.7614",
+   "equity_eth": "3514.0025",
+   "weth_borrow_apr_instant": "0.019926",
+   "staking_apr_week": "0.021889"
+  },
+  {
+   "week_end": "2026-07-31",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.033525",
+   "weth_debt": "284802.6372",
+   "equity_eth": "25040.0270",
+   "weth_borrow_apr_instant": "0.021491",
+   "staking_apr_week": "0.023736"
+  },
+  {
+   "week_end": "2026-07-31",
+   "pool": "Spark",
+   "health_factor": "1.035708",
+   "weth_debt": "30936.0030",
+   "equity_eth": "3516.3224",
+   "weth_borrow_apr_instant": "0.020654",
+   "staking_apr_week": "0.022048"
+  },
+  {
+   "week_end": "2026-08-07",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.036349",
+   "weth_debt": "294819.9094",
+   "equity_eth": "26797.2968",
+   "weth_borrow_apr_instant": "0.021192",
+   "staking_apr_week": "0.024407"
+  },
+  {
+   "week_end": "2026-08-07",
+   "pool": "Spark",
+   "health_factor": "1.035738",
+   "weth_debt": "30948.0831",
+   "equity_eth": "3518.7109",
+   "weth_borrow_apr_instant": "0.020565",
+   "staking_apr_week": "0.021898"
+  },
+  {
+   "week_end": "2026-08-14",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.057316",
+   "weth_debt": "334942.5246",
+   "equity_eth": "37836.5977",
+   "weth_borrow_apr_instant": "0.021199",
+   "staking_apr_week": "0.023152"
+  },
+  {
+   "week_end": "2026-08-14",
+   "pool": "Spark",
+   "health_factor": "1.035767",
+   "weth_debt": "30960.1546",
+   "equity_eth": "3521.0332",
+   "weth_borrow_apr_instant": "0.019885",
+   "staking_apr_week": "0.021775"
+  },
+  {
+   "week_end": "2026-08-21",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.041141",
+   "weth_debt": "364183.2444",
+   "equity_eth": "34939.1580",
+   "weth_borrow_apr_instant": "0.021572",
+   "staking_apr_week": "0.023064"
+  },
+  {
+   "week_end": "2026-08-21",
+   "pool": "Spark",
+   "health_factor": "1.035808",
+   "weth_debt": "30972.0478",
+   "equity_eth": "3523.7545",
+   "weth_borrow_apr_instant": "0.020613",
+   "staking_apr_week": "0.022100"
+  },
+  {
+   "week_end": "2026-08-28",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.041197",
+   "weth_debt": "364333.9906",
+   "equity_eth": "34974.8969",
+   "weth_borrow_apr_instant": "0.021407",
+   "staking_apr_week": "0.024363"
+  },
+  {
+   "week_end": "2026-08-28",
+   "pool": "Spark",
+   "health_factor": "1.035840",
+   "weth_debt": "30984.4577",
+   "equity_eth": "3526.2320",
+   "weth_borrow_apr_instant": "0.020840",
+   "staking_apr_week": "0.022503"
+  },
+  {
+   "week_end": "2026-09-04",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.031212",
+   "weth_debt": "409491.3021",
+   "equity_eth": "35006.0591",
+   "weth_borrow_apr_instant": "0.020169",
+   "staking_apr_week": "0.022920"
+  },
+  {
+   "week_end": "2026-09-04",
+   "pool": "Spark",
+   "health_factor": "1.035874",
+   "weth_debt": "30996.5934",
+   "equity_eth": "3528.7580",
+   "weth_borrow_apr_instant": "0.019668",
+   "staking_apr_week": "0.022153"
+  },
+  {
+   "week_end": "2026-09-11",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.031271",
+   "weth_debt": "409650.7628",
+   "equity_eth": "35045.0048",
+   "weth_borrow_apr_instant": "0.020463",
+   "staking_apr_week": "0.023274"
+  },
+  {
+   "week_end": "2026-09-11",
+   "pool": "Spark",
+   "health_factor": "1.035933",
+   "weth_debt": "31008.2041",
+   "equity_eth": "3532.0402",
+   "weth_borrow_apr_instant": "0.018984",
+   "staking_apr_week": "0.022492"
+  },
+  {
+   "week_end": "2026-09-18",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.026976",
+   "weth_debt": "409812.0453",
+   "equity_eth": "33205.8817",
+   "weth_borrow_apr_instant": "0.020548",
+   "staking_apr_week": "0.023685"
+  },
+  {
+   "week_end": "2026-09-18",
+   "pool": "Spark",
+   "health_factor": "1.036011",
+   "weth_debt": "31019.3302",
+   "equity_eth": "3535.8899",
+   "weth_borrow_apr_instant": "0.018134",
+   "staking_apr_week": "0.022608"
+  },
+  {
+   "week_end": "2026-09-25",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.027024",
+   "weth_debt": "409972.3622",
+   "equity_eth": "33239.7430",
+   "weth_borrow_apr_instant": "0.020335",
+   "staking_apr_week": "0.022854"
+  },
+  {
+   "week_end": "2026-09-25",
+   "pool": "Spark",
+   "health_factor": "1.036086",
+   "weth_debt": "31030.4316",
+   "equity_eth": "3539.6784",
+   "weth_borrow_apr_instant": "0.019446",
+   "staking_apr_week": "0.022468"
+  },
+  {
+   "week_end": "2026-10-02",
+   "pool": "Aave V3 Core",
+   "health_factor": "1.027082",
+   "weth_debt": "410134.2042",
+   "equity_eth": "33277.8646",
+   "weth_borrow_apr_instant": "0.020738",
+   "staking_apr_week": "0.023525"
+  },
+  {
+   "week_end": "2026-10-02",
+   "pool": "Spark",
+   "health_factor": "1.036145",
+   "weth_debt": "31042.0159",
+   "equity_eth": "3542.9767",
+   "weth_borrow_apr_instant": "0.019070",
+   "staking_apr_week": "0.022448"
+  }
+ ],
+ "liquidRepays": [
+  {
+   "utc": "2024-10-09 01:12:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "1450.000000",
+   "hf_before_block": "1.145486",
+   "hf_after_block": "1.166975"
+  },
+  {
+   "utc": "2024-10-09 01:52:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "1000.000000",
+   "hf_before_block": "1.166972",
+   "hf_after_block": "1.182267"
+  },
+  {
+   "utc": "2024-10-09 04:36:59",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "1700.000000",
+   "hf_before_block": "1.182277",
+   "hf_after_block": "1.209221"
+  },
+  {
+   "utc": "2024-10-09 17:18:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "3000.000000",
+   "hf_before_block": "1.209170",
+   "hf_after_block": "1.259832"
+  },
+  {
+   "utc": "2024-10-09 21:03:11",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "2000.000000",
+   "hf_before_block": "1.259806",
+   "hf_after_block": "1.296006"
+  },
+  {
+   "utc": "2024-10-09 23:52:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "2400.000000",
+   "hf_before_block": "1.296015",
+   "hf_after_block": "1.342298"
+  },
+  {
+   "utc": "2024-12-04 19:14:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "1500.000000",
+   "hf_before_block": "1.084008",
+   "hf_after_block": "1.091733"
+  },
+  {
+   "utc": "2024-12-05 04:23:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "1000.000000",
+   "hf_before_block": "1.091719",
+   "hf_after_block": "1.096931"
+  },
+  {
+   "utc": "2024-12-07 19:41:59",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "9000.000000",
+   "hf_before_block": "1.096913",
+   "hf_after_block": "1.146144"
+  },
+  {
+   "utc": "2024-12-11 22:14:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "1700.000000",
+   "hf_before_block": "1.142393",
+   "hf_after_block": "1.152157"
+  },
+  {
+   "utc": "2025-07-16 03:17:11",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "10000.000000",
+   "hf_before_block": "1.063840",
+   "hf_after_block": "1.082133"
+  },
+  {
+   "utc": "2025-07-17 15:35:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "4500.000000",
+   "hf_before_block": "1.082025",
+   "hf_after_block": "1.090461"
+  },
+  {
+   "utc": "2025-07-30 03:16:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "5000.000000",
+   "hf_before_block": "1.054644",
+   "hf_after_block": "1.063848"
+  },
+  {
+   "utc": "2025-07-30 20:36:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "2500.000000",
+   "hf_before_block": "1.063831",
+   "hf_after_block": "1.068493"
+  },
+  {
+   "utc": "2025-08-01 12:38:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "5200.000000",
+   "hf_before_block": "1.048819",
+   "hf_after_block": "1.058466"
+  },
+  {
+   "utc": "2025-08-01 22:58:59",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "10000.000000",
+   "hf_before_block": "1.058455",
+   "hf_after_block": "1.077513"
+  },
+  {
+   "utc": "2025-08-07 01:58:59",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "36000.000000",
+   "hf_before_block": "1.077422",
+   "hf_after_block": "1.081388"
+  },
+  {
+   "utc": "2025-08-20 00:43:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "15000.000000",
+   "hf_before_block": "1.081381",
+   "hf_after_block": "1.113494"
+  },
+  {
+   "utc": "2025-08-21 02:41:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "15500.000000",
+   "hf_before_block": "1.113489",
+   "hf_after_block": "1.086169"
+  },
+  {
+   "utc": "2025-09-09 23:26:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "10000.000000",
+   "hf_before_block": "1.086130",
+   "hf_after_block": "1.108741"
+  },
+  {
+   "utc": "2025-09-11 18:03:11",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "3000.000000",
+   "hf_before_block": "1.108745",
+   "hf_after_block": "1.115712"
+  },
+  {
+   "utc": "2026-02-06 15:51:11",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "22750.000000",
+   "hf_before_block": "1.029835",
+   "hf_after_block": "1.072417"
+  },
+  {
+   "utc": "2026-02-07 05:48:59",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "27500.000000",
+   "hf_before_block": "1.023561",
+   "hf_after_block": "1.077407"
+  },
+  {
+   "utc": "2026-02-07 20:12:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "6000.000000",
+   "hf_before_block": "1.025971",
+   "hf_after_block": "1.037883"
+  },
+  {
+   "utc": "2026-02-08 04:16:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "4740.000000",
+   "hf_before_block": "1.037882",
+   "hf_after_block": "1.047490"
+  },
+  {
+   "utc": "2026-02-10 06:14:59",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "20000.000000",
+   "hf_before_block": "1.047452",
+   "hf_after_block": "1.090019"
+  },
+  {
+   "utc": "2026-02-10 16:40:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "1900.000000",
+   "hf_before_block": "1.090011",
+   "hf_after_block": "1.094236"
+  },
+  {
+   "utc": "2026-04-22 19:24:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "11234.636268",
+   "hf_before_block": "1.024441",
+   "hf_after_block": "1.046396"
+  },
+  {
+   "utc": "2026-04-24 05:39:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "28892.799296",
+   "hf_before_block": "1.046300",
+   "hf_after_block": "1.029750"
+  },
+  {
+   "utc": "2026-04-26 04:37:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "10000.000000",
+   "hf_before_block": "1.029615",
+   "hf_after_block": "1.050820"
+  },
+  {
+   "utc": "2026-04-28 20:29:11",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "15000.000000",
+   "hf_before_block": "1.029224",
+   "hf_after_block": "1.022292"
+  },
+  {
+   "utc": "2026-04-29 03:11:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "20000.000000",
+   "hf_before_block": "1.022270",
+   "hf_after_block": "1.067628"
+  },
+  {
+   "utc": "2026-05-01 20:58:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "3869.000000",
+   "hf_before_block": "1.025939",
+   "hf_after_block": "1.026683"
+  },
+  {
+   "utc": "2026-05-06 05:18:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "12700.000000",
+   "hf_before_block": "1.012485",
+   "hf_after_block": "1.042074"
+  },
+  {
+   "utc": "2026-05-06 17:04:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "13129.451272",
+   "hf_before_block": "1.013344",
+   "hf_after_block": "1.044912"
+  },
+  {
+   "utc": "2026-05-06 19:03:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "12582.717757",
+   "hf_before_block": "1.012852",
+   "hf_after_block": "1.044021"
+  },
+  {
+   "utc": "2026-05-07 15:38:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "14224.257994",
+   "hf_before_block": "1.010959",
+   "hf_after_block": "1.047394"
+  },
+  {
+   "utc": "2026-05-07 19:48:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "14990.875424",
+   "hf_before_block": "1.011314",
+   "hf_after_block": "1.051241"
+  },
+  {
+   "utc": "2026-05-08 00:02:11",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "14772.271680",
+   "hf_before_block": "1.014287",
+   "hf_after_block": "1.055345"
+  },
+  {
+   "utc": "2026-05-08 17:17:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "14772.514261",
+   "hf_before_block": "1.016891",
+   "hf_after_block": "1.013773"
+  },
+  {
+   "utc": "2026-05-08 22:15:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "16878.913770",
+   "hf_before_block": "1.013783",
+   "hf_after_block": "1.015216"
+  },
+  {
+   "utc": "2026-05-09 05:33:11",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "17509.193281",
+   "hf_before_block": "1.015212",
+   "hf_after_block": "1.071500"
+  },
+  {
+   "utc": "2026-05-10 05:20:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "5500.000000",
+   "hf_before_block": "1.012243",
+   "hf_after_block": "1.030184"
+  },
+  {
+   "utc": "2026-05-11 17:59:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "18746.509303",
+   "hf_before_block": "1.020144",
+   "hf_after_block": "1.010846"
+  },
+  {
+   "utc": "2026-05-11 22:24:23",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "22984.533169",
+   "hf_before_block": "1.010847",
+   "hf_after_block": "1.074116"
+  },
+  {
+   "utc": "2026-05-13 20:35:47",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "2715.000000",
+   "hf_before_block": "1.074136",
+   "hf_after_block": "1.085102"
+  },
+  {
+   "utc": "2026-05-28 22:59:59",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "2810.700000",
+   "hf_before_block": "1.085258",
+   "hf_after_block": "1.096841"
+  },
+  {
+   "utc": "2026-06-19 04:05:35",
+   "pool": "Aave V3 Core",
+   "event": "Repay",
+   "amount_units": "4888.000000",
+   "hf_before_block": "1.071009",
+   "hf_after_block": "1.071096"
+  }
  ]
 }

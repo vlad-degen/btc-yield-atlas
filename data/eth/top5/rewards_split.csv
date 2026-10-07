@@ -1,0 +1,754 @@
+product,window,component,eth,pct_of_return,source
+ether.fi Liquid ETH,90d,share_price_return,1179.1,100.0,"share price T-90 to T (90.0 days); return 0.8094%; avg equity 145,673 ETH"
+ether.fi Liquid ETH,90d,a_staking_yield,856.562,72.65,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,90d,b_loop_spread,270.517,22.94,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,90d,c_dollar_leg_organic,-224.786,-19.06,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,90d,d_rewards: Merkl PYUSD,61.62,5.23,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 166,894"
+ether.fi Liquid ETH,90d,d_rewards: Merkl RLUSD,71.92,6.1,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 193,761"
+ether.fi Liquid ETH,90d,d_rewards_total,133.541,11.33,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,90d,e_fees,-185.684,-15.75,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,90d,f_residual,328.949,27.9,Share-price return minus components a-e
+ether.fi Liquid ETH,90d,summary_apy_actual_pct,,3.323,annualized share-price return
+ether.fi Liquid ETH,90d,summary_apy_without_rewards_pct,,2.943,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,90d,summary_stETH_apy_pct,,2.245,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,90d,summary_excess_over_stETH_pp,,0.2604,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,90d,summary_rewards_share_of_excess_pct,,35.2,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,365d,share_price_return,5430.615,100.0,"share price T-365 to T (365.0 days); return 3.8700%; avg equity 140,327 ETH"
+ether.fi Liquid ETH,365d,a_staking_yield,3512.346,64.68,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,365d,b_loop_spread,400.252,7.37,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,365d,c_dollar_leg_organic,-159.594,-2.94,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,365d,d_rewards: Merkl ETHFI,5.079,0.09,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 18,894"
+ether.fi Liquid ETH,365d,d_rewards: KING (LRT2) restaking-reward drops,531.083,9.78,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 2,364,320"
+ether.fi Liquid ETH,365d,d_rewards: Merkl PYUSD,61.161,1.13,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 166,894"
+ether.fi Liquid ETH,365d,d_rewards: Merkl RLUSD,71.384,1.31,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 193,761"
+ether.fi Liquid ETH,365d,d_rewards_total,668.707,12.31,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,365d,e_fees,-401.751,-7.4,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,365d,f_residual,1410.656,25.98,Share-price return minus components a-e
+ether.fi Liquid ETH,365d,summary_apy_actual_pct,,3.87,annualized share-price return
+ether.fi Liquid ETH,365d,summary_apy_without_rewards_pct,,3.393,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,365d,summary_stETH_apy_pct,,2.479,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,365d,summary_excess_over_stETH_pp,,1.3914,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,365d,summary_rewards_share_of_excess_pct,,34.2,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),share_price_return,834.088,100.0,"share price T-365 to 2025-10 (29.0 days); return 0.4523%; avg equity 184,408 ETH"
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),a_staking_yield,384.555,46.1,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),b_loop_spread,73.956,8.87,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),c_dollar_leg_organic,-8.878,-1.06,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),d_rewards: Merkl ETHFI,0.87,0.1,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 3,447"
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),d_rewards: KING (LRT2) restaking-reward drops,320.669,38.45,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 1,365,250"
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),d_rewards_total,321.539,38.55,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),e_fees,-17.532,-2.1,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),f_residual,80.449,9.65,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),summary_apy_actual_pct,,5.844,annualized share-price return
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),summary_apy_without_rewards_pct,,3.555,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),summary_stETH_apy_pct,,2.799,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),summary_excess_over_stETH_pp,,0.2328,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2025-10 (from 2 Oct),summary_rewards_share_of_excess_pct,,74.9,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2025-11,share_price_return,663.595,100.0,"share price 2025-10 to 2025-11 (30.0 days); return 0.4080%; avg equity 162,640 ETH"
+ether.fi Liquid ETH,month 2025-11,a_staking_yield,347.658,52.39,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2025-11,b_loop_spread,160.582,24.2,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2025-11,c_dollar_leg_organic,17.649,2.66,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2025-11,d_rewards: Merkl ETHFI,2.612,0.39,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 8,578"
+ether.fi Liquid ETH,month 2025-11,d_rewards: KING (LRT2) restaking-reward drops,170.062,25.63,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 549,399"
+ether.fi Liquid ETH,month 2025-11,d_rewards_total,172.675,26.02,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2025-11,e_fees,-66.838,-10.07,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2025-11,f_residual,31.871,4.8,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2025-11,summary_apy_actual_pct,,5.079,annualized share-price return
+ether.fi Liquid ETH,month 2025-11,summary_apy_without_rewards_pct,,3.735,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2025-11,summary_stETH_apy_pct,,2.692,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2025-11,summary_excess_over_stETH_pp,,0.1895,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2025-11,summary_rewards_share_of_excess_pct,,56.0,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2025-12,share_price_return,651.903,100.0,"share price 2025-11 to 2025-12 (31.0 days); return 0.4421%; avg equity 147,450 ETH"
+ether.fi Liquid ETH,month 2025-12,a_staking_yield,301.311,46.22,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2025-12,b_loop_spread,205.795,31.57,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2025-12,c_dollar_leg_organic,25.612,3.93,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2025-12,d_rewards: Merkl ETHFI,1.572,0.24,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 4,732"
+ether.fi Liquid ETH,month 2025-12,d_rewards: KING (LRT2) restaking-reward drops,81.064,12.43,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 245,058"
+ether.fi Liquid ETH,month 2025-12,d_rewards_total,82.636,12.68,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2025-12,e_fees,-58.455,-8.97,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2025-12,f_residual,95.004,14.57,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2025-12,summary_apy_actual_pct,,5.331,annualized share-price return
+ether.fi Liquid ETH,month 2025-12,summary_apy_without_rewards_pct,,4.641,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2025-12,summary_stETH_apy_pct,,2.585,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2025-12,summary_excess_over_stETH_pp,,0.2252,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2025-12,summary_rewards_share_of_excess_pct,,24.9,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-01,share_price_return,606.017,100.0,"share price 2025-12 to 2026-01 (31.0 days); return 0.4021%; avg equity 150,696 ETH"
+ether.fi Liquid ETH,month 2026-01,a_staking_yield,312.42,51.55,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-01,b_loop_spread,190.635,31.46,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-01,c_dollar_leg_organic,35.547,5.87,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-01,d_rewards: Merkl ETHFI,0.683,0.11,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 2,138"
+ether.fi Liquid ETH,month 2026-01,d_rewards: KING (LRT2) restaking-reward drops,65.573,10.82,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 204,613"
+ether.fi Liquid ETH,month 2026-01,d_rewards_total,66.256,10.93,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-01,e_fees,0.0,0.0,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-01,f_residual,1.159,0.19,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-01,summary_apy_actual_pct,,4.839,annualized share-price return
+ether.fi Liquid ETH,month 2026-01,summary_apy_without_rewards_pct,,4.3,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-01,summary_stETH_apy_pct,,2.476,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-01,summary_excess_over_stETH_pp,,0.1942,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-01,summary_rewards_share_of_excess_pct,,22.6,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-02,share_price_return,251.408,100.0,"share price 2026-01 to 2026-02 (28.0 days); return 0.1915%; avg equity 131,301 ETH"
+ether.fi Liquid ETH,month 2026-02,a_staking_yield,252.443,100.41,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-02,b_loop_spread,-154.677,-61.52,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-02,c_dollar_leg_organic,13.531,5.38,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-02,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-02,e_fees,0.0,0.0,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-02,f_residual,140.111,55.73,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-02,summary_apy_actual_pct,,2.525,annualized share-price return
+ether.fi Liquid ETH,month 2026-02,summary_apy_without_rewards_pct,,2.525,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-02,summary_stETH_apy_pct,,2.496,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-02,summary_excess_over_stETH_pp,,0.0022,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-02,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-03,share_price_return,355.327,100.0,"share price 2026-02 to 2026-03 (31.0 days); return 0.2781%; avg equity 127,766 ETH"
+ether.fi Liquid ETH,month 2026-03,a_staking_yield,268.563,75.58,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-03,b_loop_spread,80.42,22.63,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-03,c_dollar_leg_organic,0.001,0.0,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-03,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-03,e_fees,0.0,0.0,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-03,f_residual,6.343,1.79,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-03,summary_apy_actual_pct,,3.324,annualized share-price return
+ether.fi Liquid ETH,month 2026-03,summary_apy_without_rewards_pct,,3.324,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-03,summary_stETH_apy_pct,,2.535,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-03,summary_excess_over_stETH_pp,,0.0653,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-03,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-04,share_price_return,335.718,100.0,"share price 2026-03 to 2026-04 (30.0 days); return 0.2470%; avg equity 135,922 ETH"
+ether.fi Liquid ETH,month 2026-04,a_staking_yield,278.003,82.81,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-04,b_loop_spread,-428.699,-127.7,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-04,c_dollar_leg_organic,0.001,0.0,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-04,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-04,e_fees,0.0,0.0,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-04,f_residual,486.413,144.89,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-04,summary_apy_actual_pct,,3.047,annualized share-price return
+ether.fi Liquid ETH,month 2026-04,summary_apy_without_rewards_pct,,3.047,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-04,summary_stETH_apy_pct,,2.52,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-04,summary_excess_over_stETH_pp,,0.0422,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-04,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-05,share_price_return,287.645,100.0,"share price 2026-04 to 2026-05 (31.0 days); return 0.2471%; avg equity 116,391 ETH"
+ether.fi Liquid ETH,month 2026-05,a_staking_yield,229.964,79.95,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-05,b_loop_spread,-44.518,-15.48,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-05,c_dollar_leg_organic,0.001,0.0,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-05,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-05,e_fees,-13.755,-4.78,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-05,f_residual,115.954,40.31,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-05,summary_apy_actual_pct,,2.949,annualized share-price return
+ether.fi Liquid ETH,month 2026-05,summary_apy_without_rewards_pct,,2.949,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-05,summary_stETH_apy_pct,,2.484,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-05,summary_excess_over_stETH_pp,,0.0385,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-05,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-06,share_price_return,292.13,100.0,"share price 2026-05 to 2026-06 (30.0 days); return 0.2968%; avg equity 98,429 ETH"
+ether.fi Liquid ETH,month 2026-06,a_staking_yield,201.983,69.14,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-06,b_loop_spread,92.62,31.71,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-06,c_dollar_leg_organic,-8.506,-2.91,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-06,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-06,e_fees,-42.881,-14.68,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-06,f_residual,48.913,16.74,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-06,summary_apy_actual_pct,,3.671,annualized share-price return
+ether.fi Liquid ETH,month 2026-06,summary_apy_without_rewards_pct,,3.671,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-06,summary_stETH_apy_pct,,2.451,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-06,summary_excess_over_stETH_pp,,0.0975,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-06,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-07,share_price_return,325.735,100.0,"share price 2026-06 to 2026-07 (31.0 days); return 0.3090%; avg equity 105,429 ETH"
+ether.fi Liquid ETH,month 2026-07,a_staking_yield,217.159,66.67,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-07,b_loop_spread,81.493,25.02,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-07,c_dollar_leg_organic,-32.872,-10.09,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-07,d_rewards: Merkl PYUSD,1.73,0.53,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 3,355"
+ether.fi Liquid ETH,month 2026-07,d_rewards_total,1.73,0.53,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-07,e_fees,-64.729,-19.87,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-07,f_residual,122.954,37.75,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-07,summary_apy_actual_pct,,3.699,annualized share-price return
+ether.fi Liquid ETH,month 2026-07,summary_apy_without_rewards_pct,,3.679,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-07,summary_stETH_apy_pct,,2.24,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-07,summary_excess_over_stETH_pp,,0.1206,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-07,summary_rewards_share_of_excess_pct,,1.4,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-08,share_price_return,373.425,100.0,"share price 2026-07 to 2026-08 (31.0 days); return 0.2523%; avg equity 148,028 ETH"
+ether.fi Liquid ETH,month 2026-08,a_staking_yield,298.432,79.92,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-08,b_loop_spread,76.9,20.59,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-08,c_dollar_leg_organic,-71.116,-19.04,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-08,d_rewards: Merkl RLUSD,32.645,8.74,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 70,740"
+ether.fi Liquid ETH,month 2026-08,d_rewards: Merkl PYUSD,22.123,5.92,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 47,366"
+ether.fi Liquid ETH,month 2026-08,d_rewards_total,54.768,14.67,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-08,e_fees,-62.527,-16.74,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-08,f_residual,76.968,20.61,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-08,summary_apy_actual_pct,,3.011,annualized share-price return
+ether.fi Liquid ETH,month 2026-08,summary_apy_without_rewards_pct,,2.564,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-08,summary_stETH_apy_pct,,2.233,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-08,summary_excess_over_stETH_pp,,0.0645,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-08,summary_rewards_share_of_excess_pct,,57.3,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-09,share_price_return,456.452,100.0,"share price 2026-08 to 2026-09 (30.0 days); return 0.2602%; avg equity 175,421 ETH"
+ether.fi Liquid ETH,month 2026-09,a_staking_yield,334.013,73.18,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-09,b_loop_spread,99.818,21.87,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-09,c_dollar_leg_organic,-128.748,-28.21,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-09,d_rewards: Merkl RLUSD,38.563,8.45,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 98,533"
+ether.fi Liquid ETH,month 2026-09,d_rewards: Merkl PYUSD,37.411,8.2,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 96,077"
+ether.fi Liquid ETH,month 2026-09,d_rewards_total,75.974,16.64,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-09,e_fees,-50.464,-11.06,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-09,f_residual,125.858,27.57,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-09,summary_apy_actual_pct,,3.212,annualized share-price return
+ether.fi Liquid ETH,month 2026-09,summary_apy_without_rewards_pct,,2.671,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-09,summary_stETH_apy_pct,,2.272,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-09,summary_excess_over_stETH_pp,,0.0754,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-09,summary_rewards_share_of_excess_pct,,57.4,d_rewards_total / excess; blank when excess <= 0
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),share_price_return,29.802,100.0,"share price 2026-09 to T (2.0 days); return 0.0168%; avg equity 177,067 ETH"
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),a_staking_yield,23.744,79.67,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),b_loop_spread,9.072,30.44,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),c_dollar_leg_organic,-8.636,-28.98,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),d_rewards: Merkl RLUSD,9.06,30.4,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 24,489"
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),d_rewards: Merkl PYUSD,7.437,24.96,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 20,096"
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),d_rewards_total,16.497,55.36,sum of d rows (vault-level rewards inside the share price)
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),e_fees,-3.396,-11.39,"Ethereum Accountant management fee schedule (bps changes on-chain), time-weighted"
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),f_residual,-7.479,-25.1,Share-price return minus components a-e
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),summary_apy_actual_pct,,3.119,annualized share-price return
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),summary_apy_without_rewards_pct,,1.381,annualized (return minus d_rewards_total)
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),summary_stETH_apy_pct,,2.242,"wstETH stEthPerToken growth, same blocks"
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),summary_excess_over_stETH_pp,,0.0047,"window return minus stETH window return, not annualized"
+ether.fi Liquid ETH,month 2026-10 (to 2 Oct),summary_rewards_share_of_excess_pct,,199.1,d_rewards_total / excess; blank when excess <= 0
+YieldBasis WETH (unstaked LT),90d,share_price_return,-70.339,100.0,"share price T-90 to T (90.0 days); return -0.7372%; avg equity 9,541 ETH"
+YieldBasis WETH (unstaked LT),90d,a_staking_yield,0.0,-0.0,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+YieldBasis WETH (unstaked LT),90d,b_loop_spread,0.0,-0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+YieldBasis WETH (unstaked LT),90d,c_dollar_leg_organic,129.757,-184.47,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+YieldBasis WETH (unstaked LT),90d,d_rewards_total,0.0,-0.0,sum of d rows (vault-level rewards inside the share price)
+YieldBasis WETH (unstaked LT),90d,e_fees,0.0,-0.0,LT liquidity.admin change (zero over the window)
+YieldBasis WETH (unstaked LT),90d,f_residual,-200.096,284.47,Share-price return minus components a-e
+YieldBasis WETH (unstaked LT),90d,summary_apy_actual_pct,,-2.956,annualized share-price return
+YieldBasis WETH (unstaked LT),90d,summary_apy_without_rewards_pct,,-2.956,annualized (return minus d_rewards_total)
+YieldBasis WETH (unstaked LT),90d,summary_stETH_apy_pct,,2.245,"wstETH stEthPerToken growth, same blocks"
+YieldBasis WETH (unstaked LT),90d,summary_excess_over_stETH_pp,,-1.2862,"window return minus stETH window return, not annualized"
+YieldBasis WETH (unstaked LT),90d,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+YieldBasis WETH (unstaked LT),since_inception,share_price_return,55.304,100.0,"share price 2026-05 to T (124.0 days); return 0.7099%; avg equity 7,790 ETH"
+YieldBasis WETH (unstaked LT),since_inception,a_staking_yield,0.0,0.0,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+YieldBasis WETH (unstaked LT),since_inception,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+YieldBasis WETH (unstaked LT),since_inception,c_dollar_leg_organic,237.408,429.28,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+YieldBasis WETH (unstaked LT),since_inception,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+YieldBasis WETH (unstaked LT),since_inception,e_fees,0.0,0.0,LT liquidity.admin change (zero over the window)
+YieldBasis WETH (unstaked LT),since_inception,f_residual,-182.103,-329.28,Share-price return minus components a-e
+YieldBasis WETH (unstaked LT),since_inception,summary_apy_actual_pct,,2.104,annualized share-price return
+YieldBasis WETH (unstaked LT),since_inception,summary_apy_without_rewards_pct,,2.104,annualized (return minus d_rewards_total)
+YieldBasis WETH (unstaked LT),since_inception,summary_stETH_apy_pct,,2.297,"wstETH stEthPerToken growth, same blocks"
+YieldBasis WETH (unstaked LT),since_inception,summary_excess_over_stETH_pp,,-0.0646,"window return minus stETH window return, not annualized"
+YieldBasis WETH (unstaked LT),since_inception,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+YieldBasis WETH (unstaked LT),month 2026-06,share_price_return,40.437,100.0,"share price 2026-05 to 2026-06 (30.0 days); return 1.4123%; avg equity 2,863 ETH"
+YieldBasis WETH (unstaked LT),month 2026-06,a_staking_yield,0.0,0.0,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-06,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+YieldBasis WETH (unstaked LT),month 2026-06,c_dollar_leg_organic,45.73,113.09,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-06,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+YieldBasis WETH (unstaked LT),month 2026-06,e_fees,0.0,0.0,LT liquidity.admin change (zero over the window)
+YieldBasis WETH (unstaked LT),month 2026-06,f_residual,-5.294,-13.09,Share-price return minus components a-e
+YieldBasis WETH (unstaked LT),month 2026-06,summary_apy_actual_pct,,18.605,annualized share-price return
+YieldBasis WETH (unstaked LT),month 2026-06,summary_apy_without_rewards_pct,,18.605,annualized (return minus d_rewards_total)
+YieldBasis WETH (unstaked LT),month 2026-06,summary_stETH_apy_pct,,2.451,"wstETH stEthPerToken growth, same blocks"
+YieldBasis WETH (unstaked LT),month 2026-06,summary_excess_over_stETH_pp,,1.2131,"window return minus stETH window return, not annualized"
+YieldBasis WETH (unstaked LT),month 2026-06,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+YieldBasis WETH (unstaked LT),month 2026-07,share_price_return,-8.387,100.0,"share price 2026-06 to 2026-07 (31.0 days); return -0.1301%; avg equity 6,449 ETH"
+YieldBasis WETH (unstaked LT),month 2026-07,a_staking_yield,0.0,-0.0,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-07,b_loop_spread,0.0,-0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+YieldBasis WETH (unstaked LT),month 2026-07,c_dollar_leg_organic,26.212,-312.53,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-07,d_rewards_total,0.0,-0.0,sum of d rows (vault-level rewards inside the share price)
+YieldBasis WETH (unstaked LT),month 2026-07,e_fees,0.0,-0.0,LT liquidity.admin change (zero over the window)
+YieldBasis WETH (unstaked LT),month 2026-07,f_residual,-34.598,412.53,Share-price return minus components a-e
+YieldBasis WETH (unstaked LT),month 2026-07,summary_apy_actual_pct,,-1.521,annualized share-price return
+YieldBasis WETH (unstaked LT),month 2026-07,summary_apy_without_rewards_pct,,-1.521,annualized (return minus d_rewards_total)
+YieldBasis WETH (unstaked LT),month 2026-07,summary_stETH_apy_pct,,2.24,"wstETH stEthPerToken growth, same blocks"
+YieldBasis WETH (unstaked LT),month 2026-07,summary_excess_over_stETH_pp,,-0.3184,"window return minus stETH window return, not annualized"
+YieldBasis WETH (unstaked LT),month 2026-07,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+YieldBasis WETH (unstaked LT),month 2026-08,share_price_return,-37.389,100.0,"share price 2026-07 to 2026-08 (31.0 days); return -0.3712%; avg equity 10,072 ETH"
+YieldBasis WETH (unstaked LT),month 2026-08,a_staking_yield,0.0,-0.0,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-08,b_loop_spread,0.0,-0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+YieldBasis WETH (unstaked LT),month 2026-08,c_dollar_leg_organic,31.933,-85.41,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-08,d_rewards_total,0.0,-0.0,sum of d rows (vault-level rewards inside the share price)
+YieldBasis WETH (unstaked LT),month 2026-08,e_fees,0.0,-0.0,LT liquidity.admin change (zero over the window)
+YieldBasis WETH (unstaked LT),month 2026-08,f_residual,-69.322,185.41,Share-price return minus components a-e
+YieldBasis WETH (unstaked LT),month 2026-08,summary_apy_actual_pct,,-4.285,annualized share-price return
+YieldBasis WETH (unstaked LT),month 2026-08,summary_apy_without_rewards_pct,,-4.285,annualized (return minus d_rewards_total)
+YieldBasis WETH (unstaked LT),month 2026-08,summary_stETH_apy_pct,,2.233,"wstETH stEthPerToken growth, same blocks"
+YieldBasis WETH (unstaked LT),month 2026-08,summary_excess_over_stETH_pp,,-0.559,"window return minus stETH window return, not annualized"
+YieldBasis WETH (unstaked LT),month 2026-08,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+YieldBasis WETH (unstaked LT),month 2026-09,share_price_return,-20.315,100.0,"share price 2026-08 to 2026-09 (30.0 days); return -0.1757%; avg equity 11,564 ETH"
+YieldBasis WETH (unstaked LT),month 2026-09,a_staking_yield,0.0,-0.0,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-09,b_loop_spread,0.0,-0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+YieldBasis WETH (unstaked LT),month 2026-09,c_dollar_leg_organic,78.4,-385.92,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-09,d_rewards_total,0.0,-0.0,sum of d rows (vault-level rewards inside the share price)
+YieldBasis WETH (unstaked LT),month 2026-09,e_fees,0.0,-0.0,LT liquidity.admin change (zero over the window)
+YieldBasis WETH (unstaked LT),month 2026-09,f_residual,-98.716,485.92,Share-price return minus components a-e
+YieldBasis WETH (unstaked LT),month 2026-09,summary_apy_actual_pct,,-2.117,annualized share-price return
+YieldBasis WETH (unstaked LT),month 2026-09,summary_apy_without_rewards_pct,,-2.117,annualized (return minus d_rewards_total)
+YieldBasis WETH (unstaked LT),month 2026-09,summary_stETH_apy_pct,,2.272,"wstETH stEthPerToken growth, same blocks"
+YieldBasis WETH (unstaked LT),month 2026-09,summary_excess_over_stETH_pp,,-0.3605,"window return minus stETH window return, not annualized"
+YieldBasis WETH (unstaked LT),month 2026-09,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),share_price_return,-1.801,100.0,"share price 2026-09 to T (2.0 days); return -0.0171%; avg equity 10,520 ETH"
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),a_staking_yield,0.0,-0.0,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),b_loop_spread,0.0,-0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),c_dollar_leg_organic,3.436,-190.81,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),d_rewards_total,0.0,-0.0,sum of d rows (vault-level rewards inside the share price)
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),e_fees,0.0,-0.0,LT liquidity.admin change (zero over the window)
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),f_residual,-5.237,290.81,Share-price return minus components a-e
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),summary_apy_actual_pct,,-3.076,annualized share-price return
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),summary_apy_without_rewards_pct,,-3.076,annualized (return minus d_rewards_total)
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),summary_stETH_apy_pct,,2.242,"wstETH stEthPerToken growth, same blocks"
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),summary_excess_over_stETH_pp,,-0.0293,"window return minus stETH window return, not annualized"
+YieldBasis WETH (unstaked LT),month 2026-10 (to 2 Oct),summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+YieldBasis WETH (staked in gauge),90d,share_price_return,,100.0,gauge share -> LT pps return -0.7372% over 90 days
+YieldBasis WETH (staked in gauge),90d,d_rewards: YB gauge emissions (paid outside share price),,278.34,"YB transfers from GaugeController to gauge, valued at daily DefiLlama price; USD 108,775; 1.1506% of staked value"
+YieldBasis WETH (staked in gauge),90d,summary_apy_actual_pct,,1.687,"gauge share price + YB emissions, annualized"
+YieldBasis WETH (staked in gauge),90d,summary_apy_without_rewards_pct,,-2.956,gauge share price only
+YieldBasis WETH (staked in gauge),90d,summary_stETH_apy_pct,,2.245,wstETH stEthPerToken growth
+YieldBasis WETH (staked in gauge),90d,summary_rewards_share_of_excess_pct,,,YB / (all-in return - stETH)
+YieldBasis WETH (staked in gauge),since_inception,share_price_return,,100.0,gauge share -> LT pps return -0.7823% over 124 days
+YieldBasis WETH (staked in gauge),since_inception,d_rewards: YB gauge emissions (paid outside share price),,138.29,"YB transfers from GaugeController to gauge, valued at daily DefiLlama price; USD 149,731; 2.8254% of staked value"
+YieldBasis WETH (staked in gauge),since_inception,summary_apy_actual_pct,,6.134,"gauge share price + YB emissions, annualized"
+YieldBasis WETH (staked in gauge),since_inception,summary_apy_without_rewards_pct,,-2.285,gauge share price only
+YieldBasis WETH (staked in gauge),since_inception,summary_stETH_apy_pct,,2.297,wstETH stEthPerToken growth
+YieldBasis WETH (staked in gauge),since_inception,summary_rewards_share_of_excess_pct,,222.7,YB / (all-in return - stETH)
+Lido Earn ETH,90d,share_price_return,624.57,100.0,"share price T-90 to T (90.0 days); return 0.7658%; avg equity 81,558 ETH"
+Lido Earn ETH,90d,a_staking_yield,448.112,71.75,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,90d,b_loop_spread,159.959,25.61,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,90d,c_dollar_leg_organic,52.034,8.33,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,90d,d_rewards: Merkl aEthUSDe,0.003,0.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 8"
+Lido Earn ETH,90d,d_rewards_total,0.003,0.0,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,90d,e_fees,-48.942,-7.84,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,90d,f_residual,13.404,2.15,Share-price return minus components a-e
+Lido Earn ETH,90d,summary_apy_actual_pct,,3.142,annualized share-price return
+Lido Earn ETH,90d,summary_apy_without_rewards_pct,,3.142,annualized (return minus d_rewards_total)
+Lido Earn ETH,90d,summary_stETH_apy_pct,,2.245,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,90d,summary_excess_over_stETH_pp,,0.2168,"window return minus stETH window return, not annualized"
+Lido Earn ETH,90d,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,since_inception,share_price_return,1405.6,100.0,"share price 2026-02 to T (216.0 days); return 1.8484%; avg equity 76,044 ETH"
+Lido Earn ETH,since_inception,a_staking_yield,1071.745,76.25,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,since_inception,b_loop_spread,227.856,16.21,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,since_inception,c_dollar_leg_organic,142.184,10.12,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,since_inception,d_rewards: Merkl aEthUSDe,70.856,5.04,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 156,986"
+Lido Earn ETH,since_inception,d_rewards: Merkl aEthrsETH,2.987,0.21,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 9,122"
+Lido Earn ETH,since_inception,d_rewards: sENA drop to USDe loop,9.381,0.67,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 21,898"
+Lido Earn ETH,since_inception,d_rewards: Lido DAO first-loss cover (share burn),142.897,10.17,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 330,292"
+Lido Earn ETH,since_inception,d_rewards_total,226.121,16.09,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,since_inception,e_fees,-129.542,-9.22,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,since_inception,f_residual,-132.763,-9.45,Share-price return minus components a-e
+Lido Earn ETH,since_inception,summary_apy_actual_pct,,3.143,annualized share-price return
+Lido Earn ETH,since_inception,summary_apy_without_rewards_pct,,2.635,annualized (return minus d_rewards_total)
+Lido Earn ETH,since_inception,summary_stETH_apy_pct,,2.389,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,since_inception,summary_excess_over_stETH_pp,,0.4415,"window return minus stETH window return, not annualized"
+Lido Earn ETH,since_inception,summary_rewards_share_of_excess_pct,,67.4,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,month 2026-03,share_price_return,161.923,100.0,"share price 2026-02 to 2026-03 (31.0 days); return 0.3746%; avg equity 43,229 ETH"
+Lido Earn ETH,month 2026-03,a_staking_yield,91.996,56.81,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,month 2026-03,b_loop_spread,23.803,14.7,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,month 2026-03,c_dollar_leg_organic,-6.645,-4.1,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,month 2026-03,d_rewards: Merkl aEthUSDe,25.525,15.76,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 78,230"
+Lido Earn ETH,month 2026-03,d_rewards_total,25.525,15.76,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,month 2026-03,e_fees,9.183,5.67,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,month 2026-03,f_residual,18.06,11.15,Share-price return minus components a-e
+Lido Earn ETH,month 2026-03,summary_apy_actual_pct,,4.5,annualized share-price return
+Lido Earn ETH,month 2026-03,summary_apy_without_rewards_pct,,3.779,annualized (return minus d_rewards_total)
+Lido Earn ETH,month 2026-03,summary_stETH_apy_pct,,2.535,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,month 2026-03,summary_excess_over_stETH_pp,,0.1618,"window return minus stETH window return, not annualized"
+Lido Earn ETH,month 2026-03,summary_rewards_share_of_excess_pct,,36.5,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,month 2026-04,share_price_return,173.712,100.0,"share price 2026-03 to 2026-04 (30.0 days); return 0.1763%; avg equity 98,527 ETH"
+Lido Earn ETH,month 2026-04,a_staking_yield,201.781,116.16,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,month 2026-04,b_loop_spread,-185.781,-106.95,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,month 2026-04,c_dollar_leg_organic,31.66,18.23,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,month 2026-04,d_rewards: Merkl aEthUSDe,33.5,19.28,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 78,748"
+Lido Earn ETH,month 2026-04,d_rewards: Merkl aEthrsETH,3.856,2.22,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 9,122"
+Lido Earn ETH,month 2026-04,d_rewards_total,37.356,21.5,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,month 2026-04,e_fees,27.5,15.83,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,month 2026-04,f_residual,61.196,35.23,Share-price return minus components a-e
+Lido Earn ETH,month 2026-04,summary_apy_actual_pct,,2.166,annualized share-price return
+Lido Earn ETH,month 2026-04,summary_apy_without_rewards_pct,,1.697,annualized (return minus d_rewards_total)
+Lido Earn ETH,month 2026-04,summary_stETH_apy_pct,,2.52,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,month 2026-04,summary_excess_over_stETH_pp,,-0.0285,"window return minus stETH window return, not annualized"
+Lido Earn ETH,month 2026-04,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,month 2026-05,share_price_return,107.625,100.0,"share price 2026-04 to 2026-05 (31.0 days); return 0.1389%; avg equity 77,466 ETH"
+Lido Earn ETH,month 2026-05,a_staking_yield,161.601,150.15,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,month 2026-05,b_loop_spread,92.952,86.37,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,month 2026-05,c_dollar_leg_organic,44.465,41.31,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,month 2026-05,d_rewards: Merkl aEthUSDe,0.0,0.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 0"
+Lido Earn ETH,month 2026-05,d_rewards: Merkl aEthrsETH,0.0,0.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 0"
+Lido Earn ETH,month 2026-05,d_rewards: sENA drop to USDe loop,9.504,8.83,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 21,898"
+Lido Earn ETH,month 2026-05,d_rewards: Lido DAO first-loss cover (share burn),144.77,134.51,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 330,292"
+Lido Earn ETH,month 2026-05,d_rewards_total,154.274,143.34,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,month 2026-05,e_fees,-112.527,-104.56,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,month 2026-05,f_residual,-233.139,-216.62,Share-price return minus components a-e
+Lido Earn ETH,month 2026-05,summary_apy_actual_pct,,1.648,annualized share-price return
+Lido Earn ETH,month 2026-05,summary_apy_without_rewards_pct,,-0.707,annualized (return minus d_rewards_total)
+Lido Earn ETH,month 2026-05,summary_stETH_apy_pct,,2.484,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,month 2026-05,summary_excess_over_stETH_pp,,-0.0697,"window return minus stETH window return, not annualized"
+Lido Earn ETH,month 2026-05,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,month 2026-06,share_price_return,230.672,100.0,"share price 2026-05 to 2026-06 (30.0 days); return 0.3424%; avg equity 67,377 ETH"
+Lido Earn ETH,month 2026-06,a_staking_yield,134.245,58.2,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,month 2026-06,b_loop_spread,74.947,32.49,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,month 2026-06,c_dollar_leg_organic,28.356,12.29,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,month 2026-06,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,month 2026-06,e_fees,-13.587,-5.89,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,month 2026-06,f_residual,6.711,2.91,Share-price return minus components a-e
+Lido Earn ETH,month 2026-06,summary_apy_actual_pct,,4.246,annualized share-price return
+Lido Earn ETH,month 2026-06,summary_apy_without_rewards_pct,,4.246,annualized (return minus d_rewards_total)
+Lido Earn ETH,month 2026-06,summary_stETH_apy_pct,,2.451,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,month 2026-06,summary_excess_over_stETH_pp,,0.1431,"window return minus stETH window return, not annualized"
+Lido Earn ETH,month 2026-06,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,month 2026-07,share_price_return,240.353,100.0,"share price 2026-06 to 2026-07 (31.0 days); return 0.2790%; avg equity 86,141 ETH"
+Lido Earn ETH,month 2026-07,a_staking_yield,162.259,67.51,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,month 2026-07,b_loop_spread,50.644,21.07,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,month 2026-07,c_dollar_leg_organic,27.787,11.56,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,month 2026-07,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,month 2026-07,e_fees,-1.125,-0.47,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,month 2026-07,f_residual,0.787,0.33,Share-price return minus components a-e
+Lido Earn ETH,month 2026-07,summary_apy_actual_pct,,3.335,annualized share-price return
+Lido Earn ETH,month 2026-07,summary_apy_without_rewards_pct,,3.335,annualized (return minus d_rewards_total)
+Lido Earn ETH,month 2026-07,summary_stETH_apy_pct,,2.24,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,month 2026-07,summary_excess_over_stETH_pp,,0.0907,"window return minus stETH window return, not annualized"
+Lido Earn ETH,month 2026-07,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,month 2026-08,share_price_return,203.427,100.0,"share price 2026-07 to 2026-08 (31.0 days); return 0.2590%; avg equity 78,536 ETH"
+Lido Earn ETH,month 2026-08,a_staking_yield,147.439,72.48,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,month 2026-08,b_loop_spread,33.209,16.32,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,month 2026-08,c_dollar_leg_organic,27.642,13.59,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,month 2026-08,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,month 2026-08,e_fees,-0.444,-0.22,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,month 2026-08,f_residual,-4.418,-2.17,Share-price return minus components a-e
+Lido Earn ETH,month 2026-08,summary_apy_actual_pct,,3.093,annualized share-price return
+Lido Earn ETH,month 2026-08,summary_apy_without_rewards_pct,,3.093,annualized (return minus d_rewards_total)
+Lido Earn ETH,month 2026-08,summary_stETH_apy_pct,,2.233,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,month 2026-08,summary_excess_over_stETH_pp,,0.0713,"window return minus stETH window return, not annualized"
+Lido Earn ETH,month 2026-08,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,month 2026-09,share_price_return,205.412,100.0,"share price 2026-08 to 2026-09 (30.0 days); return 0.2530%; avg equity 81,185 ETH"
+Lido Earn ETH,month 2026-09,a_staking_yield,150.026,73.04,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,month 2026-09,b_loop_spread,79.419,38.66,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,month 2026-09,c_dollar_leg_organic,0.152,0.07,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,month 2026-09,d_rewards: Merkl aEthUSDe,0.002,0.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 6"
+Lido Earn ETH,month 2026-09,d_rewards_total,0.002,0.0,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,month 2026-09,e_fees,-38.76,-18.87,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,month 2026-09,f_residual,14.572,7.09,Share-price return minus components a-e
+Lido Earn ETH,month 2026-09,summary_apy_actual_pct,,3.122,annualized share-price return
+Lido Earn ETH,month 2026-09,summary_apy_without_rewards_pct,,3.122,annualized (return minus d_rewards_total)
+Lido Earn ETH,month 2026-09,summary_stETH_apy_pct,,2.272,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,month 2026-09,summary_excess_over_stETH_pp,,0.0682,"window return minus stETH window return, not annualized"
+Lido Earn ETH,month 2026-09,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+Lido Earn ETH,month 2026-10 (to 2 Oct),share_price_return,9.043,100.0,"share price 2026-09 to T (2.0 days); return 0.0109%; avg equity 83,178 ETH"
+Lido Earn ETH,month 2026-10 (to 2 Oct),a_staking_yield,10.108,111.78,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Lido Earn ETH,month 2026-10 (to 2 Oct),b_loop_spread,-0.354,-3.92,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Lido Earn ETH,month 2026-10 (to 2 Oct),c_dollar_leg_organic,1.273,14.08,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Lido Earn ETH,month 2026-10 (to 2 Oct),d_rewards: Merkl aEthUSDe,0.001,0.01,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 2"
+Lido Earn ETH,month 2026-10 (to 2 Oct),d_rewards_total,0.001,0.01,sum of d rows (vault-level rewards inside the share price)
+Lido Earn ETH,month 2026-10 (to 2 Oct),e_fees,-2.33,-25.76,"Earn ETH return minus strETH return, less DAO cover (outer 0.20% + 15% fee layer and oracle timing)"
+Lido Earn ETH,month 2026-10 (to 2 Oct),f_residual,0.345,3.82,Share-price return minus components a-e
+Lido Earn ETH,month 2026-10 (to 2 Oct),summary_apy_actual_pct,,2.004,annualized share-price return
+Lido Earn ETH,month 2026-10 (to 2 Oct),summary_apy_without_rewards_pct,,2.004,annualized (return minus d_rewards_total)
+Lido Earn ETH,month 2026-10 (to 2 Oct),summary_stETH_apy_pct,,2.242,"wstETH stEthPerToken growth, same blocks"
+Lido Earn ETH,month 2026-10 (to 2 Oct),summary_excess_over_stETH_pp,,-0.0013,"window return minus stETH window return, not annualized"
+Lido Earn ETH,month 2026-10 (to 2 Oct),summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,90d,share_price_return,129.705,100.0,"share price T-90 to T (90.0 days); return 1.1476%; avg equity 11,302 ETH"
+Avant savETH,90d,a_staking_yield,55.236,42.59,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,90d,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,90d,c_dollar_leg_organic,45.6,35.16,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,90d,d_rewards: CRV receipts,4.924,3.8,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 9,671"
+Avant savETH,90d,d_rewards_total,4.924,3.8,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,90d,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,90d,f_residual,23.945,18.46,Share-price return minus components a-e
+Avant savETH,90d,summary_apy_actual_pct,,4.737,annualized share-price return
+Avant savETH,90d,summary_apy_without_rewards_pct,,4.554,annualized (return minus d_rewards_total)
+Avant savETH,90d,summary_stETH_apy_pct,,2.245,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,90d,summary_excess_over_stETH_pp,,0.5987,"window return minus stETH window return, not annualized"
+Avant savETH,90d,summary_rewards_share_of_excess_pct,,7.3,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,365d,share_price_return,329.883,100.0,"share price T-365 to T (365.0 days); return 5.4729%; avg equity 6,028 ETH"
+Avant savETH,365d,a_staking_yield,139.901,42.41,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,365d,b_loop_spread,0.03,0.01,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,365d,c_dollar_leg_organic,119.84,36.33,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,365d,d_rewards: Merkl MORPHO,0.128,0.04,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 175"
+Avant savETH,365d,d_rewards: Merkl WFRAX,0.013,0.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 21"
+Avant savETH,365d,d_rewards: Merkl USDS,0.092,0.03,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 207"
+Avant savETH,365d,d_rewards: Merkl USDC,0.016,0.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 33"
+Avant savETH,365d,d_rewards: CRV receipts,3.098,0.94,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 10,380"
+Avant savETH,365d,d_rewards_total,3.347,1.01,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,365d,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,365d,f_residual,66.764,20.24,Share-price return minus components a-e
+Avant savETH,365d,summary_apy_actual_pct,,5.473,annualized share-price return
+Avant savETH,365d,summary_apy_without_rewards_pct,,5.417,annualized (return minus d_rewards_total)
+Avant savETH,365d,summary_stETH_apy_pct,,2.479,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,365d,summary_excess_over_stETH_pp,,2.9944,"window return minus stETH window return, not annualized"
+Avant savETH,365d,summary_rewards_share_of_excess_pct,,1.9,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2025-10 (from 2 Oct),share_price_return,10.162,100.0,"share price T-365 to 2025-10 (29.0 days); return 0.5671%; avg equity 1,792 ETH"
+Avant savETH,month 2025-10 (from 2 Oct),a_staking_yield,3.595,35.37,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2025-10 (from 2 Oct),b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2025-10 (from 2 Oct),c_dollar_leg_organic,5.857,57.64,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2025-10 (from 2 Oct),d_rewards: Merkl MORPHO,0.004,0.04,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 16"
+Avant savETH,month 2025-10 (from 2 Oct),d_rewards_total,0.004,0.04,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2025-10 (from 2 Oct),e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2025-10 (from 2 Oct),f_residual,0.706,6.95,Share-price return minus components a-e
+Avant savETH,month 2025-10 (from 2 Oct),summary_apy_actual_pct,,7.377,annualized share-price return
+Avant savETH,month 2025-10 (from 2 Oct),summary_apy_without_rewards_pct,,7.374,annualized (return minus d_rewards_total)
+Avant savETH,month 2025-10 (from 2 Oct),summary_stETH_apy_pct,,2.799,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2025-10 (from 2 Oct),summary_excess_over_stETH_pp,,0.3476,"window return minus stETH window return, not annualized"
+Avant savETH,month 2025-10 (from 2 Oct),summary_rewards_share_of_excess_pct,,0.1,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2025-11,share_price_return,14.467,100.0,"share price 2025-10 to 2025-11 (30.0 days); return 0.7001%; avg equity 2,066 ETH"
+Avant savETH,month 2025-11,a_staking_yield,4.15,28.69,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2025-11,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2025-11,c_dollar_leg_organic,6.91,47.76,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2025-11,d_rewards: Merkl MORPHO,0.007,0.05,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 22"
+Avant savETH,month 2025-11,d_rewards_total,0.007,0.05,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2025-11,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2025-11,f_residual,3.4,23.5,Share-price return minus components a-e
+Avant savETH,month 2025-11,summary_apy_actual_pct,,8.86,annualized share-price return
+Avant savETH,month 2025-11,summary_apy_without_rewards_pct,,8.855,annualized (return minus d_rewards_total)
+Avant savETH,month 2025-11,summary_stETH_apy_pct,,2.692,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2025-11,summary_excess_over_stETH_pp,,0.4816,"window return minus stETH window return, not annualized"
+Avant savETH,month 2025-11,summary_rewards_share_of_excess_pct,,0.1,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2025-12,share_price_return,10.978,100.0,"share price 2025-11 to 2025-12 (31.0 days); return 0.4534%; avg equity 2,421 ETH"
+Avant savETH,month 2025-12,a_staking_yield,4.867,44.33,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2025-12,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2025-12,c_dollar_leg_organic,6.858,62.47,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2025-12,d_rewards: Merkl MORPHO,0.007,0.07,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 22"
+Avant savETH,month 2025-12,d_rewards_total,0.007,0.07,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2025-12,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2025-12,f_residual,-0.754,-6.87,Share-price return minus components a-e
+Avant savETH,month 2025-12,summary_apy_actual_pct,,5.471,annualized share-price return
+Avant savETH,month 2025-12,summary_apy_without_rewards_pct,,5.467,annualized (return minus d_rewards_total)
+Avant savETH,month 2025-12,summary_stETH_apy_pct,,2.585,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2025-12,summary_excess_over_stETH_pp,,0.2365,"window return minus stETH window return, not annualized"
+Avant savETH,month 2025-12,summary_rewards_share_of_excess_pct,,0.1,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-01,share_price_return,10.788,100.0,"share price 2025-12 to 2026-01 (31.0 days); return 0.3780%; avg equity 2,854 ETH"
+Avant savETH,month 2026-01,a_staking_yield,5.76,53.39,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-01,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-01,c_dollar_leg_organic,6.686,61.98,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-01,d_rewards: Merkl MORPHO,0.019,0.17,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 58"
+Avant savETH,month 2026-01,d_rewards_total,0.019,0.17,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-01,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-01,f_residual,-1.677,-15.54,Share-price return minus components a-e
+Avant savETH,month 2026-01,summary_apy_actual_pct,,4.542,annualized share-price return
+Avant savETH,month 2026-01,summary_apy_without_rewards_pct,,4.534,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-01,summary_stETH_apy_pct,,2.476,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-01,summary_excess_over_stETH_pp,,0.17,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-01,summary_rewards_share_of_excess_pct,,0.4,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-02,share_price_return,15.121,100.0,"share price 2026-01 to 2026-02 (28.0 days); return 0.4443%; avg equity 3,403 ETH"
+Avant savETH,month 2026-02,a_staking_yield,6.423,42.48,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-02,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-02,c_dollar_leg_organic,4.807,31.79,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-02,d_rewards: Merkl WFRAX,0.0,0.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 1"
+Avant savETH,month 2026-02,d_rewards: Merkl MORPHO,0.002,0.01,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 3"
+Avant savETH,month 2026-02,d_rewards_total,0.002,0.01,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-02,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-02,f_residual,3.889,25.72,Share-price return minus components a-e
+Avant savETH,month 2026-02,summary_apy_actual_pct,,5.949,annualized share-price return
+Avant savETH,month 2026-02,summary_apy_without_rewards_pct,,5.948,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-02,summary_stETH_apy_pct,,2.496,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-02,summary_excess_over_stETH_pp,,0.255,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-02,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-03,share_price_return,16.379,100.0,"share price 2026-02 to 2026-03 (31.0 days); return 0.3368%; avg equity 4,863 ETH"
+Avant savETH,month 2026-03,a_staking_yield,9.26,56.53,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-03,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-03,c_dollar_leg_organic,7.247,44.24,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-03,d_rewards: Merkl WFRAX,0.01,0.06,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 20"
+Avant savETH,month 2026-03,d_rewards: Merkl MORPHO,0.026,0.16,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 54"
+Avant savETH,month 2026-03,d_rewards_total,0.036,0.22,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-03,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-03,f_residual,-0.163,-1.0,Share-price return minus components a-e
+Avant savETH,month 2026-03,summary_apy_actual_pct,,4.038,annualized share-price return
+Avant savETH,month 2026-03,summary_apy_without_rewards_pct,,4.029,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-03,summary_stETH_apy_pct,,2.535,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-03,summary_excess_over_stETH_pp,,0.124,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-03,summary_rewards_share_of_excess_pct,,0.6,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-04,share_price_return,23.395,100.0,"share price 2026-03 to 2026-04 (30.0 days); return 0.3805%; avg equity 6,148 ETH"
+Avant savETH,month 2026-04,a_staking_yield,13.058,55.82,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-04,b_loop_spread,-0.099,-0.42,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-04,c_dollar_leg_organic,1.238,5.29,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-04,d_rewards: Merkl USDS,0.091,0.39,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 207"
+Avant savETH,month 2026-04,d_rewards_total,0.091,0.39,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-04,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-04,f_residual,9.106,38.92,Share-price return minus components a-e
+Avant savETH,month 2026-04,summary_apy_actual_pct,,4.73,annualized share-price return
+Avant savETH,month 2026-04,summary_apy_without_rewards_pct,,4.711,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-04,summary_stETH_apy_pct,,2.52,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-04,summary_excess_over_stETH_pp,,0.1757,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-04,summary_rewards_share_of_excess_pct,,0.8,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-05,share_price_return,30.49,100.0,"share price 2026-04 to 2026-05 (31.0 days); return 0.4660%; avg equity 6,543 ETH"
+Avant savETH,month 2026-05,a_staking_yield,12.928,42.4,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-05,b_loop_spread,0.051,0.17,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-05,c_dollar_leg_organic,0.057,0.19,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-05,d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-05,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-05,f_residual,17.453,57.24,Share-price return minus components a-e
+Avant savETH,month 2026-05,summary_apy_actual_pct,,5.626,annualized share-price return
+Avant savETH,month 2026-05,summary_apy_without_rewards_pct,,5.626,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-05,summary_stETH_apy_pct,,2.484,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-05,summary_excess_over_stETH_pp,,0.2574,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-05,summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-06,share_price_return,32.57,100.0,"share price 2026-05 to 2026-06 (30.0 days); return 0.4151%; avg equity 7,847 ETH"
+Avant savETH,month 2026-06,a_staking_yield,12.734,39.1,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-06,b_loop_spread,0.102,0.31,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-06,c_dollar_leg_organic,3.681,11.3,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-06,d_rewards: Merkl USDC,0.018,0.06,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 31"
+Avant savETH,month 2026-06,d_rewards: CRV receipts,0.451,1.39,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 709"
+Avant savETH,month 2026-06,d_rewards_total,0.47,1.44,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-06,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-06,f_residual,15.583,47.85,Share-price return minus components a-e
+Avant savETH,month 2026-06,summary_apy_actual_pct,,5.169,annualized share-price return
+Avant savETH,month 2026-06,summary_apy_without_rewards_pct,,5.092,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-06,summary_stETH_apy_pct,,2.451,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-06,summary_excess_over_stETH_pp,,0.2158,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-06,summary_rewards_share_of_excess_pct,,2.8,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-07,share_price_return,42.328,100.0,"share price 2026-06 to 2026-07 (31.0 days); return 0.4374%; avg equity 9,676 ETH"
+Avant savETH,month 2026-07,a_staking_yield,15.568,36.78,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-07,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-07,c_dollar_leg_organic,13.782,32.56,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-07,d_rewards: Merkl USDC,0.002,0.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 3"
+Avant savETH,month 2026-07,d_rewards: CRV receipts,1.899,4.49,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 3,531"
+Avant savETH,month 2026-07,d_rewards_total,1.901,4.49,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-07,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-07,f_residual,11.076,26.17,Share-price return minus components a-e
+Avant savETH,month 2026-07,summary_apy_actual_pct,,5.274,annualized share-price return
+Avant savETH,month 2026-07,summary_apy_without_rewards_pct,,5.031,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-07,summary_stETH_apy_pct,,2.24,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-07,summary_excess_over_stETH_pp,,0.2491,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-07,summary_rewards_share_of_excess_pct,,7.9,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-08,share_price_return,45.38,100.0,"share price 2026-07 to 2026-08 (31.0 days); return 0.3963%; avg equity 11,451 ETH"
+Avant savETH,month 2026-08,a_staking_yield,19.901,43.85,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-08,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-08,c_dollar_leg_organic,20.026,44.13,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-08,d_rewards: CRV receipts,1.55,3.42,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 2,915"
+Avant savETH,month 2026-08,d_rewards_total,1.55,3.42,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-08,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-08,f_residual,3.903,8.6,Share-price return minus components a-e
+Avant savETH,month 2026-08,summary_apy_actual_pct,,4.767,annualized share-price return
+Avant savETH,month 2026-08,summary_apy_without_rewards_pct,,4.601,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-08,summary_stETH_apy_pct,,2.233,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-08,summary_excess_over_stETH_pp,,0.2085,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-08,summary_rewards_share_of_excess_pct,,6.5,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-09,share_price_return,42.786,100.0,"share price 2026-08 to 2026-09 (30.0 days); return 0.3433%; avg equity 12,465 ETH"
+Avant savETH,month 2026-09,a_staking_yield,20.199,47.21,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-09,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-09,c_dollar_leg_organic,11.322,26.46,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-09,d_rewards: CRV receipts,1.283,3.0,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 3,224"
+Avant savETH,month 2026-09,d_rewards_total,1.283,3.0,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-09,e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-09,f_residual,9.984,23.33,Share-price return minus components a-e
+Avant savETH,month 2026-09,summary_apy_actual_pct,,4.257,annualized share-price return
+Avant savETH,month 2026-09,summary_apy_without_rewards_pct,,4.127,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-09,summary_stETH_apy_pct,,2.272,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-09,summary_excess_over_stETH_pp,,0.1585,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-09,summary_rewards_share_of_excess_pct,,6.5,d_rewards_total / excess; blank when excess <= 0
+Avant savETH,month 2026-10 (to 2 Oct),share_price_return,2.79,100.0,"share price 2026-09 to T (2.0 days); return 0.0224%; avg equity 12,470 ETH"
+Avant savETH,month 2026-10 (to 2 Oct),a_staking_yield,1.246,44.65,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Avant savETH,month 2026-10 (to 2 Oct),b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Avant savETH,month 2026-10 (to 2 Oct),c_dollar_leg_organic,0.648,23.23,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Avant savETH,month 2026-10 (to 2 Oct),d_rewards_total,0.0,0.0,sum of d rows (vault-level rewards inside the share price)
+Avant savETH,month 2026-10 (to 2 Oct),e_fees,0.0,0.0,Not separable from savETH conversion; included in residual
+Avant savETH,month 2026-10 (to 2 Oct),f_residual,0.896,32.12,Share-price return minus components a-e
+Avant savETH,month 2026-10 (to 2 Oct),summary_apy_actual_pct,,4.167,annualized share-price return
+Avant savETH,month 2026-10 (to 2 Oct),summary_apy_without_rewards_pct,,4.167,annualized (return minus d_rewards_total)
+Avant savETH,month 2026-10 (to 2 Oct),summary_stETH_apy_pct,,2.242,"wstETH stEthPerToken growth, same blocks"
+Avant savETH,month 2026-10 (to 2 Oct),summary_excess_over_stETH_pp,,0.0102,"window return minus stETH window return, not annualized"
+Avant savETH,month 2026-10 (to 2 Oct),summary_rewards_share_of_excess_pct,,0.0,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,90d,share_price_return,24.985,100.0,"share price T-90 to T (90.0 days); return 0.9338%; avg equity 2,676 ETH"
+Liquity ETH Carry,90d,a_staking_yield,12.962,51.88,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,90d,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,90d,c_dollar_leg_organic,-13.362,-53.48,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,90d,d_rewards: BOLD from Curve BOLD/USDC gauge,10.179,40.74,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 23,290"
+Liquity ETH Carry,90d,d_rewards: Merkl BOLD,0.042,0.17,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 225"
+Liquity ETH Carry,90d,d_rewards_total,10.222,40.91,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,90d,e_fees,-6.447,-25.8,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,90d,f_residual,21.611,86.49,Share-price return minus components a-e
+Liquity ETH Carry,90d,summary_apy_actual_pct,,3.841,annualized share-price return
+Liquity ETH Carry,90d,summary_apy_without_rewards_pct,,2.257,annualized (return minus d_rewards_total)
+Liquity ETH Carry,90d,summary_stETH_apy_pct,,2.245,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,90d,summary_excess_over_stETH_pp,,0.3848,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,90d,summary_rewards_share_of_excess_pct,,99.3,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,since_inception,share_price_return,51.433,100.0,"share price 2026-03 to T (185.0 days); return 3.5159%; avg equity 1,463 ETH"
+Liquity ETH Carry,since_inception,a_staking_yield,14.674,28.53,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,since_inception,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,since_inception,c_dollar_leg_organic,-8.709,-16.93,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,since_inception,d_rewards: BOLD from Curve BOLD/USDC gauge,12.329,23.97,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 25,871"
+Liquity ETH Carry,since_inception,d_rewards: Merkl BOLD,0.024,0.05,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 225"
+Liquity ETH Carry,since_inception,d_rewards_total,12.352,24.02,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,since_inception,e_fees,-9.937,-19.32,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,since_inception,f_residual,43.052,83.7,Share-price return minus components a-e
+Liquity ETH Carry,since_inception,summary_apy_actual_pct,,7.055,annualized share-price return
+Liquity ETH Carry,since_inception,summary_apy_without_rewards_pct,,5.339,annualized (return minus d_rewards_total)
+Liquity ETH Carry,since_inception,summary_stETH_apy_pct,,2.365,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,since_inception,summary_excess_over_stETH_pp,,2.3244,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,since_inception,summary_rewards_share_of_excess_pct,,36.3,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,month 2026-04,share_price_return,-0.02,100.0,share price 2026-03 to 2026-04 (30.0 days); return -0.0611%; avg equity 32 ETH
+Liquity ETH Carry,month 2026-04,a_staking_yield,0.04,-206.14,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,month 2026-04,b_loop_spread,0.0,-0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,month 2026-04,c_dollar_leg_organic,-0.005,23.06,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,month 2026-04,d_rewards: BOLD from Curve BOLD/USDC gauge,0.059,-302.28,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 137"
+Liquity ETH Carry,month 2026-04,d_rewards_total,0.059,-302.28,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,month 2026-04,e_fees,-0.013,67.22,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,month 2026-04,f_residual,-0.101,518.14,Share-price return minus components a-e
+Liquity ETH Carry,month 2026-04,summary_apy_actual_pct,,-0.741,annualized share-price return
+Liquity ETH Carry,month 2026-04,summary_apy_without_rewards_pct,,-2.951,annualized (return minus d_rewards_total)
+Liquity ETH Carry,month 2026-04,summary_stETH_apy_pct,,2.52,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,month 2026-04,summary_excess_over_stETH_pp,,-0.2659,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,month 2026-04,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,month 2026-05,share_price_return,6.01,100.0,share price 2026-04 to 2026-05 (31.0 days); return 2.1467%; avg equity 280 ETH
+Liquity ETH Carry,month 2026-05,a_staking_yield,0.52,8.65,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,month 2026-05,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,month 2026-05,c_dollar_leg_organic,-0.038,-0.63,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,month 2026-05,d_rewards: BOLD from Curve BOLD/USDC gauge,0.077,1.28,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 169"
+Liquity ETH Carry,month 2026-05,d_rewards_total,0.077,1.28,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,month 2026-05,e_fees,-0.8,-13.31,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,month 2026-05,f_residual,6.251,104.01,Share-price return minus components a-e
+Liquity ETH Carry,month 2026-05,summary_apy_actual_pct,,28.413,annualized share-price return
+Liquity ETH Carry,month 2026-05,summary_apy_without_rewards_pct,,28.006,annualized (return minus d_rewards_total)
+Liquity ETH Carry,month 2026-05,summary_stETH_apy_pct,,2.484,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,month 2026-05,summary_excess_over_stETH_pp,,1.9381,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,month 2026-05,summary_rewards_share_of_excess_pct,,1.4,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,month 2026-06,share_price_return,2.157,100.0,share price 2026-05 to 2026-06 (30.0 days); return 0.3689%; avg equity 585 ETH
+Liquity ETH Carry,month 2026-06,a_staking_yield,0.992,46.01,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,month 2026-06,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,month 2026-06,c_dollar_leg_organic,-0.234,-10.85,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,month 2026-06,d_rewards: BOLD from Curve BOLD/USDC gauge,1.27,58.88,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 2,084"
+Liquity ETH Carry,month 2026-06,d_rewards_total,1.27,58.88,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,month 2026-06,e_fees,-0.507,-23.49,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,month 2026-06,f_residual,0.635,29.44,Share-price return minus components a-e
+Liquity ETH Carry,month 2026-06,summary_apy_actual_pct,,4.582,annualized share-price return
+Liquity ETH Carry,month 2026-06,summary_apy_without_rewards_pct,,1.861,annualized (return minus d_rewards_total)
+Liquity ETH Carry,month 2026-06,summary_stETH_apy_pct,,2.451,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,month 2026-06,summary_excess_over_stETH_pp,,0.1697,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,month 2026-06,summary_rewards_share_of_excess_pct,,128.0,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,month 2026-07,share_price_return,1.021,100.0,"share price 2026-06 to 2026-07 (31.0 days); return 0.0987%; avg equity 1,034 ETH"
+Liquity ETH Carry,month 2026-07,a_staking_yield,1.65,161.62,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,month 2026-07,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,month 2026-07,c_dollar_leg_organic,-1.453,-142.33,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,month 2026-07,d_rewards: BOLD from Curve BOLD/USDC gauge,1.21,118.52,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 2,216"
+Liquity ETH Carry,month 2026-07,d_rewards_total,1.21,118.52,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,month 2026-07,e_fees,-0.602,-58.97,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,month 2026-07,f_residual,0.216,21.16,Share-price return minus components a-e
+Liquity ETH Carry,month 2026-07,summary_apy_actual_pct,,1.168,annualized share-price return
+Liquity ETH Carry,month 2026-07,summary_apy_without_rewards_pct,,-0.215,annualized (return minus d_rewards_total)
+Liquity ETH Carry,month 2026-07,summary_stETH_apy_pct,,2.24,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,month 2026-07,summary_excess_over_stETH_pp,,-0.0897,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,month 2026-07,summary_rewards_share_of_excess_pct,,,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,month 2026-08,share_price_return,9.056,100.0,"share price 2026-07 to 2026-08 (31.0 days); return 0.4196%; avg equity 2,158 ETH"
+Liquity ETH Carry,month 2026-08,a_staking_yield,3.509,38.74,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,month 2026-08,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,month 2026-08,c_dollar_leg_organic,-4.805,-53.06,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,month 2026-08,d_rewards: BOLD from Curve BOLD/USDC gauge,3.537,39.05,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 7,823"
+Liquity ETH Carry,month 2026-08,d_rewards_total,3.537,39.05,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,month 2026-08,e_fees,-2.025,-22.35,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,month 2026-08,f_residual,8.841,97.62,Share-price return minus components a-e
+Liquity ETH Carry,month 2026-08,summary_apy_actual_pct,,5.054,annualized share-price return
+Liquity ETH Carry,month 2026-08,summary_apy_without_rewards_pct,,3.053,annualized (return minus d_rewards_total)
+Liquity ETH Carry,month 2026-08,summary_stETH_apy_pct,,2.233,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,month 2026-08,summary_excess_over_stETH_pp,,0.2319,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,month 2026-08,summary_rewards_share_of_excess_pct,,70.7,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,month 2026-09,share_price_return,20.447,100.0,"share price 2026-08 to 2026-09 (30.0 days); return 0.4631%; avg equity 4,415 ETH"
+Liquity ETH Carry,month 2026-09,a_staking_yield,7.551,36.93,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,month 2026-09,b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,month 2026-09,c_dollar_leg_organic,-6.422,-31.41,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,month 2026-09,d_rewards: Merkl BOLD,0.028,0.14,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 75"
+Liquity ETH Carry,month 2026-09,d_rewards: BOLD from Curve BOLD/USDC gauge,4.994,24.42,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 12,770"
+Liquity ETH Carry,month 2026-09,d_rewards_total,5.022,24.56,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,month 2026-09,e_fees,-4.288,-20.97,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,month 2026-09,f_residual,18.584,90.89,Share-price return minus components a-e
+Liquity ETH Carry,month 2026-09,summary_apy_actual_pct,,5.782,annualized share-price return
+Liquity ETH Carry,month 2026-09,summary_apy_without_rewards_pct,,4.335,annualized (return minus d_rewards_total)
+Liquity ETH Carry,month 2026-09,summary_stETH_apy_pct,,2.272,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,month 2026-09,summary_excess_over_stETH_pp,,0.2783,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,month 2026-09,summary_rewards_share_of_excess_pct,,40.9,d_rewards_total / excess; blank when excess <= 0
+Liquity ETH Carry,month 2026-10 (to 2 Oct),share_price_return,2.708,100.0,"share price 2026-09 to T (2.0 days); return 0.0450%; avg equity 6,015 ETH"
+Liquity ETH Carry,month 2026-10 (to 2 Oct),a_staking_yield,0.694,25.63,"stETH stEthPerToken / weETH getRate growth x ETH equity (archive eth_call, raw bs_raw.json)"
+Liquity ETH Carry,month 2026-10 (to 2 Oct),b_loop_spread,0.0,0.0,Aave/Spark getReserveNormalizedVariableDebt growth and Morpho borrow share price on measured WETH debt; LST growth on the same notional (bs_raw.json)
+Liquity ETH Carry,month 2026-10 (to 2 Oct),c_dollar_leg_organic,-0.279,-10.29,"Destination share-price growth on measured claims minus dollar-debt index growth, converted at average Chainlink ETH/USD (bs_raw.json, liquid_claims_raw.json, extra_raw.json)"
+Liquity ETH Carry,month 2026-10 (to 2 Oct),d_rewards: Merkl BOLD,0.056,2.07,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 150"
+Liquity ETH Carry,month 2026-10 (to 2 Oct),d_rewards: BOLD from Curve BOLD/USDC gauge,0.25,9.21,"Merkl v4 per-recipient ledgers accrued over campaign dates, ERC-20 receipts from distributors (merkl_users.json, merkl_campaign_lookup.json, inbound_raw.json), DefiLlama daily prices (prices_daily.json); USD 673"
+Liquity ETH Carry,month 2026-10 (to 2 Oct),d_rewards_total,0.306,11.28,sum of d rows (vault-level rewards inside the share price)
+Liquity ETH Carry,month 2026-10 (to 2 Oct),e_fees,-0.484,-17.87,Estimated: 0.5%/yr management + 10% performance on positive gross return
+Liquity ETH Carry,month 2026-10 (to 2 Oct),f_residual,2.471,91.25,Share-price return minus components a-e
+Liquity ETH Carry,month 2026-10 (to 2 Oct),summary_apy_actual_pct,,8.561,annualized share-price return
+Liquity ETH Carry,month 2026-10 (to 2 Oct),summary_apy_without_rewards_pct,,7.56,annualized (return minus d_rewards_total)
+Liquity ETH Carry,month 2026-10 (to 2 Oct),summary_stETH_apy_pct,,2.242,"wstETH stEthPerToken growth, same blocks"
+Liquity ETH Carry,month 2026-10 (to 2 Oct),summary_excess_over_stETH_pp,,0.0329,"window return minus stETH window return, not annualized"
+Liquity ETH Carry,month 2026-10 (to 2 Oct),summary_rewards_share_of_excess_pct,,15.5,d_rewards_total / excess; blank when excess <= 0

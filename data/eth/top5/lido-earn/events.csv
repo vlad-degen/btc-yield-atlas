@@ -1,0 +1,11 @@
+date,event,type,effect_on_deposits_or_yield,source
+2025-11-06,stRATEGY (strETH) launches; it becomes the main earnETH subvault holding,predecessor,strETH holders later migrate into earnETH,https://blog.lido.fi/introducing-the-lido-strategy-vault/
+2026-02-02,"earnETH vault, ShareManager, FeeManager (fees 0), Oracle, pause timelock deployed by 0xe98be1e5; roles handed to Lido/Mellow Safes",launch,no deposits yet,tx 0x3d3b6074; Vault RoleGranted
+2026-02-19,Lido DAO proposes first-loss allocation (3M USD of wstETH into earnETH),governance,DAO shares rank first for losses (burned),https://research.lido.fi/t/lido-earn-competing-on-trust-5m-treasury-allocation/11228
+2026-03-02,ShareManager upgraded to BurnableTokenizedShareManager by the Proxy Admin Safe,upgrade,adds share burn used later to absorb losses,ShareManager Upgraded event tx 0xac9413e7
+2026-03-13,"Bulk migration: 8,703 strETH, 3,280 GG, 2,884 DVstETH, 1,404 wstETH deposited and claimed",flows,"1,195 holders and 77,576 ETH by 31 Mar",Vault HookCalled/SharesClaimed events
+2026-04-18,Lazy Vault Admin pauses all six deposit queues (Kelp-related rsETH stress),incident,"deposits frozen 27 days; book 107,422 ETH (Apr) to 42,805 ETH (May)",Vault SetQueueStatus tx 0xf4bb7942; https://research.lido.fi/t/kelp-incident-review-earneth-exposure-response-and-risk-framework-changes/11579
+2026-05-15,DAO burns 143.98 earnETH (first loss); recovery oracle report; queues unpaused,recovery,"loss absorbed by DAO shares, not by other holders",tx 0xdfca0390; SetQueueStatus tx 0x21d174cd
+2026-07-01,"Fees switched on: 10% performance, 1% annual; switched off 21 Jul",fees,114.73 earnETH taken in 20 days,FeeManager SetFees
+2026-09-03,"Fees 15% performance, 0.2% annual (current)",fees,net yield to holders reduced,FeeManager SetFees tx 0x133c5b58
+2026-09-29,Carry account borrows 5M USDT and buys earnUSD in one tx,strategy,adds a dollar-carry leg inside the nested strategy,tx 0x48c24a94
