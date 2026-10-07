@@ -79,14 +79,14 @@ function atMapFindings(total){
  const items=[];
  if(MS.selected.has('staking')&&total.eth_ref)items.push(`<b>Staking is ${ATPCT(st/total.eth_ref,0)} of it.</b> Lido holds ${ATPCT(lido/st,0)} of the staking row and Binance’s wBETH ${ATPCT(bn/st,0)}; the other ${atRows('staking').length-2} issuers share the rest.`);
  if(MS.selected.has('restaking')&&total.eth_ref)items.push(`<b>Restaking is ${ATPCT(rs/total.eth_ref,0)}</b> (${ATK(rs)} ETH), down from ${ATK(rs0)} two years ago; ether.fi\u2019s weETH is ${ATPCT((MP.products.find(p=>p.id==='ether.fi-stake')?.current.eth_ref||0)/rs,0)} of it.`);
- if(MS.selected.has('carry')&&total.eth_ref)items.push(`<b>Carry is ${ATPCT(cy/total.eth_ref,1)}</b>: ${ATK(cy)} ETH in ${atRows('carry').length} products that borrow dollars against ETH. In BTC it is 9.9%.`);
+ if(MS.selected.has('carry')&&total.eth_ref)items.push(`<b>Carry is ${ATPCT(cy/total.eth_ref,1)}</b>: ${ATK(cy)} ETH in ${atRows('carry').length} products that owe dollars against ETH, none two years ago. In BTC it is 9.8%.`);
  if(!MS.selected.has('lending'))items.push(`<b>Money markets hold another ${ATK(mm)} ETH</b> of idle WETH and CDPs ${ATK(cdp)} ETH of plain collateral; both are off by default (staking tokens posted as collateral are already counted at their issuer).`);
  return '<ol class="steps">'+items.map(t=>'<li>'+t+'</li>').join('')+'</ol>';
 }
 
 function atMovers(cat,from,dir=-1,n=3){
  const i0=MP.months.findIndex(m=>m.period===from);
- return MP.products.filter(p=>p.category===cat).map(p=>({p,d:(p.current.eth_ref||0)-(p.history[i0]?.eth_ref||0)})).filter(x=>dir<0?x.d<0:x.d>0).sort((x,y)=>dir<0?x.d-y.d:y.d-x.d).slice(0,n);
+ return MP.products.filter(p=>p.category===cat&&!['eigencloud','symbiotic'].includes(p.id)).map(p=>({p,d:(p.current.eth_ref||0)-(p.history[i0]?.eth_ref||0)})).filter(x=>dir<0?x.d<0:x.d>0).sort((x,y)=>dir<0?x.d-y.d:y.d-x.d).slice(0,n);
 }
 function marketFindings(){
  const months=MP.months,tot=months.map(m=>mactive().reduce((s,c)=>s+(m.by_category[c.id]?.eth_ref||0),0)),pk=tot.indexOf(Math.max(...tot)),last=marketTotals().eth_ref;
@@ -112,21 +112,21 @@ function atHero(){
  $('#m-hero-total').textContent=num(total.eth_ref,0);
  $('#m-hero-detail').textContent='Across '+n+' products, each counted once'+(st&&total.eth_ref?'; '+ATPCT(st/total.eth_ref,0)+' is staking.':'.');
  $('#strict-carry-share').textContent=cy!=null&&total.eth_ref?ATPCT(cy/total.eth_ref,1):'off';
- $('#strict-carry-size').textContent=cy!=null?ATK(cy)+' ETH in '+cr.length+' products post ETH against dollar loans ($'+num(EQ.attributedDollarDebtUSD/1e6,0)+'M of debt). Two years ago: '+ATK(MP.months[0].by_category.carry.eth_ref)+' ETH.':'Carry is switched off.';
+ $('#strict-carry-size').textContent=cy!=null?ATK(cy)+' ETH in '+cr.length+' products that owe dollars against ETH ($'+num(EQ.attributedDollarDebtUSD/1e6,0)+'M; most of their books are ETH loops). Two years ago: '+ATK(MP.months[0].by_category.carry.eth_ref)+' ETH.':'Carry is switched off.';
  const top2=cr.slice(0,2),t2=msum(top2.map(p=>p.current),'eth_ref');
  $('#strict-carry-concentration').textContent=cy?ATPCT(t2/cy,0):'n/a';
  $('#strict-carry-concentration-note').textContent=top2.map(p=>p.name+' '+ATK(p.current.eth_ref)).join(' and ')+' ETH.';
- $('#strict-organic-return').textContent='+0.7 pp';
- $('#strict-organic-return-note').textContent='Liquid ETH 3.37% a year vs stETH 2.71% over two years, rewards included. Without rewards its RLUSD leg loses 0.84 pp.';
+ $('#strict-organic-return').textContent='+0.66 pp';
+ $('#strict-organic-return-note').textContent='Liquid ETH 3.37% a year vs stETH 2.71% over two years: share price of the whole book, mostly an ETH loop. Its dollar leg alone loses about $6.8M a year at 2 October rates.';
 }
 
-readerAnswer=function(){atHero();atMeaning();const T=marketTotals();atLabel('#m-hero-total','ETH earns a yield ('+ATUSD(T.usd)+')');atLabel('#strict-carry-share','is carry');atLabel('#strict-carry-concentration','of carry is in two products');atLabel('#strict-organic-return','what carry adds over staking, a year');};
+readerAnswer=function(){atHero();atMeaning();const T=marketTotals();atLabel('#m-hero-total','ETH earns a yield ('+ATUSD(T.usd)+')');atLabel('#strict-carry-share','is carry');atLabel('#strict-carry-concentration','of carry is in two products');atLabel('#strict-organic-return','largest carry product over stETH, a year');};
 function atMeaning(){
  const ol=$('.market-conclusions ol');if(!ol)return;
  ol.innerHTML=[
-  '<b>ETH carry has to beat staking; BTC carry only has to beat zero.</b> ETH collateral already earns about 2.7% staked, so the dollar leg must add on top. Liquid ETH beat stETH by 0.66 pp a year over two years; YieldBasis and Vesper trailed it in September.',
+  '<b>ETH carry has to beat staking; BTC carry only has to beat zero.</b> Staked ETH earns 2.2 to 2.7%, so the dollar leg must add on top. Liquid ETH beat stETH by 0.66 pp a year over two years, and that came from its ETH loop; YieldBasis and Vesper trailed stETH in September.',
   '<b>The same dollar vaults fund BTC and ETH carry.</b> Liquid ETH parks $55M in Sentora’s RLUSD vault, where 53% of the money is lent to Kraken’s kBTC loop, and $50M in the PYUSD vault that is 95% PRIME home-equity credit. A loss there hits both markets at once.',
-  '<b>Private mandates borrow as much as all ETH carry products together.</b> Concrete Delta (one Bitfinex-linked wallet, $176M of stablecoin debt) and three whitelist-only rSHARE vaults run by one operator ($87M) owe $263M against ETH; the 14 pooled products owe $261M. The demand for large ETH-backed dollar loans comes from single principals, not from depositors.',
+  '<b>Private mandates borrow as much as all ETH carry products together.</b> Concrete Delta (one Bitfinex-linked wallet, $176M of stablecoin debt) and three whitelist-only rSHARE vaults run by one operator ($76M against ETH) owe $252M; the 14 pooled products owe $261M. The demand for large ETH-backed dollar loans comes from single principals, not from depositors.',
   '<b>The loan currency decides the spread.</b> On 2 October Aave charged 13.93% for USDC and 4.38% for USDT; Morpho USDT cost 3.2%. Liquid’s 7.79% average comes from its $65M Aave USDC leg. Pick the cheapest hub currency, not the venue.'
  ].map(t=>'<li>'+t+'</li>').join('');
 }
@@ -206,7 +206,7 @@ const ATLAND=[
  ['Vesper vaETH','Active','One of 8 strategies posts 57 WETH, borrows 69k DAI into vDAI','Over 30 days vDAI earned 13.50 DAI against 452.50 DAI of interest.','vesper'],
  ['Royco ETH','Active, exit closed','Morpho wstETH/PYUSD (91k PYUSD at 30%) into a senior Royco credit receipt','Accounting call reverts and maxWithdraw is 0; 30-day epochs, KYC.','royco'],
  ['Reservoir ETH Yield','Small','Aave WETH/USDC (13.93%) into srUSD, which borrows again on Morpho','Outer loan costs 8.95 pp more than srUSD pays; peaked at 4,137 ETH in Oct 2025.','reservoir-eth'],
- ['TAU InfiniFi ETH Carry','Wound down','cbETH collateral, USDC into InfiniFi siUSD (inner loop of 2.53M USDC in Jan 2026)','Debt is 0.02 USDC at the snapshot; the book is a remnant.','tau-infinifi'],
+ ['TAU InfiniFi ETH Carry','Wound down','wstETH collateral, USDC into InfiniFi siUSD (inner loop of 2.53M USDC in Jan 2026)','Debt is 0.02 USDC at the snapshot; the book is a remnant.','tau-infinifi'],
  ['ZenSats wstETH','Micro','LlamaLend wstETH/crvUSD into Curve crvUSD/USDT via StakeDAO','Under 1 ETH; the earlier Aave/RAAC vault is empty.','zensats'],
 ];
 readerLandscape=function(){
@@ -229,7 +229,7 @@ function marketPersist(){
 
 // Product stories, one finding each (replaces strict.js and reader_product_chapters wording).
 Object.assign(ST_STORIES,{
- liquid:{title:'Beats stETH by 0.7 pp a year, but the dollar leg loses money',text:'Liquid ETH is mostly a staking loop: $1.18B of weETH and wstETH on Aave against $1.09B of WETH debt, health factor 1.027. The dollar side ($181M of loans since August 2025) costs about $14.1M a year and earns $7.3M, $2.6M of it in Merkl rewards paid from the RLUSD and PYUSD issuers’ side. Over two years the share price beat stETH by 1.36 pp (3.37% vs 2.71% a year); at today\u2019s rates the dollar leg subtracts from that, so the loop is what pays.',lesson:'Price each loan separately: one 13.93% USDC loan erased the spread on the other $117M.'},
+ liquid:{title:'Beats stETH by 0.7 pp a year, but the dollar leg loses money',text:'Liquid ETH is mostly a staking loop: $1.18B of weETH and wstETH on Aave against $1.09B of WETH debt, health factor 1.027. The dollar side ($181M of loans since August 2025) costs about $14.1M a year and earns $7.3M, $2.6M of it in Merkl rewards paid from the RLUSD and PYUSD issuers’ side. Over two years the share price beat stETH by 0.66 pp a year (6.85% vs 5.49% cumulative); at today\u2019s rates the dollar leg subtracts from that, so the loop is what pays.',lesson:'Price each loan separately: one 13.93% USDC loan erased the spread on the other $117M.'},
  yieldbasis:{title:'The only top-five product whose fees pay for its debt',text:'YieldBasis pairs 10,426 ETH of depositors’ WETH with an equal 27.8M crvUSD loan in a 2x Curve LP. Curve fees grew 9.19% a year on twice the debt against a fixed 10% rate. Unstaked LP holders still trailed stETH by 1.27 pp over 94 days: gauge rewards in YB go to stakers, and the token fell 87%.',lesson:'Trading fees can carry the loan; the depositor’s ETH return depends on who gets the rewards.'},
  'lido-earn':{title:'Mostly a staking loop with a small USDT sleeve that pays',text:'Earn ETH (83,309 ETH) holds stRATEGY, which owes 355k WETH across Aave and Spark at health factor 1.035 and $25.6M of USDT parked in earnUSD. The USDT sleeve earned 4.80% against 4.33% of interest; a 5M USDT loan made on 29 September cleared +1,401 USDT in four days. The April rsETH incident froze the vault for 27 days and cost the DAO 144.8 ETH.',lesson:'A positive dollar spread is easiest when the parking vault is your own and you are half of it.'},
  avant:{title:'Positive spread, all of it Avant’s own credit',text:'Avant borrows $10.0M of USDC, USDS and PYUSD against ETH on Aave and Spark at 6.30% and parks 98% of it in savUSD, Avant’s own dollar product, which paid 7.54%. Repaying the debt means a 24-hour cooldown, a bridge from Avalanche and up to seven days of redemption.',lesson:'Parking in the issuer’s own product turns the spread into one credit bet with a week-long exit.'},
@@ -243,13 +243,15 @@ Object.assign(ST_STORIES,{
 function stRisks(){const rows=[
  ['Funding cost','Aave USDC cost 13.93% on 2 October and 12.6 to 14.1% at every month-end since June; Aave USDT cost 4.38%. Liquid’s dollar leg loses about $6.8M a year at those rates.','Borrow the cheapest hub currency; cut any leg whose base yield stays below its loan rate.'],
  ['Rewards','Merkl rewards are $2.6M of Liquid’s $7.3M dollar income; they trace to the RLUSD and PYUSD issuers’ side, campaign by campaign, a week at a time.','Price the product without them; show who pays and until when.'],
- ['Liquidation','Liquid’s main Aave ETH loop runs at health factor 1.027; its dollar legs at 1.27 to 1.39 (a 21% ETH fall to the first liquidation). Lido Earn’s loops sit at 1.035.','Keep dollar legs far from liquidation; a loop can be thin, a dollar leg cannot.'],
+ ['Liquidation','Liquid’s main Aave ETH loop runs at health factor 1.027; its dollar legs at 1.27 to 1.87 (a 21% ETH fall to the first liquidation). Lido Earn’s loops sit at 1.035.','Keep dollar legs far from liquidation; a loop can be thin, a dollar leg cannot.'],
  ['Exit','A quarter of Liquid’s dollar debt has no dollar asset behind it; Avant needs a week to bring savUSD back from Avalanche; Rocksolid closed its vault for eight days; Royco can pay out nothing today.','Match every loan with a same-day source of the same currency.'],
  ['Restaking tokens','The April 2026 rsETH exploit froze Lido Earn for 27 days and cost its DAO 144.8 ETH; Aave was left with bad debt.','Treat a restaking token as credit, not as ETH, when sizing collateral.'],
  ['Own and nested credit','Avant parks 98% in its own savUSD; Lido Earn is 48.5% of earnUSD; Liquid borrows from the Sentora vaults it deposits into.','Disclose self-credit and look through to the final borrower.'],
  ['Keys and fees','Liquid’s 24-hour timelock does not cover the role that can change its fee; Liquity’s and Rocksolid’s managers act with no delay.','Put every fee and strategy change behind a delay longer than the exit.'],
- ['Who is the investor','Concrete Delta’s 307k ETH is one wallet’s own position, shown by DefiLlama as an $820M product; three private rSHARE vaults hold 83k WETH for what looks like one principal.','Check holders before calling a vault a product.']
- ];$('#strict-risk-table').innerHTML=stTable(['Risk','What we saw','Rule for a product'],rows.map(r=>r.map(esc)),'strict-risks');}
+ ['Borrow market fills up','Aave USDC on Ethereum ran at 12.6 to 14.1% at every month-end since June; Liquid owes $64.6M there. One large borrower can move a rate for everyone.','Size each loan to what the market can absorb without the rate jumping.'],
+ ['Slow exit','Liquid\u2019s queue paid in 12.6 hours at the median but 12 days at worst; Avant needs a week to bring dollars back from Avalanche.','Promise only the exit the slowest leg allows.'],
+ ['Who is the investor','Concrete Delta’s 307k ETH is one wallet’s own position, which DefiLlama lists as a $941M product (with a circular second vault); three private rSHARE vaults hold 83k WETH for what looks like one principal.','Check holders before calling a vault a product.']
+ ];$('#strict-risk-table').innerHTML=stTable(['Risk','What we saw','Rule for a product'],rows.map(r=>r.map(esc)),'strict-risks');const h=$('#reader-risk-details summary');if(h)h.textContent='Risks: what broke or nearly broke ETH carry';const lede=$('#reader-risk-details .shead .lede');if(lede)lede.textContent='In 2025 and 2026 the losses came from a restaking token (rsETH) and from expensive dollar loans, not from the ETH price.';}
 
 // Data: method of the counted-once map (replaces the protocol-ledger method text of strict.js stData).
 const _atPrevData=typeof stData==='function'?stData:null;
@@ -259,7 +261,7 @@ function atMethod(){
  <p><b>Counted once.</b> A staking or restaking token held by another product leaves its issuer’s row and is counted in the product that holds it. Products report what their depositors own: a looped vault counts its equity, and the ETH it borrowed stays with the staking issuer it was staked through. Restaking platforms count only what no restaking token on the map already counts (an estimate). Money markets and CDPs count only plain ETH and WETH, not staking tokens posted as collateral, and are off by default: lent ETH is staked again by its borrowers.</p>
  <p><b>On-chain books.</b> The carry products are measured at block 26,108,081 and replace their DefiLlama rows; twelve also at each month-end, NEMO and Sentora at the snapshot only. DEX projects without a token breakdown (Uniswap v3 and v4, SushiSwap v2) are their ETH pools above $1M, plain-ETH side only.</p>
  <p><b>What was cut.</b> Infrastructure (SSV, Obol), curators whose vaults sit in Morpho and Euler, LP-staking aggregators, duplicate listings, synthetic ETH (msETH, alETH), frozen adapters and non-products; each with its reason in “Listed, but not counted”. Every netting step is in the ledger below.</p>
- <div class="section-actions"><a class="btn" href="data/netmap/market_map_current.csv" download>Map, 2 October</a><a class="btn" href="data/netmap/market_map_history_monthly.csv" download>Month-ends by product</a><a class="btn" href="data/netmap/category_history_monthly.csv" download>Month-ends by category</a><a class="btn" href="data/netmap/netting_ledger.csv" download>Netting ledger</a><a class="btn" href="data/netmap/product_notes.csv" download>Product notes</a></div>`;
+ <p><b>Judgement calls.</b> Concrete Delta and three rSHARE vaults are left out as single-principal mandates (the BTC map left out Avalon the same way). ether.fi\u2019s weETH counts as restaking. A carry product counts as carry only in months it owed dollars; Liquid ETH sits in leveraged staking from October 2024 to July 2025. EigenLayer and Symbiotic count only what no restaking token already counts. Balances unchanged for three months or more count as leftovers (zero).</p><p><b>Not verified.</b> The restaking-platform remainder is an estimate. DEX pool history covers only pools above $1M today. NEMO and Sentora have the snapshot only. Off-chain staking is sized from beacon-chain entity tags dated 7 October. Returns over 30 days are annualised and noisy.</p><div class="section-actions"><a class="btn" href="data/netmap/market_map_current.csv" download>Map, 2 October</a><a class="btn" href="data/netmap/market_map_history_monthly.csv" download>Month-ends by product</a><a class="btn" href="data/netmap/category_history_monthly.csv" download>Month-ends by category</a><a class="btn" href="data/netmap/netting_ledger.csv" download>Netting ledger</a><a class="btn" href="data/netmap/product_notes.csv" download>Product notes</a></div>`;
 }
 const _atPrevAnswer2=readerAnswer;readerAnswer=function(){_atPrevAnswer2();atMethod();if(typeof stRisks==='function')stRisks();};
 
@@ -328,3 +330,26 @@ const _atPrevAnswer4=readerAnswer;readerAnswer=function(){_atPrevAnswer4();atCov
 // Borrower table: names from the 7 Oct identification (data/eth/gap_borrowers.csv via atlas_build.py).
 (function(){const ID=R.atlasTop5Risk?.borrowers;const B=R.borrowersChapter;if(!ID||!B)return;const walk=v=>{if(Array.isArray(v))v.forEach(walk);else if(v&&typeof v==='object'){const k=String(v.address||'').toLowerCase();if(k&&ID[k]&&'who' in v){v.who=ID[k].who;v.evidence=(ID[k].pooled_product==='yes'?'Pooled product. ':ID[k].pooled_product==='no'?'Not a pooled product. ':'Private vault. ')+(ID[k].destination_of_dollars?'Dollars went to: '+ID[k].destination_of_dollars+'. ':'')+'Full trace in Borrower identities.';}Object.values(v).forEach(walk);}};walk(B);})();
 ATLAND.splice(1,0,['Private rSHARE vaults (three managers)','Private; not counted','Three whitelist-only WETH receipt vaults (about 83k WETH) whose managers borrow $87.1M of dollars, 10.6M EURCV and 75k WETH against it, into RockawayX, Sentora, Hastra, Wintermute and Pendle vaults','Same operator (managers created the same day, gas from the same exchange); depositors look like one principal; shares cannot move and the owner sets NAV off-chain, never posted. Like Concrete, a mandate, not a product.','']);
+
+// Reader pruning to the BTC page's scope (parity audit 7 Oct, research/eth/review/parity-audit-2026-10-07).
+function atPrune(){
+ if(document.body.dataset.edition!=='reader')return;
+ const drop=(sel)=>$$(sel).forEach(e=>e.remove());
+ const dropDetails=re=>$$('details.more>summary').forEach(s=>{if(re.test(s.textContent))s.parentElement.remove();});
+ dropDetails(/Products awaiting dollar-carry verification|Share prices and measured ETH returns|^By chain$|Coverage by mechanism|Why reported ETH exposure/);
+ drop('.chapter-transition');
+ $$('.section-actions').forEach(e=>{if(!e.closest('#data'))e.remove();});
+ $$('#market .note').forEach(n=>{if(/Borrowing against ETH establishes financing/.test(n.textContent))n.remove();});
+ $$('#market-history [data-market-flags]').forEach(e=>e.remove());   // switches only at the top of Market
+ const pr=$('#print');if(pr)pr.remove();$$('#data a.btn').forEach(a=>{if(/Original BTC Research/.test(a.textContent))a.remove();});
+ const lib=$('#data .library-grid');if(lib)lib.outerHTML='<p>Research behind the page: '+[['library/BRIEFING.html','briefing'],['library/SELECTION.html','how the five were chosen'],['library/CONCRETE-DELTA.html','Concrete Delta'],['library/TOP5-RISK-LIQUIDITY.html','top-five risk and repayment'],['library/BORROWER-IDENTITIES.html','who borrows against ETH'],['library/OUTSIDE-AND-SMALL.html','off-chain staking and small categories'],['library/index.html','all articles']].map(([u,t])=>`<a href="${u}">${t}</a>`).join(' · ')+'</p>';
+ atBorrowers();
+}
+// Borrowers: wallets over $20M of dollar debt against ETH, one line each (BTC format)
+function atBorrowers(){
+ const ID=R.atlasTop5Risk?.borrowers||{};const host=$('#borrowers');if(!host)return;
+ const sum=host.closest('details')?.querySelector('summary');if(sum)sum.textContent='Who borrows dollars against ETH: every wallet over $20M';
+ const rows=Object.entries(ID).map(([a,r])=>({a,...r,d:+r.dollar_debt_usd_T||0})).filter(r=>r.d>=20e6).sort((x,y)=>y.d-x.d);
+ host.innerHTML=`<p>Every Ethereum wallet with more than $20M of dollar debt against ETH collateral at the snapshot (Morpho, Aave, Spark), traced to who it is. Pooled products with outside depositors are marked; the rest are funds, mandates and individuals.</p><div class="tblwrap"><table><thead><tr><th>Wallet</th><th>Who</th><th class="n">Dollar debt</th><th>Pooled product?</th><th>Where the dollars went</th></tr></thead><tbody>${rows.map(r=>`<tr><td><a href="https://etherscan.io/address/${r.a}" target="_blank" rel="noopener" class="mono">${short(r.a)}</a></td><td>${esc(r.who)}</td><td class="n">${ATUSD(r.d)}</td><td>${esc(r.pooled_product==='yes'?'yes':r.pooled_product==='no'?'no':'private vault')}</td><td>${esc(String(r.destination_of_dollars||'').slice(0,160))}</td></tr>`).join('')}</tbody></table></div><p class="note">Full trace of 23 wallets: <a href="library/BORROWER-IDENTITIES.html">who borrows against ETH</a>.</p>`;
+}
+const _atPrevFinal2=atlasFinal;atlasFinal=function(){_atPrevFinal2();atPrune();};

@@ -49,6 +49,7 @@ EXCLUDE = {
     'turtle-club': 'Distribution layer for other vaults counted elsewhere.', 'king-protocol': 'Wrapper of restaking tokens counted at their issuers.',
     'aera-v2': 'Treasury vaults of DAOs, not outside deposits.', 'aera-v3': 'Treasury vaults of DAOs, not outside deposits.',
     'pools:balancer-v2': 'Balancer v2 ETH pools above $1M are the 80BAL/20WETH governance lock, not a yield pool.',
+    'royco-v1': 'Royco v1 IAM pre-deposits for Berachain (Boyco); from February 2025 the same ETH sits in Kodiak, Dolomite and Veda rows.',
     'yieldfi': 'Counts its own yETH receipt.', 'sushi-bentobox': 'Holds an unidentified GETH token.',
     'infrared-finance': 'BERA staking; its ETH is Dolomite dWETH counted in Dolomite.',
     'meta-pool-eth': 'Adapter frozen at exactly 10,527 ETH for over a year.',
@@ -161,7 +162,7 @@ CARRY = {
     'Makina DETH': dict(id='makina-deth', name='Makina DETH', category='carry', issuer_mix={'ether.fi-stake': 1.0}, replaces={'makina': 1.0}),
     'Vesper vaETH': dict(id='vesper-vaeth', name='Vesper vaETH', category='carry', issuer_mix={}, replaces={'vesper': 1.0}),
     'Royco ETH': dict(id='royco-eth', name='Royco ETH', category='carry', issuer_mix={'lido': 1.0}, replaces={'royco-v2': 1.0}),
-    'TAU InfiniFi ETH Carry': dict(id='tau-infinifi', name='TAU InfiniFi ETH Carry', category='carry', issuer_mix={'coinbase-wrapped-staked-eth': 1.0}, replaces={'fusion-by-ipor': 1.0}),
+    'TAU InfiniFi ETH Carry': dict(id='tau-infinifi', name='TAU InfiniFi ETH Carry', category='carry', issuer_mix={'lido': 1.0}, replaces={'fusion-by-ipor': 1.0}),
     'Reservoir ETH Yield': dict(id='reservoir-eth', name='Reservoir ETH Yield', category='carry', issuer_mix={}, replaces={'fusion-by-ipor': 1.0}),
     # Upshift vaults reconstructed on 7 Oct (data/eth/gap_rocksolid_upshift.json); book at the snapshot only
     'NEMO ETH Prime': dict(id='nemo-eth-prime', name='NEMO ETH Prime', category='carry', issuer_mix={'lido': 1.0}, replaces={'upshift': 1.0}, snapshot_eth=3037.666),
@@ -171,8 +172,9 @@ CARRY = {
 
 
 def _rocksolid_liquity(vals, label):
-    """Rocksolid holds Liquity ETH Carry shares: 728.48 ETH at the snapshot (research/eth/en/CARRY-PRODUCTS.md)."""
-    return 728.48 if label >= '2026-06' else 0.0
+    """Rocksolid holds Liquity ETH Carry shares: 748.64 shares, 728.48 ETH at the snapshot (from June 2026);
+    never more than Liquity's own book that month."""
+    return min(728.48, vals.get('carry:liquity-carry') or 0.0) if label >= '2026-06' else 0.0
 
 
 # (holder, row that loses the holding, amount function)
@@ -184,3 +186,23 @@ OVERLAPS = [
 
 # rows that report gross collateral, scaled to depositor equity (product-notes review, at the snapshot)
 SCALE = {'origami-finance': 9 / 455, 'index-coop': 110 / 309}
+
+# issuer rows whose backing is read on-chain instead of DefiLlama (supply x exchange rate at month-end blocks)
+ONCHAIN_ISSUER = {'coinbase-wrapped-staked-eth': 'cbeth_onchain.json'}  # DefiLlama showed 189k ETH; cbETH backs 449k at T
+
+# issuers that also hold other issuers' tokens (cmETH holds mETH): their holdings leave the inner issuer
+HOLDS_TOKENS = {'mantle-restaking'}
+
+# rows whose balance stops moving: a run of 3+ month-ends with under 0.5% change counts as a leftover (0) from its start
+# (product-notes review, 7 Oct: abandoned campaigns, deprecated markets, static adapters)
+LEFTOVER = set('''swell-l2-farm compound-v2 aave-v2 aave-v1 geth stafi inceptionlrt-(isolated-restaking) katana-pre-launch bancor-v2.1
+blast-pre-launch-farm balancer-v1 creth2 bifrost-liquid-staking belt-finance ribbon opyn-gamma ribbon-earn radpie opyn-convexity arbitrove
+fyde-protocol goldsand-by-inshallah reaper-farm onx-finance euclid-finance unipower nimbora-yield juice-finance mev-protocol
+cytonic-airdrop-campaign sophon-farm terminal-finance-pre-deposits corn-kernels'''.split())
+
+# A carry product counts as carry only in months when it owed dollars (as the BTC map moved ether.fi Liquid BTC out of
+# carry while its loan was repaid). Other months go to the category it worked in then. id -> (economic id, category then)
+DEBT_MONTHS = {'liquid-eth': ('liquid', 'loops'), 'lido-earn': ('lido-earn', 'loops'), 'makina-deth': ('makina-deth', 'loops'),
+               'rocksolid': ('rocksolid', 'loops'), 'avant-aveth': ('avant', 'staking'), 'yieldbasis-weth': ('yieldbasis', 'farming'),
+               'liquity-carry': ('liquity', 'farming'), 'royco-eth': ('royco', 'farming'), 'vesper-vaeth': ('vesper', 'farming'),
+               'reservoir-eth': ('reservoir-eth', 'farming'), 'tau-infinifi': ('tau-infinifi', 'farming'), 'zensats': (None, 'farming')}

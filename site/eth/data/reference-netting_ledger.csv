@@ -302,6 +302,7 @@ month,from,to,eth,reason
 2024-11,sushiswap-v3,ether.fi-stake,2.63,staking token held by a counted product
 2024-11,sushiswap-v3,lido,18.3,staking token held by a counted product
 2024-11,sushiswap-v3,frax-ether,17.98,staking token held by a counted product
+2024-11,mantle-restaking,meth-protocol,151610.52,staking token held by a counted product
 2024-11,autofinance,lido,2157.54,staking token held by a counted product
 2024-11,reserve-protocol,lido,29000.1,staking token held by a counted product
 2024-11,reserve-protocol,rocket-pool,11084.5,staking token held by a counted product
@@ -534,6 +535,7 @@ month,from,to,eth,reason
 2024-12,sushiswap-v3,renzo,5.1,staking token held by a counted product
 2024-12,sushiswap-v3,lido,13.62,staking token held by a counted product
 2024-12,sushiswap-v3,frax-ether,18.02,staking token held by a counted product
+2024-12,mantle-restaking,meth-protocol,192941.61,staking token held by a counted product
 2024-12,autofinance,lido,2116.43,staking token held by a counted product
 2024-12,reserve-protocol,lido,28502.04,staking token held by a counted product
 2024-12,reserve-protocol,rocket-pool,11074.09,staking token held by a counted product
@@ -783,6 +785,7 @@ month,from,to,eth,reason
 2025-01,sushiswap-v3,frax-ether,17.69,staking token held by a counted product
 2025-01,sushiswap-v3,renzo,5.07,staking token held by a counted product
 2025-01,sushiswap-v3,coinbase-wrapped-staked-eth,4.53,staking token held by a counted product
+2025-01,mantle-restaking,meth-protocol,239357.84,staking token held by a counted product
 2025-01,autofinance,lido,2112.12,staking token held by a counted product
 2025-01,reserve-protocol,lido,29055.81,staking token held by a counted product
 2025-01,reserve-protocol,rocket-pool,10618.36,staking token held by a counted product
@@ -898,11 +901,6 @@ month,from,to,eth,reason
 2025-01,blast-pre-launch-farm,lido,1071.69,staking token held by a counted product
 2025-01,latch,ether.fi-stake,1124.95,staking token held by a counted product
 2025-01,reaper-farm,lido,20.1,staking token held by a counted product
-2025-01,royco-v1,lido,101.41,staking token held by a counted product
-2025-01,royco-v1,ether.fi-stake,158.54,staking token held by a counted product
-2025-01,royco-v1,kelp,62.21,staking token held by a counted product
-2025-01,royco-v1,stakestone-stone,654.95,staking token held by a counted product
-2025-01,royco-v1,swell-liquid-restaking,1047.82,staking token held by a counted product
 2025-01,opyn-gamma,lido,592.95,staking token held by a counted product
 2025-01,opyn-gamma,rocket-pool,3.23,staking token held by a counted product
 2025-01,ribbon-earn,lido,427.65,staking token held by a counted product
@@ -1030,6 +1028,7 @@ month,from,to,eth,reason
 2025-02,sushiswap-v3,frax-ether,17.7,staking token held by a counted product
 2025-02,sushiswap-v3,renzo,6.38,staking token held by a counted product
 2025-02,sushiswap-v3,coinbase-wrapped-staked-eth,6.63,staking token held by a counted product
+2025-02,mantle-restaking,meth-protocol,224949.92,staking token held by a counted product
 2025-02,autofinance,lido,2131.69,staking token held by a counted product
 2025-02,reserve-protocol,lido,32716.13,staking token held by a counted product
 2025-02,reserve-protocol,rocket-pool,12613.99,staking token held by a counted product
@@ -1156,11 +1155,6 @@ month,from,to,eth,reason
 2025-02,blast-pre-launch-farm,lido,1067.71,staking token held by a counted product
 2025-02,latch,ether.fi-stake,1257.01,staking token held by a counted product
 2025-02,reaper-farm,lido,19.52,staking token held by a counted product
-2025-02,royco-v1,lido,102.72,staking token held by a counted product
-2025-02,royco-v1,stakestone-stone,65770.67,staking token held by a counted product
-2025-02,royco-v1,ether.fi-stake,50106.96,staking token held by a counted product
-2025-02,royco-v1,swell-liquid-restaking,1193.94,staking token held by a counted product
-2025-02,royco-v1,kelp,2927.77,staking token held by a counted product
 2025-02,opyn-gamma,lido,601.96,staking token held by a counted product
 2025-02,ribbon-earn,lido,431.36,staking token held by a counted product
 2025-02,sommelier,lido,337.88,staking token held by a counted product
@@ -1192,7 +1186,6 @@ month,from,to,eth,reason
 2025-02,treehouse-protocol,ether.fi-stake,752.87,staking token held by a counted product
 2025-02,eigencloud,eigencloud,3947059.9,restaking-token issuers already count this
 2025-02,symbiotic,symbiotic,333880.15,restaking-token issuers already count this
-2025-02,stakestone-stone,stakestone-stone,19279.5,held exceeds issuer row (cross-chain supply or adapter gap); floored at 0
 2025-03,carry:liquid-eth,ether.fi-stake,161418.29,on-chain product book; staking token per research
 2025-03,carry:liquid-eth,veda,161418.29,DefiLlama row already counts this product
 2025-03,carry:vesper-vaeth,vesper,1354.74,DefiLlama row already counts this product
@@ -1285,6 +1278,7 @@ month,from,to,eth,reason
 2025-03,origami-finance,ether.fi-stake,50.46,staking token held by a counted product
 2025-03,sushiswap-v3,lido,10.1,staking token held by a counted product
 2025-03,sushiswap-v3,frax-ether,17.7,staking token held by a counted product
+2025-03,mantle-restaking,meth-protocol,238524.1,staking token held by a counted product
 2025-03,autofinance,lido,2115.89,staking token held by a counted product
 2025-03,reserve-protocol,lido,35448.94,staking token held by a counted product
 2025-03,reserve-protocol,rocket-pool,14248.95,staking token held by a counted product
@@ -1414,11 +1408,6 @@ month,from,to,eth,reason
 2025-03,blast-pre-launch-farm,lido,1062.3,staking token held by a counted product
 2025-03,latch,ether.fi-stake,1130.54,staking token held by a counted product
 2025-03,reaper-farm,lido,19.55,staking token held by a counted product
-2025-03,royco-v1,lido,45.84,staking token held by a counted product
-2025-03,royco-v1,kelp,2924.46,staking token held by a counted product
-2025-03,royco-v1,ether.fi-stake,50193.28,staking token held by a counted product
-2025-03,royco-v1,stakestone-stone,65877.85,staking token held by a counted product
-2025-03,royco-v1,swell-liquid-restaking,1204.31,staking token held by a counted product
 2025-03,opyn-gamma,lido,596.38,staking token held by a counted product
 2025-03,theo-straddle-vaults,ether.fi-stake,1214.16,staking token held by a counted product
 2025-03,ribbon-earn,lido,429.61,staking token held by a counted product
@@ -1453,7 +1442,6 @@ month,from,to,eth,reason
 2025-03,treehouse-protocol,ether.fi-stake,919.15,staking token held by a counted product
 2025-03,eigencloud,eigencloud,3919929.64,restaking-token issuers already count this
 2025-03,symbiotic,symbiotic,343112.06,restaking-token issuers already count this
-2025-03,stakestone-stone,stakestone-stone,28106.47,held exceeds issuer row (cross-chain supply or adapter gap); floored at 0
 2025-04,carry:liquid-eth,ether.fi-stake,176931.28,on-chain product book; staking token per research
 2025-04,carry:liquid-eth,veda,176931.28,DefiLlama row already counts this product
 2025-04,carry:vesper-vaeth,vesper,1460.41,DefiLlama row already counts this product
@@ -1561,6 +1549,7 @@ month,from,to,eth,reason
 2025-04,origami-finance,ether.fi-stake,5.46,staking token held by a counted product
 2025-04,sushiswap-v3,lido,3.64,staking token held by a counted product
 2025-04,sushiswap-v3,frax-ether,17.71,staking token held by a counted product
+2025-04,mantle-restaking,meth-protocol,214573.34,staking token held by a counted product
 2025-04,autofinance,lido,4288.97,staking token held by a counted product
 2025-04,reserve-protocol,lido,33210.85,staking token held by a counted product
 2025-04,reserve-protocol,rocket-pool,13243.8,staking token held by a counted product
@@ -1687,11 +1676,6 @@ month,from,to,eth,reason
 2025-04,blast-pre-launch-farm,lido,1059.49,staking token held by a counted product
 2025-04,latch,ether.fi-stake,1013.43,staking token held by a counted product
 2025-04,reaper-farm,lido,19.54,staking token held by a counted product
-2025-04,royco-v1,lido,45.96,staking token held by a counted product
-2025-04,royco-v1,kelp,2929.89,staking token held by a counted product
-2025-04,royco-v1,ether.fi-stake,50237.06,staking token held by a counted product
-2025-04,royco-v1,stakestone-stone,66332.67,staking token held by a counted product
-2025-04,royco-v1,swell-liquid-restaking,1206.42,staking token held by a counted product
 2025-04,canopy,renzo,115.84,staking token held by a counted product
 2025-04,canopy,kelp,7733.47,staking token held by a counted product
 2025-04,opyn-gamma,lido,604.06,staking token held by a counted product
@@ -1729,7 +1713,6 @@ month,from,to,eth,reason
 2025-04,treehouse-protocol,ether.fi-stake,937.29,staking token held by a counted product
 2025-04,eigencloud,eigencloud,3870247.26,restaking-token issuers already count this
 2025-04,symbiotic,symbiotic,323662.46,restaking-token issuers already count this
-2025-04,stakestone-stone,stakestone-stone,33842.22,held exceeds issuer row (cross-chain supply or adapter gap); floored at 0
 2025-05,carry:liquid-eth,ether.fi-stake,194955.5,on-chain product book; staking token per research
 2025-05,carry:liquid-eth,veda,194955.5,DefiLlama row already counts this product
 2025-05,carry:vesper-vaeth,vesper,1433.38,DefiLlama row already counts this product
@@ -1839,6 +1822,7 @@ month,from,to,eth,reason
 2025-05,origami-finance,lido,57.98,staking token held by a counted product
 2025-05,origami-finance,swell-liquid-restaking,28.86,staking token held by a counted product
 2025-05,origami-finance,ether.fi-stake,5.49,staking token held by a counted product
+2025-05,mantle-restaking,meth-protocol,207066.34,staking token held by a counted product
 2025-05,autofinance,lido,4260.9,staking token held by a counted product
 2025-05,reserve-protocol,lido,46464.42,staking token held by a counted product
 2025-05,reserve-protocol,rocket-pool,18807.63,staking token held by a counted product
@@ -2114,6 +2098,7 @@ month,from,to,eth,reason
 2025-06,sushiswap-v3,lido,18.78,staking token held by a counted product
 2025-06,sushiswap-v3,ether.fi-stake,98.32,staking token held by a counted product
 2025-06,sushiswap-v3,frax-ether,13.53,staking token held by a counted product
+2025-06,mantle-restaking,meth-protocol,210603.55,staking token held by a counted product
 2025-06,autofinance,lido,4221.85,staking token held by a counted product
 2025-06,reserve-protocol,lido,48906.25,staking token held by a counted product
 2025-06,reserve-protocol,rocket-pool,19800.9,staking token held by a counted product
@@ -2378,6 +2363,7 @@ month,from,to,eth,reason
 2025-07,sushiswap-v3,lido,47.73,staking token held by a counted product
 2025-07,sushiswap-v3,frax-ether,15.23,staking token held by a counted product
 2025-07,sushiswap-v3,ether.fi-stake,8706.22,staking token held by a counted product
+2025-07,mantle-restaking,meth-protocol,208554.84,staking token held by a counted product
 2025-07,autofinance,lido,3950.7,staking token held by a counted product
 2025-07,reserve-protocol,lido,45335.22,staking token held by a counted product
 2025-07,reserve-protocol,rocket-pool,18235.01,staking token held by a counted product
@@ -2637,6 +2623,7 @@ month,from,to,eth,reason
 2025-08,sushiswap-v3,frax-ether,1.85,staking token held by a counted product
 2025-08,sushiswap-v3,rocket-pool,12.73,staking token held by a counted product
 2025-08,sushiswap-v3,coinbase-wrapped-staked-eth,1.13,staking token held by a counted product
+2025-08,mantle-restaking,meth-protocol,151399.09,staking token held by a counted product
 2025-08,autofinance,lido,3695.76,staking token held by a counted product
 2025-08,reserve-protocol,lido,40621.4,staking token held by a counted product
 2025-08,reserve-protocol,rocket-pool,16368.7,staking token held by a counted product
@@ -2891,6 +2878,7 @@ month,from,to,eth,reason
 2025-09,sushiswap-v3,lido,1.25,staking token held by a counted product
 2025-09,sushiswap-v3,kelp,89.84,staking token held by a counted product
 2025-09,sushiswap-v3,coinbase-wrapped-staked-eth,1.01,staking token held by a counted product
+2025-09,mantle-restaking,meth-protocol,138753.42,staking token held by a counted product
 2025-09,autofinance,lido,3333.99,staking token held by a counted product
 2025-09,reserve-protocol,lido,47062.9,staking token held by a counted product
 2025-09,reserve-protocol,rocket-pool,19056.59,staking token held by a counted product
@@ -3152,6 +3140,7 @@ month,from,to,eth,reason
 2025-10,sushiswap-v3,kelp,77.31,staking token held by a counted product
 2025-10,sushiswap-v3,frax-ether,1.84,staking token held by a counted product
 2025-10,sushiswap-v3,coinbase-wrapped-staked-eth,1.14,staking token held by a counted product
+2025-10,mantle-restaking,meth-protocol,107303.56,staking token held by a counted product
 2025-10,autofinance,lido,3317.58,staking token held by a counted product
 2025-10,reserve-protocol,lido,47138.21,staking token held by a counted product
 2025-10,reserve-protocol,rocket-pool,19111.34,staking token held by a counted product
@@ -3403,6 +3392,7 @@ month,from,to,eth,reason
 2025-11,sushiswap-v3,ether.fi-stake,3440.95,staking token held by a counted product
 2025-11,sushiswap-v3,lido,1944.74,staking token held by a counted product
 2025-11,sushiswap-v3,kelp,102.79,staking token held by a counted product
+2025-11,mantle-restaking,meth-protocol,98326.65,staking token held by a counted product
 2025-11,autofinance,lido,3004.4,staking token held by a counted product
 2025-11,reserve-protocol,lido,25440.85,staking token held by a counted product
 2025-11,reserve-protocol,rocket-pool,10466.07,staking token held by a counted product
@@ -3544,7 +3534,7 @@ month,from,to,eth,reason
 2025-12,carry:makina-deth,ether.fi-stake,9812.32,on-chain product book; staking token per research
 2025-12,carry:makina-deth,makina,9802.0,DefiLlama row already counts this product
 2025-12,carry:vesper-vaeth,vesper,2215.69,DefiLlama row already counts this product
-2025-12,carry:tau-infinifi,coinbase-wrapped-staked-eth,41.01,on-chain product book; staking token per research
+2025-12,carry:tau-infinifi,lido,41.01,on-chain product book; staking token per research
 2025-12,carry:tau-infinifi,fusion-by-ipor,41.01,DefiLlama row already counts this product
 2025-12,carry:reservoir-eth,fusion-by-ipor,575.19,DefiLlama row already counts this product
 2025-12,mantle-restaking,veda,93829.5,nested holding
@@ -3659,6 +3649,7 @@ month,from,to,eth,reason
 2025-12,origami-finance,ether.fi-stake,5.55,staking token held by a counted product
 2025-12,sushiswap-v3,ether.fi-stake,3169.35,staking token held by a counted product
 2025-12,sushiswap-v3,lido,119.39,staking token held by a counted product
+2025-12,mantle-restaking,meth-protocol,93829.5,staking token held by a counted product
 2025-12,autofinance,lido,2345.46,staking token held by a counted product
 2025-12,reserve-protocol,lido,18607.36,staking token held by a counted product
 2025-12,reserve-protocol,rocket-pool,7622.97,staking token held by a counted product
@@ -3800,7 +3791,7 @@ month,from,to,eth,reason
 2026-01,carry:makina-deth,ether.fi-stake,7873.01,on-chain product book; staking token per research
 2026-01,carry:makina-deth,makina,7840.37,DefiLlama row already counts this product
 2026-01,carry:vesper-vaeth,vesper,2240.58,DefiLlama row already counts this product
-2026-01,carry:tau-infinifi,coinbase-wrapped-staked-eth,349.56,on-chain product book; staking token per research
+2026-01,carry:tau-infinifi,lido,349.56,on-chain product book; staking token per research
 2026-01,carry:tau-infinifi,fusion-by-ipor,349.56,DefiLlama row already counts this product
 2026-01,carry:reservoir-eth,fusion-by-ipor,152.99,DefiLlama row already counts this product
 2026-01,mantle-restaking,veda,77739.68,nested holding
@@ -3915,6 +3906,7 @@ month,from,to,eth,reason
 2026-01,origami-finance,ether.fi-stake,4.29,staking token held by a counted product
 2026-01,sushiswap-v3,ether.fi-stake,2432.12,staking token held by a counted product
 2026-01,sushiswap-v3,lido,649.96,staking token held by a counted product
+2026-01,mantle-restaking,meth-protocol,77739.68,staking token held by a counted product
 2026-01,autofinance,lido,2094.95,staking token held by a counted product
 2026-01,reserve-protocol,lido,17924.29,staking token held by a counted product
 2026-01,reserve-protocol,rocket-pool,5220.13,staking token held by a counted product
@@ -4050,7 +4042,7 @@ month,from,to,eth,reason
 2026-02,carry:makina-deth,ether.fi-stake,4026.39,on-chain product book; staking token per research
 2026-02,carry:makina-deth,makina,4026.39,DefiLlama row already counts this product
 2026-02,carry:vesper-vaeth,vesper,2541.5,DefiLlama row already counts this product
-2026-02,carry:tau-infinifi,coinbase-wrapped-staked-eth,303.9,on-chain product book; staking token per research
+2026-02,carry:tau-infinifi,lido,303.9,on-chain product book; staking token per research
 2026-02,carry:tau-infinifi,fusion-by-ipor,303.9,DefiLlama row already counts this product
 2026-02,carry:reservoir-eth,fusion-by-ipor,310.34,DefiLlama row already counts this product
 2026-02,mantle-restaking,veda,77617.07,nested holding
@@ -4165,6 +4157,7 @@ month,from,to,eth,reason
 2026-02,origami-finance,ether.fi-stake,4.25,staking token held by a counted product
 2026-02,sushiswap-v3,ether.fi-stake,2133.1,staking token held by a counted product
 2026-02,sushiswap-v3,lido,144.12,staking token held by a counted product
+2026-02,mantle-restaking,meth-protocol,77617.07,staking token held by a counted product
 2026-02,autofinance,lido,2324.33,staking token held by a counted product
 2026-02,reserve-protocol,lido,17470.81,staking token held by a counted product
 2026-02,reserve-protocol,rocket-pool,5095.22,staking token held by a counted product
@@ -4296,7 +4289,7 @@ month,from,to,eth,reason
 2026-03,carry:makina-deth,ether.fi-stake,3820.12,on-chain product book; staking token per research
 2026-03,carry:makina-deth,makina,3815.16,DefiLlama row already counts this product
 2026-03,carry:vesper-vaeth,vesper,2490.98,DefiLlama row already counts this product
-2026-03,carry:tau-infinifi,coinbase-wrapped-staked-eth,44.72,on-chain product book; staking token per research
+2026-03,carry:tau-infinifi,lido,44.72,on-chain product book; staking token per research
 2026-03,carry:tau-infinifi,fusion-by-ipor,44.72,DefiLlama row already counts this product
 2026-03,carry:reservoir-eth,fusion-by-ipor,1229.87,DefiLlama row already counts this product
 2026-03,mantle-restaking,veda,73520.36,nested holding
@@ -4411,6 +4404,7 @@ month,from,to,eth,reason
 2026-03,origami-finance,ether.fi-stake,4.2,staking token held by a counted product
 2026-03,sushiswap-v3,ether.fi-stake,1588.5,staking token held by a counted product
 2026-03,sushiswap-v3,lido,106.55,staking token held by a counted product
+2026-03,mantle-restaking,meth-protocol,73520.36,staking token held by a counted product
 2026-03,autofinance,lido,2317.58,staking token held by a counted product
 2026-03,reserve-protocol,lido,18022.21,staking token held by a counted product
 2026-03,reserve-protocol,rocket-pool,3517.5,staking token held by a counted product
@@ -4550,7 +4544,7 @@ month,from,to,eth,reason
 2026-04,carry:makina-deth,makina,3537.93,DefiLlama row already counts this product
 2026-04,carry:vesper-vaeth,vesper,2443.08,DefiLlama row already counts this product
 2026-04,carry:royco-eth,lido,48.53,on-chain product book; staking token per research
-2026-04,carry:tau-infinifi,coinbase-wrapped-staked-eth,2.34,on-chain product book; staking token per research
+2026-04,carry:tau-infinifi,lido,2.34,on-chain product book; staking token per research
 2026-04,carry:tau-infinifi,fusion-by-ipor,2.34,DefiLlama row already counts this product
 2026-04,carry:reservoir-eth,fusion-by-ipor,1223.55,DefiLlama row already counts this product
 2026-04,mantle-restaking,veda,73291.6,nested holding
@@ -4664,6 +4658,7 @@ month,from,to,eth,reason
 2026-04,origami-finance,ether.fi-stake,4.19,staking token held by a counted product
 2026-04,sushiswap-v3,lido,46.7,staking token held by a counted product
 2026-04,sushiswap-v3,ether.fi-stake,457.37,staking token held by a counted product
+2026-04,mantle-restaking,meth-protocol,73291.6,staking token held by a counted product
 2026-04,autofinance,lido,1987.77,staking token held by a counted product
 2026-04,reserve-protocol,lido,12812.6,staking token held by a counted product
 2026-04,reserve-protocol,rocket-pool,2521.64,staking token held by a counted product
@@ -4798,7 +4793,7 @@ month,from,to,eth,reason
 2026-05,carry:makina-deth,makina,2891.16,DefiLlama row already counts this product
 2026-05,carry:vesper-vaeth,vesper,2622.09,DefiLlama row already counts this product
 2026-05,carry:royco-eth,lido,115.02,on-chain product book; staking token per research
-2026-05,carry:tau-infinifi,coinbase-wrapped-staked-eth,175.35,on-chain product book; staking token per research
+2026-05,carry:tau-infinifi,lido,175.35,on-chain product book; staking token per research
 2026-05,carry:tau-infinifi,fusion-by-ipor,175.35,DefiLlama row already counts this product
 2026-05,carry:reservoir-eth,fusion-by-ipor,175.34,DefiLlama row already counts this product
 2026-05,mantle-restaking,veda,37633.71,nested holding
@@ -4916,6 +4911,7 @@ month,from,to,eth,reason
 2026-05,origami-finance,lido,114.3,staking token held by a counted product
 2026-05,origami-finance,ether.fi-stake,273.8,staking token held by a counted product
 2026-05,sushiswap-v3,ether.fi-stake,441.18,staking token held by a counted product
+2026-05,mantle-restaking,meth-protocol,37633.71,staking token held by a counted product
 2026-05,autofinance,lido,2264.41,staking token held by a counted product
 2026-05,reserve-protocol,lido,6908.98,staking token held by a counted product
 2026-05,reserve-protocol,origin-ether,1.9,staking token held by a counted product
@@ -5047,10 +5043,10 @@ month,from,to,eth,reason
 2026-06,carry:makina-deth,makina,2662.44,DefiLlama row already counts this product
 2026-06,carry:vesper-vaeth,vesper,1881.97,DefiLlama row already counts this product
 2026-06,carry:royco-eth,lido,115.28,on-chain product book; staking token per research
-2026-06,carry:tau-infinifi,coinbase-wrapped-staked-eth,175.81,on-chain product book; staking token per research
+2026-06,carry:tau-infinifi,lido,175.81,on-chain product book; staking token per research
 2026-06,carry:tau-infinifi,fusion-by-ipor,175.81,DefiLlama row already counts this product
 2026-06,carry:reservoir-eth,fusion-by-ipor,162.55,DefiLlama row already counts this product
-2026-06,carry:liquity-carry,carry:rocksolid,728.48,nested holding
+2026-06,carry:liquity-carry,carry:rocksolid,641.01,nested holding
 2026-06,mantle-restaking,veda,21414.51,nested holding
 2026-06,upshift,gain,19655.87,nested holding
 2026-06,veda,meth-protocol,2456.86,staking token held by a counted product
@@ -5164,6 +5160,7 @@ month,from,to,eth,reason
 2026-06,origami-finance,lido,39.97,staking token held by a counted product
 2026-06,origami-finance,ether.fi-stake,434.78,staking token held by a counted product
 2026-06,sushiswap-v3,ether.fi-stake,457.57,staking token held by a counted product
+2026-06,mantle-restaking,meth-protocol,21414.51,staking token held by a counted product
 2026-06,autofinance,lido,2305.59,staking token held by a counted product
 2026-06,reserve-protocol,lido,2679.34,staking token held by a counted product
 2026-06,reserve-protocol,rocket-pool,240.17,staking token held by a counted product
@@ -5292,7 +5289,7 @@ month,from,to,eth,reason
 2026-07,carry:vesper-vaeth,vesper,1862.69,DefiLlama row already counts this product
 2026-07,carry:royco-eth,lido,115.53,on-chain product book; staking token per research
 2026-07,carry:royco-eth,royco-v2,115.53,DefiLlama row already counts this product
-2026-07,carry:tau-infinifi,coinbase-wrapped-staked-eth,83.1,on-chain product book; staking token per research
+2026-07,carry:tau-infinifi,lido,83.1,on-chain product book; staking token per research
 2026-07,carry:tau-infinifi,fusion-by-ipor,83.1,DefiLlama row already counts this product
 2026-07,carry:reservoir-eth,fusion-by-ipor,62.79,DefiLlama row already counts this product
 2026-07,carry:liquity-carry,carry:rocksolid,728.48,nested holding
@@ -5408,6 +5405,7 @@ month,from,to,eth,reason
 2026-07,origami-finance,ether.fi-stake,901.62,staking token held by a counted product
 2026-07,rysk-v12,lido,245.71,staking token held by a counted product
 2026-07,sushiswap-v3,ether.fi-stake,437.57,staking token held by a counted product
+2026-07,mantle-restaking,meth-protocol,17223.76,staking token held by a counted product
 2026-07,autofinance,lido,2308.27,staking token held by a counted product
 2026-07,reserve-protocol,lido,2281.58,staking token held by a counted product
 2026-07,reserve-protocol,rocket-pool,209.26,staking token held by a counted product
@@ -5533,7 +5531,7 @@ month,from,to,eth,reason
 2026-08,carry:vesper-vaeth,vesper,1617.54,DefiLlama row already counts this product
 2026-08,carry:royco-eth,lido,115.82,on-chain product book; staking token per research
 2026-08,carry:royco-eth,royco-v2,113.78,DefiLlama row already counts this product
-2026-08,carry:tau-infinifi,coinbase-wrapped-staked-eth,83.19,on-chain product book; staking token per research
+2026-08,carry:tau-infinifi,lido,83.19,on-chain product book; staking token per research
 2026-08,carry:tau-infinifi,fusion-by-ipor,83.19,DefiLlama row already counts this product
 2026-08,carry:reservoir-eth,fusion-by-ipor,61.25,DefiLlama row already counts this product
 2026-08,carry:liquity-carry,carry:rocksolid,728.48,nested holding
@@ -5650,6 +5648,7 @@ month,from,to,eth,reason
 2026-08,rysk-v12,rocket-pool,1.17,staking token held by a counted product
 2026-08,sushiswap-v3,ether.fi-stake,417.35,staking token held by a counted product
 2026-08,sushiswap-v3,lido,1.15,staking token held by a counted product
+2026-08,mantle-restaking,meth-protocol,16913.39,staking token held by a counted product
 2026-08,autofinance,lido,2307.59,staking token held by a counted product
 2026-08,reserve-protocol,lido,2158.91,staking token held by a counted product
 2026-08,reserve-protocol,ether.fi-stake,979.63,staking token held by a counted product
@@ -5769,7 +5768,7 @@ month,from,to,eth,reason
 2026-09,carry:vesper-vaeth,vesper,1052.29,DefiLlama row already counts this product
 2026-09,carry:royco-eth,lido,116.04,on-chain product book; staking token per research
 2026-09,carry:royco-eth,royco-v2,116.04,DefiLlama row already counts this product
-2026-09,carry:tau-infinifi,coinbase-wrapped-staked-eth,82.23,on-chain product book; staking token per research
+2026-09,carry:tau-infinifi,lido,82.23,on-chain product book; staking token per research
 2026-09,carry:tau-infinifi,fusion-by-ipor,82.23,DefiLlama row already counts this product
 2026-09,carry:reservoir-eth,fusion-by-ipor,60.2,DefiLlama row already counts this product
 2026-09,carry:liquity-carry,carry:rocksolid,728.48,nested holding
@@ -5880,6 +5879,7 @@ month,from,to,eth,reason
 2026-09,rysk-v12,ether.fi-stake,110.73,staking token held by a counted product
 2026-09,rysk-v12,rocket-pool,1.17,staking token held by a counted product
 2026-09,sushiswap-v3,ether.fi-stake,379.92,staking token held by a counted product
+2026-09,mantle-restaking,meth-protocol,16220.48,staking token held by a counted product
 2026-09,autofinance,lido,2308.06,staking token held by a counted product
 2026-09,reserve-protocol,lido,2213.04,staking token held by a counted product
 2026-09,reserve-protocol,ether.fi-stake,1007.1,staking token held by a counted product
@@ -5998,7 +5998,7 @@ month,from,to,eth,reason
 2026-10-02,carry:vesper-vaeth,vesper,1052.4,DefiLlama row already counts this product
 2026-10-02,carry:royco-eth,lido,116.05,on-chain product book; staking token per research
 2026-10-02,carry:royco-eth,royco-v2,116.0,DefiLlama row already counts this product
-2026-10-02,carry:tau-infinifi,coinbase-wrapped-staked-eth,82.23,on-chain product book; staking token per research
+2026-10-02,carry:tau-infinifi,lido,82.23,on-chain product book; staking token per research
 2026-10-02,carry:tau-infinifi,fusion-by-ipor,82.23,DefiLlama row already counts this product
 2026-10-02,carry:reservoir-eth,fusion-by-ipor,23.59,DefiLlama row already counts this product
 2026-10-02,carry:nemo-eth-prime,lido,3037.67,on-chain product book; staking token per research
@@ -6114,6 +6114,7 @@ month,from,to,eth,reason
 2026-10-02,rysk-v12,rocket-pool,1.17,staking token held by a counted product
 2026-10-02,sushiswap-v3,ether.fi-stake,379.08,staking token held by a counted product
 2026-10-02,sushiswap-v3,lido,1.07,staking token held by a counted product
+2026-10-02,mantle-restaking,meth-protocol,16208.11,staking token held by a counted product
 2026-10-02,autofinance,lido,2305.35,staking token held by a counted product
 2026-10-02,reserve-protocol,lido,2288.03,staking token held by a counted product
 2026-10-02,reserve-protocol,ether.fi-stake,1030.38,staking token held by a counted product
@@ -6217,3 +6218,420 @@ month,from,to,eth,reason
 2026-10-02,treehouse-protocol,ether.fi-stake,16561.7,staking token held by a counted product
 2026-10-02,eigencloud,eigencloud,2422138.16,restaking-token issuers already count this
 2026-10-02,symbiotic,symbiotic,30200.91,restaking-token issuers already count this
+2025-10,swell-l2-farm,swell-l2-farm,32330.76,leftover: balance unchanged since 2025-10
+2025-11,swell-l2-farm,swell-l2-farm,32448.5,leftover: balance unchanged since 2025-10
+2025-12,swell-l2-farm,swell-l2-farm,32290.67,leftover: balance unchanged since 2025-10
+2026-01,swell-l2-farm,swell-l2-farm,32122.46,leftover: balance unchanged since 2025-10
+2026-02,swell-l2-farm,swell-l2-farm,32476.21,leftover: balance unchanged since 2025-10
+2026-03,swell-l2-farm,swell-l2-farm,32370.19,leftover: balance unchanged since 2025-10
+2026-04,swell-l2-farm,swell-l2-farm,32382.4,leftover: balance unchanged since 2025-10
+2026-05,swell-l2-farm,swell-l2-farm,32327.25,leftover: balance unchanged since 2025-10
+2026-06,swell-l2-farm,swell-l2-farm,31860.47,leftover: balance unchanged since 2025-10
+2026-07,swell-l2-farm,swell-l2-farm,31960.63,leftover: balance unchanged since 2025-10
+2026-08,swell-l2-farm,swell-l2-farm,31821.63,leftover: balance unchanged since 2025-10
+2026-09,swell-l2-farm,swell-l2-farm,31982.12,leftover: balance unchanged since 2025-10
+2026-10-02,swell-l2-farm,swell-l2-farm,31988.8,leftover: balance unchanged since 2025-10
+2024-11,euclid-finance,euclid-finance,103.24,leftover: balance unchanged since 2024-11
+2024-12,euclid-finance,euclid-finance,103.52,leftover: balance unchanged since 2024-11
+2025-01,euclid-finance,euclid-finance,103.4,leftover: balance unchanged since 2024-11
+2025-02,euclid-finance,euclid-finance,104.09,leftover: balance unchanged since 2024-11
+2025-03,euclid-finance,euclid-finance,229.8,leftover: balance unchanged since 2024-11
+2025-04,euclid-finance,euclid-finance,180.9,leftover: balance unchanged since 2024-11
+2025-05,euclid-finance,euclid-finance,135.27,leftover: balance unchanged since 2024-11
+2025-06,euclid-finance,euclid-finance,128.07,leftover: balance unchanged since 2024-11
+2025-07,euclid-finance,euclid-finance,121.08,leftover: balance unchanged since 2024-11
+2025-08,euclid-finance,euclid-finance,119.93,leftover: balance unchanged since 2024-11
+2025-09,euclid-finance,euclid-finance,119.42,leftover: balance unchanged since 2024-11
+2025-10,euclid-finance,euclid-finance,119.58,leftover: balance unchanged since 2024-11
+2025-11,euclid-finance,euclid-finance,117.05,leftover: balance unchanged since 2024-11
+2025-12,euclid-finance,euclid-finance,119.24,leftover: balance unchanged since 2024-11
+2026-01,euclid-finance,euclid-finance,118.58,leftover: balance unchanged since 2024-11
+2026-02,euclid-finance,euclid-finance,119.08,leftover: balance unchanged since 2024-11
+2026-03,euclid-finance,euclid-finance,119.46,leftover: balance unchanged since 2024-11
+2026-04,euclid-finance,euclid-finance,119.28,leftover: balance unchanged since 2024-11
+2026-05,euclid-finance,euclid-finance,119.11,leftover: balance unchanged since 2024-11
+2026-06,euclid-finance,euclid-finance,120.33,leftover: balance unchanged since 2024-11
+2026-07,euclid-finance,euclid-finance,119.17,leftover: balance unchanged since 2024-11
+2026-08,euclid-finance,euclid-finance,119.0,leftover: balance unchanged since 2024-11
+2026-09,euclid-finance,euclid-finance,119.44,leftover: balance unchanged since 2024-11
+2026-10-02,euclid-finance,euclid-finance,118.97,leftover: balance unchanged since 2024-11
+2024-12,belt-finance,belt-finance,547.71,leftover: balance unchanged since 2024-12
+2025-01,belt-finance,belt-finance,545.45,leftover: balance unchanged since 2024-12
+2025-02,belt-finance,belt-finance,548.84,leftover: balance unchanged since 2024-12
+2025-03,belt-finance,belt-finance,546.66,leftover: balance unchanged since 2024-12
+2025-04,belt-finance,belt-finance,546.72,leftover: balance unchanged since 2024-12
+2025-05,belt-finance,belt-finance,548.05,leftover: balance unchanged since 2024-12
+2025-06,belt-finance,belt-finance,545.73,leftover: balance unchanged since 2024-12
+2025-07,belt-finance,belt-finance,543.11,leftover: balance unchanged since 2024-12
+2025-08,belt-finance,belt-finance,544.62,leftover: balance unchanged since 2024-12
+2025-09,belt-finance,belt-finance,547.04,leftover: balance unchanged since 2024-12
+2025-10,belt-finance,belt-finance,544.52,leftover: balance unchanged since 2024-12
+2025-11,belt-finance,belt-finance,526.42,leftover: balance unchanged since 2024-12
+2025-12,belt-finance,belt-finance,546.57,leftover: balance unchanged since 2024-12
+2026-01,belt-finance,belt-finance,541.48,leftover: balance unchanged since 2024-12
+2026-02,belt-finance,belt-finance,548.44,leftover: balance unchanged since 2024-12
+2026-03,belt-finance,belt-finance,546.62,leftover: balance unchanged since 2024-12
+2026-04,belt-finance,belt-finance,546.63,leftover: balance unchanged since 2024-12
+2026-05,belt-finance,belt-finance,548.13,leftover: balance unchanged since 2024-12
+2026-06,belt-finance,belt-finance,546.79,leftover: balance unchanged since 2024-12
+2026-07,belt-finance,belt-finance,546.8,leftover: balance unchanged since 2024-12
+2026-08,belt-finance,belt-finance,547.15,leftover: balance unchanged since 2024-12
+2026-09,belt-finance,belt-finance,547.16,leftover: balance unchanged since 2024-12
+2026-10-02,belt-finance,belt-finance,546.75,leftover: balance unchanged since 2024-12
+2024-10,arbitrove,arbitrove,176.43,leftover: balance unchanged since 2024-10
+2024-11,arbitrove,arbitrove,176.33,leftover: balance unchanged since 2024-10
+2024-12,arbitrove,arbitrove,176.31,leftover: balance unchanged since 2024-10
+2025-01,arbitrove,arbitrove,176.04,leftover: balance unchanged since 2024-10
+2025-02,arbitrove,arbitrove,177.45,leftover: balance unchanged since 2024-10
+2025-03,arbitrove,arbitrove,176.76,leftover: balance unchanged since 2024-10
+2025-04,arbitrove,arbitrove,176.42,leftover: balance unchanged since 2024-10
+2025-05,arbitrove,arbitrove,176.48,leftover: balance unchanged since 2024-10
+2025-06,arbitrove,arbitrove,176.14,leftover: balance unchanged since 2024-10
+2025-07,arbitrove,arbitrove,176.39,leftover: balance unchanged since 2024-10
+2025-08,arbitrove,arbitrove,176.45,leftover: balance unchanged since 2024-10
+2025-09,arbitrove,arbitrove,176.3,leftover: balance unchanged since 2024-10
+2025-10,arbitrove,arbitrove,175.96,leftover: balance unchanged since 2024-10
+2025-11,arbitrove,arbitrove,173.22,leftover: balance unchanged since 2024-10
+2025-12,arbitrove,arbitrove,176.47,leftover: balance unchanged since 2024-10
+2026-01,arbitrove,arbitrove,176.4,leftover: balance unchanged since 2024-10
+2026-02,arbitrove,arbitrove,176.54,leftover: balance unchanged since 2024-10
+2026-03,arbitrove,arbitrove,176.68,leftover: balance unchanged since 2024-10
+2026-04,arbitrove,arbitrove,176.74,leftover: balance unchanged since 2024-10
+2026-05,arbitrove,arbitrove,176.26,leftover: balance unchanged since 2024-10
+2026-06,arbitrove,arbitrove,176.34,leftover: balance unchanged since 2024-10
+2026-07,arbitrove,arbitrove,176.5,leftover: balance unchanged since 2024-10
+2026-08,arbitrove,arbitrove,176.46,leftover: balance unchanged since 2024-10
+2026-09,arbitrove,arbitrove,176.9,leftover: balance unchanged since 2024-10
+2026-10-02,arbitrove,arbitrove,176.87,leftover: balance unchanged since 2024-10
+2025-09,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2718.3,leftover: balance unchanged since 2025-09
+2025-10,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2708.83,leftover: balance unchanged since 2025-09
+2025-11,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2731.17,leftover: balance unchanged since 2025-09
+2025-12,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2736.79,leftover: balance unchanged since 2025-09
+2026-01,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2735.75,leftover: balance unchanged since 2025-09
+2026-02,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2755.43,leftover: balance unchanged since 2025-09
+2026-03,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2747.09,leftover: balance unchanged since 2025-09
+2026-04,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2745.1,leftover: balance unchanged since 2025-09
+2026-05,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2756.4,leftover: balance unchanged since 2025-09
+2026-06,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2770.91,leftover: balance unchanged since 2025-09
+2026-07,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2771.36,leftover: balance unchanged since 2025-09
+2026-08,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2779.32,leftover: balance unchanged since 2025-09
+2026-09,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2790.5,leftover: balance unchanged since 2025-09
+2026-10-02,inceptionlrt-(isolated-restaking),inceptionlrt-(isolated-restaking),2793.89,leftover: balance unchanged since 2025-09
+2026-02,goldsand-by-inshallah,goldsand-by-inshallah,139.18,leftover: balance unchanged since 2026-02
+2026-03,goldsand-by-inshallah,goldsand-by-inshallah,139.49,leftover: balance unchanged since 2026-02
+2026-04,goldsand-by-inshallah,goldsand-by-inshallah,139.18,leftover: balance unchanged since 2026-02
+2026-05,goldsand-by-inshallah,goldsand-by-inshallah,139.18,leftover: balance unchanged since 2026-02
+2026-06,goldsand-by-inshallah,goldsand-by-inshallah,138.34,leftover: balance unchanged since 2026-02
+2026-07,goldsand-by-inshallah,goldsand-by-inshallah,139.18,leftover: balance unchanged since 2026-02
+2026-08,goldsand-by-inshallah,goldsand-by-inshallah,139.18,leftover: balance unchanged since 2026-02
+2026-09,goldsand-by-inshallah,goldsand-by-inshallah,139.45,leftover: balance unchanged since 2026-02
+2026-10-02,goldsand-by-inshallah,goldsand-by-inshallah,139.18,leftover: balance unchanged since 2026-02
+2025-01,stafi,stafi,2483.98,leftover: balance unchanged since 2025-01
+2025-02,stafi,stafi,2493.3,leftover: balance unchanged since 2025-01
+2025-03,stafi,stafi,2471.73,leftover: balance unchanged since 2025-01
+2025-04,stafi,stafi,2373.46,leftover: balance unchanged since 2025-01
+2025-05,stafi,stafi,2367.89,leftover: balance unchanged since 2025-01
+2025-06,stafi,stafi,2350.56,leftover: balance unchanged since 2025-01
+2025-07,stafi,stafi,2333.34,leftover: balance unchanged since 2025-01
+2025-08,stafi,stafi,2332.1,leftover: balance unchanged since 2025-01
+2025-09,stafi,stafi,2336.7,leftover: balance unchanged since 2025-01
+2025-10,stafi,stafi,2331.06,leftover: balance unchanged since 2025-01
+2025-11,stafi,stafi,2318.58,leftover: balance unchanged since 2025-01
+2025-12,stafi,stafi,2322.78,leftover: balance unchanged since 2025-01
+2026-01,stafi,stafi,2341.93,leftover: balance unchanged since 2025-01
+2026-02,stafi,stafi,2336.49,leftover: balance unchanged since 2025-01
+2026-03,stafi,stafi,2337.38,leftover: balance unchanged since 2025-01
+2026-04,stafi,stafi,1860.6,leftover: balance unchanged since 2025-01
+2026-05,stafi,stafi,1860.41,leftover: balance unchanged since 2025-01
+2026-06,stafi,stafi,1856.12,leftover: balance unchanged since 2025-01
+2026-07,stafi,stafi,1860.41,leftover: balance unchanged since 2025-01
+2026-08,stafi,stafi,1860.41,leftover: balance unchanged since 2025-01
+2026-09,stafi,stafi,1864.04,leftover: balance unchanged since 2025-01
+2026-10-02,stafi,stafi,1860.41,leftover: balance unchanged since 2025-01
+2026-05,onx-finance,onx-finance,125.29,leftover: balance unchanged since 2026-05
+2026-06,onx-finance,onx-finance,124.71,leftover: balance unchanged since 2026-05
+2026-07,onx-finance,onx-finance,124.71,leftover: balance unchanged since 2026-05
+2026-08,onx-finance,onx-finance,125.58,leftover: balance unchanged since 2026-05
+2026-09,onx-finance,onx-finance,125.45,leftover: balance unchanged since 2026-05
+2026-10-02,onx-finance,onx-finance,125.43,leftover: balance unchanged since 2026-05
+2024-10,ribbon-earn,ribbon-earn,433.27,leftover: balance unchanged since 2024-10
+2024-11,ribbon-earn,ribbon-earn,434.29,leftover: balance unchanged since 2024-10
+2024-12,ribbon-earn,ribbon-earn,434.89,leftover: balance unchanged since 2024-10
+2025-01,ribbon-earn,ribbon-earn,427.65,leftover: balance unchanged since 2024-10
+2025-02,ribbon-earn,ribbon-earn,431.36,leftover: balance unchanged since 2024-10
+2025-03,ribbon-earn,ribbon-earn,429.61,leftover: balance unchanged since 2024-10
+2025-04,ribbon-earn,ribbon-earn,428.58,leftover: balance unchanged since 2024-10
+2025-05,ribbon-earn,ribbon-earn,429.58,leftover: balance unchanged since 2024-10
+2025-06,ribbon-earn,ribbon-earn,429.92,leftover: balance unchanged since 2024-10
+2025-07,ribbon-earn,ribbon-earn,426.86,leftover: balance unchanged since 2024-10
+2025-08,ribbon-earn,ribbon-earn,425.95,leftover: balance unchanged since 2024-10
+2025-09,ribbon-earn,ribbon-earn,421.16,leftover: balance unchanged since 2024-10
+2025-10,ribbon-earn,ribbon-earn,386.61,leftover: balance unchanged since 2024-10
+2025-11,ribbon-earn,ribbon-earn,386.59,leftover: balance unchanged since 2024-10
+2025-12,ribbon-earn,ribbon-earn,384.29,leftover: balance unchanged since 2024-10
+2026-01,ribbon-earn,ribbon-earn,379.96,leftover: balance unchanged since 2024-10
+2026-02,ribbon-earn,ribbon-earn,382.74,leftover: balance unchanged since 2024-10
+2026-03,ribbon-earn,ribbon-earn,379.26,leftover: balance unchanged since 2024-10
+2026-04,ribbon-earn,ribbon-earn,378.53,leftover: balance unchanged since 2024-10
+2026-05,ribbon-earn,ribbon-earn,378.34,leftover: balance unchanged since 2024-10
+2026-06,ribbon-earn,ribbon-earn,379.77,leftover: balance unchanged since 2024-10
+2026-07,ribbon-earn,ribbon-earn,371.74,leftover: balance unchanged since 2024-10
+2026-08,ribbon-earn,ribbon-earn,372.12,leftover: balance unchanged since 2024-10
+2026-09,ribbon-earn,ribbon-earn,373.23,leftover: balance unchanged since 2024-10
+2026-10-02,ribbon-earn,ribbon-earn,372.2,leftover: balance unchanged since 2024-10
+2025-02,opyn-gamma,opyn-gamma,1455.13,leftover: balance unchanged since 2025-02
+2025-03,opyn-gamma,opyn-gamma,1447.86,leftover: balance unchanged since 2025-02
+2025-04,opyn-gamma,opyn-gamma,1462.15,leftover: balance unchanged since 2025-02
+2025-05,opyn-gamma,opyn-gamma,1309.01,leftover: balance unchanged since 2025-02
+2025-06,opyn-gamma,opyn-gamma,1513.8,leftover: balance unchanged since 2025-02
+2025-07,opyn-gamma,opyn-gamma,418.09,leftover: balance unchanged since 2025-02
+2025-08,opyn-gamma,opyn-gamma,417.89,leftover: balance unchanged since 2025-02
+2025-09,opyn-gamma,opyn-gamma,417.99,leftover: balance unchanged since 2025-02
+2025-10,opyn-gamma,opyn-gamma,417.06,leftover: balance unchanged since 2025-02
+2025-11,opyn-gamma,opyn-gamma,398.35,leftover: balance unchanged since 2025-02
+2025-12,opyn-gamma,opyn-gamma,418.09,leftover: balance unchanged since 2025-02
+2026-01,opyn-gamma,opyn-gamma,418.09,leftover: balance unchanged since 2025-02
+2026-02,opyn-gamma,opyn-gamma,418.09,leftover: balance unchanged since 2025-02
+2026-03,opyn-gamma,opyn-gamma,418.09,leftover: balance unchanged since 2025-02
+2026-04,opyn-gamma,opyn-gamma,417.69,leftover: balance unchanged since 2025-02
+2026-05,opyn-gamma,opyn-gamma,417.54,leftover: balance unchanged since 2025-02
+2026-06,opyn-gamma,opyn-gamma,406.79,leftover: balance unchanged since 2025-02
+2026-07,opyn-gamma,opyn-gamma,407.67,leftover: balance unchanged since 2025-02
+2026-08,opyn-gamma,opyn-gamma,406.25,leftover: balance unchanged since 2025-02
+2026-09,opyn-gamma,opyn-gamma,396.42,leftover: balance unchanged since 2025-02
+2026-10-02,opyn-gamma,opyn-gamma,395.64,leftover: balance unchanged since 2025-02
+2025-03,fyde-protocol,fyde-protocol,167.16,leftover: balance unchanged since 2025-03
+2025-04,fyde-protocol,fyde-protocol,167.3,leftover: balance unchanged since 2025-03
+2025-05,fyde-protocol,fyde-protocol,167.14,leftover: balance unchanged since 2025-03
+2025-06,fyde-protocol,fyde-protocol,163.68,leftover: balance unchanged since 2025-03
+2025-07,fyde-protocol,fyde-protocol,151.62,leftover: balance unchanged since 2025-03
+2025-08,fyde-protocol,fyde-protocol,151.28,leftover: balance unchanged since 2025-03
+2025-09,fyde-protocol,fyde-protocol,151.59,leftover: balance unchanged since 2025-03
+2025-10,fyde-protocol,fyde-protocol,151.62,leftover: balance unchanged since 2025-03
+2025-11,fyde-protocol,fyde-protocol,144.46,leftover: balance unchanged since 2025-03
+2025-12,fyde-protocol,fyde-protocol,151.61,leftover: balance unchanged since 2025-03
+2026-01,fyde-protocol,fyde-protocol,150.14,leftover: balance unchanged since 2025-03
+2026-02,fyde-protocol,fyde-protocol,151.62,leftover: balance unchanged since 2025-03
+2026-03,fyde-protocol,fyde-protocol,151.96,leftover: balance unchanged since 2025-03
+2026-04,fyde-protocol,fyde-protocol,151.82,leftover: balance unchanged since 2025-03
+2026-05,fyde-protocol,fyde-protocol,151.62,leftover: balance unchanged since 2025-03
+2026-06,fyde-protocol,fyde-protocol,150.71,leftover: balance unchanged since 2025-03
+2026-07,fyde-protocol,fyde-protocol,151.62,leftover: balance unchanged since 2025-03
+2026-08,fyde-protocol,fyde-protocol,151.62,leftover: balance unchanged since 2025-03
+2026-09,fyde-protocol,fyde-protocol,151.97,leftover: balance unchanged since 2025-03
+2026-10-02,fyde-protocol,fyde-protocol,151.62,leftover: balance unchanged since 2025-03
+2026-01,ribbon,ribbon,541.71,leftover: balance unchanged since 2026-01
+2026-02,ribbon,ribbon,541.72,leftover: balance unchanged since 2026-01
+2026-03,ribbon,ribbon,541.74,leftover: balance unchanged since 2026-01
+2026-04,ribbon,ribbon,540.69,leftover: balance unchanged since 2026-01
+2026-05,ribbon,ribbon,542.18,leftover: balance unchanged since 2026-01
+2026-06,ribbon,ribbon,536.91,leftover: balance unchanged since 2026-01
+2026-07,ribbon,ribbon,539.49,leftover: balance unchanged since 2026-01
+2026-08,ribbon,ribbon,539.41,leftover: balance unchanged since 2026-01
+2026-09,ribbon,ribbon,524.7,leftover: balance unchanged since 2026-01
+2026-10-02,ribbon,ribbon,523.43,leftover: balance unchanged since 2026-01
+2026-08,terminal-finance-pre-deposits,terminal-finance-pre-deposits,19.45,leftover: balance unchanged since 2026-08
+2026-09,terminal-finance-pre-deposits,terminal-finance-pre-deposits,19.48,leftover: balance unchanged since 2026-08
+2026-10-02,terminal-finance-pre-deposits,terminal-finance-pre-deposits,19.4,leftover: balance unchanged since 2026-08
+2024-10,radpie,radpie,334.68,leftover: balance unchanged since 2024-10
+2024-11,radpie,radpie,333.74,leftover: balance unchanged since 2024-10
+2024-12,radpie,radpie,335.6,leftover: balance unchanged since 2024-10
+2025-01,radpie,radpie,335.21,leftover: balance unchanged since 2024-10
+2025-02,radpie,radpie,337.73,leftover: balance unchanged since 2024-10
+2025-03,radpie,radpie,337.43,leftover: balance unchanged since 2024-10
+2025-04,radpie,radpie,338.1,leftover: balance unchanged since 2024-10
+2025-05,radpie,radpie,339.58,leftover: balance unchanged since 2024-10
+2025-06,radpie,radpie,338.61,leftover: balance unchanged since 2024-10
+2025-07,radpie,radpie,339.03,leftover: balance unchanged since 2024-10
+2025-08,radpie,radpie,338.91,leftover: balance unchanged since 2024-10
+2025-09,radpie,radpie,340.75,leftover: balance unchanged since 2024-10
+2025-10,radpie,radpie,340.71,leftover: balance unchanged since 2024-10
+2025-11,radpie,radpie,343.37,leftover: balance unchanged since 2024-10
+2025-12,radpie,radpie,343.16,leftover: balance unchanged since 2024-10
+2026-01,radpie,radpie,340.69,leftover: balance unchanged since 2024-10
+2026-02,radpie,radpie,344.17,leftover: balance unchanged since 2024-10
+2026-03,radpie,radpie,344.05,leftover: balance unchanged since 2024-10
+2026-04,radpie,radpie,344.4,leftover: balance unchanged since 2024-10
+2026-05,radpie,radpie,344.41,leftover: balance unchanged since 2024-10
+2026-06,radpie,radpie,346.22,leftover: balance unchanged since 2024-10
+2026-07,radpie,radpie,346.54,leftover: balance unchanged since 2024-10
+2026-08,radpie,radpie,347.13,leftover: balance unchanged since 2024-10
+2026-09,radpie,radpie,348.11,leftover: balance unchanged since 2024-10
+2026-10-02,radpie,radpie,348.37,leftover: balance unchanged since 2024-10
+2026-08,bancor-v2.1,bancor-v2.1,876.57,leftover: balance unchanged since 2026-08
+2026-09,bancor-v2.1,bancor-v2.1,879.6,leftover: balance unchanged since 2026-08
+2026-10-02,bancor-v2.1,bancor-v2.1,875.03,leftover: balance unchanged since 2026-08
+2025-07,nimbora-yield,nimbora-yield,78.24,leftover: balance unchanged since 2025-07
+2025-08,nimbora-yield,nimbora-yield,78.12,leftover: balance unchanged since 2025-07
+2025-09,nimbora-yield,nimbora-yield,77.95,leftover: balance unchanged since 2025-07
+2025-10,nimbora-yield,nimbora-yield,78.08,leftover: balance unchanged since 2025-07
+2025-11,nimbora-yield,nimbora-yield,78.5,leftover: balance unchanged since 2025-07
+2025-12,nimbora-yield,nimbora-yield,78.05,leftover: balance unchanged since 2025-07
+2026-01,nimbora-yield,nimbora-yield,77.94,leftover: balance unchanged since 2025-07
+2026-02,nimbora-yield,nimbora-yield,78.41,leftover: balance unchanged since 2025-07
+2026-03,nimbora-yield,nimbora-yield,78.28,leftover: balance unchanged since 2025-07
+2026-04,nimbora-yield,nimbora-yield,78.28,leftover: balance unchanged since 2025-07
+2026-05,nimbora-yield,nimbora-yield,77.98,leftover: balance unchanged since 2025-07
+2026-06,nimbora-yield,nimbora-yield,78.25,leftover: balance unchanged since 2025-07
+2026-07,nimbora-yield,nimbora-yield,78.07,leftover: balance unchanged since 2025-07
+2026-08,nimbora-yield,nimbora-yield,78.05,leftover: balance unchanged since 2025-07
+2026-09,nimbora-yield,nimbora-yield,78.6,leftover: balance unchanged since 2025-07
+2026-10-02,nimbora-yield,nimbora-yield,78.44,leftover: balance unchanged since 2025-07
+2025-04,bifrost-liquid-staking,bifrost-liquid-staking,883.17,leftover: balance unchanged since 2025-04
+2025-05,bifrost-liquid-staking,bifrost-liquid-staking,883.42,leftover: balance unchanged since 2025-04
+2025-06,bifrost-liquid-staking,bifrost-liquid-staking,881.49,leftover: balance unchanged since 2025-04
+2025-07,bifrost-liquid-staking,bifrost-liquid-staking,845.95,leftover: balance unchanged since 2025-04
+2025-08,bifrost-liquid-staking,bifrost-liquid-staking,806.72,leftover: balance unchanged since 2025-04
+2025-09,bifrost-liquid-staking,bifrost-liquid-staking,823.04,leftover: balance unchanged since 2025-04
+2026-02,bifrost-liquid-staking,bifrost-liquid-staking,740.49,leftover: balance unchanged since 2025-04
+2026-03,bifrost-liquid-staking,bifrost-liquid-staking,757.5,leftover: balance unchanged since 2025-04
+2026-04,bifrost-liquid-staking,bifrost-liquid-staking,608.44,leftover: balance unchanged since 2025-04
+2026-05,bifrost-liquid-staking,bifrost-liquid-staking,607.74,leftover: balance unchanged since 2025-04
+2026-06,bifrost-liquid-staking,bifrost-liquid-staking,609.24,leftover: balance unchanged since 2025-04
+2026-07,bifrost-liquid-staking,bifrost-liquid-staking,609.53,leftover: balance unchanged since 2025-04
+2026-08,bifrost-liquid-staking,bifrost-liquid-staking,609.17,leftover: balance unchanged since 2025-04
+2026-09,bifrost-liquid-staking,bifrost-liquid-staking,611.53,leftover: balance unchanged since 2025-04
+2026-10-02,bifrost-liquid-staking,bifrost-liquid-staking,609.1,leftover: balance unchanged since 2025-04
+2024-10,opyn-convexity,opyn-convexity,229.35,leftover: balance unchanged since 2024-10
+2024-11,opyn-convexity,opyn-convexity,229.35,leftover: balance unchanged since 2024-10
+2024-12,opyn-convexity,opyn-convexity,229.35,leftover: balance unchanged since 2024-10
+2025-01,opyn-convexity,opyn-convexity,229.01,leftover: balance unchanged since 2024-10
+2025-02,opyn-convexity,opyn-convexity,230.19,leftover: balance unchanged since 2024-10
+2025-03,opyn-convexity,opyn-convexity,229.44,leftover: balance unchanged since 2024-10
+2025-04,opyn-convexity,opyn-convexity,229.53,leftover: balance unchanged since 2024-10
+2025-05,opyn-convexity,opyn-convexity,229.35,leftover: balance unchanged since 2024-10
+2025-06,opyn-convexity,opyn-convexity,229.35,leftover: balance unchanged since 2024-10
+2025-07,opyn-convexity,opyn-convexity,229.35,leftover: balance unchanged since 2024-10
+2025-08,opyn-convexity,opyn-convexity,228.83,leftover: balance unchanged since 2024-10
+2025-09,opyn-convexity,opyn-convexity,229.35,leftover: balance unchanged since 2024-10
+2025-10,opyn-convexity,opyn-convexity,228.53,leftover: balance unchanged since 2024-10
+2025-11,opyn-convexity,opyn-convexity,229.1,leftover: balance unchanged since 2024-10
+2025-12,opyn-convexity,opyn-convexity,229.1,leftover: balance unchanged since 2024-10
+2026-01,opyn-convexity,opyn-convexity,229.1,leftover: balance unchanged since 2024-10
+2026-02,opyn-convexity,opyn-convexity,229.75,leftover: balance unchanged since 2024-10
+2026-03,opyn-convexity,opyn-convexity,229.1,leftover: balance unchanged since 2024-10
+2026-04,opyn-convexity,opyn-convexity,229.1,leftover: balance unchanged since 2024-10
+2026-05,opyn-convexity,opyn-convexity,229.1,leftover: balance unchanged since 2024-10
+2026-06,opyn-convexity,opyn-convexity,224.51,leftover: balance unchanged since 2024-10
+2026-07,opyn-convexity,opyn-convexity,225.87,leftover: balance unchanged since 2024-10
+2026-08,opyn-convexity,opyn-convexity,225.87,leftover: balance unchanged since 2024-10
+2026-09,opyn-convexity,opyn-convexity,226.31,leftover: balance unchanged since 2024-10
+2026-10-02,opyn-convexity,opyn-convexity,226.66,leftover: balance unchanged since 2024-10
+2026-06,blast-pre-launch-farm,blast-pre-launch-farm,847.46,leftover: balance unchanged since 2026-06
+2026-07,blast-pre-launch-farm,blast-pre-launch-farm,847.38,leftover: balance unchanged since 2026-06
+2026-08,blast-pre-launch-farm,blast-pre-launch-farm,844.66,leftover: balance unchanged since 2026-06
+2026-09,blast-pre-launch-farm,blast-pre-launch-farm,842.46,leftover: balance unchanged since 2026-06
+2026-10-02,blast-pre-launch-farm,blast-pre-launch-farm,841.81,leftover: balance unchanged since 2026-06
+2025-01,geth,geth,6954.32,leftover: balance unchanged since 2025-01
+2025-02,geth,geth,6979.79,leftover: balance unchanged since 2025-01
+2025-03,geth,geth,6957.11,leftover: balance unchanged since 2025-01
+2025-04,geth,geth,6959.72,leftover: balance unchanged since 2025-01
+2025-05,geth,geth,6954.32,leftover: balance unchanged since 2025-01
+2025-06,geth,geth,6954.32,leftover: balance unchanged since 2025-01
+2025-07,geth,geth,6954.32,leftover: balance unchanged since 2025-01
+2025-08,geth,geth,6938.49,leftover: balance unchanged since 2025-01
+2025-09,geth,geth,6952.78,leftover: balance unchanged since 2025-01
+2025-10,geth,geth,6937.19,leftover: balance unchanged since 2025-01
+2025-11,geth,geth,7658.32,leftover: balance unchanged since 2025-01
+2025-12,geth,geth,7658.32,leftover: balance unchanged since 2025-01
+2026-01,geth,geth,7658.32,leftover: balance unchanged since 2025-01
+2026-02,geth,geth,7658.48,leftover: balance unchanged since 2025-01
+2026-03,geth,geth,7680.16,leftover: balance unchanged since 2025-01
+2026-04,geth,geth,7673.41,leftover: balance unchanged since 2025-01
+2026-05,geth,geth,7663.14,leftover: balance unchanged since 2025-01
+2026-06,geth,geth,7645.77,leftover: balance unchanged since 2025-01
+2026-07,geth,geth,7663.3,leftover: balance unchanged since 2025-01
+2026-08,geth,geth,7663.44,leftover: balance unchanged since 2025-01
+2026-09,geth,geth,7678.37,leftover: balance unchanged since 2025-01
+2026-10-02,geth,geth,7663.44,leftover: balance unchanged since 2025-01
+2024-10,unipower,unipower,107.15,leftover: balance unchanged since 2024-10
+2024-11,unipower,unipower,107.21,leftover: balance unchanged since 2024-10
+2024-12,unipower,unipower,107.21,leftover: balance unchanged since 2024-10
+2025-01,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2025-02,unipower,unipower,107.46,leftover: balance unchanged since 2024-10
+2025-03,unipower,unipower,106.93,leftover: balance unchanged since 2024-10
+2025-04,unipower,unipower,108.26,leftover: balance unchanged since 2024-10
+2025-05,unipower,unipower,107.69,leftover: balance unchanged since 2024-10
+2025-06,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2025-07,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2025-08,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2025-09,unipower,unipower,106.86,leftover: balance unchanged since 2024-10
+2025-10,unipower,unipower,106.62,leftover: balance unchanged since 2024-10
+2025-11,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2025-12,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2026-01,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2026-02,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2026-03,unipower,unipower,107.12,leftover: balance unchanged since 2024-10
+2026-04,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2026-05,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2026-06,unipower,unipower,108.44,leftover: balance unchanged since 2024-10
+2026-07,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2026-08,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2026-09,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2026-10-02,unipower,unipower,106.89,leftover: balance unchanged since 2024-10
+2025-05,aave-v1,aave-v1,1593.9,leftover: balance unchanged since 2025-05
+2025-06,aave-v1,aave-v1,1590.84,leftover: balance unchanged since 2025-05
+2025-07,aave-v1,aave-v1,1589.18,leftover: balance unchanged since 2025-05
+2025-08,aave-v1,aave-v1,1561.04,leftover: balance unchanged since 2025-05
+2025-09,aave-v1,aave-v1,1539.38,leftover: balance unchanged since 2025-05
+2025-10,aave-v1,aave-v1,1528.76,leftover: balance unchanged since 2025-05
+2025-11,aave-v1,aave-v1,1531.07,leftover: balance unchanged since 2025-05
+2025-12,aave-v1,aave-v1,1529.36,leftover: balance unchanged since 2025-05
+2026-01,aave-v1,aave-v1,1033.08,leftover: balance unchanged since 2025-05
+2026-02,aave-v1,aave-v1,1032.72,leftover: balance unchanged since 2025-05
+2026-03,aave-v1,aave-v1,1023.83,leftover: balance unchanged since 2025-05
+2026-04,aave-v1,aave-v1,1025.07,leftover: balance unchanged since 2025-05
+2026-05,aave-v1,aave-v1,1020.03,leftover: balance unchanged since 2025-05
+2026-06,aave-v1,aave-v1,1018.25,leftover: balance unchanged since 2025-05
+2026-07,aave-v1,aave-v1,1016.52,leftover: balance unchanged since 2025-05
+2026-08,aave-v1,aave-v1,1009.29,leftover: balance unchanged since 2025-05
+2026-09,aave-v1,aave-v1,1009.5,leftover: balance unchanged since 2025-05
+2026-10-02,aave-v1,aave-v1,1007.52,leftover: balance unchanged since 2025-05
+2024-10,creth2,creth2,794.78,leftover: balance unchanged since 2024-10
+2024-11,creth2,creth2,795.38,leftover: balance unchanged since 2024-10
+2024-12,creth2,creth2,794.64,leftover: balance unchanged since 2024-10
+2025-01,creth2,creth2,713.38,leftover: balance unchanged since 2024-10
+2025-02,creth2,creth2,720.02,leftover: balance unchanged since 2024-10
+2025-03,creth2,creth2,714.24,leftover: balance unchanged since 2024-10
+2025-04,creth2,creth2,683.76,leftover: balance unchanged since 2024-10
+2025-05,creth2,creth2,683.66,leftover: balance unchanged since 2024-10
+2025-06,creth2,creth2,681.52,leftover: balance unchanged since 2024-10
+2025-07,creth2,creth2,681.4,leftover: balance unchanged since 2024-10
+2025-08,creth2,creth2,680.27,leftover: balance unchanged since 2024-10
+2025-09,creth2,creth2,681.1,leftover: balance unchanged since 2024-10
+2025-10,creth2,creth2,679.81,leftover: balance unchanged since 2024-10
+2025-11,creth2,creth2,667.06,leftover: balance unchanged since 2024-10
+2025-12,creth2,creth2,682.79,leftover: balance unchanged since 2024-10
+2026-01,creth2,creth2,674.73,leftover: balance unchanged since 2024-10
+2026-02,creth2,creth2,683.31,leftover: balance unchanged since 2024-10
+2026-03,creth2,creth2,682.88,leftover: balance unchanged since 2024-10
+2026-04,creth2,creth2,682.28,leftover: balance unchanged since 2024-10
+2026-05,creth2,creth2,681.37,leftover: balance unchanged since 2024-10
+2026-06,creth2,creth2,677.29,leftover: balance unchanged since 2024-10
+2026-07,creth2,creth2,681.37,leftover: balance unchanged since 2024-10
+2026-08,creth2,creth2,681.37,leftover: balance unchanged since 2024-10
+2026-09,creth2,creth2,682.82,leftover: balance unchanged since 2024-10
+2026-10-02,creth2,creth2,681.26,leftover: balance unchanged since 2024-10
+2025-09,reaper-farm,reaper-farm,127.21,leftover: balance unchanged since 2025-09
+2025-10,reaper-farm,reaper-farm,127.18,leftover: balance unchanged since 2025-09
+2025-11,reaper-farm,reaper-farm,126.7,leftover: balance unchanged since 2025-09
+2025-12,reaper-farm,reaper-farm,125.15,leftover: balance unchanged since 2025-09
+2026-01,reaper-farm,reaper-farm,123.94,leftover: balance unchanged since 2025-09
+2026-02,reaper-farm,reaper-farm,130.88,leftover: balance unchanged since 2025-09
+2026-03,reaper-farm,reaper-farm,130.58,leftover: balance unchanged since 2025-09
+2026-04,reaper-farm,reaper-farm,129.92,leftover: balance unchanged since 2025-09
+2026-05,reaper-farm,reaper-farm,128.95,leftover: balance unchanged since 2025-09
+2026-06,reaper-farm,reaper-farm,128.86,leftover: balance unchanged since 2025-09
+2026-07,reaper-farm,reaper-farm,128.11,leftover: balance unchanged since 2025-09
+2026-08,reaper-farm,reaper-farm,128.22,leftover: balance unchanged since 2025-09
+2026-09,reaper-farm,reaper-farm,128.57,leftover: balance unchanged since 2025-09
+2026-10-02,reaper-farm,reaper-farm,128.05,leftover: balance unchanged since 2025-09
+2026-05,juice-finance,juice-finance,64.46,leftover: balance unchanged since 2026-05
+2026-06,juice-finance,juice-finance,64.72,leftover: balance unchanged since 2026-05
+2026-07,juice-finance,juice-finance,64.63,leftover: balance unchanged since 2026-05
+2026-08,juice-finance,juice-finance,64.1,leftover: balance unchanged since 2026-05
+2026-09,juice-finance,juice-finance,64.47,leftover: balance unchanged since 2026-05
+2026-10-02,juice-finance,juice-finance,64.49,leftover: balance unchanged since 2026-05
+2026-08,corn-kernels,corn-kernels,9.91,leftover: balance unchanged since 2026-08
+2026-09,corn-kernels,corn-kernels,9.94,leftover: balance unchanged since 2026-08
+2026-10-02,corn-kernels,corn-kernels,9.91,leftover: balance unchanged since 2026-08

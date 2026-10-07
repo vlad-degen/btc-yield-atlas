@@ -1,0 +1,20 @@
+product,view,row_type,label,holders,holders_pct,eth,eth_pct,avg_eth,note
+liquity,direct share holders,bucket,<1 ETH,34,26.15,8.056,0.13,0.2369,
+liquity,direct share holders,bucket,1-10 ETH,43,33.08,148.411,2.47,3.4514,
+liquity,direct share holders,bucket,10-100 ETH,47,36.15,1539.4,25.6,32.7532,
+liquity,direct share holders,bucket,100-1k ETH,5,3.85,2100.143,34.92,420.0286,
+liquity,direct share holders,bucket,>1k ETH,1,0.77,2217.992,36.88,2217.992,
+liquity,direct share holders,total,all,130,100,6014.002,100,46.2616,median 5.0118 ETH; HHI 1723
+liquity,direct share holders,concentration,top1,1,0.77,2217.992,36.88,,
+liquity,direct share holders,concentration,top10,10,7.69,4651.539,77.35,,
+liquity,direct share holders,concentration,top100,100,76.92,6009.493,99.93,,
+liquity,direct share holders,top_holder,#1,1,,2217.992,36.88,,0x1676d23711186076fa74aa53511dda750a1f0d9a | Safe 3-of-6
+liquity,direct share holders,top_holder,#2,1,,728.484,12.11,,0x9ca1d6e730eb9fbfd45c9ff5f0ac4e3d172d8f4d | EOA; Rocksolid rETH execution account (nested product)
+liquity,direct share holders,top_holder,#3,1,,714.355,11.88,,0x8a25d8c9fa8c7a726137f2d618d85cbc2c083f78 | EOA
+liquity,direct share holders,top_holder,#4,1,,401.439,6.68,,0xe5ebcde141e98c23c150bc350b72c23fdcb747c1 | EOA
+liquity,direct share holders,top_holder,#5,1,,150.586,2.5,,0x59e369d9d1246f8a45df4acf123130a83ce69972 | EOA
+liquity,direct share holders,top_holder,#6,1,,105.278,1.75,,0x1cde180fd33935c744623d655696eb3a77e5d891 | Safe 2-of-5
+liquity,direct share holders,top_holder,#7,1,,90.092,1.5,,0x03280de83ff6acd35f166276156dbf928dc7604f | EOA
+liquity,direct share holders,top_holder,#8,1,,89.097,1.48,,0x22561c5931143536309c17e832587b625c390b9a | EOA
+liquity,direct share holders,top_holder,#9,1,,79.024,1.31,,0x08ad0eadfc5643a944538f6b19e3cc3e5c4f4997 | EOA
+liquity,direct share holders,top_holder,#10,1,,75.191,1.25,,0x6665e62ef6f6db29d5f8191fbac472222c2cc80f | Safe 2-of-3

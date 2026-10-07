@@ -1,0 +1,39 @@
+product,view,row_type,label,holders,holders_pct,eth,eth_pct,avg_eth,note
+yieldbasis,direct LT holders (gauge as one address),bucket,<1 ETH,262,78.92,14.504,0.14,0.0554,
+yieldbasis,direct LT holders (gauge as one address),bucket,1-10 ETH,39,11.75,157.254,1.51,4.0322,
+yieldbasis,direct LT holders (gauge as one address),bucket,10-100 ETH,22,6.63,622.505,5.97,28.2957,
+yieldbasis,direct LT holders (gauge as one address),bucket,100-1k ETH,7,2.11,1802.844,17.29,257.5492,
+yieldbasis,direct LT holders (gauge as one address),bucket,>1k ETH,2,0.6,7828.892,75.09,3914.4458,
+yieldbasis,direct LT holders (gauge as one address),total,all,332,100,10425.999,100,31.4036,median 0.0060 ETH; HHI 3580
+yieldbasis,direct LT holders (gauge as one address),concentration,top1,1,0.3,5875.019,56.35,,
+yieldbasis,direct LT holders (gauge as one address),concentration,top10,10,3.01,9731.001,93.33,,
+yieldbasis,direct LT holders (gauge as one address),concentration,top100,100,30.12,10423.229,99.97,,
+yieldbasis,direct LT holders (gauge as one address),top_holder,#1,1,,5875.019,56.35,,0xd829456fd63ada7de0657714a3a7a26de403e3d8 | YieldBasis LiquidityGauge (staked LT)
+yieldbasis,direct LT holders (gauge as one address),top_holder,#2,1,,1953.873,18.74,,0xbaec9eb119a479b8c616754f9cf7426ee038aa72 | contract HybridVault
+yieldbasis,direct LT holders (gauge as one address),top_holder,#3,1,,403.783,3.87,,0x9d1f3a69bd4d4e4f407c12bb0bd41fecf8f05d16 | contract HybridVault
+yieldbasis,direct LT holders (gauge as one address),top_holder,#4,1,,399.069,3.83,,0x9e406b2c2021966f3983e899643609c45e3bbffe | EOA
+yieldbasis,direct LT holders (gauge as one address),top_holder,#5,1,,272.511,2.61,,0x27a6df167b15450f6653e5314988f281d65631d1 | EOA
+yieldbasis,direct LT holders (gauge as one address),top_holder,#6,1,,248.73,2.39,,0x06533a7eca685f872e7fa0a3f1cc98092f53e349 | contract HybridVault
+yieldbasis,direct LT holders (gauge as one address),top_holder,#7,1,,248.103,2.38,,0xb016f77cdc7874da1cddf28605010fd2d19b55a8 | EOA
+yieldbasis,direct LT holders (gauge as one address),top_holder,#8,1,,124.683,1.2,,0xbae9a180d24f827a6a8027d9dd78508638c92afd | contract HybridVault
+yieldbasis,direct LT holders (gauge as one address),top_holder,#9,1,,105.966,1.02,,0x9588a6c1bee7af97e8e753f0ad30c1df1aa2ddc0 | EOA
+yieldbasis,direct LT holders (gauge as one address),top_holder,#10,1,,99.265,0.95,,0xbb8151d891ae8b3ee3696944652ef2308edc8d65 | EOA
+yieldbasis,look-through: gauge stakers and HybridVault owners,bucket,<1 ETH,265,65.11,27.789,0.27,0.1049,
+yieldbasis,look-through: gauge stakers and HybridVault owners,bucket,1-10 ETH,73,17.94,276.998,2.66,3.7945,
+yieldbasis,look-through: gauge stakers and HybridVault owners,bucket,10-100 ETH,51,12.53,1632.767,15.66,32.015,
+yieldbasis,look-through: gauge stakers and HybridVault owners,bucket,100-1k ETH,17,4.18,6218.481,59.64,365.793,
+yieldbasis,look-through: gauge stakers and HybridVault owners,bucket,>1k ETH,1,0.25,2269.964,21.77,2269.9639,
+yieldbasis,look-through: gauge stakers and HybridVault owners,total,all,407,100,10425.999,100,25.6167,median 0.0965 ETH; HHI 801
+yieldbasis,look-through: gauge stakers and HybridVault owners,concentration,top1,1,0.25,2269.964,21.77,,
+yieldbasis,look-through: gauge stakers and HybridVault owners,concentration,top10,10,2.46,7367.692,70.67,,
+yieldbasis,look-through: gauge stakers and HybridVault owners,concentration,top100,100,24.57,10321.93,99.0,,
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#1,1,,2269.964,21.77,,0x0b077c44454fdfb799e303a0fd43f278fd1ae081 | owner of HybridVault 0xbaec9eb119a479b8c616754f9cf7426ee038aa72
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#2,1,,992.935,9.52,,0xb016f77cdc7874da1cddf28605010fd2d19b55a8 | owner of HybridVault 0x06533a7eca685f872e7fa0a3f1cc98092f53e349
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#3,1,,751.13,7.2,,0x9e406b2c2021966f3983e899643609c45e3bbffe | EOA
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#4,1,,638.147,6.12,,0x3da232a0c0a5c59918d7b5ff77bf1c8fc93aee1b | owner of HybridVault 0x9d1f3a69bd4d4e4f407c12bb0bd41fecf8f05d16
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#5,1,,637.945,6.12,,0x2cc4e9d6d5656205f9b3206287945c3ca97dc6ce | EIP-7702 EOA (EIP7702StatelessDeleGator)
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#6,1,,594.563,5.7,,0xf791da446d04282f921f38fbf954ad5caee899a3 | EOA
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#7,1,,470.269,4.51,,0xb24d671f0c7bef757412897ef60013040185c6fa | owner of HybridVault 0xe5af644ceedbe4f417161f4a3257fe7879a7906f
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#8,1,,421.647,4.04,,0x8e8745acd6fbe3e70afc96042c7f3ec84b1f0e9f | EOA
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#9,1,,318.581,3.06,,0xdfbe92a83a3c17c69acca978b0ba23fdcca286f4 | EOA
+yieldbasis,look-through: gauge stakers and HybridVault owners,top_holder,#10,1,,272.511,2.61,,0x27a6df167b15450f6653e5314988f281d65631d1 | EOA

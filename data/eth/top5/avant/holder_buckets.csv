@@ -1,0 +1,58 @@
+product,view,row_type,label,holders,holders_pct,eth,eth_pct,avg_eth,note
+avant,direct avETH holders,bucket,<1 ETH,31,83.78,2.651,0.02,0.0855,
+avant,direct avETH holders,bucket,1-10 ETH,3,8.11,14.114,0.11,4.7048,
+avant,direct avETH holders,bucket,10-100 ETH,1,2.7,72.194,0.57,72.1943,
+avant,direct avETH holders,bucket,100-1k ETH,0,0.0,0,0.0,,
+avant,direct avETH holders,bucket,>1k ETH,2,5.41,12493.753,99.29,6246.8765,
+avant,direct avETH holders,total,all,37,100,12582.712,100,340.0733,median 0.0101 ETH; HHI 7884
+avant,direct avETH holders,concentration,top1,1,2.7,11082.718,88.08,,
+avant,direct avETH holders,concentration,top10,10,27.03,12581.913,99.99,,
+avant,direct avETH holders,concentration,top100,37,100.0,12582.712,100.0,,
+avant,direct avETH holders,top_holder,#1,1,,11082.718,88.08,,0xda06ee2dacf9245aa80072a4407debdea0d7e341 | savETH contract (staked avETH)
+avant,direct avETH holders,top_holder,#2,1,,1411.035,11.21,,0xdd71cdd615f677e98c604bff5679294cc7a6089b | EOA
+avant,direct avETH holders,top_holder,#3,1,,72.194,0.57,,0x29b091b0b70d24fed3bec3f511b92cc54307c0f6 | EOA
+avant,direct avETH holders,top_holder,#4,1,,6.394,0.05,,0xdb87e930065bc4c9cc4273672a64bf8e2761f1d8 | EOA
+avant,direct avETH holders,top_holder,#5,1,,6.321,0.05,,0xdbf380ed7261a37bd219d69a3eb70b225a68f3ea | EOA
+avant,direct avETH holders,top_holder,#6,1,,1.4,0.01,,0x4a336f03ba8caeaedf4240a1dc799dbea1ded318 | EOA
+avant,direct avETH holders,top_holder,#7,1,,0.548,0.0,,0x10738a7238fe9b6b74f837faeea3e8398cc26d63 | Safe 1-of-1
+avant,direct avETH holders,top_holder,#8,1,,0.47,0.0,,0xcbd7888f34e96546fab24ee08edb32f53672bee3 | EOA
+avant,direct avETH holders,top_holder,#9,1,,0.419,0.0,,0x55c4a5eb2b5323a7ddf97c6870f4794cd19a3ed1 | EOA
+avant,direct avETH holders,top_holder,#10,1,,0.414,0.0,,0x407012c92792369916b2bf788e2eec695c180e05 | EOA
+avant,direct savETH holders (avETH-equivalent),bucket,<1 ETH,29,34.94,7.409,0.07,0.2555,
+avant,direct savETH holders (avETH-equivalent),bucket,1-10 ETH,28,33.73,118.582,1.07,4.2351,
+avant,direct savETH holders (avETH-equivalent),bucket,10-100 ETH,16,19.28,605.123,5.46,37.8202,
+avant,direct savETH holders (avETH-equivalent),bucket,100-1k ETH,6,7.23,1742.104,15.72,290.3507,
+avant,direct savETH holders (avETH-equivalent),bucket,>1k ETH,4,4.82,8608.226,77.68,2152.0565,
+avant,direct savETH holders (avETH-equivalent),total,all,83,100,11081.444,100,133.5114,median 3.3520 ETH; HHI 1795
+avant,direct savETH holders (avETH-equivalent),concentration,top1,1,1.2,3552.569,32.06,,
+avant,direct savETH holders (avETH-equivalent),concentration,top10,10,12.05,10350.33,93.4,,
+avant,direct savETH holders (avETH-equivalent),concentration,top100,83,100.0,11081.444,100.0,,
+avant,direct savETH holders (avETH-equivalent),top_holder,#1,1,,3552.569,32.06,,0x6cc892a7ad2c72b8f0d49ce8660da928f7e6101b | contract CreditAccountV3
+avant,direct savETH holders (avETH-equivalent),top_holder,#2,1,,1953.763,17.63,,0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb | Morpho Blue (savETH collateral)
+avant,direct savETH holders (avETH-equivalent),top_holder,#3,1,,1802.884,16.27,,0x43f47a434dadd5a122c42e49378365cca949fa54 | Chainlink CCIP LockReleaseTokenPool (savETH bridged to other chains)
+avant,direct savETH holders (avETH-equivalent),top_holder,#4,1,,1299.01,11.72,,0x66b206c91374453cda591e84287eefef7a3d4f21 | EOA
+avant,direct savETH holders (avETH-equivalent),top_holder,#5,1,,597.072,5.39,,0x3d461625dc02f1d4c8b14601439357be2ec07904 | EOA
+avant,direct savETH holders (avETH-equivalent),top_holder,#6,1,,334.79,3.02,,0xcf7e7c56614b6e22b0043895a37e3858971ec904 | EOA
+avant,direct savETH holders (avETH-equivalent),top_holder,#7,1,,241.99,2.18,,0x55c4a5eb2b5323a7ddf97c6870f4794cd19a3ed1 | EOA
+avant,direct savETH holders (avETH-equivalent),top_holder,#8,1,,230.433,2.08,,0x96977d15ee849bcbb23ea88f0517e1e4faad81d4 | EOA
+avant,direct savETH holders (avETH-equivalent),top_holder,#9,1,,211.842,1.91,,0x1cde180fd33935c744623d655696eb3a77e5d891 | Safe 2-of-5
+avant,direct savETH holders (avETH-equivalent),top_holder,#10,1,,125.976,1.14,,0x6f593a98f9fd364027cd053bdee1fa97f9826a45 | EOA
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",bucket,<1 ETH,51,46.79,9.64,0.08,0.189,
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",bucket,1-10 ETH,30,27.52,123.554,0.98,4.1185,
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",bucket,10-100 ETH,17,15.6,677.317,5.38,39.8422,
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",bucket,100-1k ETH,7,6.42,2503.661,19.9,357.6659,
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",bucket,>1k ETH,4,3.67,9267.264,73.66,2316.8159,
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",total,all,109,100,12581.437,100,115.426,median 1.2145 ETH; HHI 1953
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",concentration,top1,1,0.92,4754.336,37.79,,
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",concentration,top10,10,9.17,11644.949,92.56,,
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",concentration,top100,100,91.74,12581.437,100.0,,
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#1,1,,4754.336,37.79,,0x3d461625dc02f1d4c8b14601439357be2ec07904 | EOA; also Gearbox credit-account borrower and Morpho savETH/WETH borrower
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#2,1,,1802.884,14.33,,0x43f47a434dadd5a122c42e49378365cca949fa54 | CCIP bridge pool (savETH on other chains)
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#3,1,,1411.035,11.22,,0xdd71cdd615f677e98c604bff5679294cc7a6089b | EOA
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#4,1,,1299.01,10.32,,0x66b206c91374453cda591e84287eefef7a3d4f21 | EOA
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#5,1,,938.254,7.46,,0xe29bb87d5a3a8ef6b24edb35d0d8ef0241cb39d1 | EOA
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#6,1,,419.947,3.34,,0x8c2527051d0e98ad09211749fafbe1aa590c01b3 | EOA
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#7,1,,334.79,2.66,,0xcf7e7c56614b6e22b0043895a37e3858971ec904 | EOA
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#8,1,,242.409,1.93,,0x55c4a5eb2b5323a7ddf97c6870f4794cd19a3ed1 | EOA
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#9,1,,230.433,1.83,,0x96977d15ee849bcbb23ea88f0517e1e4faad81d4 | EOA
+avant,"look-through: avETH + savETH, Gearbox and Morpho resolved to owners; CCIP pool kept as one row",top_holder,#10,1,,211.852,1.68,,0x1cde180fd33935c744623d655696eb3a77e5d891 | Safe 2-of-5

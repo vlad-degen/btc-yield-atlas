@@ -1,0 +1,20 @@
+product,view,row_type,label,holders,holders_pct,eth,eth_pct,avg_eth,note
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),bucket,<1 ETH,1353,54.12,229.343,0.28,0.1695,
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),bucket,1-10 ETH,665,26.6,2230.853,2.7,3.3547,
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),bucket,10-100 ETH,366,14.64,11759.152,14.25,32.1288,
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),bucket,100-1k ETH,106,4.24,28953.5,35.09,273.1462,
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),bucket,>1k ETH,10,0.4,39333.46,47.67,3933.346,
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),total,all,2500,100,82506.308,100,33.0025,median 0.6611 ETH; HHI 563
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),concentration,top1,1,0.04,16371.899,19.84,,
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),concentration,top10,10,0.4,39333.46,47.67,,
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),concentration,top100,100,4.0,66659.774,80.79,,
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#1,1,,16371.899,19.84,,0xee9535a8a408e13acc8b65cf4163257af240e39e | EOA
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#2,1,,8374.272,10.15,,0x97fed74a8d5bd772167017d6fc58433cc2b99e9d | EOA
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#3,1,,3303.267,4.0,,0xf5c7ec06ff5f4dfa8e29d8d900bf65353f103089 | Safe 2-of-2
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#4,1,,3161.683,3.83,,0xaf3f8594261bbb4b913b21870614262981bcb9ef | Safe 2-of-2
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#5,1,,1525.445,1.85,,0x6a60fbe212f0bab3aa7d57763d4711bc4547d9cf | EOA
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#6,1,,1500.663,1.82,,0xc3c09403a4e222856327a3d7e1e8d20afad1b882 | EOA
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#7,1,,1388.027,1.68,,0xf6f0732c1e9971497342c295141566e6f1a31e96 | Safe 5-of-9
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#8,1,,1333.023,1.62,,0xeb314bd592ac3ea4bc141fa9155b34dd3c2c47ba | EOA
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#9,1,,1251.072,1.52,,0x3ffba13e5e713cc435271a1c4a50ffcfa835f9d4 | EOA
+lido-earn,direct earnETH token holders (788.3 allocated-unclaimed shares excluded),top_holder,#10,1,,1124.11,1.36,,0xfd4bf04bd8d0e7b8c7539f0cea970df25188e81b | EIP-7702 EOA (EIP7702StatelessDeleGator)

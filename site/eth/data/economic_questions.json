@@ -16661,9 +16661,9 @@
     }
   ],
   "market": {
-    "defaultGrossETHReference": 18349193.283302955,
-    "defaultGrossUSD": 48981109060.7162,
-    "defaultObservedProtocols": 178,
+    "defaultGrossETHReference": 18542591.0535397,
+    "defaultGrossUSD": 49497362670.8782,
+    "defaultObservedProtocols": 175,
     "globalNetYieldCapitalETH": null,
     "globalCarryEquityShare": null,
     "sameBlockDedupExamples": [
@@ -16732,7 +16732,7 @@
     },
     {
       "path": "data/eth/market_reader_chapter.json",
-      "sha256": "d50714861ec6894d03d016570965cf276d92a1c21c287180ed8dca12d537c4f5"
+      "sha256": "94fe6c6fdd59b62af2823bcfe6395edecd4801cf3ef3056f72b48001f1d008cc"
     },
     {
       "path": "data/eth/market_netting_closure.json",

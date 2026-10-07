@@ -132,13 +132,17 @@ def build():
                 continue
             br = {k: v / pr for k, v in br.items()}
             cat = r['category']
+            if slug in DEC.ONCHAIN_ISSUER:
+                oc = json.load(open(os.path.join(OUT, DEC.ONCHAIN_ISSUER[slug])))
+                vals[slug] = oc[label]['eth'] if label in oc else sum(br.values())
+                continue
             if cat in ('lending', 'cdp'):
                 vals[slug] = plain_eth(br)
             elif slug in DEC.RESTAKING_PLATFORMS:
                 vals[slug] = None  # computed after the issuers
             else:
                 vals[slug] = sum(br.values()) * DEC.SCALE.get(slug, 1.0)
-                if slug not in DEC.ISSUER_SLUGS or slug in DEC.LRT_ISSUERS:
+                if slug not in DEC.ISSUER_SLUGS or slug in DEC.LRT_ISSUERS or slug in DEC.HOLDS_TOKENS:
                     held[slug] = (vals[slug], {i: x for i, x in lst_holdings(br).items() if i != slug})
         # 2. on-chain carry rows replace the DefiLlama rows that already count them
         for slug, r in carry.items():
@@ -195,9 +199,45 @@ def build():
                     ledger.append((label, iss, iss, x - take, 'held exceeds issuer row (cross-chain supply or adapter gap); floored at 0'))
         for slug, v in vals.items():
             result.setdefault(slug, {})[label] = v
+    # leftovers: balance flat (<0.5% change) for 3+ consecutive month-ends counts as 0 from the start of the run
+    for slug in DEC.LEFTOVER:
+        v = result.get(slug)
+        if not v:
+            continue
+        seq = [l for l in LABELS if v.get(l) is not None]
+        start = None
+        for i in range(len(seq)):
+            run = seq[i:i + 3]
+            if len(run) == 3 and all(v[run[0]] > 0 and abs(v[x] / v[run[0]] - 1) < 0.005 for x in run):
+                start = i
+                break
+        if start is not None:
+            for l in seq[start:]:
+                ledger.append((l, slug, slug, v[l], 'leftover: balance unchanged since ' + seq[start]))
+                v[l] = 0.0
+    # months without dollar debt leave carry (split into a second row in the category the product worked in)
+    eq = json.load(open(os.path.join(ROOT, 'data', 'eth', 'economic_questions.json')))
+    debt = {p['id']: {h['month']: h.get('debtUSD') for h in p['history']} | {SNAP: p['current'].get('debtUSD')} for p in eq['products']}
+    extra_meta = {}
+    for cid, (eid, cat_then) in DEC.DEBT_MONTHS.items():
+        slug = 'carry:' + cid
+        if slug not in result:
+            continue
+        d = debt.get(eid, {})
+        moved = {}
+        for l, v in list(result[slug].items()):
+            if v and (eid is None or (d.get(l) or 0) < 100000):  # under $100k of dollar debt: not a carry month
+                moved[l] = v
+                result[slug][l] = 0.0
+        if moved:
+            result[slug + ':nodebt'] = moved
+            extra_meta[slug + ':nodebt'] = (slug, cat_then)
     for d in (dl, pools, carry):
         for slug, r in d.items():
             meta[slug] = {k: r.get(k) for k in ('slug', 'name', 'dl_category', 'category', 'kind', 'source')}
+    for s2, (base, cat_then) in extra_meta.items():
+        meta[s2] = dict(meta[base]); meta[s2].update(slug=s2, category=cat_then, kind='vaults' if cat_then == 'farming' else None,
+                                                    source=meta[base]['source'] + '; months without dollar debt')
     return result, meta, ledger
 
 

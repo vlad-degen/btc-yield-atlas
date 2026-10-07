@@ -18,7 +18,6 @@ ARTICLES = {
  'etherfi-liquid-eth': ('dossiers', 'ether.fi Liquid ETH'),
  'fluid-lite': ('dossiers', 'Fluid Lite ETH'),
  'treehouse-teth': ('dossiers', 'Treehouse tETH'),
- 'concrete-eth': ('dossiers', 'Concrete ETH'),
  'cian-rseth': ('dossiers', 'CIAN rsETH'),
  'carry-credit': ('dossiers', 'Carry credit destinations'),
  'liquid-monad': ('dossiers', 'Liquid Monad ETH'),
@@ -27,26 +26,20 @@ ARTICLES = {
  'pendle-pt': ('dossiers', 'Pendle PT'),
  'staking-restaking': ('dossiers', 'Staking and restaking'),
  'lending-lp': ('dossiers', 'Lending and LP'),
- 'MARKET-RESEARCH': ('library', 'Market research'),
  'MARKET-STRUCTURE': ('library', 'ETH market composition and history'),
  'CARRY-CATEGORY': ('library', 'ETH carry products and capital history'),
  'CARRY-MATH': ('library', 'Dollar carry: rates, payers and calculations'),
  'CARRY-PRODUCTS': ('library', 'Carry products: live positions, control and outcomes'),
  'BORROW-HISTORY': ('library', 'Liquid ETH: archived borrowing costs'),
- 'MARKET-TABLES': ('library', 'Complete market tables'),
  'MECHANICS': ('library', 'Yield mechanics'),
  'ECONOMICS': ('library', 'Economics and stress tests'),
  'HISTORY': ('library', 'History and comparable returns'),
  'LENDING-MARKETS': ('library', 'Five WETH lending markets'),
- 'DEPENDENCIES': ('library', 'Dependency map'),
  'EVIDENCE': ('library', 'Evidence ledger'),
  'AUDIT': ('library', 'Verification and reproduction'),
  'scope': ('library', 'Research scope'),
  'methodology': ('library', 'Capital accounting rules'),
- 'RESEARCH-PLAN': ('library', 'Deep research plan'),
- 'EXECUTION-CHECKLIST': ('library', 'Research status'),
  'README': ('library', 'Research library guide'),
- 'SITE-PARITY': ('library', 'BTC reference and website parity'),
  'RETURN-DRIVERS': ('library', 'Returns, capital growth and fees'),
  'PRODUCT-TERMS': ('library', 'Withdrawals, fees and control'),
  'PRODUCT-SELECTION': ('library', 'Why these five products?'),
@@ -63,7 +56,6 @@ ARTICLES = {
  'HGETH-LOAN-BOOK': ('library', 'hgETH: loan-book accounting, history and control'),
  'CARRY-COVERAGE-AUDIT': ('library', 'Carry coverage: public-feed sweep and product decisions'),
  'PRODUCT-EVOLUTION': ('library', 'Product development, ownership and carry economics'),
- 'ECONOMIC-ANSWERS': ('library', 'Market accounting and verified dollar financing'),
  'CONCRETE-DELTA': ('library', 'Concrete Delta: whose 307k ETH it is'),
  'ROCKSOLID-NEMO-SENTORA': ('library', 'Rocksolid, NEMO and Sentora: books, loans and closing'),
  'TOP5-RISK-LIQUIDITY': ('library', 'Top five: health factors, repayment ladders and reward payers'),
@@ -71,6 +63,9 @@ ARTICLES = {
  'OUTSIDE-AND-SMALL': ('library', 'Off-chain staking, ETFs, treasuries and the small categories'),
 }
 
+# removed from the library (parity audit 7 Oct): links to them go to the article that replaces them
+ALIASES = {'ECONOMIC-ANSWERS':'CARRY-CATEGORY','concrete-eth':'CONCRETE-DELTA','MARKET-RESEARCH':'MARKET-STRUCTURE','MARKET-TABLES':'MARKET-STRUCTURE',
+           'RESEARCH-PLAN':'README','EXECUTION-CHECKLIST':'README','SITE-PARITY':'README','DEPENDENCIES':'AUDIT'}
 def link(url, source):
     if url.startswith(('https://','http://','#','mailto:')):
         return url
@@ -79,6 +74,9 @@ def link(url, source):
         original = RESEARCH / source.relative_to(ENGLISH)
         target = (original.parent / url.split('#')[0]).resolve()
     frag = '#' + url.split('#',1)[1] if '#' in url else ''
+    if target.suffix == '.md' and target.stem in ALIASES:
+        folder, _ = ARTICLES[ALIASES[target.stem]]
+        return f'../{folder}/{ALIASES[target.stem]}.html' + frag
     if target.suffix == '.md' and target.stem in ARTICLES and target.is_relative_to(RESEARCH):
         folder, _ = ARTICLES[target.stem]
         return f'../{folder}/{target.stem}.html' + frag
@@ -175,7 +173,7 @@ def build():
         if (RESEARCH/'review'/f'{source}.md').exists():
             (ENGLISH/f'{target}.md').write_text((RESEARCH/'review'/f'{source}.md').read_text().replace('—',', ').replace('–','-'))
     for folder in ['dossiers','library','data','figures']:(OUT/folder).mkdir(parents=True,exist_ok=True)
-    css='\n'.join((SRC/name).read_text() for name in ['base.css','eth.css','closure.css','expansion.css'])
+    css='\n'.join((SRC/name).read_text() for name in ['base.css','eth.css','closure.css','expansion.css','top5.css'])
     (OUT/'site.css').write_text(css)
     histories=read('protocol_eth_history_monthly')
     panel=read('market_panel')
@@ -327,18 +325,18 @@ def build():
         body=markdown(source)
         toc=''.join(f'<a href="#{m[2]}">{re.sub("<[^>]+>","",m[3])}</a>' for m in re.finditer(r'<h([34]) id="([^"]+)">(.*?)</h\1>',body))
         current=stem in ['BRIEFING','MARKET-STRUCTURE','CARRY-CATEGORY','MARKET-COVERAGE','PRODUCT-SELECTION','CARRY-PRODUCTS']
-        earlier=stem in ['MARKET-RESEARCH','MARKET-TABLES','SITE-PARITY','RESEARCH-PLAN','EXECUTION-CHECKLIST','README']
+        earlier=stem in ['README']
         status='<p class="note">Current report · 6 October 2026 · financial snapshot 2 October.</p>' if current else '<p class="note">'+('Earlier research note. Product selection and coverage figures may refer to an earlier edition. ' if earlier else 'Supporting evidence with its own observation dates. ')+'For current comparisons and conclusions, read the <a href="../library/BRIEFING.html">team briefing</a>. Earlier scopes are retained for provenance.</p>'
         page=(SRC/'article.html').read_text().replace('@@TITLE@@',html.escape(title)).replace('@@CONTENT@@',status+body).replace('@@TOC@@',toc)
         (OUT/folder/f'{stem}.html').write_text(page)
     library_groups = [
       ('New findings, 7 October', ['CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','OUTSIDE-AND-SMALL']),
-      ('Market size and counting', ['MARKET-RESEARCH','MARKET-STRUCTURE','MARKET-TABLES','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
+      ('Market size and counting', ['MARKET-STRUCTURE','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','MECHANICS','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
-      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','concrete-eth','etherfi-liquid-eth']),
-      ('Financing and income', ['ECONOMIC-ANSWERS','CARRY-MATH','BORROW-HISTORY','DOLLAR-FUNDING-ATLAS','CREDIT-EXPANSION','CARRY-LIFECYCLES','BORROWER-USE','carry-credit']),
+      ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','etherfi-liquid-eth']),
+      ('Financing and income', ['CARRY-MATH','BORROW-HISTORY','DOLLAR-FUNDING-ATLAS','CREDIT-EXPANSION','CARRY-LIFECYCLES','BORROWER-USE','carry-credit']),
       ('Returns and investor access', ['HISTORY','RETURN-DRIVERS','PRODUCT-TERMS','LENDING-MARKETS','ECONOMICS','fluid-lite','treehouse-teth','cian-rseth','ethena-basis','liquid-monad']),
-      ('Evidence and reproduction', ['BRIEFING','README','scope','methodology','DEPENDENCIES','EVIDENCE','AUDIT','RESEARCH-PLAN','EXECUTION-CHECKLIST','SITE-PARITY','justlend-tron']),
+      ('Evidence and reproduction', ['BRIEFING','README','scope','methodology','EVIDENCE','AUDIT','justlend-tron']),
     ]
     listed = [stem for _, group in library_groups for stem in group]
     assert len(listed) == len(set(listed)) == len(ARTICLES) and set(listed) == set(ARTICLES)
@@ -356,7 +354,7 @@ def build():
     library = (SRC/'article.html').read_text().replace('@@TITLE@@','Complete research library').replace('@@CONTENT@@',body).replace('@@TOC@@',library_toc).replace('Reviewed 4 October 2026','Reviewed 5 October 2026')
     (OUT/'library/index.html').write_text(library)
     template=(SRC/'index.html').read_text()
-    script='\n'.join((SRC/name).read_text() for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js','economic.js','atlas.js'])+'\ninitChartInspection();if(document.body.dataset.edition==="reader"){initReader();economicReader();atlasFinal();}else{init();initPresentation();renderResearchAdditions();initMarket();initStrictResearch();initResearchClosure();initResearchExpansion();openHash(true);}'
+    script='\n'.join((SRC/name).read_text() for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js','economic.js','atlas.js','top5.js'])+'\ninitChartInspection();if(document.body.dataset.edition==="reader"){initReader();economicReader();atlasFinal();}else{init();initPresentation();renderResearchAdditions();initMarket();initStrictResearch();initResearchClosure();initResearchExpansion();openHash(true);}'
     page=template.replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)
     (OUT/'index.html').write_text(page)
     exhibits=(SRC/'exhibits.html').read_text().replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)

@@ -4,9 +4,9 @@ Financial snapshot: **2 October 2026**. This briefing and the main page use the 
 
 ## Answer
 
-**18,349,193 ETH earns a yield** in 170 products counted once ($49.0B on 2 October 2026): 81% staking, 13% restaking, 3.8% farming and pools. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.
+**18,542,591 ETH earns a yield** in 144 products counted once ($49.5B on 2 October 2026): 81% staking, 13% restaking, 3.6% farming and pools. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.
 
-**Carry is 1.7%**: 305,991 ETH in 14 products that borrow dollars against ETH (in BTC it is 9.9%). They owe $261M; Liquid ETH and Lido Earn hold 85% of the books.
+**Carry is 1.6%**: 304,716 ETH in 9 products that borrow dollars against ETH (in BTC it is 9.9%). They owe $261M; Liquid ETH and Lido Earn hold 85% of the books.
 
 **Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years, but its dollar leg loses about $6.8M a year at 2 October rates ($9.0M of interest on one 13.93% Aave USDC loan). YieldBasis is the only top-five product whose fees cover its loan.
 
@@ -14,16 +14,16 @@ Financial snapshot: **2 October 2026**. This briefing and the main page use the 
 
 | Category | ETH, 2 Oct 2026 | Share | Oct 2024 | Switch |
 | --- | --- | --- | --- | --- |
-| Staking | 14,783,197 | 80.6% | 12,231,280 | on |
-| Restaking | 2,430,237 | 13.2% | 4,173,272 | on |
-| Leveraged staking | 97,209 | 0.5% | 121,804 | on |
-| Carry | 305,991 | 1.7% | 147,309 | on |
+| Staking | 15,016,520 | 81.0% | 12,463,594 | on |
+| Restaking | 2,427,324 | 13.1% | 4,173,272 | on |
+| Leveraged staking | 97,144 | 0.5% | 268,007 | on |
+| Carry | 304,716 | 1.6% | 0 | on |
 | Fixed yield | 9,315 | 0.1% | 307,484 | on |
 | Basis | 372 | 0.0% | 25,423 | on |
-| Options | 3,182 | 0.0% | 5,449 | on |
+| Options | 1,664 | 0.0% | 4,786 | on |
 | Credit | 24,279 | 0.1% | 2,496 | on |
-| Farming and pools | 695,413 | 3.8% | 1,918,324 | on |
-| Money markets | 787,912 | off | 809,351 | off |
+| Farming and pools | 661,258 | 3.6% | 1,918,811 | on |
+| Money markets | 786,904 | off | 809,351 | off |
 | CDP collateral | 657,327 | off | 1,277,081 | off |
 
 Each product is counted once: a staking token held by another product leaves its issuer's row. Money markets count only idle plain WETH and are off by default, because lent ETH is staked again by its borrowers. Binance's wBETH grew by 2.19M ETH, the largest change on the map; restaking fell from 4.67M ETH (July 2025) and farming and pools from 2.09M (February 2025) as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv).
