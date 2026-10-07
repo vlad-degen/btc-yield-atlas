@@ -21,7 +21,7 @@ The archived consensus state at T has **43,805,557.723 actual active ETH**, **43
 ## Findings
 
 - **Staking pays less every year.** Lido's oracle reports show consensus rewards falling from 2.78% to 2.38% gross and priority fees plus MEV from 0.55% to 0.09% between October 2024 and September 2026. Issuers keep 5 to 15% (Lido 10%, Renzo 15%, Kelp and Puffer 5%).
-- **Staking grew, restaking shrank.** The staking row rose from 12.46M ETH (October 2024) to 15.02M; Binance's wBETH added 2.19M. Restaking fell from 4.67M ETH (July 2025) to 2.43M.
+- **Staking grew, restaking shrank.** The staking row rose from 12.58M ETH (October 2024) to 15.09M; Binance's wBETH added 2.19M. Restaking fell from 4.67M ETH (July 2025) to 2.43M.
 - **Restaking paid in its own token, and less each year.** EigenLayer distributed $137M in its first year and $36M in its second, 99.6% of it EIGEN; services paid $0.75M in two years. ETH and LST restakers got 0.78% and then 0.18% a year, and nothing programmatic since 30 July 2026. The 13 real slashes (32.4k ETH equivalent) all came from one operator's redistributable sets.
 - **weETH trailed stETH by 0.19 pp over two years** (5.2947% against 5.4875% cumulative conversion growth to T).
 

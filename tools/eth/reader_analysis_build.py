@@ -14,6 +14,10 @@ def run():
     source = {name: json.loads((DATA / f'{name}.json').read_text()) for name in names}
     market = source['market_reader_chapter']
     chapters = source['reader_product_chapters']['products']
+    no_debt = {}
+    for r in csv.DictReader((DATA / 'netmap' / 'market_map_history_monthly.csv').open()):
+        if r['slug'].endswith(':nodebt') and float(r['eth'] or 0) >= 1:
+            no_debt.setdefault(r['product'].replace(' (months without dollar debt)', ''), set()).add(r['month'])
     books = []
     for product in source['reader_carry_category']['products']:
         if product['classification'] != 'E4':
@@ -28,6 +32,10 @@ def run():
                          'eth': row.get('sizeETH') if row else None,
                          'usd': row.get('sizeUSD') if row else None,
                          'status': row.get('status', 'no_observation') if row else 'no_observation'})
+        # Carry by product follows the map rule: a product counts only in months it owes dollars at month-end.
+        for r in rows:
+            if r['month'] in no_debt.get(product['product'], ()):
+                r.update(eth=0.0, usd=0.0, status='no_dollar_loan_not_carry')
         observed = [r for r in rows if r['eth'] is not None]
         funded = [r for r in observed if r['eth'] > 1]
         books.append({'name': product['product'], 'currentETH': product['sizeETH'],

@@ -321,6 +321,12 @@ def build():
     shutil.copyfile(DATA/'reader_analysis.json',OUT/'data/reader_analysis.json')
     for path in DATA.glob('carry-history-*.csv'):
         shutil.copyfile(path,OUT/'data'/path.name)
+    # carry by product from the counted-once map (the chart under Top 5)
+    _hist=[r for r in csv.DictReader((DATA/'netmap/market_map_history_monthly.csv').open()) if r['category']=='carry' and r['month']!='2026-10-02']
+    _names=sorted({r['product'] for r in _hist});_months=sorted({r['month'] for r in _hist})
+    for _unit,_col in (('eth','eth'),('usd','usd')):
+        _v={(r['month'],r['product']):float(r[_col] or 0) for r in _hist}
+        write_csv(f'carry-by-product-{_unit}.csv',['month',*_names,'carry_total'],[[m,*[round(_v.get((m,n),0),4) for n in _names],round(sum(_v.get((m,n),0) for n in _names),4)] for m in _months])
     rocksolid=next(p for p in payload['productChapters']['products'] if p['id']=='rocksolid')
     rock_months={r['month']:r for r in rocksolid['charts']['capitalHistory']['rows']}
     for month in chapter['months']:

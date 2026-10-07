@@ -32,6 +32,9 @@ def run():
         source = {r['month']: r for r in history}
         for row in book['history']:
             actual = source.get(row['month'], {})
+            if row['status'] == 'no_dollar_loan_not_carry':  # map rule: not carry in a month without dollar debt
+                check(book['name'] + ':' + row['month'], row['eth'] == 0 and row['usd'] == 0)
+                continue
             check(book['name'] + ':' + row['month'], close(row['eth'], actual.get('sizeETH')) and
                   close(row['usd'], actual.get('sizeUSD')) and row['status'] == actual.get('status', 'no_observation'))
     for i, month in enumerate(market['months']):

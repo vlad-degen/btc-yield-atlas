@@ -1,12 +1,12 @@
 {
- "site_sha256": "b7ec5e1bc9b913468bee3d1c2fe9594a7a4b91e7b0a5d7edce562188e85b9f6a",
- "recorded_utc": "2026-10-07T15:13:43+00:00",
+ "site_sha256": "cc19509168b1ed7cf0ed74750ef5e969e608dfe7a4f6b1a31b500ca2a882fc16",
+ "recorded_utc": "2026-10-07T23:44:30+00:00",
  "tool": "Claude in-app browser (Chromium), desktop and mobile 375x812 emulation; no console errors",
  "all_recorded_checks_passed": true,
  "checks": [
   {
    "viewport": "desktop",
-   "check": "hero_total_is_counted_once_map",
+   "check": "hero_total_counted_once",
    "passed": true
   },
   {
@@ -16,17 +16,17 @@
   },
   {
    "viewport": "desktop",
-   "check": "what_it_means_findings",
-   "passed": true
-  },
-  {
-   "viewport": "desktop",
-   "check": "donut_and_history_render",
+   "check": "history_cards_removed",
    "passed": true
   },
   {
    "viewport": "desktop",
    "check": "borrower_table_from_full_scan",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "carry_by_product_equals_category",
    "passed": true
   },
   {
@@ -91,12 +91,7 @@
   },
   {
    "viewport": "desktop",
-   "check": "comparison_has_rewards_rows",
-   "passed": true
-  },
-  {
-   "viewport": "desktop",
-   "check": "library_links_report_and_selection",
+   "check": "rerender_without_errors",
    "passed": true
   },
   {
@@ -106,12 +101,12 @@
   },
   {
    "viewport": "desktop",
-   "check": "rerender_without_errors",
+   "check": "library_links",
    "passed": true
   },
   {
    "viewport": "mobile",
-   "check": "hero_total_is_counted_once_map",
+   "check": "hero_total_counted_once",
    "passed": true
   },
   {
@@ -121,17 +116,17 @@
   },
   {
    "viewport": "mobile",
-   "check": "what_it_means_findings",
-   "passed": true
-  },
-  {
-   "viewport": "mobile",
-   "check": "donut_and_history_render",
+   "check": "history_cards_removed",
    "passed": true
   },
   {
    "viewport": "mobile",
    "check": "borrower_table_from_full_scan",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "carry_by_product_equals_category",
    "passed": true
   },
   {
@@ -196,12 +191,7 @@
   },
   {
    "viewport": "mobile",
-   "check": "comparison_has_rewards_rows",
-   "passed": true
-  },
-  {
-   "viewport": "mobile",
-   "check": "library_links_report_and_selection",
+   "check": "rerender_without_errors",
    "passed": true
   },
   {
@@ -211,7 +201,7 @@
   },
   {
    "viewport": "mobile",
-   "check": "rerender_without_errors",
+   "check": "library_links",
    "passed": true
   }
  ]

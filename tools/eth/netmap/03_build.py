@@ -31,23 +31,45 @@ def plain_eth(br):
     return sum(v for k, v in br.items() if k in ('ETH', 'WETH', 'WETH.E', 'ETH.E', 'SPETH'))  # spETH: WETH lent into SparkLend
 
 
-def lst_holdings(br):
-    """{issuer_slug: usd} for staking tokens in a token breakdown"""
+def lst_holdings(br, products=True):
+    """{row slug: value} for staking tokens (and, with products=True, tokens of other products on the map) in a breakdown"""
     out = collections.defaultdict(float)
     for k, v in br.items():
         if k in ISSUERS:
             out[ISSUERS[k]] += v
+        elif products and k in DEC.PRODUCT_TOKENS:
+            out[DEC.PRODUCT_TOKENS[k]] += v
+    return out
+
+
+def held_elsewhere(k):
+    """tokens whose ETH another row counts: staking tokens and tokens of products on the map"""
+    return k in ISSUERS or k in DEC.PRODUCT_TOKENS
+
+
+def borrowed_part(slug, pdate):
+    """ETH-family value lent out (DefiLlama '{chain}-borrowed' keys), USD by symbol"""
+    out = collections.defaultdict(float)
+    for k in (load(slug).get('chainTvls') or {}):
+        if k.endswith('-borrowed'):
+            tok, _d = pick(series(slug, k), pdate)
+            for sym, v in eth_part(tok)[1].items():
+                out[sym] += v
     return out
 
 
 def dl_rows():
     """DefiLlama rows kept by the screen, with per-period token breakdowns (USD)"""
     screen = json.load(open(os.path.join(RAW, 'screen.json')))
+    for slug, cat in DEC.EXTRA_ROWS.items():  # credit rows the idle-only screen misses
+        if slug not in screen:
+            d = load(slug)
+            screen[slug] = dict(name=d.get('name'), category=d.get('category'), snap_eth=0.0)
     rows = {}
     for slug, s in screen.items():
         if slug in DEC.EXCLUDE:
             continue
-        cat = DEC.CATEGORY.get(slug) or BY_DL_CATEGORY.get(s['category'])
+        cat = DEC.CATEGORY.get(slug) or DEC.EXTRA_ROWS.get(slug) or BY_DL_CATEGORY.get(s['category'])
         if cat is None:
             DEC.UNCLASSIFIED.append((slug, s['category'], round(s['snap_eth'])))
             continue
@@ -58,6 +80,9 @@ def dl_rows():
             if tok is None:
                 continue
             usd, br = eth_part(tok)
+            if slug in DEC.CREDIT_SUPPLIED:  # supplied = idle + lent out
+                for sym, v in borrowed_part(slug, pdate).items():
+                    br[sym] = br.get(sym, 0.0) + v
             per[label] = br
         rows[slug] = dict(slug=slug, name=DEC.NAMES.get(slug, s['name']), dl_category=s['category'], category=cat,
                           kind=DEC.KIND.get(slug) or DEC.kind_default(cat), source='DefiLlama protocol token breakdown', per=per)
@@ -118,33 +143,74 @@ def build():
     dl = dl_rows()
     pools = pool_rows()
     carry = carry_rows()
+    # rows read only to net others (excluded from the map themselves)
+    dl_src = {src: {label: eth_part(pick(series(src), pdate)[0])[1] for label, pdate, _ in PTS} for src, *_ in DEC.BASE_VALUED.values()}
     ledger = []
     result = {}  # slug -> {label: eth}
     meta = {}
+    replaced = {d for r in carry.values() for d in r['replaces']}
+    carry_tokens = {k for k, t in DEC.PRODUCT_TOKENS.items() if t.startswith('carry:')}
+
+    def row_value(slug, r, br):
+        """step-1 value of a DefiLlama row (ETH) and the breakdown whose tokens it takes from other rows (None: takes none)"""
+        cat = r['category']
+        if cat in ('lending', 'cdp'):
+            return plain_eth(br), None
+        if r.get('kind') == 'pools' and not slug.startswith('pools:'):
+            # DEX, perp and bridge pools count the ETH no other row counts: the staking-token or product-token side of a
+            # pool stays with its row, as in the yields-pool rows and the BTC map
+            return sum(v for k, v in br.items() if not held_elsewhere(k)), None
+        if slug not in replaced:  # tokens of an on-chain carry book stay in the book; the holder does not count them
+            br = {k: v for k, v in br.items() if k not in carry_tokens}
+        return sum(br.values()) * DEC.SCALE.get(slug, 1.0), br
+
+    # leftovers: a row on the LEFTOVER list whose own balance stays flat (<0.5% change) for 3+ consecutive month-ends counts
+    # as 0 from the start of the run. Decided on the row's own value before netting, so a leftover row takes nothing out
+    # of the issuers whose tokens it holds (they stay counted there).
+    leftover_from = {}
+    for slug in DEC.LEFTOVER:
+        r = dl.get(slug)
+        if not r:
+            continue
+        v = {}
+        for label, pdate, _ in PTS:
+            if r['per'].get(label) is not None:
+                v[label] = row_value(slug, r, {k: x / price(pdate) for k, x in r['per'][label].items()})[0]
+        seq = [l for l in LABELS if l in v]
+        for i in range(len(seq)):
+            run = seq[i:i + 3]
+            if len(run) == 3 and all(v[run[0]] > 0 and abs(v[x] / v[run[0]] - 1) < 0.005 for x in run):
+                leftover_from[slug] = seq[i]
+                break
+
     for label, pdate, _ in PTS:
         pr = price(pdate)
-        vals, sub = {}, collections.defaultdict(float)  # sub[issuer] = ETH to take out of the issuer row
-        # 1. DefiLlama rows (gross ETH-family value; staking tokens they hold are recorded, taken out of issuers in step 5)
-        held = {}
+        vals, sub = {}, collections.defaultdict(float)  # sub[row] = ETH to take out of a staking-token issuer or product row
+        # 1. DefiLlama rows (gross ETH-family value; tokens they hold are recorded, taken out of their rows in step 5)
+        held, ebr = {}, {}
         for slug, r in list(dl.items()) + list(pools.items()):
             br = r['per'].get(label)
             if br is None:
                 continue
             br = {k: v / pr for k, v in br.items()}
-            cat = r['category']
+            ebr[slug] = br
             if slug in DEC.ONCHAIN_ISSUER:
                 oc = json.load(open(os.path.join(OUT, DEC.ONCHAIN_ISSUER[slug])))
                 vals[slug] = oc[label]['eth'] if label in oc else sum(br.values())
                 continue
-            if cat in ('lending', 'cdp'):
-                vals[slug] = plain_eth(br)
-            elif slug in DEC.RESTAKING_PLATFORMS:
+            if slug in DEC.RESTAKING_PLATFORMS:
                 vals[slug] = None  # computed after the issuers
-            else:
-                vals[slug] = sum(br.values()) * DEC.SCALE.get(slug, 1.0)
-                if slug not in DEC.ISSUER_SLUGS or slug in DEC.LRT_ISSUERS or slug in DEC.HOLDS_TOKENS:
-                    held[slug] = (vals[slug], {i: x for i, x in lst_holdings(br).items() if i != slug})
+                continue
+            v, hbr = row_value(slug, r, br)
+            if slug in leftover_from and label >= leftover_from[slug]:
+                ledger.append((label, slug, slug, v, 'leftover: balance unchanged since ' + leftover_from[slug]))
+                vals[slug] = 0.0
+                continue
+            vals[slug] = v
+            if hbr is not None and (slug not in DEC.ISSUER_SLUGS or slug in DEC.LRT_ISSUERS or slug in DEC.HOLDS_TOKENS):
+                held[slug] = (v, {i: x for i, x in lst_holdings(hbr).items() if i != slug})
         # 2. on-chain carry rows replace the DefiLlama rows that already count them
+        taken = collections.defaultdict(float)
         for slug, r in carry.items():
             v = r['eth'].get(label)
             if v is None:
@@ -159,38 +225,65 @@ def build():
                     take = min(vals[dslug], left)
                     vals[dslug] -= take
                     left -= take
+                    taken[(slug, dslug)] += take
                     ledger.append((label, slug, dslug, take, 'DefiLlama row already counts this product'))
         # 3. explicit overlaps between rows
         for a, b, how in DEC.OVERLAPS:
             if vals.get(a) is not None and vals.get(b) is not None:
                 take = min(vals[b], how(vals, label))
                 vals[b] -= take
+                taken[(a, b)] += take
                 ledger.append((label, a, b, take, 'nested holding'))
-        # staking tokens held by DefiLlama rows, scaled to what is left of the row after steps 2-3
+        # rows that value another protocol's vaults in their base asset (Veda books ether.fi Liquid vaults as WETH)
+        for slug, (src, tok, iss, book) in DEC.BASE_VALUED.items():
+            if slug not in held or not vals.get(slug):
+                continue
+            br = ebr[slug]
+            sbr = dl_src.get(src, {}).get(label) or {}
+            base = sbr.get(tok, 0.0) / pr - sum(t for (a, b), t in taken.items() if a == book and b == slug)
+            weth = br.get('WETH', 0.0) - sum(t for (a, b), t in taken.items() if b == slug and a.startswith('carry:'))
+            other = {i: max(0.0, x - sum(t for (a, b), t in taken.items() if b == slug and a == 'mantle-restaking'))
+                     if i == 'meth-protocol' else x for i, x in held[slug][1].items()}
+            extra = max(0.0, min(weth, base, vals[slug] - sum(other.values())))
+            if extra > 0:
+                other[iss] = other.get(iss, 0.0) + extra
+            for i, x in other.items():
+                if x > 0:
+                    sub[i] += x
+                    ledger.append((label, slug, i, x, 'staking token held by a counted product' if i != iss else
+                                   'ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH'))
+            del held[slug]
+        # tokens held by DefiLlama rows, scaled to what is left of the row after steps 2-3
         for slug, (gross, hold) in held.items():
             f = (vals[slug] / gross) if gross else 0.0
             for iss, x in hold.items():
                 if x * f > 0:
                     sub[iss] += x * f
-                    ledger.append((label, slug, iss, x * f, 'staking token held by a counted product'))
+                    ledger.append((label, slug, iss, x * f, 'staking token held by a counted product' if iss not in
+                                   DEC.PRODUCT_TOKENS.values() else 'product token held by a counted product'))
         # 4. restaking platforms: what restaking-token issuers on the map have not already counted
         lrt_total = sum(vals.get(s) or 0 for s in DEC.LRT_ISSUERS if s in vals)
         for plat, deducts in DEC.RESTAKING_PLATFORMS.items():
             r = dl.get(plat)
             if not r or r['per'].get(label) is None:
                 continue
-            br = {k: v / pr for k, v in r['per'][label].items()}
+            br = ebr[plat]
             gross = sum(br.values())
             inner = sum(vals.get(s) or 0 for s in deducts) if deducts != 'LRT' else lrt_total
-            if plat == 'symbiotic':
-                inner += sum((vals.get(s) or 0) * f for s, f in DEC.SYMBIOTIC_ALSO.items())
+            if plat == 'symbiotic':  # positions of counted rows that sit in a Symbiotic vault, the smaller of the two each month
+                for s2, (t_row, t_plat) in DEC.SYMBIOTIC_ALSO.items():
+                    if vals.get(s2):
+                        x = min((ebr.get(s2) or {}).get(t_row, 0.0), br.get(t_plat, 0.0), vals[s2])
+                        inner += x
+                        if x >= 1:
+                            ledger.append((label, s2, plat, x, 'position in a Symbiotic vault, counted in the row that holds it'))
             net = max(0.0, gross - inner)
             vals[plat] = net
             ledger.append((label, plat, plat, gross - net, 'restaking-token issuers already count this'))
             if gross > 0 and net > 0:
-                for iss, x in lst_holdings(br).items():
+                for iss, x in lst_holdings(br, products=False).items():
                     sub[iss] += x * net / gross
-        # 5. take staking tokens out of their issuers
+        # 5. take held tokens out of their issuer or product rows
         for iss, x in sub.items():
             if iss in vals and vals[iss] is not None:
                 take = min(vals[iss], x)
@@ -199,22 +292,6 @@ def build():
                     ledger.append((label, iss, iss, x - take, 'held exceeds issuer row (cross-chain supply or adapter gap); floored at 0'))
         for slug, v in vals.items():
             result.setdefault(slug, {})[label] = v
-    # leftovers: balance flat (<0.5% change) for 3+ consecutive month-ends counts as 0 from the start of the run
-    for slug in DEC.LEFTOVER:
-        v = result.get(slug)
-        if not v:
-            continue
-        seq = [l for l in LABELS if v.get(l) is not None]
-        start = None
-        for i in range(len(seq)):
-            run = seq[i:i + 3]
-            if len(run) == 3 and all(v[run[0]] > 0 and abs(v[x] / v[run[0]] - 1) < 0.005 for x in run):
-                start = i
-                break
-        if start is not None:
-            for l in seq[start:]:
-                ledger.append((l, slug, slug, v[l], 'leftover: balance unchanged since ' + seq[start]))
-                v[l] = 0.0
     # months without dollar debt leave carry (split into a second row in the category the product worked in)
     eq = json.load(open(os.path.join(ROOT, 'data', 'eth', 'economic_questions.json')))
     debt = {p['id']: {h['month']: h.get('debtUSD') for h in p['history']} | {SNAP: p['current'].get('debtUSD')} for p in eq['products']}

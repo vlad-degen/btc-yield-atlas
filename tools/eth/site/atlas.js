@@ -88,7 +88,7 @@ function atMovers(cat,from,dir=-1,n=3){
  const i0=MP.months.findIndex(m=>m.period===from);
  return MP.products.filter(p=>p.category===cat&&!['eigencloud','symbiotic'].includes(p.id)).map(p=>({p,d:(p.current.eth_ref||0)-(p.history[i0]?.eth_ref||0)})).filter(x=>dir<0?x.d<0:x.d>0).sort((x,y)=>dir<0?x.d-y.d:y.d-x.d).slice(0,n);
 }
-function marketFindings(){
+function marketFindings(){const h=$('#m-history-findings');if(h){h.innerHTML='';h.style.display='none';}return;
  const months=MP.months,tot=months.map(m=>mactive().reduce((s,c)=>s+(m.by_category[c.id]?.eth_ref||0),0)),pk=tot.indexOf(Math.max(...tot)),last=marketTotals().eth_ref;
  const cat=id=>months.map(m=>m.by_category[id]?.eth_ref||0),now=id=>atCatSize(id);
  const fm=cat('farming'),fpk=fm.indexOf(Math.max(...fm)),rs=cat('restaking'),rpk=rs.indexOf(Math.max(...rs));
@@ -150,7 +150,7 @@ function atTop5Text(){
  set('#top5 .shead h2','The five largest carry products');
  set('#top5 .shead .lede','Ranked by dollars borrowed against ETH on 2 October. Each product from deposit to exit: where the borrowed dollars go, who holds the keys, who pays the yield, how fast the debt can be repaid.');
  set('#carry-history > h3','Two years of carry, by product');
- set('#carry-history > .sub','Month-end book of the twelve products that borrow dollars against ETH, in ETH. Grey: months when a product owed no dollars at month-end, so it was not carry then. Liquid ETH in those months was only an ETH loop (borrow WETH, restake), which Market counts as Leveraged staking; the smaller ones count as staking or farming. The coloured bars equal the carry category in Market.');
+ set('#carry-history > .sub','The carry category from Market, split by product, counted the same way: month-end ETH of each product in the months it owed dollars against ETH. A product that owed no dollars at a month-end was not carry that month and is not shown; Liquid ETH, for example, ran only ETH loops from November 2025 to May 2026.');
  set('#c-history-options','Concrete Delta (307k ETH) is left out: it is one wallet\u2019s own position, not a pooled product. See Other carry.');
 }
 
@@ -372,21 +372,30 @@ function atCatInsight(){const id=MS.category,x=ATINSIGHT[id],b=$('#m-category-bo
 document.addEventListener('click',e=>{if(e.target.closest('[data-market-pick]'))setTimeout(atCatInsight,0);});
 const _atPrevFinal3=atlasFinal;atlasFinal=function(){_atPrevFinal3();atCatInsight();};
 
-// Carry by product: months without a dollar loan at month-end go to one grey layer, the same rule as the Market map
-// (data: R.atlasTop5Risk.noDebtMonths from data/eth/netmap/market_map_history_monthly.csv).
-function atCarryNoDebt(){
- if(MS.carryView==='category'||!$('#c-history-chart'))return;
- const ND=R.atlasTop5Risk?.noDebtMonths||{},books=R.readerAnalysis.books,largeNames=['Concrete Delta weETH','ether.fi Liquid ETH','Lido Earn ETH','Avant avETH / savETH'];
- const shown=books.filter(p=>MS.carryView==='all'||(largeNames.includes(p.name)===(MS.carryView==='parents')));
- const key=MS.carryUnit==='usd'?'usd':'eth',format=v=>key==='usd'?money(v):num(v,v<10?3:0)+' ETH',off=(p,h)=>(ND[p.name]||[]).includes(h.month);
- const series=shown.map((p,i)=>({id:p.name,name:p.name,color:CARRY_COLORS[books.findIndex(b=>b.name===p.name)%CARRY_COLORS.length]||CARRY_COLORS[i%CARRY_COLORS.length],points:p.history.map(h=>[h.timestamp,off(p,h)?0:h[key]])}));
- const ref=shown[0]?.history||[];
- series.push({id:'no-dollar-loan',name:'No dollar loan that month, so not carry',color:'#8a9099',points:ref.map((h,i)=>[h.timestamp,shown.reduce((s,p)=>s+(off(p,p.history[i]||{})?(p.history[i]?.[key]||0):0),0)])});
- $('#c-history-chart').innerHTML=columnChart(series,{label:'Carry products by month: coloured with a dollar loan, grey without, October 2024 to September 2026',format});
-}
-const _atPrevCCR=carryCategoryRender;carryCategoryRender=function(){_atPrevCCR();try{atCarryNoDebt()}catch(e){}};
+// Carry by product: a product counts only in months it owes dollars at month-end, the same rule as the Market map,
+// so the stacked bars equal the carry category (data: R.atlasTop5Risk.noDebtMonths from data/eth/netmap).
+// (applied upstream in tools/eth/reader_analysis_build.py)
 function atCarryDips(){
  const p=$('#market-history');if(!p||$('#at-carry-dips'))return;
  p.insertAdjacentHTML('beforeend','<p class="note" id="at-carry-dips"><b>Why carry jumps.</b> A product counts as carry only in months it owes dollars at month-end; otherwise its ETH counts in its base category (for Liquid ETH, Leveraged staking: it only borrowed WETH against staked ETH). ether.fi Liquid ETH (150k to 200k ETH) borrowed dollars in August and September 2025, repaid by the end of October and ran only ETH loops until June 2026. Lido Earn enters the map in March 2026; its book fell from 111k to 44k ETH in May 2026 after the rsETH freeze.</p>');
 }
-const _atPrevFinalND=atlasFinal;atlasFinal=function(){_atPrevFinalND();atCarryDips();try{atCarryNoDebt()}catch(e){}};
+const _atPrevFinalND=atlasFinal;atlasFinal=function(){_atPrevFinalND();atCarryDips();};
+
+// Carry by product, built from the Market map's carry rows so the bars equal the carry category exactly.
+function atCarryProducts(){
+ if(!$('#c-history-chart'))return;
+ const large=['ether.fi Liquid ETH','Lido Earn ETH','Avant avETH / savETH'];
+ const rows=MP.products.filter(p=>p.category==='carry'&&p.history.some(h=>(h.eth_ref||0)>=1)).sort((a,b)=>(b.current?.eth_ref||0)-(a.current?.eth_ref||0));
+ const shown=MS.carryView==='dedicated'?rows.filter(p=>!large.includes(p.name)):rows;
+ const usd=/usd/i.test(MS.carryUnit||''),key=usd?'usd':'eth_ref',format=v=>usd?money(v):num(v,v>0&&v<10?3:0)+' ETH';
+ const series=shown.map((p,i)=>({id:p.id,name:p.name,color:CARRY_COLORS[rows.indexOf(p)%CARRY_COLORS.length],points:p.history.map((h,j)=>[MP.months[j].target_timestamp,h[key]||0])}));
+ $('#c-history-chart').innerHTML=columnChart(series,{label:'Carry by product, October 2024 to September 2026',format});
+ const tt=$('#c-history-tooltip');if(tt)tt.textContent='Point at a month to see each product.';
+ const th=$('#c-history-table thead'),tb=$('#c-history-table tbody');
+ if(th)th.innerHTML='<tr><th>Month</th>'+shown.map(p=>`<th class="n">${esc(p.name)}</th>`).join('')+'<th class="n">Carry total</th></tr>';
+ if(tb)tb.innerHTML=MP.months.map((m,j)=>`<tr><td>${m.period}</td>${shown.map(p=>`<td class="n">${format(p.history[j][key]||0)}</td>`).join('')}<td class="n">${format(shown.reduce((s,p)=>s+(p.history[j][key]||0),0))}</td></tr>`).join('');
+ $('#c-history-export')?.setAttribute('href','data/carry-by-product-'+(usd?'usd':'eth')+'.csv');
+ const op=$('#c-history-options');if(op)op.textContent='Concrete Delta (307k ETH) is left out: it is one wallet\u2019s own position, not a pooled product. See Other carry.';
+}
+const _atPrevCCR2=carryCategoryRender;carryCategoryRender=function(){_atPrevCCR2();try{atCarryProducts()}catch(e){}};
+const _atPrevFinalCP=atlasFinal;atlasFinal=function(){_atPrevFinalCP();try{atCarryProducts()}catch(e){}};

@@ -137,7 +137,9 @@ def main():
         'default_current': total([p['current'] for p in prods if p['category'] in default]),
         'selection_configuration': {'category_count': len(CATEGORIES), 'mask_order': [c['id'] for c in CATEGORIES],
                                     'optional_off': [c['id'] for c in CATEGORIES if not c['default']]},
-        'method': 'counted_once', 'products_count_default': sum(1 for p in prods if p['category'] in default and (p['current']['eth_ref'] or 0) >= 0.5),
+        'method': 'counted_once',
+        # listed products: at least $50k at the snapshot, the BTC map's listing threshold (smaller rows stay in the totals)
+        'products_count_default': sum(1 for p in prods if p['category'] in default and (p['current']['usd'] or 0) >= 5e4),
     }
     json.dump(chapter, open(os.path.join(OUT, 'market_chapter.json'), 'w'), indent=1)
     print('products', len(prods), 'default', chapter['products_count_default'], 'total', round(chapter['default_current']['eth_ref']),

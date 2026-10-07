@@ -1507,9 +1507,9 @@
       "symbol": "WETH",
       "tvlUsd": 21069821,
       "poolMeta": "autoETH",
-      "parent_id": "autofinance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1544,7 +1544,7 @@
       "tvlUsd": 19720553,
       "poolMeta": null,
       "parent_id": "yearn-finance",
-      "parent_role": "farming",
+      "parent_role": "lending",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -2156,7 +2156,7 @@
       "tvlUsd": 11334285,
       "poolMeta": "yoETH",
       "parent_id": "yo-protocol",
-      "parent_role": "farming",
+      "parent_role": "lending",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -2323,9 +2323,9 @@
       "symbol": "USDT-WBTC-WETH",
       "tvlUsd": 10334593,
       "poolMeta": "Convex",
-      "parent_id": "beefy",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2707,9 +2707,9 @@
       "symbol": "ETH+-WETH",
       "tvlUsd": 7690595,
       "poolMeta": "Convex",
-      "parent_id": "beefy",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2792,7 +2792,7 @@
       "tvlUsd": 7234765,
       "poolMeta": null,
       "parent_id": "yearn-finance",
-      "parent_role": "farming",
+      "parent_role": "lending",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -2984,7 +2984,7 @@
       "tvlUsd": 6618027,
       "poolMeta": "Autopilot",
       "parent_id": "harvest-finance",
-      "parent_role": "farming",
+      "parent_role": "lending",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -3128,7 +3128,7 @@
       "tvlUsd": 6147557,
       "poolMeta": null,
       "parent_id": "yearn-finance",
-      "parent_role": "farming",
+      "parent_role": "lending",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },

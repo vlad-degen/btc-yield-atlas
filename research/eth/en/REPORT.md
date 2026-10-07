@@ -12,9 +12,9 @@
 
 ## 0. Short answers
 
-1. **18,542,591 ETH ($49.50B) earns a yield in 144 products, each counted once.** Staking 15.02M (81%), restaking 2.43M (13%), farming 660k, carry 306k (1.6%), leveraged staking 97k, credit 24k, fixed yield 9k, options 2k. Idle WETH in money markets (787k) and CDPs (657k) is listed and off by default. About 14.4M ETH more is staked off-chain (exchanges, institutional providers, BitMine) and not counted.
-2. **Two years: staking grew, everything around it shrank.** Total 19.16M (Oct 2024), peak 20.05M (Jan 2026), 18.54M now. Staking +2.55M. Restaking peaked at 4.67M (Jul 2025) and lost half. Farming fell from 1.92M to 0.66M, fixed yield from 307k to 9k, leveraged staking from a 413k peak (May 2025) to 97k. Carry is the only new category: from nothing to 306k ETH in a year.
-3. **Carry is small and concentrated.** 12 products owe $270.9M of dollars against ETH (BTC: 9.9% of its market is carry, ETH 1.6%). Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 85% of the ETH.
+1. **18,499,055 ETH ($49.38B) earns a yield in 131 products, each counted once.** Staking 15.09M (82%), restaking 2.44M (13%), farming 529k, carry 306k (1.7%), leveraged staking 98k, credit 27k, fixed yield 9k, options 2k. WETH in money markets and lending-only vaults (812k) and CDPs (657k) is listed and off by default. About 14.4M ETH more is staked off-chain (exchanges, institutional providers, BitMine) and not counted.
+2. **Two years: staking grew, everything around it shrank.** Total 18.55M (Oct 2024), peak 20.00M (Jan 2026), 18.50M now. Staking +2.51M. Restaking peaked at 4.63M (Jul 2025) and lost half. Farming fell from 1.58M to 0.53M, fixed yield from 307k to 9k, leveraged staking from a 415k peak (May 2025) to 98k. Carry is the only new category: from nothing to 306k ETH in a year.
+3. **Carry is small and concentrated.** 12 products owe $270.9M of dollars against ETH (BTC: 9.9% of its market is carry, ETH 1.7%). Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 85% of the ETH.
 4. **Carry barely beats staking.** The best product, Liquid ETH, beat stETH by 0.66 pp a year over two years, all of it in year two, and mostly from a fee cut. Its dollar leg loses about $6.8M a year at 2 October rates. YieldBasis is the only one whose fees cover its loan, and its depositors still trail stETH unless they take YB emissions.
 5. **Rewards are a minority of the lead over stETH,** except at YieldBasis (all of it, for gauge stakers) and Liquity (99%). Liquid: 34%. Lido Earn: none in 90 days. Avant: 7%.
 6. **Private mandates borrow as much as all carry products together.** Concrete Delta (307k ETH, one Bitfinex-linked wallet, $176.2M of debt) and three whitelist-only rSHARE vaults (about 83k WETH, $80.4M) are left out of the map, like Avalon in BTC.
@@ -24,28 +24,28 @@
 
 | Category | ETH | Share | Note |
 |---|---:|---:|---|
-| Staking | 15,016,520 | 81.0% | Lido 9.33M, Binance 3.74M, Rocket Pool 0.50M, cbETH 0.44M (on-chain supply) |
-| Restaking | 2,426,627 | 13.1% | ether.fi Stake 1.69M, Kelp 0.40M; EigenLayer and Symbiotic only where no issuer counted it |
-| Farming | 660,000 | 3.6% | points, pools, vaults |
-| Carry | 305,908 | 1.6% | 12 products, $270.9M of dollar debt |
-| Leveraged staking | 97,000 | 0.5% | |
-| Credit, fixed yield, options, basis | about 35,000 | 0.2% | basis is nearly empty |
-| Money markets (off) | 787,000 | | idle WETH only |
+| Staking | 15,093,012 | 81.6% | Lido 9.39M, Binance 3.74M, Rocket Pool 0.50M, cbETH 0.45M (on-chain supply) |
+| Restaking | 2,435,229 | 13.2% | ether.fi Stake 1.70M, Kelp 0.41M; EigenLayer and Symbiotic only where no issuer or other product counted it |
+| Farming | 529,000 | 2.9% | points, pools (the ETH side no other row counts), vaults |
+| Carry | 305,908 | 1.7% | 12 products, $270.9M of dollar debt |
+| Leveraged staking | 98,000 | 0.5% | |
+| Credit, fixed yield, options, basis | about 38,000 | 0.2% | credit counts lent-out ETH too; basis is nearly empty |
+| Money markets (off) | 812,000 | | plain WETH in lending markets and lending-only vaults |
 | CDPs (off) | 657,000 | | |
 
-Counting rules: a staking token held inside another product leaves the issuer's row; products count depositor equity; restaking platforms count only what token issuers did not; a balance flat for three month-ends counts as zero; carry counts only in months with at least $10k of dollar debt. DefiLlama cross-check: 97.3% of the TVL of 603 ETH pools is on the map.
+Counting rules, the same at every month-end: a staking token, or another product's token, held inside a counted product leaves the row that issued it; a DEX pool counts only its ETH side that no other row counts; products count depositor equity (Treehouse is still at gross collateral); restaking platforms count only what token issuers and other products did not; vaults that only lend WETH go with money markets and vaults holding DEX positions are counted in the pools; credit counts lent-out ETH; a reviewed leftover row flat for three month-ends counts as zero and keeps no tokens from issuers; carry counts only in months with at least $10k of dollar debt; products under $50k at the snapshot stay in the totals but are not listed. Details: [MARKET-COVERAGE](MARKET-COVERAGE.md). DefiLlama cross-check: 97.2% of the TVL of 603 ETH pools is on the map.
 
 ## 2. Two years
 
 | Category | Oct 2024 | Peak | 2 Oct 2026 |
 |---|---:|---|---:|
-| Staking | 12.46M | now | 15.02M |
-| Restaking | 4.17M | 4.67M, Jul 2025 | 2.43M |
-| Farming | 1.92M | Oct 2024 | 0.66M |
-| Leveraged staking | 268k | 413k, May 2025 | 97k |
+| Staking | 12.58M | now | 15.09M |
+| Restaking | 3.78M | 4.63M, Jul 2025 | 2.44M |
+| Farming | 1.58M | Oct 2024 | 0.53M |
+| Leveraged staking | 270k | 415k, May 2025 | 98k |
 | Fixed yield | 307k | Oct 2024 | 9k |
 | Carry | 0 | now | 306k |
-| Total | 19.16M | 20.05M, Jan 2026 | 18.54M |
+| Total | 18.55M | 20.00M, Jan 2026 | 18.50M |
 
 Restaking paid nothing extra: weETH earned 5.29% against stETH's 5.49% over two years in total, and EIGEN fell from about $3.4 to $0.20. Points programmes ended and farming left with them. Leveraged staking shrank because stETH beat the Aave WETH borrow rate by only 0.15 pp a year on average in year one and 0.10 pp in year two ([RESTAKING-AND-LOOPS](RESTAKING-AND-LOOPS.md)).
 
@@ -90,4 +90,4 @@ Details: [CLOSED-CASES](CLOSED-CASES.md).
 
 ## Method and limits
 
-Method, decisions and the re-check: [MARKET-COVERAGE](MARKET-COVERAGE.md), [BRIEFING](BRIEFING.md), and the Data section of the site. Not verified: Liquid's residual income, Lido Earn's launch-month yield, Avant's books on other chains, Liquity's keeper-stored balances, and the identity of large wallets.
+Method, decisions and the re-check: [MARKET-COVERAGE](MARKET-COVERAGE.md), [BRIEFING](BRIEFING.md), and the Data section of the site. Not verified: Liquid's residual income, Lido Earn's launch-month yield, Avant's books on other chains, Liquity's keeper-stored balances, and the identity of large wallets. Map limits: money markets are not netted for positions of other map products (the BTC map is), so that off-by-default segment is an upper bound; Treehouse is counted at gross collateral; whether Cap's wstETH and ether.fi's weETHs vault also sit in EigenLayer or Symbiotic is not checked; YieldBasis' pool counts in Curve before its on-chain book starts (May 2026).

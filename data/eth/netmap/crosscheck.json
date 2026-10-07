@@ -1,8 +1,8 @@
 {
  "pools_checked": 603,
  "tvl_by_status": {
-  "map": 69189981371,
-  "excluded": 1927854613,
+  "map": 69144672516,
+  "excluded": 1973163468,
   "screened out (under 100 ETH today and under 1,000 at every month-end)": 26041817,
   "not a candidate": 1160207
  },
@@ -124,13 +124,6 @@
    "change": -0.005518165598062841
   },
   {
-   "product": "Curve DEX",
-   "snapshot_gross_eth": 99826.79791549746,
-   "later_gross_eth": 98811.4498266034,
-   "later_date": "2026-10-07",
-   "change": -0.010171097441726396
-  },
-  {
    "product": "Fluid Lite",
    "snapshot_gross_eth": 77313.64505186099,
    "later_gross_eth": 77144.8925995987,
@@ -152,11 +145,18 @@
    "change": -0.00022722289676935237
   },
   {
-   "product": "Fluid DEX",
-   "snapshot_gross_eth": 35573.89827510605,
-   "later_gross_eth": 35639.66797736534,
+   "product": "Curve DEX",
+   "snapshot_gross_eth": 99826.79791549746,
+   "later_gross_eth": 98811.4498266034,
    "later_date": "2026-10-07",
-   "change": 0.0018488190906340574
+   "change": -0.010171097441726396
+  },
+  {
+   "product": "Jupiter Perpetual Exchange",
+   "snapshot_gross_eth": 27258.78033555543,
+   "later_gross_eth": 26963.862167149826,
+   "later_date": "2026-10-07",
+   "change": -0.01081919898011452
   }
  ]
 }

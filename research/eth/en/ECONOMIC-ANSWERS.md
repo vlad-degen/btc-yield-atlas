@@ -45,7 +45,7 @@ The full official Upshift registry was examined after finding Sentora ETH's docu
 
 ## Market accounting
 
-The default protocol panel contains 172 observed parents and 18,542,591 ETH equivalents of reported exposure. The headline, donut, category table and two-year bars all use that same selection. Issuer, restaking, lending and vault claims overlap; this is a protocol-exposure market map. Exact-block Lido, Aave and Spark reconciliation demonstrates the duplication numerically. Public inputs do not establish a complete global net yield-capital total or carry-equity share, and neither number is manufactured from the panel.
+The default protocol panel contains 167 observed parents and 18,499,055 ETH equivalents of reported exposure. The headline, donut, category table and two-year bars all use that same selection. Issuer, restaking, lending and vault claims overlap; this is a protocol-exposure market map. Exact-block Lido, Aave and Spark reconciliation demonstrates the duplication numerically. Public inputs do not establish a complete global net yield-capital total or carry-equity share, and neither number is manufactured from the panel.
 
 ## Sources and reproduction
 

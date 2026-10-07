@@ -65,6 +65,9 @@ EXCLUDE = {
     'convex-finance': 'Stakes Curve pool tokens counted in Curve.', 'aura': 'Stakes Balancer pool tokens counted in Balancer.',
     'stake-dao-yield': 'Stakes Curve pool tokens counted in Curve.', 'badger-dao': 'Holds DEX pool tokens counted in the pools.',
     'pickle': 'Holds DEX pool tokens counted in the pools.',
+    # BTC-standard review, 8 Oct 2026: vaults whose adapter reports the underlying of DEX positions the pool rows already count
+    'beefy': 'Auto-compounds DEX pool positions (Curve, Aerodrome, Velodrome, Uniswap) counted in the pool rows; DefiLlama reports the pools\' underlying tokens.',
+    'autofinance': 'autoETH routes WETH into DEX pools (Balancer, Curve, Fluid) counted in the pool rows, and into lending markets.',
     # liquidity managers run positions in DEX pools that the pool rows count
     **{s: 'Manages positions in DEX pools counted in the pool rows.' for s in '''arrakis-modular arrakis-v2 steer-protocol gamma ichi
        kodiak-islands xtoken snuggle thedeep baseline-protocol aegis-markets stonkbrokers-smart-lp yieldflow-yield-farming arrowfarm
@@ -93,7 +96,9 @@ CATEGORY = {
     'panoptic-v2': 'options', 'thetanuts-finance': 'options', 'theo-straddle-vaults': 'options',
     'manta-cedefi': 'basis', 'liminal-basis': 'basis', 'desyn-basis-trading': 'basis',
     'spark-savings': 'lending',            # spETH: WETH lent into SparkLend
-    'moonwell-vaults': 'lending', 'ultrayield-vaults': 'lending', 'yearn-finance': 'farming', 'harvest-finance': 'farming',
+    'moonwell-vaults': 'lending', 'ultrayield-vaults': 'lending', 'yearn-finance': 'lending', 'harvest-finance': 'lending',
+    # vaults that only lend WETH go with money markets (off by default), as in the BTC map (data/lending_products.csv there)
+    'yo-protocol': 'lending', 'superform': 'lending', 'extra-finance-vaults': 'lending',
     'fx-protocol': 'cdp', 'frankencoin': 'cdp', 'reflexer': 'cdp', 'abracadabra-spell': 'cdp', 'inverse-finance-firm': 'cdp',
     'qidao': 'cdp', 'lista-cdp': 'cdp', 'alchemix-v3': 'farming',
     'enzyme-finance': 'farming', 'set-protocol': 'farming', 'arbitrove': 'farming', 'fyde-protocol': 'farming',
@@ -146,8 +151,35 @@ LRT_ISSUERS = set('''ether.fi-stake kelp renzo puffer-stake swell-liquid-restaki
 yieldnest king-protocol euclid-finance'''.split())
 # platform -> rows whose ETH already sits in it ('LRT' = all restaking-token issuers)
 RESTAKING_PLATFORMS = {'eigencloud': 'LRT', 'symbiotic': ['mellow-restaking', 'mantle-restaking']}
-# Cap's weETH (8,350 at T) is restaked through a Symbiotic vault: count it once, in Cap
-SYMBIOTIC_ALSO = {'cap': 8349.99 / 22666.22}
+# rows whose position sits in a Symbiotic vault: (token in the row, token in Symbiotic). Each month Symbiotic loses the smaller
+# of the two, as the BTC map cut Veda by the smaller of the Veda and Lombard Vaults rows. Cap's weETH equals Symbiotic's weETH
+# every month since March 2026 (8,350 at T); Vesper's stETH pool sits in the Symbiotic Vesper-wstETH vault (6,291 at T).
+SYMBIOTIC_ALSO = {'cap': ('WEETH', 'WEETH'), 'vesper': ('STETH', 'WSTETH')}
+
+# tokens of products on the map (not plain staking tokens): a counted product that holds one takes it out of that product's row,
+# as the BTC map's ISSUER table does for LBTCv, eBTC, avBTC and mHyperBTC. Tokens of the on-chain carry books stay in the book
+# (the holder loses them instead), and DEX pool rows never take a token from its row (see POOLS below).
+PRODUCT_TOKENS = {
+    'EGETH': 'eigenpie',                                    # Eigenpie egETH (held in Zircuit and the Swell L2 farm)
+    'WEETHS': 'veda',                                       # ether.fi weETHs, a Veda BoringVault valued in WETH by the Veda adapter
+    'AMPHRETH': 'mellow-restaking', 'RSTETH': 'mellow-restaking', 'STEAKLRT': 'mellow-restaking', 'RE7LRT': 'mellow-restaking',
+    'ETH+': 'reserve-protocol', 'YNETH': 'yieldnest', 'YNLSDE': 'yieldnest',
+    'INETH': 'inceptionlrt-(isolated-restaking)', 'INSTETH': 'inceptionlrt-(isolated-restaking)',
+    'WSUPEROETHB': 'origin-ether', 'SUPERWETH': 'superform',
+    'AGETH': 'upshift', 'HGETH': 'upshift',                 # Kelp Gain vaults; the Gain row is counted inside Upshift
+    'DETH': 'carry:makina-deth', 'SAVETH': 'carry:avant-aveth', 'AVETH': 'carry:avant-aveth',
+    'LIQUIDETH': 'carry:liquid-eth', 'EARNETH': 'carry:lido-earn',
+}
+
+# rows whose adapter values vaults of another protocol in their base asset: (row valued, token there, issuer behind it,
+# carry book already taken out). The Veda adapter books ether.fi Liquid vaults as WETH while the ether.fi Liquid adapter shows
+# the same vaults as eETH; the eETH in them (less the Liquid ETH book, taken out through CARRY) leaves ether.fi Stake.
+BASE_VALUED = {'veda': ('ether.fi-liquid', 'EETH', 'ether.fi-stake', 'carry:liquid-eth')}
+
+# credit products count what is supplied: idle plus lent out (DefiLlama's '-borrowed' keys), as the BTC map does for
+# Accountable, Zest v2 and Wildcat. Wildcat and Maple show almost nothing idle, so the screen (idle only) missed them.
+CREDIT_SUPPLIED = {'native-credit-pool', 'wildcat-protocol', 'maple'}
+EXTRA_ROWS = {'wildcat-protocol': 'credit', 'maple': 'credit'}
 
 # ---- on-chain carry books (research/eth/en/CARRY-PRODUCTS.md); issuer mix = which staking token the book holds -------
 CARRY = {
@@ -182,6 +214,8 @@ OVERLAPS = [
     ('carry:liquity-carry', 'carry:rocksolid', _rocksolid_liquity),
     ('mantle-restaking', 'veda', lambda vals, label: vals.get('mantle-restaking') or 0.0),   # Veda's adapter counts the cmETH vault
     ('upshift', 'gain', lambda vals, label: vals.get('gain') or 0.0),                       # Kelp Gain vaults run on Upshift; count once
+    # YieldBasis' WETH/crvUSD pool is a Curve pool, so Curve DEX also counts its WETH (about the depositors' ETH at 2x)
+    ('carry:yieldbasis-weth', 'curve-dex', lambda vals, label: vals.get('carry:yieldbasis-weth') or 0.0),
 ]
 
 # rows that report gross collateral, scaled to depositor equity (product-notes review, at the snapshot)
