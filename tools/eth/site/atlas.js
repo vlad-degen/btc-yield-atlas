@@ -125,6 +125,7 @@ function atMeaning(){
  const ol=$('.market-conclusions ol');if(!ol)return;
  ol.innerHTML=[
   '<b>ETH carry has to beat staking; BTC carry only has to beat zero.</b> Staked ETH earns 2.2 to 2.7%, so the dollar leg must add on top. Liquid ETH beat stETH by 0.66 pp a year over two years, but neither its ETH loop (+0.02 pp) nor its dollar leg (\u22120.13 pp) explains it; YieldBasis and Vesper trailed stETH in September.',
+  '<b>Rewards are a small part of ETH carry, except at YieldBasis and Liquity.</b> Without rewards Liquid ETH still earns 3.39% a year against 3.87% (rewards are 34% of its lead over stETH); Lido Earn has none in its price and Avant 7%. Liquity\u2019s lead over stETH is 99% rewards, and a YieldBasis gauge staker earns +1.69% only because of YB emissions (\u22122.96% unstaked). Live programmes at the snapshot: $2.7M a year to Liquid from the RLUSD and PYUSD side, $0.5M of YB.',
   '<b>The same dollar vaults fund BTC and ETH carry.</b> Liquid ETH parks $55M in Sentora’s RLUSD vault, where 53% of the money is lent to Kraken’s kBTC loop, and $50M in the PYUSD vault that is 95% PRIME home-equity credit. A loss there hits both markets at once.',
   '<b>Private mandates borrow as much as all ETH carry products together.</b> Concrete Delta (one Bitfinex-linked wallet, $176M of stablecoin debt) and three whitelist-only rSHARE vaults run by one operator ($76M against ETH) owe $252M; the 14 pooled products owe $261M. The demand for large ETH-backed dollar loans comes from single principals, not from depositors.',
   '<b>The loan currency decides the spread.</b> On 2 October Aave charged 13.93% for USDC and 4.38% for USDT; Morpho USDT cost 3.2%. Liquid’s 7.79% average comes from its $65M Aave USDC leg. Pick the cheapest hub currency, not the venue.'
@@ -298,6 +299,8 @@ function atComparison(){
   row('Where the dollars go',id=>esc(C[id].to))+
   row('Parked dollars earn',id=>esc(C[id].park))+
   row('Dollar spread at 2 October',id=>esc(C[id].spread))+
+  row('Without rewards (90 days, a year)',id=>({liquid:'2.94%<div class="sub">actual 3.32%</div>',yieldbasis:'\u22122.96%<div class="sub">staked +1.69% with YB</div>','lido-earn':'3.14%<div class="sub">no rewards</div>',avant:'4.55%<div class="sub">actual 4.74%</div>',liquity:'2.26%<div class="sub">actual 3.84%</div>'})[id]||'')+
+  row('Rewards share of the lead over stETH',id=>({liquid:'35%',yieldbasis:'all of it (staked)','lido-earn':'0%',avant:'7%, points unpriced',liquity:'99%'})[id]||'')+
   row('Paid in ETH, a year (Sep)',id=>R30[id]?(R30[id].bookReturnPct*365/30).toFixed(2)+'%<div class="sub">'+(R30[id].excessPercentagePoints>=0?'+':'')+(R30[id].excessPercentagePoints*365/30).toFixed(2)+' pp vs stETH</div>':'')+
   row('Lowest health factor of a dollar loan',id=>worst(id))+
   row('Debt repayable',id=>esc(C[id].exit))+
@@ -342,7 +345,7 @@ function atPrune(){
  $$('#market .note').forEach(n=>{if(/Borrowing against ETH establishes financing/.test(n.textContent))n.remove();});
  $$('#market-history [data-market-flags]').forEach(e=>e.remove());   // switches only at the top of Market
  const pr=$('#print');if(pr)pr.remove();$$('#data a.btn').forEach(a=>{if(/Original BTC Research/.test(a.textContent))a.remove();});
- const lib=$('#data .library-grid');if(lib)lib.outerHTML='<p>Research behind the page: '+[['library/BRIEFING.html','briefing'],['library/SELECTION.html','how the five were chosen'],['library/CONCRETE-DELTA.html','Concrete Delta'],['library/TOP5-RISK-LIQUIDITY.html','top-five risk and repayment'],['library/BORROWER-IDENTITIES.html','who borrows against ETH'],['library/OUTSIDE-AND-SMALL.html','off-chain staking and small categories'],['library/index.html','all articles']].map(([u,t])=>`<a href="${u}">${t}</a>`).join(' · ')+'</p>';
+ const lib=$('#data .library-grid');if(lib)lib.outerHTML='<p>Research behind the page: '+[['library/BRIEFING.html','briefing'],['library/SELECTION.html','how the five were chosen'],['library/CONCRETE-DELTA.html','Concrete Delta'],['library/TOP5-RISK-LIQUIDITY.html','top-five risk and repayment'],['library/REWARDS-SPLIT.html','organic yield against rewards'],['library/LIQUID-LOOP.html','Liquid ETH loop'],['library/TOP5-KEYS-HOLDERS-TERMS.html','keys, holders and terms'],['library/CLOSED-CASES.html','closed and stressed cases'],['library/RESTAKING-AND-LOOPS.html','restaking and loops'],['library/BORROWER-IDENTITIES.html','who borrows against ETH'],['library/OUTSIDE-AND-SMALL.html','off-chain staking and small categories'],['library/index.html','all articles']].map(([u,t])=>`<a href="${u}">${t}</a>`).join(' · ')+'</p>';
  atBorrowers();
 }
 // Borrowers: wallets over $20M of dollar debt against ETH, one line each (BTC format)
