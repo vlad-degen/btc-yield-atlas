@@ -5,7 +5,7 @@
       "check": "all_local_site_links_and_assets_resolve",
       "passed": true,
       "details": {
-        "pages": 55,
+        "pages": 57,
         "errors": []
       }
     },
@@ -115,7 +115,7 @@
       "details": null
     }
   ],
-  "pages": 55,
+  "pages": 57,
   "scope": "Generated website integrity and arithmetic consistency; browser interaction QA recorded separately. Not a complete financial audit.",
-  "site_sha256": "130b29ebd2071ea0c6004101f0a64e904a02f9aafab99d7c3f872dbb570b43e4"
+  "site_sha256": "cb6db18ace70536d475242a52e2b200e809b8f83c57a7f04d42df8dcd0b32f0d"
 }
