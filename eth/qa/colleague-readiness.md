@@ -4,9 +4,9 @@ Financial research reviewed 6 October 2026; presentation reviewed 7 October. Fin
 
 The main reader was simplified on 7 October at the user’s request: Answer, Market, Top 5, Other carry and Data, with Risks closed by default. Carry math and the product-launch playbook are omitted from the primary route; supporting research remains available. The market headline and charts share one filter selection. Protocol claims can overlap; native validator stake and the quantified receipt-ownership reconciliation are shown separately.
 
-The main carry history now measures 24 month-end dollar loan balances by verified product account. It excludes ETH-debt loops, nested dollar credit, duplicate product claims and Concrete’s unassigned shared Safe. The five principal projects are ranked by observed direct ETH-backed dollar financing. Whole-vault NAV and ETH claim return remain separately labelled. Each principal project has financing history, loan mechanics, fees, controls, holders, launch/development and unwind evidence.
+The main carry history measures product capital across 24 month ends and thirteen examined products. ETH uses recorded product balances and share claims, including dated staking-token conversions; USD values the same capital. Dollar borrowing divided by the ETH price is not used as ETH capital. Mixed-vault allocations and nested holdings remain explicit. The five principal projects are selected by observed direct ETH-backed dollar financing, which is separately labelled in the comparison and project chapters. Each principal project has financing history, loan mechanics, fees, controls, holders, launch/development and unwind evidence.
 
-The prior product-design material is kept in supporting research. Older mixed-book exhibits and unresolved cases also remain in supporting evidence.
+The prior product-design material is kept in supporting research. Unresolved cases remain in supporting evidence; mixed-book capital is restored to the main history with its attribution boundary.
 
 The 6 October financial release passed 2,913 checks: 1,724 financing/source checks, 76 financial contract checks, 610 history/export checks, 347 detailed reconstruction checks, 110 financial reconstruction checks, 24 structure checks and 22 website integrity checks. That release’s browser review covered the five projects, 24 carry bars and ten-product hover, linked tables/CSV, market-filter consistency, old Concrete links, the then-visible playbook tables, desktop and 390-pixel mobile layout. These checks establish internal calculation and presentation consistency, not an exhaustive global market certificate.
 
@@ -17,3 +17,5 @@ The 5M USDT Lido result is a recognised claim margin before gas and outer fees, 
 Publication is restricted to the ETH directory. The release verifies every non-ETH Git blob and the public Bitcoin root page against the original baseline.
 
 The 7 October presentation update reran 656 website/structure/history-export checks. Interactive review confirms all ten requested changes, a working optional risk disclosure, the ten-product carry hover and a 390-pixel layout without page overflow after responsive rendering.
+
+The later 7 October capital correction restores the main history from the thirteen product-balance series. It retains the earlier reader cleanup, keeps borrowing evidence separate and checks all four capital views against the frozen source values and their matching CSV exports. This does not establish the unmeasured carry-only allocation inside mixed products.
