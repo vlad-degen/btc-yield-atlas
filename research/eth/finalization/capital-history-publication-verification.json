@@ -1,0 +1,181 @@
+{
+  "verified_at_UTC": "2026-10-07T01:48:26.129571+00:00",
+  "site_commit": "4617c4845cef564adb433488e7b85821e07e9a17",
+  "pull_request": "https://github.com/vlad-degen/btc-yield-atlas/pull/12",
+  "queryless_and_saved_query_verified": true,
+  "all_public_responses_match": true,
+  "BTC_root_unchanged": true,
+  "all_nonETH_git_blobs_unchanged": 345,
+  "financial_inputs_unchanged": true,
+  "responses": [
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/",
+      "local": "index.html",
+      "status": 200,
+      "local_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "public_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/",
+      "local": "eth/index.html",
+      "status": 200,
+      "local_sha256": "976f236036fc2a870e6ff07cf0e5bf79adb1a19f24e40a17a69df03c7160df94",
+      "public_sha256": "976f236036fc2a870e6ff07cf0e5bf79adb1a19f24e40a17a69df03c7160df94",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/?categories=loops%2Ccarry%2Cbasis%2Cfixed_yield%2Cfarming%2Ccdp%2Clending%2Cstaking",
+      "local": "eth/index.html",
+      "status": 200,
+      "local_sha256": "976f236036fc2a870e6ff07cf0e5bf79adb1a19f24e40a17a69df03c7160df94",
+      "public_sha256": "976f236036fc2a870e6ff07cf0e5bf79adb1a19f24e40a17a69df03c7160df94",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/index.html",
+      "local": "eth/index.html",
+      "status": 200,
+      "local_sha256": "976f236036fc2a870e6ff07cf0e5bf79adb1a19f24e40a17a69df03c7160df94",
+      "public_sha256": "976f236036fc2a870e6ff07cf0e5bf79adb1a19f24e40a17a69df03c7160df94",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/exhibits.html",
+      "local": "eth/exhibits.html",
+      "status": 200,
+      "local_sha256": "b931093bbd9498a45d2111d9bdfdc78a98abff817c4bb908a5c1112ca9becbb3",
+      "public_sha256": "b931093bbd9498a45d2111d9bdfdc78a98abff817c4bb908a5c1112ca9becbb3",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/site.css",
+      "local": "eth/site.css",
+      "status": 200,
+      "local_sha256": "fbd69c29da77a25669b07ae2bc2b24a431adc90b1241a80acb19dc397bf2862d",
+      "public_sha256": "fbd69c29da77a25669b07ae2bc2b24a431adc90b1241a80acb19dc397bf2862d",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/README.md",
+      "local": "eth/README.md",
+      "status": 200,
+      "local_sha256": "81ff79c568d336664024f4480c99c1683736fb6a95b2f59919bee5c1b2333166",
+      "public_sha256": "81ff79c568d336664024f4480c99c1683736fb6a95b2f59919bee5c1b2333166",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/colleague-readiness.md",
+      "local": "eth/qa/colleague-readiness.md",
+      "status": 200,
+      "local_sha256": "9813189bee0c78f259f90e058714dd1f5692bf6a69597ebc1d862f2988338b26",
+      "public_sha256": "9813189bee0c78f259f90e058714dd1f5692bf6a69597ebc1d862f2988338b26",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/reader_alignment_audit.json",
+      "local": "eth/qa/reader_alignment_audit.json",
+      "status": 200,
+      "local_sha256": "248043e8da1f24d72643af1af4f4c53496d866254be212a301de503cf3dff8e3",
+      "public_sha256": "248043e8da1f24d72643af1af4f4c53496d866254be212a301de503cf3dff8e3",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/site_audit_results.json",
+      "local": "eth/qa/site_audit_results.json",
+      "status": 200,
+      "local_sha256": "01e25c116f0e207dd8552e957db3ceaca89398fe64abcea497e2c64653b7c843",
+      "public_sha256": "01e25c116f0e207dd8552e957db3ceaca89398fe64abcea497e2c64653b7c843",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/strict_audit_results.json",
+      "local": "eth/qa/strict_audit_results.json",
+      "status": 200,
+      "local_sha256": "0373d90718de6fe70e90869d1c10c6c598b14ef1280cfd2719d1b58739f804a7",
+      "public_sha256": "0373d90718de6fe70e90869d1c10c6c598b14ef1280cfd2719d1b58739f804a7",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/capital-history-browser-verification.json",
+      "local": "eth/qa/capital-history-browser-verification.json",
+      "status": 200,
+      "local_sha256": "6ad1fd7cfaa6469575438dce8038c5a8c295802fc69cb1451551f2bf7d23bf70",
+      "public_sha256": "6ad1fd7cfaa6469575438dce8038c5a8c295802fc69cb1451551f2bf7d23bf70",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/carry-history-all-eth.csv",
+      "local": "eth/data/carry-history-all-eth.csv",
+      "status": 200,
+      "local_sha256": "acf8b4cb6e5500cbb401006d28eb0150ee213f17256548c81e84cc345a48cba1",
+      "public_sha256": "acf8b4cb6e5500cbb401006d28eb0150ee213f17256548c81e84cc345a48cba1",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/carry-history-all-usd.csv",
+      "local": "eth/data/carry-history-all-usd.csv",
+      "status": 200,
+      "local_sha256": "166483d88d0cef8e2fd951b69bcc5688888fc6284005cb020924eccccfd67ec7",
+      "public_sha256": "166483d88d0cef8e2fd951b69bcc5688888fc6284005cb020924eccccfd67ec7",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/carry-history-dedicated-eth.csv",
+      "local": "eth/data/carry-history-dedicated-eth.csv",
+      "status": 200,
+      "local_sha256": "ede872e8a5b9e783dbb81d07a5f57db1dc07899f61258df93a1084fe23a01d3d",
+      "public_sha256": "ede872e8a5b9e783dbb81d07a5f57db1dc07899f61258df93a1084fe23a01d3d",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/carry-history-dedicated-usd.csv",
+      "local": "eth/data/carry-history-dedicated-usd.csv",
+      "status": 200,
+      "local_sha256": "e36fea7154627bc0eb32abaf87f9a8d27fe2f2b23bfe9829c78ff1804286dcb9",
+      "public_sha256": "e36fea7154627bc0eb32abaf87f9a8d27fe2f2b23bfe9829c78ff1804286dcb9",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/economic_questions.json",
+      "local": "eth/data/economic_questions.json",
+      "status": 200,
+      "local_sha256": "787508f243a2ba1dd56871dfcbc30760056379c86dbb8789ee38d40438fa82d5",
+      "public_sha256": "787508f243a2ba1dd56871dfcbc30760056379c86dbb8789ee38d40438fa82d5",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/economic-carry-history.csv",
+      "local": "eth/data/economic-carry-history.csv",
+      "status": 200,
+      "local_sha256": "1543a49dafd0999de92694337a9ee1c4282357ad878a42416cb4a1a42e154fb6",
+      "public_sha256": "1543a49dafd0999de92694337a9ee1c4282357ad878a42416cb4a1a42e154fb6",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/economic-dollar-loans.csv",
+      "local": "eth/data/economic-dollar-loans.csv",
+      "status": 200,
+      "local_sha256": "74eb3328ed41e0a80713467e0107bb0933bff8cd21aab778b231eff14d89c092",
+      "public_sha256": "74eb3328ed41e0a80713467e0107bb0933bff8cd21aab778b231eff14d89c092",
+      "matches": true
+    }
+  ],
+  "Pages_run": {
+    "id": 37558819194,
+    "conclusion": "success",
+    "url": "https://github.com/vlad-degen/btc-yield-atlas/actions/runs/37558819194"
+  },
+  "rendered_public_browser": {
+    "user_existing_tab_reloaded": true,
+    "heading": "Two years of capital, by product",
+    "default_unit": "ETH",
+    "product_count": 13,
+    "month_count": 24,
+    "Liquid_2024_10_ETH": 146203.0106193482,
+    "Concrete_2026_09_ETH": 307321.7151942558,
+    "September_2026_hover_total_ETH": 609857,
+    "all_thirteen_hover_rows_visible": true,
+    "short_reader_preserved": true
+  }
+}
