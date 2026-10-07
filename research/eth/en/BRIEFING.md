@@ -4,7 +4,7 @@ Financial snapshot: **2 October 2026**. This briefing and the main page use the 
 
 ## Answer
 
-**Staking is the base income layer.** The archived consensus state contains **43.81M actual active ETH**, with 874,362 active validators and 43.74M ETH of effective stake. The protocol panel separately reports 20.19M ETH-equivalent staking and restaking claims. Receipts and security-layer balances overlap. This is neither unique validator stake nor the size of the complete yield market.
+**Staking is the base income layer.** The archived consensus state contains **43.81M actual active ETH**, with 874,362 active validators and 43.74M ETH of effective stake. The protocol panel separately reports 14.79M ETH-equivalent staking and restaking claims. Receipts and security-layer balances overlap. This is neither unique validator stake nor the size of the complete yield market.
 
 **Carry is a financing mechanism inside products.** We examine 13 books: 10 with current traced routes, one in Closing, one with historical dust debt, and one declared arbitrage book with unresolved shared custody. Their sizes cannot establish a global carry-equity total.
 
@@ -79,7 +79,7 @@ Secure a positive base spread in the debt currency after fees. Test every borrow
 
 ## Coverage
 
-The material discovery screen contains 299 ETH-name pools above $5M. 287 dispositions join an already-covered parent; they do not prove that each pool's strategy has been reconstructed. Fixed-block reconstruction adds Lido Earn, Avant, Makina DETH, Vesper and ZenSats; YO ETH is separately classified as ETH lending / staking after inspecting its deployments. The family map is broad; global unique capital and complete historical sleeve weights remain unresolved. The reconstruction now measures native stake, five additional carry-linked books, four active PT faces and the residual Ribbon option book. Own-credit, fees and exit cash still limit complete organic carry attribution. [Coverage matrix](MARKET-COVERAGE.md).
+The material discovery screen contains 299 ETH-name pools above $5M. 221 dispositions join an already-covered parent; they do not prove that each pool's strategy has been reconstructed. Fixed-block reconstruction adds Lido Earn, Avant, Makina DETH, Vesper and ZenSats; YO ETH is separately classified as ETH lending / staking after inspecting its deployments. The family map is broad; global unique capital and complete historical sleeve weights remain unresolved. The reconstruction now measures native stake, five additional carry-linked books, four active PT faces and the residual Ribbon option book. Own-credit, fees and exit cash still limit complete organic carry attribution. [Coverage matrix](MARKET-COVERAGE.md).
 
 ## Reproduce the answers
 

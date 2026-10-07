@@ -225,7 +225,7 @@ def build():
     for key in ['fundingAtlas','strategyExpansion','carryExpansion','creditExpansion']:
         payload[key]=presentation_value(payload[key])
     payload['fundingAtlas'].pop('borrower_discovery',None)
-    for key,name in [('creditDeep','credit_expansion_deep'),('strategyDeep','strategy_universe_deep'),('borrowerDeep','funding_borrower_deep_chapter'),('managerCase','manager_case_chapter')]:
+    for key,name in [('atlasTop5Risk','atlas_top5_risk'),('creditDeep','credit_expansion_deep'),('strategyDeep','strategy_universe_deep'),('borrowerDeep','funding_borrower_deep_chapter'),('managerCase','manager_case_chapter')]:
         if (DATA/(name+'.json')).exists():payload[key]=presentation_value(read(name))
     translations=json.loads((SRC/'english-evidence.json').read_text())
     for claim in payload['evidence']:
@@ -254,6 +254,10 @@ def build():
     for name in ['report_contract.json','carry-common-30d.csv','carry-status-and-capital.csv','finalization_reconstruction.json','native-staking-observations.csv','carry-flow-adjusted-ledgers.csv','parity_depth_measurements.json','parity_depth_reader.json','parity-Liquid-Cash-beneficiaries.csv','parity-Liquid-monthly-debt.csv','parity-Liquid-cohort-sensitivity.csv','parity-savETH-holders.csv','parity-ybGauge-holders.csv']:
         shutil.copyfile(DATA/name,OUT/'data'/name)
     shutil.copyfile(DATA/'carry_borrow_rate_history.json',OUT/'data/carry_borrow_rate_history.json')
+    # counted-once market map (tools/eth/netmap): CSVs and notes for download
+    (OUT/'data/netmap').mkdir(parents=True,exist_ok=True)
+    for source in (DATA/'netmap').glob('*'):
+        if source.suffix in ('.csv','.md'):shutil.copyfile(source,OUT/'data/netmap'/source.name)
     ledger=read('evidence_ledger')
     ledger['claims']=payload['evidence']
     ledger['presentation_language']='en'
@@ -271,7 +275,8 @@ def build():
             writer=csv.writer(f);writer.writerow(headers);writer.writerows(rows)
     chapter=payload['marketChapter']
     for cohort in ['observed','constant']:
-        for mask in range(2**len(chapter['categories'])):
+        # only the full set; the page builds the CSV for any other mix of switches in the browser (atlas.js)
+        for mask in [2**len(chapter['categories'])-1]:
             selected=[c for i,c in enumerate(chapter['categories']) if mask&(1<<i)]
             rows=[]
             for month in chapter['months']:
@@ -342,7 +347,7 @@ def build():
     library = (SRC/'article.html').read_text().replace('@@TITLE@@','Complete research library').replace('@@CONTENT@@',body).replace('@@TOC@@',library_toc).replace('Reviewed 4 October 2026','Reviewed 5 October 2026')
     (OUT/'library/index.html').write_text(library)
     template=(SRC/'index.html').read_text()
-    script='\n'.join((SRC/name).read_text() for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js','economic.js'])+'\ninitChartInspection();if(document.body.dataset.edition==="reader"){initReader();economicReader();}else{init();initPresentation();renderResearchAdditions();initMarket();initStrictResearch();initResearchClosure();initResearchExpansion();openHash(true);}'
+    script='\n'.join((SRC/name).read_text() for name in ['app.js','compare.js','presentation.js','charts.js','market.js','strict.js','closure.js','expansion.js','reader.js','economic.js','atlas.js'])+'\ninitChartInspection();if(document.body.dataset.edition==="reader"){initReader();economicReader();atlasFinal();}else{init();initPresentation();renderResearchAdditions();initMarket();initStrictResearch();initResearchClosure();initResearchExpansion();openHash(true);}'
     page=template.replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)
     (OUT/'index.html').write_text(page)
     exhibits=(SRC/'exhibits.html').read_text().replace('@@CSS@@',css).replace('@@DATA@@',packed).replace('@@JS@@',script)

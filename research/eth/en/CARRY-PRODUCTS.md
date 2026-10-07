@@ -213,7 +213,7 @@ EarnUSD must provide dollar liquidity so the carry account can repay USDT; the o
 
 **Evidence limits:** The outer ETH oracle mark is about 17 hours old at T; this is a reported claim, not an independently recomputed exit NAV. Loop loan balances are gross and cannot be used as carry-equity weights. The earning period, borrower mix and incentive sponsor inside earnUSD require further look-through before calling all share growth organic income.
 
-[Official deployments and strategy documentation](https://docs.lido.fi/earn/deployment-contracts/), [Fixed-block share contract](https://etherscan.io/address/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4), [Reconstruction, timestamps and source hashes](../../../data/eth/finalization_reconstruction.json), [Launch, ownership and economics reconstruction](../../../data/eth/parity_depth_measurements.json), [Product development and measured findings](../library/PRODUCT-EVOLUTION.html).
+[Official deployments and strategy documentation](https://docs.lido.fi/earn/deployment-contracts/), [Fixed-block share contract](https://etherscan.io/address/0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4), [Reconstruction, timestamps and source hashes](../../../data/eth/finalization_reconstruction.json), [Launch, ownership and economics reconstruction](../../../data/eth/parity_depth_measurements.json), [Product development and measured findings](PRODUCT-EVOLUTION.md).
 
 ## Avant avETH / savETH
 
@@ -269,7 +269,7 @@ savETH has a one-day cooldown at T. Converting it to avETH is one step; receivin
 
 **Evidence limits:** avETH face supply is not an independently verified reserve NAV. The fixed-block Ethereum loans do not reconstruct all cross-chain weights at T. The common 30-day return belongs to savETH’s senior claim; it is not whole-issuer or organic carry profit.
 
-[Official deployments and strategy documentation](https://docs.avantprotocol.com/security/contract-addresses), [Fixed-block share contract](https://etherscan.io/address/0x9469470C9878bf3d6d0604831d9A3A366156f7EE), [Reconstruction, timestamps and source hashes](../../../data/eth/finalization_reconstruction.json), [Launch, ownership and economics reconstruction](../../../data/eth/parity_depth_measurements.json), [Product development and measured findings](../library/PRODUCT-EVOLUTION.html).
+[Official deployments and strategy documentation](https://docs.avantprotocol.com/security/contract-addresses), [Fixed-block share contract](https://etherscan.io/address/0x9469470C9878bf3d6d0604831d9A3A366156f7EE), [Reconstruction, timestamps and source hashes](../../../data/eth/finalization_reconstruction.json), [Launch, ownership and economics reconstruction](../../../data/eth/parity_depth_measurements.json), [Product development and measured findings](PRODUCT-EVOLUTION.md).
 
 ## Makina DETH
 

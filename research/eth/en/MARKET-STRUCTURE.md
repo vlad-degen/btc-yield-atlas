@@ -8,14 +8,17 @@ Staking is the base income source. Receipts move into lending, restaking and man
 
 | Protocol family | Observed parents at T | ETH-equivalent exposure | Oct 2024 to Sep 2026 change | Chart scope |
 | --- | --- | --- | --- | --- |
-| Staking / restaking claims | 19 | 20,190,378 | -4.30% | Default |
-| Loop-focused vaults | 2 | 97,973 | +7.57% | Default |
-| Carry-linked parents | 3 | 511,868 | +57.16% | Default |
-| Basis / hedged ETH | 0 | Not measured | Not measured | Default |
-| Fixed-yield venues | 2 | 8,593 | -96.74% | Default |
-| Liquidity / mixed vaults | 33 | 348,774 | -33.35% | Default |
-| Lending infrastructure | 15 | 6,255,733 | +37.94% | Optional financing layer |
-| CDP collateral | 6 | 763,342 | -51.17% | Optional financing layer |
+| Staking | 23 | 14,786,203 | +20.83% | Default |
+| Restaking | 15 | 2,428,297 | -41.84% | Default |
+| Leveraged staking | 6 | 97,015 | -20.44% | Default |
+| Carry | 12 | 302,276 | +104.88% | Default |
+| Fixed yield | 5 | 9,315 | -96.95% | Default |
+| Basis | 3 | 372 | -98.54% | Default |
+| Options | 8 | 3,182 | -41.78% | Default |
+| Credit | 2 | 24,279 | +879.49% | Default |
+| Farming and pools | 101 | 686,955 | -64.26% | Default |
+| Money markets | 55 | 764,223 | -4.09% | Optional financing layer |
+| CDP collateral | 10 | 657,327 | -48.40% | Optional financing layer |
 
 ## How to interpret history
 

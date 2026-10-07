@@ -1,0 +1,150 @@
+{
+ "snapshot": {
+  "timestamp": 1790985599,
+  "block": 26108081
+ },
+ "method": [
+  "Campaign data: Merkl v4 /campaigns?opportunityId= (creatorAddress, amount, start/end); raw raw/eth/gap-2026-10-07/top5-risk/merkl_campaigns.json",
+  "Reward APR at T = campaign amount/duration annualized / destination vault totalAssets at T (archive read); applies pro rata to every unblacklisted holder (whitelist and blacklist empty for active campaigns).",
+  "Product $/yr = APR x the product's destination claim at T. Token sources traced with Blockscout ERC-20 transfer history (raw http/bs_*.json)."
+ ],
+ "liquid": {
+  "activeCampaignsAtT": [
+   {
+    "opportunity": "Sentora RLUSD Main V2",
+    "opportunityId": "2433802672589613459",
+    "campaignId": "0xf9793617d88797726887cacac749307c9db0cebb9302396bcf7aa604f3dc4482",
+    "token": "RLUSD",
+    "tokenAddress": "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD",
+    "amount": 231475.0,
+    "startUTC": 1790877600,
+    "endUTC": 1791482400,
+    "creator": "0xCc6deDe79bc96dbBEe98E29DB51C0b7619ceE000",
+    "creatorMerklTags": [
+     "sentora"
+    ],
+    "whitelist": [],
+    "blacklist": [],
+    "annualizedRewardUSD": 12069767.857142856,
+    "vaultTotalAssetsAtT": 444242423.3622681,
+    "rewardAPRatT": 0.02716932742666109,
+    "liquidClaimAtT": 55104709.535318464,
+    "liquidRewardUSDperYearAtT": 1497157.8961161207,
+    "merklOpportunityAPRnow_pct": 2.5875499857557647
+   },
+   {
+    "opportunity": "Sentora PRIME Main V2 (PYUSD)",
+    "opportunityId": "16103329905303288034",
+    "campaignId": "0xa30645ec78d76bc78d372bc68374fb41d1c2a2e7cf655bb63e2d3bfedb98eef5",
+    "token": "PYUSD",
+    "tokenAddress": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+    "amount": 93575.0,
+    "startUTC": 1790877600,
+    "endUTC": 1791482400,
+    "creator": "0x43076BcfAe3D19d8A839dFa10597EC3012151609",
+    "creatorMerklTags": [
+     "sentora-pyusd"
+    ],
+    "whitelist": [],
+    "blacklist": [],
+    "annualizedRewardUSD": 4879267.857142857,
+    "vaultTotalAssetsAtT": 219084049.506302,
+    "rewardAPRatT": 0.022271214486577692,
+    "liquidClaimAtT": 49605232.777562,
+    "liquidRewardUSDperYearAtT": 1104768.7788456974,
+    "merklOpportunityAPRnow_pct": 2.263164168390584
+   },
+   {
+    "opportunity": "Paypal USD Main V2",
+    "opportunityId": "18030207387280065324",
+    "campaignId": "0xeaac69d71227d35d79ff400f054e071c39fd54a805e72f5f488a5166fcdb2599",
+    "token": "PYUSD",
+    "tokenAddress": "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8",
+    "amount": 221625.0,
+    "startUTC": 1790877600,
+    "endUTC": 1791482400,
+    "creator": "0x43076BcfAe3D19d8A839dFa10597EC3012151609",
+    "creatorMerklTags": [
+     "sentora-pyusd"
+    ],
+    "whitelist": [],
+    "blacklist": [],
+    "annualizedRewardUSD": 11556160.714285715,
+    "vaultTotalAssetsAtT": 388051488.325411,
+    "rewardAPRatT": 0.029779967509350164,
+    "liquidClaimAtT": 0.0,
+    "liquidRewardUSDperYearAtT": 0.0,
+    "merklOpportunityAPRnow_pct": 2.8756159084705804
+   }
+  ],
+  "totalRewardUSDperYearAtT": 2601926.6749618184,
+  "rewardAPRonAllDollarDestinations": 0.020117612500015338,
+  "rewardAPRonEthCollateralDollarDebt": 0.014368703880460135,
+  "claimedViaMerklToDate_mainVault": {
+   "ETHFI ( Lend weETH on Aave (net lending))": 11533.42,
+   "ETHFI (Lend weETH on Aave (net lending))": 10645.28,
+   "RLUSD (Supply to Sentora RLUSD Main V2 vault on Morpho on Ethereum)": 192389.35,
+   "PYUSD (Supply to Paypal USD Main V2 vault on Morpho on Ethereum)": 32100.6,
+   "PYUSD (Supply to Sentora PRIME Main V2 vault on Morpho on Ethereum)": 133586.88,
+   "rEUL (Supply wETH on Euler Prime WETH vault )": 1056.74
+  },
+  "distributor": "0x3ef3d8ba38ebe18db133cec108f4d14ce00dd9ae (Merkl Distributor proxy); recipient 0xf0bb20865277abd641a307ece5ee04e79073416c (Liquid main vault); LoanManager and drone have no Merkl rewards",
+  "fundingChains": {
+   "RLUSD": {
+    "campaignCreator": "0xCc6deDe79bc96dbBEe98E29DB51C0b7619ceE000 (Safe; Merkl creator tag \"sentora\"; deployed by SafeProxyFactory 0x4e1DCf7A...)",
+    "chain": [
+     "RLUSD mint (from 0x0) -> 0xFbcA8B5f5794456B59aD4177E5b212d0Db600BB6 (contract \"MultiSign\"; received 208.5M RLUSD straight from mint in Sep-Oct 2026)",
+     "-> 0xe146C01102e02344d4B1E59fD74b5054979D13A5 (EOA; 145M from the MultiSign)",
+     "-> 0x69ae073586994371A772EFD96d65804c25F990A2 (EOA; 78.3M)",
+     "-> 0xE36B0bAe3E9985D70096ed1b37d4DcF91Edf4Dce (EOA; 68M)",
+     "-> 0xB70e0fAd7D0CF4c187365A84E728802AB24Ca78b (EOA; 12M; also pays a Curve LiquidityGaugeV6 1.52M and ALMProxy 0x1601843c 1.84M)",
+     "-> creator Safe 0xCc6d...e000 (15.14M RLUSD in since Aug 2025) -> Merkl 0x3Ef3D8bA (14.85M out)"
+    ],
+    "reading": "Every hop is unlabelled, but the chain starts at the address that receives RLUSD directly from mint, i.e. issuer-side treasury. Sentora only creates the campaigns; the RLUSD is not paid out of Sentora vault fees."
+   },
+   "PYUSD": {
+    "campaignCreator": "0x43076BcfAe3D19d8A839dFa10597EC3012151609 (Safe; Merkl creator tag \"sentora-pyusd\"; same SafeProxyFactory deployer)",
+    "chain": [
+     "PYUSD mint (from 0x0) -> 0x264bd8291fAE1D75DB2c5F573b07faA6715997B5 (EOA receiving 10.0M PYUSD directly from mint in one day; 57.3M historically to 0x1da0d480)",
+     "-> 0x1da0d480dF75D7F2d91B14BdEa217Cb39C000C0a / 0x4CFB4a4B2A0E0153859953F2C6773255A853332A / 0xfc0539d019482D311C161AE3B756cDCcDEc45e87 / 0x1E30F9c2C688F85c82111d1d262bfD127E687282 (EOAs)",
+     "-> creator Safe 0x4307...1609 (9.64M PYUSD in since Apr 2026: 5.29M from 0xfc0539d0, 4.36M from 0x1E30F9c2) -> Merkl (9.67M out)",
+     "0x1E30F9c2 also funds Merkl creator Safe 0xdef1FA4C (tag \"aave\") with 0.96M PYUSD and received 0.21M PYUSD straight from mint"
+    ],
+    "reading": "Issuer-side PYUSD wallets fund the Sentora PYUSD campaigns (consistent with a PYUSD issuer incentive budget). Identity of the EOAs is not labelled on-chain."
+   }
+  },
+  "historicalNonDollar": "ETHFI (Aave weETH-lending campaigns by Safe 0xdef1FA4C tagged \"aave\", Oct 2025-Jan 2026) and rEUL (Euler Prime WETH, creators tagged \"euler\", 2024-2025) accrued to the E3 staking-loop legs, not the dollar legs; none active at T."
+ },
+ "destinationsWithoutMerkl": {
+  "stcUSD (Cap, 0x88887be4)": "No Merkl opportunity for the stcUSD identifier; yield arrives through the share price (Cap agents pay USDC borrow interest; 55.3M of 61.4M USDC reserve lent at T).",
+  "earnUSD (Lido Earn USD, 0x4ce1ac8f)": "No Merkl opportunity for the earnUSD identifier; yield is share price only in this read.",
+  "savUSD (Avant)": "Yield through the savUSD/avUSD exchange rate (Chainlink feed 0x9fbb7d07 on Ethereum); no Merkl campaign paying the Avant strategy wallet on its savUSD.",
+  "Curve WETH/crvUSD LP (YieldBasis)": "LP fees accrue to the AMM; gauge (YB token) emissions go to LT stakers, not to the debt leg."
+ },
+ "otherProducts": {
+  "liquity": {
+   "campaign": "Uniswap V4 BOLD-USDC 0.05% (Merkl opp 13207567167701080626), creator 0xB4244885... tag \"liquity\"",
+   "annualizedBOLD": 200434.36333299312,
+   "aprUsingMerklTVLnow": 0.09685863097894902,
+   "vaultV4BookUSD": 159364.4,
+   "estUSDperYear": 15435.817610781623,
+   "claimedToDate_BOLD": 201.31,
+   "note": "TVL from Merkl API today (not T); the vault position is the stored V4 market book. Tiny relative to 6.75M debt."
+  },
+  "avant": {
+   "claimedToDate": {
+    "USDC (15049443418710885408)": 0.47,
+    "USDC (16744976125448600760)": 20.56,
+    "USDC (3666969200636113422)": 12.36,
+    "WFRAX (3186204817165100778)": 21.38,
+    "USDS (Supply to sky.money USDS Flagship V2 vault on Morpho on Ethereum)": 207.34,
+    "MORPHO (Supply WETH on any Morpho Market)": 77.01,
+    "MORPHO (2963051592155626152)": 33.02,
+    "MORPHO (16472190313847718984)": 9.2
+   },
+   "note": "Small Merkl claims (USDS from sky.money USDS Flagship V2 vault supply, MORPHO for WETH supply, USDC, WFRAX); not tied to the Aave/Spark dollar debt."
+  },
+  "lido-earn": "No Merkl rewards on the carry account 0x181cb55f.",
+  "yieldbasis": "No Merkl rewards on the LT; YB gauge emissions go to stakers."
+ }
+}

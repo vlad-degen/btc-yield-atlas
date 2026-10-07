@@ -19,7 +19,7 @@ Financial snapshot: **2 October 2026**. This is a family-by-family map of measur
 
 ## Discovery is not strategy attribution
 
-The saved DefiLlama screen contains **299** ETH-name pools above $5M from **86** projects. **287** are joined to an existing parent; the other **12** receive separate dispositions. These are discovery decisions, not 299 independently reconstructed strategies or additive ETH capital. [Individual decisions](CARRY-COVERAGE-AUDIT.md).
+The saved DefiLlama screen contains **299** ETH-name pools above $5M from **86** projects. **221** are joined to an existing parent; the other **78** receive separate dispositions. These are discovery decisions, not 299 independently reconstructed strategies or additive ETH capital. [Individual decisions](CARRY-COVERAGE-AUDIT.md).
 
 ## Three boundaries that affect the answer
 

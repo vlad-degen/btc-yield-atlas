@@ -44,7 +44,7 @@
       "tvlUsd": 6020220091,
       "poolMeta": null,
       "parent_id": "ether.fi-stake",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -116,7 +116,7 @@
       "tvlUsd": 1133435185,
       "poolMeta": null,
       "parent_id": "kelp",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -139,9 +139,9 @@
       "symbol": "CTDELTAWEETH",
       "tvlUsd": 834747362,
       "poolMeta": "Concrete Delta WeETH",
-      "parent_id": "concrete",
-      "parent_role": "carry",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -163,9 +163,9 @@
       "symbol": "LSETH",
       "tvlUsd": 744372316,
       "poolMeta": null,
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
+      "parent_id": "liquid-collective",
+      "parent_role": "staking",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -247,9 +247,9 @@
       "symbol": "LIQUIDETH",
       "tvlUsd": 372054080,
       "poolMeta": null,
-      "parent_id": "ether.fi-liquid",
-      "parent_role": "carry",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -320,7 +320,7 @@
       "tvlUsd": 202727061,
       "poolMeta": null,
       "parent_id": "ether.fi-stake",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -367,9 +367,9 @@
       "symbol": "WETH-USDC",
       "tvlUsd": 163013024,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -451,9 +451,9 @@
       "symbol": "ctwstETH+",
       "tvlUsd": 123228112,
       "poolMeta": "Concrete wrapped Staked ETH +",
-      "parent_id": "concrete",
-      "parent_role": "carry",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -464,7 +464,7 @@
       "tvlUsd": 119680466,
       "poolMeta": null,
       "parent_id": "renzo",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -523,9 +523,9 @@
       "symbol": "WETH-USDT",
       "tvlUsd": 111487432,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -571,9 +571,9 @@
       "symbol": "USDC-WETH",
       "tvlUsd": 98095049,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -763,9 +763,9 @@
       "symbol": "ETH-STETH",
       "tvlUsd": 59605932,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -788,7 +788,7 @@
       "tvlUsd": 57436066,
       "poolMeta": null,
       "parent_id": "ether.fi-stake",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -799,9 +799,9 @@
       "symbol": "ETH",
       "tvlUsd": 56748465,
       "poolMeta": null,
-      "parent_id": "spark-savings",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -883,9 +883,9 @@
       "symbol": "USDC-WETH",
       "tvlUsd": 47085688,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -907,9 +907,9 @@
       "symbol": "WBTC-WETH",
       "tvlUsd": 44941238,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -919,9 +919,9 @@
       "symbol": "ETH-USDC",
       "tvlUsd": 44840310,
       "poolMeta": "0.30%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -943,9 +943,9 @@
       "symbol": "WBTC-WETH",
       "tvlUsd": 41323598,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1039,9 +1039,9 @@
       "symbol": "WETH-USDC",
       "tvlUsd": 36962469,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1051,9 +1051,9 @@
       "symbol": "WHITE-WETH",
       "tvlUsd": 36873682,
       "poolMeta": "0.01%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1087,9 +1087,9 @@
       "symbol": "WBTC-WETH",
       "tvlUsd": 36373065,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1100,7 +1100,7 @@
       "tvlUsd": 35090634,
       "poolMeta": null,
       "parent_id": "swell-liquid-restaking",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -1111,9 +1111,9 @@
       "symbol": "ETH-USDT",
       "tvlUsd": 33274554,
       "poolMeta": "0.30%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1160,7 +1160,7 @@
       "tvlUsd": 31179109,
       "poolMeta": null,
       "parent_id": "puffer-stake",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -1207,9 +1207,9 @@
       "symbol": "WETH",
       "tvlUsd": 29981097,
       "poolMeta": "Mixed Yield Token (alETH vault)",
-      "parent_id": "alchemix-v3",
-      "parent_role": "cdp",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1219,9 +1219,9 @@
       "symbol": "SAVETH",
       "tvlUsd": 29814852,
       "poolMeta": "ERC-4626: savETH \u2192 avETH",
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Managed market-neutral mandate; ETH-collateral dollar-financing ledger unverified",
+      "parent_id": "avant-aveth",
+      "parent_role": "farming",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1280,7 +1280,7 @@
       "tvlUsd": 27706171,
       "poolMeta": null,
       "parent_id": "bedrock-unieth",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -1339,9 +1339,9 @@
       "symbol": "RNETH",
       "tvlUsd": 26125078,
       "poolMeta": null,
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Staking-family discovery; no dollar investment leg established",
+      "parent_id": "nodedao",
+      "parent_role": "staking",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1435,9 +1435,9 @@
       "symbol": "ETH-STETH",
       "tvlUsd": 23822553,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1471,9 +1471,9 @@
       "symbol": "ETH-LINK",
       "tvlUsd": 22634282,
       "poolMeta": "0.30%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1519,9 +1519,9 @@
       "symbol": "GETH",
       "tvlUsd": 20829269,
       "poolMeta": null,
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Guarda staking wrapper; no dollar investment leg established",
+      "parent_id": "geth",
+      "parent_role": "staking",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1531,9 +1531,9 @@
       "symbol": "THUSD-USDC-ETH",
       "tvlUsd": 20472677,
       "poolMeta": "thUSD Genesis Vault - USDC Ethereum",
-      "parent_id": "concrete",
-      "parent_role": "carry",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1579,9 +1579,9 @@
       "symbol": "STETH-FRXETH",
       "tvlUsd": 19097219,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1687,9 +1687,9 @@
       "symbol": "ETH-WBTC",
       "tvlUsd": 17402622,
       "poolMeta": "0.30%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1711,9 +1711,9 @@
       "symbol": "ETH-AZTEC",
       "tvlUsd": 17181147,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1736,7 +1736,7 @@
       "tvlUsd": 17009895,
       "poolMeta": "Vesper-wstETH",
       "parent_id": "symbiotic",
-      "parent_role": "staking",
+      "parent_role": "restaking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -1759,9 +1759,9 @@
       "symbol": "UNI-WETH",
       "tvlUsd": 16764604,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1771,9 +1771,9 @@
       "symbol": "YB-WETH",
       "tvlUsd": 16506593,
       "poolMeta": "Staked #10",
-      "parent_id": "yield-basis",
-      "parent_role": "carry",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1855,9 +1855,9 @@
       "symbol": "LINK-WETH",
       "tvlUsd": 15262815,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1915,9 +1915,9 @@
       "symbol": "WETH-CBBTC",
       "tvlUsd": 14524067,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1951,9 +1951,9 @@
       "symbol": "USDT-WBTC-WETH",
       "tvlUsd": 14213042,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1987,9 +1987,9 @@
       "symbol": "WETH-WEETH",
       "tvlUsd": 13570140,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -1999,9 +1999,9 @@
       "symbol": "AAVE-WETH",
       "tvlUsd": 13288224,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2047,9 +2047,9 @@
       "symbol": "NETH",
       "tvlUsd": 12912006,
       "poolMeta": null,
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Staking-family discovery; no dollar investment leg established",
+      "parent_id": "nodedao",
+      "parent_role": "staking",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2107,9 +2107,9 @@
       "symbol": "ETH-USDC",
       "tvlUsd": 12051672,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2131,9 +2131,9 @@
       "symbol": "WETH-CBBTC",
       "tvlUsd": 11647503,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2143,9 +2143,9 @@
       "symbol": "YNETHX",
       "tvlUsd": 11380982,
       "poolMeta": null,
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
+      "parent_id": "yieldnest",
+      "parent_role": "restaking",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2191,9 +2191,9 @@
       "symbol": "WETH-NORMIE",
       "tvlUsd": 11185663,
       "poolMeta": null,
-      "parent_id": "sushiswap",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2204,7 +2204,7 @@
       "tvlUsd": 11160481,
       "poolMeta": null,
       "parent_id": "reserve-protocol",
-      "parent_role": "farming",
+      "parent_role": "staking",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -2215,9 +2215,9 @@
       "symbol": "ETH-WBTC",
       "tvlUsd": 11035672,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2251,9 +2251,9 @@
       "symbol": "ETH+-WETH",
       "tvlUsd": 10915196,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2263,9 +2263,9 @@
       "symbol": "ETH-USDT",
       "tvlUsd": 10886224,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2275,9 +2275,9 @@
       "symbol": "WETH-BLUEAGENT",
       "tvlUsd": 10861839,
       "poolMeta": "1.20%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2287,9 +2287,9 @@
       "symbol": "WETH-WEETH",
       "tvlUsd": 10794962,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2299,9 +2299,9 @@
       "symbol": "ETH-UNI",
       "tvlUsd": 10426503,
       "poolMeta": "0.30%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2311,9 +2311,9 @@
       "symbol": "WETH-USDT",
       "tvlUsd": 10391606,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2359,9 +2359,9 @@
       "symbol": "YB-WETH",
       "tvlUsd": 10174580,
       "poolMeta": "Unstaked #10",
-      "parent_id": "yield-basis",
-      "parent_role": "carry",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2371,9 +2371,9 @@
       "symbol": "WETH-USDC",
       "tvlUsd": 10097585,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2443,9 +2443,9 @@
       "symbol": "ETH-USDC",
       "tvlUsd": 9378967,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2479,9 +2479,9 @@
       "symbol": "ETH-POD",
       "tvlUsd": 9156625,
       "poolMeta": "1.10%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2503,9 +2503,9 @@
       "symbol": "ETH-ZIK",
       "tvlUsd": 9062267,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2587,9 +2587,9 @@
       "symbol": "LSETH-WETH",
       "tvlUsd": 8553486,
       "poolMeta": "0.01%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2647,9 +2647,9 @@
       "symbol": "WETH-FRXETH",
       "tvlUsd": 8292466,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2671,9 +2671,9 @@
       "symbol": "MSETH-WETH",
       "tvlUsd": 7995081,
       "poolMeta": "Curve",
-      "parent_id": "stake-dao-yield",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2755,9 +2755,9 @@
       "symbol": "ETH-DPHN",
       "tvlUsd": 7524958,
       "poolMeta": "1.00%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2815,9 +2815,9 @@
       "symbol": "WETH-FOOM",
       "tvlUsd": 7049090,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2827,9 +2827,9 @@
       "symbol": "USDC-WETH",
       "tvlUsd": 6900642,
       "poolMeta": "0.01%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2852,7 +2852,7 @@
       "tvlUsd": 6890766,
       "poolMeta": "Aavev3",
       "parent_id": "cian-yield-layer",
-      "parent_role": "farming",
+      "parent_role": "loops",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -2863,9 +2863,9 @@
       "symbol": "USDT-WBTC-WETH",
       "tvlUsd": 6886352,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2875,9 +2875,9 @@
       "symbol": "DELTA-WETH",
       "tvlUsd": 6879103,
       "poolMeta": null,
-      "parent_id": "sushiswap",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2899,9 +2899,9 @@
       "symbol": "DETH",
       "tvlUsd": 6791179,
       "poolMeta": null,
-      "parent_id": null,
-      "parent_role": null,
-      "disposition": "DETH mandate includes LRTs, lending, AMMs, PTs and loops; sibling DBIT carry cannot be assigned to DETH",
+      "parent_id": "makina",
+      "parent_role": "farming",
+      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2935,9 +2935,9 @@
       "symbol": "WSTETH-WETH",
       "tvlUsd": 6687336,
       "poolMeta": "0.01%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2959,9 +2959,9 @@
       "symbol": "1INCH-WSTETH",
       "tvlUsd": 6632255,
       "poolMeta": "1.00%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3031,9 +3031,9 @@
       "symbol": "WETH-USDT",
       "tvlUsd": 6417693,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3055,9 +3055,9 @@
       "symbol": "WETH-RAIL",
       "tvlUsd": 6375280,
       "poolMeta": "1%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3079,9 +3079,9 @@
       "symbol": "ETH-WBNB",
       "tvlUsd": 6322368,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3091,9 +3091,9 @@
       "symbol": "CIRBTC-WETH",
       "tvlUsd": 6246771,
       "poolMeta": "0.01%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3139,9 +3139,9 @@
       "symbol": "WETH-PIKA",
       "tvlUsd": 6091374,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3175,9 +3175,9 @@
       "symbol": "USDC-WETH",
       "tvlUsd": 6048940,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3211,9 +3211,9 @@
       "symbol": "RCH-WETH",
       "tvlUsd": 6007669,
       "poolMeta": "0.05%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3223,9 +3223,9 @@
       "symbol": "WDOGE-WETH",
       "tvlUsd": 5901838,
       "poolMeta": "1%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3235,9 +3235,9 @@
       "symbol": "ALETH",
       "tvlUsd": 5897139,
       "poolMeta": "Fixed Yield: 5 month term",
-      "parent_id": "alchemix-v3",
-      "parent_role": "cdp",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3283,9 +3283,9 @@
       "symbol": "WETH-USDC",
       "tvlUsd": 5703682,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3307,9 +3307,9 @@
       "symbol": "ETH-USDC",
       "tvlUsd": 5667777,
       "poolMeta": "0.35%",
-      "parent_id": "uniswap-v4",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3331,9 +3331,9 @@
       "symbol": "UNI-WETH",
       "tvlUsd": 5604400,
       "poolMeta": "1%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3380,7 +3380,7 @@
       "tvlUsd": 5504563,
       "poolMeta": "single-side, no-loss LP",
       "parent_id": "native-credit-pool",
-      "parent_role": "lending",
+      "parent_role": "credit",
       "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
@@ -3439,9 +3439,9 @@
       "symbol": "ETH+-WETH",
       "tvlUsd": 5451260,
       "poolMeta": "Curve",
-      "parent_id": "stake-dao-yield",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3463,9 +3463,9 @@
       "symbol": "WETH-CVX",
       "tvlUsd": 5269586,
       "poolMeta": null,
-      "parent_id": "convex-finance",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3475,9 +3475,9 @@
       "symbol": "BAL-WETH",
       "tvlUsd": 5205653,
       "poolMeta": "Balancer 80 BAL 20 WETH",
-      "parent_id": "balancer-v2",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3523,9 +3523,9 @@
       "symbol": "OHM-WETH",
       "tvlUsd": 5125953,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3571,9 +3571,9 @@
       "symbol": "WETH-KCS",
       "tvlUsd": 5050660,
       "poolMeta": "0.3%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -3595,9 +3595,9 @@
       "symbol": "WETH-WEETH",
       "tvlUsd": 5009042,
       "poolMeta": "0.01%",
-      "parent_id": "uniswap-v3",
-      "parent_role": "farming",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     }
   ],

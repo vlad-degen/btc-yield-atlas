@@ -84,5 +84,5 @@ The stated mandate includes neutral arbitrage and staking collateral financed wi
 
 One externally owned address holds all issued Delta shares at T. That establishes concentration in this claim, while the shared custody Safe holds the actual strategy assets. It does not identify outside investor capital or assign the Safe’s dollar arbitrage profit to Delta.
 
-[Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
+[Reproducible measurement ledger](../../../../data/eth/parity_depth_measurements.json).
 

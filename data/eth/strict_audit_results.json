@@ -7,12 +7,12 @@
       "details": null
     },
     {
-      "check": "eight_strategy_groups_and_default_financing_exclusion",
+      "check": "counted_once_categories_and_optional_financing",
       "passed": true,
       "details": null
     },
     {
-      "check": "source_observations_preserved_with_explicit_Tron_exclusion",
+      "check": "Tron_and_infrastructure_rows_excluded_with_reasons",
       "passed": true,
       "details": null
     },
@@ -122,6 +122,6 @@
       "details": null
     }
   ],
-  "site_sha256": "976f236036fc2a870e6ff07cf0e5bf79adb1a19f24e40a17a69df03c7160df94",
+  "site_sha256": "8fbb299bc4f61a92d6601dc5fc180985a814071a64c46d1c014bb8eb99c4968f",
   "scope": "User-requested shorter reader navigation with retained evidence anchors, preserved source observations, financial scenarios and exported selection views. Coverage limits remain explicit; this is not an independent solvency audit."
 }

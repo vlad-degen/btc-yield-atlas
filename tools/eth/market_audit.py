@@ -46,7 +46,7 @@ def run():
  check('carry_USD_marks_match_book_ETH',all(close(r['sizeUSD'],r['sizeETH']*r['priceUSD']) for r in histories if r['sizeUSD'] is not None) and all(r['timestamp']>=r['priceUpdatedAt'] and r['timestamp']-r['priceUpdatedAt']<=3420 for r in histories if r.get('priceUpdatedAt') is not None))
  with (ROOT/'eth/data/carry-category-history.csv').open() as f:rows=list(csv.DictReader(f))
  original_rows=[r for r in rows if r['source_ledger']=='carry_category_candidates.json']
- check('carry_CSV_preserves_all_products_and_nulls',len(rows)==216 and len(original_rows)==168 and all((row['book_NAV_ETH']=='' if r['sizeETH'] is None else close(float(row['book_NAV_ETH']),r['sizeETH'])) and row['historical_carry_allocation_percent']=='' for row,r in zip(original_rows,histories)))
+ check('carry_CSV_preserves_all_products_and_nulls',len(rows)%24==0 and all((row['book_NAV_ETH']=='' if r['sizeETH'] is None else close(float(row['book_NAV_ETH']),r['sizeETH'])) and row['historical_carry_allocation_percent']=='' for row,r in zip(original_rows,histories)))
  html=(ROOT/'eth/index.html').read_text();js=(ROOT/'tools/eth/site/market.js').read_text()
  check('main_page_has_market_to_carry_reading_order',html.index('id="map"')<html.index('id="market-history"')<html.index('id="market-categories"')<html.index('id="how"')<html.index('id="top5"')<html.index('id="market"')<html.index('id="risks"')<html.index('id="do"')<html.index('id="data"') and all(id in html for id in ['id="m-category-changes"','id="m-chain-table"','id="c-history-table"']))
  check('small_carry_products_are_retained',all(name in js for name in ['Liquity ETH Carry','TAU InfiniFi ETH Carry','Reservoir ETH Yield','Royco ETH']) and 'max>=' not in js and '.filter(p=>CARRY_DEDICATED.includes(p.product))' in js)

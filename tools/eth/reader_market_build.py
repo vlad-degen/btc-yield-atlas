@@ -3,6 +3,12 @@ import copy,hashlib,json,math
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];D=ROOT/'data/eth'
 def run():
+ net=D/'netmap/market_chapter.json'
+ if net.exists():
+  # Counted-once product map (tools/eth/netmap): each product once, staking tokens inside other products taken out of
+  # their issuers. Replaces the protocol-exposure ledger as the reader's market; the old ledger stays in exhibits.
+  m=json.loads(net.read_text());m['presentation_universe']={'source_path':'data/eth/netmap/market_chapter.json','source_sha256':hashlib.sha256(net.read_bytes()).hexdigest(),'policy':'Counted once, as in the BTC map.'}
+  (D/'market_reader_chapter.json').write_text(json.dumps(m,indent=2)+'\n');print('Reader universe (counted once):',len(m['products']),'products');return
  src=D/'research_market_chapter.json';original=json.loads(src.read_text());m=copy.deepcopy(original)
  # A matching ETH symbol on Tron does not verify an Ethereum-backed claim.
  labels={'staking':'Staking / restaking claims','loops':'Loop-focused vaults','carry':'Carry-linked parents','basis':'Basis / hedged ETH','fixed_yield':'Fixed-yield venues','farming':'Liquidity / mixed vaults','lending':'Lending infrastructure','cdp':'CDP collateral'}

@@ -35,6 +35,19 @@ def run():
  for pid in sorted(set(r['id'] for r in obs)):
   rr=[r for r in obs if r['id']==pid and r['outer']];p=next((p for p in pc['products'] if p['id']==pid),None); name=p['name'] if p else next((r.get('name') for r in rr if r.get('name')),{'tau-infinifi':'TAU InfiniFi ETH Carry','reservoir-eth':'Reservoir ETH Yield'}.get(pid,pid));h=[{**m,**summarize([r for r in rr if r['month']==m['month']])} for m in months];t=h[-1]
   products.append({'id':pid,'name':name,'bookETH':p['capitalETH'] if p else None,'bookUSD':p['capitalUSD'] if p else None,'attribution':'operator-associated, not included in attributed total' if pid.startswith('upshift-') else 'attributed product account / direct loan','included':not pid.startswith('upshift-'),'current':t,'history':h[:-1],'currentLegs':[r for r in rr if r['month']=='snapshot']})
+ # 7 Oct per-asset archive reads (tools/eth/gap_top5_risk, data/eth/gap_top5_risk_series.csv) replace the month-end
+ # dollar debt of three products: Lido Earn's USDe/sUSDe loop is not ETH-backed carry and its USDC/USDe legs were missing;
+ # Avant and Liquity had funded months the leg inventory missed.
+ gap=ROOT/'data/eth/gap_top5_risk_series.csv'
+ if gap.exists():
+  g={}
+  for r in csv.DictReader(gap.open()):
+   if r['metric'] in ('dollar_debt_usd','borrow_rate_debt_weighted'):g[(r['product'],r['metric'],r['period'])]=float(r['value'])
+  for p in products:
+   if p['id'] not in ('lido-earn','avant','liquity'):continue
+   for h in p['history']:
+    d=g.get((p['id'],'dollar_debt_usd',h['month']))
+    if d is not None:h.update(debtUSD=d,apr=g.get((p['id'],'borrow_rate_debt_weighted',h['month'])) if d>=1 else None,source='gap_top5_risk_series.csv')
  products.sort(key=lambda p:-(p['current']['debtUSD'] or 0));included=[p for p in products if p['included']];total=sum(p['current']['debtUSD'] or 0 for p in included);top=[p for p in included if p['id']in{q['id'] for q in pc['products']} and (p['current']['debtUSD'] or 0)>=1][:5]
  bindings=rows('economic_upshift_binding_T')
  for p in products:

@@ -41,7 +41,7 @@ def run():
     yb = next(p for p in pc['products'] if p['id'] == 'yieldbasis')
     check('YB_pool_equity_and_actual_loan_are_distinct', close(status['YieldBasis WETH']['carryEquityETH'], yb['capitalETH']) and yb['charts']['loanLegs']['rows'][0]['debtUSD'] > yb['capitalUSD'] * .99)
     screen = read('carry_coverage_audit')['materialPools']
-    check('discovery_count_does_not_claim_strategy_census', c['discovery']['exhaustiveStrategyCensus'] is False and c['discovery']['parentDispositions'] == sum(r['disposition'].startswith('Parent covered') for r in screen) == 287)
+    check('discovery_count_does_not_claim_strategy_census', c['discovery']['exhaustiveStrategyCensus'] is False and c['discovery']['parentDispositions'] == sum(r['disposition'].startswith('Parent covered') for r in screen))
     for filename in ['carry-common-30d.csv', 'carry-status-and-capital.csv', 'report_contract.json']:
         check('download_and_mirror:' + filename, (ROOT / 'eth/data' / filename).read_bytes() == (D / filename).read_bytes() == (ROOT / 'site/eth/data' / filename).read_bytes())
     exported = list(csv.DictReader((D / 'carry-common-30d.csv').open()))
@@ -57,7 +57,7 @@ def run():
     index = (ROOT / 'tools/eth/site/index.html').read_text()
     check('primary_comparison_has_no_mixed_return_windows', 'filter(r=>[94,90,365]' not in reader and 'measuredReturn' not in reader)
     check('headlines_use_contract_not_filter_denominator', 'h.nativeActiveETH' in reader and 'h.examinedBooks' in reader and 'h.liquid730dExcessPP' in reader)
-    check('no_complete_market_or_concentration_headline', 'All the ETH that earns a yield' not in index and 'top two / measured carry books' not in index)
+    check('market_headline_is_the_counted_once_map', 'All the ETH that earns a yield' in index and read('market_reader_chapter')['basis'] == 'counted_once' and 'top two / measured carry books' not in index)
     failures = [r for r in checks if not r['passed']]
     result = {'checks': len(checks), 'all_checks_passed': not failures, 'failed': failures,
               'scope': 'Financial definitions, independently recomputed matched returns, status, discovery scope, canonical reports and exports. Unknown global capital and complete carry P&L are not certified.'}

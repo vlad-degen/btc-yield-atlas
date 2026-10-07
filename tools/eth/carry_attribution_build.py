@@ -176,7 +176,7 @@ def build():
    share_delta=sum(int(r['shares_raw'])*(1 if r['event']=='borrow' else -1) for r in ev);check(pos[1]+share_delta==endpos[1],l['id']+' common-window debt share reconciliation')
    wloans.append({'ledger_id':l['id'],'market_id':l['market_id'],'account':l['account'],'symbol':l['symbol'],'mechanism':l['mechanism'],'opening_accrued_debt_assets':debt/10**l['decimals'],'borrowed_cash_assets':borrowed/10**l['decimals'],'repaid_cash_assets':repaid/10**l['decimals'],'ending_accrued_debt_assets':ending/10**l['decimals'],'accrued_borrowing_interest_assets':interest/10**l['decimals'],'borrow_count':sum(r['event']=='borrow' for r in ev),'repay_count':sum(r['event']=='repay' for r in ev),'sourceURL':l['sourceURL']})
   meta={}
-  for token in {r['address'] for r in window['reward_token_metadata']}:
+  for token in sorted({r['address'] for r in window['reward_token_metadata']}):
    r={x['field']:x['response'].get('result') for x in window['reward_token_metadata'] if x['address']==token};meta[token]={'symbol':abi_string(r['symbol()']),'decimals':c.words(r['decimals()'])[0]}
   rg=next(g for g in flows['log_groups'] if g['key']=='merkl_cash_reward_transfers');payments=[]
   for log in ordered(rg['logs']):

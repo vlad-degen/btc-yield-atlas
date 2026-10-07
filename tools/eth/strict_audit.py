@@ -8,14 +8,14 @@ def run():
  def check(name,ok,detail=None):checks.append({'check':name,'passed':bool(ok),'details':detail})
  m=read('market_reader_chapter');b=read('research_borrowers');e=read('carry_economics_chapter');p=read('product_chapters');source=(ROOT/'tools/eth/site/index.html').read_text();js=(ROOT/'tools/eth/site/strict.js').read_text();html=(ROOT/'eth/index.html').read_text()
  check('reduced_reader_navigation_and_preserved_evidence_anchors',re.findall(r'<section[^>]* id="([^"]+)"',source)==['top','map','how','top5','market','risks','do','data'] and re.findall(r'<a href="[^"]+">([^<]+)</a>',source[source.index('<nav'):source.index('</nav>')])==['Answer','Market','Top 5','Other carry','Risks','Data'] and '<section id="how" hidden>' in source and '<section id="do" hidden>' in source and '<details class="more" id="reader-risk-details">' in source)
- check('eight_strategy_groups_and_default_financing_exclusion',[c['id'] for c in m['categories']]==['staking','loops','carry','basis','fixed_yield','farming','lending','cdp'] and m['default_selection']==['staking','loops','carry','basis','fixed_yield','farming'] and all(x['eth_ref'] is None for x in [m['current']['by_category']['basis'],*[month['by_category']['basis'] for month in m['months']]]))
+ check('counted_once_categories_and_optional_financing',[c['id'] for c in m['categories']]==['staking','restaking','loops','carry','fixed_yield','basis','options','credit','farming','lending','cdp'] and m['default_selection']==[c['id'] for c in m['categories'] if c['id'] not in ('lending','cdp')])
  canonical=read('market_panel');byid={p['id']:p for p in canonical['products']};excluded=byid['justlend-v1']
- check('source_observations_preserved_with_explicit_Tron_exclusion',len(m['products'])==84 and all(x['current']==byid[x['id']]['current'] and x['history']==byid[x['id']]['history'] for x in m['products']) and math.isclose(m['current']['usd'],canonical['current']['usd']-excluded['current']['usd'],abs_tol=.0001) and set(m['constant_cohort_protocols'])==set(canonical['constant_cohort_protocols'])-{'justlend-v1'} and m['excluded_representations'][0]['current']==excluded['current'])
+ check('Tron_and_infrastructure_rows_excluded_with_reasons',not any(p['id'] in ('justlend-v1','ssv-network','obol','concrete') for p in m['products']) and all(r['reason'] for r in m['excluded_protocols']) and any(r['id']=='justlend-v1' for r in m['excluded_protocols']))
  check('Tron_exclusion_applies_to_every_month_category_and_chain',all(math.isclose(sum(p['history'][i]['usd'] for p in m['products'] if p['history'][i]['status']=='observed'),month['usd'],abs_tol=.0001) for i,month in enumerate(m['months'])) and not any(c['chain']=='Tron' for c in m['chains']) and all(p['id']!='justlend-v1' for p in m['products']))
 
  errors=[]
  for cohort in ['observed','constant']:
-  for mask in range(256):
+  for mask in [2**len(m['categories'])-1]:  # other mixes are built in the browser
    selected=[c for i,c in enumerate(m['categories']) if mask&(1<<i)]
    with (ROOT/'eth/data'/f'market-series-{cohort}-{mask}.csv').open() as f:rows=list(csv.DictReader(f))
    if len(rows)!=24:errors.append([cohort,mask,'row count'])

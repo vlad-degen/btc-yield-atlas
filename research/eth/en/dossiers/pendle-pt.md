@@ -50,4 +50,4 @@ Four active, unexpired Ethereum Pendle markets from the saved registry have veri
 
 Ribbon ETH Theta has **712.655 ETH of residual reported capital**. Its current option expired on **12 December 2025**. That residual book does not prove active premium selling in October 2026. Thetanuts has a deployed share contract, but the tested public interface does not expose a verified full portfolio valuation; a zero idle WETH balance does not establish zero invested capacity.
 
-[Archived contract states and source hashes](../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../data/eth/finalization_options_T.json).
+[Archived contract states and source hashes](../../../../data/eth/finalization_reconstruction.json), [PT identity reads](../../../../data/eth/finalization_financial_bindings_T.json), [option-state reads](../../../../data/eth/finalization_options_T.json).

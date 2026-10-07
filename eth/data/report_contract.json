@@ -5,8 +5,8 @@
     "nativeActiveETH": 43805557.72346937,
     "nativeEffectiveETH": 43739959.0,
     "nativeActiveValidators": 874362,
-    "receiptClaimsETH": 20190378.32741262,
-    "receiptClaimsUSD": 54598337750.198135,
+    "receiptClaimsETH": 14786203.488378013,
+    "receiptClaimsUSD": 39470108275.398674,
     "examinedBooks": 13,
     "currentRoutes": 10,
     "liquid730dExcessPP": 1.3625789713257452,
@@ -502,26 +502,26 @@
   ],
   "discovery": {
     "materialPools": 299,
-    "parentDispositions": 287,
-    "otherDispositions": 12,
+    "parentDispositions": 221,
+    "otherDispositions": 78,
     "exhaustiveStrategyCensus": false
   },
   "custodySubsetETH": 457182.30402225326,
   "lpCustodyETH": 69531.48533136006,
   "sources": {
-    "market_reader_chapter": "72da40f294ea5ea4db6a7db56038c9716099bbfeb09a2e78ae4e82d0233aaf5c",
+    "market_reader_chapter": "46b69effba2a698ab5303ba7737298331eb953b4ea3b8c7ce10b59601d633761",
     "reader_carry_category": "7de0c236e26cef3266c9204f5a7cbef73e195b6d4476e5b0b7a09a817b0d0d01",
-    "reader_product_chapters": "890fde3d49e1d92c0b2f0046d3083ba4d3e4db425cfe1b7bd17dabd0ddf9cdcc",
+    "reader_product_chapters": "d6bc3ca342264e43be56dc5512d023ed621001ef1cdd81934c65caeb02804b1c",
     "etherfi_staking_comparison": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858",
     "carry_economics_chapter": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
-    "carry_coverage_audit": "8c6919af225c0ed8c4b2edb39ef7cfe65a15545941b6a5a812edc3ddb44751a3",
+    "carry_coverage_audit": "b001ef93901107dec68c736aca899000df5aab7a4977f98a9ec0840c76890799",
     "market_netting_closure": "6164a34870ec4210de29c8326acb5f3f0e453028fc0bd77d9d255dc777c90da6",
     "credit_expansion_deep": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0",
     "carry_attribution_closure": "7796dba62f2a04baf2d7b554d3f46108ab5b4fd119e8a5620a34ed7960564dd2"
   },
   "verifiedDollarFinancing": {
     "source": "data/eth/economic_questions.json",
-    "sourceSHA256": "787508f243a2ba1dd56871dfcbc30760056379c86dbb8789ee38d40438fa82d5",
+    "sourceSHA256": "61d8d870e9ba60d670f40280f20ad5b577c166fbaa6dfff81a1584e4339819fa",
     "directDebtUSD": 251823181.2884103,
     "topFive": [
       "liquid",

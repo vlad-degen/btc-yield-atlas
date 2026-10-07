@@ -1,0 +1,1022 @@
+{
+ "lido": {
+  "pool": "747c1d2a-c668-4682-b9f9-296708a3dd90",
+  "symbol": "STETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.238,
+  "apy_reward": null,
+  "apy": 2.238,
+  "tvl_usd": 26215096344
+ },
+ "binance-staked-eth": {
+  "pool": "80b8bf92-b953-4c20-98ea-c9653ef2bb98",
+  "symbol": "WBETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.22942,
+  "apy_reward": null,
+  "apy": 2.22942,
+  "tvl_usd": 9382046211
+ },
+ "ether.fi-stake": {
+  "pool": "46bd2bdf-6d92-4066-b482-e885ee172264",
+  "symbol": "WEETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.29473,
+  "apy_reward": 0,
+  "apy": 2.29473,
+  "tvl_usd": 5913002807
+ },
+ "aave-v3": {
+  "pool": "db678df9-3281-4bc2-a8bb-01160ffd6d48",
+  "symbol": "WEETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2e-05,
+  "apy_reward": null,
+  "apy": 2e-05,
+  "tvl_usd": 4051725732
+ },
+ "sparklend": {
+  "pool": "3b45941c-16cb-48c5-a490-16c6c4f1d86a",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 3607940222
+ },
+ "rocket-pool": {
+  "pool": "d4b3c522-6127-4b89-bedf-83641cdcd2eb",
+  "symbol": "RETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.16961,
+  "apy_reward": null,
+  "apy": 2.16961,
+  "tvl_usd": 1390530611
+ },
+ "kelp": {
+  "pool": "33c732f6-a78d-41da-af5b-ccd9fa5e52d5",
+  "symbol": "RSETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.34,
+  "apy_reward": null,
+  "apy": 2.34,
+  "tvl_usd": 1108766400
+ },
+ "sky-lending": {
+  "pool": "51d2f8d4-1fb5-4f6b-938b-e9cd17ca1ceb",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 785835752
+ },
+ "liquid-collective": {
+  "pool": "465d177e-3d0d-42c0-b5f5-31c857567135",
+  "symbol": "LSETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.91659,
+  "apy_reward": null,
+  "apy": 2.91659,
+  "tvl_usd": 730407315
+ },
+ "meth-protocol": {
+  "pool": "b9f2f00a-ba96-4589-a171-dde979a23d87",
+  "symbol": "METH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.27462,
+  "apy_reward": null,
+  "apy": 2.27462,
+  "tvl_usd": 628143948
+ },
+ "coinbase-wrapped-staked-eth": {
+  "pool": "0f45d730-b279-4629-8e11-ccb5cc3038b4",
+  "symbol": "CBETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.36519,
+  "apy_reward": null,
+  "apy": 2.36519,
+  "tvl_usd": 503372008
+ },
+ "morpho-blue": {
+  "pool": "4ce0c458-2171-463b-92ce-458afe367a4e",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 414520410
+ },
+ "stakewise-v3": {
+  "pool": "4d01599c-69ae-41a3-bae1-5fab896f04c8",
+  "symbol": "OSETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.38271,
+  "apy_reward": null,
+  "apy": 2.38271,
+  "tvl_usd": 417392277
+ },
+ "stader": {
+  "pool": "90bfb3c2-5d35-4959-a275-ba5085b08aa3",
+  "symbol": "ETHX",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 1.92313,
+  "apy_reward": null,
+  "apy": 1.92313,
+  "tvl_usd": 209180551
+ },
+ "fluid-lite": {
+  "pool": "e72916f7-a2d1-47ad-a4b9-2b054337cfd6",
+  "symbol": "ETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 4.72668,
+  "tvl_usd": 206364683
+ },
+ "liquity-v1": {
+  "pool": "ddd25534-e3d5-4e4e-9b99-d3102323ac61",
+  "symbol": "ETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 192926025
+ },
+ "fluid-lending": {
+  "pool": "69b12bf9-edb6-46d9-b5bc-761cf9efe137",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.04,
+  "apy_reward": null,
+  "apy": 0.04,
+  "tvl_usd": 168219731
+ },
+ "compound-v3": {
+  "pool": "c47eea82-1e3d-4b66-8777-278b8db1dd77",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 172634966
+ },
+ "uniswap-v2": {
+  "pool": "8ac917c6-12fa-49df-aa0b-ced2ebe54e91",
+  "symbol": "WISE-WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.00606,
+  "apy_reward": null,
+  "apy": 0.00606,
+  "tvl_usd": 151542951
+ },
+ "aave-v4": {
+  "pool": "7c2da90f-1723-4538-a634-d3d5556c6261",
+  "symbol": "WEETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 144944382
+ },
+ "renzo": {
+  "pool": "e28e32b5-e356-41d9-8dc7-a376ece56619",
+  "symbol": "EZETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.13499,
+  "apy_reward": null,
+  "apy": 2.13499,
+  "tvl_usd": 117661631
+ },
+ "curve-dex": {
+  "pool": "57d30b9c-fc66-4ac2-b666-69ad5f410cce",
+  "symbol": "ETH-STETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 1.55,
+  "apy_reward": null,
+  "apy": 1.55,
+  "tvl_usd": 103295475
+ },
+ "frax-ether": {
+  "pool": "5b3aebb3-891d-47fc-92e2-927ada3d5b82",
+  "symbol": "SFRXETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.51083,
+  "apy_reward": null,
+  "apy": 2.51083,
+  "tvl_usd": 99855465
+ },
+ "fluid-dex": {
+  "pool": "4f715567-420c-400d-9a62-0059331e3940",
+  "symbol": "WSTETH-ETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.03681,
+  "apy_reward": null,
+  "apy": 0.03681,
+  "tvl_usd": 94109049
+ },
+ "pancakeswap-amm": {
+  "pool": "d3abc08b-8d68-412c-9c77-f31b7bfba672",
+  "symbol": "WETH-GFC",
+  "chain": "Arbitrum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 67518464
+ },
+ "treehouse-protocol": {
+  "pool": "5762f4a8-bb48-45d6-90ed-2d93d1777169",
+  "symbol": "TETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.47193,
+  "apy_reward": null,
+  "apy": 0.47193,
+  "tvl_usd": 65794329
+ },
+ "crvusd": {
+  "pool": "59955098-843f-4173-a761-04c50b6d424d",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 61441416
+ },
+ "origin-ether": {
+  "pool": "423681e3-4787-40ce-ae43-e9f67c5269b3",
+  "symbol": "OETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.6504,
+  "apy_reward": null,
+  "apy": 2.6504,
+  "tvl_usd": 60174850
+ },
+ "liquity-v2": {
+  "pool": "c19dd7b2-fab0-4137-a2d5-1031b03695d0",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 59404120
+ },
+ "euler-v2": {
+  "pool": "951e4e49-9760-49a3-aea9-bd832384219f",
+  "symbol": "WETH",
+  "chain": "Monad",
+  "date": "2026-10-02",
+  "apy_base": 1.21866,
+  "apy_reward": 1.47883,
+  "apy": 2.69749,
+  "tvl_usd": 63568140
+ },
+ "compound-v2": {
+  "pool": "1e5da7c6-59bb-49bd-9f97-4f4fceeffad4",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": 0,
+  "apy": 0,
+  "tvl_usd": 57758239
+ },
+ "spark-savings": {
+  "pool": "bace601a-530a-432c-9b79-8c6451de25ea",
+  "symbol": "ETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 1.5,
+  "apy_reward": null,
+  "apy": 1.5,
+  "tvl_usd": 61596095
+ },
+ "gmx-v2-perps": {
+  "pool": "61b4c35c-97f6-4c05-a5ff-aeb4426adf5b",
+  "symbol": "ETH-USDC",
+  "chain": "Arbitrum",
+  "date": "2026-10-02",
+  "apy_base": 1.80836,
+  "apy_reward": null,
+  "apy": 1.80836,
+  "tvl_usd": 48003570
+ },
+ "vesper": {
+  "pool": "4208b678-e7cc-4060-9c74-88554e8ca81e",
+  "symbol": "MSETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": 0,
+  "apy": 0,
+  "tvl_usd": 36375403
+ },
+ "swell-liquid-staking": {
+  "pool": "ca2acc2d-6246-44aa-ae91-8725b2c62c7c",
+  "symbol": "SWETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.37218,
+  "apy_reward": null,
+  "apy": 2.37218,
+  "tvl_usd": 36573465
+ },
+ "swell-liquid-restaking": {
+  "pool": "eff9b43c-a80d-4bfc-9f9e-55e02a8ef619",
+  "symbol": "RSWETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.55543,
+  "apy_reward": null,
+  "apy": 0.55543,
+  "tvl_usd": 34485550
+ },
+ "puffer-stake": {
+  "pool": "bac6982a-f344-42f7-9af4-a9882f4a77f0",
+  "symbol": "PUFETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.5834,
+  "apy_reward": 0.05396,
+  "apy": 2.63736,
+  "tvl_usd": 30813429
+ },
+ "avant-aveth": {
+  "pool": "b2c0504c-fed5-46ae-908e-aac28bfbede2",
+  "symbol": "SAVETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 4.05233,
+  "apy_reward": null,
+  "apy": 4.05233,
+  "tvl_usd": 29563904
+ },
+ "venus-core-pool": {
+  "pool": "b8872d86-c39e-423c-83dd-8b32f7eea91d",
+  "symbol": "WBETH",
+  "chain": "BSC",
+  "date": "2026-10-02",
+  "apy_base": 0.00472,
+  "apy_reward": 0,
+  "apy": 0.00472,
+  "tvl_usd": 29622710
+ },
+ "bedrock-unieth": {
+  "pool": "ad383eed-61d8-4378-80bd-a197d9a11c79",
+  "symbol": "UNIETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.47976,
+  "apy_reward": null,
+  "apy": 2.47976,
+  "tvl_usd": 27326250
+ },
+ "dolomite": {
+  "pool": "f78c355d-df33-44bf-96b1-39481a0dd89e",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.70553,
+  "apy_reward": null,
+  "apy": 0.70553,
+  "tvl_usd": 23610497
+ },
+ "ankr": {
+  "pool": "e201dbed-63fa-48e2-bfa2-f56e730167d2",
+  "symbol": "ANKRETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.53573,
+  "apy_reward": null,
+  "apy": 2.53573,
+  "tvl_usd": 22292317
+ },
+ "autofinance": {
+  "pool": "e9a686bf-21ed-4f78-82be-cd32625c4725",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.5545,
+  "apy_reward": 0.18631,
+  "apy": 2.74081,
+  "tvl_usd": 21320886
+ },
+ "concrete": {
+  "pool": "c77c9bce-1b0a-4fb6-a1c8-f7c2067ef765",
+  "symbol": "THUSD-USDC-ETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 20472227
+ },
+ "geth": {
+  "pool": "048251b6-20c4-4812-b7b1-faf90077c068",
+  "symbol": "GETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.26968,
+  "apy_reward": null,
+  "apy": 2.26968,
+  "tvl_usd": 20442801
+ },
+ "yearn-finance": {
+  "pool": "2b840e0a-2823-4972-9bfc-8b766c90374b",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.15624,
+  "apy_reward": 0,
+  "apy": 2.15624,
+  "tvl_usd": 19402853
+ },
+ "aerodrome-v1": {
+  "pool": "a703f8c8-d94c-4bce-8c8b-a1ec8556f500",
+  "symbol": "WETH-VVV",
+  "chain": "Base",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": 33.41823,
+  "apy": 33.41823,
+  "tvl_usd": 18169128
+ },
+ "aerodrome-slipstream": {
+  "pool": "4943b6d2-aad2-4f4d-b56e-93f41ef043aa",
+  "symbol": "WETH-CBBTC",
+  "chain": "Base",
+  "date": "2026-10-02",
+  "apy_base": 14.66188,
+  "apy_reward": 2.55076,
+  "apy": 17.21264,
+  "tvl_usd": 16692560
+ },
+ "symbiotic": {
+  "pool": "c7b1c392-37c3-5c73-9725-e10bdb13b988",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": 1.39639,
+  "apy": 1.39639,
+  "tvl_usd": 16693259
+ },
+ "upshift": {
+  "pool": "eab7ee0f-e942-490d-be54-b8b6512ba73d",
+  "symbol": "AGETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.01,
+  "apy_reward": null,
+  "apy": 0.01,
+  "tvl_usd": 16198259
+ },
+ "yield-basis": {
+  "pool": "d48e68fc-cfea-5091-9626-b527ef010255",
+  "symbol": "YB-WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": 3.0359,
+  "apy": 3.0359,
+  "tvl_usd": 15679207
+ },
+ "fusion-by-ipor": {
+  "pool": "b01b6734-1ceb-4427-8a03-36fe9bd726b1",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 3.18546,
+  "apy_reward": 2.98889,
+  "apy": 6.17435,
+  "tvl_usd": 16049343
+ },
+ "bancor-v3": {
+  "pool": "37dcaa36-0839-4a8c-96a3-fac2bb31138a",
+  "symbol": "ETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.0332,
+  "apy_reward": null,
+  "apy": 0.0332,
+  "tvl_usd": 14960830
+ },
+ "tydro": {
+  "pool": "15baa435-9e38-4688-a345-6fe5783235ae",
+  "symbol": "WETH",
+  "chain": "Ink",
+  "date": "2026-10-02",
+  "apy_base": 0.04346,
+  "apy_reward": null,
+  "apy": 0.04346,
+  "tvl_usd": 13959769
+ },
+ "nodedao": {
+  "pool": "22e390ef-5f59-4194-b1d5-e1daf818b7f8",
+  "symbol": "NETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.11675,
+  "apy_reward": null,
+  "apy": 2.11675,
+  "tvl_usd": 12671512
+ },
+ "reserve-protocol": {
+  "pool": "4e6cd326-72d5-4680-8d2f-3481d50e8bb1",
+  "symbol": "ETH+",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 4.78524,
+  "apy_reward": null,
+  "apy": 4.78524,
+  "tvl_usd": 10950006
+ },
+ "yo-protocol": {
+  "pool": "2070ceaf-eedb-4795-9ede-6841ec515e1a",
+  "symbol": "WETH",
+  "chain": "Base",
+  "date": "2026-10-02",
+  "apy_base": 2.4792,
+  "apy_reward": null,
+  "apy": 2.4792,
+  "tvl_usd": 11203828
+ },
+ "sushiswap-v3": {
+  "pool": "9841b459-73c8-45b9-9ebd-3499192ca71a",
+  "symbol": "WBTC-WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.87611,
+  "apy_reward": null,
+  "apy": 2.87611,
+  "tvl_usd": 10797556
+ },
+ "beefy": {
+  "pool": "0ead67be-6b4b-40d7-8597-ca3debbd7752",
+  "symbol": "USDT-WBTC-WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 3.27516,
+  "tvl_usd": 10216469
+ },
+ "vvs-standard": {
+  "pool": "ffcad946-616c-53c4-b3c6-6565d9a906ec",
+  "symbol": "CDCETH-WETH",
+  "chain": "Cronos",
+  "date": "2026-10-02",
+  "apy_base": 0.01671,
+  "apy_reward": null,
+  "apy": 0.01671,
+  "tvl_usd": 8929797
+ },
+ "origin-arm": {
+  "pool": "7dcbc810-3f9d-54c7-bb06-037a3954558c",
+  "symbol": "ARM-WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.81348,
+  "apy_reward": null,
+  "apy": 2.81348,
+  "tvl_usd": 8399363
+ },
+ "lista-lending": {
+  "pool": "45e23921-be3d-5419-9642-f1aa799307e6",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.92767,
+  "apy_reward": 4.63709,
+  "apy": 5.56476,
+  "tvl_usd": 7162175
+ },
+ "cian-yield-layer": {
+  "pool": "93979396-e1b4-4119-b99b-433970d0983a",
+  "symbol": "WSTETH",
+  "chain": "Arbitrum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 1.5,
+  "tvl_usd": 6759261
+ },
+ "makina": {
+  "pool": "3acfa7fe-2667-56ea-9427-cfb763f891f2",
+  "symbol": "DETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 3.41251,
+  "apy_reward": null,
+  "apy": 3.41251,
+  "tvl_usd": 6669965
+ },
+ "harvest-finance": {
+  "pool": "b56ecd94-1433-412b-9ebd-c313e5ae78cb",
+  "symbol": "WETH",
+  "chain": "Base",
+  "date": "2026-10-02",
+  "apy_base": 3.83,
+  "apy_reward": null,
+  "apy": 3.83,
+  "tvl_usd": 6489895
+ },
+ "balancer-v3": {
+  "pool": "efbb5313-739c-4667-aa99-379f84f5b600",
+  "symbol": "RETH-WAETHWETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 1.77515,
+  "apy_reward": 3.45769,
+  "apy": 5.23285,
+  "tvl_usd": 6368228
+ },
+ "pendle-v2": {
+  "pool": "66329c23-3419-48cf-82ea-f0a058e899a4",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.26501,
+  "apy_reward": 0.09347,
+  "apy": 2.35848,
+  "tvl_usd": 5474100
+ },
+ "native-credit-pool": {
+  "pool": "76aa8b2e-c5cd-4ae5-8182-c74ee969d71d",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 3.744,
+  "apy_reward": null,
+  "apy": 3.744,
+  "tvl_usd": 5407475
+ },
+ "frankencoin": {
+  "pool": "5cfe6164-7def-4eb2-bab0-57d373eff612",
+  "symbol": "LSETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 5261097
+ },
+ "fluxion-network": {
+  "pool": "70f8fccf-080b-5d78-8a67-0e87a0a578a5",
+  "symbol": "USDT0-WETH",
+  "chain": "Mantle",
+  "date": "2026-10-02",
+  "apy_base": 9.14394,
+  "apy_reward": null,
+  "apy": 9.14394,
+  "tvl_usd": 5148316
+ },
+ "across": {
+  "pool": "5f92620a-e60b-4871-baee-1e47cb074764",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0.24689,
+  "apy_reward": 2.46154,
+  "apy": 2.70843,
+  "tvl_usd": 6190043
+ },
+ "hydration-dex": {
+  "pool": "d3c48526-63c5-48c4-a2bc-11dd4172a458",
+  "symbol": "AETH-WSTETH",
+  "chain": "Polkadot",
+  "date": "2026-10-02",
+  "apy_base": 0.2446,
+  "apy_reward": null,
+  "apy": 0.2446,
+  "tvl_usd": 4558224
+ },
+ "yieldnest": {
+  "pool": "ea16ed5f-f3ee-4568-bebd-51104b1b00fd",
+  "symbol": "YNLSDE",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 2.8503,
+  "tvl_usd": 3891352
+ },
+ "tectonic": {
+  "pool": "cb0760b3-ab98-4b76-bbb4-d466f351dc3d",
+  "symbol": "WETH",
+  "chain": "Cronos",
+  "date": "2026-10-02",
+  "apy_base": 0.00137,
+  "apy_reward": 0,
+  "apy": 0.00137,
+  "tvl_usd": 3801590
+ },
+ "pharaoh-v3": {
+  "pool": "1a72e920-0b77-4d75-8e90-d26aa872f0cc",
+  "symbol": "WETH.E-WAVAX",
+  "chain": "Avalanche",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": 62.69369,
+  "apy": 62.69369,
+  "tvl_usd": 3569596
+ },
+ "velodrome-v3": {
+  "pool": "e2d38b36-3270-427b-921b-3f0abe62e5ac",
+  "symbol": "WETH-WEETH",
+  "chain": "Ink",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": 0,
+  "apy": 0,
+  "tvl_usd": 2651759
+ },
+ "camelot-v2": {
+  "pool": "054b89fc-997b-4600-a4ab-00dbd72c0474",
+  "symbol": "PENDLE-WETH",
+  "chain": "Arbitrum",
+  "date": "2026-10-02",
+  "apy_base": 4.67621,
+  "apy_reward": 0,
+  "apy": 4.67621,
+  "tvl_usd": 2404254
+ },
+ "superform": {
+  "pool": "39143e86-aca1-4538-a77d-8b081fab62b6",
+  "symbol": "SUPERWETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 21.16607,
+  "apy_reward": 1.73824,
+  "apy": 22.90431,
+  "tvl_usd": 2324480
+ },
+ "ekubo": {
+  "pool": "181574ad-9c60-4a18-91c8-45a22da62202",
+  "symbol": "WSTETH-ETH",
+  "chain": "Starknet",
+  "date": "2026-10-02",
+  "apy_base": 0.00344,
+  "apy_reward": 0,
+  "apy": 0.00344,
+  "tvl_usd": 2406279
+ },
+ "quickswap-dex": {
+  "pool": "f8adcdd5-71d2-4460-956e-7ccdd53b16fa",
+  "symbol": "USDC-WETH",
+  "chain": "Polygon",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 2349077
+ },
+ "camelot-v3": {
+  "pool": "cc2dac50-4dce-45bb-9b3f-dd9becb646dd",
+  "symbol": "WETH-APEETH",
+  "chain": "Arbitrum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 1859378
+ },
+ "gearbox": {
+  "pool": "c11cb1b9-3cd5-4252-93da-51b130fc4f45",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": 0,
+  "apy": 0,
+  "tvl_usd": 1759651
+ },
+ "extra-finance-leverage-farming": {
+  "pool": "a9865520-5058-42ac-9a8b-99e021f2831a",
+  "symbol": "WETH",
+  "chain": "Base",
+  "date": "2026-10-02",
+  "apy_base": 0.9701,
+  "apy_reward": null,
+  "apy": 0.9701,
+  "tvl_usd": 1737456
+ },
+ "inverse-finance-firm": {
+  "pool": "b337dc2b-fa25-4b5b-a0ff-bd83d868e4fa",
+  "symbol": "WSTETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 1654762
+ },
+ "bifrost-liquid-staking": {
+  "pool": "eb101287-7f4f-4847-9c16-8b06c2067dc8",
+  "symbol": "VETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 2.69,
+  "apy_reward": 0,
+  "apy": 2.69,
+  "tvl_usd": 1625349
+ },
+ "moonwell-lending": {
+  "pool": "896e6538-944f-46ec-99a4-1bb1211028b2",
+  "symbol": "RETH",
+  "chain": "Base",
+  "date": "2026-10-02",
+  "apy_base": 2e-05,
+  "apy_reward": 0,
+  "apy": 2e-05,
+  "tvl_usd": 1498461
+ },
+ "fraxlend": {
+  "pool": "cde8679e-d52b-49dc-b1c1-e7c37e3a0251",
+  "symbol": "SFRXETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": null,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 1204281
+ },
+ "project-0": {
+  "pool": "37d329c3-483f-416d-97fd-58e6af764d49",
+  "symbol": "ETH",
+  "chain": "Solana",
+  "date": "2026-10-02",
+  "apy_base": 0.39061,
+  "apy_reward": null,
+  "apy": 0.39061,
+  "tvl_usd": 804877
+ },
+ "lagoon": {
+  "pool": "d9fe5f81-6a0c-4d9d-8c50-6f035076a899",
+  "symbol": "MTPOOL-ETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 3.93196,
+  "apy_reward": null,
+  "apy": 3.93196,
+  "tvl_usd": 719403
+ },
+ "exactly": {
+  "pool": "755541b1-6df1-4ae5-8e48-853640448dc6",
+  "symbol": "WETH",
+  "chain": "OP Mainnet",
+  "date": "2026-10-02",
+  "apy_base": 0.7104,
+  "apy_reward": null,
+  "apy": 0.7104,
+  "tvl_usd": 700900
+ },
+ "swell-earn": {
+  "pool": "cf335a51-0eae-42e3-9bc8-2fe96591a289",
+  "symbol": "EARNETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 563658
+ },
+ "kinetic": {
+  "pool": "477f1419-4c04-4f1e-a35e-1b200da694f1",
+  "symbol": "WETH",
+  "chain": "Flare",
+  "date": "2026-10-02",
+  "apy_base": 6.04483,
+  "apy_reward": 0,
+  "apy": 6.04483,
+  "tvl_usd": 546215
+ },
+ "sparkdex-v3.1": {
+  "pool": "e1cca30e-5f57-406b-9585-a581ea2eafd1",
+  "symbol": "WETH-FXRP",
+  "chain": "Flare",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 533219
+ },
+ "bifi": {
+  "pool": "e5686448-3686-4da2-8863-5d3b2647b816",
+  "symbol": "ETH",
+  "chain": "Bifrost Network",
+  "date": "2026-10-02",
+  "apy_base": 0.0798,
+  "apy_reward": null,
+  "apy": 0.0798,
+  "tvl_usd": 504746
+ },
+ "kinza-finance": {
+  "pool": "abadece3-0fa6-4383-b4ce-68ae3cb8a50f",
+  "symbol": "ETH",
+  "chain": "BSC",
+  "date": "2026-10-02",
+  "apy_base": 0.25551,
+  "apy_reward": null,
+  "apy": 0.25551,
+  "tvl_usd": 257055
+ },
+ "navi-lending": {
+  "pool": "57d223b6-3256-4c84-887d-4f9897aebf10",
+  "symbol": "WETH",
+  "chain": "Sui",
+  "date": "2026-10-02",
+  "apy_base": 0.00095,
+  "apy_reward": 0,
+  "apy": 0.00095,
+  "tvl_usd": 226578
+ },
+ "save": {
+  "pool": "cb28058a-6d8b-4093-af17-e90c7eab138b",
+  "symbol": "ETH",
+  "chain": "Solana",
+  "date": "2026-10-02",
+  "apy_base": 0.34,
+  "apy_reward": 0,
+  "apy": 0.34,
+  "tvl_usd": 490419
+ },
+ "curvance": {
+  "pool": "35899a86-f2a3-46b3-b537-d3258803d21b",
+  "symbol": "WETH",
+  "chain": "Monad",
+  "date": "2026-10-02",
+  "apy_base": 0.02854,
+  "apy_reward": null,
+  "apy": 0.02854,
+  "tvl_usd": 168098
+ },
+ "origami-finance": {
+  "pool": "c1f6013e-fcb3-4329-860e-2a8a2aabf75f",
+  "symbol": "OPAL-WEETH-A",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 5.21443,
+  "apy_reward": null,
+  "apy": 5.21443,
+  "tvl_usd": 91858
+ },
+ "termmax": {
+  "pool": "7fd54ab1-db37-40c6-a8c2-8ef11f631fea",
+  "symbol": "WETH",
+  "chain": "Ethereum",
+  "date": "2026-10-02",
+  "apy_base": 0,
+  "apy_reward": null,
+  "apy": 0,
+  "tvl_usd": 49784
+ },
+ "scallop-lend": {
+  "pool": "765d1396-9f80-40a6-8016-05a945468de1",
+  "symbol": "WETH",
+  "chain": "Sui",
+  "date": "2026-10-02",
+  "apy_base": 0.07952,
+  "apy_reward": null,
+  "apy": 0.07952,
+  "tvl_usd": 13185
+ },
+ "layerbank": {
+  "pool": "739773e4-8782-4c95-ba0b-c39e076ef7cd",
+  "symbol": "WETH.E",
+  "chain": "Move",
+  "date": "2026-10-02",
+  "apy_base": 2.16803,
+  "apy_reward": 3.21081,
+  "apy": 5.37884,
+  "tvl_usd": 2276
+ }
+}

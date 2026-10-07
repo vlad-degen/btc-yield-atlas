@@ -237,5 +237,5 @@ At T, Aave USDC funding is 13.93% APR, versus 4.38% for Aave USDT and 4.39% for 
 | [0x1c0a6763a251be74ef56c1919b1184f94f93a70d](https://optimistic.etherscan.io/address/0x1c0a6763a251be74ef56c1919b1184f94f93a70d) | 1.4326% | Share of Cash Hub |
 | [0xed0e0f34671338fd51c90cad6b5eabc239ac4f6e](https://optimistic.etherscan.io/address/0xed0e0f34671338fd51c90cad6b5eabc239ac4f6e) | 1.2906% | Share of Cash Hub |
 
-[Reproducible measurement ledger](../../../data/eth/parity_depth_measurements.json).
+[Reproducible measurement ledger](../../../../data/eth/parity_depth_measurements.json).
 

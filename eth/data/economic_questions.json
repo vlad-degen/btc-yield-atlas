@@ -936,145 +936,157 @@
           "month": "2025-10",
           "timestamp": 1761955199,
           "block": 23700766,
-          "debtUSD": 1004.130738,
-          "apr": 0.05105075851525987,
+          "debtUSD": 1004.0620655,
+          "apr": 0.05105076,
           "ratedDebtUSD": 1004.130738,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2025-11",
           "timestamp": 1764547199,
           "block": 23914920,
-          "debtUSD": 34554562.207643,
-          "apr": 0.04783045136187105,
+          "debtUSD": 8012010.52477174,
+          "apr": 0.04783045,
           "ratedDebtUSD": 34554562.207643,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2025-12",
           "timestamp": 1767225599,
           "block": 24136052,
-          "debtUSD": 42781860.72653,
-          "apr": 0.047747132300569074,
+          "debtUSD": 27200528.00700106,
+          "apr": 0.04396571,
           "ratedDebtUSD": 42781859.870588,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-01",
           "timestamp": 1769903999,
           "block": 24358292,
-          "debtUSD": 43154755.885905,
-          "apr": 0.04906981562019384,
+          "debtUSD": 27281582.20100114,
+          "apr": 0.03581611,
           "ratedDebtUSD": 43154755.885905,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-02",
           "timestamp": 1772323199,
           "block": 24558867,
-          "debtUSD": 47349041.428746,
-          "apr": 0.03558464542974061,
+          "debtUSD": 5825425.3034355,
+          "apr": 0.02557343,
           "ratedDebtUSD": 47349041.428746,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-03",
           "timestamp": 1775001599,
           "block": 24781026,
-          "debtUSD": 64535127.316754,
-          "apr": 0.03555405804585309,
+          "debtUSD": 19836523.07445175,
+          "apr": 0.02970294,
           "ratedDebtUSD": 64535127.316754,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 2,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-04",
           "timestamp": 1777593599,
           "block": 24996367,
-          "debtUSD": 65650625.72378401,
-          "apr": 0.03415498482757989,
+          "debtUSD": 65648313.000921,
+          "apr": 0.03415447,
           "ratedDebtUSD": 65650625.72378401,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 2,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-05",
           "timestamp": 1780271999,
           "block": 25218797,
-          "debtUSD": 12465424.502439,
-          "apr": 0.033966259434613046,
+          "debtUSD": 12463102.857716,
+          "apr": 0.03395227,
           "ratedDebtUSD": 12465424.502439,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 2,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-06",
           "timestamp": 1782863999,
           "block": 25433938,
-          "debtUSD": 10009445.578676,
-          "apr": 0.0336965775968603,
+          "debtUSD": 20255335.6129785,
+          "apr": 0.02969685,
           "ratedDebtUSD": 10009445.578676,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 3,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-07",
           "timestamp": 1785542399,
           "block": 25656292,
-          "debtUSD": 1178849.56154,
-          "apr": 0.036123786217420795,
+          "debtUSD": 20392712.35729506,
+          "apr": 0.03175174,
           "ratedDebtUSD": 1178849.56154,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 2,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-08",
           "timestamp": 1788220799,
           "block": 25878704,
-          "debtUSD": 4184147.793575,
-          "apr": 0.036531803674254265,
+          "debtUSD": 20466224.33736861,
+          "apr": 0.03792124,
           "ratedDebtUSD": 4184147.793575,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 3,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-09",
           "timestamp": 1790812799,
           "block": 26093737,
-          "debtUSD": 25549107.399354,
-          "apr": 0.04315586139970647,
+          "debtUSD": 25535578.99952903,
+          "apr": 0.04314661,
           "ratedDebtUSD": 25549107.399354,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 3,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         }
       ],
       "currentLegs": [
@@ -1288,156 +1300,169 @@
           "timestamp": 1759276799,
           "block": 23479243,
           "debtUSD": 2040904.67362,
-          "apr": 0.023885432920773126,
+          "apr": 0.02388543,
           "ratedDebtUSD": 2040904.67362,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2025-10",
           "timestamp": 1761955199,
           "block": 23700766,
-          "debtUSD": 3301999.789678,
-          "apr": 0.041419288801832634,
+          "debtUSD": 4327692.569042,
+          "apr": 0.04429889,
           "ratedDebtUSD": 3301999.789678,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2025-11",
           "timestamp": 1764547199,
           "block": 23914920,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 3103939.446243,
+          "apr": 0.04996734,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2025-12",
           "timestamp": 1767225599,
           "block": 24136052,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 2891287.65672,
+          "apr": 0.04647566,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-01",
           "timestamp": 1769903999,
           "block": 24358292,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 2357400.327836,
+          "apr": 0.04407189,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-02",
           "timestamp": 1772323199,
           "block": 24558867,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 4304632.400765,
+          "apr": 0.03378352,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-03",
           "timestamp": 1775001599,
           "block": 24781026,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 4376166.39087026,
+          "apr": 0.03085311,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-04",
           "timestamp": 1777593599,
           "block": 24996367,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 76187.062116,
+          "apr": 0.03415447,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-05",
           "timestamp": 1780271999,
           "block": 25218797,
-          "debtUSD": 0.0,
+          "debtUSD": 0.000869,
           "apr": null,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-06",
           "timestamp": 1782863999,
           "block": 25433938,
-          "debtUSD": 925505.389044,
-          "apr": 0.13358397155226237,
+          "debtUSD": 3711455.1808055,
+          "apr": 0.05723423,
           "ratedDebtUSD": 925505.389044,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-07",
           "timestamp": 1785542399,
           "block": 25656292,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 8665055.2608797,
+          "apr": 0.03214831,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-08",
           "timestamp": 1788220799,
           "block": 25878704,
-          "debtUSD": 5699646.782678398,
-          "apr": 0.03648226178463348,
+          "debtUSD": 11279066.24501943,
+          "apr": 0.0379486,
           "ratedDebtUSD": 5699646.782678398,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-09",
           "timestamp": 1790812799,
           "block": 26093737,
-          "debtUSD": 10032437.581181657,
-          "apr": 0.06335193649409368,
+          "debtUSD": 10032382.69800467,
+          "apr": 0.06335142,
           "ratedDebtUSD": 10032437.581181657,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 3,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         }
       ],
       "currentLegs": [
@@ -1722,85 +1747,92 @@
           "month": "2026-03",
           "timestamp": 1775001599,
           "block": 24781026,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 6280.84179586,
+          "apr": 0.0140601,
           "ratedDebtUSD": 0,
           "observedLegs": 1,
           "expectedLegs": 1,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-04",
           "timestamp": 1777593599,
           "block": 24996367,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 37687.75623205,
+          "apr": 0.00875372,
           "ratedDebtUSD": 0,
           "observedLegs": 1,
           "expectedLegs": 1,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-05",
           "timestamp": 1780271999,
           "block": 25218797,
-          "debtUSD": 0.0,
-          "apr": null,
+          "debtUSD": 409323.76686641,
+          "apr": 0.00875372,
           "ratedDebtUSD": 0,
           "observedLegs": 1,
           "expectedLegs": 1,
           "fundedLegs": 0,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-06",
           "timestamp": 1782863999,
           "block": 25433938,
-          "debtUSD": 465004.1236686355,
+          "debtUSD": 465004.12366864,
           "apr": 0.0327,
           "ratedDebtUSD": 465004.1236686355,
           "observedLegs": 1,
           "expectedLegs": 1,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-07",
           "timestamp": 1785542399,
           "block": 25656292,
-          "debtUSD": 1215115.3807554983,
-          "apr": 0.055500000009999995,
+          "debtUSD": 1215115.3807555,
+          "apr": 0.0555,
           "ratedDebtUSD": 1215115.3807554983,
           "observedLegs": 1,
           "expectedLegs": 1,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-08",
           "timestamp": 1788220799,
           "block": 25878704,
-          "debtUSD": 3279650.670549832,
-          "apr": 0.06350000001,
+          "debtUSD": 3279650.67054983,
+          "apr": 0.0635,
           "ratedDebtUSD": 3279650.670549832,
           "observedLegs": 1,
           "expectedLegs": 1,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         },
         {
           "month": "2026-09",
           "timestamp": 1790812799,
           "block": 26093737,
-          "debtUSD": 6751121.391890432,
+          "debtUSD": 6751121.39189043,
           "apr": 0.0255,
           "ratedDebtUSD": 6751121.391890432,
           "observedLegs": 1,
           "expectedLegs": 1,
           "fundedLegs": 1,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_top5_risk_series.csv"
         }
       ],
       "currentLegs": [
@@ -16089,7 +16121,7 @@
       "month": "2025-10",
       "timestamp": 1761955199,
       "block": 23700766,
-      "debtUSD": 14745821.808355171,
+      "debtUSD": 15771514.519046672,
       "observedProducts": 9,
       "allLegsObservedProducts": 9,
       "expectedProducts": 10
@@ -16098,7 +16130,7 @@
       "month": "2025-11",
       "timestamp": 1764547199,
       "block": 23914920,
-      "debtUSD": 38065815.266855046,
+      "debtUSD": 14627203.030226786,
       "observedProducts": 9,
       "allLegsObservedProducts": 9,
       "expectedProducts": 10
@@ -16107,7 +16139,7 @@
       "month": "2025-12",
       "timestamp": 1767225599,
       "block": 24136052,
-      "debtUSD": 44395297.8565913,
+      "debtUSD": 31705252.79378236,
       "observedProducts": 9,
       "allLegsObservedProducts": 9,
       "expectedProducts": 10
@@ -16116,7 +16148,7 @@
       "month": "2026-01",
       "timestamp": 1769903999,
       "block": 24358292,
-      "debtUSD": 44225359.77098525,
+      "debtUSD": 30709586.4139174,
       "observedProducts": 9,
       "allLegsObservedProducts": 9,
       "expectedProducts": 10
@@ -16125,7 +16157,7 @@
       "month": "2026-02",
       "timestamp": 1772323199,
       "block": 24558867,
-      "debtUSD": 48344492.592483275,
+      "debtUSD": 11125508.867937775,
       "observedProducts": 9,
       "allLegsObservedProducts": 9,
       "expectedProducts": 10
@@ -16134,7 +16166,7 @@
       "month": "2026-03",
       "timestamp": 1775001599,
       "block": 24781026,
-      "debtUSD": 66546616.179600336,
+      "debtUSD": 26230459.169964205,
       "observedProducts": 9,
       "allLegsObservedProducts": 9,
       "expectedProducts": 10
@@ -16143,7 +16175,7 @@
       "month": "2026-04",
       "timestamp": 1777593599,
       "block": 24996367,
-      "debtUSD": 66000528.929274924,
+      "debtUSD": 66112091.02475997,
       "observedProducts": 9,
       "allLegsObservedProducts": 9,
       "expectedProducts": 10
@@ -16152,7 +16184,7 @@
       "month": "2026-05",
       "timestamp": 1780271999,
       "block": 25218797,
-      "debtUSD": 14620099.15498132,
+      "debtUSD": 15027101.27799373,
       "observedProducts": 10,
       "allLegsObservedProducts": 10,
       "expectedProducts": 10
@@ -16161,7 +16193,7 @@
       "month": "2026-06",
       "timestamp": 1782863999,
       "block": 25433938,
-      "debtUSD": 31772060.202447094,
+      "debtUSD": 44803900.0285111,
       "observedProducts": 10,
       "allLegsObservedProducts": 10,
       "expectedProducts": 10
@@ -16170,7 +16202,7 @@
       "month": "2026-07",
       "timestamp": 1785542399,
       "block": 25656292,
-      "debtUSD": 59470433.90988311,
+      "debtUSD": 87349351.96651787,
       "observedProducts": 10,
       "allLegsObservedProducts": 10,
       "expectedProducts": 10
@@ -16179,7 +16211,7 @@
       "month": "2026-08",
       "timestamp": 1788220799,
       "block": 25878704,
-      "debtUSD": 210034051.79318252,
+      "debtUSD": 231895547.79931715,
       "observedProducts": 10,
       "allLegsObservedProducts": 10,
       "expectedProducts": 10
@@ -16188,7 +16220,7 @@
       "month": "2026-09",
       "timestamp": 1790812799,
       "block": 26093737,
-      "debtUSD": 254359473.72875428,
+      "debtUSD": 254345890.44575232,
       "observedProducts": 10,
       "allLegsObservedProducts": 10,
       "expectedProducts": 10
@@ -16318,9 +16350,9 @@
     }
   ],
   "market": {
-    "defaultGrossETHReference": 21157586.07774413,
-    "defaultGrossUSD": 57213837795.3613,
-    "defaultObservedProtocols": 59,
+    "defaultGrossETHReference": 18337894.206154615,
+    "defaultGrossUSD": 48950947444.26018,
+    "defaultObservedProtocols": 175,
     "globalNetYieldCapitalETH": null,
     "globalCarryEquityShare": null,
     "sameBlockDedupExamples": [
@@ -16389,7 +16421,7 @@
     },
     {
       "path": "data/eth/market_reader_chapter.json",
-      "sha256": "72da40f294ea5ea4db6a7db56038c9716099bbfeb09a2e78ae4e82d0233aaf5c"
+      "sha256": "46b69effba2a698ab5303ba7737298331eb953b4ea3b8c7ce10b59601d633761"
     },
     {
       "path": "data/eth/market_netting_closure.json",

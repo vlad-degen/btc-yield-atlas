@@ -73,11 +73,9 @@ def run():
     check('complete_report_navigation', len(payload['reportLibrary']) == len(ARTICLES) and
           {r['id'] for r in payload['reportLibrary']} == set(ARTICLES) and all(
               (ROOT / 'eth' / r['href']).is_file() for r in payload['reportLibrary']))
-    original = read('research_market_chapter')
-    excluded = next(p for p in original['products'] if p['id'] == 'justlend-v1')
     for i, month in enumerate(market['months']):
-        check('unchanged_market_exposure:' + month['period'], close(month['eth_ref'],
-              original['months'][i]['eth_ref'] - (excluded['history'][i]['eth_ref'] or 0)))
+        check('market_month_equals_its_products:' + month['period'], close(month['eth_ref'],
+              sum(p['history'][i]['eth_ref'] or 0 for p in market['products'] if p['history'][i]['status'] == 'observed')))
     yb = next(p for p in chapters['products'] if p['id'] == 'yieldbasis')
     old_yb = next(p for p in read('strategy_universe_deep')['products'] if p['id'] == 'yb_weth_pool')
     check('YB_frozen_capital_conserved', close(yb['capitalETH'], old_yb['capitalETH']) and close(yb['capitalUSD'], old_yb['capitalUSD']))

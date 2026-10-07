@@ -2410,353 +2410,526 @@
   ],
   "adapterParents": [
     {
-      "name": "Concrete",
+      "name": "ether.fi Liquid ETH",
       "history": [
         {
           "month": "2024-10",
           "timestamp": 1730419199,
-          "eth": null,
-          "usd": null,
-          "status": "missing"
+          "eth": 146203.0106193482,
+          "usd": 368095319.83635545,
+          "status": "observed"
         },
         {
           "month": "2024-11",
           "timestamp": 1733011199,
-          "eth": null,
-          "usd": null,
-          "status": "missing"
+          "eth": 150259.35319519337,
+          "usd": 559570339.0797565,
+          "status": "observed"
         },
         {
           "month": "2024-12",
           "timestamp": 1735689599,
-          "eth": null,
-          "usd": null,
-          "status": "missing"
+          "eth": 152716.5515029974,
+          "usd": 508443796.4155858,
+          "status": "observed"
         },
         {
           "month": "2025-01",
           "timestamp": 1738367999,
-          "eth": null,
-          "usd": null,
-          "status": "missing"
+          "eth": 153364.3185725938,
+          "usd": 505941218.755238,
+          "status": "observed"
         },
         {
           "month": "2025-02",
           "timestamp": 1740787199,
-          "eth": 1293.7692594181449,
-          "usd": 2975358.79204,
+          "eth": 159201.6047613894,
+          "usd": 354335011.7175014,
           "status": "observed"
         },
         {
           "month": "2025-03",
           "timestamp": 1743465599,
-          "eth": 12992.425972891591,
-          "usd": 23419237.58891,
+          "eth": 161418.29161691095,
+          "usd": 294373695.8730564,
           "status": "observed"
         },
         {
           "month": "2025-04",
           "timestamp": 1746057599,
-          "eth": 12996.657238597725,
-          "usd": 23367859.74843,
+          "eth": 176931.27526531625,
+          "usd": 317234237.92535645,
           "status": "observed"
         },
         {
           "month": "2025-05",
           "timestamp": 1748735999,
-          "eth": 13048.453633628238,
-          "usd": 32952042.86821,
+          "eth": 194955.5017961008,
+          "usd": 490876508.4175973,
           "status": "observed"
         },
         {
           "month": "2025-06",
           "timestamp": 1751327999,
-          "eth": 0.0,
-          "usd": 0.0,
+          "eth": 191748.42011462248,
+          "usd": 478646241.25826174,
           "status": "observed"
         },
         {
           "month": "2025-07",
           "timestamp": 1754006399,
-          "eth": 0.0,
-          "usd": 0.0,
+          "eth": 200467.34399336236,
+          "usd": 740662686.5053865,
           "status": "observed"
         },
         {
           "month": "2025-08",
           "timestamp": 1756684799,
-          "eth": 0.0,
-          "usd": 0.0,
+          "eth": 203044.5193608262,
+          "usd": 893471011.6594466,
           "status": "observed"
         },
         {
           "month": "2025-09",
           "timestamp": 1759276799,
-          "eth": 4.2321309689104805,
-          "usd": 17831.19509,
+          "eth": 192310.39331018305,
+          "usd": 797482354.4985081,
           "status": "observed"
         },
         {
           "month": "2025-10",
           "timestamp": 1761955199,
-          "eth": 5.458602937385228,
-          "usd": 20722.72283,
+          "eth": 177463.78386920798,
+          "usd": 684069075.6030098,
           "status": "observed"
         },
         {
           "month": "2025-11",
           "timestamp": 1764547199,
-          "eth": 3.6520521954264034,
-          "usd": 10946.499520000001,
+          "eth": 147816.66338124694,
+          "usd": 441535195.2222043,
           "status": "observed"
         },
         {
           "month": "2025-12",
           "timestamp": 1767225599,
-          "eth": 302508.55575565627,
-          "usd": 896083235.76236,
+          "eth": 147083.05810735284,
+          "usd": 437059199.74071044,
           "status": "observed"
         },
         {
           "month": "2026-01",
           "timestamp": 1769903999,
-          "eth": 302605.4690966695,
-          "usd": 817779426.97888,
+          "eth": 154309.5179718106,
+          "usd": 381107336.4174751,
           "status": "observed"
         },
         {
           "month": "2026-02",
           "timestamp": 1772323199,
-          "eth": 347301.5692244329,
-          "usd": 669266580.9395701,
+          "eth": 108292.1728032968,
+          "usd": 211956537.40619022,
           "status": "observed"
         },
         {
           "month": "2026-03",
           "timestamp": 1775001599,
-          "eth": 350284.6505583417,
-          "usd": 708312292.23152,
+          "eth": 147239.05628959305,
+          "usd": 309211381.2136115,
           "status": "observed"
         },
         {
           "month": "2026-04",
           "timestamp": 1777593599,
-          "eth": 348588.3113941192,
-          "usd": 791404995.6496,
+          "eth": 124604.8980502731,
+          "usd": 281416375.5226722,
           "status": "observed"
         },
         {
           "month": "2026-05",
           "timestamp": 1780271999,
-          "eth": 350207.2073431763,
-          "usd": 706801517.00785,
+          "eth": 108176.24027074031,
+          "usd": 217386732.7598616,
           "status": "observed"
         },
         {
           "month": "2026-06",
           "timestamp": 1782863999,
-          "eth": 355255.67217096646,
-          "usd": 565744941.53852,
+          "eth": 88680.87647869605,
+          "usd": 139033087.2033178,
           "status": "observed"
         },
         {
           "month": "2026-07",
           "timestamp": 1785542399,
-          "eth": 351712.78592625627,
-          "usd": 673207346.39713,
+          "eth": 122177.11491818825,
+          "usd": 227674040.2682799,
           "status": "observed"
         },
         {
           "month": "2026-08",
           "timestamp": 1788220799,
-          "eth": 353560.40334243653,
-          "usd": 855013660.41541,
+          "eth": 173879.67934999743,
+          "usd": 429591691.6725729,
           "status": "observed"
         },
         {
           "month": "2026-09",
           "timestamp": 1790812799,
-          "eth": 352222.48034555337,
-          "usd": 941002029.62891,
+          "eth": 176962.43062852597,
+          "usd": 473768188.62636554,
           "status": "observed"
         }
       ]
     },
     {
-      "name": "ether.fi Liquid",
+      "name": "Lido Earn ETH",
       "history": [
         {
           "month": "2024-10",
           "timestamp": 1730419199,
-          "eth": 325605.41040853644,
-          "usd": 868939902.70308,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2024-11",
           "timestamp": 1733011199,
-          "eth": 321036.425031596,
-          "usd": 1155259206.56865,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2024-12",
           "timestamp": 1735689599,
-          "eth": 333954.99326301605,
-          "usd": 1121521053.87506,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-01",
           "timestamp": 1738367999,
-          "eth": 399550.56204700103,
-          "usd": 1298183726.65236,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-02",
           "timestamp": 1740787199,
-          "eth": 415158.7756598909,
-          "usd": 954765545.91176,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-03",
           "timestamp": 1743465599,
-          "eth": 403173.41135326726,
-          "usd": 726732169.16641,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-04",
           "timestamp": 1746057599,
-          "eth": 387065.0765156873,
-          "usd": 695939136.92455,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-05",
           "timestamp": 1748735999,
-          "eth": 346212.405525224,
-          "usd": 874310960.41693,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-06",
           "timestamp": 1751327999,
-          "eth": 315280.44091974176,
-          "usd": 789023984.24975,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-07",
           "timestamp": 1754006399,
-          "eth": 281813.58992665383,
-          "usd": 1072145712.19651,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-08",
           "timestamp": 1756684799,
-          "eth": 272839.61606849753,
-          "usd": 1196126148.4475698,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-09",
           "timestamp": 1759276799,
-          "eth": 257876.44755321398,
-          "usd": 1086508257.71143,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-10",
           "timestamp": 1761955199,
-          "eth": 238864.60681279737,
-          "usd": 906811705.78962,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-11",
           "timestamp": 1764547199,
-          "eth": 196931.63611948292,
-          "usd": 590274165.01725,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-12",
           "timestamp": 1767225599,
-          "eth": 194353.01310772466,
-          "usd": 575707607.4450101,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2026-01",
           "timestamp": 1769903999,
-          "eth": 190117.20334163072,
-          "usd": 513784295.0151,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2026-02",
           "timestamp": 1772323199,
-          "eth": 137699.09142969933,
-          "usd": 265352674.11961,
+          "eth": 0.0,
+          "usd": 0.0,
           "status": "observed"
         },
         {
           "month": "2026-03",
           "timestamp": 1775001599,
-          "eth": 173977.853785768,
-          "usd": 351801462.65642,
+          "eth": 86458.91962026412,
+          "usd": 181569229.16863373,
           "status": "observed"
         },
         {
           "month": "2026-04",
           "timestamp": 1777593599,
-          "eth": 112626.31660403566,
-          "usd": 255697126.63507,
+          "eth": 110594.33429852969,
+          "usd": 249773943.06825778,
           "status": "observed"
         },
         {
           "month": "2026-05",
           "timestamp": 1780271999,
-          "eth": 83251.28580572228,
-          "usd": 168020914.09465998,
+          "eth": 44337.321668691795,
+          "usd": 89098543.93864453,
           "status": "observed"
         },
         {
           "month": "2026-06",
           "timestamp": 1782863999,
-          "eth": 73815.94816022231,
-          "usd": 117551956.37359999,
+          "eth": 90416.9798725818,
+          "usd": 141754934.62003878,
           "status": "observed"
         },
         {
           "month": "2026-07",
           "timestamp": 1785542399,
-          "eth": 104882.89462207601,
-          "usd": 200754530.39055,
+          "eth": 77748.21357681736,
+          "usd": 144881878.4150222,
           "status": "observed"
         },
         {
           "month": "2026-08",
           "timestamp": 1788220799,
-          "eth": 152319.0330502558,
-          "usd": 368352487.34881,
+          "eth": 79323.1161443374,
+          "usd": 195977769.11351538,
           "status": "observed"
         },
         {
           "month": "2026-09",
           "timestamp": 1790812799,
-          "eth": 148830.45276010444,
-          "usd": 397617318.40753,
+          "eth": 83046.35775670082,
+          "usd": 222333759.46898293,
           "status": "observed"
         }
       ]
     },
     {
-      "name": "Yield Basis",
+      "name": "Avant avETH / savETH",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 0.0031,
+          "usd": 13.641146999994623,
+          "status": "observed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 1059.1332696047118,
+          "usd": 4392066.799061266,
+          "status": "observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 2178.5908562421205,
+          "usd": 8397807.150585063,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 1953.8778867897213,
+          "usd": 5836323.418821646,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 2888.6281936864348,
+          "usd": 8583595.84663771,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 2819.4798398944217,
+          "usd": 6963435.995317071,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 3987.179027021058,
+          "usd": 7803968.086604297,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 5739.112679696192,
+          "usd": 12052501.580416882,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 6556.286431484754,
+          "usd": 14807173.66096244,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 6530.304872183906,
+          "usd": 13123044.732715128,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 9164.060038590638,
+          "usd": 14367331.594742334,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 10330.234570455612,
+          "usd": 19250137.33668188,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 12572.689103104556,
+          "usd": 31062415.118699662,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 12356.755063369086,
+          "usd": 33081809.754077554,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "YieldBasis WETH",
       "history": [
         {
           "month": "2024-10",
@@ -2838,92 +3011,1476 @@
         {
           "month": "2025-09",
           "timestamp": 1759276799,
-          "eth": 0.0,
-          "usd": 0.0,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-10",
           "timestamp": 1761955199,
-          "eth": 0.0,
-          "usd": 0.0,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-11",
           "timestamp": 1764547199,
-          "eth": 0.0,
-          "usd": 0.0,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2025-12",
           "timestamp": 1767225599,
-          "eth": 0.0,
-          "usd": 0.0,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2026-01",
           "timestamp": 1769903999,
-          "eth": 10330.418381724106,
-          "usd": 27917551.02734,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2026-02",
           "timestamp": 1772323199,
-          "eth": 14745.71456086401,
-          "usd": 28415690.69123,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2026-03",
           "timestamp": 1775001599,
-          "eth": 14413.983043321316,
-          "usd": 29146585.07967,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2026-04",
           "timestamp": 1777593599,
-          "eth": 13835.105572302149,
-          "usd": 31410036.73207,
-          "status": "observed"
+          "eth": null,
+          "usd": null,
+          "status": "missing"
         },
         {
           "month": "2026-05",
           "timestamp": 1780271999,
-          "eth": 16540.22567016591,
-          "usd": 33382113.07533,
+          "eth": 641.1049670267671,
+          "usd": 1288339.4152843757,
           "status": "observed"
         },
         {
           "month": "2026-06",
           "timestamp": 1782863999,
-          "eth": 23180.775018165434,
-          "usd": 36915402.72201,
+          "eth": 5085.128255477855,
+          "usd": 7972418.724951956,
           "status": "observed"
         },
         {
           "month": "2026-07",
           "timestamp": 1785542399,
-          "eth": 22304.37215794152,
-          "usd": 42692412.08834,
+          "eth": 7632.4561127719235,
+          "usd": 14222893.718915477,
           "status": "observed"
         },
         {
           "month": "2026-08",
           "timestamp": 1788220799,
-          "eth": 12567.325454948084,
-          "usd": 30391511.14572,
+          "eth": 12512.000165048676,
+          "usd": 30912475.43821084,
           "status": "observed"
         },
         {
           "month": "2026-09",
           "timestamp": 1790812799,
-          "eth": 10674.149661069087,
-          "usd": 28517193.12684,
+          "eth": 10616.20526151943,
+          "usd": 28421966.848962277,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "Rocksolid rETH",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 2.3763411783756364e-07,
+          "usd": 0.0010456780431084677,
+          "status": "observed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 1846.1063252680624,
+          "usd": 7655526.014939549,
+          "status": "observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 6116.372938519903,
+          "usd": 23576763.0491877,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 6624.238977169572,
+          "usd": 19786907.53179433,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 7652.415550123473,
+          "usd": 22739251.273788515,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 9534.93211541422,
+          "usd": 23548985.371665712,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 9655.734666282067,
+          "usd": 18898836.66565195,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 9485.054413878594,
+          "usd": 19919217.428514313,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 9662.45744475062,
+          "usd": 21822366.498359494,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 9738.309179343274,
+          "usd": 19569724.458943017,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 8671.63088013891,
+          "usd": 13595305.552070972,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 8831.863316888237,
+          "usd": 16457959.461553918,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 8829.862928155655,
+          "usd": 21815290.704027757,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 8998.142695243581,
+          "usd": 24090049.79523559,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "Liquity ETH Carry",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 32.02396695866628,
+          "usd": 67252.367033326,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 31.861886865886586,
+          "usd": 71959.1032087168,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 528.0793539044464,
+          "usd": 1061207.5729006166,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 641.0149841507035,
+          "usd": 1004977.5749732032,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 1502.336799050316,
+          "usd": 2799567.5713290325,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 2813.766788093618,
+          "usd": 6951765.950960486,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 6016.669089666008,
+          "usd": 16107975.04335258,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "Makina DETH",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 9566.825639392599,
+          "usd": 36877211.952257894,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 11263.451566550262,
+          "usd": 33644449.63478691,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 9812.318610795559,
+          "usd": 29157431.010885384,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 7873.013216906936,
+          "usd": 19444446.046569254,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 4026.3925798881737,
+          "usd": 7880719.422088216,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 3820.1191705928886,
+          "usd": 8022493.181539854,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 3542.788054703419,
+          "usd": 8001279.156758393,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 2891.163309418132,
+          "usd": 5809968.474931314,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 2665.174068090851,
+          "usd": 4178436.1334082405,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 2591.4613499343545,
+          "usd": 4829124.309685364,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 2593.3251862953784,
+          "usd": 6407137.153705237,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 2498.8037382042357,
+          "usd": 6689859.065435876,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "Vesper vaETH",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": 1105.9506255625572,
+          "usd": 2784451.88997902,
+          "status": "observed"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": 1156.7817609405686,
+          "usd": 4307889.981197512,
+          "status": "observed"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": 1165.1647793797868,
+          "usd": 3879218.0549333557,
+          "status": "observed"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": 1095.1440752573753,
+          "usd": 3612825.5470716017,
+          "status": "observed"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": 1090.711793089364,
+          "usd": 2427597.237879525,
+          "status": "observed"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": 1354.743125393972,
+          "usd": 2470604.3954875977,
+          "status": "observed"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": 1460.4111618750999,
+          "usd": 2618488.005020052,
+          "status": "observed"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": 1433.3794671219339,
+          "usd": 3609091.8264732123,
+          "status": "observed"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": 1463.500272384039,
+          "usd": 3653218.649928492,
+          "status": "observed"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": 1448.445519985272,
+          "usd": 5351542.6937791165,
+          "status": "observed"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 1583.3293339038853,
+          "usd": 6967234.901027894,
+          "status": "observed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 1870.8418171592423,
+          "usd": 7758100.389488511,
+          "status": "observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 1876.1911530589887,
+          "usd": 7232147.989549884,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 2182.307546488531,
+          "usd": 6518653.354314233,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 2215.690342937011,
+          "usd": 6583952.364183673,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 2240.5752902523313,
+          "usd": 5533681.215094382,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 2541.503932882619,
+          "usd": 4974398.051800977,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 2490.977754304706,
+          "usd": 5231211.686565118,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 2443.0773639730373,
+          "usd": 5517615.981784189,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 2622.0867100336513,
+          "usd": 5269242.686570301,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 1881.9656437383603,
+          "usd": 2950528.9511023434,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 1862.688647488232,
+          "usd": 3471074.353159168,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 1617.5358901941113,
+          "usd": 3996326.5518271714,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 1052.2899295891168,
+          "usd": 2817216.581398141,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "Royco ETH",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 0.0139209397579908,
+          "usd": 29.23485873132467,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 48.52779967335157,
+          "usd": 109598.56080982511,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 115.0234259962324,
+          "usd": 231146.5688360586,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 115.2793409163394,
+          "usd": 180733.92251837702,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 115.53016800123676,
+          "usd": 215287.61862913345,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 115.82347013740825,
+          "usd": 286156.5000448552,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 116.03750762330087,
+          "usd": 310658.4804704163,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "TAU InfiniFi ETH Carry",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 0.04959344614418042,
+          "usd": 191.1676969810379,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 0.5902506888273252,
+          "usd": 1763.10604745038,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 41.01452289614396,
+          "usd": 121875.18253565326,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 349.5576928811053,
+          "usd": 863323.2933984825,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 303.9048922016408,
+          "usd": 594822.5710538174,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 44.72359537807414,
+          "usd": 93922.39428982566,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 2.3447368854861566,
+          "usd": 5295.516999673729,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 175.3472273865736,
+          "usd": 352370.9158745649,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 175.8103597032104,
+          "usd": 275633.91389952274,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 83.09970280513241,
+          "usd": 154854.24660262035,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 83.19095048220846,
+          "usd": 205533.74197087687,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 82.22812829418766,
+          "usd": 220143.1753491856,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "Reservoir ETH Yield",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 2428.799206232362,
+          "usd": 10071865.988366887,
+          "status": "observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 4136.88049784135,
+          "usd": 15946419.91925584,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 1620.1598288357404,
+          "usd": 4839492.17870735,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 575.1905575152527,
+          "usd": 1709186.142856395,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 152.98739658615756,
+          "usd": 377842.01509232615,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 310.3445773858396,
+          "usd": 607426.7449132523,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 1229.8730869527612,
+          "usd": 2582811.690847482,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 1223.5508993248168,
+          "usd": 2763352.522599662,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 175.33640639630448,
+          "usd": 352349.1704366209,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 162.54688403261827,
+          "usd": 254839.55503939666,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 62.79302098013036,
+          "usd": 117013.24586662735,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 61.24678357898481,
+          "usd": 151317.9082544727,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 60.19914426828072,
+          "usd": 161166.63540132897,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "ZenSats wstETH",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 0.5432994514605468,
+          "usd": 851.7800343411717,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 0.5449837930500447,
+          "usd": 1015.5638568443924,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 0.5471035393974735,
+          "usd": 1351.6883392493803,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 0.5485192911913805,
+          "usd": 1468.509389769128,
           "status": "observed"
         }
       ]
@@ -3260,8 +4817,8 @@
   "scope": "Gross whole-product books with current, historical or declared carry evidence; not unique ETH, historical dollar allocations, deposits or earned income.",
   "sources": {
     "reader_carry_category": "7de0c236e26cef3266c9204f5a7cbef73e195b6d4476e5b0b7a09a817b0d0d01",
-    "reader_product_chapters": "890fde3d49e1d92c0b2f0046d3083ba4d3e4db425cfe1b7bd17dabd0ddf9cdcc",
-    "market_reader_chapter": "72da40f294ea5ea4db6a7db56038c9716099bbfeb09a2e78ae4e82d0233aaf5c",
+    "reader_product_chapters": "d6bc3ca342264e43be56dc5512d023ed621001ef1cdd81934c65caeb02804b1c",
+    "market_reader_chapter": "46b69effba2a698ab5303ba7737298331eb953b4ea3b8c7ce10b59601d633761",
     "funding_atlas_chapter": "6f9407ec0164945417bbbcb27df4cdf4f11988a5474af5c136fd212f44c36caa",
     "strategy_universe_deep": "3f31107993ce3cf59a83f9a513eebc3e1a82fed23899898fb7d2724a82fddb3b",
     "credit_expansion_deep": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0"
