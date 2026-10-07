@@ -38,8 +38,11 @@ def run():
             p['rewards'] = [{k: c.get(k) for k in ('opportunity', 'token', 'creator', 'creatorMerklTags', 'rewardAPRatT', 'liquidRewardUSDperYearAtT', 'amount')} for c in r.get('activeCampaignsAtT', [])]
             p['rewardsNote'] = {k: v for k, v in r.items() if k != 'activeCampaignsAtT' and not isinstance(v, (list, dict))}
         out['products'][pid] = p
+    spath = D / 'gap_borrower_scan.csv'  # full scan of 7 Oct: every venue, every wallet over $5M
+    if spath.exists():
+        out['borrowers'] = {r['address'].lower(): {'who': r['who'], 'kind': r['category'], 'pooled_product': r['pooled_product'], 'product_if_any': r['product_if_any'], 'dollar_debt_usd_T': r['eth_backed_stablecoin_debt_usd_T'], 'venues': r['venues'], 'cluster': r['cluster'], 'destination_of_dollars': r['first_hops_of_dollars'], 'evidence': r['evidence'][:300]} for r in csv.DictReader(spath.open())}
     bpath = D / 'gap_borrowers.csv'
-    if bpath.exists():
+    if not spath.exists() and bpath.exists():
         out['borrowers'] = {r['address'].lower(): {k: r[k] for k in ('who', 'kind', 'pooled_product', 'product_if_any', 'dollar_debt_usd_T', 'weth_debt_T', 'destination_of_dollars', 'evidence')} for r in csv.DictReader(bpath.open())}
     lr = D / 'gap_loop_regime_monthly.csv'
     if lr.exists():

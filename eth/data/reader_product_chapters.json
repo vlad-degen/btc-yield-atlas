@@ -5955,13 +5955,14 @@
           "month": "snapshot",
           "timestamp": 1790985599,
           "block": 26108081,
-          "debtUSD": 10034776.599142037,
+          "debtUSD": 19656999.0,
           "apr": 0.0630031042810438,
           "ratedDebtUSD": 10034776.599142037,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 3,
-          "allObserved": true
+          "allObserved": true,
+          "source": "gap_borrower_scan.csv"
         },
         "history": [
           {

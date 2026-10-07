@@ -48,6 +48,14 @@ def run():
    for h in p['history']:
     d=g.get((p['id'],'dollar_debt_usd',h['month']))
     if d is not None:h.update(debtUSD=d,apr=g.get((p['id'],'borrow_rate_debt_weighted',h['month'])) if d>=1 else None,source='gap_top5_risk_series.csv')
+ # 7 Oct full borrower scan (data/eth/gap_borrower_scan.csv): Avant's strategy wallet also owes $8.97M on an Aave v4 spoke
+ # and $0.65M of RLUSD on Morpho against weETH, all ETH-backed. Only the snapshot is replaced; the rate stays that of the read legs.
+ scan=ROOT/'data/eth/gap_borrower_scan.csv'
+ if scan.exists():
+  for r in csv.DictReader(scan.open()):
+   if r['address'].lower()=='0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd':
+    for p in products:
+     if p['id']=='avant':p['current'].update(debtUSD=float(r['eth_backed_stablecoin_debt_usd_T']),source='gap_borrower_scan.csv')
  # 7 Oct reconstruction (data/eth/gap_rocksolid_upshift.json): NEMO ETH Prime and Sentora ETH books reconcile only with
  # their loans inside, so the loans are attributed; Sentora also has a 907,092 USDC Aave loan; Rocksolid's second wallet
  # borrows USDC on Morpho against rETH.

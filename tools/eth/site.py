@@ -61,6 +61,7 @@ ARTICLES = {
  'BORROWER-IDENTITIES': ('library', 'Who borrows dollars against ETH: the largest wallets named'),
  'LIQUID-LOOP': ('library', 'Liquid ETH: the loop, week by week'),
  'TOP5-KEYS-HOLDERS-TERMS': ('library', 'Top five: keys, holders, fees and terms'),
+ 'SELECTION': ('library', 'How the five were chosen: every ETH-backed dollar borrower'),
  'REWARDS-SPLIT': ('library', 'Top five: organic yield against rewards'),
  'CLOSED-CASES': ('library', 'Closed and stressed ETH products'),
  'RESTAKING-AND-LOOPS': ('library', 'Restaking in practice and the loop regime'),
@@ -348,7 +349,7 @@ def build():
         (OUT/folder/f'{stem}.html').write_text(page)
     library_groups = [
       ('Top five, deep dives', [k for k in TOP5_DIVES if k in ARTICLES]),
-      ('New findings, 7 October', ['REPORT','CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','LIQUID-LOOP','REWARDS-SPLIT','TOP5-KEYS-HOLDERS-TERMS','CLOSED-CASES','RESTAKING-AND-LOOPS','OUTSIDE-AND-SMALL']),
+      ('New findings, 7 October', ['REPORT','SELECTION','CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','LIQUID-LOOP','REWARDS-SPLIT','TOP5-KEYS-HOLDERS-TERMS','CLOSED-CASES','RESTAKING-AND-LOOPS','OUTSIDE-AND-SMALL']),
       ('Market size and counting', ['MARKET-STRUCTURE','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
       ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','etherfi-liquid-eth']),

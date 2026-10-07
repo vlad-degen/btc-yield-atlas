@@ -9,7 +9,7 @@ Financial snapshot: **2 October 2026**. What the counted-once map includes, what
 | Staking | 15,016,520 | Issuer backing (DefiLlama token breakdown), net of staking tokens held by other products | About 14.4M ETH staked off-chain (listed); beacon chain 43.81M ETH active is the ceiling |
 | Restaking | 2,427,324 | Restaking-token issuers; EigenLayer and Symbiotic only for what no restaking token counts (estimate) | Points and AVS rewards are not in the size |
 | Leveraged staking | 97,144 | Loop vaults (Fluid Lite, Treehouse, CIAN and others) | Loops inside Liquid ETH, Lido Earn and Makina stay in those products |
-| Carry | 305,908 | On-chain books and loans at block 26,108,081: 12 products, $261.3M of dollar debt | Concrete Delta (307k ETH) and three rSHARE vaults (about 83k WETH): private mandates, not products |
+| Carry | 305,908 | On-chain books and loans at block 26,108,081: 12 products, $270.9M of dollar debt | Concrete Delta (307k ETH) and three rSHARE vaults (about 83k WETH): private mandates, not products |
 | Fixed yield | 9,315 | Pendle and Spectra principal tokens on ETH-family assets | Expired markets count only their residual |
 | Basis, options, credit | 26,315 | Protocol token series | Exchange margin and CeFi lenders (no ETH balances published) |
 | Farming and pools | 660,066 | DEX ETH pools above $1M (plain-ETH side), managed vaults, points programmes | History covers only pools that still exist |

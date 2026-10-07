@@ -511,7 +511,7 @@
   "sources": {
     "market_reader_chapter": "ee5c05ce01eb1e7801ab331a3be1e58a0a4df685e18dee68e2f6209a4c3176c4",
     "reader_carry_category": "7de0c236e26cef3266c9204f5a7cbef73e195b6d4476e5b0b7a09a817b0d0d01",
-    "reader_product_chapters": "0710dbbda4daf3dafb376fe670bf0afa4a59c1448f76897c4709a6d9cc54da43",
+    "reader_product_chapters": "979aaccf457dd6234696f1ecdce4407c855c671aa582da5beba2f07051ef505a",
     "etherfi_staking_comparison": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858",
     "carry_economics_chapter": "eca038f400d12e550b284f6242f5d0ecec21180c8b0ea8ddf13cbf6c397ddfe0",
     "carry_coverage_audit": "58d64145ebdb809ed3d1c8bdfc7860e09c284321ab3149826f3dee8eff0fdcf3",
@@ -521,8 +521,8 @@
   },
   "verifiedDollarFinancing": {
     "source": "data/eth/economic_questions.json",
-    "sourceSHA256": "b6190755ef8cb3402b32e297b5bf1f34fae84ce1e07db1000521a7b1e9d7dbc3",
-    "directDebtUSD": 261325365.85171545,
+    "sourceSHA256": "fb07c55502639ffe8a491bf4487b3eda1ef11587ce54bfa48835d9f10b605aae",
+    "directDebtUSD": 270947588.2525734,
     "topFive": [
       "liquid",
       "yieldbasis",
@@ -530,7 +530,7 @@
       "avant",
       "liquity"
     ],
-    "topTwoDebtShare": 0.7993858495266694,
+    "topTwoDebtShare": 0.7709970807693918,
     "unit": "Outstanding nominal-dollar financing; not TVL or equity"
   }
 }

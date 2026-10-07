@@ -7,7 +7,7 @@ Financial snapshot: **2 October 2026, 23:59:59 UTC** (Ethereum block 26,108,081)
 ## What the page says
 
 - **18.54M ETH earns a yield** in 144 products, each counted once ($49.5B): 81% staking, 13% restaking. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.
-- **Carry is 1.6%**: 306k ETH in 12 products that borrow $261M of dollars against ETH (BTC: 9.9%). Liquid ETH and Lido Earn hold 85%. Rewards are a minority of the lead over stETH except at YieldBasis and Liquity.
+- **Carry is 1.6%**: 306k ETH in 12 products that borrow $271M of dollars against ETH (BTC: 9.9%). Liquid ETH and Lido Earn hold 85%. Rewards are a minority of the lead over stETH except at YieldBasis and Liquity.
 - **Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years; its dollar leg loses about $6.8M a year at 2 October rates. YieldBasis is the only top-five product whose fees cover its loan.
 - **Concrete Delta (307k ETH) is not a product**: one Bitfinex-linked wallet's own position, left out of the map.
 

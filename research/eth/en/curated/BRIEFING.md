@@ -6,7 +6,7 @@ Financial snapshot: **2 October 2026**. Same data as the main page.
 
 **18,542,591 ETH earns a yield** in 144 products counted once ($49.50B on 2 October 2026): 81% staking, 13% restaking, 3.6% farming and pools. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine; it is listed, not counted.
 
-**Carry is 1.6%**: 305,908 ETH in 12 products that borrow dollars against ETH (in BTC it is 9.9%). They owe $261.3M; Liquid ETH and Lido Earn hold 85% of the books.
+**Carry is 1.6%**: 305,908 ETH in 12 products that borrow dollars against ETH (in BTC it is 9.9%). They owe $270.9M; Liquid ETH and Lido Earn hold 85% of the books.
 
 **Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years (3.37% against 2.71%). Its ETH loop added +0.02 pp a year and its dollar leg -0.13 pp; the rest is income our model cannot assign. At 2 October rates the dollar leg loses about $6.8M a year ($9.0M of interest on one 13.93% Aave USDC loan). YieldBasis is the only top-five product whose fees cover its loan.
 

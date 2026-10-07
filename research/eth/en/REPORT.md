@@ -14,10 +14,11 @@
 
 1. **18,542,591 ETH ($49.50B) earns a yield in 144 products, each counted once.** Staking 15.02M (81%), restaking 2.43M (13%), farming 660k, carry 306k (1.6%), leveraged staking 97k, credit 24k, fixed yield 9k, options 2k. Idle WETH in money markets (787k) and CDPs (657k) is listed and off by default. About 14.4M ETH more is staked off-chain (exchanges, institutional providers, BitMine) and not counted.
 2. **Two years: staking grew, everything around it shrank.** Total 19.16M (Oct 2024), peak 20.05M (Jan 2026), 18.54M now. Staking +2.55M. Restaking peaked at 4.67M (Jul 2025) and lost half. Farming fell from 1.92M to 0.66M, fixed yield from 307k to 9k, leveraged staking from a 413k peak (May 2025) to 97k. Carry is the only new category: from nothing to 306k ETH in a year.
-3. **Carry is small and concentrated.** 12 products owe $261.3M of dollars against ETH (BTC: 9.9% of its market is carry, ETH 1.6%). Liquid ETH and YieldBasis hold 80% of the debt; Liquid ETH and Lido Earn hold 85% of the ETH.
+3. **Carry is small and concentrated.** 12 products owe $270.9M of dollars against ETH (BTC: 9.9% of its market is carry, ETH 1.6%). Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 85% of the ETH.
 4. **Carry barely beats staking.** The best product, Liquid ETH, beat stETH by 0.66 pp a year over two years, all of it in year two, and mostly from a fee cut. Its dollar leg loses about $6.8M a year at 2 October rates. YieldBasis is the only one whose fees cover its loan, and its depositors still trail stETH unless they take YB emissions.
 5. **Rewards are a minority of the lead over stETH,** except at YieldBasis (all of it, for gauge stakers) and Liquity (99%). Liquid: 34%. Lido Earn: none in 90 days. Avant: 7%.
-6. **Private mandates borrow as much as all carry products together.** Concrete Delta (307k ETH, one Bitfinex-linked wallet, $176.2M of debt) and three whitelist-only rSHARE vaults (about 83k WETH, $87.1M) are left out of the map, like Avalon in BTC.
+6. **Private mandates borrow as much as all carry products together.** Concrete Delta (307k ETH, one Bitfinex-linked wallet, $176.2M of debt) and three whitelist-only rSHARE vaults (about 83k WETH, $80.4M) are left out of the map, like Avalon in BTC.
+7. **No large pooled product is missing.** A scan of every lending venue found 162 wallets with at least $5M of stablecoin debt against ETH. The 38 above $20M owe $2.28B; four are pooled products (Liquid ETH ×3, Lido Earn), the rest are private mandates, funds, desks and individuals. The only new product is Yearn's WETH-2 vault ($1.5M). Avant's debt was under-counted: $19.7M, not $10.0M ([SELECTION](SELECTION.md)).
 
 ## 1. The map now
 
@@ -26,7 +27,7 @@
 | Staking | 15,016,520 | 81.0% | Lido 9.33M, Binance 3.74M, Rocket Pool 0.50M, cbETH 0.44M (on-chain supply) |
 | Restaking | 2,426,627 | 13.1% | ether.fi Stake 1.69M, Kelp 0.40M; EigenLayer and Symbiotic only where no issuer counted it |
 | Farming | 660,000 | 3.6% | points, pools, vaults |
-| Carry | 305,908 | 1.6% | 12 products, $261.3M of dollar debt |
+| Carry | 305,908 | 1.6% | 12 products, $270.9M of dollar debt |
 | Leveraged staking | 97,000 | 0.5% | |
 | Credit, fixed yield, options, basis | about 35,000 | 0.2% | basis is nearly empty |
 | Money markets (off) | 787,000 | | idle WETH only |
@@ -55,7 +56,7 @@ Restaking paid nothing extra: weETH earned 5.29% against stETH's 5.49% over two 
 | 1 | ether.fi Liquid ETH | 177,171 | $181.1M | 3.37% vs 2.71%, two years | 3.39% vs 3.87%, a year | Veda vault run by Nonce |
 | 2 | YieldBasis WETH | 10,426 | $27.8M | unstaked −2.96%, staked +1.69%, 90 days | −2.96% | admin fee 40.5% on 2 October |
 | 3 | Lido Earn ETH | 83,309 | $25.6M | 3.14%, 90 days | 3.14% | 5-of-8 Safe, no timelock |
-| 4 | Avant savETH | 12,583 | $10.7M with Morpho | 4.74%, 90 days | 4.55% | one EOA |
+| 4 | Avant savETH | 12,583 | $19.7M with Aave v4 and Morpho | 4.74%, 90 days | 4.55% | one EOA |
 | 5 | Liquity ETH Carry | 6,014 | $6.75M | 3.84%, 90 days | 2.26% | 2-of-3 Safe, no delay |
 
 ## 4. Findings by product

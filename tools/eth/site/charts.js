@@ -54,4 +54,4 @@ function initChartInspection(){
 
 // Rebuild the SVG label scale only when the small-screen breakpoint changes.
 let chartWasMobile=innerWidth<560,chartResizeTimer;
-window.addEventListener('resize',()=>{clearTimeout(chartResizeTimer);chartResizeTimer=setTimeout(()=>{const mobile=innerWidth<560;if(mobile===chartWasMobile)return;chartWasMobile=mobile;marketRender();carryCategoryRender();stRenderProduct(stProduct,false);stRenderCurve(stCurve);wealth();if($('#etherfi-chart'))etherfiHistory();protocolHistory();},120);});
+window.addEventListener('resize',()=>{clearTimeout(chartResizeTimer);chartResizeTimer=setTimeout(()=>{const mobile=innerWidth<560;if(mobile===chartWasMobile)return;chartWasMobile=mobile;for(const f of [()=>marketRender(),()=>carryCategoryRender(),()=>stRenderProduct(stProduct,false),()=>stRenderCurve(stCurve),()=>wealth(),()=>{if($('#etherfi-chart'))etherfiHistory()},()=>protocolHistory()])try{f()}catch(e){}},120);});

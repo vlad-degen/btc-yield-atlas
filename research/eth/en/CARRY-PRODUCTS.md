@@ -4,7 +4,7 @@ Financial snapshot: **2 October 2026, 23:59:59 UTC**, Ethereum block **26,108,08
 
 ## Ranking
 
-The top five are ranked by dollars borrowed against ETH: **Liquid ETH, YieldBasis WETH, Lido Earn, Avant, Liquity**. Together the 12 carry products on the map hold 305,908 ETH and owe $261.3M ([all products and status](CARRY-CATEGORY.md)). Books overlap with other map rows; do not add them.
+The top five are ranked by dollars borrowed against ETH: **Liquid ETH, YieldBasis WETH, Lido Earn, Avant, Liquity**. Together the 12 carry products on the map hold 305,908 ETH and owe $270.9M ([all products and status](CARRY-CATEGORY.md)). Books overlap with other map rows; do not add them.
 
 | Product | Dollars borrowed | Loan rate | Whole book, ETH | 30-day ETH book return | Excess vs stETH, pp |
 | --- | --- | --- | --- | --- | --- |

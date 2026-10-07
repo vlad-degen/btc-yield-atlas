@@ -4,11 +4,11 @@ Financial snapshot: **2 October 2026**, Ethereum block 26,108,081.
 
 ## Findings
 
-- **Carry is 1.6% of ETH that earns a yield**: 305,908 ETH in 12 products, owing **$261.3M** of dollar debt (BTC: 9.9%).
+- **Carry is 1.6% of ETH that earns a yield**: 305,908 ETH in 12 products, owing **$270.9M** of dollar debt (BTC: 9.9%).
 - **Two products dominate.** Liquid ETH and YieldBasis hold 80% of the debt; Liquid ETH and Lido Earn hold 85% of the books.
 - **Private mandates borrow as much as all the products.** Concrete Delta ($176.15M, one Bitfinex-linked wallet) and three whitelist-only rSHARE vaults run by one operator owe about $252M between them; both are left out of the map.
 - **The spread is thin.** Liquid ETH beat stETH by 0.66 pp a year over two years; its loop added +0.02 pp and its dollar leg -0.13 pp. Only YieldBasis covers its loan from fees.
-- **The book is new.** Carry debt was under $1M until August 2025 and grew from $17.5M in May 2026 to $261.3M at T.
+- **The book is new.** Carry debt was under $1M until August 2025 and grew from $17.5M in May 2026 to $270.9M at T.
 
 ## Products
 

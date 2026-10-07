@@ -4,14 +4,14 @@ Financial snapshot: 2 October 2026, 23:59:59 UTC. Ethereum block 26,108,081. Lat
 
 ## What the category actually contains
 
-The attributed product accounts owe **$261,325,366** of direct ETH-backed dollar debt at the snapshot. This measures financing, not carry equity. Whole hybrid vault books contain other strategies, while outstanding debt includes accrued interest and can differ from dollars invested. The top two account for **79.94%** of this measured financing sample, not the global ETH yield market.
+The attributed product accounts owe **$270,947,588** of direct ETH-backed dollar debt at the snapshot. This measures financing, not carry equity. Whole hybrid vault books contain other strategies, while outstanding debt includes accrued interest and can differ from dollars invested. The top two account for **77.10%** of this measured financing sample, not the global ETH yield market.
 
 | Product | Direct dollar debt at T | Debt-weighted quoted APR | Whole book ETH | Scope |
 | --- | --- | --- | --- | --- |
 | ether.fi Liquid ETH | $181,084,944 | 7.79% | 177,171 | attributed product account / direct loan |
 | YieldBasis WETH | $27,814,856 | 10.00% | 10,426 | attributed product account / direct loan |
 | Lido Earn ETH | $25,555,160 | 4.33% | 83,309 | attributed product account / direct loan |
-| Avant avETH / savETH | $10,034,777 | 6.30% | 12,583 | attributed product account / direct loan |
+| Avant avETH / savETH | $19,656,999 | 6.30% | 12,583 | attributed product account / direct loan |
 | Liquity ETH Carry | $6,752,065 | 2.55% | 6,014 | attributed product account / direct loan |
 | NEMO ETH Prime | $5,611,801 | 4.75% | Not reconstructed | attributed product account / direct loan (vault book reconciles with the loan) |
 | Rocksolid rETH | $2,727,060 | 4.61% | 9,728 | attributed product account / direct loan (second strategy wallet) |

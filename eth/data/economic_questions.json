@@ -1154,13 +1154,14 @@
         "month": "snapshot",
         "timestamp": 1790985599,
         "block": 26108081,
-        "debtUSD": 10034776.599142037,
+        "debtUSD": 19656999.0,
         "apr": 0.0630031042810438,
         "ratedDebtUSD": 10034776.599142037,
         "observedLegs": 3,
         "expectedLegs": 3,
         "fundedLegs": 3,
-        "allObserved": true
+        "allObserved": true,
+        "source": "gap_borrower_scan.csv"
       },
       "history": [
         {
@@ -16537,7 +16538,7 @@
       "expectedProducts": 13
     }
   ],
-  "attributedDollarDebtUSD": 261325365.85171545,
+  "attributedDollarDebtUSD": 270947588.2525734,
   "topFive": [
     "liquid",
     "yieldbasis",
@@ -16545,7 +16546,7 @@
     "avant",
     "liquity"
   ],
-  "topTwoDebtShare": 0.7993858495266694,
+  "topTwoDebtShare": 0.7709970807693918,
   "nestedDollarDebtAtT": [
     {
       "month": "snapshot",
