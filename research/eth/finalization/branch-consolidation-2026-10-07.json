@@ -57,5 +57,46 @@
     }
   ],
   "backup_bundle": "/private/tmp/btc-eth-branches-before-consolidation.bundle",
-  "old_branch_deletion_authorized_by_user": true
+  "old_branch_deletion_authorized_by_user": true,
+  "completed_cleanup": {
+    "deleted_remote_branches": [
+      "audit-and-money-markets",
+      "codex/eth-btc-parity",
+      "codex/eth-capital-history",
+      "codex/eth-economic-parity",
+      "codex/eth-editorial",
+      "codex/eth-final-labels",
+      "codex/eth-final-research",
+      "codex/eth-reader-alignment",
+      "codex/eth-reader-cleanup",
+      "codex/eth-report-fixes",
+      "codex/eth-research-site",
+      "codex/eth-substantive-parity"
+    ],
+    "deleted_local_branches": [
+      "audit-and-money-markets",
+      "codex/eth-btc-parity",
+      "codex/eth-capital-history",
+      "codex/eth-economic-parity",
+      "codex/eth-editorial",
+      "codex/eth-final-labels",
+      "codex/eth-final-research",
+      "codex/eth-reader-alignment",
+      "codex/eth-reader-cleanup",
+      "codex/eth-report-fixes",
+      "codex/eth-research-site",
+      "codex/eth-substantive-parity"
+    ],
+    "remaining_local_and_remote": {
+      "codex/eth-research": "28013293be3242dc894ab71e5f7e7283b15aa6d1",
+      "main": "4617c4845cef564adb433488e7b85821e07e9a17"
+    },
+    "all_deleted_tips_retained_in_ETH_history": true,
+    "published_main_unchanged": true,
+    "current_working_branch": "codex/eth-research"
+  },
+  "GitHub_Pages_commit_after_cleanup": "4617c4845cef564adb433488e7b85821e07e9a17",
+  "GitHub_Pages_build_status_after_cleanup": "built",
+  "BTC_root_SHA256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+  "published_non_ETH_blobs_unchanged": 345
 }
