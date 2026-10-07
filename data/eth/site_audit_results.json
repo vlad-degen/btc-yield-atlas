@@ -50,6 +50,11 @@
       "details": null
     },
     {
+      "check": "page_scripts_parse",
+      "passed": true,
+      "details": null
+    },
+    {
       "check": "reader_copy_has_no_long_dashes",
       "passed": true,
       "details": null
@@ -117,5 +122,5 @@
   ],
   "pages": 59,
   "scope": "Generated website integrity and arithmetic consistency; browser interaction QA recorded separately. Not a complete financial audit.",
-  "site_sha256": "b7ec5e1bc9b913468bee3d1c2fe9594a7a4b91e7b0a5d7edce562188e85b9f6a"
+  "site_sha256": "c88173589c062ab6565ef2dd291ccebcf065cdcf33449cfe8f4792f96967d69f"
 }

@@ -55,6 +55,15 @@ def run():
     enhancement=(ROOT/'tools/eth/site/compare.js').read_text()
     presentation='\n'.join((ROOT/'tools/eth/site'/name).read_text() for name in ['presentation.js','market.js','strict.js','closure.js','expansion.js'])
     check('English_dynamic_copy_and_evidence',not re.search('[А-Яа-яЁё]',script+enhancement+presentation) and all(not re.search('[А-Яа-яЁё]',r['claim']+r['time_scope_and_limit']) for r in embedded['evidence']))
+    # every inline script of both pages must parse (a duplicate const breaks the whole page)
+    import shutil as _sh,subprocess as _sp,tempfile as _tf
+    if _sh.which('node'):
+        _ok=True
+        for _page in ('eth/index.html','eth/exhibits.html'):
+            for _js in re.findall(r'<script>(.*?)</script>',(ROOT/_page).read_text(),re.S):
+                with _tf.NamedTemporaryFile('w',suffix='.js',delete=False) as _f:_f.write(_js)
+                _ok=_ok and _sp.run(['node','--check',_f.name],capture_output=True).returncode==0
+        check('page_scripts_parse',_ok)
     check('reader_copy_has_no_long_dashes',all(not re.search('[—–]',''.join(p.copy)) for p in pages.values()) and not re.search('[—–]',script+enhancement+presentation))
     check('colleague_edition_has_market_structure_and_product_panels',len(pages)==len(builder.ARTICLES)+3 and all(x in (ROOT/'eth/index.html').read_text() for x in ['library/BRIEFING.html','id="exit-cost-table"','id="borrower-sample-summary"','id="liquid-permission-review"','id="market-method"']))
     check('reader_has_compact_market_and_separate_complete_exhibits',all(x not in (ROOT/'tools/eth/site/index.html').read_text() for x in ['id="strategy-atlas"','id="market-net-capital"','id="additional-product-history"','id="hgeth-loan-book"','id="coverage-findings"']) and all(x in (ROOT/'eth/exhibits.html').read_text() for x in ['id="strategy-atlas"','id="market-net-capital"','id="additional-product-history"','id="hgeth-loan-book"']))
