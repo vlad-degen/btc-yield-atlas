@@ -1,0 +1,155 @@
+{
+  "verified_at_UTC": "2026-10-07T00:36:22.551185+00:00",
+  "site_commit": "9434a6ae92d9bf2dd1d787b441821156e887ef2a",
+  "pull_request": "https://github.com/vlad-degen/btc-yield-atlas/pull/11",
+  "queryless_and_saved_query_verified": true,
+  "all_public_responses_match": true,
+  "BTC_root_unchanged": true,
+  "all_nonETH_git_blobs_unchanged": 345,
+  "financial_inputs_unchanged": true,
+  "responses": [
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/",
+      "local": "index.html",
+      "status": 200,
+      "local_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "public_sha256": "ee05709e085406a6b0da19717e974834c6ae48cea54f34840c830fbc9eaf1222",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/",
+      "local": "eth/index.html",
+      "status": 200,
+      "local_sha256": "6af93145a7e8dd9428fc5ec9c63b0776e45d85b13ad79259a0b290f39b290899",
+      "public_sha256": "6af93145a7e8dd9428fc5ec9c63b0776e45d85b13ad79259a0b290f39b290899",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/?carryProduct=lido-earn&categories=loops%2Ccarry%2Cbasis%2Cfixed_yield%2Cfarming%2Ccdp%2Clending",
+      "local": "eth/index.html",
+      "status": 200,
+      "local_sha256": "6af93145a7e8dd9428fc5ec9c63b0776e45d85b13ad79259a0b290f39b290899",
+      "public_sha256": "6af93145a7e8dd9428fc5ec9c63b0776e45d85b13ad79259a0b290f39b290899",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/index.html",
+      "local": "eth/index.html",
+      "status": 200,
+      "local_sha256": "6af93145a7e8dd9428fc5ec9c63b0776e45d85b13ad79259a0b290f39b290899",
+      "public_sha256": "6af93145a7e8dd9428fc5ec9c63b0776e45d85b13ad79259a0b290f39b290899",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/exhibits.html",
+      "local": "eth/exhibits.html",
+      "status": 200,
+      "local_sha256": "8521d189f4ba9fdc8b933657d96f0e6d48d037c0a670fd07c64998eaddc87e35",
+      "public_sha256": "8521d189f4ba9fdc8b933657d96f0e6d48d037c0a670fd07c64998eaddc87e35",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/site.css",
+      "local": "eth/site.css",
+      "status": 200,
+      "local_sha256": "fbd69c29da77a25669b07ae2bc2b24a431adc90b1241a80acb19dc397bf2862d",
+      "public_sha256": "fbd69c29da77a25669b07ae2bc2b24a431adc90b1241a80acb19dc397bf2862d",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/README.md",
+      "local": "eth/README.md",
+      "status": 200,
+      "local_sha256": "c2628a695b49a7363d8df3c925a74ca80056c33f341a99f335ca6b82a7c8adbe",
+      "public_sha256": "c2628a695b49a7363d8df3c925a74ca80056c33f341a99f335ca6b82a7c8adbe",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/colleague-readiness.md",
+      "local": "eth/qa/colleague-readiness.md",
+      "status": 200,
+      "local_sha256": "6d7d326a4fb08080ed1a6b660a0dc78e489dea0e6bacc893341c2ac54ba240b8",
+      "public_sha256": "6d7d326a4fb08080ed1a6b660a0dc78e489dea0e6bacc893341c2ac54ba240b8",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/reader_alignment_audit.json",
+      "local": "eth/qa/reader_alignment_audit.json",
+      "status": 200,
+      "local_sha256": "cafa45f122257834fa78e0fc9e8b8ef04896ddfc7c6d98be474bba774bd6ac64",
+      "public_sha256": "cafa45f122257834fa78e0fc9e8b8ef04896ddfc7c6d98be474bba774bd6ac64",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/site_audit_results.json",
+      "local": "eth/qa/site_audit_results.json",
+      "status": 200,
+      "local_sha256": "1c9326c8789729224ae7973bedea7519125ace9a2cbacc16ab8a632953009376",
+      "public_sha256": "1c9326c8789729224ae7973bedea7519125ace9a2cbacc16ab8a632953009376",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/strict_audit_results.json",
+      "local": "eth/qa/strict_audit_results.json",
+      "status": 200,
+      "local_sha256": "223fffcea22114284d426e0b78876808d3607d5220ca1c3bfd5210bdacce9ac0",
+      "public_sha256": "223fffcea22114284d426e0b78876808d3607d5220ca1c3bfd5210bdacce9ac0",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/qa/reader-cleanup-browser-checks.json",
+      "local": "eth/qa/reader-cleanup-browser-checks.json",
+      "status": 200,
+      "local_sha256": "e350fc7506bfaeca4d6c782c80801e8feab7c7e40f1eca2ed94abe8ad38d6ad4",
+      "public_sha256": "e350fc7506bfaeca4d6c782c80801e8feab7c7e40f1eca2ed94abe8ad38d6ad4",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/economic_questions.json",
+      "local": "eth/data/economic_questions.json",
+      "status": 200,
+      "local_sha256": "787508f243a2ba1dd56871dfcbc30760056379c86dbb8789ee38d40438fa82d5",
+      "public_sha256": "787508f243a2ba1dd56871dfcbc30760056379c86dbb8789ee38d40438fa82d5",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/economic-carry-history.csv",
+      "local": "eth/data/economic-carry-history.csv",
+      "status": 200,
+      "local_sha256": "1543a49dafd0999de92694337a9ee1c4282357ad878a42416cb4a1a42e154fb6",
+      "public_sha256": "1543a49dafd0999de92694337a9ee1c4282357ad878a42416cb4a1a42e154fb6",
+      "matches": true
+    },
+    {
+      "url": "https://vlad-degen.github.io/btc-yield-atlas/eth/data/economic-dollar-loans.csv",
+      "local": "eth/data/economic-dollar-loans.csv",
+      "status": 200,
+      "local_sha256": "74eb3328ed41e0a80713467e0107bb0933bff8cd21aab778b231eff14d89c092",
+      "public_sha256": "74eb3328ed41e0a80713467e0107bb0933bff8cd21aab778b231eff14d89c092",
+      "matches": true
+    }
+  ],
+  "rendered_public_browser_checks": {
+    "user_existing_tab_reloaded": true,
+    "selected_product_and_categories_preserved": true,
+    "menu": [
+      "Answer",
+      "Market",
+      "Top 5",
+      "Other carry",
+      "Risks",
+      "Data"
+    ],
+    "hero_note_removed": true,
+    "snapshot_strip_removed": true,
+    "duplicate_donut_legend_removed": true,
+    "months_in_lead_card_removed": true,
+    "carry_math_and_calculator_hidden": true,
+    "observed_results_panel_hidden": true,
+    "risks_closed_by_default": true,
+    "playbook_hidden_and_responsibilities_removed": true,
+    "market_history_bars": 24,
+    "carry_history_bars": 24,
+    "desktop_document_width_matches_viewport": 1827
+  }
+}
