@@ -1,0 +1,378 @@
+{
+ "snapshot": {
+  "timestamp": 1790985599,
+  "utc": "2026-10-02T23:59:59Z",
+  "block": 26108081
+ },
+ "ethUsdChainlinkAtT": 2667.1509388,
+ "conventions": [
+  "Tiers measure what the position controller (curator/strategist) can repay, not what an investor can redeem.",
+  "Same block = executable in one transaction/block from destination liquidity readable at T (idle + permissionless forceDeallocate / instant ERC4626 withdraw / LP removal).",
+  "ETH released = collateral USD x (repaid / leg debt), i.e. keeping each leg's LTV unchanged, converted at Chainlink ETH/USD at T; LST/LRT collateral shown as ETH-equivalent USD/ETH.",
+  "Assumes no competing withdrawals by other depositors of shared destination vaults in the same block; stablecoins at $1.",
+  "Raw reads: raw/eth/gap-2026-10-07/top5-risk/ladder_T_raw.json, positions_raw.json, aave_legs_raw.json"
+ ],
+ "products": {
+  "liquid": {
+   "dollarDebtUSD": 181077117.62575924,
+   "legs": [
+    {
+     "leg": "Morpho weETH/RLUSD (main vault)",
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "debtUSD": 35922202.66302251,
+     "collateralUSD": 52957292.21402639,
+     "ltv": 0.678324007161153
+    },
+    {
+     "leg": "Morpho weETH/RLUSD (LoanManager)",
+     "account": "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3",
+     "debtUSD": 34287795.88754442,
+     "collateralUSD": 56140464.58768765,
+     "ltv": 0.6107501271919327
+    },
+    {
+     "leg": "Morpho weETH/USDC (main vault)",
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "debtUSD": 30667026.92092341,
+     "collateralUSD": 58658961.79902495,
+     "ltv": 0.5228020745746164
+    },
+    {
+     "leg": "Aave V3 USDC+USDT vs weETH (drone)",
+     "account": "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+     "debtUSD": 76588521.6115729,
+     "collateralUSD": 133115759.34703016,
+     "ltv": 0.5753527755636216
+    },
+    {
+     "leg": "Spark PYUSD vs wstETH (drone)",
+     "account": "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+     "debtUSD": 3611570.542696,
+     "collateralUSD": 8048315.74266595,
+     "ltv": 0.44873619005157117
+    }
+   ],
+   "destinationClaimsAtT": {
+    "senRLUSDv2": {
+     "claimRLUSD": 55104709.535318464,
+     "vaultIdle": 42034598.885855846,
+     "forceDeallocatableLiquidity": 42119497.91727925,
+     "forceDeallocatePenalty": 0.0001,
+     "note": "weETH/RLUSD market (where Liquid borrows) holds 107.01M of the vault"
+    },
+    "senPYUSDPRIMEv2": {
+     "claimPYUSD": 49605232.777562,
+     "vaultIdle": 10861003.688011,
+     "forceDeallocatableLiquidity": 17068617.342318,
+     "forceDeallocatePenalty": 0.01,
+     "note": "only market is PRIME/PYUSD, where Liquid main vault itself borrows 21.02M PYUSD against 24.81M PRIME"
+    },
+    "stcUSD": {
+     "claimCUSD": 24625816.339386795,
+     "maxWithdraw": 24625816.339386795,
+     "capUSDCavailable": 6105790.763659,
+     "capUSDCsupplied": 61440958.020912,
+     "capUSDCborrowed": 55335167.257253
+    },
+    "PRIME_morpho_collateral": {
+     "valueUSD": 26355966.0,
+     "PYUSDdebtAgainstIt": 21017988.0,
+     "net": 5337978.0
+    },
+    "idle": {
+     "RLUSD": 24498.644027289003,
+     "USDC": 13170.653796,
+     "USDT": 22.833475,
+     "cUSD": 25626.02694424447,
+     "WETH": 20.62374862142418
+    }
+   },
+   "tiers": [
+    {
+     "tier": "T1a same block, currency-matched",
+     "usd": 64822070.84167346,
+     "pct": 0.357980465403941,
+     "ethReleased": 39027.67102213542,
+     "detail": "senRLUSDv2 55.10M RLUSD (idle 42.03M + forceDeallocate 42.12M, 1 bp) repays RLUSD legs; senPYUSDPRIMEv2 -> 3.61M PYUSD repays Spark; stcUSD->cUSD->USDC 6.11M (Cap available USDC) repays Morpho USDC"
+    },
+    {
+     "tier": "T1b same block, needs PYUSD->USDC/USDT swap",
+     "usd": 24318050.487632997,
+     "pct": 0.1342966510980823,
+     "ethReleased": 15846.996039413381,
+     "detail": "remaining static senPYUSDPRIMEv2 liquidity 24.32M PYUSD (idle 10.86M + forceDeallocate 17.07M at 1% penalty) swapped for Aave USDC/USDT; DEX depth not verified"
+    },
+    {
+     "tier": "T2 within ~1 day",
+     "usd": 0.0,
+     "pct": 0.0,
+     "ethReleased": 0.0,
+     "detail": "no queue with a <=1-day settlement found for the remaining claims"
+    },
+    {
+     "tier": "T3 slower / conditional",
+     "usd": 45533615.322960794,
+     "pct": 0.2514597974608106,
+     "ethReleased": 29672.239641499582,
+     "detail": "senPYUSDPRIMEv2 remainder 21.68M locked in PRIME/PYUSD (frees only as PRIME borrowers repay; Liquid itself owes 21.02M there); cUSD left after Cap USDC is exhausted 18.52M (needs Cap agents to repay 55.3M USDC or DEX exit); PRIME net of own PYUSD loan 5.34M (Hastra wYLDS->USDC, 1-2 business days per BTC study)"
+    },
+    {
+     "tier": "Unmatched: no dollar destination claim found at T",
+     "usd": 46403380.973492,
+     "pct": 0.25626308603716613,
+     "ethReleased": null,
+     "detail": "debt exceeds the destination claims found on the three Liquid accounts (senRLUSDv2, senPYUSDPRIMEv2, stcUSD, PRIME); the remainder would have to come from selling ETH collateral or other book assets"
+    }
+   ],
+   "totalEthCollateralIfAllRepaid": 115824.26371018366,
+   "notes": [
+    "Ladder excludes the separate PRIME/PYUSD loan (21.02M PYUSD against PRIME, LTV 79.7%, LLTV 86%) because its collateral is not ETH; repaying it with senPYUSDPRIMEv2 PYUSD only recycles the same liquidity.",
+    "senPYUSDPRIMEv2 forceDeallocate penalty is 1% (vs 1 bp on senRLUSDv2)."
+   ]
+  },
+  "lido-earn": {
+   "dollarDebtUSD": 25549080.80215869,
+   "legs": [
+    {
+     "leg": "Aave V3 USDT vs wstETH",
+     "account": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+     "debtUSD": 22235943.09251469,
+     "collateralUSD": 58318474.40613193,
+     "ltv": 0.38128471841809153
+    },
+    {
+     "leg": "Spark USDT vs wstETH",
+     "account": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+     "debtUSD": 3313137.709644,
+     "collateralUSD": 9812127.60379002,
+     "ltv": 0.33765742185866715
+    }
+   ],
+   "destinationClaimsAtT": {
+    "earnUSD": {
+     "shares": 24725742.24301619,
+     "usdtPerShare": 1.0341874649145568,
+     "claimUSDT": 25571052.68843568,
+     "shareOfEarnUSDSupply": 0.48545263565793134,
+     "vaultIdle": {
+      "USDC": 0.0,
+      "USDT": 0.0,
+      "USDe": 1e-15
+     },
+     "redeemQueueBalances": 245887.46875700002
+    }
+   },
+   "tiers": [
+    {
+     "tier": "T1 same block",
+     "usd": 0.0,
+     "pct": 0.0,
+     "ethReleased": 0.0,
+     "detail": "earnUSD vault idle is 0; redeem queues hold only 246k already reserved for earlier requests; account idle 41 USDe"
+    },
+    {
+     "tier": "T2 within ~1 day (earnUSD redeem queue, settles at next oracle report; reports ~every 24h, T report 17.3h old)",
+     "usd": 25549080.80215869,
+     "pct": 1.0,
+     "ethReleased": 25544.33684978292,
+     "detail": "claim 25.57M USDT-equivalent = 48.5% of earnUSD supply; settlement depends on earnUSD unwinding its own strategies (not verified)"
+    },
+    {
+     "tier": "T3 slower",
+     "usd": 0,
+     "pct": 0.0,
+     "ethReleased": 0.0,
+     "detail": ""
+    }
+   ],
+   "totalEthCollateralIfAllRepaid": 25544.33684978292
+  },
+  "avant": {
+   "dollarDebtUSD": 10034659.50824278,
+   "legs": [
+    {
+     "leg": "Aave V3 USDC vs WETH/weETH",
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+     "debtUSD": 2211012.81999974,
+     "collateralUSD": 3738550.72141847,
+     "ltv": 0.5914090739314201
+    },
+    {
+     "leg": "Spark USDS+PYUSD vs WETH/wstETH",
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+     "debtUSD": 7823646.68824304,
+     "collateralUSD": 12590455.92267056,
+     "ltv": 0.6213950262242424
+    }
+   ],
+   "destinationClaimsAtT": {
+    "ethereumWallet": {
+     "sdBOLD": {
+      "shares": 159762309923462357341367,
+      "assets": 159762.30992346237,
+      "maxWithdraw": 159762.30992346237,
+      "asset": "0xc3b723b0dae2df9668f876236a1922f72bcb438d",
+      "assetSymbol": "BOLDavUSD"
+     },
+     "eUSDC": {
+      "shares": 83021927452,
+      "assets": 83565.323636,
+      "maxWithdraw": 83565.323636,
+      "asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "assetSymbol": "USDC"
+     }
+    },
+    "offChainOrOtherChain": "issuer portfolio (29 Sep) shows ~32.5M savUSD; savUSD lives mainly on Avalanche (0x06d47F3f...)"
+   },
+   "tiers": [
+    {
+     "tier": "T1a same block",
+     "usd": 83565.323636,
+     "pct": 0.008327669072115188,
+     "ethReleased": 50.98420251743408,
+     "detail": "Euler eUSDC maxWithdraw -> USDC repays Aave USDC"
+    },
+    {
+     "tier": "T1b same block with LP exit/swap",
+     "usd": 159762.30992346237,
+     "pct": 0.015921049417992574,
+     "ethReleased": 97.47289437028935,
+     "detail": "Stake DAO sdBOLD (asset BOLD/avUSD Curve LP) -> remove liquidity -> swap to USDS/USDC"
+    },
+    {
+     "tier": "T2 ~1 day",
+     "usd": 0.0,
+     "pct": 0.0,
+     "ethReleased": 0.0,
+     "detail": "savUSD->avUSD cooldown is 24h (docs), then bridge + avUSD sale/redemption; not counted here because the next step is longer"
+    },
+    {
+     "tier": "T3 1-7 days",
+     "usd": 9791331.874683319,
+     "pct": 0.9757512815098923,
+     "ethReleased": 5973.808578648341,
+     "detail": "savUSD on Avalanche: 24h unstake cooldown + bridge to Ethereum + avUSD redemption up to 7 days (docs) or DEX sale"
+    }
+   ],
+   "totalEthCollateralIfAllRepaid": 6122.265675536064,
+   "docs": [
+    "raw http/avant_unstaking-savassets.md",
+    "raw http/avant_redeeming-avassets.md"
+   ]
+  },
+  "liquity": {
+   "dollarDebtUSD": 6752064.75085813,
+   "legs": [
+    {
+     "leg": "Ebisu wstETH trove 0x17fde209",
+     "debtUSD": 6752064.75085813,
+     "collateralUSD": 15228329.34763716,
+     "collateralWstETH": 4585.48215322
+    }
+   ],
+   "destinationClaimsAtT": {
+    "curve_ebUSD_USDC_LP": {
+     "lp": 6528723.246738221,
+     "poolSupply": 9958699.487521693,
+     "balances": [
+      7261068.941691976,
+      2782455.165867
+     ],
+     "coins": [
+      "0x6440f144b7e50d6a8439336510312d2f54beb01d",
+      "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+     ],
+     "withdrawOneCoin_ebUSD": 6581669.485644363,
+     "withdrawOneCoin_USDC": 2781622.512118
+    },
+    "idle": {
+     "RLUSD": 0,
+     "USDC": 0,
+     "USDT": 0,
+     "PYUSD": 0,
+     "cUSD": 0,
+     "wYLDS": 0,
+     "USDe": 0,
+     "USDS": 0,
+     "ebUSD": 1.907946529788722,
+     "WETH": 300.6784334440505,
+     "crvUSD": 0
+    },
+    "uniswapV4_storedBookUSD": 159364.4
+   },
+   "tiers": [
+    {
+     "tier": "T1a same block (Curve remove_liquidity_one_coin -> ebUSD)",
+     "usd": 6581669.485644363,
+     "pct": 0.9747639764277866,
+     "ethReleased": 5565.4993698756925,
+     "detail": "calc_withdraw_one_coin(LP, ebUSD) = 6.582M; pool holds 7.26M ebUSD / 2.78M USDC; vault owns 65.6% of LP"
+    },
+    {
+     "tier": "T1b same block (swap idle WETH / Uniswap V4 position into ebUSD)",
+     "usd": 170395.26521376707,
+     "pct": 0.025236023572213415,
+     "ethReleased": 144.08726285108762,
+     "detail": "idle 300.7 WETH (~0.80M) + V4 book 0.16M cover the residual; ebUSD left in the Curve pool after the one-coin exit ~0.68M"
+    },
+    {
+     "tier": "T2/T3",
+     "usd": 0.0,
+     "pct": 0.0,
+     "ethReleased": 0.0,
+     "detail": ""
+    }
+   ],
+   "totalEthCollateralIfAllRepaid": 5709.5866327267795,
+   "collateralWstETH": 4585.48215322,
+   "notes": [
+    "The vault depositor path is narrower: the 10% and 30% holder withdrawals revert at T (CAPITAL-INCOME-EXIT.md); this ladder is what the strategist can unwind."
+   ]
+  },
+  "yieldbasis": {
+   "dollarDebtUSD": 27814855.843944114,
+   "legs": [
+    {
+     "leg": "LEVAMM crvUSD debt vs Curve WETH/crvUSD LP",
+     "debtUSD": 27814855.843944114,
+     "collateralUSD": 55589901.79113889
+    }
+   ],
+   "destinationClaimsAtT": {
+    "ammShareOfCurvePool": 0.9990193943219943,
+    "crvUSDinLPshare": 27702704.53033228,
+    "WETHinLPshare": 10469.134714220516,
+    "preview_withdraw_99pct_WETH": 10200.903643130432,
+    "preview_withdraw_50pct_WETH": 5212.797536783182,
+    "preview_withdraw_100pct": "reverts"
+   },
+   "tiers": [
+    {
+     "tier": "T1a same block (LT.withdraw removes LP pro rata and repays crvUSD in the same call)",
+     "usd": 27702704.53033228,
+     "pct": 0.9959679347525271,
+     "ethReleased": 10262.396903089037,
+     "detail": "AMM owns 99.90% of the Curve pool -> 27.70M crvUSD vs 27.81M debt; preview_withdraw(99% of LT supply) = 10200.9 WETH"
+    },
+    {
+     "tier": "T1b same block (shortfall swapped from WETH inside the same pool)",
+     "usd": 112151.31361183524,
+     "pct": 0.004032065247472888,
+     "ethReleased": null,
+     "detail": ""
+    },
+    {
+     "tier": "T2/T3",
+     "usd": 0.0,
+     "pct": 0.0,
+     "ethReleased": 0.0,
+     "detail": "no external destination: the borrowed crvUSD never leaves the pool"
+    }
+   ],
+   "totalEthCollateralIfAllRepaid": 10469.134714220516,
+   "notes": [
+    "preview_withdraw for 100% of LT supply reverts; 99% previews 10,200.9 WETH, 50% previews 5,212.8 WETH."
+   ]
+  }
+ }
+}

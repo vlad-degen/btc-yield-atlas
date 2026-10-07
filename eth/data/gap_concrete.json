@@ -1,0 +1,615 @@
+{
+ "schema": "gap_concrete_v1",
+ "created": "2026-10-07",
+ "financialTimestamp": "2026-10-02T23:59:59Z",
+ "ethereumBlock": 26108081,
+ "ethUsdDisplayQuote": 2667.9504418816,
+ "rates_T": {
+  "weETH_getRate": 1.1049430338706405,
+  "wstETH_stEthPerToken": 1.2454018786985979
+ },
+ "addresses": {
+  "delta_vault": "0xb9dc54c8261745cb97070cefbe3d3d815aee8f20",
+  "delta_strategy": "0xc8ea269d4dba296f7fbba812905c1b2efe5dbe1c",
+  "ctwstETHplus_vault": "0xd57588c73715b65e0ead36ae06c15644169501b7",
+  "ctwstETHplus_strategy": "0x50a7510e73d79d60823dcac50e6b2c62e89ed82b",
+  "execution_safe": "0x7ee29373f075ee1d83b1b93b4fe94ae242df5178",
+  "delta_owner_safe": "0x8f5f1d40243b259ceb7ab44ba421ff191bcd3381",
+  "delta_setup_safe": "0x70ebf87ba7a1517c204979e51979cfbf693364f9",
+  "sole_share_holder": "0x5bab73f561a5365c9e4bbc7c52fe0fa384fcf324",
+  "principal_wallet": "0xc6badce2f5e10db90d74dbe023768259ec4699c7",
+  "principal_eth_funders": [
+   "0x0a4c79ce84202b03e95b7a692e5d728d83c44c76",
+   "0xf7a2d74490d7b1cde6dd1018d4547edae9575c68",
+   "0x057f88dd5d968b96099edb1a695a6693b53dc292",
+   "0xbf3aeb96e164ae67e763d9e050ff124e7c3fdd28",
+   "0xb45a94360133e015f356221ba51a4553bbf30679",
+   "0xcf690d4bbb6d622fd9620855d88f3e0489a1696d"
+  ],
+  "bitfinex_1_etherscan_label": "0x1151314c646ce4e0efd76d1af4760ae66a9fe30f",
+  "btse_1_etherscan_label": "0xbb4d1dc5c1abec4ea11166ec97e714862863ad1d",
+  "migration_contract": "0xe051fb91ec09eefb77e7f7a599291bf921eb504d",
+  "usdt0_oadapter": "0x6c96de32cea08842dcc4058c14d3aaad7fa41dee",
+  "ctStableUSDT": "0x6503de9fe77d256d9d823f2d335ce83ece9e153f",
+  "morpho_blue": "0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb",
+  "morpho_market_wstETH_USDT": "0xe7e9694b754c4d4f7e21faf7223f6fa71abaeb10296a4c43a54a7977149687d2"
+ },
+ "holder_0x5bab73": {
+  "type": "EOA",
+  "nonce_T": 0,
+  "eth_balance_T": 0,
+  "tokenTransfersEver": 1,
+  "onlyAsset": "278170.834212774046942636 ctDeltaWeETH",
+  "receivedIn": "https://etherscan.io/tx/0xce658f57edc490798ddc55e3f67169e3190fe23afe50a4ce4ca411d0714edada",
+  "isContract": false,
+  "isConcreteProduct": false,
+  "isBridgeOrExchangeLabelled": false,
+  "publicLabel": null,
+  "interpretation": "Unused custody-style EOA of the principal; direct on-chain link to the principal wallet not provable (it never transacted).",
+  "sources": [
+   "raw/eth/gap-2026-10-07/concrete/holder_addr.json",
+   "raw/eth/gap-2026-10-07/concrete/holder_counters.json",
+   "raw/eth/gap-2026-10-07/concrete/holder_rpc_T.json",
+   "raw/eth/gap-2026-10-07/concrete/etherscan_0x5bab73f561a5365c9e4bbc7c52fe0fa384fcf324.html"
+  ]
+ },
+ "principal": {
+  "wallet": "0xc6badce2f5e10db90d74dbe023768259ec4699c7",
+  "ethReceived": [
+   {
+    "date": "2025-09-26T12:51Z",
+    "ETH": 100000,
+    "from": "0x0a4c79ce84202b03e95b7a692e5d728d83c44c76",
+    "tx": "https://etherscan.io/tx/0x7d6bf26c3a832feefa85d29647d8bb7d9123ae1ff36bf69a08f5df5de2b16289"
+   },
+   {
+    "date": "2025-09-26T13:45Z",
+    "ETH": 100000.5,
+    "from": "0x057f88dd5d968b96099edb1a695a6693b53dc292 (funded by 0xbf3aeb96...)",
+    "tx": "https://etherscan.io/tx/0x75412bdf2dc08023cee7256b2f1a1636e2915199ebd5b90310e243bcc9c1306f",
+    "upstream": "https://etherscan.io/tx/0xadbe81aa9f3472f69f87ba1f8d71d08f80b3ad694a4b5c91bbcba561e1a440b1"
+   },
+   {
+    "date": "2025-10-24T00:36Z",
+    "ETH": 99998.03,
+    "from": "0xf7a2d74490d7b1cde6dd1018d4547edae9575c68 (funded by 0x0a4c79ce...)",
+    "tx": "https://etherscan.io/tx/0x6352ad8df655bf9cbbeda8ae55ee6e074bb992e0e349907613e13150b3bfadac",
+    "upstream": "https://etherscan.io/tx/0x69cca42680114fab956c5a07e460dea93dc2aeb3f5f7a1be61ccaadf67d62948"
+   }
+  ],
+  "rootSource": "Wallets 0x0a4c79ce... and 0xbf3aeb96... were funded in March-April 2017 (165,254 ETH and 187,063 ETH) through one intermediate hop each from 0x1151314c..., labelled \"Bitfinex 1\" on Etherscan; dormant until Sep/Oct 2025.",
+  "rootSourceTx": [
+   "https://etherscan.io/tx/0x836965e6f6e2254d5873b03314dd35152acd34009abda500200f5b97ed0ad8f7",
+   "https://etherscan.io/tx/0xec978d838f3e2883a32e63a98cf91b96961474167485fdee12ec3fdbcc075270"
+  ],
+  "press": [
+   "https://www.techflowpost.com/en-US/newsletter/100072",
+   "https://blockchain.news/flashnews/bitfinex-linked-100-000-eth-moved-to-aave"
+  ],
+  "pressClaim": "EmberCN, 26 Sep 2025: address 0xc6b...9c7 received 100,000 ETH from an address suspected to belong to Bitfinex; unclear whether user or Bitfinex own funds.",
+  "isExecutionSafeSigner": true,
+  "wasSoleSafeOwnerFrom": "block 23914197 (2025-11-30) to 23928374 (2025-12-02)",
+  "safeOwnerTx": [
+   "https://etherscan.io/tx/0xaa8f55788904490923a969ab547c06e9f08cb2e976783bffb02f148b703b9590",
+   "https://etherscan.io/tx/0xb36f83c1a895223a0da52dc8370b6cb09d4a7c4b3adb3067b6d68d6f9e04a3af"
+  ]
+ },
+ "origin_of_delta_assets": {
+  "migrationTx": "https://etherscan.io/tx/0x54fa78b045b3cbddad15681b217f84745e7efe23fb097e5be5dd13197926ec37",
+  "migrationBlock": 23984118,
+  "migrationDate": "2025-12-10T18:34:47Z",
+  "in": {
+   "aWstETH_from_principal": 246740.152,
+   "stETH_unwrapped": 301384.067,
+   "eETH_minted": 301384.067,
+   "aEthweETH_minted_to_safe": 278170.831
+  },
+  "debt": {
+   "principal_USDT_debt_repaid": 498991277.98,
+   "safe_new_USDT_debt": 502380175.18
+  },
+  "deltaMintTx": "https://etherscan.io/tx/0xce658f57edc490798ddc55e3f67169e3190fe23afe50a4ce4ca411d0714edada",
+  "deltaMintBlock": 24024905,
+  "deltaMintDate": "2025-12-16T11:35:47Z",
+  "deltaSharesMinted": 278170.834212774,
+  "match": "Delta unbacked mint equals aWeETH received in the migration within 0.003 weETH",
+  "debtRepayment": {
+   "ctStableUSDT_received_2025-12-02": 499263487,
+   "ctStableUSDT_burned_tx": "https://etherscan.io/tx/0xc245f6c70912ff0060b2da3ffb3a351a4b047e11d70467ee507e65c95e564c19",
+   "USDT_in_from_USDT0_adapter": 499884071.51,
+   "tx_in": "https://etherscan.io/tx/0x499b7a74430a7f1da324878a2d7ae727611f226332ec42d22ec90e3bafa5a2b5",
+   "repay_tx": "https://etherscan.io/tx/0x5d1fa825f27ca8c55047da84d7c1e289c9e36314c1db3d28370b0b2b499b1543",
+   "USDT_repaid": 499480119.04,
+   "route": "Principal borrowed USDT on Aave on 23 Oct 2025 -> deposit addresses -> BTSE 1 hot wallet -> 11 fresh wallets -> Concrete Stable pre-deposit vault ctStableUSDT -> receipts sent to the Safe 2 Dec -> redeemed/bridged back via USDT0 -> debt repaid 16 Dec"
+  }
+ },
+ "safe_balance_sheet_T": {
+  "aEthweETH": 123978.98203181571,
+  "aEthwstETH": 41612.00968259047,
+  "morpho_wstETH_collateral": 95070.47914978435,
+  "wallet_weETH": 12.04973607042751,
+  "ETH_family_ETH": 307227.6551913988,
+  "ETH_family_USD_at_display_quote": 819668158.4261403,
+  "aave_account": {
+   "collateralUSD": 503452604.19,
+   "debtUSD": 105736216.1,
+   "healthFactor": 3.82219
+  },
+  "aave_debt": {
+   "USDT": 65474274.984962,
+   "USDC": 40275257.310301
+  },
+  "morpho_wstETH_USDT": {
+   "borrowShares": "60860017055423129847",
+   "debtUSDT_storedTotals": 70398322.72118199,
+   "debtUSDT_accruedToT": 70398363.14604966,
+   "collateral_wstETH": 95070.47914978435,
+   "collateral_ETH": 118400.95334191731,
+   "collateral_USD_display": 315887875.787771,
+   "borrowAPR_T": 0.032108030967888,
+   "lltv": 0.86,
+   "source": "raw/eth/gap-2026-10-07/concrete/morpho_debt_T.json"
+  },
+  "morpho_wstETH_PYUSD": {
+   "collateral": 0,
+   "borrowShares": 0
+  },
+  "total_stable_debt_USD_nominal": 176147895.44131267,
+  "combined_LTV_vs_ETH_family": 0.21490147400569692,
+  "ethereum_dollar_claims": {
+   "THUSD": 46290069.7034,
+   "ctDefiUSDT_bookUSD": 26175885.67,
+   "s0xUSD_bookUSD": 10391339.03,
+   "PYUSD": 7445.14
+  },
+  "ctwstETHplus_shares_held": 36439.68640672683,
+  "dollar_outflows_not_on_ethereum": {
+   "THBILL_via_OFT_adapter_2026-01-29": {
+    "amount": 98425116.27,
+    "tx": "https://etherscan.io/tx/0x95cf1f588ee86f84e12cedd5c14df8d9e6033f2a56ecbd230dc1c37f8871d7f7"
+   },
+   "USDT_via_USDT0_2026-04-01": {
+    "amount": 5000000,
+    "tx": "https://etherscan.io/tx/0x21a3d7933725e10e7d1756eaefe1d6716e06ae509c70001508d65dfd1dade62b"
+   },
+   "USDT_via_USDT0_2026-05-19": {
+    "amount": 5000000,
+    "tx": "https://etherscan.io/tx/0x29a41c710874e8c18c0f6dc6054e0373971088f5674e46b515249c4dd2616053"
+   },
+   "USDT_to_Safe_0xd439a54f": {
+    "amount": 4000000,
+    "tx": "https://etherscan.io/tx/0x159b155578f0e263e8f5d5149e6f2dfa6465f9c842bdcc792b909b8729ea1f1c"
+   },
+   "USDC_to_Safe_0x0fcf5c34": {
+    "amount": 10000000,
+    "tx": "https://etherscan.io/tx/0xfd3074c0a2ae1c31ff231566b011bd7c0a4ea13c7f030a109e910036e82d3d10"
+   }
+  },
+  "source": "raw/eth/gap-2026-10-07/concrete/fixed_block_reads_T.json"
+ },
+ "reconciliation_T": {
+  "delta_book_ETH": 307362.9254893895,
+  "delta_book_USD": 820029052.8774381,
+  "safe_ETH_family_ETH": 307227.6551913988,
+  "gap_ETH": 135.27029799070442,
+  "prior_reconstruction_USD": 480616981.1,
+  "omitted_morpho_net_USD": 245489512.6417213,
+  "corrected_ethereum_reconstruction_USD": 726106493.7417214,
+  "remaining_gap_USD": 93922559.13571668,
+  "off_ethereum_dollar_outflows_nominal_USD": 122425116.27,
+  "note": "Delta book is a fixed 278,170.83 weETH (accounting nonce 2, single AdjustTotalAssets at mint); it does not deduct the $176.15M stable debt nor mark the dollar leg."
+ },
+ "sharing_products": {
+  "vaults_using_safe_as_strategy_multisig": [
+   {
+    "vault": "ctDeltaWeETH",
+    "book_ETH": 307362.9254893895
+   },
+   {
+    "vault": "ctwstETH+",
+    "book_wstETH": 36439.68640672683,
+    "book_ETH": 45382.05391012535,
+    "holder": "execution Safe itself (100%)",
+    "funded_by": "Delta weETH withdrawn via ether.fi (41,100 weETH, 5 Feb 2026) -> 44,698 stETH staked in Lido 10 Feb -> 36,439.69 wstETH deposited 25 Feb",
+    "depositTx": "https://etherscan.io/tx/0x5167dd6022a361f61e0feed5f1afd4b046978e78dd8fac6ea69634690b8c3722",
+    "allocateBackTx": "https://etherscan.io/tx/0x059e196a9e06a9bc86f1b33d2206afca708cf4c25095d1daa66e3dbb78051d19"
+   }
+  ],
+  "scan": "raw/eth/gap-2026-10-07/concrete/concrete_vault_strategy_multisigs_T.json",
+  "other_concrete_receipts_held": [
+   "ctDefiUSDT 24,949,885.44 shares (separate multisig 0xf67ace04...)"
+  ]
+ },
+ "defillama": {
+  "adapter": "https://github.com/DefiLlama/DefiLlama-Adapters/blob/main/projects/concrete-xyz/index.js",
+  "adapterLastCommit": "790fae3462 2026-09-22",
+  "method": "sum of totalAssets() (or cachedTotalAssets()) of every vault in https://apy.api.concrete.xyz/v1/vault:tvl/all, skipping vaults whose asset is another Concrete vault; no look-through of strategy custody",
+  "ethereum_tokens_at_T": {
+   "WEETH": 278170.83,
+   "WSTETH": 36532.87
+  },
+  "ETH_at_T": 352861.0257667658,
+  "weETH_ETH": 307362.9208345142,
+  "wstETH_ETH": 45498.10493225165,
+  "wstETH_composition": {
+   "ctwstETHplus": 36439.686,
+   "Royco_wstETH_0x41ce72e0": 93.18
+  },
+  "double_count_ETH": 45382.05391012535,
+  "double_count_USD": 121077070.78301352,
+  "double_count_pct_of_ETH_family": 0.12861169297887265,
+  "source": "raw/eth/2026-10-02/protocol_concrete-c8b1742ee36108df.json"
+ },
+ "strategy_observed": {
+  "collateral": "weETH (Aave v3) and wstETH (Aave v3, Morpho wstETH/USDT 86% LLTV); LST rotation via ether.fi WeETHWithdrawAdapter, EtherFiRedemptionManager, Lido stake, ether.fi DepositAdapter",
+  "borrowing": "USDT, USDC, PYUSD; $176.15M at T",
+  "destinations": [
+   "Theo THBILL (98.4M bridged off Ethereum Jan 2026)",
+   "Theo thUSD 46.29M at T",
+   "Concrete ctDefiUSDT 24.95M shares",
+   "s0xUSD 9.84M shares",
+   "USDT/USDC sent to other Safes/chains 24M"
+  ],
+  "stated": "Concrete UI: stablecoin borrowing against weETH, deployed into delta-neutral arbitrage; permissioned; APY private; 7-day withdrawal delay (raw/eth/2026-10-02/concrete_ui_observation.json)",
+  "not_observed": "No on-chain arbitrage venue, hedge, realized profit distribution, deposit or withdrawal in Delta since mint"
+ },
+ "verdict": {
+  "real_ETH_onchain": 307227.6551913988,
+  "outside_pooled_investor_capital_ETH": 0,
+  "single_principal_capital_ETH": 307362.9254893895,
+  "counted_once_recommendation": "Count ~307.2k ETH once as a single-principal managed mandate (not a pooled investor product); carry sleeve = $176.15M stable debt (21.5% LTV); exclude ctwstETH+ 45,382 ETH as internal duplication; DefiLlama Concrete ETH is overstated by 45,382 ETH (12.9%)."
+ },
+ "monthly": [
+  {
+   "month": "2024-10",
+   "block": 21089068,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0515912113391408,
+   "wstETH_stEthPerToken": 1.1834359276708164
+  },
+  {
+   "month": "2024-11",
+   "block": 21303933,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0541085004442874,
+   "wstETH_stEthPerToken": 1.1863786298978864
+  },
+  {
+   "month": "2024-12",
+   "block": 21525890,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.056547038247545,
+   "wstETH_stEthPerToken": 1.1893246808145679
+  },
+  {
+   "month": "2025-01",
+   "block": 21747949,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0589805800859853,
+   "wstETH_stEthPerToken": 1.192334343817843
+  },
+  {
+   "month": "2025-02",
+   "block": 21948291,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0613171176497411,
+   "wstETH_stEthPerToken": 1.1953231136976585
+  },
+  {
+   "month": "2025-03",
+   "block": 22170334,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0637491368789607,
+   "wstETH_stEthPerToken": 1.1983196110636447
+  },
+  {
+   "month": "2025-04",
+   "block": 22385293,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0664411257421054,
+   "wstETH_stEthPerToken": 1.2012910258847882
+  },
+  {
+   "month": "2025-05",
+   "block": 22606142,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.068804929259162,
+   "wstETH_stEthPerToken": 1.204195331203907
+  },
+  {
+   "month": "2025-06",
+   "block": 22820673,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0710757371130648,
+   "wstETH_stEthPerToken": 1.2069184593273736
+  },
+  {
+   "month": "2025-07",
+   "block": 23042513,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0734291760847186,
+   "wstETH_stEthPerToken": 1.2097045157270074
+  },
+  {
+   "month": "2025-08",
+   "block": 23264565,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.0,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0758004914619501,
+   "wstETH_stEthPerToken": 1.2124794901730076
+  },
+  {
+   "month": "2025-09",
+   "block": 23479243,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 200012.065,
+   "precursor_owner_aave_USDT_debt": 201151164.57,
+   "weETH_rate": 1.0780444827361302,
+   "wstETH_stEthPerToken": 1.215109858893216
+  },
+  {
+   "month": "2025-10",
+   "block": 23700766,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 300510.812,
+   "precursor_owner_aave_USDT_debt": 499555738.43,
+   "weETH_rate": 1.0804207327040667,
+   "wstETH_stEthPerToken": 1.2179486659812828
+  },
+  {
+   "month": "2025-11",
+   "block": 23914920,
+   "delta_book_weETH": 0,
+   "delta_book_ETH": 0.0,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 0.0,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 301172.388,
+   "precursor_owner_aave_USDT_debt": 501703194.42,
+   "weETH_rate": 1.08273022609616,
+   "wstETH_stEthPerToken": 1.2206105975249004
+  },
+  {
+   "month": "2025-12",
+   "block": 24136052,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 301799.434,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 301799.466,
+   "safe_aave_debt_USD_nominal": 68006625.22,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0849427653313295,
+   "wstETH_stEthPerToken": 1.2232588904107793
+  },
+  {
+   "month": "2026-01",
+   "block": 24358292,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 302425.118,
+   "ctwstETHplus_book_ETH": 0.0,
+   "safe_ETH_family_collateral_ETH": 302425.185,
+   "safe_aave_debt_USD_nominal": 128343332.99,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0871920445258216,
+   "wstETH_stEthPerToken": 1.2258030907293411
+  },
+  {
+   "month": "2026-02",
+   "block": 24558867,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 303006.569,
+   "ctwstETHplus_book_ETH": 44752.425,
+   "safe_ETH_family_collateral_ETH": 302989.578,
+   "safe_aave_debt_USD_nominal": 128715216.34,
+   "safe_morpho_debt_USD_nominal_storedTotals": 0,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.089282309089317,
+   "wstETH_stEthPerToken": 1.228123223457619
+  },
+  {
+   "month": "2026-03",
+   "block": 24781026,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 303643.488,
+   "ctwstETHplus_book_ETH": 44847.662,
+   "safe_ETH_family_collateral_ETH": 303601.782,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 129651300.75,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0915719776703559,
+   "wstETH_stEthPerToken": 1.2307367761451617
+  },
+  {
+   "month": "2026-04",
+   "block": 24996367,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 304264.533,
+   "ctwstETHplus_book_ETH": 44939.51,
+   "safe_ETH_family_collateral_ETH": 304222.97,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 155124420.26,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.09380458289626,
+   "wstETH_stEthPerToken": 1.2332573076072995
+  },
+  {
+   "month": "2026-05",
+   "block": 25218797,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 304865.698,
+   "ctwstETHplus_book_ETH": 45033.257,
+   "safe_ETH_family_collateral_ETH": 304857.607,
+   "safe_aave_debt_USD_nominal": 0,
+   "safe_morpho_debt_USD_nominal_storedTotals": 160644184.56,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.095965717391408,
+   "wstETH_stEthPerToken": 1.2358299946575726
+  },
+  {
+   "month": "2026-06",
+   "block": 25433938,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 305491.306,
+   "ctwstETHplus_book_ETH": 45122.984,
+   "safe_ETH_family_collateral_ETH": 305465.021,
+   "safe_aave_debt_USD_nominal": 50138282.1,
+   "safe_morpho_debt_USD_nominal_storedTotals": 124498820.54,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.0982147229473378,
+   "wstETH_stEthPerToken": 1.238292317069881
+  },
+  {
+   "month": "2026-07",
+   "block": 25656292,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 306120.513,
+   "ctwstETHplus_book_ETH": 45207.969,
+   "safe_ETH_family_collateral_ETH": 306040.341,
+   "safe_aave_debt_USD_nominal": 44973133.22,
+   "safe_morpho_debt_USD_nominal_storedTotals": 129928730.03,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.1004766692716854,
+   "wstETH_stEthPerToken": 1.2406245455938198
+  },
+  {
+   "month": "2026-08",
+   "block": 25878704,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 306737.666,
+   "ctwstETHplus_book_ETH": 45292.84,
+   "safe_ETH_family_collateral_ETH": 306615.48,
+   "safe_aave_debt_USD_nominal": 112803582.92,
+   "safe_morpho_debt_USD_nominal_storedTotals": 62671902.54,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.1026952808821537,
+   "wstETH_stEthPerToken": 1.2429536260133671
+  },
+  {
+   "month": "2026-09",
+   "block": 26093737,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 307321.715,
+   "ctwstETHplus_book_ETH": 45376.54,
+   "safe_ETH_family_collateral_ETH": 307188.602,
+   "safe_aave_debt_USD_nominal": 105723550.42,
+   "safe_morpho_debt_USD_nominal_storedTotals": 70385350.55,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.1047948864372463,
+   "wstETH_stEthPerToken": 1.2452505583093636
+  },
+  {
+   "month": "T",
+   "block": 26108081,
+   "delta_book_weETH": 278170.834213,
+   "delta_book_ETH": 307362.925,
+   "ctwstETHplus_book_ETH": 45382.054,
+   "safe_ETH_family_collateral_ETH": 307227.655,
+   "safe_aave_debt_USD_nominal": 105749532.3,
+   "safe_morpho_debt_USD_nominal_storedTotals": 70398322.72,
+   "precursor_owner_ETH_family_ETH": 0.013,
+   "precursor_owner_aave_USDT_debt": 0,
+   "weETH_rate": 1.1049430338706405,
+   "wstETH_stEthPerToken": 1.2454018786985979
+  }
+ ],
+ "monthly_source": "raw/eth/gap-2026-10-07/concrete/fixed_block_reads_monthly.json"
+}
