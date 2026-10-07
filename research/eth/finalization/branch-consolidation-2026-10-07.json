@@ -1,0 +1,61 @@
+{
+  "before_local_branches": {
+    "audit-and-money-markets": "432d85d57c27dc518723aea71737e66b4d44ed81",
+    "codex/eth-btc-parity": "5d15b8aeb697ad4a97c6383a6c68b1d34e7af3a2",
+    "codex/eth-capital-history": "bf592845ad0c0ff14b522d31274d9104bf6f8023",
+    "codex/eth-economic-parity": "d3e0000c3d8cec1536aa44121b8870094a00635f",
+    "codex/eth-editorial": "ea9d86565a9b662ae1521ff600ac298554fc3faf",
+    "codex/eth-final-labels": "a6cb5c9495d736a1f79cceb31b827d0a4ca11921",
+    "codex/eth-final-research": "fffce66234384cec84486b5312f68703b4e1eafa",
+    "codex/eth-reader-alignment": "23439ac3e3ab19c1a11759d64096d0a778033eb1",
+    "codex/eth-reader-cleanup": "08d0df9971e4314c0e320db5a7d6e34cf68fef15",
+    "codex/eth-report-fixes": "2f9cd14d2c5c1a1470939424a62bf43c7ab94cf9",
+    "codex/eth-research": "79687e1913d25c0f9c86a05a1ead586447d3a887",
+    "codex/eth-research-site": "32b7c43777a4e05d28fa03f67d79dcf3748eb0d2",
+    "codex/eth-substantive-parity": "168c6064fa6c6b8777fd4e4dd7549e8cfcf85df1",
+    "main": "9385e2736be6205b6c6b946f8a8e1f1c151f54a5"
+  },
+  "source_tree": "b03b0d3d901ae44e4f20617fef16dab93aec98af",
+  "published_main": "4617c4845cef564adb433488e7b85821e07e9a17",
+  "published_tree": "297c9d357ae31f647ca2ecaaa5a0455ad9fe3d13",
+  "published_missing": [],
+  "published_different": [
+    "eth/data/carry_coverage_audit.json",
+    "eth/data/reader_analysis.json"
+  ],
+  "before_remote_branches": {
+    "origin/audit-and-money-markets": "432d85d57c27dc518723aea71737e66b4d44ed81",
+    "origin/codex/eth-btc-parity": "5d15b8aeb697ad4a97c6383a6c68b1d34e7af3a2",
+    "origin/codex/eth-capital-history": "bf592845ad0c0ff14b522d31274d9104bf6f8023",
+    "origin/codex/eth-economic-parity": "d3e0000c3d8cec1536aa44121b8870094a00635f",
+    "origin/codex/eth-editorial": "ea9d86565a9b662ae1521ff600ac298554fc3faf",
+    "origin/codex/eth-final-labels": "a6cb5c9495d736a1f79cceb31b827d0a4ca11921",
+    "origin/codex/eth-final-research": "fffce66234384cec84486b5312f68703b4e1eafa",
+    "origin/codex/eth-reader-alignment": "23439ac3e3ab19c1a11759d64096d0a778033eb1",
+    "origin/codex/eth-reader-cleanup": "08d0df9971e4314c0e320db5a7d6e34cf68fef15",
+    "origin/codex/eth-report-fixes": "2f9cd14d2c5c1a1470939424a62bf43c7ab94cf9",
+    "origin/codex/eth-research-site": "32b7c43777a4e05d28fa03f67d79dcf3748eb0d2",
+    "origin/codex/eth-substantive-parity": "168c6064fa6c6b8777fd4e4dd7549e8cfcf85df1",
+    "origin/main": "4617c4845cef564adb433488e7b85821e07e9a17"
+  },
+  "kept_branches": [
+    "main",
+    "codex/eth-research"
+  ],
+  "research_history_merge_commit": "bcdb654cb8a87fc9ff616c24a83bcd3d24b54301",
+  "all_original_branch_tips_reachable": true,
+  "source_tree_unchanged_by_merge": true,
+  "main_is_publication_and_BTC_branch": true,
+  "published_files_differing_in_source": [
+    {
+      "path": "eth/data/carry_coverage_audit.json",
+      "decision": "Keep latest source discovery decisions, which include the completed archived route verification."
+    },
+    {
+      "path": "eth/data/reader_analysis.json",
+      "decision": "Keep latest source hash for reader_product_chapters; capital observations are identical."
+    }
+  ],
+  "backup_bundle": "/private/tmp/btc-eth-branches-before-consolidation.bundle",
+  "old_branch_deletion_authorized_by_user": true
+}
