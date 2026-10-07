@@ -270,6 +270,7 @@ def build():
     for name in ['report_contract.json','carry-common-30d.csv','carry-status-and-capital.csv','finalization_reconstruction.json','native-staking-observations.csv','carry-flow-adjusted-ledgers.csv','parity_depth_measurements.json','parity_depth_reader.json','parity-Liquid-Cash-beneficiaries.csv','parity-Liquid-monthly-debt.csv','parity-Liquid-cohort-sensitivity.csv','parity-savETH-holders.csv','parity-ybGauge-holders.csv']:
         shutil.copyfile(DATA/name,OUT/'data'/name)
     shutil.copyfile(DATA/'carry_borrow_rate_history.json',OUT/'data/carry_borrow_rate_history.json')
+    for name in ('og.png','favicon.svg'):shutil.copyfile(SRC/name,OUT/name)
     # counted-once market map (tools/eth/netmap): CSVs and notes for download
     (OUT/'data/netmap').mkdir(parents=True,exist_ok=True)
     for source in (DATA/'netmap').glob('*'):
