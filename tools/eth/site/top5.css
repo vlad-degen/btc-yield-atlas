@@ -41,3 +41,4 @@ ol.fsteps li b{color:var(--ink)}
 .atp .pfinding{font-size:15px;color:var(--ink-2);max-width:900px;margin:0 0 14px}
 .atp .lesson{border-left:3px solid var(--pc,var(--accent));padding:8px 14px;margin:16px 0 0;font-size:13.5px;color:var(--ink-2)}
 .fd .eth{stroke:var(--s7)} .fd .mk.eth{fill:var(--s7);stroke:none} .fdkey i.eth{border-color:var(--s7)}
+.atp .tl .e>div{min-width:0;overflow-wrap:anywhere}
