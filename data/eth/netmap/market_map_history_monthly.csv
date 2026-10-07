@@ -359,7 +359,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-02,avant-aveth,Avant avETH,farming,vaults,0.0,0.0,1957.2655
 2026-03,avant-aveth,Avant avETH,farming,vaults,0.0,0.0,2100.0636
 2026-04,avant-aveth,Avant avETH,farming,vaults,0.0,0.0,2258.4696
-2026-05,avant-aveth,Avant avETH,farming,vaults,6530.3049,13123044.73,2009.5608
+2026-05,avant-aveth,Avant avETH,farming,vaults,0.0,0.0,2009.5608
 2026-06,avant-aveth,Avant avETH,farming,vaults,0.0,0.0,1567.7911
 2026-07,avant-aveth,Avant avETH,farming,vaults,0.0,0.0,1863.4753
 2026-08,avant-aveth,Avant avETH,farming,vaults,0.0,0.0,2470.6262
@@ -843,6 +843,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-09,carry:avant-aveth,Avant avETH / savETH,carry,,12356.7551,33081809.75,2677.2247
 2026-10-02,carry:avant-aveth,Avant avETH / savETH,carry,,12582.7122,33588136.01,2669.3876
 2025-08,carry:avant-aveth:nodebt,Avant avETH / savETH (months without dollar debt),staking,,0.0031,13.64,4400.37
+2026-05,carry:avant-aveth:nodebt,Avant avETH / savETH (months without dollar debt),staking,,6530.3049,13123044.73,2009.5608
 2026-02,carry:lido-earn,Lido Earn ETH,carry,,0.0,0.0,1957.2655
 2026-03,carry:lido-earn,Lido Earn ETH,carry,,86458.9196,181569229.17,2100.0636
 2026-04,carry:lido-earn,Lido Earn ETH,carry,,110594.3343,249773943.07,2258.4696
@@ -877,6 +878,24 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:liquid-eth,ether.fi Liquid ETH,carry,,173879.6793,429591691.67,2470.6262
 2026-09,carry:liquid-eth,ether.fi Liquid ETH,carry,,176962.4306,473768188.63,2677.2247
 2026-10-02,carry:liquid-eth,ether.fi Liquid ETH,carry,,177171.0633,472938239.85,2669.3876
+2024-10,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,146203.0106,368095319.84,2517.7
+2024-11,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,150259.3532,559570339.08,3724.03
+2024-12,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,152716.5515,508443796.42,3329.33
+2025-01,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,153364.3186,505941218.76,3298.95
+2025-02,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,159201.6048,354335011.72,2225.7
+2025-03,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,161418.2916,294373695.87,1823.67
+2025-04,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,176931.2753,317234237.93,1792.98
+2025-05,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,194955.5018,490876508.42,2517.89
+2025-06,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,191748.4201,478646241.26,2496.22
+2025-07,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,200467.344,740662686.51,3694.68
+2025-10,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,177463.7839,684069075.6,3854.6968
+2025-11,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,147816.6634,441535195.22,2987.0461
+2025-12,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,147083.0581,437059199.74,2971.5129
+2026-01,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,154309.518,381107336.42,2469.7591
+2026-02,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,108292.1728,211956537.41,1957.2655
+2026-03,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,147239.0563,309211381.21,2100.0636
+2026-04,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,124604.8981,281416375.52,2258.4696
+2026-05,carry:liquid-eth:nodebt,ether.fi Liquid ETH (months without dollar debt),loops,,108176.2403,217386732.76,2009.5608
 2026-01,carry:liquity-carry,Liquity ETH Carry,carry,,0.0,0.0,2469.7591
 2026-02,carry:liquity-carry,Liquity ETH Carry,carry,,0.0,0.0,1957.2655
 2026-03,carry:liquity-carry,Liquity ETH Carry,carry,,0.0,0.0,2100.0636
@@ -887,6 +906,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:liquity-carry,Liquity ETH Carry,carry,,2813.7668,6951765.95,2470.6262
 2026-09,carry:liquity-carry,Liquity ETH Carry,carry,,6016.6691,16107975.04,2677.2247
 2026-10-02,carry:liquity-carry,Liquity ETH Carry,carry,,6014.0017,16053701.67,2669.3876
+2026-03,carry:liquity-carry:nodebt,Liquity ETH Carry (months without dollar debt),farming,vaults,32.024,67252.37,2100.0636
 2025-10,carry:makina-deth,Makina DETH,carry,,0.0,0.0,3854.6968
 2025-11,carry:makina-deth,Makina DETH,carry,,0.0,0.0,2987.0461
 2025-12,carry:makina-deth,Makina DETH,carry,,0.0,0.0,2971.5129
@@ -900,6 +920,16 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:makina-deth,Makina DETH,carry,,2593.3252,6407137.15,2470.6262
 2026-09,carry:makina-deth,Makina DETH,carry,,2493.8765,6676667.83,2677.2247
 2026-10-02,carry:makina-deth,Makina DETH,carry,,2499.3591,6671758.16,2669.3876
+2025-10,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,9566.8256,36877211.95,3854.6968
+2025-11,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,11239.6971,33573493.89,2987.0461
+2025-12,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,9812.3186,29157431.01,2971.5129
+2026-01,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,7873.0132,19444446.05,2469.7591
+2026-02,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,4018.9004,7866055.33,1957.2655
+2026-03,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,3820.1192,8022493.18,2100.0636
+2026-04,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,3542.7881,8001279.16,2258.4696
+2026-05,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,2891.1633,5809968.47,2009.5608
+2026-06,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,2665.1741,4178436.13,1567.7911
+2026-07,carry:makina-deth:nodebt,Makina DETH (months without dollar debt),loops,,2589.0566,4824643.08,1863.4753
 2026-10-02,carry:nemo-eth-prime,NEMO ETH Prime,carry,,3037.666,8108707.96,2669.3876
 2025-08,carry:reservoir-eth,Reservoir ETH Yield,carry,,0.0,0.0,4400.37
 2025-09,carry:reservoir-eth,Reservoir ETH Yield,carry,,2428.7992,10071865.99,4146.85
@@ -916,6 +946,7 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:reservoir-eth,Reservoir ETH Yield,carry,,61.2468,151317.91,2470.6262
 2026-09,carry:reservoir-eth,Reservoir ETH Yield,carry,,60.1991,161166.64,2677.2247
 2026-10-02,carry:reservoir-eth,Reservoir ETH Yield,carry,,23.5948,62983.77,2669.3876
+2026-04,carry:reservoir-eth:nodebt,Reservoir ETH Yield (months without dollar debt),farming,vaults,1223.5509,2763352.52,2258.4696
 2025-08,carry:rocksolid,Rocksolid rETH,carry,,0.0,0.0,4400.37
 2025-09,carry:rocksolid,Rocksolid rETH,carry,,0.0,0.0,4146.85
 2025-10,carry:rocksolid,Rocksolid rETH,carry,,0.0,0.0,3854.6968
@@ -932,6 +963,12 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-09,carry:rocksolid,Rocksolid rETH,carry,,8998.1427,24090049.8,2677.2247
 2026-10-02,carry:rocksolid,Rocksolid rETH,carry,,8999.2874,24022586.09,2669.3876
 2025-08,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,0.0,0.0,4400.37
+2025-09,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,1846.1063,7655526.01,4146.85
+2025-10,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,6116.3729,23576763.05,3854.6968
+2025-11,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,6624.239,19786907.53,2987.0461
+2025-12,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,7652.4156,22739251.27,2971.5129
+2026-01,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,9534.9321,23548985.37,2469.7591
+2026-02,carry:rocksolid:nodebt,Rocksolid rETH (months without dollar debt),loops,,9655.7347,18898836.67,1957.2655
 2026-03,carry:royco-eth,Royco ETH,carry,,0.0,0.0,2100.0636
 2026-04,carry:royco-eth,Royco ETH,carry,,48.5278,109598.56,2258.4696
 2026-05,carry:royco-eth,Royco ETH,carry,,115.0234,231146.57,2009.5608
@@ -957,6 +994,11 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-10-02,carry:tau-infinifi,TAU InfiniFi ETH Carry,carry,,0.0,0.0,2669.3876
 2025-10,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,0.0496,191.17,3854.6968
 2025-11,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,0.5903,1763.11,2987.0461
+2026-04,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,2.3447,5295.52,2258.4696
+2026-06,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,175.8104,275633.91,1567.7911
+2026-07,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,83.0997,154854.25,1863.4753
+2026-08,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,83.191,205533.74,2470.6262
+2026-09,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,82.2281,220143.18,2677.2247
 2026-10-02,carry:tau-infinifi:nodebt,TAU InfiniFi ETH Carry (months without dollar debt),farming,vaults,82.2339,219514.03,2669.3876
 2024-10,carry:vesper-vaeth,Vesper vaETH,carry,,0.0,0.0,2517.7
 2024-11,carry:vesper-vaeth,Vesper vaETH,carry,,0.0,0.0,3724.03
@@ -983,6 +1025,9 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,carry:vesper-vaeth,Vesper vaETH,carry,,1617.5359,3996326.55,2470.6262
 2026-09,carry:vesper-vaeth,Vesper vaETH,carry,,1052.2899,2817216.58,2677.2247
 2026-10-02,carry:vesper-vaeth,Vesper vaETH,carry,,1052.3953,2809250.91,2669.3876
+2024-10,carry:vesper-vaeth:nodebt,Vesper vaETH (months without dollar debt),farming,vaults,1105.9506,2784451.89,2517.7
+2024-11,carry:vesper-vaeth:nodebt,Vesper vaETH (months without dollar debt),farming,vaults,1156.7818,4307889.98,3724.03
+2024-12,carry:vesper-vaeth:nodebt,Vesper vaETH (months without dollar debt),farming,vaults,1165.1648,3879218.05,3329.33
 2026-05,carry:yieldbasis-weth,YieldBasis WETH,carry,,641.105,1288339.42,2009.5608
 2026-06,carry:yieldbasis-weth,YieldBasis WETH,carry,,5085.1283,7972418.72,1567.7911
 2026-07,carry:yieldbasis-weth,YieldBasis WETH,carry,,7632.4561,14222893.72,1863.4753
@@ -1071,9 +1116,9 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,cian-yield-layer,CIAN Yield Layer,loops,,2484.622,6138572.27,2470.6262
 2026-09,cian-yield-layer,CIAN Yield Layer,loops,,2490.4991,6667625.64,2677.2247
 2026-10-02,cian-yield-layer,CIAN Yield Layer,loops,,2487.4659,6640010.54,2669.3876
-2024-10,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,405011.2777,1019696893.76,2517.7
-2024-11,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,414846.1827,1544899629.88,3724.03
-2024-12,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,418976.4014,1394910702.41,3329.33
+2024-10,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,405060.7617,1019821479.71,2517.7
+2024-11,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,414893.6948,1545076566.11,3724.03
+2024-12,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,419026.1641,1395076378.9,3329.33
 2025-01,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,421586.6236,1390793191.76,3298.95
 2025-02,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,424930.6659,945768183.12,2225.7
 2025-03,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,428150.1282,780804544.37,1823.67
@@ -1091,10 +1136,10 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-03,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,442188.6779,928624342.67,2100.0636
 2026-04,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,443878.6445,1002486429.2,2258.4696
 2026-05,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,443356.8121,890952473.4,2009.5608
-2026-06,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,443588.3735,695453895.71,1567.7911
-2026-07,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,443599.2314,826636226.85,1863.4753
-2026-08,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,444213.5524,1097485641.56,2470.6262
-2026-09,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,445521.8886,1192762200.46,2677.2247
+2026-06,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,443618.7433,695501509.19,1567.7911
+2026-07,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,443618.0729,826671337.48,1863.4753
+2026-08,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,444231.6693,1097530401.51,2470.6262
+2026-09,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,445538.1784,1192805811.99,2677.2247
 2026-10-02,coinbase-wrapped-staked-eth,Coinbase Wrapped Staked ETH,staking,,445350.9745,1188814370.08,2669.3876
 2024-10,compound-v1,Compound V1,lending,,426.6514,1074180.24,2517.7
 2024-11,compound-v1,Compound V1,lending,,426.6109,1588711.74,3724.03
@@ -1584,19 +1629,19 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2025-06,ether.fi-stake,ether.fi Stake,restaking,,2020423.5644,5043421710.03,2496.22
 2025-07,ether.fi-stake,ether.fi Stake,restaking,,2189312.657,8088809687.67,3694.68
 2025-08,ether.fi-stake,ether.fi Stake,restaking,,2114740.7024,9305641544.54,4400.37
-2025-09,ether.fi-stake,ether.fi Stake,restaking,,2062163.9669,8551484645.96,4146.85
-2025-10,ether.fi-stake,ether.fi Stake,restaking,,2099883.36,8094413618.69,3854.6968
-2025-11,ether.fi-stake,ether.fi Stake,restaking,,2009906.231,6003682668.56,2987.0461
-2025-12,ether.fi-stake,ether.fi Stake,restaking,,2462284.1428,7316709013.48,2971.5129
-2026-01,ether.fi-stake,ether.fi Stake,restaking,,2637903.1025,6514985195.67,2469.7591
-2026-02,ether.fi-stake,ether.fi Stake,restaking,,2559461.9329,5009546626.39,1957.2655
-2026-03,ether.fi-stake,ether.fi Stake,restaking,,2219112.8191,4660278034.67,2100.0636
-2026-04,ether.fi-stake,ether.fi Stake,restaking,,2044240.2699,4616854525.49,2258.4696
-2026-05,ether.fi-stake,ether.fi Stake,restaking,,1573321.423,3161685069.35,2009.5608
-2026-06,ether.fi-stake,ether.fi Stake,restaking,,1514771.727,2374845603.5,1567.7911
-2026-07,ether.fi-stake,ether.fi Stake,restaking,,1564275.5525,2914988910.63,1863.4753
-2026-08,ether.fi-stake,ether.fi Stake,restaking,,1586427.7752,3919470027.82,2470.6262
-2026-09,ether.fi-stake,ether.fi Stake,restaking,,1704396.0321,4563051140.05,2677.2247
+2025-09,ether.fi-stake,ether.fi Stake,restaking,,2062163.9669,8551484646.25,4146.85
+2025-10,ether.fi-stake,ether.fi Stake,restaking,,2090316.5346,8057536407.34,3854.6968
+2025-11,ether.fi-stake,ether.fi Stake,restaking,,1998642.7796,5970038219.54,2987.0461
+2025-12,ether.fi-stake,ether.fi Stake,restaking,,2452471.8244,7287551583.13,2971.5129
+2026-01,ether.fi-stake,ether.fi Stake,restaking,,2630030.0896,6495540750.18,2469.7591
+2026-02,ether.fi-stake,ether.fi Stake,restaking,,2555435.5406,5001665907.39,1957.2655
+2026-03,ether.fi-stake,ether.fi Stake,restaking,,2215292.7,4652255541.49,2100.0636
+2026-04,ether.fi-stake,ether.fi Stake,restaking,,2010293.913,4540187710.07,2258.4696
+2026-05,ether.fi-stake,ether.fi Stake,restaking,,1535548.4813,3085778046.16,2009.5608
+2026-06,ether.fi-stake,ether.fi Stake,restaking,,1512106.553,2370667167.37,1567.7911
+2026-07,ether.fi-stake,ether.fi Stake,restaking,,1561684.0911,2910159786.32,1863.4753
+2026-08,ether.fi-stake,ether.fi Stake,restaking,,1586427.7782,3919470035.24,2470.6262
+2026-09,ether.fi-stake,ether.fi Stake,restaking,,1704396.0568,4563051206.19,2677.2247
 2026-10-02,ether.fi-stake,ether.fi Stake,restaking,,1696788.7697,4529386905.4,2669.3876
 2024-10,euclid-finance,Euclid Finance,restaking,,220.2026,554404.21,2517.7
 2024-11,euclid-finance,Euclid Finance,restaking,,0.0,0.0,3724.03
@@ -1923,13 +1968,13 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2025-12,fusion-by-ipor,Fusion by IPOR,farming,vaults,3088.9123,9178742.73,2971.5129
 2026-01,fusion-by-ipor,Fusion by IPOR,farming,vaults,4639.7046,11458952.71,2469.7591
 2026-02,fusion-by-ipor,Fusion by IPOR,farming,vaults,4619.0624,9040731.54,1957.2655
-2026-03,fusion-by-ipor,Fusion by IPOR,farming,vaults,4603.9079,9668499.37,2100.0636
-2026-04,fusion-by-ipor,Fusion by IPOR,farming,vaults,4835.9442,10921832.9,2258.4696
+2026-03,fusion-by-ipor,Fusion by IPOR,farming,vaults,4571.8839,9601247.0,2100.0636
+2026-04,fusion-by-ipor,Fusion by IPOR,farming,vaults,3610.0485,8153184.86,2258.4696
 2026-05,fusion-by-ipor,Fusion by IPOR,farming,vaults,7333.8044,14737725.82,2009.5608
-2026-06,fusion-by-ipor,Fusion by IPOR,farming,vaults,10187.7936,15972331.96,1567.7911
-2026-07,fusion-by-ipor,Fusion by IPOR,farming,vaults,12437.2925,23176587.84,1863.4753
-2026-08,fusion-by-ipor,Fusion by IPOR,farming,vaults,14764.5731,36477741.21,2470.6262
-2026-09,fusion-by-ipor,Fusion by IPOR,farming,vaults,14324.1571,38348987.18,2677.2247
+2026-06,fusion-by-ipor,Fusion by IPOR,farming,vaults,10011.9833,15696698.05,1567.7911
+2026-07,fusion-by-ipor,Fusion by IPOR,farming,vaults,12354.1928,23021733.59,1863.4753
+2026-08,fusion-by-ipor,Fusion by IPOR,farming,vaults,14681.3822,36272207.47,2470.6262
+2026-09,fusion-by-ipor,Fusion by IPOR,farming,vaults,14241.929,38128844.01,2677.2247
 2026-10-02,fusion-by-ipor,Fusion by IPOR,farming,vaults,14561.0755,38869154.43,2669.3876
 2024-10,fx-protocol,fx Protocol,cdp,,0,0.0,2517.7
 2024-11,fx-protocol,fx Protocol,cdp,,0,0.0,3724.03
@@ -2608,12 +2653,12 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2025-06,lagoon,Lagoon vaults (other),farming,vaults,13877.3071,34640811.64,2496.22
 2025-07,lagoon,Lagoon vaults (other),farming,vaults,18665.4039,68962694.36,3694.68
 2025-08,lagoon,Lagoon vaults (other),farming,vaults,12541.2499,55186139.65,4400.37
-2025-09,lagoon,Lagoon vaults (other),farming,vaults,11480.3753,47607394.3,4146.85
-2025-10,lagoon,Lagoon vaults (other),farming,vaults,16590.0003,63949420.7,3854.6968
-2025-11,lagoon,Lagoon vaults (other),farming,vaults,13743.9854,41053918.53,2987.0461
-2025-12,lagoon,Lagoon vaults (other),farming,vaults,14846.225,44115748.69,2971.5129
-2026-01,lagoon,Lagoon vaults (other),farming,vaults,17823.9184,44020784.71,2469.7591
-2026-02,lagoon,Lagoon vaults (other),farming,vaults,19027.8146,37242485.65,1957.2655
+2025-09,lagoon,Lagoon vaults (other),farming,vaults,9634.269,39951868.28,4146.85
+2025-10,lagoon,Lagoon vaults (other),farming,vaults,10473.6274,40372657.65,3854.6968
+2025-11,lagoon,Lagoon vaults (other),farming,vaults,7119.7464,21267011.0,2987.0461
+2025-12,lagoon,Lagoon vaults (other),farming,vaults,7193.8095,21376497.42,2971.5129
+2026-01,lagoon,Lagoon vaults (other),farming,vaults,8288.9863,20471799.34,2469.7591
+2026-02,lagoon,Lagoon vaults (other),farming,vaults,9372.0799,18343648.98,1957.2655
 2026-03,lagoon,Lagoon vaults (other),farming,vaults,11206.658,23534694.51,2100.0636
 2026-04,lagoon,Lagoon vaults (other),farming,vaults,10439.6777,23577694.88,2258.4696
 2026-05,lagoon,Lagoon vaults (other),farming,vaults,7999.2092,16074897.27,2009.5608
@@ -2668,9 +2713,9 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,layerbank,LayerBank,lending,,11.6062,28674.6,2470.6262
 2026-09,layerbank,LayerBank,lending,,2.4894,6664.69,2677.2247
 2026-10-02,layerbank,LayerBank,lending,,2.4409,6515.62,2669.3876
-2024-10,lido,Lido,staking,,8772030.1061,22085340198.06,2517.7
-2024-11,lido,Lido,staking,,8788106.187,32727171083.44,3724.03
-2024-12,lido,Lido,staking,,8672108.0671,28872309551.07,3329.33
+2024-10,lido,Lido,staking,,8772382.5688,22086227593.41,2517.7
+2024-11,lido,Lido,staking,,8788442.6747,32728424173.78,3724.03
+2024-12,lido,Lido,staking,,8672445.7609,28873433845.24,3329.33
 2025-01,lido,Lido,staking,,8545327.3849,28190607776.57,3298.95
 2025-02,lido,Lido,staking,,8382264.8258,18656406822.89,2225.7
 2025-03,lido,Lido,staking,,8292878.0512,15123472915.61,1823.67
@@ -2685,13 +2730,13 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2025-12,lido,Lido,staking,,8242001.9387,24491214813.86,2971.5129
 2026-01,lido,Lido,staking,,8777180.7344,21677522001.82,2469.7591
 2026-02,lido,Lido,staking,,8651497.8629,16933278582.66,1957.2655
-2026-03,lido,Lido,staking,,8401562.2126,17643814906.09,2100.0636
-2026-04,lido,Lido,staking,,8319361.4506,18789025012.06,2258.4696
+2026-03,lido,Lido,staking,,8401549.4372,17643788076.81,2100.0636
+2026-04,lido,Lido,staking,,8320108.9694,18790713260.49,2258.4696
 2026-05,lido,Lido,staking,,8206740.6591,16491944386.62,2009.5608
-2026-06,lido,Lido,staking,,8516554.7056,13352178508.76,1567.7911
-2026-07,lido,Lido,staking,,8858250.4249,16507131186.48,1863.4753
-2026-08,lido,Lido,staking,,9164283.3864,22641518650.43,2470.6262
-2026-09,lido,Lido,staking,,9387086.8992,25131340821.51,2677.2247
+2026-06,lido,Lido,staking,,8516446.2038,13352008400.56,1567.7911
+2026-07,lido,Lido,staking,,8858186.0793,16507011280.13,1863.4753
+2026-08,lido,Lido,staking,,9164215.1251,22641350002.23,2470.6262
+2026-09,lido,Lido,staking,,9387013.9146,25131145425.35,2677.2247
 2026-10-02,lido,Lido,staking,,9386402.8283,25055947339.13,2669.3876
 2025-04,liminal-basis,Liminal Basis,basis,,0.0,0.0,1792.98
 2025-05,liminal-basis,Liminal Basis,basis,,16.751,42177.2,2517.89
@@ -2723,12 +2768,12 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2025-06,liquid-collective,Liquid Collective,staking,,278153.9683,694333498.64,2496.22
 2025-07,liquid-collective,Liquid Collective,staking,,354901.4281,1311247208.43,3694.68
 2025-08,liquid-collective,Liquid Collective,staking,,351517.3566,1546806430.5,4400.37
-2025-09,liquid-collective,Liquid Collective,staking,,352953.2409,1463644146.82,4146.85
-2025-10,liquid-collective,Liquid Collective,staking,,356257.1403,1373263250.33,3854.6968
-2025-11,liquid-collective,Liquid Collective,staking,,324552.5087,969453321.59,2987.0461
-2025-12,liquid-collective,Liquid Collective,staking,,286942.4433,852653162.4,2971.5129
-2026-01,liquid-collective,Liquid Collective,staking,,280423.7912,692579210.42,2469.7591
-2026-02,liquid-collective,Liquid Collective,staking,,264196.6941,517103083.5,1957.2655
+2025-09,liquid-collective,Liquid Collective,staking,,352953.4156,1463644871.5,4146.85
+2025-10,liquid-collective,Liquid Collective,staking,,356257.5384,1373264784.85,3854.6968
+2025-11,liquid-collective,Liquid Collective,staking,,324553.0307,969454880.6,2987.0461
+2025-12,liquid-collective,Liquid Collective,staking,,286942.9992,852654814.21,2971.5129
+2026-01,liquid-collective,Liquid Collective,staking,,280424.3538,692580599.98,2469.7591
+2026-02,liquid-collective,Liquid Collective,staking,,264197.2574,517104185.94,1957.2655
 2026-03,liquid-collective,Liquid Collective,staking,,274943.3874,577398597.28,2100.0636
 2026-04,liquid-collective,Liquid Collective,staking,,349646.9641,789667042.63,2258.4696
 2026-05,liquid-collective,Liquid Collective,staking,,350292.171,703933418.1,2009.5608
@@ -2829,16 +2874,16 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-09,lista-lending,Lista Lending,lending,,23.248,62240.12,2677.2247
 2026-10-02,lista-lending,Lista Lending,lending,,34.5787,92303.96,2669.3876
 2025-09,makina,Makina,farming,vaults,6725.6884,27890420.8,4146.85
-2025-10,makina,Makina,farming,vaults,9551.3533,36817570.77,3854.6968
-2025-11,makina,Makina,farming,vaults,11287.2061,33715405.38,2987.0461
-2025-12,makina,Makina,farming,vaults,9802.0009,29126771.87,2971.5129
-2026-01,makina,Makina,farming,vaults,7840.3727,19363831.79,2469.7591
-2026-02,makina,Makina,farming,vaults,4033.8847,7895383.52,1957.2655
-2026-03,makina,Makina,farming,vaults,3815.1591,8012076.8,2100.0636
-2026-04,makina,Makina,farming,vaults,3537.9269,7990300.34,2258.4696
-2026-05,makina,Makina,farming,vaults,2891.1633,5809968.47,2009.5608
-2026-06,makina,Makina,farming,vaults,2662.4391,4174148.34,1567.7911
-2026-07,makina,Makina,farming,vaults,2593.8661,4833605.54,1863.4753
+2025-10,makina,Makina,farming,vaults,0.0,0.0,3854.6968
+2025-11,makina,Makina,farming,vaults,23.7545,70955.74,2987.0461
+2025-12,makina,Makina,farming,vaults,0.0,0.0,2971.5129
+2026-01,makina,Makina,farming,vaults,0.0,0.0,2469.7591
+2026-02,makina,Makina,farming,vaults,7.4921,14664.09,1957.2655
+2026-03,makina,Makina,farming,vaults,0.0,0.0,2100.0636
+2026-04,makina,Makina,farming,vaults,0.0,0.0,2258.4696
+2026-05,makina,Makina,farming,vaults,0.0,0.0,2009.5608
+2026-06,makina,Makina,farming,vaults,0.0,0.0,1567.7911
+2026-07,makina,Makina,farming,vaults,2.4048,4481.23,1863.4753
 2026-08,makina,Makina,farming,vaults,0.0,0.0,2470.6262
 2026-09,makina,Makina,farming,vaults,4.9272,13191.24,2677.2247
 2026-10-02,makina,Makina,farming,vaults,0.0,0.0,2669.3876
@@ -3618,12 +3663,12 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2025-06,puffer-stake,Puffer Stake,restaking,,49002.588,122321240.25,2496.22
 2025-07,puffer-stake,Puffer Stake,restaking,,33725.5243,124605020.21,3694.68
 2025-08,puffer-stake,Puffer Stake,restaking,,28991.907,127575117.6,4400.37
-2025-09,puffer-stake,Puffer Stake,restaking,,36007.7105,149318574.22,4146.85
-2025-10,puffer-stake,Puffer Stake,restaking,,35221.4773,135768115.17,3854.6968
-2025-11,puffer-stake,Puffer Stake,restaking,,32707.6858,97699366.89,2987.0461
-2025-12,puffer-stake,Puffer Stake,restaking,,27862.8782,82794901.21,2971.5129
-2026-01,puffer-stake,Puffer Stake,restaking,,27164.3361,67089366.41,2469.7591
-2026-02,puffer-stake,Puffer Stake,restaking,,25910.8556,50714424.57,1957.2655
+2025-09,puffer-stake,Puffer Stake,restaking,,36027.3313,149399938.64,4146.85
+2025-10,puffer-stake,Puffer Stake,restaking,,35264.2451,135932971.88,3854.6968
+2025-11,puffer-stake,Puffer Stake,restaking,,32724.0799,97748336.9,2987.0461
+2025-12,puffer-stake,Puffer Stake,restaking,,27878.6442,82841750.02,2971.5129
+2026-01,puffer-stake,Puffer Stake,restaking,,27180.573,67129467.62,2469.7591
+2026-02,puffer-stake,Puffer Stake,restaking,,25926.487,50745019.43,1957.2655
 2026-03,puffer-stake,Puffer Stake,restaking,,26809.1444,56300907.94,2100.0636
 2026-04,puffer-stake,Puffer Stake,restaking,,26386.1562,59592331.88,2258.4696
 2026-05,puffer-stake,Puffer Stake,restaking,,25535.4419,51315023.15,2009.5608
@@ -3833,8 +3878,8 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2025-10,reserve-protocol,Reserve Protocol,staking,,95958.7144,369891747.08,3854.6968
 2025-11,reserve-protocol,Reserve Protocol,staking,,51310.2103,153265965.98,2987.0461
 2025-12,reserve-protocol,Reserve Protocol,staking,,37791.287,112297295.52,2971.5129
-2026-01,reserve-protocol,Reserve Protocol,staking,,36352.5398,89782015.9,2469.7591
-2026-02,reserve-protocol,Reserve Protocol,staking,,34530.8731,67586087.86,1957.2655
+2026-01,reserve-protocol,Reserve Protocol,staking,,36358.9043,89797734.92,2469.7591
+2026-02,reserve-protocol,Reserve Protocol,staking,,34992.6466,68489901.17,1957.2655
 2026-03,reserve-protocol,Reserve Protocol,staking,,35079.5192,73669220.96,2100.0636
 2026-04,reserve-protocol,Reserve Protocol,staking,,25390.2842,57343185.37,2258.4696
 2026-05,reserve-protocol,Reserve Protocol,staking,,14151.1901,28437676.91,2009.5608
@@ -3918,9 +3963,9 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,ribbon-earn,Ribbon Earn,options,,0.0,0.0,2470.6262
 2026-09,ribbon-earn,Ribbon Earn,options,,0.0,0.0,2677.2247
 2026-10-02,ribbon-earn,Ribbon Earn,options,,0.0,0.0,2669.3876
-2024-10,rocket-pool,Rocket Pool,staking,,722555.2477,1819177347.26,2517.7
-2024-11,rocket-pool,Rocket Pool,staking,,728924.1688,2714535472.39,3724.03
-2024-12,rocket-pool,Rocket Pool,staking,,725441.9242,2415235561.44,3329.33
+2024-10,rocket-pool,Rocket Pool,staking,,722572.4256,1819220595.91,2517.7
+2024-11,rocket-pool,Rocket Pool,staking,,728940.8795,2714597703.39,3724.03
+2024-12,rocket-pool,Rocket Pool,staking,,725458.1292,2415289513.3,3329.33
 2025-01,rocket-pool,Rocket Pool,staking,,727991.3937,2401607208.21,3298.95
 2025-02,rocket-pool,Rocket Pool,staking,,706989.1579,1573545768.64,2225.7
 2025-03,rocket-pool,Rocket Pool,staking,,688484.8938,1255569246.21,1823.67
@@ -3929,19 +3974,19 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2025-06,rocket-pool,Rocket Pool,staking,,638146.2097,1592953331.49,2496.22
 2025-07,rocket-pool,Rocket Pool,staking,,642873.7274,2375212703.18,3694.68
 2025-08,rocket-pool,Rocket Pool,staking,,626192.5156,2755478760.0,4400.37
-2025-09,rocket-pool,Rocket Pool,staking,,609860.6105,2529000472.8,4146.85
-2025-10,rocket-pool,Rocket Pool,staking,,598412.2212,2306697660.16,3854.6968
-2025-11,rocket-pool,Rocket Pool,staking,,584061.0326,1744617258.78,2987.0461
-2025-12,rocket-pool,Rocket Pool,staking,,567371.0272,1685950307.99,2971.5129
-2026-01,rocket-pool,Rocket Pool,staking,,557943.1368,1377985140.1,2469.7591
-2026-02,rocket-pool,Rocket Pool,staking,,549814.9142,1076133781.61,1957.2655
+2025-09,rocket-pool,Rocket Pool,staking,,608310.5151,2522572459.34,4146.85
+2025-10,rocket-pool,Rocket Pool,staking,,594540.6124,2291773781.93,3854.6968
+2025-11,rocket-pool,Rocket Pool,staking,,580627.4425,1734360966.69,2987.0461
+2025-12,rocket-pool,Rocket Pool,staking,,563670.2228,1674953320.0,2971.5129
+2026-01,rocket-pool,Rocket Pool,staking,,553477.3469,1366955714.77,2469.7591
+2026-02,rocket-pool,Rocket Pool,staking,,545074.5498,1066855629.69,1957.2655
 2026-03,rocket-pool,Rocket Pool,staking,,558129.2975,1172107016.54,2100.0636
 2026-04,rocket-pool,Rocket Pool,staking,,524366.194,1184265113.8,2258.4696
 2026-05,rocket-pool,Rocket Pool,staking,,521788.0874,1048564890.37,2009.5608
 2026-06,rocket-pool,Rocket Pool,staking,,511032.897,801192818.04,1567.7911
 2026-07,rocket-pool,Rocket Pool,staking,,509021.016,948548108.85,1863.4753
 2026-08,rocket-pool,Rocket Pool,staking,,507145.8211,1252967753.39,2470.6262
-2026-09,rocket-pool,Rocket Pool,staking,,503940.3775,1349161621.41,2677.2247
+2026-09,rocket-pool,Rocket Pool,staking,,503940.3839,1349161638.36,2677.2247
 2026-10-02,rocket-pool,Rocket Pool,staking,,503824.4495,1344902739.23,2669.3876
 2026-02,royco-v2,Royco V2,farming,vaults,0.0,0.0,1957.2655
 2026-03,royco-v2,Royco V2,farming,vaults,0.0,0.0,2100.0636
@@ -5042,26 +5087,26 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,vaultcraft,VaultCraft,farming,vaults,7.1411,17642.92,2470.6262
 2026-09,vaultcraft,VaultCraft,farming,vaults,7.1721,19201.24,2677.2247
 2026-10-02,vaultcraft,VaultCraft,farming,vaults,7.1515,19090.15,2669.3876
-2024-10,veda,Veda: other ETH vaults,farming,vaults,329984.0036,830800725.98,2517.7
-2024-11,veda,Veda: other ETH vaults,farming,vaults,253855.0602,945363859.98,3724.03
-2024-12,veda,Veda: other ETH vaults,farming,vaults,256727.447,854730391.23,3329.33
-2025-01,veda,Veda: other ETH vaults,farming,vaults,225931.963,745338249.28,3298.95
-2025-02,veda,Veda: other ETH vaults,farming,vaults,384303.2268,855343691.95,2225.7
-2025-03,veda,Veda: other ETH vaults,farming,vaults,373400.8959,680960011.87,1823.67
-2025-04,veda,Veda: other ETH vaults,farming,vaults,374536.8476,671537077.03,1792.98
-2025-05,veda,Veda: other ETH vaults,farming,vaults,347530.4103,875043344.68,2517.89
-2025-06,veda,Veda: other ETH vaults,farming,vaults,332939.3201,831089789.57,2496.22
-2025-07,veda,Veda: other ETH vaults,farming,vaults,276874.4539,1022962507.25,3694.68
+2024-10,veda,Veda: other ETH vaults,farming,vaults,183780.993,462705406.14,2517.7
+2024-11,veda,Veda: other ETH vaults,farming,vaults,103595.707,385793520.9,3724.03
+2024-12,veda,Veda: other ETH vaults,farming,vaults,104010.8955,346286594.81,3329.33
+2025-01,veda,Veda: other ETH vaults,farming,vaults,72567.6444,239397030.52,3298.95
+2025-02,veda,Veda: other ETH vaults,farming,vaults,225101.6221,501008680.23,2225.7
+2025-03,veda,Veda: other ETH vaults,farming,vaults,211982.6043,386586316.0,1823.67
+2025-04,veda,Veda: other ETH vaults,farming,vaults,197605.5723,354302839.1,1792.98
+2025-05,veda,Veda: other ETH vaults,farming,vaults,152574.9085,384166836.26,2517.89
+2025-06,veda,Veda: other ETH vaults,farming,vaults,141190.9,352443548.32,2496.22
+2025-07,veda,Veda: other ETH vaults,farming,vaults,76407.1099,282299820.75,3694.68
 2025-08,veda,Veda: other ETH vaults,farming,vaults,83708.7262,368349367.41,4400.37
 2025-09,veda,Veda: other ETH vaults,farming,vaults,101442.6923,420667628.75,4146.85
-2025-10,veda,Veda: other ETH vaults,farming,vaults,279152.0875,1076046651.96,3854.6968
-2025-11,veda,Veda: other ETH vaults,farming,vaults,222302.5982,664028119.92,2987.0461
-2025-12,veda,Veda: other ETH vaults,farming,vaults,237848.2002,706768987.53,2971.5129
-2026-01,veda,Veda: other ETH vaults,farming,vaults,262186.2803,647536952.0,2469.7591
-2026-02,veda,Veda: other ETH vaults,farming,vaults,201198.6375,393799158.64,1957.2655
-2026-03,veda,Veda: other ETH vaults,farming,vaults,221304.6203,464753775.59,2100.0636
-2026-04,veda,Veda: other ETH vaults,farming,vaults,156984.3912,354544476.76,2258.4696
-2026-05,veda,Veda: other ETH vaults,farming,vaults,125756.295,252714921.65,2009.5608
+2025-10,veda,Veda: other ETH vaults,farming,vaults,101688.3037,391977576.35,3854.6968
+2025-11,veda,Veda: other ETH vaults,farming,vaults,74485.9348,222492924.69,2987.0461
+2025-12,veda,Veda: other ETH vaults,farming,vaults,90765.1421,269709787.79,2971.5129
+2026-01,veda,Veda: other ETH vaults,farming,vaults,107876.7623,266429615.58,2469.7591
+2026-02,veda,Veda: other ETH vaults,farming,vaults,92906.4647,181842621.24,1957.2655
+2026-03,veda,Veda: other ETH vaults,farming,vaults,74065.5641,155542394.38,2100.0636
+2026-04,veda,Veda: other ETH vaults,farming,vaults,32379.4931,73128101.24,2258.4696
+2026-05,veda,Veda: other ETH vaults,farming,vaults,17580.0547,35328188.89,2009.5608
 2026-06,veda,Veda: other ETH vaults,farming,vaults,12926.2287,20265626.13,1567.7911
 2026-07,veda,Veda: other ETH vaults,farming,vaults,11681.3739,21767952.08,1863.4753
 2026-08,veda,Veda: other ETH vaults,farming,vaults,10950.1053,27053617.04,2470.6262
@@ -5167,9 +5212,9 @@ month,slug,product,category,kind,eth,usd,eth_usd
 2026-08,venus-core-pool,Venus Core Pool,lending,,12145.7362,30007574.04,2470.6262
 2026-09,venus-core-pool,Venus Core Pool,lending,,5603.4216,15001618.71,2677.2247
 2026-10-02,venus-core-pool,Venus Core Pool,lending,,7327.473,19559865.53,2669.3876
-2024-10,vesper,Vesper pools (other than vaETH),farming,vaults,2896.7916,7293252.27,2517.7
-2024-11,vesper,Vesper pools (other than vaETH),farming,vaults,3091.1017,11511355.39,3724.03
-2024-12,vesper,Vesper pools (other than vaETH),farming,vaults,3118.9842,10384127.52,3329.33
+2024-10,vesper,Vesper pools (other than vaETH),farming,vaults,1790.841,4508800.38,2517.7
+2024-11,vesper,Vesper pools (other than vaETH),farming,vaults,1934.3199,7203465.4,3724.03
+2024-12,vesper,Vesper pools (other than vaETH),farming,vaults,1953.8194,6504909.46,3329.33
 2025-01,vesper,Vesper pools (other than vaETH),farming,vaults,2057.9964,6789227.2,3298.95
 2025-02,vesper,Vesper pools (other than vaETH),farming,vaults,2074.8875,4618077.06,2225.7
 2025-03,vesper,Vesper pools (other than vaETH),farming,vaults,1912.7627,3488247.9,1823.67
