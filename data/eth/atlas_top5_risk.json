@@ -1895,5 +1895,257 @@
    "destination_of_dollars": "Dollar 0.78M (sUSDS/USDT, wstETH/USDT) + 1,488 WETH",
    "evidence": "DSA built 2021 by 0xf2d2c1d5 (ENS dankest.eth)"
   }
- }
+ },
+ "loopRegime": [
+  {
+   "month": "2024-10",
+   "aave_core_weth_borrow_apr_month_avg": "0.0287",
+   "steth_holder_apr_month": "0.0301",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00139",
+   "aave_core_weth_utilization": "0.8956",
+   "total_weth_debt_eth": "1640011",
+   "lido_gross_cl_apr": "0.02777",
+   "lido_gross_el_apr": "0.00547"
+  },
+  {
+   "month": "2024-11",
+   "aave_core_weth_borrow_apr_month_avg": "0.0263",
+   "steth_holder_apr_month": "0.03025",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00395",
+   "aave_core_weth_utilization": "0.8908",
+   "total_weth_debt_eth": "1849744",
+   "lido_gross_cl_apr": "0.02776",
+   "lido_gross_el_apr": "0.00575"
+  },
+  {
+   "month": "2024-12",
+   "aave_core_weth_borrow_apr_month_avg": "0.0296",
+   "steth_holder_apr_month": "0.02924",
+   "spread_steth_minus_aave_core_borrow_month_avg": "-0.00037",
+   "aave_core_weth_utilization": "0.8536",
+   "total_weth_debt_eth": "1939793",
+   "lido_gross_cl_apr": "0.02776",
+   "lido_gross_el_apr": "0.00449"
+  },
+  {
+   "month": "2025-01",
+   "aave_core_weth_borrow_apr_month_avg": "0.0256",
+   "steth_holder_apr_month": "0.0298",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.0042",
+   "aave_core_weth_utilization": "0.8943",
+   "total_weth_debt_eth": "2082966",
+   "lido_gross_cl_apr": "0.02796",
+   "lido_gross_el_apr": "0.00493"
+  },
+  {
+   "month": "2025-02",
+   "aave_core_weth_borrow_apr_month_avg": "0.02642",
+   "steth_holder_apr_month": "0.03268",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00626",
+   "aave_core_weth_utilization": "0.8595",
+   "total_weth_debt_eth": "2186938",
+   "lido_gross_cl_apr": "0.0279",
+   "lido_gross_el_apr": "0.0082"
+  },
+  {
+   "month": "2025-03",
+   "aave_core_weth_borrow_apr_month_avg": "0.02779",
+   "steth_holder_apr_month": "0.02952",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00172",
+   "aave_core_weth_utilization": "0.8912",
+   "total_weth_debt_eth": "2480812",
+   "lido_gross_cl_apr": "0.02791",
+   "lido_gross_el_apr": "0.00472"
+  },
+  {
+   "month": "2025-04",
+   "aave_core_weth_borrow_apr_month_avg": "0.02854",
+   "steth_holder_apr_month": "0.03017",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00163",
+   "aave_core_weth_utilization": "0.8612",
+   "total_weth_debt_eth": "2591730",
+   "lido_gross_cl_apr": "0.02784",
+   "lido_gross_el_apr": "0.0055"
+  },
+  {
+   "month": "2025-05",
+   "aave_core_weth_borrow_apr_month_avg": "0.02543",
+   "steth_holder_apr_month": "0.02847",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00304",
+   "aave_core_weth_utilization": "0.8718",
+   "total_weth_debt_eth": "2798231",
+   "lido_gross_cl_apr": "0.02765",
+   "lido_gross_el_apr": "0.00364"
+  },
+  {
+   "month": "2025-06",
+   "aave_core_weth_borrow_apr_month_avg": "0.02577",
+   "steth_holder_apr_month": "0.02751",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00174",
+   "aave_core_weth_utilization": "0.8345",
+   "total_weth_debt_eth": "2664487",
+   "lido_gross_cl_apr": "0.02746",
+   "lido_gross_el_apr": "0.00299"
+  },
+  {
+   "month": "2025-07",
+   "aave_core_weth_borrow_apr_month_avg": "0.03444",
+   "steth_holder_apr_month": "0.02718",
+   "spread_steth_minus_aave_core_borrow_month_avg": "-0.00726",
+   "aave_core_weth_utilization": "0.9379",
+   "total_weth_debt_eth": "2606205",
+   "lido_gross_cl_apr": "0.02721",
+   "lido_gross_el_apr": "0.00272"
+  },
+  {
+   "month": "2025-08",
+   "aave_core_weth_borrow_apr_month_avg": "0.02736",
+   "steth_holder_apr_month": "0.02701",
+   "spread_steth_minus_aave_core_borrow_month_avg": "-0.00036",
+   "aave_core_weth_utilization": "0.9005",
+   "total_weth_debt_eth": "2527995",
+   "lido_gross_cl_apr": "0.0272",
+   "lido_gross_el_apr": "0.00228"
+  },
+  {
+   "month": "2025-09",
+   "aave_core_weth_borrow_apr_month_avg": "0.02427",
+   "steth_holder_apr_month": "0.02639",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00212",
+   "aave_core_weth_utilization": "0.7955",
+   "total_weth_debt_eth": "2451387",
+   "lido_gross_cl_apr": "0.0271",
+   "lido_gross_el_apr": "0.00157"
+  },
+  {
+   "month": "2025-10",
+   "aave_core_weth_borrow_apr_month_avg": "0.02421",
+   "steth_holder_apr_month": "0.02751",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.0033",
+   "aave_core_weth_utilization": "0.8706",
+   "total_weth_debt_eth": "2457906",
+   "lido_gross_cl_apr": "0.02707",
+   "lido_gross_el_apr": "0.00337"
+  },
+  {
+   "month": "2025-11",
+   "aave_core_weth_borrow_apr_month_avg": "0.02195",
+   "steth_holder_apr_month": "0.02659",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00464",
+   "aave_core_weth_utilization": "0.7111",
+   "total_weth_debt_eth": "2425143",
+   "lido_gross_cl_apr": "0.02702",
+   "lido_gross_el_apr": "0.00243"
+  },
+  {
+   "month": "2025-12",
+   "aave_core_weth_borrow_apr_month_avg": "0.01947",
+   "steth_holder_apr_month": "0.02555",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00607",
+   "aave_core_weth_utilization": "0.7273",
+   "total_weth_debt_eth": "2631424",
+   "lido_gross_cl_apr": "0.02713",
+   "lido_gross_el_apr": "0.00119"
+  },
+  {
+   "month": "2026-01",
+   "aave_core_weth_borrow_apr_month_avg": "0.02048",
+   "steth_holder_apr_month": "0.02449",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00401",
+   "aave_core_weth_utilization": "0.8696",
+   "total_weth_debt_eth": "3268279",
+   "lido_gross_cl_apr": "0.02608",
+   "lido_gross_el_apr": "0.00105"
+  },
+  {
+   "month": "2026-02",
+   "aave_core_weth_borrow_apr_month_avg": "0.02885",
+   "steth_holder_apr_month": "0.02467",
+   "spread_steth_minus_aave_core_borrow_month_avg": "-0.00418",
+   "aave_core_weth_utilization": "0.9277",
+   "total_weth_debt_eth": "3071429",
+   "lido_gross_cl_apr": "0.02435",
+   "lido_gross_el_apr": "0.0029"
+  },
+  {
+   "month": "2026-03",
+   "aave_core_weth_borrow_apr_month_avg": "0.02299",
+   "steth_holder_apr_month": "0.02506",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00206",
+   "aave_core_weth_utilization": "0.8751",
+   "total_weth_debt_eth": "2858507",
+   "lido_gross_cl_apr": "0.02533",
+   "lido_gross_el_apr": "0.00224"
+  },
+  {
+   "month": "2026-04",
+   "aave_core_weth_borrow_apr_month_avg": "0.03531",
+   "steth_holder_apr_month": "0.02492",
+   "spread_steth_minus_aave_core_borrow_month_avg": "-0.01039",
+   "aave_core_weth_utilization": "0.9922",
+   "total_weth_debt_eth": "2437949",
+   "lido_gross_cl_apr": "0.02531",
+   "lido_gross_el_apr": "0.00199"
+  },
+  {
+   "month": "2026-05",
+   "aave_core_weth_borrow_apr_month_avg": "0.02508",
+   "steth_holder_apr_month": "0.02456",
+   "spread_steth_minus_aave_core_borrow_month_avg": "-0.00051",
+   "aave_core_weth_utilization": "0.7955",
+   "total_weth_debt_eth": "1912228",
+   "lido_gross_cl_apr": "0.0253",
+   "lido_gross_el_apr": "0.00137"
+  },
+  {
+   "month": "2026-06",
+   "aave_core_weth_borrow_apr_month_avg": "0.02113",
+   "steth_holder_apr_month": "0.02424",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00311",
+   "aave_core_weth_utilization": "0.8028",
+   "total_weth_debt_eth": "2061997",
+   "lido_gross_cl_apr": "0.02505",
+   "lido_gross_el_apr": "0.00179"
+  },
+  {
+   "month": "2026-07",
+   "aave_core_weth_borrow_apr_month_avg": "0.02092",
+   "steth_holder_apr_month": "0.02218",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00126",
+   "aave_core_weth_utilization": "0.8203",
+   "total_weth_debt_eth": "2152735",
+   "lido_gross_cl_apr": "0.02374",
+   "lido_gross_el_apr": "0.00083"
+  },
+  {
+   "month": "2026-08",
+   "aave_core_weth_borrow_apr_month_avg": "0.02128",
+   "steth_holder_apr_month": "0.0221",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00083",
+   "aave_core_weth_utilization": "0.8333",
+   "total_weth_debt_eth": "2213503",
+   "lido_gross_cl_apr": "0.02363",
+   "lido_gross_el_apr": "0.00087"
+  },
+  {
+   "month": "2026-09",
+   "aave_core_weth_borrow_apr_month_avg": "0.02045",
+   "steth_holder_apr_month": "0.02248",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00203",
+   "aave_core_weth_utilization": "0.8365",
+   "total_weth_debt_eth": "2254605",
+   "lido_gross_cl_apr": "0.0239",
+   "lido_gross_el_apr": "0.00102"
+  },
+  {
+   "month": "T",
+   "aave_core_weth_borrow_apr_month_avg": "0.02065",
+   "steth_holder_apr_month": "0.02218",
+   "spread_steth_minus_aave_core_borrow_month_avg": "0.00153",
+   "aave_core_weth_utilization": "0.8452",
+   "total_weth_debt_eth": "2269236",
+   "lido_gross_cl_apr": "0.02375",
+   "lido_gross_el_apr": "0.00086"
+  }
+ ]
 }

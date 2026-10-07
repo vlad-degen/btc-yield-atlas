@@ -41,6 +41,9 @@ def run():
     bpath = D / 'gap_borrowers.csv'
     if bpath.exists():
         out['borrowers'] = {r['address'].lower(): {k: r[k] for k in ('who', 'kind', 'pooled_product', 'product_if_any', 'dollar_debt_usd_T', 'weth_debt_T', 'destination_of_dollars', 'evidence')} for r in csv.DictReader(bpath.open())}
+    lr = D / 'gap_loop_regime_monthly.csv'
+    if lr.exists():
+        out['loopRegime'] = [{k: r[k] for k in ('month', 'aave_core_weth_borrow_apr_month_avg', 'steth_holder_apr_month', 'spread_steth_minus_aave_core_borrow_month_avg', 'aave_core_weth_utilization', 'total_weth_debt_eth', 'lido_gross_cl_apr', 'lido_gross_el_apr')} for r in csv.DictReader(lr.open())]
     (D / 'atlas_top5_risk.json').write_text(json.dumps(out, indent=1) + '\n')
     print('Atlas top-5 risk:', {k: len(v['health_factor']) for k, v in out['products'].items()})
 

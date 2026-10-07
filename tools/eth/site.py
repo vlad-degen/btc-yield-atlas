@@ -60,6 +60,8 @@ ARTICLES = {
  'ROCKSOLID-NEMO-SENTORA': ('library', 'Rocksolid, NEMO and Sentora: books, loans and closing'),
  'TOP5-RISK-LIQUIDITY': ('library', 'Top five: health factors, repayment ladders and reward payers'),
  'BORROWER-IDENTITIES': ('library', 'Who borrows dollars against ETH: the largest wallets named'),
+ 'CLOSED-CASES': ('library', 'Closed and stressed ETH products'),
+ 'RESTAKING-AND-LOOPS': ('library', 'Restaking in practice and the loop regime'),
  'OUTSIDE-AND-SMALL': ('library', 'Off-chain staking, ETFs, treasuries and the small categories'),
 }
 
@@ -335,7 +337,7 @@ def build():
         page=(SRC/'article.html').read_text().replace('@@TITLE@@',html.escape(title)).replace('@@CONTENT@@',status+body).replace('@@TOC@@',toc)
         (OUT/folder/f'{stem}.html').write_text(page)
     library_groups = [
-      ('New findings, 7 October', ['CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','OUTSIDE-AND-SMALL']),
+      ('New findings, 7 October', ['CONCRETE-DELTA','TOP5-RISK-LIQUIDITY','ROCKSOLID-NEMO-SENTORA','BORROWER-IDENTITIES','CLOSED-CASES','RESTAKING-AND-LOOPS','OUTSIDE-AND-SMALL']),
       ('Market size and counting', ['MARKET-STRUCTURE','MARKET-COVERAGE','CAPITAL-INCOME-EXIT']),
       ('Strategy families', ['STRATEGY-UNIVERSE-EXPANSION','MECHANICS','PRODUCT-FINANCIAL-HISTORY','HGETH-LOAN-BOOK','staking-restaking','pendle-pt','lending-lp']),
       ('Carry capital and products', ['CARRY-CATEGORY','CARRY-PRODUCTS','PRODUCT-EVOLUTION','CARRY-VARIANTS-EXPANSION','CARRY-COVERAGE-AUDIT','PRODUCT-SELECTION','etherfi-liquid-eth']),
