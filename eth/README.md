@@ -1,28 +1,20 @@
 # ETH Yield Research
 
-English research website using BTC Research's eight chapters: Answer, Market, Carry math, Top 5, Other carry, Risks, Playbook and Data. The main reader presents the conclusions; disclosures and linked exhibits retain the detailed evidence.
+Public report: https://vlad-degen.github.io/btc-yield-atlas/eth/
 
-Public ETH report: https://vlad-degen.github.io/btc-yield-atlas/eth/
+Financial snapshot: **2 October 2026, 23:59:59 UTC**. Presentation simplified on 7 October following the reader’s comments. Financial observations are unchanged.
 
-BTC reference: https://vlad-degen.github.io/btc-yield-atlas/
+## Reading route
 
-Financial snapshot: **2 October 2026, 23:59:59 UTC**. Presentation and definitions revised on 6 October. This revision does not refresh the financial snapshot.
+Answer → Market → Top 5 → Other carry → Data. Risks are available in a closed disclosure. Market includes the protocol map, 24 monthly category bars and category/protocol drilldowns. Top 5 includes the 24-month dollar-financing history, the common-window comparison and five detailed project chapters.
 
-## Read and present
+The main page omits the duplicate hero note, header date strip, second donut legend, “months in the lead” card, carry-calculation chapter, calculator, standalone financed-lot table, product-launch playbook and responsibilities block. Supporting calculations and research remain in `exhibits.html` and the library.
 
-Start with `index.html`. Use `library/BRIEFING.html` for the presentation route, `library/MARKET-COVERAGE.html` for what is measured, and `exhibits.html` for the full investigations. Older library notes retain their own dates and scopes; they are identified as supporting evidence or earlier research notes.
+Charts retain their full hover and keyboard breakdown, filters, tables and CSV downloads. The main carry history measures direct ETH-backed dollar debt in verified product accounts. Its ten-product inventory is separate from whole-vault NAV, nested credit and unique investor capital. The five main projects are Liquid, YieldBasis, Lido, Avant and Liquity, ordered by measured dollar financing.
 
-The report distinguishes staking/restaking receipt claims, protocol-family exposure, whole-product book values and verified financing positions. These are overlapping layers, not an additive unique-ETH market total. Native validator balances and several other market families remain outside the aggregate panel.
+Protocol claims can overlap. Unknown global unique ETH capital, private-wallet positions and complete carry-sleeve profit remain explicitly unmeasured. Source observations, ownership exclusions, fees, controls, holders, launch history and unwind evidence remain available in the project chapters and supporting articles.
 
-Eight examined books appear in the carry history, including five products with current traced financing routes, one Closing product, one historical route and one product with unverified carry attribution. The history has 24 monthly stacked bars, ETH/USD views, a small-book zoom and a tooltip showing each product's amount and share. Historical whole-book changes are not reconstructed historical carry allocations or deposit flows.
-
-The six deep product chapters use a common 30-day window ending at the snapshot and the same stETH benchmark. Whole-book returns are separate from organic carry profit. Three traced financed lots have explicit investment income, funding cost and measured results; they do not establish complete product P&L.
-
-The coverage matrix distinguishes ten significant mechanism families. The discovery screen resolves 299 material ETH-keyword pool candidates across 86 projects, with 287 parent joins. This is a discovery disposition screen, not 299 individually reconstructed strategies or an exhaustive global census.
-
-The four main answers and product conclusions have a fixed scope. Market filters affect the market panels and exports. The Briefing, status table, headline definitions and common-window returns are generated from the same canonical dataset, `data/report_contract.json`.
-
-## Local preview and offline handoff
+## Local preview
 
 From the full project root:
 
@@ -30,20 +22,10 @@ From the full project root:
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8765/eth/index.html. This address works only on the presenting machine.
+Open http://127.0.0.1:8765/eth/index.html. The main HTML embeds its CSS, JavaScript and dataset; accompanying folders provide article links and downloads.
 
-The main HTML embeds its CSS, JavaScript and dataset. Keep the accompanying folders for article links and downloads. To use the portable ZIP, extract the entire archive and open `eth/index.html`. The root `index.html` is the unchanged BTC reference. Optional Google Fonts have system fallbacks. The portable archive stays local and is excluded from public Git publication.
+## Sources and verification
 
-## Build and verify
+Website source: `tools/eth/site/`. Frozen analytical inputs: `data/eth/`. Articles: `research/eth/en/`. Output: `eth/`, mirrored to `site/eth/`. The public website contains the reader and linked source ledgers, rather than the full working repository.
 
-In the full research checkout:
-
-```sh
-python3 tools/eth/rebuild.py
-python3 tools/eth/report_contract_verify.py
-python3 tools/eth/package_site.py
-```
-
-Website source: `tools/eth/site/`. Analytical inputs: `data/eth/`. Research articles: `research/eth/en/`. Output: `eth/`, mirrored to `site/eth/`. Rebuild requires the original captured-response collection; the public website is a presentation, not the full working repository.
-
-The checks verify source integrity, arithmetic, matched returns, financial definitions, exports, navigation and interface behavior. They do not certify global market completeness, private backing or complete carry profitability. The public ETH edition is confined to `/eth/`. Original BTC files remain unchanged.
+The 7 October update reran website integrity, reader structure and history/export checks and reviewed desktop/mobile behavior, risk expansion and carry hovers. It does not refresh the financial snapshot. Publication is confined to `/eth/`; the original BTC report is unchanged.
