@@ -3275,6 +3275,179 @@
       ]
     },
     {
+      "name": "YieldNest ynETHx",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 929.552495,
+          "usd": 1819381.060303989,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 3594.836143,
+          "usd": 7549384.497734029,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 3494.907356,
+          "usd": 7893142.053823861,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 3502.199529,
+          "usd": 7037882.913817281,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 3722.20447,
+          "usd": 5835638.969923932,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 3729.21498,
+          "usd": 6949300.137706862,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 3736.216021,
+          "usd": 9230793.195131246,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 3743.120862,
+          "usd": 10021175.592473108,
+          "status": "observed"
+        }
+      ]
+    },
+    {
       "name": "NEMO ETH Prime",
       "history": [
         {
@@ -3616,6 +3789,525 @@
           "timestamp": 1790812799,
           "eth": 2733.273267045638,
           "usd": 7317586.6772952145,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "9Summits Flagship ETH",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": 1516.438512,
+          "usd": 5002654.829164176,
+          "status": "observed"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": 2270.300806,
+          "usd": 5053008.503915299,
+          "status": "observed"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": 4837.486438,
+          "usd": 8821978.89238879,
+          "status": "observed"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": 3078.474247,
+          "usd": 5519642.755388665,
+          "status": "observed"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": 3901.683653,
+          "usd": 14415472.559065854,
+          "status": "observed"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": 4045.346045,
+          "usd": 17801019.376029633,
+          "status": "observed"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": 3502.622101,
+          "usd": 14524848.459535046,
+          "status": "observed"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 3380.404372,
+          "usd": 13030433.835574528,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 3666.0234831746,
+          "usd": 10950581.330318673,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 3440.2489953821,
+          "usd": 10222744.15679502,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 1390.28507,
+          "usd": 3433669.204938324,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": 1578.9203385636001,
+          "usd": 3090366.359256963,
+          "status": "observed"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": 1581.4533,
+          "usd": 3321152.495408835,
+          "status": "observed"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": 1586.2079314648001,
+          "usd": 3582402.408595855,
+          "status": "observed"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 1742.8613115790001,
+          "usd": 3502385.784803474,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 1746.3229197376002,
+          "usd": 2737869.4982041335,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 1669.41207,
+          "usd": 3110908.2179918997,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 1645.1737,
+          "usd": 4064609.2488796418,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 1575.7548017805,
+          "usd": 4218649.662006305,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "Yearn yvWETH-2",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 0.0,
+          "usd": 0.0,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 923.992466,
+          "usd": 2473735.4441076657,
+          "status": "observed"
+        }
+      ]
+    },
+    {
+      "name": "DAMM Ethereum Fund",
+      "history": [
+        {
+          "month": "2024-10",
+          "timestamp": 1730419199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-11",
+          "timestamp": 1733011199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2024-12",
+          "timestamp": 1735689599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-01",
+          "timestamp": 1738367999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-02",
+          "timestamp": 1740787199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-03",
+          "timestamp": 1743465599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-04",
+          "timestamp": 1746057599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-05",
+          "timestamp": 1748735999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-06",
+          "timestamp": 1751327999,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-07",
+          "timestamp": 1754006399,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-08",
+          "timestamp": 1756684799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-09",
+          "timestamp": 1759276799,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2025-10",
+          "timestamp": 1761955199,
+          "eth": 234.486182,
+          "usd": 903873.1298586449,
+          "status": "observed"
+        },
+        {
+          "month": "2025-11",
+          "timestamp": 1764547199,
+          "eth": 275.114577,
+          "usd": 821779.9379686178,
+          "status": "observed"
+        },
+        {
+          "month": "2025-12",
+          "timestamp": 1767225599,
+          "eth": 275.711479,
+          "usd": 819280.2075349537,
+          "status": "observed"
+        },
+        {
+          "month": "2026-01",
+          "timestamp": 1769903999,
+          "eth": 276.284918,
+          "usd": 682357.1907634095,
+          "status": "observed"
+        },
+        {
+          "month": "2026-02",
+          "timestamp": 1772323199,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-03",
+          "timestamp": 1775001599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-04",
+          "timestamp": 1777593599,
+          "eth": null,
+          "usd": null,
+          "status": "missing"
+        },
+        {
+          "month": "2026-05",
+          "timestamp": 1780271999,
+          "eth": 328.58498,
+          "usd": 660311.4977687477,
+          "status": "observed"
+        },
+        {
+          "month": "2026-06",
+          "timestamp": 1782863999,
+          "eth": 682.465084,
+          "usd": 1069962.6718257125,
+          "status": "observed"
+        },
+        {
+          "month": "2026-07",
+          "timestamp": 1785542399,
+          "eth": 683.750454,
+          "usd": 1274152.1069775734,
+          "status": "observed"
+        },
+        {
+          "month": "2026-08",
+          "timestamp": 1788220799,
+          "eth": 685.03409,
+          "usd": 1692463.1715252006,
+          "status": "observed"
+        },
+        {
+          "month": "2026-09",
+          "timestamp": 1790812799,
+          "eth": 686.300007,
+          "usd": 1837379.3240509378,
           "status": "observed"
         }
       ]
@@ -4991,7 +5683,7 @@
   "sources": {
     "reader_carry_category": "7de0c236e26cef3266c9204f5a7cbef73e195b6d4476e5b0b7a09a817b0d0d01",
     "reader_product_chapters": "4d10cf3054bc7eeb764f5def80ef7c992bd62cad9ae55486a57de7c617171068",
-    "market_reader_chapter": "e5a5937cdbf6aeae7ec362b9d4f734c39bf6a938365b993da532389d81e3731c",
+    "market_reader_chapter": "60c598f44bb8c87c9eb842f1cb2beb955a84b25589e3876d8fbc346920a59cbb",
     "funding_atlas_chapter": "6f9407ec0164945417bbbcb27df4cdf4f11988a5474af5c136fd212f44c36caa",
     "strategy_universe_deep": "3f31107993ce3cf59a83f9a513eebc3e1a82fed23899898fb7d2724a82fddb3b",
     "credit_expansion_deep": "c53a1900ec97bafa3b4a00059b6a0fea3222fd2ae0696ea9a465780fef2dc1f0"

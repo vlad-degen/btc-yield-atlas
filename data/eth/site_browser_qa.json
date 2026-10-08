@@ -1,6 +1,6 @@
 {
- "site_sha256": "cf765e4b85f565832224dfce9c68d8fc84a338ea5d53cace117fdb0b0071dc8f",
- "recorded_utc": "2026-10-08T12:57:25+00:00",
+ "site_sha256": "38ae7df4db3ea7fa19bdc0505b3b6b5a06285a6b7687dbb686ab66edbdc59dd2",
+ "recorded_utc": "2026-10-08T16:02:31+00:00",
  "tool": "Claude in-app browser (Chromium), desktop and mobile 375x812 emulation; no console errors",
  "all_recorded_checks_passed": true,
  "checks": [
@@ -16,27 +16,17 @@
   },
   {
    "viewport": "desktop",
+   "check": "new_carry_products",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
    "check": "four_findings",
    "passed": true
   },
   {
    "viewport": "desktop",
-   "check": "rshare_size",
-   "passed": true
-  },
-  {
-   "viewport": "desktop",
-   "check": "panels_hidden",
-   "passed": true
-  },
-  {
-   "viewport": "desktop",
    "check": "staking_toggle_round_trip",
-   "passed": true
-  },
-  {
-   "viewport": "desktop",
-   "check": "borrower_table_from_full_scan",
    "passed": true
   },
   {
@@ -131,27 +121,17 @@
   },
   {
    "viewport": "mobile",
+   "check": "new_carry_products",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
    "check": "four_findings",
    "passed": true
   },
   {
    "viewport": "mobile",
-   "check": "rshare_size",
-   "passed": true
-  },
-  {
-   "viewport": "mobile",
-   "check": "panels_hidden",
-   "passed": true
-  },
-  {
-   "viewport": "mobile",
    "check": "staking_toggle_round_trip",
-   "passed": true
-  },
-  {
-   "viewport": "mobile",
-   "check": "borrower_table_from_full_scan",
    "passed": true
   },
   {

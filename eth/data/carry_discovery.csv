@@ -1,0 +1,43 @@
+product,chain,venue,eth_collateral_eth,dollar_debt_usd,date,evidence,status
+YieldNest ynETHx (Flex Strategy LVG1),Ethereum,Aave v3 Core,3744,3091558,2026-10-02 block 26108081,vault 0x657d9aba1dbb59e53f9f3ecaa878447dcfc96dcb; borrower Safe 0x24d2486f5b2c2c225b6be8b4f72d46349cbf4458 (3005.92 wstETH; USDe debt; HF 2.62); USDe to Safe 0x89ffc736 then ynRWAx 0x01ba6972; paused()=false maxDeposit=max,missing
+9Summits Flagship ETH (Lagoon),Ethereum,Spark,1590,1503875,2026-10-02 block 26108081,vault 0x07ed467acd4ffd13023046968b0859781cb90d9b; Safe 0xc868bfb240ed207449afe71d2ecc781d5e10c85c (1423.8 weETH; USDS debt; HF 2.26); USDS out to 0x006d0e0d; async deposits open on Lagoon app,missing
+Yearn yvWETH-2 (Spark wstETH/USDS lender-borrower),Ethereum,Spark,976,1575783,2026-10-02 block 26108081,vault 0xAc37729B76db6438CE62042AE1270ee574CA7571 (1142.8 ETH; maxDeposit 8857 ETH); strategy 0x41cfe42d221a591c6308dcea419015ba8570b380 (742.04 wstETH; 1490787 USDS) plus 84996 USDS; USDS into yvUSD; 42.8% of shares held by closed yETH-Recovery 0xd7a540ba,missing (atlas has whole Yearn in lending)
+DAMM Ethereum Fund (Lagoon),Ethereum,Spark,686,702335,2026-10-02 block 26108081,vault 0x3c63f3ce75dc83735745cf4e86b63414d95ee355 (1532.6 ETH); Safe 0xe39cd9b36b9a86a8227ec3f5159b610bf2a30e69 (USDC 451911 + USDT 250424); async deposits; whitelist appears active,missing (small)
+Mt Pelerin ETH pool (Lagoon),Ethereum,Morpho,237,325256,2026-10-02 block 26108081,vault 0xb118de49; Safe 0xee6b63e2 (190.3 wstETH),too small
+Treehouse Growth v2 (Upshift),Ethereum,Aave/Morpho,251,202000,2026-10-02 block 26108081,subaccount 0xeb72e4df,too small
+KPK LsETH (Upshift),Ethereum,Aave/Morpho,117,263000,2026-10-02 block 26108081,117 LsETH collateral; USDC debt,too small
+Gami ETH (Lagoon),Ethereum,Morpho/Aave,105,146000,2026-10-02 block 26108081,vault 0x2031ecee; 84.7 wstETH,too small
+Ammalgam WETH (Lagoon),Ethereum,Morpho/Aave,184,21000,2026-10-02 block 26108081,vault 0xbb211be8; 148 wstETH,too small
+TESS wstETH Debt Vault (IPOR),Ethereum,Morpho/Aave,128,161988,2026-10-02 block 26108081,vault 0x378d18ec; publicDepositOpened=false,closed
+Lucidly cyETH,unknown,unknown,,,2026-10-04,no deployed address found; official hosts fail DNS,unresolved
+Concrete wstETH Plus,Ethereum,Aave/Morpho (shared Delta Safe),,,2026-10-02 block 26108081,vault 0xd57588c73715b65e0ead36ae06c15644169501b7; MultisigStrategy 0x50a7510e getMultiSig()=Safe 0x7ee29373 which holds 100% of 36439.69 shares,not carry (private mandate; same principal as Concrete Delta)
+Concrete Delta weETH,Ethereum,Aave Core + Morpho,,176118054,2026-10-02 block 26108081,Safe 0x7ee29373f075ee1d83b1b93b4fe94ae242df5178,not carry (private mandate; excluded)
+rSHARE vaults #1-#3,Ethereum/Base,Aave,,80412659,2026-10-02 block 26108081,managers 0xa1226872 0x4f87de7d 0xa56da9bb,not carry (private mandates; excluded)
+Midas mRe7ETH,Optimism/Ethereum,Aave/Spark/Morpho (Re7 EOA 0x462a336d),,0,2026-10-02 block 26108081,token 0xe7ba0751; deposits route via 0x67ba9b7e and 0xe4cd2762 to Re7 EOA with ETH debt only,not carry (ETH loops)
+Midas mHyperETH,Ethereum,,13,,2026-10-02 block 26108081,0x5a42864b; 12.95 ETH supply x mark,too small
+YO yoETH,Ethereum/Base,,4955,0,2026-10-02 block 26108081,vault 0x3a43aec53490cb9fa922847385d82fe25d0e9de7; no own loan,not carry (lending)
+Fluid Lite iETHv2,Ethereum,Aave Core + Spark,77359,0,2026-10-02 block 26108081,vault 0xA0D3707c569ff8C87FA923d3823eC5D81c98Be78; DSA 0x9600a48e; 319354 WETH debt,not carry (ETH loop)
+Treehouse tETH,Ethereum,Aave Core + Spark,19860,0,2026-10-02 block 26108081,0xD11c452f; WETH debt only,not carry (ETH loop)
+Cian ylrsETH,Ethereum,Aave Core,1530,0,2026-10-02 block 26108081,0xd87a19fF; strategy 0x8cb04249 13691 WETH debt,not carry (ETH loop)
+Kelp Gain agETH (Upshift),Ethereum,Aave Core,,0,2026-10-02 block 26108081,Fordefi EOA 0xf7462251; ETH loop,not carry
+Kelp hgETH (Upshift),Ethereum,,5068,0,2026-10-02 block 26108081,rsETH loan book,not carry (rsETH lending)
+IPOR stETH looping / TAU cbETH / Base cbETH Loooper / TESS cbETH,Ethereum/Base,Aave/Morpho,7463,0,2026-10-02,vault positions; ETH debt only,not carry (ETH loops)
+Veda BoringVaults other than Liquid ETH (196 scanned),Ethereum,,,0,2026-10-02 block 26108081,Enter-event scan; only Liquid ETH has dollar debt,not carry
+Mellow multi-vaults and DVstETH,Ethereum,,,0,2026-10-02,restaking,not carry
+Euler Earn / Morpho vaults / Superform / Harvest / UltraYield / Tulipa / K3 / Gauntlet / Steakhouse / kpk ETH vaults,various,,,0,2026-10-02,supply-only allocators,not carry
+Toros ETHBULL3X; Index Coop ETH2X; icETH,Arbitrum/Ethereum,,,,2026-10-02,leverage tokens,not carry (leverage)
+Sommelier Real Yield ETH / Turbo stETH / Turbo eETH,Ethereum,,120,0,2026-10-02,tiny books,too small
+ether.fi Liquid ETH,Ethereum,Morpho + Aave Core + Spark,,181070000,2026-10-02 block 26108081,vault 0xf0bb2086; drone 0x0a42b2f3; loan manager 0xc936e848,counted
+Lido Earn ETH (strETH Sub Vault 3),Ethereum,Aave Core + Spark,25555,25549081,2026-10-02 block 26108081,0x181cb55f872450d16ae858d532b4e35e50eaa76d,counted
+Avant savETH,Ethereum,Aave/Morpho,,19656999,2026-10-02 block 26108081,strategy wallet 0x6cc60a0b,counted
+Liquity ETH Carry (IPOR rETH Liquity LP Carry),Ethereum,Liquity v2 wstETH branch,5712,6750000,2026-10-02 block 26108081,vault 0xb9e806e8; 4586 wstETH trove,counted
+NEMO ETH Prime (Upshift),Ethereum,Aave/Morpho,2966,5610833,2026-10-02 block 26108081,EOA 0x90882e7c (2381 wstETH),counted
+Sentora ETH (Upshift),Ethereum,Aave,131,256000,2026-10-02 block 26108081,EOA 0xfb9776de (121 weETH; RLUSD),counted
+YieldBasis WETH,Ethereum,LlamaLend crvUSD,,,2026-10-02,atlas carry row 10426 ETH,counted
+Rocksolid rETH,Ethereum/Monad,Morpho/Liquity,,2730000,2026-10-02,atlas carry row 2728 ETH,counted
+Makina DETH,Ethereum,Aave/Morpho,,,2026-10-02,atlas carry row 348 ETH,counted
+Royco ETH,Ethereum,Morpho PYUSD,,,2026-10-02,atlas carry row 116 ETH,counted
+Vesper vaETH,Ethereum,Aave,57,68998,2026-10-02,XY strategy,counted
+Reservoir ETH Yield (IPOR),Ethereum,Aave,21,36790,2026-10-02,vault 0xf6cd9e84,counted
+TAU InfiniFi ETH Carry (IPOR),Ethereum,Morpho,,0,2026-10-02,0.022 USDC debt,counted (dust)
+ZenSats wstETH,Ethereum,LlamaLend,1,953,2026-10-02,active vault,counted (micro)

@@ -4,11 +4,11 @@ Financial snapshot: **2 October 2026**, Ethereum block 26,108,081.
 
 ## Findings
 
-- **Carry is 1.1% of ETH that earns a yield**: 171,649 ETH, the part of 12 products open for deposits where ETH is collateral for a dollar loan, owing **$270.9M** of dollar debt. BTC shows 9.8%, but the BTC map counts the whole book of each carry product. The rest of the ETH books goes by the same rules as everything else: loops to leveraged staking, held staking tokens to their issuers.
-- **Two products dominate.** Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 82% of the carry ETH.
+- **Carry is 1.1% of ETH that earns a yield**: 178,579 ETH, the part of 16 products open for deposits where ETH is collateral for a dollar loan, owing **$277.7M** of dollar debt. BTC shows 9.8%, but the BTC map counts the whole book of each carry product. The rest of the ETH books goes by the same rules as everything else: loops to leveraged staking, held staking tokens to their issuers.
+- **Two products dominate.** Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 79% of the carry ETH.
 - **Private mandates borrow as much as all the products.** Concrete Delta ($176.15M, one Bitfinex-linked wallet) and three whitelist-only rSHARE vaults run by one operator owe about $252M between them; both are left out of the map.
 - **The spread is thin.** Liquid ETH beat stETH by 0.66 pp a year over two years; its loop added +0.02 pp and its dollar leg -0.13 pp. Only YieldBasis covers its loan from fees.
-- **The book is new.** Carry debt was under $1M until August 2025 and grew from $17.5M in May 2026 to $270.9M at T. Carry ETH was under 100 ETH until August 2025 and 168,609 ETH at the end of September 2026.
+- **The book is new.** Carry debt was under $1M until August 2025 and grew from $17.5M in May 2026 to $277.7M at T. Carry ETH was under 100 ETH until August 2025 and 168,609 ETH at the end of September 2026.
 
 ## Products
 
@@ -47,3 +47,5 @@ The 30-day comparison and the four financed lots are in the [briefing](BRIEFING.
 ## Sources
 
 [Canonical answers](../../../data/eth/economic_questions.json), [loan CSV](../../../data/eth/economic-dollar-loans.csv), [financing history CSV](../../../data/eth/economic-carry-history.csv), [status and capital CSV](../../../data/eth/carry-status-and-capital.csv), [product evidence](CARRY-PRODUCTS.md), [route decisions](CARRY-COVERAGE-AUDIT.md).
+
+**Search for missed carry products (8 October).** Top-down (501 DefiLlama protocols, Veda, Lagoon, IPOR, Upshift, Mellow, Yearn, Midas and others, curators) and bottom-up (every lending account over 100 ETH backing dollar debt, plus Sky, Liquity, Curve, Dolomite, Euler, L2 venues). Four open products were missing and are now counted: YieldNest ynETHx (3,744 ETH), 9Summits Flagship ETH (1,576), Yearn yvWETH-2 (924), DAMM Ethereum Fund (686). Left out as too small or near-private (about 1,800 ETH together): three Enzyme funds of one manager, Treehouse Growth v2, Mt Pelerin, KPK LsETH, Gami, Ammalgam, the closed TESS vault. Details: [CARRY-DISCOVERY](CARRY-DISCOVERY.md), [CARRY-SWEEP](CARRY-SWEEP.md).

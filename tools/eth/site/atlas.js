@@ -113,7 +113,7 @@ function atHero(){
  $('#m-hero-total').textContent=num(total.eth_ref,0);
  $('#m-hero-detail').textContent='Across '+n+' products, each counted once'+(st&&total.eth_ref?'; '+ATPCT(st/total.eth_ref,0)+' is staking.':'.');
  $('#strict-carry-share').textContent=cy!=null&&total.eth_ref?ATPCT(cy/total.eth_ref,1):'off';
- $('#strict-carry-size').textContent=cy!=null?ATK(cy)+' ETH in '+cr.length+' products that owe dollars against ETH ($'+num(EQ.attributedDollarDebtUSD/1e6,0)+'M; only the part of their books where ETH backs a dollar loan). Two years ago: '+ATK(MP.months[0].by_category.carry.eth_ref)+' ETH.':'Carry is switched off.';
+ $('#strict-carry-size').textContent=cy!=null?ATK(cy)+' ETH in '+cr.length+' products that owe dollars against ETH ($'+num((EQ.attributedDollarDebtUSD+(R.atlasTop5Risk?.carryDebtExtraUSD||0))/1e6,0)+'M; only the part of their books where ETH backs a dollar loan). Two years ago: '+ATK(MP.months[0].by_category.carry.eth_ref)+' ETH.':'Carry is switched off.';
  const top2=cr.slice(0,2),t2=msum(top2.map(p=>p.current),'eth_ref');
  $('#strict-carry-concentration').textContent=cy?ATPCT(t2/cy,0):'n/a';
  $('#strict-carry-concentration-note').textContent=top2.map(p=>p.name+' '+ATK(p.current.eth_ref)).join(' and ')+' ETH.';
@@ -127,7 +127,7 @@ function atMeaning(){
  ol.innerHTML=[
   '<b>Carry barely beats staking.</b> ETH carry has to beat staked ETH at about 2.5%, not zero. The best product, Liquid ETH, beat stETH by 0.66 pp a year over two years, mostly thanks to a fee cut; its dollar leg loses about $6.8M a year at 2 October rates.',
   '<b>Less of it is subsidy than in BTC.</b> Rewards are a third of Liquid\u2019s lead over stETH and none of Lido Earn\u2019s, against 82% at Kraken. Liquity and YieldBasis are the exceptions: their lead is almost all token rewards.',
-  '<b>The real dollar demand is private.</b> 38 wallets owe over $20M each against ETH, $2.3B in total, and only four of them are products; all carry products together owe $271M.',
+  '<b>The real dollar demand is private.</b> 38 wallets owe over $20M each against ETH, $2.3B in total, and only four of them are products; all carry products together owe $278M.',
   '<b>BTC and ETH carry share the same dollar vaults.</b> Liquid parks $55M in Sentora\u2019s RLUSD vault, and half of that vault is lent to Kraken\u2019s kBTC loop. A loss there hits both markets at once.'
  ].map(t=>'<li>'+t+'</li>').join('');
 }
@@ -188,7 +188,7 @@ const _atRenderProduct=stRenderProduct;stRenderProduct=function(id,u){_atRenderP
 // Carry waves (replaces reader.js): three phases, numbers from the books and the corrected debt history.
 function readerCarryWaves(){
  const books=R.readerAnalysis.books,book=n=>books.find(p=>p.name===n),liq=book('ether.fi Liquid ETH'),res=book('Reservoir ETH Yield');
- const debt=m=>(EQ.history.find(h=>h.month===m)||{}).debtUSD||0,dT=EQ.attributedDollarDebtUSD,pdebt=(id,m)=>((EQ.products.find(p=>p.id===id)||{history:[]}).history.find(h=>h.month===m)||{}).debtUSD||0;
+ const debt=m=>(EQ.history.find(h=>h.month===m)||{}).debtUSD||0,dT=(EQ.attributedDollarDebtUSD+(R.atlasTop5Risk?.carryDebtExtraUSD||0)),pdebt=(id,m)=>((EQ.products.find(p=>p.id===id)||{history:[]}).history.find(h=>h.month===m)||{}).debtUSD||0;
  const waves=[
   ['Oct 2024 to Aug 2025','One product',`Liquid ETH was the only sizable book (${ATK(liq.history[0].eth)} ETH, peak ${ATK(liq.peak.eth)} in ${ATMON(liq.peak.month)}), and it looped ETH rather than borrowing dollars until its first Aave USDC loan in August 2025 (${ATUSD(pdebt('liquid','2025-08'))} at month-end).`,'?carryProduct=liquid#strict-product-tabs'],
   ['Sep 2025 to Feb 2026','Small wrappers come and go',`Avant, Rocksolid, Reservoir and Makina launched; Reservoir peaked at ${ATK(res.peak.eth)} ETH in ${ATMON(res.peak.month)} and emptied. Liquid repaid its dollar loans in October. Lido Earn borrowed ${ATUSD(pdebt('lido-earn','2025-12'))} of USDT and USDC against wstETH by December.`,'library/CARRY-VARIANTS-EXPANSION.html'],

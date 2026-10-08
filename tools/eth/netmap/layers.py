@@ -121,8 +121,8 @@ def carry_parts(labels, prices, snap):
     for r in csv.DictReader(open(os.path.join(OUT, 'carry_accounts_monthly.csv'))):
         if r['product'] == 'avant-aveth':
             acc_v[(r['product'], r['venue'])][r['month']] = (float(r['collateral_eth']), float(r['dollar_debt_usd']))
-        else:  # one entry per account: (collateral ETH, dollar debt, collateral form)
-            acc[r['product']][r['month']].append((float(r['collateral_eth']), float(r['dollar_debt_usd']), r['form']))
+        else:  # one entry per account and collateral form: (collateral ETH, dollar debt, collateral form, account)
+            acc[r['product']][r['month']].append((float(r['collateral_eth']), float(r['dollar_debt_usd']), r['form'], r['account']))
     _, util = onchain_debt()
     rs = json.load(open(os.path.join(D, 'gap_rocksolid_upshift.json')))['rocksolid']
     rrate = {m['month']: m['rETH_rate'] for m in rs['monthlyBook']}
@@ -165,9 +165,12 @@ def carry_parts(labels, prices, snap):
                 # per account: carry when it owes at least $10k; WETH collateral on Aave counted once (less the part of the
                 # WETH reserve that is lent out), staking-token collateral as it is
                 r['method'] = 'archive reads of the product accounts (carry_accounts_monthly.csv); WETH on Aave less the reserve utilization'
-                for c, dbt, fm in acc[cid].get(l, []):
+                owed = collections.defaultdict(float)  # dollar debt per account (an account may post two collateral forms)
+                for c, dbt, fm, a in acc[cid].get(l, []):
+                    owed[a] += dbt
+                for c, dbt, fm, a in acc[cid].get(l, []):
                     k = (1 - util.get(l, util['snapshot'])) if fm == 'B' else 1.0
-                    if dbt >= 10000:
+                    if owed[a] >= 10000:
                         r['carry_lend'] += c * k
                     else:
                         r['other_lend'] += c * k

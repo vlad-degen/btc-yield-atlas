@@ -34,7 +34,9 @@ EXCLUDE = {
     'concrete': ('Concrete Delta weETH (307k ETH) is one principal\'s own position, not a pooled product: a Bitfinex-linked wallet moved its '
                  'Aave position into the vault\'s Safe on 10 Dec 2025 and holds 100% of the shares; it borrows $176M of stablecoins against it '
                  '(research/eth/en/gaps/CONCRETE-DELTA.md). ctwstETH+ (45k ETH) is that Safe\'s own circular holding. Excluded like Avalon in the BTC map; '
-                 'its weETH collateral is counted in money markets (lending split cell A2).'),
+                 'its weETH collateral is counted in money markets (lending split cell A2). Concrete wstETH Plus (vault 0xd57588c7, about $121M, '
+                 '36,440 shares) is the same private mandate: its MultisigStrategy 0x50a7510e sends the assets to the same Delta Safe 0x7ee29373, '
+                 'which holds 100% of the shares (carry sweep 8 Oct, data/eth/carry_discovery.csv); not counted as a product either.'),
     # product-notes review, 7 Oct 2026 (data/eth/netmap/product_notes.csv, flag column)
     'puffer-unifi': 'Same pufETH as the Nucleus row.', 'puffer-vaults': 'Same vaults as the Nucleus row.',
     'swell-earn': 'Same swETH as the Nucleus row.', 'mitosis': 'Same weETH balances as Theo straddle vaults.',
@@ -201,6 +203,18 @@ CARRY = {
     'NEMO ETH Prime': dict(id='nemo-eth-prime', name='NEMO ETH Prime', category='carry', issuer_mix={'lido': 1.0}, replaces={'upshift': 1.0}, snapshot_eth=3037.666),
     'Sentora ETH': dict(id='sentora-eth', name='Sentora ETH', category='carry', issuer_mix={'ether.fi-stake': 1.0}, replaces={'upshift': 1.0}, snapshot_eth=676.67),
     'ZenSats wstETH': dict(id='zensats', name='ZenSats wstETH', category='carry', issuer_mix={'lido': 1.0}),
+    # carry sweep, 8 Oct (data/eth/carry_discovery.csv, research/eth/en/CARRY-DISCOVERY.md): open vaults whose borrower account
+    # posts staking tokens for a dollar loan. No separate book: the row is the account's ETH collateral read month by month
+    # (carry_accounts_monthly.csv), and that collateral leaves the DefiLlama row that books the vault. host_token: the host row
+    # values these vaults in WETH, so the collateral leaves the row's WETH and the staking tokens it holds stay as they are.
+    'YieldNest ynETHx': dict(id='yieldnest-ynethx', name='YieldNest ynETHx', category='carry', issuer_mix={'lido': 1.0},
+                             replaces={'yieldnest': 1.0}, host_token='WETH'),
+    '9Summits Flagship ETH': dict(id='9summits-eth', name='9Summits Flagship ETH', category='carry', issuer_mix={'ether.fi-stake': 1.0},
+                                  replaces={'lagoon': 1.0}, host_token='WETH'),
+    'Yearn yvWETH-2': dict(id='yearn-yvweth2', name='Yearn yvWETH-2', category='carry', issuer_mix={'lido': 1.0},
+                           replaces={'yearn-finance': 1.0}, host_token='WETH'),
+    'DAMM Ethereum Fund': dict(id='damm-eth', name='DAMM Ethereum Fund', category='carry', issuer_mix={'lido': 1.0},
+                               replaces={'lagoon': 1.0}, host_token='WETH'),
 }
 
 
@@ -253,7 +267,10 @@ DEBT_MONTHS = {'liquid-eth': ('liquid', 'loops'), 'lido-earn': ('lido-earn', 'lo
                'rocksolid': ('rocksolid', 'loops'), 'avant-aveth': ('avant', 'staking'), 'yieldbasis-weth': ('yieldbasis', 'farming'),
                'liquity-carry': ('liquity', 'farming'), 'royco-eth': ('royco', 'farming'), 'vesper-vaeth': ('vesper', 'farming'),
                'reservoir-eth': ('reservoir-eth', 'farming'), 'tau-infinifi': ('tau-infinifi', 'farming'), 'zensats': (None, 'farming'),
-               'nemo-eth-prime': ('upshift-nemo-eth-prime', 'farming'), 'sentora-eth': ('upshift-sentora-eth', 'farming')}
+               'nemo-eth-prime': ('upshift-nemo-eth-prime', 'farming'), 'sentora-eth': ('upshift-sentora-eth', 'farming'),
+               # carry sweep, 8 Oct: collateral in months under $10k of dollar debt goes back to the category of the row that books it
+               'yieldnest-ynethx': (None, 'restaking'), '9summits-eth': (None, 'farming'), 'yearn-yvweth2': (None, 'lending'),
+               'damm-eth': (None, 'farming')}
 
 # Loop products whose whole book sits in lending markets (product notes, research/eth/en/dossiers): their positions are
 # inside the leveraged-staking cell of the lending split (ETH borrowed against staking tokens, counted once as collateral),

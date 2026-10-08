@@ -143,7 +143,8 @@ def carry_rows():
         vals[SNAP] = meta.get('snapshot_eth', snap.get(prod))
         out['carry:' + meta['id']] = dict(slug='carry:' + meta['id'], name=meta['name'], dl_category='on-chain',
                                           category=meta['category'], kind=meta.get('kind'), source='on-chain product book (this study)',
-                                          eth=vals, issuer_mix=meta['issuer_mix'], replaces=meta.get('replaces', {}))
+                                          eth=vals, issuer_mix=meta['issuer_mix'], replaces=meta.get('replaces', {}),
+                                          host_token=meta.get('host_token'))
     return out
 
 
@@ -295,9 +296,13 @@ def build():
                     ledger.append((label, slug, i, x, 'staking token held by a counted product' if i != iss else
                                    'ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH'))
             del held[slug]
-        # tokens held by DefiLlama rows, scaled to what is left of the row after steps 2-3
+        # tokens held by DefiLlama rows, scaled to what is left of the row after steps 2-3. A carry book that the row values in
+        # plain WETH (host_token, the carry-sweep vaults) leaves the row's WETH, not its staking tokens, so it does not scale them
         for slug, (gross, hold) in held.items():
-            f = (vals[slug] / gross) if gross else 0.0
+            wt = sum(t for (a, b), t in taken.items() if b == slug and a.startswith('carry:') and carry[a].get('host_token') == 'WETH')
+            f = min(1.0, (vals[slug] + wt) / gross) if gross else 0.0
+            if sum(hold.values()) * f > vals[slug]:  # never take out of issuers more than the row still counts
+                f = vals[slug] / sum(hold.values())
             for iss, x in hold.items():
                 if x * f > 0:
                     sub[iss] += x * f
@@ -341,15 +346,21 @@ def build():
             vals[g] = vals.get(g, 0.0) + x
             loops_meta[g] = DEC.LOOP_VENUES.get(slug, ('other', DEC.LOOP_OTHER))[1]
         prod = sum(parts[c][label]['carry_lend'] + parts[c][label]['other_lend'] for c in parts)
-        mm = L['total'] - L['loops'] - prod
+        # a carry product booked by a lending row (Yearn books yvWETH-2 as WETH): the row's own WETH already counts the
+        # collateral the lending market holds, so the book leaves that row's share of money markets too
+        dup = {d: t for (a, d), t in taken.items() if d in lend_rows and a.startswith('carry:') and t > 0 and d in L['rows']}
+        L['lend_dup'] = sum(dup.values())
+        mm = L['total'] - L['loops'] - prod - L['lend_dup']
         if mm < 0:
             raise SystemExit(f'money markets negative in {label}: {mm:.0f}')
-        room = {s: max(0.0, x['total'] - L['loops_by_row'].get(s, 0.0)) for s, x in L['rows'].items()}
+        room = {s: max(0.0, x['total'] - L['loops_by_row'].get(s, 0.0) - dup.get(s, 0.0)) for s, x in L['rows'].items()}
         rt = sum(room.values())
         for slug in lend_rows:
             vals[slug] = mm * room.get(slug, 0.0) / rt if rt else 0.0
         ledger.append((label, 'lending markets', 'loops', L['loops'], 'loops: ETH borrowed against staking tokens (collateral counted once)'))
         ledger.append((label, 'lending markets', 'carry', prod, "carry products' own lending positions"))
+        for d, t in dup.items():
+            ledger.append((label, d, 'carry', t, 'lending row already books a carry product (its vault shares), taken out of money markets'))
         # 6. take held tokens out of their issuer or product rows
         L['mm_taken'], L['mm_cut'] = 0.0, 0.0
         for iss, x in sub.items():
@@ -445,8 +456,8 @@ def main():
             eth_debt=x['debt_total'], eth_debt_by_row=x['debt'], loops=x['loops'],
             loops_equity_estimate=x['loops'] * LM['loop_equity_share'],
             carry_products_positions=pos, lending_vault_shares_held_by_products=x['mm_taken'],
-            staking_tokens_beyond_issuer_backing=x['mm_cut'],
-            money_markets=x['total'] - x['loops'] - pos - x['mm_taken'] - x['mm_cut'],
+            staking_tokens_beyond_issuer_backing=x['mm_cut'], carry_books_in_lending_rows=x.get('lend_dup', 0.0),
+            money_markets=x['total'] - x['loops'] - pos - x['mm_taken'] - x['mm_cut'] - x.get('lend_dup', 0.0),
             rows={k: {kk: vv for kk, vv in r.items()} for k, r in x['rows'].items()}, carry_products=prod,
             loops_estimated=label != SNAP)
     out_l['carry_methods'] = {c: sorted({parts[c][l]['method'] for l in LABELS if parts[c][l]['method']}) for c in parts}

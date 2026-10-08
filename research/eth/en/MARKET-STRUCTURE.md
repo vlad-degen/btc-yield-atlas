@@ -4,16 +4,16 @@ Financial snapshot: **2 October 2026**. Month-ends October 2024 to September 202
 
 | Category | ETH, 2 Oct 2026 | Share | Oct 2024 | Switch |
 | --- | --- | --- | --- | --- |
-| Staking | 11,901,177 | 74.8% | 9,589,367 | on |
+| Staking | 11,900,735 | 74.7% | 9,589,367 | on |
 | Restaking | 411,377 | 2.6% | 2,513,366 | on |
 | Leveraged staking | 2,885,012 | 18.1% | 2,247,038 | on |
-| Carry | 171,649 | 1.1% | 0 | on |
+| Carry | 178,579 | 1.1% | 0 | on |
 | Fixed yield | 9,203 | 0.1% | 307,465 | on |
 | Basis | 372 | 0.0% | 25,423 | on |
 | Options | 1,664 | 0.0% | 4,786 | on |
 | Credit | 26,682 | 0.2% | 5,051 | on |
-| Farming and pools | 513,618 | 3.2% | 1,583,227 | on |
-| Money markets | 3,231,215 | off | 2,743,062 | off |
+| Farming and pools | 511,356 | 3.2% | 1,583,227 | on |
+| Money markets | 3,223,361 | off | 2,743,062 | off |
 | CDP collateral | 765,192 | off | 1,637,787 | off |
 
 Each product is counted once, where the ETH is used. Staking and restaking are staked and held, not used anywhere else: staking tokens posted in lending markets (5.48M ETH) or held by other products leave their issuers. Leveraged staking is every loop of staked ETH against borrowed ETH on lending markets, private and product (equity about 313k ETH; month-ends estimated from ETH debt). Carry is only the dollar-loan part of products open for deposits; their loops count as leveraged staking. Money markets (ETH and staking tokens posted outside loops and carry products, mostly collateral for dollar loans by unknown wallets) and CDPs are off by default, as in BTC. Binance's wBETH grew by 2.18M ETH, the largest change on the map; restaking fell from 2.51M ETH (October 2024) as weETH and rsETH moved into lending markets, and farming and pools from 1.58M ETH (October 2024) as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv).

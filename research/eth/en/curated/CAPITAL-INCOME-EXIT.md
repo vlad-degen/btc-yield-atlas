@@ -120,7 +120,7 @@ Evidence: [backing and exits](../../../data/eth/backing_exit_closure.json), [all
 
 ## As of 4 October: custody checks (superseded by the counted-once map)
 
-Superseded: the 21.158M ETH protocol-panel total and the conclusion that unique capital could not be measured. The map now counts each product once (15,920,754 ETH in 133 products, [MARKET-STRUCTURE](MARKET-STRUCTURE.md)). The custody checks below remain valid as of the snapshot. The Ethereum custody graph identifies **457,182.304 ETH** in distinct native-ETH holdings and canonical WETH backed by matching native escrow. This is a restricted custody floor in examined yield venues; reserve cash can be idle. It is not a floor for all assets currently earning yield.
+Superseded: the 21.158M ETH protocol-panel total and the conclusion that unique capital could not be measured. The map now counts each product once (15,924,980 ETH in 133 products, [MARKET-STRUCTURE](MARKET-STRUCTURE.md)). The custody checks below remain valid as of the snapshot. The Ethereum custody graph identifies **457,182.304 ETH** in distinct native-ETH holdings and canonical WETH backed by matching native escrow. This is a restricted custody floor in examined yield venues; reserve cash can be idle. It is not a floor for all assets currently earning yield.
 
 | Examined custody group | Physical native ETH / escrow-backed WETH |
 |---|---:|

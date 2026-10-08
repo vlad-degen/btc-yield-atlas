@@ -46,6 +46,12 @@ def run():
             if r['slug'].endswith(':nodebt') and float(r['eth'] or 0) >= 1:
                 nd.setdefault(r['product'].replace(' (months without dollar debt)', ''), []).append(r['month'])
         out['noDebtMonths'] = {k: sorted(v) for k, v in nd.items()}
+    # dollar debt of carry products added on 8 Oct from on-chain account reads (not in economic_questions.json)
+    cam = D / 'netmap' / 'carry_accounts_monthly.csv'
+    if cam.exists():
+        extra = ('yieldnest-ynethx', '9summits-eth', 'yearn-yvweth2', 'damm-eth')
+        out['carryDebtExtraUSD'] = sum(float(r['dollar_debt_usd'] or 0) for r in csv.DictReader(cam.open())
+                                       if r['month'] == '2026-10-02' and r['product'] in extra)
     ls = D / 'lending_split.json'
     if ls.exists():
         L = json.loads(ls.read_text())
