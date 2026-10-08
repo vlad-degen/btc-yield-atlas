@@ -107,7 +107,7 @@ function marketFindings(){const h=$('#m-history-findings');if(h){h.innerHTML='';
 function atLabel(id,text){const t=$(id)?.closest('.tile')?.querySelector('.l');if(t)t.textContent=text;}
 function atHero(){
  if(document.body.dataset.edition!=='reader')return;
- const total=marketTotals(),cy=MS.selected.has('carry')?atCatSize('carry'):null,cr=atRows('carry'),n=MP.products.filter(p=>MS.selected.has(p.category)&&(p.current.eth_ref||0)>=0.5).length;
+ const total=marketTotals(),cy=MS.selected.has('carry')?atCatSize('carry'):null,cr=atRows('carry'),n=MP.products.filter(p=>MS.selected.has(p.category)&&(p.current.usd||0)>=5e4).length;
  const st=MS.selected.has('staking')?atCatSize('staking'):0;
  $('#m-hero-total').textContent=num(total.eth_ref,0);
  $('#m-hero-detail').textContent='Across '+n+' products, each counted once'+(st&&total.eth_ref?'; '+ATPCT(st/total.eth_ref,0)+' is staking.':'.');
@@ -400,21 +400,26 @@ function atCarryProducts(){
 const _atPrevCCR2=carryCategoryRender;carryCategoryRender=function(){_atPrevCCR2();try{atCarryProducts()}catch(e){}};
 const _atPrevFinalCP=atlasFinal;atlasFinal=function(){_atPrevFinalCP();try{atCarryProducts()}catch(e){}};
 
-// ETH in lending markets before counting once, against BTC on the same basis (data: tools/eth/netmap/07_lending_gross.py).
+// ETH and BTC as collateral: what is borrowed against them (data: tools/eth/lending_split, data/eth/lending_split.json).
 function atLendingGross(){
- const G=R.atlasTop5Risk?.lendingGross,host=$('#market-history');if(!G||!host||$('#at-lending-gross'))return;
- const T=G.totals,P=G.eth_usd,B=G.btc,held=T.plain_eth+T.staking_tokens_eth,bUSD=B.total_btc*B.btc_usd;
- const M=v=>(v/1e6).toFixed(2)+'M ETH',U=v=>ATUSD(v*P),pc=(a,b)=>Math.round(a/b*100)+'%';
- const rows=G.protocols.slice(0,8).map(r=>`<tr><td>${esc(r.name)}</td><td class="n">${num(r.staking_tokens_eth/1e3,0)}k</td><td class="n">${num(r.plain_eth/1e3,0)}k</td><td class="n">${num((r.staking_tokens_eth+r.plain_eth)/1e3,0)}k</td><td class="n sub">${num(r.lent_out_eth/1e3,0)}k</td></tr>`).join('');
- host.insertAdjacentHTML('beforebegin',`<div class="panel" id="at-lending-gross"><h3>ETH in lending markets, before counting once</h3>
-<p class="sub">Aave, Spark, Morpho, Compound and ${G.protocols.length-4} more on every chain hold ${M(held)} (${U(held)}) as collateral or unlent supply, on the same basis as the BTC study. The map shows only ${M(T.plain_eth)} of it under Money markets, because the rest is already counted elsewhere.</p>
-<div class="tblwrap"><table><thead><tr><th>Where it is counted</th><th class="n">ETH</th><th class="n">$</th><th class="n">Share</th></tr></thead><tbody>
-<tr><td><b>Staking tokens posted as collateral</b> (weETH, wstETH, rsETH, osETH)<div class="sub">Counted once, at Lido, ether.fi, Kelp and the other issuers, in Staking and Restaking</div></td><td class="n">${M(T.staking_tokens_eth)}</td><td class="n">${U(T.staking_tokens_eth)}</td><td class="n">${pc(T.staking_tokens_eth,held)}</td></tr>
-<tr><td><b>Plain WETH as collateral or not lent</b><div class="sub">Counted nowhere else: this is the Money markets switch (off by default)</div></td><td class="n">${M(T.plain_eth)}</td><td class="n">${U(T.plain_eth)}</td><td class="n">${pc(T.plain_eth,held)}</td></tr>
-<tr><td><b>Total held in lending markets</b></td><td class="n"><b>${M(held)}</b></td><td class="n"><b>${U(held)}</b></td><td class="n">100%</td></tr>
-<tr><td class="sub">Not added: WETH lent out to borrowers<div class="sub">Borrowers mostly stake it and post it back as collateral, so adding it would count the same ETH twice. BTC excludes lent-out BTC the same way.</div></td><td class="n sub">${M(T.lent_out_eth)}</td><td class="n sub">${U(T.lent_out_eth)}</td><td></td></tr>
-</tbody></table></div>
-<p><b>Against BTC on the same basis:</b> ${M(held)} (${U(held)}) of ETH against ${num(B.total_btc/1e3,0)}k BTC (${ATUSD(bUSD)}) in money markets. The difference is the form: ${pc(T.staking_tokens_eth,held)} of the ETH is posted as staking tokens that keep earning while they sit as collateral, so the map counts it under staking; ${pc(B.plain_btc,B.total_btc)} of the BTC is plain wBTC and cbBTC earning about zero, so the BTC map counts it under Money markets.</p>
-<details class="more"><summary>By protocol</summary><div class="body tblwrap"><table><thead><tr><th>Protocol</th><th class="n">Staking tokens</th><th class="n">Plain WETH</th><th class="n">Held</th><th class="n">Lent out</th></tr></thead><tbody>${rows}</tbody></table><p class="note">DefiLlama token breakdown at the 2 October snapshot, ETH at ${ATUSD(P)}. BTC: the BTC study, 20 September 2026, ETH and BTC priced at their own snapshot.</p></div></details></div>`);
+ const L=R.atlasTop5Risk?.lendingSplit,host=$('#market-history');if(!L||!host||$('#at-lending-gross'))return;
+ const side=(k,unit,px)=>{const m=L[k].m,c=x=>m[x]||0,cols=[['2','Stablecoins','var(--at-st)'],['1',k==='eth'?'ETH (loops)':'BTC (loops)','var(--at-lp)'],['3','Other assets','var(--at-ot)'],['4','Nothing','var(--at-no)']];
+  const tot=Object.values(m).reduce((a,b)=>a+b,0);return {k,unit,px,c,cols,tot,usd:tot*px};};
+ const E=side('eth','ETH',L.prices.eth),B=side('btc','BTC',L.prices.btc),max=Math.max(E.usd,B.usd);
+ const pc=(a,b)=>Math.round(a/b*100)+'%',nat=(v,u)=>u==='ETH'?(v>=1e6?(v/1e6).toFixed(2)+'M':num(v/1e3,0)+'k')+' ETH':(v>=1e3?num(v/1e3,1)+'k':num(v,0))+' BTC';
+ const bar=S=>`<div class="atl-row"><div class="atl-lab"><b>${S.unit}</b><span>${ATUSD(S.usd)}</span></div><div class="atl-track" style="width:${(S.usd/max*100).toFixed(1)}%">${S.cols.map(([n,name,col])=>{const a=S.c('A'+n),b=S.c('B'+n),w=(a+b)/S.tot*100;return w<0.3?'':`<div class="atl-seg" style="flex:${w};--c:${col}" title="${name}: ${nat(a+b,S.unit)}, ${ATUSD((a+b)*S.px)}"><i style="flex:${a||0.0001}"></i><i class="pl" style="flex:${b||0.0001}"></i>${w>9?`<em>${pc(a+b,S.tot)}</em>`:''}</div>`}).join('')}</div></div>`;
+ const mat=S=>`<table class="atl-mat"><thead><tr><th>${S.unit} posted as</th>${S.cols.map(([n,name,col])=>`<th class="n"><span class="sw" style="background:${col}"></span>${name}</th>`).join('')}<th class="n">Total</th></tr></thead><tbody>${[['A',S.unit==='ETH'?'Staking tokens (wstETH, weETH, rsETH)':'Yield tokens (LBTC, SolvBTC)'],['B',S.unit==='ETH'?'Plain ETH and WETH':'Plain wrappers (WBTC, cbBTC)']].map(([r,name])=>`<tr><td>${name}</td>${S.cols.map(([n])=>`<td class="n">${nat(S.c(r+n),S.unit)}<div class="sub">${ATUSD(S.c(r+n)*S.px)}</div></td>`).join('')}<td class="n"><b>${nat(['1','2','3','4'].reduce((a,n)=>a+S.c(r+n),0),S.unit)}</b></td></tr>`).join('')}<tr><td><b>Total</b></td>${S.cols.map(([n])=>`<td class="n"><b>${pc(S.c('A'+n)+S.c('B'+n),S.tot)}</b></td>`).join('')}<td class="n"><b>${ATUSD(S.usd)}</b></td></tr></tbody></table>`;
+ const eSt=E.c('A2')+E.c('B2'),bSt=B.c('A2')+B.c('B2'),lp=L.eth.loops;
+ host.insertAdjacentHTML('beforebegin',`<div class="panel" id="at-lending-gross"><h3>ETH and BTC as collateral: what is borrowed against them</h3>
+<p class="sub">Every ETH and BTC in Aave, Spark, Morpho, Compound, Fluid and the other lending markets, split by what its owner borrows against it. Accounts over $500k read one by one; ETH on 2 October, BTC on 20 September.</p>
+<div class="atl-cards">
+<div><div class="v">${ATUSD(L.eth.stable.debt_usd)} <span>vs</span> ${ATUSD(L.btc.stable.debt_usd)}</div><div class="l">stablecoins borrowed against ETH and against BTC</div><div class="s">Almost the same dollar demand on both chains.</div></div>
+<div><div class="v">${pc(eSt,E.tot)} <span>vs</span> ${pc(bSt,B.tot)}</div><div class="l">of the collateral backs dollar loans</div><div class="s">The rest of the ETH is mostly loops; BTC has almost none.</div></div>
+<div><div class="v">${nat(lp.collateral_native,'ETH')}</div><div class="l">of ETH collateral is looped against ETH debt</div><div class="s">${nat(lp.own_debt_native,'ETH')} borrowed, so the owners' own capital is only ${nat(lp.equity_native,'ETH')}, about ${(lp.collateral_native/lp.equity_native).toFixed(1)}x leverage.</div></div>
+</div>
+<div class="atl-bars">${bar(E)}${bar(B)}<div class="atl-key">${E.cols.map(([n,name,col])=>`<span><i style="background:${col}"></i>${name.replace(' (loops)','')}</span>`).join('')}<span><i class="hatch"></i>striped: plain ETH or BTC; solid: staking or yield tokens</span></div></div>
+<p><b>The difference is what holders do with the collateral, not how much of it there is.</b> ${pc(bSt,B.tot)} of BTC in lending markets backs stablecoin loans. ETH splits in two: ${pc(eSt,E.tot)} backs dollar loans and ${pc(E.c('A1')+E.c('B1'),E.tot)} is staked ETH looped against borrowed ETH to multiply the staking yield. Dollar demand is concentrated on ETH: the 38 wallets over $20M owe 45% of it and the top 20 accounts hold about half the collateral, while pooled carry products owe under 5%. On BTC the top 20 hold 26%; Coinbase's cbBTC loans on Base are 22% of the BTC that backs dollar loans.</p>
+<div class="atl-two"><div><h4>ETH, 2 October 2026</h4><div class="tblwrap">${mat(E)}</div></div><div><h4>BTC, 20 September 2026</h4><div class="tblwrap">${mat(B)}</div></div></div>
+<p class="note"><b>Counted once, and how it ties to the map.</b> Pool WETH is fungible: ${nat(L.eth.lent.B,'ETH')} of WETH supplied to Aave and Spark is lent out, mostly to loopers, and is shown once, as the debt inside the loops column, not again as collateral. Staking tokens in this table are already counted at their issuers in Staking and Restaking; plain ETH and WETH is the Money markets switch. The loops' own capital (${nat(lp.equity_native,'ETH')}) is private looping on Aave and Spark; the Leveraged staking category on the map counts only loop products. Long tail beyond the read venues is estimated (3% of ETH, 2% of BTC). <a href="library/LENDING-SPLIT.html">Method and every venue</a>.</p></div>`);
 }
 const _atPrevFinalLG=atlasFinal;atlasFinal=function(){_atPrevFinalLG();try{atLendingGross()}catch(e){}};

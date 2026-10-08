@@ -46,6 +46,12 @@ def run():
             if r['slug'].endswith(':nodebt') and float(r['eth'] or 0) >= 1:
                 nd.setdefault(r['product'].replace(' (months without dollar debt)', ''), []).append(r['month'])
         out['noDebtMonths'] = {k: sorted(v) for k, v in nd.items()}
+    ls = D / 'lending_split.json'
+    if ls.exists():
+        L = json.loads(ls.read_text())
+        side = lambda x: {'m': x['matrix_counted_once_with_long_tail_native'], 'loops': x['same_asset_loops'],
+                          'stable': x['stablecoin_loans'], 'lent': x['lent_out_native']}
+        out['lendingSplit'] = {'prices': L['prices_usd'], 'snapshots': L['snapshots'], 'eth': side(L['eth']), 'btc': side(L['btc'])}
     lg = D / 'netmap' / 'lending_gross.json'
     if lg.exists():
         out['lendingGross'] = json.loads(lg.read_text())

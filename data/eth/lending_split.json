@@ -1,0 +1,4323 @@
+{
+ "snapshots": {
+  "eth": "2026-10-02 23:59:59 UTC, Ethereum block 26,108,081 (L2: last block at or before)",
+  "btc": "2026-09-20 12:00:00 UTC, Ethereum block 26,018,583 (L2: last block at or before)"
+ },
+ "prices_usd": {
+  "eth": 2669.39,
+  "btc": 81178.0
+ },
+ "large_account_usd": 500000,
+ "cells": {
+  "A": "staking / yield tokens",
+  "B": "plain ETH/WETH or plain BTC wrappers",
+  "1": "borrowed the same asset (ETH against ETH, BTC against BTC)",
+  "2": "stablecoins",
+  "3": "other assets",
+  "4": "nothing (no debt, or supply not lent out)"
+ },
+ "eth": {
+  "venues": [
+   {
+    "venue": "aave-arbitrum",
+    "chain": 42161,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 50334.3,
+     "A2": 31471.12,
+     "A3": 1265.32,
+     "A4": 1934.96,
+     "B1": 2812.73,
+     "B2": 79571.43,
+     "B3": 2008.95,
+     "B4": 10637.37
+    },
+    "matrix_counted_once_native": {
+     "A1": 50299.51,
+     "A2": 31351.48,
+     "A3": 1261.23,
+     "A4": 1929.14,
+     "B1": 1107.62,
+     "B2": 31334.2,
+     "B3": 791.1,
+     "B4": 4188.86
+    },
+    "matrix_usd": {
+     "A1": 134361874,
+     "A2": 84008694,
+     "A3": 3377621,
+     "A4": 5165167,
+     "B1": 7508284,
+     "B2": 212407167,
+     "B3": 5362679,
+     "B4": 28395283
+    },
+    "measured_accounts_native": {
+     "A1": 46968.98,
+     "A2": 20599.37,
+     "A3": 746.56,
+     "A4": 781.43,
+     "B1": 1812.97,
+     "B2": 57991.92,
+     "B3": 1590.6,
+     "B4": 7596.58
+    },
+    "estimated_native": {
+     "A1": 3365.32,
+     "A2": 10871.75,
+     "A3": 518.75,
+     "A4": 1153.53,
+     "B1": 999.76,
+     "B2": 21579.51,
+     "B3": 418.36,
+     "B4": 3040.79
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 1934.96,
+     "B": 10637.37
+    },
+    "lent_out_native": {
+     "A": 153.28,
+     "B": 57608.71
+    },
+    "collateral_total_native": {
+     "A": 85005.7,
+     "B": 95030.48
+    },
+    "coverage_read": {
+     "A": 0.8128437038430703,
+     "B": 0.7259993168082117
+    },
+    "large_accounts": 86,
+    "large_accounts_share_of_collateral": 0.5036849516917868,
+    "stable_debt_attributed_usd": 111130601,
+    "stable_debt_attributed_read_usd": 78653609,
+    "own_debt_attributed_native": 46826.08,
+    "estimate_notes": [
+     "A: 15909 unread (18.7%) spread by the mix of read small accounts",
+     "B: 26038 unread (27.4%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-base",
+    "chain": 8453,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 72466.42,
+     "A2": 22040.69,
+     "A3": 259.84,
+     "A4": 1675.78,
+     "B1": 3533.26,
+     "B2": 66198.02,
+     "B3": 1947.44,
+     "B4": 13692.37
+    },
+    "matrix_counted_once_native": {
+     "A1": 72193.09,
+     "A2": 21713.19,
+     "A3": 255.03,
+     "A4": 1636.81,
+     "B1": 611.81,
+     "B2": 11462.69,
+     "B3": 337.21,
+     "B4": 2370.94
+    },
+    "matrix_usd": {
+     "A1": 193441149,
+     "A2": 58835187,
+     "A3": 693627,
+     "A4": 4473309,
+     "B1": 9431653,
+     "B2": 176708322,
+     "B3": 5198472,
+     "B4": 36550288
+    },
+    "measured_accounts_native": {
+     "A1": 71569.64,
+     "A2": 18852.55,
+     "A3": 188.78,
+     "A4": 1344.77,
+     "B1": 2712.01,
+     "B2": 54323.03,
+     "B3": 1451.02,
+     "B4": 10959.73
+    },
+    "estimated_native": {
+     "A1": 896.79,
+     "A2": 3188.14,
+     "A3": 71.06,
+     "A4": 331.01,
+     "B1": 821.25,
+     "B2": 11874.98,
+     "B3": 496.42,
+     "B4": 2732.65
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 1675.78,
+     "B": 13692.37
+    },
+    "lent_out_native": {
+     "A": 655.94,
+     "B": 70588.44
+    },
+    "collateral_total_native": {
+     "A": 96442.73,
+     "B": 85371.09
+    },
+    "coverage_read": {
+     "A": 0.9534749425457857,
+     "B": 0.8134579341962291
+    },
+    "large_accounts": 67,
+    "large_accounts_share_of_collateral": 0.6776759414413964,
+    "stable_debt_attributed_usd": 74873369,
+    "stable_debt_attributed_read_usd": 62091828,
+    "own_debt_attributed_native": 66914.24,
+    "estimate_notes": [
+     "A: 4487 unread (4.7%) spread by the mix of read small accounts",
+     "B: 15925 unread (18.7%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-core",
+    "chain": 1,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 1895948.01,
+     "A2": 1077475.73,
+     "A3": 13534.87,
+     "A4": 54917.51,
+     "B1": 20973.87,
+     "B2": 1724730.7,
+     "B3": 10564.3,
+     "B4": 327904.53
+    },
+    "matrix_counted_once_native": {
+     "A1": 1891315.32,
+     "A2": 1059889.39,
+     "A3": 13241.54,
+     "A4": 53680.88,
+     "B1": 3246.2,
+     "B2": 266942.69,
+     "B3": 1635.07,
+     "B4": 50750.95
+    },
+    "matrix_usd": {
+     "A1": 5061024671,
+     "A2": 2876202936,
+     "A3": 36129839,
+     "A4": 146596260,
+     "B1": 55987429,
+     "B2": 4603978893,
+     "B3": 28200244,
+     "B4": 875305072
+    },
+    "measured_accounts_native": {
+     "A1": 1895817.15,
+     "A2": 1076639.09,
+     "A3": 13506.69,
+     "A4": 54841.3,
+     "B1": 17002.83,
+     "B2": 1612755.72,
+     "B3": 8785.22,
+     "B4": 301882.7
+    },
+    "estimated_native": {
+     "A1": 130.86,
+     "A2": 836.64,
+     "A3": 28.18,
+     "A4": 76.21,
+     "B1": 3971.03,
+     "B2": 111974.99,
+     "B3": 1779.08,
+     "B4": 26021.83
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 54917.51,
+     "B": 327904.53
+    },
+    "lent_out_native": {
+     "A": 23758.26,
+     "B": 1761598.49
+    },
+    "collateral_total_native": {
+     "A": 3041876.12,
+     "B": 2084173.4
+    },
+    "coverage_read": {
+     "A": 0.9996476229635669,
+     "B": 0.9310292818747203
+    },
+    "large_accounts": 1475,
+    "large_accounts_share_of_collateral": 0.9170415229686124,
+    "stable_debt_attributed_usd": 2636860007,
+    "stable_debt_attributed_read_usd": 2530704922,
+    "own_debt_attributed_native": 1752901.11,
+    "estimate_notes": [
+     "A: 1072 unread (0.0%) spread by the mix of read small accounts",
+     "B: 143747 unread (6.9%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-etherfi",
+    "chain": 1,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 3.24,
+     "A2": 1.08,
+     "A3": 0.03,
+     "A4": 0.06,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_counted_once_native": {
+     "A1": 3.24,
+     "A2": 1.08,
+     "A3": 0.03,
+     "A4": 0.06,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_usd": {
+     "A1": 8654,
+     "A2": 2880,
+     "A3": 68,
+     "A4": 155,
+     "B1": 0,
+     "B2": 0,
+     "B3": 0,
+     "B4": 0
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 3.24,
+     "A2": 1.08,
+     "A3": 0.03,
+     "A4": 0.06
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.06,
+     "B": 0.0
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 4.4,
+     "B": 0.0
+    },
+    "coverage_read": {
+     "A": 0.0,
+     "B": null
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "not enumerated (explorer holder pages unavailable): whole pool spread by the mix of the read Aave Base and Arbitrum accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-gnosis",
+    "chain": 100,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 10735.49,
+     "A2": 3572.98,
+     "A3": 84.71,
+     "A4": 192.56,
+     "B1": 28.94,
+     "B2": 718.39,
+     "B3": 19.45,
+     "B4": 118.69
+    },
+    "matrix_counted_once_native": {
+     "A1": 10735.49,
+     "A2": 3572.98,
+     "A3": 84.71,
+     "A4": 192.56,
+     "B1": 28.94,
+     "B2": 718.39,
+     "B3": 19.45,
+     "B4": 118.69
+    },
+    "matrix_usd": {
+     "A1": 28657215,
+     "A2": 9537669,
+     "A3": 226123,
+     "A4": 514017,
+     "B1": 77259,
+     "B2": 1917655,
+     "B3": 51932,
+     "B4": 316829
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 10735.49,
+     "A2": 3572.98,
+     "A3": 84.71,
+     "A4": 192.56,
+     "B1": 28.94,
+     "B2": 718.39,
+     "B3": 19.45,
+     "B4": 118.69
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 192.56,
+     "B": 118.69
+    },
+    "lent_out_native": {
+     "A": 2.55,
+     "B": 528.9
+    },
+    "collateral_total_native": {
+     "A": 14585.74,
+     "B": 885.47
+    },
+    "coverage_read": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "not enumerated (explorer holder pages unavailable): whole pool spread by the mix of the read Aave Base and Arbitrum accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-linea",
+    "chain": 59144,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 1753.02,
+     "A2": 583.44,
+     "A3": 13.83,
+     "A4": 31.44,
+     "B1": 88.06,
+     "B2": 2185.86,
+     "B3": 59.2,
+     "B4": 361.14
+    },
+    "matrix_counted_once_native": {
+     "A1": 1753.02,
+     "A2": 583.44,
+     "A3": 13.83,
+     "A4": 31.44,
+     "B1": 88.06,
+     "B2": 2185.86,
+     "B3": 59.2,
+     "B4": 361.14
+    },
+    "matrix_usd": {
+     "A1": 4679488,
+     "A2": 1557423,
+     "A3": 36924,
+     "A4": 83935,
+     "B1": 235079,
+     "B2": 5834904,
+     "B3": 158016,
+     "B4": 964024
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 1753.02,
+     "A2": 583.44,
+     "A3": 13.83,
+     "A4": 31.44,
+     "B1": 88.06,
+     "B2": 2185.86,
+     "B3": 59.2,
+     "B4": 361.14
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 31.44,
+     "B": 361.14
+    },
+    "lent_out_native": {
+     "A": 2.38,
+     "B": 1971.85
+    },
+    "collateral_total_native": {
+     "A": 2381.73,
+     "B": 2694.26
+    },
+    "coverage_read": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "not enumerated (explorer holder pages unavailable): whole pool spread by the mix of the read Aave Base and Arbitrum accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-optimism",
+    "chain": 10,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 7974.22,
+     "A2": 2653.97,
+     "A3": 62.92,
+     "A4": 143.03,
+     "B1": 278.41,
+     "B2": 6910.37,
+     "B3": 187.14,
+     "B4": 1141.71
+    },
+    "matrix_counted_once_native": {
+     "A1": 7974.22,
+     "A2": 2653.97,
+     "A3": 62.92,
+     "A4": 143.03,
+     "B1": 278.41,
+     "B2": 6910.37,
+     "B3": 187.14,
+     "B4": 1141.71
+    },
+    "matrix_usd": {
+     "A1": 21286297,
+     "A2": 7084487,
+     "A3": 167962,
+     "A4": 381807,
+     "B1": 743178,
+     "B2": 18446472,
+     "B3": 499552,
+     "B4": 3047665
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 7974.22,
+     "A2": 2653.97,
+     "A3": 62.92,
+     "A4": 143.03,
+     "B1": 278.41,
+     "B2": 6910.37,
+     "B3": 187.14,
+     "B4": 1141.71
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 143.03,
+     "B": 1141.71
+    },
+    "lent_out_native": {
+     "A": 59.58,
+     "B": 6274.08
+    },
+    "collateral_total_native": {
+     "A": 10834.14,
+     "B": 8517.63
+    },
+    "coverage_read": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "not enumerated (explorer holder pages unavailable): whole pool spread by the mix of the read Aave Base and Arbitrum accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-polygon",
+    "chain": 137,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 3565.45,
+     "A2": 1186.65,
+     "A3": 28.13,
+     "A4": 63.95,
+     "B1": 437.83,
+     "B2": 10867.31,
+     "B3": 294.3,
+     "B4": 1795.46
+    },
+    "matrix_counted_once_native": {
+     "A1": 3565.45,
+     "A2": 1186.65,
+     "A3": 28.13,
+     "A4": 63.95,
+     "B1": 437.83,
+     "B2": 10867.31,
+     "B3": 294.3,
+     "B4": 1795.46
+    },
+    "matrix_usd": {
+     "A1": 9517570,
+     "A2": 3167629,
+     "A3": 75100,
+     "A4": 170714,
+     "B1": 1168728,
+     "B2": 29009093,
+     "B3": 785600,
+     "B4": 4792786
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 3565.45,
+     "A2": 1186.65,
+     "A3": 28.13,
+     "A4": 63.95,
+     "B1": 437.83,
+     "B2": 10867.31,
+     "B3": 294.3,
+     "B4": 1795.46
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 63.95,
+     "B": 1795.46
+    },
+    "lent_out_native": {
+     "A": 7.4,
+     "B": 3380.4
+    },
+    "collateral_total_native": {
+     "A": 4844.18,
+     "B": 13394.9
+    },
+    "coverage_read": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "not enumerated (explorer holder pages unavailable): whole pool spread by the mix of the read Aave Base and Arbitrum accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-prime",
+    "chain": 1,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 34961.23,
+     "A2": 48503.71,
+     "A3": 0.0,
+     "A4": 4445.64,
+     "B1": 66.31,
+     "B2": 13104.9,
+     "B3": 0.0,
+     "B4": 5306.62
+    },
+    "matrix_counted_once_native": {
+     "A1": 30913.27,
+     "A2": 36668.83,
+     "A3": 0.0,
+     "A4": 3424.72,
+     "B1": 10.85,
+     "B2": 2144.55,
+     "B3": 0.0,
+     "B4": 868.4
+    },
+    "matrix_usd": {
+     "A1": 93325148,
+     "A2": 129475329,
+     "A3": 0,
+     "A4": 11867151,
+     "B1": 177013,
+     "B2": 34982093,
+     "B3": 0,
+     "B4": 14165441
+    },
+    "measured_accounts_native": {
+     "A1": 34959.76,
+     "A2": 48500.27,
+     "A3": 0.0,
+     "A4": 4444.35,
+     "B1": 65.83,
+     "B2": 13096.54,
+     "B3": 0.0,
+     "B4": 5300.71
+    },
+    "estimated_native": {
+     "A1": 1.47,
+     "A2": 3.45,
+     "A4": 1.29,
+     "B1": 0.49,
+     "B2": 8.36,
+     "B4": 5.91
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 4445.64,
+     "B": 5306.62
+    },
+    "lent_out_native": {
+     "A": 16902.76,
+     "B": 15454.03
+    },
+    "collateral_total_native": {
+     "A": 87910.58,
+     "B": 18477.83
+    },
+    "coverage_read": {
+     "A": 0.9999293538933949,
+     "B": 0.9992013861854887
+    },
+    "large_accounts": 45,
+    "large_accounts_share_of_collateral": 0.9480177980927534,
+    "stable_debt_attributed_usd": 51155970,
+    "stable_debt_attributed_read_usd": 51146164,
+    "own_debt_attributed_native": 32358.4,
+    "estimate_notes": [
+     "A: 6 unread (0.0%) spread by the mix of read small accounts",
+     "B: 15 unread (0.1%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "spark",
+    "chain": 1,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 557970.29,
+     "A2": 836623.06,
+     "A3": 7174.83,
+     "A4": 4752.24,
+     "B1": 91.64,
+     "B2": 486700.61,
+     "B3": 805.31,
+     "B4": 120728.14
+    },
+    "matrix_counted_once_native": {
+     "A1": 557968.17,
+     "A2": 836620.4,
+     "A3": 7174.81,
+     "A4": 4752.23,
+     "B1": 17.5,
+     "B2": 92921.32,
+     "B3": 153.75,
+     "B4": 23049.52
+    },
+    "matrix_usd": {
+     "A1": 1489440322,
+     "A2": 2233273235,
+     "A3": 19152432,
+     "A4": 12685576,
+     "B1": 244615,
+     "B2": 1299193732,
+     "B3": 2149682,
+     "B4": 322270477
+    },
+    "measured_accounts_native": {
+     "A1": 557970.18,
+     "A2": 836621.93,
+     "A3": 7174.82,
+     "A4": 4752.22,
+     "B1": 91.18,
+     "B2": 486635.87,
+     "B3": 804.06,
+     "B4": 120721.47
+    },
+    "estimated_native": {
+     "A1": 0.11,
+     "A2": 1.13,
+     "A3": 0.02,
+     "A4": 0.02,
+     "B1": 0.45,
+     "B2": 64.74,
+     "B3": 1.25,
+     "B4": 6.67
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 4752.24,
+     "B": 120728.14
+    },
+    "lent_out_native": {
+     "A": 4.81,
+     "B": 492183.6
+    },
+    "collateral_total_native": {
+     "A": 1406520.43,
+     "B": 608325.69
+    },
+    "coverage_read": {
+     "A": 0.9999990926275089,
+     "B": 0.9998798232367527
+    },
+    "large_accounts": 250,
+    "large_accounts_share_of_collateral": 0.9887305665226213,
+    "stable_debt_attributed_usd": 1158884684,
+    "stable_debt_attributed_read_usd": 1158826999,
+    "own_debt_attributed_native": 492077.86,
+    "estimate_notes": [
+     "A: 1 unread (0.0%) spread by the mix of read small accounts",
+     "B: 73 unread (0.0%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-v4",
+    "chain": 1,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 41437.55,
+     "A2": 34774.92,
+     "A3": 73.18,
+     "A4": 1490.14,
+     "B1": 66.75,
+     "B2": 34903.39,
+     "B3": 25.15,
+     "B4": 10037.83
+    },
+    "matrix_counted_once_native": {
+     "A1": 41437.55,
+     "A2": 34774.92,
+     "A3": 73.18,
+     "A4": 1490.14,
+     "B1": 9.47,
+     "B2": 4951.45,
+     "B3": 3.57,
+     "B4": 1423.98
+    },
+    "matrix_usd": {
+     "A1": 110612977,
+     "A2": 92827826,
+     "A3": 195358,
+     "A4": 3977757,
+     "B1": 178190,
+     "B2": 93170747,
+     "B3": 67134,
+     "B4": 26794873
+    },
+    "measured_accounts_native": {
+     "A1": 41437.55,
+     "A2": 34774.92,
+     "A3": 73.18,
+     "A4": 1490.14,
+     "B1": 66.75,
+     "B2": 34903.39,
+     "B3": 25.15,
+     "B4": 10037.83
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 1490.14,
+     "B": 10037.83
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 38644.65
+    },
+    "collateral_total_native": {
+     "A": 77775.79,
+     "B": 45033.11
+    },
+    "coverage_read": {
+     "all": 1.0
+    },
+    "large_accounts": 94,
+    "large_accounts_share_of_collateral": 0.8261109353530948,
+    "stable_debt_attributed_usd": 76185448,
+    "stable_debt_attributed_read_usd": 76185448,
+    "own_debt_attributed_native": 38631.06,
+    "estimate_notes": [],
+    "notes": [
+     "lent out = family debt of accounts that also hold family collateral (borrowers against other collateral not read)"
+    ]
+   },
+   {
+    "venue": "morpho",
+    "chain": 1,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 59459.15,
+     "A2": 324746.15,
+     "A3": 52.41,
+     "A4": 7849.53,
+     "B1": 0.0,
+     "B2": 6946.0,
+     "B3": 43.76,
+     "B4": 50296.26
+    },
+    "matrix_counted_once_native": {
+     "A1": 59459.15,
+     "A2": 324746.15,
+     "A3": 52.41,
+     "A4": 1901.78,
+     "B1": 0.0,
+     "B2": 6946.0,
+     "B3": 43.76,
+     "B4": 4600.63
+    },
+    "matrix_usd": {
+     "A1": 158719672,
+     "A2": 866874124,
+     "A3": 139905,
+     "A4": 20953467,
+     "B1": 0,
+     "B2": 18541574,
+     "B3": 116801,
+     "B4": 134260342
+    },
+    "measured_accounts_native": {
+     "A1": 59459.15,
+     "A2": 324746.15,
+     "A3": 52.41,
+     "A4": 961.75,
+     "B1": 0.0,
+     "B2": 6946.0,
+     "B3": 43.76,
+     "B4": 0.28
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 6887.78,
+     "B": 50295.98
+    },
+    "cell4_gross_native": {
+     "A": 7849.53,
+     "B": 50296.26
+    },
+    "lent_out_native": {
+     "A": 5947.75,
+     "B": 45695.63
+    },
+    "collateral_total_native": {
+     "A": 385219.47,
+     "B": 6990.03
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 126,
+    "large_accounts_share_of_collateral": 0.9377780060841093,
+    "stable_debt_attributed_usd": 361270248,
+    "stable_debt_attributed_read_usd": 361270248,
+    "own_debt_attributed_native": 51537.49,
+    "estimate_notes": [],
+    "notes": [
+     "dropped 4 native units of unpriced look-alike collateral"
+    ]
+   },
+   {
+    "venue": "morpho",
+    "chain": 10,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 1001.89,
+     "A2": 4.28,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 18.99,
+     "B3": 0.0,
+     "B4": 1003.11
+    },
+    "matrix_counted_once_native": {
+     "A1": 1001.89,
+     "A2": 4.28,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 18.99,
+     "B3": 0.0,
+     "B4": 116.01
+    },
+    "matrix_usd": {
+     "A1": 2674433,
+     "A2": 11429,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 50703,
+     "B3": 0,
+     "B4": 2677687
+    },
+    "measured_accounts_native": {
+     "A1": 1001.89,
+     "A2": 4.28,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 18.99,
+     "B3": 0.0,
+     "B4": 0.01
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 1003.1
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 1003.11
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 887.1
+    },
+    "collateral_total_native": {
+     "A": 1006.17,
+     "B": 19.0
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 1,
+    "large_accounts_share_of_collateral": 0.8153737974354645,
+    "stable_debt_attributed_usd": 15997,
+    "stable_debt_attributed_read_usd": 15997,
+    "own_debt_attributed_native": 887.1,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 130,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 276.66,
+     "A2": 0.48,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 28.23,
+     "B3": 0.0,
+     "B4": 337.17
+    },
+    "matrix_counted_once_native": {
+     "A1": 276.66,
+     "A2": 0.48,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 28.23,
+     "B3": 0.0,
+     "B4": 74.05
+    },
+    "matrix_usd": {
+     "A1": 738511,
+     "A2": 1270,
+     "A3": 0,
+     "A4": 9,
+     "B1": 0,
+     "B2": 75360,
+     "B3": 0,
+     "B4": 900035
+    },
+    "measured_accounts_native": {
+     "A1": 276.66,
+     "A2": 0.48,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 28.23,
+     "B3": 0.0,
+     "B4": 0.57
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 336.6
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 337.17
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 263.12
+    },
+    "collateral_total_native": {
+     "A": 277.14,
+     "B": 28.8
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 1,
+    "large_accounts_share_of_collateral": 0.8016607355479362,
+    "stable_debt_attributed_usd": 29872,
+    "stable_debt_attributed_read_usd": 29872,
+    "own_debt_attributed_native": 263.12,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 137,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.42,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 51.65,
+     "B3": 21.49,
+     "B4": 91.01
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.42,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 51.65,
+     "B3": 21.49,
+     "B4": 90.74
+    },
+    "matrix_usd": {
+     "A1": 1134,
+     "A2": 0,
+     "A3": 0,
+     "A4": 1,
+     "B1": 0,
+     "B2": 137866,
+     "B3": 57377,
+     "B4": 242951
+    },
+    "measured_accounts_native": {
+     "A1": 0.42,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 51.65,
+     "B3": 21.49,
+     "B4": 0.22
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 90.8
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 91.01
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.28
+    },
+    "collateral_total_native": {
+     "A": 0.43,
+     "B": 73.36
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 46154,
+    "stable_debt_attributed_read_usd": 46154,
+    "own_debt_attributed_native": 0.28,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 143,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 14532.02,
+     "A2": 10.77,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 22.65,
+     "B3": 0.0,
+     "B4": 14593.46
+    },
+    "matrix_counted_once_native": {
+     "A1": 14532.02,
+     "A2": 10.77,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 22.65,
+     "B3": 0.0,
+     "B4": 1505.53
+    },
+    "matrix_usd": {
+     "A1": 38791629,
+     "A2": 28761,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 60451,
+     "B3": 0,
+     "B4": 38955629
+    },
+    "measured_accounts_native": {
+     "A1": 14532.02,
+     "A2": 10.77,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 22.65,
+     "B3": 0.0,
+     "B4": 0.33
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 14593.13
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 14593.46
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 13087.93
+    },
+    "collateral_total_native": {
+     "A": 14542.79,
+     "B": 22.97
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 8,
+    "large_accounts_share_of_collateral": 0.9737377788352957,
+    "stable_debt_attributed_usd": 39379,
+    "stable_debt_attributed_read_usd": 39379,
+    "own_debt_attributed_native": 13087.93,
+    "estimate_notes": [],
+    "notes": [
+     "dropped 100020 native units of unpriced look-alike collateral"
+    ]
+   },
+   {
+    "venue": "morpho",
+    "chain": 42161,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.44,
+     "A2": 890.42,
+     "A3": 0.0,
+     "A4": 12.53,
+     "B1": 0.0,
+     "B2": 180.66,
+     "B3": 0.0,
+     "B4": 0.95
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.44,
+     "A2": 890.42,
+     "A3": 0.0,
+     "A4": 12.53,
+     "B1": 0.0,
+     "B2": 180.66,
+     "B3": 0.0,
+     "B4": 0.59
+    },
+    "matrix_usd": {
+     "A1": 1182,
+     "A2": 2376868,
+     "A3": 0,
+     "A4": 33448,
+     "B1": 0,
+     "B2": 482251,
+     "B3": 0,
+     "B4": 2525
+    },
+    "measured_accounts_native": {
+     "A1": 0.44,
+     "A2": 890.42,
+     "A3": 0.0,
+     "A4": 12.53,
+     "B1": 0.0,
+     "B2": 180.66,
+     "B3": 0.0,
+     "B4": 0.55
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.4
+    },
+    "cell4_gross_native": {
+     "A": 12.53,
+     "B": 0.95
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.36
+    },
+    "collateral_total_native": {
+     "A": 903.39,
+     "B": 181.21
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 1274529,
+    "stable_debt_attributed_read_usd": 1274529,
+    "own_debt_attributed_native": 0.36,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 480,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 490.97,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 2543.75,
+     "B3": 0.52,
+     "B4": 1503.34
+    },
+    "matrix_counted_once_native": {
+     "A1": 490.97,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 2543.75,
+     "B3": 0.52,
+     "B4": 1031.3
+    },
+    "matrix_usd": {
+     "A1": 1310600,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 6790259,
+     "B3": 1384,
+     "B4": 4013013
+    },
+    "measured_accounts_native": {
+     "A1": 490.97,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 2543.75,
+     "B3": 0.52,
+     "B4": 1.6
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 1501.74
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 1503.34
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 472.04
+    },
+    "collateral_total_native": {
+     "A": 490.97,
+     "B": 2545.87
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 4,
+    "large_accounts_share_of_collateral": 0.37905670190272917,
+    "stable_debt_attributed_usd": 3662563,
+    "stable_debt_attributed_read_usd": 3662563,
+    "own_debt_attributed_native": 449.11,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 747474,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 2101.25,
+     "A2": 2341.15,
+     "A3": 0.0,
+     "A4": 0.51,
+     "B1": 0.0,
+     "B2": 665.82,
+     "B3": 0.0,
+     "B4": 2095.9
+    },
+    "matrix_counted_once_native": {
+     "A1": 2101.25,
+     "A2": 2341.15,
+     "A3": 0.0,
+     "A4": 0.51,
+     "B1": 0.0,
+     "B2": 665.82,
+     "B3": 0.0,
+     "B4": 285.5
+    },
+    "matrix_usd": {
+     "A1": 5609062,
+     "A2": 6249449,
+     "A3": 0,
+     "A4": 1368,
+     "B1": 0,
+     "B2": 1777323,
+     "B3": 0,
+     "B4": 5594774
+    },
+    "measured_accounts_native": {
+     "A1": 2101.25,
+     "A2": 2341.15,
+     "A3": 0.0,
+     "A4": 0.51,
+     "B1": 0.0,
+     "B2": 665.82,
+     "B3": 0.0,
+     "B4": 2.65
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 2093.25
+    },
+    "cell4_gross_native": {
+     "A": 0.51,
+     "B": 2095.9
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 1810.4
+    },
+    "collateral_total_native": {
+     "A": 4442.92,
+     "B": 668.46
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 8,
+    "large_accounts_share_of_collateral": 0.8560920872285177,
+    "stable_debt_attributed_usd": 2927578,
+    "stable_debt_attributed_read_usd": 2927578,
+    "own_debt_attributed_native": 1802.38,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 8453,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 8008.97,
+     "A2": 19615.52,
+     "A3": 163.48,
+     "A4": 3234.66,
+     "B1": 0.0,
+     "B2": 80514.6,
+     "B3": 0.07,
+     "B4": 8712.96
+    },
+    "matrix_counted_once_native": {
+     "A1": 8008.97,
+     "A2": 19615.52,
+     "A3": 163.48,
+     "A4": 3224.3,
+     "B1": 0.0,
+     "B2": 80514.6,
+     "B3": 0.07,
+     "B4": 1522.08
+    },
+    "matrix_usd": {
+     "A1": 21379072,
+     "A2": 52361466,
+     "A3": 436402,
+     "A4": 8634578,
+     "B1": 0,
+     "B2": 214924856,
+     "B3": 176,
+     "B4": 23258283
+    },
+    "measured_accounts_native": {
+     "A1": 8008.97,
+     "A2": 19615.52,
+     "A3": 163.48,
+     "A4": 96.93,
+     "B1": 0.0,
+     "B2": 80514.6,
+     "B3": 0.07,
+     "B4": 249.49
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 3137.73,
+     "B": 8463.47
+    },
+    "cell4_gross_native": {
+     "A": 3234.66,
+     "B": 8712.96
+    },
+    "lent_out_native": {
+     "A": 10.36,
+     "B": 7190.88
+    },
+    "collateral_total_native": {
+     "A": 27884.9,
+     "B": 80764.15
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 92,
+    "large_accounts_share_of_collateral": 0.40229054352264054,
+    "stable_debt_attributed_usd": 112987835,
+    "stable_debt_attributed_read_usd": 112987835,
+    "own_debt_attributed_native": 7028.8,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 999,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 22.23,
+     "A2": 13.8,
+     "A3": 0.0,
+     "A4": 1.44,
+     "B1": 0.0,
+     "B2": 43.28,
+     "B3": 0.0,
+     "B4": 88.64
+    },
+    "matrix_counted_once_native": {
+     "A1": 22.23,
+     "A2": 13.8,
+     "A3": 0.0,
+     "A4": 1.44,
+     "B1": 0.0,
+     "B2": 43.28,
+     "B3": 0.0,
+     "B4": 72.19
+    },
+    "matrix_usd": {
+     "A1": 59340,
+     "A2": 36826,
+     "A3": 0,
+     "A4": 3852,
+     "B1": 0,
+     "B2": 115522,
+     "B3": 0,
+     "B4": 236624
+    },
+    "measured_accounts_native": {
+     "A1": 22.23,
+     "A2": 13.8,
+     "A3": 0.0,
+     "A4": 1.44,
+     "B1": 0.0,
+     "B2": 43.28,
+     "B3": 0.0,
+     "B4": 14.99
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 73.66
+    },
+    "cell4_gross_native": {
+     "A": 1.44,
+     "B": 88.64
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 16.45
+    },
+    "collateral_total_native": {
+     "A": 37.47,
+     "B": 58.26
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 40564,
+    "stable_debt_attributed_read_usd": 40564,
+    "own_debt_attributed_native": 16.4,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "compound-v3",
+    "chain": 1,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 41907.28,
+     "A2": 82624.77,
+     "A3": 0.0,
+     "A4": 1169.15,
+     "B1": 0.44,
+     "B2": 95293.51,
+     "B3": 0.0,
+     "B4": 51589.79
+    },
+    "matrix_counted_once_native": {
+     "A1": 41907.28,
+     "A2": 82624.77,
+     "A3": 0.0,
+     "A4": 1166.38,
+     "B1": 0.44,
+     "B2": 95293.51,
+     "B3": 0.0,
+     "B4": 15005.67
+    },
+    "matrix_usd": {
+     "A1": 111866865,
+     "A2": 220557729,
+     "A3": 0,
+     "A4": 3120928,
+     "B1": 1170,
+     "B2": 254375543,
+     "B3": 0,
+     "B4": 137713280
+    },
+    "measured_accounts_native": {
+     "A1": 41907.28,
+     "A2": 82624.77,
+     "A3": 0.0,
+     "A4": 961.54,
+     "B1": 0.44,
+     "B2": 95293.51,
+     "B3": 0.0,
+     "B4": 1109.6
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 207.62,
+     "B": 50480.19
+    },
+    "cell4_gross_native": {
+     "A": 1169.15,
+     "B": 51589.79
+    },
+    "lent_out_native": {
+     "A": 2.78,
+     "B": 36584.13
+    },
+    "collateral_total_native": {
+     "A": 125698.45,
+     "B": 96904.5
+    },
+    "coverage_read": {
+     "all": 0.996829273057989
+    },
+    "large_accounts": 119,
+    "large_accounts_share_of_collateral": 0.9305866501433699,
+    "stable_debt_attributed_usd": 391756106,
+    "stable_debt_attributed_read_usd": 391756106,
+    "own_debt_attributed_native": 36504.11,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "compound-v3",
+    "chain": 10,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 633.45,
+     "A2": 724.29,
+     "A3": 0.0,
+     "A4": 10.51,
+     "B1": 0.0,
+     "B2": 211.05,
+     "B3": 0.0,
+     "B4": 670.03
+    },
+    "matrix_counted_once_native": {
+     "A1": 633.45,
+     "A2": 724.29,
+     "A3": 0.0,
+     "A4": 10.51,
+     "B1": 0.0,
+     "B2": 211.05,
+     "B3": 0.0,
+     "B4": 106.53
+    },
+    "matrix_usd": {
+     "A1": 1690927,
+     "A2": 1933406,
+     "A3": 0,
+     "A4": 28061,
+     "B1": 0,
+     "B2": 563385,
+     "B3": 0,
+     "B4": 1788567
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 633.45,
+     "A2": 724.29,
+     "A4": 10.51,
+     "B2": 211.05,
+     "B4": 2.23
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 667.79
+    },
+    "cell4_gross_native": {
+     "A": 10.51,
+     "B": 670.03
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 563.5
+    },
+    "collateral_total_native": {
+     "A": 1368.25,
+     "B": 213.29
+    },
+    "coverage_read": {
+     "all": 0.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "Comet totals only; split with / without debt from the Ethereum Comets with the same base asset"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "compound-v3",
+    "chain": 42161,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 762.09,
+     "A2": 6346.14,
+     "A3": 0.0,
+     "A4": 85.82,
+     "B1": 0.0,
+     "B2": 3635.29,
+     "B3": 0.0,
+     "B4": 850.0
+    },
+    "matrix_counted_once_native": {
+     "A1": 762.09,
+     "A2": 6346.14,
+     "A3": 0.0,
+     "A4": 85.82,
+     "B1": 0.0,
+     "B2": 3635.29,
+     "B3": 0.0,
+     "B4": 185.23
+    },
+    "matrix_usd": {
+     "A1": 2034314,
+     "A2": 16940333,
+     "A3": 0,
+     "A4": 229092,
+     "B1": 0,
+     "B2": 9704013,
+     "B3": 0,
+     "B4": 2268983
+    },
+    "measured_accounts_native": {
+     "A1": 762.09,
+     "A2": 6346.14,
+     "A3": 0.0,
+     "A4": 85.82,
+     "B1": 0.0,
+     "B2": 3635.29,
+     "B3": 0.0,
+     "B4": 40.15
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 809.85
+    },
+    "cell4_gross_native": {
+     "A": 85.82,
+     "B": 850.0
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 664.77
+    },
+    "collateral_total_native": {
+     "A": 7194.06,
+     "B": 3675.44
+    },
+    "coverage_read": {
+     "all": 0.9999998003265104
+    },
+    "large_accounts": 8,
+    "large_accounts_share_of_collateral": 0.42930132646468183,
+    "stable_debt_attributed_usd": 14165912,
+    "stable_debt_attributed_read_usd": 14165912,
+    "own_debt_attributed_native": 659.29,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "compound-v3",
+    "chain": 8453,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 1664.47,
+     "A2": 884.08,
+     "A3": 59.1,
+     "A4": 16.84,
+     "B1": 0.0,
+     "B2": 2667.71,
+     "B3": 42.42,
+     "B4": 1683.98
+    },
+    "matrix_counted_once_native": {
+     "A1": 1664.47,
+     "A2": 884.08,
+     "A3": 59.1,
+     "A4": 16.84,
+     "B1": 0.0,
+     "B2": 2667.71,
+     "B3": 42.42,
+     "B4": 167.53
+    },
+    "matrix_usd": {
+     "A1": 4443107,
+     "A2": 2359943,
+     "A3": 157757,
+     "A4": 44947,
+     "B1": 0,
+     "B2": 7121150,
+     "B3": 113227,
+     "B4": 4495199
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 1664.47,
+     "A2": 884.08,
+     "A3": 59.1,
+     "A4": 16.84,
+     "B2": 2667.71,
+     "B3": 42.42,
+     "B4": 28.23
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 1655.75
+    },
+    "cell4_gross_native": {
+     "A": 16.84,
+     "B": 1683.98
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 1516.45
+    },
+    "collateral_total_native": {
+     "A": 2624.48,
+     "B": 2738.35
+    },
+    "coverage_read": {
+     "all": 0.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "Comet totals only; split with / without debt from the Ethereum Comets with the same base asset"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "fluid",
+    "chain": 1,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 72631.04,
+     "A2": 7157.42,
+     "A3": 123.82,
+     "A4": 1127.28,
+     "B1": 23905.91,
+     "B2": 51942.44,
+     "B3": 375.93,
+     "B4": 1798.02
+    },
+    "matrix_counted_once_native": {
+     "A1": 72631.04,
+     "A2": 7157.42,
+     "A3": 123.82,
+     "A4": 1127.28,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_usd": {
+     "A1": 193880570,
+     "A2": 19105937,
+     "A3": 330525,
+     "A4": 3009138,
+     "B1": 63814208,
+     "B2": 138654637,
+     "B3": 1003514,
+     "B4": 4799608
+    },
+    "measured_accounts_native": {
+     "A1": 72631.04,
+     "A2": 7157.42,
+     "A3": 123.82,
+     "A4": 195.2,
+     "B1": 23905.91,
+     "B2": 51942.44,
+     "B3": 375.93,
+     "B4": 877.22
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 932.08,
+     "B": 920.8
+    },
+    "cell4_gross_native": {
+     "A": 1127.28,
+     "B": 1798.02
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 85681.18
+    },
+    "collateral_total_native": {
+     "A": 80107.48,
+     "B": 77101.51
+    },
+    "coverage_read": {
+     "all": 1.0
+    },
+    "large_accounts": 49,
+    "large_accounts_share_of_collateral": 0.932543369793887,
+    "stable_debt_attributed_usd": 76683895,
+    "stable_debt_attributed_read_usd": 76683895,
+    "own_debt_attributed_native": 85681.18,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "fluid",
+    "chain": 42161,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 4817.27,
+     "A2": 1645.04,
+     "A3": 77.33,
+     "A4": 28.53,
+     "B1": 386.74,
+     "B2": 3510.64,
+     "B3": 155.24,
+     "B4": 175.14
+    },
+    "matrix_counted_once_native": {
+     "A1": 4817.27,
+     "A2": 1645.04,
+     "A3": 77.33,
+     "A4": 28.53,
+     "B1": 105.64,
+     "B2": 958.98,
+     "B3": 42.4,
+     "B4": 47.84
+    },
+    "matrix_usd": {
+     "A1": 12859170,
+     "A2": 4391258,
+     "A3": 206420,
+     "A4": 76149,
+     "B1": 1032361,
+     "B2": 9371269,
+     "B3": 414383,
+     "B4": 467512
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 4817.27,
+     "A2": 1645.04,
+     "A3": 77.33,
+     "B1": 386.74,
+     "B2": 3510.64,
+     "B3": 155.24
+    },
+    "lender_supply_gross_native": {
+     "A": 28.53,
+     "B": 175.14
+    },
+    "cell4_gross_native": {
+     "A": 28.53,
+     "B": 175.14
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 3072.88
+    },
+    "collateral_total_native": {
+     "A": 6539.64,
+     "B": 4052.62
+    },
+    "coverage_read": {
+     "all": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "vault 1 (ETH -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 2 (ETH -> USDT): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 3 (wstETH -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 4 (wstETH -> USDT): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 5 (wstETH -> ETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 6 (weETH -> wstETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 7 (weETH -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 8 (weETH -> USDT): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 9 (ETH -> ARB): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 16 (wstETH+ETH -> wstETH+ETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 17 (weETH+ETH -> wstETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 19 (ETH -> WBTC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 20 (wstETH -> WBTC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 21 (weETH -> WBTC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 22 (USDC+ETH -> USDC+ETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 23 (ETH -> USDC+USDT): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 24 (wstETH -> USDC+USDT): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 25 (weETH -> USDC+USDT): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 31 (ETH -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 32 (wstETH -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 33 (weETH -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "fluid",
+    "chain": 8453,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 1766.11,
+     "A2": 1911.23,
+     "A3": 6.66,
+     "A4": 68.5,
+     "B1": 1088.04,
+     "B2": 1712.04,
+     "B3": 18.21,
+     "B4": 40.06
+    },
+    "matrix_counted_once_native": {
+     "A1": 1766.11,
+     "A2": 1911.23,
+     "A3": 6.66,
+     "A4": 68.5,
+     "B1": 94.85,
+     "B2": 149.24,
+     "B3": 1.59,
+     "B4": 3.49
+    },
+    "matrix_usd": {
+     "A1": 4714441,
+     "A2": 5101827,
+     "A3": 17791,
+     "A4": 182843,
+     "B1": 2904400,
+     "B2": 4570113,
+     "B3": 48619,
+     "B4": 106936
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A1": 1766.11,
+     "A2": 1911.23,
+     "A3": 6.66,
+     "B1": 1088.04,
+     "B2": 1712.04,
+     "B3": 18.21
+    },
+    "lender_supply_gross_native": {
+     "A": 68.5,
+     "B": 40.06
+    },
+    "cell4_gross_native": {
+     "A": 68.5,
+     "B": 40.06
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 2609.19
+    },
+    "collateral_total_native": {
+     "A": 3684.01,
+     "B": 2818.3
+    },
+    "coverage_read": {
+     "all": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "vault 1 (ETH -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 2 (wstETH -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 3 (wstETH -> ETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 4 (weETH -> wstETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 5 (weETH -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 6 (cbETH -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 9 (cbETH -> EURC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 10 (ETH -> EURC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 11 (weETH -> EURC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 12 (wstETH -> EURC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 14 (ETH -> cbBTC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 15 (weETH -> cbBTC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 16 (wstETH -> cbBTC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 25 (ETH -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 26 (weETH -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 27 (wstETH -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 29 (wstETH+ETH -> wstETH+ETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 30 (weETH+ETH -> wstETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset"
+    ],
+    "notes": []
+   }
+  ],
+  "matrix_native": {
+   "A1": 2887224.94,
+   "A2": 2507802.88,
+   "A3": 22980.48,
+   "A4": 83252.63,
+   "B1": 53758.94,
+   "B2": 2675879.26,
+   "B3": 16568.88,
+   "B4": 627253.67
+  },
+  "matrix_usd": {
+   "A1": 7707129395,
+   "A2": 6694303923,
+   "A3": 61343853,
+   "A4": 222233731,
+   "B1": 143503567,
+   "B2": 7142965350,
+   "B3": 44228791,
+   "B4": 1674384687
+  },
+  "total_native": 8874721.68,
+  "matrix_counted_once_native": {
+   "A1": 2878234.05,
+   "A2": 2477931.87,
+   "A3": 22678.23,
+   "A4": 74989.38,
+   "B1": 6037.61,
+   "B2": 624370.22,
+   "B3": 3633.04,
+   "B4": 110884.56
+  },
+  "matrix_counted_once_usd": {
+   "A1": 7683129178,
+   "A2": 6614566548,
+   "A3": 60537037,
+   "A4": 200175914,
+   "B1": 16116748,
+   "B2": 1666687630,
+   "B3": 9698000,
+   "B4": 295994131
+  },
+  "total_counted_once_native": 6198758.96,
+  "lent_out_native": {
+   "A": 47507.87,
+   "B": 2648349.41
+  },
+  "cell4_gross_native": {
+   "A": 83252.63,
+   "B": 627253.67
+  },
+  "long_tail_estimate": {
+   "note": "DefiLlama basis (collateral plus supply not lent out) less the measured counted-once total, per form, spread by the measured mix (estimate)",
+   "by_form": {
+    "A": {
+     "defillama": 5509261.32,
+     "measured_counted_once": 5453833.53,
+     "long_tail": 55427.79
+    },
+    "B": {
+     "defillama": 788691.91,
+     "measured_counted_once": 744925.44,
+     "long_tail": 43766.48
+    }
+   },
+   "matrix_native": {
+    "A1": 29251.75,
+    "A2": 25183.44,
+    "A3": 230.48,
+    "A4": 762.12,
+    "B1": 354.73,
+    "B2": 36683.52,
+    "B3": 213.45,
+    "B4": 6514.78
+   }
+  },
+  "matrix_counted_once_with_long_tail_native": {
+   "A1": 2907485.79,
+   "A2": 2503115.31,
+   "A3": 22908.71,
+   "A4": 75751.51,
+   "B1": 6392.34,
+   "B2": 661053.74,
+   "B3": 3846.49,
+   "B4": 117399.34
+  },
+  "matrix_counted_once_with_long_tail_usd": {
+   "A1": 7761213500,
+   "A2": 6681790974,
+   "A3": 61152280,
+   "A4": 202210319,
+   "B1": 17063653,
+   "B2": 1764610244,
+   "B3": 10267784,
+   "B4": 313384623
+  },
+  "same_asset_loops": {
+   "collateral_native": 2940983.88,
+   "own_debt_native": 2627626.29,
+   "equity_native": 313357.59
+  },
+  "stablecoin_loans": {
+   "collateral_native": 5183682.14,
+   "collateral_usd": 13837269273,
+   "debt_usd": 5073990711,
+   "implied_ltv": 0.36669017640442647
+  },
+  "concentration": {
+   "A1": {
+    "accounts": 8120,
+    "measured_native": 2849917.68,
+    "top20_share": 0.6884921203174095
+   },
+   "A2": {
+    "accounts": 10744,
+    "measured_native": 2479739.02,
+    "top20_share": 0.5243816539224339
+   },
+   "A3": {
+    "accounts": 358,
+    "measured_native": 22029.75,
+    "top20_share": 0.8271665483686944
+   },
+   "A4": {
+    "accounts": 4885,
+    "measured_native": 69969.94,
+    "top20_share": 0.5413987795738692
+   },
+   "B1": {
+    "accounts": 1567,
+    "measured_native": 45657.93,
+    "top20_share": 0.7252765243046218
+   },
+   "B2": {
+    "accounts": 25931,
+    "measured_native": 2501593.32,
+    "top20_share": 0.4394614440854968
+   },
+   "B3": {
+    "accounts": 1593,
+    "measured_native": 13097.82,
+    "top20_share": 0.5454762525370523
+   },
+   "B4": {
+    "accounts": 22010,
+    "measured_native": 458796.66,
+    "top20_share": 0.5508190608670956
+   }
+  },
+  "borrower_groups": {
+   "big38": {
+    "cell2_collateral_native": 2369165.25,
+    "stable_debt_attr_usd": 2288299575
+   },
+   "pooled_products": {
+    "cell2_collateral_native": 160063.34,
+    "stable_debt_attr_usd": 236379654
+   },
+   "all_gap_scan_164": {
+    "cell2_collateral_native": 3237642.2,
+    "stable_debt_attr_usd": 3375802790
+   }
+  },
+  "stablecoin_cell_low_ltv_share": {
+   "under_10pct": 0.05021246814969228,
+   "under_20pct": 0.12490058138345293
+  },
+  "estimated_share_of_measured_venues": 0.032615742841747036
+ },
+ "btc": {
+  "venues": [
+   {
+    "venue": "aave-arbitrum",
+    "chain": 42161,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 61.68,
+     "B2": 2714.16,
+     "B3": 29.7,
+     "B4": 250.05
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 58.41,
+     "B2": 2570.92,
+     "B3": 28.13,
+     "B4": 236.79
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 5007135,
+     "B2": 220329853,
+     "B3": 2411331,
+     "B4": 20298202
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 47.58,
+     "B2": 2064.65,
+     "B3": 19.41,
+     "B4": 208.72
+    },
+    "estimated_native": {
+     "B1": 14.1,
+     "B2": 649.51,
+     "B3": 10.29,
+     "B4": 41.33
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 250.05
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 161.5
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 3055.59
+    },
+    "coverage_read": {
+     "A": null,
+     "B": 0.7659276688784132
+    },
+    "large_accounts": 54,
+    "large_accounts_share_of_collateral": 0.35506332890976633,
+    "stable_debt_attributed_usd": 83616176,
+    "stable_debt_attributed_read_usd": 63606468,
+    "own_debt_attributed_native": 38.29,
+    "estimate_notes": [
+     "B: 715 unread (23.4%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-base",
+    "chain": 8453,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 1.1,
+     "A2": 15.45,
+     "A3": 0.0,
+     "A4": 3.77,
+     "B1": 44.68,
+     "B2": 2620.21,
+     "B3": 119.21,
+     "B4": 121.3
+    },
+    "matrix_counted_once_native": {
+     "A1": 1.1,
+     "A2": 15.45,
+     "A3": 0.0,
+     "A4": 3.77,
+     "B1": 43.43,
+     "B2": 2546.15,
+     "B3": 115.84,
+     "B4": 117.88
+    },
+    "matrix_usd": {
+     "A1": 89550,
+     "A2": 1253799,
+     "A3": 0,
+     "A4": 306248,
+     "B1": 3627283,
+     "B2": 212703530,
+     "B3": 9676997,
+     "B4": 9847111
+    },
+    "measured_accounts_native": {
+     "A1": 0.87,
+     "A2": 13.55,
+     "A3": 0.0,
+     "A4": 2.97,
+     "B1": 31.44,
+     "B2": 2027.83,
+     "B3": 100.73,
+     "B4": 84.9
+    },
+    "estimated_native": {
+     "A1": 0.23,
+     "A2": 1.9,
+     "A4": 0.8,
+     "B1": 13.24,
+     "B2": 592.38,
+     "B3": 18.48,
+     "B4": 36.41
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 3.77,
+     "B": 121.3
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 81.97
+    },
+    "collateral_total_native": {
+     "A": 20.32,
+     "B": 2905.4
+    },
+    "coverage_read": {
+     "A": 0.8555662656129752,
+     "B": 0.7726612808521605
+    },
+    "large_accounts": 59,
+    "large_accounts_share_of_collateral": 0.30247398813465115,
+    "stable_debt_attributed_usd": 85640828,
+    "stable_debt_attributed_read_usd": 66330868,
+    "own_debt_attributed_native": 27.59,
+    "estimate_notes": [
+     "A: 3 unread (14.4%) spread by the mix of read small accounts",
+     "B: 661 unread (22.7%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-core",
+    "chain": 1,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 23.81,
+     "A2": 2675.76,
+     "A3": 32.02,
+     "A4": 54.74,
+     "B1": 470.72,
+     "B2": 51852.68,
+     "B3": 588.02,
+     "B4": 1827.61
+    },
+    "matrix_counted_once_native": {
+     "A1": 23.81,
+     "A2": 2675.74,
+     "A3": 32.02,
+     "A4": 54.74,
+     "B1": 464.16,
+     "B2": 50995.27,
+     "B3": 580.03,
+     "B4": 1790.87
+    },
+    "matrix_usd": {
+     "A1": 1932871,
+     "A2": 217212545,
+     "A3": 2599074,
+     "A4": 4443530,
+     "B1": 38212042,
+     "B2": 4209296691,
+     "B3": 47733975,
+     "B4": 148362061
+    },
+    "measured_accounts_native": {
+     "A1": 23.36,
+     "A2": 2671.56,
+     "A3": 31.86,
+     "A4": 54.16,
+     "B1": 459.31,
+     "B2": 51232.5,
+     "B3": 575.7,
+     "B4": 1798.04
+    },
+    "estimated_native": {
+     "A1": 0.45,
+     "A2": 4.2,
+     "A3": 0.16,
+     "A4": 0.57,
+     "B1": 11.41,
+     "B2": 620.18,
+     "B3": 12.31,
+     "B4": 29.57
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 54.74,
+     "B": 1827.61
+    },
+    "lent_out_native": {
+     "A": 0.02,
+     "B": 912.59
+    },
+    "collateral_total_native": {
+     "A": 2786.32,
+     "B": 54739.03
+    },
+    "coverage_read": {
+     "A": 0.9980683314638041,
+     "B": 0.9876965586112296
+    },
+    "large_accounts": 827,
+    "large_accounts_share_of_collateral": 0.8774468299049757,
+    "stable_debt_attributed_usd": 1728315359,
+    "stable_debt_attributed_read_usd": 1708525301,
+    "own_debt_attributed_native": 302.68,
+    "estimate_notes": [
+     "A: 5 unread (0.2%) spread by the mix of read small accounts",
+     "B: 673 unread (1.2%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "spark",
+    "chain": 1,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 2732.64,
+     "A3": 0.0,
+     "A4": 8.15,
+     "B1": 0.08,
+     "B2": 8038.77,
+     "B3": 6.41,
+     "B4": 31.49
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 2732.64,
+     "A3": 0.0,
+     "A4": 8.15,
+     "B1": 0.08,
+     "B2": 7869.79,
+     "B3": 6.38,
+     "B4": 30.88
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 221830203,
+     "A3": 0,
+     "A4": 661606,
+     "B1": 6809,
+     "B2": 652571267,
+     "B3": 520255,
+     "B4": 2556533
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 2732.64,
+     "A3": 0.0,
+     "A4": 8.15,
+     "B1": 0.08,
+     "B2": 8037.48,
+     "B3": 6.38,
+     "B4": 31.38
+    },
+    "estimated_native": {
+     "A2": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 1.29,
+     "B3": 0.03,
+     "B4": 0.11
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 8.15,
+     "B": 31.49
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 169.59
+    },
+    "collateral_total_native": {
+     "A": 2740.79,
+     "B": 8076.76
+    },
+    "coverage_read": {
+     "A": 0.9999999740758709,
+     "B": 0.9998223350662331
+    },
+    "large_accounts": 69,
+    "large_accounts_share_of_collateral": 0.972366709126965,
+    "stable_debt_attributed_usd": 427237782,
+    "stable_debt_attributed_read_usd": 427186525,
+    "own_debt_attributed_native": 0.05,
+    "estimate_notes": [
+     "A: 0 unread (0.0%) spread by the mix of read small accounts",
+     "B: 1 unread (0.0%) spread by the mix of read small accounts"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "aave-v4",
+    "chain": 1,
+    "kind": "pooled",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.07,
+     "B1": 3.55,
+     "B2": 1033.58,
+     "B3": 0.3,
+     "B4": 19.87
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.07,
+     "B1": 3.55,
+     "B2": 1032.22,
+     "B3": 0.3,
+     "B4": 19.84
+    },
+    "matrix_usd": {
+     "A1": 10,
+     "A2": 0,
+     "A3": 0,
+     "A4": 5392,
+     "B1": 288216,
+     "B2": 83903962,
+     "B3": 24063,
+     "B4": 1612741
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.07,
+     "B1": 3.55,
+     "B2": 1033.58,
+     "B3": 0.3,
+     "B4": 19.87
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.07,
+     "B": 19.87
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 1.39
+    },
+    "collateral_total_native": {
+     "A": 0.07,
+     "B": 1057.29
+    },
+    "coverage_read": {
+     "all": 1.0
+    },
+    "large_accounts": 35,
+    "large_accounts_share_of_collateral": 0.7131757019624047,
+    "stable_debt_attributed_usd": 27537991,
+    "stable_debt_attributed_read_usd": 27537991,
+    "own_debt_attributed_native": 1.3,
+    "estimate_notes": [],
+    "notes": [
+     "lent out = family debt of accounts that also hold family collateral (borrowers against other collateral not read)"
+    ]
+   },
+   {
+    "venue": "morpho",
+    "chain": 1,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 6.97,
+     "A2": 126.45,
+     "A3": 0.0,
+     "A4": 1.05,
+     "B1": 36.67,
+     "B2": 21841.31,
+     "B3": 22.72,
+     "B4": 272.8
+    },
+    "matrix_counted_once_native": {
+     "A1": 6.97,
+     "A2": 126.45,
+     "A3": 0.0,
+     "A4": 0.41,
+     "B1": 36.67,
+     "B2": 21841.31,
+     "B3": 22.72,
+     "B4": 251.11
+    },
+    "matrix_usd": {
+     "A1": 565819,
+     "A2": 10264796,
+     "A3": 3,
+     "A4": 85619,
+     "B1": 2977042,
+     "B2": 1773033821,
+     "B3": 1844749,
+     "B4": 22145020
+    },
+    "measured_accounts_native": {
+     "A1": 6.97,
+     "A2": 126.45,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 36.67,
+     "B2": 21841.31,
+     "B3": 22.72,
+     "B4": 6.63
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 1.05,
+     "B": 266.17
+    },
+    "cell4_gross_native": {
+     "A": 1.05,
+     "B": 272.8
+    },
+    "lent_out_native": {
+     "A": 0.64,
+     "B": 21.68
+    },
+    "collateral_total_native": {
+     "A": 133.42,
+     "B": 21907.34
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 233,
+    "large_accounts_share_of_collateral": 0.9482479196470925,
+    "stable_debt_attributed_usd": 880594732,
+    "stable_debt_attributed_read_usd": 880594732,
+    "own_debt_attributed_native": 21.8,
+    "estimate_notes": [],
+    "notes": [
+     "dropped 1235996 native units of unpriced look-alike collateral"
+    ]
+   },
+   {
+    "venue": "morpho",
+    "chain": 10,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 10.54,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 10.54,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 855828,
+     "B3": 0,
+     "B4": 165
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 10.54,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 10.54
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 1,
+    "large_accounts_share_of_collateral": 0.8047265858560211,
+    "stable_debt_attributed_usd": 578972,
+    "stable_debt_attributed_read_usd": 578972,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 130,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.97,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.97,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 78605,
+     "B3": 0,
+     "B4": 52
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.97,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 0.97
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 33678,
+    "stable_debt_attributed_read_usd": 33678,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 137,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 24.09,
+     "B3": 0.66,
+     "B4": 0.29
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 24.09,
+     "B3": 0.66,
+     "B4": 0.29
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 1955301,
+     "B3": 53761,
+     "B4": 23650
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 24.09,
+     "B3": 0.66,
+     "B4": 0.29
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.29
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 25.04
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 1,
+    "large_accounts_share_of_collateral": 0.38731818859467415,
+    "stable_debt_attributed_usd": 803831,
+    "stable_debt_attributed_read_usd": 803831,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": [
+     "dropped 983 native units of unpriced look-alike collateral"
+    ]
+   },
+   {
+    "venue": "morpho",
+    "chain": 42161,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 68.33,
+     "B3": 0.0,
+     "B4": 0.35
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 68.33,
+     "B3": 0.0,
+     "B4": 0.35
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 5546614,
+     "B3": 2,
+     "B4": 28326
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 68.33,
+     "B3": 0.0,
+     "B4": 0.35
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.35
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 68.68
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 2533613,
+    "stable_debt_attributed_read_usd": 2533613,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 4217,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 11.04,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 11.04,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 895953,
+     "B3": 0,
+     "B4": 113
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 11.04,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 11.04
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 1,
+    "large_accounts_share_of_collateral": 0.9230918152917136,
+    "stable_debt_attributed_usd": 472199,
+    "stable_debt_attributed_read_usd": 472199,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 480,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 77.94,
+     "B3": 1.29,
+     "B4": 0.08
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 77.94,
+     "B3": 1.29,
+     "B4": 0.08
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 6326887,
+     "B3": 104853,
+     "B4": 6141
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 77.94,
+     "B3": 1.29,
+     "B4": 0.08
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.08
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 79.31
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 4,
+    "large_accounts_share_of_collateral": 0.41466906075468585,
+    "stable_debt_attributed_usd": 3877411,
+    "stable_debt_attributed_read_usd": 3877411,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 5042,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 3308.91,
+     "B3": 0.0,
+     "B4": 0.06
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 3308.91,
+     "B3": 0.0,
+     "B4": 0.06
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 268610935,
+     "B3": 0,
+     "B4": 4847
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 3308.91,
+     "B3": 0.0,
+     "B4": 0.06
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.06
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 3308.97
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 19,
+    "large_accounts_share_of_collateral": 0.9760058637743556,
+    "stable_debt_attributed_usd": 173790280,
+    "stable_debt_attributed_read_usd": 173790280,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 747474,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.25,
+     "A3": 0.0,
+     "A4": 0.09,
+     "B1": 0.0,
+     "B2": 151.55,
+     "B3": 0.0,
+     "B4": 0.32
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.25,
+     "A3": 0.0,
+     "A4": 0.09,
+     "B1": 0.0,
+     "B2": 151.55,
+     "B3": 0.0,
+     "B4": 0.32
+    },
+    "matrix_usd": {
+     "A1": 225,
+     "A2": 20124,
+     "A3": 0,
+     "A4": 7511,
+     "B1": 0,
+     "B2": 12302793,
+     "B3": 0,
+     "B4": 26100
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.25,
+     "A3": 0.0,
+     "A4": 0.09,
+     "B1": 0.0,
+     "B2": 151.55,
+     "B3": 0.0,
+     "B4": 0.32
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.09,
+     "B": 0.32
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.34,
+     "B": 151.87
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 3,
+    "large_accounts_share_of_collateral": 0.7944362919509836,
+    "stable_debt_attributed_usd": 7058755,
+    "stable_debt_attributed_read_usd": 7058755,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "morpho",
+    "chain": 8453,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 11.83,
+     "A2": 17.23,
+     "A3": 0.0,
+     "A4": 0.2,
+     "B1": 0.0,
+     "B2": 37105.85,
+     "B3": 8.07,
+     "B4": 29.65
+    },
+    "matrix_counted_once_native": {
+     "A1": 11.83,
+     "A2": 17.23,
+     "A3": 0.0,
+     "A4": 0.2,
+     "B1": 0.0,
+     "B2": 37105.85,
+     "B3": 8.07,
+     "B4": 20.17
+    },
+    "matrix_usd": {
+     "A1": 960529,
+     "A2": 1398608,
+     "A3": 2,
+     "A4": 16594,
+     "B1": 0,
+     "B2": 3012178777,
+     "B3": 655325,
+     "B4": 2407244
+    },
+    "measured_accounts_native": {
+     "A1": 11.83,
+     "A2": 17.23,
+     "A3": 0.0,
+     "A4": 0.2,
+     "B1": 0.0,
+     "B2": 37105.85,
+     "B3": 8.07,
+     "B4": 3.34
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 26.31
+    },
+    "cell4_gross_native": {
+     "A": 0.2,
+     "B": 29.65
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 9.49
+    },
+    "collateral_total_native": {
+     "A": 29.27,
+     "B": 37117.27
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 1303,
+    "large_accounts_share_of_collateral": 0.5858495730310859,
+    "stable_debt_attributed_usd": 1432245684,
+    "stable_debt_attributed_read_usd": 1432245684,
+    "own_debt_attributed_native": 9.49,
+    "estimate_notes": [],
+    "notes": [
+     "dropped 2 native units of unpriced look-alike collateral"
+    ]
+   },
+   {
+    "venue": "morpho",
+    "chain": 999,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 57.08,
+     "B3": 0.01,
+     "B4": 1.04
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 57.08,
+     "B3": 0.01,
+     "B4": 1.04
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 4633906,
+     "B3": 826,
+     "B4": 84532
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 57.08,
+     "B3": 0.01,
+     "B4": 1.04
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 1.04
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 58.13
+    },
+    "coverage_read": {
+     "A": 1.0,
+     "B": 1.0
+    },
+    "large_accounts": 1,
+    "large_accounts_share_of_collateral": 0.21356767550241285,
+    "stable_debt_attributed_usd": 2019332,
+    "stable_debt_attributed_read_usd": 2019332,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "compound-v3",
+    "chain": 1,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 6910.1,
+     "B3": 2.44,
+     "B4": 43.44
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 6910.1,
+     "B3": 2.44,
+     "B4": 40.58
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 560948436,
+     "B3": 198285,
+     "B4": 3526398
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 6910.1,
+     "B3": 2.44,
+     "B4": 14.38
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 29.06
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 43.44
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 2.86
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 6926.93
+    },
+    "coverage_read": {
+     "all": 0.9999992553910727
+    },
+    "large_accounts": 106,
+    "large_accounts_share_of_collateral": 0.9333021757705019,
+    "stable_debt_attributed_usd": 347154720,
+    "stable_debt_attributed_read_usd": 347154720,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "compound-v3",
+    "chain": 10,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 53.52,
+     "B3": 1.31,
+     "B4": 0.32
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 53.52,
+     "B3": 1.31,
+     "B4": 0.32
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 4344704,
+     "B3": 106260,
+     "B4": 25766
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "B2": 53.52,
+     "B3": 1.31,
+     "B4": 0.32
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.32
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 55.15
+    },
+    "coverage_read": {
+     "all": 0.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "Comet totals only; split with / without debt from the Ethereum Comets with the same base asset"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "compound-v3",
+    "chain": 42161,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 408.42,
+     "B3": 0.11,
+     "B4": 3.42
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 408.42,
+     "B3": 0.11,
+     "B4": 3.42
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 33154492,
+     "B3": 8828,
+     "B4": 277258
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 408.42,
+     "B3": 0.11,
+     "B4": 3.42
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 3.42
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 411.94
+    },
+    "coverage_read": {
+     "all": 0.9999999981550238
+    },
+    "large_accounts": 15,
+    "large_accounts_share_of_collateral": 0.5535908818605079,
+    "stable_debt_attributed_usd": 18784350,
+    "stable_debt_attributed_read_usd": 18784350,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "compound-v3",
+    "chain": 8453,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 105.7,
+     "B3": 7.18,
+     "B4": 1.36
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 105.7,
+     "B3": 7.18,
+     "B4": 1.36
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 8580584,
+     "B3": 582769,
+     "B4": 110435
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "B2": 105.7,
+     "B3": 7.18,
+     "B4": 1.36
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 1.36
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 114.24
+    },
+    "coverage_read": {
+     "all": 0.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "Comet totals only; split with / without debt from the Ethereum Comets with the same base asset"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "fluid",
+    "chain": 1,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 28.67,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 146.64,
+     "B2": 636.68,
+     "B3": 1.74,
+     "B4": 8.3
+    },
+    "matrix_counted_once_native": {
+     "A1": 28.67,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 117.75,
+     "B2": 511.23,
+     "B3": 1.4,
+     "B4": 6.67
+    },
+    "matrix_usd": {
+     "A1": 2327516,
+     "A2": 73,
+     "A3": 0,
+     "A4": 49,
+     "B1": 11904225,
+     "B2": 51684805,
+     "B3": 141483,
+     "B4": 673982
+    },
+    "measured_accounts_native": {
+     "A1": 28.67,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 146.64,
+     "B2": 636.68,
+     "B3": 1.74,
+     "B4": 8.3
+    },
+    "estimated_native": {},
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 8.3
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 156.33
+    },
+    "collateral_total_native": {
+     "A": 28.67,
+     "B": 793.37
+    },
+    "coverage_read": {
+     "all": 1.0
+    },
+    "large_accounts": 24,
+    "large_accounts_share_of_collateral": 0.7096811641725764,
+    "stable_debt_attributed_usd": 22351804,
+    "stable_debt_attributed_read_usd": 22351804,
+    "own_debt_attributed_native": 156.33,
+    "estimate_notes": [],
+    "notes": []
+   },
+   {
+    "venue": "fluid",
+    "chain": 42161,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 83.64,
+     "B3": 1.29,
+     "B4": 0.0
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 83.64,
+     "B3": 1.29,
+     "B4": 0.0
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 0,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 6789674,
+     "B3": 104638,
+     "B4": 0
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "B2": 83.64,
+     "B3": 1.29
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.0,
+     "B": 84.93
+    },
+    "coverage_read": {
+     "all": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "vault 12 (WBTC -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 13 (WBTC -> USDT): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 18 (WBTC -> ETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 26 (WBTC -> USDC+USDT): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 34 (WBTC -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset"
+    ],
+    "notes": []
+   },
+   {
+    "venue": "fluid",
+    "chain": 8453,
+    "kind": "pair",
+    "matrix_native": {
+     "A1": 0.0,
+     "A2": 0.18,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 63.29,
+     "B3": 4.75,
+     "B4": 0.0
+    },
+    "matrix_counted_once_native": {
+     "A1": 0.0,
+     "A2": 0.18,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 63.29,
+     "B3": 4.75,
+     "B4": 0.0
+    },
+    "matrix_usd": {
+     "A1": 0,
+     "A2": 14486,
+     "A3": 0,
+     "A4": 0,
+     "B1": 0,
+     "B2": 5137755,
+     "B3": 385196,
+     "B4": 0
+    },
+    "measured_accounts_native": {
+     "A1": 0.0,
+     "A2": 0.0,
+     "A3": 0.0,
+     "A4": 0.0,
+     "B1": 0.0,
+     "B2": 0.0,
+     "B3": 0.0,
+     "B4": 0.0
+    },
+    "estimated_native": {
+     "A2": 0.18,
+     "B2": 63.29,
+     "B3": 4.75
+    },
+    "lender_supply_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "cell4_gross_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "lent_out_native": {
+     "A": 0.0,
+     "B": 0.0
+    },
+    "collateral_total_native": {
+     "A": 0.18,
+     "B": 68.04
+    },
+    "coverage_read": {
+     "all": 1.0
+    },
+    "large_accounts": 0,
+    "large_accounts_share_of_collateral": 0.0,
+    "stable_debt_attributed_usd": 0,
+    "stable_debt_attributed_read_usd": 0,
+    "own_debt_attributed_native": 0.0,
+    "estimate_notes": [
+     "vault 7 (cbBTC -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 8 (cbBTC -> EURC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 13 (cbBTC -> ETH): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 21 (LBTC -> USDC): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 23 (LBTC -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset",
+     "vault 24 (cbBTC -> GHO): position resolver not read (off Ethereum); vault totals on the scan day from the Fluid API, all collateral assigned to its debt asset"
+    ],
+    "notes": []
+   }
+  ],
+  "matrix_native": {
+   "A1": 72.39,
+   "A2": 5567.94,
+   "A3": 32.02,
+   "A4": 68.08,
+   "B1": 764.03,
+   "B2": 137178.36,
+   "B3": 795.21,
+   "B4": 2611.75
+  },
+  "matrix_usd": {
+   "A1": 5876520,
+   "A2": 451994633,
+   "A3": 2599079,
+   "A4": 5526549,
+   "B1": 62022752,
+   "B2": 11135865172,
+   "B3": 64553597,
+   "B4": 212016674
+  },
+  "total_native": 147089.79,
+  "matrix_counted_once_native": {
+   "A1": 72.39,
+   "A2": 5567.93,
+   "A3": 32.02,
+   "A4": 67.44,
+   "B1": 724.05,
+   "B2": 135807.87,
+   "B3": 781.91,
+   "B4": 2522.03
+  },
+  "matrix_counted_once_usd": {
+   "A1": 5876507,
+   "A2": 451993301,
+   "A3": 2599063,
+   "A4": 5474393,
+   "B1": 58776672,
+   "B2": 11024611365,
+   "B3": 63473716,
+   "B4": 204733197
+  },
+  "total_counted_once_native": 145575.63,
+  "lent_out_native": {
+   "A": 0.66,
+   "B": 1517.39
+  },
+  "cell4_gross_native": {
+   "A": 68.08,
+   "B": 2611.75
+  },
+  "long_tail_estimate": {
+   "note": "DefiLlama basis (collateral plus supply not lent out) less the measured counted-once total, per form, spread by the measured mix (estimate)",
+   "by_form": {
+    "A": {
+     "defillama": 6989,
+     "measured_counted_once": 5739.77,
+     "long_tail": 1249.23
+    },
+    "B": {
+     "defillama": 166756,
+     "measured_counted_once": 139835.85,
+     "long_tail": 26920.15
+    }
+   },
+   "matrix_native": {
+    "A1": 15.76,
+    "A2": 1211.83,
+    "A3": 6.97,
+    "A4": 14.68,
+    "B1": 139.39,
+    "B2": 26144.71,
+    "B3": 150.53,
+    "B4": 485.52
+   }
+  },
+  "matrix_counted_once_with_long_tail_native": {
+   "A1": 88.15,
+   "A2": 6779.76,
+   "A3": 38.99,
+   "A4": 82.11,
+   "B1": 863.43,
+   "B2": 161952.58,
+   "B3": 932.43,
+   "B4": 3007.55
+  },
+  "matrix_counted_once_with_long_tail_usd": {
+   "A1": 7155494,
+   "A2": 550366952,
+   "A3": 3164734,
+   "A4": 6665862,
+   "B1": 70091915,
+   "B2": 13146986564,
+   "B3": 75693198,
+   "B4": 244146891
+  },
+  "same_asset_loops": {
+   "collateral_native": 836.42,
+   "own_debt_native": 557.52,
+   "equity_native": 278.91
+  },
+  "stablecoin_loans": {
+   "collateral_native": 142746.31,
+   "collateral_usd": 11587859805,
+   "debt_usd": 5244647496,
+   "implied_ltv": 0.45259845945399285
+  },
+  "concentration": {
+   "A1": {
+    "accounts": 280,
+    "measured_native": 71.7,
+    "top20_share": 0.9275769226957721
+   },
+   "A2": {
+    "accounts": 398,
+    "measured_native": 5561.67,
+    "top20_share": 0.9314944149954701
+   },
+   "A3": {
+    "accounts": 22,
+    "measured_native": 31.86,
+    "top20_share": 0.9999999995808792
+   },
+   "A4": {
+    "accounts": 209,
+    "measured_native": 65.65,
+    "top20_share": 0.98289686774171
+   },
+   "B1": {
+    "accounts": 754,
+    "measured_native": 725.28,
+    "top20_share": 0.6472003441972451
+   },
+   "B2": {
+    "accounts": 29764,
+    "measured_native": 135008.85,
+    "top20_share": 0.25486538640950535
+   },
+   "B3": {
+    "accounts": 2515,
+    "measured_native": 739.57,
+    "top20_share": 0.6971443083971692
+   },
+   "B4": {
+    "accounts": 7317,
+    "measured_native": 2181.12,
+    "top20_share": 0.6836193526013834
+   }
+  },
+  "borrower_groups": {},
+  "stablecoin_cell_low_ltv_share": {
+   "under_10pct": 0.013652562374857066,
+   "under_20pct": 0.041662845269308975
+  },
+  "estimated_share_of_measured_venues": 0.016190722684528435
+ }
+}
