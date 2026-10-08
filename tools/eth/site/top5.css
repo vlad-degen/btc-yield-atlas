@@ -57,3 +57,5 @@ ol.fsteps li b{color:var(--ink)}
 .atl-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:10px}.atl-two h4{margin:6px 0}
 .atl-mat .sw{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px}
 @media(max-width:760px){.atl-cards,.atl-two{grid-template-columns:minmax(0,1fr)}.atl-lab{width:64px}}
+.at-stake{margin:10px 0 4px}.at-stake .seg{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.at-stake .seg span{font-size:13px;opacity:.75;margin-right:4px}
+.at-stake .btn[aria-pressed="true"]{background:var(--accent-soft,#8a86f0);color:#fff;border-color:transparent}

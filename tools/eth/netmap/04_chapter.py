@@ -78,6 +78,15 @@ def total(rows):
 
 def main():
     prods = [product(s) for s in VALUES if any(v for v in VALUES[s].values())]
+    # staking tokens used elsewhere (lending markets, loops, counted products): the site's 'all staked ETH' toggle adds them back
+    used = {}
+    for r in csv.DictReader(open(os.path.join(OUT, 'netting_ledger.csv'))):
+        if r['reason'].startswith('staking token'):
+            used.setdefault(r['to'], {}).setdefault(r['month'], 0.0)
+            used[r['to']][r['month']] += float(r['eth'])
+    for p in prods:
+        if p['category'] in ('staking', 'restaking') and p['id'] in used:
+            p['used_elsewhere_eth'] = [round(used[p['id']].get(l, 0.0), 4) for l in LABELS]
     prods.sort(key=lambda p: -(p['current']['eth_ref'] or 0))
     # constant cohort: products observed with a positive value at every month-end
     cohort = [p['id'] for p in prods if all(h['eth_ref'] for h in p['history'])]
@@ -95,6 +104,8 @@ def main():
             per['by_category'][c['id']] = t
         cc = [r for p, r in rows if p['id'] in cohort and r['status'] == 'observed']
         per['constant_cohort'] = {'protocol_count': len(cc), 'usd': math.fsum(r['usd'] for r in cc), 'eth_ref': math.fsum(r['eth_ref'] for r in cc)}
+        per['staking_used_elsewhere_eth'] = {c: math.fsum((p.get('used_elsewhere_eth') or [0] * len(LABELS))[i] for p in prods if p['category'] == c)
+                                              for c in ('staking', 'restaking')}
         months.append(per)
     # chains: DefiLlama chain split of each row, scaled to the row's counted value
     chain_obs = []

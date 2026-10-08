@@ -423,4 +423,26 @@ function atLendingGross(){
 <div class="atl-two"><div><h4>ETH, 2 October 2026</h4><div class="tblwrap">${mat(E)}</div></div><div><h4>BTC, 20 September 2026</h4><div class="tblwrap">${mat(B)}</div></div></div>
 <p class="note"><b>Counted once, and how it ties to the map.</b> Pool WETH is fungible: ${nat(L.eth.lent.B,'ETH')} of WETH supplied to Aave and Spark is lent out, mostly to loopers, and is shown once, as the debt inside the loops column, not again as collateral. How the map uses it: the loops column is the Leveraged staking category; carry products' own dollar positions are in Carry; everything else here is the Money markets switch (off by default, as in BTC), and none of these staking tokens stays in Staking. Long tail beyond the read venues is estimated (3% of ETH, 2% of BTC). <a href="library/LENDING-SPLIT.html">Method and every venue</a>.</p></div>`);
 }
-const _atPrevFinalLG=atlasFinal;atlasFinal=function(){_atPrevFinalLG();try{atLendingGross()}catch(e){}};
+
+
+// Staking toggle: 'staked and held' (default, counted once) or 'all staked ETH' (adds back staking tokens used in lending
+// markets, loops and products, so the same ETH is counted twice). Data: used_elsewhere_eth per issuer, from netting_ledger.csv.
+let AT_GROSS=false;
+function atStakingGross(on){
+ if(on===AT_GROSS)return;AT_GROSS=on;const sg=on?1:-1,L=MP.months.length;
+ for(const p of MP.products){const u=p.used_elsewhere_eth;if(!u)continue;
+  p.history.forEach((h,i)=>{if(h&&h.eth_ref!=null&&u[i]){const px=h.usd/h.eth_ref||MP.months[i].usd/MP.months[i].eth_ref;h.eth_ref+=sg*u[i];h.usd+=sg*u[i]*px;}});
+  const c=p.current,ux=u[L];if(c&&c.eth_ref!=null&&ux){const px=c.reference_ETH_USD||c.usd/c.eth_ref;c.eth_ref+=sg*ux;c.usd+=sg*ux*px;}}
+ const adj=(m)=>{const x=m.staking_used_elsewhere_eth;if(!x)return;const px=m.usd/m.eth_ref;for(const k of ['staking','restaking']){const b=m.by_category[k];if(b&&b.eth_ref!=null){b.eth_ref+=sg*x[k];b.usd+=sg*x[k]*px;}}};
+ MP.months.forEach(adj);if(MP.current&&MP.current!==MP.months[L-1])adj(MP.current);
+ marketRender();if(document.body.dataset.edition==='reader')readerAnswer();
+ $$('#at-stake-toggle button').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.gross==='1')===on)));
+ const n=$('#at-stake-note');if(n)n.innerHTML=on?`<b>Counts the same ETH twice.</b> Staking and Restaking now include ${ATK(MP.current.staking_used_elsewhere_eth.staking+MP.current.staking_used_elsewhere_eth.restaking)} ETH of staking tokens that are also posted in lending markets, looped or held inside products, and so also counted in Leveraged staking, Carry, Money markets or those products.`:'Staking and Restaking count only ETH that is staked and held. Staking tokens used anywhere else count where they are used.';
+}
+function atStakeToggle(){
+ const host=$('#m-selection');if(!host||$('#at-stake-toggle'))return;
+ const u=MP.current?.staking_used_elsewhere_eth;if(!u)return;
+ host.insertAdjacentHTML('afterend',`<div class="at-stake" id="at-stake-wrap"><div class="seg" id="at-stake-toggle" role="group" aria-label="How staking is counted"><span>Staking counts</span><button class="btn" data-gross="0" aria-pressed="true">Staked and held</button><button class="btn" data-gross="1" aria-pressed="false">All staked ETH (double count)</button></div><p class="note" id="at-stake-note">Staking and Restaking count only ETH that is staked and held. Staking tokens used anywhere else count where they are used.</p></div>`);
+ $('#at-stake-toggle').addEventListener('click',e=>{const b=e.target.closest('button[data-gross]');if(b)atStakingGross(b.dataset.gross==='1');});
+}
+const _atPrevFinalSG=atlasFinal;atlasFinal=function(){_atPrevFinalSG();try{atStakeToggle()}catch(e){}};
