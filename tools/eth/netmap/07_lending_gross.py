@@ -27,14 +27,20 @@ def borrowed_plain_usd(d):
 def main():
     p = price(SNAP_POINT)
     rows = []
-    for r in csv.DictReader(open(os.path.join(OUT, 'market_map_current.csv'))):
-        if r['category'] != 'lending':
-            continue
+    # lending rows in the lending layer at the snapshot (leftovers out) holding plain ETH (spETH included), as before 8 Oct;
+    # the set stays fixed so the lending split's long tail (data/eth/lending_split.json) keeps its basis
+    M = json.load(open(os.path.join(OUT, 'map.json')))
+    layer = json.load(open(os.path.join(OUT, 'lending_layer.json')))['months'][M['snapshot']]['rows']
+    for slug in layer:
         try:
-            d = load(r['slug'])
+            d = load(slug)
         except FileNotFoundError:
             continue
-        v, _ = pick(series(r['slug']), SNAP_POINT)
+        v, _ = pick(series(slug), SNAP_POINT)
+        old_plain = sum(x for s, x in (v or {}).items() if s.upper() in PLAIN | {'SPETH'} and x and x > 0) / p
+        if old_plain < 0.5:
+            continue
+        r = {'slug': slug, 'product': M['meta'][slug]['name'], 'eth': M['values'][slug].get(M['snapshot']) or 0.0}
         plain = lst = 0.0
         for s, x in (v or {}).items():
             su, w = s.upper(), eth_weight(s)
@@ -46,7 +52,7 @@ def main():
                 lst += w * x
         lent = borrowed_plain_usd(d)
         rows.append({'slug': r['slug'], 'name': r['product'], 'plain_eth': plain / p, 'staking_tokens_eth': lst / p,
-                     'lent_out_eth': lent / p, 'counted_eth': float(r['eth'])})
+                     'lent_out_eth': lent / p, 'counted_eth': float(r['eth'])})  # counted_eth: the row's money-markets share
     rows = [x for x in rows if x['plain_eth'] + x['staking_tokens_eth'] + x['lent_out_eth'] >= 1]
     rows.sort(key=lambda x: -(x['plain_eth'] + x['staking_tokens_eth']))
     tot = {k: sum(x[k] for x in rows) for k in ('plain_eth', 'staking_tokens_eth', 'lent_out_eth', 'counted_eth')}

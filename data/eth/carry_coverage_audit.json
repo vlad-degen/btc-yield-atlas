@@ -307,9 +307,9 @@
       "symbol": "ETH",
       "tvlUsd": 210426203,
       "poolMeta": null,
-      "parent_id": "fluid-lite",
-      "parent_role": "loops",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -655,9 +655,9 @@
       "symbol": "TETH",
       "tvlUsd": 67164971,
       "poolMeta": null,
-      "parent_id": "treehouse-protocol",
-      "parent_role": "loops",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -799,9 +799,9 @@
       "symbol": "ETH",
       "tvlUsd": 56748465,
       "poolMeta": null,
-      "parent_id": "spark-savings",
-      "parent_role": "lending",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {
@@ -2851,9 +2851,9 @@
       "symbol": "WSTETH",
       "tvlUsd": 6890766,
       "poolMeta": "Aavev3",
-      "parent_id": "cian-yield-layer",
-      "parent_role": "loops",
-      "disposition": "Parent covered in frozen ledger; pool TVL is not additive ETH capital",
+      "parent_id": null,
+      "parent_role": null,
+      "disposition": "Discovery only; token identity and frozen ETH-side exposure need verification",
       "valuation_date": "5 Oct discovery; not frozen T"
     },
     {

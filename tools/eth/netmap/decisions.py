@@ -34,7 +34,7 @@ EXCLUDE = {
     'concrete': ('Concrete Delta weETH (307k ETH) is one principal\'s own position, not a pooled product: a Bitfinex-linked wallet moved its '
                  'Aave position into the vault\'s Safe on 10 Dec 2025 and holds 100% of the shares; it borrows $176M of stablecoins against it '
                  '(research/eth/en/gaps/CONCRETE-DELTA.md). ctwstETH+ (45k ETH) is that Safe\'s own circular holding. Excluded like Avalon in the BTC map; '
-                 'the weETH stays counted at ether.fi.'),
+                 'its weETH collateral is counted in money markets (lending split cell A2).'),
     # product-notes review, 7 Oct 2026 (data/eth/netmap/product_notes.csv, flag column)
     'puffer-unifi': 'Same pufETH as the Nucleus row.', 'puffer-vaults': 'Same vaults as the Nucleus row.',
     'swell-earn': 'Same swETH as the Nucleus row.', 'mitosis': 'Same weETH balances as Theo straddle vaults.',
@@ -77,6 +77,7 @@ EXCLUDE = {
     'opengdp-shared-security': 'Restaking of non-ETH assets.',
     'smardex-usdn': 'Dollar product: wstETH backs a delta-neutral stablecoin (USDN); holders earn in dollars.',
     'river-omni-cdp': 'Borrowing venue; the collateral is counted at its issuers.',
+    'spark-savings': 'spETH is WETH lent into SparkLend: the idle part is counted in SparkLend, the lent part where its borrowers use it (mostly leveraged staking).',
 }
 
 # ---- category overrides (DefiLlama category otherwise decides) --------------------------------------------------------
@@ -209,9 +210,9 @@ def _rocksolid_liquity(vals, label):
     return min(728.48, vals.get('carry:liquity-carry') or 0.0) if label >= '2026-06' else 0.0
 
 
-# (holder, row that loses the holding, amount function)
+# (holder, row that loses the holding, amount function). Rocksolid's Liquity ETH Carry shares (_rocksolid_liquity) are no longer
+# an overlap: since 8 Oct the Rocksolid row counts only its rETH collateral against the USDC loan, not its whole book.
 OVERLAPS = [
-    ('carry:liquity-carry', 'carry:rocksolid', _rocksolid_liquity),
     ('mantle-restaking', 'veda', lambda vals, label: vals.get('mantle-restaking') or 0.0),   # Veda's adapter counts the cmETH vault
     ('upshift', 'gain', lambda vals, label: vals.get('gain') or 0.0),                       # Kelp Gain vaults run on Upshift; count once
     # YieldBasis' WETH/crvUSD pool is a Curve pool, so Curve DEX also counts its WETH (about the depositors' ETH at 2x)
@@ -234,9 +235,31 @@ blast-pre-launch-farm balancer-v1 creth2 bifrost-liquid-staking belt-finance rib
 fyde-protocol goldsand-by-inshallah reaper-farm onx-finance euclid-finance unipower nimbora-yield juice-finance mev-protocol
 cytonic-airdrop-campaign sophon-farm terminal-finance-pre-deposits corn-kernels'''.split())
 
-# A carry product counts as carry only in months when it owed dollars (as the BTC map moved ether.fi Liquid BTC out of
-# carry while its loan was repaid). Other months go to the category it worked in then. id -> (economic id, category then)
+# A carry product counts as carry only in months when it owed at least $10k (as the BTC map moved ether.fi Liquid BTC out of
+# carry while its loan was repaid). id -> (economic id, base category). Since 8 Oct the carry row is only the part of the book
+# that is ETH collateral against dollar debt (tools/eth/netmap/layers.py); the rest goes by the same rules as everyone else:
+# loop positions are inside leveraged staking, staking tokens just held stay with their issuer, lending collateral that backs
+# no debt goes to the base category below (money markets for products whose base is loops).
 DEBT_MONTHS = {'liquid-eth': ('liquid', 'loops'), 'lido-earn': ('lido-earn', 'loops'), 'makina-deth': ('makina-deth', 'loops'),
                'rocksolid': ('rocksolid', 'loops'), 'avant-aveth': ('avant', 'staking'), 'yieldbasis-weth': ('yieldbasis', 'farming'),
                'liquity-carry': ('liquity', 'farming'), 'royco-eth': ('royco', 'farming'), 'vesper-vaeth': ('vesper', 'farming'),
-               'reservoir-eth': ('reservoir-eth', 'farming'), 'tau-infinifi': ('tau-infinifi', 'farming'), 'zensats': (None, 'farming')}
+               'reservoir-eth': ('reservoir-eth', 'farming'), 'tau-infinifi': ('tau-infinifi', 'farming'), 'zensats': (None, 'farming'),
+               'nemo-eth-prime': ('upshift-nemo-eth-prime', 'farming'), 'sentora-eth': ('upshift-sentora-eth', 'farming')}
+
+# Loop products whose whole book sits in lending markets (product notes, research/eth/en/dossiers): their positions are
+# inside the leveraged-staking cell of the lending split (ETH borrowed against staking tokens, counted once as collateral),
+# so the rows count 0 and their own tokens (tETH) held elsewhere are claims on that cell, not new ETH.
+LOOPS_IN_LENDING = {
+    'fluid-lite': 'Instadapp Lite iETHv2: stETH collateral on Aave, Spark, Fluid and Morpho against WETH debt.',
+    'treehouse-protocol': 'tETH: wstETH and weETH looped on Aave and Spark against WETH debt.',
+    'cian-yield-layer': 'rsETH and wstETH looped on Aave (Ethereum, Arbitrum, Optimism) against WETH debt.',
+    'origami-finance': 'lovTokens: weETH and wstETH looped on Morpho, Spark and Aave against WETH debt.',
+    'index-coop': 'icETH: wstETH looped against WETH on Aave.',
+}
+
+# leveraged-staking rows of the map: lending venues grouped (row slug -> (group, name)); every other lending row goes to 'other'
+LOOP_VENUES = {'aave-v3': ('aave', 'Aave v3 and v2'), 'aave-v2': ('aave', 'Aave v3 and v2'), 'sparklend': ('spark', 'SparkLend'),
+               'morpho-blue': ('morpho', 'Morpho'), 'morpho-midnight': ('morpho', 'Morpho'), 'compound-v3': ('compound', 'Compound'),
+               'compound-v2': ('compound', 'Compound'), 'fluid-lending': ('fluid', 'Fluid'), 'aave-v4': ('aave-v4', 'Aave v4'),
+               'euler-v2': ('euler', 'Euler')}
+LOOP_OTHER = 'other lending markets'

@@ -23,7 +23,18 @@ check('headline_equals_default_products', math.isclose(tot, ch['default_current'
 ids = {p['id'] for p in P}
 check('excluded_rows_not_counted_and_have_reasons', not (ids & set(DEC.EXCLUDE)) and all(DEC.EXCLUDE.values()))
 check('concrete_delta_not_counted', not any('concrete' in p['id'] for p in P))
-check('carry_rows_are_the_examined_books', {p['name'] for p in P if p['id'].startswith('carry:') and not p['id'].endswith(':nodebt')} <= {v['name'] for v in DEC.CARRY.values()})
+check('carry_rows_are_the_examined_books', {p['name'] for p in P if p['id'].startswith('carry:') and not p['id'].endswith((':nodebt', ':rest'))} <= {v['name'] for v in DEC.CARRY.values()})
+check('carry_category_is_only_carry_rows', all(p['id'].startswith('carry:') and not p['id'].endswith(':rest') for p in P if p['category'] == 'carry'))
+check('loop_products_inside_leveraged_staking', all((p['current']['eth_ref'] or 0) == 0 for p in P if p['id'] in DEC.LOOPS_IN_LENDING))
+# the lending layer at the snapshot reconciles with the lending split's counted-once matrix (data/eth/lending_split.json)
+LL = json.load(open(os.path.join(OUT, 'lending_layer.json')))
+lm, snap = LL['meta'], LL['months'][LL['snapshot']]
+check('loops_equal_matrix_A1_B1_less_product_shares', math.isclose(snap['loops'], lm['matrix']['A1'] + lm['matrix']['B1'] - lm['shares_snapshot'], rel_tol=1e-9))
+check('lending_layer_equals_matrix_plus_rows_outside_its_basis', abs(lm['layer_total_snapshot'] - lm['matrix_total']) < 5000, lm['layer_total_snapshot'] - lm['matrix_total'])
+cat = ch['current']['by_category']
+rest_mm = sum(p['current']['eth_ref'] or 0 for p in P if p['category'] == 'lending' and p['id'].endswith(':rest'))
+check('categories_equal_the_layer', math.isclose(cat['loops']['eth_ref'], snap['loops'], rel_tol=1e-9) and math.isclose(cat['lending']['eth_ref'] - rest_mm, snap['money_markets'], rel_tol=1e-9),
+      [cat['loops']['eth_ref'], snap['loops'], cat['lending']['eth_ref'], snap['money_markets']])
 native = 43_805_557.723  # archived consensus state at T (research/eth/en/BRIEFING.md)
 st = math.fsum(p['current']['eth_ref'] or 0 for p in P if p['category'] in ('staking', 'restaking'))
 check('staking_and_restaking_below_native_stake', st < native, [st, native])

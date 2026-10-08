@@ -1,8 +1,8 @@
 {
  "pools_checked": 603,
  "tvl_by_status": {
-  "map": 69144672516,
-  "excluded": 1973163468,
+  "map": 69088497603,
+  "excluded": 2029338381,
   "screened out (under 100 ETH today and under 1,000 at every month-end)": 26041817,
   "not a candidate": 1160207
  },
@@ -68,13 +68,6 @@
    "change": -0.008076699451687208
   },
   {
-   "product": "ether.fi Stake",
-   "snapshot_gross_eth": 1917979.5018596658,
-   "later_gross_eth": 1910906.4946518077,
-   "later_date": "2026-10-07",
-   "change": -0.0036877386859454075
-  },
-  {
    "product": "Rocket Pool",
    "snapshot_gross_eth": 522271.10515205056,
    "later_gross_eth": 521503.7391406422,
@@ -89,11 +82,11 @@
    "change": 0.0002701242210472188
   },
   {
-   "product": "Kelp",
-   "snapshot_gross_eth": 416377.31682673394,
-   "later_gross_eth": 417363.6938963988,
+   "product": "Liquid Collective",
+   "snapshot_gross_eth": 273809.64392796834,
+   "later_gross_eth": 273886.07107726875,
    "later_date": "2026-10-07",
-   "change": 0.0023689500599652913
+   "change": 0.00027912511847283383
   },
   {
    "product": "StakeWise V3",
@@ -101,13 +94,6 @@
    "later_gross_eth": 377828.6708156351,
    "later_date": "2026-10-07",
    "change": 7.550694998115226e-05
-  },
-  {
-   "product": "Liquid Collective",
-   "snapshot_gross_eth": 273809.64392796834,
-   "later_gross_eth": 273886.07107726875,
-   "later_date": "2026-10-07",
-   "change": 0.00027912511847283383
   },
   {
    "product": "mETH Protocol",
@@ -124,11 +110,11 @@
    "change": -0.005518165598062841
   },
   {
-   "product": "Fluid Lite",
-   "snapshot_gross_eth": 77313.64505186099,
-   "later_gross_eth": 77144.8925995987,
+   "product": "ether.fi Stake",
+   "snapshot_gross_eth": 1917979.5018596658,
+   "later_gross_eth": 1910906.4946518077,
    "later_date": "2026-10-07",
-   "change": -0.0021826994723778137
+   "change": -0.0036877386859454075
   },
   {
    "product": "Frax Ether",
@@ -157,6 +143,20 @@
    "later_gross_eth": 26963.862167149826,
    "later_date": "2026-10-07",
    "change": -0.01081919898011452
+  },
+  {
+   "product": "Stader",
+   "snapshot_gross_eth": 86279.13072823368,
+   "later_gross_eth": 86292.53199915738,
+   "later_date": "2026-10-07",
+   "change": 0.00015532459368317042
+  },
+  {
+   "product": "Symbiotic: direct restaking",
+   "snapshot_gross_eth": 61234.095244460856,
+   "later_gross_eth": 60678.82833431386,
+   "later_date": "2026-10-07",
+   "change": -0.009067936872917626
   }
  ]
 }

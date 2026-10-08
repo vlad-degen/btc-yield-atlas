@@ -1,6 +1,6 @@
 # ETH yield: market map, top five carry products, findings
 
-**Snapshot:** 2 October 2026, 23:59:59 UTC (Ethereum block 26,108,081). ETH at $2,669.39. Built 7 October 2026 to the standard of the BTC study.
+**Snapshot:** 2 October 2026, 23:59:59 UTC (Ethereum block 26,108,081). ETH at $2,669.39. Built 7 October 2026 to the standard of the BTC study; categories redrawn 8 October 2026.
 
 **Questions:**
 1. How much ETH earns a yield in products, counted once, and how it splits by strategy.
@@ -12,9 +12,9 @@
 
 ## 0. Short answers
 
-1. **18,499,055 ETH ($49.38B) earns a yield in 131 products, each counted once.** Staking 15.09M (82%), restaking 2.44M (13%), farming 529k, carry 306k (1.7%), leveraged staking 98k, credit 27k, fixed yield 9k, options 2k. WETH in money markets and lending-only vaults (812k) and CDPs (657k) is listed and off by default. About 14.4M ETH more is staked off-chain (exchanges, institutional providers, BitMine) and not counted.
-2. **Two years: staking grew, everything around it shrank.** Total 18.55M (Oct 2024), peak 20.00M (Jan 2026), 18.50M now. Staking +2.51M. Restaking peaked at 4.63M (Jul 2025) and lost half. Farming fell from 1.58M to 0.53M, fixed yield from 307k to 9k, leveraged staking from a 415k peak (May 2025) to 98k. Carry is the only new category: from nothing to 306k ETH in a year.
-3. **Carry is small and concentrated.** 12 products owe $270.9M of dollars against ETH (BTC: 9.9% of its market is carry, ETH 1.7%). Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 85% of the ETH.
+1. **16,044,015 ETH ($42.83B) earns a yield in 133 products, each counted once.** Staking 12.00M (74.8%), leveraged staking 2.89M (18.0%), farming 528k (3.3%), restaking 419k (2.6%), carry 172k (1.1%), credit 27k, fixed yield 9k, options 2k. Money markets (3.23M ETH and staking tokens posted in lending markets outside loops and carry products) and CDPs (657k) are listed and off by default. About 14.4M ETH more is staked off-chain (exchanges, institutional providers, BitMine) and not counted.
+2. **Two years: staking and loops grew, restaking and farming shrank.** Total 16.64M (Oct 2024), peak 17.45M (Jan 2026), low 15.30M (Jun 2026), 16.04M now. Staking +2.05M (9.95M to 12.00M). Leveraged staking 2.25M, peak 4.28M (Jan 2026), 2.59M after the April rsETH exploit (May 2026), 2.89M now. Restaking fell from 2.51M to 0.42M as weETH and rsETH moved into lending markets. Farming fell from 1.58M to 0.53M, fixed yield from 307k to 9k. Carry is the only new category: nearly zero until August 2025, 172k ETH now.
+3. **Carry is small and concentrated.** 12 products owe $270.9M of dollars against 171,649 ETH, 1.1% of the map (BTC 9.9%, counted on whole books). Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 82% of the carry ETH.
 4. **Carry barely beats staking.** The best product, Liquid ETH, beat stETH by 0.66 pp a year over two years, all of it in year two, and mostly from a fee cut. Its dollar leg loses about $6.8M a year at 2 October rates. YieldBasis is the only one whose fees cover its loan, and its depositors still trail stETH unless they take YB emissions.
 5. **Rewards are a minority of the lead over stETH,** except at YieldBasis (all of it, for gauge stakers) and Liquity (99%). Liquid: 34%. Lido Earn: none in 90 days. Avant: 7%.
 6. **Private mandates borrow as much as all carry products together.** Concrete Delta (307k ETH, one Bitfinex-linked wallet, $176.2M of debt) and three whitelist-only rSHARE vaults (about 83k WETH, $80.4M) are left out of the map, like Avalon in BTC.
@@ -24,40 +24,44 @@
 
 | Category | ETH | Share | Note |
 |---|---:|---:|---|
-| Staking | 15,093,012 | 81.6% | Lido 9.39M, Binance 3.74M, Rocket Pool 0.50M, cbETH 0.45M (on-chain supply) |
-| Restaking | 2,435,229 | 13.2% | ether.fi Stake 1.70M, Kelp 0.41M; EigenLayer and Symbiotic only where no issuer or other product counted it |
-| Farming | 529,000 | 2.9% | points, pools (the ETH side no other row counts), vaults |
-| Carry | 305,908 | 1.7% | 12 products, $270.9M of dollar debt |
-| Leveraged staking | 98,000 | 0.5% | |
+| Staking | 12,001,955 | 74.8% | Lido 6.59M, Binance 3.73M, Rocket Pool 0.46M, cbETH 0.36M (on-chain supply); staked and held only |
+| Leveraged staking | 2,885,012 | 18.0% | Aave v3 and v2 2.07M, Spark 0.53M, Morpho, Fluid and others; equity about 307k ETH |
+| Farming | 528,228 | 3.3% | points, pools (the ETH side no other row counts), vaults |
+| Restaking | 419,194 | 2.6% | EigenLayer direct 0.21M, ether.fi Stake 0.07M, Renzo 0.04M; weETH 1.83M and rsETH 0.39M sit in lending markets |
+| Carry | 171,649 | 1.1% | 12 products, $270.9M of dollar debt; only the ETH behind those loans |
 | Credit, fixed yield, options, basis | about 38,000 | 0.2% | credit counts lent-out ETH too; basis is nearly empty |
-| Money markets (off) | 812,000 | | plain WETH in lending markets and lending-only vaults |
-| CDPs (off) | 657,000 | | |
+| Money markets (off) | 3,231,215 | | ETH and staking tokens posted in lending markets outside loops and carry products |
+| CDPs (off) | 657,327 | | |
 
-Counting rules, the same at every month-end: a staking token, or another product's token, held inside a counted product leaves the row that issued it; a DEX pool counts only its ETH side that no other row counts; products count depositor equity (Treehouse is still at gross collateral); restaking platforms count only what token issuers and other products did not; vaults that only lend WETH go with money markets and vaults holding DEX positions are counted in the pools; credit counts lent-out ETH; a reviewed leftover row flat for three month-ends counts as zero and keeps no tokens from issuers; carry counts only in months with at least $10k of dollar debt; products under $50k at the snapshot stay in the totals but are not listed. Details: [MARKET-COVERAGE](MARKET-COVERAGE.md). DefiLlama cross-check: 97.2% of the TVL of 603 ETH pools is on the map.
+Four rules decide where ETH in and around lending markets goes (8 October 2026). **Staking** and **restaking** are staked and held, not used anywhere else: issuer TVL less every staking token posted in a lending market, looped or held inside another product or pool (5.48M ETH of staking tokens sit in lending markets). **Leveraged staking** is every loop of staked ETH, or ETH, against borrowed ETH on lending markets, private and product; month-ends before the snapshot are estimated from ETH debt. **Carry** is only products open for deposits, and only the part of each book where ETH is collateral for a dollar loan; the rest of the book follows the same rules (Liquid ETH's weETH loop is leveraged staking). **Money markets** are everything else posted in lending markets, mostly collateral for dollar loans by unknown wallets, off by default as in BTC; CDPs stay separate and off. ETH carry is 1.1% against 9.9% in BTC, but the BTC map counts the whole book of each carry product as carry, so the two are not on the same basis.
+
+In lending markets, $5.07B of stablecoins is borrowed against ETH and $5.24B against BTC. Half of ETH collateral (3.16M of 6.30M ETH) backs dollar loans and 46% backs loops; for BTC, 97% backs dollar loans ([LENDING-SPLIT](LENDING-SPLIT.md)).
+
+Counting rules, the same at every month-end: a staking token, or another product's token, held inside a counted product or posted in a lending market leaves the row that issued it; lending collateral counts once and lent-out WETH is not added; a DEX pool counts only its ETH side that no other row counts; loop vaults count zero, their positions are inside leveraged staking; restaking platforms count only what token issuers and other products did not; vaults that only lend WETH go with money markets and vaults holding DEX positions are counted in the pools; credit counts lent-out ETH; a reviewed leftover row flat for three month-ends counts as zero and keeps no tokens from issuers; carry counts only in months with at least $10k of dollar debt; products under $50k at the snapshot stay in the totals but are not listed. Details: [MARKET-COVERAGE](MARKET-COVERAGE.md). DefiLlama cross-check: 97.1% of the TVL of 603 ETH pools is on the map.
 
 ## 2. Two years
 
 | Category | Oct 2024 | Peak | 2 Oct 2026 |
 |---|---:|---|---:|
-| Staking | 12.58M | now | 15.09M |
-| Restaking | 3.78M | 4.63M, Jul 2025 | 2.44M |
+| Staking | 9.95M | now | 12.00M |
+| Leveraged staking | 2.25M | 4.28M, Jan 2026 | 2.89M |
+| Restaking | 2.51M | Oct 2024 | 0.42M |
 | Farming | 1.58M | Oct 2024 | 0.53M |
-| Leveraged staking | 270k | 415k, May 2025 | 98k |
 | Fixed yield | 307k | Oct 2024 | 9k |
-| Carry | 0 | now | 306k |
-| Total | 18.55M | 20.00M, Jan 2026 | 18.50M |
+| Carry | 0 | now | 172k |
+| Total | 16.64M | 17.45M, Jan 2026 | 16.04M |
 
-Restaking paid nothing extra: weETH earned 5.29% against stETH's 5.49% over two years in total, and EIGEN fell from about $3.4 to $0.20. Points programmes ended and farming left with them. Leveraged staking shrank because stETH beat the Aave WETH borrow rate by only 0.15 pp a year on average in year one and 0.10 pp in year two ([RESTAKING-AND-LOOPS](RESTAKING-AND-LOOPS.md)).
+Restaking paid nothing extra: weETH earned 5.29% against stETH's 5.49% over two years in total, and EIGEN fell from about $3.4 to $0.20. Points programmes ended and farming left with them. Leveraged staking stays large on a thin spread: stETH beat the Aave WETH borrow rate by only 0.15 pp a year on average in year one and 0.10 pp in year two ([RESTAKING-AND-LOOPS](RESTAKING-AND-LOOPS.md)). It fell from 4.28M in January 2026 to 2.59M in May, after the April rsETH exploit. Its history is an estimate (month-end ETH debt times the snapshot ratio of loop collateral to debt); carry history is measured account by account.
 
 ## 3. Top five carry products
 
-| # | Product | ETH | Dollar debt | Paid vs stETH | Without rewards | Control |
-|---|---|---:|---:|---|---|---|
-| 1 | ether.fi Liquid ETH | 177,171 | $181.1M | 3.37% vs 2.71%, two years | 3.39% vs 3.87%, a year | Veda vault run by Nonce |
-| 2 | YieldBasis WETH | 10,426 | $27.8M | unstaked −2.96%, staked +1.69%, 90 days | −2.96% | admin fee 40.5% on 2 October |
-| 3 | Lido Earn ETH | 83,309 | $25.6M | 3.14%, 90 days | 3.14% | 5-of-8 Safe, no timelock |
-| 4 | Avant savETH | 12,583 | $19.7M with Aave v4 and Morpho | 4.74%, 90 days | 4.55% | one EOA |
-| 5 | Liquity ETH Carry | 6,014 | $6.75M | 3.84%, 90 days | 2.26% | 2-of-3 Safe, no delay |
+| # | Product | Book, ETH | Carry, ETH | Dollar debt | Paid vs stETH | Without rewards | Control |
+|---|---|---:|---:|---:|---|---|---|
+| 1 | ether.fi Liquid ETH | 177,171 | 115,864 | $181.1M | 3.37% vs 2.71%, two years | 3.39% vs 3.87%, a year | Veda vault run by Nonce |
+| 2 | YieldBasis WETH | 10,426 | 10,426 | $27.8M | unstaked −2.96%, staked +1.69%, 90 days | −2.96% | admin fee 40.5% on 2 October |
+| 3 | Lido Earn ETH | 83,309 | 25,029 | $25.6M | 3.14%, 90 days | 3.14% | 5-of-8 Safe, no timelock |
+| 4 | Avant savETH | 12,583 | 7,493 | $19.7M with Aave v4 and Morpho | 4.74%, 90 days | 4.55% | one EOA |
+| 5 | Liquity ETH Carry | 6,014 | 6,014 | $6.75M | 3.84%, 90 days | 2.26% | 2-of-3 Safe, no delay |
 
 ## 4. Findings by product
 
@@ -90,4 +94,4 @@ Details: [CLOSED-CASES](CLOSED-CASES.md).
 
 ## Method and limits
 
-Method, decisions and the re-check: [MARKET-COVERAGE](MARKET-COVERAGE.md), [BRIEFING](BRIEFING.md), and the Data section of the site. Not verified: Liquid's residual income, Lido Earn's launch-month yield, Avant's books on other chains, Liquity's keeper-stored balances, and the identity of large wallets. Map limits: money markets are not netted for positions of other map products (the BTC map is), so that off-by-default segment is an upper bound; Treehouse is counted at gross collateral; whether Cap's wstETH and ether.fi's weETHs vault also sit in EigenLayer or Symbiotic is not checked; YieldBasis' pool counts in Curve before its on-chain book starts (May 2026).
+Method, decisions and the re-check: [MARKET-COVERAGE](MARKET-COVERAGE.md), [BRIEFING](BRIEFING.md), and the Data section of the site. Not verified: Liquid's residual income, Lido Earn's launch-month yield, Avant's books on other chains, Liquity's keeper-stored balances, and the identity of large wallets. Map limits: lending positions of map products other than the carry and loop products (farming vaults, credit) are not separated from the lending cells, so money markets, off by default, is an upper bound; leveraged staking history is an estimate from ETH debt; whether Cap's wstETH and ether.fi's weETHs vault also sit in EigenLayer or Symbiotic is not checked; YieldBasis' pool counts in Curve before its on-chain book starts (May 2026).

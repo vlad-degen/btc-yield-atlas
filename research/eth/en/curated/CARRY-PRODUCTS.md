@@ -4,19 +4,19 @@ Financial snapshot: **2 October 2026, 23:59:59 UTC**, Ethereum block **26,108,08
 
 ## Ranking
 
-The top five are ranked by dollars borrowed against ETH: **Liquid ETH, YieldBasis WETH, Lido Earn, Avant, Liquity**. Together the 12 carry products on the map hold 305,908 ETH and owe $270.9M ([all products and status](CARRY-CATEGORY.md)). Books overlap with other map rows; do not add them.
+The top five are ranked by dollars borrowed against ETH: **Liquid ETH, YieldBasis WETH, Lido Earn, Avant, Liquity**. Together the 12 carry products owe $270.9M against 171,649 ETH of collateral, the carry category on the map ([all products and status](CARRY-CATEGORY.md)). Whole books are larger: their loops count in leveraged staking and held staking tokens at their issuers, so do not add whole books to the map.
 
-| Product | Dollars borrowed | Loan rate | Whole book, ETH | 30-day ETH book return | Excess vs stETH, pp |
-| --- | --- | --- | --- | --- | --- |
-| ether.fi Liquid ETH | $181.1M | 7.79% | 177,171 | 0.2610% | +0.0761 |
-| YieldBasis WETH | $27.8M | 10.00% | 10,426 | -0.1622% | -0.3471 |
-| Lido Earn ETH | $25.6M | 4.33% | 83,309 | 0.2513% | +0.0664 |
-| Avant avETH / savETH | $10.0M | 6.30% | 12,583 | 0.3385% | +0.1536 |
-| Liquity ETH Carry | $6.8M | 2.55% | 6,014 | 0.4597% | +0.2748 |
-| Rocksolid rETH | $2.7M | 4.61% | 9,728 | 0.2192% | +0.0343 |
-| Makina DETH | $385k | 3.21% | 2,499 | 0.3468% | +0.1619 |
-| Royco ETH | $91k | 30.24% | 116 | 0.1849% | +0.0000 |
-| Vesper vaETH | $69k | 5.00% | 1,052 | 0.0698% | -0.1151 |
+| Product | Dollars borrowed | Loan rate | Whole book, ETH | Carry, ETH | 30-day ETH book return | Excess vs stETH, pp |
+| --- | --- | --- | --- | --- | --- | --- |
+| ether.fi Liquid ETH | $181.1M | 7.79% | 177,171 | 115,864 | 0.2610% | +0.0761 |
+| YieldBasis WETH | $27.8M | 10.00% | 10,426 | 10,426 | -0.1622% | -0.3471 |
+| Lido Earn ETH | $25.6M | 4.33% | 83,309 | 25,029 | 0.2513% | +0.0664 |
+| Avant avETH / savETH | $19.7M | 6.30% | 12,583 | 7,493 | 0.3385% | +0.1536 |
+| Liquity ETH Carry | $6.8M | 2.55% | 6,014 | 6,014 | 0.4597% | +0.2748 |
+| Rocksolid rETH | $2.7M | 4.61% | 9,728 | 2,728 | 0.2192% | +0.0343 |
+| Makina DETH | $385k | 3.21% | 2,499 | 348 | 0.3468% | +0.1619 |
+| Royco ETH | $91k | 30.24% | 116 | 116 | 0.1849% | +0.0000 |
+| Vesper vaETH | $69k | 5.00% | 1,052 | 9 | 0.0698% | -0.1151 |
 
 Returns are 2 September to 2 October 2026, not annualised; stETH returned 0.1849%. NEMO ETH Prime ($5.6M) and Sentora ETH ($1.2M) are in [ROCKSOLID-NEMO-SENTORA](ROCKSOLID-NEMO-SENTORA.md).
 
@@ -36,7 +36,7 @@ Since-first-sample returns start on different dates, so they do not rank product
 
 ## ether.fi Liquid ETH (#1, $181.1M borrowed)
 
-**Finding:** Liquid beat stETH by 0.66 pp a year over two years (3.37% against 2.71%). The ETH loop added +0.02 pp a year and the dollar leg -0.13 pp; the rest is income our model cannot assign ([LIQUID-LOOP](LIQUID-LOOP.md)). At 2 October rates the dollar leg loses about $6.8M a year. Dossier: [Liquid ETH](dossiers/etherfi-liquid-eth.md).
+**Finding:** Liquid beat stETH by 0.66 pp a year over two years (3.37% against 2.71%). The ETH loop added +0.02 pp a year and the dollar leg -0.13 pp; the rest is income our model cannot assign ([LIQUID-LOOP](LIQUID-LOOP.md)). At 2 October rates the dollar leg loses about $6.8M a year. On the map only the dollar-loan collateral counts as carry (115,864 ETH); the weETH loop (481,697 ETH of collateral against 441,802 WETH of debt) counts in leveraged staking. Dossier: [Liquid ETH](dossiers/etherfi-liquid-eth.md).
 
 The Ethereum share contract was deployed on **3 June 2024 at 23:23:59 UTC**. The T book covers Ethereum and Optimism share circulation and totals **177,171.063 ETH / $472.684M**. The first funded observation used here is 30 September 2024. Its cumulative ETH book change to T is **+6.8658%**; the exactly 730-day comparison in the existing benchmark uses a different start date and remains **+6.8501%**. These figures are compatible and should keep their explicit window labels. [Share contract](https://etherscan.io/address/0xf0bb20865277abd641a307ece5ee04e79073416c#code), [existing benchmark](../../../data/eth/etherfi_staking_comparison.json).
 

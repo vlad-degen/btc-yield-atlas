@@ -2,14 +2,15 @@
 
 Public report: https://vlad-degen.github.io/btc-yield-atlas/eth/
 
-Financial snapshot: **2 October 2026, 23:59:59 UTC** (Ethereum block 26,108,081). Rebuilt on 7 October 2026 to match the BTC study: the market is now a product map with every product counted once, and the five carry chapters gain risk, repayment and reward-payer evidence.
+Financial snapshot: **2 October 2026, 23:59:59 UTC** (Ethereum block 26,108,081). Rebuilt on 7 October 2026 to match the BTC study: the market is now a product map with every product counted once, and the five carry chapters gain risk, repayment and reward-payer evidence. Categories redrawn on 8 October 2026: staking is staked and held only, every loop is leveraged staking, carry is only the dollar-loan part of products open for deposits, and money markets (off) hold the rest of lending collateral.
 
 ## What the page says
 
-- **18.50M ETH earns a yield** in 131 products, each counted once ($49.5B): 82% staking, 13% restaking. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.
-- **Carry is 1.7%**: 306k ETH in 12 products that borrow $271M of dollars against ETH (BTC: 9.9%). Liquid ETH and Lido Earn hold 85%. Rewards are a minority of the lead over stETH except at YieldBasis and Liquity.
+- **16.04M ETH earns a yield** in 133 products, each counted once ($42.83B): 74.8% staking, 18.0% leveraged staking, 3.3% farming, 2.6% restaking. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine.
+- **Carry is 1.1%**: 172k ETH, the part of 12 products where ETH backs $271M of dollar loans (BTC: 9.9%, counted on whole books). Liquid ETH and Lido Earn hold 82%. Rewards are a minority of the lead over stETH except at YieldBasis and Liquity.
 - **Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years; its dollar leg loses about $6.8M a year at 2 October rates. YieldBasis is the only top-five product whose fees cover its loan.
 - **Concrete Delta (307k ETH) is not a product**: one Bitfinex-linked wallet's own position, left out of the map.
+- **Lending collateral**: $5.07B of stablecoins is borrowed against ETH and $5.24B against BTC; half of ETH collateral backs dollar loans, 46% backs loops.
 
 ## Reading route
 

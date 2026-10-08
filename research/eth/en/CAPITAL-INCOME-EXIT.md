@@ -120,7 +120,7 @@ Evidence: [backing and exits](../../../data/eth/backing_exit_closure.json), [all
 
 ## As of 4 October: custody checks (superseded by the counted-once map)
 
-Superseded: the 21.158M ETH protocol-panel total and the conclusion that unique capital could not be measured. The map now counts each product once (18,499,055 ETH, [MARKET-STRUCTURE](MARKET-STRUCTURE.md)). The custody checks below remain valid as of the snapshot. The Ethereum custody graph identifies **457,182.304 ETH** in distinct native-ETH holdings and canonical WETH backed by matching native escrow. This is a restricted custody floor in examined yield venues; reserve cash can be idle. It is not a floor for all assets currently earning yield.
+Superseded: the 21.158M ETH protocol-panel total and the conclusion that unique capital could not be measured. The map now counts each product once (16,044,015 ETH in 133 products, [MARKET-STRUCTURE](MARKET-STRUCTURE.md)). The custody checks below remain valid as of the snapshot. The Ethereum custody graph identifies **457,182.304 ETH** in distinct native-ETH holdings and canonical WETH backed by matching native escrow. This is a restricted custody floor in examined yield venues; reserve cash can be idle. It is not a floor for all assets currently earning yield.
 
 | Examined custody group | Physical native ETH / escrow-backed WETH |
 |---|---:|
@@ -132,7 +132,7 @@ Finalized withdrawal-queue custody of **25,175.548 ETH** is separate. Including 
 
 Canonical WETH supply and native escrow agree at **2,027,838.731 ETH**. All canonical WETH plus the named native-ETH holdings defines a scoped ceiling of 2,045,831.885 ETH. This scope excludes actual consensus balances, other native custody and other chains. It gives no global market ceiling or coverage percentage.
 
-The largest directly measured receipt repetition is **2,350,079.426 ETH equivalent** in Aave and Spark wstETH lender claims. Lido already accounts for the backing. Restaking has another nested path: Kelp node claims sit inside EigenLayer’s stETH strategy, which refers to Lido stake. The ownership edges overlap; adding or subtracting all of them indiscriminately would create a new counting error.
+The largest directly measured receipt repetition is **2,350,079.426 ETH equivalent** in Aave and Spark wstETH lender claims. Lido already accounts for the backing; the map now counts these tokens where they are posted (leveraged staking, carry, money markets) and takes them out of Lido. Restaking has another nested path: Kelp node claims sit inside EigenLayer’s stETH strategy, which refers to Lido stake. The ownership edges overlap; adding or subtracting all of them indiscriminately would create a new counting error.
 
 Lido's book reconciles to **9,841,288.207 ETH** at the oracle slot of 2026-10-02T12:00:11Z, about twelve hours before T. The beacon-chain state at T was later read directly (43.81M ETH active, [staking dossier](dossiers/staking-restaking.md)).
 

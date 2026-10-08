@@ -55,10 +55,10 @@ def product(slug):
     hist = [obs(slug, l) for l in LABELS[:-1]]
     hv = [(h['period'], h['eth_ref']) for h in hist if h['eth_ref']]
     peak = max(hv, key=lambda x: x[1]) if hv else None
-    n = NOTES.get(slug) or NOTES.get(slug.replace(':nodebt', ''), {})
+    n = NOTES.get(slug) or ({} if slug.endswith(':rest') else NOTES.get(slug.replace(':nodebt', ''), {}))
     dl = SCREEN.get(slug, {})
     return {
-        'id': slug, 'name': m['name'] if slug.endswith(':nodebt') else (n.get('product') or m['name']), 'category': m['category'], 'subtype': m.get('kind') or '',
+        'id': slug, 'name': m['name'] if slug.endswith((':nodebt', ':rest')) else (n.get('product') or m['name']), 'category': m['category'], 'subtype': m.get('kind') or '',
         'source_category': m['dl_category'], 'row_kind': 'onchain_book' if slug.startswith('carry:') else ('pool_set' if slug.startswith('pools:') else 'protocol_net'),
         'current': obs(slug, SNAP), 'history': hist,
         'how_earns': n.get('how') or '', 'yield': yield_text(slug), 'operator': n.get('run_by') or '',
@@ -120,7 +120,7 @@ def main():
     cats = []
     for c in CATEGORIES:
         cats.append({**c, 'scope': c['how'], 'yield_scope': c['payer'],
-                     'measurement': 'Products counted once: staking tokens held inside other products are counted in the product that holds them.'})
+                     'measurement': 'Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets).'})
     default = [c['id'] for c in CATEGORIES if c['default']]
     excluded = sorted(({'id': k, 'name': SCREEN.get(k, {}).get('name', k), 'eth': SCREEN.get(k, {}).get('snap_eth'), 'reason': v}
                        for k, v in DEC.EXCLUDE.items()), key=lambda r: -(r['eth'] or 0))

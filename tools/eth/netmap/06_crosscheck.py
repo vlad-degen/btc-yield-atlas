@@ -7,7 +7,7 @@ import decisions as DEC
 
 pools = json.load(open(os.path.join(RAW, 'yield_pools.json')))['data']
 ch = json.load(open(os.path.join(OUT, 'market_chapter.json')))
-mapped = {p['id'] for p in ch['products']} | {p['id'].split(':', 1)[1] for p in ch['products'] if p['id'].startswith('pools:')}
+mapped = {p['id'] for p in ch['products']} | {p['id'].split(':', 1)[1] for p in ch['products'] if p['id'].startswith('pools:')} | set(DEC.LOOPS_IN_LENDING)  # loop products: inside leveraged staking
 screen = json.load(open(os.path.join(RAW, 'screen.json')))
 by = collections.defaultdict(lambda: {'pools': 0, 'tvlUsd': 0.0, 'symbols': []})
 total = collections.Counter()

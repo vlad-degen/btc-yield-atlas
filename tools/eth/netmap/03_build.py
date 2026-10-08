@@ -1,25 +1,30 @@
 """Build the ETH counted-once market map: snapshot (2026-10-02) and 24 month-ends (2024-10 .. 2026-09).
 
 Inputs: raw/eth/netmap-2026-10-07/{screen.json, proto/*.json.gz, yield_pools.json, pool_charts/},
-        eth/data/carry-history-all-eth.csv and data/eth/carry-status-and-capital.csv (on-chain product books).
+        data/eth/reader_carry_category.json, reader_product_chapters.json and carry-status-and-capital.csv (on-chain product
+        books), data/eth/lending_split.json and the lending layer inputs read by layers.py.
 Outputs (data/eth/netmap/): market_map_current.csv, market_map_history_monthly.csv, category_history_monthly.csv,
         netting_ledger.csv, map.json (everything the site needs), plus a printed summary.
 
-Rules:
-- Every product counts once. A staking or restaking token held inside another counted product leaves its issuer's row.
-- Products report equity: a looped vault counts what its depositors own; the ETH it borrowed is the lenders' and stays
-  with the staking token's issuer (the borrowed ETH was staked) or, if idle, in money markets.
-- Money markets and CDPs count plain ETH/WETH only (idle supply / collateral); staking tokens posted there stay with
-  their issuer. Both are off by default.
+Rules (ETH map, since 8 Oct 2026):
+- Every product counts once. A staking or restaking token held inside another counted product, or posted in a lending
+  market, leaves its issuer's row: staking and restaking are ETH staked and held, not used anywhere else.
+- Lending markets (layers.py) split into leveraged staking (staking tokens or ETH against borrowed ETH: cells A1+B1 of
+  data/eth/lending_split.json, collateral counted once), the carry products' own collateral against dollar loans (carry) and
+  money markets (everything else, off by default). Lent-out WETH is not added. Loop vaults whose book sits in lending
+  markets count 0 (inside leveraged staking).
+- Carry rows are only the part of a product's book that is ETH collateral for a dollar loan (YieldBasis and Liquity ETH
+  Carry: the whole book), in months with at least $10k of dollar debt; the whole book still replaces the DefiLlama row.
+- CDPs count plain ETH only; staking tokens there stay with their issuer. Off by default.
 - Restaking platforms (EigenLayer, Symbiotic) count only what restaking-token issuers on the map have not already
   counted (estimate, flagged).
-- On-chain product books replace DefiLlama rows for the examined carry products.
 """
 import csv, collections, datetime, json, math, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib import OUT, RAW, ROOT, eth_part, load, month_points, pick, price, series
 from products import BY_DL_CATEGORY, CATEGORIES, ISSUERS
 import decisions as DEC
+import layers as LAY
 
 os.makedirs(OUT, exist_ok=True)
 PTS = month_points()
@@ -122,16 +127,19 @@ def pool_rows():
 
 
 def carry_rows():
-    """on-chain whole-product books of the examined carry products (ETH)"""
-    hist = list(csv.DictReader(open(os.path.join(ROOT, 'eth', 'data', 'carry-history-all-eth.csv'))))
+    """whole-product books of the examined carry products (ETH) at every month-end and the snapshot.
+
+    Month-ends: data/eth/reader_carry_category.json (Rocksolid: reader_product_chapters.json), the archive book series the
+    research built; read directly so the map does not depend on its own output (data/eth/carry-history-all-eth.csv is
+    written downstream from this map and zeroes months without dollar debt). Snapshot: carry-status-and-capital.csv."""
+    cat = json.load(open(os.path.join(ROOT, 'data', 'eth', 'reader_carry_category.json')))['products']
+    chapters = json.load(open(os.path.join(ROOT, 'data', 'eth', 'reader_product_chapters.json')))['products']
     snap = {r['product']: float(r['whole_book_ETH']) for r in csv.DictReader(open(os.path.join(ROOT, 'data', 'eth', 'carry-status-and-capital.csv')))}
     out = {}
     for prod, meta in DEC.CARRY.items():
-        vals = {}
-        for r in hist:
-            v = r.get(prod + '_ETH')
-            if v not in (None, ''):
-                vals[r['month']] = float(v)
+        p = next((x for x in cat if x['product'] == prod), None)
+        hist = (p or {}).get('history') or next((c['charts']['capitalHistory']['rows'] for c in chapters if c['name'] == prod), [])
+        vals = {r['month']: float(r['sizeETH']) for r in hist if r.get('sizeETH') is not None and r['month'] in LABELS}
         vals[SNAP] = meta.get('snapshot_eth', snap.get(prod))
         out['carry:' + meta['id']] = dict(slug='carry:' + meta['id'], name=meta['name'], dl_category='on-chain',
                                           category=meta['category'], kind=meta.get('kind'), source='on-chain product book (this study)',
@@ -143,6 +151,7 @@ def build():
     dl = dl_rows()
     pools = pool_rows()
     carry = carry_rows()
+    prices = {label: price(pdate) for label, pdate, _ in PTS}
     # rows read only to net others (excluded from the map themselves)
     dl_src = {src: {label: eth_part(pick(series(src), pdate)[0])[1] for label, pdate, _ in PTS} for src, *_ in DEC.BASE_VALUED.values()}
     ledger = []
@@ -150,12 +159,16 @@ def build():
     meta = {}
     replaced = {d for r in carry.values() for d in r['replaces']}
     carry_tokens = {k for k, t in DEC.PRODUCT_TOKENS.items() if t.startswith('carry:')}
+    # tokens of loop products whose book sits in lending markets: claims on the leveraged-staking cell, counted there
+    loop_tokens = {k for k, t in {**ISSUERS, **DEC.PRODUCT_TOKENS}.items() if t in DEC.LOOPS_IN_LENDING}
+    inner_tokens = carry_tokens | loop_tokens
 
     def row_value(slug, r, br):
         """step-1 value of a DefiLlama row (ETH) and the breakdown whose tokens it takes from other rows (None: takes none)"""
         cat = r['category']
         if cat in ('lending', 'cdp'):
             return plain_eth(br), None
+        br = {k: v for k, v in br.items() if k not in loop_tokens}
         if r.get('kind') == 'pools' and not slug.startswith('pools:'):
             # DEX, perp and bridge pools count the ETH no other row counts: the staking-token or product-token side of a
             # pool stays with its row, as in the yields-pool rows and the BTC map
@@ -183,8 +196,17 @@ def build():
                 leftover_from[slug] = seq[i]
                 break
 
+    # the lending layer (tools/eth/netmap/layers.py): lending-market ETH, loops, carry products' positions
+    row_category = {s: r['category'] for s, r in dl.items()}
+    layer, LM = LAY.build_layer(dl, PTS, prices, leftover_from, row_category)
+    parts = LAY.carry_parts(LABELS, prices, SNAP)
+    cmeta = {m['id']: m for m in DEC.CARRY.values()}
+    lend_rows = LAY.lending_rows(dl, leftover_from)
+    loops_meta, rest_meta = {}, {}
+
     for label, pdate, _ in PTS:
-        pr = price(pdate)
+        pr = prices[label]
+        L = layer[label]
         vals, sub = {}, collections.defaultdict(float)  # sub[row] = ETH to take out of a staking-token issuer or product row
         # 1. DefiLlama rows (gross ETH-family value; tokens they hold are recorded, taken out of their rows in step 5)
         held, ebr = {}, {}
@@ -201,6 +223,10 @@ def build():
             if slug in DEC.RESTAKING_PLATFORMS:
                 vals[slug] = None  # computed after the issuers
                 continue
+            if slug in DEC.LOOPS_IN_LENDING:
+                ledger.append((label, slug, 'loops', row_value(slug, r, br)[0], 'loop product: its positions are inside leveraged staking on lending markets'))
+                vals[slug] = 0.0
+                continue
             v, hbr = row_value(slug, r, br)
             if slug in leftover_from and label >= leftover_from[slug]:
                 ledger.append((label, slug, slug, v, 'leftover: balance unchanged since ' + leftover_from[slug]))
@@ -209,17 +235,29 @@ def build():
             vals[slug] = v
             if hbr is not None and (slug not in DEC.ISSUER_SLUGS or slug in DEC.LRT_ISSUERS or slug in DEC.HOLDS_TOKENS):
                 held[slug] = (v, {i: x for i, x in lst_holdings(hbr).items() if i != slug})
-        # 2. on-chain carry rows replace the DefiLlama rows that already count them
+        # 2. carry products: the carry part of the book is the row; the whole book replaces the DefiLlama rows that count it
         taken = collections.defaultdict(float)
         for slug, r in carry.items():
-            v = r['eth'].get(label)
-            if v is None:
+            cid = slug.split(':', 1)[1]
+            p = parts[cid][label]
+            book = r['eth'].get(label)
+            off = p['carry_off'] if p['carry_off'] is not None else (book or 0.0)
+            cv = p['carry_lend'] + off
+            rest = p['other_lend']
+            if cid == 'zensats' and book:  # no lending account known: the whole (micro) book stays a farming row
+                rest += book
+            if book is None and not cv and not rest:
                 continue
-            vals[slug] = v
-            for iss, w in r['issuer_mix'].items():
-                sub[iss] += v * w
-                ledger.append((label, slug, iss, v * w, 'on-chain product book; staking token per research'))
-            left = v
+            vals[slug] = cv
+            if rest:
+                vals[slug + ':rest'] = rest
+                rest_meta[slug + ':rest'] = slug
+            for iss, w in r['issuer_mix'].items():  # only what does not sit in a lending market (the layer takes the rest)
+                x = (off + (book if cid == 'zensats' and book else 0.0)) * w
+                if x:
+                    sub[iss] += x
+                    ledger.append((label, slug, iss, x, 'carry outside lending markets; staking token per research'))
+            left = book if book is not None else cv + rest
             for dslug in r['replaces']:
                 if vals.get(dslug):
                     take = min(vals[dslug], left)
@@ -283,39 +321,68 @@ def build():
             if gross > 0 and net > 0:
                 for iss, x in lst_holdings(br, products=False).items():
                     sub[iss] += x * net / gross
-        # 5. take held tokens out of their issuer or product rows
+        # 5. the lending layer: staking tokens posted in lending markets leave their issuers (counted in leveraged staking
+        # or money markets); loops by venue; money markets = lending-market ETH less loops less the carry products' positions
+        for iss, x in L['issuer'].items():
+            sub[iss] += x
+            ledger.append((label, 'lending markets', iss, x, 'staking token posted in a lending market (leveraged staking or money markets)'))
+        for slug, x in L['loops_by_row'].items():
+            g = 'loops:' + DEC.LOOP_VENUES.get(slug, ('other', ''))[0]
+            vals[g] = vals.get(g, 0.0) + x
+            loops_meta[g] = DEC.LOOP_VENUES.get(slug, ('other', DEC.LOOP_OTHER))[1]
+        prod = sum(parts[c][label]['carry_lend'] + parts[c][label]['other_lend'] for c in parts)
+        mm = L['total'] - L['loops'] - prod
+        if mm < 0:
+            raise SystemExit(f'money markets negative in {label}: {mm:.0f}')
+        room = {s: max(0.0, x['total'] - L['loops_by_row'].get(s, 0.0)) for s, x in L['rows'].items()}
+        rt = sum(room.values())
+        for slug in lend_rows:
+            vals[slug] = mm * room.get(slug, 0.0) / rt if rt else 0.0
+        ledger.append((label, 'lending markets', 'loops', L['loops'], 'loops: ETH borrowed against staking tokens (collateral counted once)'))
+        ledger.append((label, 'lending markets', 'carry', prod, "carry products' own lending positions"))
+        # 6. take held tokens out of their issuer or product rows
+        L['mm_taken'], L['mm_cut'] = 0.0, 0.0
         for iss, x in sub.items():
             if iss in vals and vals[iss] is not None:
                 take = min(vals[iss], x)
                 vals[iss] -= take
+                if iss in lend_rows:  # a lending vault's share token held by another counted product (Pendle's superWETH)
+                    L['mm_taken'] += take
                 if x - take > 1:
                     ledger.append((label, iss, iss, x - take, 'held exceeds issuer row (cross-chain supply or adapter gap); floored at 0'))
+                # tokens of this issuer counted in lending markets beyond what the issuer backs leave money markets (off by
+                # default), so the ETH behind a staking token is never counted twice across categories
+                cut = min(x - take, L['issuer'].get(iss, 0.0))
+                if cut > 1e-9:
+                    L['mm_cut'] = L.get('mm_cut', 0.0) + cut
+                    ledger.append((label, 'lending markets', iss, cut, 'staking tokens in lending markets beyond the issuer\'s backing: taken out of money markets'))
+        if L.get('mm_cut'):
+            mmv = sum(vals[s2] for s2 in lend_rows)
+            if L['mm_cut'] > mmv:
+                raise SystemExit(f'money-market cut exceeds money markets in {label}')
+            for s2 in lend_rows:
+                vals[s2] -= L['mm_cut'] * vals[s2] / mmv
         for slug, v in vals.items():
             result.setdefault(slug, {})[label] = v
-    # months without dollar debt leave carry (split into a second row in the category the product worked in)
-    eq = json.load(open(os.path.join(ROOT, 'data', 'eth', 'economic_questions.json')))
-    debt = {p['id']: {h['month']: h.get('debtUSD') for h in p['history']} | {SNAP: p['current'].get('debtUSD')} for p in eq['products']}
-    extra_meta = {}
-    for cid, (eid, cat_then) in DEC.DEBT_MONTHS.items():
-        slug = 'carry:' + cid
-        if slug not in result:
-            continue
-        d = debt.get(eid, {})
-        moved = {}
-        for l, v in list(result[slug].items()):
-            if v and (eid is None or (d.get(l) or 0) < 10000):  # under $10k of dollar debt: not a carry month
-                moved[l] = v
-                result[slug][l] = 0.0
-        if moved:
-            result[slug + ':nodebt'] = moved
-            extra_meta[slug + ':nodebt'] = (slug, cat_then)
     for d in (dl, pools, carry):
         for slug, r in d.items():
             meta[slug] = {k: r.get(k) for k in ('slug', 'name', 'dl_category', 'category', 'kind', 'source')}
-    for s2, (base, cat_then) in extra_meta.items():
-        meta[s2] = dict(meta[base]); meta[s2].update(slug=s2, name=meta[base]['name'] + ' (months without dollar debt)', category=cat_then, kind='vaults' if cat_then == 'farming' else None,
-                                                    source=meta[base]['source'] + '; months without dollar debt')
+    for slug, base in rest_meta.items():
+        cid = base.split(':', 1)[1]
+        cat = DEC.DEBT_MONTHS[cid][1]
+        cat = 'lending' if cat == 'loops' else cat
+        meta[slug] = dict(meta[base]); meta[slug].update(slug=slug, name=meta[base]['name'] + ' (outside carry)', category=cat,
+                                                        kind='vaults' if cat == 'farming' else None,
+                                                        source='lending collateral that backs no dollar loan (months under $10k of dollar debt) and holdings outside lending markets')
+    for slug, name in loops_meta.items():
+        meta[slug] = dict(slug=slug, name='Leveraged staking on ' + name, dl_category='Lending', category='loops',
+                          kind=None, source='lending split at the snapshot (ETH borrowed against staking tokens, counted once); month-ends '
+                          'estimated from the venue\'s ETH debt')
+    LAYER.update(layer=layer, meta=LM, parts=parts)
     return result, meta, ledger
+
+
+LAYER = {}
 
 
 def main():
@@ -354,6 +421,25 @@ def main():
         for label in LABELS:
             w.writerow([label, *[round(cats[label][i], 1) for i in ids],
                         round(sum(cats[label][c['id']] for c in CATEGORIES if c['default']), 1), round(prices[label], 2)])
+    # the lending layer, month by month (read by 07_lending_gross.py and the coverage note)
+    lay, LM, parts = LAYER['layer'], LAYER['meta'], LAYER['parts']
+    out_l = dict(snapshot=SNAP, method=LAY.__doc__, meta=LM, months={})
+    for label in LABELS:
+        x = lay[label]
+        prod = {c: {k: v for k, v in parts[c][label].items() if k != 'method'} for c in parts}
+        pos = sum(v['carry_lend'] + v['other_lend'] for v in prod.values())
+        out_l['months'][label] = dict(
+            lending_eth=x['total'], staking_tokens_by_issuer=x['issuer'], plain_eth=sum(r['plain'] for r in x['rows'].values()),
+            tokens_without_row=sum(r['no_row'] for r in x['rows'].values()), product_shares_left_out=x['shares'],
+            eth_debt=x['debt_total'], eth_debt_by_row=x['debt'], loops=x['loops'],
+            loops_equity_estimate=x['loops'] * LM['loop_equity_share'],
+            carry_products_positions=pos, lending_vault_shares_held_by_products=x['mm_taken'],
+            staking_tokens_beyond_issuer_backing=x['mm_cut'],
+            money_markets=x['total'] - x['loops'] - pos - x['mm_taken'] - x['mm_cut'],
+            rows={k: {kk: vv for kk, vv in r.items()} for k, r in x['rows'].items()}, carry_products=prod,
+            loops_estimated=label != SNAP)
+    out_l['carry_methods'] = {c: sorted({parts[c][l]['method'] for l in LABELS if parts[c][l]['method']}) for c in parts}
+    json.dump(out_l, open(os.path.join(OUT, 'lending_layer.json'), 'w'), indent=1)
     json.dump(dict(snapshot=SNAP, months=LABELS, prices=prices, categories=CATEGORIES, meta=meta,
                    values={s: v for s, v in result.items()}, unclassified=DEC.UNCLASSIFIED),
               open(os.path.join(OUT, 'map.json'), 'w'), indent=1)

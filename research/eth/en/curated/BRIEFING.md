@@ -4,9 +4,9 @@ Financial snapshot: **2 October 2026**. Same data as the main page.
 
 ## Answer
 
-**18,499,055 ETH earns a yield** in 131 products counted once ($49.38B on 2 October 2026): 81% staking, 13% restaking, 3.6% farming and pools. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine; it is listed, not counted.
+**16,044,015 ETH earns a yield** in 133 products counted once ($42.83B on 2 October 2026): 74.8% staking, 18.0% leveraged staking, 3.3% farming and pools, 2.6% restaking. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine; it is listed, not counted.
 
-**Carry is 1.7%**: 305,908 ETH in 12 products that borrow dollars against ETH (in BTC it is 9.9%). They owe $270.9M; Liquid ETH and Lido Earn hold 85% of the books.
+**Carry is 1.1%**: 171,649 ETH, the part of 12 products open for deposits where ETH is collateral for a dollar loan. They owe $270.9M; Liquid ETH and Lido Earn hold 82% of the carry ETH. In BTC carry is 9.9%, but the BTC map counts the whole book of each carry product, so the two shares are not on the same basis.
 
 **Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years (3.37% against 2.71%). Its ETH loop added +0.02 pp a year and its dollar leg -0.13 pp; the rest is income our model cannot assign. At 2 October rates the dollar leg loses about $6.8M a year ($9.0M of interest on one 13.93% Aave USDC loan). YieldBasis is the only top-five product whose fees cover its loan.
 
@@ -14,33 +14,33 @@ Financial snapshot: **2 October 2026**. Same data as the main page.
 
 | Category | ETH, 2 Oct 2026 | Share | Oct 2024 | Switch |
 | --- | --- | --- | --- | --- |
-| Staking | 15,093,012 | 81.6% | 12,579,566 | on |
-| Restaking | 2,435,229 | 13.2% | 3,777,013 | on |
-| Leveraged staking | 97,793 | 0.5% | 270,032 | on |
-| Carry | 305,908 | 1.7% | 0 | on |
-| Fixed yield | 9,287 | 0.1% | 307,465 | on |
+| Staking | 12,001,955 | 74.8% | 9,948,414 | on |
+| Restaking | 419,194 | 2.6% | 2,514,688 | on |
+| Leveraged staking | 2,885,012 | 18.0% | 2,247,038 | on |
+| Carry | 171,649 | 1.1% | 0 | on |
+| Fixed yield | 9,203 | 0.1% | 307,465 | on |
 | Basis | 372 | 0.0% | 25,423 | on |
 | Options | 1,664 | 0.0% | 4,786 | on |
-| Credit | 26,738 | 0.1% | 5,116 | on |
-| Farming and pools | 529,052 | 2.9% | 1,584,333 | on |
-| Money markets | 812,124 | off | 837,001 | off |
+| Credit | 26,737 | 0.2% | 5,116 | on |
+| Farming and pools | 528,228 | 3.3% | 1,583,227 | on |
+| Money markets | 3,231,215 | off | 2,743,062 | off |
 | CDP collateral | 657,327 | off | 1,277,081 | off |
 
-Each product is counted once: a staking token held by another product leaves its issuer's row. Money markets count plain WETH in lending markets (collateral and supply not lent out) and are off by default, because lent ETH is staked again by its borrowers. Binance's wBETH grew by 2.19M ETH, the largest change on the map; restaking fell from 4.63M ETH (July 2025) and farming and pools from 1.58M ETH (October 2024) as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv).
+Each product is counted once, where the ETH is used. Staking and restaking are staked and held, not used anywhere else: staking tokens posted in lending markets (5.48M ETH) or held by other products leave their issuers. Leveraged staking is every loop of staked ETH against borrowed ETH on lending markets, private and product (equity about 307k ETH; month-ends estimated from ETH debt). Carry is only the dollar-loan part of products open for deposits; their loops count as leveraged staking. Money markets (ETH and staking tokens posted outside loops and carry products, mostly collateral for dollar loans by unknown wallets) and CDPs are off by default, as in BTC. Binance's wBETH grew by 2.18M ETH, the largest change on the map; restaking fell from 2.51M ETH (October 2024) as weETH and rsETH moved into lending markets, and farming and pools from 1.58M ETH (October 2024) as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv).
 
-The beacon chain holds **43.81M ETH** of active stake at T (slot 15,346,798). The map counts the on-chain part once: 15.09M ETH of staking and 2.43M ETH of restaking, after removing staking tokens held by other products. About 14.4M ETH is staked off-chain (exchanges 4.6M, institutional providers 4.7M, BitMine 5.1M) and is listed but not counted. The remaining 11.96M ETH (solo and untagged validators, and staking tokens held inside other map rows) is not split further. [Off-chain stake](OUTSIDE-AND-SMALL.md), [staking and restaking](dossiers/staking-restaking.md).
+The beacon chain holds **43.81M ETH** of active stake at T (slot 15,346,798). The map counts the on-chain part once: 12.00M ETH staked and held and 0.42M restaked and held; 5.48M ETH of staking tokens sit in lending markets and are counted there (leveraged staking, carry, money markets). About 14.4M ETH is staked off-chain (exchanges 4.6M, institutional providers 4.7M, BitMine 5.1M) and is listed but not counted. The remaining 11.50M ETH (solo and untagged validators, and staking tokens held inside other map rows) is not split further. [Off-chain stake](OUTSIDE-AND-SMALL.md), [staking and restaking](dossiers/staking-restaking.md).
 
 ## Top five carry products
 
 Ranked by dollars borrowed against ETH. Concrete Delta weETH (307,363 ETH, $176.15M of stablecoin debt) is left out of the map and the ranking: its whole supply was minted to one address after a Bitfinex-linked wallet moved its own Aave position into the vault's Safe; there are no outside depositors ([evidence](CONCRETE-DELTA.md)).
 
-| Product | Dollars borrowed | Loan rate | Book, ETH |
-| --- | --- | --- | --- |
-| ether.fi Liquid ETH | $181.1M | 7.79% | 177,171 |
-| YieldBasis WETH | $27.8M | 10.00% | 10,426 |
-| Lido Earn ETH | $25.6M | 4.33% | 83,309 |
-| Avant avETH / savETH | $10.0M | 6.30% | 12,583 |
-| Liquity ETH Carry | $6.8M | 2.55% | 6,014 |
+| Product | Dollars borrowed | Loan rate | Whole book, ETH | Carry, ETH |
+| --- | --- | --- | --- | --- |
+| ether.fi Liquid ETH | $181.1M | 7.79% | 177,171 | 115,864 |
+| YieldBasis WETH | $27.8M | 10.00% | 10,426 | 10,426 |
+| Lido Earn ETH | $25.6M | 4.33% | 83,309 | 25,029 |
+| Avant avETH / savETH | $19.7M | 6.30% | 12,583 | 7,493 |
+| Liquity ETH Carry | $6.8M | 2.55% | 6,014 | 6,014 |
 
 Other carry: NEMO ETH Prime ($5.6M), Rocksolid rETH ($2.7M), Sentora ETH ($1.2M), Makina DETH ($385k), Royco ETH ($91k), Vesper vaETH ($69k), Reservoir ETH Yield ($37k), TAU InfiniFi ETH Carry (dust). Rocksolid closed on 29 September and reopened on 7 October. ZenSats wstETH is a micro-position. [All carry products](CARRY-CATEGORY.md), [risk, repayment ladder and reward payers](TOP5-RISK-LIQUIDITY.md).
 

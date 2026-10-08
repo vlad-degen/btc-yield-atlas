@@ -1664,70 +1664,7 @@
    "dollarDebtUSD": 27814855.843944114
   }
  },
- "noDebtMonths": {
-  "Avant avETH / savETH": [
-   "2026-05"
-  ],
-  "ether.fi Liquid ETH": [
-   "2024-10",
-   "2024-11",
-   "2024-12",
-   "2025-01",
-   "2025-02",
-   "2025-03",
-   "2025-04",
-   "2025-05",
-   "2025-06",
-   "2025-07",
-   "2025-10",
-   "2025-11",
-   "2025-12",
-   "2026-01",
-   "2026-02",
-   "2026-03",
-   "2026-04",
-   "2026-05"
-  ],
-  "Liquity ETH Carry": [
-   "2026-03"
-  ],
-  "Makina DETH": [
-   "2025-10",
-   "2025-11",
-   "2025-12",
-   "2026-01",
-   "2026-02",
-   "2026-03",
-   "2026-04",
-   "2026-05",
-   "2026-06",
-   "2026-07"
-  ],
-  "Reservoir ETH Yield": [
-   "2026-04"
-  ],
-  "Rocksolid rETH": [
-   "2025-09",
-   "2025-10",
-   "2025-11",
-   "2025-12",
-   "2026-01",
-   "2026-02"
-  ],
-  "TAU InfiniFi ETH Carry": [
-   "2026-04",
-   "2026-06",
-   "2026-07",
-   "2026-08",
-   "2026-09",
-   "2026-10-02"
-  ],
-  "Vesper vaETH": [
-   "2024-10",
-   "2024-11",
-   "2024-12"
-  ]
- },
+ "noDebtMonths": {},
  "lendingSplit": {
   "prices": {
    "eth": 2669.39,
@@ -1800,7 +1737,7 @@
    "plain_eth": 788691.9123398031,
    "staking_tokens_eth": 5509261.319315174,
    "lent_out_eth": 2693968.1293175635,
-   "counted_eth": 788610.97
+   "counted_eth": 3231213.710712431
   },
   "protocols": [
    {
@@ -1809,7 +1746,7 @@
     "plain_eth": 320221.9293339193,
     "staking_tokens_eth": 3301481.8587296577,
     "lent_out_eth": 1929804.1376393638,
-    "counted_eth": 320221.93
+    "counted_eth": 1466877.4184954413
    },
    {
     "slug": "sparklend",
@@ -1817,7 +1754,7 @@
     "plain_eth": 116154.42414466524,
     "staking_tokens_eth": 1405858.199483461,
     "lent_out_eth": 492183.65188970364,
-    "counted_eth": 116154.42
+    "counted_eth": 949355.2301033422
    },
    {
     "slug": "morpho-blue",
@@ -1825,7 +1762,7 @@
     "plain_eth": 101023.87678921234,
     "staking_tokens_eth": 425631.06692748907,
     "lent_out_eth": 67698.38413742092,
-    "counted_eth": 101023.88
+    "counted_eth": 431335.72431400366
    },
    {
     "slug": "compound-v3",
@@ -1833,7 +1770,7 @@
     "plain_eth": 122186.29644460554,
     "staking_tokens_eth": 147369.89979682356,
     "lent_out_eth": 39485.43558661032,
-    "counted_eth": 122186.3
+    "counted_eth": 215230.07825415727
    },
    {
     "slug": "aave-v4",
@@ -1841,7 +1778,7 @@
     "plain_eth": 12093.544314734545,
     "staking_tokens_eth": 77723.73880945549,
     "lent_out_eth": 38893.77778431825,
-    "counted_eth": 12093.54
+    "counted_eth": 45975.071098748485
    },
    {
     "slug": "fluid-lending",
@@ -1849,7 +1786,7 @@
     "plain_eth": 13785.675908785153,
     "staking_tokens_eth": 72616.76319645956,
     "lent_out_eth": 67759.75979070009,
-    "counted_eth": 13785.68
+    "counted_eth": 12558.258427165274
    },
    {
     "slug": "euler-v2",
@@ -1857,7 +1794,7 @@
     "plain_eth": 7704.568661955915,
     "staking_tokens_eth": 29045.438222289267,
     "lent_out_eth": 25136.502302926132,
-    "counted_eth": 7704.57
+    "counted_eth": 8978.622910974946
    },
    {
     "slug": "dolomite",
@@ -1865,7 +1802,7 @@
     "plain_eth": 9682.67148805708,
     "staking_tokens_eth": 14027.239047319224,
     "lent_out_eth": 11507.124965400186,
-    "counted_eth": 9682.67
+    "counted_eth": 9449.397301151097
    },
    {
     "slug": "compound-v2",
@@ -1873,7 +1810,7 @@
     "plain_eth": 21669.032812503963,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 152.0527649886242,
-    "counted_eth": 21669.03
+    "counted_eth": 20510.95754760367
    },
    {
     "slug": "venus-core-pool",
@@ -1881,7 +1818,7 @@
     "plain_eth": 7327.472981219056,
     "staking_tokens_eth": 11278.25403221769,
     "lent_out_eth": 11435.368029493784,
-    "counted_eth": 7327.47
+    "counted_eth": 6000.869130305213
    },
    {
     "slug": "yearn-finance",
@@ -1889,7 +1826,7 @@
     "plain_eth": 13102.00861832504,
     "staking_tokens_eth": 128.3455738231378,
     "lent_out_eth": 0.0,
-    "counted_eth": 13102.01
+    "counted_eth": 12617.985986283547
    },
    {
     "slug": "aave-v2",
@@ -1897,7 +1834,7 @@
     "plain_eth": 9296.890478235398,
     "staking_tokens_eth": 3433.3947819889595,
     "lent_out_eth": 857.7963139139929,
-    "counted_eth": 9296.89
+    "counted_eth": 11265.828076596023
    },
    {
     "slug": "fraxlend",
@@ -1905,7 +1842,7 @@
     "plain_eth": 3.231123192042205,
     "staking_tokens_eth": 6347.539141431341,
     "lent_out_eth": 0.0,
-    "counted_eth": 3.23
+    "counted_eth": 6056.831414401154
    },
    {
     "slug": "gearbox",
@@ -1913,7 +1850,7 @@
     "plain_eth": 1091.567135598724,
     "staking_tokens_eth": 4323.235394666341,
     "lent_out_eth": 913.6230593283713,
-    "counted_eth": 1091.57
+    "counted_eth": 836.5975952284329
    },
    {
     "slug": "harvest-finance",
@@ -1921,7 +1858,7 @@
     "plain_eth": 5262.808891673024,
     "staking_tokens_eth": 5.874288479915743,
     "lent_out_eth": 0.0,
-    "counted_eth": 5262.81
+    "counted_eth": 5024.827614350766
    },
    {
     "slug": "tydro",
@@ -1929,7 +1866,7 @@
     "plain_eth": 5233.675544546487,
     "staking_tokens_eth": 4.690142416825614,
     "lent_out_eth": 135.35393775448352,
-    "counted_eth": 5233.68
+    "counted_eth": 4857.80548210199
    },
    {
     "slug": "yo-protocol",
@@ -1937,7 +1874,7 @@
     "plain_eth": 4972.944874239232,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 0.0,
-    "counted_eth": 4972.94
+    "counted_eth": 4742.777250841648
    },
    {
     "slug": "lista-lending",
@@ -1945,7 +1882,7 @@
     "plain_eth": 34.57870138983311,
     "staking_tokens_eth": 3617.6640931169704,
     "lent_out_eth": 941.2544630328644,
-    "counted_eth": 34.58
+    "counted_eth": 2522.7972503880055
    },
    {
     "slug": "curve-llamalend",
@@ -1953,7 +1890,7 @@
     "plain_eth": 964.878048587904,
     "staking_tokens_eth": 2447.9808463215854,
     "lent_out_eth": 0.0,
-    "counted_eth": 964.88
+    "counted_eth": 3254.8982416752647
    },
    {
     "slug": "superform",
@@ -1961,7 +1898,7 @@
     "plain_eth": 1931.7981891693123,
     "staking_tokens_eth": 11.46576261343255,
     "lent_out_eth": 0.0,
-    "counted_eth": 1675.08
+    "counted_eth": 1596.597391148844
    },
    {
     "slug": "moonwell-lending",
@@ -1969,7 +1906,7 @@
     "plain_eth": 577.6919103251843,
     "staking_tokens_eth": 1044.1458348607036,
     "lent_out_eth": 1330.0570310364178,
-    "counted_eth": 577.69
+    "counted_eth": 189.6542477067849
    },
    {
     "slug": "tectonic",
@@ -1977,7 +1914,7 @@
     "plain_eth": 1504.1933375165593,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 0.0,
-    "counted_eth": 1504.19
+    "counted_eth": 1434.5733006204875
    },
    {
     "slug": "bend",
@@ -1985,7 +1922,7 @@
     "plain_eth": 1344.7510892495288,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 0.0,
-    "counted_eth": 1344.75
+    "counted_eth": 1282.5106723333395
    },
    {
     "slug": "capyfi",
@@ -1993,7 +1930,7 @@
     "plain_eth": 1227.2896619460337,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 1757.3618582418621,
-    "counted_eth": 1227.29
+    "counted_eth": 0.0
    },
    {
     "slug": "suilend",
@@ -2001,7 +1938,7 @@
     "plain_eth": 1179.1599304546653,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 172.7305816850928,
-    "counted_eth": 1179.16
+    "counted_eth": 948.3387663149998
    },
    {
     "slug": "hydration-lending",
@@ -2009,7 +1946,7 @@
     "plain_eth": 1033.2911677055174,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 42.15998678778889,
-    "counted_eth": 1033.29
+    "counted_eth": 942.4485768350596
    },
    {
     "slug": "revert-lend",
@@ -2017,7 +1954,7 @@
     "plain_eth": 973.4943240066905,
     "staking_tokens_eth": 0.004505531527198756,
     "lent_out_eth": 0.0,
-    "counted_eth": 973.49
+    "counted_eth": 928.4414404776926
    },
    {
     "slug": "kamino-lend",
@@ -2025,7 +1962,7 @@
     "plain_eth": 951.4302975380036,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 252.14496666078512,
-    "counted_eth": 951.43
+    "counted_eth": 650.1192121414844
    },
    {
     "slug": "navi-lending",
@@ -2033,7 +1970,7 @@
     "plain_eth": 875.4456792183314,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 34.7997781826956,
-    "counted_eth": 875.45
+    "counted_eth": 799.4187635745686
    },
    {
     "slug": "vesu",
@@ -2041,7 +1978,7 @@
     "plain_eth": 140.38442102299106,
     "staking_tokens_eth": 518.1612783707351,
     "lent_out_eth": 43.570953092159186,
-    "counted_eth": 140.38
+    "counted_eth": 583.6081420690732
    },
    {
     "slug": "flying-tulip-lend",
@@ -2049,7 +1986,7 @@
     "plain_eth": 1.7814790726123344,
     "staking_tokens_eth": 603.1255330273317,
     "lent_out_eth": 600.2946503245768,
-    "counted_eth": 177.56
+    "counted_eth": 0.0
    },
    {
     "slug": "benqi-lending",
@@ -2057,7 +1994,7 @@
     "plain_eth": 594.9084190563335,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 880.5721758682563,
-    "counted_eth": 594.91
+    "counted_eth": 0.0
    },
    {
     "slug": "exactly",
@@ -2065,7 +2002,7 @@
     "plain_eth": 465.4116350839188,
     "staking_tokens_eth": 54.30517230275479,
     "lent_out_eth": 6.017019752694113,
-    "counted_eth": 465.41
+    "counted_eth": 489.52280888470307
    },
    {
     "slug": "scallop-lend",
@@ -2073,7 +2010,7 @@
     "plain_eth": 466.4681793780789,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 2.336690660761499,
-    "counted_eth": 466.47
+    "counted_eth": 442.4939478679805
    },
    {
     "slug": "morpho-midnight",
@@ -2081,7 +2018,7 @@
     "plain_eth": 148.15172325851356,
     "staking_tokens_eth": 284.75971991671275,
     "lent_out_eth": 293.4451600307454,
-    "counted_eth": 148.15
+    "counted_eth": 113.45897972728038
    },
    {
     "slug": "compound-v1",
@@ -2089,7 +2026,7 @@
     "plain_eth": 428.1107645778335,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 41.42941776199552,
-    "counted_eth": 428.11
+    "counted_eth": 366.02375756470536
    },
    {
     "slug": "metalx-lending",
@@ -2097,7 +2034,7 @@
     "plain_eth": 416.8788987726002,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 312.7603541065762,
-    "counted_eth": 416.88
+    "counted_eth": 78.46030352011654
    },
    {
     "slug": "unitus",
@@ -2105,7 +2042,7 @@
     "plain_eth": 35.37486660325246,
     "staking_tokens_eth": 378.7659093002704,
     "lent_out_eth": 8.354028254146602,
-    "counted_eth": 35.37
+    "counted_eth": 386.4486977609559
    },
    {
     "slug": "twyne",
@@ -2113,7 +2050,7 @@
     "plain_eth": 0.6766405480100507,
     "staking_tokens_eth": 396.4595932415513,
     "lent_out_eth": 358.37747298803856,
-    "counted_eth": 0.68
+    "counted_eth": 13.086161294380494
    },
    {
     "slug": "folks-finance-xchain",
@@ -2121,7 +2058,7 @@
     "plain_eth": 48.42648564926907,
     "staking_tokens_eth": 333.56335854637797,
     "lent_out_eth": 19.555551991433862,
-    "counted_eth": 48.43
+    "counted_eth": 343.2083868793173
    },
    {
     "slug": "project-0",
@@ -2129,7 +2066,7 @@
     "plain_eth": 366.5275175945679,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 64.72919399114741,
-    "counted_eth": 366.53
+    "counted_eth": 283.51699347650197
    },
    {
     "slug": "vires-finance",
@@ -2137,7 +2074,7 @@
     "plain_eth": 356.82925323283973,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 4.902486970885148,
-    "counted_eth": 356.83
+    "counted_eth": 335.31154623812404
    },
    {
     "slug": "marginfi-lending",
@@ -2145,7 +2082,7 @@
     "plain_eth": 302.15965797434774,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 64.72919399114741,
-    "counted_eth": 302.16
+    "counted_eth": 222.1283338367043
    },
    {
     "slug": "init-capital",
@@ -2153,7 +2090,7 @@
     "plain_eth": 96.91748057769206,
     "staking_tokens_eth": 193.66205624280394,
     "lent_out_eth": 0.0,
-    "counted_eth": 96.92
+    "counted_eth": 277.13036272158223
    },
    {
     "slug": "extra-finance-vaults",
@@ -2161,7 +2098,7 @@
     "plain_eth": 206.55802951461433,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 0.0,
-    "counted_eth": 206.56
+    "counted_eth": 196.9977042044851
    },
    {
     "slug": "kinetic",
@@ -2169,7 +2106,7 @@
     "plain_eth": 205.02351772747906,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 573.8279788408539,
-    "counted_eth": 205.02
+    "counted_eth": 0.0
    },
    {
     "slug": "bifi",
@@ -2177,7 +2114,7 @@
     "plain_eth": 192.28247827631728,
     "staking_tokens_eth": 0.08959993288475195,
     "lent_out_eth": 0.0,
-    "counted_eth": 192.28
+    "counted_eth": 183.46833502096894
    },
    {
     "slug": "save",
@@ -2185,7 +2122,7 @@
     "plain_eth": 180.32672731914442,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 38.17896002672041,
-    "counted_eth": 180.33
+    "counted_eth": 133.0247404997176
    },
    {
     "slug": "kinza-finance",
@@ -2193,7 +2130,7 @@
     "plain_eth": 97.86570643590736,
     "staking_tokens_eth": 36.34161207995979,
     "lent_out_eth": 30.761630376382634,
-    "counted_eth": 97.87
+    "counted_eth": 96.60816381367556
    },
    {
     "slug": "alpaca-finance-2.0",
@@ -2201,7 +2138,7 @@
     "plain_eth": 133.8722076727417,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 2.4004499064626823,
-    "counted_eth": 133.87
+    "counted_eth": 125.22678111271625
    },
    {
     "slug": "hatom-lending",
@@ -2209,7 +2146,7 @@
     "plain_eth": 126.31858487422981,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 27.663476791192657,
-    "counted_eth": 126.32
+    "counted_eth": 92.24574077981718
    },
    {
     "slug": "neverland",
@@ -2217,7 +2154,7 @@
     "plain_eth": 106.87169972824078,
     "staking_tokens_eth": 0.0,
     "lent_out_eth": 23.576598399672417,
-    "counted_eth": 106.87
+    "counted_eth": 77.86896479089847
    },
    {
     "slug": "curvance",
@@ -2225,7 +2162,7 @@
     "plain_eth": 63.305056841909526,
     "staking_tokens_eth": 6.075815047117068,
     "lent_out_eth": 5.15480379046067,
-    "counted_eth": 63.31
+    "counted_eth": 60.90996622708398
    },
    {
     "slug": "termfinance-lend",
@@ -2233,7 +2170,7 @@
     "plain_eth": 9.683891087510274,
     "staking_tokens_eth": 45.26246443966386,
     "lent_out_eth": 41.332352131741224,
-    "counted_eth": 9.68
+    "counted_eth": 10.229658571322446
    },
    {
     "slug": "echelon-market",
@@ -2241,7 +2178,7 @@
     "plain_eth": 33.629628168725226,
     "staking_tokens_eth": 0.033614125549335676,
     "lent_out_eth": 0.22671336657985458,
-    "counted_eth": 33.63
+    "counted_eth": 31.873847768388536
    },
    {
     "slug": "termmax",
@@ -2249,7 +2186,7 @@
     "plain_eth": 21.980823070342815,
     "staking_tokens_eth": 0.31159916953096345,
     "lent_out_eth": 0.0,
-    "counted_eth": 21.98
+    "counted_eth": 21.26064047343863
    },
    {
     "slug": "yeilend",
@@ -2257,7 +2194,7 @@
     "plain_eth": 16.958991928630574,
     "staking_tokens_eth": 3.298830309529163,
     "lent_out_eth": 29.38467880630022,
-    "counted_eth": 16.96
+    "counted_eth": 0.0
    },
    {
     "slug": "silo-v2",
@@ -2265,7 +2202,7 @@
     "plain_eth": 15.164825024557512,
     "staking_tokens_eth": 1.4163448788374104,
     "lent_out_eth": 0.37546169360197706,
-    "counted_eth": 15.16
+    "counted_eth": 15.423301313595065
    },
    {
     "slug": "layerbank",
@@ -2273,7 +2210,7 @@
     "plain_eth": 2.440867154190705,
     "staking_tokens_eth": 8.888203818919527,
     "lent_out_eth": 0.6949960989085872,
-    "counted_eth": 2.44
+    "counted_eth": 10.095580100235104
    }
   ],
   "btc": {

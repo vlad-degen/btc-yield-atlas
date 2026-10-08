@@ -166,12 +166,12 @@ def run():
                "**Carry barely beats staking.** Liquid ETH beat stETH by 0.66 pp a year over two years (3.37% against 2.71%). Its ETH loop added +0.02 pp a year and its dollar leg -0.13 pp; the rest is income our model cannot assign. "
                "At 2 October rates the dollar leg loses about $6.8M a year ($9.0M of interest on one 13.93% Aave USDC loan). YieldBasis is the only top-five product whose fees cover its loan.")
     _staking_txt = (f"The beacon chain holds **{native/1e6:.2f}M ETH** of active stake at T (slot 15,346,798). The map counts the on-chain part once: "
-                    f"{_M(_cat['staking'])} ETH of staking and {_M(_cat['restaking'])} ETH of restaking, after removing staking tokens held by other products. "
+                    f"{_M(_cat['staking'])} ETH of staking and {_M(_cat['restaking'])} ETH of restaking, after removing staking tokens posted in lending markets or held by other products. "
                     f"About 14.4M ETH is staked off-chain (exchanges 4.6M, institutional providers 4.7M, BitMine 5.1M) and is listed but not counted. "
                     f"The remaining {_M(native - _onchain_staked - _offchain)} ETH (solo and untagged validators, and staking tokens held inside other map rows) is not split further. "
                     "[Off-chain stake](OUTSIDE-AND-SMALL.md), [staking and restaking](dossiers/staking-restaking.md).")
     _market = table(['Category', 'ETH, 2 Oct 2026', 'Share', 'Oct 2024', 'Switch'], [[c['label'], f"{_cat[c['id']]:,.0f}", f"{100*_cat[c['id']]/_tot:.1f}%" if c['default'] else 'off', f"{_first[c['id']]:,.0f}", 'on' if c['default'] else 'off'] for c in _net['categories']]) + \
-        f"\n\nEach product is counted once: a staking token held by another product leaves its issuer's row. Money markets count only idle plain WETH and are off by default, because lent ETH is staked again by its borrowers. Binance's wBETH grew by {_M(_wbeth_growth)} ETH, the largest change on the map; restaking fell from {_peak_txt('restaking')} and farming and pools from {_peak_txt('farming')} as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv)."
+        f"\n\nEach product is counted once, where the ETH is used: staking and restaking are staked and held, a staking token posted in a lending market or held by another product leaves its issuer's row. Leveraged staking is every loop of staked ETH against borrowed ETH, private and product; carry is only the dollar-loan part of products open for deposits; money markets (the rest of lending collateral, mostly backing dollar loans of unknown wallets) and CDPs are off by default, as in BTC. Binance's wBETH grew by {_M(_wbeth_growth)} ETH, the largest change on the map; restaking fell from {_peak_txt('restaking')} and farming and pools from {_peak_txt('farming')} as points programmes ended. [Method and every netting step](../../../data/eth/netmap/netting_ledger.csv)."
     _rows5 = [p for p in _carry_rows if p['id'] in _top5_ids]
     _top5 = table(['Product', 'Dollars borrowed', 'Loan rate', 'Book, ETH'], [[p['name'], _usdm(p['current']['debtUSD'] or 0), f"{100*(p['current']['apr'] or 0):.2f}%", f"{p['bookETH']:,.0f}" if p.get('bookETH') else ''] for p in _rows5])
     _concrete = ("Concrete Delta weETH (307,363 ETH, $176.15M of stablecoin debt) is left out of the map and the ranking: its whole supply was minted to one address after a Bitfinex-linked wallet moved its own Aave position into the vault's Safe; there are no outside depositors ([evidence](CONCRETE-DELTA.md)).")
@@ -223,14 +223,14 @@ DefiLlama lists {len(material)} ETH-name pools above $5M; {parent_join} belong t
 '''
     (EN / 'BRIEFING.md').write_text(overview)
     _cov_rows = [
-        ['Staking', _cat['staking'], 'Issuer backing (DefiLlama token breakdown), net of staking tokens held by other products', f"About 14.4M ETH staked off-chain (listed); beacon chain {native/1e6:.2f}M ETH active is the ceiling"],
+        ['Staking', _cat['staking'], 'Staked and held: issuer backing (DefiLlama token breakdown) less staking tokens posted in lending markets or held by other products', f"About 14.4M ETH staked off-chain (listed); beacon chain {native/1e6:.2f}M ETH active is the ceiling"],
         ['Restaking', _cat['restaking'], 'Restaking-token issuers; EigenLayer and Symbiotic only for what no restaking token counts (estimate)', 'Points and AVS rewards are not in the size'],
-        ['Leveraged staking', _cat['loops'], 'Loop vaults (Fluid Lite, Treehouse, CIAN and others)', 'Loops inside Liquid ETH, Lido Earn and Makina stay in those products'],
-        ['Carry', _cat['carry'], f"On-chain books and loans at block 26,108,081: {_ncarry} products, {_usdm(_debt)} of dollar debt", 'Concrete Delta (307k ETH) and three rSHARE vaults (about 83k WETH): private mandates, not products'],
+        ['Leveraged staking', _cat['loops'], 'Staked ETH looped against borrowed ETH on lending markets, private and product (lending split, collateral counted once)', 'Loop vaults (Fluid Lite, Treehouse, CIAN and others) count 0: their positions are inside this total'],
+        ['Carry', _cat['carry'], f"Only ETH collateral for dollar loans of products open for deposits, read at block 26,108,081: {_ncarry} products, {_usdm(_debt)} of dollar debt", 'Concrete Delta (307k ETH) and three rSHARE vaults (about 83k WETH): private mandates, not products'],
         ['Fixed yield', _cat['fixed_yield'], 'Pendle and Spectra principal tokens on ETH-family assets', 'Expired markets count only their residual'],
         ['Basis, options, credit', _cat['basis'] + _cat['options'] + _cat['credit'], 'Protocol token series', 'Exchange margin and CeFi lenders (no ETH balances published)'],
         ['Farming and pools', _cat['farming'], 'DEX ETH pools above $1M (plain-ETH side), managed vaults, points programmes', 'History covers only pools that still exist'],
-        ['Money markets (off)', _cat['lending'], 'Idle WETH no product counts', 'Off by default: lent ETH is staked again by borrowers'],
+        ['Money markets (off)', _cat['lending'], 'ETH and staking tokens posted in lending markets outside loops and carry products', 'Off by default, as in BTC; lent-out WETH is not added'],
         ['CDP collateral (off)', _cat['cdp'], 'ETH posted to mint stablecoins', 'Off by default: the collateral earns nothing'],
     ]
     _excl = sorted(_net['excluded_protocols'], key=lambda x: -(x['eth'] or 0))[:6]

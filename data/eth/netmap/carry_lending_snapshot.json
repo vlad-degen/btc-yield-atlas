@@ -1,0 +1,456 @@
+{
+ "snapshot": "2026-10-02 23:59:59 UTC, Ethereum block 26,108,081",
+ "source": "raw/eth/lending-split-2026-10-08 via tools/eth/lending_split/build.py",
+ "cells": {
+  "1": "ETH debt (loop)",
+  "2": "dollar debt (carry)",
+  "3": "other debt",
+  "4": "no debt"
+ },
+ "accounts": {
+  "liquid-eth": [
+   "0xf0bb20865277abd641a307ece5ee04e79073416c",
+   "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+   "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3"
+  ],
+  "lido-earn": [
+   "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+   "0x9938a09fea37ba681a1bd53d33ddde2debec1da0"
+  ],
+  "avant-aveth": [
+   "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd"
+  ],
+  "nemo-eth-prime": [
+   "0x90882e7c28ddf0ac1177033a310aeed8eff25e90"
+  ],
+  "sentora-eth": [
+   "0xfb9776de51a24eb75e11110fae659e54b346658f",
+   "0x38752981012591312bb56b1fb319511be12f6e2d"
+  ],
+  "makina-deth": [
+   "0xd1a2d9df5db842da2ee81075fa441602b2352915"
+  ],
+  "royco-eth": [
+   "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0"
+  ],
+  "tau-infinifi": [
+   "0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b"
+  ],
+  "vesper-vaeth": [
+   "0x666c80feca6fcd371b0535a9846e2d223cbf1d10"
+  ],
+  "reservoir-eth": [
+   "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e"
+  ],
+  "rocksolid": [
+   "0x80c9dc967b77b5e0768e5179e92f18df9e95e18c",
+   "0x9ca1d6e730eb9fbfd45c9ff5f0ac4e3d172d8f4d"
+  ]
+ },
+ "products": {
+  "liquid-eth": {
+   "gross": {
+    "A1": 478600.072,
+    "A2": 115865.6631,
+    "B1": 3097.3607,
+    "B4": 6.103
+   },
+   "counted_once": {
+    "A1": 478583.5649,
+    "A2": 115863.8072,
+    "B1": 0.0,
+    "B4": 0.9446
+   },
+   "positions": [
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+     "cell": "A2",
+     "gross_eth": 49923.3438,
+     "counted_once_eth": 49921.4968
+    },
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "cell": "A1",
+     "gross_eth": 443412.0689,
+     "counted_once_eth": 443395.6634
+    },
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "cell": "B4",
+     "gross_eth": 6.103,
+     "counted_once_eth": 0.9446
+    },
+    {
+     "venue": "spark",
+     "chain": 1,
+     "account": "0x0a42b2f3a0d54157dbd7cc346335a4f1909fc02c",
+     "cell": "A2",
+     "gross_eth": 3017.5704,
+     "counted_once_eth": 3017.5615
+    },
+    {
+     "venue": "spark",
+     "chain": 1,
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "cell": "A1",
+     "gross_eth": 34584.9926,
+     "counted_once_eth": 34584.8911
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0xc936e848688c9f035fa0e7a0e4dbcf26a01245f3",
+     "cell": "A2",
+     "gross_eth": 21063.6449,
+     "counted_once_eth": 21063.6449
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "cell": "A1",
+     "gross_eth": 0.0331,
+     "counted_once_eth": 0.0331
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "cell": "A2",
+     "gross_eth": 41861.104,
+     "counted_once_eth": 41861.104
+    },
+    {
+     "venue": "fluid",
+     "chain": 1,
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "cell": "A1",
+     "gross_eth": 602.9773,
+     "counted_once_eth": 602.9773
+    },
+    {
+     "venue": "fluid",
+     "chain": 1,
+     "account": "0xf0bb20865277abd641a307ece5ee04e79073416c",
+     "cell": "B1",
+     "gross_eth": 3097.3607,
+     "counted_once_eth": 0.0
+    }
+   ]
+  },
+  "lido-earn": {
+   "gross": {
+    "A2": 25550.4693
+   },
+   "counted_once": {
+    "A2": 25028.6007
+   },
+   "positions": [
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+     "cell": "A2",
+     "gross_eth": 21871.5895,
+     "counted_once_eth": 21349.7317
+    },
+    {
+     "venue": "spark",
+     "chain": 1,
+     "account": "0x181cb55f872450d16ae858d532b4e35e50eaa76d",
+     "cell": "A2",
+     "gross_eth": 3678.8798,
+     "counted_once_eth": 3678.869
+    }
+   ]
+  },
+  "avant-aveth": {
+   "gross": {
+    "A2": 6543.2406,
+    "B2": 5697.2295
+   },
+   "counted_once": {
+    "A2": 6543.2126,
+    "B2": 949.3993
+   },
+   "positions": [
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+     "cell": "A2",
+     "gross_eth": 592.7124,
+     "counted_once_eth": 592.6904
+    },
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+     "cell": "B2",
+     "gross_eth": 809.3827,
+     "counted_once_eth": 125.271
+    },
+    {
+     "venue": "spark",
+     "chain": 1,
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+     "cell": "A2",
+     "gross_eth": 2055.8151,
+     "counted_once_eth": 2055.8091
+    },
+    {
+     "venue": "spark",
+     "chain": 1,
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+     "cell": "B2",
+     "gross_eth": 2664.7486,
+     "counted_once_eth": 508.7562
+    },
+    {
+     "venue": "aave-v4",
+     "chain": 1,
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd@0x94e7a5dc",
+     "cell": "A2",
+     "gross_eth": 3492.5232,
+     "counted_once_eth": 3492.5232
+    },
+    {
+     "venue": "aave-v4",
+     "chain": 1,
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd@0x94e7a5dc",
+     "cell": "B2",
+     "gross_eth": 2223.0981,
+     "counted_once_eth": 315.372
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+     "cell": "A2",
+     "gross_eth": 402.1899,
+     "counted_once_eth": 402.1899
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0x6cc60a0b57bc882a0471980d0e2d4ad7ddf3c4bd",
+     "cell": "B2",
+     "gross_eth": 0.0,
+     "counted_once_eth": 0.0
+    }
+   ]
+  },
+  "nemo-eth-prime": {
+   "gross": {
+    "A2": 2965.262
+   },
+   "counted_once": {
+    "A2": 2965.262
+   },
+   "positions": [
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0x90882e7c28ddf0ac1177033a310aeed8eff25e90",
+     "cell": "A2",
+     "gross_eth": 2965.262,
+     "counted_once_eth": 2965.262
+    }
+   ]
+  },
+  "sentora-eth": {
+   "gross": {
+    "A2": 654.8313
+   },
+   "counted_once": {
+    "A2": 654.8121
+   },
+   "positions": [
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0x38752981012591312bb56b1fb319511be12f6e2d",
+     "cell": "A2",
+     "gross_eth": 521.1189,
+     "counted_once_eth": 521.0996
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0xfb9776de51a24eb75e11110fae659e54b346658f",
+     "cell": "A2",
+     "gross_eth": 133.7125,
+     "counted_once_eth": 133.7125
+    }
+   ]
+  },
+  "makina-deth": {
+   "gross": {
+    "A1": 16695.2226,
+    "A2": 348.1802,
+    "B4": 0.9005
+   },
+   "counted_once": {
+    "A1": 16694.6049,
+    "A2": 348.1802,
+    "B4": 0.1394
+   },
+   "positions": [
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0xd1a2d9df5db842da2ee81075fa441602b2352915",
+     "cell": "A1",
+     "gross_eth": 16695.2204,
+     "counted_once_eth": 16694.6027
+    },
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0xd1a2d9df5db842da2ee81075fa441602b2352915",
+     "cell": "B4",
+     "gross_eth": 0.9005,
+     "counted_once_eth": 0.1394
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0xd1a2d9df5db842da2ee81075fa441602b2352915",
+     "cell": "A1",
+     "gross_eth": 0.0022,
+     "counted_once_eth": 0.0022
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0xd1a2d9df5db842da2ee81075fa441602b2352915",
+     "cell": "A2",
+     "gross_eth": 348.1802,
+     "counted_once_eth": 348.1802
+    }
+   ]
+  },
+  "royco-eth": {
+   "gross": {
+    "A2": 115.9109
+   },
+   "counted_once": {
+    "A2": 115.9109
+   },
+   "positions": [
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0x3d8e2497497a3e29ad5391c08db2a1b3c32598c0",
+     "cell": "A2",
+     "gross_eth": 115.9109,
+     "counted_once_eth": 115.9109
+    }
+   ]
+  },
+  "tau-infinifi": {
+   "gross": {
+    "A2": 82.234
+   },
+   "counted_once": {
+    "A2": 82.234
+   },
+   "positions": [
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0xc50b2d51fd1e2ac67a9c09eaf63c24ea2465c64b",
+     "cell": "A2",
+     "gross_eth": 82.234,
+     "counted_once_eth": 82.234
+    }
+   ]
+  },
+  "vesper-vaeth": {
+   "gross": {
+    "B2": 57.3468
+   },
+   "counted_once": {
+    "B2": 8.8758
+   },
+   "positions": [
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0x666c80feca6fcd371b0535a9846e2d223cbf1d10",
+     "cell": "B2",
+     "gross_eth": 57.3468,
+     "counted_once_eth": 8.8758
+    }
+   ]
+  },
+  "reservoir-eth": {
+   "gross": {
+    "B2": 21.2206
+   },
+   "counted_once": {
+    "B2": 3.2844
+   },
+   "positions": [
+    {
+     "venue": "aave-core",
+     "chain": 1,
+     "account": "0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e",
+     "cell": "B2",
+     "gross_eth": 21.2206,
+     "counted_once_eth": 3.2844
+    }
+   ]
+  },
+  "rocksolid": {
+   "gross": {
+    "A1": 6950.331,
+    "A2": 2728.0819
+   },
+   "counted_once": {
+    "A1": 6949.8392,
+    "A2": 2728.0819
+   },
+   "positions": [
+    {
+     "venue": "spark",
+     "chain": 1,
+     "account": "0x9ca1d6e730eb9fbfd45c9ff5f0ac4e3d172d8f4d",
+     "cell": "A1",
+     "gross_eth": 2664.8293,
+     "counted_once_eth": 2664.3375
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0x9ca1d6e730eb9fbfd45c9ff5f0ac4e3d172d8f4d",
+     "cell": "A1",
+     "gross_eth": 996.3043,
+     "counted_once_eth": 996.3043
+    },
+    {
+     "venue": "morpho",
+     "chain": 1,
+     "account": "0x80c9dc967b77b5e0768e5179e92f18df9e95e18c",
+     "cell": "A2",
+     "gross_eth": 2728.0819,
+     "counted_once_eth": 2728.0819
+    },
+    {
+     "venue": "morpho",
+     "chain": 143,
+     "account": "0x9ca1d6e730eb9fbfd45c9ff5f0ac4e3d172d8f4d",
+     "cell": "A1",
+     "gross_eth": 3289.1974,
+     "counted_once_eth": 3289.1974
+    }
+   ]
+  }
+ }
+}
