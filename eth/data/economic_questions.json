@@ -1404,66 +1404,66 @@
           "month": "2026-05",
           "timestamp": 1780271999,
           "block": 25218797,
-          "debtUSD": 0.000869,
+          "debtUSD": 5706091.580869,
           "apr": null,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
           "allObserved": true,
-          "source": "gap_top5_risk_series.csv"
+          "source": "gap_top5_risk_series.csv + carry_accounts_monthly.csv"
         },
         {
           "month": "2026-06",
           "timestamp": 1782863999,
           "block": 25433938,
-          "debtUSD": 3711455.1808055,
+          "debtUSD": 8722584.910805501,
           "apr": 0.05723423,
           "ratedDebtUSD": 925505.389044,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
           "allObserved": true,
-          "source": "gap_top5_risk_series.csv"
+          "source": "gap_top5_risk_series.csv + carry_accounts_monthly.csv"
         },
         {
           "month": "2026-07",
           "timestamp": 1785542399,
           "block": 25656292,
-          "debtUSD": 8665055.2608797,
+          "debtUSD": 11690649.8108797,
           "apr": 0.03214831,
           "ratedDebtUSD": 0,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 0,
           "allObserved": true,
-          "source": "gap_top5_risk_series.csv"
+          "source": "gap_top5_risk_series.csv + carry_accounts_monthly.csv"
         },
         {
           "month": "2026-08",
           "timestamp": 1788220799,
           "block": 25878704,
-          "debtUSD": 11279066.24501943,
+          "debtUSD": 12130705.93501943,
           "apr": 0.0379486,
           "ratedDebtUSD": 5699646.782678398,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 1,
           "allObserved": true,
-          "source": "gap_top5_risk_series.csv"
+          "source": "gap_top5_risk_series.csv + carry_accounts_monthly.csv"
         },
         {
           "month": "2026-09",
           "timestamp": 1790812799,
           "block": 26093737,
-          "debtUSD": 10032382.69800467,
+          "debtUSD": 19251800.19800467,
           "apr": 0.06335142,
           "ratedDebtUSD": 10032437.581181657,
           "observedLegs": 3,
           "expectedLegs": 3,
           "fundedLegs": 3,
           "allObserved": true,
-          "source": "gap_top5_risk_series.csv"
+          "source": "gap_top5_risk_series.csv + carry_accounts_monthly.csv"
         }
       ],
       "currentLegs": [
@@ -16496,7 +16496,7 @@
       "month": "2026-05",
       "timestamp": 1780271999,
       "block": 25218797,
-      "debtUSD": 17534897.17799373,
+      "debtUSD": 23240988.75799373,
       "observedProducts": 13,
       "allLegsObservedProducts": 13,
       "expectedProducts": 13
@@ -16505,7 +16505,7 @@
       "month": "2026-06",
       "timestamp": 1782863999,
       "block": 25433938,
-      "debtUSD": 47010931.7685111,
+      "debtUSD": 52022061.4985111,
       "observedProducts": 13,
       "allLegsObservedProducts": 13,
       "expectedProducts": 13
@@ -16514,7 +16514,7 @@
       "month": "2026-07",
       "timestamp": 1785542399,
       "block": 25656292,
-      "debtUSD": 92379489.76182503,
+      "debtUSD": 95405084.31182502,
       "observedProducts": 13,
       "allLegsObservedProducts": 13,
       "expectedProducts": 13
@@ -16523,7 +16523,7 @@
       "month": "2026-08",
       "timestamp": 1788220799,
       "block": 25878704,
-      "debtUSD": 239478078.26148683,
+      "debtUSD": 240329717.95148683,
       "observedProducts": 13,
       "allLegsObservedProducts": 13,
       "expectedProducts": 13
@@ -16532,7 +16532,7 @@
       "month": "2026-09",
       "timestamp": 1790812799,
       "block": 26093737,
-      "debtUSD": 263101890.61913309,
+      "debtUSD": 272321308.11913306,
       "observedProducts": 13,
       "allLegsObservedProducts": 13,
       "expectedProducts": 13
@@ -16662,8 +16662,8 @@
     }
   ],
   "market": {
-    "defaultGrossETHReference": 16044015.170372743,
-    "defaultGrossUSD": 42827695185.210594,
+    "defaultGrossETHReference": 15936174.884158015,
+    "defaultGrossUSD": 42539827662.17191,
     "defaultObservedProtocols": 170,
     "globalNetYieldCapitalETH": null,
     "globalCarryEquityShare": null,
@@ -16733,7 +16733,7 @@
     },
     {
       "path": "data/eth/market_reader_chapter.json",
-      "sha256": "ed70f9bb699149384777dee590d1149e0223ece3ecfda08e244e9a38b2ad43b6"
+      "sha256": "7c5a973341c854df2de392d7831dce287027c16b68b7eda8d702aa50cc5b3064"
     },
     {
       "path": "data/eth/market_netting_closure.json",
