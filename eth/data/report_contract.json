@@ -5,8 +5,8 @@
     "nativeActiveETH": 43805557.72346937,
     "nativeEffectiveETH": 43739959.0,
     "nativeActiveValidators": 874362,
-    "receiptClaimsETH": 11896565.450636772,
-    "receiptClaimsUSD": 31756544322.62309,
+    "receiptClaimsETH": 11901176.611201879,
+    "receiptClaimsUSD": 31768853297.467308,
     "examinedBooks": 13,
     "currentRoutes": 10,
     "liquid730dExcessPP": 1.3625789713257452,
@@ -509,7 +509,7 @@
   "custodySubsetETH": 457182.30402225326,
   "lpCustodyETH": 69531.48533136006,
   "sources": {
-    "market_reader_chapter": "7c5a973341c854df2de392d7831dce287027c16b68b7eda8d702aa50cc5b3064",
+    "market_reader_chapter": "e5a5937cdbf6aeae7ec362b9d4f734c39bf6a938365b993da532389d81e3731c",
     "reader_carry_category": "7de0c236e26cef3266c9204f5a7cbef73e195b6d4476e5b0b7a09a817b0d0d01",
     "reader_product_chapters": "4d10cf3054bc7eeb764f5def80ef7c992bd62cad9ae55486a57de7c617171068",
     "etherfi_staking_comparison": "02164a3a10a259ab6d4aaaad7d0eadaab762f47cb840ef717c6b1b9656032858",
@@ -521,7 +521,7 @@
   },
   "verifiedDollarFinancing": {
     "source": "data/eth/economic_questions.json",
-    "sourceSHA256": "70d9433c588b8ebb495554453d2f471270432258afe003c5641309294b62e202",
+    "sourceSHA256": "97912c725eceab4443c5470d4487dbf23cadbfb004117af527cbbe66c08fe335",
     "directDebtUSD": 270947588.2525734,
     "topFive": [
       "liquid",
