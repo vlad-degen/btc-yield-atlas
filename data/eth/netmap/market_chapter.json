@@ -131,13 +131,13 @@
   {
    "period": "2024-10",
    "target_timestamp": 1730419199,
-   "usd": 52035365907.133804,
-   "eth_ref": 20667818.209925976,
-   "gross_positive_usd": 52035365907.133804,
+   "usd": 52034310677.18825,
+   "eth_ref": 20667399.085349753,
+   "gross_positive_usd": 52034310677.18825,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 175,
+    "expected": 246,
+    "observed": 173,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -146,9 +146,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 31671572669.075356,
-     "eth_ref": 12579565.742174773,
-     "gross_positive_usd": 31671572669.075356,
+     "usd": 31670517439.1298,
+     "eth_ref": 12579146.617598549,
+     "gross_positive_usd": 31670517439.1298,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -161,8 +161,8 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 31640002234.543808,
-      "eth_ref": 12567026.347278021
+      "usd": 31638947004.598248,
+      "eth_ref": 12566607.2227018
      }
     },
     "restaking": {
@@ -186,13 +186,13 @@
      }
     },
     "loops": {
-     "usd": 679860056.580902,
-     "eth_ref": 270032.1946939113,
-     "gross_positive_usd": 679860056.580902,
+     "usd": 311764736.7445465,
+     "eth_ref": 123829.18407456309,
+     "gross_positive_usd": 311764736.7445465,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 6,
+      "expected": 7,
+      "observed": 5,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -306,13 +306,13 @@
      }
     },
     "farming": {
-     "usd": 3988875988.279778,
-     "eth_ref": 1584333.3154385092,
-     "gross_positive_usd": 3988875988.279778,
+     "usd": 4356971308.116134,
+     "eth_ref": 1730536.3260578574,
+     "gross_positive_usd": 4356971308.116134,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 61,
+      "expected": 95,
+      "observed": 60,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -321,8 +321,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2986231727.8817687,
-      "eth_ref": 1186095.1375785784
+      "usd": 3357111499.6081033,
+      "eth_ref": 1333404.0988234892
      }
     },
     "lending": {
@@ -368,20 +368,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 49071356640.61425,
-    "eth_ref": 19490549.565322023
+    "usd": 49441181182.39503,
+    "eth_ref": 19637439.40199071
    }
   },
   {
    "period": "2024-11",
    "target_timestamp": 1733011199,
-   "usd": 77515779081.36037,
-   "eth_ref": 20815025.410999447,
-   "gross_positive_usd": 77515779081.36037,
+   "usd": 77514286823.79027,
+   "eth_ref": 20814624.7005943,
+   "gross_positive_usd": 77514286823.79027,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 177,
+    "expected": 246,
+    "observed": 175,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -390,9 +390,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 47191582497.22901,
-     "eth_ref": 12672181.077275703,
-     "gross_positive_usd": 47191582497.22901,
+     "usd": 47190090239.65891,
+     "eth_ref": 12671780.366870552,
+     "gross_positive_usd": 47190090239.65891,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -405,8 +405,8 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 47145046464.57256,
-      "eth_ref": 12659684.928572169
+      "usd": 47143554207.002464,
+      "eth_ref": 12659284.218167016
      }
     },
     "restaking": {
@@ -430,13 +430,13 @@
      }
     },
     "loops": {
-     "usd": 1162677164.1591907,
-     "eth_ref": 312209.39792607725,
-     "gross_positive_usd": 1162677164.1591907,
+     "usd": 603106825.0794343,
+     "eth_ref": 161950.04473088385,
+     "gross_positive_usd": 603106825.0794343,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -550,13 +550,13 @@
      }
     },
     "farming": {
-     "usd": 5472965658.784197,
-     "eth_ref": 1469635.22280477,
-     "gross_positive_usd": 5472965658.784197,
+     "usd": 6032535997.863954,
+     "eth_ref": 1619894.5759999636,
+     "gross_positive_usd": 6032535997.863954,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 61,
+      "expected": 95,
+      "observed": 60,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -565,8 +565,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 4092983616.714549,
-      "eth_ref": 1099073.7498657752
+      "usd": 4656861845.775503,
+      "eth_ref": 1250489.8848219092
      }
     },
     "lending": {
@@ -612,20 +612,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 73257252433.67427,
-    "eth_ref": 19671499.00340227
+    "usd": 73819638405.16513,
+    "eth_ref": 19822514.427953254
    }
   },
   {
    "period": "2024-12",
    "target_timestamp": 1735689599,
-   "usd": 68619782612.82214,
-   "eth_ref": 20610688.220394824,
-   "gross_positive_usd": 68619782612.82214,
+   "usd": 68618438690.30766,
+   "eth_ref": 20610284.558842957,
+   "gross_positive_usd": 68618438690.30766,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 186,
+    "expected": 246,
+    "observed": 184,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -634,9 +634,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 41750004347.83927,
-     "eth_ref": 12540061.91871341,
-     "gross_positive_usd": 41750004347.83927,
+     "usd": 41748660425.32479,
+     "eth_ref": 12539658.257161543,
+     "gross_positive_usd": 41748660425.32479,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -649,8 +649,8 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 41706709474.30859,
-      "eth_ref": 12527057.838754179
+      "usd": 41705365551.79411,
+      "eth_ref": 12526654.177202312
      }
     },
     "restaking": {
@@ -674,13 +674,13 @@
      }
     },
     "loops": {
-     "usd": 1077925051.7014658,
-     "eth_ref": 323766.35890741664,
-     "gross_positive_usd": 1077925051.7014658,
+     "usd": 569481255.28588,
+     "eth_ref": 171049.80740441926,
+     "gross_positive_usd": 569481255.28588,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -794,13 +794,13 @@
      }
     },
     "farming": {
-     "usd": 4551939231.953366,
-     "eth_ref": 1367223.805375967,
-     "gross_positive_usd": 4551939231.953366,
+     "usd": 5060383028.368952,
+     "eth_ref": 1519940.3568789645,
+     "gross_positive_usd": 5060383028.368952,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 68,
+      "expected": 95,
+      "observed": 67,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -809,8 +809,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 3446956998.273318,
-      "eth_ref": 1035330.5314500402
+      "usd": 3959280012.743837,
+      "eth_ref": 1189212.2477324174
      }
     },
     "lending": {
@@ -856,8 +856,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 65144113622.456535,
-    "eth_ref": 19566733.733947147
+    "usd": 65655092714.412575,
+    "eth_ref": 19720211.788677655
    }
   },
   {
@@ -868,8 +868,8 @@
    "gross_positive_usd": 67660231971.625015,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 188,
+    "expected": 246,
+    "observed": 187,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -918,13 +918,13 @@
      }
     },
     "loops": {
-     "usd": 1034424599.2941858,
-     "eth_ref": 313561.7694399183,
-     "gross_positive_usd": 1034424599.2941858,
+     "usd": 528483380.53894776,
+     "eth_ref": 160197.45086732446,
+     "gross_positive_usd": 528483380.53894776,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -1038,12 +1038,12 @@
      }
     },
     "farming": {
-     "usd": 4648138591.332457,
-     "eth_ref": 1408975.1561347719,
-     "gross_positive_usd": 4648138591.332457,
+     "usd": 5154079810.087695,
+     "eth_ref": 1562339.4747073657,
+     "gross_positive_usd": 5154079810.087695,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 69,
       "missing": 0,
       "stale": 0,
@@ -1053,8 +1053,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 3330416187.1508718,
-      "eth_ref": 1009538.2431227176
+      "usd": 3836357405.90611,
+      "eth_ref": 1162902.5616953115
      }
     },
     "lending": {
@@ -1100,8 +1100,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 64331561144.718636,
-    "eth_ref": 19500617.209929157
+    "usd": 64837502363.47388,
+    "eth_ref": 19653981.52850175
    }
   },
   {
@@ -1112,8 +1112,8 @@
    "gross_positive_usd": 45785515104.322014,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 190,
+    "expected": 246,
+    "observed": 189,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -1162,13 +1162,13 @@
      }
     },
     "loops": {
-     "usd": 784293784.6206746,
-     "eth_ref": 352380.7272410946,
-     "gross_positive_usd": 784293784.6206746,
+     "usd": 429958772.9031732,
+     "eth_ref": 193179.12247970514,
+     "gross_positive_usd": 429958772.9031732,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -1282,12 +1282,12 @@
      }
     },
     "farming": {
-     "usd": 3215177601.2599173,
-     "eth_ref": 1444569.1698158865,
-     "gross_positive_usd": 3215177601.2599173,
+     "usd": 3569512612.977419,
+     "eth_ref": 1603770.774577276,
+     "gross_positive_usd": 3569512612.977419,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 70,
       "missing": 0,
       "stale": 0,
@@ -1297,8 +1297,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2425308180.3831325,
-      "eth_ref": 1089683.326765784
+      "usd": 2779643192.100634,
+      "eth_ref": 1248884.9315271734
      }
     },
     "lending": {
@@ -1344,8 +1344,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 43758398886.612595,
-    "eth_ref": 19660510.79957006
+    "usd": 44112733898.3301,
+    "eth_ref": 19819712.404331453
    }
   },
   {
@@ -1356,8 +1356,8 @@
    "gross_positive_usd": 37497058407.91728,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 192,
+    "expected": 246,
+    "observed": 191,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -1406,13 +1406,13 @@
      }
     },
     "loops": {
-     "usd": 674562434.78182,
-     "eth_ref": 369892.8176598388,
-     "gross_positive_usd": 674562434.78182,
+     "usd": 380188738.90876365,
+     "eth_ref": 208474.52604292787,
+     "gross_positive_usd": 380188738.90876365,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -1526,12 +1526,12 @@
      }
     },
     "farming": {
-     "usd": 2519259354.8599195,
-     "eth_ref": 1381422.8203894012,
-     "gross_positive_usd": 2519259354.8599195,
+     "usd": 2813633050.732976,
+     "eth_ref": 1542841.1120063122,
+     "gross_positive_usd": 2813633050.732976,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 72,
       "missing": 0,
       "stale": 0,
@@ -1541,8 +1541,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1974268360.8600245,
-      "eth_ref": 1082579.8312522147
+      "usd": 2268642056.733081,
+      "eth_ref": 1243998.1228691258
      }
     },
     "lending": {
@@ -1588,8 +1588,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 36004249921.503975,
-    "eth_ref": 19742743.98410817
+    "usd": 36298623617.37703,
+    "eth_ref": 19904162.275725078
    }
   },
   {
@@ -1600,8 +1600,8 @@
    "gross_positive_usd": 36478695432.55209,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 195,
+    "expected": 246,
+    "observed": 194,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -1650,13 +1650,13 @@
      }
     },
     "loops": {
-     "usd": 671232445.0672337,
-     "eth_ref": 374366.9450116103,
-     "gross_positive_usd": 671232445.0672337,
+     "usd": 353998207.1418773,
+     "eth_ref": 197435.669746294,
+     "gross_positive_usd": 353998207.1418773,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -1770,12 +1770,12 @@
      }
     },
     "farming": {
-     "usd": 2301067088.508887,
-     "eth_ref": 1283375.770230455,
-     "gross_positive_usd": 2301067088.508887,
+     "usd": 2618301326.434243,
+     "eth_ref": 1460307.0454957713,
+     "gross_positive_usd": 2618301326.434243,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 72,
       "missing": 0,
       "stale": 0,
@@ -1785,8 +1785,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1803865826.707377,
-      "eth_ref": 1006071.3598068722
+      "usd": 2121100064.6327333,
+      "eth_ref": 1183002.6350721885
      }
     },
     "lending": {
@@ -1832,8 +1832,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 35020225060.11863,
-    "eth_ref": 19531854.822754357
+    "usd": 35337459298.04399,
+    "eth_ref": 19708786.098019674
    }
   },
   {
@@ -1844,8 +1844,8 @@
    "gross_positive_usd": 50715253296.82816,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 194,
+    "expected": 246,
+    "observed": 193,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -1894,13 +1894,13 @@
      }
     },
     "loops": {
-     "usd": 1046128561.332488,
-     "eth_ref": 415478.26208930253,
-     "gross_positive_usd": 1046128561.332488,
+     "usd": 555252052.9148906,
+     "eth_ref": 220522.76029320172,
+     "gross_positive_usd": 555252052.9148906,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -2014,12 +2014,12 @@
      }
     },
     "farming": {
-     "usd": 2716547377.846728,
-     "eth_ref": 1078898.3545133222,
-     "gross_positive_usd": 2716547377.846728,
+     "usd": 3207423886.264325,
+     "eth_ref": 1273853.856309423,
+     "gross_positive_usd": 3207423886.264325,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 72,
       "missing": 0,
       "stale": 0,
@@ -2029,8 +2029,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2233766696.6352277,
-      "eth_ref": 887158.1747551555
+      "usd": 2724643205.052825,
+      "eth_ref": 1082113.6765512563
      }
     },
     "lending": {
@@ -2076,8 +2076,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 48842579825.42281,
-    "eth_ref": 19398218.280147906
+    "usd": 49333456333.84041,
+    "eth_ref": 19593173.781944007
    }
   },
   {
@@ -2088,8 +2088,8 @@
    "gross_positive_usd": 52686506820.37405,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 197,
+    "expected": 246,
+    "observed": 196,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -2138,13 +2138,13 @@
      }
     },
     "loops": {
-     "usd": 1021400723.0249887,
-     "eth_ref": 409178.96780954645,
-     "gross_positive_usd": 1021400723.0249887,
+     "usd": 542754481.766727,
+     "eth_ref": 217430.54769492397,
+     "gross_positive_usd": 542754481.766727,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -2258,12 +2258,12 @@
      }
     },
     "farming": {
-     "usd": 2559009525.55047,
-     "eth_ref": 1025153.8428311071,
-     "gross_positive_usd": 2559009525.55047,
+     "usd": 3037655766.8087316,
+     "eth_ref": 1216902.2629457295,
+     "gross_positive_usd": 3037655766.8087316,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 74,
       "missing": 0,
       "stale": 0,
@@ -2273,8 +2273,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2167228751.5986047,
-      "eth_ref": 868204.2254287632
+      "usd": 2645874992.8568664,
+      "eth_ref": 1059952.6455433858
      }
     },
     "lending": {
@@ -2320,8 +2320,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 50756709776.661835,
-    "eth_ref": 20333428.053893298
+    "usd": 51235356017.9201,
+    "eth_ref": 20525176.474007923
    }
   },
   {
@@ -2332,8 +2332,8 @@
    "gross_positive_usd": 76686886620.8907,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 201,
+    "expected": 246,
+    "observed": 200,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -2382,13 +2382,13 @@
      }
     },
     "loops": {
-     "usd": 1431377173.0294704,
-     "eth_ref": 387415.73641817126,
-     "gross_positive_usd": 1431377173.0294704,
+     "usd": 690714486.524084,
+     "eth_ref": 186948.3924248089,
+     "gross_positive_usd": 690714486.524084,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -2502,12 +2502,12 @@
      }
     },
     "farming": {
-     "usd": 2973613323.1726475,
-     "eth_ref": 804836.500907436,
-     "gross_positive_usd": 2973613323.1726475,
+     "usd": 3714276009.678034,
+     "eth_ref": 1005303.8449007983,
+     "gross_positive_usd": 3714276009.678034,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 77,
       "missing": 0,
       "stale": 0,
@@ -2517,8 +2517,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2436587259.7763224,
-      "eth_ref": 659485.3301981102
+      "usd": 3177249946.2817087,
+      "eth_ref": 859952.6741914725
      }
     },
     "lending": {
@@ -2564,8 +2564,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 74537143402.68153,
-    "eth_ref": 20174181.093540575
+    "usd": 75277806089.18692,
+    "eth_ref": 20374648.437533937
    }
   },
   {
@@ -2576,7 +2576,7 @@
    "gross_positive_usd": 89591588494.61629,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
+    "expected": 246,
     "observed": 206,
     "missing": 0,
     "stale": 0,
@@ -2631,7 +2631,7 @@
      "gross_positive_usd": 709611978.4879967,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
+      "expected": 7,
       "observed": 7,
       "missing": 0,
       "stale": 0,
@@ -2751,7 +2751,7 @@
      "gross_positive_usd": 3212827551.6696563,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 76,
       "missing": 0,
       "stale": 0,
@@ -2815,13 +2815,13 @@
   {
    "period": "2025-09",
    "target_timestamp": 1759276799,
-   "usd": 85590725837.97647,
-   "eth_ref": 20639937.745025173,
-   "gross_positive_usd": 85590725837.97647,
+   "usd": 85597071762.05135,
+   "eth_ref": 20641468.04490939,
+   "gross_positive_usd": 85597071762.05135,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 211,
+    "expected": 246,
+    "observed": 210,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -2830,9 +2830,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 55936406413.73455,
-     "eth_ref": 13488890.703479085,
-     "gross_positive_usd": 55936406413.73455,
+     "usd": 55942833702.51408,
+     "eth_ref": 13490440.624209164,
+     "gross_positive_usd": 55942833702.51408,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -2845,14 +2845,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 55925403553.43904,
-      "eth_ref": 13486237.397886766
+      "usd": 55931830842.21857,
+      "eth_ref": 13487787.318616845
      }
     },
     "restaking": {
-     "usd": 16410764893.677492,
-     "eth_ref": 3957404.9926266633,
-     "gross_positive_usd": 16410764893.677492,
+     "usd": 16410683528.972841,
+     "eth_ref": 3957385.371780805,
+     "gross_positive_usd": 16410683528.972841,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -2865,18 +2865,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 15886188398.06228,
-      "eth_ref": 3830904.9997127424
+      "usd": 15886107033.357632,
+      "eth_ref": 3830885.3788668835
      }
     },
     "loops": {
-     "usd": 678290966.1778698,
-     "eth_ref": 163567.76014992598,
-     "gross_positive_usd": 678290966.1778698,
+     "usd": 670635440.1629303,
+     "eth_ref": 161721.6538246579,
+     "gross_positive_usd": 670635440.1629303,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -2990,12 +2990,12 @@
      }
     },
     "farming": {
-     "usd": 3217187856.700814,
-     "eth_ref": 775814.8610873569,
-     "gross_positive_usd": 3217187856.700814,
+     "usd": 3224843382.7157536,
+     "eth_ref": 777660.967412625,
+     "gross_positive_usd": 3224843382.7157536,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 80,
       "missing": 0,
       "stale": 0,
@@ -3052,20 +3052,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 83500608970.99844,
-    "eth_ref": 20135912.553137943
+    "usd": 83506954895.07333,
+    "eth_ref": 20137442.853022162
    }
   },
   {
    "period": "2025-10",
    "target_timestamp": 1761955199,
-   "usd": 78304220892.58655,
-   "eth_ref": 20313976.80165438,
-   "gross_positive_usd": 78304220892.58655,
+   "usd": 78355795949.74413,
+   "eth_ref": 20327356.59782246,
+   "gross_positive_usd": 78355795949.74413,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 218,
+    "expected": 246,
+    "observed": 215,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -3074,9 +3074,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 52245628740.7038,
-     "eth_ref": 13553758.381458903,
-     "gross_positive_usd": 52245628740.7038,
+     "usd": 52260551084.41072,
+     "eth_ref": 13557629.592236986,
+     "gross_positive_usd": 52260551084.41072,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -3089,14 +3089,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 52235697220.97984,
-      "eth_ref": 13551181.90909282
+      "usd": 52250619564.68677,
+      "eth_ref": 13555053.119870903
      }
     },
     "restaking": {
-     "usd": 15327781279.449785,
-     "eth_ref": 3976390.9248097,
-     "gross_positive_usd": 15327781279.449785,
+     "usd": 15364493634.08668,
+     "eth_ref": 3985914.982541543,
+     "gross_positive_usd": 15364493634.08668,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -3109,18 +3109,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 14807095500.982025,
-      "eth_ref": 3841312.6531127673
+      "usd": 14843807855.618921,
+      "eth_ref": 3850836.710844611
      }
     },
     "loops": {
-     "usd": 1346811363.0659485,
-     "eth_ref": 349394.8917907747,
-     "gross_positive_usd": 1346811363.0659485,
+     "usd": 602288312.4614931,
+     "eth_ref": 156247.90934365423,
+     "gross_positive_usd": 602288312.4614931,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -3234,12 +3234,12 @@
      }
     },
     "farming": {
-     "usd": 2801757388.6954083,
-     "eth_ref": 726842.4862549229,
-     "gross_positive_usd": 2801757388.6954083,
+     "usd": 3546220798.1136255,
+     "eth_ref": 919973.996360197,
+     "gross_positive_usd": 3546220798.1136255,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -3249,8 +3249,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2441962437.329217,
-      "eth_ref": 633503.1207380744
+      "usd": 3126031512.9322267,
+      "eth_ref": 810966.9046072824
      }
     },
     "lending": {
@@ -3296,20 +3296,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 76312022599.05391,
-    "eth_ref": 19797153.194219075
+    "usd": 77047726373.00073,
+    "eth_ref": 19988012.24659821
    }
   },
   {
    "period": "2025-11",
    "target_timestamp": 1764547199,
-   "usd": 61496885452.350105,
-   "eth_ref": 20587859.165633276,
-   "gross_positive_usd": 61496885452.350105,
+   "usd": 61540806620.18994,
+   "eth_ref": 20602563.045532648,
+   "gross_positive_usd": 61540806620.18994,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 219,
+    "expected": 246,
+    "observed": 216,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -3318,9 +3318,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 40673053416.54355,
-     "eth_ref": 13616479.752050236,
-     "gross_positive_usd": 40673053416.54355,
+     "usd": 40683308149.621185,
+     "eth_ref": 13619912.820226464,
+     "gross_positive_usd": 40683308149.621185,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -3333,14 +3333,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 40666281720.5581,
-      "eth_ref": 13614212.731172098
+      "usd": 40676536453.635735,
+      "eth_ref": 13617645.799348326
      }
     },
     "restaking": {
-     "usd": 11602995633.967722,
-     "eth_ref": 3884438.020795026,
-     "gross_positive_usd": 11602995633.967722,
+     "usd": 11636591112.986622,
+     "eth_ref": 3895685.078033055,
+     "gross_positive_usd": 11636591112.986622,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -3353,18 +3353,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 11341606950.279953,
-      "eth_ref": 3796930.6069208095
+      "usd": 11375202429.298853,
+      "eth_ref": 3808177.664158839
      }
     },
     "loops": {
-     "usd": 1018052283.0742885,
-     "eth_ref": 340822.41520060436,
-     "gross_positive_usd": 1018052283.0742885,
+     "usd": 523156686.42880595,
+     "eth_ref": 175141.8157607529,
+     "gross_positive_usd": 523156686.42880595,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -3478,12 +3478,12 @@
      }
     },
     "farming": {
-     "usd": 1895995848.8928812,
-     "eth_ref": 634739.3892960192,
-     "gross_positive_usd": 1895995848.8928812,
+     "usd": 2390962401.2816668,
+     "eth_ref": 800443.743220986,
+     "gross_positive_usd": 2390962401.2816668,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -3493,8 +3493,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1668072459.4238598,
-      "eth_ref": 558435.449536698
+      "usd": 2109607654.6460643,
+      "eth_ref": 706252.1129179449
      }
     },
     "lending": {
@@ -3540,20 +3540,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 60262097649.101234,
-    "eth_ref": 20174478.27315821
+    "usd": 60747483056.419975,
+    "eth_ref": 20336975.061953712
    }
   },
   {
    "period": "2025-12",
    "target_timestamp": 1767225599,
-   "usd": 62556035384.02754,
-   "eth_ref": 21051914.689847704,
-   "gross_positive_usd": 62556035384.02754,
+   "usd": 62596110642.60668,
+   "eth_ref": 21065401.1731199,
+   "gross_positive_usd": 62596110642.60668,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 221,
+    "expected": 246,
+    "observed": 218,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -3562,9 +3562,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 41081833272.575455,
-     "eth_ref": 13825224.761248667,
-     "gross_positive_usd": 41081833272.575455,
+     "usd": 41092828608.74293,
+     "eth_ref": 13828925.009794837,
+     "gross_positive_usd": 41092828608.74293,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -3577,14 +3577,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 41075149816.84078,
-      "eth_ref": 13822975.58514446
+      "usd": 41086145153.00826,
+      "eth_ref": 13826675.83369063
      }
     },
     "restaking": {
-     "usd": 12175127497.566666,
-     "eth_ref": 4097282.441947017,
-     "gross_positive_usd": 12175127497.566666,
+     "usd": 12204238079.11506,
+     "eth_ref": 4107078.994359051,
+     "gross_positive_usd": 12204238079.11506,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -3597,18 +3597,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 11945017104.643555,
-      "eth_ref": 4019843.641177019
+      "usd": 11974127686.19195,
+      "eth_ref": 4029640.193589053
      }
     },
     "loops": {
-     "usd": 977991978.4410105,
-     "eth_ref": 329122.5789982276,
-     "gross_positive_usd": 977991978.4410105,
+     "usd": 489036096.41562617,
+     "eth_ref": 164574.78672995575,
+     "gross_positive_usd": 489036096.41562617,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -3722,12 +3722,12 @@
      }
     },
     "farming": {
-     "usd": 2031851570.4848404,
-     "eth_ref": 683776.8036559672,
-     "gross_positive_usd": 2031851570.4848404,
+     "usd": 2520776793.3734894,
+     "eth_ref": 848314.2782382307,
+     "gross_positive_usd": 2520776793.3734894,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -3737,8 +3737,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1732303027.450616,
-      "eth_ref": 582970.0575968204
+      "usd": 2169362227.191326,
+      "eth_ref": 730053.1157041732
      }
     },
     "lending": {
@@ -3784,20 +3784,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 61333203916.38903,
-    "eth_ref": 20640396.543297127
+    "usd": 61810369033.84561,
+    "eth_ref": 20800976.402362686
    }
   },
   {
    "period": "2026-01",
    "target_timestamp": 1769903999,
-   "usd": 53444204446.8209,
-   "eth_ref": 21639440.22725897,
-   "gross_positive_usd": 53444204446.8209,
+   "usd": 53474540493.60633,
+   "eth_ref": 21651723.225536134,
+   "gross_positive_usd": 53474540493.60633,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 220,
+    "expected": 246,
+    "observed": 217,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -3806,9 +3806,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 35773138387.966415,
-     "eth_ref": 14484464.646828702,
-     "gross_positive_usd": 35773138387.966415,
+     "usd": 35784150704.72315,
+     "eth_ref": 14488923.50953772,
+     "gross_positive_usd": 35784150704.72315,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -3821,14 +3821,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 35772238378.74148,
-      "eth_ref": 14484100.235083245
+      "usd": 35783250695.49821,
+      "eth_ref": 14488559.09779226
      }
     },
     "restaking": {
-     "usd": 10726599346.1677,
-     "eth_ref": 4343176.361135983,
-     "gross_positive_usd": 10726599346.1677,
+     "usd": 10746003690.449375,
+     "eth_ref": 4351033.137236941,
+     "gross_positive_usd": 10746003690.449375,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -3841,18 +3841,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 10509347731.57102,
-      "eth_ref": 4255211.662680825
+      "usd": 10528752075.852695,
+      "eth_ref": 4263068.438781784
      }
     },
     "loops": {
-     "usd": 872902617.8683003,
-     "eth_ref": 353436.340181177,
-     "gross_positive_usd": 872902617.8683003,
+     "usd": 448801850.03259027,
+     "eth_ref": 181718.87687704526,
+     "gross_positive_usd": 448801850.03259027,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -3966,12 +3966,12 @@
      }
     },
     "farming": {
-     "usd": 1901661506.6745584,
-     "eth_ref": 769978.5399015549,
-     "gross_positive_usd": 1901661506.6745584,
+     "usd": 2325681660.2572894,
+     "eth_ref": 941663.3626728756,
+     "gross_positive_usd": 2325681660.2572894,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -3981,8 +3981,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1497934680.500952,
-      "eth_ref": 606510.4405341517
+      "usd": 1879042016.9184272,
+      "eth_ref": 760819.9585059624
      }
     },
     "lending": {
@@ -4028,20 +4028,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 52231888483.762245,
-    "eth_ref": 21148576.173977695
+    "usd": 52643412481.218124,
+    "eth_ref": 21315201.33075948
    }
   },
   {
    "period": "2026-02",
    "target_timestamp": 1772323199,
-   "usd": 41634577806.2979,
-   "eth_ref": 21271808.596077964,
-   "gross_positive_usd": 41634577806.2979,
+   "usd": 41650815830.695404,
+   "eth_ref": 21280104.876841735,
+   "gross_positive_usd": 41650815830.695404,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 222,
+    "expected": 246,
+    "observed": 219,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -4050,9 +4050,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 28130950562.025784,
-     "eth_ref": 14372577.494724283,
-     "gross_positive_usd": 28130950562.025784,
+     "usd": 28139323798.190296,
+     "eth_ref": 14376855.522421597,
+     "gross_positive_usd": 28139323798.190296,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -4065,14 +4065,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 28130574049.513855,
-      "eth_ref": 14372385.12812638
+      "usd": 28138947285.678368,
+      "eth_ref": 14376663.155823693
      }
     },
     "restaking": {
-     "usd": 8558396634.206806,
-     "eth_ref": 4372629.306802451,
-     "gross_positive_usd": 8558396634.206806,
+     "usd": 8566246758.346328,
+     "eth_ref": 4376640.067736025,
+     "gross_positive_usd": 8566246758.346328,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -4085,18 +4085,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 8409214798.959606,
-      "eth_ref": 4296409.788973929
+      "usd": 8417064923.099128,
+      "eth_ref": 4300420.549907504
      }
     },
     "loops": {
-     "usd": 495913482.60536456,
-     "eth_ref": 253370.56932038954,
-     "gross_positive_usd": 495913482.60536456,
+     "usd": 257192053.20490596,
+     "eth_ref": 131403.76140380825,
+     "gross_positive_usd": 257192053.20490596,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -4210,12 +4210,12 @@
      }
     },
     "farming": {
-     "usd": 1518278970.1225083,
-     "eth_ref": 775714.3545000955,
-     "gross_positive_usd": 1518278970.1225083,
+     "usd": 1757015063.6164386,
+     "eth_ref": 897688.6545495625,
+     "gross_positive_usd": 1757015063.6164386,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -4225,8 +4225,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1205951372.7048557,
-      "eth_ref": 616140.9128658145
+      "usd": 1417907910.1110458,
+      "eth_ref": 724433.0856691113
      }
     },
     "lending": {
@@ -4272,20 +4272,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 40814542753.23933,
-    "eth_ref": 20852838.845216267
+    "usd": 41042722650.949554,
+    "eth_ref": 20969419.806650452
    }
   },
   {
    "period": "2026-03",
    "target_timestamp": 1775001599,
-   "usd": 44367984934.433784,
-   "eth_ref": 21126972.12365527,
-   "gross_positive_usd": 44367984934.433784,
+   "usd": 44376023840.504715,
+   "eth_ref": 21130800.058250815,
+   "gross_positive_usd": 44376023840.504715,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 231,
+    "expected": 246,
+    "observed": 228,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -4294,9 +4294,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 29795746138.313835,
-     "eth_ref": 14188020.911878698,
-     "gross_positive_usd": 29795746138.313835,
+     "usd": 29795772967.588634,
+     "eth_ref": 14188033.687336983,
+     "gross_positive_usd": 29795772967.588634,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -4309,14 +4309,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 29795342219.043007,
-      "eth_ref": 14187828.575192964
+      "usd": 29795369048.317806,
+      "eth_ref": 14187841.35065125
      }
     },
     "restaking": {
-     "usd": 8463871461.886497,
-     "eth_ref": 4030292.9397791773,
-     "gross_positive_usd": 8463871461.886497,
+     "usd": 8471893955.068037,
+     "eth_ref": 4034113.0589497704,
+     "gross_positive_usd": 8471893955.068037,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -4329,18 +4329,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 8310877964.035266,
-      "eth_ref": 3957441.0992238745
+      "usd": 8318900457.216806,
+      "eth_ref": 3961261.2183944676
      }
     },
     "loops": {
-     "usd": 593210116.8368492,
-     "eth_ref": 282472.454415116,
-     "gross_positive_usd": 593210116.8368492,
+     "usd": 275976242.44169796,
+     "eth_ref": 131413.27895493002,
+     "gross_positive_usd": 275976242.44169796,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 8,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -4454,13 +4454,13 @@
      }
     },
     "farming": {
-     "usd": 1649038466.0373468,
-     "eth_ref": 785232.6346191067,
-     "gross_positive_usd": 1649038466.0373468,
+     "usd": 1966261924.0470881,
+     "eth_ref": 936286.8500459598,
+     "gross_positive_usd": 1966261924.0470881,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 89,
+      "expected": 95,
+      "observed": 88,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -4469,8 +4469,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1162450216.2276833,
-      "eth_ref": 553530.9604362749
+      "usd": 1471661597.441295,
+      "eth_ref": 700770.0167258679
      }
     },
     "lending": {
@@ -4516,20 +4516,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 43021370387.38696,
-    "eth_ref": 20485746.518327247
+    "usd": 43338631091.056915,
+    "eth_ref": 20636818.469245717
    }
   },
   {
    "period": "2026-04",
    "target_timestamp": 1777593599,
-   "usd": 45140683170.393105,
-   "eth_ref": 19987288.280291833,
-   "gross_positive_usd": 45140683170.393105,
+   "usd": 45215650758.56293,
+   "eth_ref": 20020482.25723659,
+   "gross_positive_usd": 45215650758.56293,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 231,
+    "expected": 246,
+    "observed": 227,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -4538,9 +4538,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 31734765909.461037,
-     "eth_ref": 14051446.947439978,
-     "gross_positive_usd": 31734765909.461037,
+     "usd": 31733077661.02792,
+     "eth_ref": 14050699.428666411,
+     "gross_positive_usd": 31733077661.02792,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -4553,14 +4553,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 31734331318.221676,
-      "eth_ref": 14051254.52012663
+      "usd": 31732643069.78856,
+      "eth_ref": 14050507.001353063
      }
     },
     "restaking": {
-     "usd": 8217034053.551618,
-     "eth_ref": 3638319.5136273545,
-     "gross_positive_usd": 8217034053.551618,
+     "usd": 8293700868.967938,
+     "eth_ref": 3672265.870519511,
+     "gross_positive_usd": 8293700868.967938,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -4573,18 +4573,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 8048622317.311818,
-      "eth_ref": 3563750.5508736605
+      "usd": 8125289132.728139,
+      "eth_ref": 3597696.907765817
      }
     },
     "loops": {
-     "usd": 497856657.67141825,
-     "eth_ref": 220439.83033176028,
-     "gross_positive_usd": 497856657.67141825,
+     "usd": 208439002.9919877,
+     "eth_ref": 92292.14422678376,
+     "gross_positive_usd": 208439002.9919877,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 8,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -4698,13 +4698,13 @@
      }
     },
     "farming": {
-     "usd": 1436393012.5416894,
-     "eth_ref": 636002.807425335,
-     "gross_positive_usd": 1436393012.5416894,
+     "usd": 1725799688.4077415,
+     "eth_ref": 764145.6323564755,
+     "gross_positive_usd": 1725799688.4077415,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 89,
+      "expected": 95,
+      "observed": 87,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -4713,8 +4713,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1129651347.1328604,
-      "eth_ref": 500184.43553759524
+      "usd": 1411067722.6555326,
+      "eth_ref": 624789.3335878684
      }
     },
     "lending": {
@@ -4760,20 +4760,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 43793593113.16082,
-    "eth_ref": 19390826.830832075
+    "usd": 44149988055.6667,
+    "eth_ref": 19548630.567000937
    }
   },
   {
    "period": "2026-05",
    "target_timestamp": 1780271999,
-   "usd": 39025326550.73543,
-   "eth_ref": 19419828.652836435,
-   "gross_positive_usd": 39025326550.73543,
+   "usd": 39101233573.92695,
+   "eth_ref": 19457601.594518546,
+   "gross_positive_usd": 39101233573.92695,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 234,
+    "expected": 246,
+    "observed": 231,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -4782,13 +4782,13 @@
    },
    "by_category": {
     "staking": {
-     "usd": 28004404656.89362,
-     "eth_ref": 13935584.60694854,
-     "gross_positive_usd": 28004404656.89362,
+     "usd": 27991281612.160904,
+     "eth_ref": 13929054.302076356,
+     "gross_positive_usd": 27991281612.160904,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
-      "observed": 24,
+      "observed": 23,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -4802,9 +4802,9 @@
      }
     },
     "restaking": {
-     "usd": 5547377942.439022,
-     "eth_ref": 2760492.7014418542,
-     "gross_positive_usd": 5547377942.439022,
+     "usd": 5623284965.630555,
+     "eth_ref": 2798265.64312397,
+     "gross_positive_usd": 5623284965.630555,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -4817,18 +4817,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 5435912650.386442,
-      "eth_ref": 2705025.21241046
+      "usd": 5511819673.577975,
+      "eth_ref": 2742798.154092576
      }
     },
     "loops": {
-     "usd": 381761578.9340039,
-     "eth_ref": 189972.64352154246,
-     "gross_positive_usd": 381761578.9340039,
+     "usd": 158564877.699211,
+     "eth_ref": 78905.239941384,
+     "gross_positive_usd": 158564877.699211,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 8,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -4942,12 +4942,12 @@
      }
     },
     "farming": {
-     "usd": 1283535885.688221,
-     "eth_ref": 638714.6290096111,
-     "gross_positive_usd": 1283535885.688221,
+     "usd": 1519855631.6557226,
+     "eth_ref": 756312.3374619503,
+     "gross_positive_usd": 1519855631.6557226,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 89,
       "missing": 0,
       "stale": 0,
@@ -4957,8 +4957,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 935229569.1987154,
-      "eth_ref": 465390.0323240941
+      "usd": 1152616301.958577,
+      "eth_ref": 573566.2725948344
      }
     },
     "lending": {
@@ -5004,20 +5004,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 37905490295.9091,
-    "eth_ref": 18862574.42564403
+    "usd": 38198784051.8605,
+    "eth_ref": 19008523.607596885
    }
   },
   {
    "period": "2026-06",
    "target_timestamp": 1782863999,
-   "usd": 30756184805.837273,
-   "eth_ref": 19617527.601424914,
-   "gross_positive_usd": 30756184805.837273,
+   "usd": 30760481448.89762,
+   "eth_ref": 19620268.1726096,
+   "gross_positive_usd": 30760481448.89762,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 234,
+    "expected": 246,
+    "observed": 232,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -5026,9 +5026,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 22308332286.67195,
-     "eth_ref": 14229148.613142878,
-     "gross_positive_usd": 22308332286.67195,
+     "usd": 22308454781.38941,
+     "eth_ref": 14229226.745184155,
+     "gross_positive_usd": 22308454781.38941,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -5041,14 +5041,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 22308030793.66496,
-      "eth_ref": 14228956.30881698
+      "usd": 22308153288.38242,
+      "eth_ref": 14229034.440858258
      }
     },
     "restaking": {
-     "usd": 4104923211.042706,
-     "eth_ref": 2618284.5792718874,
-     "gross_positive_usd": 4104923211.042706,
+     "usd": 4109101647.176114,
+     "eth_ref": 2620949.7533399784,
+     "gross_positive_usd": 4109101647.176114,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -5061,18 +5061,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 4031915779.8157263,
-      "eth_ref": 2571717.5129648666
+      "usd": 4036094215.9491343,
+      "eth_ref": 2574382.6870329576
      }
     },
     "loops": {
-     "usd": 150949138.40465727,
-     "eth_ref": 96281.41161717342,
-     "gross_positive_usd": 150949138.40465727,
+     "usd": 146770702.27124906,
+     "eth_ref": 93616.23754908258,
+     "gross_positive_usd": 146770702.27124906,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -5186,13 +5186,13 @@
      }
     },
     "farming": {
-     "usd": 995371447.1214023,
-     "eth_ref": 634887.8107231412,
-     "gross_positive_usd": 995371447.1214023,
+     "usd": 999545595.4642923,
+     "eth_ref": 637550.2498665536,
+     "gross_positive_usd": 999545595.4642923,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 90,
+      "expected": 95,
+      "observed": 89,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -5248,20 +5248,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 29948056945.631027,
-    "eth_ref": 19102071.256525215
+    "usd": 29952357876.481895,
+    "eth_ref": 19104814.562634584
    }
   },
   {
    "period": "2026-07",
    "target_timestamp": 1785542399,
-   "usd": 36862707634.0405,
-   "eth_ref": 19781698.70176112,
-   "gross_positive_usd": 36862707634.0405,
+   "usd": 36867626035.30171,
+   "eth_ref": 19784338.071956318,
+   "gross_positive_usd": 36867626035.30171,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 236,
+    "expected": 246,
+    "observed": 234,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -5270,9 +5270,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 27206991158.818783,
-     "eth_ref": 14600134.830796745,
-     "gross_positive_usd": 27206991158.818783,
+     "usd": 27207075954.540596,
+     "eth_ref": 14600180.33487194,
+     "gross_positive_usd": 27207075954.540596,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -5285,14 +5285,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 27206991158.818783,
-      "eth_ref": 14600134.830796745
+      "usd": 27207075954.540596,
+      "eth_ref": 14600180.33487194
      }
     },
     "restaking": {
-     "usd": 4718372277.284261,
-     "eth_ref": 2532028.2947904835,
-     "gross_positive_usd": 4718372277.284261,
+     "usd": 4723201401.5939455,
+     "eth_ref": 2534619.756140418,
+     "gross_positive_usd": 4723201401.5939455,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -5305,18 +5305,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 4636393423.9172,
-      "eth_ref": 2488035.8405919885
+      "usd": 4641222548.226886,
+      "eth_ref": 2490627.301941923
      }
     },
     "loops": {
-     "usd": 180711178.40851086,
-     "eth_ref": 96975.35294494405,
-     "gross_positive_usd": 180711178.40851086,
+     "usd": 175886535.32854015,
+     "eth_ref": 94386.29636508,
+     "gross_positive_usd": 175886535.32854015,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -5430,13 +5430,13 @@
      }
     },
     "farming": {
-     "usd": 1114519142.3321755,
-     "eth_ref": 598086.3394473268,
-     "gross_positive_usd": 1114519142.3321755,
+     "usd": 1119348266.641861,
+     "eth_ref": 600677.8007972612,
+     "gross_positive_usd": 1119348266.641861,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 93,
+      "expected": 95,
+      "observed": 92,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -5492,20 +5492,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 35891835524.03098,
-    "eth_ref": 19260697.918291368
+    "usd": 35896749444.06248,
+    "eth_ref": 19263334.8837165
    }
   },
   {
    "period": "2026-08",
    "target_timestamp": 1788220799,
-   "usd": 48819152239.64409,
-   "eth_ref": 19759829.396416556,
-   "gross_positive_usd": 48819152239.64409,
+   "usd": 48819276120.46715,
+   "eth_ref": 19759879.537883926,
+   "gross_positive_usd": 48819276120.46715,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 234,
+    "expected": 246,
+    "observed": 233,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -5514,9 +5514,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 36793773397.08618,
-     "eth_ref": 14892488.947942726,
-     "gross_positive_usd": 36793773397.08618,
+     "usd": 36793897285.32416,
+     "eth_ref": 14892539.092411326,
+     "gross_positive_usd": 36793897285.32416,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -5529,14 +5529,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 36793773397.08618,
-      "eth_ref": 14892488.947942726
+      "usd": 36793897285.32416,
+      "eth_ref": 14892539.092411326
      }
     },
     "restaking": {
-     "usd": 6032372327.73433,
-     "eth_ref": 2441636.9925182373,
-     "gross_positive_usd": 6032372327.73433,
+     "usd": 6032372320.319412,
+     "eth_ref": 2441636.9895170075,
+     "gross_positive_usd": 6032372320.319412,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -5549,8 +5549,8 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 5926104494.78839,
-      "eth_ref": 2398624.4830213296
+      "usd": 5926104487.373472,
+      "eth_ref": 2398624.4800201
      }
     },
     "loops": {
@@ -5559,7 +5559,7 @@
      "gross_positive_usd": 229052910.81101605,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
+      "expected": 7,
       "observed": 6,
       "missing": 0,
       "stale": 0,
@@ -5679,8 +5679,8 @@
      "gross_positive_usd": 1319010907.6252522,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 92,
+      "expected": 95,
+      "observed": 91,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -5736,20 +5736,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 47399281263.52889,
-    "eth_ref": 19185128.547142565
+    "usd": 47399405144.35195,
+    "eth_ref": 19185178.688609935
    }
   },
   {
    "period": "2026-09",
    "target_timestamp": 1790812799,
-   "usd": 53459072878.94932,
-   "eth_ref": 19968093.474648952,
-   "gross_positive_usd": 53459072878.94932,
+   "usd": 53459224580.49158,
+   "eth_ref": 19968150.138380904,
+   "gross_positive_usd": 53459224580.49158,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 236,
+    "expected": 246,
+    "observed": 235,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -5758,9 +5758,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 40395130826.91135,
-     "eth_ref": 15088435.037003065,
-     "gross_positive_usd": 40395130826.91135,
+     "usd": 40395282594.590256,
+     "eth_ref": 15088491.725438455,
+     "gross_positive_usd": 40395282594.590256,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -5773,14 +5773,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 40395130826.91135,
-      "eth_ref": 15088435.037003065
+      "usd": 40395282594.590256,
+      "eth_ref": 15088491.725438455
      }
     },
     "restaking": {
-     "usd": 6504161304.670281,
-     "eth_ref": 2429441.700194398,
-     "gross_positive_usd": 6504161304.670281,
+     "usd": 6504161238.533627,
+     "eth_ref": 2429441.6754909595,
+     "gross_positive_usd": 6504161238.533627,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -5793,8 +5793,8 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 6389786246.576912,
-      "eth_ref": 2386720.1989003466
+      "usd": 6389786180.440257,
+      "eth_ref": 2386720.1741969083
      }
     },
     "loops": {
@@ -5803,7 +5803,7 @@
      "gross_positive_usd": 261014095.59362563,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
+      "expected": 7,
       "observed": 6,
       "missing": 0,
       "stale": 0,
@@ -5923,8 +5923,8 @@
      "gross_positive_usd": 1424349114.9012866,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 93,
+      "expected": 95,
+      "observed": 92,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -5980,8 +5980,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 51897761452.379364,
-    "eth_ref": 19384910.661520466
+    "usd": 51897913153.92162,
+    "eth_ref": 19384967.325252417
    }
   }
  ],
@@ -5993,7 +5993,7 @@
   "gross_positive_usd": 53303683600.721634,
   "negative_usd": 0.0,
   "coverage": {
-   "expected": 251,
+   "expected": 246,
    "observed": 238,
    "missing": 0,
    "stale": 0,
@@ -6048,7 +6048,7 @@
     "gross_positive_usd": 261047759.52948466,
     "negative_usd": 0.0,
     "coverage": {
-     "expected": 9,
+     "expected": 7,
      "observed": 6,
      "missing": 0,
      "stale": 0,
@@ -6168,7 +6168,7 @@
     "gross_positive_usd": 1412245947.613575,
     "negative_usd": 0.0,
     "coverage": {
-     "expected": 98,
+     "expected": 95,
      "observed": 93,
      "missing": 0,
      "stale": 0,
@@ -6233,13 +6233,13 @@
   {
    "period": "2024-10",
    "target_timestamp": 1730419199,
-   "usd": 52035365907.133804,
-   "eth_ref": 20667818.209925976,
-   "gross_positive_usd": 52035365907.133804,
+   "usd": 52034310677.18825,
+   "eth_ref": 20667399.085349753,
+   "gross_positive_usd": 52034310677.18825,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 175,
+    "expected": 246,
+    "observed": 173,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -6248,9 +6248,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 31671572669.075356,
-     "eth_ref": 12579565.742174773,
-     "gross_positive_usd": 31671572669.075356,
+     "usd": 31670517439.1298,
+     "eth_ref": 12579146.617598549,
+     "gross_positive_usd": 31670517439.1298,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -6263,8 +6263,8 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 31640002234.543808,
-      "eth_ref": 12567026.347278021
+      "usd": 31638947004.598248,
+      "eth_ref": 12566607.2227018
      }
     },
     "restaking": {
@@ -6288,13 +6288,13 @@
      }
     },
     "loops": {
-     "usd": 679860056.580902,
-     "eth_ref": 270032.1946939113,
-     "gross_positive_usd": 679860056.580902,
+     "usd": 311764736.7445465,
+     "eth_ref": 123829.18407456309,
+     "gross_positive_usd": 311764736.7445465,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 6,
+      "expected": 7,
+      "observed": 5,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -6408,13 +6408,13 @@
      }
     },
     "farming": {
-     "usd": 3988875988.279778,
-     "eth_ref": 1584333.3154385092,
-     "gross_positive_usd": 3988875988.279778,
+     "usd": 4356971308.116134,
+     "eth_ref": 1730536.3260578574,
+     "gross_positive_usd": 4356971308.116134,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 61,
+      "expected": 95,
+      "observed": 60,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -6423,8 +6423,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2986231727.8817687,
-      "eth_ref": 1186095.1375785784
+      "usd": 3357111499.6081033,
+      "eth_ref": 1333404.0988234892
      }
     },
     "lending": {
@@ -6470,20 +6470,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 49071356640.61425,
-    "eth_ref": 19490549.565322023
+    "usd": 49441181182.39503,
+    "eth_ref": 19637439.40199071
    }
   },
   {
    "period": "2024-11",
    "target_timestamp": 1733011199,
-   "usd": 77515779081.36037,
-   "eth_ref": 20815025.410999447,
-   "gross_positive_usd": 77515779081.36037,
+   "usd": 77514286823.79027,
+   "eth_ref": 20814624.7005943,
+   "gross_positive_usd": 77514286823.79027,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 177,
+    "expected": 246,
+    "observed": 175,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -6492,9 +6492,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 47191582497.22901,
-     "eth_ref": 12672181.077275703,
-     "gross_positive_usd": 47191582497.22901,
+     "usd": 47190090239.65891,
+     "eth_ref": 12671780.366870552,
+     "gross_positive_usd": 47190090239.65891,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -6507,8 +6507,8 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 47145046464.57256,
-      "eth_ref": 12659684.928572169
+      "usd": 47143554207.002464,
+      "eth_ref": 12659284.218167016
      }
     },
     "restaking": {
@@ -6532,13 +6532,13 @@
      }
     },
     "loops": {
-     "usd": 1162677164.1591907,
-     "eth_ref": 312209.39792607725,
-     "gross_positive_usd": 1162677164.1591907,
+     "usd": 603106825.0794343,
+     "eth_ref": 161950.04473088385,
+     "gross_positive_usd": 603106825.0794343,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -6652,13 +6652,13 @@
      }
     },
     "farming": {
-     "usd": 5472965658.784197,
-     "eth_ref": 1469635.22280477,
-     "gross_positive_usd": 5472965658.784197,
+     "usd": 6032535997.863954,
+     "eth_ref": 1619894.5759999636,
+     "gross_positive_usd": 6032535997.863954,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 61,
+      "expected": 95,
+      "observed": 60,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -6667,8 +6667,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 4092983616.714549,
-      "eth_ref": 1099073.7498657752
+      "usd": 4656861845.775503,
+      "eth_ref": 1250489.8848219092
      }
     },
     "lending": {
@@ -6714,20 +6714,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 73257252433.67427,
-    "eth_ref": 19671499.00340227
+    "usd": 73819638405.16513,
+    "eth_ref": 19822514.427953254
    }
   },
   {
    "period": "2024-12",
    "target_timestamp": 1735689599,
-   "usd": 68619782612.82214,
-   "eth_ref": 20610688.220394824,
-   "gross_positive_usd": 68619782612.82214,
+   "usd": 68618438690.30766,
+   "eth_ref": 20610284.558842957,
+   "gross_positive_usd": 68618438690.30766,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 186,
+    "expected": 246,
+    "observed": 184,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -6736,9 +6736,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 41750004347.83927,
-     "eth_ref": 12540061.91871341,
-     "gross_positive_usd": 41750004347.83927,
+     "usd": 41748660425.32479,
+     "eth_ref": 12539658.257161543,
+     "gross_positive_usd": 41748660425.32479,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -6751,8 +6751,8 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 41706709474.30859,
-      "eth_ref": 12527057.838754179
+      "usd": 41705365551.79411,
+      "eth_ref": 12526654.177202312
      }
     },
     "restaking": {
@@ -6776,13 +6776,13 @@
      }
     },
     "loops": {
-     "usd": 1077925051.7014658,
-     "eth_ref": 323766.35890741664,
-     "gross_positive_usd": 1077925051.7014658,
+     "usd": 569481255.28588,
+     "eth_ref": 171049.80740441926,
+     "gross_positive_usd": 569481255.28588,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -6896,13 +6896,13 @@
      }
     },
     "farming": {
-     "usd": 4551939231.953366,
-     "eth_ref": 1367223.805375967,
-     "gross_positive_usd": 4551939231.953366,
+     "usd": 5060383028.368952,
+     "eth_ref": 1519940.3568789645,
+     "gross_positive_usd": 5060383028.368952,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 68,
+      "expected": 95,
+      "observed": 67,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -6911,8 +6911,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 3446956998.273318,
-      "eth_ref": 1035330.5314500402
+      "usd": 3959280012.743837,
+      "eth_ref": 1189212.2477324174
      }
     },
     "lending": {
@@ -6958,8 +6958,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 65144113622.456535,
-    "eth_ref": 19566733.733947147
+    "usd": 65655092714.412575,
+    "eth_ref": 19720211.788677655
    }
   },
   {
@@ -6970,8 +6970,8 @@
    "gross_positive_usd": 67660231971.625015,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 188,
+    "expected": 246,
+    "observed": 187,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -7020,13 +7020,13 @@
      }
     },
     "loops": {
-     "usd": 1034424599.2941858,
-     "eth_ref": 313561.7694399183,
-     "gross_positive_usd": 1034424599.2941858,
+     "usd": 528483380.53894776,
+     "eth_ref": 160197.45086732446,
+     "gross_positive_usd": 528483380.53894776,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -7140,12 +7140,12 @@
      }
     },
     "farming": {
-     "usd": 4648138591.332457,
-     "eth_ref": 1408975.1561347719,
-     "gross_positive_usd": 4648138591.332457,
+     "usd": 5154079810.087695,
+     "eth_ref": 1562339.4747073657,
+     "gross_positive_usd": 5154079810.087695,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 69,
       "missing": 0,
       "stale": 0,
@@ -7155,8 +7155,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 3330416187.1508718,
-      "eth_ref": 1009538.2431227176
+      "usd": 3836357405.90611,
+      "eth_ref": 1162902.5616953115
      }
     },
     "lending": {
@@ -7202,8 +7202,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 64331561144.718636,
-    "eth_ref": 19500617.209929157
+    "usd": 64837502363.47388,
+    "eth_ref": 19653981.52850175
    }
   },
   {
@@ -7214,8 +7214,8 @@
    "gross_positive_usd": 45785515104.322014,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 190,
+    "expected": 246,
+    "observed": 189,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -7264,13 +7264,13 @@
      }
     },
     "loops": {
-     "usd": 784293784.6206746,
-     "eth_ref": 352380.7272410946,
-     "gross_positive_usd": 784293784.6206746,
+     "usd": 429958772.9031732,
+     "eth_ref": 193179.12247970514,
+     "gross_positive_usd": 429958772.9031732,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -7384,12 +7384,12 @@
      }
     },
     "farming": {
-     "usd": 3215177601.2599173,
-     "eth_ref": 1444569.1698158865,
-     "gross_positive_usd": 3215177601.2599173,
+     "usd": 3569512612.977419,
+     "eth_ref": 1603770.774577276,
+     "gross_positive_usd": 3569512612.977419,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 70,
       "missing": 0,
       "stale": 0,
@@ -7399,8 +7399,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2425308180.3831325,
-      "eth_ref": 1089683.326765784
+      "usd": 2779643192.100634,
+      "eth_ref": 1248884.9315271734
      }
     },
     "lending": {
@@ -7446,8 +7446,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 43758398886.612595,
-    "eth_ref": 19660510.79957006
+    "usd": 44112733898.3301,
+    "eth_ref": 19819712.404331453
    }
   },
   {
@@ -7458,8 +7458,8 @@
    "gross_positive_usd": 37497058407.91728,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 192,
+    "expected": 246,
+    "observed": 191,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -7508,13 +7508,13 @@
      }
     },
     "loops": {
-     "usd": 674562434.78182,
-     "eth_ref": 369892.8176598388,
-     "gross_positive_usd": 674562434.78182,
+     "usd": 380188738.90876365,
+     "eth_ref": 208474.52604292787,
+     "gross_positive_usd": 380188738.90876365,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -7628,12 +7628,12 @@
      }
     },
     "farming": {
-     "usd": 2519259354.8599195,
-     "eth_ref": 1381422.8203894012,
-     "gross_positive_usd": 2519259354.8599195,
+     "usd": 2813633050.732976,
+     "eth_ref": 1542841.1120063122,
+     "gross_positive_usd": 2813633050.732976,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 72,
       "missing": 0,
       "stale": 0,
@@ -7643,8 +7643,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1974268360.8600245,
-      "eth_ref": 1082579.8312522147
+      "usd": 2268642056.733081,
+      "eth_ref": 1243998.1228691258
      }
     },
     "lending": {
@@ -7690,8 +7690,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 36004249921.503975,
-    "eth_ref": 19742743.98410817
+    "usd": 36298623617.37703,
+    "eth_ref": 19904162.275725078
    }
   },
   {
@@ -7702,8 +7702,8 @@
    "gross_positive_usd": 36478695432.55209,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 195,
+    "expected": 246,
+    "observed": 194,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -7752,13 +7752,13 @@
      }
     },
     "loops": {
-     "usd": 671232445.0672337,
-     "eth_ref": 374366.9450116103,
-     "gross_positive_usd": 671232445.0672337,
+     "usd": 353998207.1418773,
+     "eth_ref": 197435.669746294,
+     "gross_positive_usd": 353998207.1418773,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -7872,12 +7872,12 @@
      }
     },
     "farming": {
-     "usd": 2301067088.508887,
-     "eth_ref": 1283375.770230455,
-     "gross_positive_usd": 2301067088.508887,
+     "usd": 2618301326.434243,
+     "eth_ref": 1460307.0454957713,
+     "gross_positive_usd": 2618301326.434243,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 72,
       "missing": 0,
       "stale": 0,
@@ -7887,8 +7887,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1803865826.707377,
-      "eth_ref": 1006071.3598068722
+      "usd": 2121100064.6327333,
+      "eth_ref": 1183002.6350721885
      }
     },
     "lending": {
@@ -7934,8 +7934,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 35020225060.11863,
-    "eth_ref": 19531854.822754357
+    "usd": 35337459298.04399,
+    "eth_ref": 19708786.098019674
    }
   },
   {
@@ -7946,8 +7946,8 @@
    "gross_positive_usd": 50715253296.82816,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 194,
+    "expected": 246,
+    "observed": 193,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -7996,13 +7996,13 @@
      }
     },
     "loops": {
-     "usd": 1046128561.332488,
-     "eth_ref": 415478.26208930253,
-     "gross_positive_usd": 1046128561.332488,
+     "usd": 555252052.9148906,
+     "eth_ref": 220522.76029320172,
+     "gross_positive_usd": 555252052.9148906,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -8116,12 +8116,12 @@
      }
     },
     "farming": {
-     "usd": 2716547377.846728,
-     "eth_ref": 1078898.3545133222,
-     "gross_positive_usd": 2716547377.846728,
+     "usd": 3207423886.264325,
+     "eth_ref": 1273853.856309423,
+     "gross_positive_usd": 3207423886.264325,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 72,
       "missing": 0,
       "stale": 0,
@@ -8131,8 +8131,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2233766696.6352277,
-      "eth_ref": 887158.1747551555
+      "usd": 2724643205.052825,
+      "eth_ref": 1082113.6765512563
      }
     },
     "lending": {
@@ -8178,8 +8178,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 48842579825.42281,
-    "eth_ref": 19398218.280147906
+    "usd": 49333456333.84041,
+    "eth_ref": 19593173.781944007
    }
   },
   {
@@ -8190,8 +8190,8 @@
    "gross_positive_usd": 52686506820.37405,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 197,
+    "expected": 246,
+    "observed": 196,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -8240,13 +8240,13 @@
      }
     },
     "loops": {
-     "usd": 1021400723.0249887,
-     "eth_ref": 409178.96780954645,
-     "gross_positive_usd": 1021400723.0249887,
+     "usd": 542754481.766727,
+     "eth_ref": 217430.54769492397,
+     "gross_positive_usd": 542754481.766727,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -8360,12 +8360,12 @@
      }
     },
     "farming": {
-     "usd": 2559009525.55047,
-     "eth_ref": 1025153.8428311071,
-     "gross_positive_usd": 2559009525.55047,
+     "usd": 3037655766.8087316,
+     "eth_ref": 1216902.2629457295,
+     "gross_positive_usd": 3037655766.8087316,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 74,
       "missing": 0,
       "stale": 0,
@@ -8375,8 +8375,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2167228751.5986047,
-      "eth_ref": 868204.2254287632
+      "usd": 2645874992.8568664,
+      "eth_ref": 1059952.6455433858
      }
     },
     "lending": {
@@ -8422,8 +8422,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 50756709776.661835,
-    "eth_ref": 20333428.053893298
+    "usd": 51235356017.9201,
+    "eth_ref": 20525176.474007923
    }
   },
   {
@@ -8434,8 +8434,8 @@
    "gross_positive_usd": 76686886620.8907,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 201,
+    "expected": 246,
+    "observed": 200,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -8484,13 +8484,13 @@
      }
     },
     "loops": {
-     "usd": 1431377173.0294704,
-     "eth_ref": 387415.73641817126,
-     "gross_positive_usd": 1431377173.0294704,
+     "usd": 690714486.524084,
+     "eth_ref": 186948.3924248089,
+     "gross_positive_usd": 690714486.524084,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -8604,12 +8604,12 @@
      }
     },
     "farming": {
-     "usd": 2973613323.1726475,
-     "eth_ref": 804836.500907436,
-     "gross_positive_usd": 2973613323.1726475,
+     "usd": 3714276009.678034,
+     "eth_ref": 1005303.8449007983,
+     "gross_positive_usd": 3714276009.678034,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 77,
       "missing": 0,
       "stale": 0,
@@ -8619,8 +8619,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2436587259.7763224,
-      "eth_ref": 659485.3301981102
+      "usd": 3177249946.2817087,
+      "eth_ref": 859952.6741914725
      }
     },
     "lending": {
@@ -8666,8 +8666,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 74537143402.68153,
-    "eth_ref": 20174181.093540575
+    "usd": 75277806089.18692,
+    "eth_ref": 20374648.437533937
    }
   },
   {
@@ -8678,7 +8678,7 @@
    "gross_positive_usd": 89591588494.61629,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
+    "expected": 246,
     "observed": 206,
     "missing": 0,
     "stale": 0,
@@ -8733,7 +8733,7 @@
      "gross_positive_usd": 709611978.4879967,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
+      "expected": 7,
       "observed": 7,
       "missing": 0,
       "stale": 0,
@@ -8853,7 +8853,7 @@
      "gross_positive_usd": 3212827551.6696563,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 76,
       "missing": 0,
       "stale": 0,
@@ -8917,13 +8917,13 @@
   {
    "period": "2025-09",
    "target_timestamp": 1759276799,
-   "usd": 85590725837.97647,
-   "eth_ref": 20639937.745025173,
-   "gross_positive_usd": 85590725837.97647,
+   "usd": 85597071762.05135,
+   "eth_ref": 20641468.04490939,
+   "gross_positive_usd": 85597071762.05135,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 211,
+    "expected": 246,
+    "observed": 210,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -8932,9 +8932,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 55936406413.73455,
-     "eth_ref": 13488890.703479085,
-     "gross_positive_usd": 55936406413.73455,
+     "usd": 55942833702.51408,
+     "eth_ref": 13490440.624209164,
+     "gross_positive_usd": 55942833702.51408,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -8947,14 +8947,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 55925403553.43904,
-      "eth_ref": 13486237.397886766
+      "usd": 55931830842.21857,
+      "eth_ref": 13487787.318616845
      }
     },
     "restaking": {
-     "usd": 16410764893.677492,
-     "eth_ref": 3957404.9926266633,
-     "gross_positive_usd": 16410764893.677492,
+     "usd": 16410683528.972841,
+     "eth_ref": 3957385.371780805,
+     "gross_positive_usd": 16410683528.972841,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -8967,18 +8967,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 15886188398.06228,
-      "eth_ref": 3830904.9997127424
+      "usd": 15886107033.357632,
+      "eth_ref": 3830885.3788668835
      }
     },
     "loops": {
-     "usd": 678290966.1778698,
-     "eth_ref": 163567.76014992598,
-     "gross_positive_usd": 678290966.1778698,
+     "usd": 670635440.1629303,
+     "eth_ref": 161721.6538246579,
+     "gross_positive_usd": 670635440.1629303,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -9092,12 +9092,12 @@
      }
     },
     "farming": {
-     "usd": 3217187856.700814,
-     "eth_ref": 775814.8610873569,
-     "gross_positive_usd": 3217187856.700814,
+     "usd": 3224843382.7157536,
+     "eth_ref": 777660.967412625,
+     "gross_positive_usd": 3224843382.7157536,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 80,
       "missing": 0,
       "stale": 0,
@@ -9154,20 +9154,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 83500608970.99844,
-    "eth_ref": 20135912.553137943
+    "usd": 83506954895.07333,
+    "eth_ref": 20137442.853022162
    }
   },
   {
    "period": "2025-10",
    "target_timestamp": 1761955199,
-   "usd": 78304220892.58655,
-   "eth_ref": 20313976.80165438,
-   "gross_positive_usd": 78304220892.58655,
+   "usd": 78355795949.74413,
+   "eth_ref": 20327356.59782246,
+   "gross_positive_usd": 78355795949.74413,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 218,
+    "expected": 246,
+    "observed": 215,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -9176,9 +9176,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 52245628740.7038,
-     "eth_ref": 13553758.381458903,
-     "gross_positive_usd": 52245628740.7038,
+     "usd": 52260551084.41072,
+     "eth_ref": 13557629.592236986,
+     "gross_positive_usd": 52260551084.41072,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -9191,14 +9191,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 52235697220.97984,
-      "eth_ref": 13551181.90909282
+      "usd": 52250619564.68677,
+      "eth_ref": 13555053.119870903
      }
     },
     "restaking": {
-     "usd": 15327781279.449785,
-     "eth_ref": 3976390.9248097,
-     "gross_positive_usd": 15327781279.449785,
+     "usd": 15364493634.08668,
+     "eth_ref": 3985914.982541543,
+     "gross_positive_usd": 15364493634.08668,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -9211,18 +9211,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 14807095500.982025,
-      "eth_ref": 3841312.6531127673
+      "usd": 14843807855.618921,
+      "eth_ref": 3850836.710844611
      }
     },
     "loops": {
-     "usd": 1346811363.0659485,
-     "eth_ref": 349394.8917907747,
-     "gross_positive_usd": 1346811363.0659485,
+     "usd": 602288312.4614931,
+     "eth_ref": 156247.90934365423,
+     "gross_positive_usd": 602288312.4614931,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -9336,12 +9336,12 @@
      }
     },
     "farming": {
-     "usd": 2801757388.6954083,
-     "eth_ref": 726842.4862549229,
-     "gross_positive_usd": 2801757388.6954083,
+     "usd": 3546220798.1136255,
+     "eth_ref": 919973.996360197,
+     "gross_positive_usd": 3546220798.1136255,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -9351,8 +9351,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 2441962437.329217,
-      "eth_ref": 633503.1207380744
+      "usd": 3126031512.9322267,
+      "eth_ref": 810966.9046072824
      }
     },
     "lending": {
@@ -9398,20 +9398,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 76312022599.05391,
-    "eth_ref": 19797153.194219075
+    "usd": 77047726373.00073,
+    "eth_ref": 19988012.24659821
    }
   },
   {
    "period": "2025-11",
    "target_timestamp": 1764547199,
-   "usd": 61496885452.350105,
-   "eth_ref": 20587859.165633276,
-   "gross_positive_usd": 61496885452.350105,
+   "usd": 61540806620.18994,
+   "eth_ref": 20602563.045532648,
+   "gross_positive_usd": 61540806620.18994,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 219,
+    "expected": 246,
+    "observed": 216,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -9420,9 +9420,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 40673053416.54355,
-     "eth_ref": 13616479.752050236,
-     "gross_positive_usd": 40673053416.54355,
+     "usd": 40683308149.621185,
+     "eth_ref": 13619912.820226464,
+     "gross_positive_usd": 40683308149.621185,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -9435,14 +9435,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 40666281720.5581,
-      "eth_ref": 13614212.731172098
+      "usd": 40676536453.635735,
+      "eth_ref": 13617645.799348326
      }
     },
     "restaking": {
-     "usd": 11602995633.967722,
-     "eth_ref": 3884438.020795026,
-     "gross_positive_usd": 11602995633.967722,
+     "usd": 11636591112.986622,
+     "eth_ref": 3895685.078033055,
+     "gross_positive_usd": 11636591112.986622,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -9455,18 +9455,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 11341606950.279953,
-      "eth_ref": 3796930.6069208095
+      "usd": 11375202429.298853,
+      "eth_ref": 3808177.664158839
      }
     },
     "loops": {
-     "usd": 1018052283.0742885,
-     "eth_ref": 340822.41520060436,
-     "gross_positive_usd": 1018052283.0742885,
+     "usd": 523156686.42880595,
+     "eth_ref": 175141.8157607529,
+     "gross_positive_usd": 523156686.42880595,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -9580,12 +9580,12 @@
      }
     },
     "farming": {
-     "usd": 1895995848.8928812,
-     "eth_ref": 634739.3892960192,
-     "gross_positive_usd": 1895995848.8928812,
+     "usd": 2390962401.2816668,
+     "eth_ref": 800443.743220986,
+     "gross_positive_usd": 2390962401.2816668,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -9595,8 +9595,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1668072459.4238598,
-      "eth_ref": 558435.449536698
+      "usd": 2109607654.6460643,
+      "eth_ref": 706252.1129179449
      }
     },
     "lending": {
@@ -9642,20 +9642,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 60262097649.101234,
-    "eth_ref": 20174478.27315821
+    "usd": 60747483056.419975,
+    "eth_ref": 20336975.061953712
    }
   },
   {
    "period": "2025-12",
    "target_timestamp": 1767225599,
-   "usd": 62556035384.02754,
-   "eth_ref": 21051914.689847704,
-   "gross_positive_usd": 62556035384.02754,
+   "usd": 62596110642.60668,
+   "eth_ref": 21065401.1731199,
+   "gross_positive_usd": 62596110642.60668,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 221,
+    "expected": 246,
+    "observed": 218,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -9664,9 +9664,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 41081833272.575455,
-     "eth_ref": 13825224.761248667,
-     "gross_positive_usd": 41081833272.575455,
+     "usd": 41092828608.74293,
+     "eth_ref": 13828925.009794837,
+     "gross_positive_usd": 41092828608.74293,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -9679,14 +9679,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 41075149816.84078,
-      "eth_ref": 13822975.58514446
+      "usd": 41086145153.00826,
+      "eth_ref": 13826675.83369063
      }
     },
     "restaking": {
-     "usd": 12175127497.566666,
-     "eth_ref": 4097282.441947017,
-     "gross_positive_usd": 12175127497.566666,
+     "usd": 12204238079.11506,
+     "eth_ref": 4107078.994359051,
+     "gross_positive_usd": 12204238079.11506,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -9699,18 +9699,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 11945017104.643555,
-      "eth_ref": 4019843.641177019
+      "usd": 11974127686.19195,
+      "eth_ref": 4029640.193589053
      }
     },
     "loops": {
-     "usd": 977991978.4410105,
-     "eth_ref": 329122.5789982276,
-     "gross_positive_usd": 977991978.4410105,
+     "usd": 489036096.41562617,
+     "eth_ref": 164574.78672995575,
+     "gross_positive_usd": 489036096.41562617,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -9824,12 +9824,12 @@
      }
     },
     "farming": {
-     "usd": 2031851570.4848404,
-     "eth_ref": 683776.8036559672,
-     "gross_positive_usd": 2031851570.4848404,
+     "usd": 2520776793.3734894,
+     "eth_ref": 848314.2782382307,
+     "gross_positive_usd": 2520776793.3734894,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -9839,8 +9839,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1732303027.450616,
-      "eth_ref": 582970.0575968204
+      "usd": 2169362227.191326,
+      "eth_ref": 730053.1157041732
      }
     },
     "lending": {
@@ -9886,20 +9886,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 61333203916.38903,
-    "eth_ref": 20640396.543297127
+    "usd": 61810369033.84561,
+    "eth_ref": 20800976.402362686
    }
   },
   {
    "period": "2026-01",
    "target_timestamp": 1769903999,
-   "usd": 53444204446.8209,
-   "eth_ref": 21639440.22725897,
-   "gross_positive_usd": 53444204446.8209,
+   "usd": 53474540493.60633,
+   "eth_ref": 21651723.225536134,
+   "gross_positive_usd": 53474540493.60633,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 220,
+    "expected": 246,
+    "observed": 217,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -9908,9 +9908,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 35773138387.966415,
-     "eth_ref": 14484464.646828702,
-     "gross_positive_usd": 35773138387.966415,
+     "usd": 35784150704.72315,
+     "eth_ref": 14488923.50953772,
+     "gross_positive_usd": 35784150704.72315,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -9923,14 +9923,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 35772238378.74148,
-      "eth_ref": 14484100.235083245
+      "usd": 35783250695.49821,
+      "eth_ref": 14488559.09779226
      }
     },
     "restaking": {
-     "usd": 10726599346.1677,
-     "eth_ref": 4343176.361135983,
-     "gross_positive_usd": 10726599346.1677,
+     "usd": 10746003690.449375,
+     "eth_ref": 4351033.137236941,
+     "gross_positive_usd": 10746003690.449375,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -9943,18 +9943,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 10509347731.57102,
-      "eth_ref": 4255211.662680825
+      "usd": 10528752075.852695,
+      "eth_ref": 4263068.438781784
      }
     },
     "loops": {
-     "usd": 872902617.8683003,
-     "eth_ref": 353436.340181177,
-     "gross_positive_usd": 872902617.8683003,
+     "usd": 448801850.03259027,
+     "eth_ref": 181718.87687704526,
+     "gross_positive_usd": 448801850.03259027,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -10068,12 +10068,12 @@
      }
     },
     "farming": {
-     "usd": 1901661506.6745584,
-     "eth_ref": 769978.5399015549,
-     "gross_positive_usd": 1901661506.6745584,
+     "usd": 2325681660.2572894,
+     "eth_ref": 941663.3626728756,
+     "gross_positive_usd": 2325681660.2572894,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -10083,8 +10083,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1497934680.500952,
-      "eth_ref": 606510.4405341517
+      "usd": 1879042016.9184272,
+      "eth_ref": 760819.9585059624
      }
     },
     "lending": {
@@ -10130,20 +10130,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 52231888483.762245,
-    "eth_ref": 21148576.173977695
+    "usd": 52643412481.218124,
+    "eth_ref": 21315201.33075948
    }
   },
   {
    "period": "2026-02",
    "target_timestamp": 1772323199,
-   "usd": 41634577806.2979,
-   "eth_ref": 21271808.596077964,
-   "gross_positive_usd": 41634577806.2979,
+   "usd": 41650815830.695404,
+   "eth_ref": 21280104.876841735,
+   "gross_positive_usd": 41650815830.695404,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 222,
+    "expected": 246,
+    "observed": 219,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -10152,9 +10152,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 28130950562.025784,
-     "eth_ref": 14372577.494724283,
-     "gross_positive_usd": 28130950562.025784,
+     "usd": 28139323798.190296,
+     "eth_ref": 14376855.522421597,
+     "gross_positive_usd": 28139323798.190296,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -10167,14 +10167,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 28130574049.513855,
-      "eth_ref": 14372385.12812638
+      "usd": 28138947285.678368,
+      "eth_ref": 14376663.155823693
      }
     },
     "restaking": {
-     "usd": 8558396634.206806,
-     "eth_ref": 4372629.306802451,
-     "gross_positive_usd": 8558396634.206806,
+     "usd": 8566246758.346328,
+     "eth_ref": 4376640.067736025,
+     "gross_positive_usd": 8566246758.346328,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -10187,18 +10187,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 8409214798.959606,
-      "eth_ref": 4296409.788973929
+      "usd": 8417064923.099128,
+      "eth_ref": 4300420.549907504
      }
     },
     "loops": {
-     "usd": 495913482.60536456,
-     "eth_ref": 253370.56932038954,
-     "gross_positive_usd": 495913482.60536456,
+     "usd": 257192053.20490596,
+     "eth_ref": 131403.76140380825,
+     "gross_positive_usd": 257192053.20490596,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 9,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -10312,12 +10312,12 @@
      }
     },
     "farming": {
-     "usd": 1518278970.1225083,
-     "eth_ref": 775714.3545000955,
-     "gross_positive_usd": 1518278970.1225083,
+     "usd": 1757015063.6164386,
+     "eth_ref": 897688.6545495625,
+     "gross_positive_usd": 1757015063.6164386,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 83,
       "missing": 0,
       "stale": 0,
@@ -10327,8 +10327,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1205951372.7048557,
-      "eth_ref": 616140.9128658145
+      "usd": 1417907910.1110458,
+      "eth_ref": 724433.0856691113
      }
     },
     "lending": {
@@ -10374,20 +10374,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 40814542753.23933,
-    "eth_ref": 20852838.845216267
+    "usd": 41042722650.949554,
+    "eth_ref": 20969419.806650452
    }
   },
   {
    "period": "2026-03",
    "target_timestamp": 1775001599,
-   "usd": 44367984934.433784,
-   "eth_ref": 21126972.12365527,
-   "gross_positive_usd": 44367984934.433784,
+   "usd": 44376023840.504715,
+   "eth_ref": 21130800.058250815,
+   "gross_positive_usd": 44376023840.504715,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 231,
+    "expected": 246,
+    "observed": 228,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -10396,9 +10396,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 29795746138.313835,
-     "eth_ref": 14188020.911878698,
-     "gross_positive_usd": 29795746138.313835,
+     "usd": 29795772967.588634,
+     "eth_ref": 14188033.687336983,
+     "gross_positive_usd": 29795772967.588634,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -10411,14 +10411,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 29795342219.043007,
-      "eth_ref": 14187828.575192964
+      "usd": 29795369048.317806,
+      "eth_ref": 14187841.35065125
      }
     },
     "restaking": {
-     "usd": 8463871461.886497,
-     "eth_ref": 4030292.9397791773,
-     "gross_positive_usd": 8463871461.886497,
+     "usd": 8471893955.068037,
+     "eth_ref": 4034113.0589497704,
+     "gross_positive_usd": 8471893955.068037,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -10431,18 +10431,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 8310877964.035266,
-      "eth_ref": 3957441.0992238745
+      "usd": 8318900457.216806,
+      "eth_ref": 3961261.2183944676
      }
     },
     "loops": {
-     "usd": 593210116.8368492,
-     "eth_ref": 282472.454415116,
-     "gross_positive_usd": 593210116.8368492,
+     "usd": 275976242.44169796,
+     "eth_ref": 131413.27895493002,
+     "gross_positive_usd": 275976242.44169796,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 8,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -10556,13 +10556,13 @@
      }
     },
     "farming": {
-     "usd": 1649038466.0373468,
-     "eth_ref": 785232.6346191067,
-     "gross_positive_usd": 1649038466.0373468,
+     "usd": 1966261924.0470881,
+     "eth_ref": 936286.8500459598,
+     "gross_positive_usd": 1966261924.0470881,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 89,
+      "expected": 95,
+      "observed": 88,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -10571,8 +10571,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1162450216.2276833,
-      "eth_ref": 553530.9604362749
+      "usd": 1471661597.441295,
+      "eth_ref": 700770.0167258679
      }
     },
     "lending": {
@@ -10618,20 +10618,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 43021370387.38696,
-    "eth_ref": 20485746.518327247
+    "usd": 43338631091.056915,
+    "eth_ref": 20636818.469245717
    }
   },
   {
    "period": "2026-04",
    "target_timestamp": 1777593599,
-   "usd": 45140683170.393105,
-   "eth_ref": 19987288.280291833,
-   "gross_positive_usd": 45140683170.393105,
+   "usd": 45215650758.56293,
+   "eth_ref": 20020482.25723659,
+   "gross_positive_usd": 45215650758.56293,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 231,
+    "expected": 246,
+    "observed": 227,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -10640,9 +10640,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 31734765909.461037,
-     "eth_ref": 14051446.947439978,
-     "gross_positive_usd": 31734765909.461037,
+     "usd": 31733077661.02792,
+     "eth_ref": 14050699.428666411,
+     "gross_positive_usd": 31733077661.02792,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -10655,14 +10655,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 31734331318.221676,
-      "eth_ref": 14051254.52012663
+      "usd": 31732643069.78856,
+      "eth_ref": 14050507.001353063
      }
     },
     "restaking": {
-     "usd": 8217034053.551618,
-     "eth_ref": 3638319.5136273545,
-     "gross_positive_usd": 8217034053.551618,
+     "usd": 8293700868.967938,
+     "eth_ref": 3672265.870519511,
+     "gross_positive_usd": 8293700868.967938,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -10675,18 +10675,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 8048622317.311818,
-      "eth_ref": 3563750.5508736605
+      "usd": 8125289132.728139,
+      "eth_ref": 3597696.907765817
      }
     },
     "loops": {
-     "usd": 497856657.67141825,
-     "eth_ref": 220439.83033176028,
-     "gross_positive_usd": 497856657.67141825,
+     "usd": 208439002.9919877,
+     "eth_ref": 92292.14422678376,
+     "gross_positive_usd": 208439002.9919877,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 8,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -10800,13 +10800,13 @@
      }
     },
     "farming": {
-     "usd": 1436393012.5416894,
-     "eth_ref": 636002.807425335,
-     "gross_positive_usd": 1436393012.5416894,
+     "usd": 1725799688.4077415,
+     "eth_ref": 764145.6323564755,
+     "gross_positive_usd": 1725799688.4077415,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 89,
+      "expected": 95,
+      "observed": 87,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -10815,8 +10815,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 1129651347.1328604,
-      "eth_ref": 500184.43553759524
+      "usd": 1411067722.6555326,
+      "eth_ref": 624789.3335878684
      }
     },
     "lending": {
@@ -10862,20 +10862,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 43793593113.16082,
-    "eth_ref": 19390826.830832075
+    "usd": 44149988055.6667,
+    "eth_ref": 19548630.567000937
    }
   },
   {
    "period": "2026-05",
    "target_timestamp": 1780271999,
-   "usd": 39025326550.73543,
-   "eth_ref": 19419828.652836435,
-   "gross_positive_usd": 39025326550.73543,
+   "usd": 39101233573.92695,
+   "eth_ref": 19457601.594518546,
+   "gross_positive_usd": 39101233573.92695,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 234,
+    "expected": 246,
+    "observed": 231,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -10884,13 +10884,13 @@
    },
    "by_category": {
     "staking": {
-     "usd": 28004404656.89362,
-     "eth_ref": 13935584.60694854,
-     "gross_positive_usd": 28004404656.89362,
+     "usd": 27991281612.160904,
+     "eth_ref": 13929054.302076356,
+     "gross_positive_usd": 27991281612.160904,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
-      "observed": 24,
+      "observed": 23,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -10904,9 +10904,9 @@
      }
     },
     "restaking": {
-     "usd": 5547377942.439022,
-     "eth_ref": 2760492.7014418542,
-     "gross_positive_usd": 5547377942.439022,
+     "usd": 5623284965.630555,
+     "eth_ref": 2798265.64312397,
+     "gross_positive_usd": 5623284965.630555,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -10919,18 +10919,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 5435912650.386442,
-      "eth_ref": 2705025.21241046
+      "usd": 5511819673.577975,
+      "eth_ref": 2742798.154092576
      }
     },
     "loops": {
-     "usd": 381761578.9340039,
-     "eth_ref": 189972.64352154246,
-     "gross_positive_usd": 381761578.9340039,
+     "usd": 158564877.699211,
+     "eth_ref": 78905.239941384,
+     "gross_positive_usd": 158564877.699211,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 8,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -11044,12 +11044,12 @@
      }
     },
     "farming": {
-     "usd": 1283535885.688221,
-     "eth_ref": 638714.6290096111,
-     "gross_positive_usd": 1283535885.688221,
+     "usd": 1519855631.6557226,
+     "eth_ref": 756312.3374619503,
+     "gross_positive_usd": 1519855631.6557226,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 89,
       "missing": 0,
       "stale": 0,
@@ -11059,8 +11059,8 @@
      },
      "constant_cohort": {
       "protocol_count": 38,
-      "usd": 935229569.1987154,
-      "eth_ref": 465390.0323240941
+      "usd": 1152616301.958577,
+      "eth_ref": 573566.2725948344
      }
     },
     "lending": {
@@ -11106,20 +11106,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 37905490295.9091,
-    "eth_ref": 18862574.42564403
+    "usd": 38198784051.8605,
+    "eth_ref": 19008523.607596885
    }
   },
   {
    "period": "2026-06",
    "target_timestamp": 1782863999,
-   "usd": 30756184805.837273,
-   "eth_ref": 19617527.601424914,
-   "gross_positive_usd": 30756184805.837273,
+   "usd": 30760481448.89762,
+   "eth_ref": 19620268.1726096,
+   "gross_positive_usd": 30760481448.89762,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 234,
+    "expected": 246,
+    "observed": 232,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -11128,9 +11128,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 22308332286.67195,
-     "eth_ref": 14229148.613142878,
-     "gross_positive_usd": 22308332286.67195,
+     "usd": 22308454781.38941,
+     "eth_ref": 14229226.745184155,
+     "gross_positive_usd": 22308454781.38941,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -11143,14 +11143,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 22308030793.66496,
-      "eth_ref": 14228956.30881698
+      "usd": 22308153288.38242,
+      "eth_ref": 14229034.440858258
      }
     },
     "restaking": {
-     "usd": 4104923211.042706,
-     "eth_ref": 2618284.5792718874,
-     "gross_positive_usd": 4104923211.042706,
+     "usd": 4109101647.176114,
+     "eth_ref": 2620949.7533399784,
+     "gross_positive_usd": 4109101647.176114,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -11163,18 +11163,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 4031915779.8157263,
-      "eth_ref": 2571717.5129648666
+      "usd": 4036094215.9491343,
+      "eth_ref": 2574382.6870329576
      }
     },
     "loops": {
-     "usd": 150949138.40465727,
-     "eth_ref": 96281.41161717342,
-     "gross_positive_usd": 150949138.40465727,
+     "usd": 146770702.27124906,
+     "eth_ref": 93616.23754908258,
+     "gross_positive_usd": 146770702.27124906,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -11288,13 +11288,13 @@
      }
     },
     "farming": {
-     "usd": 995371447.1214023,
-     "eth_ref": 634887.8107231412,
-     "gross_positive_usd": 995371447.1214023,
+     "usd": 999545595.4642923,
+     "eth_ref": 637550.2498665536,
+     "gross_positive_usd": 999545595.4642923,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 90,
+      "expected": 95,
+      "observed": 89,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -11350,20 +11350,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 29948056945.631027,
-    "eth_ref": 19102071.256525215
+    "usd": 29952357876.481895,
+    "eth_ref": 19104814.562634584
    }
   },
   {
    "period": "2026-07",
    "target_timestamp": 1785542399,
-   "usd": 36862707634.0405,
-   "eth_ref": 19781698.70176112,
-   "gross_positive_usd": 36862707634.0405,
+   "usd": 36867626035.30171,
+   "eth_ref": 19784338.071956318,
+   "gross_positive_usd": 36867626035.30171,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 236,
+    "expected": 246,
+    "observed": 234,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -11372,9 +11372,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 27206991158.818783,
-     "eth_ref": 14600134.830796745,
-     "gross_positive_usd": 27206991158.818783,
+     "usd": 27207075954.540596,
+     "eth_ref": 14600180.33487194,
+     "gross_positive_usd": 27207075954.540596,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -11387,14 +11387,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 27206991158.818783,
-      "eth_ref": 14600134.830796745
+      "usd": 27207075954.540596,
+      "eth_ref": 14600180.33487194
      }
     },
     "restaking": {
-     "usd": 4718372277.284261,
-     "eth_ref": 2532028.2947904835,
-     "gross_positive_usd": 4718372277.284261,
+     "usd": 4723201401.5939455,
+     "eth_ref": 2534619.756140418,
+     "gross_positive_usd": 4723201401.5939455,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -11407,18 +11407,18 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 4636393423.9172,
-      "eth_ref": 2488035.8405919885
+      "usd": 4641222548.226886,
+      "eth_ref": 2490627.301941923
      }
     },
     "loops": {
-     "usd": 180711178.40851086,
-     "eth_ref": 96975.35294494405,
-     "gross_positive_usd": 180711178.40851086,
+     "usd": 175886535.32854015,
+     "eth_ref": 94386.29636508,
+     "gross_positive_usd": 175886535.32854015,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
-      "observed": 7,
+      "expected": 7,
+      "observed": 6,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -11532,13 +11532,13 @@
      }
     },
     "farming": {
-     "usd": 1114519142.3321755,
-     "eth_ref": 598086.3394473268,
-     "gross_positive_usd": 1114519142.3321755,
+     "usd": 1119348266.641861,
+     "eth_ref": 600677.8007972612,
+     "gross_positive_usd": 1119348266.641861,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 93,
+      "expected": 95,
+      "observed": 92,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -11594,20 +11594,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 35891835524.03098,
-    "eth_ref": 19260697.918291368
+    "usd": 35896749444.06248,
+    "eth_ref": 19263334.8837165
    }
   },
   {
    "period": "2026-08",
    "target_timestamp": 1788220799,
-   "usd": 48819152239.64409,
-   "eth_ref": 19759829.396416556,
-   "gross_positive_usd": 48819152239.64409,
+   "usd": 48819276120.46715,
+   "eth_ref": 19759879.537883926,
+   "gross_positive_usd": 48819276120.46715,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 234,
+    "expected": 246,
+    "observed": 233,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -11616,9 +11616,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 36793773397.08618,
-     "eth_ref": 14892488.947942726,
-     "gross_positive_usd": 36793773397.08618,
+     "usd": 36793897285.32416,
+     "eth_ref": 14892539.092411326,
+     "gross_positive_usd": 36793897285.32416,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -11631,14 +11631,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 36793773397.08618,
-      "eth_ref": 14892488.947942726
+      "usd": 36793897285.32416,
+      "eth_ref": 14892539.092411326
      }
     },
     "restaking": {
-     "usd": 6032372327.73433,
-     "eth_ref": 2441636.9925182373,
-     "gross_positive_usd": 6032372327.73433,
+     "usd": 6032372320.319412,
+     "eth_ref": 2441636.9895170075,
+     "gross_positive_usd": 6032372320.319412,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -11651,8 +11651,8 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 5926104494.78839,
-      "eth_ref": 2398624.4830213296
+      "usd": 5926104487.373472,
+      "eth_ref": 2398624.4800201
      }
     },
     "loops": {
@@ -11661,7 +11661,7 @@
      "gross_positive_usd": 229052910.81101605,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
+      "expected": 7,
       "observed": 6,
       "missing": 0,
       "stale": 0,
@@ -11781,8 +11781,8 @@
      "gross_positive_usd": 1319010907.6252522,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 92,
+      "expected": 95,
+      "observed": 91,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -11838,20 +11838,20 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 47399281263.52889,
-    "eth_ref": 19185128.547142565
+    "usd": 47399405144.35195,
+    "eth_ref": 19185178.688609935
    }
   },
   {
    "period": "2026-09",
    "target_timestamp": 1790812799,
-   "usd": 53459072878.94932,
-   "eth_ref": 19968093.474648952,
-   "gross_positive_usd": 53459072878.94932,
+   "usd": 53459224580.49158,
+   "eth_ref": 19968150.138380904,
+   "gross_positive_usd": 53459224580.49158,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
-    "observed": 236,
+    "expected": 246,
+    "observed": 235,
     "missing": 0,
     "stale": 0,
     "missing_protocols": [],
@@ -11860,9 +11860,9 @@
    },
    "by_category": {
     "staking": {
-     "usd": 40395130826.91135,
-     "eth_ref": 15088435.037003065,
-     "gross_positive_usd": 40395130826.91135,
+     "usd": 40395282594.590256,
+     "eth_ref": 15088491.725438455,
+     "gross_positive_usd": 40395282594.590256,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 24,
@@ -11875,14 +11875,14 @@
      },
      "constant_cohort": {
       "protocol_count": 18,
-      "usd": 40395130826.91135,
-      "eth_ref": 15088435.037003065
+      "usd": 40395282594.590256,
+      "eth_ref": 15088491.725438455
      }
     },
     "restaking": {
-     "usd": 6504161304.670281,
-     "eth_ref": 2429441.700194398,
-     "gross_positive_usd": 6504161304.670281,
+     "usd": 6504161238.533627,
+     "eth_ref": 2429441.6754909595,
+     "gross_positive_usd": 6504161238.533627,
      "negative_usd": 0.0,
      "coverage": {
       "expected": 15,
@@ -11895,8 +11895,8 @@
      },
      "constant_cohort": {
       "protocol_count": 9,
-      "usd": 6389786246.576912,
-      "eth_ref": 2386720.1989003466
+      "usd": 6389786180.440257,
+      "eth_ref": 2386720.1741969083
      }
     },
     "loops": {
@@ -11905,7 +11905,7 @@
      "gross_positive_usd": 261014095.59362563,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
+      "expected": 7,
       "observed": 6,
       "missing": 0,
       "stale": 0,
@@ -12025,8 +12025,8 @@
      "gross_positive_usd": 1424349114.9012866,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
-      "observed": 93,
+      "expected": 95,
+      "observed": 92,
       "missing": 0,
       "stale": 0,
       "missing_protocols": [],
@@ -12082,8 +12082,8 @@
    },
    "constant_cohort": {
     "protocol_count": 126,
-    "usd": 51897761452.379364,
-    "eth_ref": 19384910.661520466
+    "usd": 51897913153.92162,
+    "eth_ref": 19384967.325252417
    }
   },
   {
@@ -12094,7 +12094,7 @@
    "gross_positive_usd": 53303683600.721634,
    "negative_usd": 0.0,
    "coverage": {
-    "expected": 251,
+    "expected": 246,
     "observed": 238,
     "missing": 0,
     "stale": 0,
@@ -12149,7 +12149,7 @@
      "gross_positive_usd": 261047759.52948466,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 9,
+      "expected": 7,
       "observed": 6,
       "missing": 0,
       "stale": 0,
@@ -12269,7 +12269,7 @@
      "gross_positive_usd": 1412245947.613575,
      "negative_usd": 0.0,
      "coverage": {
-      "expected": 98,
+      "expected": 95,
       "observed": 93,
       "missing": 0,
       "stale": 0,
@@ -12353,9 +12353,9 @@
    "history": [
     {
      "period": "2024-10",
-     "usd": 22086227593.40574,
-     "eth_ref": 8772382.56877483,
-     "gross_positive_usd": 22086227593.40574,
+     "usd": 22085340198.05784,
+     "eth_ref": 8772030.10607161,
+     "gross_positive_usd": 22085340198.05784,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2517.7000000001535,
      "source_timestamp": 1730419199,
@@ -12364,9 +12364,9 @@
     },
     {
      "period": "2024-11",
-     "usd": 32728424173.780827,
-     "eth_ref": 8788442.674673831,
-     "gross_positive_usd": 32728424173.780827,
+     "usd": 32727171083.44197,
+     "eth_ref": 8788106.18696056,
+     "gross_positive_usd": 32727171083.44197,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3724.030000001734,
      "source_timestamp": 1733011199,
@@ -12375,9 +12375,9 @@
     },
     {
      "period": "2024-12",
-     "usd": 28873433845.235928,
-     "eth_ref": 8672445.760927754,
-     "gross_positive_usd": 28873433845.235928,
+     "usd": 28872309551.068115,
+     "eth_ref": 8672108.067107132,
+     "gross_positive_usd": 28872309551.068115,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3329.33000000073,
      "source_timestamp": 1735689599,
@@ -12540,9 +12540,9 @@
     },
     {
      "period": "2026-03",
-     "usd": 17643788076.81378,
-     "eth_ref": 8401549.437176013,
-     "gross_positive_usd": 17643788076.81378,
+     "usd": 17643814906.08858,
+     "eth_ref": 8401562.212634299,
+     "gross_positive_usd": 17643814906.08858,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2100.063590501746,
      "source_timestamp": 1775001599,
@@ -12551,9 +12551,9 @@
     },
     {
      "period": "2026-04",
-     "usd": 18790713260.492165,
-     "eth_ref": 8320108.969376255,
-     "gross_positive_usd": 18790713260.492165,
+     "usd": 18789025012.059048,
+     "eth_ref": 8319361.450602688,
+     "gross_positive_usd": 18789025012.059048,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2258.4696101523386,
      "source_timestamp": 1777593599,
@@ -12573,9 +12573,9 @@
     },
     {
      "period": "2026-06",
-     "usd": 13352008400.561155,
-     "eth_ref": 8516446.203781197,
-     "gross_positive_usd": 13352008400.561155,
+     "usd": 13352178508.755695,
+     "eth_ref": 8516554.705606852,
+     "gross_positive_usd": 13352178508.755695,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1567.791081053624,
      "source_timestamp": 1782863999,
@@ -12584,9 +12584,9 @@
     },
     {
      "period": "2026-07",
-     "usd": 16507011280.134027,
-     "eth_ref": 8858186.07932767,
-     "gross_positive_usd": 16507011280.134027,
+     "usd": 16507131186.482412,
+     "eth_ref": 8858250.424879272,
+     "gross_positive_usd": 16507131186.482412,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1863.4753359557892,
      "source_timestamp": 1785542399,
@@ -12595,9 +12595,9 @@
     },
     {
      "period": "2026-08",
-     "usd": 22641350002.231045,
-     "eth_ref": 9164215.125090478,
-     "gross_positive_usd": 22641350002.231045,
+     "usd": 22641518650.426598,
+     "eth_ref": 9164283.38640636,
+     "gross_positive_usd": 22641518650.426598,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2470.62620128175,
      "source_timestamp": 1788220799,
@@ -12606,9 +12606,9 @@
     },
     {
      "period": "2026-09",
-     "usd": 25131145425.347637,
-     "eth_ref": 9387013.914637884,
-     "gross_positive_usd": 25131145425.347637,
+     "usd": 25131340821.505608,
+     "eth_ref": 9387086.899232207,
+     "gross_positive_usd": 25131340821.505608,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2677.2246908208726,
      "source_timestamp": 1790812799,
@@ -12625,14 +12625,14 @@
    "peak": {
     "eth_ref": {
      "period": "2026-09",
-     "value": 9387013.914637884
+     "value": 9387086.899232207
     }
    },
    "baseline": {
     "period": "2024-10",
-    "usd": 22086227593.40574,
-    "eth_ref": 8772382.56877483,
-    "gross_positive_usd": 22086227593.40574,
+    "usd": 22085340198.05784,
+    "eth_ref": 8772030.10607161,
+    "gross_positive_usd": 22085340198.05784,
     "negative_usd": 0.0,
     "reference_ETH_USD": 2517.7000000001535,
     "source_timestamp": 1730419199,
@@ -13092,9 +13092,9 @@
     },
     {
      "period": "2025-09",
-     "usd": 8551484646.2469225,
-     "eth_ref": 2062163.9669255074,
-     "gross_positive_usd": 8551484646.2469225,
+     "usd": 8551484645.96405,
+     "eth_ref": 2062163.9668572936,
+     "gross_positive_usd": 8551484645.96405,
      "negative_usd": 0.0,
      "reference_ETH_USD": 4146.850000000913,
      "source_timestamp": 1759276799,
@@ -13103,9 +13103,9 @@
     },
     {
      "period": "2025-10",
-     "usd": 8057536407.344003,
-     "eth_ref": 2090316.5345556503,
-     "gross_positive_usd": 8057536407.344003,
+     "usd": 8094413618.692888,
+     "eth_ref": 2099883.360038514,
+     "gross_positive_usd": 8094413618.692888,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3854.696776369726,
      "source_timestamp": 1761955199,
@@ -13114,9 +13114,9 @@
     },
     {
      "period": "2025-11",
-     "usd": 5970038219.537817,
-     "eth_ref": 1998642.7796010538,
-     "gross_positive_usd": 5970038219.537817,
+     "usd": 6003682668.558431,
+     "eth_ref": 2009906.2309619917,
+     "gross_positive_usd": 6003682668.558431,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2987.0461497524275,
      "source_timestamp": 1764547199,
@@ -13125,9 +13125,9 @@
     },
     {
      "period": "2025-12",
-     "usd": 7287551583.127418,
-     "eth_ref": 2452471.8244058504,
-     "gross_positive_usd": 7287551583.127418,
+     "usd": 7316709013.483419,
+     "eth_ref": 2462284.142796259,
+     "gross_positive_usd": 7316709013.483419,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2971.512867387555,
      "source_timestamp": 1767225599,
@@ -13136,9 +13136,9 @@
     },
     {
      "period": "2026-01",
-     "usd": 6495540750.18108,
-     "eth_ref": 2630030.089551263,
-     "gross_positive_usd": 6495540750.18108,
+     "usd": 6514985195.668036,
+     "eth_ref": 2637903.102541584,
+     "gross_positive_usd": 6514985195.668036,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2469.7591012311773,
      "source_timestamp": 1769903999,
@@ -13147,9 +13147,9 @@
     },
     {
      "period": "2026-02",
-     "usd": 5001665907.391315,
-     "eth_ref": 2555435.5405871994,
-     "gross_positive_usd": 5001665907.391315,
+     "usd": 5009546626.387807,
+     "eth_ref": 2559461.932949643,
+     "gross_positive_usd": 5009546626.387807,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1957.2655337813806,
      "source_timestamp": 1772323199,
@@ -13158,9 +13158,9 @@
     },
     {
      "period": "2026-03",
-     "usd": 4652255541.491277,
-     "eth_ref": 2215292.6999604627,
-     "gross_positive_usd": 4652255541.491277,
+     "usd": 4660278034.672817,
+     "eth_ref": 2219112.819131056,
+     "gross_positive_usd": 4660278034.672817,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2100.063590501746,
      "source_timestamp": 1775001599,
@@ -13169,9 +13169,9 @@
     },
     {
      "period": "2026-04",
-     "usd": 4540187710.071804,
-     "eth_ref": 2010293.9130385548,
-     "gross_positive_usd": 4540187710.071804,
+     "usd": 4616854525.488125,
+     "eth_ref": 2044240.2699307112,
+     "gross_positive_usd": 4616854525.488125,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2258.4696101523386,
      "source_timestamp": 1777593599,
@@ -13180,9 +13180,9 @@
     },
     {
      "period": "2026-05",
-     "usd": 3085778046.161852,
-     "eth_ref": 1535548.4812981861,
-     "gross_positive_usd": 3085778046.161852,
+     "usd": 3161685069.353385,
+     "eth_ref": 1573321.4229803018,
+     "gross_positive_usd": 3161685069.353385,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2009.5608075839248,
      "source_timestamp": 1780271999,
@@ -13191,9 +13191,9 @@
     },
     {
      "period": "2026-06",
-     "usd": 2370667167.3651805,
-     "eth_ref": 1512106.5529802532,
-     "gross_positive_usd": 2370667167.3651805,
+     "usd": 2374845603.4985886,
+     "eth_ref": 1514771.727048344,
+     "gross_positive_usd": 2374845603.4985886,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1567.791081053624,
      "source_timestamp": 1782863999,
@@ -13202,9 +13202,9 @@
     },
     {
      "period": "2026-07",
-     "usd": 2910159786.3196774,
-     "eth_ref": 1561684.0911001575,
-     "gross_positive_usd": 2910159786.3196774,
+     "usd": 2914988910.6293626,
+     "eth_ref": 1564275.5524500918,
+     "gross_positive_usd": 2914988910.6293626,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1863.4753359557892,
      "source_timestamp": 1785542399,
@@ -13213,9 +13213,9 @@
     },
     {
      "period": "2026-08",
-     "usd": 3919470035.239423,
-     "eth_ref": 1586427.778190816,
-     "gross_positive_usd": 3919470035.239423,
+     "usd": 3919470027.8245053,
+     "eth_ref": 1586427.775189586,
+     "gross_positive_usd": 3919470027.8245053,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2470.62620128175,
      "source_timestamp": 1788220799,
@@ -13224,9 +13224,9 @@
     },
     {
      "period": "2026-09",
-     "usd": 4563051206.185056,
-     "eth_ref": 1704396.0567934117,
-     "gross_positive_usd": 4563051206.185056,
+     "usd": 4563051140.048401,
+     "eth_ref": 1704396.0320899733,
+     "gross_positive_usd": 4563051140.048401,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2677.2246908208726,
      "source_timestamp": 1790812799,
@@ -13243,7 +13243,7 @@
    "peak": {
     "eth_ref": {
      "period": "2026-01",
-     "value": 2630030.089551263
+     "value": 2637903.102541584
     }
    },
    "baseline": {
@@ -13589,9 +13589,9 @@
    "history": [
     {
      "period": "2024-10",
-     "usd": 1819220595.9086938,
-     "eth_ref": 722572.4255902541,
-     "gross_positive_usd": 1819220595.9086938,
+     "usd": 1819177347.255291,
+     "eth_ref": 722555.247748016,
+     "gross_positive_usd": 1819177347.255291,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2517.7000000001535,
      "source_timestamp": 1730419199,
@@ -13600,9 +13600,9 @@
     },
     {
      "period": "2024-11",
-     "usd": 2714597703.387182,
-     "eth_ref": 728940.8794735591,
-     "gross_positive_usd": 2714597703.387182,
+     "usd": 2714535472.390516,
+     "eth_ref": 728924.1688142286,
+     "gross_positive_usd": 2714535472.390516,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3724.030000001734,
      "source_timestamp": 1733011199,
@@ -13611,9 +13611,9 @@
     },
     {
      "period": "2024-12",
-     "usd": 2415289513.300458,
-     "eth_ref": 725458.1292031516,
-     "gross_positive_usd": 2415289513.300458,
+     "usd": 2415235561.4439163,
+     "eth_ref": 725441.924183961,
+     "gross_positive_usd": 2415235561.4439163,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3329.33000000073,
      "source_timestamp": 1735689599,
@@ -13710,9 +13710,9 @@
     },
     {
      "period": "2025-09",
-     "usd": 2522572459.342928,
-     "eth_ref": 608310.5150517556,
-     "gross_positive_usd": 2522572459.342928,
+     "usd": 2529000472.8036504,
+     "eth_ref": 609860.6105364539,
+     "gross_positive_usd": 2529000472.8036504,
      "negative_usd": 0.0,
      "reference_ETH_USD": 4146.850000000913,
      "source_timestamp": 1759276799,
@@ -13721,9 +13721,9 @@
     },
     {
      "period": "2025-10",
-     "usd": 2291773781.932072,
-     "eth_ref": 594540.6123722182,
-     "gross_positive_usd": 2291773781.932072,
+     "usd": 2306697660.159061,
+     "eth_ref": 598412.2212412934,
+     "gross_positive_usd": 2306697660.159061,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3854.696776369726,
      "source_timestamp": 1761955199,
@@ -13732,9 +13732,9 @@
     },
     {
      "period": "2025-11",
-     "usd": 1734360966.6912527,
-     "eth_ref": 580627.4425438656,
-     "gross_positive_usd": 1734360966.6912527,
+     "usd": 1744617258.7773967,
+     "eth_ref": 584061.0326432332,
+     "gross_positive_usd": 1744617258.7773967,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2987.0461497524275,
      "source_timestamp": 1764547199,
@@ -13743,9 +13743,9 @@
     },
     {
      "period": "2025-12",
-     "usd": 1674953320.003303,
-     "eth_ref": 563670.2227965987,
-     "gross_positive_usd": 1674953320.003303,
+     "usd": 1685950307.986423,
+     "eth_ref": 567371.0272264944,
+     "gross_positive_usd": 1685950307.986423,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2971.512867387555,
      "source_timestamp": 1767225599,
@@ -13754,9 +13754,9 @@
     },
     {
      "period": "2026-01",
-     "usd": 1366955714.7749846,
-     "eth_ref": 553477.3468770925,
-     "gross_positive_usd": 1366955714.7749846,
+     "usd": 1377985140.1000805,
+     "eth_ref": 557943.1368076156,
+     "gross_positive_usd": 1377985140.1000805,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2469.7591012311773,
      "source_timestamp": 1769903999,
@@ -13765,9 +13765,9 @@
     },
     {
      "period": "2026-02",
-     "usd": 1066855629.6893955,
-     "eth_ref": 545074.5498124934,
-     "gross_positive_usd": 1066855629.6893955,
+     "usd": 1076133781.6126647,
+     "eth_ref": 549814.9142460019,
+     "gross_positive_usd": 1076133781.6126647,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1957.2655337813806,
      "source_timestamp": 1772323199,
@@ -13842,9 +13842,9 @@
     },
     {
      "period": "2026-09",
-     "usd": 1349161638.3551788,
-     "eth_ref": 503940.3838538139,
-     "gross_positive_usd": 1349161638.3551788,
+     "usd": 1349161621.4078393,
+     "eth_ref": 503940.37752362445,
+     "gross_positive_usd": 1349161621.4078393,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2677.2246908208726,
      "source_timestamp": 1790812799,
@@ -13861,14 +13861,14 @@
    "peak": {
     "eth_ref": {
      "period": "2024-11",
-     "value": 728940.8794735591
+     "value": 728924.1688142286
     }
    },
    "baseline": {
     "period": "2024-10",
-    "usd": 1819220595.9086938,
-    "eth_ref": 722572.4255902541,
-    "gross_positive_usd": 1819220595.9086938,
+    "usd": 1819177347.255291,
+    "eth_ref": 722555.247748016,
+    "gross_positive_usd": 1819177347.255291,
     "negative_usd": 0.0,
     "reference_ETH_USD": 2517.7000000001535,
     "source_timestamp": 1730419199,
@@ -13898,9 +13898,9 @@
    "history": [
     {
      "period": "2024-10",
-     "usd": 1019821479.7055575,
-     "eth_ref": 405060.7616894369,
-     "gross_positive_usd": 1019821479.7055575,
+     "usd": 1019696893.7613025,
+     "eth_ref": 405011.2776586727,
+     "gross_positive_usd": 1019696893.7613025,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2517.7000000001535,
      "source_timestamp": 1730419199,
@@ -13909,9 +13909,9 @@
     },
     {
      "period": "2024-11",
-     "usd": 1545076566.1116383,
-     "eth_ref": 414893.6947637153,
-     "gross_positive_usd": 1545076566.1116383,
+     "usd": 1544899629.8770635,
+     "eth_ref": 414846.182731166,
+     "gross_positive_usd": 1544899629.8770635,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3724.030000001734,
      "source_timestamp": 1733011199,
@@ -13920,9 +13920,9 @@
     },
     {
      "period": "2024-12",
-     "usd": 1395076378.9018779,
-     "eth_ref": 419026.16409354797,
-     "gross_positive_usd": 1395076378.9018779,
+     "usd": 1394910702.411754,
+     "eth_ref": 418976.4013814936,
+     "gross_positive_usd": 1394910702.411754,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3329.33000000073,
      "source_timestamp": 1735689599,
@@ -14118,9 +14118,9 @@
     },
     {
      "period": "2026-06",
-     "usd": 695501509.1878121,
-     "eth_ref": 443618.7433343508,
-     "gross_positive_usd": 695501509.1878121,
+     "usd": 695453895.7107308,
+     "eth_ref": 443588.37354997284,
+     "gross_positive_usd": 695453895.7107308,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1567.791081053624,
      "source_timestamp": 1782863999,
@@ -14129,9 +14129,9 @@
     },
     {
      "period": "2026-07",
-     "usd": 826671337.4764603,
-     "eth_ref": 443618.07292311435,
-     "gross_positive_usd": 826671337.4764603,
+     "usd": 826636226.8498869,
+     "eth_ref": 443599.2314467095,
+     "gross_positive_usd": 826636226.8498869,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1863.4753359557892,
      "source_timestamp": 1785542399,
@@ -14140,9 +14140,9 @@
     },
     {
      "period": "2026-08",
-     "usd": 1097530401.5138903,
-     "eth_ref": 444231.66926040704,
-     "gross_positive_usd": 1097530401.5138903,
+     "usd": 1097485641.556313,
+     "eth_ref": 444213.55241312593,
+     "gross_positive_usd": 1097485641.556313,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2470.62620128175,
      "source_timestamp": 1788220799,
@@ -14151,9 +14151,9 @@
     },
     {
      "period": "2026-09",
-     "usd": 1192805811.990359,
-     "eth_ref": 445538.1784278364,
-     "gross_positive_usd": 1192805811.990359,
+     "usd": 1192762200.4586375,
+     "eth_ref": 445521.8885990928,
+     "gross_positive_usd": 1192762200.4586375,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2677.2246908208726,
      "source_timestamp": 1790812799,
@@ -14170,14 +14170,14 @@
    "peak": {
     "eth_ref": {
      "period": "2026-09",
-     "value": 445538.1784278364
+     "value": 445521.8885990928
     }
    },
    "baseline": {
     "period": "2024-10",
-    "usd": 1019821479.7055575,
-    "eth_ref": 405060.7616894369,
-    "gross_positive_usd": 1019821479.7055575,
+    "usd": 1019696893.7613025,
+    "eth_ref": 405011.2776586727,
+    "gross_positive_usd": 1019696893.7613025,
     "negative_usd": 0.0,
     "reference_ETH_USD": 2517.7000000001535,
     "source_timestamp": 1730419199,
@@ -15255,9 +15255,9 @@
     },
     {
      "period": "2025-09",
-     "usd": 1463644871.5012782,
-     "eth_ref": 352953.4156048461,
-     "gross_positive_usd": 1463644871.5012782,
+     "usd": 1463644146.8200815,
+     "eth_ref": 352953.2408502259,
+     "gross_positive_usd": 1463644146.8200815,
      "negative_usd": 0.0,
      "reference_ETH_USD": 4146.850000000913,
      "source_timestamp": 1759276799,
@@ -15266,9 +15266,9 @@
     },
     {
      "period": "2025-10",
-     "usd": 1373264784.8478987,
-     "eth_ref": 356257.5384051897,
-     "gross_positive_usd": 1373264784.8478987,
+     "usd": 1373263250.3278365,
+     "eth_ref": 356257.14031419804,
+     "gross_positive_usd": 1373263250.3278365,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3854.696776369726,
      "source_timestamp": 1761955199,
@@ -15277,9 +15277,9 @@
     },
     {
      "period": "2025-11",
-     "usd": 969454880.6033012,
-     "eth_ref": 324553.0306532598,
-     "gross_positive_usd": 969454880.6033012,
+     "usd": 969453321.5947949,
+     "eth_ref": 324552.5087301196,
+     "gross_positive_usd": 969453321.5947949,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2987.0461497524275,
      "source_timestamp": 1764547199,
@@ -15288,9 +15288,9 @@
     },
     {
      "period": "2025-12",
-     "usd": 852654814.2137643,
-     "eth_ref": 286942.9991610257,
-     "gross_positive_usd": 852654814.2137643,
+     "usd": 852653162.3981224,
+     "eth_ref": 286942.4432773006,
+     "gross_positive_usd": 852653162.3981224,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2971.512867387555,
      "source_timestamp": 1767225599,
@@ -15299,9 +15299,9 @@
     },
     {
      "period": "2026-01",
-     "usd": 692580599.9759626,
-     "eth_ref": 280424.353788477,
-     "gross_positive_usd": 692580599.9759626,
+     "usd": 692579210.4214767,
+     "eth_ref": 280423.79116093763,
+     "gross_positive_usd": 692579210.4214767,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2469.7591012311773,
      "source_timestamp": 1769903999,
@@ -15310,9 +15310,9 @@
     },
     {
      "period": "2026-02",
-     "usd": 517104185.94487864,
-     "eth_ref": 264197.2573572316,
-     "gross_positive_usd": 517104185.94487864,
+     "usd": 517103083.50136757,
+     "eth_ref": 264196.69410023245,
+     "gross_positive_usd": 517103083.50136757,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1957.2655337813806,
      "source_timestamp": 1772323199,
@@ -15406,7 +15406,7 @@
    "peak": {
     "eth_ref": {
      "period": "2025-10",
-     "value": 356257.5384051897
+     "value": 356257.14031419804
     }
    },
    "baseline": {
@@ -24206,9 +24206,9 @@
     },
     {
      "period": "2026-03",
-     "usd": 9601247.004529366,
-     "eth_ref": 4571.883941016968,
-     "gross_positive_usd": 9601247.004529366,
+     "usd": 9668499.371562693,
+     "eth_ref": 4603.907907975634,
+     "gross_positive_usd": 9668499.371562693,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2100.063590501746,
      "source_timestamp": 1775001599,
@@ -24217,9 +24217,9 @@
     },
     {
      "period": "2026-04",
-     "usd": 8153184.860521946,
-     "eth_ref": 3610.048514211354,
-     "gross_positive_usd": 8153184.860521946,
+     "usd": 10921832.90012128,
+     "eth_ref": 4835.944150421657,
+     "gross_positive_usd": 10921832.90012128,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2258.4696101523386,
      "source_timestamp": 1777593599,
@@ -24239,9 +24239,9 @@
     },
     {
      "period": "2026-06",
-     "usd": 15696698.04658788,
-     "eth_ref": 10011.983252283215,
-     "gross_positive_usd": 15696698.04658788,
+     "usd": 15972331.960487403,
+     "eth_ref": 10187.793611986424,
+     "gross_positive_usd": 15972331.960487403,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1567.791081053624,
      "source_timestamp": 1782863999,
@@ -24250,9 +24250,9 @@
     },
     {
      "period": "2026-07",
-     "usd": 23021733.59262172,
-     "eth_ref": 12354.192807608972,
-     "gross_positive_usd": 23021733.59262172,
+     "usd": 23176587.839224342,
+     "eth_ref": 12437.292510414103,
+     "gross_positive_usd": 23176587.839224342,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1863.4753359557892,
      "source_timestamp": 1785542399,
@@ -24261,9 +24261,9 @@
     },
     {
      "period": "2026-08",
-     "usd": 36272207.46895417,
-     "eth_ref": 14681.382173530055,
-     "gross_positive_usd": 36272207.46895417,
+     "usd": 36477741.21092504,
+     "eth_ref": 14764.573124012264,
+     "gross_positive_usd": 36477741.21092504,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2470.62620128175,
      "source_timestamp": 1788220799,
@@ -24272,9 +24272,9 @@
     },
     {
      "period": "2026-09",
-     "usd": 38128844.008206904,
-     "eth_ref": 14241.929016617614,
-     "gross_positive_usd": 38128844.008206904,
+     "usd": 38348987.183556095,
+     "eth_ref": 14324.157144911802,
+     "gross_positive_usd": 38348987.183556095,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2677.2246908208726,
      "source_timestamp": 1790812799,
@@ -24291,7 +24291,7 @@
    "peak": {
     "eth_ref": {
      "period": "2026-08",
-     "value": 14681.382173530055
+     "value": 14764.573124012264
     }
    },
    "baseline": {
@@ -26955,9 +26955,9 @@
     },
     {
      "period": "2025-09",
-     "usd": 149399938.64005736,
-     "eth_ref": 36027.331261083586,
-     "gross_positive_usd": 149399938.64005736,
+     "usd": 149318574.21827996,
+     "eth_ref": 36007.71048343854,
+     "gross_positive_usd": 149318574.21827996,
      "negative_usd": 0.0,
      "reference_ETH_USD": 4146.850000000913,
      "source_timestamp": 1759276799,
@@ -26966,9 +26966,9 @@
     },
     {
      "period": "2025-10",
-     "usd": 135932971.87966013,
-     "eth_ref": 35264.24509262671,
-     "gross_positive_usd": 135932971.87966013,
+     "usd": 135768115.16767,
+     "eth_ref": 35221.47734160652,
+     "gross_positive_usd": 135768115.16767,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3854.696776369726,
      "source_timestamp": 1761955199,
@@ -26977,9 +26977,9 @@
     },
     {
      "period": "2025-11",
-     "usd": 97748336.89542359,
-     "eth_ref": 32724.079908683423,
-     "gross_positive_usd": 97748336.89542359,
+     "usd": 97699366.89371002,
+     "eth_ref": 32707.68578577453,
+     "gross_positive_usd": 97699366.89371002,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2987.0461497524275,
      "source_timestamp": 1764547199,
@@ -26988,9 +26988,9 @@
     },
     {
      "period": "2025-12",
-     "usd": 82841750.02154657,
-     "eth_ref": 27878.6442188211,
-     "gross_positive_usd": 82841750.02154657,
+     "usd": 82794901.21394,
+     "eth_ref": 27862.87824044667,
+     "gross_positive_usd": 82794901.21394,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2971.512867387555,
      "source_timestamp": 1767225599,
@@ -26999,9 +26999,9 @@
     },
     {
      "period": "2026-01",
-     "usd": 67129467.61796989,
-     "eth_ref": 27180.57303018168,
-     "gross_positive_usd": 67129467.61796989,
+     "usd": 67089366.412690006,
+     "eth_ref": 27164.336140818712,
+     "gross_positive_usd": 67089366.412690006,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2469.7591012311773,
      "source_timestamp": 1769903999,
@@ -27010,9 +27010,9 @@
     },
     {
      "period": "2026-02",
-     "usd": 50745019.42946029,
-     "eth_ref": 25926.48700629923,
-     "gross_positive_usd": 50745019.42946029,
+     "usd": 50714424.57249,
+     "eth_ref": 25910.855577429596,
+     "gross_positive_usd": 50714424.57249,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1957.2655337813806,
      "source_timestamp": 1772323199,
@@ -27970,9 +27970,9 @@
    "history": [
     {
      "period": "2024-10",
-     "usd": 462705406.1421344,
-     "eth_ref": 183780.99302621686,
-     "gross_positive_usd": 462705406.1421344,
+     "usd": 830800725.9784899,
+     "eth_ref": 329984.00364556507,
+     "gross_positive_usd": 830800725.9784899,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2517.7000000001535,
      "source_timestamp": 1730419199,
@@ -27981,9 +27981,9 @@
     },
     {
      "period": "2024-11",
-     "usd": 385793520.89763343,
-     "eth_ref": 103595.70704249262,
-     "gross_positive_usd": 385793520.89763343,
+     "usd": 945363859.9773899,
+     "eth_ref": 253855.06023768598,
+     "gross_positive_usd": 945363859.9773899,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3724.030000001734,
      "source_timestamp": 1733011199,
@@ -27992,9 +27992,9 @@
     },
     {
      "period": "2024-12",
-     "usd": 346286594.81282425,
-     "eth_ref": 104010.89552935526,
-     "gross_positive_usd": 346286594.81282425,
+     "usd": 854730391.2284099,
+     "eth_ref": 256727.44703235262,
+     "gross_positive_usd": 854730391.2284099,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3329.33000000073,
      "source_timestamp": 1735689599,
@@ -28003,9 +28003,9 @@
     },
     {
      "period": "2025-01",
-     "usd": 239397030.5223819,
-     "eth_ref": 72567.64440876548,
-     "gross_positive_usd": 239397030.5223819,
+     "usd": 745338249.27762,
+     "eth_ref": 225931.96298135928,
+     "gross_positive_usd": 745338249.27762,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3298.9500000011717,
      "source_timestamp": 1738367999,
@@ -28014,9 +28014,9 @@
     },
     {
      "period": "2025-02",
-     "usd": 501008680.2349786,
-     "eth_ref": 225101.62206715628,
-     "gross_positive_usd": 501008680.2349786,
+     "usd": 855343691.9524801,
+     "eth_ref": 384303.22682854574,
+     "gross_positive_usd": 855343691.9524801,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2225.7000000004837,
      "source_timestamp": 1740787199,
@@ -28025,9 +28025,9 @@
     },
     {
      "period": "2025-03",
-     "usd": 386586315.9985837,
-     "eth_ref": 211982.604308085,
-     "gross_positive_usd": 386586315.9985837,
+     "usd": 680960011.8716401,
+     "eth_ref": 373400.89592499594,
+     "gross_positive_usd": 680960011.8716401,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1823.6700000002752,
      "source_timestamp": 1743465599,
@@ -28036,9 +28036,9 @@
     },
     {
      "period": "2025-04",
-     "usd": 354302839.1019737,
-     "eth_ref": 197605.57234425735,
-     "gross_positive_usd": 354302839.1019737,
+     "usd": 671537077.0273302,
+     "eth_ref": 374536.8476095736,
+     "gross_positive_usd": 671537077.0273302,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1792.980000000846,
      "source_timestamp": 1746057599,
@@ -28047,9 +28047,9 @@
     },
     {
      "period": "2025-05",
-     "usd": 384166836.2612027,
-     "eth_ref": 152574.90845947838,
-     "gross_positive_usd": 384166836.2612027,
+     "usd": 875043344.6788,
+     "eth_ref": 347530.41025557916,
+     "gross_positive_usd": 875043344.6788,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2517.8900000010926,
      "source_timestamp": 1748735999,
@@ -28058,9 +28058,9 @@
     },
     {
      "period": "2025-06",
-     "usd": 352443548.31532824,
-     "eth_ref": 141190.89996695827,
-     "gross_positive_usd": 352443548.31532824,
+     "usd": 831089789.5735899,
+     "eth_ref": 332939.3200815807,
+     "gross_positive_usd": 831089789.5735899,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2496.219999998638,
      "source_timestamp": 1751327999,
@@ -28069,9 +28069,9 @@
     },
     {
      "period": "2025-07",
-     "usd": 282299820.7467634,
-     "eth_ref": 76407.10988414884,
-     "gross_positive_usd": 282299820.7467634,
+     "usd": 1022962507.2521497,
+     "eth_ref": 276874.45387751114,
+     "gross_positive_usd": 1022962507.2521497,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3694.6799999999525,
      "source_timestamp": 1754006399,
@@ -28102,9 +28102,9 @@
     },
     {
      "period": "2025-10",
-     "usd": 391977576.3525201,
-     "eth_ref": 101688.30367032826,
-     "gross_positive_usd": 391977576.3525201,
+     "usd": 1076046651.9555297,
+     "eth_ref": 279152.0875395362,
+     "gross_positive_usd": 1076046651.9555297,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3854.696776369726,
      "source_timestamp": 1761955199,
@@ -28113,9 +28113,9 @@
     },
     {
      "period": "2025-11",
-     "usd": 222492924.69468567,
-     "eth_ref": 74485.93477979118,
-     "gross_positive_usd": 222492924.69468567,
+     "usd": 664028119.91689,
+     "eth_ref": 222302.59816103813,
+     "gross_positive_usd": 664028119.91689,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2987.0461497524275,
      "source_timestamp": 1764547199,
@@ -28124,9 +28124,9 @@
     },
     {
      "period": "2025-12",
-     "usd": 269709787.78685963,
-     "eth_ref": 90765.14214255399,
-     "gross_positive_usd": 269709787.78685963,
+     "usd": 706768987.52757,
+     "eth_ref": 237848.20024990683,
+     "gross_positive_usd": 706768987.52757,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2971.512867387555,
      "source_timestamp": 1767225599,
@@ -28135,9 +28135,9 @@
     },
     {
      "period": "2026-01",
-     "usd": 266429615.58098477,
-     "eth_ref": 107876.76233207091,
-     "gross_positive_usd": 266429615.58098477,
+     "usd": 647536951.9984599,
+     "eth_ref": 262186.2803038815,
+     "gross_positive_usd": 647536951.9984599,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2469.7591012311773,
      "source_timestamp": 1769903999,
@@ -28146,9 +28146,9 @@
     },
     {
      "period": "2026-02",
-     "usd": 181842621.23814988,
-     "eth_ref": 92906.46470784942,
-     "gross_positive_usd": 181842621.23814988,
+     "usd": 393799158.6443401,
+     "eth_ref": 201198.63751114623,
+     "gross_positive_usd": 393799158.6443401,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1957.2655337813806,
      "source_timestamp": 1772323199,
@@ -28157,9 +28157,9 @@
     },
     {
      "period": "2026-03",
-     "usd": 155542394.37905845,
-     "eth_ref": 74065.56405365627,
-     "gross_positive_usd": 155542394.37905845,
+     "usd": 464753775.59266996,
+     "eth_ref": 221304.62034324932,
+     "gross_positive_usd": 464753775.59266996,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2100.063590501746,
      "source_timestamp": 1775001599,
@@ -28168,9 +28168,9 @@
     },
     {
      "period": "2026-04",
-     "usd": 73128101.23919784,
-     "eth_ref": 32379.49313573681,
-     "gross_positive_usd": 73128101.23919784,
+     "usd": 354544476.76187,
+     "eth_ref": 156984.39118600992,
+     "gross_positive_usd": 354544476.76187,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2258.4696101523386,
      "source_timestamp": 1777593599,
@@ -28179,9 +28179,9 @@
     },
     {
      "period": "2026-05",
-     "usd": 35328188.88795842,
-     "eth_ref": 17580.054683905364,
-     "gross_positive_usd": 35328188.88795842,
+     "usd": 252714921.64782,
+     "eth_ref": 125756.29495464567,
+     "gross_positive_usd": 252714921.64782,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2009.5608075839248,
      "source_timestamp": 1780271999,
@@ -28242,14 +28242,14 @@
    "peak": {
     "eth_ref": {
      "period": "2025-02",
-     "value": 225101.62206715628
+     "value": 384303.22682854574
     }
    },
    "baseline": {
     "period": "2024-10",
-    "usd": 462705406.1421344,
-    "eth_ref": 183780.99302621686,
-    "gross_positive_usd": 462705406.1421344,
+    "usd": 830800725.9784899,
+    "eth_ref": 329984.00364556507,
+    "gross_positive_usd": 830800725.9784899,
     "negative_usd": 0.0,
     "reference_ETH_USD": 2517.7000000001535,
     "source_timestamp": 1730419199,
@@ -30078,9 +30078,9 @@
    "history": [
     {
      "period": "2024-10",
-     "usd": 4508800.38325098,
-     "eth_ref": 1790.8409990271696,
-     "gross_positive_usd": 4508800.38325098,
+     "usd": 7293252.2732299995,
+     "eth_ref": 2896.791624589727,
+     "gross_positive_usd": 7293252.2732299995,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2517.7000000001535,
      "source_timestamp": 1730419199,
@@ -30089,9 +30089,9 @@
     },
     {
      "period": "2024-11",
-     "usd": 7203465.404462489,
-     "eth_ref": 1934.3199180616523,
-     "gross_positive_usd": 7203465.404462489,
+     "usd": 11511355.38566,
+     "eth_ref": 3091.101679002221,
+     "gross_positive_usd": 11511355.38566,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3724.030000001734,
      "source_timestamp": 1733011199,
@@ -30100,9 +30100,9 @@
     },
     {
      "period": "2024-12",
-     "usd": 6504909.460736644,
-     "eth_ref": 1953.8193752902891,
-     "gross_positive_usd": 6504909.460736644,
+     "usd": 10384127.51567,
+     "eth_ref": 3118.984154670076,
+     "gross_positive_usd": 10384127.51567,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3329.33000000073,
      "source_timestamp": 1735689599,
@@ -30355,9 +30355,9 @@
    },
    "baseline": {
     "period": "2024-10",
-    "usd": 4508800.38325098,
-    "eth_ref": 1790.8409990271696,
-    "gross_positive_usd": 4508800.38325098,
+    "usd": 7293252.2732299995,
+    "eth_ref": 2896.791624589727,
+    "gross_positive_usd": 7293252.2732299995,
     "negative_usd": 0.0,
     "reference_ETH_USD": 2517.7000000001535,
     "source_timestamp": 1730419199,
@@ -31619,9 +31619,9 @@
     },
     {
      "period": "2025-09",
-     "usd": 39951868.283720456,
-     "eth_ref": 9634.26897131839,
-     "gross_positive_usd": 39951868.283720456,
+     "usd": 47607394.29866,
+     "eth_ref": 11480.375296586451,
+     "gross_positive_usd": 47607394.29866,
      "negative_usd": 0.0,
      "reference_ETH_USD": 4146.850000000913,
      "source_timestamp": 1759276799,
@@ -31630,9 +31630,9 @@
     },
     {
      "period": "2025-10",
-     "usd": 40372657.6513823,
-     "eth_ref": 10473.627367754834,
-     "gross_positive_usd": 40372657.6513823,
+     "usd": 63949420.70057,
+     "eth_ref": 16590.00030627474,
+     "gross_positive_usd": 63949420.70057,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3854.696776369726,
      "source_timestamp": 1761955199,
@@ -31641,9 +31641,9 @@
     },
     {
      "period": "2025-11",
-     "usd": 21267010.99912567,
-     "eth_ref": 7119.746375826274,
-     "gross_positive_usd": 21267010.99912567,
+     "usd": 41053918.53092,
+     "eth_ref": 13743.985352995845,
+     "gross_positive_usd": 41053918.53092,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2987.0461497524275,
      "source_timestamp": 1764547199,
@@ -31652,9 +31652,9 @@
     },
     {
      "period": "2025-12",
-     "usd": 21376497.41788148,
-     "eth_ref": 7193.809474119798,
-     "gross_positive_usd": 21376497.41788148,
+     "usd": 44115748.69167,
+     "eth_ref": 14846.225024243271,
+     "gross_positive_usd": 44115748.69167,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2971.512867387555,
      "source_timestamp": 1767225599,
@@ -31663,9 +31663,9 @@
     },
     {
      "period": "2026-01",
-     "usd": 20471799.33543429,
-     "eth_ref": 8288.986292318583,
-     "gross_positive_usd": 20471799.33543429,
+     "usd": 44020784.707100004,
+     "eth_ref": 17823.918407732803,
+     "gross_positive_usd": 44020784.707100004,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2469.7591012311773,
      "source_timestamp": 1769903999,
@@ -31674,9 +31674,9 @@
     },
     {
      "period": "2026-02",
-     "usd": 18343648.98321805,
-     "eth_ref": 9372.079907716277,
-     "gross_positive_usd": 18343648.98321805,
+     "usd": 37242485.64887,
+     "eth_ref": 19027.814573998345,
+     "gross_positive_usd": 37242485.64887,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1957.2655337813806,
      "source_timestamp": 1772323199,
@@ -31769,8 +31769,8 @@
    "classification_scope": "DefiLlama protocol token breakdown",
    "peak": {
     "eth_ref": {
-     "period": "2025-07",
-     "value": 18665.403868229692
+     "period": "2026-02",
+     "value": 19027.814573998345
     }
    },
    "baseline": {
@@ -33646,9 +33646,9 @@
     },
     {
      "period": "2026-01",
-     "usd": 89797734.91733593,
-     "eth_ref": 36358.904345193696,
-     "gross_positive_usd": 89797734.91733593,
+     "usd": 89782015.90346,
+     "eth_ref": 36352.53975122658,
+     "gross_positive_usd": 89782015.90346,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2469.7591012311773,
      "source_timestamp": 1769903999,
@@ -33657,9 +33657,9 @@
     },
     {
      "period": "2026-02",
-     "usd": 68489901.17360428,
-     "eth_ref": 34992.64662433603,
-     "gross_positive_usd": 68489901.17360428,
+     "usd": 67586087.85835999,
+     "eth_ref": 34530.87314514021,
+     "gross_positive_usd": 67586087.85835999,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1957.2655337813806,
      "source_timestamp": 1772323199,
@@ -64268,14 +64268,9 @@
     },
     {
      "period": "2026-04",
-     "usd": 5295.516999673729,
-     "eth_ref": 2.3447368854861566,
-     "gross_positive_usd": 5295.516999673729,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2258.4696101523386,
-     "source_timestamp": 1777593599,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2026-05",
@@ -64285,47 +64280,27 @@
     },
     {
      "period": "2026-06",
-     "usd": 275633.91389952274,
-     "eth_ref": 175.8103597032104,
-     "gross_positive_usd": 275633.91389952274,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1567.791081053624,
-     "source_timestamp": 1782863999,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2026-07",
-     "usd": 154854.24660262035,
-     "eth_ref": 83.09970280513241,
-     "gross_positive_usd": 154854.24660262035,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1863.4753359557892,
-     "source_timestamp": 1785542399,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2026-08",
-     "usd": 205533.74197087687,
-     "eth_ref": 83.19095048220846,
-     "gross_positive_usd": 205533.74197087687,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2470.62620128175,
-     "source_timestamp": 1788220799,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2026-09",
-     "usd": 220143.1753491856,
-     "eth_ref": 82.22812829418766,
-     "gross_positive_usd": 220143.1753491856,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2677.2246908208726,
-     "source_timestamp": 1790812799,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     }
    ],
    "how_earns": "IPOR Fusion vault: wstETH collateral, USDC into InfiniFi siUSD; wound down, debt 0.02 USDC at the snapshot",
@@ -64336,8 +64311,8 @@
    "classification_scope": "on-chain product book (this study); months without dollar debt",
    "peak": {
     "eth_ref": {
-     "period": "2026-06",
-     "value": 175.8103597032104
+     "period": "2025-11",
+     "value": 0.5902506888273252
     }
    },
    "baseline": {
@@ -82036,20 +82011,20 @@
     },
     {
      "period": "2025-10",
-     "usd": 0.0,
-     "eth_ref": 0.0,
-     "gross_positive_usd": 0.0,
+     "usd": 36817570.76602,
+     "eth_ref": 9551.35329754628,
+     "gross_positive_usd": 36817570.76602,
      "negative_usd": 0.0,
      "reference_ETH_USD": 3854.696776369726,
      "source_timestamp": 1761955199,
      "status": "observed",
-     "observed_zero": true
+     "observed_zero": false
     },
     {
      "period": "2025-11",
-     "usd": 70955.74330309442,
-     "eth_ref": 23.754485115328862,
-     "gross_positive_usd": 70955.74330309442,
+     "usd": 33715405.37809,
+     "eth_ref": 11287.206051665591,
+     "gross_positive_usd": 33715405.37809,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2987.0461497524275,
      "source_timestamp": 1764547199,
@@ -82058,31 +82033,31 @@
     },
     {
      "period": "2025-12",
-     "usd": 0.0,
-     "eth_ref": 0.0,
-     "gross_positive_usd": 0.0,
+     "usd": 29126771.87415,
+     "eth_ref": 9802.00092478724,
+     "gross_positive_usd": 29126771.87415,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2971.512867387555,
      "source_timestamp": 1767225599,
      "status": "observed",
-     "observed_zero": true
+     "observed_zero": false
     },
     {
      "period": "2026-01",
-     "usd": 0.0,
-     "eth_ref": 0.0,
-     "gross_positive_usd": 0.0,
+     "usd": 19363831.79359,
+     "eth_ref": 7840.372684095834,
+     "gross_positive_usd": 19363831.79359,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2469.7591012311773,
      "source_timestamp": 1769903999,
      "status": "observed",
-     "observed_zero": true
+     "observed_zero": false
     },
     {
      "period": "2026-02",
-     "usd": 14664.093471783912,
-     "eth_ref": 7.492132885747651,
-     "gross_positive_usd": 14664.093471783912,
+     "usd": 7895383.51556,
+     "eth_ref": 4033.8847127739214,
+     "gross_positive_usd": 7895383.51556,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1957.2655337813806,
      "source_timestamp": 1772323199,
@@ -82091,53 +82066,53 @@
     },
     {
      "period": "2026-03",
-     "usd": 0.0,
-     "eth_ref": 0.0,
-     "gross_positive_usd": 0.0,
+     "usd": 8012076.79613,
+     "eth_ref": 3815.1591372601047,
+     "gross_positive_usd": 8012076.79613,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2100.063590501746,
      "source_timestamp": 1775001599,
      "status": "observed",
-     "observed_zero": true
+     "observed_zero": false
     },
     {
      "period": "2026-04",
-     "usd": 0.0,
-     "eth_ref": 0.0,
-     "gross_positive_usd": 0.0,
+     "usd": 7990300.34338,
+     "eth_ref": 3537.9268808673664,
+     "gross_positive_usd": 7990300.34338,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2258.4696101523386,
      "source_timestamp": 1777593599,
      "status": "observed",
-     "observed_zero": true
+     "observed_zero": false
     },
     {
      "period": "2026-05",
-     "usd": 0.0,
-     "eth_ref": 0.0,
-     "gross_positive_usd": 0.0,
+     "usd": 5809968.47493,
+     "eth_ref": 2891.163309417478,
+     "gross_positive_usd": 5809968.47493,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2009.5608075839248,
      "source_timestamp": 1780271999,
      "status": "observed",
-     "observed_zero": true
+     "observed_zero": false
     },
     {
      "period": "2026-06",
-     "usd": 0.0,
-     "eth_ref": 0.0,
-     "gross_positive_usd": 0.0,
+     "usd": 4174148.34289,
+     "eth_ref": 2662.4391434123927,
+     "gross_positive_usd": 4174148.34289,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1567.791081053624,
      "source_timestamp": 1782863999,
      "status": "observed",
-     "observed_zero": true
+     "observed_zero": false
     },
     {
      "period": "2026-07",
-     "usd": 4481.229714635908,
-     "eth_ref": 2.404770070293125,
-     "gross_positive_usd": 4481.229714635908,
+     "usd": 4833605.5394,
+     "eth_ref": 2593.8661200046477,
+     "gross_positive_usd": 4833605.5394,
      "negative_usd": 0.0,
      "reference_ETH_USD": 1863.4753359557892,
      "source_timestamp": 1785542399,
@@ -82175,8 +82150,8 @@
    "classification_scope": "DefiLlama protocol token breakdown",
    "peak": {
     "eth_ref": {
-     "period": "2025-09",
-     "value": 6725.688366421226
+     "period": "2025-11",
+     "value": 11287.206051665591
     }
    },
    "baseline": {
@@ -82357,14 +82332,14 @@
     },
     {
      "period": "2026-05",
-     "usd": 0.0,
-     "eth_ref": 0.0,
-     "gross_positive_usd": 0.0,
+     "usd": 13123044.73271,
+     "eth_ref": 6530.304872181354,
+     "gross_positive_usd": 13123044.73271,
      "negative_usd": 0.0,
      "reference_ETH_USD": 2009.5608075839248,
      "source_timestamp": 1780271999,
      "status": "observed",
-     "observed_zero": true
+     "observed_zero": false
     },
     {
      "period": "2026-06",
@@ -82419,8 +82394,8 @@
    "classification_scope": "DefiLlama protocol token breakdown",
    "peak": {
     "eth_ref": {
-     "period": "2026-09",
-     "value": 28.312841836672305
+     "period": "2026-05",
+     "value": 6530.304872181354
     }
    },
    "baseline": {
@@ -82900,509 +82875,6 @@
    "flag": ""
   },
   {
-   "id": "carry:liquid-eth:nodebt",
-   "name": "ether.fi Liquid ETH (months without dollar debt)",
-   "category": "loops",
-   "subtype": "",
-   "source_category": "on-chain",
-   "row_kind": "onchain_book",
-   "current": {
-    "period": "snapshot",
-    "usd": null,
-    "eth_ref": null,
-    "status": "missing"
-   },
-   "history": [
-    {
-     "period": "2024-10",
-     "usd": 368095319.83635545,
-     "eth_ref": 146203.0106193482,
-     "gross_positive_usd": 368095319.83635545,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2517.7000000001535,
-     "source_timestamp": 1730419199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2024-11",
-     "usd": 559570339.0797565,
-     "eth_ref": 150259.35319519337,
-     "gross_positive_usd": 559570339.0797565,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3724.030000001734,
-     "source_timestamp": 1733011199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2024-12",
-     "usd": 508443796.4155858,
-     "eth_ref": 152716.5515029974,
-     "gross_positive_usd": 508443796.4155858,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3329.33000000073,
-     "source_timestamp": 1735689599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-01",
-     "usd": 505941218.755238,
-     "eth_ref": 153364.3185725938,
-     "gross_positive_usd": 505941218.755238,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3298.9500000011717,
-     "source_timestamp": 1738367999,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-02",
-     "usd": 354335011.7175014,
-     "eth_ref": 159201.6047613894,
-     "gross_positive_usd": 354335011.7175014,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2225.7000000004837,
-     "source_timestamp": 1740787199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-03",
-     "usd": 294373695.8730564,
-     "eth_ref": 161418.29161691095,
-     "gross_positive_usd": 294373695.8730564,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1823.6700000002752,
-     "source_timestamp": 1743465599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-04",
-     "usd": 317234237.92535645,
-     "eth_ref": 176931.27526531625,
-     "gross_positive_usd": 317234237.92535645,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1792.980000000846,
-     "source_timestamp": 1746057599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-05",
-     "usd": 490876508.4175973,
-     "eth_ref": 194955.5017961008,
-     "gross_positive_usd": 490876508.4175973,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2517.8900000010926,
-     "source_timestamp": 1748735999,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-06",
-     "usd": 478646241.25826174,
-     "eth_ref": 191748.42011462248,
-     "gross_positive_usd": 478646241.25826174,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2496.219999998638,
-     "source_timestamp": 1751327999,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-07",
-     "usd": 740662686.5053865,
-     "eth_ref": 200467.34399336236,
-     "gross_positive_usd": 740662686.5053865,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3694.6799999999525,
-     "source_timestamp": 1754006399,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-10",
-     "usd": 684069075.6030098,
-     "eth_ref": 177463.78386920798,
-     "gross_positive_usd": 684069075.6030098,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3854.696776369726,
-     "source_timestamp": 1761955199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-11",
-     "usd": 441535195.2222043,
-     "eth_ref": 147816.66338124694,
-     "gross_positive_usd": 441535195.2222043,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2987.0461497524275,
-     "source_timestamp": 1764547199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-12",
-     "usd": 437059199.74071044,
-     "eth_ref": 147083.05810735284,
-     "gross_positive_usd": 437059199.74071044,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2971.512867387555,
-     "source_timestamp": 1767225599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-01",
-     "usd": 381107336.4174751,
-     "eth_ref": 154309.5179718106,
-     "gross_positive_usd": 381107336.4174751,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2469.7591012311773,
-     "source_timestamp": 1769903999,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-02",
-     "usd": 211956537.40619022,
-     "eth_ref": 108292.1728032968,
-     "gross_positive_usd": 211956537.40619022,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1957.2655337813806,
-     "source_timestamp": 1772323199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-03",
-     "usd": 309211381.2136115,
-     "eth_ref": 147239.05628959305,
-     "gross_positive_usd": 309211381.2136115,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2100.063590501746,
-     "source_timestamp": 1775001599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-04",
-     "usd": 281416375.5226722,
-     "eth_ref": 124604.8980502731,
-     "gross_positive_usd": 281416375.5226722,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2258.4696101523386,
-     "source_timestamp": 1777593599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-05",
-     "usd": 217386732.7598616,
-     "eth_ref": 108176.24027074031,
-     "gross_positive_usd": 217386732.7598616,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2009.5608075839248,
-     "source_timestamp": 1780271999,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-06",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-07",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    }
-   ],
-   "how_earns": "Veda BoringVault: weETH/wstETH looped on Aave and Spark ($1.18B collateral, 441k WETH debt, health factor 1.03) plus $181M of dollar loans (Aave USDC 13.93%, Morpho RLUSD, USDC and PYUSD) parked in Sentora RLUSD and PRIME vaults and Cap stcUSD",
-   "yield": "not published",
-   "operator": "ether.fi; managed by Nonce",
-   "official_url": "https://app.ether.fi/liquid",
-   "source_url": "",
-   "classification_scope": "on-chain product book (this study); months without dollar debt",
-   "peak": {
-    "eth_ref": {
-     "period": "2025-07",
-     "value": 200467.34399336236
-    }
-   },
-   "baseline": {
-    "period": "2024-10",
-    "usd": 368095319.83635545,
-    "eth_ref": 146203.0106193482,
-    "gross_positive_usd": 368095319.83635545,
-    "negative_usd": 0.0,
-    "reference_ETH_USD": 2517.7000000001535,
-    "source_timestamp": 1730419199,
-    "status": "observed",
-    "observed_zero": false
-   },
-   "flag": "Mixed product: by gross loans mostly a staking loop (E3); dollar carry is the Drone sleeve ($181M direct dollar debt); ether.fi Liquid DefiLlama row excluded as the same vaults"
-  },
-  {
-   "id": "carry:makina-deth:nodebt",
-   "name": "Makina DETH (months without dollar debt)",
-   "category": "loops",
-   "subtype": "",
-   "source_category": "on-chain",
-   "row_kind": "onchain_book",
-   "current": {
-    "period": "snapshot",
-    "usd": null,
-    "eth_ref": null,
-    "status": "missing"
-   },
-   "history": [
-    {
-     "period": "2024-10",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2024-11",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2024-12",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-01",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-02",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-03",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-04",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-05",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-06",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-07",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-10",
-     "usd": 36877211.952257894,
-     "eth_ref": 9566.825639392599,
-     "gross_positive_usd": 36877211.952257894,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3854.696776369726,
-     "source_timestamp": 1761955199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-11",
-     "usd": 33573493.89148381,
-     "eth_ref": 11239.697081434933,
-     "gross_positive_usd": 33573493.89148381,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2987.0461497524275,
-     "source_timestamp": 1764547199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-12",
-     "usd": 29157431.010885384,
-     "eth_ref": 9812.318610795559,
-     "gross_positive_usd": 29157431.010885384,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2971.512867387555,
-     "source_timestamp": 1767225599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-01",
-     "usd": 19444446.046569254,
-     "eth_ref": 7873.013216906936,
-     "gross_positive_usd": 19444446.046569254,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2469.7591012311773,
-     "source_timestamp": 1769903999,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-02",
-     "usd": 7866055.328616432,
-     "eth_ref": 4018.900447002426,
-     "gross_positive_usd": 7866055.328616432,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1957.2655337813806,
-     "source_timestamp": 1772323199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-03",
-     "usd": 8022493.181539854,
-     "eth_ref": 3820.1191705928886,
-     "gross_positive_usd": 8022493.181539854,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2100.063590501746,
-     "source_timestamp": 1775001599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-04",
-     "usd": 8001279.156758393,
-     "eth_ref": 3542.788054703419,
-     "gross_positive_usd": 8001279.156758393,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2258.4696101523386,
-     "source_timestamp": 1777593599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-05",
-     "usd": 5809968.474931314,
-     "eth_ref": 2891.163309418132,
-     "gross_positive_usd": 5809968.474931314,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2009.5608075839248,
-     "source_timestamp": 1780271999,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-06",
-     "usd": 4178436.1334082405,
-     "eth_ref": 2665.174068090851,
-     "gross_positive_usd": 4178436.1334082405,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1567.791081053624,
-     "source_timestamp": 1782863999,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-07",
-     "usd": 4824643.079970729,
-     "eth_ref": 2589.0565798640614,
-     "gross_positive_usd": 4824643.079970729,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1863.4753359557892,
-     "source_timestamp": 1785542399,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    }
-   ],
-   "how_earns": "Makina machine: hub owes 15,065 WETH on Aave against weETH (loop) plus a Morpho wstETH/USDT route (385k USDT) into senPYUSDmain and DQAeETH/DCM shares",
-   "yield": "not published",
-   "operator": "Makina",
-   "official_url": "https://docs.makina.finance/strategies/deployments",
-   "source_url": "",
-   "classification_scope": "on-chain product book (this study); months without dollar debt",
-   "peak": {
-    "eth_ref": {
-     "period": "2025-11",
-     "value": 11239.697081434933
-    }
-   },
-   "baseline": {
-    "period": "2024-10",
-    "usd": null,
-    "eth_ref": null,
-    "status": "missing"
-   },
-   "flag": "Mostly a staking loop (15,065 WETH debt vs 2,499 ETH book); dollar carry is $385k; cached, stale-flagged accounting"
-  },
-  {
    "id": "carry:rocksolid:nodebt",
    "name": "Rocksolid rETH (months without dollar debt)",
    "category": "loops",
@@ -83489,69 +82961,39 @@
     },
     {
      "period": "2025-09",
-     "usd": 7655526.014939549,
-     "eth_ref": 1846.1063252680624,
-     "gross_positive_usd": 7655526.014939549,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 4146.850000000913,
-     "source_timestamp": 1759276799,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2025-10",
-     "usd": 23576763.0491877,
-     "eth_ref": 6116.372938519903,
-     "gross_positive_usd": 23576763.0491877,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3854.696776369726,
-     "source_timestamp": 1761955199,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2025-11",
-     "usd": 19786907.53179433,
-     "eth_ref": 6624.238977169572,
-     "gross_positive_usd": 19786907.53179433,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2987.0461497524275,
-     "source_timestamp": 1764547199,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2025-12",
-     "usd": 22739251.273788515,
-     "eth_ref": 7652.415550123473,
-     "gross_positive_usd": 22739251.273788515,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2971.512867387555,
-     "source_timestamp": 1767225599,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2026-01",
-     "usd": 23548985.371665712,
-     "eth_ref": 9534.93211541422,
-     "gross_positive_usd": 23548985.371665712,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2469.7591012311773,
-     "source_timestamp": 1769903999,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2026-02",
-     "usd": 18898836.66565195,
-     "eth_ref": 9655.734666282067,
-     "gross_positive_usd": 18898836.66565195,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 1957.2655337813806,
-     "source_timestamp": 1772323199,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2026-03",
@@ -83604,8 +83046,8 @@
    "classification_scope": "on-chain product book (this study); months without dollar debt",
    "peak": {
     "eth_ref": {
-     "period": "2026-02",
-     "value": 9655.734666282067
+     "period": "2025-08",
+     "value": 2.3763411783756364e-07
     }
    },
    "baseline": {
@@ -83751,14 +83193,9 @@
     },
     {
      "period": "2026-05",
-     "usd": 13123044.732715128,
-     "eth_ref": 6530.304872183906,
-     "gross_positive_usd": 13123044.732715128,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2009.5608075839248,
-     "source_timestamp": 1780271999,
-     "status": "observed",
-     "observed_zero": false
+     "usd": null,
+     "eth_ref": null,
+     "status": "missing"
     },
     {
      "period": "2026-06",
@@ -83793,8 +83230,8 @@
    "classification_scope": "on-chain product book (this study); months without dollar debt",
    "peak": {
     "eth_ref": {
-     "period": "2026-05",
-     "value": 6530.304872183906
+     "period": "2025-08",
+     "value": 0.0031
     }
    },
    "baseline": {
@@ -83804,190 +83241,6 @@
     "status": "missing"
    },
    "flag": "Own-credit loop: about 98% of the dollars go into the issuer's own savUSD; size is avETH face supply, not a verified NAV"
-  },
-  {
-   "id": "carry:liquity-carry:nodebt",
-   "name": "Liquity ETH Carry (months without dollar debt)",
-   "category": "farming",
-   "subtype": "vaults",
-   "source_category": "on-chain",
-   "row_kind": "onchain_book",
-   "current": {
-    "period": "snapshot",
-    "usd": null,
-    "eth_ref": null,
-    "status": "missing"
-   },
-   "history": [
-    {
-     "period": "2024-10",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2024-11",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2024-12",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-01",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-02",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-03",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-04",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-05",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-06",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-07",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-10",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-11",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-12",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-01",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-02",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-03",
-     "usd": 67252.367033326,
-     "eth_ref": 32.02396695866628,
-     "gross_positive_usd": 67252.367033326,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2100.063590501746,
-     "source_timestamp": 1775001599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-04",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-05",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-06",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-07",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    }
-   ],
-   "how_earns": "IPOR Fusion vault: wstETH Trove on Ebisu (4,585 wstETH, 6.75M ebUSD debt at 2.55%, 44% LTV), ebUSD into Curve and Uniswap v4 ebUSD/USDC pools; the name says Liquity, the loan is Ebisu",
-   "yield": "not published",
-   "operator": "Sentinel (IPOR Fusion vault)",
-   "official_url": "https://app.ipor.io/fusion/ethereum/0xb9e806e8f2d94c015ffefa90cd24ecce18f1663c",
-   "source_url": "",
-   "classification_scope": "on-chain product book (this study); months without dollar debt",
-   "peak": {
-    "eth_ref": {
-     "period": "2026-03",
-     "value": 32.02396695866628
-    }
-   },
-   "baseline": {
-    "period": "2024-10",
-    "usd": null,
-    "eth_ref": null,
-    "status": "missing"
-   },
-   "flag": "DefiLlama lists it under IPOR Fusion (\"rETH Liquity LP Carry\"); taken out of the IPOR Fusion row"
   },
   {
    "id": "carry:royco-eth:nodebt",
@@ -84172,389 +83425,6 @@
     "status": "missing"
    },
    "flag": "Stale accounting (getNetAum reverts, isAccountingFresh false) and zero immediate maxWithdraw; the wrapper is a Concrete vault, so check it stays out if the Concrete row returns"
-  },
-  {
-   "id": "carry:vesper-vaeth:nodebt",
-   "name": "Vesper vaETH (months without dollar debt)",
-   "category": "farming",
-   "subtype": "vaults",
-   "source_category": "on-chain",
-   "row_kind": "onchain_book",
-   "current": {
-    "period": "snapshot",
-    "usd": null,
-    "eth_ref": null,
-    "status": "missing"
-   },
-   "history": [
-    {
-     "period": "2024-10",
-     "usd": 2784451.88997902,
-     "eth_ref": 1105.9506255625572,
-     "gross_positive_usd": 2784451.88997902,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2517.7000000001535,
-     "source_timestamp": 1730419199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2024-11",
-     "usd": 4307889.981197512,
-     "eth_ref": 1156.7817609405686,
-     "gross_positive_usd": 4307889.981197512,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3724.030000001734,
-     "source_timestamp": 1733011199,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2024-12",
-     "usd": 3879218.0549333557,
-     "eth_ref": 1165.1647793797868,
-     "gross_positive_usd": 3879218.0549333557,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 3329.33000000073,
-     "source_timestamp": 1735689599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2025-01",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-02",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-03",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-04",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-05",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-06",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-07",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-10",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-11",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-12",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-01",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-02",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-03",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-04",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-05",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-06",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-07",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    }
-   ],
-   "how_earns": "vaETH pool with eight strategies (lending, nested pools, liquidity); one XY strategy posts 57 WETH on Aave, borrows 69k DAI into Vesper vDAI",
-   "yield": "not published",
-   "operator": "Vesper (Bloq)",
-   "official_url": "https://app.vesper.finance",
-   "source_url": "",
-   "classification_scope": "on-chain product book (this study); months without dollar debt",
-   "peak": {
-    "eth_ref": {
-     "period": "2024-12",
-     "value": 1165.1647793797868
-    }
-   },
-   "baseline": {
-    "period": "2024-10",
-    "usd": 2784451.88997902,
-    "eth_ref": 1105.9506255625572,
-    "gross_positive_usd": 2784451.88997902,
-    "negative_usd": 0.0,
-    "reference_ETH_USD": 2517.7000000001535,
-    "source_timestamp": 1730419199,
-    "status": "observed",
-    "observed_zero": false
-   },
-   "flag": "Carry is one strategy (57 WETH) in a 1,052 ETH lending/liquidity pool"
-  },
-  {
-   "id": "carry:reservoir-eth:nodebt",
-   "name": "Reservoir ETH Yield (months without dollar debt)",
-   "category": "farming",
-   "subtype": "vaults",
-   "source_category": "on-chain",
-   "row_kind": "onchain_book",
-   "current": {
-    "period": "snapshot",
-    "usd": null,
-    "eth_ref": null,
-    "status": "missing"
-   },
-   "history": [
-    {
-     "period": "2024-10",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2024-11",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2024-12",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-01",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-02",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-03",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-04",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-05",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-06",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-07",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-10",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-11",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2025-12",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-01",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-02",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-03",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-04",
-     "usd": 2763352.522599662,
-     "eth_ref": 1223.5508993248168,
-     "gross_positive_usd": 2763352.522599662,
-     "negative_usd": 0.0,
-     "reference_ETH_USD": 2258.4696101523386,
-     "source_timestamp": 1777593599,
-     "status": "observed",
-     "observed_zero": false
-    },
-    {
-     "period": "2026-05",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-06",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-07",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-08",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    },
-    {
-     "period": "2026-09",
-     "usd": null,
-     "eth_ref": null,
-     "status": "missing"
-    }
-   ],
-   "how_earns": "IPOR Fusion vault: 21.2 WETH on Aave borrowing 36.8k USDC (HF 1.28) into Reservoir savings (wsrUSD), which borrows again inside",
-   "yield": "not published",
-   "operator": "Reservoir",
-   "official_url": "https://app.ipor.io/fusion/ethereum/0xf6cd9e8415162c8fb3c52676c7ca68812a34f76e/vault-info",
-   "source_url": "",
-   "classification_scope": "on-chain product book (this study); months without dollar debt",
-   "peak": {
-    "eth_ref": {
-     "period": "2026-04",
-     "value": 1223.5508993248168
-    }
-   },
-   "baseline": {
-    "period": "2024-10",
-    "usd": null,
-    "eth_ref": null,
-    "status": "missing"
-   },
-   "flag": "IPOR Fusion vault, so probably also inside fusion-by-ipor"
   }
  ],
  "chains": [
@@ -100701,7 +99571,7 @@
   "gross_positive_usd": 49381149193.00097,
   "negative_usd": 0.0,
   "coverage": {
-   "expected": 177,
+   "expected": 172,
    "observed": 167,
    "missing": 0,
    "stale": 0,

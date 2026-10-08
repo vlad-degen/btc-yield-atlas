@@ -1,6 +1,6 @@
 {
- "site_sha256": "bfab035344b9906b4d8bf7cf721ac22c161cdf55a24bdae8a30d40dc7947f7d6",
- "recorded_utc": "2026-10-07T23:47:02+00:00",
+ "site_sha256": "0032534a289379bd0e70ac13f752c57e494cbd4079c2dc3a9d15da91eeebb070",
+ "recorded_utc": "2026-10-08T01:35:57+00:00",
  "tool": "Claude in-app browser (Chromium), desktop and mobile 375x812 emulation; no console errors",
  "all_recorded_checks_passed": true,
  "checks": [
@@ -12,6 +12,11 @@
   {
    "viewport": "desktop",
    "check": "carry_share_and_debt",
+   "passed": true
+  },
+  {
+   "viewport": "desktop",
+   "check": "lending_gross_panel",
    "passed": true
   },
   {
@@ -112,6 +117,11 @@
   {
    "viewport": "mobile",
    "check": "carry_share_and_debt",
+   "passed": true
+  },
+  {
+   "viewport": "mobile",
+   "check": "lending_gross_panel",
    "passed": true
   },
   {

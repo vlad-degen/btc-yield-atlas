@@ -399,3 +399,22 @@ function atCarryProducts(){
 }
 const _atPrevCCR2=carryCategoryRender;carryCategoryRender=function(){_atPrevCCR2();try{atCarryProducts()}catch(e){}};
 const _atPrevFinalCP=atlasFinal;atlasFinal=function(){_atPrevFinalCP();try{atCarryProducts()}catch(e){}};
+
+// ETH in lending markets before counting once, against BTC on the same basis (data: tools/eth/netmap/07_lending_gross.py).
+function atLendingGross(){
+ const G=R.atlasTop5Risk?.lendingGross,host=$('#market-history');if(!G||!host||$('#at-lending-gross'))return;
+ const T=G.totals,P=G.eth_usd,B=G.btc,held=T.plain_eth+T.staking_tokens_eth,bUSD=B.total_btc*B.btc_usd;
+ const M=v=>(v/1e6).toFixed(2)+'M ETH',U=v=>ATUSD(v*P),pc=(a,b)=>Math.round(a/b*100)+'%';
+ const rows=G.protocols.slice(0,8).map(r=>`<tr><td>${esc(r.name)}</td><td class="n">${num(r.staking_tokens_eth/1e3,0)}k</td><td class="n">${num(r.plain_eth/1e3,0)}k</td><td class="n">${num((r.staking_tokens_eth+r.plain_eth)/1e3,0)}k</td><td class="n sub">${num(r.lent_out_eth/1e3,0)}k</td></tr>`).join('');
+ host.insertAdjacentHTML('beforebegin',`<div class="panel" id="at-lending-gross"><h3>ETH in lending markets, before counting once</h3>
+<p class="sub">Aave, Spark, Morpho, Compound and ${G.protocols.length-4} more on every chain hold ${M(held)} (${U(held)}) as collateral or unlent supply, on the same basis as the BTC study. The map shows only ${M(T.plain_eth)} of it under Money markets, because the rest is already counted elsewhere.</p>
+<div class="tblwrap"><table><thead><tr><th>Where it is counted</th><th class="n">ETH</th><th class="n">$</th><th class="n">Share</th></tr></thead><tbody>
+<tr><td><b>Staking tokens posted as collateral</b> (weETH, wstETH, rsETH, osETH)<div class="sub">Counted once, at Lido, ether.fi, Kelp and the other issuers, in Staking and Restaking</div></td><td class="n">${M(T.staking_tokens_eth)}</td><td class="n">${U(T.staking_tokens_eth)}</td><td class="n">${pc(T.staking_tokens_eth,held)}</td></tr>
+<tr><td><b>Plain WETH as collateral or not lent</b><div class="sub">Counted nowhere else: this is the Money markets switch (off by default)</div></td><td class="n">${M(T.plain_eth)}</td><td class="n">${U(T.plain_eth)}</td><td class="n">${pc(T.plain_eth,held)}</td></tr>
+<tr><td><b>Total held in lending markets</b></td><td class="n"><b>${M(held)}</b></td><td class="n"><b>${U(held)}</b></td><td class="n">100%</td></tr>
+<tr><td class="sub">Not added: WETH lent out to borrowers<div class="sub">Borrowers mostly stake it and post it back as collateral, so adding it would count the same ETH twice. BTC excludes lent-out BTC the same way.</div></td><td class="n sub">${M(T.lent_out_eth)}</td><td class="n sub">${U(T.lent_out_eth)}</td><td></td></tr>
+</tbody></table></div>
+<p><b>Against BTC on the same basis:</b> ${M(held)} (${U(held)}) of ETH against ${num(B.total_btc/1e3,0)}k BTC (${ATUSD(bUSD)}) in money markets. The difference is the form: ${pc(T.staking_tokens_eth,held)} of the ETH is posted as staking tokens that keep earning while they sit as collateral, so the map counts it under staking; ${pc(B.plain_btc,B.total_btc)} of the BTC is plain wBTC and cbBTC earning about zero, so the BTC map counts it under Money markets.</p>
+<details class="more"><summary>By protocol</summary><div class="body tblwrap"><table><thead><tr><th>Protocol</th><th class="n">Staking tokens</th><th class="n">Plain WETH</th><th class="n">Held</th><th class="n">Lent out</th></tr></thead><tbody>${rows}</tbody></table><p class="note">DefiLlama token breakdown at the 2 October snapshot, ETH at ${ATUSD(P)}. BTC: the BTC study, 20 September 2026, ETH and BTC priced at their own snapshot.</p></div></details></div>`);
+}
+const _atPrevFinalLG=atlasFinal;atlasFinal=function(){_atPrevFinalLG();try{atLendingGross()}catch(e){}};

@@ -6,7 +6,7 @@ def run():
  modules=['discover','normalize','pilot_analyze','benchmark_analyze','vault_history_analyze','catalog','pilot_balance','package_metrics','report_tables','history_synthesis','economics','lending_synthesis','dependency_graph','evidence','presentation_analysis','market_data_probe','carry_economics_build','carry_borrow_history','market_netting_build','carry_attribution_build','carry_attribution_recycling','carry_attribution_organic','carry_attribution_tranches','carry_attribution_close','backing_exit_build','basis_closure_build','build_product_chapters','closure_reports']
  modules += ['funding_atlas_build','strategy_universe_expansion_build','carry_variants_expansion_build','credit_expansion_build','credit_expansion_deep_build','strategy_universe_deep_build','funding_borrower_deep_build','manager_case_build','research_expansion_build']
  # counted-once market map: offline steps over the saved DefiLlama pulls (fetch: netmap/01_fetch.py, 02b, 02c)
- for step in ['02_screen','03_build','04_chapter','05_verify','06_crosscheck']:
+ for step in ['02_screen','03_build','04_chapter','05_verify','06_crosscheck','07_lending_gross']:
   r=subprocess.run([sys.executable,str(ROOT/'tools/eth/netmap'/f'{step}.py')],cwd=ROOT/'tools/eth/netmap',capture_output=True,text=True)
   if r.returncode:print(step,'failed:',r.stdout[-2500:],r.stderr[-2500:]);raise SystemExit(r.returncode)
  modules=['atlas_build']+modules

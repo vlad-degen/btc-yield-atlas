@@ -46,6 +46,9 @@ def run():
             if r['slug'].endswith(':nodebt') and float(r['eth'] or 0) >= 1:
                 nd.setdefault(r['product'].replace(' (months without dollar debt)', ''), []).append(r['month'])
         out['noDebtMonths'] = {k: sorted(v) for k, v in nd.items()}
+    lg = D / 'netmap' / 'lending_gross.json'
+    if lg.exists():
+        out['lendingGross'] = json.loads(lg.read_text())
     spath = D / 'gap_borrower_scan.csv'  # full scan of 7 Oct: every venue, every wallet over $5M
     if spath.exists():
         out['borrowers'] = {r['address'].lower(): {'who': r['who'], 'kind': r['category'], 'pooled_product': r['pooled_product'], 'product_if_any': r['product_if_any'], 'dollar_debt_usd_T': r['eth_backed_stablecoin_debt_usd_T'], 'venues': r['venues'], 'cluster': r['cluster'], 'destination_of_dollars': r['first_hops_of_dollars'], 'evidence': r['evidence'][:300]} for r in csv.DictReader(spath.open())}
