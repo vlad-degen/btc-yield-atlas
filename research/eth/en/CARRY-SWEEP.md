@@ -112,7 +112,8 @@ No other pooled borrower turned up in Curve, Liquity, Maker, Euler, Silo, Gearbo
 
   A small L2 product could sit in the unread part.
 - **Not read:**
-  - Aave Polygon and BNB, and Compound Base: log limits and rate limits.
+  - Aave Polygon (about 12,054 ETH, the split's estimate) and Compound Base (about 3,552 ETH, estimate): log limits and rate limits.
+  - Aave BNB, Mantle and Celo were read after the tables above. BNB has 6,819 ETH backing dollar debt and 5 positions of at least 100 ETH, all EOAs or EIP-7702 accounts, 4,549 ETH in all. Mantle has 27 ETH and Celo 358 ETH, with no position at that size. The BNB positions are in the CSV.
   - HyperLend was read after the tables above: 94% of its UETH supply, 588 ETH backing dollar debt in all. One position qualifies: EOA 0x6a64167f, 199 ETH against $0.17M. It is in the CSV.
   - Dolomite Botanix.
 - **Counterparty check is partial.** It covers only the last 150 or so ERC-20 transfers, on Ethereum only. L2 EOAs had only the registry check.
