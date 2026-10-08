@@ -65,9 +65,9 @@
       "label": "Basis",
       "color": "#4fa3c7",
       "default": true,
-      "how": "Hold ETH and short ETH perpetuals or futures, paid in ETH.",
+      "how": "Hold ETH and short ETH perpetuals or futures, paid in ETH. Ethena is not counted: its depositors hold dollars, not ETH; its ETH basis leg was $94M in May 2026 and all its crypto basis about $39M in July.",
       "payer": "Traders who pay funding to be long.",
-      "scope": "Hold ETH and short ETH perpetuals or futures, paid in ETH.",
+      "scope": "Hold ETH and short ETH perpetuals or futures, paid in ETH. Ethena is not counted: its depositors hold dollars, not ETH; its ETH basis leg was $94M in May 2026 and all its crypto basis about $39M in July.",
       "yield_scope": "Traders who pay funding to be long.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
@@ -102361,7 +102361,7 @@
   "products_count_default": 133,
   "presentation_universe": {
     "source_path": "data/eth/netmap/market_chapter.json",
-    "source_sha256": "599903b4494dfd88f06f5b23f287bb886ad64e0d18b5b28fc27dea853583323a",
+    "source_sha256": "f38cb0bdda40a2108f74526bf89b32eb3e703a61e8be81d0e8afc0c742b15d56",
     "policy": "Counted once, as in the BTC map."
   }
 }

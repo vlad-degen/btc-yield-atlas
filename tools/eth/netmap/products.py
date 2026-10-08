@@ -23,7 +23,7 @@ CATEGORIES = [
          how='A staked-ETH token split into principal and yield (Pendle, Spectra); the principal side locks in a rate.',
          payer='Buyers of the yield side, who pay up front for the future staking yield and points.'),
     dict(id='basis', label='Basis', color='#4fa3c7', default=True,
-         how='Hold ETH and short ETH perpetuals or futures, paid in ETH.',
+         how='Hold ETH and short ETH perpetuals or futures, paid in ETH. Ethena is not counted: its depositors hold dollars, not ETH; its ETH basis leg was $94M in May 2026 and all its crypto basis about $39M in July.',
          payer='Traders who pay funding to be long.'),
     dict(id='options', label='Options', color='#c75a8a', default=True,
          how='Sell call or put options on ETH and collect the premium.',

@@ -127,10 +127,10 @@ function atProduct(id){
    <div class="fdw">${atFlowSVG('fd-'+id,c.flow)}</div><ol class="fsteps">${c.steps.map(t=>`<li>${t}</li>`).join('')}</ol></div>
   ${atKeys(p)}
   <div class="cols"><div class="panel"><h3>Who pays the yield</h3><dl class="kv">${c.pays.map(([a,b])=>`<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`).join('')}</dl></div>${atBook(p,color)}</div>
-  <div class="cols">${atHolders(p)}${atEvents(c,id)}</div>${id==='liquid'?atLiquidLoop():''}
+  <div class="cols">${atHolders(p)}${atEvents(c,id)}</div>
   <div id="atp-risk"></div>
   <p class="lesson"><b>Lesson.</b> ${esc(c.lesson)}</p>${ATDIVE[id]?`<p class="sub"><a href="top5/${ATDIVE[id]}.html">Full deep dive: yield by week, holders, growth, operator economics \u2192</a></p>`:''}</article>`;
- atRiskPanel(id);const rp=$('#atlas-risk-'+id);if(rp)$('#atp-risk').replaceWith(rp);
+ const rph=$('#atp-risk');if(rph)rph.remove();
  return true;}
 
 // reader edition: the BTC template replaces the earlier chapter for the five; Closed keeps its own renderer
