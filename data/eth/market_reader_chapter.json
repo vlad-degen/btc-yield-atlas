@@ -10,10 +10,10 @@
       "label": "Staking",
       "color": "#5b8def",
       "default": true,
-      "how": "Staked and held, not used anywhere else.",
-      "payer": "The Ethereum protocol (issuance), plus priority fees and MEV.",
-      "scope": "Staked and held, not used anywhere else.",
-      "yield_scope": "The Ethereum protocol (issuance), plus priority fees and MEV.",
+      "how": "ETH that is staked and held, and nothing else.",
+      "payer": "Ethereum itself: new issuance, plus fees and MEV.",
+      "scope": "ETH that is staked and held, and nothing else.",
+      "yield_scope": "Ethereum itself: new issuance, plus fees and MEV.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
     {
@@ -21,10 +21,10 @@
       "label": "Restaking",
       "color": "#8a6fe0",
       "default": true,
-      "how": "Staked ETH that also secures other services (EigenLayer, Symbiotic), held and not used anywhere else.",
-      "payer": "Staking income plus service fees and token incentives from the restaking platform, its services and the issuer.",
-      "scope": "Staked ETH that also secures other services (EigenLayer, Symbiotic), held and not used anywhere else.",
-      "yield_scope": "Staking income plus service fees and token incentives from the restaking platform, its services and the issuer.",
+      "how": "Staked ETH that also secures other services through EigenLayer or Symbiotic, and is held.",
+      "payer": "Staking, plus fees and token rewards from the services and the issuer.",
+      "scope": "Staked ETH that also secures other services through EigenLayer or Symbiotic, and is held.",
+      "yield_scope": "Staking, plus fees and token rewards from the services and the issuer.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
     {
@@ -32,10 +32,10 @@
       "label": "Leveraged staking",
       "color": "#3fae9a",
       "default": true,
-      "how": "Staked ETH looped against borrowed ETH on lending markets, private and product.",
-      "payer": "The gap between the staking yield and the ETH borrow rate, paid by staking; ETH lenders take the borrow rate.",
-      "scope": "Staked ETH looped against borrowed ETH on lending markets, private and product.",
-      "yield_scope": "The gap between the staking yield and the ETH borrow rate, paid by staking; ETH lenders take the borrow rate.",
+      "how": "Stake ETH, borrow ETH against it, stake again. Private wallets and vaults on Aave, Spark and Morpho.",
+      "payer": "Staking yield above the ETH borrow rate; ETH lenders get the borrow rate.",
+      "scope": "Stake ETH, borrow ETH against it, stake again. Private wallets and vaults on Aave, Spark and Morpho.",
+      "yield_scope": "Staking yield above the ETH borrow rate; ETH lenders get the borrow rate.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
     {
@@ -43,10 +43,10 @@
       "label": "Carry",
       "color": "#e07c49",
       "default": true,
-      "how": "The part of products open for deposits where ETH is collateral for a dollar loan.",
-      "payer": "Dollar borrowers and stablecoin issuers on the parked dollars, minus the dollar borrow rate; often token rewards.",
-      "scope": "The part of products open for deposits where ETH is collateral for a dollar loan.",
-      "yield_scope": "Dollar borrowers and stablecoin issuers on the parked dollars, minus the dollar borrow rate; often token rewards.",
+      "how": "Open products that borrow dollars against ETH and put them to work; only the ETH behind the loans.",
+      "payer": "Whoever pays on the parked dollars, minus the loan rate; often stablecoin rewards.",
+      "scope": "Open products that borrow dollars against ETH and put them to work; only the ETH behind the loans.",
+      "yield_scope": "Whoever pays on the parked dollars, minus the loan rate; often stablecoin rewards.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
     {
@@ -54,10 +54,10 @@
       "label": "Fixed yield",
       "color": "#d4a23c",
       "default": true,
-      "how": "A staked-ETH token split into principal and yield (Pendle, Spectra); the principal side locks in a rate.",
-      "payer": "Buyers of the yield side, who pay up front for the future staking yield and points.",
-      "scope": "A staked-ETH token split into principal and yield (Pendle, Spectra); the principal side locks in a rate.",
-      "yield_scope": "Buyers of the yield side, who pay up front for the future staking yield and points.",
+      "how": "Staked ETH split into principal and yield (Pendle, Spectra); the principal locks in a rate.",
+      "payer": "Buyers of the yield side, betting on future staking yield and points.",
+      "scope": "Staked ETH split into principal and yield (Pendle, Spectra); the principal locks in a rate.",
+      "yield_scope": "Buyers of the yield side, betting on future staking yield and points.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
     {
@@ -65,9 +65,9 @@
       "label": "Basis",
       "color": "#4fa3c7",
       "default": true,
-      "how": "Hold ETH and short ETH perpetuals or futures, paid in ETH. Ethena is not counted: its depositors hold dollars, not ETH; its ETH basis leg was $94M in May 2026 and all its crypto basis about $39M in July.",
+      "how": "Hold ETH and short ETH futures for the funding. Ethena is not here: its depositors hold dollars, not ETH, and its ETH leg is small (all crypto basis about $39M in July).",
       "payer": "Traders who pay funding to be long.",
-      "scope": "Hold ETH and short ETH perpetuals or futures, paid in ETH. Ethena is not counted: its depositors hold dollars, not ETH; its ETH basis leg was $94M in May 2026 and all its crypto basis about $39M in July.",
+      "scope": "Hold ETH and short ETH futures for the funding. Ethena is not here: its depositors hold dollars, not ETH, and its ETH leg is small (all crypto basis about $39M in July).",
       "yield_scope": "Traders who pay funding to be long.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
@@ -87,9 +87,9 @@
       "label": "Credit",
       "color": "#9c6b4e",
       "default": true,
-      "how": "Lend ETH to named borrowers (market makers, funds) or cover their credit risk; counted as supplied, lent out included.",
+      "how": "Lend ETH to named market makers and funds, or cover their loans (Cap).",
       "payer": "The borrowers.",
-      "scope": "Lend ETH to named borrowers (market makers, funds) or cover their credit risk; counted as supplied, lent out included.",
+      "scope": "Lend ETH to named market makers and funds, or cover their loans (Cap).",
       "yield_scope": "The borrowers.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
@@ -98,10 +98,10 @@
       "label": "Farming and pools",
       "color": "#6aa84f",
       "default": true,
-      "how": "DEX, perp and bridge pools (the ETH side that no other row counts), managed strategy vaults and points programmes.",
-      "payer": "Traders (fees), borrowers in the venues the vault lends to, and token incentives.",
-      "scope": "DEX, perp and bridge pools (the ETH side that no other row counts), managed strategy vaults and points programmes.",
-      "yield_scope": "Traders (fees), borrowers in the venues the vault lends to, and token incentives.",
+      "how": "DEX and bridge pools, strategy vaults and points programmes.",
+      "payer": "Trading fees, borrowers and token incentives.",
+      "scope": "DEX and bridge pools, strategy vaults and points programmes.",
+      "yield_scope": "Trading fees, borrowers and token incentives.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
     {
@@ -109,10 +109,10 @@
       "label": "Money markets",
       "color": "#7f8c9a",
       "default": false,
-      "how": "ETH and staking tokens posted in lending markets outside loops and carry products: mostly collateral for dollar loans by unknown wallets, off by default as in the BTC map.",
-      "payer": "The staking yield on staking tokens posted as collateral; plain WETH not lent out earns nothing. We do not know who holds it or what the loans fund.",
-      "scope": "ETH and staking tokens posted in lending markets outside loops and carry products: mostly collateral for dollar loans by unknown wallets, off by default as in the BTC map.",
-      "yield_scope": "The staking yield on staking tokens posted as collateral; plain WETH not lent out earns nothing. We do not know who holds it or what the loans fund.",
+      "how": "All other ETH and staking tokens in lending markets, mostly collateral for dollar loans. Off by default, as in BTC.",
+      "payer": "Staking yield on staked collateral; plain WETH earns nothing. Who holds it and what the loans fund is unknown.",
+      "scope": "All other ETH and staking tokens in lending markets, mostly collateral for dollar loans. Off by default, as in BTC.",
+      "yield_scope": "Staking yield on staked collateral; plain WETH earns nothing. Who holds it and what the loans fund is unknown.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     },
     {
@@ -120,9 +120,9 @@
       "label": "CDP collateral",
       "color": "#a0a8b3",
       "default": false,
-      "how": "ETH and staking tokens posted to mint a stablecoin (Sky, Liquity, crvUSD).",
+      "how": "ETH posted to mint a stablecoin (Sky, Liquity, crvUSD).",
       "payer": "Nobody for plain ETH; staking tokens keep their staking yield.",
-      "scope": "ETH and staking tokens posted to mint a stablecoin (Sky, Liquity, crvUSD).",
+      "scope": "ETH posted to mint a stablecoin (Sky, Liquity, crvUSD).",
       "yield_scope": "Nobody for plain ETH; staking tokens keep their staking yield.",
       "measurement": "Products counted once: staking tokens held inside other products or posted in lending markets are counted where they are used (lending markets: leveraged staking, carry products, money markets)."
     }
@@ -103494,7 +103494,7 @@
   "products_count_default": 137,
   "presentation_universe": {
     "source_path": "data/eth/netmap/market_chapter.json",
-    "source_sha256": "f2749b2a7431780c8491ef402f5b3b87104bd3483ae73d9aaf9d0acb97c9af93",
+    "source_sha256": "401548015c9163b3fefcd414a53cea93476ad11f20d36afcf0769257785ab307",
     "policy": "Counted once, as in the BTC map."
   }
 }

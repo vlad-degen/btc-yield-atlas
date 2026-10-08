@@ -1,6 +1,6 @@
 # Coverage of the ETH yield market
 
-Financial snapshot: **2 October 2026**. What the counted-once map includes, what it lists without counting, and what it leaves out. Map total: **15,924,980 ETH** in 133 products (products holding at least $50k at the snapshot, the BTC map's listing threshold; 64 ETH in smaller rows stays in the total).
+Financial snapshot: **2 October 2026**. What the counted-once map includes, what it lists without counting, and what it leaves out. Map total: **15,924,980 ETH** in 137 products (products holding at least $50k at the snapshot, the BTC map's listing threshold; 64 ETH in smaller rows stays in the total).
 
 ## By category
 

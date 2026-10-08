@@ -21,7 +21,7 @@ const fdBot=(x,t,s,a)=>({x,y:270,w:170,h:84,t,s,a});
 const ATP={
  liquid:{
   facts:[['Depositors own','177,171 ETH','$473M, Ethereum and Optimism'],['Live since','June 2024','Veda vault, run by Nonce for ether.fi'],['Paid, a year','3.37%','2 years; stETH 2.71%; Sep 3.2%'],['Without rewards','3.39%','last year; actual 3.87%; rewards 34% of the lead over stETH'],['Holders','9,304','7,793 Ethereum, 1,511 Optimism'],['Health factor','1.03 / 1.27','ETH loop / weakest dollar loan']],
-  sub:'Out along the top, back along the bottom. A fifth of the book is an ETH loop on Aave and Spark (36,821 ETH of equity); the dollar loans are a side sleeve whose largest lender is the same Sentora vault Liquid parks in.',
+  sub:'Out along the top, back along the bottom. Most of the book is an ETH loop on Aave and Spark; the dollar loans sit beside it, and their biggest lender is the Sentora vault Liquid parks the dollars in.',
   flow:{w:1000,h:370,label:'Liquid ETH: deposits become weETH and wstETH, looped against WETH on Aave and Spark; a side account borrows dollars and parks them in Sentora and Cap vaults; staking, interest and rewards raise the share price',
    nodes:[fdTop(10,'You',['ETH, weETH or eETH']),fdTop(210,'Liquid ETH vault',['177,171 ETH','Veda; Nonce runs it'],[ATES+'0xf0bb20865277aBd641a307eCe5Ee04E79073416C','0xf0bb…416C'],1),
     fdTop(410,'ETH loop',['$1.18B weETH/wstETH;','410k WETH borrowed'],['https://app.aave.com/','Aave and Spark']),
@@ -57,7 +57,7 @@ const ATP={
   lesson:'Trading fees can carry a dollar loan; whether the depositor beats stETH depends on who gets the rewards.'},
  'lido-earn':{
   facts:[['Depositors own','83,309 ETH','$222M; Earn ETH holds stRATEGY'],['Live since','Nov 2025','stRATEGY; Earn ETH later'],['Paid, a year','3.06%','2 Sep to 2 Oct, a year; stETH 2.25%'],['Without rewards','3.14%','90 days: no rewards in the price'],['Holders','2,500','Ethereum'],['Health factor','1.035 / 2.12','ETH loops / USDT account']],
-  sub:'Mostly a wstETH loop. A separate account borrows USDT and parks it in Lido’s own dollar vault, of which it is half.',
+  sub:'Mostly a wstETH and rsETH loop. A separate account borrows USDT and parks it in Lido’s own dollar vault, of which it is half.',
   flow:{w:1000,h:370,label:'Lido Earn ETH: deposits go into stRATEGY, which loops wstETH against WETH on Aave and Spark and runs a USDT account parked in earnUSD; staking and interest raise the share price',
    nodes:[fdTop(10,'You',['ETH, stETH or wstETH']),fdTop(210,'Earn ETH',['83,309 ETH;','Mellow Core vault'],[ATES+'0xBBFC8683C8fE8cF73777feDE7ab9574935fea0A4','0xBBFC…a0A4'],1),fdTop(410,'stRATEGY',['84,664 ETH; three','loop accounts']),
     {x:610,y:30,w:180,h:84,t:'wstETH and rsETH loops',s:['355k WETH borrowed on','Aave and Spark; HF 1.035']},{x:610,y:130,w:180,h:70,t:'USDT account',s:['$25.6M at 4.33%'],a:[ATES+'0x181cb55f872450d16ae858d532b4e35e50eaa76d','0x181c…a76d']},
