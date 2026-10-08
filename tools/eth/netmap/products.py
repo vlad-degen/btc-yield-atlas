@@ -38,8 +38,8 @@ CATEGORIES = [
          how='ETH and staking tokens posted in lending markets outside loops and carry products: mostly collateral for dollar loans by unknown wallets, off by default as in the BTC map.',
          payer='The staking yield on staking tokens posted as collateral; plain WETH not lent out earns nothing. We do not know who holds it or what the loans fund.'),
     dict(id='cdp', label='CDP collateral', color='#a0a8b3', default=False,
-         how='ETH posted to mint a stablecoin (Sky, Liquity, crvUSD).',
-         payer='Nobody: the collateral itself earns nothing.'),
+         how='ETH and staking tokens posted to mint a stablecoin (Sky, Liquity, crvUSD).',
+         payer='Nobody for plain ETH; staking tokens keep their staking yield.'),
 ]
 
 # staking-token symbol -> issuer slug (DefiLlama)

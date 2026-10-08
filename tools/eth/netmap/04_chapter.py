@@ -78,15 +78,14 @@ def total(rows):
 
 def main():
     prods = [product(s) for s in VALUES if any(v for v in VALUES[s].values())]
-    # staking tokens used elsewhere (lending markets, loops, counted products): the site's 'all staked ETH' toggle adds them back
-    used = {}
-    for r in csv.DictReader(open(os.path.join(OUT, 'netting_ledger.csv'))):
-        if r['reason'].startswith('staking token'):
-            used.setdefault(r['to'], {}).setdefault(r['month'], 0.0)
-            used[r['to']][r['month']] += float(r['eth'])
+    # staking tokens used elsewhere (lending markets, loops, products, restaking platforms): issuer value before netting
+    # minus the counted value; the site's 'all staked ETH' toggle adds it back
+    G = json.load(open(os.path.join(OUT, 'issuer_gross.json')))
     for p in prods:
-        if p['category'] in ('staking', 'restaking') and p['id'] in used:
-            p['used_elsewhere_eth'] = [round(used[p['id']].get(l, 0.0), 4) for l in LABELS]
+        if p['category'] in ('staking', 'restaking') and ':' not in p['id']:
+            u = [max(0.0, (G.get(l, {}).get(p['id']) or 0.0) - (VALUES[p['id']].get(l) or 0.0)) for l in LABELS]
+            if any(x > 0.5 for x in u):
+                p['used_elsewhere_eth'] = [round(x, 4) for x in u]
     prods.sort(key=lambda p: -(p['current']['eth_ref'] or 0))
     # constant cohort: products observed with a positive value at every month-end
     cohort = [p['id'] for p in prods if all(h['eth_ref'] for h in p['history'])]

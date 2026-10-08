@@ -4,7 +4,7 @@ Financial snapshot: **2 October 2026**, Ethereum block 26,108,081.
 
 ## Findings
 
-- **Carry is 1.1% of ETH that earns a yield**: 171,649 ETH, the part of 12 products open for deposits where ETH is collateral for a dollar loan, owing **$270.9M** of dollar debt. BTC shows 9.9%, but the BTC map counts the whole book of each carry product. The rest of the ETH books goes by the same rules as everything else: loops to leveraged staking, held staking tokens to their issuers.
+- **Carry is 1.1% of ETH that earns a yield**: 171,649 ETH, the part of 12 products open for deposits where ETH is collateral for a dollar loan, owing **$270.9M** of dollar debt. BTC shows 9.8%, but the BTC map counts the whole book of each carry product. The rest of the ETH books goes by the same rules as everything else: loops to leveraged staking, held staking tokens to their issuers.
 - **Two products dominate.** Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 82% of the carry ETH.
 - **Private mandates borrow as much as all the products.** Concrete Delta ($176.15M, one Bitfinex-linked wallet) and three whitelist-only rSHARE vaults run by one operator owe about $252M between them; both are left out of the map.
 - **The spread is thin.** Liquid ETH beat stETH by 0.66 pp a year over two years; its loop added +0.02 pp and its dollar leg -0.13 pp. Only YieldBasis covers its loan from fees.

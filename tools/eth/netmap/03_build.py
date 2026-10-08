@@ -166,8 +166,10 @@ def build():
     def row_value(slug, r, br):
         """step-1 value of a DefiLlama row (ETH) and the breakdown whose tokens it takes from other rows (None: takes none)"""
         cat = r['category']
-        if cat in ('lending', 'cdp'):
+        if cat == 'lending':
             return plain_eth(br), None
+        if cat == 'cdp':  # staking tokens posted in a CDP are used, not just held: they count here and leave their issuer
+            return sum(br.values()), br
         br = {k: v for k, v in br.items() if k not in loop_tokens}
         if r.get('kind') == 'pools' and not slug.startswith('pools:'):
             # DEX, perp and bridge pools count the ETH no other row counts: the staking-token or product-token side of a
@@ -204,6 +206,7 @@ def build():
     lend_rows = LAY.lending_rows(dl, leftover_from)
     loops_meta, rest_meta = {}, {}
 
+    gross_step1 = {}
     for label, pdate, _ in PTS:
         pr = prices[label]
         L = layer[label]
@@ -235,6 +238,7 @@ def build():
             vals[slug] = v
             if hbr is not None and (slug not in DEC.ISSUER_SLUGS or slug in DEC.LRT_ISSUERS or slug in DEC.HOLDS_TOKENS):
                 held[slug] = (v, {i: x for i, x in lst_holdings(hbr).items() if i != slug})
+        gross_step1[label] = {k: v for k, v in vals.items() if v}  # issuer value before any netting (site toggle: all staked ETH)
         # 2. carry products: the carry part of the book is the row; the whole book replaces the DefiLlama rows that count it
         taken = collections.defaultdict(float)
         for slug, r in carry.items():
@@ -379,6 +383,7 @@ def build():
                           kind=None, source='lending split at the snapshot (ETH borrowed against staking tokens, counted once); month-ends '
                           'estimated from the venue\'s ETH debt')
     LAYER.update(layer=layer, meta=LM, parts=parts)
+    json.dump(gross_step1, open(os.path.join(OUT, 'issuer_gross.json'), 'w'), indent=0, sort_keys=True)
     return result, meta, ledger
 
 

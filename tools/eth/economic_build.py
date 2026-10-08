@@ -1,5 +1,5 @@
 """A source-calculated dollar-financing ledger, never a proxy carry-equity total."""
-import csv, hashlib, json, math
+import collections, csv, hashlib, json, math
 from pathlib import Path
 from economic_capture import words,address,TOKENS
 from carry_economics_build import accrue,borrow_assets
@@ -48,6 +48,17 @@ def run():
    for h in p['history']:
     d=g.get((p['id'],'dollar_debt_usd',h['month']))
     if d is not None:h.update(debtUSD=d,apr=g.get((p['id'],'borrow_rate_debt_weighted',h['month'])) if d>=1 else None,source='gap_top5_risk_series.csv')
+ # 8 Oct account reads (data/eth/netmap/carry_accounts_monthly.csv): Avant's Aave v4 spoke and Morpho weETH/RLUSD legs by month,
+ # which the leg inventory does not have; added to its month-end dollar debt.
+ cam=ROOT/'data/eth/netmap/carry_accounts_monthly.csv'
+ if cam.exists():
+  extra=collections.defaultdict(float)
+  for r in csv.DictReader(cam.open()):
+   if r['product']=='avant-aveth' and r['venue'] in ('aave-v4','morpho'):extra[r['month']]+=float(r['dollar_debt_usd'] or 0)
+  for p in products:
+   if p['id']=='avant':
+    for h in p['history']:
+     if extra.get(h['month']):h['debtUSD']=(h['debtUSD'] or 0)+extra[h['month']];h['source']=(h.get('source') or '')+' + carry_accounts_monthly.csv'
  # 7 Oct full borrower scan (data/eth/gap_borrower_scan.csv): Avant's strategy wallet also owes $8.97M on an Aave v4 spoke
  # and $0.65M of RLUSD on Morpho against weETH, all ETH-backed. Only the snapshot is replaced; the rate stays that of the read legs.
  scan=ROOT/'data/eth/gap_borrower_scan.csv'
