@@ -113,7 +113,7 @@ No other pooled borrower turned up in Curve, Liquity, Maker, Euler, Silo, Gearbo
   A small L2 product could sit in the unread part.
 - **Not read:**
   - Aave Polygon and BNB, and Compound Base: log limits and rate limits.
-  - HyperLend: its whole UETH supply was about 3,035 ETH, so at most a few positions are missed.
+  - HyperLend was read after the tables above: 94% of its UETH supply, 588 ETH backing dollar debt in all. One position qualifies: EOA 0x6a64167f, 199 ETH against $0.17M. It is in the CSV.
   - Dolomite Botanix.
 - **Counterparty check is partial.** It covers only the last 150 or so ERC-20 transfers, on Ethereum only. L2 EOAs had only the registry check.
 - **Dollar debt includes EURe on Gnosis.** It is a fiat stablecoin; 9,952 ETH on one EOA backs EURe.
