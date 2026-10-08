@@ -314,11 +314,17 @@ def build():
             inner = sum(vals.get(s) or 0 for s in deducts) if deducts != 'LRT' else lrt_total
             if plat == 'symbiotic':  # positions of counted rows that sit in a Symbiotic vault, the smaller of the two each month
                 for s2, (t_row, t_plat) in DEC.SYMBIOTIC_ALSO.items():
-                    if vals.get(s2):
-                        x = min((ebr.get(s2) or {}).get(t_row, 0.0), br.get(t_plat, 0.0), vals[s2])
+                    if vals.get(s2) or taken.get(('cap', s2)):
+                        x = min((ebr.get(s2) or {}).get(t_row, 0.0), br.get(t_plat, 0.0), (vals.get(s2) or 0.0) + taken.get(('cap', s2), 0.0))
                         inner += x
                         if x >= 1:
                             ledger.append((label, s2, plat, x, 'position in a Symbiotic vault, counted in the row that holds it'))
+            if plat == 'symbiotic':
+                for s2, share in DEC.SYMBIOTIC_EXTRA:
+                    x = min((vals.get(s2) or 0.0) * share, max(0.0, gross - inner))
+                    inner += x
+                    if x >= 1:
+                        ledger.append((label, s2, plat, x, 'position in a Symbiotic vault, counted in the row that holds it'))
             net = max(0.0, gross - inner)
             vals[plat] = net
             ledger.append((label, plat, plat, gross - net, 'restaking-token issuers already count this'))

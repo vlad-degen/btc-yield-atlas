@@ -12,8 +12,8 @@
 
 ## 0. Short answers
 
-1. **15,936,175 ETH ($42.54B) earns a yield in 133 products, each counted once.** Staking 11.90M (74.7%), leveraged staking 2.89M (18.1%), farming 528k (3.3%), restaking 419k (2.6%), carry 172k (1.1%), credit 27k, fixed yield 9k, options 2k. Money markets (3.23M ETH and staking tokens posted in lending markets outside loops and carry products) and CDPs (765k) are listed and off by default. About 14.4M ETH more is staked off-chain (exchanges, institutional providers, BitMine) and not counted.
-2. **Two years: staking and loops grew, restaking and farming shrank.** Total 16.28M (Oct 2024), peak 17.26M (Jan 2026), low 15.21M (Jun 2026), 15.94M now. Staking +2.05M (9.59M to 11.90M). Leveraged staking 2.25M, peak 4.28M (Jan 2026), 2.59M after the April rsETH exploit (May 2026), 2.89M now. Restaking fell from 2.51M to 0.42M as weETH and rsETH moved into lending markets. Farming fell from 1.58M to 0.53M, fixed yield from 313k to 9k. Carry is the only new category: nearly zero until August 2025, 172k ETH now.
+1. **15,920,754 ETH ($42.50B) earns a yield in 133 products, each counted once.** Staking 11.90M (74.8%), leveraged staking 2.89M (18.1%), farming 528k (3.3%), restaking 419k (2.6%), carry 172k (1.1%), credit 27k, fixed yield 9k, options 2k. Money markets (3.23M ETH and staking tokens posted in lending markets outside loops and carry products) and CDPs (765k) are listed and off by default. About 14.4M ETH more is staked off-chain (exchanges, institutional providers, BitMine) and not counted.
+2. **Two years: staking and loops grew, restaking and farming shrank.** Total 16.28M (Oct 2024), peak 17.25M (Jan 2026), low 15.20M (Jun 2026), 15.94M now. Staking +2.05M (9.59M to 11.90M). Leveraged staking 2.25M, peak 4.28M (Jan 2026), 2.59M after the April rsETH exploit (May 2026), 2.89M now. Restaking fell from 2.51M to 0.42M as weETH and rsETH moved into lending markets. Farming fell from 1.58M to 0.53M, fixed yield from 313k to 9k. Carry is the only new category: nearly zero until August 2025, 172k ETH now.
 3. **Carry is small and concentrated.** 12 products owe $270.9M of dollars against 171,649 ETH, 1.1% of the map (BTC 9.8%, counted on whole books). Liquid ETH and YieldBasis hold 77% of the debt; Liquid ETH and Lido Earn hold 82% of the carry ETH.
 4. **Carry barely beats staking.** The best product, Liquid ETH, beat stETH by 0.66 pp a year over two years, all of it in year two, and mostly from a fee cut. Its dollar leg loses about $6.8M a year at 2 October rates. YieldBasis is the only one whose fees cover its loan, and its depositors still trail stETH unless they take YB emissions.
 5. **Rewards are a minority of the lead over stETH,** except at YieldBasis (all of it, for gauge stakers) and Liquity (99%). Liquid: 34%. Lido Earn: none in 90 days. Avant: 7%.
@@ -24,10 +24,10 @@
 
 | Category | ETH | Share | Note |
 |---|---:|---:|---|
-| Staking | 11,896,566 | 74.7% | Lido 6.59M, Binance 3.73M, Rocket Pool 0.46M, cbETH 0.36M (on-chain supply); staked and held only |
+| Staking | 11,901,177 | 74.8% | Lido 6.59M, Binance 3.73M, Rocket Pool 0.46M, cbETH 0.36M (on-chain supply); staked and held only |
 | Leveraged staking | 2,885,012 | 18.1% | Aave v3 and v2 2.07M, Spark 0.53M, Morpho, Fluid and others; equity about 313k ETH |
-| Farming | 528,228 | 3.3% | points, pools (the ETH side no other row counts), vaults |
-| Restaking | 416,743 | 2.6% | EigenLayer direct 0.21M, ether.fi Stake 0.07M, Renzo 0.04M; weETH 1.83M and rsETH 0.39M sit in lending markets |
+| Farming | 513,618 | 3.3% | points, pools (the ETH side no other row counts), vaults |
+| Restaking | 411,377 | 2.6% | EigenLayer direct 0.21M, ether.fi Stake 0.07M, Renzo 0.04M; weETH 1.83M and rsETH 0.39M sit in lending markets |
 | Carry | 171,649 | 1.1% | 12 products, $270.9M of dollar debt; only the ETH behind those loans |
 | Credit, fixed yield, options, basis | about 38,000 | 0.2% | credit counts lent-out ETH too; basis is nearly empty |
 | Money markets (off) | 3,231,215 | | ETH and staking tokens posted in lending markets outside loops and carry products |
@@ -49,7 +49,7 @@ Counting rules, the same at every month-end: a staking token, or another product
 | Farming | 1.58M | Oct 2024 | 0.53M |
 | Fixed yield | 313k | Oct 2024 | 9k |
 | Carry | 0 | now | 172k |
-| Total | 16.28M | 17.26M, Jan 2026 | 15.94M |
+| Total | 16.28M | 17.25M, Jan 2026 | 15.94M |
 
 Restaking paid nothing extra: weETH earned 5.29% against stETH's 5.49% over two years in total, and EIGEN fell from about $3.4 to $0.20. Points programmes ended and farming left with them. Leveraged staking stays large on a thin spread: stETH beat the Aave WETH borrow rate by only 0.15 pp a year on average in year one and 0.10 pp in year two ([RESTAKING-AND-LOOPS](RESTAKING-AND-LOOPS.md)). It fell from 4.28M in January 2026 to 2.59M in May, after the April rsETH exploit. Its history is an estimate (month-end ETH debt times the snapshot ratio of loop collateral to debt); carry history is measured account by account.
 

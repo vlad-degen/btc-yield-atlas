@@ -125,11 +125,10 @@ readerAnswer=function(){atHero();atMeaning();const T=marketTotals();atLabel('#m-
 function atMeaning(){
  const ol=$('.market-conclusions ol');if(!ol)return;
  ol.innerHTML=[
-  '<b>ETH carry has to beat staking; BTC carry only has to beat zero.</b> Staked ETH earns 2.2 to 2.7%, so the dollar leg must add on top. Liquid ETH beat stETH by 0.66 pp a year over two years, but neither its ETH loop (+0.02 pp) nor its dollar leg (\u22120.13 pp) explains it. All of the lead came in year two (2.86% vs 2.93% for stETH to October 2025, then 3.86% vs 2.47%), and the fee cut from 1.10 to 0.26 pp of NAV a year is most of that turn. YieldBasis and Vesper trailed stETH in September.',
-  '<b>Rewards are a small part of ETH carry, except at YieldBasis and Liquity.</b> Without rewards Liquid ETH still earned 3.39% over the last year against 3.87% (rewards are 34% of its lead over stETH); Lido Earn has none in its price and Avant 7%. Liquity\u2019s lead over stETH is 99% rewards, and a YieldBasis gauge staker earns +1.69% only because of YB emissions (\u22122.96% unstaked). Live programmes at the snapshot: $2.7M a year to Liquid from the RLUSD and PYUSD side, $0.5M of YB.',
-  '<b>The same dollar vaults fund BTC and ETH carry.</b> Liquid ETH parks $55M in Sentora’s RLUSD vault, where 53% of the money is lent to Kraken’s kBTC loop, and $50M in the PYUSD vault that is 95% PRIME home-equity credit. A loss there hits both markets at once.',
-  '<b>Private mandates borrow as much as all ETH carry products together.</b> Concrete Delta (one Bitfinex-linked wallet, $176M of stablecoin debt) and three whitelist-only rSHARE vaults ($80.4M) owe $256.5M; the 12 carry products owe $271M. Across every lending venue, 38 wallets owe more than $20M each against ETH ($2.28B); only four of them are pooled products. The demand for large ETH-backed dollar loans comes from single principals, not from depositors.',
-  '<b>The loan currency decides the spread.</b> On 2 October Aave charged 13.93% for USDC and 4.38% for USDT; Morpho USDT cost 3.2%. Liquid’s 7.79% average comes from its $65M Aave USDC leg. Pick the cheapest hub currency, not the venue.'
+  '<b>Carry barely beats staking.</b> ETH carry has to beat staked ETH at about 2.5%, not zero. The best product, Liquid ETH, beat stETH by 0.66 pp a year over two years, mostly thanks to a fee cut; its dollar leg loses about $6.8M a year at 2 October rates.',
+  '<b>Less of it is subsidy than in BTC.</b> Rewards are a third of Liquid\u2019s lead over stETH and none of Lido Earn\u2019s, against 82% at Kraken. Liquity and YieldBasis are the exceptions: their lead is almost all token rewards.',
+  '<b>The real dollar demand is private.</b> 38 wallets owe over $20M each against ETH, $2.3B in total, and only four of them are products; all carry products together owe $271M.',
+  '<b>BTC and ETH carry share the same dollar vaults.</b> Liquid parks $55M in Sentora\u2019s RLUSD vault, and half of that vault is lent to Kraken\u2019s kBTC loop. A loss there hits both markets at once.'
  ].map(t=>'<li>'+t+'</li>').join('');
 }
 
@@ -213,8 +212,8 @@ const ATLAND=[
 ];
 readerLandscape=function(){
  const R30=Object.fromEntries((R.reportContract.matched30dReturns||[]).map(r=>[r.name,r]));
- const rows=ATLAND.map(([name,status,how,risk,id])=>{const c=(R.reportContract.census||[]).find(p=>p.name===name)||{},f=EQ.products.find(p=>p.id===id),r=R30[name];
-  return `<tr><td><b>${esc(name)}</b></td><td>${esc(status)}</td><td>${esc(how)}</td><td class="n">${r?(r.bookReturnPct*365/30).toFixed(2)+'%<div class="sub">'+(r.excessPercentagePoints>=0?'+':'')+(r.excessPercentagePoints*365/30).toFixed(2)+' pp vs stETH</div>':''}</td><td class="n">${c.bookETH!=null?ATK(c.bookETH)+' ETH':''}<div class="sub">${f&&f.current.debtUSD?ATUSD(f.current.debtUSD)+' debt':''}</div></td><td>${esc(risk)}</td></tr>`;}).join('');
+ const rows=ATLAND.map(([name,status,how,risk,id,sz])=>{const c=(R.reportContract.census||[]).find(p=>p.name===name)||{},f=EQ.products.find(p=>p.id===id),r=R30[name];
+  return `<tr><td><b>${esc(name)}</b></td><td>${esc(status)}</td><td>${esc(how)}</td><td class="n">${r?(r.bookReturnPct*365/30).toFixed(2)+'%<div class="sub">'+(r.excessPercentagePoints>=0?'+':'')+(r.excessPercentagePoints*365/30).toFixed(2)+' pp vs stETH</div>':(sz?'<span class="sub">not published</span>':'')}</td><td class="n">${sz?sz[0]:(c.bookETH!=null?ATK(c.bookETH)+' ETH':'')}<div class="sub">${sz?sz[1]:(f&&f.current.debtUSD?ATUSD(f.current.debtUSD)+' debt':'')}</div></td><td>${esc(risk)}</td></tr>`;}).join('');
  $('#strict-landscape').innerHTML=`<table id="reader-landscape-table"><thead><tr><th>Product</th><th>Status</th><th>What it does</th><th class="n">Paid, a year (30 days)</th><th class="n">Size</th><th>What to take from it</th></tr></thead><tbody>${rows}</tbody></table>`;
  $('#strict-census-note').innerHTML='Returns are the book share value over 2 September to 2 October, annualised, against stETH over the same dates. Rocksolid’s Liquity shares are counted once, in Liquity. <a href="data/carry-status-and-capital.csv" download>Status and size CSV</a>';
 };
@@ -333,7 +332,7 @@ const _atPrevAnswer4=readerAnswer;readerAnswer=function(){_atPrevAnswer4();atCov
 
 // Borrower table: names from the 7 Oct identification (data/eth/gap_borrowers.csv via atlas_build.py).
 (function(){const ID=R.atlasTop5Risk?.borrowers;const B=R.borrowersChapter;if(!ID||!B)return;const walk=v=>{if(Array.isArray(v))v.forEach(walk);else if(v&&typeof v==='object'){const k=String(v.address||'').toLowerCase();if(k&&ID[k]&&'who' in v){v.who=ID[k].who;v.evidence=(ID[k].pooled_product==='yes'?'Pooled product. ':ID[k].pooled_product==='no'?'Not a pooled product. ':'Private vault. ')+(ID[k].destination_of_dollars?'Dollars went to: '+ID[k].destination_of_dollars+'. ':'')+'Full trace in Borrower identities.';}Object.values(v).forEach(walk);}};walk(B);})();
-ATLAND.splice(1,0,['Private rSHARE vaults (three managers)','Private; not counted','Three whitelist-only WETH receipt vaults (about 83k WETH) whose managers borrow $87.1M of dollars, 10.6M EURCV and 75k WETH against it, into RockawayX, Sentora, Hastra, Wintermute and Pendle vaults','Same operator (managers created the same day, gas from the same exchange); depositors look like one principal; shares cannot move and the owner sets NAV off-chain, never posted. Like Concrete, a mandate, not a product.','']);
+ATLAND.splice(1,0,['Private rSHARE vaults (three managers)','Private; not counted','Three whitelist-only WETH receipt vaults whose managers post the WETH on Aave and Morpho and borrow $80.4M of dollars (read on-chain at 2 October), 10.6M EURCV and 75k WETH against it, into RockawayX, Sentora, Hastra, Wintermute and Pendle vaults','Same operator (managers created the same day, gas from the same exchange); depositors look like one principal; shares cannot move and the owner sets NAV off-chain, never posted. Like Concrete, a mandate, not a product.','',['about 83k ETH','$80.4M debt']]);
 
 // Reader pruning to the BTC page's scope (parity audit 7 Oct, research/eth/review/parity-audit-2026-10-07).
 function atPrune(){

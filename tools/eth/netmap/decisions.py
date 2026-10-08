@@ -217,10 +217,19 @@ OVERLAPS = [
     ('upshift', 'gain', lambda vals, label: vals.get('gain') or 0.0),                       # Kelp Gain vaults run on Upshift; count once
     # YieldBasis' WETH/crvUSD pool is a Curve pool, so Curve DEX also counts its WETH (about the depositors' ETH at 2x)
     ('carry:yieldbasis-weth', 'curve-dex', lambda vals, label: vals.get('carry:yieldbasis-weth') or 0.0),
+    # Cap's slashable cover (credit) is Symbiotic vaults whose stake comes from other map rows; counted once, in Cap.
+    # Shares of Cap's 22,679 ETH at the snapshot, read on-chain (research/eth/en/CREDIT-CHECK.md), applied to Cap's value each month
+    ('cap', 'vesper', lambda vals, label: (vals.get('cap') or 0.0) * 6264 / 22679),            # Vesper-wstETH vault (Odyssey)
+    ('cap', 'veda', lambda vals, label: (vals.get('cap') or 0.0) * 8354 / 22679),              # ether.fi weETHs (M11 Credit vault), booked by Veda
+    ('cap', 'mellow-restaking', lambda vals, label: (vals.get('cap') or 0.0) * 2187 / 22679),  # Renzo pzETH, Pareto amphrETH, Re7LRT vaults
+    ('cap', 'stakestone-stone', lambda vals, label: (vals.get('cap') or 0.0) * 5711 / 22679),  # STONE's Symbiotic vault
 ]
+# Cap positions also counted by the net Symbiotic row beyond SYMBIOTIC_ALSO: the Stakestone vault (share of Cap's value)
+SYMBIOTIC_EXTRA = [('cap', 5872 / 22679)]
 
 # rows that report gross collateral, scaled to depositor equity (product-notes review, at the snapshot)
-SCALE = {'origami-finance': 9 / 455, 'index-coop': 110 / 309}
+SCALE = {'origami-finance': 9 / 455, 'index-coop': 110 / 309,
+         'native-credit-pool': 2078 / 2134}  # DefiLlama counts traders' own WETH on Base and Arbitrum (CREDIT-CHECK.md)
 
 # issuer rows whose backing is read on-chain instead of DefiLlama (supply x exchange rate at month-end blocks)
 ONCHAIN_ISSUER = {'coinbase-wrapped-staked-eth': 'cbeth_onchain.json'}  # DefiLlama showed 189k ETH; cbETH backs 449k at T

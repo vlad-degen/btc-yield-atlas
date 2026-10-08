@@ -2163,7 +2163,7 @@ month,from,to,eth,reason
 2025-08,lista-cdp,stakestone-stone,1.84,staking token held by a counted product
 2025-08,mantle-restaking,meth-protocol,151399.09,staking token held by a counted product
 2025-08,mantle-restaking,veda,151399.09,nested holding
-2025-08,mellow-restaking,lido,93943.06,staking token held by a counted product
+2025-08,mellow-restaking,lido,93942.88,staking token held by a counted product
 2025-08,napier,dinero-(pxeth),40.85,staking token held by a counted product
 2025-08,napier,ether.fi-stake,7.72,staking token held by a counted product
 2025-08,napier,lido,965.07,staking token held by a counted product
@@ -2235,7 +2235,7 @@ month,from,to,eth,reason
 2025-08,swell-l2-farm,stakestone-stone,9.92,staking token held by a counted product
 2025-08,swell-l2-farm,swell-liquid-restaking,1693.5,staking token held by a counted product
 2025-08,swell-l2-farm,swell-liquid-staking,590.9,staking token held by a counted product
-2025-08,symbiotic,symbiotic,245529.19,restaking-token issuers already count this
+2025-08,symbiotic,symbiotic,245529.48,restaking-token issuers already count this
 2025-08,terminal-finance-pre-deposits,ether.fi-stake,9315.52,staking token held by a counted product
 2025-08,theo-straddle-vaults,ether.fi-stake,1248.73,staking token held by a counted product
 2025-08,tranchess-yield,ether.fi-stake,7.17,staking token held by a counted product
@@ -2252,9 +2252,9 @@ month,from,to,eth,reason
 2025-08,vaultcraft,lido,5.74,staking token held by a counted product
 2025-08,vaultcraft,stader,6.34,staking token held by a counted product
 2025-08,veda,ether.fi-stake,55344.35,ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH
-2025-08,vesper,coinbase-wrapped-staked-eth,71.0,staking token held by a counted product
-2025-08,vesper,lido,453.25,staking token held by a counted product
-2025-08,vesper,rocket-pool,12.23,staking token held by a counted product
+2025-08,vesper,coinbase-wrapped-staked-eth,70.98,staking token held by a counted product
+2025-08,vesper,lido,453.12,staking token held by a counted product
+2025-08,vesper,rocket-pool,12.22,staking token held by a counted product
 2025-08,vesper,symbiotic,187.04,"position in a Symbiotic vault, counted in the row that holds it"
 2025-08,yieldnest,frax-ether,40.59,staking token held by a counted product
 2025-08,yieldnest,meth-protocol,53.45,staking token held by a counted product
@@ -2285,6 +2285,11 @@ month,from,to,eth,reason
 2025-09,canopy,kelp,2718.0,staking token held by a counted product
 2025-09,canopy,renzo,118.14,staking token held by a counted product
 2025-09,cap,lido,3038.96,staking token held by a counted product
+2025-09,cap,mellow-restaking,293.06,nested holding
+2025-09,cap,stakestone-stone,765.27,nested holding
+2025-09,cap,symbiotic,786.84,"position in a Symbiotic vault, counted in the row that holds it"
+2025-09,cap,veda,1119.43,nested holding
+2025-09,cap,vesper,839.37,nested holding
 2025-09,carry:liquid-eth,veda,192310.39,DefiLlama row already counts this product
 2025-09,carry:reservoir-eth,fusion-by-ipor,2428.8,DefiLlama row already counts this product
 2025-09,carry:rocksolid,lagoon,1846.11,DefiLlama row already counts this product
@@ -2380,7 +2385,7 @@ month,from,to,eth,reason
 2025-09,makina,carry:makina-deth,6725.69,product token held by a counted product
 2025-09,mantle-restaking,meth-protocol,138753.42,staking token held by a counted product
 2025-09,mantle-restaking,veda,138753.42,nested holding
-2025-09,mellow-restaking,lido,87871.95,staking token held by a counted product
+2025-09,mellow-restaking,lido,87578.89,staking token held by a counted product
 2025-09,napier,dinero-(pxeth),3.26,staking token held by a counted product
 2025-09,napier,ether.fi-stake,1.72,staking token held by a counted product
 2025-09,napier,lido,930.8,staking token held by a counted product
@@ -2450,7 +2455,7 @@ month,from,to,eth,reason
 2025-09,swell-l2-farm,stakestone-stone,10.02,staking token held by a counted product
 2025-09,swell-l2-farm,swell-liquid-restaking,1622.2,staking token held by a counted product
 2025-09,swell-l2-farm,swell-liquid-staking,564.45,staking token held by a counted product
-2025-09,symbiotic,symbiotic,226812.99,restaking-token issuers already count this
+2025-09,symbiotic,symbiotic,227306.77,restaking-token issuers already count this
 2025-09,terminal-finance-pre-deposits,ether.fi-stake,9122.62,staking token held by a counted product
 2025-09,theo-straddle-vaults,ether.fi-stake,397.13,staking token held by a counted product
 2025-09,tranchess-yield,ether.fi-stake,7.04,staking token held by a counted product
@@ -2467,9 +2472,9 @@ month,from,to,eth,reason
 2025-09,vaultcraft,kelp,2.92,staking token held by a counted product
 2025-09,vaultcraft,stader,6.33,staking token held by a counted product
 2025-09,veda,ether.fi-stake,55414.39,ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH
-2025-09,vesper,coinbase-wrapped-staked-eth,66.37,staking token held by a counted product
-2025-09,vesper,lido,422.56,staking token held by a counted product
-2025-09,vesper,rocket-pool,11.47,staking token held by a counted product
+2025-09,vesper,coinbase-wrapped-staked-eth,36.64,staking token held by a counted product
+2025-09,vesper,lido,233.27,staking token held by a counted product
+2025-09,vesper,rocket-pool,6.33,staking token held by a counted product
 2025-09,vesper,symbiotic,187.62,"position in a Symbiotic vault, counted in the row that holds it"
 2025-09,yieldnest,frax-ether,40.35,staking token held by a counted product
 2025-09,yieldnest,meth-protocol,52.95,staking token held by a counted product
@@ -2499,6 +2504,11 @@ month,from,to,eth,reason
 2025-10,canopy,kelp,2678.26,staking token held by a counted product
 2025-10,canopy,renzo,131.38,staking token held by a counted product
 2025-10,cap,lido,11058.37,staking token held by a counted product
+2025-10,cap,mellow-restaking,1066.39,nested holding
+2025-10,cap,stakestone-stone,2784.71,nested holding
+2025-10,cap,symbiotic,2863.21,"position in a Symbiotic vault, counted in the row that holds it"
+2025-10,cap,veda,4073.44,nested holding
+2025-10,cap,vesper,1856.88,nested holding
 2025-10,carry:avant-aveth,avant-aveth,2171.43,DefiLlama row already counts this product
 2025-10,carry:liquid-eth,veda,177463.78,DefiLlama row already counts this product
 2025-10,carry:makina-deth,makina,9551.35,DefiLlama row already counts this product
@@ -2593,7 +2603,7 @@ month,from,to,eth,reason
 2025-10,lista-cdp,stakestone-stone,1.85,staking token held by a counted product
 2025-10,mantle-restaking,meth-protocol,107303.56,staking token held by a counted product
 2025-10,mantle-restaking,veda,107303.56,nested holding
-2025-10,mellow-restaking,lido,76132.78,staking token held by a counted product
+2025-10,mellow-restaking,lido,75066.39,staking token held by a counted product
 2025-10,napier,dinero-(pxeth),1.74,staking token held by a counted product
 2025-10,napier,ether.fi-stake,1.01,staking token held by a counted product
 2025-10,napier,lido,790.23,staking token held by a counted product
@@ -2656,7 +2666,7 @@ month,from,to,eth,reason
 2025-10,stafi,stafi,2331.06,leftover: balance unchanged since 2025-01
 2025-10,stakestone-berachain-vault,stakestone-stone,769.62,staking token held by a counted product
 2025-10,swell-l2-farm,swell-l2-farm,32330.76,leftover: balance unchanged since 2025-10
-2025-10,symbiotic,symbiotic,183623.89,restaking-token issuers already count this
+2025-10,symbiotic,symbiotic,185420.71,restaking-token issuers already count this
 2025-10,terminal-finance-pre-deposits,ether.fi-stake,8670.32,staking token held by a counted product
 2025-10,theo-straddle-vaults,ether.fi-stake,304.07,staking token held by a counted product
 2025-10,tranchess-yield,ether.fi-stake,7.04,staking token held by a counted product
@@ -2673,9 +2683,6 @@ month,from,to,eth,reason
 2025-10,vaultcraft,kelp,2.89,staking token held by a counted product
 2025-10,vaultcraft,stader,2.48,staking token held by a counted product
 2025-10,veda,ether.fi-stake,54130.0,ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH
-2025-10,vesper,coinbase-wrapped-staked-eth,65.68,staking token held by a counted product
-2025-10,vesper,lido,421.97,staking token held by a counted product
-2025-10,vesper,rocket-pool,11.41,staking token held by a counted product
 2025-10,vesper,symbiotic,187.56,"position in a Symbiotic vault, counted in the row that holds it"
 2025-10,yieldnest,frax-ether,40.15,staking token held by a counted product
 2025-10,yieldnest,meth-protocol,52.97,staking token held by a counted product
@@ -2705,7 +2712,11 @@ month,from,to,eth,reason
 2025-11,canopy,kelp,1787.51,staking token held by a counted product
 2025-11,canopy,renzo,18.14,staking token held by a counted product
 2025-11,cap,lido,9944.93,staking token held by a counted product
+2025-11,cap,mellow-restaking,983.07,nested holding
 2025-11,cap,origin-ether,249.38,product token held by a counted product
+2025-11,cap,stakestone-stone,2567.12,nested holding
+2025-11,cap,veda,3755.16,nested holding
+2025-11,cap,vesper,1931.5,nested holding
 2025-11,carry:avant-aveth,avant-aveth,1861.63,DefiLlama row already counts this product
 2025-11,carry:liquid-eth,veda,147816.66,DefiLlama row already counts this product
 2025-11,carry:makina-deth,carry:makina-deth,23.75,held exceeds issuer row (cross-chain supply or adapter gap); floored at 0
@@ -2800,7 +2811,7 @@ month,from,to,eth,reason
 2025-11,makina,carry:makina-deth,23.75,product token held by a counted product
 2025-11,mantle-restaking,meth-protocol,98326.65,staking token held by a counted product
 2025-11,mantle-restaking,veda,98326.65,nested holding
-2025-11,mellow-restaking,lido,47741.78,staking token held by a counted product
+2025-11,mellow-restaking,lido,47094.93,staking token held by a counted product
 2025-11,napier,ether.fi-stake,1.02,staking token held by a counted product
 2025-11,napier,lido,742.17,staking token held by a counted product
 2025-11,nimbora-yield,nimbora-yield,78.5,leftover: balance unchanged since 2025-07
@@ -2879,9 +2890,6 @@ month,from,to,eth,reason
 2025-11,vaultcraft,kelp,2.83,staking token held by a counted product
 2025-11,vaultcraft,stader,2.5,staking token held by a counted product
 2025-11,veda,ether.fi-stake,44935.67,ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH
-2025-11,vesper,coinbase-wrapped-staked-eth,91.04,staking token held by a counted product
-2025-11,vesper,lido,403.63,staking token held by a counted product
-2025-11,vesper,rocket-pool,10.82,staking token held by a counted product
 2025-11,vesper,symbiotic,188.48,"position in a Symbiotic vault, counted in the row that holds it"
 2025-11,yieldnest,frax-ether,40.26,staking token held by a counted product
 2025-11,yieldnest,meth-protocol,53.22,staking token held by a counted product
@@ -2911,7 +2919,11 @@ month,from,to,eth,reason
 2025-12,canopy,kelp,1751.84,staking token held by a counted product
 2025-12,canopy,renzo,16.46,staking token held by a counted product
 2025-12,cap,lido,11165.81,staking token held by a counted product
+2025-12,cap,mellow-restaking,1100.76,nested holding
 2025-12,cap,origin-ether,248.9,product token held by a counted product
+2025-12,cap,stakestone-stone,2874.47,nested holding
+2025-12,cap,veda,4204.74,nested holding
+2025-12,cap,vesper,1929.71,nested holding
 2025-12,carry:avant-aveth,avant-aveth,2888.36,DefiLlama row already counts this product
 2025-12,carry:liquid-eth,veda,147083.06,DefiLlama row already counts this product
 2025-12,carry:makina-deth,makina,9802.0,DefiLlama row already counts this product
@@ -3008,7 +3020,7 @@ month,from,to,eth,reason
 2025-12,lista-cdp,renzo,9.32,staking token held by a counted product
 2025-12,mantle-restaking,meth-protocol,93829.5,staking token held by a counted product
 2025-12,mantle-restaking,veda,93829.5,nested holding
-2025-12,mellow-restaking,lido,42932.87,staking token held by a counted product
+2025-12,mellow-restaking,lido,42395.11,staking token held by a counted product
 2025-12,napier,ether.fi-stake,1.02,staking token held by a counted product
 2025-12,napier,lido,77.49,staking token held by a counted product
 2025-12,nimbora-yield,nimbora-yield,78.05,leftover: balance unchanged since 2025-07
@@ -3086,9 +3098,6 @@ month,from,to,eth,reason
 2025-12,vaultcraft,kelp,2.89,staking token held by a counted product
 2025-12,vaultcraft,stader,2.5,staking token held by a counted product
 2025-12,veda,ether.fi-stake,6327.97,ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH
-2025-12,vesper,coinbase-wrapped-staked-eth,66.51,staking token held by a counted product
-2025-12,vesper,lido,422.01,staking token held by a counted product
-2025-12,vesper,rocket-pool,10.78,staking token held by a counted product
 2025-12,vesper,symbiotic,241.5,"position in a Symbiotic vault, counted in the row that holds it"
 2025-12,yieldnest,frax-ether,40.79,staking token held by a counted product
 2025-12,yieldnest,meth-protocol,53.16,staking token held by a counted product
@@ -3118,7 +3127,12 @@ month,from,to,eth,reason
 2026-01,canopy,kelp,1254.33,staking token held by a counted product
 2026-01,canopy,renzo,7.97,staking token held by a counted product
 2026-01,cap,lido,12332.69,staking token held by a counted product
+2026-01,cap,mellow-restaking,1213.07,nested holding
 2026-01,cap,origin-ether,246.68,product token held by a counted product
+2026-01,cap,stakestone-stone,3167.75,nested holding
+2026-01,cap,symbiotic,3257.05,"position in a Symbiotic vault, counted in the row that holds it"
+2026-01,cap,veda,4633.76,nested holding
+2026-01,cap,vesper,2647.45,nested holding
 2026-01,carry:avant-aveth,avant-aveth,2819.48,DefiLlama row already counts this product
 2026-01,carry:lido-earn,mellow-core,20142.0,DefiLlama row already counts this product
 2026-01,carry:liquid-eth,veda,154309.52,DefiLlama row already counts this product
@@ -3214,7 +3228,7 @@ month,from,to,eth,reason
 2026-01,mantle-restaking,meth-protocol,77739.68,staking token held by a counted product
 2026-01,mantle-restaking,veda,77739.68,nested holding
 2026-01,mellow-core,lido,11475.38,staking token held by a counted product
-2026-01,mellow-restaking,lido,21584.99,staking token held by a counted product
+2026-01,mellow-restaking,lido,20371.92,staking token held by a counted product
 2026-01,napier,ether.fi-stake,1.01,staking token held by a counted product
 2026-01,napier,lido,69.76,staking token held by a counted product
 2026-01,native-credit-pool,lido,2.04,staking token held by a counted product
@@ -3277,7 +3291,7 @@ month,from,to,eth,reason
 2026-01,stafi,stafi,2341.93,leftover: balance unchanged since 2025-01
 2026-01,stakestone-berachain-vault,stakestone-stone,556.51,staking token held by a counted product
 2026-01,swell-l2-farm,swell-l2-farm,32122.46,leftover: balance unchanged since 2025-10
-2026-01,symbiotic,symbiotic,100299.91,restaking-token issuers already count this
+2026-01,symbiotic,symbiotic,102343.89,restaking-token issuers already count this
 2026-01,terminal-finance-pre-deposits,ether.fi-stake,191.29,staking token held by a counted product
 2026-01,theo-straddle-vaults,ether.fi-stake,145.8,staking token held by a counted product
 2026-01,tranchess-yield,ether.fi-stake,6.98,staking token held by a counted product
@@ -3295,9 +3309,6 @@ month,from,to,eth,reason
 2026-01,vaultcraft,stader,2.59,staking token held by a counted product
 2026-01,veda,ether.fi-stake,5797.07,ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH
 2026-01,veda,meth-protocol,2146.15,staking token held by a counted product
-2026-01,vesper,coinbase-wrapped-staked-eth,76.88,staking token held by a counted product
-2026-01,vesper,lido,898.38,staking token held by a counted product
-2026-01,vesper,rocket-pool,12.47,staking token held by a counted product
 2026-01,vesper,symbiotic,975.14,"position in a Symbiotic vault, counted in the row that holds it"
 2026-01,yieldnest,frax-ether,40.52,staking token held by a counted product
 2026-01,yieldnest,meth-protocol,53.63,staking token held by a counted product
@@ -3327,6 +3338,11 @@ month,from,to,eth,reason
 2026-02,canopy,kelp,489.93,staking token held by a counted product
 2026-02,canopy,renzo,5.33,staking token held by a counted product
 2026-02,cap,lido,13103.81,staking token held by a counted product
+2026-02,cap,mellow-restaking,1263.65,nested holding
+2026-02,cap,stakestone-stone,3299.81,nested holding
+2026-02,cap,symbiotic,3392.84,"position in a Symbiotic vault, counted in the row that holds it"
+2026-02,cap,veda,4826.94,nested holding
+2026-02,cap,vesper,2601.7,nested holding
 2026-02,carry:avant-aveth,avant-aveth,3987.18,DefiLlama row already counts this product
 2026-02,carry:liquid-eth,veda,108292.17,DefiLlama row already counts this product
 2026-02,carry:makina-deth,carry:makina-deth,7.49,held exceeds issuer row (cross-chain supply or adapter gap); floored at 0
@@ -3361,7 +3377,7 @@ month,from,to,eth,reason
 2026-02,enzyme-finance,rocket-pool,82.19,staking token held by a counted product
 2026-02,enzyme-finance,stader,239.76,staking token held by a counted product
 2026-02,enzyme-finance,swell-liquid-staking,339.92,staking token held by a counted product
-2026-02,ether.fi-stake,ether.fi-stake,75195.41,held exceeds issuer row (cross-chain supply or adapter gap); floored at 0
+2026-02,ether.fi-stake,ether.fi-stake,75195.4,held exceeds issuer row (cross-chain supply or adapter gap); floored at 0
 2026-02,euclid-finance,euclid-finance,119.08,leftover: balance unchanged since 2024-11
 2026-02,fluid-lite,loops,73517.1,loop product: its positions are inside leveraged staking on lending markets
 2026-02,frankencoin,lido,2685.65,staking token held by a counted product
@@ -3393,7 +3409,7 @@ month,from,to,eth,reason
 2026-02,lending markets,coinbase-wrapped-staked-eth,16548.64,staking token posted in a lending market (leveraged staking or money markets)
 2026-02,lending markets,dinero-(pxeth),14.7,staking token posted in a lending market (leveraged staking or money markets)
 2026-02,lending markets,ether.fi-stake,2742554.19,staking token posted in a lending market (leveraged staking or money markets)
-2026-02,lending markets,ether.fi-stake,75195.41,staking tokens in lending markets beyond the issuer's backing: taken out of money markets
+2026-02,lending markets,ether.fi-stake,75195.4,staking tokens in lending markets beyond the issuer's backing: taken out of money markets
 2026-02,lending markets,frax-ether,8379.74,staking token posted in a lending market (leveraged staking or money markets)
 2026-02,lending markets,kelp,557081.12,staking token posted in a lending market (leveraged staking or money markets)
 2026-02,lending markets,kelp,9586.73,staking tokens in lending markets beyond the issuer's backing: taken out of money markets
@@ -3422,7 +3438,7 @@ month,from,to,eth,reason
 2026-02,mantle-restaking,meth-protocol,77617.07,staking token held by a counted product
 2026-02,mantle-restaking,veda,77617.07,nested holding
 2026-02,mellow-core,lido,17313.22,staking token held by a counted product
-2026-02,mellow-restaking,lido,20770.9,staking token held by a counted product
+2026-02,mellow-restaking,lido,19507.26,staking token held by a counted product
 2026-02,napier,ether.fi-stake,1.02,staking token held by a counted product
 2026-02,napier,lido,70.53,staking token held by a counted product
 2026-02,native-credit-pool,lido,108.13,staking token held by a counted product
@@ -3482,7 +3498,7 @@ month,from,to,eth,reason
 2026-02,stafi,stafi,2336.49,leftover: balance unchanged since 2025-01
 2026-02,stakestone-berachain-vault,stakestone-stone,630.79,staking token held by a counted product
 2026-02,swell-l2-farm,swell-l2-farm,32476.21,leftover: balance unchanged since 2025-10
-2026-02,symbiotic,symbiotic,99423.95,restaking-token issuers already count this
+2026-02,symbiotic,symbiotic,101553.14,restaking-token issuers already count this
 2026-02,terminal-finance-pre-deposits,ether.fi-stake,32.97,staking token held by a counted product
 2026-02,theo-straddle-vaults,ether.fi-stake,146.1,staking token held by a counted product
 2026-02,tranchess-yield,ether.fi-stake,7.08,staking token held by a counted product
@@ -3496,9 +3512,6 @@ month,from,to,eth,reason
 2026-02,vaultcraft,kelp,2.92,staking token held by a counted product
 2026-02,vaultcraft,stader,2.62,staking token held by a counted product
 2026-02,veda,ether.fi-stake,24134.13,ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH
-2026-02,vesper,coinbase-wrapped-staked-eth,76.2,staking token held by a counted product
-2026-02,vesper,lido,826.86,staking token held by a counted product
-2026-02,vesper,rocket-pool,11.78,staking token held by a counted product
 2026-02,vesper,symbiotic,1035.86,"position in a Symbiotic vault, counted in the row that holds it"
 2026-02,yieldnest,frax-ether,41.16,staking token held by a counted product
 2026-02,yieldnest,meth-protocol,53.57,staking token held by a counted product
@@ -3528,7 +3541,12 @@ month,from,to,eth,reason
 2026-03,canopy,kelp,425.04,staking token held by a counted product
 2026-03,cap,ether.fi-stake,15438.7,staking token held by a counted product
 2026-03,cap,lido,13054.24,staking token held by a counted product
+2026-03,cap,mellow-restaking,2747.66,nested holding
+2026-03,cap,stakestone-stone,7175.06,nested holding
+2026-03,cap,symbiotic,7377.34,"position in a Symbiotic vault, counted in the row that holds it"
 2026-03,cap,symbiotic,15438.7,"position in a Symbiotic vault, counted in the row that holds it"
+2026-03,cap,veda,10495.62,nested holding
+2026-03,cap,vesper,2582.99,nested holding
 2026-03,carry:avant-aveth,avant-aveth,5739.11,DefiLlama row already counts this product
 2026-03,carry:lido-earn,mellow-core,86458.92,DefiLlama row already counts this product
 2026-03,carry:liquid-eth,veda,147239.06,DefiLlama row already counts this product
@@ -3621,7 +3639,7 @@ month,from,to,eth,reason
 2026-03,mantle-restaking,meth-protocol,73520.36,staking token held by a counted product
 2026-03,mantle-restaking,veda,73520.36,nested holding
 2026-03,mellow-core,lido,7909.08,staking token held by a counted product
-2026-03,mellow-restaking,lido,19502.69,staking token held by a counted product
+2026-03,mellow-restaking,lido,16755.03,staking token held by a counted product
 2026-03,napier,ether.fi-stake,1.03,staking token held by a counted product
 2026-03,napier,lido,70.84,staking token held by a counted product
 2026-03,native-credit-pool,lido,566.04,staking token held by a counted product
@@ -3681,7 +3699,7 @@ month,from,to,eth,reason
 2026-03,stafi,stafi,2337.38,leftover: balance unchanged since 2025-01
 2026-03,stakestone-berachain-vault,stakestone-stone,593.59,staking token held by a counted product
 2026-03,swell-l2-farm,swell-l2-farm,32370.19,leftover: balance unchanged since 2025-10
-2026-03,symbiotic,symbiotic,109505.86,restaking-token issuers already count this
+2026-03,symbiotic,symbiotic,114135.54,restaking-token issuers already count this
 2026-03,terminal-finance-pre-deposits,ether.fi-stake,33.22,staking token held by a counted product
 2026-03,theo-straddle-vaults,ether.fi-stake,144.27,staking token held by a counted product
 2026-03,tranchess-yield,ether.fi-stake,7.07,staking token held by a counted product
@@ -3695,9 +3713,6 @@ month,from,to,eth,reason
 2026-03,vaultcraft,kelp,2.91,staking token held by a counted product
 2026-03,vaultcraft,stader,2.64,staking token held by a counted product
 2026-03,veda,ether.fi-stake,8896.85,ether.fi Liquid vaults booked as WETH by the Veda adapter hold eETH
-2026-03,vesper,coinbase-wrapped-staked-eth,38.57,staking token held by a counted product
-2026-03,vesper,lido,851.17,staking token held by a counted product
-2026-03,vesper,rocket-pool,11.86,staking token held by a counted product
 2026-03,vesper,symbiotic,1044.1,"position in a Symbiotic vault, counted in the row that holds it"
 2026-03,yieldnest,frax-ether,41.31,staking token held by a counted product
 2026-03,yieldnest,meth-protocol,53.54,staking token held by a counted product
@@ -3727,7 +3742,11 @@ month,from,to,eth,reason
 2026-04,canopy,kelp,314.76,staking token held by a counted product
 2026-04,cap,ether.fi-stake,15423.2,staking token held by a counted product
 2026-04,cap,lido,10291.83,staking token held by a counted product
+2026-04,cap,mellow-restaking,2479.77,nested holding
+2026-04,cap,stakestone-stone,6475.53,nested holding
 2026-04,cap,symbiotic,15423.2,"position in a Symbiotic vault, counted in the row that holds it"
+2026-04,cap,veda,9472.35,nested holding
+2026-04,cap,vesper,2572.13,nested holding
 2026-04,carry:avant-aveth,avant-aveth,6556.29,DefiLlama row already counts this product
 2026-04,carry:lido-earn,mellow-core,110594.33,DefiLlama row already counts this product
 2026-04,carry:liquid-eth,veda,124604.9,DefiLlama row already counts this product
@@ -3820,7 +3839,7 @@ month,from,to,eth,reason
 2026-04,mantle-restaking,meth-protocol,73291.6,staking token held by a counted product
 2026-04,mantle-restaking,veda,73291.6,nested holding
 2026-04,mellow-core,lido,295.9,staking token held by a counted product
-2026-04,mellow-restaking,lido,13194.98,staking token held by a counted product
+2026-04,mellow-restaking,lido,10715.21,staking token held by a counted product
 2026-04,napier,ether.fi-stake,1.03,staking token held by a counted product
 2026-04,native-credit-pool,lido,41.49,staking token held by a counted product
 2026-04,nimbora-yield,nimbora-yield,78.28,leftover: balance unchanged since 2025-07
@@ -3893,9 +3912,6 @@ month,from,to,eth,reason
 2026-04,vaultcraft,kelp,2.76,staking token held by a counted product
 2026-04,vaultcraft,stader,2.63,staking token held by a counted product
 2026-04,veda,meth-protocol,4.4,staking token held by a counted product
-2026-04,vesper,coinbase-wrapped-staked-eth,38.84,staking token held by a counted product
-2026-04,vesper,lido,855.58,staking token held by a counted product
-2026-04,vesper,rocket-pool,11.96,staking token held by a counted product
 2026-04,vesper,symbiotic,1041.73,"position in a Symbiotic vault, counted in the row that holds it"
 2026-04,yieldnest,frax-ether,41.2,staking token held by a counted product
 2026-04,yieldnest,meth-protocol,53.7,staking token held by a counted product
@@ -3925,7 +3941,12 @@ month,from,to,eth,reason
 2026-05,canopy,kelp,332.45,staking token held by a counted product
 2026-05,cap,ether.fi-stake,9473.96,staking token held by a counted product
 2026-05,cap,lido,10794.33,staking token held by a counted product
+2026-05,cap,mellow-restaking,1954.53,nested holding
+2026-05,cap,stakestone-stone,5103.94,nested holding
+2026-05,cap,symbiotic,5247.82,"position in a Symbiotic vault, counted in the row that holds it"
 2026-05,cap,symbiotic,9473.96,"position in a Symbiotic vault, counted in the row that holds it"
+2026-05,cap,veda,7466.0,nested holding
+2026-05,cap,vesper,2488.14,nested holding
 2026-05,carry:avant-aveth,avant-aveth,6530.3,DefiLlama row already counts this product
 2026-05,carry:lido-earn,mellow-core,44337.32,DefiLlama row already counts this product
 2026-05,carry:liquid-eth,veda,108176.24,DefiLlama row already counts this product
@@ -4014,7 +4035,7 @@ month,from,to,eth,reason
 2026-05,mantle-restaking,meth-protocol,37633.71,staking token held by a counted product
 2026-05,mantle-restaking,veda,37633.71,nested holding
 2026-05,mellow-core,lido,396.51,staking token held by a counted product
-2026-05,mellow-restaking,lido,8249.39,staking token held by a counted product
+2026-05,mellow-restaking,lido,6294.86,staking token held by a counted product
 2026-05,napier,ether.fi-stake,1.03,staking token held by a counted product
 2026-05,native-credit-pool,lido,522.23,staking token held by a counted product
 2026-05,nimbora-yield,nimbora-yield,77.98,leftover: balance unchanged since 2025-07
@@ -4073,7 +4094,7 @@ month,from,to,eth,reason
 2026-05,stafi,stafi,1860.41,leftover: balance unchanged since 2025-01
 2026-05,stakestone-berachain-vault,stakestone-stone,692.75,staking token held by a counted product
 2026-05,swell-l2-farm,swell-l2-farm,32327.25,leftover: balance unchanged since 2025-10
-2026-05,symbiotic,symbiotic,56310.95,restaking-token issuers already count this
+2026-05,symbiotic,symbiotic,59604.25,restaking-token issuers already count this
 2026-05,terminal-finance-pre-deposits,ether.fi-stake,30.02,staking token held by a counted product
 2026-05,theo-straddle-vaults,ether.fi-stake,111.56,staking token held by a counted product
 2026-05,tranchess-yield,ether.fi-stake,7.06,staking token held by a counted product
@@ -4086,9 +4107,6 @@ month,from,to,eth,reason
 2026-05,upshift,kelp,29885.96,staking token held by a counted product
 2026-05,vaultcraft,kelp,2.92,staking token held by a counted product
 2026-05,vaultcraft,stader,2.67,staking token held by a counted product
-2026-05,vesper,coinbase-wrapped-staked-eth,37.35,staking token held by a counted product
-2026-05,vesper,lido,770.42,staking token held by a counted product
-2026-05,vesper,rocket-pool,11.25,staking token held by a counted product
 2026-05,vesper,symbiotic,953.9,"position in a Symbiotic vault, counted in the row that holds it"
 2026-05,yieldnest,frax-ether,41.22,staking token held by a counted product
 2026-05,yieldnest,meth-protocol,53.64,staking token held by a counted product
@@ -4118,7 +4136,12 @@ month,from,to,eth,reason
 2026-06,canopy,kelp,308.51,staking token held by a counted product
 2026-06,cap,ether.fi-stake,8737.0,staking token held by a counted product
 2026-06,cap,lido,10746.27,staking token held by a counted product
+2026-06,cap,mellow-restaking,1878.83,nested holding
+2026-06,cap,stakestone-stone,4906.26,nested holding
+2026-06,cap,symbiotic,5044.57,"position in a Symbiotic vault, counted in the row that holds it"
 2026-06,cap,symbiotic,8737.0,"position in a Symbiotic vault, counted in the row that holds it"
+2026-06,cap,veda,7176.83,nested holding
+2026-06,cap,vesper,2472.94,nested holding
 2026-06,carry:avant-aveth,avant-aveth,9109.17,DefiLlama row already counts this product
 2026-06,carry:lido-earn,mellow-core,90416.98,DefiLlama row already counts this product
 2026-06,carry:liquid-eth,veda,88680.88,DefiLlama row already counts this product
@@ -4207,7 +4230,7 @@ month,from,to,eth,reason
 2026-06,mantle-restaking,meth-protocol,21414.51,staking token held by a counted product
 2026-06,mantle-restaking,veda,21414.51,nested holding
 2026-06,mellow-core,lido,137.43,staking token held by a counted product
-2026-06,mellow-restaking,lido,7111.88,staking token held by a counted product
+2026-06,mellow-restaking,lido,5233.06,staking token held by a counted product
 2026-06,napier,ether.fi-stake,1.04,staking token held by a counted product
 2026-06,native-credit-pool,lido,135.12,staking token held by a counted product
 2026-06,nimbora-yield,nimbora-yield,78.25,leftover: balance unchanged since 2025-07
@@ -4266,7 +4289,7 @@ month,from,to,eth,reason
 2026-06,stafi,stafi,1856.12,leftover: balance unchanged since 2025-01
 2026-06,stakestone-berachain-vault,stakestone-stone,619.81,staking token held by a counted product
 2026-06,swell-l2-farm,swell-l2-farm,31860.47,leftover: balance unchanged since 2025-10
-2026-06,symbiotic,symbiotic,38214.32,restaking-token issuers already count this
+2026-06,symbiotic,symbiotic,41380.07,restaking-token issuers already count this
 2026-06,terminal-finance-pre-deposits,ether.fi-stake,29.66,staking token held by a counted product
 2026-06,theo-straddle-vaults,ether.fi-stake,109.81,staking token held by a counted product
 2026-06,tranchess-yield,ether.fi-stake,7.11,staking token held by a counted product
@@ -4280,9 +4303,6 @@ month,from,to,eth,reason
 2026-06,vaultcraft,kelp,2.92,staking token held by a counted product
 2026-06,vaultcraft,stader,2.63,staking token held by a counted product
 2026-06,veda,meth-protocol,8.69,staking token held by a counted product
-2026-06,vesper,coinbase-wrapped-staked-eth,41.39,staking token held by a counted product
-2026-06,vesper,lido,899.64,staking token held by a counted product
-2026-06,vesper,rocket-pool,13.19,staking token held by a counted product
 2026-06,vesper,symbiotic,950.93,"position in a Symbiotic vault, counted in the row that holds it"
 2026-06,yieldnest,frax-ether,41.61,staking token held by a counted product
 2026-06,yieldnest,meth-protocol,53.82,staking token held by a counted product
@@ -4313,7 +4333,12 @@ month,from,to,eth,reason
 2026-07,canopy,renzo,1.02,staking token held by a counted product
 2026-07,cap,ether.fi-stake,8734.67,staking token held by a counted product
 2026-07,cap,lido,12074.46,staking token held by a counted product
+2026-07,cap,mellow-restaking,2006.68,nested holding
+2026-07,cap,stakestone-stone,5240.13,nested holding
+2026-07,cap,symbiotic,5387.86,"position in a Symbiotic vault, counted in the row that holds it"
 2026-07,cap,symbiotic,8734.67,"position in a Symbiotic vault, counted in the row that holds it"
+2026-07,cap,veda,7665.22,nested holding
+2026-07,cap,vesper,5349.63,nested holding
 2026-07,carry:avant-aveth,avant-aveth,10330.23,DefiLlama row already counts this product
 2026-07,carry:lido-earn,mellow-core,77748.21,DefiLlama row already counts this product
 2026-07,carry:liquid-eth,veda,122177.11,DefiLlama row already counts this product
@@ -4406,7 +4431,7 @@ month,from,to,eth,reason
 2026-07,mantle-restaking,meth-protocol,17223.76,staking token held by a counted product
 2026-07,mantle-restaking,veda,17223.76,nested holding
 2026-07,mellow-core,lido,140.2,staking token held by a counted product
-2026-07,mellow-restaking,lido,6916.65,staking token held by a counted product
+2026-07,mellow-restaking,lido,4909.97,staking token held by a counted product
 2026-07,napier,ether.fi-stake,1.04,staking token held by a counted product
 2026-07,nimbora-yield,nimbora-yield,78.07,leftover: balance unchanged since 2025-07
 2026-07,nucleus,dinero-(pxeth),3.63,staking token held by a counted product
@@ -4465,7 +4490,7 @@ month,from,to,eth,reason
 2026-07,stafi,stafi,1860.41,leftover: balance unchanged since 2025-01
 2026-07,stakestone-berachain-vault,stakestone-stone,1069.18,staking token held by a counted product
 2026-07,swell-l2-farm,swell-l2-farm,31960.63,leftover: balance unchanged since 2025-10
-2026-07,symbiotic,symbiotic,36745.78,restaking-token issuers already count this
+2026-07,symbiotic,symbiotic,40126.96,restaking-token issuers already count this
 2026-07,terminal-finance-pre-deposits,ether.fi-stake,27.0,staking token held by a counted product
 2026-07,theo-straddle-vaults,ether.fi-stake,109.81,staking token held by a counted product
 2026-07,tranchess-yield,ether.fi-stake,7.13,staking token held by a counted product
@@ -4478,9 +4503,6 @@ month,from,to,eth,reason
 2026-07,upshift,kelp,11999.95,staking token held by a counted product
 2026-07,vaultcraft,kelp,2.69,staking token held by a counted product
 2026-07,vaultcraft,stader,2.64,staking token held by a counted product
-2026-07,vesper,coinbase-wrapped-staked-eth,31.9,staking token held by a counted product
-2026-07,vesper,lido,3320.55,staking token held by a counted product
-2026-07,vesper,rocket-pool,17.22,staking token held by a counted product
 2026-07,vesper,symbiotic,3870.7,"position in a Symbiotic vault, counted in the row that holds it"
 2026-07,yieldnest,frax-ether,41.58,staking token held by a counted product
 2026-07,yieldnest,meth-protocol,53.87,staking token held by a counted product
@@ -4511,7 +4533,12 @@ month,from,to,eth,reason
 2026-08,canopy,kelp,308.08,staking token held by a counted product
 2026-08,cap,ether.fi-stake,8757.69,staking token held by a counted product
 2026-08,cap,lido,14821.43,staking token held by a counted product
+2026-08,cap,mellow-restaking,2273.8,nested holding
+2026-08,cap,stakestone-stone,5937.67,nested holding
+2026-08,cap,symbiotic,6105.06,"position in a Symbiotic vault, counted in the row that holds it"
 2026-08,cap,symbiotic,8757.69,"position in a Symbiotic vault, counted in the row that holds it"
+2026-08,cap,veda,8685.57,nested holding
+2026-08,cap,vesper,6512.62,nested holding
 2026-08,carry:avant-aveth,avant-aveth,12571.24,DefiLlama row already counts this product
 2026-08,carry:lido-earn,mellow-core,79323.12,DefiLlama row already counts this product
 2026-08,carry:liquid-eth,veda,173879.68,DefiLlama row already counts this product
@@ -4599,7 +4626,7 @@ month,from,to,eth,reason
 2026-08,mantle-restaking,meth-protocol,16913.39,staking token held by a counted product
 2026-08,mantle-restaking,veda,16913.39,nested holding
 2026-08,mellow-core,lido,87.92,staking token held by a counted product
-2026-08,mellow-restaking,lido,6262.89,staking token held by a counted product
+2026-08,mellow-restaking,lido,3989.09,staking token held by a counted product
 2026-08,napier,ether.fi-stake,1.04,staking token held by a counted product
 2026-08,nimbora-yield,nimbora-yield,78.05,leftover: balance unchanged since 2025-07
 2026-08,nucleus,puffer-stake,294.25,staking token held by a counted product
@@ -4656,7 +4683,7 @@ month,from,to,eth,reason
 2026-08,stafi,stafi,1860.41,leftover: balance unchanged since 2025-01
 2026-08,stakestone-berachain-vault,stakestone-stone,569.25,staking token held by a counted product
 2026-08,swell-l2-farm,swell-l2-farm,31821.63,leftover: balance unchanged since 2025-10
-2026-08,symbiotic,symbiotic,38220.93,restaking-token issuers already count this
+2026-08,symbiotic,symbiotic,42052.18,restaking-token issuers already count this
 2026-08,terminal-finance-pre-deposits,terminal-finance-pre-deposits,19.45,leftover: balance unchanged since 2026-08
 2026-08,theo-straddle-vaults,ether.fi-stake,108.52,staking token held by a counted product
 2026-08,tranchess-yield,ether.fi-stake,7.12,staking token held by a counted product
@@ -4670,9 +4697,9 @@ month,from,to,eth,reason
 2026-08,upshift,liquid-collective,13.13,staking token held by a counted product
 2026-08,vaultcraft,kelp,2.69,staking token held by a counted product
 2026-08,vaultcraft,stader,2.57,staking token held by a counted product
-2026-08,vesper,coinbase-wrapped-staked-eth,19.08,staking token held by a counted product
-2026-08,vesper,lido,5690.33,staking token held by a counted product
-2026-08,vesper,rocket-pool,19.23,staking token held by a counted product
+2026-08,vesper,coinbase-wrapped-staked-eth,3.01,staking token held by a counted product
+2026-08,vesper,lido,898.49,staking token held by a counted product
+2026-08,vesper,rocket-pool,3.04,staking token held by a counted product
 2026-08,vesper,symbiotic,6286.95,"position in a Symbiotic vault, counted in the row that holds it"
 2026-08,yieldnest,frax-ether,42.4,staking token held by a counted product
 2026-08,yieldnest,meth-protocol,54.03,staking token held by a counted product
@@ -4703,7 +4730,12 @@ month,from,to,eth,reason
 2026-09,canopy,kelp,310.05,staking token held by a counted product
 2026-09,cap,ether.fi-stake,8384.53,staking token held by a counted product
 2026-09,cap,lido,14368.98,staking token held by a counted product
+2026-09,cap,mellow-restaking,2194.18,nested holding
+2026-09,cap,stakestone-stone,5729.76,nested holding
+2026-09,cap,symbiotic,5891.29,"position in a Symbiotic vault, counted in the row that holds it"
 2026-09,cap,symbiotic,8384.53,"position in a Symbiotic vault, counted in the row that holds it"
+2026-09,cap,veda,8381.44,nested holding
+2026-09,cap,vesper,6284.58,nested holding
 2026-09,carry:avant-aveth,avant-aveth,12356.76,DefiLlama row already counts this product
 2026-09,carry:lido-earn,mellow-core,83046.36,DefiLlama row already counts this product
 2026-09,carry:liquid-eth,veda,176962.43,DefiLlama row already counts this product
@@ -4796,7 +4828,7 @@ month,from,to,eth,reason
 2026-09,mantle-restaking,meth-protocol,16220.48,staking token held by a counted product
 2026-09,mantle-restaking,veda,16220.48,nested holding
 2026-09,mellow-core,lido,80.41,staking token held by a counted product
-2026-09,mellow-restaking,lido,5677.56,staking token held by a counted product
+2026-09,mellow-restaking,lido,3483.38,staking token held by a counted product
 2026-09,napier,ether.fi-stake,1.04,staking token held by a counted product
 2026-09,nimbora-yield,nimbora-yield,78.6,leftover: balance unchanged since 2025-07
 2026-09,nucleus,puffer-stake,274.09,staking token held by a counted product
@@ -4845,7 +4877,7 @@ month,from,to,eth,reason
 2026-09,stafi,stafi,1864.04,leftover: balance unchanged since 2025-01
 2026-09,stakestone-berachain-vault,stakestone-stone,585.6,staking token held by a counted product
 2026-09,swell-l2-farm,swell-l2-farm,31982.12,leftover: balance unchanged since 2025-10
-2026-09,symbiotic,symbiotic,36596.98,restaking-token issuers already count this
+2026-09,symbiotic,symbiotic,40294.08,restaking-token issuers already count this
 2026-09,terminal-finance-pre-deposits,terminal-finance-pre-deposits,19.48,leftover: balance unchanged since 2026-08
 2026-09,theo-straddle-vaults,ether.fi-stake,102.38,staking token held by a counted product
 2026-09,thetanuts-finance,lido,2.23,staking token held by a counted product
@@ -4859,8 +4891,8 @@ month,from,to,eth,reason
 2026-09,upshift,liquid-collective,100.21,staking token held by a counted product
 2026-09,vaultcraft,kelp,2.7,staking token held by a counted product
 2026-09,vaultcraft,stader,2.58,staking token held by a counted product
-2026-09,vesper,lido,6074.31,staking token held by a counted product
-2026-09,vesper,rocket-pool,20.52,staking token held by a counted product
+2026-09,vesper,lido,1119.32,staking token held by a counted product
+2026-09,vesper,rocket-pool,3.78,staking token held by a counted product
 2026-09,vesper,symbiotic,6314.41,"position in a Symbiotic vault, counted in the row that holds it"
 2026-09,yieldnest,frax-ether,41.79,staking token held by a counted product
 2026-09,yieldnest,meth-protocol,54.22,staking token held by a counted product
@@ -4891,7 +4923,12 @@ month,from,to,eth,reason
 2026-10-02,canopy,kelp,309.1,staking token held by a counted product
 2026-10-02,cap,ether.fi-stake,8349.99,staking token held by a counted product
 2026-10-02,cap,lido,14316.23,staking token held by a counted product
+2026-10-02,cap,mellow-restaking,2185.77,nested holding
+2026-10-02,cap,stakestone-stone,5707.78,nested holding
+2026-10-02,cap,symbiotic,5868.69,"position in a Symbiotic vault, counted in the row that holds it"
 2026-10-02,cap,symbiotic,8349.99,"position in a Symbiotic vault, counted in the row that holds it"
+2026-10-02,cap,veda,8349.29,nested holding
+2026-10-02,cap,vesper,6260.47,nested holding
 2026-10-02,carry:avant-aveth,avant-aveth,12582.71,DefiLlama row already counts this product
 2026-10-02,carry:lido-earn,mellow-core,83309.2,DefiLlama row already counts this product
 2026-10-02,carry:liquid-eth,veda,177171.06,DefiLlama row already counts this product
@@ -4983,7 +5020,7 @@ month,from,to,eth,reason
 2026-10-02,mantle-restaking,meth-protocol,16208.11,staking token held by a counted product
 2026-10-02,mantle-restaking,veda,16208.11,nested holding
 2026-10-02,mellow-core,lido,73.11,staking token held by a counted product
-2026-10-02,mellow-restaking,lido,5642.81,staking token held by a counted product
+2026-10-02,mellow-restaking,lido,3457.04,staking token held by a counted product
 2026-10-02,napier,ether.fi-stake,1.04,staking token held by a counted product
 2026-10-02,nimbora-yield,nimbora-yield,78.44,leftover: balance unchanged since 2025-07
 2026-10-02,nucleus,puffer-stake,274.4,staking token held by a counted product
@@ -5031,7 +5068,7 @@ month,from,to,eth,reason
 2026-10-02,stafi,stafi,1860.41,leftover: balance unchanged since 2025-01
 2026-10-02,stakestone-berachain-vault,stakestone-stone,579.3,staking token held by a counted product
 2026-10-02,swell-l2-farm,swell-l2-farm,31988.8,leftover: balance unchanged since 2025-10
-2026-10-02,symbiotic,symbiotic,36492.29,restaking-token issuers already count this
+2026-10-02,symbiotic,symbiotic,40175.22,restaking-token issuers already count this
 2026-10-02,terminal-finance-pre-deposits,terminal-finance-pre-deposits,19.4,leftover: balance unchanged since 2026-08
 2026-10-02,theo-straddle-vaults,ether.fi-stake,101.82,staking token held by a counted product
 2026-10-02,thetanuts-finance,lido,2.53,staking token held by a counted product
@@ -5045,8 +5082,8 @@ month,from,to,eth,reason
 2026-10-02,upshift,liquid-collective,98.94,staking token held by a counted product
 2026-10-02,vaultcraft,kelp,2.69,staking token held by a counted product
 2026-10-02,vaultcraft,stader,2.57,staking token held by a counted product
-2026-10-02,vesper,lido,6048.76,staking token held by a counted product
-2026-10-02,vesper,rocket-pool,20.41,staking token held by a counted product
+2026-10-02,vesper,lido,1113.61,staking token held by a counted product
+2026-10-02,vesper,rocket-pool,3.76,staking token held by a counted product
 2026-10-02,vesper,symbiotic,6291.38,"position in a Symbiotic vault, counted in the row that holds it"
 2026-10-02,yieldnest,frax-ether,41.71,staking token held by a counted product
 2026-10-02,yieldnest,meth-protocol,54.15,staking token held by a counted product

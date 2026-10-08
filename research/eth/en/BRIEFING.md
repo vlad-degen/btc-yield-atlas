@@ -4,7 +4,7 @@ Financial snapshot: **2 October 2026**. Same data as the main page.
 
 ## Answer
 
-**15,936,175 ETH earns a yield** in 133 products counted once ($42.54B on 2 October 2026): 74.7% staking, 18.1% leveraged staking, 3.3% farming and pools, 2.6% restaking. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine; it is listed, not counted.
+**15,920,754 ETH earns a yield** in 133 products counted once ($42.50B on 2 October 2026): 74.8% staking, 18.1% leveraged staking, 3.3% farming and pools, 2.6% restaking. About 14.4M ETH more is staked off-chain with exchanges, institutional providers and BitMine; it is listed, not counted.
 
 **Carry is 1.1%**: 171,649 ETH, the part of 12 products open for deposits where ETH is collateral for a dollar loan. They owe $270.9M; Liquid ETH and Lido Earn hold 82% of the carry ETH. In BTC carry is 9.8%, but the BTC map counts the whole book of each carry product, so the two shares are not on the same basis.
 
@@ -14,15 +14,15 @@ Financial snapshot: **2 October 2026**. Same data as the main page.
 
 | Category | ETH, 2 Oct 2026 | Share | Oct 2024 | Switch |
 | --- | --- | --- | --- | --- |
-| Staking | 11,896,566 | 74.7% | 9,589,367 | on |
-| Restaking | 416,743 | 2.6% | 2,513,366 | on |
+| Staking | 11,901,177 | 74.8% | 9,589,367 | on |
+| Restaking | 411,377 | 2.6% | 2,513,366 | on |
 | Leveraged staking | 2,885,012 | 18.1% | 2,247,038 | on |
 | Carry | 171,649 | 1.1% | 0 | on |
 | Fixed yield | 9,203 | 0.1% | 307,465 | on |
 | Basis | 372 | 0.0% | 25,423 | on |
 | Options | 1,664 | 0.0% | 4,786 | on |
-| Credit | 26,738 | 0.2% | 5,116 | on |
-| Farming and pools | 528,228 | 3.3% | 1,583,227 | on |
+| Credit | 26,682 | 0.2% | 5,051 | on |
+| Farming and pools | 513,618 | 3.2% | 1,583,227 | on |
 | Money markets | 3,231,215 | off | 2,743,062 | off |
 | CDP collateral | 765,192 | off | 1,637,787 | off |
 

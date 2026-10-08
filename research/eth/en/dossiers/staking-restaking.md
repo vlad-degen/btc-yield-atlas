@@ -7,8 +7,8 @@ Snapshot T: 2 October 2026, 23:59:59 UTC. Map figures are counted once ([MARKET-
 | Layer | ETH at T | In the map? |
 | --- | ---: | --- |
 | Beacon chain, active stake (slot 15,346,798) | 43,805,558 | Ceiling, not a row |
-| Staking tokens and pools, staked and held (net of tokens in lending markets and other products) | 11,896,566 | Yes (Staking) |
-| Restaking tokens held; EigenLayer and Symbiotic only where no token or product counts | 416,743 | Yes (Restaking) |
+| Staking tokens and pools, staked and held (net of tokens in lending markets and other products) | 11,901,177 | Yes (Staking) |
+| Restaking tokens held; EigenLayer and Symbiotic only where no token or product counts | 411,377 | Yes (Restaking) |
 | Staking and restaking tokens posted in lending markets | about 5.48M | Yes (leveraged staking, carry, money markets) |
 | Off-chain: exchanges 4.57M, institutional providers 4.73M, BitMine 5.07M | about 14.4M | Listed, not counted ([OUTSIDE-AND-SMALL](../OUTSIDE-AND-SMALL.md)) |
 | Rest: solo and untagged validators, staking tokens held inside other map rows | about 11.5M | Not split further |
