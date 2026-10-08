@@ -243,6 +243,7 @@ venue sweep: liquity,Liquity v1 (LUSD) ETH/LUSD,1,0x6c26a07ccff2783577ee911d4c69
 lending split,spark,1,0x8d6e701eedbb427625e07191df504b28de5c518d,EOA,wallet,,no,,2985.8,2080536,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0x588b530e0d6d5c15afd56012434752296d70b36b,EOA,wallet,,no,,2979.53,1440250,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,morpho,1,0x90882e7c28ddf0ac1177033a310aeed8eff25e90,EOA,counted,carry:nemo-eth-prime,yes,,2965.26,5609996,yes,carry:nemo-eth-prime,product vault/strategy wallet,listed in carry_lending_snapshot.json
+venue sweep: aave_aave-bnb,aave-bnb,56,0xfc9f5d03d4808b398da8895647bcf096f3795850,EOA,wallet,,no,,2947.68,9594551,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0xb39b0d658e916e135ebaadcd504fc14a2d401e97,EIP-7702,wallet,,no,,2940.42,5279572,no,,"individual (unlabeled, after automated checks)",Unlabeled EIP-7702 EOA; funded by Binance 14
 lending split,aave-core,1,0x9f2251bc33c814d349987d1c05b1a960edfacb55,EOA,wallet,,no,,2932.59,1500132,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0x2dee72220b4aeb3887117e566dd85de018307646,EIP-7702,wallet,,no,,2905.03,2697027,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
@@ -757,6 +758,7 @@ lending split,aave-v4,1,0x8df787c388525a8f7ddfa4398695be9067394f86@0x94e7a5dc,EI
 lending split,aave-core,1,0xab42892e5ecdf640e037af5e24e4a895b34ef1d2,EOA,wallet,,no,,633.61,246304,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,compound-v3,1,0xeee774b8e92d51726adbe90b6028cab7d84f5d9b,EOA,wallet,,no,,632.75,797536,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,compound-v3,1,0x86aef245207e2f93fba083d51852c91a7e711eb6,EOA,wallet,,no,,632.33,1248598,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
+venue sweep: aave_aave-bnb,aave-bnb,56,0x3a05c30bb8cae7e73c4a50c819d1b7f888b17da9,EIP-7702,wallet,,no,,630.74,1493728,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0x98c3905347e7d13a82ded43b1e1679365171211a,EOA,wallet,,no,,628.41,569061,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-base,8453,0x0d5e107992ebbfa97fa75cad9125314376152618,EOA,wallet,,no,,625.69,406088,no,,,Base Account
 lending split,aave-core,1,0xbec6e4ac010114e515483060fda81cf9088040ff,EOA,wallet,,no,,624.65,782008,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
@@ -970,6 +972,7 @@ lending split,aave-core,1,0x1a03bd7e919004acc9f044caabd20ad596b3bd55,EOA,wallet,
 lending split,aave-core,1,0xf40b204cf244adc701bbe24fab7a857f24f627e3,EOA,wallet,,no,,457.83,901414,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0x2ddcacbbdc43873b8a86d347fc4ef51ebb744475,Summer.fi DPM,personal,,no,,456.53,277602,no,,,per-user smart account
 lending split,aave-v4,1,0x61bbebb90fbc89358e0b66f9b79581b1b7a94b63@0x94e7a5dc,EOA,wallet,,no,,456.5,678942,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
+venue sweep: aave_aave-bnb,aave-bnb,56,0x33aa02f42e5c7557f1bf5bf77d7967b0ead85877,EOA,wallet,,no,,455.77,616331,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0x774b5862a876814e380a6ba304526e9a3584f2a1,EOA,wallet,,no,,455.18,472743,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0x6249099e4a2aacb70621c432d537fe6bbdb5251c,EOA,wallet,,no,,454.78,824955,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0x689a0f956dbf4d4bbff4b6f8d88dbc15aadc04a4,EIP-7702,wallet,,no,,454.13,375932,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
@@ -1202,6 +1205,7 @@ venue sweep: maker,Sky/Maker ETH-A,1,0x152e1f87b40db4c938d2cabc2d133b767913f666,
 lending split,spark,1,0x51dfca1cb4eac9f9207fb8ab43e96ff5b99ff24f,EOA,wallet,,no,,347.18,234114,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-arbitrum,42161,0x0514f2f3e0277c47117e3f33d9390efb0acfbdfe,EOA,wallet,,no,,347.02,446660,no,,"individual (unlabeled, code-type screen only)",Unlabeled EOA
 lending split,compound-v3,1,0x43fcc6aa43f9619d9935e86c92fb7de06114dcb3,EOA,wallet,,no,,346.3,558440,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
+venue sweep: aave_aave-bnb,aave-bnb,56,0x13ff25c65a3e41fe90b1f03e6d99926196f89f57,EOA,wallet,,no,,345.31,381530,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,aave-core,1,0xce8314737c95782bd14796cad0b176409e722bbc,DSProxy,personal,,no,,344.87,323320,no,,,per-user smart account
 lending split,spark,1,0xa55b36dbce055485d046aa98f5ddc0440009ee00,EOA,wallet,,no,,344.82,293801,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 lending split,morpho,1,0x10cb02ff58492ed4358a1b7087721546fe9ff864,Safe 2-of-3,wallet,,no,,344.64,123929,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
@@ -1998,6 +2002,7 @@ venue sweep: lowband_existing,aave-core,1,0x93526fe3c946fc30e195d18f8e691853a1da
 venue sweep: lowband_existing,aave-arbitrum,42161,0xea9991acee7d9d56f591947177d1bcd23a8f894a,EIP-7702,wallet,,no,,170.25,320092,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 venue sweep: lowband_existing,morpho,1,0x65313f85ca6ea41c40f8cb508c7e68341cec86a0,EOA,wallet,,no,,170.22,193626,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 venue sweep: lowband_existing,aave-core,1,0x5a103b342644d8286ebbf59b895f28d2b1a100dd,EOA,wallet,,no,,170.06,70708,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
+venue sweep: aave_aave-bnb,aave-bnb,56,0xaa40cb43f78b97701d0e5981d83822ed77dd57e9,EOA,wallet,,no,,170.0,11523,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 venue sweep: lowband_existing,compound-v3,1,0xd6d93390e70f7f7450fb6c209402ad2d72cd7f4d,EOA,wallet,,no,,170.0,280069,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 venue sweep: lowband_existing,compound-v3,1,0xfacbd261fd38694ed863d625c6782d9c807a0db9,EOA,wallet,,no,,170.0,198274,no,,,no label; no vault counterparty in latest ERC-20 transfers (Ethereum) or registry match
 venue sweep: maker,Sky/Maker ETH-C,1,0x0c3b6cd5b31c0e486ae8eae1ca504c64a220f5a7,DSProxy,personal,,no,,170.0,155377,no,,,per-user smart account
